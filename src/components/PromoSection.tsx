@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Phone, Clock } from 'lucide-react'
+import { Phone } from 'lucide-react'
 import './PromoSection.css'
 
 const PromoSection: React.FC = () => {
