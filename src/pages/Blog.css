@@ -1,0 +1,142 @@
+.blog-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 20px 60px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.blog-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.blog-hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blog-content {
+  padding: 60px 20px;
+  flex: 1;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0;
+}
+
+.blog-category {
+  background: #667eea;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.blog-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.blog-card-body {
+  padding: 20px;
+  flex: 1;
+}
+
+.blog-card-body h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.blog-card-body p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.blog-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 20px;
+  margin-top: auto;
+}
+
+.blog-author {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.blog-read-more {
+  color: #667eea;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-read-more:hover {
+  color: #764ba2;
+}
+
+@media (max-width: 768px) {
+  .blog-hero {
+    padding: 60px 20px 40px;
+  }
+
+  .blog-hero h1 {
+    font-size: 2rem;
+  }
+
+  .blog-hero p {
+    font-size: 1rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .blog-card-body h2 {
+    font-size: 1.2rem;
+  }
+}
+
