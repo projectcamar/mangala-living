@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { Suspense, lazy } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 
 // Critical components loaded immediately
@@ -109,6 +110,7 @@ function App() {
         <WhatsAppButton />
           </Suspense>
         </Suspense>
+        <Analytics />
       </Router>
     </HelmetProvider>
   )
