@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.lasbekasi.com/sitemap.xml
+Sitemap: https://lasbekasi.com/sitemap.xml
 
 # Optimize crawling
 Crawl-delay: 1

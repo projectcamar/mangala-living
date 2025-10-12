@@ -43,11 +43,36 @@ const Footer: React.FC = () => {
             <p className="footer-contact"><a href="https://wa.me/6285212078467" target="_blank" rel="noopener noreferrer" className="contact-link">+62 852-1207-8467</a></p>
             <p className="footer-contact"><a href="mailto:info@lasbekasi.com" className="contact-link">info@lasbekasi.com</a></p>
             <p className="footer-address">Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320</p>
+            
+            <div className="footer-social">
+              <h4>Ikuti Kami</h4>
+              <div className="social-links">
+                <a href="https://facebook.com/lasbekasi" target="_blank" rel="noopener noreferrer external" aria-label="Facebook Bengkel Las Mandiri">
+                  Facebook
+                </a>
+                <a href="https://instagram.com/lasbekasi" target="_blank" rel="noopener noreferrer external" aria-label="Instagram Bengkel Las Mandiri">
+                  Instagram
+                </a>
+                <a href="https://www.youtube.com/@bengkellasmandiribekasiofficial" target="_blank" rel="noopener noreferrer external" aria-label="YouTube Bengkel Las Mandiri">
+                  YouTube
+                </a>
+                <a href="https://www.tiktok.com/@lasbekasi" target="_blank" rel="noopener noreferrer external" aria-label="TikTok Bengkel Las Mandiri">
+                  TikTok
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         
         <div className="footer-bottom">
           <p>Copyright © 2025. All rights reserved.</p>
+          <div className="footer-links">
+            <a href="https://maps.google.com/?q=Bengkel+Las+Mandiri+Bekasi" target="_blank" rel="noopener noreferrer external">Google Maps</a>
+            <span>|</span>
+            <a href="https://www.tokopedia.com/lasbekasi" target="_blank" rel="noopener noreferrer external">Tokopedia</a>
+            <span>|</span>
+            <a href="https://shopee.co.id/lasbekasi" target="_blank" rel="noopener noreferrer external">Shopee</a>
+          </div>
         </div>
       </div>
     </footer>

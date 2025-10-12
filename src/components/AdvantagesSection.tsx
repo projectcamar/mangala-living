@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Clock, CheckCircle, DollarSign, MessageCircle, Shield, Zap } from 'lucide-react'
 import './AdvantagesSection.css'
 
@@ -58,6 +59,16 @@ const AdvantagesSection: React.FC = () => {
               </div>
             );
           })}
+        </div>
+        
+        <div className="advantages-cta" style={{ textAlign: 'center', marginTop: '40px' }}>
+          <p style={{ fontSize: '18px', marginBottom: '20px' }}>
+            Ingin mengetahui lebih lanjut tentang <Link to="/layanan-las-bekasi">layanan las kami</Link>? 
+            Atau lihat <Link to="/album-bengkel-las-mandiri">portfolio pekerjaan kami</Link> yang telah dipercaya oleh ribuan pelanggan.
+          </p>
+          <Link to="/kontak-bengkel-las-bekasi" className="btn-primary" style={{ display: 'inline-block', padding: '12px 30px', backgroundColor: '#ff6b35', color: 'white', textDecoration: 'none', borderRadius: '5px' }}>
+            Hubungi Kami Sekarang
+          </Link>
         </div>
       </div>
     </section>

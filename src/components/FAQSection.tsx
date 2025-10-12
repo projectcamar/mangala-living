@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import './FAQSection.css'
 
@@ -8,7 +9,8 @@ const FAQSection: React.FC = () => {
   const faqs = [
     {
       question: "Apa saja layanan Bengkel Las Bekasi?",
-      answer: "Bengkel Las Bekasi kami melayani berbagai jasa las profesional termasuk: pembuatan kanopi minimalis, pagar besi tempa, pintu besi anti maling, teralis jendela, railing tangga stainless steel, konstruksi baja ringan, bike rack custom, pintu dorong otomatis, pintu kayu ulin kombinasi besi, dan berbagai kebutuhan las lainnya. Kami juga menerima pesanan custom dengan desain dari pelanggan. Semua pengerjaan dilakukan oleh tukang las berpengalaman dengan hasil rapi dan berkualitas."
+      answer: "Bengkel Las Bekasi kami melayani berbagai jasa las profesional termasuk: pembuatan kanopi minimalis, pagar besi tempa, pintu besi anti maling, teralis jendela, railing tangga stainless steel, konstruksi baja ringan, bike rack custom, pintu dorong otomatis, pintu kayu ulin kombinasi besi, dan berbagai kebutuhan las lainnya. Kami juga menerima pesanan custom dengan desain dari pelanggan. Semua pengerjaan dilakukan oleh tukang las berpengalaman dengan hasil rapi dan berkualitas.",
+      hasLinks: true
     },
     {
       question: "Apa bisa membuat custom desain?",
@@ -77,11 +79,46 @@ const FAQSection: React.FC = () => {
                 itemType="https://schema.org/Answer"
               >
                 <div className="answer-content">
-                  <p itemProp="text">{faq.answer}</p>
+                  {index === 0 ? (
+                    <p itemProp="text">
+                      Bengkel Las Bekasi kami melayani berbagai jasa las profesional termasuk: 
+                      <Link to="/layanan-las-bekasi/jasa-pembuatan-kanopi-bekasi"> pembuatan kanopi minimalis</Link>, 
+                      <Link to="/layanan-las-bekasi/jasa-pembuatan-pagar-besi-bekasi"> pagar besi tempa</Link>, 
+                      pintu besi anti maling, 
+                      <Link to="/layanan-las-bekasi/jasa-pembuatan-teralis-bekasi"> teralis jendela</Link>, 
+                      <Link to="/layanan-las-bekasi/jasa-pembuatan-railing-tangga-bekasi"> railing tangga stainless steel</Link>, 
+                      <Link to="/layanan-las-bekasi/jasa-konstruksi-baja-bekasi"> konstruksi baja ringan</Link>, 
+                      <Link to="/layanan-las-bekasi/jasa-pembuatan-bike-rack-bekasi"> bike rack custom</Link>, 
+                      <Link to="/layanan-las-bekasi/jasa-pembuatan-pintu-dorong-bekasi"> pintu dorong otomatis</Link>, 
+                      <Link to="/layanan-las-bekasi/jasa-pembuatan-pintu-kayu-ulin-bekasi"> pintu kayu ulin kombinasi besi</Link>, 
+                      dan berbagai kebutuhan las lainnya. Kami juga menerima pesanan custom dengan desain dari pelanggan. 
+                      Lihat <Link to="/layanan-las-bekasi">semua layanan kami</Link> untuk informasi lebih lengkap.
+                    </p>
+                  ) : (
+                    <p itemProp="text">{faq.answer}</p>
+                  )}
                 </div>
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="faq-cta" style={{ textAlign: 'center', marginTop: '40px', padding: '30px', backgroundColor: '#f8f8f8', borderRadius: '10px' }}>
+          <h3 style={{ marginBottom: '15px' }}>Masih Ada Pertanyaan?</h3>
+          <p style={{ fontSize: '16px', marginBottom: '20px' }}>
+            Hubungi tim kami untuk konsultasi gratis dan dapatkan penawaran harga terbaik untuk kebutuhan las Anda.
+          </p>
+          <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link to="/kontak-bengkel-las-bekasi" className="btn-primary" style={{ display: 'inline-block', padding: '12px 30px', backgroundColor: '#ff6b35', color: 'white', textDecoration: 'none', borderRadius: '5px' }}>
+              Hubungi Kami
+            </Link>
+            <Link to="/layanan-las-bekasi" className="btn-secondary" style={{ display: 'inline-block', padding: '12px 30px', backgroundColor: 'transparent', border: '2px solid #ff6b35', color: '#ff6b35', textDecoration: 'none', borderRadius: '5px' }}>
+              Lihat Layanan
+            </Link>
+            <Link to="/album-bengkel-las-mandiri" className="btn-secondary" style={{ display: 'inline-block', padding: '12px 30px', backgroundColor: 'transparent', border: '2px solid #ff6b35', color: '#ff6b35', textDecoration: 'none', borderRadius: '5px' }}>
+              Lihat Portfolio
+            </Link>
+          </div>
         </div>
       </div>
     </section>

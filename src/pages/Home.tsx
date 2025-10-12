@@ -29,7 +29,7 @@ const Home: React.FC = () => {
     <div className="home">
       <Helmet>
         <title>Bengkel Las Mandiri - Jasa Las Profesional & Berkualitas di Bekasi</title>
-        <meta name="description" content="Bengkel Las Mandiri menyediakan jasa las profesional di Bekasi dengan harga terjangkau. Spesialis kanopi, pagar besi, teralis, railing tangga & konstruksi besi. ☎ Hubungi Sekarang!" />
+        <meta name="description" content="Jasa las profesional di Bekasi sejak 1999. Spesialis kanopi, pagar besi, teralis, railing tangga & konstruksi baja. Material SNI, garansi resmi. ☎ 0852-1207-8467" />
         <meta name="keywords" content="bengkel las bekasi, jasa las bekasi, las listrik bekasi, kanopi bekasi, pagar besi bekasi, teralis bekasi, railing tangga bekasi" />
         
         {/* Open Graph / Facebook */}
@@ -37,7 +37,7 @@ const Home: React.FC = () => {
         <meta property="og:title" content="Bengkel Las Mandiri - Jasa Las Profesional Bekasi" />
         <meta property="og:description" content="Jasa las profesional & terpercaya di Bekasi. Pengerjaan rapi, berpengalaman 7+ tahun, harga bersaing. Spesialis kanopi, pagar, teralis & konstruksi besi." />
         <meta property="og:image" content="/images/bengkel-las-mandiri.jpg" />
-        <meta property="og:url" content="https://www.lasbekasi.com/" />
+        <meta property="og:url" content="https://lasbekasi.com/" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
         <meta name="googlebot" content="index, follow" />
         <meta name="geo.region" content="ID-JB" />
         <meta name="geo.placename" content="Bekasi" />
-        <link rel="canonical" href="https://www.lasbekasi.com/" />
+        <link rel="canonical" href="https://lasbekasi.com/" />
         
         {/* Structured Data / Schema.org */}
         <script type="application/ld+json">
@@ -74,7 +74,7 @@ const Home: React.FC = () => {
                 "latitude": "-6.2349",
                 "longitude": "106.9896"
               },
-              "url": "https://www.lasbekasi.com",
+              "url": "https://lasbekasi.com",
               "telephone": "+6285212078467",
               "priceRange": "Rp$$",
               "openingHoursSpecification": {
