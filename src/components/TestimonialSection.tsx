@@ -80,6 +80,16 @@ const TestimonialSection: React.FC = () => {
         <div className="testimonial-slider">
           <div className="testimonial-slide" itemProp="review" itemScope itemType="https://schema.org/Review">
             <meta itemProp="datePublished" content={testimonials[currentIndex].date} />
+            
+            {/* Item being reviewed - REQUIRED */}
+            <div itemProp="itemReviewed" itemScope itemType="https://schema.org/LocalBusiness">
+              <meta itemProp="name" content="Bengkel Las Mandiri" />
+              <meta itemProp="image" content="https://www.lasbekasi.com/favicon-192x192.png" />
+              <meta itemProp="telephone" content="+6285212078467" />
+              <meta itemProp="address" content="Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320" />
+              <meta itemProp="priceRange" content="$$" />
+            </div>
+            
             <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
               <meta itemProp="ratingValue" content={testimonials[currentIndex].rating.toString()} />
               <meta itemProp="bestRating" content="5" />
