@@ -152,6 +152,9 @@
     flex-direction: column;
     text-align: center;
     gap: 2rem;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 15px;
   }
   
   .promo-text h2 {
