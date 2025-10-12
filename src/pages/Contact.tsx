@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Helmet } from 'react-helmet-async'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Phone, Mail, MapPin, Send } from 'lucide-react'
@@ -36,6 +37,26 @@ const Contact: React.FC = () => {
 
   return (
     <div className="contact-page">
+      <Helmet>
+        <title>Kontak Kami - Hubungi Bengkel Las Mandiri Bekasi | Konsultasi Gratis</title>
+        <meta name="description" content="Hubungi Bengkel Las Mandiri Bekasi untuk konsultasi gratis. WhatsApp: 0852-1207-8467, Email: info@lasbekasi.com. Survey GRATIS wilayah Bekasi dan Jabodetabek." />
+        <meta name="keywords" content="kontak bengkel las bekasi, hubungi bengkel las mandiri, nomor bengkel las bekasi, konsultasi gratis las bekasi, alamat bengkel las bekasi" />
+        <link rel="canonical" href="https://www.lasbekasi.com/kontak-bengkel-las-bekasi" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Kontak Bengkel Las Mandiri - Konsultasi Gratis Bekasi" />
+        <meta property="og:description" content="Hubungi kami untuk konsultasi gratis. WA: 0852-1207-8467, Email: info@lasbekasi.com. Survey GRATIS!" />
+        <meta property="og:url" content="https://www.lasbekasi.com/kontak-bengkel-las-bekasi" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Kontak Bengkel Las Mandiri Bekasi" />
+        <meta name="twitter:description" content="Konsultasi gratis jasa las Bekasi. WA: 0852-1207-8467" />
+        
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+      
       <Header />
       
       <section className="contact-hero">
