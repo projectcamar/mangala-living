@@ -64,6 +64,20 @@ const Blog: React.FC = () => {
         <title>Blog - Bengkel Las Mandiri | Tips dan Artikel Seputar Konstruksi Baja</title>
         <meta name="description" content="Baca artikel, tips, dan informasi terbaru seputar jasa las, konstruksi baja, kanopi, pagar, tralis, dan produk furniture industrial di Bekasi dan sekitarnya." />
         <meta name="keywords" content="blog bengkel las, artikel las bekasi, tips konstruksi baja, jasa tukang las, informasi pengelasan" />
+        <link rel="canonical" href="https://www.lasbekasi.com/blog" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Blog Bengkel Las Mandiri - Tips dan Artikel Konstruksi Baja" />
+        <meta property="og:description" content="Baca artikel, tips, dan informasi terbaru seputar jasa las, konstruksi baja, kanopi, pagar, tralis, dan furniture industrial di Bekasi." />
+        <meta property="og:url" content="https://www.lasbekasi.com/blog" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Blog Bengkel Las Mandiri - Tips dan Artikel Konstruksi Baja" />
+        <meta name="twitter:description" content="Baca artikel, tips, dan informasi terbaru seputar jasa las, konstruksi baja, kanopi, pagar, tralis, dan furniture industrial." />
+        
+        <meta name="robots" content="index, follow" />
       </Helmet>
       
       <Header />

@@ -151,14 +151,15 @@ const Services: React.FC = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Jasa Las Bekasi - Layanan Bengkel Las Profesional & Terpercaya" />
         <meta property="og:description" content="Bengkel Las Mandiri menyediakan berbagai jasa las profesional di Bekasi dengan pengalaman 20+ tahun. Spesialis kanopi, pagar besi, teralis & konstruksi baja. Hubungi kami untuk konsultasi gratis!" />
-        <meta property="og:url" content="https://lasbekasi.com/layanan-las-bekasi" />
+        <meta property="og:url" content="https://www.lasbekasi.com/layanan-las-bekasi" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Jasa Las Bekasi - Layanan Bengkel Las Profesional & Terpercaya" />
         <meta name="twitter:description" content="Bengkel Las Mandiri menyediakan berbagai jasa las profesional di Bekasi dengan pengalaman 20+ tahun. Spesialis kanopi, pagar besi, teralis & konstruksi baja. Hubungi kami untuk konsultasi gratis!" />
         
-        <link rel="canonical" href="https://lasbekasi.com/layanan-las-bekasi" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.lasbekasi.com/layanan-las-bekasi" />
       </Helmet>
       <Header />
       <section className="services-hero">

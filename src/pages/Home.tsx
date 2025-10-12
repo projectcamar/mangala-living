@@ -37,7 +37,7 @@ const Home: React.FC = () => {
         <meta property="og:title" content="Bengkel Las Mandiri - Jasa Las Profesional Bekasi" />
         <meta property="og:description" content="Jasa las profesional & terpercaya di Bekasi. Pengerjaan rapi, berpengalaman 7+ tahun, harga bersaing. Spesialis kanopi, pagar, teralis & konstruksi besi." />
         <meta property="og:image" content="/images/bengkel-las-mandiri.jpg" />
-        <meta property="og:url" content="https://lasbekasi.com" />
+        <meta property="og:url" content="https://www.lasbekasi.com/" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
         <meta name="googlebot" content="index, follow" />
         <meta name="geo.region" content="ID-JB" />
         <meta name="geo.placename" content="Bekasi" />
-        <link rel="canonical" href="https://lasbekasi.com" />
+        <link rel="canonical" href="https://www.lasbekasi.com/" />
         
         {/* Structured Data / Schema.org */}
         <script type="application/ld+json">
@@ -74,7 +74,7 @@ const Home: React.FC = () => {
                 "latitude": "-6.2349",
                 "longitude": "106.9896"
               },
-              "url": "https://lasbekasi.com",
+              "url": "https://www.lasbekasi.com",
               "telephone": "+6285212078467",
               "priceRange": "Rp$$",
               "openingHoursSpecification": {
