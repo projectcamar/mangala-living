@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { Suspense, lazy } from 'react'
 import { Analytics } from '@vercel/analytics/react'
@@ -105,6 +105,16 @@ function App() {
                 <BlogPost />
               </>
             } />
+            
+            {/* Redirects for old URLs */}
+            <Route path="/tentang" element={<Navigate to="/tentang-kami" replace />} />
+            <Route path="/layanan" element={<Navigate to="/layanan-las-bekasi" replace />} />
+            <Route path="/portfolio" element={<Navigate to="/album-bengkel-las-mandiri" replace />} />
+            <Route path="/kontak" element={<Navigate to="/kontak-bengkel-las-bekasi" replace />} />
+            <Route path="/layanan/kanopi" element={<Navigate to="/layanan-las-bekasi/jasa-pembuatan-kanopi-bekasi" replace />} />
+            <Route path="/layanan/pagar-besi" element={<Navigate to="/layanan-las-bekasi/jasa-pembuatan-pagar-besi-bekasi" replace />} />
+            <Route path="/layanan/teralis" element={<Navigate to="/layanan-las-bekasi/jasa-pembuatan-teralis-bekasi" replace />} />
+            <Route path="/layanan/railing-tangga" element={<Navigate to="/layanan-las-bekasi/jasa-pembuatan-railing-tangga-bekasi" replace />} />
         </Routes>
           <Suspense fallback={<Loading />}>
         <WhatsAppButton />
