@@ -131,12 +131,40 @@
   }
 
   .blog-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 15px;
   }
 
   .blog-card-body h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+  
+  .blog-card-body .excerpt {
+    font-size: 0.85rem;
+  }
+  
+  .blog-meta {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-grid {
+    gap: 12px;
+  }
+
+  .blog-card-body h2 {
+    font-size: 1rem;
+  }
+  
+  .blog-card-body .excerpt {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  
+  .blog-meta {
+    font-size: 0.75rem;
   }
 }
 

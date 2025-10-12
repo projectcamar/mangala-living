@@ -9,7 +9,7 @@ import './ServiceDetail.css'
 
 const ServiceDetail: React.FC = () => {
   const { serviceSlug } = useParams<{ serviceSlug: string }>()
-  const cleanSlug = serviceSlug?.replace(/^jasa-pembuatan-|-bekasi$/g, '')
+  const cleanSlug = serviceSlug?.replace(/^jasa-(pembuatan-)?|-bekasi$/g, '')
   const [showCalculator, setShowCalculator] = React.useState(false)
   const [isModalOpen, setIsModalOpen] = React.useState(false)
   const [calculatorData, setCalculatorData] = React.useState({
@@ -1110,7 +1110,7 @@ const ServiceDetail: React.FC = () => {
             <div className="education-content">
               <div className="education-header">
                 <h2>Mengapa Memilih Bengkel Las Mandiri?</h2>
-                <p className="education-subtitle">15 Tahun Pengalaman • Kualitas Terjamin • Harga Kompetitif</p>
+                <p className="education-subtitle">20+ Tahun Pengalaman • Kualitas Terjamin • Harga Kompetitif</p>
               </div>
               
               <div className="education-grid">
@@ -1118,8 +1118,8 @@ const ServiceDetail: React.FC = () => {
                   <div className="education-icon">
                     <Clock size={32} />
                   </div>
-                  <h3>15+ Tahun Pengalaman</h3>
-                  <p>Lebih dari 15 tahun melayani ribuan pelanggan dengan kepuasan maksimal. Pengalaman yang teruji dalam berbagai proyek konstruksi besi.</p>
+                  <h3>20+ Tahun Pengalaman</h3>
+                  <p>Lebih dari 20 tahun sejak 1999 melayani ribuan pelanggan dengan kepuasan maksimal. Pengalaman yang teruji dalam berbagai proyek konstruksi besi.</p>
                 </div>
                 
                 <div className="education-card">
@@ -1143,7 +1143,7 @@ const ServiceDetail: React.FC = () => {
                 <h3>Bukti Kompetensi Kami</h3>
                 <div className="proof-stats">
                   <div className="proof-item">
-                    <div className="proof-number">15+</div>
+                    <div className="proof-number">20+</div>
                     <div className="proof-label">Tahun Pengalaman</div>
                   </div>
                   <div className="proof-item">

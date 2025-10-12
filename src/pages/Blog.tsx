@@ -19,7 +19,7 @@ const Blog: React.FC = () => {
     {
       slug: 'cari-bengkel-las-bekasi',
       title: 'Cari Bengkel Las Bekasi Murah, Berkualitas, dan Terpercaya?',
-      excerpt: 'Bengkel Las Bekasi Mitra Mandiri adalah solusi terbaik untuk kebutuhan konstruksi baja Anda. Dengan pengalaman 15 tahun sejak 2010, kami siap melayani berbagai proyek dengan kualitas terbaik.',
+      excerpt: 'Bengkel Las Mandiri adalah solusi terbaik untuk kebutuhan konstruksi baja Anda. Dengan pengalaman 20+ tahun sejak 1999, kami siap melayani berbagai proyek dengan kualitas terbaik.',
       date: '11 Oktober 2025',
       author: 'Admin',
       category: 'Bengkel Las'

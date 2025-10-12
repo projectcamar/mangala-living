@@ -25,16 +25,16 @@ const BlogPost: React.FC = () => {
       category: 'Bengkel Las',
       date: '11 Oktober 2025',
       author: 'Admin',
-      metaDescription: 'Bengkel Las Bekasi Mitra Mandiri adalah solusi terbaik untuk kebutuhan konstruksi baja Anda dengan pengalaman 15 tahun dan harga kompetitif.',
+      metaDescription: 'Bengkel Las Mandiri adalah solusi terbaik untuk kebutuhan konstruksi baja Anda dengan pengalaman 20+ tahun sejak 1999 dan harga kompetitif.',
       content: `
 # Cari Bengkel Las Bekasi Murah, Berkualitas, dan Terpercaya?
 ## Kami adalah solusinya!
 
-Bengkel Las Bekasi Mitra Mandiri beralamat di **Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320**.
+Bengkel Las Mandiri beralamat di **Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320**.
 
 Hubungi kami di:
 - 📱 **0852-1207-8467**
-- 🌐 **bengkellasbekasicikarang.com**
+- 🌐 **lasbekasi.com**
 
 ## Produk dan Layanan Unggulan
 
@@ -54,8 +54,8 @@ Kami menyediakan berbagai produk untuk mempercantik rumah, kantor, taman, atau b
 
 ## Mengapa Memilih Kami?
 
-### 💼 Pengalaman 15 Tahun
-Berdiri sejak tahun 2010, kami telah melayani berbagai proyek dengan tenaga ahli yang berpengalaman dan profesional.
+### 💼 Pengalaman 20+ Tahun
+Berdiri sejak tahun 1999, kami telah melayani berbagai proyek dengan tenaga ahli yang berpengalaman dan profesional.
 
 ### 💎 Kualitas Terbaik dengan Harga Kompetitif
 Semua produk kami dikerjakan menggunakan bahan berkualitas yang memenuhi **Standar Nasional Indonesia (SNI)**. Harga kami terjangkau dan sesuai dengan kualitas bahan pilihan Anda.
@@ -105,7 +105,7 @@ Mencari **jasa tukang las di Cikarang** yang profesional, berkualitas, dan terpe
 
 ## Tentang Layanan Kami di Cikarang
 
-Kami adalah penyedia jasa tukang las berpengalaman yang melayani wilayah **Cikarang Selatan, Cikarang Utara, Cikarang Barat, dan Cikarang Timur**. Dengan pengalaman lebih dari 15 tahun, kami telah menangani berbagai proyek konstruksi baja untuk rumah tinggal, perkantoran, pabrik, dan komersial.
+Kami adalah penyedia jasa tukang las berpengalaman yang melayani wilayah **Cikarang Selatan, Cikarang Utara, Cikarang Barat, dan Cikarang Timur**. Dengan pengalaman lebih dari 20 tahun sejak 1999, kami telah menangani berbagai proyek konstruksi baja untuk rumah tinggal, perkantoran, pabrik, dan komersial.
 
 ## Layanan Jasa Las Cikarang
 
@@ -281,7 +281,7 @@ Berlokasi di Jl. Raya Setu Cibitung, kami sangat dekat dengan wilayah Setu sehin
 - Mudah untuk koordinasi dan komunikasi
 
 ### 👨‍🏭 Tukang Las Berpengalaman
-- Pengalaman lebih dari 15 tahun
+- Pengalaman lebih dari 20 tahun sejak 1999
 - Tenaga ahli yang terampil dan profesional
 - Telah mengerjakan ratusan proyek di Setu
 - Tersertifikasi dan kompeten
@@ -432,7 +432,7 @@ Mencari **jasa tukang las di Bekasi** yang berpengalaman, berkualitas, dan berga
 
 ## Tentang Jasa Las Kami
 
-**Bengkel Las Mandiri** adalah penyedia jasa tukang las profesional yang telah melayani wilayah Bekasi dan sekitarnya sejak tahun 2010. Dengan pengalaman lebih dari **15 tahun**, kami telah menangani ribuan proyek konstruksi baja untuk rumah tinggal, gedung komersial, pabrik, dan berbagai kebutuhan lainnya.
+**Bengkel Las Mandiri** adalah penyedia jasa tukang las profesional yang telah melayani wilayah Bekasi dan sekitarnya sejak tahun 1999. Dengan pengalaman lebih dari **20 tahun**, kami telah menangani ribuan proyek konstruksi baja untuk rumah tinggal, gedung komersial, pabrik, dan berbagai kebutuhan lainnya.
 
 ## Layanan Lengkap Jasa Tukang Las Bekasi
 
@@ -517,8 +517,8 @@ Railing aman dan estetik:
 
 ## Keunggulan Jasa Las Kami
 
-### ✅ Pengalaman 15 Tahun
-- Berdiri sejak 2010
+### ✅ Pengalaman 20+ Tahun
+- Berdiri sejak 1999
 - Telah mengerjakan ribuan proyek
 - Portfolio lengkap dan beragam
 - Dipercaya oleh pelanggan setia
@@ -784,7 +784,7 @@ Segera hubungi kami untuk:
 
 ---
 
-**Bengkel Las Mandiri - Jasa Tukang Las Bekasi Terpercaya Sejak 2010**
+**Bengkel Las Mandiri - Jasa Tukang Las Bekasi Terpercaya Sejak 1999**
 
 *Partner terbaik untuk semua kebutuhan konstruksi baja Anda*
       `
