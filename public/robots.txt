@@ -2,13 +2,12 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://lasbekasi.com/sitemap.xml
+Sitemap: https://mangala-living.com/sitemap.xml
 
 # Optimize crawling
 Crawl-delay: 1
 
-# Block specific paths (admin/private only)
+# Block specific paths (if any private sections exist)
 Disallow: /api/
 Disallow: /admin/
 Disallow: /private/
-Disallow: /temp/

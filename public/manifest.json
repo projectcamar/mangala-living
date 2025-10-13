@@ -1,12 +1,31 @@
 {
-  "name": "Mangala Living - Premium Outdoor Furniture",
+  "name": "Mangala Living - Furniture Industrial Besi Custom Indonesia",
   "short_name": "Mangala Living",
-  "description": "High-end outdoor furniture from Bali, Indonesia. Manufactured in Kediri, East Java.",
+  "description": "Manufacturer furniture industrial besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#ffffff",
   "theme_color": "#8B7355",
+  "lang": "id",
+  "categories": ["business", "shopping", "lifestyle"],
   "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
     {
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",

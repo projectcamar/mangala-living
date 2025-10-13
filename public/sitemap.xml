@@ -2,96 +2,322 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://mangalaliving.com/</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
-  <!-- Contact Page -->
+  <!-- Main Pages -->
   <url>
-    <loc>https://mangalaliving.com/contact-us</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/about</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   
-  <!-- About Page -->
   <url>
-    <loc>https://mangalaliving.com/about</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/contact-us</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/shop</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/blog</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Product Tag -->
+  <url>
+    <loc>https://mangala-living.com/product-tag/best-seller</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <!-- Product Categories -->
   <url>
-    <loc>https://mangalaliving.com/product-category/new-arrivals</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/product-category/new-arrivals</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://mangalaliving.com/product-category/sun-lounger</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/product-category/lounge-seating-set</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://mangalaliving.com/product-category/sofa</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/product-category/industrial-sofa-bench</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://mangalaliving.com/product-category/dining-collection</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/product-category/dining-set-collection</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://mangalaliving.com/product-category/bar-collection</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/product-category/bar-furniture-collection</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://mangalaliving.com/product-category/balcony-set</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/product-category/balcony-outdoor-collection</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://mangalaliving.com/product-category/daybed</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/product-category/outdoor</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://mangalaliving.com/product-category/accessories</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/product-category/daybed-collection</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://mangalaliving.com/product-category/table-collection</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/product-category/storage-shelving</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://mangalaliving.com/product-category/dining-table</loc>
-    <lastmod>2025-10-12</lastmod>
+    <loc>https://mangala-living.com/product-category/work-study-tables</loc>
+    <lastmod>2025-10-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product-category/dining-table-collection</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Product Detail Pages -->
+  <url>
+    <loc>https://mangala-living.com/product/frame-loft-bookshelf</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/balcony-bar-table</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/bench-corner-lounge</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/industrial-daybed-frame</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/bandung-pipe-dining-table</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/dining-set-with-2-chairs</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/beam-industrial-bar-chair</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/bar-stall-chair</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/steelframe-outdoor-bar-set</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/industrial-kitchen-cabinet</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/kabinet-lemari-industrial</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/hollowline-display-rack</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/ladder-frame-display-stand</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/industrial-hanging-shelf</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/work-desk-with-storage</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/product/coat-rack-industrial</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://mangala-living.com/blog/tips-memilih-furniture-industrial-untuk-cafe</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/blog/keunggulan-furniture-besi-custom-vs-ready-stock</loc>
+    <lastmod>2024-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/blog/inspirasi-desain-interior-industrial-minimalis</loc>
+    <lastmod>2024-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/blog/cara-merawat-furniture-besi-agar-awet</loc>
+    <lastmod>2024-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/blog/tren-furniture-cafe-dan-restoran-2024</loc>
+    <lastmod>2024-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/blog/mengapa-memilih-furniture-lokal-indonesia</loc>
+    <lastmod>2024-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/blog/desain-meja-bar-industrial-untuk-ruang-terbatas</loc>
+    <lastmod>2024-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/blog/kombinasi-kayu-dan-besi-untuk-furniture-modern</loc>
+    <lastmod>2024-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/blog/furniture-outdoor-tahan-cuaca-untuk-teras</loc>
+    <lastmod>2024-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/blog/budget-furniture-cafe-untuk-pemula</loc>
+    <lastmod>2024-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/blog/finishing-furniture-besi-powder-coating-vs-cat</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/blog/kesalahan-umum-saat-membeli-furniture-industrial</loc>
+    <lastmod>2024-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
