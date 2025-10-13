@@ -4,11 +4,11 @@ import { Suspense, lazy } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 
-// Critical components loaded immediately
+// Critical components loaded immediately - NO LAZY LOADING for Home
+import Home from './pages/Home'
 import WhatsAppButton from './components/WhatsAppButton'
 
-// Lazy load pages
-const Home = lazy(() => import('./pages/Home'))
+// Lazy load other pages (not critical for initial load)
 const ProductCategory = lazy(() => import('./pages/ProductCategory'))
 const ProductDetail = lazy(() => import('./pages/ProductDetail'))
 const Contact = lazy(() => import('./pages/Contact'))
@@ -19,11 +19,16 @@ const Shop = lazy(() => import('./pages/Shop'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 
-// Loading component
+// Better loading skeleton
 const Loading = () => (
-  <div className="loading-spinner">
-    <div className="spinner"></div>
-    <p>Memuat...</p>
+  <div className="loading-skeleton">
+    <div className="skeleton-header"></div>
+    <div className="skeleton-hero"></div>
+    <div className="skeleton-content">
+      <div className="skeleton-card"></div>
+      <div className="skeleton-card"></div>
+      <div className="skeleton-card"></div>
+    </div>
   </div>
 )
 
@@ -31,9 +36,11 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
-        <Suspense fallback={<Loading />}>
         <Routes>
+          {/* Home - Load immediately, no suspense */}
           <Route path="/" element={<Home />} />
+          
+          <Suspense fallback={<Loading />}>
             
             {/* Search Results */}
             <Route path="/search" element={<SearchResults />} />
@@ -61,11 +68,9 @@ function App() {
             
             {/* Blog Post Detail */}
             <Route path="/blog/:slug" element={<BlogPost />} />
-        </Routes>
-          <Suspense fallback={<Loading />}>
-        <WhatsAppButton />
           </Suspense>
-        </Suspense>
+        </Routes>
+        <WhatsAppButton />
         <Analytics />
       </Router>
     </HelmetProvider>

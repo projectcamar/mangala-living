@@ -14,7 +14,56 @@
   }
 }
 
-/* Loading Spinner */
+/* Loading Skeleton - Better UX */
+.loading-skeleton {
+  min-height: 100vh;
+  background: #f8f9fa;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.skeleton-header {
+  height: 80px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-hero {
+  height: 500px;
+  margin: 0;
+  background: linear-gradient(90deg, #d0d0d0 25%, #e0e0e0 50%, #d0d0d0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-content {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.skeleton-card {
+  height: 400px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.95; }
+}
+
+/* Old Loading Spinner - Fallback */
 .loading-spinner {
   display: flex;
   flex-direction: column;
