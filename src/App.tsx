@@ -36,11 +36,10 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
-        <Routes>
-          {/* Home - Load immediately, no suspense */}
-          <Route path="/" element={<Home />} />
-          
-          <Suspense fallback={<Loading />}>
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            {/* Home - Load immediately (not lazy) */}
+            <Route path="/" element={<Home />} />
             
             {/* Search Results */}
             <Route path="/search" element={<SearchResults />} />
@@ -68,8 +67,8 @@ function App() {
             
             {/* Blog Post Detail */}
             <Route path="/blog/:slug" element={<BlogPost />} />
-          </Suspense>
-        </Routes>
+          </Routes>
+        </Suspense>
         <WhatsAppButton />
         <Analytics />
       </Router>
