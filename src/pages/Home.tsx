@@ -56,30 +56,69 @@ const Home: React.FC = () => {
                   "@type": "Product",
                   "position": 1,
                   "name": "Frame Loft Bookshelf",
+                  "description": "Rak buku industrial dengan desain loft modern untuk cafe dan kantor",
+                  "image": "https://mangala-living.com/assets/frame-Loft-Bookshelf.png",
+                  "url": "https://mangala-living.com/product/frame-loft-bookshelf",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Mangala Living"
+                  },
                   "offers": {
                     "@type": "Offer",
                     "price": "3500000",
-                    "priceCurrency": "IDR"
+                    "priceCurrency": "IDR",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://mangala-living.com/product/frame-loft-bookshelf",
+                    "seller": {
+                      "@type": "Organization",
+                      "name": "Mangala Living"
+                    }
                   }
                 },
                 {
                   "@type": "Product",
                   "position": 2,
                   "name": "Balcony Bar Table",
+                  "description": "Meja bar balkon industrial untuk area outdoor cafe dan restoran",
+                  "image": "https://mangala-living.com/assets/balcony-bar-table.png",
+                  "url": "https://mangala-living.com/product/balcony-bar-table",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Mangala Living"
+                  },
                   "offers": {
                     "@type": "Offer",
                     "price": "3500000",
-                    "priceCurrency": "IDR"
+                    "priceCurrency": "IDR",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://mangala-living.com/product/balcony-bar-table",
+                    "seller": {
+                      "@type": "Organization",
+                      "name": "Mangala Living"
+                    }
                   }
                 },
                 {
                   "@type": "Product",
                   "position": 3,
                   "name": "Beam Industrial Bar Chair",
+                  "description": "Kursi bar industrial besi dengan desain beam modern untuk cafe",
+                  "image": "https://mangala-living.com/assets/Kursi-Barstool-Besi-Behel.png",
+                  "url": "https://mangala-living.com/product/beam-industrial-bar-chair",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Mangala Living"
+                  },
                   "offers": {
                     "@type": "Offer",
                     "price": "450000",
-                    "priceCurrency": "IDR"
+                    "priceCurrency": "IDR",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://mangala-living.com/product/beam-industrial-bar-chair",
+                    "seller": {
+                      "@type": "Organization",
+                      "name": "Mangala Living"
+                    }
                   }
                 }
               ]
