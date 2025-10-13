@@ -1,116 +1,105 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Helmet } from 'react-helmet-async'
+import { Link, useSearchParams } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.jpg'
+import { getPostsByPage, getTotalPages } from '../data/blog'
 import './Blog.css'
-import { Helmet } from 'react-helmet-async'
-
-interface BlogPost {
-  slug: string
-  title: string
-  excerpt: string
-  date: string
-  author: string
-  category: string
-}
 
 const Blog: React.FC = () => {
-  const blogPosts: BlogPost[] = [
-    {
-      slug: 'cari-bengkel-las-bekasi',
-      title: 'Cari Bengkel Las Bekasi Murah, Berkualitas, dan Terpercaya?',
-      excerpt: 'Bengkel Las Mandiri adalah solusi terbaik untuk kebutuhan konstruksi baja Anda. Dengan pengalaman 20+ tahun sejak 1999, kami siap melayani berbagai proyek dengan kualitas terbaik.',
-      date: '11 Oktober 2025',
-      author: 'Admin',
-      category: 'Bengkel Las'
-    },
-    {
-      slug: 'jasa-tukang-las-cikarang',
-      title: 'Jasa Tukang Las Cikarang - Profesional dan Terpercaya',
-      excerpt: 'Mencari jasa tukang las di Cikarang? Kami melayani berbagai kebutuhan pengelasan untuk rumah, kantor, dan industri di wilayah Cikarang dengan harga kompetitif dan hasil berkualitas.',
-      date: '11 Oktober 2025',
-      author: 'Admin',
-      category: 'Jasa Las'
-    },
-    {
-      slug: 'jasa-tukang-las-setu',
-      title: 'Jasa Tukang Las Setu - Cepat, Rapi, dan Berkualitas',
-      excerpt: 'Layanan jasa tukang las profesional di Setu dan sekitarnya. Melayani pembuatan kanopi, pagar, tralis, railing tangga, dan berbagai konstruksi baja lainnya dengan pengerjaan cepat dan rapi.',
-      date: '11 Oktober 2025',
-      author: 'Admin',
-      category: 'Jasa Las'
-    },
-    {
-      slug: 'jasa-tukang-las-bekasi',
-      title: 'Jasa Tukang Las Bekasi - Berpengalaman dan Bergaransi',
-      excerpt: 'Jasa tukang las terpercaya di Bekasi untuk berbagai kebutuhan konstruksi baja. Dikerjakan oleh tenaga ahli berpengalaman dengan material berkualitas SNI dan harga yang kompetitif.',
-      date: '11 Oktober 2025',
-      author: 'Admin',
-      category: 'Jasa Las'
-    },
-    {
-      slug: 'jasa-kanopi-bekasi',
-      title: 'Jasa Pasang Kanopi Bekasi - Harga Borongan Tukang Kanopi Terpercaya 2025',
-      excerpt: 'Jasa pasang kanopi Bekasi terpercaya ✓ Harga mulai 350rb/m² ✓ Material SNI ✓ Garansi resmi. Alderon, Polycarbonate, Spandek, Kaca Tempered. Survey & konsultasi GRATIS! Pengalaman 20+ tahun.',
-      date: '15 Januari 2025',
-      author: 'Bengkel Las Mandiri',
-      category: 'Layanan Las'
-    }
-  ]
+  const [searchParams, setSearchParams] = useSearchParams()
+  const currentPage = parseInt(searchParams.get('page') || '1')
+  const postsPerPage = 8
+  
+  const posts = getPostsByPage(currentPage, postsPerPage)
+  const totalPages = getTotalPages(postsPerPage)
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [currentPage])
+
+  const handlePageChange = (page: number) => {
+    setSearchParams({ page: page.toString() })
+  }
 
   return (
     <div className="blog-page">
       <Helmet>
-        <title>Blog - Bengkel Las Mandiri | Tips dan Artikel Seputar Konstruksi Baja</title>
-        <meta name="description" content="Baca artikel, tips, dan informasi terbaru seputar jasa las, konstruksi baja, kanopi, pagar, tralis, dan produk furniture industrial di Bekasi dan sekitarnya." />
-        <meta name="keywords" content="blog bengkel las, artikel las bekasi, tips konstruksi baja, jasa tukang las, informasi pengelasan" />
-        <link rel="canonical" href="https://www.lasbekasi.com/blog" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Blog Bengkel Las Mandiri - Tips dan Artikel Konstruksi Baja" />
-        <meta property="og:description" content="Baca artikel, tips, dan informasi terbaru seputar jasa las, konstruksi baja, kanopi, pagar, tralis, dan furniture industrial di Bekasi." />
-        <meta property="og:url" content="https://www.lasbekasi.com/blog" />
-        <meta property="og:type" content="website" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Blog Bengkel Las Mandiri - Tips dan Artikel Konstruksi Baja" />
-        <meta name="twitter:description" content="Baca artikel, tips, dan informasi terbaru seputar jasa las, konstruksi baja, kanopi, pagar, tralis, dan furniture industrial." />
-        
-        <meta name="robots" content="index, follow" />
+        <title>Blog & Article - Mangala Living</title>
+        <meta name="description" content="Discover articles on furniture, interior design tips, and industry insights from Mangala Living." />
+        <meta name="keywords" content="furniture blog, industrial furniture tips, interior design, furniture care, cafe furniture" />
+        <link rel="canonical" href="https://mangalaliving.com/blog/" />
       </Helmet>
       
       <Header />
       
+      {/* Hero Section */}
       <section className="blog-hero">
-        <div className="container">
-          <h1>Blog Bengkel Las Mandiri</h1>
-          <p>Artikel, tips, dan informasi terbaru seputar jasa las dan konstruksi baja</p>
+        <div className="blog-hero-image">
+          <img src={heroImage} alt="Blog & Article" loading="eager" />
+          <div className="blog-hero-overlay"></div>
+        </div>
+        <div className="blog-hero-content">
+          <h1 className="blog-hero-title">Blog & Article</h1>
         </div>
       </section>
 
-      <section className="blog-content">
-        <div className="container">
+      {/* Blog Content Section */}
+      <section className="blog-content-section">
+        <div className="blog-container">
+          <h2 className="blog-main-title">Discover Articles on Furniture</h2>
+          
+          {/* Blog Grid */}
           <div className="blog-grid">
-            {blogPosts.map((post) => (
-              <article key={post.slug} className="blog-card">
-                <div className="blog-card-header">
-                  <span className="blog-category">{post.category}</span>
-                  <span className="blog-date">{post.date}</span>
-                </div>
-                <div className="blog-card-body">
-                  <h2>{post.title}</h2>
-                  <p>{post.excerpt}</p>
-                </div>
-                <div className="blog-card-footer">
-                  <span className="blog-author">Oleh {post.author}</span>
-                  <Link to={`/blog/${post.slug}`} className="blog-read-more">
-                    Baca Selengkapnya →
-                  </Link>
-                </div>
+            {posts.map((post) => (
+              <article key={post.id} className="blog-card">
+                <Link to={`/blog/${post.slug}`} className="blog-card-link">
+                  <div className="blog-card-image">
+                    <img src={post.image} alt={post.title} loading="lazy" />
+                    <div className="blog-card-badge">MANGALA</div>
+                  </div>
+                  <div className="blog-card-content">
+                    <span className="blog-card-category">{post.category.toUpperCase()}</span>
+                    <h3 className="blog-card-title">{post.title}</h3>
+                  </div>
+                </Link>
               </article>
             ))}
           </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="blog-pagination">
+              {currentPage > 1 && (
+                <button 
+                  className="pagination-btn pagination-prev"
+                  onClick={() => handlePageChange(currentPage - 1)}
+                >
+                  Prev
+                </button>
+              )}
+              
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                <button
+                  key={page}
+                  className={`pagination-btn pagination-number ${currentPage === page ? 'active' : ''}`}
+                  onClick={() => handlePageChange(page)}
+                >
+                  Page {page}
+                </button>
+              ))}
+              
+              {currentPage < totalPages && (
+                <button 
+                  className="pagination-btn pagination-next"
+                  onClick={() => handlePageChange(currentPage + 1)}
+                >
+                  Next
+                </button>
+              )}
+            </div>
+          )}
         </div>
       </section>
 

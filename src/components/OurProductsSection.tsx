@@ -1,0 +1,55 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { ALL_PRODUCTS } from '../data/products'
+import './OurProductsSection.css'
+
+// Our Products - products 9-28 (20 products)
+const products = ALL_PRODUCTS.slice(8, 28).map(p => ({
+  id: p.id,
+  name: p.name,
+  category: p.categories.join(', '),
+  price: p.price,
+  image: p.image,
+  link: `/product/${p.slug}`
+}))
+
+const OurProductsSection: React.FC = () => {
+  return (
+    <section className="our-products-section">
+      <div className="container">
+        <div className="section-header-row">
+          <h2 className="our-products-title">Our Products</h2>
+          <Link to="/shop" className="view-all-link">
+            • VIEW ALL
+          </Link>
+        </div>
+
+        <div className="products-grid-full">
+          {products.map((product) => (
+            <Link 
+              key={product.id}
+              to={product.link}
+              className="product-card-full"
+            >
+              <div className="product-image-wrapper-full">
+                <img 
+                  src={product.image} 
+                  alt={product.name} 
+                  className="product-image-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="product-info-full">
+                <h3 className="product-name-full">{product.name}</h3>
+                <p className="product-category-full">{product.category}</p>
+                <p className="product-price-full">{product.price}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default OurProductsSection

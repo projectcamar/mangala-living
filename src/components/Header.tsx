@@ -1,98 +1,146 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Wrench, ChevronDown } from 'lucide-react'
+import { Search } from 'lucide-react'
 import './Header.css'
+import { ALL_PRODUCTS } from '../data/products'
+import { generateCatalog } from '../utils/catalogGenerator'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isServicesOpen, setIsServicesOpen] = useState(false)
-  const dropdownRef = useRef<HTMLLIElement>(null)
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+  const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  const toggleServices = () => {
-    setIsServicesOpen(!isServicesOpen)
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen)
+    setSearchQuery('')
   }
 
-  // Close dropdown when clicking outside
+  const closeSearch = () => {
+    setIsSearchOpen(false)
+    setSearchQuery('')
+  }
+
+  const clearSearch = () => {
+    setSearchQuery('')
+  }
+
+  const handleSearch = () => {
+    if (searchQuery.trim()) {
+      closeSearch()
+      window.location.href = `/search?q=${encodeURIComponent(searchQuery.trim())}`
+    }
+  }
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleSearch()
+    }
+  }
+
+  // All products for search - use centralized data
+  const filteredProducts = searchQuery.trim() 
+    ? ALL_PRODUCTS.filter(product => 
+        product.name.toLowerCase().includes(searchQuery.toLowerCase())
+      ).slice(0, 5)
+      .map(p => ({
+        name: p.name,
+        category: p.categories.join(', '),
+        slug: p.slug,
+        image: p.image
+      }))
+    : []
+
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsServicesOpen(false)
+    const handleScroll = () => {
+      // Don't hide header if search is open
+      if (isSearchOpen) {
+        setIsHeaderVisible(true)
+        return
       }
+
+      const currentScrollY = window.scrollY
+      
+      // Show header at top (first 100px)
+      if (currentScrollY < 100) {
+        setIsHeaderVisible(true)
+      }
+      // Hide header when scrolling down, show when scrolling up
+      else if (currentScrollY > lastScrollY) {
+        setIsHeaderVisible(false)
+      } else {
+        setIsHeaderVisible(true)
+      }
+      
+      setLastScrollY(currentScrollY)
     }
 
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [])
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [lastScrollY, isSearchOpen])
 
   return (
-    <header className="header">
+    <header className={`header ${!isHeaderVisible ? 'header-hidden' : ''}`}>
+      {/* Top Header */}
+      <div className="header-top">
       <div className="container">
-        <div className="header-content">
-          <div className="logo">
-            <Link to="/" className="logo-link">
-              <div className="logo-icon">
-                <Wrench size={32} />
-              </div>
-              <div className="logo-text">
-                <h2>Bengkel Las Mandiri</h2>
-                <span>Mandiri Steel</span>
-              </div>
+          <div className="header-top-content">
+            <nav className="header-top-nav">
+              <Link to="/about" className="header-top-link">About</Link>
+              <Link to="/blog" className="header-top-link">Blog</Link>
+              <Link to="/contact-us" className="header-top-link">Contact Us</Link>
+            </nav>
+            
+            <Link to="/" className="logo">
+              <span className="logo-text">MANGALA</span>
             </Link>
+            
+            <div className="header-top-actions">
+              <button className="search-btn" aria-label="Search" onClick={toggleSearch}>
+                <Search size={20} />
+                <span>Search</span>
+              </button>
+              <button 
+                className="catalog-btn" 
+                onClick={async () => {
+                  try {
+                    await generateCatalog()
+                  } catch (error) {
+                    console.error('Error generating catalog:', error)
+                    alert('Failed to download catalog. Please try again.')
+                  }
+                }}
+              >
+                DOWNLOAD OUR CATALOG
+              </button>
+            </div>
+          </div>
+        </div>
           </div>
           
-          <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-            <ul className="nav-list">
-              <li><Link to="/tentang-kami" className="nav-link">Tentang Kami</Link></li>
-              <li className="nav-dropdown" ref={dropdownRef}>
-                <button 
-                  className="nav-link dropdown-toggle"
-                  onClick={toggleServices}
-                >
-                  Layanan Las Bekasi
-                  <ChevronDown size={16} />
-                </button>
-                    <ul className={`dropdown-menu ${isServicesOpen ? 'dropdown-open' : ''}`}>
-                      <li><Link to="/layanan-las-bekasi" className="dropdown-link dropdown-main">Semua Layanan Las</Link></li>
-                      <li className="dropdown-divider"></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-kanopi-bekasi" className="dropdown-link">Kanopi Minimalis</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-konstruksi-baja-bekasi" className="dropdown-link">Konstruksi Baja</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-pagar-besi-bekasi" className="dropdown-link">Pagar Besi</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-railing-tangga-bekasi" className="dropdown-link">Railing Tangga</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-bike-rack-bekasi" className="dropdown-link">Bike Rack</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-pintu-dorong-bekasi" className="dropdown-link">Pintu Dorong</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-pintu-kayu-ulin-bekasi" className="dropdown-link">Pintu Kayu Ulin</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-railing-balkon-bekasi" className="dropdown-link">Railing Balkon</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-teralis-bekasi" className="dropdown-link">Teralis</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-pintu-besi-bekasi" className="dropdown-link">Pintu Besi</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-pintu-kasa-nyamuk-bekasi" className="dropdown-link">Pintu Kasa Nyamuk</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-teralis-jendela-bekasi" className="dropdown-link">Teralis Jendela</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-teralis-pintu-bekasi" className="dropdown-link">Teralis Pintu</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-pintu-henderson-bekasi" className="dropdown-link">Pintu Henderson</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-pintu-lipat-bekasi" className="dropdown-link">Pintu Lipat</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-tangga-putar-bekasi" className="dropdown-link">Tangga Putar</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-menara-tangki-air-bekasi" className="dropdown-link">Menara Tangki Air</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-pintu-garasi-sliding-bekasi" className="dropdown-link">Pintu Garasi Sliding</Link></li>
-                      <li><Link to="/layanan-las-bekasi/jasa-pembuatan-tempat-tidur-besi-bekasi" className="dropdown-link">Tempat Tidur Besi</Link></li>
-                    </ul>
-              </li>
-              <li><Link to="/album-bengkel-las-mandiri" className="nav-link">Katalog</Link></li>
-              <li><Link to="/blog" className="nav-link">Blog</Link></li>
-              <li><Link to="/kontak-bengkel-las-bekasi" className="nav-link">Kontak</Link></li>
-            </ul>
+      {/* Bottom Header - Category Navigation */}
+      <div className="header-bottom">
+        <div className="container">
+          <nav className={`category-nav ${isMenuOpen ? 'nav-open' : ''}`}>
+            <Link to="/product-category/new-arrivals" className="category-link">New Arrivals</Link>
+            <Link to="/product-category/lounge-seating-set" className="category-link">Lounge Set</Link>
+            <Link to="/product-category/industrial-sofa-bench" className="category-link">Sofa Bench</Link>
+            <Link to="/product-category/dining-set-collection" className="category-link">Dining Set</Link>
+            <Link to="/product-category/bar-furniture-collection" className="category-link">Bar Set</Link>
+            <Link to="/product-category/balcony-outdoor-collection" className="category-link">Outdoor</Link>
+            <Link to="/product-category/daybed-lounge-frame" className="category-link">Daybed</Link>
+            <Link to="/product-category/accessories-storage" className="category-link">Storage</Link>
+            <Link to="/product-category/table-collection" className="category-link">Tables</Link>
+            <Link to="/product-category/dining-table-collection" className="category-link">Dine Table</Link>
           </nav>
 
-          <div className="header-actions">
-            <Link to="/kontak-bengkel-las-bekasi" className="btn-primary">
-              KONSULTASI GRATIS
-            </Link>
             <button 
-              className="menu-toggle"
+            className="mobile-menu-toggle"
               onClick={toggleMenu}
               aria-label="Toggle menu"
             >
@@ -100,9 +148,90 @@ const Header: React.FC = () => {
               <span></span>
               <span></span>
             </button>
+        </div>
+      </div>
+
+      {/* Search Modal */}
+      {isSearchOpen && (
+        <>
+          <div className="search-modal-backdrop" onClick={closeSearch}></div>
+          <div className="search-modal-container">
+            <div className="search-modal-content">
+              <button className="search-close-btn" onClick={closeSearch} aria-label="Close search">
+                ×
+              </button>
+              <div className="search-modal-inner">
+                <div className="search-input-wrapper">
+                  <Search size={22} className="search-input-icon" />
+                  <input
+                    type="text"
+                    className="search-modal-input"
+                    placeholder="Search here"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyPress={handleKeyPress}
+                    autoFocus
+                  />
+                  {searchQuery ? (
+                    <>
+                      <button className="search-clear-btn" onClick={clearSearch} aria-label="Clear search">
+                        ×
+                      </button>
+                      <button className="search-submit-btn" onClick={handleSearch} aria-label="Search">
+                        <Search size={20} />
+                      </button>
+                    </>
+                  ) : null}
+                </div>
+
+                {/* Search Results */}
+                {filteredProducts.length > 0 && (
+                  <div className="search-results">
+                    {filteredProducts.map((product) => (
+                      <Link
+                        key={product.slug}
+                        to={`/product/${product.slug}`}
+                        className="search-result-item"
+                        onClick={closeSearch}
+                      >
+                        <div className="search-result-image">
+                          <img src={product.image} alt={product.name} />
+                        </div>
+                        <div className="search-result-info">
+                          <div className="search-result-name">{product.name}</div>
+                          <div className="search-result-category">{product.category}</div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+
+                {/* Suggestions - only show when no search query */}
+                {!searchQuery && (
+                  <div className="search-suggestions">
+                    <span className="suggestions-label">Suggested:</span>
+                    <Link to="/product-category/lounge-seating-set" className="suggestion-tag" onClick={closeSearch}>
+                      Lounge Set
+                    </Link>
+                    <Link to="/product-category/industrial-sofa-bench" className="suggestion-tag" onClick={closeSearch}>
+                      Sofa Bench
+                    </Link>
+                    <Link to="/product-category/dining-set-collection" className="suggestion-tag" onClick={closeSearch}>
+                      Dining Set
+                    </Link>
+                    <Link to="/product-category/bar-furniture-collection" className="suggestion-tag" onClick={closeSearch}>
+                      Bar Set
+                    </Link>
+                    <Link to="/product-category/accessories-storage" className="suggestion-tag" onClick={closeSearch}>
+                      Storage
+                    </Link>
+                  </div>
+                )}
           </div>
         </div>
       </div>
+        </>
+      )}
     </header>
   )
 }

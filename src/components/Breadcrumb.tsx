@@ -25,11 +25,10 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
       };
     });
 
-  // Add home as first item
-  const allItems = [
-    { label: 'Bengkel Las Bekasi', path: '/' },
-    ...breadcrumbItems
-  ];
+  // Add home as first item only if it's not already there
+  const allItems = breadcrumbItems[0]?.label === 'Home' 
+    ? breadcrumbItems 
+    : [{ label: 'Home', path: '/' }, ...breadcrumbItems];
 
   return (
     <nav className="breadcrumb" aria-label="breadcrumb">

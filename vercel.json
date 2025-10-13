@@ -5,50 +5,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.lasbekasi.com"
+          "value": "www.mangalaliving.com"
         }
       ],
-      "destination": "https://lasbekasi.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/tentang",
-      "destination": "/tentang-kami",
-      "permanent": true
-    },
-    {
-      "source": "/layanan",
-      "destination": "/layanan-las-bekasi",
-      "permanent": true
-    },
-    {
-      "source": "/portfolio",
-      "destination": "/album-bengkel-las-mandiri",
-      "permanent": true
-    },
-    {
-      "source": "/kontak",
-      "destination": "/kontak-bengkel-las-bekasi",
-      "permanent": true
-    },
-    {
-      "source": "/layanan/kanopi",
-      "destination": "/layanan-las-bekasi/jasa-pembuatan-kanopi-bekasi",
-      "permanent": true
-    },
-    {
-      "source": "/layanan/pagar-besi",
-      "destination": "/layanan-las-bekasi/jasa-pembuatan-pagar-besi-bekasi",
-      "permanent": true
-    },
-    {
-      "source": "/layanan/teralis",
-      "destination": "/layanan-las-bekasi/jasa-pembuatan-teralis-bekasi",
-      "permanent": true
-    },
-    {
-      "source": "/layanan/railing-tangga",
-      "destination": "/layanan-las-bekasi/jasa-pembuatan-railing-tangga-bekasi",
+      "destination": "https://mangalaliving.com/:path*",
       "permanent": true
     }
   ],
@@ -91,4 +51,3 @@
     }
   ]
 }
-

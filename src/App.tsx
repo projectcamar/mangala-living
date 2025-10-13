@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { Suspense, lazy } from 'react'
 import { Analytics } from '@vercel/analytics/react'
@@ -6,15 +6,16 @@ import './App.css'
 
 // Critical components loaded immediately
 import WhatsAppButton from './components/WhatsAppButton'
-import Breadcrumb from './components/Breadcrumb'
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/Home'))
-const About = lazy(() => import('./pages/About'))
-const Services = lazy(() => import('./pages/Services'))
-const Portfolio = lazy(() => import('./pages/Portfolio'))
+const ProductCategory = lazy(() => import('./pages/ProductCategory'))
+const ProductDetail = lazy(() => import('./pages/ProductDetail'))
 const Contact = lazy(() => import('./pages/Contact'))
-const ServiceDetail = lazy(() => import('./pages/ServiceDetail'))
+const About = lazy(() => import('./pages/About'))
+const SearchResults = lazy(() => import('./pages/SearchResults'))
+const BestSellers = lazy(() => import('./pages/BestSellers'))
+const Shop = lazy(() => import('./pages/Shop'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 
@@ -33,88 +34,33 @@ function App() {
         <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<Home />} />
-            <Route path="/jasa-las-bekasi" element={
-              <>
-                <Suspense fallback={<Loading />}>
-                  <Breadcrumb />
-                </Suspense>
-                <Services />
-              </>
-            } />
-            <Route path="/tentang-kami" element={
-              <>
-                <Suspense fallback={<Loading />}>
-                  <Breadcrumb />
-                </Suspense>
-                <About />
-              </>
-            } />
-            <Route path="/layanan-las-bekasi" element={
-              <>
-                <Suspense fallback={<Loading />}>
-                  <Breadcrumb />
-                </Suspense>
-                <Services />
-              </>
-            } />
-            <Route path="/layanan-las-bekasi/:serviceSlug" element={
-              <>
-                <Suspense fallback={<Loading />}>
-                  <Breadcrumb />
-                </Suspense>
-                <ServiceDetail />
-              </>
-            } />
-            <Route path="/album-bengkel-las-mandiri" element={
-              <>
-                <Suspense fallback={<Loading />}>
-                  <Breadcrumb />
-                </Suspense>
-                <Portfolio />
-              </>
-            } />
-            <Route path="/portfolio-bengkel-las" element={
-              <>
-                <Suspense fallback={<Loading />}>
-                  <Breadcrumb />
-                </Suspense>
-                <Portfolio />
-              </>
-            } />
-            <Route path="/kontak-bengkel-las-bekasi" element={
-              <>
-                <Suspense fallback={<Loading />}>
-                  <Breadcrumb />
-                </Suspense>
-                <Contact />
-              </>
-            } />
-            <Route path="/blog" element={
-              <>
-                <Suspense fallback={<Loading />}>
-                  <Breadcrumb />
-                </Suspense>
-                <Blog />
-              </>
-            } />
-            <Route path="/blog/:slug" element={
-              <>
-                <Suspense fallback={<Loading />}>
-                  <Breadcrumb />
-                </Suspense>
-                <BlogPost />
-              </>
-            } />
             
-            {/* Redirects for old URLs */}
-            <Route path="/tentang" element={<Navigate to="/tentang-kami" replace />} />
-            <Route path="/layanan" element={<Navigate to="/layanan-las-bekasi" replace />} />
-            <Route path="/portfolio" element={<Navigate to="/album-bengkel-las-mandiri" replace />} />
-            <Route path="/kontak" element={<Navigate to="/kontak-bengkel-las-bekasi" replace />} />
-            <Route path="/layanan/kanopi" element={<Navigate to="/layanan-las-bekasi/jasa-pembuatan-kanopi-bekasi" replace />} />
-            <Route path="/layanan/pagar-besi" element={<Navigate to="/layanan-las-bekasi/jasa-pembuatan-pagar-besi-bekasi" replace />} />
-            <Route path="/layanan/teralis" element={<Navigate to="/layanan-las-bekasi/jasa-pembuatan-teralis-bekasi" replace />} />
-            <Route path="/layanan/railing-tangga" element={<Navigate to="/layanan-las-bekasi/jasa-pembuatan-railing-tangga-bekasi" replace />} />
+            {/* Search Results */}
+            <Route path="/search" element={<SearchResults />} />
+            
+            {/* Shop - All Products */}
+            <Route path="/shop" element={<Shop />} />
+            
+            {/* Product Tag - Best Sellers */}
+            <Route path="/product-tag/best-seller" element={<BestSellers />} />
+            
+            {/* Product Category Pages */}
+            <Route path="/product-category/:category" element={<ProductCategory />} />
+            
+            {/* Product Detail Pages */}
+            <Route path="/product/:slug" element={<ProductDetail />} />
+            
+            {/* Contact Page */}
+            <Route path="/contact-us" element={<Contact />} />
+            
+            {/* About Page */}
+            <Route path="/about" element={<About />} />
+            
+            {/* Blog Page */}
+            <Route path="/blog" element={<Blog />} />
+            
+            {/* Blog Post Detail */}
+            <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
           <Suspense fallback={<Loading />}>
         <WhatsAppButton />

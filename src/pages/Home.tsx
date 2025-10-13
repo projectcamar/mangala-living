@@ -1,82 +1,63 @@
-import React, { Suspense, lazy } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet-async'
 
-// Critical components loaded immediately
+// Components
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-
-// Lazy loaded components
-const AboutSection = lazy(() => import('../components/AboutSection'))
-const ClientsSection = lazy(() => import('../components/ClientsSection'))
-const ServicesSection = lazy(() => import('../components/ServicesSection'))
-const AdvantagesSection = lazy(() => import('../components/AdvantagesSection'))
-const ProcessSection = lazy(() => import('../components/ProcessSection'))
-const PromoSection = lazy(() => import('../components/PromoSection'))
-const FAQSection = lazy(() => import('../components/FAQSection'))
-const TestimonialSection = lazy(() => import('../components/TestimonialSection'))
-const ContactSection = lazy(() => import('../components/ContactSection'))
-const Footer = lazy(() => import('../components/Footer'))
-
-// Loading component
-const SectionLoading = () => (
-  <div className="section-loading">
-    <div className="section-spinner"></div>
-  </div>
-)
+import CatalogModal from '../components/CatalogModal'
+import CategoriesSection from '../components/CategoriesSection'
+import BestSellersSection from '../components/BestSellersSection'
+import OurProductsSection from '../components/OurProductsSection'
+import MessageSection from '../components/MessageSection'
+import Footer from '../components/Footer'
 
 const Home: React.FC = () => {
   return (
     <div className="home">
+      <CatalogModal />
       <Helmet>
-        <title>Bengkel Las Mandiri - Jasa Las Profesional & Berkualitas di Bekasi</title>
-        <meta name="description" content="Jasa las profesional di Bekasi sejak 1999. Spesialis kanopi, pagar besi, teralis, railing tangga & konstruksi baja. Material SNI, garansi resmi. ☎ 0852-1207-8467" />
-        <meta name="keywords" content="bengkel las bekasi, jasa las bekasi, las listrik bekasi, kanopi bekasi, pagar besi bekasi, teralis bekasi, railing tangga bekasi" />
+        <title>Mangala Living - Industrial Steel Furniture for Coffee Shops & Restaurants</title>
+        <meta name="description" content="Family-owned welding workshop since 1999. Premium industrial steel furniture for coffee shops, restaurants & offices. Custom welded furniture across Indonesia." />
+        <meta name="keywords" content="industrial furniture indonesia, welding workshop kediri, coffee shop furniture, restaurant furniture, custom steel furniture, mangala living" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Bengkel Las Mandiri - Jasa Las Profesional Bekasi" />
-        <meta property="og:description" content="Jasa las profesional & terpercaya di Bekasi. Pengerjaan rapi, berpengalaman 7+ tahun, harga bersaing. Spesialis kanopi, pagar, teralis & konstruksi besi." />
-        <meta property="og:image" content="/images/bengkel-las-mandiri.jpg" />
-        <meta property="og:url" content="https://lasbekasi.com/" />
+        <meta property="og:title" content="Mangala Living - Industrial Steel Furniture" />
+        <meta property="og:description" content="Family-owned welding workshop since 1999. Custom industrial furniture for businesses across Indonesia. 1000+ orders completed." />
+        <meta property="og:image" content="/images/mangala-living.jpg" />
+        <meta property="og:url" content="https://mangalaliving.com/" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Bengkel Las Mandiri - Jasa Las Profesional Bekasi" />
-        <meta name="twitter:description" content="Jasa las profesional & terpercaya di Bekasi. Pengerjaan rapi, berpengalaman 7+ tahun, harga bersaing. Spesialis kanopi, pagar, teralis & konstruksi besi." />
-        <meta name="twitter:image" content="/images/bengkel-las-mandiri.jpg" />
+        <meta name="twitter:title" content="Mangala Living - Industrial Steel Furniture" />
+        <meta name="twitter:description" content="Family-owned welding workshop since 1999. Custom industrial furniture for businesses across Indonesia. 1000+ orders completed." />
+        <meta name="twitter:image" content="/images/mangala-living.jpg" />
         
         {/* Additional SEO tags */}
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
-        <meta name="geo.region" content="ID-JB" />
-        <meta name="geo.placename" content="Bekasi" />
-        <link rel="canonical" href="https://lasbekasi.com/" />
+        <meta name="geo.region" content="ID-JI" />
+        <meta name="geo.placename" content="Kediri" />
+        <link rel="canonical" href="https://mangalaliving.com/" />
         
         {/* Structured Data / Schema.org */}
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Bengkel Las Mandiri",
-              "image": "/images/bengkel-las-mandiri.jpg",
-              "description": "Jasa las profesional & terpercaya di Bekasi. Spesialis kanopi, pagar besi, teralis, railing tangga & konstruksi besi.",
+              "@type": "FurnitureStore",
+              "name": "Mangala Living",
+              "image": "/images/mangala-living.jpg",
+              "description": "Family-owned welding workshop since 1999 specializing in custom industrial steel furniture for coffee shops, restaurants, offices, and hotels across Indonesia.",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Jalan Raya Bekasi",
-                "addressLocality": "Bekasi",
-                "addressRegion": "Jawa Barat",
-                "postalCode": "17111",
+                "addressLocality": "Kediri",
+                "addressRegion": "East Java",
                 "addressCountry": "ID"
               },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "-6.2349",
-                "longitude": "106.9896"
-              },
-              "url": "https://lasbekasi.com",
-              "telephone": "+6285212078467",
-              "priceRange": "Rp$$",
+              "url": "https://mangalaliving.com",
+              "telephone": "+6281138860034",
+              "priceRange": "Rp$$$",
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": [
@@ -85,52 +66,22 @@ const Home: React.FC = () => {
                   "Wednesday",
                   "Thursday",
                   "Friday",
-                  "Saturday",
-                  "Sunday"
+                  "Saturday"
                 ],
-                "opens": "08:00",
-                "closes": "20:00"
-              },
-              "sameAs": [
-                "https://facebook.com/lasbekasi",
-                "https://instagram.com/lasbekasi"
-              ]
+                "opens": "09:00",
+                "closes": "18:00"
+              }
             }
           `}
         </script>
       </Helmet>
       <Header />
       <Hero />
-      <Suspense fallback={<SectionLoading />}>
-        <AboutSection />
-      </Suspense>
-      <Suspense fallback={<SectionLoading />}>
-        <ClientsSection />
-      </Suspense>
-      <Suspense fallback={<SectionLoading />}>
-        <ServicesSection />
-      </Suspense>
-      <Suspense fallback={<SectionLoading />}>
-        <AdvantagesSection />
-      </Suspense>
-      <Suspense fallback={<SectionLoading />}>
-        <ProcessSection />
-      </Suspense>
-      <Suspense fallback={<SectionLoading />}>
-        <PromoSection />
-      </Suspense>
-      <Suspense fallback={<SectionLoading />}>
-        <FAQSection />
-      </Suspense>
-      <Suspense fallback={<SectionLoading />}>
-        <TestimonialSection />
-      </Suspense>
-      <Suspense fallback={<SectionLoading />}>
-        <ContactSection />
-      </Suspense>
-      <Suspense fallback={<SectionLoading />}>
-        <Footer />
-      </Suspense>
+      <CategoriesSection />
+      <BestSellersSection />
+      <OurProductsSection />
+      <MessageSection />
+      <Footer />
     </div>
   )
 }

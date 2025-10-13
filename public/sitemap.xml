@@ -2,215 +2,96 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://lasbekasi.com/</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://mangalaliving.com/</loc>
+    <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
-  <!-- Main Pages -->
+  <!-- Contact Page -->
   <url>
-    <loc>https://lasbekasi.com/tentang-kami</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://mangalaliving.com/contact-us</loc>
+    <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
+  <!-- About Page -->
   <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://mangalaliving.com/about</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Product Categories -->
+  <url>
+    <loc>https://mangalaliving.com/product-category/new-arrivals</loc>
+    <lastmod>2025-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://lasbekasi.com/album-bengkel-las-mandiri</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/kontak-bengkel-las-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/blog</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://mangalaliving.com/product-category/sun-lounger</loc>
+    <lastmod>2025-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
-  <!-- Service Detail Pages -->
   <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-kanopi-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mangalaliving.com/product-category/sofa</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-konstruksi-baja-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mangalaliving.com/product-category/dining-collection</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-pagar-besi-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mangalaliving.com/product-category/bar-collection</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-railing-tangga-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mangalaliving.com/product-category/balcony-set</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-bike-rack-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://mangalaliving.com/product-category/daybed</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-pintu-dorong-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://mangalaliving.com/product-category/accessories</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-pintu-kayu-ulin-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://mangalaliving.com/product-category/table-collection</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-railing-balkon-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-teralis-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-pintu-besi-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-pintu-kasa-nyamuk-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-teralis-jendela-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-teralis-pintu-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-pintu-henderson-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-pintu-lipat-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-tangga-putar-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-menara-tangki-air-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-pintu-garasi-sliding-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/layanan-las-bekasi/jasa-pembuatan-tempat-tidur-besi-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Blog Articles -->
-  <url>
-    <loc>https://lasbekasi.com/blog/cari-bengkel-las-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/blog/jasa-tukang-las-cikarang</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/blog/jasa-tukang-las-setu</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/blog/jasa-tukang-las-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://lasbekasi.com/blog/jasa-kanopi-bekasi</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://mangalaliving.com/product-category/dining-table</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 </urlset>

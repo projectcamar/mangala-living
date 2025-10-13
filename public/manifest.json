@@ -1,11 +1,11 @@
 {
-  "name": "Bengkel Las Mandiri - Jasa Las Bekasi Terpercaya",
-  "short_name": "Las Mandiri",
-  "description": "Jasa las profesional di Bekasi untuk kanopi, pagar besi, teralis, railing tangga & konstruksi baja berkualitas. Pengalaman 20+ tahun, material SNI, garansi resmi.",
+  "name": "Mangala Living - Premium Outdoor Furniture",
+  "short_name": "Mangala Living",
+  "description": "High-end outdoor furniture from Bali, Indonesia. Manufactured in Kediri, East Java.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ff6b35",
+  "theme_color": "#8B7355",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

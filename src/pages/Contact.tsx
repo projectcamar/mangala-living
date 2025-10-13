@@ -1,180 +1,159 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { Phone, Mail, MapPin, Send } from 'lucide-react'
+import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.jpg'
 import './Contact.css'
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
-    city: '',
+    email: '',
+    phone: '',
+    subject: '',
     message: ''
   })
 
-  // Scroll to top when component mounts
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }))
+    setFormData(prev => ({ ...prev, [name]: value }))
   }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
-    const whatsappMessage = `Halo Bapak Maman Toha,\n\nSaya ${formData.name} dari ${formData.city}, ingin menanyakan layanan Bengkel Las Mandiri.\n\nKebutuhan: ${formData.message}\n\nTerimakasih.`
+    // Format WhatsApp message
+    const whatsappMessage = `Hello Mangala Living,
+
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Subject: ${formData.subject}
+
+Message:
+${formData.message}
+
+Thank you!`
     
-    const whatsappUrl = `https://wa.me/6285212078467?text=${encodeURIComponent(whatsappMessage)}`
-    
+    const whatsappUrl = `https://wa.me/6281138860034?text=${encodeURIComponent(whatsappMessage)}`
     window.open(whatsappUrl, '_blank')
+    
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: ''
+    })
   }
 
   return (
     <div className="contact-page">
       <Helmet>
-        <title>Kontak Kami - Hubungi Bengkel Las Mandiri Bekasi | Konsultasi Gratis</title>
-        <meta name="description" content="Hubungi Bengkel Las Mandiri Bekasi untuk konsultasi gratis. WhatsApp: 0852-1207-8467, Email: info@lasbekasi.com. Survey GRATIS wilayah Bekasi dan Jabodetabek." />
-        <meta name="keywords" content="kontak bengkel las bekasi, hubungi bengkel las mandiri, nomor bengkel las bekasi, konsultasi gratis las bekasi, alamat bengkel las bekasi" />
-        <link rel="canonical" href="https://www.lasbekasi.com/kontak-bengkel-las-bekasi" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Kontak Bengkel Las Mandiri - Konsultasi Gratis Bekasi" />
-        <meta property="og:description" content="Hubungi kami untuk konsultasi gratis. WA: 0852-1207-8467, Email: info@lasbekasi.com. Survey GRATIS!" />
-        <meta property="og:url" content="https://www.lasbekasi.com/kontak-bengkel-las-bekasi" />
-        <meta property="og:type" content="website" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Kontak Bengkel Las Mandiri Bekasi" />
-        <meta name="twitter:description" content="Konsultasi gratis jasa las Bekasi. WA: 0852-1207-8467" />
-        
-        <meta name="robots" content="index, follow" />
+        <title>Contact Us - Mangala Living</title>
+        <meta name="description" content="Contact our welding workshop for custom industrial furniture inquiries. Serving coffee shops, restaurants & businesses across Indonesia since 1999." />
+        <meta name="keywords" content="contact mangala living, industrial furniture inquiry, custom steel furniture, welding workshop kediri, furniture manufacturer contact" />
+        <link rel="canonical" href="https://mangalaliving.com/contact-us/" />
       </Helmet>
       
       <Header />
       
+      {/* Hero Section */}
       <section className="contact-hero">
-        <div className="container">
+        <div className="contact-hero-image">
+          <img src={heroImage} alt="Contact Mangala Living" loading="eager" />
+          <div className="contact-hero-overlay"></div>
+        </div>
           <div className="contact-hero-content">
-            <div className="section-subtitle">KONTAK KAMI</div>
-            <h1>KONTAK KAMI</h1>
-          </div>
+          <h1 className="contact-hero-title">Contact Us</h1>
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="contact-map-section">
-        <div className="container">
-          <div className="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d991.3779416604472!2d107.0516816!3d-6.3276652!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69918607fe41b1%3A0xf593b1e076b20ae8!2sEmma%20House%20Furniture%20(Bengkel%20Las%20Mandiri)!5e0!3m2!1sen!2sid!4v1760212836163!5m2!1sen!2sid"
-              width="100%"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Emma House Furniture (Bengkel Las Mandiri) Location"
-            ></iframe>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Info and Form Section */}
-      <section className="contact-main">
-        <div className="container">
-          <div className="contact-layout">
-            {/* Contact Info - Left Side */}
-            <div className="contact-info-section">
-              <h2>Informasi Kontak</h2>
-              <div className="contact-info-blocks">
-                <div className="contact-block">
-                  <div className="contact-icon">
-                    <Phone size={24} />
-                  </div>
-                  <div className="contact-details">
-                    <h3>Hubungi Bapak Maman Toha:</h3>
-                    <p><a href="https://wa.me/6285212078467" target="_blank" rel="noopener noreferrer">+62 852-1207-8467</a></p>
-                  </div>
+      {/* Contact Form Section */}
+      <section className="contact-form-section">
+        <div className="contact-container">
+          <div className="contact-intro">
+            <h2 className="contact-main-title">
+              We're happy to discuss your custom furniture needs or answer any questions. Get in touch with our welding workshop team below.
+            </h2>
                 </div>
                 
-                <div className="contact-block">
-                  <div className="contact-icon">
-                    <Mail size={24} />
-                  </div>
-                  <div className="contact-details">
-                    <h3>Email:</h3>
-                    <p><a href="mailto:info@lasbekasi.com">info@lasbekasi.com</a></p>
-                  </div>
-                </div>
-                
-                <div className="contact-block">
-                  <div className="contact-icon">
-                    <MapPin size={24} />
-                  </div>
-                  <div className="contact-details">
-                    <h3>Lokasi:</h3>
-                    <p>Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="enquiry-form-wrapper">
+            <h3 className="enquiry-form-title">Enquiry Form</h3>
+            <p className="enquiry-form-subtitle">
+              Contact our Customer Services team by completing the form. We will endeavour to respond within 24 hours.
+            </p>
 
-            {/* WhatsApp Form - Right Side */}
-            <div className="contact-form-section">
-              <h2>Konsultasi Sekarang</h2>
-              <form className="whatsapp-form" onSubmit={handleSubmit}>
-                <div className="form-group">
-                  <label htmlFor="name">Nama</label>
+            <form className="enquiry-form" onSubmit={handleSubmit}>
+              <div className="form-row">
+                <div className="form-field">
+                  <label htmlFor="name">Your name</label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    placeholder="Masukkan nama lengkap"
                     required
                   />
                 </div>
+                <div className="form-field">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </div>
+                </div>
 
-                <div className="form-group">
-                  <label htmlFor="city">Kota</label>
+              <div className="form-row">
+                <div className="form-field">
+                  <label htmlFor="phone">Phone number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </div>
+                <div className="form-field">
+                  <label htmlFor="subject">Subject</label>
                   <input
                     type="text"
-                    id="city"
-                    name="city"
-                    value={formData.city}
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
                     onChange={handleInputChange}
-                    placeholder="Kota Asal"
                     required
                   />
                 </div>
+                </div>
 
-                <div className="form-group">
-                  <label htmlFor="message">Pesan</label>
+              <div className="form-field-full">
+                <label htmlFor="message">Write your message here</label>
                   <textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="Sebutkan Kebutuhan"
-                    rows={4}
+                  rows={6}
                     required
-                  />
+                ></textarea>
                 </div>
 
-                <button type="submit" className="btn-whatsapp">
-                  <Send size={20} />
-                  Konsultasi Sekarang
+              <div className="form-submit-wrapper">
+                <button type="submit" className="send-enquiry-btn">
+                  • SEND ENQUIRY
                 </button>
+              </div>
               </form>
-            </div>
           </div>
         </div>
       </section>
@@ -185,3 +164,4 @@ const Contact: React.FC = () => {
 }
 
 export default Contact
+
