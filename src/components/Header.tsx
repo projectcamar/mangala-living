@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { Search, ChevronDown } from 'lucide-react'
 import './Header.css'
 import { ALL_PRODUCTS } from '../data/products'
@@ -16,6 +16,8 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [isLanguageOpen, setIsLanguageOpen] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -37,6 +39,37 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     } else if (e.key === 'Escape') {
       setIsLanguageOpen(false)
     }
+  }
+
+  const handleLanguageChange = (lang: 'id' | 'en') => {
+    setIsLanguageOpen(false)
+    const currentPath = location.pathname
+    
+    // Remove existing language prefix if any
+    let cleanPath = currentPath
+    if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/')) {
+      cleanPath = currentPath.substring(4) // Remove /id/ or /eng/
+    } else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng')) {
+      cleanPath = currentPath.substring(3) // Remove /id or /eng
+    }
+    
+    // Add new language prefix
+    const newPath = lang === 'id' ? `/id${cleanPath}` : `/eng${cleanPath}`
+    navigate(newPath)
+  }
+
+
+  const getCurrentLanguageFromUrl = () => {
+    const path = location.pathname
+    if (path.startsWith('/id')) return 'id'
+    if (path.startsWith('/eng')) return 'en'
+    return null
+  }
+
+  const getCurrentLanguageDisplay = () => {
+    const urlLang = getCurrentLanguageFromUrl()
+    if (urlLang) return urlLang
+    return isIndonesian ? 'id' : 'en'
   }
 
   const closeSearch = () => {
@@ -145,8 +178,8 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                   aria-haspopup="true"
                   tabIndex={0}
                 >
-                  <span className="flag">🇮🇩</span>
-                  <span className="language-text">{isIndonesian ? "ID" : "EN"}</span>
+                  <span className={`flag ${getCurrentLanguageDisplay() === 'id' ? 'flag-id' : 'flag-us'}`}></span>
+                  <span className="language-text">{getCurrentLanguageDisplay() === 'id' ? "ID" : "EN"}</span>
                   <ChevronDown size={16} />
                 </button>
                 {isLanguageOpen && (
@@ -155,40 +188,30 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                       className="language-option"
                       role="menuitem"
                       tabIndex={0}
-                      onClick={() => {
-                        // Force Indonesian
-                        setIsLanguageOpen(false)
-                        window.location.reload()
-                      }}
+                      onClick={() => handleLanguageChange('id')}
                       onKeyDown={(e) => {
                         if (e.key === 'Enter' || e.key === ' ') {
                           e.preventDefault()
-                          setIsLanguageOpen(false)
-                          window.location.reload()
+                          handleLanguageChange('id')
                         }
                       }}
                     >
-                      <span className="flag">🇮🇩</span>
+                      <span className="flag flag-id"></span>
                       <span>Indonesia</span>
                     </button>
                     <button 
                       className="language-option"
                       role="menuitem"
                       tabIndex={0}
-                      onClick={() => {
-                        // Force English
-                        setIsLanguageOpen(false)
-                        window.location.reload()
-                      }}
+                      onClick={() => handleLanguageChange('en')}
                       onKeyDown={(e) => {
                         if (e.key === 'Enter' || e.key === ' ') {
                           e.preventDefault()
-                          setIsLanguageOpen(false)
-                          window.location.reload()
+                          handleLanguageChange('en')
                         }
                       }}
                     >
-                      <span className="flag">🇺🇸</span>
+                      <span className="flag flag-us"></span>
                       <span>English</span>
                     </button>
                   </div>

@@ -41,6 +41,12 @@ function App() {
             {/* Home - Load immediately (not lazy) */}
             <Route path="/" element={<Home />} />
             
+            {/* Language-specific routes */}
+            <Route path="/id" element={<Home />} />
+            <Route path="/eng" element={<Home />} />
+            <Route path="/id/*" element={<Home />} />
+            <Route path="/eng/*" element={<Home />} />
+            
             {/* Search Results */}
             <Route path="/search" element={<SearchResults />} />
             

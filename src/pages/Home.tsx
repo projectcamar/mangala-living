@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
+import { useLocation } from 'react-router-dom'
 
 // Components
 import Header from '../components/Header'
@@ -14,9 +15,23 @@ import Footer from '../components/Footer'
 const Home: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
+  const location = useLocation()
 
   useEffect(() => {
-    // Detect user location
+    // Check URL for language prefix first
+    const path = location.pathname
+    if (path.startsWith('/id')) {
+      setIsIndonesian(true)
+      setIsLoading(false)
+      return
+    }
+    if (path.startsWith('/eng')) {
+      setIsIndonesian(false)
+      setIsLoading(false)
+      return
+    }
+
+    // If no language prefix, detect from IP
     const detectLocation = async () => {
       try {
         // Try to get location from IP
@@ -39,7 +54,7 @@ const Home: React.FC = () => {
     }
 
     detectLocation()
-  }, [])
+  }, [location.pathname])
 
   // Indonesian translations
   const translations = {
