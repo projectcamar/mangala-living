@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       <CatalogModal />
       <Helmet>
         <title>Industrial Furniture Besi Custom Bekasi | Mangala Living</title>
-        <meta name="description" content="Industrial furniture besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: 0852-1207-8467. Custom design, material industrial grade, garansi kualitas." />
+        <meta name="description" content="Industrial furniture besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: 0852-1207-8467." />
         <meta name="keywords" content="furniture industrial bekasi, furniture besi custom, furniture cafe murah, meja industrial, kursi bar besi, rak display industrial, furniture restoran, mangala living, pabrik furniture bekasi" />
         
         {/* Open Graph / Facebook */}
@@ -183,7 +183,9 @@ const Home: React.FC = () => {
             </p>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
               Kami memproduksi industrial furniture custom untuk cafe, restoran, hotel, kantor, dan berbagai kebutuhan komersial. 
-              Setiap produk dibuat dengan teknik pengelasan berkualitas tinggi dan material industrial grade terbaik.
+              Setiap produk dibuat dengan teknik pengelasan berkualitas tinggi dan material industrial grade terbaik. 
+              <a href="/shop" style={{ color: '#ff6b35', textDecoration: 'none' }}>Lihat koleksi lengkap</a> atau 
+              <a href="/contact-us" style={{ color: '#ff6b35', textDecoration: 'none' }}>hubungi kami</a> untuk konsultasi custom.
             </p>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666', marginBottom: '30px' }}>
               <strong>Lokasi Workshop:</strong> Bekasi, Jawa Barat | <strong>Telp/WA:</strong> +62 852-1207-8467 | 
@@ -194,8 +196,17 @@ const Home: React.FC = () => {
               Koleksi & Keunggulan Industrial Furniture
             </h3>
             <p style={{ fontSize: '1rem', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
-              Kami menyediakan berbagai koleksi industrial furniture besi custom termasuk New Arrivals, Lounge Set, 
-              Sofa Bench, Dining Set, Bar Set, Outdoor, Daybed, Storage, Tables, dan Dine Table. 
+              Kami menyediakan berbagai koleksi industrial furniture besi custom termasuk 
+              <a href="/product-category/new-arrivals" style={{ color: '#ff6b35', textDecoration: 'none' }}>New Arrivals</a>, 
+              <a href="/product-category/lounge-seating-set" style={{ color: '#ff6b35', textDecoration: 'none' }}>Lounge Set</a>, 
+              <a href="/product-category/industrial-sofa-bench" style={{ color: '#ff6b35', textDecoration: 'none' }}>Sofa Bench</a>, 
+              <a href="/product-category/dining-set-collection" style={{ color: '#ff6b35', textDecoration: 'none' }}>Dining Set</a>, 
+              <a href="/product-category/bar-furniture-collection" style={{ color: '#ff6b35', textDecoration: 'none' }}>Bar Set</a>, 
+              <a href="/product-category/outdoor" style={{ color: '#ff6b35', textDecoration: 'none' }}>Outdoor</a>, 
+              <a href="/product-category/daybed-collection" style={{ color: '#ff6b35', textDecoration: 'none' }}>Daybed</a>, 
+              <a href="/product-category/storage-shelving" style={{ color: '#ff6b35', textDecoration: 'none' }}>Storage</a>, 
+              <a href="/product-category/work-study-tables" style={{ color: '#ff6b35', textDecoration: 'none' }}>Tables</a>, dan 
+              <a href="/product-category/dining-table-collection" style={{ color: '#ff6b35', textDecoration: 'none' }}>Dine Table</a>. 
               Semua produk dapat disesuaikan dengan kebutuhan bisnis Anda.
             </p>
             <ul style={{ textAlign: 'left', maxWidth: '600px', margin: '0 auto', lineHeight: '1.8' }}>
