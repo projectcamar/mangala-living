@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       <div className="hero-background">
             <img 
               src={heroImage}
-          alt="Mangala Living Furniture Collection" 
+          alt="Industrial Furniture Collection by Mangala Living" 
           className="hero-bg-image"
               loading="eager" 
             />

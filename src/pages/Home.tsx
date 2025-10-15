@@ -16,8 +16,8 @@ const Home: React.FC = () => {
     <div className="home">
       <CatalogModal />
       <Helmet>
-        <title>Furniture Industrial Besi Custom Bekasi | Mangala Living</title>
-        <meta name="description" content="Furniture industrial besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: 0852-1207-8467. Custom design, material industrial grade, garansi kualitas." />
+        <title>Industrial Furniture Besi Custom Bekasi | Mangala Living</title>
+        <meta name="description" content="Industrial furniture besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: 0852-1207-8467. Custom design, material industrial grade, garansi kualitas." />
         <meta name="keywords" content="furniture industrial bekasi, furniture besi custom, furniture cafe murah, meja industrial, kursi bar besi, rak display industrial, furniture restoran, mangala living, pabrik furniture bekasi" />
         
         {/* Open Graph / Facebook */}
@@ -175,14 +175,14 @@ const Home: React.FC = () => {
         <div className="container">
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
             <h2 style={{ fontSize: '2rem', marginBottom: '20px', color: '#333' }}>
-              Furniture Industrial Besi Custom Terpercaya di Bekasi
+              Industrial Furniture Besi Custom Terpercaya di Bekasi
             </h2>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
-              Mangala Living adalah manufacturer furniture industrial besi custom terpercaya di Bekasi sejak 1999. 
+              Mangala Living adalah manufacturer industrial furniture besi custom terpercaya di Bekasi sejak 1999. 
               Dengan pengalaman 25+ tahun, kami telah melayani lebih dari 1000 bisnis di seluruh Indonesia.
             </p>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
-              Kami memproduksi furniture industrial custom untuk cafe, restoran, hotel, kantor, dan berbagai kebutuhan komersial. 
+              Kami memproduksi industrial furniture custom untuk cafe, restoran, hotel, kantor, dan berbagai kebutuhan komersial. 
               Setiap produk dibuat dengan teknik pengelasan berkualitas tinggi dan material industrial grade terbaik.
             </p>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666', marginBottom: '30px' }}>
@@ -191,10 +191,10 @@ const Home: React.FC = () => {
             </p>
             
             <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
-              Koleksi & Keunggulan Furniture Industrial
+              Koleksi & Keunggulan Industrial Furniture
             </h3>
             <p style={{ fontSize: '1rem', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
-              Kami menyediakan berbagai koleksi furniture industrial besi custom termasuk New Arrivals, Lounge Set, 
+              Kami menyediakan berbagai koleksi industrial furniture besi custom termasuk New Arrivals, Lounge Set, 
               Sofa Bench, Dining Set, Bar Set, Outdoor, Daybed, Storage, Tables, dan Dine Table. 
               Semua produk dapat disesuaikan dengan kebutuhan bisnis Anda.
             </p>
