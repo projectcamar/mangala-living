@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 // Components
@@ -12,18 +12,92 @@ import MessageSection from '../components/MessageSection'
 import Footer from '../components/Footer'
 
 const Home: React.FC = () => {
+  const [isIndonesian, setIsIndonesian] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    // Detect user location
+    const detectLocation = async () => {
+      try {
+        // Try to get location from IP
+        const response = await fetch('https://ipapi.co/json/')
+        const data = await response.json()
+        
+        if (data.country_code === 'ID') {
+          setIsIndonesian(true)
+        }
+      } catch (error) {
+        console.log('IP detection failed, checking browser language')
+        // Fallback: check browser language
+        const browserLang = navigator.language || navigator.languages?.[0]
+        if (browserLang?.startsWith('id')) {
+          setIsIndonesian(true)
+        }
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
+    detectLocation()
+  }, [])
+
+  // Indonesian translations
+  const translations = {
+    title: isIndonesian 
+      ? "Furniture Industrial Besi Custom Bekasi | Mangala Living"
+      : "Industrial Furniture Besi Custom Bekasi | Mangala Living",
+    description: isIndonesian
+      ? "Furniture industrial besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: 0852-1207-8467."
+      : "Industrial furniture besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: 0852-1207-8467.",
+    ogTitle: isIndonesian
+      ? "Furniture Industrial Besi Custom Bekasi | Cafe & Restoran"
+      : "Industrial Furniture Besi Custom Bekasi | Cafe & Restoran",
+    ogDescription: isIndonesian
+      ? "Manufacturer furniture industrial custom untuk cafe, restoran, hotel. Pengalaman 25+ tahun, 1000+ klien puas. Workshop di Bekasi. Harga langsung pabrik."
+      : "Manufacturer industrial furniture custom untuk cafe, restoran, hotel. Pengalaman 25+ tahun, 1000+ klien puas. Workshop di Bekasi. Harga langsung pabrik."
+  }
+
+  if (isLoading) {
+    return (
+      <div className="home">
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          alignItems: 'center', 
+          height: '100vh',
+          background: '#f8f9fa'
+        }}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              border: '4px solid #f3f3f3',
+              borderTop: '4px solid #ff6b35',
+              borderRadius: '50%',
+              width: '40px',
+              height: '40px',
+              animation: 'spin 1s linear infinite',
+              margin: '0 auto 20px'
+            }}></div>
+            <p style={{ color: '#666', margin: 0 }}>
+              {isIndonesian ? "Memuat..." : "Loading..."}
+            </p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="home">
       <CatalogModal />
       <Helmet>
-        <title>Industrial Furniture Besi Custom Bekasi | Mangala Living</title>
-        <meta name="description" content="Industrial furniture besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: 0852-1207-8467." />
+        <title>{translations.title}</title>
+        <meta name="description" content={translations.description} />
         <meta name="keywords" content="furniture industrial bekasi, furniture besi custom, furniture cafe murah, meja industrial, kursi bar besi, rak display industrial, furniture restoran, mangala living, pabrik furniture bekasi" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Furniture Industrial Besi Custom Bekasi | Cafe & Restoran" />
-        <meta property="og:description" content="Manufacturer furniture industrial custom untuk cafe, restoran, hotel. Pengalaman 25+ tahun, 1000+ klien puas. Workshop di Bekasi. Harga langsung pabrik." />
+        <meta property="og:title" content={translations.ogTitle} />
+        <meta property="og:description" content={translations.ogDescription} />
         <meta property="og:image" content="https://mangala-living.com/og-image.jpg" />
         <meta property="og:url" content="https://mangala-living.com/" />
         <meta property="og:locale" content="id_ID" />
@@ -167,15 +241,15 @@ const Home: React.FC = () => {
           `}
         </script>
       </Helmet>
-      <Header />
-      <Hero />
+      <Header isIndonesian={isIndonesian} />
+      <Hero isIndonesian={isIndonesian} />
       
       
-      <CategoriesSection />
-      <BestSellersSection />
-      <OurProductsSection />
-      <MessageSection />
-      <Footer />
+      <CategoriesSection isIndonesian={isIndonesian} />
+      <BestSellersSection isIndonesian={isIndonesian} />
+      <OurProductsSection isIndonesian={isIndonesian} />
+      <MessageSection isIndonesian={isIndonesian} />
+      <Footer isIndonesian={isIndonesian} />
     </div>
   )
 }

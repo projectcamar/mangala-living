@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 import { ALL_PRODUCTS } from '../data/products'
 import './OurProductsSection.css'
 
+interface OurProductsSectionProps {
+  isIndonesian?: boolean
+}
+
 // Our Products - products 9-28 (20 products)
 const products = ALL_PRODUCTS.slice(8, 28).map(p => ({
   id: p.id,
@@ -13,14 +17,16 @@ const products = ALL_PRODUCTS.slice(8, 28).map(p => ({
   link: `/product/${p.slug}`
 }))
 
-const OurProductsSection: React.FC = () => {
+const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = false }) => {
   return (
     <section className="our-products-section">
       <div className="container">
         <div className="section-header-row">
-          <h2 className="our-products-title">Our Products</h2>
+          <h2 className="our-products-title">
+            {isIndonesian ? "Produk Kami" : "Our Products"}
+          </h2>
           <Link to="/shop" className="view-all-link">
-            • VIEW ALL
+            {isIndonesian ? "• LIHAT SEMUA" : "• VIEW ALL"}
           </Link>
         </div>
 

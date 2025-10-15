@@ -5,7 +5,11 @@ import './Header.css'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateCatalog } from '../utils/catalogGenerator'
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  isIndonesian?: boolean
+}
+
+const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
@@ -101,9 +105,9 @@ const Header: React.FC = () => {
             </Link>
             
             <div className="header-top-actions">
-              <button className="search-btn" aria-label="Search" onClick={toggleSearch}>
+              <button className="search-btn" aria-label={isIndonesian ? "Cari" : "Search"} onClick={toggleSearch}>
                 <Search size={20} />
-                <span>Search</span>
+                <span>{isIndonesian ? "Cari" : "Search"}</span>
               </button>
         <button 
           className="catalog-btn" 
@@ -111,8 +115,7 @@ const Header: React.FC = () => {
             try {
               // Show loading state
               const button = event.target as HTMLButtonElement
-              const originalText = button.textContent
-              button.textContent = 'GENERATING...'
+              button.textContent = isIndonesian ? 'MEMBUAT...' : 'GENERATING...'
               button.disabled = true
               
               // Generate catalog in new tab
@@ -159,8 +162,8 @@ const Header: React.FC = () => {
                     <body>
                       <div class="loading">
                         <div class="spinner"></div>
-                        <h2>Generating Catalog...</h2>
-                        <p>Please wait while we prepare your furniture catalog</p>
+                        <h2>{isIndonesian ? "Membuat Katalog..." : "Generating Catalog..."}</h2>
+                        <p>{isIndonesian ? "Mohon tunggu sementara kami menyiapkan katalog furniture Anda" : "Please wait while we prepare your furniture catalog"}</p>
                       </div>
                     </body>
                   </html>
@@ -175,22 +178,22 @@ const Header: React.FC = () => {
               }
               
               // Reset button
-              button.textContent = originalText
+              button.textContent = isIndonesian ? 'UNDUH KATALOG KAMI' : 'DOWNLOAD OUR CATALOG'
               button.disabled = false
               
             } catch (error) {
               console.error('Error generating catalog:', error)
-              alert('Failed to download catalog. Please try again.')
+              alert(isIndonesian ? 'Gagal mengunduh katalog. Silakan coba lagi.' : 'Failed to download catalog. Please try again.')
               
               // Reset button on error
               const button = event.target as HTMLButtonElement
-              button.textContent = 'DOWNLOAD OUR CATALOG'
+              button.textContent = isIndonesian ? 'UNDUH KATALOG KAMI' : 'DOWNLOAD OUR CATALOG'
               button.disabled = false
             }
           }}
         >
-          DOWNLOAD OUR CATALOG
-        </button>
+          {isIndonesian ? "UNDUH KATALOG KAMI" : "DOWNLOAD OUR CATALOG"}
+              </button>
             </div>
           </div>
         </div>
@@ -215,7 +218,7 @@ const Header: React.FC = () => {
             <button 
             className="mobile-menu-toggle"
               onClick={toggleMenu}
-              aria-label="Toggle menu"
+              aria-label={isIndonesian ? "Buka menu" : "Toggle menu"}
             >
               <span></span>
               <span></span>
@@ -230,7 +233,7 @@ const Header: React.FC = () => {
           <div className="search-modal-backdrop" onClick={closeSearch}></div>
           <div className="search-modal-container">
             <div className="search-modal-content">
-              <button className="search-close-btn" onClick={closeSearch} aria-label="Close search">
+              <button className="search-close-btn" onClick={closeSearch} aria-label={isIndonesian ? "Tutup pencarian" : "Close search"}>
                 ×
               </button>
               <div className="search-modal-inner">
@@ -239,7 +242,7 @@ const Header: React.FC = () => {
                   <input
                     type="text"
                     className="search-modal-input"
-                    placeholder="Search here"
+                    placeholder={isIndonesian ? "Cari di sini" : "Search here"}
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     onKeyPress={handleKeyPress}
@@ -247,10 +250,10 @@ const Header: React.FC = () => {
                   />
                   {searchQuery ? (
                     <>
-                      <button className="search-clear-btn" onClick={clearSearch} aria-label="Clear search">
+                      <button className="search-clear-btn" onClick={clearSearch} aria-label={isIndonesian ? "Hapus pencarian" : "Clear search"}>
                         ×
                       </button>
-                      <button className="search-submit-btn" onClick={handleSearch} aria-label="Search">
+                      <button className="search-submit-btn" onClick={handleSearch} aria-label={isIndonesian ? "Cari" : "Search"}>
                         <Search size={20} />
                       </button>
                     </>

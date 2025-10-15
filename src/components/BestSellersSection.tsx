@@ -4,6 +4,10 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { ALL_PRODUCTS } from '../data/products'
 import './BestSellersSection.css'
 
+interface BestSellersSectionProps {
+  isIndonesian?: boolean
+}
+
 // Best Sellers - first 8 products
 const products = ALL_PRODUCTS.slice(0, 8).map(p => ({
   id: p.id,
@@ -14,7 +18,7 @@ const products = ALL_PRODUCTS.slice(0, 8).map(p => ({
   link: `/product/${p.slug}`
 }))
 
-const BestSellersSection: React.FC = () => {
+const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = false }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const itemsPerPage = 4
 
@@ -37,9 +41,11 @@ const BestSellersSection: React.FC = () => {
     <section className="bestsellers-section">
       <div className="container">
         <div className="section-header-row">
-          <h2 className="bestsellers-title">Best Sellers</h2>
+          <h2 className="bestsellers-title">
+            {isIndonesian ? "Produk Terlaris" : "Best Sellers"}
+          </h2>
           <Link to="/product-tag/best-seller" className="view-all-link">
-            • VIEW ALL
+            {isIndonesian ? "• LIHAT SEMUA" : "• VIEW ALL"}
           </Link>
         </div>
 

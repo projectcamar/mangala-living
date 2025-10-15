@@ -63,6 +63,12 @@
   50% { opacity: 0.95; }
 }
 
+/* Loading spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* Old Loading Spinner - Fallback */
 .loading-spinner {
   display: flex;

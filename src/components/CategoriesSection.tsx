@@ -2,6 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './CategoriesSection.css'
 
+interface CategoriesSectionProps {
+  isIndonesian?: boolean
+}
+
 // Import images
 import benchImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.png'
 import mejaImage from '../assets/meja-industrial-mejamakan.png'
@@ -83,11 +87,13 @@ const categories: Category[] = [
   }
 ]
 
-const CategoriesSection: React.FC = () => {
+const CategoriesSection: React.FC<CategoriesSectionProps> = ({ isIndonesian = false }) => {
   return (
     <section className="categories-section">
       <div className="container">
-        <h2 className="categories-title">Our Categories</h2>
+        <h2 className="categories-title">
+          {isIndonesian ? "Kategori Produk Kami" : "Our Categories"}
+        </h2>
         
         <div className="categories-grid">
           {categories.map((category) => (

@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom'
 import { Instagram, Facebook } from 'lucide-react'
 import './Footer.css'
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  isIndonesian?: boolean
+}
+
+const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
   const [email, setEmail] = useState('')
   const [firstName, setFirstName] = useState('')
 
@@ -23,10 +27,13 @@ const Footer: React.FC = () => {
           <div className="footer-brand">
             <h2 className="footer-logo">MANGALA</h2>
             <p className="footer-description">
-              Your best choice for premium industrial scandinavian furniture since 1999. Serving coffee shops, restaurants, and businesses across Indonesia. Custom orders welcome.
+              {isIndonesian 
+                ? "Pilihan terbaik untuk furniture industrial scandinavian premium sejak 1999. Melayani coffee shop, restoran, dan bisnis di seluruh Indonesia. Pesanan custom diterima."
+                : "Your best choice for premium industrial scandinavian furniture since 1999. Serving coffee shops, restaurants, and businesses across Indonesia. Custom orders welcome."
+              }
             </p>
             <div className="footer-contact-info">
-              <h4>Contact Us</h4>
+              <h4>{isIndonesian ? "Hubungi Kami" : "Contact Us"}</h4>
               <p>info@mangala-living.com</p>
               <p>+62 852-1207-8467</p>
               <div className="footer-social-icons">
@@ -42,7 +49,7 @@ const Footer: React.FC = () => {
 
           {/* Find Us */}
           <div className="footer-column">
-            <h4>Find Us</h4>
+            <h4>{isIndonesian ? "Temukan Kami" : "Find Us"}</h4>
             <div className="footer-location">
               <h5>Workshop Bekasi :</h5>
               <p>Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320</p>
@@ -52,7 +59,7 @@ const Footer: React.FC = () => {
           
           {/* Quick Links */}
           <div className="footer-column">
-                      <h4>Quick Links</h4>
+                      <h4>{isIndonesian ? "Tautan Cepat" : "Quick Links"}</h4>
                       <ul className="footer-links">
                         <li><Link to="/about">About</Link></li>
               <li><Link to="/blog">Blog</Link></li>
@@ -79,11 +86,11 @@ const Footer: React.FC = () => {
           
           {/* Subscribe */}
           <div className="footer-column">
-            <h4>Subscribe</h4>
+            <h4>{isIndonesian ? "Berlangganan" : "Subscribe"}</h4>
             <form onSubmit={handleSubscribe} className="footer-subscribe-form">
               <input
                 type="text"
-                placeholder="First name"
+                placeholder={isIndonesian ? "Nama depan" : "First name"}
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 required
@@ -95,7 +102,7 @@ const Footer: React.FC = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
-              <button type="submit">SUBSCRIBE</button>
+              <button type="submit">{isIndonesian ? "BERLANGGANAN" : "SUBSCRIBE"}</button>
             </form>
           </div>
         </div>
