@@ -16,8 +16,8 @@ const Home: React.FC = () => {
     <div className="home">
       <CatalogModal />
       <Helmet>
-        <title>Furniture Industrial Besi Custom Bekasi | Mangala Living - Cafe, Restoran, Hotel</title>
-        <meta name="description" content="Mangala Living - Manufacturer furniture industrial besi custom sejak 1999. Spesialis meja, kursi bar, rak display untuk cafe & restoran. Workshop Bekasi. Harga pabrik. WA: 0852-1207-8467" />
+        <title>Furniture Industrial Besi Custom Bekasi | Mangala Living</title>
+        <meta name="description" content="Furniture industrial besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: 0852-1207-8467" />
         <meta name="keywords" content="furniture industrial bekasi, furniture besi custom, furniture cafe murah, meja industrial, kursi bar besi, rak display industrial, furniture restoran, mangala living, pabrik furniture bekasi" />
         
         {/* Open Graph / Facebook */}
@@ -169,6 +169,52 @@ const Home: React.FC = () => {
       </Helmet>
       <Header />
       <Hero />
+      
+      {/* SEO Content Section */}
+      <section className="seo-content" style={{ padding: '60px 0', backgroundColor: '#f8f9fa' }}>
+        <div className="container">
+          <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+            <h2 style={{ fontSize: '2rem', marginBottom: '20px', color: '#333' }}>
+              Furniture Industrial Besi Custom Terpercaya di Bekasi
+            </h2>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
+              Mangala Living adalah manufacturer furniture industrial besi custom terpercaya di Bekasi sejak 1999. 
+              Dengan pengalaman 25+ tahun, kami telah melayani lebih dari 1000 bisnis di seluruh Indonesia.
+            </p>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
+              Kami memproduksi furniture industrial custom untuk cafe, restoran, hotel, kantor, dan berbagai kebutuhan komersial. 
+              Setiap produk dibuat dengan teknik pengelasan berkualitas tinggi dan material industrial grade terbaik.
+            </p>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666', marginBottom: '30px' }}>
+              <strong>Lokasi Workshop:</strong> Bekasi, Jawa Barat | <strong>Telp/WA:</strong> +62 852-1207-8467 | 
+              <strong> Email:</strong> info@mangala-living.com
+            </p>
+            
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
+              Koleksi Furniture Industrial Kami
+            </h3>
+            <p style={{ fontSize: '1rem', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
+              Kami menyediakan berbagai koleksi furniture industrial besi custom termasuk New Arrivals, Lounge Set, 
+              Sofa Bench, Dining Set, Bar Set, Outdoor, Daybed, Storage, Tables, dan Dine Table. 
+              Semua produk dapat disesuaikan dengan kebutuhan bisnis Anda.
+            </p>
+            
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
+              Keunggulan Mangala Living
+            </h3>
+            <ul style={{ textAlign: 'left', maxWidth: '600px', margin: '0 auto', lineHeight: '1.8' }}>
+              <li>✓ Pengalaman 25+ tahun sebagai manufacturer furniture industrial</li>
+              <li>✓ 1000+ klien puas di seluruh Indonesia</li>
+              <li>✓ Custom design sesuai kebutuhan bisnis Anda</li>
+              <li>✓ Material industrial grade berkualitas tinggi</li>
+              <li>✓ Harga kompetitif langsung dari pabrik</li>
+              <li>✓ Garansi kualitas produk</li>
+              <li>✓ Workshop di Bekasi dengan akses mudah</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
       <CategoriesSection />
       <BestSellersSection />
       <OurProductsSection />
