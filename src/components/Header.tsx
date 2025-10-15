@@ -44,9 +44,6 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     setSearchQuery('')
   }
 
-  const closeLanguage = () => {
-    setIsLanguageOpen(false)
-  }
 
   const clearSearch = () => {
     setSearchQuery('')
@@ -255,8 +252,8 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                     <body>
                       <div class="loading">
                         <div class="spinner"></div>
-                        <h2>{isIndonesian ? "Membuat Katalog..." : "Generating Catalog..."}</h2>
-                        <p>{isIndonesian ? "Mohon tunggu sementara kami menyiapkan katalog furniture Anda" : "Please wait while we prepare your furniture catalog"}</p>
+                        <h2>${isIndonesian ? "Membuat Katalog..." : "Generating Catalog..."}</h2>
+                        <p>${isIndonesian ? "Mohon tunggu sementara kami menyiapkan katalog furniture Anda" : "Please wait while we prepare your furniture catalog"}</p>
                       </div>
                     </body>
                   </html>
