@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       <CatalogModal />
       <Helmet>
         <title>Furniture Industrial Besi Custom Bekasi | Mangala Living</title>
-        <meta name="description" content="Furniture industrial besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: 0852-1207-8467" />
+        <meta name="description" content="Furniture industrial besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: 0852-1207-8467. Custom design, material industrial grade, garansi kualitas." />
         <meta name="keywords" content="furniture industrial bekasi, furniture besi custom, furniture cafe murah, meja industrial, kursi bar besi, rak display industrial, furniture restoran, mangala living, pabrik furniture bekasi" />
         
         {/* Open Graph / Facebook */}
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
         <meta name="geo.region" content="ID-JB" />
         <meta name="geo.placename" content="Bekasi" />
         <meta name="geo.position" content="-6.2088;107.1602" />
-        <link rel="canonical" content="https://mangala-living.com/" />
+        {/* Canonical removed - already in index.html */}
         
         {/* Structured Data - Product Catalog */}
         <script type="application/ld+json">
@@ -191,17 +191,13 @@ const Home: React.FC = () => {
             </p>
             
             <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
-              Koleksi Furniture Industrial Kami
+              Koleksi & Keunggulan Furniture Industrial
             </h3>
             <p style={{ fontSize: '1rem', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
               Kami menyediakan berbagai koleksi furniture industrial besi custom termasuk New Arrivals, Lounge Set, 
               Sofa Bench, Dining Set, Bar Set, Outdoor, Daybed, Storage, Tables, dan Dine Table. 
               Semua produk dapat disesuaikan dengan kebutuhan bisnis Anda.
             </p>
-            
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
-              Keunggulan Mangala Living
-            </h3>
             <ul style={{ textAlign: 'left', maxWidth: '600px', margin: '0 auto', lineHeight: '1.8' }}>
               <li>✓ Pengalaman 25+ tahun sebagai manufacturer furniture industrial</li>
               <li>✓ 1000+ klien puas di seluruh Indonesia</li>
