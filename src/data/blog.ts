@@ -116,6 +116,204 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Hindari kesalahan-kesalahan umum ini saat membeli furniture industrial untuk bisnis atau hunian Anda.',
     image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop',
     date: '2024-02-05'
+  },
+  {
+    id: 13,
+    slug: 'sofa-cafe-industrial-minimalis-untuk-konsep-modern',
+    title: 'Sofa Cafe Industrial Minimalis untuk Konsep Modern',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih sofa cafe industrial minimalis yang tepat untuk menciptakan konsep modern dan elegan di cafe Anda.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-03-20'
+  },
+  {
+    id: 14,
+    slug: 'meja-bar-industrial-untuk-cafe-dan-restoran',
+    title: 'Meja Bar Industrial untuk Cafe dan Restoran',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih meja bar industrial yang tepat untuk cafe dan restoran modern dengan desain yang kokoh dan elegan.',
+    image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
+    date: '2024-03-22'
+  },
+  {
+    id: 15,
+    slug: 'kursi-bar-industrial-dengan-desain-modern',
+    title: 'Kursi Bar Industrial dengan Desain Modern',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih kursi bar industrial dengan desain modern yang memberikan kenyamanan duduk optimal untuk cafe dan restoran.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2024-03-25'
+  },
+  {
+    id: 16,
+    slug: 'rak-display-industrial-untuk-retail-dan-cafe',
+    title: 'Rak Display Industrial untuk Retail dan Cafe',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih rak display industrial yang tepat untuk retail dan cafe dengan desain yang kokoh dan fungsional.',
+    image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop',
+    date: '2024-03-28'
+  },
+  {
+    id: 17,
+    slug: 'meja-makan-industrial-untuk-restoran-modern',
+    title: 'Meja Makan Industrial untuk Restoran Modern',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih meja makan industrial yang tepat untuk restoran modern dengan desain yang kokoh dan elegan.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2024-03-30'
+  },
+  {
+    id: 18,
+    slug: 'furniture-outdoor-industrial-tahan-cuaca',
+    title: 'Furniture Outdoor Industrial Tahan Cuaca',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih furniture outdoor industrial yang tahan cuaca untuk area outdoor cafe, restoran, dan hotel.',
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop',
+    date: '2024-04-02'
+  },
+  {
+    id: 19,
+    slug: 'daybed-industrial-untuk-area-lounge-modern',
+    title: 'Daybed Industrial untuk Area Lounge Modern',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih daybed industrial yang tepat untuk area lounge modern di hotel, cafe, dan restoran.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-04-05'
+  },
+  {
+    id: 20,
+    slug: 'meja-kerja-industrial-untuk-kantor-modern',
+    title: 'Meja Kerja Industrial untuk Kantor Modern',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih meja kerja industrial yang tepat untuk kantor modern dengan desain yang kokoh dan fungsional.',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop',
+    date: '2024-04-08'
+  },
+  {
+    id: 21,
+    slug: 'rak-buku-industrial-untuk-perpustakaan-modern',
+    title: 'Rak Buku Industrial untuk Perpustakaan Modern',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih rak buku industrial yang tepat untuk perpustakaan modern dengan desain yang kokoh dan modular.',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop',
+    date: '2024-04-10'
+  },
+  {
+    id: 22,
+    slug: 'furniture-industrial-custom-untuk-hotel',
+    title: 'Furniture Industrial Custom untuk Hotel',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih furniture industrial custom yang tepat untuk hotel dengan desain yang unik dan fungsional.',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop',
+    date: '2024-04-12'
+  },
+  {
+    id: 23,
+    slug: 'furniture-industrial-murah-untuk-startup',
+    title: 'Furniture Industrial Murah untuk Startup',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih furniture industrial murah yang tepat untuk startup dengan budget terbatas dan kualitas terjamin.',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop',
+    date: '2024-04-15'
+  },
+  {
+    id: 24,
+    slug: 'furniture-industrial-bekasi-terpercaya',
+    title: 'Furniture Industrial Bekasi Terpercaya',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih furniture industrial Bekasi terpercaya dengan kualitas terjamin dan harga kompetitif.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-04-18'
+  },
+  {
+    id: 25,
+    slug: 'furniture-industrial-custom-design',
+    title: 'Furniture Industrial Custom Design',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap furniture industrial custom design yang unik dan sesuai dengan kebutuhan spesifik Anda.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-04-20'
+  },
+  {
+    id: 26,
+    slug: 'furniture-industrial-harga-pabrik',
+    title: 'Furniture Industrial Harga Pabrik',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap furniture industrial harga pabrik yang memberikan nilai terbaik untuk investasi furniture Anda.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-04-22'
+  },
+  {
+    id: 27,
+    slug: 'furniture-industrial-garansi-kualitas',
+    title: 'Furniture Industrial Garansi Kualitas',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap furniture industrial garansi kualitas yang memberikan perlindungan untuk investasi furniture jangka panjang.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-04-25'
+  },
+  {
+    id: 28,
+    slug: 'furniture-industrial-workshop-bekasi',
+    title: 'Furniture Industrial Workshop Bekasi',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap furniture industrial workshop Bekasi yang menjadi pusat produksi furniture berkualitas tinggi di Indonesia.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-04-28'
+  },
+  {
+    id: 29,
+    slug: 'furniture-industrial-material-berkualitas',
+    title: 'Furniture Industrial Material Berkualitas',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap furniture industrial material berkualitas yang memberikan jaminan kualitas dan daya tahan optimal.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-05-01'
+  },
+  {
+    id: 30,
+    slug: 'furniture-industrial-finishing-powder-coating',
+    title: 'Furniture Industrial Finishing Powder Coating',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap furniture industrial finishing powder coating yang memberikan perlindungan dan tampilan optimal.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-05-03'
+  },
+  {
+    id: 31,
+    slug: 'furniture-industrial-layanan-profesional',
+    title: 'Furniture Industrial Layanan Profesional',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap furniture industrial layanan profesional yang memberikan pengalaman terbaik dan kepuasan pelanggan optimal.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-05-05'
+  },
+  {
+    id: 32,
+    slug: 'furniture-industrial-pengalaman-25-tahun',
+    title: 'Furniture Industrial Pengalaman 25 Tahun',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap furniture industrial pengalaman 25 tahun yang memberikan jaminan kualitas dan kepercayaan terbukti.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-05-08'
+  },
+  {
+    id: 33,
+    slug: 'furniture-industrial-1000-klien-puas',
+    title: 'Furniture Industrial 1000 Klien Puas',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap furniture industrial 1000 klien puas yang memberikan jaminan kualitas dan kepercayaan terbukti.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-05-10'
+  },
+  {
+    id: 34,
+    slug: 'furniture-industrial-custom-design-terpercaya',
+    title: 'Furniture Industrial Custom Design Terpercaya',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap furniture industrial custom design terpercaya yang memberikan jaminan kualitas dan kepercayaan terbukti.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2024-05-12'
   }
 ]
 
