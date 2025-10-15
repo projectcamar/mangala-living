@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false }) => {
       
       <div className="hero-content">
         <h1 id="hero-title" className="hero-title">
-          {isIndonesian ? "FURNITURE INDUSTRIAL BESI CUSTOM BEKASI" : "MANGALA LIVING"}
+          {isIndonesian ? "MANGALA LIVING" : "MANGALA LIVING"}
         </h1>
         <p className="hero-subtitle">
           {isIndonesian 

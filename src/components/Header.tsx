@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Search } from 'lucide-react'
+import { Search, ChevronDown } from 'lucide-react'
 import './Header.css'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateCatalog } from '../utils/catalogGenerator'
@@ -15,6 +15,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
   const [lastScrollY, setLastScrollY] = useState(0)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
+  const [isLanguageOpen, setIsLanguageOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -25,9 +26,26 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     setSearchQuery('')
   }
 
+  const toggleLanguage = () => {
+    setIsLanguageOpen(!isLanguageOpen)
+  }
+
+  const handleLanguageKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault()
+      toggleLanguage()
+    } else if (e.key === 'Escape') {
+      setIsLanguageOpen(false)
+    }
+  }
+
   const closeSearch = () => {
     setIsSearchOpen(false)
     setSearchQuery('')
+  }
+
+  const closeLanguage = () => {
+    setIsLanguageOpen(false)
   }
 
   const clearSearch = () => {
@@ -88,6 +106,20 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [lastScrollY, isSearchOpen])
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (isLanguageOpen) {
+        const target = event.target as HTMLElement
+        if (!target.closest('.language-switcher')) {
+          setIsLanguageOpen(false)
+        }
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [isLanguageOpen])
+
   return (
     <header className={`header ${!isHeaderVisible ? 'header-hidden' : ''}`}>
       {/* Top Header */}
@@ -105,6 +137,67 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
             </Link>
             
             <div className="header-top-actions">
+              {/* Language Switcher */}
+              <div className="language-switcher">
+                <button 
+                  className="language-btn" 
+                  onClick={toggleLanguage}
+                  onKeyDown={handleLanguageKeyDown}
+                  aria-label={isIndonesian ? "Pilih bahasa" : "Choose language"}
+                  aria-expanded={isLanguageOpen}
+                  aria-haspopup="true"
+                  tabIndex={0}
+                >
+                  <span className="flag">🇮🇩</span>
+                  <span className="language-text">{isIndonesian ? "ID" : "EN"}</span>
+                  <ChevronDown size={16} />
+                </button>
+                {isLanguageOpen && (
+                  <div className="language-dropdown" onClick={(e) => e.stopPropagation()} role="menu" aria-label={isIndonesian ? "Pilih bahasa" : "Choose language"}>
+                    <button 
+                      className="language-option"
+                      role="menuitem"
+                      tabIndex={0}
+                      onClick={() => {
+                        // Force Indonesian
+                        setIsLanguageOpen(false)
+                        window.location.reload()
+                      }}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault()
+                          setIsLanguageOpen(false)
+                          window.location.reload()
+                        }
+                      }}
+                    >
+                      <span className="flag">🇮🇩</span>
+                      <span>Indonesia</span>
+                    </button>
+                    <button 
+                      className="language-option"
+                      role="menuitem"
+                      tabIndex={0}
+                      onClick={() => {
+                        // Force English
+                        setIsLanguageOpen(false)
+                        window.location.reload()
+                      }}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault()
+                          setIsLanguageOpen(false)
+                          window.location.reload()
+                        }
+                      }}
+                    >
+                      <span className="flag">🇺🇸</span>
+                      <span>English</span>
+                    </button>
+                  </div>
+                )}
+              </div>
+              
               <button className="search-btn" aria-label={isIndonesian ? "Cari" : "Search"} onClick={toggleSearch}>
                 <Search size={20} />
                 <span>{isIndonesian ? "Cari" : "Search"}</span>

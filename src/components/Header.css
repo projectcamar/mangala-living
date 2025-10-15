@@ -9,6 +9,144 @@
   transition: transform 0.3s ease;
 }
 
+/* Language Switcher Styles */
+.language-switcher {
+  position: relative;
+  margin-right: 15px;
+}
+
+.language-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.language-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.language-btn:active {
+  transform: translateY(0);
+}
+
+.language-btn:focus {
+  outline: 2px solid #ff6b35;
+  outline-offset: 2px;
+}
+
+.flag {
+  font-size: 16px;
+}
+
+.language-text {
+  font-weight: 500;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 140px;
+  overflow: hidden;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 16px;
+  background: white;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.language-option:hover {
+  background: #f8f9fa;
+}
+
+.language-option:focus {
+  background: #f8f9fa;
+  outline: 2px solid #ff6b35;
+  outline-offset: -2px;
+}
+
+.language-option .flag {
+  font-size: 18px;
+}
+
+/* Responsive Language Switcher */
+@media (max-width: 768px) {
+  .language-switcher {
+    margin-right: 10px;
+  }
+  
+  .language-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  
+  .language-text {
+    display: none;
+  }
+  
+  .language-dropdown {
+    right: -10px;
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-switcher {
+    margin-right: 5px;
+  }
+  
+  .language-btn {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+  
+  .language-dropdown {
+    right: -20px;
+    min-width: 100px;
+  }
+  
+  .language-option {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+
 .header-hidden {
   transform: translateY(-100%);
 }

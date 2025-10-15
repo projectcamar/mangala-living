@@ -50,6 +50,29 @@ const BLOG_CONTENTS: BlogContent[] = [
         ]
       },
       {
+        heading: 'Industrial Furniture Besi Custom Terpercaya di Bekasi',
+        paragraphs: [
+          'Mangala Living adalah manufacturer industrial furniture besi custom terpercaya di Bekasi sejak 1999. Dengan pengalaman 25+ tahun, kami telah melayani lebih dari 1000 bisnis di seluruh Indonesia.',
+          'Kami memproduksi industrial furniture custom untuk cafe, restoran, hotel, kantor, dan berbagai kebutuhan komersial. Setiap produk dibuat dengan teknik pengelasan berkualitas tinggi dan material industrial grade terbaik. <a href="/shop">Lihat koleksi lengkap</a> atau <a href="/contact-us">hubungi kami</a> untuk konsultasi custom.',
+          'Lokasi Workshop: Bekasi, Jawa Barat | Telp/WA: +62 852-1207-8467 | Email: info@mangala-living.com'
+        ]
+      },
+      {
+        heading: 'Koleksi & Keunggulan Industrial Furniture',
+        paragraphs: [
+          'Kami menyediakan berbagai koleksi industrial furniture besi custom termasuk <a href="/product-category/new-arrivals">New Arrivals</a>, <a href="/product-category/lounge-seating-set">Lounge Set</a>, <a href="/product-category/industrial-sofa-bench">Sofa Bench</a>, <a href="/product-category/dining-set-collection">Dining Set</a>, <a href="/product-category/bar-furniture-collection">Bar Set</a>, <a href="/product-category/outdoor">Outdoor</a>, <a href="/product-category/daybed-collection">Daybed</a>, <a href="/product-category/storage-shelving">Storage</a>, <a href="/product-category/work-study-tables">Tables</a>, dan <a href="/product-category/dining-table-collection">Dine Table</a>. Semua produk dapat disesuaikan dengan kebutuhan bisnis Anda.'
+        ],
+        list: [
+          '✓ Pengalaman 25+ tahun sebagai manufacturer furniture industrial',
+          '✓ 1000+ klien puas di seluruh Indonesia',
+          '✓ Custom design sesuai kebutuhan bisnis Anda',
+          '✓ Material industrial grade berkualitas tinggi',
+          '✓ Harga kompetitif langsung dari pabrik',
+          '✓ Garansi kualitas produk',
+          '✓ Workshop di Bekasi dengan akses mudah'
+        ]
+      },
+      {
         heading: 'Perawatan Furniture Industrial Cafe',
         paragraphs: [
           'Furniture industrial relatif mudah perawatannya. Cukup lap dengan kain lembab setiap hari untuk membersihkan debu dan noda. Untuk furniture dengan powder coating, hindari pembersih kimia yang keras agar finishing tetap awet.',

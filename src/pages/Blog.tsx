@@ -103,57 +103,6 @@ const Blog: React.FC = () => {
         </div>
       </section>
       
-      {/* SEO Content Section */}
-      <section className="seo-content" style={{ padding: '60px 0', backgroundColor: '#f8f9fa' }}>
-        <div className="container">
-          <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-            <h2 style={{ fontSize: '2rem', marginBottom: '20px', color: '#333' }}>
-              Industrial Furniture Besi Custom Terpercaya di Bekasi
-            </h2>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
-              Mangala Living adalah manufacturer industrial furniture besi custom terpercaya di Bekasi sejak 1999. 
-              Dengan pengalaman 25+ tahun, kami telah melayani lebih dari 1000 bisnis di seluruh Indonesia.
-            </p>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
-              Kami memproduksi industrial furniture custom untuk cafe, restoran, hotel, kantor, dan berbagai kebutuhan komersial. 
-              Setiap produk dibuat dengan teknik pengelasan berkualitas tinggi dan material industrial grade terbaik. 
-              <a href="/shop" style={{ color: '#ff6b35', textDecoration: 'none' }}>Lihat koleksi lengkap</a> atau 
-              <a href="/contact-us" style={{ color: '#ff6b35', textDecoration: 'none' }}>hubungi kami</a> untuk konsultasi custom.
-            </p>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666', marginBottom: '30px' }}>
-              <strong>Lokasi Workshop:</strong> Bekasi, Jawa Barat | <strong>Telp/WA:</strong> +62 852-1207-8467 | 
-              <strong> Email:</strong> info@mangala-living.com
-            </p>
-            
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
-              Koleksi & Keunggulan Industrial Furniture
-            </h3>
-            <p style={{ fontSize: '1rem', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
-              Kami menyediakan berbagai koleksi industrial furniture besi custom termasuk 
-              <a href="/product-category/new-arrivals" style={{ color: '#ff6b35', textDecoration: 'none' }}>New Arrivals</a>, 
-              <a href="/product-category/lounge-seating-set" style={{ color: '#ff6b35', textDecoration: 'none' }}>Lounge Set</a>, 
-              <a href="/product-category/industrial-sofa-bench" style={{ color: '#ff6b35', textDecoration: 'none' }}>Sofa Bench</a>, 
-              <a href="/product-category/dining-set-collection" style={{ color: '#ff6b35', textDecoration: 'none' }}>Dining Set</a>, 
-              <a href="/product-category/bar-furniture-collection" style={{ color: '#ff6b35', textDecoration: 'none' }}>Bar Set</a>, 
-              <a href="/product-category/outdoor" style={{ color: '#ff6b35', textDecoration: 'none' }}>Outdoor</a>, 
-              <a href="/product-category/daybed-collection" style={{ color: '#ff6b35', textDecoration: 'none' }}>Daybed</a>, 
-              <a href="/product-category/storage-shelving" style={{ color: '#ff6b35', textDecoration: 'none' }}>Storage</a>, 
-              <a href="/product-category/work-study-tables" style={{ color: '#ff6b35', textDecoration: 'none' }}>Tables</a>, dan 
-              <a href="/product-category/dining-table-collection" style={{ color: '#ff6b35', textDecoration: 'none' }}>Dine Table</a>. 
-              Semua produk dapat disesuaikan dengan kebutuhan bisnis Anda.
-            </p>
-            <ul style={{ textAlign: 'left', maxWidth: '600px', margin: '0 auto', lineHeight: '1.8' }}>
-              <li>✓ Pengalaman 25+ tahun sebagai manufacturer furniture industrial</li>
-              <li>✓ 1000+ klien puas di seluruh Indonesia</li>
-              <li>✓ Custom design sesuai kebutuhan bisnis Anda</li>
-              <li>✓ Material industrial grade berkualitas tinggi</li>
-              <li>✓ Harga kompetitif langsung dari pabrik</li>
-              <li>✓ Garansi kualitas produk</li>
-              <li>✓ Workshop di Bekasi dengan akses mudah</li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>
