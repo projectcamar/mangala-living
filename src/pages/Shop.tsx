@@ -19,6 +19,7 @@ const Shop: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1)
   const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const [priceRange, setPriceRange] = useState([0, 60000000])
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -184,9 +185,20 @@ const Shop: React.FC = () => {
           
           <h1 className="category-page-title">All Product</h1>
           
+          {/* Mobile Filter Toggle */}
+          <div className="mobile-filter-toggle">
+            <button 
+              className="filter-toggle-btn"
+              onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+            >
+              <span>Filters</span>
+              <ChevronDown size={16} />
+            </button>
+          </div>
+          
           <div className="shop-layout">
             {/* Sidebar */}
-            <aside className="shop-sidebar">
+            <aside className={`shop-sidebar ${isSidebarOpen ? 'sidebar-open' : ''}`}>
               <div className="filter-section">
                 <h3 className="filter-title">Categories</h3>
                 <div className="filter-options">

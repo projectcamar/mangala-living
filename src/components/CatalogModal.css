@@ -24,7 +24,7 @@
 
 .catalog-modal-container {
   background: white;
-  max-width: 550px;
+  max-width: 413px; /* 25% smaller than 550px */
   width: 100%;
   border-radius: 0;
   position: relative;
@@ -226,12 +226,12 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .catalog-modal-overlay {
-    padding: 10px;
+    padding: 15px;
   }
 
   .catalog-modal-container {
-    max-width: 100%;
-    max-height: 90vh;
+    max-width: 90%;
+    max-height: 85vh;
     overflow-y: auto;
   }
 
@@ -290,11 +290,12 @@
 
 @media (max-width: 480px) {
   .catalog-modal-overlay {
-    padding: 5px;
+    padding: 10px;
   }
 
   .catalog-modal-container {
-    max-height: 95vh;
+    max-width: 95%;
+    max-height: 90vh;
   }
 
   .catalog-preview {

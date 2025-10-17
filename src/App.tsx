@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { Suspense, lazy } from 'react'
@@ -9,24 +10,24 @@ import './App.css'
 import Home from './pages/Home'
 import WhatsAppButton from './components/WhatsAppButton'
 
-// Lazy load other pages (not critical for initial load)
-const ProductCategory = lazy(() => import('./pages/ProductCategory'))
+// Preload critical pages for better performance
+const Shop = lazy(() => import('./pages/Shop'))
 const ProductDetail = lazy(() => import('./pages/ProductDetail'))
+const ProductCategory = lazy(() => import('./pages/ProductCategory'))
+
+// Lazy load less critical pages
 const Contact = lazy(() => import('./pages/Contact'))
 const About = lazy(() => import('./pages/About'))
 const SearchResults = lazy(() => import('./pages/SearchResults'))
 const BestSellers = lazy(() => import('./pages/BestSellers'))
-const Shop = lazy(() => import('./pages/Shop'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 
-// Better loading skeleton
+// Optimized loading skeleton
 const Loading = () => (
   <div className="loading-skeleton">
     <div className="skeleton-header"></div>
-    <div className="skeleton-hero"></div>
     <div className="skeleton-content">
-      <div className="skeleton-card"></div>
       <div className="skeleton-card"></div>
       <div className="skeleton-card"></div>
     </div>
@@ -34,6 +35,22 @@ const Loading = () => (
 )
 
 function App() {
+  // Preload critical pages after initial load
+  useEffect(() => {
+    const preloadPages = () => {
+      // Preload Shop page (most accessed)
+      import('./pages/Shop')
+      // Preload ProductDetail (frequently accessed)
+      import('./pages/ProductDetail')
+      // Preload ProductCategory (frequently accessed)
+      import('./pages/ProductCategory')
+    }
+
+    // Preload after 1 second to not block initial render
+    const timer = setTimeout(preloadPages, 1000)
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <HelmetProvider>
       <Router>
