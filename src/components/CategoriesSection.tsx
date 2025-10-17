@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { trackEvent } from '../utils/analytics'
 import './CategoriesSection.css'
 
 interface CategoriesSectionProps {
@@ -101,6 +102,7 @@ const CategoriesSection: React.FC<CategoriesSectionProps> = ({ isIndonesian = fa
               key={category.id} 
               to={category.link} 
               className="category-card"
+              onClick={() => trackEvent.categoryClick(category.name)}
             >
               <div className="category-image-wrapper">
                 <img 

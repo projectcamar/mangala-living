@@ -4,6 +4,7 @@ import { Search, ChevronDown } from 'lucide-react'
 import './Header.css'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateCatalog } from '../utils/catalogGenerator'
+import { trackEvent } from '../utils/analytics'
 
 interface HeaderProps {
   isIndonesian?: boolean
@@ -44,6 +45,10 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
   const handleLanguageChange = (lang: 'id' | 'en') => {
     setIsLanguageOpen(false)
     const currentPath = location.pathname
+    
+    // Track language switch
+    const currentLang = getCurrentLanguageFromUrl() || (isIndonesian ? 'id' : 'en')
+    trackEvent.languageSwitch(currentLang, lang)
     
     // Remove existing language prefix if any
     let cleanPath = currentPath
@@ -89,6 +94,8 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
 
   const handleSearch = () => {
     if (searchQuery.trim()) {
+      // Track search query
+      trackEvent.searchQuery(searchQuery.trim(), filteredProducts.length)
       closeSearch()
       window.location.href = `/search?q=${encodeURIComponent(searchQuery.trim())}`
     }
@@ -289,6 +296,9 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
               }
               
               await generateCatalog()
+              
+              // Track catalog download
+              trackEvent.catalogDownload()
               
               // Close the loading window
               if (newWindow) {

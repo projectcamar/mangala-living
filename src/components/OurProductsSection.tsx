@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { ALL_PRODUCTS } from '../data/products'
+import { trackEvent } from '../utils/analytics'
 import './OurProductsSection.css'
 
 interface OurProductsSectionProps {
@@ -36,6 +37,7 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
               key={product.id}
               to={product.link}
               className="product-card-full"
+              onClick={() => trackEvent.productClick(product.name, product.category)}
             >
               <div className="product-image-wrapper-full">
                 <img 
