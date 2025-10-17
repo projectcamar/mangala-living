@@ -359,6 +359,33 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Simak tren desain interior industrial Scandinavian terbaru 2025. Inspirasi modern yang menggabungkan elemen industrial dengan estetika Scandinavian minimalis.',
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop',
     date: '2025-01-15'
+  },
+  {
+    id: 40,
+    slug: 'hollowline-display-rack-solusi-storage-industrial-modern',
+    title: 'Hollowline Display Rack: Solusi Storage Industrial Modern Terbaik',
+    category: 'Furniture Information',
+    excerpt: 'Temukan keunggulan Hollowline Display Rack untuk kebutuhan storage industrial modern. Desain hollow steel yang kuat, modular, dan estetis untuk retail dan komersial.',
+    image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop',
+    date: '2025-01-15'
+  },
+  {
+    id: 41,
+    slug: 'display-shelf-rack-industrial-untuk-retail-dan-cafe',
+    title: 'Display Shelf Rack Industrial untuk Retail dan Cafe Modern',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap memilih display shelf rack industrial yang tepat untuk retail dan cafe. Tips pemilihan, layout, dan inspirasi desain terbaik.',
+    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop',
+    date: '2025-01-15'
+  },
+  {
+    id: 42,
+    slug: 'stall-chair-design-inspirasi-kursi-bar-industrial',
+    title: 'Stall Chair Design: Inspirasi Kursi Bar Industrial Terbaik',
+    category: 'Furniture Information',
+    excerpt: 'Kumpulan inspirasi stall chair design dengan konsep industrial modern. Tips pemilihan kursi bar yang stylish dan fungsional untuk cafe dan restoran.',
+    image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
+    date: '2025-01-15'
   }
 ]
 

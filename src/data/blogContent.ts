@@ -670,6 +670,327 @@ const BLOG_CONTENTS: BlogContent[] = [
     ]
   },
   {
+    slug: 'hollowline-display-rack-solusi-storage-industrial-modern',
+    sections: [
+      {
+        paragraphs: [
+          'Hollowline Display Rack menjadi solusi storage industrial modern yang sangat populer di kalangan pemilik bisnis retail, cafe, dan restoran. Dengan desain hollow steel yang kuat dan estetis, hollowline display rack memberikan kombinasi sempurna antara fungsionalitas dan keindahan visual.',
+          'Dalam artikel ini, kami akan membahas secara detail keunggulan Hollowline Display Rack, tips pemilihan, dan cara mengoptimalkan penggunaannya untuk berbagai kebutuhan komersial.'
+        ]
+      },
+      {
+        heading: 'Apa itu Hollowline Display Rack?',
+        paragraphs: [
+          'Hollowline Display Rack adalah sistem rak display yang menggunakan konstruksi hollow steel (besi hollow) sebagai frame utama. Desain ini memberikan kekuatan struktural yang optimal sambil mempertahankan bobot yang ringan dan tampilan yang clean.',
+          'Keunggulan utama hollowline display rack terletak pada rasio kekuatan-berat yang sangat baik, membuatnya ideal untuk penggunaan komersial yang memerlukan durability tinggi namun tetap mudah dipindahkan dan diatur ulang.'
+        ],
+        image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Hollowline Display Rack Industrial'
+      },
+      {
+        heading: 'Keunggulan Hollowline Display Rack',
+        list: [
+          '<strong>Konstruksi Hollow Steel:</strong> Frame hollow steel memberikan kekuatan maksimal dengan bobot minimal',
+          '<strong>Desain Modular:</strong> Sistem modular memungkinkan penyesuaian tinggi dan konfigurasi sesuai kebutuhan',
+          '<strong>Finishing Powder Coating:</strong> Lapisan powder coating yang tahan lama dan anti karat',
+          '<strong>Fleksibilitas Layout:</strong> Mudah diatur ulang untuk berbagai kebutuhan display',
+          '<strong>Durabilitas Tinggi:</strong> Dibuat untuk penggunaan komersial yang intensif',
+          '<strong>Estetika Modern:</strong> Desain industrial yang timeless dan mudah dipadukan dengan berbagai konsep interior'
+        ]
+      },
+      {
+        heading: 'Aplikasi Hollowline Display Rack',
+        paragraphs: [
+          'Hollowline Display Rack sangat versatile dan dapat digunakan untuk berbagai aplikasi komersial:'
+        ],
+        list: [
+          '<strong>Retail Store:</strong> Display merchandise, produk, dan aksesori dengan tampilan yang menarik',
+          '<strong>Cafe & Restoran:</strong> Storage untuk peralatan, dekorasi, dan merchandise cafe',
+          '<strong>Office:</strong> Organisasi dokumen, display awards, dan elemen dekoratif',
+          '<strong>Showroom:</strong> Display produk dengan pencahayaan optimal',
+          '<strong>Event Space:</strong> Setup sementara untuk pameran dan acara khusus'
+        ]
+      },
+      {
+        heading: 'Tips Memilih Hollowline Display Rack',
+        paragraphs: [
+          'Pemilihan hollowline display rack yang tepat akan memaksimalkan fungsionalitas dan estetika ruang Anda:'
+        ],
+        list: [
+          '<strong>Ukuran Ruang:</strong> Sesuaikan dimensi rack dengan luas ruang yang tersedia',
+          '<strong>Kapasitas Beban:</strong> Pertimbangkan berat barang yang akan diletakkan di rack',
+          '<strong>Ketinggian Optimal:</strong> Pilih tinggi yang sesuai dengan kebutuhan display dan aksesibilitas',
+          '<strong>Konfigurasi Modular:</strong> Pilih sistem yang memungkinkan ekspansi di masa depan',
+          '<strong>Finishing Warna:</strong> Sesuaikan warna dengan konsep interior yang ada',
+          '<strong>Budget Planning:</strong> Investasi pada kualitas untuk durability jangka panjang'
+        ]
+      },
+      {
+        heading: 'Layout dan Penempatan Hollowline Display Rack',
+        paragraphs: [
+          'Penempatan yang strategis akan memaksimalkan efektivitas hollowline display rack:'
+        ],
+        list: [
+          '<strong>Area High Traffic:</strong> Tempatkan di area yang sering dilewati pelanggan',
+          '<strong>Pencahayaan Optimal:</strong> Pastikan pencahayaan yang cukup untuk highlight produk',
+          '<strong>Sirkulasi Lancar:</strong> Jangan menghalangi jalur sirkulasi pelanggan',
+          '<strong>Focal Point:</strong> Gunakan sebagai focal point untuk menarik perhatian',
+          '<strong>Kombinasi dengan Furniture:</strong> Padukan dengan meja, kursi, dan elemen interior lainnya'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Layout Hollowline Display Rack'
+      },
+      {
+        heading: 'Maintenance Hollowline Display Rack',
+        paragraphs: [
+          'Perawatan yang tepat akan menjaga kualitas dan tampilan hollowline display rack:'
+        ],
+        list: [
+          '<strong>Pembersihan Rutin:</strong> Bersihkan secara berkala dengan pembersih yang sesuai',
+          '<strong>Inspeksi Berkala:</strong> Periksa kondisi frame dan sambungan secara rutin',
+          '<strong>Penanganan Hati-hati:</strong> Hindari benturan keras yang dapat merusak finishing',
+          '<strong>Lingkungan Kering:</strong> Simpan di tempat yang tidak lembab untuk mencegah karat',
+          '<strong>Professional Service:</strong> Layanan profesional untuk maintenance dan perbaikan'
+        ]
+      },
+      {
+        heading: 'Harga Hollowline Display Rack Mangala Living',
+        paragraphs: [
+          'Hollowline Display Rack dari Mangala Living menawarkan kualitas premium dengan harga yang kompetitif:'
+        ],
+        list: [
+          '<strong>Harga Mulai:</strong> Rp 4.500.000 untuk ukuran standar',
+          '<strong>Custom Size:</strong> Harga disesuaikan dengan ukuran dan spesifikasi custom',
+          '<strong>Paket Lengkap:</strong> Harga lebih ekonomis untuk pembelian dalam jumlah besar',
+          '<strong>Garansi Kualitas:</strong> 2 tahun garansi untuk frame dan finishing',
+          '<strong>Layanan Purna Jual:</strong> Support teknis dan maintenance profesional'
+        ]
+      },
+      {
+        heading: 'Mengapa Memilih Mangala Living untuk Hollowline Display Rack?',
+        paragraphs: [
+          'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus hollowline display rack untuk berbagai aplikasi komersial. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
+          'Kami menawarkan hollowline display rack berkualitas tinggi dengan konstruksi hollow steel yang kuat, finishing powder coating tahan lama, dan desain modular yang fleksibel. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
+          'Untuk informasi hollowline display rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangala-living.com">info@mangala-living.com</a>. Tim sales kami siap membantu Anda mendapatkan hollowline display rack terbaik sesuai kebutuhan bisnis.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'display-shelf-rack-industrial-untuk-retail-dan-cafe',
+    sections: [
+      {
+        paragraphs: [
+          'Display Shelf Rack Industrial menjadi elemen penting dalam menciptakan tampilan retail dan cafe yang menarik dan fungsional. Dengan desain industrial yang kuat dan estetis, display shelf rack memberikan solusi storage yang sempurna untuk berbagai kebutuhan komersial.',
+          'Dalam panduan lengkap ini, kami akan membahas cara memilih display shelf rack industrial yang tepat untuk retail dan cafe, lengkap dengan tips layout, maintenance, dan inspirasi desain terbaik.'
+        ]
+      },
+      {
+        heading: 'Jenis Display Shelf Rack Industrial',
+        paragraphs: [
+          'Terdapat berbagai jenis display shelf rack industrial yang dapat disesuaikan dengan kebutuhan spesifik:'
+        ],
+        list: [
+          '<strong>Wall Mounted Rack:</strong> Rak yang dipasang di dinding untuk menghemat ruang lantai',
+          '<strong>Freestanding Rack:</strong> Rak berdiri bebas yang dapat dipindahkan sesuai kebutuhan',
+          '<strong>Corner Rack:</strong> Rak sudut yang memaksimalkan penggunaan ruang corner',
+          '<strong>Modular Rack:</strong> Sistem rak modular yang dapat dikonfigurasi ulang',
+          '<strong>Display Rack dengan Lighting:</strong> Rak dengan pencahayaan terintegrasi untuk highlight produk'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Display Shelf Rack Industrial'
+      },
+      {
+        heading: 'Pemilihan Display Shelf Rack untuk Retail',
+        paragraphs: [
+          'Untuk toko retail, display shelf rack harus mampu menampilkan produk dengan menarik dan mudah diakses:'
+        ],
+        list: [
+          '<strong>Visibility Optimal:</strong> Pilih rak dengan ketinggian yang memudahkan pelanggan melihat produk',
+          '<strong>Kapasitas Display:</strong> Pertimbangkan jumlah produk yang akan ditampilkan',
+          '<strong>Kategori Produk:</strong> Sesuaikan dengan jenis produk yang akan dijual',
+          '<strong>Branding Integration:</strong> Pilih desain yang mendukung konsep branding toko',
+          '<strong>Customer Experience:</strong> Pastikan rak tidak menghalangi pergerakan pelanggan'
+        ]
+      },
+      {
+        heading: 'Display Shelf Rack untuk Cafe',
+        paragraphs: [
+          'Di cafe, display shelf rack berfungsi untuk menampilkan merchandise, dekorasi, dan elemen branding:'
+        ],
+        list: [
+          '<strong>Merchandise Display:</strong> Rak untuk menampilkan mug, tumbler, dan merchandise cafe',
+          '<strong>Dekorasi Corner:</strong> Rak sudut untuk tanaman, buku, dan elemen dekoratif',
+          '<strong>Storage Terintegrasi:</strong> Kombinasi display dan storage untuk efisiensi ruang',
+          '<strong>Atmosfer Cafe:</strong> Pilih desain yang mendukung suasana cafe yang cozy',
+          '<strong>Instagram Worthy:</strong> Rak yang dapat menjadi spot foto menarik untuk social media'
+        ]
+      },
+      {
+        heading: 'Tips Layout Display Shelf Rack',
+        paragraphs: [
+          'Layout yang tepat akan memaksimalkan efektivitas display shelf rack:'
+        ],
+        list: [
+          '<strong>Zoning Strategy:</strong> Bagi area berdasarkan kategori produk atau fungsi',
+          '<strong>Traffic Flow:</strong> Atur rak untuk mengarahkan pergerakan pelanggan',
+          '<strong>Visual Hierarchy:</strong> Gunakan ketinggian berbeda untuk menciptakan focal point',
+          '<strong>Spacing Optimal:</strong> Berikan ruang yang cukup antar rak untuk kenyamanan',
+          '<strong>Lighting Integration:</strong> Kombinasikan dengan pencahayaan yang tepat'
+        ]
+      },
+      {
+        heading: 'Maintenance Display Shelf Rack Industrial',
+        paragraphs: [
+          'Perawatan yang tepat akan menjaga tampilan dan fungsionalitas display shelf rack:'
+        ],
+        list: [
+          '<strong>Cleaning Schedule:</strong> Jadwal pembersihan rutin untuk menjaga kebersihan',
+          '<strong>Product Rotation:</strong> Rotasi produk secara berkala untuk tampilan yang fresh',
+          '<strong>Structural Check:</strong> Pemeriksaan kondisi frame dan sambungan',
+          '<strong>Finishing Maintenance:</strong> Perawatan finishing untuk mencegah karat',
+          '<strong>Professional Service:</strong> Layanan profesional untuk maintenance berkala'
+        ]
+      },
+      {
+        heading: 'Harga Display Shelf Rack Industrial',
+        paragraphs: [
+          'Harga display shelf rack industrial bervariasi berdasarkan ukuran, material, dan kompleksitas desain:'
+        ],
+        list: [
+          '<strong>Wall Mounted:</strong> Rp 1.200.000 - Rp 2.500.000',
+          '<strong>Freestanding:</strong> Rp 2.500.000 - Rp 4.500.000',
+          '<strong>Modular System:</strong> Rp 3.500.000 - Rp 6.500.000',
+          '<strong>Custom Design:</strong> Harga disesuaikan dengan spesifikasi',
+          '<strong>Bulk Purchase:</strong> Diskon hingga 15% untuk pembelian dalam jumlah besar'
+        ]
+      },
+      {
+        heading: 'Mengapa Memilih Mangala Living untuk Display Shelf Rack?',
+        paragraphs: [
+          'Sebagai produsen furniture industrial terpercaya, Mangala Living menawarkan display shelf rack berkualitas tinggi dengan desain yang fungsional dan estetis. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
+          'Kami menyediakan display shelf rack industrial dengan material berkualitas tinggi, finishing powder coating tahan lama, dan desain yang dapat disesuaikan dengan kebutuhan spesifik. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
+          'Untuk informasi display shelf rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangala-living.com">info@mangala-living.com</a>. Tim sales kami siap membantu Anda menciptakan display yang menarik dan fungsional.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'stall-chair-design-inspirasi-kursi-bar-industrial',
+    sections: [
+      {
+        paragraphs: [
+          'Stall Chair Design dengan konsep industrial menjadi pilihan populer untuk cafe, restoran, dan bar modern. Desain stall chair yang menggabungkan kenyamanan duduk dengan estetika industrial memberikan pengalaman yang unik dan menarik bagi pelanggan.',
+          'Dalam artikel ini, kami akan membahas inspirasi stall chair design industrial terbaik, tips pemilihan, dan cara mengintegrasikannya dengan konsep interior yang sempurna.'
+        ]
+      },
+      {
+        heading: 'Konsep Stall Chair Design Industrial',
+        paragraphs: [
+          'Stall chair design industrial mengutamakan kombinasi antara fungsionalitas dan estetika yang kuat:'
+        ],
+        list: [
+          '<strong>Material Besi Hollow:</strong> Frame besi hollow yang kuat dan tahan lama',
+          '<strong>Desain Minimalis:</strong> Bentuk yang clean dan tidak berlebihan',
+          '<strong>Finishing Powder Coating:</strong> Lapisan yang tahan lama dan anti karat',
+          '<strong>Ergonomis:</strong> Desain yang nyaman untuk duduk dalam waktu lama',
+          '<strong>Modular:</strong> Mudah dipindahkan dan diatur ulang sesuai kebutuhan'
+        ],
+        image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=1200&auto=format&fit=crop',
+        imageAlt: 'Stall Chair Design Industrial'
+      },
+      {
+        heading: 'Inspirasi Stall Chair Design untuk Cafe',
+        paragraphs: [
+          'Untuk cafe, stall chair design harus mampu menciptakan suasana yang cozy dan Instagram-worthy:'
+        ],
+        list: [
+          '<strong>Corner Booth Style:</strong> Stall chair di sudut untuk area privat yang nyaman',
+          '<strong>Community Table:</strong> Stall chair mengelilingi meja besar untuk interaksi sosial',
+          '<strong>Window Seating:</strong> Stall chair dekat jendela untuk natural lighting',
+          '<strong>Bar Counter:</strong> Stall chair tinggi untuk area bar dan coffee counter',
+          '<strong>Flexible Layout:</strong> Kombinasi stall chair dengan kursi reguler untuk variasi'
+        ]
+      },
+      {
+        heading: 'Stall Chair Design untuk Restoran',
+        paragraphs: [
+          'Di restoran, stall chair design harus mendukung pengalaman dining yang optimal:'
+        ],
+        list: [
+          '<strong>Dining Comfort:</strong> Stall chair yang nyaman untuk makan dalam waktu lama',
+          '<strong>Space Efficiency:</strong> Memaksimalkan kapasitas tanpa mengorbankan kenyamanan',
+          '<strong>Family Friendly:</strong> Stall chair yang cocok untuk keluarga dengan anak',
+          '<strong>Private Dining:</strong> Area semi-privat dengan stall chair untuk rombongan',
+          '<strong>Brand Integration:</strong> Desain yang mendukung konsep dan branding restoran'
+        ]
+      },
+      {
+        heading: 'Tips Pemilihan Stall Chair Design',
+        paragraphs: [
+          'Pemilihan stall chair design yang tepat akan meningkatkan pengalaman pelanggan:'
+        ],
+        list: [
+          '<strong>Ketinggian Optimal:</strong> Sesuaikan dengan tinggi meja yang akan digunakan',
+          '<strong>Kapasitas Beban:</strong> Pertimbangkan berat pengguna dan intensitas penggunaan',
+          '<strong>Material Cushion:</strong> Pilih cushion yang mudah dibersihkan dan tahan lama',
+          '<strong>Backrest Support:</strong> Pastikan backrest memberikan support yang optimal',
+          '<strong>Footrest Integration:</strong> Footrest untuk kenyamanan duduk yang lebih baik',
+          '<strong>Color Coordination:</strong> Sesuaikan warna dengan konsep interior'
+        ]
+      },
+      {
+        heading: 'Layout Stall Chair Design',
+        paragraphs: [
+          'Layout yang tepat akan memaksimalkan fungsionalitas stall chair design:'
+        ],
+        list: [
+          '<strong>Traffic Flow:</strong> Jangan menghalangi jalur sirkulasi pelanggan dan staff',
+          '<strong>Grouping Strategy:</strong> Kelompokkan stall chair untuk berbagai ukuran grup',
+          '<strong>Flexibility:</strong> Kemampuan mengatur ulang untuk acara khusus',
+          '<strong>Accessibility:</strong> Pastikan akses yang mudah untuk semua pelanggan',
+          '<strong>Visual Balance:</strong> Keseimbangan visual dengan elemen interior lainnya'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Layout Stall Chair Design'
+      },
+      {
+        heading: 'Maintenance Stall Chair Design',
+        paragraphs: [
+          'Perawatan yang tepat akan menjaga kualitas dan tampilan stall chair design:'
+        ],
+        list: [
+          '<strong>Daily Cleaning:</strong> Pembersihan harian dengan pembersih yang sesuai',
+          '<strong>Cushion Care:</strong> Perawatan cushion untuk mencegah bau dan noda',
+          '<strong>Frame Inspection:</strong> Pemeriksaan kondisi frame dan sambungan',
+          '<strong>Finishing Maintenance:</strong> Perawatan finishing untuk mencegah karat',
+          '<strong>Professional Service:</strong> Layanan profesional untuk maintenance berkala'
+        ]
+      },
+      {
+        heading: 'Harga Stall Chair Design Industrial',
+        paragraphs: [
+          'Harga stall chair design industrial bervariasi berdasarkan ukuran, material, dan spesifikasi:'
+        ],
+        list: [
+          '<strong>Standard Size:</strong> Rp 450.000 - Rp 800.000 per unit',
+          '<strong>Custom Size:</strong> Harga disesuaikan dengan ukuran dan spesifikasi',
+          '<strong>Premium Material:</strong> Harga lebih tinggi untuk material premium',
+          '<strong>Bulk Purchase:</strong> Diskon hingga 20% untuk pembelian dalam jumlah besar',
+          '<strong>Installation Service:</strong> Layanan instalasi profesional tersedia'
+        ]
+      },
+      {
+        heading: 'Mengapa Memilih Mangala Living untuk Stall Chair Design?',
+        paragraphs: [
+          'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus stall chair design untuk berbagai aplikasi komersial. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
+          'Kami menawarkan stall chair design industrial berkualitas tinggi dengan konstruksi besi hollow yang kuat, finishing powder coating tahan lama, dan desain ergonomis yang nyaman. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
+          'Untuk informasi stall chair design dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangala-living.com">info@mangala-living.com</a>. Tim sales kami siap membantu Anda menciptakan stall chair design yang sempurna sesuai konsep bisnis.'
+        ]
+      }
+    ]
+  },
+  {
     slug: 'tips-memilih-furniture-industrial-untuk-cafe',
     sections: [
       {
