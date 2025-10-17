@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORIES } from '../data/categories'
+import { generateMerchantStructuredData } from '../utils/structuredData'
 import './ProductCategory.css'
 import './Shop.css'
 
@@ -137,6 +138,42 @@ const Shop: React.FC = () => {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="All Products - Industrial Furniture Collection | Mangala Living" />
         <meta name="twitter:description" content="Browse all industrial furniture products at Mangala Living." />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Industrial Furniture Collection - Mangala Living",
+            "description": "Browse our complete collection of industrial furniture for cafes, restaurants, and offices. Premium quality furniture made in Indonesia since 1999.",
+            "url": "https://mangala-living.com/shop",
+            "mainEntity": {
+              "@type": "ItemList",
+              "numberOfItems": ALL_PRODUCTS.length,
+              "itemListElement": ALL_PRODUCTS.map((product, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "item": {
+                  "@type": "Product",
+                  "name": product.name,
+                  "url": `https://mangala-living.com/product/${product.slug}`,
+                  "image": product.image,
+                  "offers": {
+                    "@type": "Offer",
+                    "price": product.price.replace(/[^\d]/g, ''),
+                    "priceCurrency": "IDR",
+                    "availability": "https://schema.org/InStock"
+                  }
+                }
+              }))
+            }
+          })}
+        </script>
+        
+        {/* Merchant Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(generateMerchantStructuredData())}
+        </script>
       </Helmet>
       
       <Header />

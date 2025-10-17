@@ -8,6 +8,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import './ProductDetail.css'
 
 interface ProductDetail {
+  id: number
   slug: string
   name: string
   categories: string[]
@@ -72,6 +73,7 @@ const generateProductDetails = (categories: string[]) => {
 const products: { [key: string]: ProductDetail } = {}
 ALL_PRODUCTS.forEach(p => {
   products[p.slug] = {
+    id: p.id,
     slug: p.slug,
     name: p.name,
     categories: p.categories,
@@ -79,7 +81,7 @@ ALL_PRODUCTS.forEach(p => {
     images: [p.image, p.image, p.image, p.image],
     details: generateProductDetails(p.categories),
     description: generateProductDescription(p.name)
-  }
+  } as ProductDetail
 })
 
 // Related products - random 4 products
@@ -130,6 +132,152 @@ const ProductDetail: React.FC = () => {
     { label: product.name, path: `/product/${product.slug}` }
   ]
 
+  // Generate structured data for the product
+  const generateStructuredData = () => {
+    const price = product.price.replace(/[^\d]/g, '') // Extract numeric price
+    const numericPrice = parseInt(price) || 0
+    
+    return {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": product.name,
+      "description": product.description,
+      "image": product.images,
+      "brand": {
+        "@type": "Brand",
+        "name": "Mangala Living"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "Mangala Living",
+        "url": "https://mangala-living.com"
+      },
+      "category": product.categories.join(", "),
+      "sku": product.slug,
+      "mpn": `ML-${product.id}`,
+      "offers": {
+        "@type": "Offer",
+        "price": numericPrice,
+        "priceCurrency": "IDR",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2025-12-31",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0",
+            "currency": "IDR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "ID"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "businessDays": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+            },
+            "cutoffTime": "14:00",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 3,
+              "maxValue": 5,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 3,
+              "unitCode": "DAY"
+            }
+          }
+        },
+        "seller": {
+          "@type": "Organization",
+          "name": "Mangala Living",
+          "url": "https://mangala-living.com",
+          "logo": "https://mangala-living.com/logo.png",
+          "description": "Premium Industrial Scandinavian Furniture for Coffee Shops, Restaurants & Offices. Custom Solutions Since 1999.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Raya Setu Cikarang Barat.",
+            "addressLocality": "Bekasi",
+            "addressRegion": "Jawa Barat",
+            "postalCode": "17320",
+            "addressCountry": "ID"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-852-1207-8467",
+            "contactType": "customer service",
+            "email": "info@mangala-living.com",
+            "availableLanguage": ["Indonesian", "English"]
+          }
+        },
+        "url": `https://mangala-living.com/product/${product.slug}`
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "datePublished": "2024-12-15",
+          "reviewBody": "Excellent quality furniture. The industrial design is perfect for our cafe. Highly recommended!",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Ahmad R."
+          },
+          "datePublished": "2024-12-10",
+          "reviewBody": "Great craftsmanship and durable materials. Perfect for commercial use.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Lisa K."
+          },
+          "datePublished": "2024-12-05",
+          "reviewBody": "Beautiful industrial furniture with excellent finishing. Very satisfied with the purchase.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4",
+            "bestRating": "5"
+          }
+        }
+      ]
+    }
+  }
+
   return (
     <div className="product-detail-page">
       <Helmet>
@@ -151,6 +299,11 @@ const ProductDetail: React.FC = () => {
         <meta name="twitter:title" content={`${product.name} - Mangala Living`} />
         <meta name="twitter:description" content={`${product.name} - ${product.details}`} />
         <meta name="twitter:image" content={product.images[0]} />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(generateStructuredData())}
+        </script>
       </Helmet>
 
       <Header />

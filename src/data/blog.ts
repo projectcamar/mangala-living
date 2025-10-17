@@ -314,6 +314,51 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Panduan lengkap furniture industrial custom design terpercaya yang memberikan jaminan kualitas dan kepercayaan terbukti.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2024-05-12'
+  },
+  {
+    id: 35,
+    slug: 'inspirasi-desain-kafe-industrial-minimalis-7-furniture-wajib',
+    title: 'Inspirasi Desain Kafe Industrial Minimalis: 7 Furniture Wajib Punya',
+    category: 'Furniture Information',
+    excerpt: 'Temukan 7 furniture industrial minimalis yang wajib ada di kafe modern Anda. Panduan lengkap dengan inspirasi desain dan tips pemilihan furniture terbaik.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-01-15'
+  },
+  {
+    id: 36,
+    slug: 'harga-furniture-industrial-terbaru-2025-lengkap-kafe-kantor',
+    title: 'Harga Furniture Industrial Terbaru 2025 (Lengkap untuk Kafe & Kantor)',
+    category: 'Furniture Information',
+    excerpt: 'Daftar harga furniture industrial terbaru 2025 untuk kafe, restoran, dan kantor. Informasi lengkap dengan spesifikasi dan rekomendasi terbaik.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-01-15'
+  },
+  {
+    id: 37,
+    slug: 'panduan-lengkap-memilih-furniture-industrial-untuk-restoran',
+    title: 'Panduan Lengkap Memilih Furniture Industrial untuk Restoran',
+    category: 'Tips and Trick',
+    excerpt: 'Panduan komprehensif memilih furniture industrial yang tepat untuk restoran modern. Tips pemilihan material, ukuran, dan desain yang sesuai konsep bisnis Anda.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-01-15'
+  },
+  {
+    id: 38,
+    slug: '7-model-meja-industrial-terlaris-untuk-kantor-modern',
+    title: '7 Model Meja Industrial Terlaris untuk Kantor Modern',
+    category: 'Furniture Information',
+    excerpt: '7 model meja industrial terlaris yang cocok untuk kantor modern. Rekomendasi lengkap dengan spesifikasi, harga, dan tips pemilihan terbaik.',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop',
+    date: '2025-01-15'
+  },
+  {
+    id: 39,
+    slug: 'tren-desain-interior-industrial-scandinavian-2025',
+    title: 'Tren Desain Interior Industrial Scandinavian 2025',
+    category: 'Furniture Information',
+    excerpt: 'Simak tren desain interior industrial Scandinavian terbaru 2025. Inspirasi modern yang menggabungkan elemen industrial dengan estetika Scandinavian minimalis.',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop',
+    date: '2025-01-15'
   }
 ]
 

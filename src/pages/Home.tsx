@@ -12,6 +12,9 @@ import OurProductsSection from '../components/OurProductsSection'
 import MessageSection from '../components/MessageSection'
 import Footer from '../components/Footer'
 
+// Utils
+import { generateMerchantStructuredData } from '../utils/structuredData'
+
 const Home: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
@@ -254,6 +257,11 @@ const Home: React.FC = () => {
               }
             }
           `}
+        </script>
+        
+        {/* Merchant Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(generateMerchantStructuredData())}
         </script>
       </Helmet>
       <Header isIndonesian={isIndonesian} />

@@ -13,6 +13,663 @@ export interface BlogContent {
 
 const BLOG_CONTENTS: BlogContent[] = [
   {
+    slug: 'inspirasi-desain-kafe-industrial-minimalis-7-furniture-wajib',
+    sections: [
+      {
+        paragraphs: [
+          'Desain kafe industrial minimalis menjadi tren yang tak pernah lekang oleh waktu. Kombinasi elemen industrial yang kuat dengan estetika minimalis menciptakan suasana yang modern, hangat, dan Instagram-worthy. Untuk menciptakan kafe industrial minimalis yang sempurna, ada 7 furniture wajib yang harus Anda miliki.',
+          'Dalam artikel ini, kami akan membahas secara detail 7 furniture industrial minimalis yang wajib ada di kafe modern Anda, lengkap dengan tips pemilihan dan inspirasi desain terbaik.'
+        ]
+      },
+      {
+        heading: '1. Meja Bar Industrial - Pusat Perhatian Kafe',
+        paragraphs: [
+          '<a href="/product/balcony-bar-table">Meja bar industrial</a> menjadi elemen utama yang wajib ada di setiap kafe industrial minimalis. Meja bar tidak hanya berfungsi sebagai tempat duduk, tetapi juga sebagai focal point yang menarik perhatian pelanggan.',
+          'Pilih meja bar dengan material besi hollow berkualitas tinggi dan finishing powder coating yang tahan lama. Ukuran ideal untuk kafe adalah 120x60 cm dengan tinggi 110 cm, cocok untuk 4-6 orang.'
+        ],
+        image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Bar Industrial untuk Kafe'
+      },
+      {
+        heading: '2. Kursi Bar Stool Industrial - Kenyamanan Maksimal',
+        paragraphs: [
+          'Pasangan sempurna untuk meja bar adalah <a href="/product-category/bar-furniture-collection">kursi bar stool industrial</a>. Pilih bar stool dengan ketinggian 75 cm yang sesuai dengan tinggi meja bar, dan pastikan memiliki backrest untuk kenyamanan duduk yang optimal.',
+          'Material besi dengan cushion seat yang nyaman akan membuat pelanggan betah berlama-lama di kafe Anda. Warna hitam atau grey adalah pilihan yang paling versatile untuk konsep industrial minimalis.'
+        ]
+      },
+      {
+        heading: '3. Sofa Bench Industrial - Area Lounge yang Nyaman',
+        paragraphs: [
+          'Untuk menciptakan area lounge yang nyaman, <a href="/product/bench-corner-lounge">sofa bench industrial</a> adalah pilihan yang tepat. Sofa bench memberikan fleksibilitas dalam pengaturan tempat duduk dan cocok untuk berbagai ukuran kelompok pelanggan.',
+          'Pilih sofa bench dengan frame besi yang kokoh dan cushion yang empuk. Desain corner lounge sangat cocok untuk memaksimalkan ruang dan menciptakan area privat yang nyaman.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Sofa Bench Industrial untuk Area Lounge'
+      },
+      {
+        heading: '4. Meja Makan Industrial - Fleksibilitas Maksimal',
+        paragraphs: [
+          'Meja makan industrial dengan desain minimalis memberikan fleksibilitas maksimal untuk berbagai kebutuhan pelanggan. <a href="/product-category/dining-table-collection">Meja makan industrial</a> dengan ukuran 80x80 cm cocok untuk 4 orang, sementara meja 120x60 cm ideal untuk 6 orang.',
+          'Pilih meja dengan top kayu solid atau engineered wood yang tahan lama, dikombinasikan dengan frame besi yang kokoh. Finishing natural wood atau dark stain akan memberikan kesan hangat yang kontras dengan elemen industrial.'
+        ]
+      },
+      {
+        heading: '5. Rak Display Industrial - Fungsional dan Estetis',
+        paragraphs: [
+          'Rak display industrial tidak hanya berfungsi sebagai penyimpanan, tetapi juga sebagai elemen dekoratif yang memperkuat konsep industrial. <a href="/product/frame-loft-bookshelf">Frame loft bookshelf</a> dengan desain modular sangat cocok untuk menampilkan merchandise atau dekorasi kafe.',
+          'Pilih rak dengan sistem modular yang memungkinkan penyesuaian tinggi dan konfigurasi sesuai kebutuhan. Material besi dengan finishing powder coating akan memberikan kesan industrial yang kuat.'
+        ],
+        image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Rak Display Industrial untuk Kafe'
+      },
+      {
+        heading: '6. Meja Kerja Industrial - Area Working Space',
+        paragraphs: [
+          'Untuk menarik pelanggan yang ingin bekerja sambil menikmati kopi, <a href="/product-category/table-collection">meja kerja industrial</a> dengan desain minimalis adalah investasi yang tepat. Meja dengan ukuran 120x60 cm dan tinggi 75 cm ideal untuk laptop dan dokumen.',
+          'Pilih meja dengan kabel management yang rapi dan outlet listrik terintegrasi. Frame besi yang kokoh akan memberikan stabilitas maksimal untuk aktivitas bekerja yang intensif.'
+        ]
+      },
+      {
+        heading: '7. Furniture Outdoor Industrial - Memperluas Ruang',
+        paragraphs: [
+          'Jika kafe Anda memiliki area outdoor, <a href="/product-category/balcony-outdoor-collection">furniture outdoor industrial</a> akan memperluas kapasitas dan memberikan pengalaman yang berbeda. Pilih furniture dengan material yang tahan cuaca dan finishing powder coating berkualitas tinggi.',
+          'Steelframe outdoor bar set dengan meja dan kursi yang tahan lama akan menciptakan area outdoor yang fungsional dan estetis. Pastikan furniture outdoor memiliki drainase yang baik untuk mencegah genangan air.'
+        ],
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Outdoor Industrial untuk Kafe'
+      },
+      {
+        heading: 'Tips Layout dan Dekorasi Kafe Industrial Minimalis',
+        list: [
+          '<strong>Konsistensi Warna:</strong> Gunakan palet warna netral seperti hitam, putih, dan grey sebagai base, dengan aksen natural wood untuk memberikan kehangatan.',
+          '<strong>Lighting Industrial:</strong> Pilih lampu dengan desain industrial seperti pendant light atau track lighting untuk memperkuat konsep.',
+          '<strong>Tanaman Hijau:</strong> Tambahkan tanaman hijau dalam pot industrial untuk memberikan sentuhan natural yang kontras dengan elemen besi.',
+          '<strong>Wall Art:</strong> Gunakan wall art dengan tema industrial atau vintage untuk memperkuat konsep desain.',
+          '<strong>Flooring:</strong> Pilih flooring yang kontras dengan furniture, seperti concrete finish atau wood plank yang memberikan kesan industrial.'
+        ]
+      },
+      {
+        heading: 'Mengapa Memilih Mangala Living untuk Furniture Kafe Industrial?',
+        paragraphs: [
+          'Sebagai produsen furniture industrial terpercaya sejak 1999, <a href="/about">Mangala Living</a> telah melayani lebih dari 1000 klien di seluruh Indonesia. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
+          'Kami menawarkan furniture industrial berkualitas tinggi dengan finishing powder coating yang tahan lama, material besi hollow berkualitas, dan kayu solid yang awet. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
+          'Untuk konsultasi desain kafe industrial minimalis dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangala-living.com">info@mangala-living.com</a>.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'harga-furniture-industrial-terbaru-2025-lengkap-kafe-kantor',
+    sections: [
+      {
+        paragraphs: [
+          'Harga furniture industrial menjadi pertimbangan utama bagi pemilik bisnis yang ingin menciptakan ruang komersial dengan konsep industrial modern. Sebagai produsen furniture industrial terpercaya sejak 1999, Mangala Living menyediakan berbagai pilihan furniture industrial dengan harga kompetitif dan kualitas terjamin.',
+          'Dalam artikel ini, kami akan memberikan informasi lengkap tentang harga furniture industrial terbaru 2025 untuk berbagai kebutuhan, mulai dari kafe, restoran, hingga kantor modern.'
+        ]
+      },
+      {
+        heading: 'Harga Meja Industrial Terbaru 2025',
+        paragraphs: [
+          'Meja industrial menjadi elemen utama dalam desain ruang komersial modern. Berikut adalah daftar harga meja industrial terbaru dari Mangala Living:'
+        ],
+        list: [
+          '<strong>Meja Bar Industrial:</strong> Rp 3.500.000 - Rp 5.500.000 (ukuran 120x60 cm, tinggi 110 cm)',
+          '<strong>Meja Makan Industrial:</strong> Rp 2.800.000 - Rp 4.500.000 (ukuran 80x80 cm, 120x60 cm)',
+          '<strong>Meja Kerja Industrial:</strong> Rp 1.400.000 - Rp 2.800.000 (ukuran 120x60 cm, tinggi 75 cm)',
+          '<strong>Meja Outdoor Industrial:</strong> Rp 4.500.000 - Rp 6.500.000 (tahan cuaca, powder coating premium)'
+        ],
+        image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=1200&auto=format&fit=crop',
+        imageAlt: 'Harga Meja Industrial Terbaru 2025'
+      },
+      {
+        heading: 'Harga Kursi dan Sofa Industrial 2025',
+        paragraphs: [
+          'Kursi dan sofa industrial dengan desain modern memberikan kenyamanan maksimal untuk pelanggan. Berikut daftar harga kursi industrial terbaru:'
+        ],
+        list: [
+          '<strong>Kursi Bar Stool Industrial:</strong> Rp 800.000 - Rp 1.500.000 per unit',
+          '<strong>Sofa Bench Industrial:</strong> Rp 2.800.000 - Rp 4.200.000 (ukuran 120 cm)',
+          '<strong>Kursi Makan Industrial:</strong> Rp 1.200.000 - Rp 2.000.000 per unit',
+          '<strong>Daybed Industrial:</strong> Rp 3.200.000 - Rp 5.000.000 (ukuran 200x80 cm)'
+        ]
+      },
+      {
+        heading: 'Harga Rak dan Storage Industrial 2025',
+        paragraphs: [
+          'Rak dan storage industrial tidak hanya fungsional tetapi juga menjadi elemen dekoratif yang memperkuat konsep industrial. Berikut harga rak industrial terbaru:'
+        ],
+        list: [
+          '<strong>Frame Loft Bookshelf:</strong> Rp 3.500.000 - Rp 5.500.000 (sistem modular)',
+          '<strong>Rak Display Industrial:</strong> Rp 4.500.000 - Rp 7.500.000 (ukuran 180x40x200 cm)',
+          '<strong>Kabinet Industrial:</strong> Rp 4.500.000 - Rp 8.500.000 (dengan pintu dan laci)',
+          '<strong>Rak Gantung Industrial:</strong> Rp 1.200.000 - Rp 2.500.000 (sistem wall mounted)'
+        ],
+        image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Harga Rak Industrial Terbaru 2025'
+      },
+      {
+        heading: 'Harga Set Furniture Industrial Lengkap',
+        paragraphs: [
+          'Untuk kemudahan dan konsistensi desain, Mangala Living menawarkan paket set furniture industrial lengkap dengan harga yang lebih ekonomis:'
+        ],
+        list: [
+          '<strong>Set Kafe Industrial (4 meja + 8 kursi):</strong> Rp 15.000.000 - Rp 25.000.000',
+          '<strong>Set Restoran Industrial (6 meja + 12 kursi):</strong> Rp 22.000.000 - Rp 35.000.000',
+          '<strong>Set Kantor Industrial (8 meja kerja + 8 kursi):</strong> Rp 18.000.000 - Rp 28.000.000',
+          '<strong>Set Outdoor Industrial (4 meja + 8 kursi):</strong> Rp 25.000.000 - Rp 40.000.000'
+        ]
+      },
+      {
+        heading: 'Faktor yang Mempengaruhi Harga Furniture Industrial',
+        list: [
+          '<strong>Material:</strong> Besi hollow berkualitas tinggi, kayu solid, dan finishing powder coating premium',
+          '<strong>Ukuran:</strong> Furniture dengan ukuran custom biasanya 20-30% lebih mahal dari ukuran standar',
+          '<strong>Finishing:</strong> Powder coating premium dan treatment anti karat mempengaruhi harga',
+          '<strong>Kompleksitas Desain:</strong> Desain custom dan detail khusus akan menambah biaya produksi',
+          '<strong>Kuantitas:</strong> Pembelian dalam jumlah besar mendapatkan diskon hingga 15%'
+        ]
+      },
+      {
+        heading: 'Tips Menghemat Budget Furniture Industrial',
+        list: [
+          '<strong>Pilih Ukuran Standar:</strong> Furniture dengan ukuran standar lebih ekonomis dibanding custom',
+          '<strong>Beli dalam Set:</strong> Paket set furniture memberikan harga lebih kompetitif',
+          '<strong>Pertimbangkan Material:</strong> Pilih material yang sesuai kebutuhan tanpa mengorbankan kualitas',
+          '<strong>Perawatan Rutin:</strong> Furniture yang dirawat dengan baik akan awet dan menghemat biaya penggantian',
+          '<strong>Konsultasi Gratis:</strong> Manfaatkan konsultasi desain gratis untuk optimasi budget'
+        ]
+      },
+      {
+        heading: 'Garansi dan Layanan Purna Jual Mangala Living',
+        paragraphs: [
+          'Semua furniture industrial Mangala Living dilengkapi dengan garansi kualitas dan layanan purna jual yang komprehensif:'
+        ],
+        list: [
+          '<strong>Garansi Material:</strong> 2 tahun untuk frame besi dan finishing powder coating',
+          '<strong>Garansi Kayu:</strong> 1 tahun untuk top kayu dan komponen kayu',
+          '<strong>Layanan Perbaikan:</strong> Tim teknis berpengalaman untuk maintenance dan perbaikan',
+          '<strong>Spare Part:</strong> Ketersediaan spare part original untuk semua produk',
+          '<strong>Konsultasi Desain:</strong> Layanan konsultasi desain gratis untuk optimasi ruang'
+        ]
+      },
+      {
+        heading: 'Cara Memesan Furniture Industrial Mangala Living',
+        paragraphs: [
+          'Untuk memesan furniture industrial berkualitas dengan harga terbaik, ikuti langkah-langkah berikut:'
+        ],
+        list: [
+          '<strong>Konsultasi Awal:</strong> Hubungi tim sales untuk konsultasi kebutuhan dan budget',
+          '<strong>Site Survey:</strong> Tim teknis akan melakukan survey lokasi untuk pengukuran akurat',
+          '<strong>3D Rendering:</strong> Visualisasi 3D untuk memastikan desain sesuai ekspektasi',
+          '<strong>Konfirmasi Order:</strong> Finalisasi spesifikasi, harga, dan jadwal produksi',
+          '<strong>Produksi:</strong> Proses produksi di workshop Bekasi dengan quality control ketat',
+          '<strong>Delivery & Installation:</strong> Pengiriman dan instalasi oleh tim profesional'
+        ]
+      },
+      {
+        heading: 'Mengapa Memilih Mangala Living untuk Furniture Industrial?',
+        paragraphs: [
+          'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living telah melayani lebih dari 1000 klien di seluruh Indonesia. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
+          'Kami menawarkan furniture industrial berkualitas tinggi dengan harga kompetitif, garansi kualitas, dan layanan purna jual yang profesional. Semua produk kami menggunakan material berkualitas tinggi dan finishing powder coating yang tahan lama.',
+          'Untuk informasi harga furniture industrial terbaru dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangala-living.com">info@mangala-living.com</a>. Tim sales kami siap membantu Anda mendapatkan furniture industrial terbaik sesuai budget dan kebutuhan.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'panduan-lengkap-memilih-furniture-industrial-untuk-restoran',
+    sections: [
+      {
+        paragraphs: [
+          'Memilih furniture industrial untuk restoran memerlukan pertimbangan yang matang karena restoran memiliki karakteristik operasional yang berbeda dengan kafe. Furniture restoran harus mampu menciptakan suasana yang nyaman untuk dining experience yang optimal, sambil mempertahankan estetika industrial yang modern dan profesional.',
+          'Dalam panduan lengkap ini, kami akan membahas semua aspek penting dalam memilih furniture industrial untuk restoran, mulai dari pemilihan material, ukuran, hingga layout yang optimal untuk meningkatkan customer experience.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Furniture Industrial untuk Restoran',
+        paragraphs: [
+          'Furniture industrial untuk restoran memiliki karakteristik khusus yang berbeda dengan furniture untuk kafe atau kantor. Berikut adalah karakteristik utama yang harus diperhatikan:'
+        ],
+        list: [
+          '<strong>Durabilitas Tinggi:</strong> Furniture restoran harus tahan terhadap penggunaan intensif dan mudah dibersihkan',
+          '<strong>Kenyamanan Optimal:</strong> Pelanggan restoran menghabiskan waktu lebih lama dibanding kafe, sehingga kenyamanan duduk sangat penting',
+          '<strong>Estetika Profesional:</strong> Desain harus mencerminkan kualitas dan profesionalitas restoran',
+          '<strong>Fleksibilitas Layout:</strong> Furniture harus mudah diatur ulang untuk berbagai acara dan kebutuhan',
+          '<strong>Maintenance Mudah:</strong> Harus mudah dibersihkan dan dirawat untuk menjaga kebersihan restoran'
+        ]
+      },
+      {
+        heading: 'Pemilihan Meja Makan Industrial untuk Restoran',
+        paragraphs: [
+          'Meja makan adalah elemen utama dalam furniture restoran. <a href="/product-category/dining-table-collection">Meja makan industrial</a> dengan desain yang tepat akan meningkatkan dining experience pelanggan.'
+        ],
+        list: [
+          '<strong>Ukuran Ideal:</strong> Meja 80x80 cm untuk 4 orang, 120x60 cm untuk 6 orang, dan 160x80 cm untuk 8 orang',
+          '<strong>Material Top:</strong> Kayu solid atau engineered wood dengan finishing food-safe untuk keamanan makanan',
+          '<strong>Frame Besi:</strong> Besi hollow berkualitas tinggi dengan finishing powder coating anti karat',
+          '<strong>Ketinggian:</strong> Standar 75 cm untuk kenyamanan duduk optimal',
+          '<strong>Stabilitas:</strong> Frame harus kokoh dan tidak bergoyang saat digunakan'
+        ],
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Makan Industrial untuk Restoran'
+      },
+      {
+        heading: 'Pemilihan Kursi Restoran Industrial',
+        paragraphs: [
+          'Kursi restoran harus memberikan kenyamanan maksimal untuk pelanggan yang menghabiskan waktu 1-2 jam untuk makan. Berikut tips pemilihan kursi restoran industrial:'
+        ],
+        list: [
+          '<strong>Backrest Support:</strong> Kursi dengan backrest yang memberikan support optimal untuk punggung',
+          '<strong>Cushion Nyaman:</strong> Seat cushion yang empuk namun tidak terlalu empuk untuk kenyamanan jangka panjang',
+          '<strong>Material Tahan Lama:</strong> Upholstery yang mudah dibersihkan dan tahan terhadap noda makanan',
+          '<strong>Ketinggian Sesuai:</strong> Ketinggian kursi harus sesuai dengan meja (45-50 cm dari lantai)',
+          '<strong>Stabilitas:</strong> Frame besi yang kokoh dengan kaki yang tidak mudah bergeser'
+        ]
+      },
+      {
+        heading: 'Bar Set Industrial untuk Area Bar Restoran',
+        paragraphs: [
+          'Area bar di restoran memerlukan <a href="/product-category/bar-furniture-collection">bar set industrial</a> yang fungsional dan estetis. Bar set yang tepat akan meningkatkan experience pelanggan dan efisiensi operasional.'
+        ],
+        list: [
+          '<strong>Meja Bar:</strong> Tinggi 110 cm dengan lebar minimal 60 cm untuk kenyamanan bartender',
+          '<strong>Bar Stool:</strong> Tinggi 75 cm dengan backrest dan footrest untuk kenyamanan duduk lama',
+          '<strong>Storage Terintegrasi:</strong> Rak atau kabinet di bawah meja bar untuk penyimpanan',
+          '<strong>Lighting:</strong> Pendant light industrial untuk pencahayaan optimal area bar',
+          '<strong>Material Tahan Lama:</strong> Top meja dengan material yang tahan terhadap cairan dan panas'
+        ]
+      },
+      {
+        heading: 'Storage dan Display Industrial untuk Restoran',
+        paragraphs: [
+          'Storage dan display industrial tidak hanya berfungsi sebagai penyimpanan, tetapi juga sebagai elemen dekoratif yang memperkuat konsep industrial restoran.'
+        ],
+        list: [
+          '<strong>Kabinet Industrial:</strong> <a href="/product-category/storage-collection">Kabinet industrial</a> dengan pintu dan laci untuk penyimpanan peralatan',
+          '<strong>Rak Display:</strong> <a href="/product/hollowline-display-rack">Rak display industrial</a> untuk menampilkan wine atau merchandise',
+          '<strong>Rak Gantung:</strong> <a href="/product/industrial-hanging-shelf">Rak gantung industrial</a> untuk dekorasi dan penyimpanan',
+          '<strong>Modular System:</strong> Sistem modular yang memungkinkan penyesuaian sesuai kebutuhan',
+          '<strong>Finishing Food-Safe:</strong> Semua finishing harus aman untuk kontak dengan makanan'
+        ],
+        image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Storage Industrial untuk Restoran'
+      },
+      {
+        heading: 'Layout dan Spacing Restoran Industrial',
+        paragraphs: [
+          'Layout restoran industrial harus mempertimbangkan flow pelanggan, staff, dan efisiensi operasional. Berikut adalah prinsip-prinsip layout yang optimal:'
+        ],
+        list: [
+          '<strong>Circulation Space:</strong> Minimal 90 cm untuk sirkulasi pelanggan dan 120 cm untuk area staff',
+          '<strong>Table Spacing:</strong> Jarak antar meja minimal 60 cm untuk privasi dan kenyamanan',
+          '<strong>Kitchen Access:</strong> Area dekat kitchen untuk meja VIP atau meja dengan service khusus',
+          '<strong>Window Seating:</strong> Meja dekat jendela untuk experience yang lebih baik',
+          '<strong>Flexible Layout:</strong> Kemampuan mengatur ulang untuk acara khusus atau private dining'
+        ]
+      },
+      {
+        heading: 'Lighting dan Dekorasi Restoran Industrial',
+        paragraphs: [
+          'Lighting dan dekorasi yang tepat akan memperkuat konsep industrial restoran dan menciptakan atmosfer yang menarik.'
+        ],
+        list: [
+          '<strong>Pendant Lighting:</strong> Lampu gantung industrial dengan warm light untuk suasana hangat',
+          '<strong>Track Lighting:</strong> Sistem track lighting untuk pencahayaan yang dapat disesuaikan',
+          '<strong>Wall Art:</strong> Wall art dengan tema industrial atau vintage untuk memperkuat konsep',
+          '<strong>Tanaman:</strong> Tanaman hijau dalam pot industrial untuk sentuhan natural',
+          '<strong>Color Scheme:</strong> Palet warna netral dengan aksen natural wood dan metal'
+        ]
+      },
+      {
+        heading: 'Maintenance dan Perawatan Furniture Restoran Industrial',
+        paragraphs: [
+          'Furniture restoran industrial memerlukan perawatan khusus karena penggunaan intensif dan kontak dengan makanan. Berikut tips perawatan yang tepat:'
+        ],
+        list: [
+          '<strong>Cleaning Routine:</strong> Pembersihan harian dengan pembersih yang aman untuk furniture',
+          '<strong>Deep Cleaning:</strong> Pembersihan mendalam mingguan untuk menghilangkan noda dan bakteri',
+          '<strong>Inspection:</strong> Pemeriksaan rutin untuk mendeteksi kerusakan atau keausan',
+          '<strong>Refinishing:</strong> Refinishing berkala untuk menjaga tampilan dan melindungi material',
+          '<strong>Professional Service:</strong> Layanan profesional untuk maintenance dan perbaikan'
+        ]
+      },
+      {
+        heading: 'Budget Planning untuk Furniture Restoran Industrial',
+        paragraphs: [
+          'Perencanaan budget yang tepat akan membantu Anda mendapatkan furniture restoran industrial berkualitas dengan harga yang kompetitif.'
+        ],
+        list: [
+          '<strong>Prioritas Furniture:</strong> Fokus pada meja dan kursi sebagai investasi utama',
+          '<strong>Phased Approach:</strong> Implementasi bertahap untuk mengelola cash flow',
+          '<strong>Quality vs Price:</strong> Investasi pada kualitas untuk durability jangka panjang',
+          '<strong>Bulk Purchase:</strong> Pembelian dalam jumlah besar untuk mendapatkan harga terbaik',
+          '<strong>Warranty Consideration:</strong> Pertimbangkan garansi dan layanan purna jual'
+        ]
+      },
+      {
+        heading: 'Mengapa Memilih Mangala Living untuk Furniture Restoran Industrial?',
+        paragraphs: [
+          'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus furniture restoran. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman dalam menciptakan furniture restoran berkualitas tinggi.',
+          'Kami menawarkan furniture restoran industrial dengan material berkualitas tinggi, finishing food-safe, dan desain yang fungsional. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
+          'Untuk konsultasi desain restoran industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangala-living.com">info@mangala-living.com</a>. Tim sales kami siap membantu Anda menciptakan restoran industrial yang sempurna.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: '7-model-meja-industrial-terlaris-untuk-kantor-modern',
+    sections: [
+      {
+        paragraphs: [
+          'Meja kantor industrial menjadi pilihan populer untuk menciptakan workspace modern yang produktif dan estetis. Dengan desain yang menggabungkan elemen industrial yang kuat dengan fungsionalitas modern, meja kantor industrial memberikan pengalaman bekerja yang optimal.',
+          'Dalam artikel ini, kami akan membahas 7 model meja industrial terlaris yang cocok untuk kantor modern, lengkap dengan spesifikasi, keunggulan, dan tips pemilihan yang tepat.'
+        ]
+      },
+      {
+        heading: '1. Meja Kerja Industrial Minimalis - Pilihan Terpopuler',
+        paragraphs: [
+          '<a href="/product-category/table-collection">Meja kerja industrial minimalis</a> menjadi pilihan terpopuler untuk kantor modern karena desainnya yang clean dan fungsional. Meja ini cocok untuk berbagai jenis pekerjaan, mulai dari administrasi hingga creative work.'
+        ],
+        list: [
+          '<strong>Spesifikasi:</strong> Ukuran 120x60 cm, tinggi 75 cm, material besi hollow + kayu solid',
+          '<strong>Keunggulan:</strong> Desain minimalis, mudah dibersihkan, stabilitas tinggi',
+          '<strong>Harga:</strong> Rp 1.400.000 - Rp 2.800.000',
+          '<strong>Cocok untuk:</strong> Individual workspace, home office, co-working space',
+          '<strong>Fitur Tambahan:</strong> Cable management, drawer optional, adjustable height'
+        ],
+        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Kerja Industrial Minimalis'
+      },
+      {
+        heading: '2. Meja Executive Industrial - Untuk Pimpinan',
+        paragraphs: [
+          'Meja executive industrial dirancang khusus untuk pimpinan dan manager yang memerlukan ruang kerja yang luas dan profesional. Desain yang elegan dan fungsional membuat meja ini menjadi pilihan utama untuk ruang eksekutif.'
+        ],
+        list: [
+          '<strong>Spesifikasi:</strong> Ukuran 160x80 cm, tinggi 75 cm, material premium',
+          '<strong>Keunggulan:</strong> Ruang kerja luas, storage terintegrasi, finishing premium',
+          '<strong>Harga:</strong> Rp 3.500.000 - Rp 5.500.000',
+          '<strong>Cocok untuk:</strong> CEO office, manager room, executive suite',
+          '<strong>Fitur Tambahan:</strong> Built-in storage, cable management, premium finishing'
+        ]
+      },
+      {
+        heading: '3. Meja Meeting Industrial - Untuk Ruang Rapat',
+        paragraphs: [
+          'Meja meeting industrial dirancang untuk menciptakan suasana rapat yang profesional dan produktif. Desain yang memungkinkan interaksi optimal antar peserta rapat.'
+        ],
+        list: [
+          '<strong>Spesifikasi:</strong> Ukuran 240x100 cm, tinggi 75 cm, kapasitas 8-10 orang',
+          '<strong>Keunggulan:</strong> Ruang luas untuk meeting, stabilitas tinggi, desain profesional',
+          '<strong>Harga:</strong> Rp 4.500.000 - Rp 7.500.000',
+          '<strong>Cocok untuk:</strong> Meeting room, conference room, training room',
+          '<strong>Fitur Tambahan:</strong> Cable management terintegrasi, power outlet, modular system'
+        ],
+        image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Meeting Industrial'
+      },
+      {
+        heading: '4. Meja Standing Industrial - Trend Kesehatan',
+        paragraphs: [
+          'Meja standing industrial mengikuti tren kesehatan modern yang mendorong pekerja untuk bergerak lebih aktif. Desain yang ergonomis dan adjustable membuat meja ini semakin populer.'
+        ],
+        list: [
+          '<strong>Spesifikasi:</strong> Tinggi adjustable 70-120 cm, ukuran 120x60 cm',
+          '<strong>Keunggulan:</strong> Ergonomis, kesehatan optimal, produktivitas tinggi',
+          '<strong>Harga:</strong> Rp 2.800.000 - Rp 4.200.000',
+          '<strong>Cocok untuk:</strong> Health-conscious workers, creative professionals, developers',
+          '<strong>Fitur Tambahan:</strong> Electric height adjustment, memory function, cable management'
+        ]
+      },
+      {
+        heading: '5. Meja L-Shaped Industrial - Untuk Workstation Kompleks',
+        paragraphs: [
+          'Meja L-shaped industrial memberikan ruang kerja yang luas dan fleksibel untuk pekerjaan yang memerlukan multiple monitor atau workspace yang kompleks.'
+        ],
+        list: [
+          '<strong>Spesifikasi:</strong> Konfigurasi L-shape, total area 2.4 m²',
+          '<strong>Keunggulan:</strong> Ruang kerja luas, fleksibilitas tinggi, storage optimal',
+          '<strong>Harga:</strong> Rp 3.200.000 - Rp 5.800.000',
+          '<strong>Cocok untuk:</strong> Graphic designers, architects, engineers, content creators',
+          '<strong>Fitur Tambahan:</strong> Multiple storage, cable management, modular design'
+        ],
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja L-Shaped Industrial'
+      },
+      {
+        heading: '6. Meja Collaborative Industrial - Untuk Team Work',
+        paragraphs: [
+          'Meja collaborative industrial dirancang untuk mendukung kerja tim dan kolaborasi. Desain yang memungkinkan interaksi optimal antar anggota tim.'
+        ],
+        list: [
+          '<strong>Spesifikasi:</strong> Ukuran 300x100 cm, kapasitas 12-16 orang',
+          '<strong>Keunggulan:</strong> Kolaborasi optimal, komunikasi efektif, produktivitas tim',
+          '<strong>Harga:</strong> Rp 6.500.000 - Rp 10.500.000',
+          '<strong>Cocok untuk:</strong> Open office, creative team, startup, co-working space',
+          '<strong>Fitur Tambahan:</strong> Power outlet terintegrasi, cable management, modular system'
+        ]
+      },
+      {
+        heading: '7. Meja Reception Industrial - Untuk Area Penerimaan',
+        paragraphs: [
+          'Meja reception industrial menjadi focal point pertama yang dilihat pengunjung kantor. Desain yang profesional dan welcoming untuk menciptakan first impression yang positif.'
+        ],
+        list: [
+          '<strong>Spesifikasi:</strong> Ukuran 200x60 cm, tinggi 110 cm, desain counter',
+          '<strong>Keunggulan:</strong> First impression positif, storage optimal, desain profesional',
+          '<strong>Harga:</strong> Rp 2.500.000 - Rp 4.500.000',
+          '<strong>Cocok untuk:</strong> Reception area, lobby, waiting room, customer service',
+          '<strong>Fitur Tambahan:</strong> Storage terintegrasi, cable management, premium finishing'
+        ],
+        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Reception Industrial'
+      },
+      {
+        heading: 'Tips Memilih Meja Kantor Industrial yang Tepat',
+        paragraphs: [
+          'Pemilihan meja kantor industrial yang tepat akan meningkatkan produktivitas dan kenyamanan kerja. Berikut tips yang perlu diperhatikan:'
+        ],
+        list: [
+          '<strong>Ukuran Ruang:</strong> Sesuaikan ukuran meja dengan luas ruang yang tersedia',
+          '<strong>Jenis Pekerjaan:</strong> Pilih meja yang sesuai dengan jenis pekerjaan dan kebutuhan',
+          '<strong>Ergonomis:</strong> Pastikan ketinggian meja sesuai dengan postur tubuh pengguna',
+          '<strong>Storage:</strong> Pertimbangkan kebutuhan storage untuk dokumen dan peralatan',
+          '<strong>Kabel Management:</strong> Pilih meja dengan sistem kabel management yang baik',
+          '<strong>Durabilitas:</strong> Investasi pada kualitas material untuk durability jangka panjang'
+        ]
+      },
+      {
+        heading: 'Layout Kantor Industrial Modern',
+        paragraphs: [
+          'Layout kantor industrial modern harus mempertimbangkan produktivitas, kolaborasi, dan kenyamanan kerja. Berikut prinsip-prinsip layout yang optimal:'
+        ],
+        list: [
+          '<strong>Open Plan:</strong> Kombinasi open space dengan area privat untuk fleksibilitas',
+          '<strong>Zoning:</strong> Pembagian area berdasarkan fungsi: work, meeting, break, storage',
+          '<strong>Circulation:</strong> Sirkulasi yang efisien untuk mobilitas optimal',
+          '<strong>Lighting:</strong> Pencahayaan yang optimal untuk produktivitas dan kenyamanan',
+          '<strong>Acoustics:</strong> Pertimbangan akustik untuk mengurangi noise dan meningkatkan fokus'
+        ]
+      },
+      {
+        heading: 'Maintenance Meja Kantor Industrial',
+        paragraphs: [
+          'Perawatan yang tepat akan menjaga kualitas dan durability meja kantor industrial. Berikut tips maintenance yang efektif:'
+        ],
+        list: [
+          '<strong>Cleaning Routine:</strong> Pembersihan harian dengan pembersih yang sesuai material',
+          '<strong>Deep Cleaning:</strong> Pembersihan mendalam mingguan untuk menjaga kebersihan',
+          '<strong>Inspection:</strong> Pemeriksaan rutin untuk mendeteksi kerusakan atau keausan',
+          '<strong>Refinishing:</strong> Refinishing berkala untuk menjaga tampilan dan melindungi material',
+          '<strong>Professional Service:</strong> Layanan profesional untuk maintenance dan perbaikan'
+        ]
+      },
+      {
+        heading: 'Mengapa Memilih Mangala Living untuk Meja Kantor Industrial?',
+        paragraphs: [
+          'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus furniture kantor modern. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman dalam menciptakan furniture kantor berkualitas tinggi.',
+          'Kami menawarkan meja kantor industrial dengan material berkualitas tinggi, desain ergonomis, dan finishing yang tahan lama. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
+          'Untuk konsultasi desain kantor industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangala-living.com">info@mangala-living.com</a>. Tim sales kami siap membantu Anda menciptakan workspace industrial yang produktif dan estetis.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'tren-desain-interior-industrial-scandinavian-2025',
+    sections: [
+      {
+        paragraphs: [
+          'Tren desain interior industrial Scandinavian 2025 menggabungkan elemen industrial yang kuat dengan estetika Scandinavian yang minimalis dan hangat. Kombinasi ini menciptakan suasana yang modern, fungsional, dan nyaman untuk berbagai jenis ruang, mulai dari rumah, kantor, hingga ruang komersial.',
+          'Dalam artikel ini, kami akan membahas tren desain interior industrial Scandinavian terbaru 2025, lengkap dengan inspirasi, tips implementasi, dan rekomendasi furniture yang tepat.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Desain Industrial Scandinavian 2025',
+        paragraphs: [
+          'Desain industrial Scandinavian 2025 memiliki karakteristik unik yang menggabungkan dua gaya yang berbeda namun saling melengkapi:'
+        ],
+        list: [
+          '<strong>Material Natural:</strong> Kombinasi kayu solid, besi, dan elemen natural lainnya',
+          '<strong>Color Palette:</strong> Palet warna netral dengan aksen natural dan metal',
+          '<strong>Minimalist Approach:</strong> Fokus pada fungsionalitas tanpa mengorbankan estetika',
+          '<strong>Warm Industrial:</strong> Elemen industrial yang hangat dan welcoming',
+          '<strong>Sustainable Design:</strong> Penekanan pada material ramah lingkungan dan durability'
+        ]
+      },
+      {
+        heading: 'Tren Warna Industrial Scandinavian 2025',
+        paragraphs: [
+          'Tren warna untuk desain industrial Scandinavian 2025 mengutamakan keseimbangan antara elemen industrial yang kuat dengan kehangatan Scandinavian:'
+        ],
+        list: [
+          '<strong>Neutral Base:</strong> Putih, krem, dan grey sebagai warna dasar',
+          '<strong>Natural Accents:</strong> Kayu natural, terracotta, dan sage green',
+          '<strong>Metal Accents:</strong> Besi hitam, brass, dan copper untuk elemen industrial',
+          '<strong>Warm Tones:</strong> Beige, taupe, dan warm grey untuk kehangatan',
+          '<strong>Bold Accents:</strong> Deep navy, forest green, dan burnt orange untuk aksen'
+        ],
+        image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop',
+        imageAlt: 'Tren Warna Industrial Scandinavian 2025'
+      },
+      {
+        heading: 'Furniture Industrial Scandinavian Terpopuler 2025',
+        paragraphs: [
+          'Furniture industrial Scandinavian 2025 mengutamakan fungsionalitas, kenyamanan, dan estetika yang timeless. Berikut adalah furniture yang paling populer:'
+        ],
+        list: [
+          '<strong>Meja Kayu + Besi:</strong> <a href="/product-category/table-collection">Meja industrial</a> dengan top kayu solid dan frame besi minimalis',
+          '<strong>Sofa Industrial:</strong> <a href="/product/bench-corner-lounge">Sofa industrial</a> dengan desain clean dan material natural',
+          '<strong>Storage Modular:</strong> <a href="/product/frame-loft-bookshelf">Rak modular industrial</a> dengan sistem yang fleksibel',
+          '<strong>Lighting Industrial:</strong> Pendant light dan floor lamp dengan desain industrial minimalis',
+          '<strong>Outdoor Furniture:</strong> <a href="/product-category/balcony-outdoor-collection">Furniture outdoor</a> yang tahan cuaca dengan estetika Scandinavian'
+        ]
+      },
+      {
+        heading: 'Tren Material Industrial Scandinavian 2025',
+        paragraphs: [
+          'Pemilihan material yang tepat menjadi kunci dalam menciptakan desain industrial Scandinavian yang autentik dan modern:'
+        ],
+        list: [
+          '<strong>Kayu Solid:</strong> Oak, walnut, dan teak dengan finishing natural atau light stain',
+          '<strong>Besi Industrial:</strong> Besi hollow dengan finishing powder coating atau raw steel',
+          '<strong>Concrete Elements:</strong> Concrete finish untuk counter, meja, atau elemen dekoratif',
+          '<strong>Natural Stone:</strong> Marble, granite, atau travertine untuk aksen premium',
+          '<strong>Textile Natural:</strong> Linen, cotton, dan wool untuk upholstery dan soft furnishing'
+        ],
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Material Industrial Scandinavian 2025'
+      },
+      {
+        heading: 'Tren Lighting Industrial Scandinavian 2025',
+        paragraphs: [
+          'Lighting menjadi elemen penting dalam menciptakan atmosfer industrial Scandinavian yang hangat dan welcoming:'
+        ],
+        list: [
+          '<strong>Pendant Lighting:</strong> Lampu gantung dengan desain industrial minimalis',
+          '<strong>Track Lighting:</strong> Sistem track lighting untuk pencahayaan yang fleksibel',
+          '<strong>Floor Lamps:</strong> Floor lamp dengan desain industrial dan material natural',
+          '<strong>Wall Sconces:</strong> Wall sconces dengan desain industrial untuk pencahayaan ambient',
+          '<strong>Natural Light:</strong> Maksimalkan cahaya alami dengan jendela besar dan skylight'
+        ]
+      },
+      {
+        heading: 'Tren Layout Industrial Scandinavian 2025',
+        paragraphs: [
+          'Layout ruang industrial Scandinavian 2025 mengutamakan fungsionalitas dan kenyamanan dengan pendekatan yang lebih human-centered:'
+        ],
+        list: [
+          '<strong>Open Plan Living:</strong> Ruang terbuka yang menghubungkan berbagai area fungsional',
+          '<strong>Flexible Zoning:</strong> Pembagian area yang fleksibel dan dapat disesuaikan',
+          '<strong>Multi-functional Spaces:</strong> Ruang yang dapat berfungsi untuk berbagai aktivitas',
+          '<strong>Indoor-Outdoor Connection:</strong> Koneksi yang seamless antara indoor dan outdoor',
+          '<strong>Storage Integration:</strong> Storage yang terintegrasi dengan desain secara natural'
+        ]
+      },
+      {
+        heading: 'Tren Dekorasi Industrial Scandinavian 2025',
+        paragraphs: [
+          'Dekorasi industrial Scandinavian 2025 mengutamakan elemen natural dan personal touch:'
+        ],
+        list: [
+          '<strong>Plants & Greenery:</strong> Tanaman hijau dalam pot industrial atau hanging planters',
+          '<strong>Artisan Objects:</strong> Benda-benda artisan dan handmade untuk personal touch',
+          '<strong>Vintage Elements:</strong> Elemen vintage yang dipadukan dengan modern industrial',
+          '<strong>Textile Layers:</strong> Layering textile dengan berbagai tekstur dan pattern',
+          '<strong>Personal Collections:</strong> Display koleksi pribadi dengan cara yang estetis'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Dekorasi Industrial Scandinavian 2025'
+      },
+      {
+        heading: 'Tren Teknologi dalam Desain Industrial Scandinavian 2025',
+        paragraphs: [
+          'Teknologi terintegrasi dalam desain industrial Scandinavian 2025 dengan pendekatan yang subtle dan fungsional:'
+        ],
+        list: [
+          '<strong>Smart Lighting:</strong> Sistem pencahayaan yang dapat dikontrol dan disesuaikan',
+          '<strong>Hidden Technology:</strong> Teknologi yang tersembunyi dalam furniture dan desain',
+          '<strong>Wireless Charging:</strong> Wireless charging terintegrasi dalam meja dan furniture',
+          '<strong>Smart Storage:</strong> Storage dengan teknologi smart untuk organisasi optimal',
+          '<strong>Climate Control:</strong> Sistem HVAC yang terintegrasi dengan desain interior'
+        ]
+      },
+      {
+        heading: 'Tren Sustainability dalam Desain Industrial Scandinavian 2025',
+        paragraphs: [
+          'Sustainability menjadi fokus utama dalam desain industrial Scandinavian 2025 dengan pendekatan yang holistic:'
+        ],
+        list: [
+          '<strong>Recycled Materials:</strong> Penggunaan material daur ulang dan reclaimed wood',
+          '<strong>Local Sourcing:</strong> Material yang bersumber dari lokal untuk mengurangi carbon footprint',
+          '<strong>Energy Efficiency:</strong> Desain yang mengoptimalkan efisiensi energi',
+          '<strong>Durability Focus:</strong> Furniture dan material yang tahan lama dan sustainable',
+          '<strong>Biophilic Design:</strong> Integrasi elemen natural untuk kesehatan dan wellbeing'
+        ]
+      },
+      {
+        heading: 'Tips Implementasi Desain Industrial Scandinavian 2025',
+        paragraphs: [
+          'Implementasi desain industrial Scandinavian 2025 memerlukan pendekatan yang tepat untuk mencapai hasil yang optimal:'
+        ],
+        list: [
+          '<strong>Start with Basics:</strong> Mulai dengan furniture dasar yang berkualitas tinggi',
+          '<strong>Layer Gradually:</strong> Tambahkan elemen dekoratif secara bertahap',
+          '<strong>Balance Elements:</strong> Keseimbangan antara elemen industrial dan Scandinavian',
+          '<strong>Personal Touch:</strong> Tambahkan elemen personal untuk membuat ruang unik',
+          '<strong>Quality over Quantity:</strong> Investasi pada kualitas daripada kuantitas'
+        ]
+      },
+      {
+        heading: 'Mengapa Memilih Mangala Living untuk Desain Industrial Scandinavian?',
+        paragraphs: [
+          'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami tren desain terbaru dan kebutuhan modern. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman dalam menciptakan furniture industrial Scandinavian berkualitas tinggi.',
+          'Kami menawarkan furniture industrial Scandinavian dengan material berkualitas tinggi, desain yang timeless, dan finishing yang tahan lama. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
+          'Untuk konsultasi desain industrial Scandinavian dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangala-living.com">info@mangala-living.com</a>. Tim sales kami siap membantu Anda menciptakan ruang industrial Scandinavian yang sempurna sesuai tren 2025.'
+        ]
+      }
+    ]
+  },
+  {
     slug: 'tips-memilih-furniture-industrial-untuk-cafe',
     sections: [
       {
