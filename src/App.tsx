@@ -23,14 +23,29 @@ const BestSellers = lazy(() => import('./pages/BestSellers'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 
-// Optimized loading skeleton
+// Minimal loading for better UX
 const Loading = () => (
-  <div className="loading-skeleton">
-    <div className="skeleton-header"></div>
-    <div className="skeleton-content">
-      <div className="skeleton-card"></div>
-      <div className="skeleton-card"></div>
-    </div>
+  <div style={{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    background: '#fff'
+  }}>
+    <div style={{
+      width: '40px',
+      height: '40px',
+      border: '3px solid #f3f3f3',
+      borderTop: '3px solid #333',
+      borderRadius: '50%',
+      animation: 'spin 1s linear infinite'
+    }} />
+    <style>{`
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    `}</style>
   </div>
 )
 
@@ -88,43 +103,59 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
-        <Suspense fallback={<Loading />}>
-          <Routes>
-            {/* Home - Load immediately (not lazy) */}
-            <Route path="/" element={<Home />} />
-            
-            {/* Language-specific routes - All routes work for both languages */}
-            <Route path="/id" element={<Home />} />
-            <Route path="/eng" element={<Home />} />
-            
-            {/* Search Results */}
-            <Route path="/search" element={<SearchResults />} />
-            
-            {/* Shop - All Products */}
-            <Route path="/shop" element={<Shop />} />
-            
-            {/* Product Tag - Best Sellers */}
-            <Route path="/product-tag/best-seller" element={<BestSellers />} />
-            
-            {/* Product Category Pages */}
-            <Route path="/product-category/:category" element={<ProductCategory />} />
-            
-            {/* Product Detail Pages */}
-            <Route path="/product/:slug" element={<ProductDetail />} />
-            
-            {/* Contact Page */}
-            <Route path="/contact-us" element={<Contact />} />
-            
-            {/* About Page */}
-            <Route path="/about" element={<About />} />
-            
-            {/* Blog Page */}
-            <Route path="/blog" element={<Blog />} />
-            
-            {/* Blog Post Detail */}
-            <Route path="/blog/:slug" element={<BlogPost />} />
-          </Routes>
-        </Suspense>
+        <Routes>
+          {/* Home - Load immediately (no suspense) */}
+          <Route path="/" element={<Home />} />
+          <Route path="/id" element={<Home />} />
+          <Route path="/eng" element={<Home />} />
+          
+          {/* Other pages with minimal loading */}
+          <Route path="/search" element={
+            <Suspense fallback={<Loading />}>
+              <SearchResults />
+            </Suspense>
+          } />
+          <Route path="/shop" element={
+            <Suspense fallback={<Loading />}>
+              <Shop />
+            </Suspense>
+          } />
+          <Route path="/product-tag/best-seller" element={
+            <Suspense fallback={<Loading />}>
+              <BestSellers />
+            </Suspense>
+          } />
+          <Route path="/product-category/:category" element={
+            <Suspense fallback={<Loading />}>
+              <ProductCategory />
+            </Suspense>
+          } />
+          <Route path="/product/:slug" element={
+            <Suspense fallback={<Loading />}>
+              <ProductDetail />
+            </Suspense>
+          } />
+          <Route path="/contact-us" element={
+            <Suspense fallback={<Loading />}>
+              <Contact />
+            </Suspense>
+          } />
+          <Route path="/about" element={
+            <Suspense fallback={<Loading />}>
+              <About />
+            </Suspense>
+          } />
+          <Route path="/blog" element={
+            <Suspense fallback={<Loading />}>
+              <Blog />
+            </Suspense>
+          } />
+          <Route path="/blog/:slug" element={
+            <Suspense fallback={<Loading />}>
+              <BlogPost />
+            </Suspense>
+          } />
+        </Routes>
         <WhatsAppButton />
         <Analytics />
         <SpeedInsights />
