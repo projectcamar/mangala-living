@@ -35,20 +35,54 @@ const Loading = () => (
 )
 
 function App() {
-  // Preload critical pages after initial load
+  // Smart batch preloading with user interaction detection
   useEffect(() => {
-    const preloadPages = () => {
-      // Preload Shop page (most accessed)
-      import('./pages/Shop')
-      // Preload ProductDetail (frequently accessed)
-      import('./pages/ProductDetail')
-      // Preload ProductCategory (frequently accessed)
-      import('./pages/ProductCategory')
+    let hasUserInteracted = false
+    let preloadTimer: number | null = null
+
+    // Detect user interaction
+    const handleUserInteraction = () => {
+      if (!hasUserInteracted) {
+        hasUserInteracted = true
+        
+        // Preload critical pages immediately after user interaction
+        import('./pages/Shop')
+        import('./pages/ProductDetail')
+        
+        // Preload secondary pages after 2 seconds
+        setTimeout(() => {
+          import('./pages/ProductCategory')
+        }, 2000)
+        
+        // Preload tertiary pages after 5 seconds
+        setTimeout(() => {
+          import('./pages/About')
+          import('./pages/Blog')
+          import('./pages/Contact')
+        }, 5000)
+      }
     }
 
-    // Preload after 1 second to not block initial render
-    const timer = setTimeout(preloadPages, 1000)
-    return () => clearTimeout(timer)
+    // Add event listeners for user interaction
+    const events = ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart', 'click']
+    events.forEach(event => {
+      document.addEventListener(event, handleUserInteraction, { once: true })
+    })
+
+    // Fallback: preload critical pages after 10 seconds if no interaction
+    preloadTimer = setTimeout(() => {
+      if (!hasUserInteracted) {
+        import('./pages/Shop')
+        import('./pages/ProductDetail')
+      }
+    }, 10000)
+    
+    return () => {
+      events.forEach(event => {
+        document.removeEventListener(event, handleUserInteraction)
+      })
+      if (preloadTimer) clearTimeout(preloadTimer)
+    }
   }, [])
 
   return (
