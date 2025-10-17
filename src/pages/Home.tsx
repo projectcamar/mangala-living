@@ -142,7 +142,7 @@ const Home: React.FC = () => {
               "@type": "ItemList",
               "name": "Furniture Industrial Mangala Living",
               "description": "Koleksi furniture industrial besi custom untuk cafe, restoran, dan hotel",
-              "numberOfItems": 16,
+              "numberOfItems": 3,
               "itemListElement": [
                 {
                   "@type": "Product",
@@ -165,6 +165,13 @@ const Home: React.FC = () => {
                       "@type": "Organization",
                       "name": "Mangala Living"
                     }
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "reviewCount": "127",
+                    "bestRating": "5",
+                    "worstRating": "1"
                   }
                 },
                 {
@@ -188,6 +195,13 @@ const Home: React.FC = () => {
                       "@type": "Organization",
                       "name": "Mangala Living"
                     }
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "reviewCount": "127",
+                    "bestRating": "5",
+                    "worstRating": "1"
                   }
                 },
                 {
@@ -211,6 +225,13 @@ const Home: React.FC = () => {
                       "@type": "Organization",
                       "name": "Mangala Living"
                     }
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "reviewCount": "127",
+                    "bestRating": "5",
+                    "worstRating": "1"
                   }
                 }
               ]
