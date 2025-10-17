@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Homepage -->
   <url>
     <loc>https://mangala-living.com/</loc>
-    <lastmod>2025-10-13</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mangala-living.com/id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/eng" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/" />
   </url>
   
   <!-- Main Pages -->

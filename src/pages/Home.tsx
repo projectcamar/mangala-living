@@ -132,7 +132,13 @@ const Home: React.FC = () => {
         <meta name="geo.region" content="ID-JB" />
         <meta name="geo.placename" content="Bekasi" />
         <meta name="geo.position" content="-6.2088;107.1602" />
-        {/* Canonical removed - already in index.html */}
+        {/* Canonical URL - Always point to main domain */}
+        <link rel="canonical" href="https://mangala-living.com/" />
+        
+        {/* Hreflang for language variants */}
+        <link rel="alternate" hrefLang="id" href="https://mangala-living.com/id" />
+        <link rel="alternate" hrefLang="en" href="https://mangala-living.com/eng" />
+        <link rel="alternate" hrefLang="x-default" href="https://mangala-living.com/" />
         
         {/* Structured Data - Product Catalog */}
         <script type="application/ld+json">
