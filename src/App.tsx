@@ -42,7 +42,7 @@ function App() {
             {/* Home - Load immediately (not lazy) */}
             <Route path="/" element={<Home />} />
             
-            {/* Language-specific routes - Redirect to home with proper canonical */}
+            {/* Language-specific routes - All routes work for both languages */}
             <Route path="/id" element={<Home />} />
             <Route path="/eng" element={<Home />} />
             
