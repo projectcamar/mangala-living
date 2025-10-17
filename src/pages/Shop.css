@@ -229,19 +229,17 @@
   }
 
   .shop-sidebar {
+    display: none;
     position: static;
     padding: 15px;
     background: #f8f8f8;
     border-radius: 8px;
     margin-bottom: 20px;
     border: 1px solid #e0e0e0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
   }
 
   .shop-sidebar.sidebar-open {
-    max-height: 1000px;
+    display: block;
   }
 
   .filter-section {
