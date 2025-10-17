@@ -121,8 +121,22 @@ const Shop: React.FC = () => {
   return (
     <div className="product-category-page shop-page-layout">
       <Helmet>
-        <title>All Product - Mangala Living</title>
-        <meta name="description" content="Browse all industrial furniture products at Mangala Living" />
+        <title>All Products - Industrial Furniture Collection | Mangala Living</title>
+        <meta name="description" content="Browse all industrial furniture products at Mangala Living. Industrial furniture besi custom untuk cafe, restoran, hotel. Kualitas terbaik, harga terjangkau." />
+        <meta name="keywords" content="industrial furniture, furniture besi, furniture custom, furniture cafe, furniture restoran, mangala living, furniture bekasi" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://mangala-living.com/shop" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="All Products - Industrial Furniture Collection | Mangala Living" />
+        <meta property="og:description" content="Browse all industrial furniture products at Mangala Living. Industrial furniture besi custom untuk cafe, restoran, hotel." />
+        <meta property="og:url" content="https://mangala-living.com/shop" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="All Products - Industrial Furniture Collection | Mangala Living" />
+        <meta name="twitter:description" content="Browse all industrial furniture products at Mangala Living." />
       </Helmet>
       
       <Header />

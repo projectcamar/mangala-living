@@ -53,6 +53,11 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
       cleanPath = currentPath.substring(3) // Remove /id or /eng
     }
     
+    // Ensure cleanPath starts with / if it's not empty
+    if (cleanPath && !cleanPath.startsWith('/')) {
+      cleanPath = '/' + cleanPath
+    }
+    
     // Add new language prefix
     const newPath = lang === 'id' ? `/id${cleanPath}` : `/eng${cleanPath}`
     navigate(newPath)

@@ -11,3 +11,14 @@ Crawl-delay: 1
 Disallow: /api/
 Disallow: /admin/
 Disallow: /private/
+Disallow: /src/
+Disallow: /node_modules/
+
+# Allow important pages
+Allow: /product/
+Allow: /product-category/
+Allow: /product-tag/
+Allow: /blog/
+Allow: /shop
+Allow: /about
+Allow: /contact-us

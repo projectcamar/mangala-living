@@ -53,7 +53,21 @@ const ProductCategory: React.FC = () => {
     <div className="product-category-page">
       <Helmet>
         <title>{categoryName} - Mangala Living</title>
-        <meta name="description" content={`Browse our ${categoryName} collection at Mangala Living`} />
+        <meta name="description" content={`Browse our ${categoryName} collection at Mangala Living. Industrial furniture besi custom untuk ${categoryName.toLowerCase()}. Kualitas terbaik, harga terjangkau.`} />
+        <meta name="keywords" content={`${categoryName}, industrial furniture, furniture besi, ${categoryName.toLowerCase()}, mangala living, furniture custom`} />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={`https://mangala-living.com/product-category/${category}`} />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={`${categoryName} - Mangala Living`} />
+        <meta property="og:description" content={`Browse our ${categoryName} collection at Mangala Living. Industrial furniture besi custom untuk ${categoryName.toLowerCase()}.`} />
+        <meta property="og:url" content={`https://mangala-living.com/product-category/${category}`} />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={`${categoryName} - Mangala Living`} />
+        <meta name="twitter:description" content={`Browse our ${categoryName} collection at Mangala Living.`} />
       </Helmet>
       
       <Header />

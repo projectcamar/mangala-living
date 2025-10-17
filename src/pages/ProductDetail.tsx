@@ -135,6 +135,22 @@ const ProductDetail: React.FC = () => {
       <Helmet>
         <title>{product.name} - Mangala Living</title>
         <meta name="description" content={`${product.name} - ${product.details}`} />
+        <meta name="keywords" content={`${product.name}, industrial furniture, furniture besi, ${product.categories.join(', ')}, mangala living`} />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={`https://mangala-living.com/product/${product.slug}`} />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={`${product.name} - Mangala Living`} />
+        <meta property="og:description" content={`${product.name} - ${product.details}`} />
+        <meta property="og:image" content={product.images[0]} />
+        <meta property="og:url" content={`https://mangala-living.com/product/${product.slug}`} />
+        <meta property="og:type" content="product" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${product.name} - Mangala Living`} />
+        <meta name="twitter:description" content={`${product.name} - ${product.details}`} />
+        <meta name="twitter:image" content={product.images[0]} />
       </Helmet>
 
       <Header />

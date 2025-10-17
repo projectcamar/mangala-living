@@ -45,7 +45,7 @@ const BlogPost: React.FC = () => {
         <title>{post.title} - Mangala Living</title>
         <meta name="description" content={post.excerpt} />
         <meta name="keywords" content={`${post.title}, furniture, industrial furniture, mangala living`} />
-        <link rel="canonical" href={`https://mangalaliving.com/blog/${post.slug}/`} />
+        <link rel="canonical" href={`https://mangala-living.com/blog/${post.slug}`} />
       </Helmet>
       
       <Header />
