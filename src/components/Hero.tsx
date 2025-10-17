@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false }) => {
         </h1>
         <p className="hero-subtitle">
           {isIndonesian 
-            ? "Furniture Industrial Besi Custom untuk Cafe, Restoran & Kantor. Solusi Custom Sejak 1999."
+            ? "Sejak 1999, menghadirkan furnitur industrial yang dirancang khusus untuk cafe, restoran, dan kantor."
             : "Premium Industrial Scandinavian Furniture for Coffee Shops, Restaurants & Offices. Custom Solutions Since 1999."
           }
         </p>
