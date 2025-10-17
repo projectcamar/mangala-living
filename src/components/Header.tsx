@@ -52,9 +52,17 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     
     // Remove existing language prefix if any
     let cleanPath = currentPath
+    
+    // Handle /id/ and /eng/ (with trailing slash)
     if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/')) {
       cleanPath = currentPath.substring(4) // Remove /id/ or /eng/
-    } else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng')) {
+    } 
+    // Handle /id and /eng (without trailing slash) - but not /id/ or /eng/
+    else if (currentPath === '/id' || currentPath === '/eng') {
+      cleanPath = '/' // Go to home
+    }
+    // Handle /id or /eng followed by more path (like /id/product-category/...)
+    else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng')) {
       cleanPath = currentPath.substring(3) // Remove /id or /eng
     }
     
