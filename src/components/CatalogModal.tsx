@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { X } from 'lucide-react'
 import './CatalogModal.css'
+import { generateCatalog } from '../utils/catalogGenerator'
+import { trackEvent } from '../utils/analytics'
 import catalogPreview from '../assets/Bench-corner-kursi-sudut-kursi-santai.png'
 
 interface CatalogModalProps {
@@ -53,14 +55,97 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
     }))
   }
 
-  const handleDownload = (e: React.FormEvent) => {
+  const handleDownload = async (e: React.FormEvent) => {
     e.preventDefault()
     
     // Store form data (optional - could send to backend/analytics)
     console.log('Catalog download requested:', formData)
     
-    // Redirect to Google Drive in current page
-    window.location.href = 'https://drive.google.com/drive/folders/1BuNh56PpoLt3tvHLLTE9f3aFSCBf6Nl2?nm=confirmation&nk=1115-8c247fb059'
+    // Get the button element
+    const button = e.currentTarget.querySelector('button[type="submit"]') as HTMLButtonElement
+    if (button) {
+      button.disabled = true
+      button.textContent = 'GENERATING...'
+    }
+    
+    // Store original content before making changes
+    const originalContent = document.body.innerHTML
+    
+    try {
+      // Show loading state
+      document.body.innerHTML = `
+        <html>
+          <head>
+            <title>Generating Catalog...</title>
+            <style>
+              body { 
+                font-family: Arial, sans-serif; 
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                height: 100vh; 
+                margin: 0; 
+                background: #f5f5f5;
+              }
+              .loading {
+                text-align: center;
+                padding: 40px;
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+              }
+              .spinner {
+                border: 4px solid #f3f3f3;
+                border-top: 4px solid #ff6b35;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                animation: spin 1s linear infinite;
+                margin: 0 auto 20px;
+              }
+              @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+              }
+              h2 { color: #333; margin-bottom: 10px; }
+              p { color: #666; margin: 0; }
+            </style>
+          </head>
+          <body>
+            <div class="loading">
+              <div class="spinner"></div>
+              <h2>Generating Catalog...</h2>
+              <p>Please wait while we prepare your furniture catalog</p>
+            </div>
+          </body>
+        </html>
+      `
+      
+      // Generate the catalog
+      await generateCatalog()
+      
+      // Track catalog download
+      trackEvent.catalogDownload()
+      
+      // Close the modal
+      handleClose()
+      
+      // Restore original content
+      document.body.innerHTML = originalContent
+      
+    } catch (error) {
+      console.error('Error generating catalog:', error)
+      alert('Failed to download catalog. Please try again.')
+      
+      // Restore original content
+      document.body.innerHTML = originalContent
+      
+      // Reset button on error
+      if (button) {
+        button.textContent = 'DOWNLOAD'
+        button.disabled = false
+      }
+    }
   }
 
   if (!isVisible) return null

@@ -84,8 +84,9 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .hero {
-    margin-top: 100px;
-    height: calc(100vh - 100px);
+    margin-top: 90px;
+    height: 60vh;
+    min-height: 400px;
   }
 
   .hero-title {
@@ -107,8 +108,9 @@
 
 @media (max-width: 480px) {
   .hero {
-    margin-top: 90px;
-    height: calc(100vh - 90px);
+    margin-top: 80px;
+    height: 50vh;
+    min-height: 350px;
   }
 
   .hero-title {
@@ -120,6 +122,7 @@
   .hero-subtitle {
     font-size: 0.8rem;
     margin-bottom: 1.25rem;
+    line-height: 1.4;
   }
 
   .hero-content {

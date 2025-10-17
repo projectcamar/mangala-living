@@ -226,101 +226,117 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .catalog-modal-overlay {
-    padding: 15px;
+    padding: 10px;
+  }
+
+  .catalog-modal-container {
+    max-width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
   }
 
   .catalog-modal-content {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
 
   .catalog-preview {
-    padding: 30px;
-    min-height: 300px;
+    padding: 20px;
+    min-height: 200px;
   }
 
   .catalog-preview-wrapper {
-    max-width: 250px;
+    max-width: 180px;
   }
 
   .catalog-year {
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
 
   .pdf-icon svg {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
   }
 
   .catalog-form-section {
-    padding: 40px 30px;
+    padding: 25px 20px;
   }
 
   .catalog-modal-title {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
   }
 
   .catalog-form {
-    gap: 20px;
+    gap: 15px;
   }
 
   .catalog-download-btn {
     width: 100%;
     align-self: stretch;
+    padding: 12px 20px;
+    font-size: 0.85rem;
   }
 
   .catalog-modal-close {
-    top: 15px;
-    right: 15px;
-    width: 32px;
-    height: 32px;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
   }
 }
 
 @media (max-width: 480px) {
   .catalog-modal-overlay {
-    padding: 10px;
+    padding: 5px;
+  }
+
+  .catalog-modal-container {
+    max-height: 95vh;
   }
 
   .catalog-preview {
-    padding: 20px;
-    min-height: 250px;
+    padding: 15px;
+    min-height: 150px;
   }
 
   .catalog-preview-wrapper {
-    max-width: 200px;
+    max-width: 150px;
   }
 
   .catalog-year {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
   }
 
   .catalog-preview-image {
-    padding: 20px;
+    padding: 15px;
   }
 
   .catalog-form-section {
-    padding: 30px 20px;
+    padding: 20px 15px;
   }
 
   .catalog-modal-title {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
   }
 
   .form-group label {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .form-group input {
-    font-size: 0.95rem;
-    padding: 10px 0;
+    font-size: 0.9rem;
+    padding: 8px 0;
   }
 
   .catalog-download-btn {
-    padding: 14px 30px;
-    font-size: 0.9rem;
+    padding: 10px 20px;
+    font-size: 0.8rem;
   }
 }
 
