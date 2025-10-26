@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './MessageSection.css'
+import '../pages/About.css'
 import showroomImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.jpg'
 
 interface MessageSectionProps {
@@ -9,32 +9,30 @@ interface MessageSectionProps {
 
 const MessageSection: React.FC<MessageSectionProps> = ({ isIndonesian = false }) => {
   return (
-    <section className="message-section">
-      <div className="container">
-        <div className="message-content">
-          {/* Left Side - Text */}
-          <div className="message-text">
-            <h2 className="message-title">
+    <section className="about-message-section">
+      <div className="about-message-container">
+        <div className="about-message-content">
+          <div className="about-message-text">
+            <h2 className="about-message-title">
               {isIndonesian ? "Pesan dari Mangala" : "Message from Mangala"}
             </h2>
-            
-            <div className="message-body">
+            <div className="about-message-body">
               {isIndonesian ? (
                 <>
-                  <p>
+                  <p className="about-message-paragraph">
                     Sejak 1999, Mangala Living telah menjadi manufacturer terdepan di Indonesia yang mengkhususkan diri dalam furniture industrial scandinavian premium. 
                     Dengan pengalaman 25 tahun di industri, kami telah membuktikan diri sebagai pilihan terbaik untuk solusi furniture komersial. 
                     Jaringan kami menjangkau seluruh kepulauan Indonesia, telah berhasil menyelesaikan lebih dari 1.000 pesanan untuk bisnis di seluruh negeri.
                   </p>
                   
-                  <p>
+                  <p className="about-message-paragraph">
                     Kami mengkhususkan diri dalam menciptakan furniture yang tahan lama dan estetis mencolok untuk ruang komersial. Dari coffee shop trendy 
                     dan restoran ramai hingga kantor modern dan hotel butik, furniture industrial scandinavian kami memberikan nada yang sempurna. 
                     Kami sepenuhnya menerima permintaan custom dan bekerja sama dengan klien untuk merancang produk yang sesuai dengan identitas merek 
                     dan kebutuhan fungsional mereka.
                   </p>
                   
-                  <p>
+                  <p className="about-message-paragraph">
                     Workshop kami di Bekasi dilengkapi dengan peralatan manufaktur canggih dan dikelola oleh pengrajin berpengalaman yang 
                     bangga dengan setiap detail dan finishing. Setiap produk melalui kontrol kualitas yang ketat untuk memastikan memenuhi standar tertinggi 
                     kami dalam hal daya tahan dan daya tarik visual. Baik Anda membutuhkan paket furniture lengkap untuk coffee shop baru atau produk custom 
@@ -43,21 +41,21 @@ const MessageSection: React.FC<MessageSectionProps> = ({ isIndonesian = false })
                 </>
               ) : (
                 <>
-                  <p>
+                  <p className="about-message-paragraph">
                     Since 1999, Mangala Living has been Indonesia's leading manufacturer specializing in premium industrial scandinavian furniture. 
                     With 25 years of experience in the industry, we've established ourselves as the best choice for commercial furniture 
                     solutions. Our network spans across the Indonesian archipelago, having successfully completed over 1,000 orders for 
                     businesses nationwide.
                   </p>
                   
-                  <p>
+                  <p className="about-message-paragraph">
                     We specialize in creating durable, aesthetically striking furniture for commercial spaces. From trendy coffee shops 
                     and bustling restaurants to modern offices and boutique hotels, our industrial scandinavian furniture sets the perfect tone. 
                     We fully accept custom requests and work collaboratively with our clients to design pieces that match their brand identity 
                     and functional requirements.
                   </p>
                   
-                  <p>
+                  <p className="about-message-paragraph">
                     Our workshop in Bekasi is equipped with state-of-the-art manufacturing equipment and staffed by experienced craftsmen 
                     who take pride in every detail and finish. Each piece undergoes rigorous quality control to ensure it meets our highest 
                     standards of durability and visual appeal. Whether you need a complete furniture package for a new coffee shop or custom 
@@ -66,19 +64,13 @@ const MessageSection: React.FC<MessageSectionProps> = ({ isIndonesian = false })
                 </>
               )}
             </div>
-            
-            <Link to="/about" className="read-more-btn">
-              {isIndonesian ? "• BACA SELENGKAPNYA" : "• READ MORE"}
-            </Link>
           </div>
-
-          {/* Right Side - Image */}
-          <div className="message-image">
+          
+          <div className="about-message-image-wrapper">
             <img 
               src={showroomImage} 
-              alt="Mangala Living Showroom" 
-              className="showroom-img"
-              loading="lazy"
+              alt="Mangala Living Workshop" 
+              className="about-message-image"
             />
           </div>
         </div>

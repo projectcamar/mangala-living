@@ -1,24 +1,25 @@
 User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://mangala-living.com/sitemap.xml
+# Block language-specific URLs from indexing to avoid duplicate content
+Disallow: /id/
+Disallow: /eng/
 
-# Optimize crawling
-Crawl-delay: 1
+# Allow main pages
+Allow: /
+Allow: /about
+Allow: /blog
+Allow: /contact-us
+Allow: /shop
+Allow: /search
 
-# Block specific paths (if any private sections exist)
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /src/
-Disallow: /node_modules/
-
-# Allow important pages
+# Allow product pages (canonical versions)
 Allow: /product/
 Allow: /product-category/
-Allow: /product-tag/
-Allow: /blog/
-Allow: /shop
-Allow: /about
-Allow: /contact-us
+
+# Block admin or private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://mangala-living.com/sitemap.xml

@@ -108,6 +108,11 @@
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.about-message-image-wrapper:hover .about-message-image {
+  transform: scale(1.05);
 }
 
 /* Our Showrooms Section */

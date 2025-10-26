@@ -519,6 +519,51 @@
   justify-content: flex-end;
 }
 
+/* Header Contact Button */
+.header-contact-btn {
+  margin-right: 8px;
+  font-size: 13px;
+  padding: 8px 16px;
+  min-width: 120px;
+}
+
+.header-contact-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 768px) {
+  .header-contact-btn {
+    margin-right: 6px;
+    font-size: 12px;
+    padding: 6px 12px;
+    min-width: 100px;
+  }
+  
+  .header-contact-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-contact-btn {
+    margin-right: 4px;
+    font-size: 11px;
+    padding: 5px 10px;
+    min-width: 90px;
+  }
+  
+  .header-contact-btn span {
+    display: none;
+  }
+  
+  .header-contact-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
 .search-btn {
   display: flex;
   align-items: center;

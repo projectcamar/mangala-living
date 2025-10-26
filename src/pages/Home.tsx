@@ -140,6 +140,9 @@ const Home: React.FC = () => {
         <link rel="alternate" hrefLang="en" href="https://mangala-living.com/eng" />
         <link rel="alternate" hrefLang="x-default" href="https://mangala-living.com/" />
         
+        {/* Language-specific meta tags */}
+        <meta property="og:locale" content={isIndonesian ? "id_ID" : "en_US"} />
+        
         {/* Structured Data - Product Catalog */}
         <script type="application/ld+json">
           {`

@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORY_MAP } from '../data/categories'
+import { generateCanonicalUrl, generateHreflangTags } from '../utils/seo'
 import './ProductCategory.css'
 
 const ProductCategory: React.FC = () => {
@@ -56,7 +57,12 @@ const ProductCategory: React.FC = () => {
         <meta name="description" content={`Browse our ${categoryName} collection at Mangala Living. Industrial furniture besi custom untuk ${categoryName.toLowerCase()}. Kualitas terbaik, harga terjangkau.`} />
         <meta name="keywords" content={`${categoryName}, industrial furniture, furniture besi, ${categoryName.toLowerCase()}, mangala living, furniture custom`} />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`https://mangala-living.com/product-category/${category}`} />
+        <link rel="canonical" href={generateCanonicalUrl(`/product-category/${category}`)} />
+        
+        {/* Hreflang for language variants */}
+        <link rel="alternate" hrefLang="id" href={generateHreflangTags(`/product-category/${category}`).id} />
+        <link rel="alternate" hrefLang="en" href={generateHreflangTags(`/product-category/${category}`).en} />
+        <link rel="alternate" hrefLang="x-default" href={generateHreflangTags(`/product-category/${category}`).default} />
         
         {/* Open Graph */}
         <meta property="og:title" content={`${categoryName} - Mangala Living`} />

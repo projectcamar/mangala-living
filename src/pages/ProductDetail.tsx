@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
+import { generateCanonicalUrl, generateHreflangTags } from '../utils/seo'
 import './ProductDetail.css'
 
 interface ProductDetail {
@@ -408,7 +409,12 @@ const ProductDetail: React.FC = () => {
         <meta name="description" content={`${product.name} - ${product.details}`} />
         <meta name="keywords" content={`${product.name}, industrial furniture, furniture besi, ${product.categories.join(', ')}, mangala living`} />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`https://mangala-living.com/product/${product.slug}`} />
+        <link rel="canonical" href={generateCanonicalUrl(`/product/${product.slug}`)} />
+        
+        {/* Hreflang for language variants */}
+        <link rel="alternate" hrefLang="id" href={generateHreflangTags(`/product/${product.slug}`).id} />
+        <link rel="alternate" hrefLang="en" href={generateHreflangTags(`/product/${product.slug}`).en} />
+        <link rel="alternate" hrefLang="x-default" href={generateHreflangTags(`/product/${product.slug}`).default} />
         
         {/* Open Graph */}
         <meta property="og:title" content={`${product.name} - Mangala Living`} />
