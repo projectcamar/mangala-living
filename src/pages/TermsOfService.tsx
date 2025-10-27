@@ -191,7 +191,7 @@ const TermsOfService: React.FC = () => {
                 <h2>{isIndonesian ? 'Pembayaran' : 'Payment'}</h2>
               </div>
               
-              <div className="key-points-grid">
+              <div className="payment-grid">
                 <div className="key-point-card">
                   <div className="key-point-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

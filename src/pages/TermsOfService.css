@@ -135,6 +135,14 @@
   margin-bottom: 2rem;
 }
 
+/* Payment Grid Layout - 2 columns for symmetrical cards */
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
 .key-point-card {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
@@ -419,6 +427,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
+  
+  .payment-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -472,6 +485,11 @@
   }
 
   .key-points-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .payment-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
