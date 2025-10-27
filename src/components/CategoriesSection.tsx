@@ -8,15 +8,15 @@ interface CategoriesSectionProps {
 }
 
 // Import images
-import benchImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.png'
-import mejaImage from '../assets/meja-industrial-mejamakan.png'
-import mejaMakanImage from '../assets/Meja-makan-industrial-150x60x90-2 kursi.png'
-import mejaKerjaImage from '../assets/Meja-Kerja-Rak-Meja-Belajar-custom.png'
-import balconyBarImage from '../assets/balcony-bar-table.png'
-import barChairImage from '../assets/Kursi-Barstool-Besi-Behel.png'
-import hollowlineDisplayRackImage from '../assets/Hollowline-Display-Rack.png'
-import frameLoftBookshelfImage from '../assets/frame-Loft-Bookshelf.png'
-import daybedImage from '../assets/industrial-daybed-boneonly.jpg'
+import benchImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
+import mejaImage from '../assets/meja-industrial-mejamakan.webp'
+import mejaMakanImage from '../assets/Meja-makan-industrial-150x60x90-2 kursi.webp'
+import mejaKerjaImage from '../assets/Meja-Kerja-Rak-Meja-Belajar-custom.webp'
+import balconyBarImage from '../assets/balcony-bar-table.webp'
+import barChairImage from '../assets/Kursi-Barstool-Besi-Behel.webp'
+import hollowlineDisplayRackImage from '../assets/Hollowline-Display-Rack.webp'
+import frameLoftBookshelfImage from '../assets/frame-Loft-Bookshelf.webp'
+import daybedImage from '../assets/industrial-daybed-boneonly.webp'
 
 interface Category {
   id: number

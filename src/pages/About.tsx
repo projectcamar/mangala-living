@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet-async'
 import { Diamond, DollarSign, Wrench, Globe } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.jpg'
-import showroomImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.png'
+import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
+import showroomImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
 import './About.css'
 
 const About: React.FC = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../pages/About.css'
-import showroomImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.jpg'
+import showroomImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 
 interface MessageSectionProps {
   isIndonesian?: boolean

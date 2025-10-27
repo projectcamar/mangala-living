@@ -3,7 +3,7 @@ import { X } from 'lucide-react'
 import './CatalogModal.css'
 import { generateCatalog } from '../utils/catalogGenerator'
 import { trackEvent } from '../utils/analytics'
-import catalogPreview from '../assets/Bench-corner-kursi-sudut-kursi-santai.png'
+import catalogPreview from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
 
 interface CatalogModalProps {
   onClose?: () => void

@@ -158,7 +158,7 @@ const Home: React.FC = () => {
                   "position": 1,
                   "name": "Frame Loft Bookshelf",
                   "description": "Rak buku industrial dengan desain loft modern untuk cafe dan kantor",
-                  "image": "https://mangala-living.com/assets/frame-Loft-Bookshelf.png",
+                  "image": "https://mangala-living.com/assets/frame-Loft-Bookshelf.webp",
                   "url": "https://mangala-living.com/product/frame-loft-bookshelf",
                   "brand": {
                     "@type": "Brand",
@@ -188,7 +188,7 @@ const Home: React.FC = () => {
                   "position": 2,
                   "name": "Balcony Bar Table",
                   "description": "Meja bar balkon industrial untuk area outdoor cafe dan restoran",
-                  "image": "https://mangala-living.com/assets/balcony-bar-table.png",
+                  "image": "https://mangala-living.com/assets/balcony-bar-table.webp",
                   "url": "https://mangala-living.com/product/balcony-bar-table",
                   "brand": {
                     "@type": "Brand",
@@ -218,7 +218,7 @@ const Home: React.FC = () => {
                   "position": 3,
                   "name": "Beam Industrial Bar Chair",
                   "description": "Kursi bar industrial besi dengan desain beam modern untuk cafe",
-                  "image": "https://mangala-living.com/assets/Kursi-Barstool-Besi-Behel.png",
+                  "image": "https://mangala-living.com/assets/Kursi-Barstool-Besi-Behel.webp",
                   "url": "https://mangala-living.com/product/beam-industrial-bar-chair",
                   "brand": {
                     "@type": "Brand",

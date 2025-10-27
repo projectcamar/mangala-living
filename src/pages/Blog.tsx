@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { Link, useSearchParams } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.jpg'
+import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import { getPostsByPage, getTotalPages } from '../data/blog'
 import './Blog.css'
 
