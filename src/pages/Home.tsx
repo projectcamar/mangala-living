@@ -65,8 +65,8 @@ const Home: React.FC = () => {
       ? "Furniture Industrial Besi Custom Bekasi | Mangala Living"
       : "Industrial Furniture Besi Custom Bekasi | Mangala Living",
     description: isIndonesian
-      ? "Hollowline Display Rack & Set Furniture Industrial ✓ Harga Murah ✓ Call Mangala 0852-1207-8467 ✓ Workshop Bekasi ✓ 25 Tahun Pengalaman"
-      : "Hollowline Display Rack & Industrial Furniture Set ✓ Affordable Prices ✓ Call Mangala +6285212078467 ✓ Bekasi Workshop ✓ 25 Years Experience",
+      ? "Sejak 1999, Industrial Set terbaik untuk cafe, hotel & restoran ✓ Kualitas Premium ✓ Workshop Bekasi ✓ 25 Tahun Pengalaman"
+      : "Since 1999, Premium Industrial Sets for cafes, hotels & restaurants ✓ Superior Quality ✓ Bekasi Workshop ✓ 25 Years Experience",
     ogTitle: isIndonesian
       ? "Furniture Industrial Besi Custom Bekasi | Cafe & Restoran"
       : "Industrial Furniture Besi Custom Bekasi | Cafe & Restoran",
@@ -261,7 +261,6 @@ const Home: React.FC = () => {
               "image": "https://mangala-living.com/og-image.jpg",
               "@id": "https://mangala-living.com",
               "url": "https://mangala-living.com",
-              "telephone": "+6285212078467",
               "email": "info@mangala-living.com",
               "address": {
                 "@type": "PostalAddress",
