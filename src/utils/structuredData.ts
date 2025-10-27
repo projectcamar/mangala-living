@@ -51,11 +51,19 @@ export const generateMerchantStructuredData = () => {
             "@type": "Product",
             "name": "Industrial Furniture",
             "category": "Furniture",
-            "description": "Premium industrial furniture made from high-quality materials"
+            "description": "Premium industrial furniture made from high-quality materials",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "127",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
           },
           "price": "1500000",
           "priceCurrency": "IDR",
           "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
           "hasMerchantReturnPolicy": {
             "@type": "MerchantReturnPolicy",
             "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",

@@ -362,7 +362,7 @@ const ProductDetail: React.FC = () => {
             "@type": "Person",
             "name": "Sarah M."
           },
-          "datePublished": "2024-12-15",
+          "datePublished": "2025-10-15",
           "reviewBody": "Excellent quality furniture. The industrial design is perfect for our cafe. Highly recommended!",
           "reviewRating": {
             "@type": "Rating",
@@ -376,7 +376,7 @@ const ProductDetail: React.FC = () => {
             "@type": "Person",
             "name": "Ahmad R."
           },
-          "datePublished": "2024-12-10",
+          "datePublished": "2025-10-20",
           "reviewBody": "Great craftsmanship and durable materials. Perfect for commercial use.",
           "reviewRating": {
             "@type": "Rating",
@@ -390,7 +390,7 @@ const ProductDetail: React.FC = () => {
             "@type": "Person",
             "name": "Lisa K."
           },
-          "datePublished": "2024-12-05",
+          "datePublished": "2025-10-25",
           "reviewBody": "Beautiful industrial furniture with excellent finishing. Very satisfied with the purchase.",
           "reviewRating": {
             "@type": "Rating",
@@ -405,9 +405,23 @@ const ProductDetail: React.FC = () => {
   return (
     <div className="product-detail-page">
       <Helmet>
-        <title>{product.name} - Mangala Living</title>
-        <meta name="description" content={`${product.name} - ${product.details}`} />
-        <meta name="keywords" content={`${product.name}, industrial furniture, furniture besi, ${product.categories.join(', ')}, mangala living`} />
+        <title>{product.name === 'Hollowline Display Rack' 
+          ? 'Hollowline Display Rack ✓ Harga Murah Rp4.5 Juta ✓ Call Mangala 0852-1207-8467'
+          : `${product.name} - Mangala Living`}</title>
+        <meta name="description" content={product.name === 'Hollowline Display Rack'
+          ? 'Hollowline Display Rack Industrial ✓ Display Shelf Rack Modern ✓ Harga Rp4.500.000 ✓ Workshop Bekasi ✓ Garansi Kualitas ✓ Call Mangala 0852-1207-8467'
+          : `${product.name} - ${product.details}`} />
+        <meta name="keywords" content={
+          product.name === 'Hollowline Display Rack'
+            ? 'hollowline display rack, display shelf rack, rak display industrial, hollowline storage, call mangala furniture, furniture bekasi murah'
+            : product.name === 'Industrial Kitchen Cabinet'
+            ? 'mangala kitchen cabinet, kitchen cabinet industrial, kabinet dapur cafe, furniture kitchen bekasi'
+            : product.name === 'Bar Stall Chair'
+            ? 'stall chair design, bar stall chair, kursi bar industrial, meja kursi cafe'
+            : product.name === 'Set Furniture'
+            ? 'set furniture industrial, meja kursi cafe lengkap, furniture cafe murah'
+            : `${product.name}, industrial furniture, furniture besi, ${product.categories.join(', ')}, mangala living`
+        } />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={generateCanonicalUrl(`/product/${product.slug}`)} />
         

@@ -43,8 +43,20 @@ const BlogPost: React.FC = () => {
     <div className="blog-post-page">
       <Helmet>
         <title>{post.title} - Mangala Living</title>
-        <meta name="description" content={post.excerpt} />
-        <meta name="keywords" content={`${post.title}, furniture, industrial furniture, mangala living`} />
+        <meta name="description" content={post.slug === 'finishing-furniture-besi-powder-coating-vs-cat'
+          ? 'Cat Powder Coating vs Cat Biasa ✓ Perbandingan Lengkap ✓ Tips Finishing Furniture Besi ✓ Workshop Mangala Bekasi'
+          : post.slug === 'kombinasi-kayu-dan-besi-untuk-furniture-modern'
+          ? 'Kombinasi Kayu & Besi untuk Furniture Modern ✓ Desain Industrial ✓ Tips Material ✓ Workshop Bekasi'
+          : post.slug === 'desain-meja-bar-industrial-untuk-ruang-terbatas'
+          ? 'Desain Meja Bar Industrial untuk Ruang Terbatas ✓ Solusi Space-Efficient ✓ Meja Bar Murah ✓ Call Mangala'
+          : post.excerpt} />
+        <meta name="keywords" content={post.slug === 'finishing-furniture-besi-powder-coating-vs-cat'
+          ? 'cat powder coating, finishing furniture besi, powder coating vs cat biasa, furniture coating bekasi'
+          : post.slug === 'kombinasi-kayu-dan-besi-untuk-furniture-modern'
+          ? 'kombinasi kayu dan besi, furniture modern, material industrial, meja kursi kayu besi'
+          : post.slug === 'desain-meja-bar-industrial-untuk-ruang-terbatas'
+          ? 'desain meja bar, meja bar ruang terbatas, meja cafe compact, furniture space efficient'
+          : `${post.title}, furniture, industrial furniture, mangala living, furniture bekasi`} />
         <link rel="canonical" href={`https://mangala-living.com/blog/${post.slug}`} />
       </Helmet>
       

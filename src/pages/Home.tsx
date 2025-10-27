@@ -65,8 +65,8 @@ const Home: React.FC = () => {
       ? "Furniture Industrial Besi Custom Bekasi | Mangala Living"
       : "Industrial Furniture Besi Custom Bekasi | Mangala Living",
     description: isIndonesian
-      ? "Furniture industrial besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: 0852-1207-8467."
-      : "Industrial furniture besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: 0852-1207-8467.",
+      ? "Hollowline Display Rack & Set Furniture Industrial ✓ Harga Murah ✓ Call Mangala 0852-1207-8467 ✓ Workshop Bekasi ✓ 25 Tahun Pengalaman"
+      : "Hollowline Display Rack & Industrial Furniture Set ✓ Affordable Prices ✓ Call Mangala +6285212078467 ✓ Bekasi Workshop ✓ 25 Years Experience",
     ogTitle: isIndonesian
       ? "Furniture Industrial Besi Custom Bekasi | Cafe & Restoran"
       : "Industrial Furniture Besi Custom Bekasi | Cafe & Restoran",
@@ -110,7 +110,7 @@ const Home: React.FC = () => {
       <Helmet>
         <title>{translations.title}</title>
         <meta name="description" content={translations.description} />
-        <meta name="keywords" content="furniture industrial bekasi, furniture besi custom, furniture cafe murah, meja industrial, kursi bar besi, rak display industrial, furniture restoran, mangala living, pabrik furniture bekasi" />
+        <meta name="keywords" content="hollowline display rack, set furniture industrial, display shelf rack, call mangala furniture, mangala showroom, mangala kitchen cabinet, furniture bekasi murah, industrial furniture murah, meja kursi cafe, stall chair design" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
@@ -169,6 +169,7 @@ const Home: React.FC = () => {
                     "price": "3500000",
                     "priceCurrency": "IDR",
                     "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2025-12-31",
                     "url": "https://mangala-living.com/product/frame-loft-bookshelf",
                     "seller": {
                       "@type": "Organization",
@@ -199,6 +200,7 @@ const Home: React.FC = () => {
                     "price": "3500000",
                     "priceCurrency": "IDR",
                     "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2025-12-31",
                     "url": "https://mangala-living.com/product/balcony-bar-table",
                     "seller": {
                       "@type": "Organization",
@@ -229,6 +231,7 @@ const Home: React.FC = () => {
                     "price": "450000",
                     "priceCurrency": "IDR",
                     "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2025-12-31",
                     "url": "https://mangala-living.com/product/beam-industrial-bar-chair",
                     "seller": {
                       "@type": "Organization",
