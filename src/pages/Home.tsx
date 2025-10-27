@@ -15,7 +15,6 @@ import AISearchOptimizedContent from '../components/AISearchOptimizedContent'
 import AISearchFeatures from '../components/AISearchFeatures'
 
 // Utils
-import { generateMerchantStructuredData } from '../utils/structuredData'
 import { generateAIOptimizedStructuredData, generateFAQStructuredData, generateWebSiteStructuredData } from '../utils/aiSearchOptimization'
 
 const Home: React.FC = () => {

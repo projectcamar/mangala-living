@@ -1,6 +1,6 @@
 // AI Search Helper Functions for Mangala Living
 
-export const generateAIMetaTags = (pageType: string, isIndonesian: boolean) => {
+export const generateAIMetaTags = (pageType: string, _isIndonesian: boolean) => {
   const baseTags = {
     'ai-content-type': 'furniture-manufacturer',
     'ai-business-type': 'industrial-furniture-manufacturer',
@@ -122,7 +122,7 @@ export const generateAISearchKeywords = (isIndonesian: boolean) => {
   ]
 }
 
-export const generateAIContextualData = (pageType: string, isIndonesian: boolean) => {
+export const generateAIContextualData = (_pageType: string, isIndonesian: boolean) => {
   const contextualData = {
     businessContext: {
       industry: "Furniture Manufacturing",
