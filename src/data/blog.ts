@@ -476,6 +476,141 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Outdoor furniture cafe murah dengan desain tahan cuaca dan industrial style. Daybed outdoor, bar set outdoor, dan furniture teras untuk area outdoor cafe modern.',
     image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
     date: '2025-11-16'
+  },
+  {
+    id: 53,
+    slug: 'jual-meja-kafe-industrial-modern-harga-terbaik-2025',
+    title: 'Jual Meja Kafe Industrial Modern - Harga Terbaik 2025',
+    category: 'Furniture Information',
+    excerpt: 'Temukan meja kafe industrial modern dengan harga terbaik 2025. Meja bar industrial, meja makan cafe, dan meja kerja dengan kualitas premium dan desain terkini.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-11-17'
+  },
+  {
+    id: 54,
+    slug: 'meja-kafe-bulat-industrial-desain-unik-cafe-modern',
+    title: 'Meja Kafe Bulat Industrial - Desain Unik untuk Cafe Modern',
+    category: 'Furniture Information',
+    excerpt: 'Meja kafe bulat industrial dengan desain unik dan modern. Solusi furniture cafe yang elegan dengan material besi berkualitas dan finishing powder coating tahan lama.',
+    image: 'https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800&auto=format&fit=crop',
+    date: '2025-11-18'
+  },
+  {
+    id: 55,
+    slug: 'meja-kursi-kafe-set-industrial-solusi-lengkap-cafe',
+    title: 'Meja Kursi Kafe Set Industrial - Solusi Lengkap Cafe',
+    category: 'Furniture Information',
+    excerpt: 'Set meja kursi kafe industrial lengkap dengan desain modern. Paket furniture cafe yang terdiri dari meja makan, kursi bar, dan aksesoris pendukung untuk cafe Anda.',
+    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop',
+    date: '2025-11-19'
+  },
+  {
+    id: 56,
+    slug: 'model-kursi-meja-kafe-industrial-inspirasi-terbaru',
+    title: 'Model Kursi Meja Kafe Industrial - Inspirasi Terbaru',
+    category: 'Furniture Information',
+    excerpt: 'Kumpulan model kursi meja kafe industrial terbaru dengan inspirasi desain modern. Tips pemilihan furniture cafe yang sesuai dengan konsep bisnis Anda.',
+    image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
+    date: '2025-11-20'
+  },
+  {
+    id: 57,
+    slug: 'harga-bikin-meja-kafe-murah-custom-design-terjangkau',
+    title: 'Harga Bikin Meja Kafe Murah - Custom Design Terjangkau',
+    category: 'Tips and Trick',
+    excerpt: 'Panduan harga bikin meja kafe murah dengan custom design terjangkau. Tips menghemat budget furniture cafe tanpa mengorbankan kualitas dan estetika.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-11-21'
+  },
+  {
+    id: 58,
+    slug: 'meja-dan-kursi-untuk-kafe-murah-tapi-bagus-rekomendasi-terbaik',
+    title: 'Meja dan Kursi untuk Kafe Murah Tapi Bagus - Rekomendasi Terbaik',
+    category: 'Furniture Information',
+    excerpt: 'Rekomendasi meja dan kursi untuk kafe murah tapi bagus dengan kualitas terjamin. Panduan memilih furniture cafe berkualitas dengan budget terbatas.',
+    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop',
+    date: '2025-11-22'
+  },
+  {
+    id: 59,
+    slug: 'meja-kursi-kafe-murah-solusi-budget-terbatas',
+    title: 'Meja Kursi Kafe Murah - Solusi Budget Terbatas',
+    category: 'Tips and Trick',
+    excerpt: 'Solusi meja kursi kafe murah untuk budget terbatas. Tips cerdas memilih furniture cafe berkualitas dengan harga terjangkau tanpa mengorbankan estetika.',
+    image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
+    date: '2025-11-23'
+  },
+  {
+    id: 60,
+    slug: 'furniture-kafe-industrial-panduan-lengkap-pemilihan',
+    title: 'Furniture Kafe Industrial - Panduan Lengkap Pemilihan',
+    category: 'Tips and Trick',
+    excerpt: 'Panduan lengkap memilih furniture kafe industrial yang tepat. Tips pemilihan material, ukuran, dan desain furniture cafe industrial untuk bisnis F&B Anda.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-11-24'
+  },
+  {
+    id: 61,
+    slug: 'furnitur-untuk-kafe-tips-memilih-yang-tepat',
+    title: 'Furnitur untuk Kafe - Tips Memilih yang Tepat',
+    category: 'Tips and Trick',
+    excerpt: 'Tips memilih furnitur untuk kafe yang tepat sesuai konsep dan budget. Panduan lengkap pemilihan furniture cafe dari material hingga layout ruangan.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-11-25'
+  },
+  {
+    id: 62,
+    slug: 'furniture-kafe-2-lantai-sederhana-modern-inspirasi-desain',
+    title: 'Furniture Kafe 2 Lantai Sederhana Modern - Inspirasi Desain',
+    category: 'Furniture Information',
+    excerpt: 'Inspirasi desain furniture kafe 2 lantai sederhana modern. Tips layout dan pemilihan furniture cafe untuk bangunan bertingkat dengan konsep industrial minimalis.',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop',
+    date: '2025-11-26'
+  },
+  {
+    id: 63,
+    slug: 'furniture-kafe-buku-konsep-cafe-literasi-modern',
+    title: 'Furniture Kafe Buku - Konsep Cafe Literasi Modern',
+    category: 'Furniture Information',
+    excerpt: 'Konsep furniture kafe buku untuk cafe literasi modern. Panduan desain cafe dengan tema perpustakaan dan furniture yang mendukung aktivitas membaca.',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop',
+    date: '2025-11-27'
+  },
+  {
+    id: 64,
+    slug: 'furniture-untuk-kafe-bergaya-industrial-vintage-panduan-lengkap',
+    title: 'Furniture untuk Kafe Bergaya Industrial Vintage - Panduan Lengkap',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap furniture untuk kafe bergaya industrial vintage. Tips menciptakan atmosfer vintage dengan furniture industrial modern yang fungsional.',
+    image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop',
+    date: '2025-11-28'
+  },
+  {
+    id: 65,
+    slug: 'kafe-dengan-furniture-paling-unik-inspirasi-kreatif',
+    title: 'Kafe dengan Furniture Paling Unik - Inspirasi Kreatif',
+    category: 'Furniture Information',
+    excerpt: 'Inspirasi kafe dengan furniture paling unik dan kreatif. Kumpulan desain cafe inovatif dengan furniture industrial custom yang menciptakan pengalaman tak terlupakan.',
+    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop',
+    date: '2025-11-29'
+  },
+  {
+    id: 66,
+    slug: 'perhitungan-furniture-kafe-panduan-budget-dan-layout',
+    title: 'Perhitungan Furniture Kafe - Panduan Budget dan Layout',
+    category: 'Tips and Trick',
+    excerpt: 'Panduan perhitungan furniture kafe untuk budget dan layout optimal. Tips menghitung kebutuhan furniture cafe berdasarkan kapasitas dan konsep bisnis.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-11-30'
+  },
+  {
+    id: 67,
+    slug: 'industrial-cafe-furniture-tren-terbaru-2025',
+    title: 'Industrial Cafe Furniture - Tren Terbaru 2025',
+    category: 'Furniture Information',
+    excerpt: 'Tren industrial cafe furniture terbaru 2025. Simak perkembangan desain furniture cafe industrial yang sedang populer dan akan menjadi favorit di tahun depan.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-12-01'
   }
 ]
 
