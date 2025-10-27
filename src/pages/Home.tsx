@@ -65,8 +65,8 @@ const Home: React.FC = () => {
       ? "Furniture Industrial Besi Custom Bekasi | Mangala Living"
       : "Industrial Furniture Besi Custom Bekasi | Mangala Living",
     description: isIndonesian
-      ? "Sejak 1999, Industrial Set terbaik untuk cafe, hotel & restoran ✓ Kualitas Premium ✓ Workshop Bekasi ✓ 25 Tahun Pengalaman"
-      : "Since 1999, Premium Industrial Sets for cafes, hotels & restaurants ✓ Superior Quality ✓ Bekasi Workshop ✓ 25 Years Experience",
+      ? "Sejak 1999, kami menghadirkan Industrial Set terbaik untuk cafe, hotel dan restoran dengan kualitas premium dari workshop Bekasi dan pengalaman 25 tahun"
+      : "Since 1999, we deliver premium Industrial Sets for cafes, hotels and restaurants with superior quality from our Bekasi workshop and 25 years of experience",
     ogTitle: isIndonesian
       ? "Furniture Industrial Besi Custom Bekasi | Cafe & Restoran"
       : "Industrial Furniture Besi Custom Bekasi | Cafe & Restoran",
