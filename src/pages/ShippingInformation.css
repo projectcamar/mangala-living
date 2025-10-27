@@ -282,7 +282,7 @@
 
 .shipping-contact-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin-top: 40px;
 }
@@ -321,7 +321,7 @@
 .shipping-contact-label {
   font-size: 1rem;
   font-weight: 600;
-  color: #8B7355;
+  color: #fff;
   margin: 0 0 8px 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -342,7 +342,7 @@
   }
 
   .shipping-contact-info {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 }
@@ -443,6 +443,11 @@
 
   .shipping-contact-title {
     font-size: 1.6rem;
+  }
+
+  .shipping-contact-info {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
