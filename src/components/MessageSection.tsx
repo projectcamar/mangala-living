@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import '../pages/About.css'
 import showroomImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.jpg'
 
