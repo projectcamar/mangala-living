@@ -195,7 +195,7 @@ export const generateFAQStructuredData = () => {
         "name": "Apakah Mangala Living melayani pengiriman ke seluruh Indonesia dan internasional?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ya, kami melayani pengiriman furniture ke seluruh Indonesia, Jabodetabek, Jakarta, dan pasar internasional utama termasuk USA, Jepang, Australia, Singapura, Malaysia, Thailand, Vietnam, dan Filipina. Biaya pengiriman akan disesuaikan dengan lokasi dan ukuran furniture yang dipesan. Untuk pengiriman internasional, kami mengirim dari pelabuhan Semarang."
+          "text": "Ya, kami melayani pengiriman furniture ke seluruh Indonesia, Jabodetabek, Jakarta, dan pasar internasional utama termasuk USA, Jepang, Australia, Singapura, Malaysia, Thailand, Vietnam, dan Filipina. Biaya pengiriman akan disesuaikan dengan lokasi dan ukuran furniture yang dipesan. Untuk pengiriman internasional, kami mengirim dari pelabuhan Tanjung Priok, Jakarta."
         }
       },
       {
