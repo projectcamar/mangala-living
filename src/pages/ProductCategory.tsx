@@ -67,7 +67,7 @@ const ProductCategory: React.FC = () => {
         {/* Open Graph */}
         <meta property="og:title" content={`${categoryName} - Mangala Living`} />
         <meta property="og:description" content={`Browse our ${categoryName} collection at Mangala Living. Industrial furniture besi custom untuk ${categoryName.toLowerCase()}.`} />
-        <meta property="og:url" content={`https://mangalaliving.com/product-category/${category}`} />
+        <meta property="og:url" content={`https://mangala-living.com/product-category/${category}`} />
         <meta property="og:type" content="website" />
         
         {/* Twitter */}

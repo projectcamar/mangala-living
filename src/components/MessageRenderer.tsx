@@ -30,7 +30,7 @@ const MessageRenderer: React.FC<MessageRendererProps> = ({ text }) => {
         }
         
         // Check if it's a product link
-        if (url.includes('mangalaliving.com/product')) {
+        if (url.includes('mangala-living.com/product')) {
           return (
             <a
               key={index}

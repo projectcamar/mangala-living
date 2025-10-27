@@ -4,9 +4,9 @@ export const generateMerchantStructuredData = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Mangala Living",
-    "url": "https://mangalaliving.com",
-    "logo": "https://mangalaliving.com/logo.png",
-    "image": "https://mangalaliving.com/og-image.jpg",
+    "url": "https://mangala-living.com",
+    "logo": "https://mangala-living.com/logo.png",
+    "image": "https://mangala-living.com/og-image.jpg",
     "description": "Premium Industrial Scandinavian Furniture for Coffee Shops, Restaurants & Offices. Custom Solutions Since 1999.",
     "foundingDate": "1999",
     "address": {
@@ -20,17 +20,17 @@ export const generateMerchantStructuredData = () => {
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+62 852 1207 8467",
+        "telephone": "+62-852-1207-8467",
         "contactType": "customer service",
-        "email": "info@mangalaliving.com",
+        "email": "info@mangala-living.com",
         "availableLanguage": ["Indonesian", "English"],
         "areaServed": "ID"
       },
       {
         "@type": "ContactPoint",
-        "telephone": "+62 852 1207 8467",
+        "telephone": "+62-852-1207-8467",
         "contactType": "sales",
-        "email": "sales@mangalaliving.com",
+        "email": "sales@mangala-living.com",
         "availableLanguage": ["Indonesian", "English"],
         "areaServed": "ID"
       }
@@ -121,11 +121,11 @@ export const generateLocalBusinessStructuredData = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Mangala Living",
-    "image": "https://mangalaliving.com/og-image.jpg",
+    "image": "https://mangala-living.com/og-image.jpg",
     "description": "Premium Industrial Scandinavian Furniture for Coffee Shops, Restaurants & Offices. Custom Solutions Since 1999.",
-    "url": "https://mangalaliving.com",
+    "url": "https://mangala-living.com",
     "telephone": "+62-852-1207-8467",
-    "email": "info@mangalaliving.com",
+    "email": "info@mangala-living.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Jl. Raya Setu Cikarang Bar.",

@@ -286,7 +286,7 @@ const ShippingInformation: React.FC = () => {
               </div>
               <div className="shipping-contact-details">
                 <h3 className="shipping-contact-label">{isIndonesian ? 'Telepon' : 'Phone'}</h3>
-                <p className="shipping-contact-value">+62 852 1207 8467</p>
+                <p className="shipping-contact-value">+62 852-1207-8467</p>
               </div>
             </div>
 
@@ -296,7 +296,7 @@ const ShippingInformation: React.FC = () => {
               </div>
               <div className="shipping-contact-details">
                 <h3 className="shipping-contact-label">Email</h3>
-                <p className="shipping-contact-value">info@mangalaliving.com</p>
+                <p className="shipping-contact-value">info@mangala-living.com</p>
               </div>
             </div>
 

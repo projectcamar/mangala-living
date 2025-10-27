@@ -93,7 +93,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya sejak 1999, <a href="/about">Mangala Living</a> telah melayani lebih dari 1000 klien di seluruh Indonesia. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan furniture industrial berkualitas tinggi dengan finishing powder coating yang tahan lama, material besi hollow berkualitas, dan kayu solid yang awet. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain kafe industrial minimalis dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>.'
+          'Untuk konsultasi desain kafe industrial minimalis dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>.'
         ]
       }
     ]
@@ -211,7 +211,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living telah melayani lebih dari 1000 klien di seluruh Indonesia. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan furniture industrial berkualitas tinggi dengan harga kompetitif, garansi kualitas, dan layanan purna jual yang profesional. Semua produk kami menggunakan material berkualitas tinggi dan finishing powder coating yang tahan lama.',
-          'Untuk informasi harga furniture industrial terbaru dan konsultasi desain, hubungi kami di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda mendapatkan furniture industrial terbaik sesuai budget dan kebutuhan.'
+          'Untuk informasi harga furniture industrial terbaru dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda mendapatkan furniture industrial terbaik sesuai budget dan kebutuhan.'
         ]
       }
     ]
@@ -351,7 +351,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus furniture restoran. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman dalam menciptakan furniture restoran berkualitas tinggi.',
           'Kami menawarkan furniture restoran industrial dengan material berkualitas tinggi, finishing food-safe, dan desain yang fungsional. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain restoran industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan restoran industrial yang sempurna.'
+          'Untuk konsultasi desain restoran industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan restoran industrial yang sempurna.'
         ]
       }
     ]
@@ -509,7 +509,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus furniture kantor modern. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman dalam menciptakan furniture kantor berkualitas tinggi.',
           'Kami menawarkan meja kantor industrial dengan material berkualitas tinggi, desain ergonomis, dan finishing yang tahan lama. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain kantor industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan workspace industrial yang produktif dan estetis.'
+          'Untuk konsultasi desain kantor industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan workspace industrial yang produktif dan estetis.'
         ]
       }
     ]
@@ -664,7 +664,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami tren desain terbaru dan kebutuhan modern. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman dalam menciptakan furniture industrial Scandinavian berkualitas tinggi.',
           'Kami menawarkan furniture industrial Scandinavian dengan material berkualitas tinggi, desain yang timeless, dan finishing yang tahan lama. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain industrial Scandinavian dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan ruang industrial Scandinavian yang sempurna sesuai tren 2025.'
+          'Untuk konsultasi desain industrial Scandinavian dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan ruang industrial Scandinavian yang sempurna sesuai tren 2025.'
         ]
       }
     ]
@@ -771,7 +771,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus hollowline display rack untuk berbagai aplikasi komersial. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan hollowline display rack berkualitas tinggi dengan konstruksi hollow steel yang kuat, finishing powder coating tahan lama, dan desain modular yang fleksibel. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk informasi hollowline display rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda mendapatkan hollowline display rack terbaik sesuai kebutuhan bisnis.'
+          'Untuk informasi hollowline display rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda mendapatkan hollowline display rack terbaik sesuai kebutuhan bisnis.'
         ]
       }
     ]
@@ -870,7 +870,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya, Mangala Living menawarkan display shelf rack berkualitas tinggi dengan desain yang fungsional dan estetis. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menyediakan display shelf rack industrial dengan material berkualitas tinggi, finishing powder coating tahan lama, dan desain yang dapat disesuaikan dengan kebutuhan spesifik. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk informasi display shelf rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan display yang menarik dan fungsional.'
+          'Untuk informasi display shelf rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan display yang menarik dan fungsional.'
         ]
       }
     ]
@@ -985,7 +985,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus stall chair design untuk berbagai aplikasi komersial. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan stall chair design industrial berkualitas tinggi dengan konstruksi besi hollow yang kuat, finishing powder coating tahan lama, dan desain ergonomis yang nyaman. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk informasi stall chair design dan konsultasi desain, hubungi kami di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan stall chair design yang sempurna sesuai konsep bisnis.'
+          'Untuk informasi stall chair design dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan stall chair design yang sempurna sesuai konsep bisnis.'
         ]
       }
     ]
@@ -1032,7 +1032,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah manufacturer industrial furniture besi custom terpercaya di Bekasi sejak 1999. Dengan pengalaman 25+ tahun, kami telah melayani lebih dari 1000 bisnis di seluruh Indonesia.',
           'Kami memproduksi industrial furniture custom untuk cafe, restoran, hotel, kantor, dan berbagai kebutuhan komersial. Setiap produk dibuat dengan teknik pengelasan berkualitas tinggi dan material industrial grade terbaik. <a href="/shop">Lihat koleksi lengkap</a> atau <a href="/contact-us">hubungi kami</a> untuk konsultasi custom.',
-          'Lokasi Workshop: Bekasi, Jawa Barat | Telp/WA: +62 852 1207 8467 | Email: info@mangalaliving.com'
+          'Lokasi Workshop: Bekasi, Jawa Barat | Telp/WA: +62 852-1207-8467 | Email: info@mangalaliving.com'
         ]
       },
       {
@@ -2718,7 +2718,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen <a href="/shop">furniture industrial</a> terpercaya sejak 1999, Mangala Living menawarkan harga workshop langsung yang jauh lebih murah dibanding toko furniture konvensional. Workshop kami di Bekasi memproduksi langsung semua pesanan, sehingga Anda mendapat harga terbaik tanpa margin distributor.',
           'Semua meja cafe kami dilengkapi dengan garansi kualitas dan jamin uma panjang. Finishing powder coating anti karat, frame besi hollow berkualitas, dan kayu solid yang awet. Sudah lebih dari 1000 klien puas dengan produk kami.',
-          'Hubungi kami sekarang di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a> untuk konsultasi dan penawaran harga meja cafe murah.'
+          'Hubungi kami sekarang di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a> untuk konsultasi dan penawaran harga meja cafe murah.'
         ]
       }
     ]
@@ -2764,7 +2764,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Kursi Bar Cafe Murah',
         paragraphs: [
           'Mangala Living adalah produsen furniture industrial terpercaya dengan workshop di Bekasi. Dengan pengalaman 25 tahun dan lebih dari 1000 klien puas, kami menjamin kualitas produk dan pelayanan yang terbaik.',
-          'Kami menawarkan <a href="/shop">kursi bar cafe murah</a> dengan harga terbaik dan kualitas premium. Produk ready stock tersedia untuk pengiriman cepat. Hubungi kami di <a href="/contact">+62 852 1207 8467</a> atau WhatsApp untuk informasi harga dan ketersediaan stock.'
+          'Kami menawarkan <a href="/shop">kursi bar cafe murah</a> dengan harga terbaik dan kualitas premium. Produk ready stock tersedia untuk pengiriman cepat. Hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau WhatsApp untuk informasi harga dan ketersediaan stock.'
         ]
       }
     ]
@@ -2811,7 +2811,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living Sekarang',
         paragraphs: [
           'Tertarik dengan furniture cafe murah Bekasi? Mangala Living siap membantu mewujudkan konsep cafe impian Anda dengan furniture industrial berkualitas tinggi dan harga pabrik yang terjangkau.',
-          'Konsultasikan kebutuhan furniture cafe Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Kami akan memberikan penawaran terbaik sesuai budget Anda.'
+          'Konsultasikan kebutuhan furniture cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Kami akan memberikan penawaran terbaik sesuai budget Anda.'
         ]
       }
     ]
@@ -2859,7 +2859,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah <a href="/about">produsen furniture industrial</a> terpercaya dengan pengalaman 25 tahun melayani ribuan cafe dan restoran di seluruh Indonesia. Kami memahami kebutuhan furniture cafe yang bukan hanya estetis, tetapi juga fungsional dan durable.',
           'Workshop kami di Bekasi menggunakan teknologi modern dan material berkualitas tinggi. Semua meja makan cafe kami dilengkapi dengan garansi kualitas dan jaminan ketahanan.',
-          'Hubungi kami di <a href="/contact">+62 852 1207 8467</a> untuk konsultasi meja makan cafe industrial minimalis dan penawaran harga terbaik.'
+          'Hubungi kami di <a href="/contact">+62 852-1207-8467</a> untuk konsultasi meja makan cafe industrial minimalis dan penawaran harga terbaik.'
         ]
       }
     ]
@@ -2907,7 +2907,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Display Rack Cafe Murah',
         paragraphs: [
           'Mangala Living menawarkan display rack cafe industrial dengan harga terbaik dan kualitas premium. Workshop kami di Bekasi memproduksi semua display rack dengan material berkualitas tinggi dan finishing yang sempurna.',
-          'Konsultasikan kebutuhan display rack cafe Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan display rack cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -2957,7 +2957,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen <a href="/shop">furniture outdoor industrial</a> terpercaya dengan pengalaman 25 tahun. Kami memahami kebutuhan furniture outdoor yang tidak hanya estetis, tetapi juga tahan cuaca dan durable untuk penggunaan jangka panjang.',
           'Workshop kami di Bekasi menggunakan teknologi modern dan material berkualitas tinggi. Semua furniture outdoor dilengkapi dengan garansi kualitas.',
-          'Konsultasikan kebutuhan bar set cafe outdoor Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan bar set cafe outdoor Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -3006,7 +3006,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Industrial Murah',
         paragraphs: [
           'Ready untuk memulai project furniture industrial Anda? Mangala Living siap membantu dengan <a href="/shop">furniture industrial harga murah</a> berkualitas tinggi dari workshop Bekasi.',
-          'Hubungi kami di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a> untuk konsultasi gratis dan penawaran harga terbaik.'
+          'Hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a> untuk konsultasi gratis dan penawaran harga terbaik.'
         ]
       }
     ]
@@ -3058,7 +3058,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Mengapa Tambahkan Working Space di Cafe?',
         paragraphs: [
           'Working space di cafe sangat profitable karena:<br><strong>1. Higher Ticket:</strong> Pelanggan yang bekerja cenderung stay lebih lama dan order multiple drinks.<br><strong>2. Customer Loyalty:</strong> Pelanggan akan kembali untuk working space yang nyaman.<br><strong>3. Community Building:</strong> Working space menarik komunitas profesional dan freelancer.<br><strong>4. Differentiate:</strong> Memberikan competitive advantage dibanding cafe tanpa working space.',
-          'Mangala Living siap membantu Anda menciptakan working space yang perfect dengan meja kerja industrial berkualitas tinggi. Hubungi kami di <a href="/contact">+62 852 1207 8467</a> untuk konsultasi gratis.'
+          'Mangala Living siap membantu Anda menciptakan working space yang perfect dengan meja kerja industrial berkualitas tinggi. Hubungi kami di <a href="/contact">+62 852-1207-8467</a> untuk konsultasi gratis.'
         ]
       }
     ]
@@ -3107,7 +3107,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Kitchen Cabinet Cafe Murah',
         paragraphs: [
           'Mangala Living menawarkan kitchen cabinet cafe industrial dengan kualitas premium dan harga terjangkau. Workshop kami di Bekasi memproduksi semua cabinet dengan material berkualitas dan finishing yang sempurna.',
-          'Konsultasikan kebutuhan kitchen cabinet cafe Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan rekomendasi terbaik sesuai layout dapur dan budget Anda.'
+          'Konsultasikan kebutuhan kitchen cabinet cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai layout dapur dan budget Anda.'
         ]
       }
     ]
@@ -3157,7 +3157,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Mengapa Investasi Outdoor Furniture?',
         paragraphs: [
           '<strong>Increased Capacity:</strong> Area outdoor bisa menambah 30-50% seating capacity.<br><strong>Unique Experience:</strong> Memberikan pengalaman berbeda yang memorable.<br><strong>Higher Ticket:</strong> Customer di outdoor cenderung stay longer dan order more.<br><strong>Instagram Worthy:</strong> Area outdoor yang photogenic akan menarik organic marketing.<br><strong>Seasonal Flexibility:</strong> Bisa optimize according to weather.',
-          'Mangala Living menawarkan outdoor furniture cafe tahan cuaca dengan harga terjangkau. Workshop kami di Bekasi memproduksi semua outdoor furniture dengan kualitas premium dan garansi. Hubungi kami di <a href="/contact">+62 852 1207 8467</a> untuk konsultasi gratis.'
+          'Mangala Living menawarkan outdoor furniture cafe tahan cuaca dengan harga terjangkau. Workshop kami di Bekasi memproduksi semua outdoor furniture dengan kualitas premium dan garansi. Hubungi kami di <a href="/contact">+62 852-1207-8467</a> untuk konsultasi gratis.'
         ]
       }
     ]
@@ -3221,7 +3221,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya sejak 1999, <a href="/about">Mangala Living</a> telah melayani lebih dari 1000 klien di seluruh Indonesia. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan meja kafe industrial berkualitas tinggi dengan material besi hollow berkualitas, kayu solid yang awet, dan finishing powder coating yang tahan lama. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain meja kafe industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852 1207 8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>.'
+          'Untuk konsultasi desain meja kafe industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>.'
         ]
       }
     ]
@@ -3292,7 +3292,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Meja Kafe Bulat Industrial',
         paragraphs: [
           'Mangala Living memproduksi meja kafe bulat industrial berkualitas tinggi dengan custom design sesuai kebutuhan cafe Anda. Workshop kami di Bekasi dilengkapi dengan peralatan modern untuk menghasilkan furniture yang presisi dan tahan lama.',
-          'Konsultasikan kebutuhan meja kafe bulat industrial Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep dan budget cafe Anda.'
+          'Konsultasikan kebutuhan meja kafe bulat industrial Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep dan budget cafe Anda.'
         ]
       }
     ]
@@ -3365,7 +3365,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Set Meja Kursi Kafe Industrial',
         paragraphs: [
           'Mangala Living menawarkan berbagai pilihan set meja kursi kafe industrial berkualitas tinggi dengan harga kompetitif. Workshop kami di Bekasi memproduksi semua furniture dengan standar kualitas internasional.',
-          'Konsultasikan kebutuhan set furniture cafe Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
+          'Konsultasikan kebutuhan set furniture cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
         ]
       }
     ]
@@ -3438,7 +3438,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Kursi Meja Kafe Industrial',
         paragraphs: [
           'Mangala Living memproduksi berbagai model kursi meja kafe industrial berkualitas tinggi dengan desain modern dan fungsional. Workshop kami di Bekasi dilengkapi dengan peralatan modern untuk menghasilkan furniture yang presisi dan tahan lama.',
-          'Konsultasikan kebutuhan kursi meja kafe industrial Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
+          'Konsultasikan kebutuhan kursi meja kafe industrial Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
         ]
       }
     ]
@@ -3522,7 +3522,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Custom Meja Kafe Murah',
         paragraphs: [
           'Mangala Living menawarkan layanan custom meja kafe dengan harga terjangkau dan kualitas premium. Workshop kami di Bekasi memproduksi furniture custom dengan standar internasional dan garansi kualitas.',
-          'Konsultasikan kebutuhan custom meja kafe Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan penawaran terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan custom meja kafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan penawaran terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -3595,7 +3595,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Kafe Murah',
         paragraphs: [
           'Mangala Living menawarkan furniture kafe murah tapi bagus dengan kualitas premium dan harga terjangkau. Workshop kami di Bekasi memproduksi furniture dengan standar kualitas internasional dan harga pabrik.',
-          'Konsultasikan kebutuhan furniture kafe murah Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan furniture kafe murah Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -3681,7 +3681,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Konsultasi Furniture Kafe Industrial',
         paragraphs: [
           'Mangala Living menyediakan layanan konsultasi lengkap untuk pemilihan furniture kafe industrial yang tepat. Tim desain kami akan membantu Anda memilih furniture yang sesuai dengan konsep, budget, dan kebutuhan cafe Anda.',
-          'Konsultasikan kebutuhan furniture kafe industrial Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
+          'Konsultasikan kebutuhan furniture kafe industrial Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
         ]
       }
     ]
@@ -3754,7 +3754,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Solusi Budget Terbatas',
         paragraphs: [
           'Mangala Living memahami tantangan budget terbatas dalam memulai bisnis cafe. Kami menawarkan solusi furniture kafe murah dengan kualitas premium dan harga terjangkau.',
-          'Konsultasikan kebutuhan furniture kafe dengan budget terbatas Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan solusi terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan furniture kafe dengan budget terbatas Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan solusi terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -3829,7 +3829,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Konsultasi Furnitur Kafe',
         paragraphs: [
           'Mangala Living menyediakan layanan konsultasi lengkap untuk pemilihan furnitur kafe yang tepat. Tim desain kami akan membantu Anda memilih furniture yang sesuai dengan konsep, budget, dan kebutuhan cafe Anda.',
-          'Konsultasikan kebutuhan furnitur kafe Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
+          'Konsultasikan kebutuhan furnitur kafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
         ]
       }
     ]
@@ -3902,7 +3902,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Kafe 2 Lantai',
         paragraphs: [
           'Mangala Living menyediakan layanan desain dan produksi furniture kafe 2 lantai dengan konsep sederhana modern. Tim desain kami akan membantu Anda menciptakan cafe yang fungsional dan menarik.',
-          'Konsultasikan kebutuhan furniture kafe 2 lantai Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan inspirasi desain dan solusi terbaik untuk cafe Anda.'
+          'Konsultasikan kebutuhan furniture kafe 2 lantai Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan inspirasi desain dan solusi terbaik untuk cafe Anda.'
         ]
       }
     ]
@@ -3986,7 +3986,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Cafe Tren Terbaru',
         paragraphs: [
           'Mangala Living terus mengikuti perkembangan tren furniture cafe terbaru dan mengintegrasikannya dalam produk kami. Kami menawarkan furniture cafe dengan desain modern dan teknologi terkini.',
-          'Konsultasikan kebutuhan furniture cafe tren terbaru Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan solusi terbaru dan inovatif untuk cafe Anda.'
+          'Konsultasikan kebutuhan furniture cafe tren terbaru Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan solusi terbaru dan inovatif untuk cafe Anda.'
         ]
       }
     ]
@@ -4059,7 +4059,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Cafe Literasi',
         paragraphs: [
           'Mangala Living menyediakan furniture khusus untuk cafe literasi dengan desain yang fungsional dan nyaman. Tim desain kami akan membantu Anda menciptakan ruang literasi yang ideal untuk pelanggan.',
-          'Konsultasikan kebutuhan furniture cafe literasi Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan solusi terbaik untuk konsep cafe literasi modern Anda.'
+          'Konsultasikan kebutuhan furniture cafe literasi Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan solusi terbaik untuk konsep cafe literasi modern Anda.'
         ]
       }
     ]
@@ -4132,7 +4132,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Industrial Vintage',
         paragraphs: [
           'Mangala Living menyediakan furniture industrial vintage berkualitas tinggi dengan desain yang autentik dan berkarakter. Workshop kami di Bekasi memproduksi furniture dengan finishing distressed dan material reclaimed.',
-          'Konsultasikan kebutuhan furniture industrial vintage Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk cafe bergaya industrial vintage Anda.'
+          'Konsultasikan kebutuhan furniture industrial vintage Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk cafe bergaya industrial vintage Anda.'
         ]
       }
     ]
@@ -4205,7 +4205,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Unik',
         paragraphs: [
           'Mangala Living menyediakan layanan desain dan produksi furniture unik untuk cafe dengan konsep kreatif dan out-of-the-box. Tim desain kami akan membantu Anda menciptakan furniture yang memorable dan viral.',
-          'Konsultasikan kebutuhan furniture unik untuk cafe Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan inspirasi kreatif dan solusi terbaik untuk cafe yang unik dan menarik.'
+          'Konsultasikan kebutuhan furniture unik untuk cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan inspirasi kreatif dan solusi terbaik untuk cafe yang unik dan menarik.'
         ]
       }
     ]
@@ -4280,7 +4280,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Konsultasi Budget Furniture',
         paragraphs: [
           'Mangala Living menyediakan layanan konsultasi lengkap untuk perhitungan budget dan layout furniture kafe. Tim desain kami akan membantu Anda merencanakan investasi furniture yang optimal dan efisien.',
-          'Konsultasikan kebutuhan perhitungan furniture kafe Anda dengan tim kami di <a href="/contact">+62 852 1207 8467</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk budget dan layout cafe Anda.'
+          'Konsultasikan kebutuhan perhitungan furniture kafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk budget dan layout cafe Anda.'
         ]
       }
     ]

@@ -57,7 +57,7 @@ const BlogPost: React.FC = () => {
           : post.slug === 'desain-meja-bar-industrial-untuk-ruang-terbatas'
           ? 'desain meja bar, meja bar ruang terbatas, meja cafe compact, furniture space efficient'
           : `${post.title}, furniture, industrial furniture, mangala living, furniture bekasi`} />
-        <link rel="canonical" href={`https://mangalaliving.com/blog/${post.slug}`} />
+        <link rel="canonical" href={`https://mangala-living.com/blog/${post.slug}`} />
       </Helmet>
       
       <Header />

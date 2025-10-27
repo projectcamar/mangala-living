@@ -274,7 +274,7 @@ const ProductDetail: React.FC = () => {
       "manufacturer": {
         "@type": "Organization",
         "name": "Mangala Living",
-        "url": "https://mangalaliving.com"
+        "url": "https://mangala-living.com"
       },
       "category": product.categories.join(", "),
       "sku": product.slug,
@@ -327,8 +327,8 @@ const ProductDetail: React.FC = () => {
         "seller": {
           "@type": "Organization",
           "name": "Mangala Living",
-          "url": "https://mangalaliving.com",
-          "logo": "https://mangalaliving.com/logo.png",
+          "url": "https://mangala-living.com",
+          "logo": "https://mangala-living.com/logo.png",
           "description": "Premium Industrial Scandinavian Furniture for Coffee Shops, Restaurants & Offices. Custom Solutions Since 1999.",
           "address": {
             "@type": "PostalAddress",
@@ -340,13 +340,13 @@ const ProductDetail: React.FC = () => {
           },
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+62 852 1207 8467",
+            "telephone": "+62-852-1207-8467",
             "contactType": "customer service",
-            "email": "info@mangalaliving.com",
+            "email": "info@mangala-living.com",
             "availableLanguage": ["Indonesian", "English"]
           }
         },
-        "url": `https://mangalaliving.com/product/${product.slug}`
+        "url": `https://mangala-living.com/product/${product.slug}`
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -434,7 +434,7 @@ const ProductDetail: React.FC = () => {
         <meta property="og:title" content={`${product.name} - Mangala Living`} />
         <meta property="og:description" content={`${product.name} - ${product.details}`} />
         <meta property="og:image" content={product.images[0]} />
-        <meta property="og:url" content={`https://mangalaliving.com/product/${product.slug}`} />
+        <meta property="og:url" content={`https://mangala-living.com/product/${product.slug}`} />
         <meta property="og:type" content="product" />
         
         {/* Twitter */}

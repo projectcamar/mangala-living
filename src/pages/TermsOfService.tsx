@@ -386,7 +386,7 @@ const TermsOfService: React.FC = () => {
                     Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
                   </a>
                 </p>
-                <p className="workshop-phone">+62 852 1207 8467</p>
+                <p className="workshop-phone">+62 852-1207-8467</p>
                 <p className="workshop-hours">
                   {isIndonesian 
                     ? 'Jam Kerja: 08.00 - 22.00 GMT +7'

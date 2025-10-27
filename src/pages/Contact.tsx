@@ -242,7 +242,7 @@ Thank you!`
                 Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
               </a>
             </div>
-            <div>+62 852 1207 8467</div>
+            <div>+62 852-1207-8467</div>
           </div>
           
           {/* Embedded Google Map */}

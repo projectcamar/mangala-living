@@ -1,6 +1,6 @@
 // SEO utility functions for canonical URLs and hreflang
 export const generateCanonicalUrl = (path: string): string => {
-  const baseUrl = 'https://mangalaliving.com'
+  const baseUrl = 'https://mangala-living.com'
   
   // Remove language prefixes for canonical URLs
   let cleanPath = path
@@ -16,7 +16,7 @@ export const generateCanonicalUrl = (path: string): string => {
 }
 
 export const generateHreflangTags = (currentPath: string) => {
-  const baseUrl = 'https://mangalaliving.com'
+  const baseUrl = 'https://mangala-living.com'
   
   // Clean the current path
   let cleanPath = currentPath

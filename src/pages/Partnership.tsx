@@ -272,8 +272,8 @@ const Partnership: React.FC = () => {
             <p className="partnership-contact-address">
               Jl. RA Rukmini KM 2 no. 77 Desa Pekalongan RT 05 RW 01, Kec. Batealit - Jepara
             </p>
-            <p className="partnership-contact-phone">Telepon : +62 852 1207 8467</p>
-            <p className="partnership-contact-email">Email : info@mangalaliving.com</p>
+            <p className="partnership-contact-phone">Telepon : +62 852-1207-8467</p>
+            <p className="partnership-contact-email">Email : info@mangala-living.com</p>
           </div>
         </div>
       </section>

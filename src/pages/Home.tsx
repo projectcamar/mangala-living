@@ -116,15 +116,15 @@ const Home: React.FC = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={translations.ogTitle} />
         <meta property="og:description" content={translations.ogDescription} />
-        <meta property="og:image" content="https://mangalaliving.com/og-image.jpg" />
-        <meta property="og:url" content="https://mangalaliving.com/" />
+        <meta property="og:image" content="https://mangala-living.com/og-image.jpg" />
+        <meta property="og:url" content="https://mangala-living.com/" />
         <meta property="og:locale" content="id_ID" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Furniture Industrial Besi Custom Bekasi - Mangala Living" />
         <meta name="twitter:description" content="Manufacturer furniture industrial custom untuk cafe, restoran, hotel. Workshop Bekasi. Pengalaman 25+ tahun." />
-        <meta name="twitter:image" content="https://mangalaliving.com/og-image.jpg" />
+        <meta name="twitter:image" content="https://mangala-living.com/og-image.jpg" />
         
         {/* Additional SEO tags */}
         <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -133,12 +133,12 @@ const Home: React.FC = () => {
         <meta name="geo.placename" content="Bekasi" />
         <meta name="geo.position" content="-6.2088;107.1602" />
         {/* Canonical URL - Always point to main domain */}
-        <link rel="canonical" href="https://mangalaliving.com/" />
+        <link rel="canonical" href="https://mangala-living.com/" />
         
         {/* Hreflang for language variants */}
-        <link rel="alternate" hrefLang="id" href="https://mangalaliving.com/id" />
-        <link rel="alternate" hrefLang="en" href="https://mangalaliving.com/eng" />
-        <link rel="alternate" hrefLang="x-default" href="https://mangalaliving.com/" />
+        <link rel="alternate" hrefLang="id" href="https://mangala-living.com/id" />
+        <link rel="alternate" hrefLang="en" href="https://mangala-living.com/eng" />
+        <link rel="alternate" hrefLang="x-default" href="https://mangala-living.com/" />
         
         {/* Language-specific meta tags */}
         <meta property="og:locale" content={isIndonesian ? "id_ID" : "en_US"} />
@@ -158,8 +158,8 @@ const Home: React.FC = () => {
                   "position": 1,
                   "name": "Frame Loft Bookshelf",
                   "description": "Rak buku industrial dengan desain loft modern untuk cafe dan kantor",
-                  "image": "https://mangalaliving.com/assets/frame-Loft-Bookshelf.webp",
-                  "url": "https://mangalaliving.com/product/frame-loft-bookshelf",
+                  "image": "https://mangala-living.com/assets/frame-Loft-Bookshelf.webp",
+                  "url": "https://mangala-living.com/product/frame-loft-bookshelf",
                   "brand": {
                     "@type": "Brand",
                     "name": "Mangala Living"
@@ -170,7 +170,7 @@ const Home: React.FC = () => {
                     "priceCurrency": "IDR",
                     "availability": "https://schema.org/InStock",
                     "priceValidUntil": "2025-12-31",
-                    "url": "https://mangalaliving.com/product/frame-loft-bookshelf",
+                    "url": "https://mangala-living.com/product/frame-loft-bookshelf",
                     "seller": {
                       "@type": "Organization",
                       "name": "Mangala Living"
@@ -189,8 +189,8 @@ const Home: React.FC = () => {
                   "position": 2,
                   "name": "Balcony Bar Table",
                   "description": "Meja bar balkon industrial untuk area outdoor cafe dan restoran",
-                  "image": "https://mangalaliving.com/assets/balcony-bar-table.webp",
-                  "url": "https://mangalaliving.com/product/balcony-bar-table",
+                  "image": "https://mangala-living.com/assets/balcony-bar-table.webp",
+                  "url": "https://mangala-living.com/product/balcony-bar-table",
                   "brand": {
                     "@type": "Brand",
                     "name": "Mangala Living"
@@ -201,7 +201,7 @@ const Home: React.FC = () => {
                     "priceCurrency": "IDR",
                     "availability": "https://schema.org/InStock",
                     "priceValidUntil": "2025-12-31",
-                    "url": "https://mangalaliving.com/product/balcony-bar-table",
+                    "url": "https://mangala-living.com/product/balcony-bar-table",
                     "seller": {
                       "@type": "Organization",
                       "name": "Mangala Living"
@@ -220,8 +220,8 @@ const Home: React.FC = () => {
                   "position": 3,
                   "name": "Beam Industrial Bar Chair",
                   "description": "Kursi bar industrial besi dengan desain beam modern untuk cafe",
-                  "image": "https://mangalaliving.com/assets/Kursi-Barstool-Besi-Behel.webp",
-                  "url": "https://mangalaliving.com/product/beam-industrial-bar-chair",
+                  "image": "https://mangala-living.com/assets/Kursi-Barstool-Besi-Behel.webp",
+                  "url": "https://mangala-living.com/product/beam-industrial-bar-chair",
                   "brand": {
                     "@type": "Brand",
                     "name": "Mangala Living"
@@ -232,7 +232,7 @@ const Home: React.FC = () => {
                     "priceCurrency": "IDR",
                     "availability": "https://schema.org/InStock",
                     "priceValidUntil": "2025-12-31",
-                    "url": "https://mangalaliving.com/product/beam-industrial-bar-chair",
+                    "url": "https://mangala-living.com/product/beam-industrial-bar-chair",
                     "seller": {
                       "@type": "Organization",
                       "name": "Mangala Living"
@@ -258,11 +258,11 @@ const Home: React.FC = () => {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Mangala Living",
-              "image": "https://mangalaliving.com/og-image.jpg",
-              "@id": "https://mangalaliving.com",
-              "url": "https://mangalaliving.com",
+              "image": "https://mangala-living.com/og-image.jpg",
+              "@id": "https://mangala-living.com",
+              "url": "https://mangala-living.com",
               "telephone": "+6285212078467",
-              "email": "info@mangalaliving.com",
+              "email": "info@mangala-living.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Jl. Raya Setu Cibitung - Bekasi, Telajung",

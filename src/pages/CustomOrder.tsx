@@ -290,8 +290,8 @@ const CustomOrder: React.FC = () => {
             <p className="custom-order-contact-address">
               Jl. RA Rukmini KM 2 no. 77 Desa Pekalongan RT 05 RW 01, Kec. Batealit - Jepara
             </p>
-            <p className="custom-order-contact-phone">Telepon : +62 852 1207 8467</p>
-            <p className="custom-order-contact-email">Email : info@mangalaliving.com</p>
+            <p className="custom-order-contact-phone">Telepon : +62 852-1207-8467</p>
+            <p className="custom-order-contact-email">Email : info@mangala-living.com</p>
           </div>
         </div>
       </section>
