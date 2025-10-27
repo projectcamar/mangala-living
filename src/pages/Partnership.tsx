@@ -95,7 +95,7 @@ const Partnership: React.FC = () => {
                 {isIndonesian ? (
                   <>
                     <p className="partnership-main-paragraph">
-                      Baik itu pengadaan furnitur hotel, vila, restoran, atau rumah tinggal—yang dibutuhkan bukan hanya produk, tapi mitra kerja yang bisa dipercaya. PT. JAVAFURNI EXPORINDO ABADI hadir bukan sebagai penjual, tapi sebagai bagian dari tim Anda.
+                      Baik itu pengadaan furnitur hotel, vila, restoran, atau rumah tinggal—yang dibutuhkan bukan hanya produk, tapi mitra kerja yang bisa dipercaya. Mangala Living hadir bukan sebagai penjual, tapi sebagai bagian dari tim Anda.
                     </p>
                     <p className="partnership-main-paragraph">
                       Kami mengerti bahwa sebuah proyek berarti tenggat, spesifikasi ketat, revisi mendadak, dan harapan yang tinggi. Anda butuh rekan yang bisa mengakomodasi, bukan menambah kerumitan. Yang bisa mendengar, bukan hanya menjawab.
@@ -104,7 +104,7 @@ const Partnership: React.FC = () => {
                 ) : (
                   <>
                     <p className="partnership-main-paragraph">
-                      Whether it's hotel, villa, restaurant, or residential furniture procurement—what's needed is not just products, but a trusted work partner. PT. JAVAFURNI EXPORINDO ABADI is here not as a seller, but as part of your team.
+                      Whether it's hotel, villa, restaurant, or residential furniture procurement—what's needed is not just products, but a trusted work partner. Mangala Living is here not as a seller, but as part of your team.
                     </p>
                     <p className="partnership-main-paragraph">
                       We understand that a project means deadlines, strict specifications, sudden revisions, and high expectations. You need a partner who can accommodate, not add complexity. Who can listen, not just answer.
@@ -272,8 +272,8 @@ const Partnership: React.FC = () => {
             <p className="partnership-contact-address">
               Jl. RA Rukmini KM 2 no. 77 Desa Pekalongan RT 05 RW 01, Kec. Batealit - Jepara
             </p>
-            <p className="partnership-contact-phone">Telepon : 0811107830</p>
-            <p className="partnership-contact-email">Email : jeafurniture@gmail.com</p>
+            <p className="partnership-contact-phone">Telepon : +62 852-1207-8467</p>
+            <p className="partnership-contact-email">Email : info@mangala-living.com</p>
           </div>
         </div>
       </section>

@@ -153,9 +153,9 @@ const CustomOrder: React.FC = () => {
           <div className="custom-order-styles-content">
             {isIndonesian ? (
               <>
-                <p className="custom-order-styles-description">
-                  Kami percaya, setiap orang punya selera unik dalam menata ruang. Ada yang menyukai detail yang kaya, ada pula yang memilih garis sederhana dan bersih. Di JEA Furniture, semua pendekatan desain tersebut bukan sekadar mungkin, tapi memang menjadi keahlian kami.
-                </p>
+                    <p className="custom-order-styles-description">
+                      Kami percaya, setiap orang punya selera unik dalam menata ruang. Ada yang menyukai detail yang kaya, ada pula yang memilih garis sederhana dan bersih. Di Mangala Living, semua pendekatan desain tersebut bukan sekadar mungkin, tapi memang menjadi keahlian kami.
+                    </p>
                 <p className="custom-order-styles-description">
                   Tim kami terbiasa menangani permintaan desain dengan ragam karakter: dari estetika megah penuh aksen klasik, tampilan natural yang earthy, hingga gaya modern yang tegas namun tetap fungsional. Permintaan desain berproporsi simetris, potongan melengkung lembut, hingga struktur modular dengan fungsi ganda, menjadi beberapa pola yang paling sering dikerjakan dan digemari pasar.
                 </p>
@@ -166,7 +166,7 @@ const CustomOrder: React.FC = () => {
             ) : (
               <>
                 <p className="custom-order-styles-description">
-                  We believe everyone has a unique taste in arranging space. Some like rich details, others choose simple and clean lines. At JEA Furniture, all these design approaches are not just possible, but indeed our expertise.
+                  We believe everyone has a unique taste in arranging space. Some like rich details, others choose simple and clean lines. At Mangala Living, all these design approaches are not just possible, but indeed our expertise.
                 </p>
                 <p className="custom-order-styles-description">
                   Our team is accustomed to handling design requests with various characters: from magnificent aesthetics full of classic accents, natural earthy looks, to modern styles that are firm yet functional. Symmetrical proportioned designs, soft curved cuts, to modular structures with dual functions, are some of the patterns most often worked on and favored by the market.
@@ -290,8 +290,8 @@ const CustomOrder: React.FC = () => {
             <p className="custom-order-contact-address">
               Jl. RA Rukmini KM 2 no. 77 Desa Pekalongan RT 05 RW 01, Kec. Batealit - Jepara
             </p>
-            <p className="custom-order-contact-phone">Telepon : 0811107830</p>
-            <p className="custom-order-contact-email">Email : jeafurniture@gmail.com</p>
+            <p className="custom-order-contact-phone">Telepon : +62 852-1207-8467</p>
+            <p className="custom-order-contact-email">Email : info@mangala-living.com</p>
           </div>
         </div>
       </section>

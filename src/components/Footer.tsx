@@ -35,7 +35,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
             <div className="footer-contact-info">
               <h4>{isIndonesian ? "Hubungi Kami" : "Contact Us"}</h4>
               <p>info@mangala-living.com</p>
-              <p>+62 852-1207-8467</p>
+              <p>+62 852 1207 8467</p>
               <div className="footer-social-icons">
                 <a href="https://instagram.com/mangalaliving" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <Instagram size={20} />
@@ -72,6 +72,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
                       <ul className="footer-links">
                         <li><Link to="/about">About</Link></li>
               <li><Link to="/blog">Blog</Link></li>
+                        <li><Link to="/shipping-information">{isIndonesian ? "Pengiriman" : "Shipping"}</Link></li>
                         <li><Link to="/contact-us">Contact Us</Link></li>
                         <li><Link to="/custom-order">{isIndonesian ? "Custom Order" : "Custom Order"}</Link></li>
                         <li><Link to="/partnership">{isIndonesian ? "Kerja Sama" : "Partnership"}</Link></li>

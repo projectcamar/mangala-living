@@ -74,7 +74,7 @@ export const generateCatalog = async () => {
     
     doc.setTextColor(52, 152, 219)
     doc.text('+62 852-1207-8467', pageWidth / 2, 190, { align: 'center' })
-    doc.text('info@mangalaliving.com', pageWidth / 2, 198, { align: 'center' })
+    doc.text('info@mangala-living.com', pageWidth / 2, 198, { align: 'center' })
     
     doc.setTextColor(255, 255, 255)
     doc.text('www.mangala-living.com', pageWidth / 2, 210, { align: 'center' })
@@ -181,7 +181,7 @@ export const generateCatalog = async () => {
       // Add footer with website on each category page
       doc.setFontSize(9)
       doc.setTextColor(100, 100, 100)
-      doc.text('www.mangala-living.com', pageWidth / 2, 285, { align: 'center' })
+      doc.text('www.mangalaliving.com', pageWidth / 2, 285, { align: 'center' })
     }
     
     // Contact page
@@ -201,7 +201,7 @@ export const generateCatalog = async () => {
     doc.setFontSize(14)
     doc.setTextColor(52, 152, 219)
     doc.text('+62 852-1207-8467', pageWidth / 2, 120, { align: 'center' })
-    doc.text('info@mangalaliving.com', pageWidth / 2, 135, { align: 'center' })
+    doc.text('info@mangala-living.com', pageWidth / 2, 135, { align: 'center' })
     
     doc.setTextColor(255, 255, 255)
     doc.setFontSize(10)
@@ -212,7 +212,7 @@ export const generateCatalog = async () => {
     
     doc.setFontSize(12)
     doc.setTextColor(52, 152, 219)
-    doc.text('www.mangala-living.com', pageWidth / 2, 200, { align: 'center' })
+    doc.text('www.mangalaliving.com', pageWidth / 2, 200, { align: 'center' })
     
     doc.setFontSize(8)
     doc.setTextColor(150, 150, 150)
