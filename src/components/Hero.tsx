@@ -26,8 +26,8 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false }) => {
         </h1>
         <p className="hero-subtitle">
           {isIndonesian 
-            ? "Sejak 1999, Industrial Set terbaik untuk cafe, hotel & restoran ✓ Kualitas Premium ✓ Workshop Bekasi"
-            : "Since 1999, Premium Industrial Sets for cafes, hotels & restaurants ✓ Superior Quality ✓ Bekasi Workshop"
+            ? "Sejak 1999, kami menghadirkan Industrial Set terbaik untuk cafe, hotel dan restoran dengan kualitas premium dari workshop Bekasi"
+            : "Since 1999, we deliver premium Industrial Sets for cafes, hotels and restaurants with superior quality from our Bekasi workshop"
           }
         </p>
         <Link to="/shop" className="hero-btn">

@@ -261,6 +261,7 @@ const Home: React.FC = () => {
               "image": "https://mangala-living.com/og-image.jpg",
               "@id": "https://mangala-living.com",
               "url": "https://mangala-living.com",
+              "telephone": "+6285212078467",
               "email": "info@mangala-living.com",
               "address": {
                 "@type": "PostalAddress",
