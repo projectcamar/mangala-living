@@ -34,7 +34,7 @@ export const generateAIOptimizedStructuredData = () => {
         "contactType": "customer service",
         "email": "info@mangala-living.com",
         "availableLanguage": ["Indonesian", "English"],
-        "areaServed": ["ID", "International"]
+        "areaServed": ["ID", "US", "JP", "AU", "SG", "MY", "TH", "VN", "PH", "International"]
       }
     ],
     "sameAs": [
@@ -81,7 +81,16 @@ export const generateAIOptimizedStructuredData = () => {
       "cafe furniture",
       "restaurant furniture",
       "hotel furniture",
-      "office furniture"
+      "office furniture",
+      "furniture export indonesia",
+      "furniture supplier indonesia",
+      "furniture manufacturer jakarta",
+      "furniture supplier jabodetabek",
+      "industrial furniture usa",
+      "furniture export japan",
+      "furniture export australia",
+      "furniture export singapore",
+      "furniture export malaysia"
     ],
     "serviceArea": {
       "@type": "GeoCircle",
@@ -186,7 +195,7 @@ export const generateFAQStructuredData = () => {
         "name": "Apakah Mangala Living melayani pengiriman ke seluruh Indonesia dan internasional?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ya, kami melayani pengiriman furniture ke seluruh Indonesia dan internasional. Biaya pengiriman akan disesuaikan dengan lokasi dan ukuran furniture yang dipesan. Untuk pengiriman internasional, kami mengirim dari pelabuhan Semarang."
+          "text": "Ya, kami melayani pengiriman furniture ke seluruh Indonesia, Jabodetabek, Jakarta, dan pasar internasional utama termasuk USA, Jepang, Australia, Singapura, Malaysia, Thailand, Vietnam, dan Filipina. Biaya pengiriman akan disesuaikan dengan lokasi dan ukuran furniture yang dipesan. Untuk pengiriman internasional, kami mengirim dari pelabuhan Semarang."
         }
       },
       {

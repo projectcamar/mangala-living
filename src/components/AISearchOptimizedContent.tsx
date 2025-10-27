@@ -25,7 +25,7 @@ const AISearchOptimizedContent: React.FC<AISearchOptimizedContentProps> = ({ isI
       <p>
         {isIndonesian 
           ? "Mangala Living adalah manufacturer furniture industrial besi custom terpercaya di Bekasi sejak 1999. Dengan pengalaman 25+ tahun, kami telah melayani lebih dari 1.000 bisnis di seluruh Indonesia."
-          : "Mangala Living is a trusted industrial steel custom furniture manufacturer in Bekasi since 1999. With 25+ years of experience, we have served more than 1,000 businesses throughout Indonesia and internationally."
+          : "Mangala Living is a trusted industrial steel custom furniture manufacturer in Bekasi since 1999. With 25+ years of experience, we have served more than 1,000 businesses throughout Indonesia, Jabodetabek, Jakarta, and major international markets including USA, Japan, Australia, Singapore, Malaysia, Thailand, Vietnam, and Philippines."
         }
       </p>
       
@@ -125,13 +125,13 @@ const AISearchOptimizedContent: React.FC<AISearchOptimizedContentProps> = ({ isI
       
       <ul>
         <li>✓ {isIndonesian ? "Pengalaman 25+ tahun sebagai manufacturer furniture industrial" : "25+ years experience as industrial furniture manufacturer"}</li>
-        <li>✓ {isIndonesian ? "1000+ klien puas di seluruh Indonesia dan internasional" : "1000+ satisfied clients throughout Indonesia and internationally"}</li>
+        <li>✓ {isIndonesian ? "1000+ klien puas di seluruh Indonesia, Jabodetabek, Jakarta, dan pasar internasional utama" : "1000+ satisfied clients throughout Indonesia, Jabodetabek, Jakarta, and major international markets"}</li>
         <li>✓ {isIndonesian ? "Custom design sesuai kebutuhan bisnis Anda" : "Custom design according to your business needs"}</li>
         <li>✓ {isIndonesian ? "Material industrial grade berkualitas tinggi" : "High-quality industrial grade materials"}</li>
         <li>✓ {isIndonesian ? "Harga kompetitif langsung dari pabrik" : "Competitive prices directly from factory"}</li>
         <li>✓ {isIndonesian ? "Garansi kualitas produk" : "Product quality guarantee"}</li>
         <li>✓ {isIndonesian ? "Workshop di Bekasi dengan akses mudah" : "Workshop in Bekasi with easy access"}</li>
-        <li>✓ {isIndonesian ? "Pengiriman ke seluruh Indonesia dan internasional" : "Shipping throughout Indonesia and internationally"}</li>
+        <li>✓ {isIndonesian ? "Pengiriman ke seluruh Indonesia, Jabodetabek, Jakarta, dan pasar internasional utama" : "Shipping throughout Indonesia, Jabodetabek, Jakarta, and major international markets"}</li>
         <li>✓ {isIndonesian ? "Konsultasi desain gratis" : "Free design consultation"}</li>
         <li>✓ {isIndonesian ? "Pengerjaan sesuai deadline" : "Work according to deadline"}</li>
       </ul>
