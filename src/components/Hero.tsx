@@ -11,12 +11,15 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false }) => {
   return (
     <section className="hero" role="banner" aria-labelledby="hero-title">
       <div className="hero-background">
-            <img 
-              src={heroImage}
+        <img 
+          src={heroImage}
           alt="Industrial Furniture Collection by Mangala Living" 
           className="hero-bg-image"
-              loading="eager" 
-            />
+          loading="eager"
+          fetchPriority="high"
+          width="1920"
+          height="1080"
+        />
         <div className="hero-overlay"></div>
         </div>
       

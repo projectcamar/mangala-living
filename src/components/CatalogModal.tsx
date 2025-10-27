@@ -153,7 +153,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
   return (
     <div className="catalog-modal-overlay" onClick={handleClose}>
       <div className="catalog-modal-container" onClick={(e) => e.stopPropagation()}>
-        <button className="catalog-modal-close" onClick={handleClose}>
+        <button className="catalog-modal-close" onClick={handleClose} aria-label="Close catalog modal">
           <X size={24} />
         </button>
 

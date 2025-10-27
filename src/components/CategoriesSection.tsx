@@ -110,6 +110,8 @@ const CategoriesSection: React.FC<CategoriesSectionProps> = ({ isIndonesian = fa
                   alt={category.name}
                   className="category-image"
                   loading="lazy"
+                  width="300"
+                  height="200"
                 />
               </div>
               <h3 className="category-name">{category.name}</h3>

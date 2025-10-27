@@ -1,5 +1,20 @@
-import jsPDF from 'jspdf'
-import { ALL_PRODUCTS } from '../data/products'
+// Lazy load PDF dependencies to reduce initial bundle size
+let jsPDF: any = null
+let ALL_PRODUCTS: any = null
+
+// Import Product type for proper typing
+import type { Product } from '../data/products'
+
+const loadPDFDependencies = async () => {
+  if (!jsPDF) {
+    const jsPDFModule = await import('jspdf')
+    jsPDF = jsPDFModule.default
+  }
+  if (!ALL_PRODUCTS) {
+    const productsModule = await import('../data/products')
+    ALL_PRODUCTS = productsModule.ALL_PRODUCTS
+  }
+}
 
 // Helper function to load image and convert to base64
 const loadImageAsBase64 = async (imagePath: string): Promise<string> => {
@@ -25,6 +40,9 @@ const loadImageAsBase64 = async (imagePath: string): Promise<string> => {
 
 export const generateCatalog = async () => {
   try {
+    // Load PDF dependencies only when needed
+    await loadPDFDependencies()
+    
     const doc = new jsPDF('p', 'mm', 'a4')
     const pageWidth = doc.internal.pageSize.getWidth()
     const pageHeight = doc.internal.pageSize.getHeight()
@@ -66,8 +84,8 @@ export const generateCatalog = async () => {
     doc.text('© 2025 Mangala Living. All rights reserved.', pageWidth / 2, 280, { align: 'center' })
     
     // Group products by category
-    const productsByCategory: { [key: string]: typeof ALL_PRODUCTS } = {}
-    ALL_PRODUCTS.forEach(product => {
+    const productsByCategory: { [key: string]: Product[] } = {}
+    ALL_PRODUCTS.forEach((product: Product) => {
       const mainCategory = product.categories[0]
       if (!productsByCategory[mainCategory]) {
         productsByCategory[mainCategory] = []

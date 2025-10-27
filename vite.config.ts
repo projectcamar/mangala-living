@@ -8,12 +8,23 @@ export default defineConfig({
     // Better code splitting
     rollupOptions: {
       output: {
-        manualChunks: {
+        manualChunks: (id) => {
           // Vendor chunks
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'helmet-vendor': ['react-helmet-async'],
-          // PDF generation (only load when needed)
-          'pdf-vendor': ['jspdf', 'jspdf-autotable'],
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
+              return 'react-vendor'
+            }
+            if (id.includes('react-helmet')) {
+              return 'helmet-vendor'
+            }
+            if (id.includes('jspdf') || id.includes('pdf')) {
+              return 'pdf-vendor'
+            }
+            if (id.includes('lucide-react') || id.includes('react-icons')) {
+              return 'icons-vendor'
+            }
+            return 'vendor'
+          }
         }
       }
     },
@@ -22,7 +33,9 @@ export default defineConfig({
     // Chunk size warnings
     chunkSizeWarningLimit: 1000,
     // Source maps for debugging (optional)
-    sourcemap: false
+    sourcemap: false,
+    // Target modern browsers for better performance
+    target: 'esnext'
   },
   // Optimize dependencies
   optimizeDeps: {

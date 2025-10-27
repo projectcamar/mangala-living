@@ -73,6 +73,8 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
                     alt={product.name} 
                     className="product-image"
                     loading="lazy"
+                    width="300"
+                    height="200"
                   />
                 </div>
                 <div className="product-info">
