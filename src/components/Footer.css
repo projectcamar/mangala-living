@@ -100,6 +100,16 @@
   margin: 4px 0;
 }
 
+.footer-address-link {
+  color: #b8b8b8 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-address-link:hover {
+  color: #8B7355 !important;
+}
+
 .footer-phone {
   color: #8B7355 !important;
   font-weight: 500;
