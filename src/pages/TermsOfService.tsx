@@ -373,20 +373,34 @@ const TermsOfService: React.FC = () => {
 
             {/* Workshop Info Section */}
             <section className="terms-section">
-              <h2>{isIndonesian ? 'Workshop dan Kantor' : 'Workshop and Office'}</h2>
+              <h2>{isIndonesian ? 'Find Us' : 'Find Us'}</h2>
               <div className="workshop-info">
                 <h3>Mangala Living</h3>
-                <p>
-                  <a
-                    href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="workshop-address"
-                  >
-                    Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
+                <div style={{ marginBottom: '16px' }}>
+                  <strong style={{ color: '#8B7355', display: 'block', marginBottom: '8px' }}>
+                    Workshop Bekasi:
+                  </strong>
+                  <p>
+                    <a
+                      href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="workshop-address"
+                    >
+                      Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
+                    </a>
+                  </p>
+                </div>
+                <p className="workshop-phone">
+                  <a href="tel:+6285212078467" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                    +62 852-1207-8467
                   </a>
                 </p>
-                <p className="workshop-phone">+62 852-1207-8467</p>
+                <p className="workshop-email">
+                  <a href="mailto:info@mangala-living.com" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                    info@mangala-living.com
+                  </a>
+                </p>
                 <p className="workshop-hours">
                   {isIndonesian 
                     ? 'Jam Kerja: 08.00 - 22.00 GMT +7'
