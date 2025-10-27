@@ -274,7 +274,7 @@ const ProductDetail: React.FC = () => {
       "manufacturer": {
         "@type": "Organization",
         "name": "Mangala Living",
-        "url": "https://mangala-living.com"
+        "url": "https://mangalaliving.com"
       },
       "category": product.categories.join(", "),
       "sku": product.slug,
@@ -327,8 +327,8 @@ const ProductDetail: React.FC = () => {
         "seller": {
           "@type": "Organization",
           "name": "Mangala Living",
-          "url": "https://mangala-living.com",
-          "logo": "https://mangala-living.com/logo.png",
+          "url": "https://mangalaliving.com",
+          "logo": "https://mangalaliving.com/logo.png",
           "description": "Premium Industrial Scandinavian Furniture for Coffee Shops, Restaurants & Offices. Custom Solutions Since 1999.",
           "address": {
             "@type": "PostalAddress",
@@ -340,13 +340,13 @@ const ProductDetail: React.FC = () => {
           },
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+62-852-1207-8467",
+            "telephone": "+62 852 1207 8467",
             "contactType": "customer service",
-            "email": "info@mangala-living.com",
+            "email": "info@mangalaliving.com",
             "availableLanguage": ["Indonesian", "English"]
           }
         },
-        "url": `https://mangala-living.com/product/${product.slug}`
+        "url": `https://mangalaliving.com/product/${product.slug}`
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -406,10 +406,10 @@ const ProductDetail: React.FC = () => {
     <div className="product-detail-page">
       <Helmet>
         <title>{product.name === 'Hollowline Display Rack' 
-          ? 'Hollowline Display Rack ✓ Harga Murah Rp4.5 Juta ✓ Call Mangala 0852-1207-8467'
+          ? 'Hollowline Display Rack ✓ Harga Murah Rp4.5 Juta ✓ Call Mangala +62 852 1207 8467'
           : `${product.name} - Mangala Living`}</title>
         <meta name="description" content={product.name === 'Hollowline Display Rack'
-          ? 'Hollowline Display Rack Industrial ✓ Display Shelf Rack Modern ✓ Harga Rp4.500.000 ✓ Workshop Bekasi ✓ Garansi Kualitas ✓ Call Mangala 0852-1207-8467'
+          ? 'Hollowline Display Rack Industrial ✓ Display Shelf Rack Modern ✓ Harga Rp4.500.000 ✓ Workshop Bekasi ✓ Garansi Kualitas ✓ Call Mangala +62 852 1207 8467'
           : `${product.name} - ${product.details}`} />
         <meta name="keywords" content={
           product.name === 'Hollowline Display Rack'
@@ -434,7 +434,7 @@ const ProductDetail: React.FC = () => {
         <meta property="og:title" content={`${product.name} - Mangala Living`} />
         <meta property="og:description" content={`${product.name} - ${product.details}`} />
         <meta property="og:image" content={product.images[0]} />
-        <meta property="og:url" content={`https://mangala-living.com/product/${product.slug}`} />
+        <meta property="og:url" content={`https://mangalaliving.com/product/${product.slug}`} />
         <meta property="og:type" content="product" />
         
         {/* Twitter */}

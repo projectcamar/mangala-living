@@ -127,12 +127,12 @@ const Shop: React.FC = () => {
         <meta name="description" content="Browse all industrial furniture products at Mangala Living. Industrial furniture besi custom untuk cafe, restoran, hotel. Kualitas terbaik, harga terjangkau." />
         <meta name="keywords" content="industrial furniture, furniture besi, furniture custom, furniture cafe, furniture restoran, mangala living, furniture bekasi" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://mangala-living.com/shop" />
+        <link rel="canonical" href="https://mangalaliving.com/shop" />
         
         {/* Open Graph */}
         <meta property="og:title" content="All Products - Industrial Furniture Collection | Mangala Living" />
         <meta property="og:description" content="Browse all industrial furniture products at Mangala Living. Industrial furniture besi custom untuk cafe, restoran, hotel." />
-        <meta property="og:url" content="https://mangala-living.com/shop" />
+        <meta property="og:url" content="https://mangalaliving.com/shop" />
         <meta property="og:type" content="website" />
         
         {/* Twitter */}
@@ -147,7 +147,7 @@ const Shop: React.FC = () => {
             "@type": "CollectionPage",
             "name": "Industrial Furniture Collection - Mangala Living",
             "description": "Browse our complete collection of industrial furniture for cafes, restaurants, and offices. Premium quality furniture made in Indonesia since 1999.",
-            "url": "https://mangala-living.com/shop",
+            "url": "https://mangalaliving.com/shop",
             "mainEntity": {
               "@type": "ItemList",
               "numberOfItems": ALL_PRODUCTS.length,
@@ -157,7 +157,7 @@ const Shop: React.FC = () => {
                 "item": {
                   "@type": "Product",
                   "name": product.name,
-                  "url": `https://mangala-living.com/product/${product.slug}`,
+                  "url": `https://mangalaliving.com/product/${product.slug}`,
                   "image": product.image,
                   "offers": {
                     "@type": "Offer",

@@ -153,7 +153,7 @@ const About: React.FC = () => {
                   Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
                 </a>
               </p>
-              <p className="footer-phone">+62 852-1207-8467</p>
+              <p className="footer-phone">+62 852 1207 8467</p>
             </div>
           </div>
 

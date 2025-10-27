@@ -34,8 +34,8 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
             </p>
             <div className="footer-contact-info">
               <h4>{isIndonesian ? "Hubungi Kami" : "Contact Us"}</h4>
-              <p>info@mangala-living.com</p>
-              <p>+62 852-1207-8467</p>
+              <p>info@mangalaliving.com</p>
+              <p>+62 852 1207 8467</p>
               <div className="footer-social-icons">
                 <a href="https://instagram.com/mangalaliving" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <Instagram size={20} />
@@ -62,7 +62,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
                   Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
                 </a>
               </p>
-              <p className="footer-phone">+62 852-1207-8467</p>
+              <p className="footer-phone">+62 852 1207 8467</p>
             </div>
           </div>
           
