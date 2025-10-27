@@ -1,14 +1,65 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useLocation } from 'react-router-dom'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import './TermsOfService.css'
 
 const TermsOfService: React.FC = () => {
+  const [isIndonesian, setIsIndonesian] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const location = useLocation()
-  const isIndonesian = location.pathname.startsWith('/id')
+
+  useEffect(() => {
+    // 1) Check URL path prefix
+    const path = location.pathname
+    if (path.startsWith('/id')) {
+      setIsIndonesian(true)
+      setIsLoading(false)
+      return
+    }
+    if (path.startsWith('/eng')) {
+      setIsIndonesian(false)
+      setIsLoading(false)
+      return
+    }
+
+    // 2) Check query parameter ?lang=
+    const params = new URLSearchParams(location.search)
+    const lang = params.get('lang')
+    if (lang === 'id' || lang === 'en') {
+      setIsIndonesian(lang === 'id')
+      setIsLoading(false)
+      return
+    }
+
+    // 3) Fallback to IP/Browser detection
+    const detectLocation = async () => {
+      try {
+        const response = await fetch('https://ipapi.co/json/')
+        const data = await response.json()
+        if (data.country_code === 'ID') {
+          setIsIndonesian(true)
+        }
+      } catch (error) {
+        const browserLang = navigator.language || navigator.languages?.[0]
+        if (browserLang?.startsWith('id')) {
+          setIsIndonesian(true)
+        }
+      } finally {
+        setIsLoading(false)
+      }
+    }
+    detectLocation()
+  }, [location.pathname, location.search])
+
+  if (isLoading) {
+    return null
+  }
 
   return (
-    <>
+    <div className="terms-page">
       <Helmet>
         <title>{isIndonesian ? 'Syarat dan Ketentuan - Mangala Living' : 'Terms of Service - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 
@@ -19,10 +70,22 @@ const TermsOfService: React.FC = () => {
         <link rel="canonical" href={`https://mangala-living.com${isIndonesian ? '/id' : ''}/terms-of-service`} />
       </Helmet>
 
-      <div className="terms-page">
+      <Header isIndonesian={isIndonesian} />
+      
+      {/* Hero Section */}
+      <section className="terms-hero">
+        <div className="terms-hero-image">
+          <img src={heroImage} alt="Terms of Service" loading="eager" />
+          <div className="terms-hero-overlay"></div>
+        </div>
+        <div className="terms-hero-content">
+          <h1 className="terms-hero-title">{isIndonesian ? 'Syarat dan Ketentuan' : 'Terms of Service'}</h1>
+        </div>
+      </section>
+
+      <div className="terms-content-wrapper">
         <div className="terms-container">
-          <div className="terms-header">
-            <h1>{isIndonesian ? 'Syarat dan Ketentuan' : 'Terms of Service'}</h1>
+          <div className="terms-intro-section">
             <p className="terms-intro">
               {isIndonesian 
                 ? 'Syarat dan ketentuan layanan Mangala Living untuk pemesanan furniture industrial scandinavian premium'
@@ -209,7 +272,9 @@ const TermsOfService: React.FC = () => {
           </div>
         </div>
       </div>
-    </>
+
+      <Footer />
+    </div>
   )
 }
 
