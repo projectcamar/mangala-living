@@ -18,6 +18,8 @@ const ProductCategory = lazy(() => import('./pages/ProductCategory'))
 // Lazy load less critical pages
 const Contact = lazy(() => import('./pages/Contact'))
 const About = lazy(() => import('./pages/About'))
+const CustomOrder = lazy(() => import('./pages/CustomOrder'))
+const Partnership = lazy(() => import('./pages/Partnership'))
 const SearchResults = lazy(() => import('./pages/SearchResults'))
 const BestSellers = lazy(() => import('./pages/BestSellers'))
 const Blog = lazy(() => import('./pages/Blog'))
@@ -144,6 +146,16 @@ function App() {
           <Route path="/about" element={
             <Suspense fallback={<Loading />}>
               <About />
+            </Suspense>
+          } />
+          <Route path="/custom-order" element={
+            <Suspense fallback={<Loading />}>
+              <CustomOrder />
+            </Suspense>
+          } />
+          <Route path="/partnership" element={
+            <Suspense fallback={<Loading />}>
+              <Partnership />
             </Suspense>
           } />
           <Route path="/blog" element={

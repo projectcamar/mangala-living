@@ -73,6 +73,8 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
                         <li><Link to="/about">About</Link></li>
               <li><Link to="/blog">Blog</Link></li>
                         <li><Link to="/contact-us">Contact Us</Link></li>
+                        <li><Link to="/custom-order">{isIndonesian ? "Custom Order" : "Custom Order"}</Link></li>
+                        <li><Link to="/partnership">{isIndonesian ? "Kerja Sama" : "Partnership"}</Link></li>
                         <li><Link to="/terms-of-service">{isIndonesian ? "Syarat & Ketentuan" : "Terms of Service"}</Link></li>
             </ul>
           </div>
