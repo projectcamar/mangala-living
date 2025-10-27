@@ -66,16 +66,17 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
       cleanPath = currentPath.substring(3) // Remove /id or /eng
     }
     
-    // If cleanPath is empty or just '/', go to home with language prefix
+    // If cleanPath is empty or just '/', go to home with language prefix for SEO
     if (!cleanPath || cleanPath === '/') {
       const newPath = lang === 'id' ? '/id' : '/eng'
       navigate(newPath)
       return
     }
-    
-    // For other paths, just navigate to the same path without language prefix
-    // This will work because our routes handle the same path for all languages
-    navigate(cleanPath)
+
+    // For other paths, preserve the path and set ?lang=...
+    const params = new URLSearchParams(location.search)
+    params.set('lang', lang)
+    navigate({ pathname: cleanPath, search: `?${params.toString()}` })
   }
 
 
@@ -83,6 +84,9 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     const path = location.pathname
     if (path.startsWith('/id')) return 'id'
     if (path.startsWith('/eng')) return 'en'
+    const params = new URLSearchParams(location.search)
+    const qLang = params.get('lang')
+    if (qLang === 'id' || qLang === 'en') return qLang
     return null
   }
 

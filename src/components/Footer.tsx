@@ -52,7 +52,16 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
             <h4>{isIndonesian ? "Temukan Kami" : "Find Us"}</h4>
             <div className="footer-location">
               <h5>Workshop Bekasi :</h5>
-              <p>Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320</p>
+              <p>
+                <a
+                  href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-address-link"
+                >
+                  Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
+                </a>
+              </p>
               <p className="footer-phone">+62 852-1207-8467</p>
             </div>
           </div>
