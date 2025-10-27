@@ -26,8 +26,8 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false }) => {
         </h1>
         <p className="hero-subtitle">
           {isIndonesian 
-            ? "Set Furniture Industrial ✓ Hollowline Display Rack ✓ Call Mangala 0852-1207-8467 ✓ Harga Murah ✓ Workshop Bekasi"
-            : "Hollowline Display Rack & Industrial Furniture Set ✓ Call Mangala +6285212078467 ✓ Affordable Prices ✓ Bekasi Workshop"
+            ? "Sejak 1999, kami menghadirkan Industrial Set terbaik untuk cafe, hotel dan restoran dengan kualitas premium dari workshop Bekasi"
+            : "Since 1999, we deliver premium Industrial Sets for cafes, hotels and restaurants with superior quality from our Bekasi workshop"
           }
         </p>
         <Link to="/shop" className="hero-btn">
