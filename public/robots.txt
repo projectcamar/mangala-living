@@ -12,6 +12,10 @@ Allow: /blog
 Allow: /contact-us
 Allow: /shop
 Allow: /search
+Allow: /custom-order
+Allow: /partnership
+Allow: /terms-of-service
+Allow: /shipping-information
 
 # Allow product pages (canonical versions)
 Allow: /product/
