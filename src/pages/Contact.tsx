@@ -119,7 +119,7 @@ Thank you!`
         <title>{isIndonesian ? 'Hubungi Kami - Mangala Living' : 'Contact Us - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 
           ? "Hubungi workshop kami untuk pertanyaan custom furniture industrial. Melayani cafe, restoran & bisnis di seluruh Indonesia sejak 1999."
-          : "Contact our welding workshop for custom industrial furniture inquiries. Serving coffee shops, restaurants & businesses across Indonesia since 1999."} />
+          : "Contact our welding workshop for custom industrial furniture inquiries. Serving coffee shops, restaurants & businesses across Indonesia and internationally since 1999."} />
         <meta name="keywords" content={isIndonesian 
           ? "hubungi mangala living, furniture industrial inquiry, custom furniture besi, workshop bekasi, furniture manufacturer contact"
           : "contact mangala living, industrial furniture inquiry, custom steel furniture, welding workshop kediri, furniture manufacturer contact"} />

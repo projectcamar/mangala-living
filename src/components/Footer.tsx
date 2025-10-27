@@ -29,7 +29,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
             <p className="footer-description">
               {isIndonesian 
                 ? "Pilihan terbaik untuk furniture industrial scandinavian premium sejak 1999. Melayani coffee shop, restoran, dan bisnis di seluruh Indonesia. Pesanan custom diterima."
-                : "Your best choice for premium industrial scandinavian furniture since 1999. Serving coffee shops, restaurants, and businesses across Indonesia. Custom orders welcome."
+                : "Your best choice for premium industrial scandinavian furniture since 1999. Serving coffee shops, restaurants, and businesses across Indonesia and internationally. Custom orders welcome."
               }
             </p>
             <div className="footer-contact-info">

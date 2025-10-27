@@ -18,7 +18,7 @@ const AISearchFeatures: React.FC<AISearchFeaturesProps> = ({ isIndonesian }) => 
         } />
         <meta itemProp="foundingDate" content="1999" />
         <meta itemProp="numberOfEmployees" content="25-50" />
-        <meta itemProp="areaServed" content="Indonesia" />
+        <meta itemProp="areaServed" content="Indonesia, International" />
         <meta itemProp="serviceType" content="Industrial Furniture Manufacturing" />
         <meta itemProp="priceRange" content="$$" />
         <meta itemProp="currenciesAccepted" content="IDR" />
@@ -44,7 +44,7 @@ const AISearchFeatures: React.FC<AISearchFeaturesProps> = ({ isIndonesian }) => 
         <meta itemProp="reviewCount" content="127" />
         <meta itemProp="hasOfferCatalog" content="Industrial Furniture Collection" />
         <meta itemProp="makesOffer" content="Custom Furniture Design, Furniture Installation" />
-        <meta itemProp="areaServed" content="Indonesia" />
+        <meta itemProp="areaServed" content="Indonesia, International" />
         <meta itemProp="availableLanguage" content="Indonesian, English" />
       </div>
 
@@ -108,7 +108,7 @@ const AISearchFeatures: React.FC<AISearchFeaturesProps> = ({ isIndonesian }) => 
             : "Custom furniture design service according to your business needs"
         } />
         <meta itemProp="provider" content="Mangala Living" />
-        <meta itemProp="areaServed" content="Indonesia" />
+        <meta itemProp="areaServed" content="Indonesia, International" />
         <meta itemProp="availableLanguage" content="Indonesian, English" />
         <meta itemProp="serviceType" content="Furniture Design" />
         <meta itemProp="offers" content="Free Consultation" />
@@ -165,7 +165,7 @@ const AISearchFeatures: React.FC<AISearchFeaturesProps> = ({ isIndonesian }) => 
         <meta itemProp="telephone" content="+62-852-1207-8467" />
         <meta itemProp="email" content="info@mangala-living.com" />
         <meta itemProp="availableLanguage" content="Indonesian, English" />
-        <meta itemProp="areaServed" content="Indonesia" />
+        <meta itemProp="areaServed" content="Indonesia, International" />
         <meta itemProp="hoursAvailable" content="Mo-Sa 08:00-17:00" />
         <meta itemProp="contactOption" content="TollFree, HearingImpairedSupported" />
       </div>

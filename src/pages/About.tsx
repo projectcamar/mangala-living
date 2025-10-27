@@ -66,7 +66,7 @@ const About: React.FC = () => {
         <title>{isIndonesian ? 'Tentang Kami - Mangala Living' : 'About Us - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 
           ? "Produsen furniture industrial scandinavian premium sejak 1999. Pengalaman 25 tahun melayani cafe, restoran, dan bisnis di seluruh Indonesia." 
-          : "Premium industrial scandinavian furniture manufacturer since 1999. 25 years of experience serving coffee shops, restaurants, and businesses across Indonesia."} />
+          : "Premium industrial scandinavian furniture manufacturer since 1999. 25 years of experience serving coffee shops, restaurants, and businesses across Indonesia and internationally."} />
         <meta name="keywords" content={isIndonesian 
           ? "tentang mangala living, produsen furniture industrial, furniture scandinavian bekasi, custom furniture industrial, furniture cafe" 
           : "about mangala living, industrial furniture manufacturer, scandinavian furniture bekasi, custom industrial furniture, coffee shop furniture"} />
@@ -108,7 +108,7 @@ const About: React.FC = () => {
                 ) : (
                   <>
                     <p className="about-message-paragraph">
-                      Since 1999, Mangala Living has been Indonesia's premier manufacturer specializing in custom industrial scandinavian furniture. With 25 years of experience, we've proudly served over 1,000 orders from businesses across Indonesia, establishing ourselves as the best choice for commercial furniture solutions.
+                      Since 1999, Mangala Living has been Indonesia's premier manufacturer specializing in custom industrial scandinavian furniture. With 25 years of experience, we've proudly served over 1,000 orders from businesses across Indonesia and internationally, establishing ourselves as the best choice for commercial furniture solutions.
                     </p>
                     <p className="about-message-paragraph">
                       Our network spans the entire Indonesian archipelago, providing highest-quality furniture solutions for coffee shops, restaurants, offices, hotels, co-working spaces, and retail establishments. Every piece is crafted with precision manufacturing techniques and attention to detail.
@@ -246,7 +246,7 @@ const About: React.FC = () => {
               <p className="why-choose-item-description">
                 {isIndonesian 
                   ? "Melayani 1000+ bisnis di seluruh Indonesia termasuk cafe, restoran, hotel, dan kantor."
-                  : "Serving 1000+ businesses across Indonesia including coffee shops, restaurants, hotels, and offices."}
+                  : "Serving 1000+ businesses across Indonesia and internationally including coffee shops, restaurants, hotels, and offices."}
               </p>
             </div>
           </div>
