@@ -11,9 +11,11 @@ import BestSellersSection from '../components/BestSellersSection'
 import OurProductsSection from '../components/OurProductsSection'
 import MessageSection from '../components/MessageSection'
 import Footer from '../components/Footer'
+import AISearchOptimizedContent from '../components/AISearchOptimizedContent'
+import AISearchFeatures from '../components/AISearchFeatures'
 
 // Utils
-import { generateMerchantStructuredData } from '../utils/structuredData'
+import { generateAIOptimizedStructuredData, generateFAQStructuredData, generateWebSiteStructuredData } from '../utils/aiSearchOptimization'
 
 const Home: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(false)
@@ -292,9 +294,19 @@ const Home: React.FC = () => {
           `}
         </script>
         
-        {/* Merchant Schema */}
+        {/* AI-Optimized Merchant Schema */}
         <script type="application/ld+json">
-          {JSON.stringify(generateMerchantStructuredData())}
+          {JSON.stringify(generateAIOptimizedStructuredData())}
+        </script>
+        
+        {/* FAQ Schema for AI Understanding */}
+        <script type="application/ld+json">
+          {JSON.stringify(generateFAQStructuredData())}
+        </script>
+        
+        {/* WebSite Schema with Search Action */}
+        <script type="application/ld+json">
+          {JSON.stringify(generateWebSiteStructuredData())}
         </script>
       </Helmet>
       <Header isIndonesian={isIndonesian} />
@@ -306,6 +318,12 @@ const Home: React.FC = () => {
       <OurProductsSection isIndonesian={isIndonesian} />
       <MessageSection isIndonesian={isIndonesian} />
       <Footer isIndonesian={isIndonesian} />
+      
+      {/* AI Search Optimized Content */}
+      <AISearchOptimizedContent isIndonesian={isIndonesian} />
+      
+      {/* AI Search Features */}
+      <AISearchFeatures isIndonesian={isIndonesian} />
     </div>
   )
 }
