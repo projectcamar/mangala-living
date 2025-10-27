@@ -344,4 +344,40 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- Additional Pages -->
+  <url>
+    <loc>https://mangala-living.com/search</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/custom-order</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/partnership</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/terms-of-service</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mangala-living.com/shipping-information</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
