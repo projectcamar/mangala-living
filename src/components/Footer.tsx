@@ -20,7 +20,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
   }
 
   return (
-    <footer className="footer">
+    <footer className="footer" role="contentinfo" itemScope itemType="https://schema.org/WPFooter">
       <div className="footer-container">
         <div className="footer-grid">
           {/* Brand Section */}

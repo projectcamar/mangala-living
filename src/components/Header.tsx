@@ -177,7 +177,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
   }, [isLanguageOpen])
 
   return (
-    <header className={`header ${!isHeaderVisible ? 'header-hidden' : ''}`}>
+    <header className={`header ${!isHeaderVisible ? 'header-hidden' : ''}`} role="banner" itemScope itemType="https://schema.org/WPHeader">
       {/* Top Header */}
       <div className="header-top">
       <div className="container">
