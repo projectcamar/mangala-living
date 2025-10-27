@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { Ship, Clock, MapPin, Phone, Mail, Globe } from 'lucide-react'
+import { Clock, MapPin, Phone, Mail, Globe } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
