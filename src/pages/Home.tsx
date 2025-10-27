@@ -65,8 +65,8 @@ const Home: React.FC = () => {
       ? "Furniture Industrial Besi Custom Bekasi | Mangala Living"
       : "Industrial Furniture Besi Custom Bekasi | Mangala Living",
     description: isIndonesian
-      ? "Hollowline Display Rack & Set Furniture Industrial ✓ Harga Murah ✓ Call Mangala 0852-1207-8467 ✓ Workshop Bekasi ✓ 25 Tahun Pengalaman"
-      : "Hollowline Display Rack & Industrial Furniture Set ✓ Affordable Prices ✓ Call Mangala +6285212078467 ✓ Bekasi Workshop ✓ 25 Years Experience",
+      ? "Hollowline Display Rack & Set Furniture Industrial dengan harga murah, hubungi Mangala di 0852-1207-8467 untuk workshop Bekasi dengan pengalaman 25 tahun"
+      : "Hollowline Display Rack & Industrial Furniture Set with affordable prices, call Mangala at +6285212078467 for Bekasi workshop with 25 years experience",
     ogTitle: isIndonesian
       ? "Furniture Industrial Besi Custom Bekasi | Cafe & Restoran"
       : "Industrial Furniture Besi Custom Bekasi | Cafe & Restoran",
