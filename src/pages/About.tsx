@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { Diamond, DollarSign, Wrench, Globe } from 'lucide-react'
 import Header from '../components/Header'
@@ -10,19 +11,40 @@ import './About.css'
 const About: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
+  const location = useLocation()
 
   useEffect(() => {
-    // Detect location from IP
+    // 1) Check URL path prefix
+    const path = location.pathname
+    if (path.startsWith('/id')) {
+      setIsIndonesian(true)
+      setIsLoading(false)
+      return
+    }
+    if (path.startsWith('/eng')) {
+      setIsIndonesian(false)
+      setIsLoading(false)
+      return
+    }
+
+    // 2) Check query parameter ?lang=
+    const params = new URLSearchParams(location.search)
+    const lang = params.get('lang')
+    if (lang === 'id' || lang === 'en') {
+      setIsIndonesian(lang === 'id')
+      setIsLoading(false)
+      return
+    }
+
+    // 3) Fallback to IP/Browser detection
     const detectLocation = async () => {
       try {
         const response = await fetch('https://ipapi.co/json/')
         const data = await response.json()
-        
         if (data.country_code === 'ID') {
           setIsIndonesian(true)
         }
       } catch (error) {
-        console.log('IP detection failed, checking browser language')
         const browserLang = navigator.language || navigator.languages?.[0]
         if (browserLang?.startsWith('id')) {
           setIsIndonesian(true)
@@ -31,9 +53,8 @@ const About: React.FC = () => {
         setIsLoading(false)
       }
     }
-
     detectLocation()
-  }, [])
+  }, [location.pathname, location.search])
 
   if (isLoading) {
     return null
@@ -123,7 +144,15 @@ const About: React.FC = () => {
           <div className="showrooms-locations">
             <div className="showroom-location">
               <h3>Workshop Bekasi</h3>
-              <p>Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320</p>
+              <p>
+                <a
+                  href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
+                </a>
+              </p>
               <p className="footer-phone">+62 852-1207-8467</p>
             </div>
           </div>
@@ -134,9 +163,25 @@ const About: React.FC = () => {
               : "Our workshop features a complete manufacturing facility where we create custom industrial scandinavian furniture. Our experienced team can discuss your requirements and help you find the perfect solutions for your coffee shop, restaurant, hail office."}
           </p>
 
+          {/* Embedded Google Map */}
+          <div style={{ margin: '30px auto', maxWidth: 900 }}>
+            <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: 8 }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5118897310535!2d107.04941077380113!3d-6.327649161913011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69918607fe41b1%3A0xf593b1e076b20ae8!2sEmma%20House%20Furniture%20(Bengkel%20Las%20Mandiri)!5e0!3m2!1sen!2sid!4v1761558670806!5m2!1sen!2sid"
+                width="600"
+                height="450"
+                style={{ border: 0, position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mangala Living Workshop Map"
+              ></iframe>
+            </div>
+          </div>
+
           <div className="showrooms-buttons">
             <a 
-              href="https://maps.google.com/?q=Jl.+Raya+Setu+Cibitung+Bekasi+Telajung+Cikarang+Barat" 
+              href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9" 
               target="_blank" 
               rel="noopener noreferrer"
               className="showroom-btn"
