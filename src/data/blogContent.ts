@@ -3161,6 +3161,1129 @@ const BLOG_CONTENTS: BlogContent[] = [
         ]
       }
     ]
+  },
+  {
+    slug: 'jual-meja-kafe-industrial-modern-harga-terbaik-2025',
+    sections: [
+      {
+        paragraphs: [
+          'Mencari meja kafe industrial modern dengan harga terbaik 2025? Anda berada di tempat yang tepat! Meja kafe industrial menjadi pilihan utama para pemilik cafe dan restoran modern karena desainnya yang elegan, kokoh, dan tahan lama.',
+          'Dalam artikel ini, kami akan membahas berbagai jenis meja kafe industrial modern, harga terbaru 2025, dan tips memilih meja kafe yang tepat untuk bisnis F&B Anda.'
+        ]
+      },
+      {
+        heading: 'Jenis Meja Kafe Industrial Modern Terpopuler',
+        paragraphs: [
+          '<strong>Meja Bar Industrial:</strong> Harga mulai Rp 2.500.000. Meja bar dengan frame besi hollow dan top kayu solid. Tinggi 110 cm, cocok untuk area bar dan lounge. <a href="/product/balcony-bar-table">Lihat detail produk</a>.',
+          '<strong>Meja Makan Industrial:</strong> Harga mulai Rp 1.800.000. Meja makan dengan desain industrial minimalis. Ukuran 80x80 cm untuk 4 orang, 120x60 cm untuk 6 orang. <a href="/product-category/dining-table-collection">Lihat koleksi</a>.',
+          '<strong>Meja Kerja Industrial:</strong> Harga mulai Rp 2.200.000. Meja kerja dengan kabel management dan outlet terintegrasi. Ideal untuk co-working space di cafe. <a href="/product-category/table-collection">Lihat koleksi</a>.',
+          '<strong>Meja TV Industrial:</strong> Harga mulai Rp 1.500.000. Meja TV dengan desain industrial modern. Cocok untuk area lounge dan entertainment di cafe.'
+        ],
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Kafe Industrial Modern'
+      },
+      {
+        heading: 'Keunggulan Meja Kafe Industrial',
+        list: [
+          '<strong>Material Berkualitas:</strong> Frame besi hollow berkualitas tinggi dengan finishing powder coating anti karat.',
+          '<strong>Desain Modern:</strong> Konsep industrial minimalis yang timeless dan elegan.',
+          '<strong>Durable:</strong> Konstruksi yang kokoh dan tahan lama untuk penggunaan intensif.',
+          '<strong>Easy Maintenance:</strong> Permukaan yang mudah dibersihkan dan dirawat.',
+          '<strong>Customizable:</strong> Dapat dikustomisasi ukuran, warna, dan finishing sesuai kebutuhan.',
+          '<strong>Versatile:</strong> Cocok untuk berbagai konsep cafe dan restoran.'
+        ]
+      },
+      {
+        heading: 'Tips Memilih Meja Kafe Industrial yang Tepat',
+        paragraphs: [
+          '<strong>Pertimbangkan Konsep Cafe:</strong> Pilih desain meja yang sesuai dengan konsep dan tema cafe Anda.',
+          '<strong>Ukuran Ruangan:</strong> Sesuaikan ukuran meja dengan luas ruangan dan kapasitas yang diinginkan.',
+          '<strong>Kenyamanan Pelanggan:</strong> Pastikan tinggi dan lebar meja nyaman untuk aktivitas makan dan minum.',
+          '<strong>Material Top:</strong> Pilih material top yang sesuai dengan menu dan konsep cafe (kayu solid, engineered wood, atau metal).',
+          '<strong>Budget Planning:</strong> Alokasikan 20-25% dari total budget furniture untuk meja kafe.',
+          '<strong>Maintenance:</strong> Pilih finishing yang mudah dibersihkan dan tahan noda.'
+        ]
+      },
+      {
+        heading: 'Harga Meja Kafe Industrial Terbaru 2025',
+        paragraphs: [
+          'Berikut adalah daftar harga meja kafe industrial terbaru 2025 dari Mangala Living:',
+          '<strong>Meja Bar Industrial 120x60 cm:</strong> Rp 2.500.000 - Rp 3.200.000',
+          '<strong>Meja Makan Industrial 80x80 cm:</strong> Rp 1.800.000 - Rp 2.300.000',
+          '<strong>Meja Makan Industrial 120x60 cm:</strong> Rp 2.200.000 - Rp 2.800.000',
+          '<strong>Meja Kerja Industrial 120x60 cm:</strong> Rp 2.200.000 - Rp 2.900.000',
+          '<strong>Meja TV Industrial 100x50 cm:</strong> Rp 1.500.000 - Rp 2.000.000',
+          'Harga dapat bervariasi tergantung material, ukuran custom, dan finishing yang dipilih.'
+        ]
+      },
+      {
+        heading: 'Mengapa Memilih Mangala Living untuk Meja Kafe Industrial?',
+        paragraphs: [
+          'Sebagai produsen furniture industrial terpercaya sejak 1999, <a href="/about">Mangala Living</a> telah melayani lebih dari 1000 klien di seluruh Indonesia. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
+          'Kami menawarkan meja kafe industrial berkualitas tinggi dengan material besi hollow berkualitas, kayu solid yang awet, dan finishing powder coating yang tahan lama. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
+          'Untuk konsultasi desain meja kafe industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangala-living.com">info@mangala-living.com</a>.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'meja-kafe-bulat-industrial-desain-unik-cafe-modern',
+    sections: [
+      {
+        paragraphs: [
+          'Meja kafe bulat industrial menjadi pilihan unik untuk menciptakan suasana cafe modern yang berbeda. Desain bulat memberikan kesan lebih hangat dan intimate dibandingkan meja persegi, sambil tetap mempertahankan estetika industrial yang kuat.',
+          'Dalam artikel ini, kami akan membahas keunggulan meja kafe bulat industrial, tips pemilihan, dan inspirasi desain untuk cafe modern Anda.'
+        ]
+      },
+      {
+        heading: 'Keunggulan Meja Kafe Bulat Industrial',
+        list: [
+          '<strong>Space Efficient:</strong> Desain bulat memaksimalkan ruang dan memungkinkan lebih banyak kursi di area terbatas.',
+          '<strong>Social Interaction:</strong> Bentuk bulat mendorong interaksi sosial dan percakapan yang lebih natural.',
+          '<strong>Visual Appeal:</strong> Desain yang unik dan eye-catching, perfect untuk Instagram-worthy cafe.',
+          '<strong>Safety:</strong> Tidak ada sudut tajam yang berpotensi melukai pelanggan.',
+          '<strong>Flexible Seating:</strong> Mudah menambah atau mengurangi kursi sesuai kebutuhan.',
+          '<strong>Modern Look:</strong> Konsep industrial minimalis yang timeless dan elegan.'
+        ],
+        image: 'https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Kafe Bulat Industrial'
+      },
+      {
+        heading: 'Model Meja Kafe Bulat Industrial Terpopuler',
+        paragraphs: [
+          '<strong>Meja Bulat 90 cm:</strong> Harga Rp 1.600.000. Cocok untuk 4 orang, ideal untuk area intimate dan corner seating. <a href="/product-category/dining-table-collection">Lihat koleksi</a>.',
+          '<strong>Meja Bulat 120 cm:</strong> Harga Rp 2.200.000. Cocok untuk 6-8 orang, perfect untuk area tengah cafe. <a href="/product-category/dining-table-collection">Lihat koleksi</a>.',
+          '<strong>Meja Bulat 150 cm:</strong> Harga Rp 2.800.000. Cocok untuk 8-10 orang, ideal untuk group dining dan event. <a href="/product-category/dining-table-collection">Lihat koleksi</a>.',
+          '<strong>Meja Bulat Bar Height:</strong> Harga Rp 2.500.000. Tinggi 110 cm, cocok untuk area bar dan lounge. <a href="/product/balcony-bar-table">Lihat detail produk</a>.'
+        ]
+      },
+      {
+        heading: 'Tips Layout Meja Kafe Bulat Industrial',
+        paragraphs: [
+          '<strong>Spacing:</strong> Berikan jarak minimal 1.2 meter antar meja untuk kenyamanan pelanggan dan staff.',
+          '<strong>Traffic Flow:</strong> Atur posisi meja untuk memudahkan akses ke kitchen dan restroom.',
+          '<strong>Lighting:</strong> Posisikan meja di bawah pendant light untuk lighting yang optimal.',
+          '<strong>Mix and Match:</strong> Kombinasikan meja bulat dengan meja persegi untuk variasi visual.',
+          '<strong>Corner Placement:</strong> Gunakan meja bulat di corner untuk memaksimalkan ruang.',
+          '<strong>Group Seating:</strong> Atur beberapa meja bulat untuk group besar dengan mudah.'
+        ]
+      },
+      {
+        heading: 'Material dan Finishing Meja Kafe Bulat Industrial',
+        paragraphs: [
+          '<strong>Frame Material:</strong> Besi hollow berkualitas tinggi dengan ketebalan minimal 2mm untuk stabilitas optimal.',
+          '<strong>Top Material:</strong> Kayu solid (jati, mahoni) atau engineered wood dengan finishing natural atau dark stain.',
+          '<strong>Finishing:</strong> Powder coating anti karat dengan warna hitam, grey, atau custom sesuai konsep cafe.',
+          '<strong>Leg Design:</strong> Cross leg atau pedestal base untuk stabilitas maksimal dan estetika industrial.',
+          '<strong>Edge Treatment:</strong> Rounded edge untuk safety dan comfort, atau live edge untuk natural look.'
+        ]
+      },
+      {
+        heading: 'Inspirasi Desain Cafe dengan Meja Bulat Industrial',
+        paragraphs: [
+          '<strong>Minimalist Industrial:</strong> Meja bulat dengan frame besi hitam dan top kayu natural, dikombinasikan dengan kursi bar stool industrial.',
+          '<strong>Vintage Industrial:</strong> Meja bulat dengan finishing distressed dan kombinasi material metal dan reclaimed wood.',
+          '<strong>Modern Industrial:</strong> Meja bulat dengan frame besi grey dan top engineered wood dengan finishing glossy.',
+          '<strong>Rustic Industrial:</strong> Meja bulat dengan frame besi raw dan top kayu solid dengan live edge natural.',
+          'Setiap konsep memberikan karakter yang berbeda dan dapat disesuaikan dengan target market cafe Anda.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Meja Kafe Bulat Industrial',
+        paragraphs: [
+          'Mangala Living memproduksi meja kafe bulat industrial berkualitas tinggi dengan custom design sesuai kebutuhan cafe Anda. Workshop kami di Bekasi dilengkapi dengan peralatan modern untuk menghasilkan furniture yang presisi dan tahan lama.',
+          'Konsultasikan kebutuhan meja kafe bulat industrial Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep dan budget cafe Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'meja-kursi-kafe-set-industrial-solusi-lengkap-cafe',
+    sections: [
+      {
+        paragraphs: [
+          'Set meja kursi kafe industrial menjadi solusi lengkap untuk furnishing cafe Anda. Dengan membeli set furniture, Anda mendapatkan konsistensi desain, harga yang lebih ekonomis, dan kemudahan dalam perencanaan layout cafe.',
+          'Artikel ini akan membahas berbagai pilihan set meja kursi kafe industrial, keunggulan, dan tips memilih set yang tepat untuk bisnis F&B Anda.'
+        ]
+      },
+      {
+        heading: 'Jenis Set Meja Kursi Kafe Industrial',
+        paragraphs: [
+          '<strong>Set Meja Makan 4 Orang:</strong> Harga Rp 3.200.000. Meja 80x80 cm + 4 kursi bar stool. Cocok untuk cafe kecil dan intimate dining. <a href="/product-category/dining-table-collection">Lihat koleksi</a>.',
+          '<strong>Set Meja Makan 6 Orang:</strong> Harga Rp 4.500.000. Meja 120x60 cm + 6 kursi bar stool. Ideal untuk cafe dengan kapasitas sedang. <a href="/product-category/dining-table-collection">Lihat koleksi</a>.',
+          '<strong>Set Meja Bar 4 Orang:</strong> Harga Rp 4.200.000. Meja bar 120x60 cm + 4 bar stool. Perfect untuk area bar dan lounge. <a href="/product/balcony-bar-table">Lihat detail produk</a>.',
+          '<strong>Set Meja Kerja 2 Orang:</strong> Harga Rp 3.800.000. Meja kerja 120x60 cm + 2 kursi ergonomis. Ideal untuk co-working space di cafe. <a href="/product-category/table-collection">Lihat koleksi</a>.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Set Meja Kursi Kafe Industrial'
+      },
+      {
+        heading: 'Keunggulan Set Meja Kursi Kafe Industrial',
+        list: [
+          '<strong>Design Consistency:</strong> Semua furniture dalam set memiliki desain yang konsisten dan harmonis.',
+          '<strong>Cost Effective:</strong> Harga set lebih ekonomis dibandingkan membeli furniture secara terpisah.',
+          '<strong>Easy Planning:</strong> Memudahkan perencanaan layout dan kapasitas cafe.',
+          '<strong>Quality Assurance:</strong> Semua furniture dalam set memiliki kualitas yang sama dan terjamin.',
+          '<strong>Time Saving:</strong> Tidak perlu mencari furniture yang matching, semuanya sudah terkoordinasi.',
+          '<strong>Professional Look:</strong> Memberikan kesan profesional dan well-planned untuk cafe Anda.'
+        ]
+      },
+      {
+        heading: 'Tips Memilih Set Meja Kursi Kafe Industrial',
+        paragraphs: [
+          '<strong>Assess Capacity:</strong> Hitung kapasitas cafe yang diinginkan dan pilih set yang sesuai.',
+          '<strong>Consider Space:</strong> Ukur ruangan dan pastikan set yang dipilih sesuai dengan layout yang direncanakan.',
+          '<strong>Match Concept:</strong> Pilih set yang sesuai dengan konsep dan tema cafe Anda.',
+          '<strong>Quality Check:</strong> Pastikan semua furniture dalam set memiliki kualitas yang sama dan tahan lama.',
+          '<strong>Budget Planning:</strong> Alokasikan budget yang cukup untuk set furniture berkualitas.',
+          '<strong>Future Expansion:</strong> Pertimbangkan kemungkinan penambahan furniture di masa depan.'
+        ]
+      },
+      {
+        heading: 'Custom Set Meja Kursi Kafe Industrial',
+        paragraphs: [
+          'Mangala Living juga menyediakan custom set meja kursi kafe industrial sesuai kebutuhan spesifik cafe Anda:',
+          '<strong>Custom Size:</strong> Ukuran meja dan kursi dapat disesuaikan dengan ruangan dan kapasitas yang diinginkan.',
+          '<strong>Custom Color:</strong> Warna frame besi dan finishing dapat disesuaikan dengan konsep cafe.',
+          '<strong>Custom Material:</strong> Pilihan material top meja dan seat cushion dapat dikustomisasi.',
+          '<strong>Custom Design:</strong> Desain frame dan detail furniture dapat disesuaikan dengan preferensi.',
+          '<strong>Bulk Order:</strong> Harga khusus untuk pemesanan dalam jumlah besar dengan lead time yang lebih cepat.'
+        ]
+      },
+      {
+        heading: 'Maintenance Set Meja Kursi Kafe Industrial',
+        paragraphs: [
+          '<strong>Regular Cleaning:</strong> Bersihkan furniture secara rutin dengan cloth lembut dan mild detergent.',
+          '<strong>Powder Coating Care:</strong> Hindari penggunaan abrasive cleaner yang dapat merusak finishing powder coating.',
+          '<strong>Wood Top Care:</strong> Gunakan wood polish khusus untuk menjaga keindahan top kayu.',
+          '<strong>Seat Cushion Care:</strong> Cuci removable cushion cover secara teratur dan vacuum non-removable cushion.',
+          '<strong>Inspection:</strong> Lakukan pemeriksaan berkala untuk memastikan semua hardware masih kencang dan aman.',
+          '<strong>Professional Service:</strong> Gunakan layanan maintenance profesional untuk perawatan optimal.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Set Meja Kursi Kafe Industrial',
+        paragraphs: [
+          'Mangala Living menawarkan berbagai pilihan set meja kursi kafe industrial berkualitas tinggi dengan harga kompetitif. Workshop kami di Bekasi memproduksi semua furniture dengan standar kualitas internasional.',
+          'Konsultasikan kebutuhan set furniture cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'model-kursi-meja-kafe-industrial-inspirasi-terbaru',
+    sections: [
+      {
+        paragraphs: [
+          'Model kursi meja kafe industrial terus berkembang dengan inspirasi desain terbaru yang mengikuti tren modern. Kombinasi kursi dan meja yang tepat akan menciptakan atmosfer cafe yang nyaman, fungsional, dan Instagram-worthy.',
+          'Dalam artikel ini, kami akan membahas berbagai model kursi meja kafe industrial terbaru, inspirasi desain, dan tips memilih kombinasi yang tepat untuk cafe Anda.'
+        ]
+      },
+      {
+        heading: 'Model Kursi Kafe Industrial Terpopuler 2025',
+        paragraphs: [
+          '<strong>Bar Stool Industrial:</strong> Harga mulai Rp 450.000. Kursi bar dengan frame besi dan seat cushion yang nyaman. Tinggi 75 cm, cocok untuk meja bar. <a href="/product-category/bar-furniture-collection">Lihat koleksi</a>.',
+          '<strong>Stall Chair Industrial:</strong> Harga mulai Rp 380.000. Kursi dengan desain stall yang compact dan ergonomis. Ideal untuk area terbatas. <a href="/product-category/bar-furniture-collection">Lihat koleksi</a>.',
+          '<strong>Dining Chair Industrial:</strong> Harga mulai Rp 320.000. Kursi makan dengan backrest dan seat yang nyaman. Cocok untuk meja makan. <a href="/product-category/bar-furniture-collection">Lihat koleksi</a>.',
+          '<strong>Lounge Chair Industrial:</strong> Harga mulai Rp 650.000. Kursi lounge dengan desain yang lebih besar dan nyaman. Perfect untuk area relax. <a href="/product-category/bar-furniture-collection">Lihat koleksi</a>.'
+        ],
+        image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=1200&auto=format&fit=crop',
+        imageAlt: 'Model Kursi Meja Kafe Industrial'
+      },
+      {
+        heading: 'Kombinasi Kursi Meja Kafe Industrial yang Tepat',
+        list: [
+          '<strong>Meja Bar + Bar Stool:</strong> Kombinasi klasik untuk area bar dan lounge dengan tinggi yang proporsional.',
+          '<strong>Meja Makan + Dining Chair:</strong> Kombinasi ideal untuk area makan utama dengan kenyamanan optimal.',
+          '<strong>Meja Kerja + Ergonomic Chair:</strong> Kombinasi fungsional untuk co-working space di cafe.',
+          '<strong>Meja Bulat + Bar Stool:</strong> Kombinasi modern untuk area intimate dan corner seating.',
+          '<strong>Meja TV + Lounge Chair:</strong> Kombinasi relax untuk area entertainment dan waiting area.',
+          '<strong>Mix and Match:</strong> Kombinasi berbagai model untuk menciptakan variasi visual yang menarik.'
+        ]
+      },
+      {
+        heading: 'Tips Memilih Kombinasi Kursi Meja Kafe Industrial',
+        paragraphs: [
+          '<strong>Height Matching:</strong> Pastikan tinggi kursi sesuai dengan tinggi meja (selisih 35-40 cm).',
+          '<strong>Style Consistency:</strong> Pilih kursi dan meja dengan style yang konsisten dan harmonis.',
+          '<strong>Comfort Level:</strong> Prioritaskan kenyamanan duduk untuk pengalaman pelanggan yang optimal.',
+          '<strong>Space Efficiency:</strong> Pilih kombinasi yang memaksimalkan ruang dan kapasitas cafe.',
+          '<strong>Maintenance:</strong> Pertimbangkan kemudahan perawatan dan cleaning untuk operasional cafe.',
+          '<strong>Durability:</strong> Pilih furniture yang tahan lama untuk penggunaan intensif di cafe.'
+        ]
+      },
+      {
+        heading: 'Inspirasi Desain Cafe dengan Kursi Meja Industrial',
+        paragraphs: [
+          '<strong>Minimalist Industrial:</strong> Kombinasi meja kayu natural dengan kursi besi hitam, menciptakan kontras yang elegan.',
+          '<strong>Vintage Industrial:</strong> Kombinasi furniture dengan finishing distressed dan material reclaimed wood.',
+          '<strong>Modern Industrial:</strong> Kombinasi furniture dengan desain clean lines dan finishing glossy.',
+          '<strong>Rustic Industrial:</strong> Kombinasi furniture dengan material raw dan finishing natural.',
+          '<strong>Colorful Industrial:</strong> Kombinasi furniture dengan aksen warna untuk cafe yang lebih vibrant.',
+          'Setiap konsep memberikan karakter yang berbeda dan dapat disesuaikan dengan target market cafe Anda.'
+        ]
+      },
+      {
+        heading: 'Material dan Finishing Kursi Meja Kafe Industrial',
+        paragraphs: [
+          '<strong>Frame Material:</strong> Besi hollow berkualitas tinggi dengan ketebalan minimal 2mm untuk stabilitas optimal.',
+          '<strong>Seat Material:</strong> Cushion dengan density tinggi dan cover yang mudah dibersihkan.',
+          '<strong>Backrest Material:</strong> Kayu solid atau engineered wood dengan finishing yang tahan lama.',
+          '<strong>Finishing:</strong> Powder coating anti karat dengan warna yang sesuai konsep cafe.',
+          '<strong>Hardware:</strong> Hardware berkualitas tinggi yang tahan lama dan mudah maintenance.',
+          '<strong>Custom Options:</strong> Tersedia custom color, material, dan ukuran sesuai kebutuhan.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Kursi Meja Kafe Industrial',
+        paragraphs: [
+          'Mangala Living memproduksi berbagai model kursi meja kafe industrial berkualitas tinggi dengan desain modern dan fungsional. Workshop kami di Bekasi dilengkapi dengan peralatan modern untuk menghasilkan furniture yang presisi dan tahan lama.',
+          'Konsultasikan kebutuhan kursi meja kafe industrial Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'harga-bikin-meja-kafe-murah-custom-design-terjangkau',
+    sections: [
+      {
+        paragraphs: [
+          'Mencari harga bikin meja kafe murah dengan custom design terjangkau? Custom furniture cafe menjadi pilihan cerdas untuk mendapatkan furniture yang sesuai dengan konsep dan budget cafe Anda.',
+          'Dalam artikel ini, kami akan membahas panduan harga bikin meja kafe murah, tips menghemat budget, dan strategi mendapatkan custom design yang terjangkau tanpa mengorbankan kualitas.'
+        ]
+      },
+      {
+        heading: 'Faktor yang Mempengaruhi Harga Bikin Meja Kafe Custom',
+        list: [
+          '<strong>Material:</strong> Jenis dan kualitas material (besi, kayu, finishing) mempengaruhi harga secara signifikan.',
+          '<strong>Ukuran:</strong> Ukuran custom yang lebih besar atau kompleks akan meningkatkan harga.',
+          '<strong>Desain Kompleksitas:</strong> Desain yang rumit dan detail khusus akan menambah biaya produksi.',
+          '<strong>Finishing:</strong> Jenis finishing (powder coating, cat, natural) mempengaruhi harga akhir.',
+          '<strong>Quantity:</strong> Pemesanan dalam jumlah besar biasanya mendapatkan harga lebih murah per unit.',
+          '<strong>Timeline:</strong> Pengerjaan rush order biasanya dikenakan biaya tambahan.'
+        ],
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Harga Bikin Meja Kafe Murah Custom Design'
+      },
+      {
+        heading: 'Harga Bikin Meja Kafe Custom Terjangkau 2025',
+        paragraphs: [
+          '<strong>Meja Kafe Minimalis 80x80 cm:</strong> Harga mulai Rp 1.200.000. Frame besi hollow + top kayu engineered. <a href="/product-category/dining-table-collection">Lihat koleksi</a>.',
+          '<strong>Meja Kafe Industrial 120x60 cm:</strong> Harga mulai Rp 1.800.000. Frame besi + top kayu solid dengan finishing powder coating. <a href="/product-category/dining-table-collection">Lihat koleksi</a>.',
+          '<strong>Meja Bar Custom 120x60 cm:</strong> Harga mulai Rp 2.200.000. Meja bar dengan frame besi dan top kayu solid. <a href="/product/balcony-bar-table">Lihat detail produk</a>.',
+          '<strong>Meja Kerja Custom 120x60 cm:</strong> Harga mulai Rp 1.900.000. Meja kerja dengan kabel management dan outlet terintegrasi. <a href="/product-category/table-collection">Lihat koleksi</a>.'
+        ]
+      },
+      {
+        heading: 'Tips Menghemat Budget Bikin Meja Kafe Custom',
+        paragraphs: [
+          '<strong>Pilih Material yang Tepat:</strong> Gunakan material berkualitas baik namun tidak over-spec untuk kebutuhan cafe.',
+          '<strong>Standard Size:</strong> Pilih ukuran yang mendekati standard untuk menghindari biaya custom yang tinggi.',
+          '<strong>Bulk Order:</strong> Pesan dalam jumlah besar untuk mendapatkan harga per unit yang lebih murah.',
+          '<strong>Simple Design:</strong> Pilih desain yang simple namun elegant untuk menghemat biaya produksi.',
+          '<strong>Standard Finishing:</strong> Gunakan finishing standard yang sudah tersedia untuk menghindari biaya custom.',
+          '<strong>Plan Ahead:</strong> Rencanakan pemesanan dengan baik untuk menghindari rush order yang mahal.'
+        ]
+      },
+      {
+        heading: 'Strategi Custom Design Terjangkau',
+        paragraphs: [
+          '<strong>Modular Design:</strong> Pilih desain modular yang dapat dikombinasikan dan diatur ulang.',
+          '<strong>Multi-Purpose:</strong> Desain furniture yang dapat digunakan untuk berbagai fungsi.',
+          '<strong>Standard Components:</strong> Gunakan komponen standard yang mudah didapat dan murah.',
+          '<strong>Efficient Layout:</strong> Rencanakan layout yang efisien untuk meminimalkan waste material.',
+          '<strong>Future Expansion:</strong> Desain yang dapat dikembangkan di masa depan tanpa mengganti seluruh furniture.',
+          '<strong>Easy Maintenance:</strong> Pilih desain yang mudah dirawat dan diperbaiki untuk menghemat biaya jangka panjang.'
+        ]
+      },
+      {
+        heading: 'Proses Bikin Meja Kafe Custom di Mangala Living',
+        paragraphs: [
+          '<strong>Konsultasi:</strong> Konsultasi kebutuhan dan budget dengan tim desain kami.',
+          '<strong>Design & Quotation:</strong> Pembuatan desain dan penawaran harga yang detail.',
+          '<strong>Approval:</strong> Persetujuan desain dan harga sebelum produksi dimulai.',
+          '<strong>Production:</strong> Produksi furniture dengan standar kualitas tinggi di workshop Bekasi.',
+          '<strong>Quality Control:</strong> Pemeriksaan kualitas sebelum pengiriman ke lokasi.',
+          '<strong>Installation:</strong> Instalasi furniture di lokasi cafe dengan tim profesional kami.'
+        ]
+      },
+      {
+        heading: 'Keunggulan Custom Meja Kafe di Mangala Living',
+        list: [
+          '<strong>25 Tahun Pengalaman:</strong> Pengalaman panjang dalam produksi furniture industrial custom.',
+          '<strong>Workshop Modern:</strong> Workshop dilengkapi peralatan modern untuk hasil yang presisi.',
+          '<strong>Material Berkualitas:</strong> Menggunakan material berkualitas tinggi dengan garansi.',
+          '<strong>Custom Service:</strong> Layanan custom design sesuai kebutuhan spesifik cafe.',
+          '<strong>After Sales:</strong> Layanan purna jual dan maintenance untuk kepuasan pelanggan.',
+          '<strong>Competitive Price:</strong> Harga yang kompetitif dengan kualitas premium.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Custom Meja Kafe Murah',
+        paragraphs: [
+          'Mangala Living menawarkan layanan custom meja kafe dengan harga terjangkau dan kualitas premium. Workshop kami di Bekasi memproduksi furniture custom dengan standar internasional dan garansi kualitas.',
+          'Konsultasikan kebutuhan custom meja kafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan penawaran terbaik sesuai budget dan konsep cafe Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'meja-dan-kursi-untuk-kafe-murah-tapi-bagus-rekomendasi-terbaik',
+    sections: [
+      {
+        paragraphs: [
+          'Mencari meja dan kursi untuk kafe murah tapi bagus? Budget terbatas bukan berarti Anda harus mengorbankan kualitas furniture cafe. Dengan pemilihan yang tepat, Anda bisa mendapatkan furniture berkualitas dengan harga terjangkau.',
+          'Dalam artikel ini, kami akan memberikan rekomendasi terbaik meja dan kursi kafe murah tapi bagus, tips pemilihan, dan strategi mengoptimalkan budget furniture cafe Anda.'
+        ]
+      },
+      {
+        heading: 'Rekomendasi Meja Kafe Murah Tapi Bagus',
+        paragraphs: [
+          '<strong>Meja Makan Industrial 80x80 cm:</strong> Harga Rp 1.500.000. Frame besi hollow + top kayu engineered. Kualitas bagus dengan harga terjangkau. <a href="/product-category/dining-table-collection">Lihat koleksi</a>.',
+          '<strong>Meja Bar Industrial 120x60 cm:</strong> Harga Rp 2.200.000. Frame besi + top kayu solid. Perfect untuk area bar dengan harga kompetitif. <a href="/product/balcony-bar-table">Lihat detail produk</a>.',
+          '<strong>Meja Kerja Industrial 120x60 cm:</strong> Harga Rp 1.800.000. Meja kerja dengan kabel management. Ideal untuk co-working space. <a href="/product-category/table-collection">Lihat koleksi</a>.',
+          '<strong>Meja TV Industrial 100x50 cm:</strong> Harga Rp 1.200.000. Meja TV dengan desain minimalis. Cocok untuk area lounge. <a href="/product-category/table-collection">Lihat koleksi</a>.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja dan Kursi untuk Kafe Murah Tapi Bagus'
+      },
+      {
+        heading: 'Rekomendasi Kursi Kafe Murah Tapi Bagus',
+        list: [
+          '<strong>Bar Stool Industrial:</strong> Harga Rp 380.000. Kursi bar dengan frame besi dan seat cushion. Kualitas bagus dengan harga terjangkau.',
+          '<strong>Dining Chair Industrial:</strong> Harga Rp 280.000. Kursi makan dengan backrest dan seat yang nyaman. Perfect untuk meja makan.',
+          '<strong>Stall Chair Industrial:</strong> Harga Rp 320.000. Kursi compact dengan desain ergonomis. Ideal untuk area terbatas.',
+          '<strong>Lounge Chair Industrial:</strong> Harga Rp 550.000. Kursi lounge yang nyaman untuk area relax. Kualitas premium dengan harga terjangkau.',
+          '<strong>Set 4 Kursi Bar Stool:</strong> Harga Rp 1.400.000. Paket 4 kursi bar stool dengan harga lebih murah per unit.',
+          '<strong>Set 6 Dining Chair:</strong> Harga Rp 1.600.000. Paket 6 kursi makan dengan harga special untuk bulk order.'
+        ]
+      },
+      {
+        heading: 'Tips Memilih Furniture Kafe Murah Tapi Bagus',
+        paragraphs: [
+          '<strong>Prioritaskan Material:</strong> Pilih furniture dengan material berkualitas baik meskipun desain simple.',
+          '<strong>Standard Size:</strong> Pilih ukuran standard untuk menghindari biaya custom yang mahal.',
+          '<strong>Bulk Order:</strong> Beli dalam jumlah besar untuk mendapatkan harga per unit yang lebih murah.',
+          '<strong>Simple Design:</strong> Pilih desain yang simple namun elegant untuk menghemat biaya produksi.',
+          '<strong>Standard Finishing:</strong> Gunakan finishing standard yang sudah tersedia untuk menghindari biaya custom.',
+          '<strong>Compare Prices:</strong> Bandingkan harga dari beberapa supplier untuk mendapatkan harga terbaik.'
+        ]
+      },
+      {
+        heading: 'Strategi Mengoptimalkan Budget Furniture Kafe',
+        paragraphs: [
+          '<strong>Phase Installation:</strong> Install furniture secara bertahap sesuai budget yang tersedia.',
+          '<strong>Mix and Match:</strong> Kombinasikan furniture baru dengan furniture existing yang masih bagus.',
+          '<strong>Rent vs Buy:</strong> Pertimbangkan sewa furniture untuk event atau periode tertentu.',
+          '<strong>Second Hand:</strong> Pertimbangkan furniture second hand berkualitas untuk menghemat budget.',
+          '<strong>DIY Elements:</strong> Buat elemen dekoratif sendiri untuk menghemat biaya desain.',
+          '<strong>Future Upgrade:</strong> Rencanakan upgrade furniture di masa depan sesuai perkembangan bisnis.'
+        ]
+      },
+      {
+        heading: 'Keunggulan Furniture Kafe Murah di Mangala Living',
+        list: [
+          '<strong>Harga Pabrik:</strong> Harga langsung dari pabrik tanpa markup distributor.',
+          '<strong>Kualitas Terjamin:</strong> Material berkualitas tinggi dengan garansi kualitas.',
+          '<strong>Custom Options:</strong> Tersedia custom size dan warna dengan harga terjangkau.',
+          '<strong>Bulk Discount:</strong> Harga khusus untuk pemesanan dalam jumlah besar.',
+          '<strong>After Sales:</strong> Layanan purna jual dan maintenance untuk kepuasan pelanggan.',
+          '<strong>Fast Delivery:</strong> Pengiriman cepat untuk memenuhi kebutuhan operasional cafe.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Furniture Kafe Murah',
+        paragraphs: [
+          'Mangala Living menawarkan furniture kafe murah tapi bagus dengan kualitas premium dan harga terjangkau. Workshop kami di Bekasi memproduksi furniture dengan standar kualitas internasional dan harga pabrik.',
+          'Konsultasikan kebutuhan furniture kafe murah Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-kafe-industrial-panduan-lengkap-pemilihan',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture kafe industrial menjadi pilihan utama para pemilik cafe modern karena desainnya yang elegan, kokoh, dan tahan lama. Namun, memilih furniture kafe industrial yang tepat memerlukan pertimbangan yang matang.',
+          'Dalam artikel ini, kami akan memberikan panduan lengkap pemilihan furniture kafe industrial, mulai dari material, ukuran, hingga tips layout yang optimal untuk cafe Anda.'
+        ]
+      },
+      {
+        heading: 'Jenis Furniture Kafe Industrial yang Wajib Dimiliki',
+        list: [
+          '<strong>Meja Makan Industrial:</strong> Furniture utama untuk area dining dengan berbagai ukuran dan bentuk.',
+          '<strong>Kursi Bar Industrial:</strong> Kursi bar dengan desain industrial yang nyaman dan stylish.',
+          '<strong>Meja Bar Industrial:</strong> Meja bar untuk area lounge dan bar dengan tinggi yang sesuai.',
+          '<strong>Rak Display Industrial:</strong> Rak display untuk merchandise dan dekorasi cafe.',
+          '<strong>Meja Kerja Industrial:</strong> Meja kerja untuk co-working space di cafe.',
+          '<strong>Furniture Outdoor Industrial:</strong> Furniture outdoor yang tahan cuaca untuk area teras.'
+        ],
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Kafe Industrial'
+      },
+      {
+        heading: 'Panduan Pemilihan Material Furniture Kafe Industrial',
+        paragraphs: [
+          '<strong>Frame Material:</strong> Pilih besi hollow berkualitas tinggi dengan ketebalan minimal 2mm untuk stabilitas optimal.',
+          '<strong>Top Material:</strong> Kayu solid (jati, mahoni) atau engineered wood dengan finishing yang tahan lama.',
+          '<strong>Finishing:</strong> Powder coating anti karat dengan warna yang sesuai konsep cafe.',
+          '<strong>Hardware:</strong> Hardware berkualitas tinggi yang tahan lama dan mudah maintenance.',
+          '<strong>Seat Material:</strong> Cushion dengan density tinggi dan cover yang mudah dibersihkan.',
+          '<strong>Custom Options:</strong> Tersedia custom material dan finishing sesuai kebutuhan spesifik.'
+        ]
+      },
+      {
+        heading: 'Tips Layout Furniture Kafe Industrial',
+        paragraphs: [
+          '<strong>Traffic Flow:</strong> Atur furniture untuk memudahkan pergerakan pelanggan dan staff.',
+          '<strong>Spacing:</strong> Berikan jarak yang cukup antar furniture untuk kenyamanan pelanggan.',
+          '<strong>Lighting:</strong> Posisikan furniture di bawah lighting yang optimal untuk aktivitas.',
+          '<strong>Group Seating:</strong> Atur furniture untuk berbagai ukuran kelompok pelanggan.',
+          '<strong>Flexibility:</strong> Pilih furniture yang dapat diatur ulang untuk berbagai kebutuhan.',
+          '<strong>Accessibility:</strong> Pastikan furniture mudah diakses oleh semua pelanggan termasuk yang berkebutuhan khusus.'
+        ]
+      },
+      {
+        heading: 'Panduan Ukuran Furniture Kafe Industrial',
+        paragraphs: [
+          '<strong>Meja Makan 2 Orang:</strong> 60x60 cm dengan tinggi 75 cm, ideal untuk intimate dining.',
+          '<strong>Meja Makan 4 Orang:</strong> 80x80 cm dengan tinggi 75 cm, cocok untuk keluarga kecil.',
+          '<strong>Meja Makan 6 Orang:</strong> 120x60 cm dengan tinggi 75 cm, perfect untuk group dining.',
+          '<strong>Meja Bar:</strong> 120x60 cm dengan tinggi 110 cm, ideal untuk area bar dan lounge.',
+          '<strong>Kursi Bar:</strong> Tinggi 75 cm untuk meja bar, 45 cm untuk meja makan.',
+          '<strong>Rak Display:</strong> Tinggi 180 cm dengan lebar 90 cm, ideal untuk merchandise display.'
+        ]
+      },
+      {
+        heading: 'Panduan Warna dan Finishing Furniture Kafe Industrial',
+        list: [
+          '<strong>Neutral Colors:</strong> Hitam, putih, dan grey sebagai base color yang timeless.',
+          '<strong>Natural Wood:</strong> Finishing natural wood untuk memberikan kehangatan.',
+          '<strong>Powder Coating:</strong> Finishing powder coating anti karat untuk durability.',
+          '<strong>Color Accents:</strong> Gunakan aksen warna untuk memberikan karakter pada cafe.',
+          '<strong>Consistency:</strong> Pertahankan konsistensi warna dalam seluruh furniture cafe.',
+          '<strong>Brand Alignment:</strong> Sesuaikan warna dengan brand identity dan konsep cafe.'
+        ]
+      },
+      {
+        heading: 'Panduan Budget Furniture Kafe Industrial',
+        paragraphs: [
+          '<strong>Budget Allocation:</strong> Alokasikan 30-40% dari total budget cafe untuk furniture.',
+          '<strong>Priority Items:</strong> Prioritaskan meja dan kursi sebagai furniture utama.',
+          '<strong>Phase Installation:</strong> Install furniture secara bertahap sesuai budget yang tersedia.',
+          '<strong>Bulk Order:</strong> Beli dalam jumlah besar untuk mendapatkan harga per unit yang lebih murah.',
+          '<strong>Quality vs Price:</strong> Pilih furniture berkualitas baik dengan harga yang wajar.',
+          '<strong>Future Planning:</strong> Rencanakan upgrade furniture di masa depan sesuai perkembangan bisnis.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Konsultasi Furniture Kafe Industrial',
+        paragraphs: [
+          'Mangala Living menyediakan layanan konsultasi lengkap untuk pemilihan furniture kafe industrial yang tepat. Tim desain kami akan membantu Anda memilih furniture yang sesuai dengan konsep, budget, dan kebutuhan cafe Anda.',
+          'Konsultasikan kebutuhan furniture kafe industrial Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'meja-kursi-kafe-murah-solusi-budget-terbatas',
+    sections: [
+      {
+        paragraphs: [
+          'Memiliki budget terbatas untuk furniture cafe bukan berarti Anda harus mengorbankan kualitas dan estetika. Dengan strategi yang tepat, Anda bisa mendapatkan meja kursi kafe murah yang berkualitas dan sesuai dengan konsep cafe Anda.',
+          'Dalam artikel ini, kami akan membahas solusi meja kursi kafe murah untuk budget terbatas, tips menghemat biaya, dan strategi mendapatkan furniture berkualitas dengan harga terjangkau.'
+        ]
+      },
+      {
+        heading: 'Solusi Meja Kursi Kafe Murah untuk Budget Terbatas',
+        list: [
+          '<strong>Paket Furniture:</strong> Beli paket meja kursi lengkap untuk mendapatkan harga lebih murah per unit.',
+          '<strong>Bulk Order:</strong> Pesan dalam jumlah besar untuk mendapatkan discount khusus.',
+          '<strong>Standard Size:</strong> Pilih ukuran standard untuk menghindari biaya custom yang mahal.',
+          '<strong>Simple Design:</strong> Pilih desain yang simple namun elegant untuk menghemat biaya produksi.',
+          '<strong>Material Alternatif:</strong> Gunakan material berkualitas baik dengan harga lebih terjangkau.',
+          '<strong>Phase Installation:</strong> Install furniture secara bertahap sesuai budget yang tersedia.'
+        ],
+        image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Kursi Kafe Murah Solusi Budget Terbatas'
+      },
+      {
+        heading: 'Rekomendasi Meja Kursi Kafe Murah Berkualitas',
+        paragraphs: [
+          '<strong>Set Meja Makan 4 Orang:</strong> Harga Rp 2.800.000. Meja 80x80 cm + 4 kursi bar stool. Kualitas bagus dengan harga terjangkau. <a href="/product-category/dining-table-collection">Lihat koleksi</a>.',
+          '<strong>Set Meja Bar 4 Orang:</strong> Harga Rp 3.600.000. Meja bar 120x60 cm + 4 bar stool. Perfect untuk area bar dengan harga kompetitif. <a href="/product/balcony-bar-table">Lihat detail produk</a>.',
+          '<strong>Set Meja Kerja 2 Orang:</strong> Harga Rp 3.200.000. Meja kerja 120x60 cm + 2 kursi ergonomis. Ideal untuk co-working space. <a href="/product-category/table-collection">Lihat koleksi</a>.',
+          '<strong>Set Meja TV 2 Orang:</strong> Harga Rp 2.400.000. Meja TV 100x50 cm + 2 lounge chair. Cocok untuk area relax. <a href="/product-category/table-collection">Lihat koleksi</a>.'
+        ]
+      },
+      {
+        heading: 'Tips Menghemat Budget Furniture Kafe',
+        paragraphs: [
+          '<strong>Prioritaskan Kebutuhan:</strong> Fokus pada furniture yang benar-benar dibutuhkan untuk operasional cafe.',
+          '<strong>Compare Prices:</strong> Bandingkan harga dari beberapa supplier untuk mendapatkan harga terbaik.',
+          '<strong>Negotiate:</strong> Negosiasikan harga untuk pemesanan dalam jumlah besar.',
+          '<strong>Seasonal Promo:</strong> Manfaatkan promo dan diskon musiman untuk menghemat biaya.',
+          '<strong>Payment Terms:</strong> Pilih metode pembayaran yang memberikan fleksibilitas keuangan.',
+          '<strong>Future Upgrade:</strong> Rencanakan upgrade furniture di masa depan sesuai perkembangan bisnis.'
+        ]
+      },
+      {
+        heading: 'Strategi Layout untuk Budget Terbatas',
+        paragraphs: [
+          '<strong>Efficient Layout:</strong> Rancang layout yang efisien untuk memaksimalkan ruang dan kapasitas.',
+          '<strong>Multi-Purpose Furniture:</strong> Pilih furniture yang dapat digunakan untuk berbagai fungsi.',
+          '<strong>Flexible Arrangement:</strong> Pilih furniture yang dapat diatur ulang untuk berbagai kebutuhan.',
+          '<strong>Space Optimization:</strong> Manfaatkan setiap sudut ruangan untuk menambah kapasitas.',
+          '<strong>Visual Tricks:</strong> Gunakan trik visual untuk membuat ruangan terlihat lebih luas.',
+          '<strong>Future Expansion:</strong> Rancang layout yang dapat dikembangkan di masa depan.'
+        ]
+      },
+      {
+        heading: 'Keunggulan Furniture Kafe Murah di Mangala Living',
+        list: [
+          '<strong>Harga Pabrik:</strong> Harga langsung dari pabrik tanpa markup distributor.',
+          '<strong>Kualitas Terjamin:</strong> Material berkualitas tinggi dengan garansi kualitas.',
+          '<strong>Custom Options:</strong> Tersedia custom size dan warna dengan harga terjangkau.',
+          '<strong>Bulk Discount:</strong> Harga khusus untuk pemesanan dalam jumlah besar.',
+          '<strong>After Sales:</strong> Layanan purna jual dan maintenance untuk kepuasan pelanggan.',
+          '<strong>Fast Delivery:</strong> Pengiriman cepat untuk memenuhi kebutuhan operasional cafe.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Solusi Budget Terbatas',
+        paragraphs: [
+          'Mangala Living memahami tantangan budget terbatas dalam memulai bisnis cafe. Kami menawarkan solusi furniture kafe murah dengan kualitas premium dan harga terjangkau.',
+          'Konsultasikan kebutuhan furniture kafe dengan budget terbatas Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan solusi terbaik sesuai budget dan konsep cafe Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furnitur-untuk-kafe-tips-memilih-yang-tepat',
+    sections: [
+      {
+        paragraphs: [
+          'Memilih furnitur untuk kafe yang tepat merupakan langkah penting dalam menciptakan atmosfer yang nyaman dan menarik bagi pelanggan. Furniture yang tepat akan meningkatkan pengalaman pelanggan dan mendukung operasional cafe yang efisien.',
+          'Dalam artikel ini, kami akan memberikan tips lengkap memilih furnitur untuk kafe yang tepat, mulai dari pertimbangan konsep, material, hingga layout yang optimal.'
+        ]
+      },
+      {
+        heading: 'Pertimbangan Utama dalam Memilih Furnitur Kafe',
+        list: [
+          '<strong>Konsep dan Tema:</strong> Pilih furniture yang sesuai dengan konsep dan tema cafe Anda.',
+          '<strong>Target Market:</strong> Sesuaikan furniture dengan target market dan demografi pelanggan.',
+          '<strong>Kapasitas:</strong> Hitung kapasitas yang diinginkan dan pilih furniture yang sesuai.',
+          '<strong>Budget:</strong> Tentukan budget yang realistis dan pilih furniture yang sesuai.',
+          '<strong>Maintenance:</strong> Pertimbangkan kemudahan perawatan dan maintenance furniture.',
+          '<strong>Durability:</strong> Pilih furniture yang tahan lama untuk penggunaan intensif di cafe.'
+        ],
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furnitur untuk Kafe Tips Memilih yang Tepat'
+      },
+      {
+        heading: 'Jenis Furnitur Kafe yang Wajib Dimiliki',
+        paragraphs: [
+          '<strong>Meja Makan:</strong> Furniture utama untuk area dining dengan berbagai ukuran dan bentuk. <a href="/product-category/dining-table-collection">Lihat koleksi</a>.',
+          '<strong>Kursi Bar:</strong> Kursi bar dengan desain yang nyaman dan stylish untuk area bar dan lounge. <a href="/product-category/bar-furniture-collection">Lihat koleksi</a>.',
+          '<strong>Meja Bar:</strong> Meja bar untuk area lounge dan bar dengan tinggi yang sesuai. <a href="/product/balcony-bar-table">Lihat detail produk</a>.',
+          '<strong>Rak Display:</strong> Rak display untuk merchandise dan dekorasi cafe. <a href="/product-category/accessories-storage">Lihat koleksi</a>.',
+          '<strong>Meja Kerja:</strong> Meja kerja untuk co-working space di cafe. <a href="/product-category/table-collection">Lihat koleksi</a>.',
+          '<strong>Furniture Outdoor:</strong> Furniture outdoor yang tahan cuaca untuk area teras. <a href="/product-category/balcony-outdoor-collection">Lihat koleksi</a>.'
+        ]
+      },
+      {
+        heading: 'Tips Memilih Material Furnitur Kafe',
+        paragraphs: [
+          '<strong>Frame Material:</strong> Pilih besi hollow berkualitas tinggi dengan ketebalan minimal 2mm untuk stabilitas optimal.',
+          '<strong>Top Material:</strong> Kayu solid (jati, mahoni) atau engineered wood dengan finishing yang tahan lama.',
+          '<strong>Finishing:</strong> Powder coating anti karat dengan warna yang sesuai konsep cafe.',
+          '<strong>Hardware:</strong> Hardware berkualitas tinggi yang tahan lama dan mudah maintenance.',
+          '<strong>Seat Material:</strong> Cushion dengan density tinggi dan cover yang mudah dibersihkan.',
+          '<strong>Custom Options:</strong> Tersedia custom material dan finishing sesuai kebutuhan spesifik.'
+        ]
+      },
+      {
+        heading: 'Panduan Ukuran Furnitur Kafe',
+        paragraphs: [
+          '<strong>Meja Makan 2 Orang:</strong> 60x60 cm dengan tinggi 75 cm, ideal untuk intimate dining.',
+          '<strong>Meja Makan 4 Orang:</strong> 80x80 cm dengan tinggi 75 cm, cocok untuk keluarga kecil.',
+          '<strong>Meja Makan 6 Orang:</strong> 120x60 cm dengan tinggi 75 cm, perfect untuk group dining.',
+          '<strong>Meja Bar:</strong> 120x60 cm dengan tinggi 110 cm, ideal untuk area bar dan lounge.',
+          '<strong>Kursi Bar:</strong> Tinggi 75 cm untuk meja bar, 45 cm untuk meja makan.',
+          '<strong>Rak Display:</strong> Tinggi 180 cm dengan lebar 90 cm, ideal untuk merchandise display.'
+        ]
+      },
+      {
+        heading: 'Tips Layout Furnitur Kafe',
+        list: [
+          '<strong>Traffic Flow:</strong> Atur furniture untuk memudahkan pergerakan pelanggan dan staff.',
+          '<strong>Spacing:</strong> Berikan jarak yang cukup antar furniture untuk kenyamanan pelanggan.',
+          '<strong>Lighting:</strong> Posisikan furniture di bawah lighting yang optimal untuk aktivitas.',
+          '<strong>Group Seating:</strong> Atur furniture untuk berbagai ukuran kelompok pelanggan.',
+          '<strong>Flexibility:</strong> Pilih furniture yang dapat diatur ulang untuk berbagai kebutuhan.',
+          '<strong>Accessibility:</strong> Pastikan furniture mudah diakses oleh semua pelanggan termasuk yang berkebutuhan khusus.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Konsultasi Furnitur Kafe',
+        paragraphs: [
+          'Mangala Living menyediakan layanan konsultasi lengkap untuk pemilihan furnitur kafe yang tepat. Tim desain kami akan membantu Anda memilih furniture yang sesuai dengan konsep, budget, dan kebutuhan cafe Anda.',
+          'Konsultasikan kebutuhan furnitur kafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-kafe-2-lantai-sederhana-modern-inspirasi-desain',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture kafe 2 lantai sederhana modern menjadi solusi ideal untuk memaksimalkan ruang dan menciptakan pengalaman yang berbeda di setiap lantai. Desain 2 lantai memberikan fleksibilitas dalam layout dan dapat mengakomodasi berbagai kebutuhan pelanggan.',
+          'Dalam artikel ini, kami akan membahas inspirasi desain furniture kafe 2 lantai sederhana modern, tips layout, dan strategi memaksimalkan ruang untuk menciptakan cafe yang fungsional dan menarik.'
+        ]
+      },
+      {
+        heading: 'Konsep Furniture Kafe 2 Lantai Sederhana Modern',
+        list: [
+          '<strong>Lantai 1 - Dining Area:</strong> Area makan utama dengan meja makan dan kursi yang nyaman.',
+          '<strong>Lantai 2 - Lounge Area:</strong> Area lounge dengan furniture yang lebih relax dan intimate.',
+          '<strong>Vertical Connection:</strong> Tangga dengan desain yang menarik sebagai focal point.',
+          '<strong>Consistent Theme:</strong> Pertahankan tema industrial minimalis di kedua lantai.',
+          '<strong>Flexible Layout:</strong> Layout yang dapat diatur ulang untuk berbagai kebutuhan.',
+          '<strong>Natural Light:</strong> Manfaatkan pencahayaan alami untuk menciptakan suasana yang hangat.'
+        ],
+        image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Kafe 2 Lantai Sederhana Modern'
+      },
+      {
+        heading: 'Layout Furniture Kafe 2 Lantai',
+        paragraphs: [
+          '<strong>Lantai 1 - Ground Floor:</strong> Meja makan 4-6 orang, meja bar, dan area waiting. Furniture dengan desain yang lebih formal dan fungsional. <a href="/product-category/dining-table-collection">Lihat koleksi meja makan</a>.',
+          '<strong>Lantai 2 - Upper Floor:</strong> Sofa lounge, meja kopi, dan area relax. Furniture dengan desain yang lebih casual dan nyaman. <a href="/product-category/bar-furniture-collection">Lihat koleksi kursi</a>.',
+          '<strong>Tangga:</strong> Tangga dengan desain industrial minimalis yang menjadi focal point. Railing besi dengan handrail kayu. <a href="/product-category/accessories-storage">Lihat aksesoris</a>.',
+          '<strong>Vertical Display:</strong> Rak display vertikal untuk merchandise dan dekorasi. <a href="/product/frame-loft-bookshelf">Lihat detail produk</a>.'
+        ]
+      },
+      {
+        heading: 'Tips Layout Furniture Kafe 2 Lantai',
+        paragraphs: [
+          '<strong>Traffic Flow:</strong> Rancang alur pergerakan yang efisien di kedua lantai.',
+          '<strong>Spacing:</strong> Berikan jarak yang cukup antar furniture untuk kenyamanan pelanggan.',
+          '<strong>Lighting:</strong> Posisikan furniture di bawah lighting yang optimal di setiap lantai.',
+          '<strong>Group Seating:</strong> Atur furniture untuk berbagai ukuran kelompok pelanggan.',
+          '<strong>Flexibility:</strong> Pilih furniture yang dapat diatur ulang untuk berbagai kebutuhan.',
+          '<strong>Accessibility:</strong> Pastikan furniture mudah diakses oleh semua pelanggan termasuk yang berkebutuhan khusus.'
+        ]
+      },
+      {
+        heading: 'Material dan Finishing Furniture Kafe 2 Lantai',
+        list: [
+          '<strong>Frame Material:</strong> Besi hollow berkualitas tinggi dengan ketebalan minimal 2mm untuk stabilitas optimal.',
+          '<strong>Top Material:</strong> Kayu solid (jati, mahoni) atau engineered wood dengan finishing yang tahan lama.',
+          '<strong>Finishing:</strong> Powder coating anti karat dengan warna yang sesuai konsep cafe.',
+          '<strong>Hardware:</strong> Hardware berkualitas tinggi yang tahan lama dan mudah maintenance.',
+          '<strong>Seat Material:</strong> Cushion dengan density tinggi dan cover yang mudah dibersihkan.',
+          '<strong>Custom Options:</strong> Tersedia custom material dan finishing sesuai kebutuhan spesifik.'
+        ]
+      },
+      {
+        heading: 'Inspirasi Desain Kafe 2 Lantai',
+        paragraphs: [
+          '<strong>Minimalist Industrial:</strong> Kombinasi furniture dengan desain clean lines dan finishing natural wood.',
+          '<strong>Vintage Industrial:</strong> Furniture dengan finishing distressed dan kombinasi material metal dan reclaimed wood.',
+          '<strong>Modern Industrial:</strong> Furniture dengan desain modern dan finishing glossy yang elegan.',
+          '<strong>Rustic Industrial:</strong> Furniture dengan material raw dan finishing natural yang hangat.',
+          '<strong>Colorful Industrial:</strong> Furniture dengan aksen warna untuk cafe yang lebih vibrant.',
+          'Setiap konsep memberikan karakter yang berbeda dan dapat disesuaikan dengan target market cafe Anda.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Furniture Kafe 2 Lantai',
+        paragraphs: [
+          'Mangala Living menyediakan layanan desain dan produksi furniture kafe 2 lantai dengan konsep sederhana modern. Tim desain kami akan membantu Anda menciptakan cafe yang fungsional dan menarik.',
+          'Konsultasikan kebutuhan furniture kafe 2 lantai Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan inspirasi desain dan solusi terbaik untuk cafe Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-cafe-furniture-tren-terbaru-2025',
+    sections: [
+      {
+        paragraphs: [
+          'Industrial cafe furniture terus berkembang dengan tren terbaru 2025 yang mengikuti perkembangan desain dan kebutuhan pelanggan. Tren ini mencerminkan perubahan preferensi pelanggan dan inovasi dalam desain furniture.',
+          'Dalam artikel ini, kami akan membahas tren industrial cafe furniture terbaru 2025, inovasi desain, dan prediksi perkembangan furniture cafe di masa depan.'
+        ]
+      },
+      {
+        heading: 'Tren Industrial Cafe Furniture 2025',
+        list: [
+          '<strong>Sustainable Materials:</strong> Penggunaan material ramah lingkungan dan sustainable.',
+          '<strong>Modular Design:</strong> Furniture modular yang dapat dikombinasikan dan diatur ulang.',
+          '<strong>Smart Integration:</strong> Integrasi teknologi smart dalam furniture cafe.',
+          '<strong>Biophilic Design:</strong> Konsep desain yang mengintegrasikan elemen natural.',
+          '<strong>Multifunctional:</strong> Furniture yang dapat digunakan untuk berbagai fungsi.',
+          '<strong>Customization:</strong> Peningkatan permintaan untuk furniture custom dan personalisasi.'
+        ],
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Cafe Furniture Tren Terbaru 2025'
+      },
+      {
+        heading: 'Inovasi Desain Industrial Cafe Furniture 2025',
+        paragraphs: [
+          '<strong>Hybrid Materials:</strong> Kombinasi material tradisional dengan material modern seperti recycled metal dan sustainable wood. <a href="/product-category/dining-table-collection">Lihat koleksi meja</a>.',
+          '<strong>Adaptive Furniture:</strong> Furniture yang dapat menyesuaikan dengan kebutuhan dan preferensi pelanggan. <a href="/product-category/bar-furniture-collection">Lihat koleksi kursi</a>.',
+          '<strong>Integrated Technology:</strong> Furniture dengan built-in charging station, wireless charging, dan smart lighting. <a href="/product-category/table-collection">Lihat koleksi meja kerja</a>.',
+          '<strong>Space Optimization:</strong> Desain furniture yang memaksimalkan ruang dan efisiensi. <a href="/product-category/accessories-storage">Lihat koleksi storage</a>.'
+        ]
+      },
+      {
+        heading: 'Tren Warna dan Finishing 2025',
+        paragraphs: [
+          '<strong>Natural Tones:</strong> Dominasi warna natural seperti beige, sage green, dan warm brown.',
+          '<strong>Metallic Accents:</strong> Aksen metallic seperti brass, copper, dan brushed steel.',
+          '<strong>Textured Finishes:</strong> Finishing dengan tekstur yang memberikan dimensi visual.',
+          '<strong>Matte Surfaces:</strong> Dominasi finishing matte yang memberikan kesan modern dan elegan.',
+          '<strong>Color Blocking:</strong> Kombinasi warna yang kontras untuk menciptakan focal point.',
+          '<strong>Gradient Effects:</strong> Efek gradient yang memberikan transisi warna yang smooth.'
+        ]
+      },
+      {
+        heading: 'Tren Layout dan Spacing 2025',
+        list: [
+          '<strong>Flexible Zones:</strong> Area yang dapat diubah fungsi sesuai kebutuhan dan waktu.',
+          '<strong>Social Distancing:</strong> Layout yang mempertimbangkan social distancing dan privacy.',
+          '<strong>Outdoor Integration:</strong> Integrasi yang seamless antara indoor dan outdoor area.',
+          '<strong>Vertical Space:</strong> Pemanfaatan ruang vertikal untuk storage dan display.',
+          '<strong>Circular Layouts:</strong> Layout melingkar yang mendorong interaksi sosial.',
+          '<strong>Private Nooks:</strong> Area privat yang nyaman untuk meeting dan work.'
+        ]
+      },
+      {
+        heading: 'Tren Teknologi dalam Furniture Cafe 2025',
+        paragraphs: [
+          '<strong>Smart Tables:</strong> Meja dengan built-in tablet dan ordering system.',
+          '<strong>Wireless Charging:</strong> Furniture dengan integrated wireless charging pad.',
+          '<strong>Ambient Lighting:</strong> Lighting yang dapat disesuaikan dengan mood dan waktu.',
+          '<strong>Climate Control:</strong> Furniture dengan integrated heating dan cooling system.',
+          '<strong>Sound Integration:</strong> Furniture dengan built-in speaker dan sound system.',
+          '<strong>Data Collection:</strong> Furniture yang dapat mengumpulkan data penggunaan untuk optimasi.'
+        ]
+      },
+      {
+        heading: 'Prediksi Perkembangan Furniture Cafe 2025-2030',
+        paragraphs: [
+          '<strong>AI Integration:</strong> Integrasi artificial intelligence dalam desain dan fungsi furniture.',
+          '<strong>Virtual Reality:</strong> Penggunaan VR untuk preview dan customisasi furniture.',
+          '<strong>3D Printing:</strong> Produksi furniture dengan teknologi 3D printing untuk custom design.',
+          '<strong>IoT Connectivity:</strong> Furniture yang terhubung dengan Internet of Things.',
+          '<strong>Health Monitoring:</strong> Furniture yang dapat memantau kesehatan dan kenyamanan pengguna.',
+          '<strong>Carbon Neutral:</strong> Furniture yang carbon neutral dan sustainable sepenuhnya.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Furniture Cafe Tren Terbaru',
+        paragraphs: [
+          'Mangala Living terus mengikuti perkembangan tren furniture cafe terbaru dan mengintegrasikannya dalam produk kami. Kami menawarkan furniture cafe dengan desain modern dan teknologi terkini.',
+          'Konsultasikan kebutuhan furniture cafe tren terbaru Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan solusi terbaru dan inovatif untuk cafe Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-kafe-buku-konsep-cafe-literasi-modern',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture kafe buku menjadi konsep unik yang menggabungkan suasana literasi dengan kenyamanan cafe modern. Konsep cafe literasi ini menciptakan ruang yang nyaman untuk membaca, belajar, dan bekerja sambil menikmati minuman favorit.',
+          'Dalam artikel ini, kami akan membahas konsep furniture kafe buku, inspirasi desain, dan tips menciptakan ruang literasi yang nyaman dan fungsional di cafe Anda.'
+        ]
+      },
+      {
+        heading: 'Konsep Furniture Kafe Buku',
+        list: [
+          '<strong>Reading Nooks:</strong> Area khusus untuk membaca dengan kursi yang nyaman dan lighting yang optimal.',
+          '<strong>Study Tables:</strong> Meja belajar dengan storage untuk buku dan aksesoris.',
+          '<strong>Bookshelf Integration:</strong> Rak buku yang terintegrasi dengan furniture cafe.',
+          '<strong>Quiet Zones:</strong> Area yang tenang untuk fokus membaca dan belajar.',
+          '<strong>Community Spaces:</strong> Area untuk diskusi dan sharing tentang buku.',
+          '<strong>Digital Integration:</strong> Furniture dengan charging station dan WiFi untuk e-book dan laptop.'
+        ],
+        image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Kafe Buku Konsep Cafe Literasi Modern'
+      },
+      {
+        heading: 'Jenis Furniture untuk Cafe Literasi',
+        paragraphs: [
+          '<strong>Reading Chairs:</strong> Kursi yang nyaman dengan backrest tinggi dan armrest. Harga mulai Rp 650.000. <a href="/product-category/bar-furniture-collection">Lihat koleksi kursi</a>.',
+          '<strong>Study Tables:</strong> Meja dengan storage dan cable management. Harga mulai Rp 2.200.000. <a href="/product-category/table-collection">Lihat koleksi meja</a>.',
+          '<strong>Bookshelves:</strong> Rak buku dengan desain modern dan fungsional. Harga mulai Rp 1.800.000. <a href="/product/frame-loft-bookshelf">Lihat detail produk</a>.',
+          '<strong>Lounge Sofas:</strong> Sofa yang nyaman untuk area relax dan membaca. Harga mulai Rp 3.500.000. <a href="/product-category/bar-furniture-collection">Lihat koleksi</a>.'
+        ]
+      },
+      {
+        heading: 'Tips Layout Cafe Literasi',
+        paragraphs: [
+          '<strong>Zoning:</strong> Bagi area menjadi zona bising (dining) dan zona tenang (reading).',
+          '<strong>Lighting:</strong> Gunakan lighting yang optimal untuk membaca di setiap area.',
+          '<strong>Acoustics:</strong> Pertimbangkan akustik untuk menciptakan suasana yang tenang.',
+          '<strong>Flexibility:</strong> Pilih furniture yang dapat diatur ulang untuk berbagai kebutuhan.',
+          '<strong>Storage:</strong> Sediakan storage yang cukup untuk buku dan aksesoris pelanggan.',
+          '<strong>Technology:</strong> Integrasikan teknologi untuk mendukung aktivitas digital.'
+        ]
+      },
+      {
+        heading: 'Inspirasi Desain Cafe Literasi',
+        list: [
+          '<strong>Modern Library:</strong> Konsep perpustakaan modern dengan furniture industrial minimalis.',
+          '<strong>Cozy Reading:</strong> Suasana hangat dan nyaman seperti di rumah.',
+          '<strong>Academic Style:</strong> Desain yang mengingatkan pada ruang belajar di kampus.',
+          '<strong>Vintage Bookstore:</strong> Konsep toko buku vintage dengan furniture antik.',
+          '<strong>Minimalist Study:</strong> Desain minimalis yang fokus pada fungsionalitas.',
+          '<strong>Community Hub:</strong> Ruang komunitas yang mendorong interaksi dan sharing.'
+        ]
+      },
+      {
+        heading: 'Furniture Khusus untuk Cafe Literasi',
+        paragraphs: [
+          '<strong>Reading Lamps:</strong> Lampu baca yang terintegrasi dengan furniture untuk lighting optimal.',
+          '<strong>Book Stands:</strong> Stand buku yang dapat disesuaikan untuk kenyamanan membaca.',
+          '<strong>Laptop Tables:</strong> Meja khusus untuk laptop dengan charging station terintegrasi.',
+          '<strong>Privacy Screens:</strong> Partisi untuk menciptakan privacy saat membaca atau belajar.',
+          '<strong>Storage Solutions:</strong> Storage untuk tas, laptop, dan aksesoris pelanggan.',
+          '<strong>Comfort Accessories:</strong> Bantal, selimut, dan aksesoris untuk kenyamanan maksimal.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Furniture Cafe Literasi',
+        paragraphs: [
+          'Mangala Living menyediakan furniture khusus untuk cafe literasi dengan desain yang fungsional dan nyaman. Tim desain kami akan membantu Anda menciptakan ruang literasi yang ideal untuk pelanggan.',
+          'Konsultasikan kebutuhan furniture cafe literasi Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan solusi terbaik untuk konsep cafe literasi modern Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-untuk-kafe-bergaya-industrial-vintage-panduan-lengkap',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture untuk kafe bergaya industrial vintage menjadi pilihan populer untuk menciptakan atmosfer yang unik dan berkarakter. Gaya industrial vintage menggabungkan elemen vintage yang hangat dengan estetika industrial yang modern.',
+          'Dalam artikel ini, kami akan memberikan panduan lengkap furniture untuk kafe bergaya industrial vintage, mulai dari pemilihan material, warna, hingga tips dekorasi yang tepat.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Furniture Industrial Vintage',
+        list: [
+          '<strong>Distressed Finishing:</strong> Finishing yang sengaja dibuat terlihat usang dan berkarakter.',
+          '<strong>Reclaimed Materials:</strong> Penggunaan material bekas yang diolah kembali.',
+          '<strong>Rustic Elements:</strong> Elemen rustic yang memberikan kesan natural dan hangat.',
+          '<strong>Metal Accents:</strong> Aksen metal yang memberikan sentuhan industrial.',
+          '<strong>Warm Colors:</strong> Warna hangat seperti coklat, krem, dan terracotta.',
+          '<strong>Textured Surfaces:</strong> Permukaan dengan tekstur yang memberikan dimensi visual.'
+        ],
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture untuk Kafe Bergaya Industrial Vintage'
+      },
+      {
+        heading: 'Jenis Furniture Industrial Vintage untuk Cafe',
+        paragraphs: [
+          '<strong>Meja Makan Vintage:</strong> Meja dengan finishing distressed dan material reclaimed wood. Harga mulai Rp 2.500.000. <a href="/product-category/dining-table-collection">Lihat koleksi meja</a>.',
+          '<strong>Kursi Bar Vintage:</strong> Kursi dengan desain vintage dan finishing distressed. Harga mulai Rp 550.000. <a href="/product-category/bar-furniture-collection">Lihat koleksi kursi</a>.',
+          '<strong>Rak Display Vintage:</strong> Rak dengan desain vintage dan finishing rustic. Harga mulai Rp 2.200.000. <a href="/product/frame-loft-bookshelf">Lihat detail produk</a>.',
+          '<strong>Meja Bar Vintage:</strong> Meja bar dengan finishing distressed dan aksen metal. Harga mulai Rp 3.200.000. <a href="/product/balcony-bar-table">Lihat detail produk</a>.'
+        ]
+      },
+      {
+        heading: 'Panduan Warna untuk Industrial Vintage',
+        paragraphs: [
+          '<strong>Neutral Base:</strong> Gunakan warna netral seperti beige, krem, dan putih sebagai base.',
+          '<strong>Warm Accents:</strong> Tambahkan aksen warna hangat seperti coklat, terracotta, dan mustard.',
+          '<strong>Metal Tones:</strong> Gunakan warna metal seperti copper, brass, dan brushed steel.',
+          '<strong>Distressed Effects:</strong> Aplikasikan efek distressed untuk memberikan karakter vintage.',
+          '<strong>Natural Wood:</strong> Pertahankan warna natural kayu untuk memberikan kehangatan.',
+          '<strong>Vintage Colors:</strong> Gunakan warna vintage seperti sage green, dusty rose, dan navy blue.'
+        ]
+      },
+      {
+        heading: 'Tips Dekorasi Industrial Vintage',
+        list: [
+          '<strong>Vintage Accessories:</strong> Tambahkan aksesoris vintage seperti lampu antik dan dekorasi retro.',
+          '<strong>Industrial Elements:</strong> Integrasikan elemen industrial seperti pipa dan fitting metal.',
+          '<strong>Textured Fabrics:</strong> Gunakan kain dengan tekstur seperti linen, burlap, dan canvas.',
+          '<strong>Vintage Lighting:</strong> Pilih lighting dengan desain vintage dan warm glow.',
+          '<strong>Rustic Details:</strong> Tambahkan detail rustic seperti rope, jute, dan natural fibers.',
+          '<strong>Personal Touches:</strong> Tambahkan elemen personal yang mencerminkan karakter cafe.'
+        ]
+      },
+      {
+        heading: 'Material untuk Furniture Industrial Vintage',
+        paragraphs: [
+          '<strong>Reclaimed Wood:</strong> Kayu bekas yang diolah kembali untuk memberikan karakter vintage.',
+          '<strong>Distressed Metal:</strong> Metal dengan finishing distressed untuk efek vintage.',
+          '<strong>Rustic Hardware:</strong> Hardware dengan desain vintage dan finishing rustic.',
+          '<strong>Natural Fibers:</strong> Serat alami seperti jute, sisal, dan rattan untuk aksen.',
+          '<strong>Vintage Fabrics:</strong> Kain dengan desain dan tekstur vintage.',
+          '<strong>Antique Elements:</strong> Elemen antik yang diintegrasikan dalam furniture modern.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Furniture Industrial Vintage',
+        paragraphs: [
+          'Mangala Living menyediakan furniture industrial vintage berkualitas tinggi dengan desain yang autentik dan berkarakter. Workshop kami di Bekasi memproduksi furniture dengan finishing distressed dan material reclaimed.',
+          'Konsultasikan kebutuhan furniture industrial vintage Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk cafe bergaya industrial vintage Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'kafe-dengan-furniture-paling-unik-inspirasi-kreatif',
+    sections: [
+      {
+        paragraphs: [
+          'Kafe dengan furniture paling unik menjadi daya tarik utama yang membedakan cafe Anda dari kompetitor. Furniture unik tidak hanya menciptakan pengalaman visual yang menarik, tetapi juga menjadi topik pembicaraan yang viral di media sosial.',
+          'Dalam artikel ini, kami akan membahas inspirasi kreatif kafe dengan furniture paling unik, konsep desain yang out-of-the-box, dan tips menciptakan furniture yang memorable dan Instagram-worthy.'
+        ]
+      },
+      {
+        heading: 'Konsep Furniture Unik untuk Cafe',
+        list: [
+          '<strong>Repurposed Materials:</strong> Furniture dari material yang tidak biasa seperti drum, palet, atau container.',
+          '<strong>Interactive Elements:</strong> Furniture yang dapat berinteraksi dengan pelanggan seperti meja dengan built-in games.',
+          '<strong>Artistic Design:</strong> Furniture dengan desain artistik yang menjadi karya seni.',
+          '<strong>Functional Art:</strong> Furniture yang menggabungkan fungsi dengan estetika seni.',
+          '<strong>Modular Systems:</strong> Furniture modular yang dapat diubah bentuk dan fungsi.',
+          '<strong>Technology Integration:</strong> Furniture dengan teknologi canggih yang terintegrasi.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Kafe dengan Furniture Paling Unik Inspirasi Kreatif'
+      },
+      {
+        heading: 'Inspirasi Furniture Unik untuk Cafe',
+        paragraphs: [
+          '<strong>Meja dari Drum Bekas:</strong> Meja dengan top dari drum bekas yang diolah menjadi furniture unik. Harga custom mulai Rp 1.800.000. <a href="/product-category/dining-table-collection">Lihat koleksi meja</a>.',
+          '<strong>Kursi dari Palet Kayu:</strong> Kursi dengan desain unik dari palet kayu yang diolah kreatif. Harga mulai Rp 450.000. <a href="/product-category/bar-furniture-collection">Lihat koleksi kursi</a>.',
+          '<strong>Rak dari Pipa Bekas:</strong> Rak display dengan desain industrial dari pipa bekas. Harga mulai Rp 1.500.000. <a href="/product/frame-loft-bookshelf">Lihat detail produk</a>.',
+          '<strong>Meja Bar dari Container:</strong> Meja bar dengan desain unik dari container bekas. Harga custom mulai Rp 3.500.000. <a href="/product/balcony-bar-table">Lihat detail produk</a>.'
+        ]
+      },
+      {
+        heading: 'Tips Menciptakan Furniture Unik',
+        paragraphs: [
+          '<strong>Think Outside the Box:</strong> Keluar dari pola pikir konvensional dalam desain furniture.',
+          '<strong>Repurpose Materials:</strong> Gunakan material bekas yang diolah menjadi furniture unik.',
+          '<strong>Custom Design:</strong> Buat desain custom yang tidak ada di pasaran.',
+          '<strong>Artistic Elements:</strong> Integrasikan elemen seni dalam desain furniture.',
+          '<strong>Interactive Features:</strong> Tambahkan fitur interaktif yang menarik perhatian.',
+          '<strong>Storytelling:</strong> Buat furniture yang menceritakan kisah atau konsep tertentu.'
+        ]
+      },
+      {
+        heading: 'Konsep Cafe dengan Furniture Unik',
+        list: [
+          '<strong>Industrial Art:</strong> Cafe dengan furniture industrial yang dijadikan karya seni.',
+          '<strong>Vintage Revival:</strong> Cafe dengan furniture vintage yang diolah dengan sentuhan modern.',
+          '<strong>Nature Integration:</strong> Cafe dengan furniture yang mengintegrasikan elemen natural.',
+          '<strong>Minimalist Art:</strong> Cafe dengan furniture minimalis yang fokus pada estetika.',
+          '<strong>Maximalist Design:</strong> Cafe dengan furniture yang penuh detail dan ornamen.',
+          '<strong>Futuristic Concept:</strong> Cafe dengan furniture yang mengusung konsep futuristik.'
+        ]
+      },
+      {
+        heading: 'Furniture Unik yang Viral di Media Sosial',
+        paragraphs: [
+          '<strong>Instagram-Worthy Design:</strong> Furniture dengan desain yang perfect untuk foto Instagram.',
+          '<strong>Unique Angles:</strong> Furniture dengan sudut dan bentuk yang unik dan menarik.',
+          '<strong>Colorful Elements:</strong> Furniture dengan warna-warna cerah dan kontras.',
+          '<strong>Interactive Features:</strong> Furniture yang dapat berinteraksi dengan pelanggan.',
+          '<strong>Artistic Details:</strong> Furniture dengan detail artistik yang memukau.',
+          '<strong>Story Elements:</strong> Furniture yang menceritakan kisah atau konsep tertentu.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Furniture Unik',
+        paragraphs: [
+          'Mangala Living menyediakan layanan desain dan produksi furniture unik untuk cafe dengan konsep kreatif dan out-of-the-box. Tim desain kami akan membantu Anda menciptakan furniture yang memorable dan viral.',
+          'Konsultasikan kebutuhan furniture unik untuk cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan inspirasi kreatif dan solusi terbaik untuk cafe yang unik dan menarik.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'perhitungan-furniture-kafe-panduan-budget-dan-layout',
+    sections: [
+      {
+        paragraphs: [
+          'Perhitungan furniture kafe yang tepat merupakan kunci sukses dalam perencanaan budget dan layout cafe. Perhitungan yang akurat akan membantu Anda mengoptimalkan investasi dan menciptakan layout yang efisien dan fungsional.',
+          'Dalam artikel ini, kami akan memberikan panduan lengkap perhitungan furniture kafe, mulai dari budget planning, layout calculation, hingga tips mengoptimalkan investasi furniture untuk cafe Anda.'
+        ]
+      },
+      {
+        heading: 'Panduan Perhitungan Budget Furniture Kafe',
+        list: [
+          '<strong>Total Budget Allocation:</strong> Alokasikan 30-40% dari total budget cafe untuk furniture.',
+          '<strong>Priority Items:</strong> Prioritaskan meja dan kursi sebagai furniture utama (60% dari budget furniture).',
+          '<strong>Secondary Items:</strong> Alokasikan 25% untuk rak display, meja bar, dan furniture pendukung.',
+          '<strong>Accessories:</strong> Sisakan 15% untuk aksesoris dan dekorasi furniture.',
+          '<strong>Contingency:</strong> Siapkan 10% sebagai dana cadangan untuk kebutuhan tak terduga.',
+          '<strong>Phase Planning:</strong> Rencanakan pembelian furniture secara bertahap sesuai budget yang tersedia.'
+        ],
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Perhitungan Furniture Kafe Panduan Budget dan Layout'
+      },
+      {
+        heading: 'Perhitungan Layout Furniture Kafe',
+        paragraphs: [
+          '<strong>Kapasitas Pelanggan:</strong> Hitung kapasitas maksimal yang diinginkan untuk menentukan jumlah furniture.',
+          '<strong>Luas Ruangan:</strong> Ukur luas ruangan dan hitung space yang tersedia untuk furniture.',
+          '<strong>Traffic Flow:</strong> Rancang alur pergerakan yang efisien dengan lebar minimal 1.2 meter.',
+          '<strong>Spacing:</strong> Berikan jarak minimal 1 meter antar meja untuk kenyamanan pelanggan.',
+          '<strong>Group Seating:</strong> Atur furniture untuk berbagai ukuran kelompok pelanggan.',
+          '<strong>Flexibility:</strong> Rancang layout yang dapat diubah sesuai kebutuhan dan event.'
+        ]
+      },
+      {
+        heading: 'Rumus Perhitungan Furniture Kafe',
+        paragraphs: [
+          '<strong>Meja Makan 4 Orang:</strong> 1 meja untuk 4 orang = 1.5 m² space requirement.',
+          '<strong>Meja Makan 6 Orang:</strong> 1 meja untuk 6 orang = 2.0 m² space requirement.',
+          '<strong>Meja Bar:</strong> 1 meja bar untuk 4 orang = 1.8 m² space requirement.',
+          '<strong>Kursi Bar:</strong> 1 kursi bar = 0.5 m² space requirement.',
+          '<strong>Rak Display:</strong> 1 rak display = 1.0 m² space requirement.',
+          '<strong>Total Space:</strong> Jumlahkan semua space requirement untuk mendapatkan total kebutuhan ruang.'
+        ]
+      },
+      {
+        heading: 'Tips Mengoptimalkan Budget Furniture Kafe',
+        list: [
+          '<strong>Bulk Order:</strong> Beli furniture dalam jumlah besar untuk mendapatkan harga per unit yang lebih murah.',
+          '<strong>Standard Size:</strong> Pilih ukuran standard untuk menghindari biaya custom yang mahal.',
+          '<strong>Simple Design:</strong> Pilih desain yang simple namun elegant untuk menghemat biaya produksi.',
+          '<strong>Material Selection:</strong> Pilih material yang berkualitas baik namun tidak over-spec.',
+          '<strong>Phase Installation:</strong> Install furniture secara bertahap sesuai budget yang tersedia.',
+          '<strong>Future Upgrade:</strong> Rencanakan upgrade furniture di masa depan sesuai perkembangan bisnis.'
+        ]
+      },
+      {
+        heading: 'Contoh Perhitungan Budget Furniture Kafe 50 m²',
+        paragraphs: [
+          '<strong>Meja Makan 4 Orang (8 unit):</strong> Rp 1.800.000 x 8 = Rp 14.400.000',
+          '<strong>Kursi Bar (32 unit):</strong> Rp 380.000 x 32 = Rp 12.160.000',
+          '<strong>Meja Bar (2 unit):</strong> Rp 2.500.000 x 2 = Rp 5.000.000',
+          '<strong>Rak Display (2 unit):</strong> Rp 1.800.000 x 2 = Rp 3.600.000',
+          '<strong>Meja Kerja (2 unit):</strong> Rp 2.200.000 x 2 = Rp 4.400.000',
+          '<strong>Total Budget:</strong> Rp 39.560.000 (belum termasuk aksesoris dan dekorasi)'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Konsultasi Budget Furniture',
+        paragraphs: [
+          'Mangala Living menyediakan layanan konsultasi lengkap untuk perhitungan budget dan layout furniture kafe. Tim desain kami akan membantu Anda merencanakan investasi furniture yang optimal dan efisien.',
+          'Konsultasikan kebutuhan perhitungan furniture kafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk budget dan layout cafe Anda.'
+        ]
+      }
+    ]
   }
 ]
 
