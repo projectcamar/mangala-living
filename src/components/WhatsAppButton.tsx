@@ -209,7 +209,7 @@ const WhatsAppButton: React.FC = () => {
               <Bot size={20} />
               <span>AI Assistant</span>
             </div>
-            <button className="close-chat" onClick={handleExpand}>
+            <button className="close-chat" onClick={handleExpand} aria-label="Close chat">
               <X size={16} />
             </button>
           </div>
@@ -308,13 +308,14 @@ const WhatsAppButton: React.FC = () => {
               className="send-button" 
               onClick={sendMessage}
               disabled={!inputText.trim() || isLoading}
+              aria-label="Send message"
             >
               <Send size={16} />
             </button>
             </div>
           
           <div className="chat-footer">
-            <button className="whatsapp-redirect" onClick={handleWhatsAppRedirect}>
+            <button className="whatsapp-redirect" onClick={handleWhatsAppRedirect} aria-label={isIndonesian ? "Lanjutkan di WhatsApp" : "Continue on WhatsApp"}>
               <MessageCircle size={16} />
               <span>{isIndonesian ? "Lanjutkan di WhatsApp" : "Continue on WhatsApp"}</span>
             </button>
@@ -323,7 +324,7 @@ const WhatsAppButton: React.FC = () => {
       )}
 
       {/* WhatsApp Button */}
-      <button className="whatsapp-button" onClick={handleExpand}>
+      <button className="whatsapp-button" onClick={handleExpand} aria-label={isIndonesian ? "Hubungi Kami" : "Contact Us"}>
         <MessageCircle size={24} />
         <span>{isIndonesian ? "Hubungi Kami" : "Contact Us"}</span>
       </button>

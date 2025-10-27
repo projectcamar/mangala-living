@@ -1,5 +1,17 @@
-import jsPDF from 'jspdf'
-import { ALL_PRODUCTS } from '../data/products'
+// Lazy load PDF dependencies to reduce initial bundle size
+let jsPDF: any = null
+let ALL_PRODUCTS: any = null
+
+const loadPDFDependencies = async () => {
+  if (!jsPDF) {
+    const jsPDFModule = await import('jspdf')
+    jsPDF = jsPDFModule.default
+  }
+  if (!ALL_PRODUCTS) {
+    const productsModule = await import('../data/products')
+    ALL_PRODUCTS = productsModule.ALL_PRODUCTS
+  }
+}
 
 // Helper function to load image and convert to base64
 const loadImageAsBase64 = async (imagePath: string): Promise<string> => {
@@ -25,6 +37,9 @@ const loadImageAsBase64 = async (imagePath: string): Promise<string> => {
 
 export const generateCatalog = async () => {
   try {
+    // Load PDF dependencies only when needed
+    await loadPDFDependencies()
+    
     const doc = new jsPDF('p', 'mm', 'a4')
     const pageWidth = doc.internal.pageSize.getWidth()
     const pageHeight = doc.internal.pageSize.getHeight()

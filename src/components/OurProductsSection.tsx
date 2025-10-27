@@ -45,6 +45,8 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
                   alt={product.name} 
                   className="product-image-full"
                   loading="lazy"
+                  width="400"
+                  height="300"
                 />
               </div>
               <div className="product-info-full">
