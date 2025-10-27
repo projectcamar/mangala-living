@@ -93,11 +93,11 @@ const ShippingInformation: React.FC = () => {
             <div className="shipping-main-body">
               {isIndonesian ? (
                 <p className="shipping-main-paragraph">
-                  Kami mengirim dari pelabuhan Semarang, Indonesia. Pengiriman ke sebagian besar pelabuhan internasional membutuhkan waktu sekitar empat minggu dari Indonesia.
+                  Kami mengirim dari pelabuhan Tanjung Priok, Jakarta, Indonesia. Pengiriman ke sebagian besar pelabuhan internasional membutuhkan waktu sekitar empat minggu dari Indonesia.
                 </p>
               ) : (
                 <p className="shipping-main-paragraph">
-                  We ship from the port of Semarang, Indonesia. Shipping to most international ports takes approximately four weeks from Indonesia.
+                  We ship from the port of Tanjung Priok, Jakarta, Indonesia. Shipping to most international ports takes approximately four weeks from Indonesia.
                 </p>
               )}
             </div>

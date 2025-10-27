@@ -5,7 +5,7 @@ export const generateAIOptimizedStructuredData = () => {
     "@type": "FurnitureStore",
     "name": "Mangala Living",
     "alternateName": ["Mangala Living Furniture", "Industrial Furniture Indonesia", "Furniture Besi Custom"],
-    "description": "Premium Industrial Scandinavian Furniture manufacturer specializing in custom steel furniture for cafes, restaurants, hotels, and offices. Established 1999 in Bekasi, Indonesia.",
+    "description": "Premium Industrial Scandinavian Furniture manufacturer specializing in custom steel furniture for cafes, restaurants, hotels, and offices. Established 1999 in Bekasi, Indonesia. Serving customers across Indonesia and internationally.",
     "url": "https://mangala-living.com",
     "logo": "https://mangala-living.com/logo.png",
     "image": "https://mangala-living.com/og-image.jpg",
@@ -34,7 +34,7 @@ export const generateAIOptimizedStructuredData = () => {
         "contactType": "customer service",
         "email": "info@mangala-living.com",
         "availableLanguage": ["Indonesian", "English"],
-        "areaServed": "ID"
+        "areaServed": ["ID", "US", "JP", "AU", "SG", "MY", "TH", "VN", "PH", "International"]
       }
     ],
     "sameAs": [
@@ -81,7 +81,16 @@ export const generateAIOptimizedStructuredData = () => {
       "cafe furniture",
       "restaurant furniture",
       "hotel furniture",
-      "office furniture"
+      "office furniture",
+      "furniture export indonesia",
+      "furniture supplier indonesia",
+      "furniture manufacturer jakarta",
+      "furniture supplier jabodetabek",
+      "industrial furniture usa",
+      "furniture export japan",
+      "furniture export australia",
+      "furniture export singapore",
+      "furniture export malaysia"
     ],
     "serviceArea": {
       "@type": "GeoCircle",
@@ -183,10 +192,10 @@ export const generateFAQStructuredData = () => {
       },
       {
         "@type": "Question",
-        "name": "Apakah Mangala Living melayani pengiriman ke seluruh Indonesia?",
+        "name": "Apakah Mangala Living melayani pengiriman ke seluruh Indonesia dan internasional?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ya, kami melayani pengiriman furniture ke seluruh Indonesia. Biaya pengiriman akan disesuaikan dengan lokasi dan ukuran furniture yang dipesan."
+          "text": "Ya, kami melayani pengiriman furniture ke seluruh Indonesia, Jabodetabek, Jakarta, dan pasar internasional utama termasuk USA, Jepang, Australia, Singapura, Malaysia, Thailand, Vietnam, dan Filipina. Biaya pengiriman akan disesuaikan dengan lokasi dan ukuran furniture yang dipesan. Untuk pengiriman internasional, kami mengirim dari pelabuhan Tanjung Priok, Jakarta."
         }
       },
       {
