@@ -22,6 +22,7 @@ const SearchResults = lazy(() => import('./pages/SearchResults'))
 const BestSellers = lazy(() => import('./pages/BestSellers'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
+const TermsOfService = lazy(() => import('./pages/TermsOfService'))
 
 // Minimal loading for better UX
 const Loading = () => (
@@ -153,6 +154,16 @@ function App() {
           <Route path="/blog/:slug" element={
             <Suspense fallback={<Loading />}>
               <BlogPost />
+            </Suspense>
+          } />
+          <Route path="/terms-of-service" element={
+            <Suspense fallback={<Loading />}>
+              <TermsOfService />
+            </Suspense>
+          } />
+          <Route path="/id/terms-of-service" element={
+            <Suspense fallback={<Loading />}>
+              <TermsOfService />
             </Suspense>
           } />
         </Routes>
