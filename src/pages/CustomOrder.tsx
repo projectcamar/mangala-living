@@ -285,13 +285,33 @@ const CustomOrder: React.FC = () => {
       {/* Contact Info */}
       <section className="custom-order-contact-section">
         <div className="custom-order-contact-container">
-          <h2 className="custom-order-contact-title">{isIndonesian ? 'Alamat' : 'Address'}</h2>
+          <h2 className="custom-order-contact-title">{isIndonesian ? 'Find Us' : 'Find Us'}</h2>
           <div className="custom-order-contact-info">
-            <p className="custom-order-contact-address">
-              Jl. RA Rukmini KM 2 no. 77 Desa Pekalongan RT 05 RW 01, Kec. Batealit - Jepara
+            <div style={{ marginBottom: '16px' }}>
+              <strong style={{ color: '#8B7355', display: 'block', marginBottom: '8px' }}>
+                Workshop Bekasi:
+              </strong>
+              <p className="custom-order-contact-address">
+                <a 
+                  href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: '#2c2c2c', textDecoration: 'underline' }}
+                >
+                  Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
+                </a>
+              </p>
+            </div>
+            <p className="custom-order-contact-phone">
+              <a href="tel:+6285212078467" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                +62 852-1207-8467
+              </a>
             </p>
-            <p className="custom-order-contact-phone">Telepon : +62 852-1207-8467</p>
-            <p className="custom-order-contact-email">Email : info@mangala-living.com</p>
+            <p className="custom-order-contact-email">
+              <a href="mailto:info@mangala-living.com" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                info@mangala-living.com
+              </a>
+            </p>
           </div>
         </div>
       </section>

@@ -231,8 +231,13 @@ Thank you!`
           
           {/* Centered Workshop Info */}
           <div style={{ textAlign: 'center', margin: '40px auto 32px' }}>
-            <div style={{ fontWeight: 600, marginBottom: 6 }}>Workshop Bekasi</div>
-            <div style={{ marginBottom: 6 }}>
+            <div style={{ fontWeight: 600, marginBottom: 12, fontSize: '1.1rem', color: '#2c2c2c' }}>
+              Find Us
+            </div>
+            <div style={{ fontWeight: 600, marginBottom: 8, color: '#8B7355' }}>
+              Workshop Bekasi:
+            </div>
+            <div style={{ marginBottom: 8, lineHeight: '1.6' }}>
               <a 
                 href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9" 
                 target="_blank" 
@@ -242,7 +247,14 @@ Thank you!`
                 Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
               </a>
             </div>
-            <div>+62 852-1207-8467</div>
+            <div>
+              <a 
+                href="tel:+6285212078467" 
+                style={{ color: '#8B7355', textDecoration: 'underline', fontWeight: '500' }}
+              >
+                +62 852-1207-8467
+              </a>
+            </div>
           </div>
           
           {/* Embedded Google Map */}

@@ -275,7 +275,15 @@ const ShippingInformation: React.FC = () => {
               <div className="shipping-contact-details">
                 <h3 className="shipping-contact-label">{isIndonesian ? 'Alamat' : 'Address'}</h3>
                 <p className="shipping-contact-value">
-                  Jl. RA Rukmini KM 2 no. 77 Desa Pekalongan RT 05 RW 01, Kec. Batealit - Jepara
+                  <strong>Workshop Bekasi:</strong><br />
+                  <a 
+                    href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    style={{ color: '#8B7355', textDecoration: 'underline' }}
+                  >
+                    Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
+                  </a>
                 </p>
               </div>
             </div>
@@ -286,7 +294,11 @@ const ShippingInformation: React.FC = () => {
               </div>
               <div className="shipping-contact-details">
                 <h3 className="shipping-contact-label">{isIndonesian ? 'Telepon' : 'Phone'}</h3>
-                <p className="shipping-contact-value">+62 852-1207-8467</p>
+                <p className="shipping-contact-value">
+                  <a href="tel:+6285212078467" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                    +62 852-1207-8467
+                  </a>
+                </p>
               </div>
             </div>
 
@@ -296,7 +308,11 @@ const ShippingInformation: React.FC = () => {
               </div>
               <div className="shipping-contact-details">
                 <h3 className="shipping-contact-label">Email</h3>
-                <p className="shipping-contact-value">info@mangala-living.com</p>
+                <p className="shipping-contact-value">
+                  <a href="mailto:info@mangala-living.com" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                    info@mangala-living.com
+                  </a>
+                </p>
               </div>
             </div>
 
@@ -306,7 +322,11 @@ const ShippingInformation: React.FC = () => {
               </div>
               <div className="shipping-contact-details">
                 <h3 className="shipping-contact-label">Website</h3>
-                <p className="shipping-contact-value">www.mangalaliving.com</p>
+                <p className="shipping-contact-value">
+                  <a href="https://www.mangalaliving.com" target="_blank" rel="noopener noreferrer" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                    www.mangalaliving.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>

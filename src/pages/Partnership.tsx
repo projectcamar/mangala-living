@@ -267,13 +267,33 @@ const Partnership: React.FC = () => {
       {/* Contact Info */}
       <section className="partnership-contact-section">
         <div className="partnership-contact-container">
-          <h2 className="partnership-contact-title">{isIndonesian ? 'Alamat' : 'Address'}</h2>
+          <h2 className="partnership-contact-title">{isIndonesian ? 'Find Us' : 'Find Us'}</h2>
           <div className="partnership-contact-info">
-            <p className="partnership-contact-address">
-              Jl. RA Rukmini KM 2 no. 77 Desa Pekalongan RT 05 RW 01, Kec. Batealit - Jepara
+            <div style={{ marginBottom: '16px' }}>
+              <strong style={{ color: '#8B7355', display: 'block', marginBottom: '8px' }}>
+                Workshop Bekasi:
+              </strong>
+              <p className="partnership-contact-address">
+                <a 
+                  href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: '#2c2c2c', textDecoration: 'underline' }}
+                >
+                  Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
+                </a>
+              </p>
+            </div>
+            <p className="partnership-contact-phone">
+              <a href="tel:+6285212078467" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                +62 852-1207-8467
+              </a>
             </p>
-            <p className="partnership-contact-phone">Telepon : +62 852-1207-8467</p>
-            <p className="partnership-contact-email">Email : info@mangala-living.com</p>
+            <p className="partnership-contact-email">
+              <a href="mailto:info@mangala-living.com" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                info@mangala-living.com
+              </a>
+            </p>
           </div>
         </div>
       </section>
