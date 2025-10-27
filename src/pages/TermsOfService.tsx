@@ -222,8 +222,8 @@ const TermsOfService: React.FC = () => {
                   <h3>{isIndonesian ? 'Pelunasan' : 'Balance Payment'}</h3>
                   <p>
                     {isIndonesian 
-                      ? 'Untuk provinsi pulau Jawa, DKI Jakarta, Pelunasan dengan jumlah tertentu dapat dibayar pada saat barang sudah sampai dengan menunjukkan bukti transfer kepada sopir yang mengantarkan barang. Untuk wilayah luar pulau Jawa, pelunasan dibayarkan pada saat barang sudah dipacking dan siap dikirimkan melalui jasa ekspedisi'
-                      : 'For Java Island provinces, DKI Jakarta, balance payment of certain amounts can be paid when the goods arrive by showing transfer proof to the delivery driver. For areas outside Java Island, balance payment is made when goods are packed and ready for shipment via expedition service'
+                      ? 'Untuk provinsi pulau Jawa dan DKI Jakarta, pelunasan dengan jumlah tertentu dapat dibayar pada saat barang sudah sampai dengan menunjukkan bukti transfer kepada sopir yang mengantarkan barang. Untuk wilayah luar pulau Jawa, pelunasan dibayarkan pada saat barang sudah dipacking dan siap dikirimkan melalui jasa ekspedisi.'
+                      : 'For Java Island provinces and DKI Jakarta, balance payment of certain amounts can be paid when the goods arrive by showing transfer proof to the delivery driver. For areas outside Java Island, balance payment is made when goods are packed and ready for shipment via expedition service.'
                     }
                   </p>
                 </div>
