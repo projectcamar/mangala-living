@@ -5,6 +5,7 @@ import { Clock, MapPin, Phone, Mail, Globe } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import ServiceAreasSection from '../components/ServiceAreasSection'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import './ShippingInformation.css'
 
@@ -258,6 +259,9 @@ const ShippingInformation: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Service Areas Section */}
+      <ServiceAreasSection isIndonesian={isIndonesian} />
 
       {/* Contact Section */}
       <section className="shipping-contact-section">
