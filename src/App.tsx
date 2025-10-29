@@ -29,8 +29,8 @@ const ShippingInformation = lazy(() => import('./pages/ShippingInformation'))
 
 // SEO Landing Pages - Keyword Celah (Anti-Marketplace Strategy)
 const FurnitureBesiCustomBekasi = lazy(() => import('./pages/FurnitureBesiCustomBekasi'))
-const WorkshopFurnitureBesiBekasi = lazy(() => import('./pages/WorkshopFurnitureBesiBekasi'))
-const BikinMejaBesiCafeCustom = lazy(() => import('./pages/BikinMejaBesiCafeCustom'))
+// const WorkshopFurnitureBesiBekasi = lazy(() => import('./pages/WorkshopFurnitureBesiBekasi'))
+// const BikinMejaBesiCafeCustom = lazy(() => import('./pages/BikinMejaBesiCafeCustom'))
 
 // Minimal loading for better UX
 const Loading = () => (
@@ -206,6 +206,7 @@ function App() {
               <FurnitureBesiCustomBekasi />
             </Suspense>
           } />
+          {/* TODO: Create these landing pages
           <Route path="/workshop-furniture-besi-bekasi" element={
             <Suspense fallback={<Loading />}>
               <WorkshopFurnitureBesiBekasi />
@@ -216,6 +217,7 @@ function App() {
               <BikinMejaBesiCafeCustom />
             </Suspense>
           } />
+          */}
         </Routes>
         <WhatsAppButton />
         <Analytics />
