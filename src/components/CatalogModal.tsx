@@ -18,6 +18,19 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
   })
 
   useEffect(() => {
+    // Check if user has downloaded catalog recently (within 3 days)
+    const lastDownloadTime = localStorage.getItem('catalogLastDownload')
+    
+    if (lastDownloadTime) {
+      const threeDaysInMs = 3 * 24 * 60 * 60 * 1000 // 3 days in milliseconds
+      const timeSinceDownload = Date.now() - parseInt(lastDownloadTime)
+      
+      // If less than 3 days have passed, don't show the modal
+      if (timeSinceDownload < threeDaysInMs) {
+        return
+      }
+    }
+    
     // Check if this is the first visit
     const hasVisitedBefore = localStorage.getItem('hasVisitedMangala')
     
@@ -95,6 +108,9 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
       
       // Track catalog download
       trackEvent.catalogDownload()
+      
+      // Store the download timestamp to prevent popup for 3 days
+      localStorage.setItem('catalogLastDownload', Date.now().toString())
       
       // Close the modal after successful download
       handleClose()
