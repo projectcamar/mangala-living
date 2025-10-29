@@ -17,11 +17,12 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false }) => {
           className="hero-bg-image"
           loading="eager"
           fetchPriority="high"
+          decoding="async"
           width="1920"
           height="1080"
         />
         <div className="hero-overlay"></div>
-        </div>
+      </div>
       
       <div className="hero-content">
         <h1 id="hero-title" className="hero-title">

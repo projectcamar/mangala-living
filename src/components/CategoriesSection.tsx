@@ -7,17 +7,17 @@ interface CategoriesSectionProps {
   isIndonesian?: boolean
 }
 
-// Import images
-import benchImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
-import mejaImage from '../assets/meja-industrial-mejamakan.webp'
-import mejaMakanImage from '../assets/Meja-makan-industrial-150x60x90-2 kursi.webp'
-import mejaKerjaImage from '../assets/Meja-Kerja-Rak-Meja-Belajar-custom.webp'
-import balconyBarImage from '../assets/balcony-bar-table.webp'
-import barChairImage from '../assets/Kursi-Barstool-Besi-Behel.webp'
-import hollowlineDisplayRackImage from '../assets/Hollowline-Display-Rack.webp'
-import frameLoftBookshelfImage from '../assets/frame-Loft-Bookshelf.webp'
-import daybedImage from '../assets/industrial-daybed-boneonly.webp'
-import loungeSetCoffeeTableImage from '../assets/longue-set-coffee-table.webp'
+// Use dynamic URL imports for better code splitting - images load on demand
+const benchImage = new URL('../assets/Bench-corner-kursi-sudut-kursi-santai.webp', import.meta.url).href
+const mejaImage = new URL('../assets/meja-industrial-mejamakan.webp', import.meta.url).href
+const mejaMakanImage = new URL('../assets/Meja-makan-industrial-150x60x90-2 kursi.webp', import.meta.url).href
+const mejaKerjaImage = new URL('../assets/Meja-Kerja-Rak-Meja-Belajar-custom.webp', import.meta.url).href
+const balconyBarImage = new URL('../assets/balcony-bar-table.webp', import.meta.url).href
+const barChairImage = new URL('../assets/Kursi-Barstool-Besi-Behel.webp', import.meta.url).href
+const hollowlineDisplayRackImage = new URL('../assets/Hollowline-Display-Rack.webp', import.meta.url).href
+const frameLoftBookshelfImage = new URL('../assets/frame-Loft-Bookshelf.webp', import.meta.url).href
+const daybedImage = new URL('../assets/industrial-daybed-boneonly.webp', import.meta.url).href
+const loungeSetCoffeeTableImage = new URL('../assets/longue-set-coffee-table.webp', import.meta.url).href
 
 interface Category {
   id: number
