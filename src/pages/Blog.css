@@ -159,8 +159,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.pagination-ellipsis {
+  padding: 10px 8px;
+  color: #636e72;
+  font-weight: 600;
+  user-select: none;
+  cursor: default;
 }
 
 .pagination-btn {
@@ -173,6 +182,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   letter-spacing: 0.05em;
+  border-radius: 4px;
 }
 
 .pagination-btn:hover {

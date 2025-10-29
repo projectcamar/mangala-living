@@ -4588,7 +4588,6 @@ const BLOG_CONTENTS: BlogContent[] = [
         ]
       }
     ]
-  }
   },
   // GEO-TARGETED CONTENT - SUMMARECON BEKASI
   {
