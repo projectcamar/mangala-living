@@ -9,6 +9,7 @@ import './App.css'
 // Critical components loaded immediately - NO LAZY LOADING for Home
 import Home from './pages/Home'
 import WhatsAppButton from './components/WhatsAppButton'
+import ScrollToTop from './components/ScrollToTop'
 
 // Preload critical pages for better performance
 const Shop = lazy(() => import('./pages/Shop'))
@@ -112,6 +113,7 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
+        <ScrollToTop />
         <Routes>
           {/* Home - Load immediately (no suspense) */}
           <Route path="/" element={<Home />} />
