@@ -750,9 +750,6 @@ body:has(.announcement-bar) .header {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   }
 
-  .category-nav.nav-open {
-    display: flex;
-  }
 
   .mobile-category-nav {
     display: flex;
