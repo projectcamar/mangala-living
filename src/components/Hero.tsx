@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false }) => {
           alt="Industrial Furniture Collection by Mangala Living" 
           className="hero-bg-image"
           loading="eager"
-          fetchpriority="high"
+          fetchPriority="high"
           decoding="async"
           width="1920"
           height="1080"
