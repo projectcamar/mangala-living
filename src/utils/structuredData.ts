@@ -118,6 +118,14 @@ export const generateMerchantStructuredData = () => {
             "name": "Industrial Furniture",
             "category": "Furniture",
             "description": "Premium industrial furniture made from high-quality materials",
+            "offers": {
+              "@type": "Offer",
+              "price": "1500000",
+              "priceCurrency": "IDR",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-12-31",
+              "url": "https://mangala-living.com/shop"
+            },
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "4.8",
