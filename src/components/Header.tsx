@@ -5,6 +5,7 @@ import './Header.css'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateCatalog } from '../utils/catalogGenerator'
 import { trackEvent } from '../utils/analytics'
+import { sendBackgroundEmail } from '../utils/emailHelpers'
 
 interface HeaderProps {
   isIndonesian?: boolean
@@ -309,6 +310,9 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                 `)
               }
               
+              // Send background email notification
+              sendBackgroundEmail('catalog_download', {})
+
               await generateCatalog()
               
               // Track catalog download

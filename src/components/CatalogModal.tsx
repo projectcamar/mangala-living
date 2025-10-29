@@ -89,7 +89,8 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
           body: JSON.stringify({
             firstName: formData.firstName,
             email: formData.email,
-            whatsapp: formData.whatsapp
+            whatsapp: formData.whatsapp,
+            notificationType: 'catalog_download'
           }),
         })
         
