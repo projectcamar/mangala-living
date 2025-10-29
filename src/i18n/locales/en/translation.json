@@ -1,0 +1,188 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "contact": "Contact",
+    "shop": "Shop",
+    "blog": "Blog",
+    "search": "Search",
+    "menu": "Menu",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "getQuote": "Get Quote",
+    "orderNow": "Order Now",
+    "viewDetails": "View Details",
+    "addToCart": "Add to Cart",
+    "buyNow": "Buy Now",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "website": "Website",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "subscribe": "Subscribe",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "shipping": "Shipping",
+    "returns": "Returns",
+    "warranty": "Warranty"
+  },
+  "header": {
+    "title": "Jepara Furniture",
+    "subtitle": "Premium Quality Teak Wood Furniture",
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "products": "Products",
+      "categories": "Categories",
+      "blog": "Blog",
+      "contact": "Contact",
+      "shop": "Shop"
+    },
+    "search": {
+      "placeholder": "Search furniture products...",
+      "button": "Search"
+    },
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Premium Quality Jepara Teak Wood Furniture",
+    "subtitle": "Exquisite collection of teak wood furniture with modern and traditional designs that captivate",
+    "cta": {
+      "primary": "View Collection",
+      "secondary": "Learn More"
+    },
+    "features": {
+      "handcrafted": "Handcrafted",
+      "premium": "Premium Quality",
+      "sustainable": "Sustainable"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Creating Premium Quality Teak Wood Furniture Since 1985",
+    "description": "We are a Jepara teak wood furniture manufacturer with over 30 years of experience. With high dedication to quality and innovation, we present furniture that is not only beautiful but also durable.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To deliver premium quality teak wood furniture with timeless and sustainable designs to meet customer needs worldwide."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become Indonesia's leading teak wood furniture manufacturer, internationally recognized for its quality and innovation."
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": {
+        "title": "High Quality",
+        "description": "Every product is made with the highest quality standards"
+      },
+      "craftsmanship": {
+        "title": "Handcrafted",
+        "description": "Made by experienced craftsmen with traditional techniques"
+      },
+      "sustainability": {
+        "title": "Sustainable",
+        "description": "Using sustainably grown teak wood"
+      }
+    },
+    "stats": {
+      "experience": "30+ Years Experience",
+      "products": "1000+ Products",
+      "customers": "5000+ Customers",
+      "countries": "20+ Countries"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to help with your teak wood furniture needs",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "company": "Company",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "required": "Required"
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Jl. Raya Jepara No. 123, Jepara, Central Java 59411",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com",
+      "hours": "Monday - Friday: 08:00 - 17:00 WIB"
+    },
+    "map": {
+      "title": "Our Location"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Collection of premium quality teak wood furniture",
+    "categories": {
+      "all": "All Categories",
+      "dining": "Dining Tables",
+      "living": "Living Room",
+      "bedroom": "Bedroom",
+      "office": "Office",
+      "outdoor": "Outdoor"
+    },
+    "filters": {
+      "price": "Price",
+      "material": "Material",
+      "style": "Style",
+      "color": "Color"
+    },
+    "sort": {
+      "title": "Sort By",
+      "newest": "Newest",
+      "oldest": "Oldest",
+      "priceLow": "Price Low to High",
+      "priceHigh": "Price High to Low",
+      "name": "Name A-Z"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page",
+      "of": "of"
+    }
+  },
+  "footer": {
+    "description": "Premium quality Jepara teak wood furniture manufacturer with over 30 years of experience.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "home": "Home",
+      "about": "About Us",
+      "products": "Products",
+      "contact": "Contact"
+    },
+    "categories": {
+      "title": "Product Categories",
+      "dining": "Dining Tables",
+      "living": "Living Room",
+      "bedroom": "Bedroom",
+      "office": "Office"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Jl. Raya Jepara No. 123",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Get the latest product updates and special offers",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe"
+    },
+    "copyright": "© 2024 Furniture Jepara. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  }
+}

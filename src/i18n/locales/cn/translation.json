@@ -1,0 +1,188 @@
+{
+  "common": {
+    "home": "首页",
+    "about": "关于我们",
+    "products": "产品",
+    "contact": "联系我们",
+    "shop": "商店",
+    "blog": "博客",
+    "search": "搜索",
+    "menu": "菜单",
+    "close": "关闭",
+    "loading": "加载中...",
+    "error": "发生错误",
+    "success": "成功",
+    "readMore": "阅读更多",
+    "learnMore": "了解更多",
+    "getQuote": "获取报价",
+    "orderNow": "立即订购",
+    "viewDetails": "查看详情",
+    "addToCart": "加入购物车",
+    "buyNow": "立即购买",
+    "phone": "电话",
+    "email": "邮箱",
+    "address": "地址",
+    "website": "网站",
+    "followUs": "关注我们",
+    "newsletter": "新闻通讯",
+    "subscribe": "订阅",
+    "privacy": "隐私政策",
+    "terms": "条款和条件",
+    "shipping": "配送",
+    "returns": "退货",
+    "warranty": "保修"
+  },
+  "header": {
+    "title": "日巴拉家具",
+    "subtitle": "优质柚木家具",
+    "nav": {
+      "home": "首页",
+      "about": "关于我们",
+      "products": "产品",
+      "categories": "分类",
+      "blog": "博客",
+      "contact": "联系我们",
+      "shop": "商店"
+    },
+    "search": {
+      "placeholder": "搜索家具产品...",
+      "button": "搜索"
+    },
+    "language": "语言"
+  },
+  "hero": {
+    "title": "优质日巴拉柚木家具",
+    "subtitle": "精美柚木家具系列，现代与传统设计令人着迷",
+    "cta": {
+      "primary": "查看系列",
+      "secondary": "了解更多"
+    },
+    "features": {
+      "handcrafted": "手工制作",
+      "premium": "优质品质",
+      "sustainable": "可持续"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "自1985年以来制造优质柚木家具",
+    "description": "我们是一家拥有30多年经验的日巴拉柚木家具制造商。凭借对质量和创新的高度奉献，我们提供不仅美观而且耐用的家具。",
+    "mission": {
+      "title": "我们的使命",
+      "description": "提供优质柚木家具，采用永恒和可持续的设计，满足全球客户需求。"
+    },
+    "vision": {
+      "title": "我们的愿景",
+      "description": "成为印尼领先的柚木家具制造商，因质量和创新而获得国际认可。"
+    },
+    "values": {
+      "title": "我们的价值观",
+      "quality": {
+        "title": "高品质",
+        "description": "每个产品都按照最高质量标准制造"
+      },
+      "craftsmanship": {
+        "title": "手工制作",
+        "description": "由经验丰富的工匠使用传统技术制作"
+      },
+      "sustainability": {
+        "title": "可持续性",
+        "description": "使用可持续种植的柚木"
+      }
+    },
+    "stats": {
+      "experience": "30+年经验",
+      "products": "1000+产品",
+      "customers": "5000+客户",
+      "countries": "20+国家"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "随时帮助您的柚木家具需求",
+    "form": {
+      "name": "全名",
+      "email": "邮箱",
+      "phone": "电话号码",
+      "company": "公司",
+      "subject": "主题",
+      "message": "消息",
+      "submit": "发送消息",
+      "required": "必填"
+    },
+    "info": {
+      "title": "联系信息",
+      "address": "Jl. Raya Jepara No. 123, Jepara, Central Java 59411",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com",
+      "hours": "周一 - 周五: 08:00 - 17:00 WIB"
+    },
+    "map": {
+      "title": "我们的位置"
+    }
+  },
+  "products": {
+    "title": "我们的产品",
+    "subtitle": "优质柚木家具系列",
+    "categories": {
+      "all": "所有分类",
+      "dining": "餐桌",
+      "living": "客厅",
+      "bedroom": "卧室",
+      "office": "办公室",
+      "outdoor": "户外"
+    },
+    "filters": {
+      "price": "价格",
+      "material": "材质",
+      "style": "风格",
+      "color": "颜色"
+    },
+    "sort": {
+      "title": "排序",
+      "newest": "最新",
+      "oldest": "最旧",
+      "priceLow": "价格从低到高",
+      "priceHigh": "价格从高到低",
+      "name": "名称A-Z"
+    },
+    "pagination": {
+      "previous": "上一页",
+      "next": "下一页",
+      "page": "页面",
+      "of": "/"
+    }
+  },
+  "footer": {
+    "description": "拥有30多年经验的优质日巴拉柚木家具制造商。",
+    "quickLinks": {
+      "title": "快速链接",
+      "home": "首页",
+      "about": "关于我们",
+      "products": "产品",
+      "contact": "联系我们"
+    },
+    "categories": {
+      "title": "产品分类",
+      "dining": "餐桌",
+      "living": "客厅",
+      "bedroom": "卧室",
+      "office": "办公室"
+    },
+    "contact": {
+      "title": "联系我们",
+      "address": "Jl. Raya Jepara No. 123",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com"
+    },
+    "newsletter": {
+      "title": "新闻通讯",
+      "description": "获取最新产品更新和特别优惠",
+      "placeholder": "输入您的邮箱",
+      "subscribe": "订阅"
+    },
+    "copyright": "© 2024 Furniture Jepara. 版权所有。",
+    "privacy": "隐私政策",
+    "terms": "条款和条件"
+  }
+}

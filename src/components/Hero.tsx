@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import './Hero.css'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 
-interface HeroProps {
-  isIndonesian?: boolean
-}
+const Hero: React.FC = () => {
+  const { t } = useTranslation()
+  
+  // Handle download catalog if provided
 
-const Hero: React.FC<HeroProps> = ({ isIndonesian = false }) => {
   return (
     <section className="hero" role="banner" aria-labelledby="hero-title">
       <div className="hero-background">
@@ -25,17 +26,35 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false }) => {
       
       <div className="hero-content">
         <h1 id="hero-title" className="hero-title">
-          {isIndonesian ? "MANGALA LIVING" : "MANGALA LIVING"}
+          {t('hero.title')}
         </h1>
         <p className="hero-subtitle">
-          {isIndonesian 
-            ? "Sejak 1999, kami menghadirkan Industrial Set terbaik untuk cafe, hotel dan restoran dengan kualitas premium dari workshop Bekasi"
-            : "Since 1999, we deliver premium Industrial Sets for cafes, hotels and restaurants with superior quality from our Bekasi workshop"
-          }
+          {t('hero.subtitle')}
         </p>
-        <Link to="/shop" className="hero-btn">
-          {isIndonesian ? "• BELANJA SEKARANG" : "• SHOP NOW"}
-        </Link>
+        
+        <div className="hero-cta">
+          <Link to="/shop" className="btn btn-primary btn-large">
+            {t('hero.cta.primary')}
+          </Link>
+          <Link to="/about" className="btn btn-secondary btn-large">
+            {t('hero.cta.secondary')}
+          </Link>
+        </div>
+        
+        <div className="hero-features">
+          <div className="hero-feature">
+            <span className="feature-icon">✋</span>
+            <span>{t('hero.features.handcrafted')}</span>
+          </div>
+          <div className="hero-feature">
+            <span className="feature-icon">⭐</span>
+            <span>{t('hero.features.premium')}</span>
+          </div>
+          <div className="hero-feature">
+            <span className="feature-icon">🌱</span>
+            <span>{t('hero.features.sustainable')}</span>
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -1,0 +1,188 @@
+{
+  "common": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "products": "製品",
+    "contact": "お問い合わせ",
+    "shop": "ショップ",
+    "blog": "ブログ",
+    "search": "検索",
+    "menu": "メニュー",
+    "close": "閉じる",
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "success": "成功",
+    "readMore": "続きを読む",
+    "learnMore": "詳細を見る",
+    "getQuote": "見積もりを取得",
+    "orderNow": "今すぐ注文",
+    "viewDetails": "詳細を見る",
+    "addToCart": "カートに追加",
+    "buyNow": "今すぐ購入",
+    "phone": "電話",
+    "email": "メール",
+    "address": "住所",
+    "website": "ウェブサイト",
+    "followUs": "フォローする",
+    "newsletter": "ニュースレター",
+    "subscribe": "購読",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "shipping": "配送",
+    "returns": "返品",
+    "warranty": "保証"
+  },
+  "header": {
+    "title": "ジョグジャカルタ家具",
+    "subtitle": "プレミアム品質のチーク材家具",
+    "nav": {
+      "home": "ホーム",
+      "about": "会社概要",
+      "products": "製品",
+      "categories": "カテゴリー",
+      "blog": "ブログ",
+      "contact": "お問い合わせ",
+      "shop": "ショップ"
+    },
+    "search": {
+      "placeholder": "家具製品を検索...",
+      "button": "検索"
+    },
+    "language": "言語"
+  },
+  "hero": {
+    "title": "プレミアム品質ジョグジャカルタチーク材家具",
+    "subtitle": "モダンで伝統的なデザインの美しいチーク材家具コレクション",
+    "cta": {
+      "primary": "コレクションを見る",
+      "secondary": "詳細を見る"
+    },
+    "features": {
+      "handcrafted": "ハンドメイド",
+      "premium": "プレミアム品質",
+      "sustainable": "持続可能"
+    }
+  },
+  "about": {
+    "title": "会社概要",
+    "subtitle": "1985年からプレミアム品質のチーク材家具を製造",
+    "description": "私たちは30年以上の経験を持つジョグジャカルタチーク材家具メーカーです。品質と革新への高い献身により、美しく耐久性のある家具をお届けしています。",
+    "mission": {
+      "title": "私たちのミッション",
+      "description": "世界中のお客様のニーズを満たす、時代を超えた持続可能なデザインのプレミアム品質チーク材家具をお届けすること"
+    },
+    "vision": {
+      "title": "私たちのビジョン",
+      "description": "品質と革新で国際的に認められるインドネシアの主要チーク材家具メーカーになること"
+    },
+    "values": {
+      "title": "私たちの価値観",
+      "quality": {
+        "title": "高品質",
+        "description": "すべての製品は最高品質基準で製造されています"
+      },
+      "craftsmanship": {
+        "title": "ハンドメイド",
+        "description": "経験豊富な職人による伝統技法での製作"
+      },
+      "sustainability": {
+        "title": "持続可能性",
+        "description": "持続可能に育てられたチーク材の使用"
+      }
+    },
+    "stats": {
+      "experience": "30年以上の経験",
+      "products": "1000以上の製品",
+      "customers": "5000人以上の顧客",
+      "countries": "20以上の国"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "チーク材家具のニーズにお手伝いします",
+    "form": {
+      "name": "氏名",
+      "email": "メールアドレス",
+      "phone": "電話番号",
+      "company": "会社名",
+      "subject": "件名",
+      "message": "メッセージ",
+      "submit": "メッセージを送信",
+      "required": "必須"
+    },
+    "info": {
+      "title": "連絡先情報",
+      "address": "Jl. Raya Jepara No. 123, Jepara, Central Java 59411",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com",
+      "hours": "月曜日 - 金曜日: 08:00 - 17:00 WIB"
+    },
+    "map": {
+      "title": "所在地"
+    }
+  },
+  "products": {
+    "title": "私たちの製品",
+    "subtitle": "プレミアム品質チーク材家具コレクション",
+    "categories": {
+      "all": "すべてのカテゴリー",
+      "dining": "ダイニングテーブル",
+      "living": "リビングルーム",
+      "bedroom": "寝室",
+      "office": "オフィス",
+      "outdoor": "アウトドア"
+    },
+    "filters": {
+      "price": "価格",
+      "material": "素材",
+      "style": "スタイル",
+      "color": "色"
+    },
+    "sort": {
+      "title": "並び替え",
+      "newest": "新着順",
+      "oldest": "古い順",
+      "priceLow": "価格の安い順",
+      "priceHigh": "価格の高い順",
+      "name": "名前順"
+    },
+    "pagination": {
+      "previous": "前へ",
+      "next": "次へ",
+      "page": "ページ",
+      "of": "/"
+    }
+  },
+  "footer": {
+    "description": "30年以上の経験を持つプレミアム品質ジョグジャカルタチーク材家具メーカー。",
+    "quickLinks": {
+      "title": "クイックリンク",
+      "home": "ホーム",
+      "about": "会社概要",
+      "products": "製品",
+      "contact": "お問い合わせ"
+    },
+    "categories": {
+      "title": "製品カテゴリー",
+      "dining": "ダイニングテーブル",
+      "living": "リビングルーム",
+      "bedroom": "寝室",
+      "office": "オフィス"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "address": "Jl. Raya Jepara No. 123",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com"
+    },
+    "newsletter": {
+      "title": "ニュースレター",
+      "description": "最新の製品情報と特別オファーをお届けします",
+      "placeholder": "メールアドレスを入力",
+      "subscribe": "購読"
+    },
+    "copyright": "© 2024 Furniture Jepara. 全著作権所有。",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約"
+  }
+}

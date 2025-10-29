@@ -1,0 +1,188 @@
+{
+  "common": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "products": "Produkte",
+    "contact": "Kontakt",
+    "shop": "Shop",
+    "blog": "Blog",
+    "search": "Suchen",
+    "menu": "Menü",
+    "close": "Schließen",
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Erfolgreich",
+    "readMore": "Weiterlesen",
+    "learnMore": "Mehr erfahren",
+    "getQuote": "Angebot anfordern",
+    "orderNow": "Jetzt bestellen",
+    "viewDetails": "Details anzeigen",
+    "addToCart": "In den Warenkorb",
+    "buyNow": "Jetzt kaufen",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "address": "Adresse",
+    "website": "Website",
+    "followUs": "Folgen Sie uns",
+    "newsletter": "Newsletter",
+    "subscribe": "Abonnieren",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "shipping": "Versand",
+    "returns": "Rückgabe",
+    "warranty": "Garantie"
+  },
+  "header": {
+    "title": "Jepara Möbel",
+    "subtitle": "Premium Qualität Teakholz Möbel",
+    "nav": {
+      "home": "Startseite",
+      "about": "Über uns",
+      "products": "Produkte",
+      "categories": "Kategorien",
+      "blog": "Blog",
+      "contact": "Kontakt",
+      "shop": "Shop"
+    },
+    "search": {
+      "placeholder": "Möbelprodukte suchen...",
+      "button": "Suchen"
+    },
+    "language": "Sprache"
+  },
+  "hero": {
+    "title": "Premium Qualität Jepara Teakholz Möbel",
+    "subtitle": "Exquisite Sammlung von Teakholz Möbeln mit modernen und traditionellen Designs, die begeistern",
+    "cta": {
+      "primary": "Kollektion ansehen",
+      "secondary": "Mehr erfahren"
+    },
+    "features": {
+      "handcrafted": "Handgefertigt",
+      "premium": "Premium Qualität",
+      "sustainable": "Nachhaltig"
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "subtitle": "Seit 1985 Premium Qualität Teakholz Möbel herstellen",
+    "description": "Wir sind ein Jepara Teakholz Möbelhersteller mit über 30 Jahren Erfahrung. Mit hoher Hingabe an Qualität und Innovation präsentieren wir Möbel, die nicht nur schön, sondern auch langlebig sind.",
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Premium Qualität Teakholz Möbel mit zeitlosen und nachhaltigen Designs zu liefern, um Kundenbedürfnisse weltweit zu erfüllen."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Indonesiens führender Teakholz Möbelhersteller zu werden, international anerkannt für Qualität und Innovation."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "quality": {
+        "title": "Hohe Qualität",
+        "description": "Jedes Produkt wird mit höchsten Qualitätsstandards hergestellt"
+      },
+      "craftsmanship": {
+        "title": "Handwerkskunst",
+        "description": "Hergestellt von erfahrenen Handwerkern mit traditionellen Techniken"
+      },
+      "sustainability": {
+        "title": "Nachhaltigkeit",
+        "description": "Verwendung von nachhaltig angebautem Teakholz"
+      }
+    },
+    "stats": {
+      "experience": "30+ Jahre Erfahrung",
+      "products": "1000+ Produkte",
+      "customers": "5000+ Kunden",
+      "countries": "20+ Länder"
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Bereit, bei Ihren Teakholz Möbelbedürfnissen zu helfen",
+    "form": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail",
+      "phone": "Telefonnummer",
+      "company": "Unternehmen",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "submit": "Nachricht senden",
+      "required": "Erforderlich"
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "address": "Jl. Raya Jepara No. 123, Jepara, Central Java 59411",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com",
+      "hours": "Montag - Freitag: 08:00 - 17:00 WIB"
+    },
+    "map": {
+      "title": "Unser Standort"
+    }
+  },
+  "products": {
+    "title": "Unsere Produkte",
+    "subtitle": "Sammlung von Premium Qualität Teakholz Möbeln",
+    "categories": {
+      "all": "Alle Kategorien",
+      "dining": "Esstische",
+      "living": "Wohnzimmer",
+      "bedroom": "Schlafzimmer",
+      "office": "Büro",
+      "outdoor": "Outdoor"
+    },
+    "filters": {
+      "price": "Preis",
+      "material": "Material",
+      "style": "Stil",
+      "color": "Farbe"
+    },
+    "sort": {
+      "title": "Sortieren nach",
+      "newest": "Neueste",
+      "oldest": "Älteste",
+      "priceLow": "Preis aufsteigend",
+      "priceHigh": "Preis absteigend",
+      "name": "Name A-Z"
+    },
+    "pagination": {
+      "previous": "Zurück",
+      "next": "Weiter",
+      "page": "Seite",
+      "of": "von"
+    }
+  },
+  "footer": {
+    "description": "Premium Qualität Jepara Teakholz Möbelhersteller mit über 30 Jahren Erfahrung.",
+    "quickLinks": {
+      "title": "Schnelllinks",
+      "home": "Startseite",
+      "about": "Über uns",
+      "products": "Produkte",
+      "contact": "Kontakt"
+    },
+    "categories": {
+      "title": "Produktkategorien",
+      "dining": "Esstische",
+      "living": "Wohnzimmer",
+      "bedroom": "Schlafzimmer",
+      "office": "Büro"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "address": "Jl. Raya Jepara No. 123",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Erhalten Sie die neuesten Produktupdates und Sonderangebote",
+      "placeholder": "E-Mail eingeben",
+      "subscribe": "Abonnieren"
+    },
+    "copyright": "© 2024 Furniture Jepara. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "terms": "AGB"
+  }
+}

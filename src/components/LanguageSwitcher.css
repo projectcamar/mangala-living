@@ -1,0 +1,183 @@
+.language-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.language-switcher-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.2s ease;
+  min-width: 140px;
+  justify-content: space-between;
+}
+
+.language-switcher-button:hover {
+  border-color: #007bff;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.1);
+}
+
+.language-switcher-button:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.flag {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.language-name {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.arrow {
+  font-size: 10px;
+  color: #666;
+  transition: transform 0.2s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 4px;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+
+.language-option:hover {
+  background-color: #f8f9fa;
+}
+
+.language-option.active {
+  background-color: #e3f2fd;
+  color: #007bff;
+}
+
+.language-option .flag {
+  font-size: 16px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.language-option .language-name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.checkmark {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: auto;
+}
+
+/* RTL Support for Arabic */
+[dir="rtl"] .language-switcher-button {
+  text-align: right;
+}
+
+[dir="rtl"] .language-option {
+  text-align: right;
+}
+
+[dir="rtl"] .language-option .language-name {
+  text-align: right;
+}
+
+[dir="rtl"] .checkmark {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .language-switcher-button {
+    min-width: 120px;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+  
+  .language-dropdown {
+    max-height: 250px;
+  }
+  
+  .language-option {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .language-switcher-button {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .language-switcher-button:hover {
+    border-color: #63b3ed;
+    box-shadow: 0 2px 4px rgba(99, 179, 237, 0.1);
+  }
+  
+  .language-dropdown {
+    background: #2d3748;
+    border-color: #4a5568;
+  }
+  
+  .language-option {
+    color: #e2e8f0;
+  }
+  
+  .language-option:hover {
+    background-color: #4a5568;
+  }
+  
+  .language-option.active {
+    background-color: #2b6cb0;
+    color: #90cdf4;
+  }
+}
