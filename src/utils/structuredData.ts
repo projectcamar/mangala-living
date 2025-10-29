@@ -285,6 +285,58 @@ export const generateLocalBusinessStructuredData = () => {
         }
       }
     ],
-    "keywords": "furniture besi custom bekasi, industrial furniture bekasi, furniture café industrial bekasi, workshop furniture besi bekasi, jual furniture industrial jakarta bekasi, meja makan besi custom bekasi, meja café industrial besi, furniture besi hotel custom, bikin furniture besi custom jabodetabek, furniture besi untuk restoran"
+    "keywords": "furniture besi custom bekasi, industrial furniture bekasi, furniture café industrial bekasi, workshop furniture besi bekasi, jual furniture industrial jakarta bekasi, meja makan besi custom bekasi, meja café industrial besi, furniture besi hotel custom, bikin furniture besi custom jabodetabek, furniture besi untuk restoran, furniture bekasi barat, furniture bekasi timur, furniture bekasi selatan, furniture bekasi utara, furniture cikarang barat, furniture cikarang utara, furniture cikarang selatan, furniture cikarang timur, furniture cikarang pusat, furniture harapan indah, furniture summarecon bekasi, furniture jatiasih, furniture pekayon, furniture tambun, furniture pondok gede, furniture mustika jaya, furniture rawalumbu, furniture medan satria, furniture lippo cikarang, furniture jababeka"
+  }
+}
+
+// Generate Service Area Schema with Geo Coordinates for all Bekasi areas
+export const generateServiceAreaSchema = () => {
+  const bekasiAreas = [
+    { name: "Bekasi Barat", lat: -6.2367, lon: 106.9944, kelurahan: ["Bintara", "Kranji", "Kota Baru", "Jakasampurna"] },
+    { name: "Bekasi Timur", lat: -6.2440, lon: 107.0076, kelurahan: ["Jatiasih", "Pekayon", "Aren Jaya", "Duren Jaya"] },
+    { name: "Bekasi Selatan", lat: -6.2638, lon: 106.9891, kelurahan: ["Kayuringin Jaya", "Margajaya", "Jakasetia", "Pekayon Jaya"] },
+    { name: "Bekasi Utara", lat: -6.2131, lon: 107.0067, kelurahan: ["Harapan Indah", "Pejuang", "Teluk Pucung", "Kaliabang"] },
+    { name: "Cikarang Barat", lat: -6.2703, lon: 107.1483, kelurahan: ["Lippo Cikarang", "Cibatu", "Telaga Murni", "Pasir Gombong"] },
+    { name: "Cikarang Utara", lat: -6.2481, lon: 107.1529, kelurahan: ["Karang Asih", "Simpangan", "Sukamaju", "Danau Indah"] },
+    { name: "Cikarang Selatan", lat: -6.2887, lon: 107.1552, kelurahan: ["Jababeka", "Greenland", "Pasirsari", "Ciantra"] },
+    { name: "Cikarang Timur", lat: -6.2674, lon: 107.1730, kelurahan: ["Serang Baru", "Karangreja", "Jayamukti", "Sukamanah"] },
+    { name: "Cikarang Pusat", lat: -6.2813, lon: 107.1442, kelurahan: ["Taman Galaxy", "Lemahabang", "Hegarmukti", "Kalijaya"] },
+    { name: "Tambun Selatan", lat: -6.2546, lon: 107.0529, kelurahan: ["Sertajaya", "Mangunjaya", "Lambangjaya", "Setiadarma"] },
+    { name: "Tambun Utara", lat: -6.2178, lon: 107.0514, kelurahan: ["Satria Jaya", "Karang Satria", "Wanasari", "Karang Bahagia"] },
+    { name: "Pondok Gede", lat: -6.2759, lon: 106.9784, kelurahan: ["Jatiwaringin", "Jatibening", "Jatiraden", "Jatimakmur"] },
+    { name: "Mustika Jaya", lat: -6.2855, lon: 106.9924, kelurahan: ["Mustikasari", "Pedurenan", "Cimuning"] },
+    { name: "Rawalumbu", lat: -6.2600, lon: 106.9766, kelurahan: ["Bojong Rawalumbu", "Sepanjang Jaya", "Pengasinan"] },
+    { name: "Medan Satria", lat: -6.1951, lon: 107.0071, kelurahan: ["Kali Baru", "Pejuang", "Harapan Baru", "Medan Satria"] }
+  ]
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Furniture Besi Custom & Industrial Furniture Manufacturing",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Mangala Living",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Raya Setu Cikarang Bar.",
+        "addressLocality": "Bekasi",
+        "addressRegion": "Jawa Barat",
+        "postalCode": "17320",
+        "addressCountry": "ID"
+      }
+    },
+    "areaServed": bekasiAreas.map(area => ({
+      "@type": "City",
+      "name": area.name,
+      "containedIn": {
+        "@type": "AdministrativeArea",
+        "name": "Bekasi"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": area.lat,
+        "longitude": area.lon
+      }
+    }))
   }
 }

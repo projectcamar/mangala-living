@@ -848,6 +848,157 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Panduan lengkap jenis finishing furniture besi: powder coating, cat duco, elektrostatic painting. Perbandingan kualitas, harga, durabilitas, dan rekomendasi finishing terbaik untuk furniture industrial.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2025-12-27'
+  },
+  // GEO-TARGETED BLOG POSTS - HYPER-LOCAL BEKASI STRATEGY
+  // BEKASI BARAT
+  {
+    id: 94,
+    slug: 'furniture-industrial-bekasi-barat-custom-berkualitas',
+    title: 'Furniture Industrial Bekasi Barat: Custom Berkualitas untuk Café & Restoran',
+    category: 'Local Area Guide',
+    excerpt: 'Workshop furniture industrial di Bekasi Barat. Melayani Bintara, Kranji, Kota Baru, Jakasampurna. Custom meja kursi café, restoran, hotel. Free konsultasi & survey. Harga pabrik langsung.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-12-28'
+  },
+  // BEKASI TIMUR
+  {
+    id: 95,
+    slug: 'furniture-cafe-bekasi-timur-jatiasih-pekayon',
+    title: 'Furniture Café Bekasi Timur: Melayani Jatiasih, Pekayon, Aren Jaya',
+    category: 'Local Area Guide',
+    excerpt: 'Supplier furniture café industrial untuk Bekasi Timur. Coverage area: Jatiasih, Pekayon, Aren Jaya, Duren Jaya. Gratis delivery. Meja bar, kursi café, display rack custom. Workshop terpercaya.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-12-29'
+  },
+  // BEKASI SELATAN
+  {
+    id: 96,
+    slug: 'furniture-besi-bekasi-selatan-kayuringin-margajaya',
+    title: 'Furniture Besi Bekasi Selatan: Kayuringin, Margajaya, Jakasetia',
+    category: 'Local Area Guide',
+    excerpt: 'Jasa furniture besi custom Bekasi Selatan. Melayani Kayuringin Jaya, Margajaya, Jakasetia, Pekayon Jaya. Workshop dekat dengan lokasi Anda. Material premium, finishing powder coating, harga terjangkau.',
+    image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
+    date: '2025-12-30'
+  },
+  // BEKASI UTARA
+  {
+    id: 97,
+    slug: 'furniture-industrial-bekasi-utara-harapan-indah-summarecon',
+    title: 'Furniture Industrial Bekasi Utara: Harapan Indah, Summarecon, Pejuang',
+    category: 'Local Area Guide',
+    excerpt: 'Workshop furniture industrial Bekasi Utara. Coverage: Harapan Indah, Summarecon Bekasi, Pejuang, Teluk Pucung, Kaliabang. Spesialis café, restoran, hotel. Custom design, harga kompetitif.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-31'
+  },
+  // CIKARANG BARAT
+  {
+    id: 98,
+    slug: 'furniture-cafe-cikarang-barat-lippo-cikarang-cibatu',
+    title: 'Furniture Café Cikarang Barat: Lippo Cikarang, Cibatu, Telaga Murni',
+    category: 'Local Area Guide',
+    excerpt: 'Furniture café industrial Cikarang Barat. Melayani Lippo Cikarang, Cibatu, Telaga Murni, Pasir Gombong. Workshop dekat area industri. Custom furniture untuk café karyawan pabrik & F&B bisnis.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2026-01-01'
+  },
+  // CIKARANG UTARA
+  {
+    id: 99,
+    slug: 'furniture-restoran-cikarang-utara-karang-asih-simpangan',
+    title: 'Furniture Restoran Cikarang Utara: Karang Asih, Simpangan, Sukamaju',
+    category: 'Local Area Guide',
+    excerpt: 'Supplier furniture restoran Cikarang Utara. Area: Karang Asih, Simpangan, Sukamaju, Danau Indah. Spesialis meja makan industrial, kursi restoran, furniture outdoor. Produksi lokal Bekasi.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2026-01-02'
+  },
+  // CIKARANG SELATAN
+  {
+    id: 100,
+    slug: 'furniture-industrial-cikarang-selatan-jababeka-greenland',
+    title: 'Furniture Industrial Cikarang Selatan: Jababeka, Greenland, Pasirsari',
+    category: 'Local Area Guide',
+    excerpt: 'Workshop furniture industrial Cikarang Selatan. Coverage Jababeka, Greenland International, Pasirsari, Ciantra. Melayani corporate office, café pabrik, kantin karyawan. Harga volume discount.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2026-01-03'
+  },
+  // CIKARANG TIMUR
+  {
+    id: 101,
+    slug: 'furniture-hotel-cikarang-timur-serang-baru-karangreja',
+    title: 'Furniture Hotel Cikarang Timur: Serang Baru, Karangreja, Jayamukti',
+    category: 'Local Area Guide',
+    excerpt: 'Furniture hotel industrial Cikarang Timur. Melayani Serang Baru, Karangreja, Jayamukti, Sukamanah. Spesialis lobby furniture, restaurant hotel, room furniture. Project hotel & homestay.',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop',
+    date: '2026-01-04'
+  },
+  // CIKARANG PUSAT
+  {
+    id: 102,
+    slug: 'furniture-cafe-cikarang-pusat-taman-galaxy-lemahabang',
+    title: 'Furniture Café Cikarang Pusat: Taman Galaxy, Lemahabang, Hegarmukti',
+    category: 'Local Area Guide',
+    excerpt: 'Furniture café industrial Cikarang Pusat. Area coverage: Taman Galaxy, Lemahabang, Hegarmukti, Kalijaya. Custom meja bar, kursi café, display rack. Free konsultasi desain interior.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2026-01-05'
+  },
+  // TAMBUN SELATAN
+  {
+    id: 103,
+    slug: 'furniture-industrial-tambun-selatan-sertajaya-mangunjaya',
+    title: 'Furniture Industrial Tambun Selatan: Sertajaya, Mangunjaya, Lambangjaya',
+    category: 'Local Area Guide',
+    excerpt: 'Workshop furniture industrial Tambun Selatan. Melayani Sertajaya, Mangunjaya, Lambangjaya, Setiadarma. Produksi furniture café, restoran, kantor. Material berkualitas, harga terjangkau.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2026-01-06'
+  },
+  // TAMBUN UTARA
+  {
+    id: 104,
+    slug: 'furniture-custom-tambun-utara-satria-jaya-karang-satria',
+    title: 'Furniture Custom Tambun Utara: Satria Jaya, Karang Satria, Wanasari',
+    category: 'Local Area Guide',
+    excerpt: 'Jasa furniture custom Tambun Utara. Coverage: Satria Jaya, Karang Satria, Wanasari, Karang Bahagia. Spesialis furniture besi industrial untuk café & restoran. Gratis delivery area Tambun.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2026-01-07'
+  },
+  // PONDOK GEDE
+  {
+    id: 105,
+    slug: 'furniture-cafe-pondok-gede-jatiwaringin-jatibening',
+    title: 'Furniture Café Pondok Gede: Jatiwaringin, Jatibening, Jatiraden',
+    category: 'Local Area Guide',
+    excerpt: 'Furniture café industrial Pondok Gede. Melayani Jatiwaringin, Jatibening, Jatiraden, Jatimakmur. Workshop Bekasi melayani border Jakarta-Bekasi. Custom design, fast production 20 hari.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2026-01-08'
+  },
+  // MUSTIKA JAYA
+  {
+    id: 106,
+    slug: 'furniture-restoran-mustika-jaya-mustikasari-pedurenan',
+    title: 'Furniture Restoran Mustika Jaya: Mustikasari, Pedurenan, Cimuning',
+    category: 'Local Area Guide',
+    excerpt: 'Supplier furniture restoran Mustika Jaya. Area: Mustikasari, Pedurenan, Cimuning. Meja makan industrial, kursi restoran, bar set. Material premium, finishing powder coating tahan lama.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2026-01-09'
+  },
+  // RAWALUMBU
+  {
+    id: 107,
+    slug: 'furniture-industrial-rawalumbu-bojong-rawalumbu-sepanjang-jaya',
+    title: 'Furniture Industrial Rawalumbu: Bojong Rawalumbu, Sepanjang Jaya',
+    category: 'Local Area Guide',
+    excerpt: 'Workshop furniture industrial Rawalumbu. Coverage: Bojong Rawalumbu, Sepanjang Jaya, Pengasinan. Dekat pintu tol, mudah akses. Furniture café, restoran, office. Custom & ready design.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2026-01-10'
+  },
+  // MEDAN SATRIA
+  {
+    id: 108,
+    slug: 'furniture-cafe-medan-satria-kali-baru-pejuang',
+    title: 'Furniture Café Medan Satria: Kali Baru, Pejuang, Harapan Baru',
+    category: 'Local Area Guide',
+    excerpt: 'Furniture café industrial Medan Satria. Melayani Kali Baru, Pejuang, Harapan Baru, Medan Satria. Workshop furniture besi custom untuk café modern. Harga kompetitif, kualitas terjamin.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2026-01-11'
   }
 ]
 
