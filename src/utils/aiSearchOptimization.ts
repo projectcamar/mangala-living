@@ -55,7 +55,58 @@ export const generateAIOptimizedStructuredData = () => {
             "@type": "Product",
             "name": "Industrial Furniture",
             "category": "Furniture",
-            "description": "Premium industrial furniture made from high-quality materials"
+            "description": "Premium industrial furniture made from high-quality materials",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "127",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          },
+          "price": "1500000",
+          "priceCurrency": "IDR",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2026-12-31",
+          "url": "https://mangala-living.com/shop",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 30,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "IDR"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "ID"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "businessDays": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+              },
+              "cutoffTime": "14:00",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 3,
+                "maxValue": 5,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 3,
+                "unitCode": "DAY"
+              }
+            }
           }
         }
       ]
