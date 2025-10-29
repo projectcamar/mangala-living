@@ -5,6 +5,7 @@ import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
+import ServiceAreasSection from '../components/ServiceAreasSection'
 import { getPostBySlug, BLOG_POSTS } from '../data/blog'
 import { getBlogPostContent } from '../data/blogContent'
 import { generateBlogPostingSchema } from '../utils/structuredData'
@@ -66,6 +67,10 @@ const BlogPost: React.FC = () => {
 
   // Generate BlogPosting Schema
   const blogSchema = generateBlogPostingSchema(post)
+
+  // Check if this blog post should show Service Areas Section
+  // Show only for "Local Area Guide" category (geo-targeted posts)
+  const shouldShowServiceAreas = post.category === 'Local Area Guide'
 
   return (
     <div className="blog-post-page">
@@ -184,6 +189,9 @@ const BlogPost: React.FC = () => {
           </aside>
         </div>
       </div>
+
+      {/* Service Areas Section - Only for Local Area Guide posts */}
+      {shouldShowServiceAreas && <ServiceAreasSection isIndonesian={true} />}
 
       <Footer />
     </div>

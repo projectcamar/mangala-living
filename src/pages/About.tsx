@@ -5,6 +5,7 @@ import { Diamond, DollarSign, Wrench, Globe } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import ServiceAreasSection from '../components/ServiceAreasSection'
 import { generateLocalBusinessStructuredData, generateFAQSchema } from '../utils/structuredData'
 import { getFAQBySlug } from '../data/faq'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
@@ -275,6 +276,9 @@ const About: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Service Areas Section */}
+      <ServiceAreasSection isIndonesian={isIndonesian} />
 
       <Footer />
     </div>
