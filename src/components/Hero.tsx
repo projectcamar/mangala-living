@@ -16,12 +16,13 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false }) => {
           alt="Industrial Furniture Collection by Mangala Living" 
           className="hero-bg-image"
           loading="eager"
-          fetchPriority="high"
+          fetchpriority="high"
+          decoding="async"
           width="1920"
           height="1080"
         />
         <div className="hero-overlay"></div>
-        </div>
+      </div>
       
       <div className="hero-content">
         <h1 id="hero-title" className="hero-title">

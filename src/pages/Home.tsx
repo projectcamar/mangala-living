@@ -20,46 +20,42 @@ import { generateAIOptimizedStructuredData, generateFAQStructuredData, generateW
 
 const Home: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(false)
-  const [isLoading, setIsLoading] = useState(true)
   const location = useLocation()
 
   useEffect(() => {
-    // Check URL for language prefix first
+    // Check URL for language prefix first (synchronous - no blocking)
     const path = location.pathname
     if (path.startsWith('/id')) {
       setIsIndonesian(true)
-      setIsLoading(false)
       return
     }
     if (path.startsWith('/eng')) {
       setIsIndonesian(false)
-      setIsLoading(false)
       return
     }
 
-    // If no language prefix, detect from IP
-    const detectLocation = async () => {
+    // Immediately check browser language (synchronous - no blocking)
+    const browserLang = navigator.language || navigator.languages?.[0]
+    if (browserLang?.startsWith('id')) {
+      setIsIndonesian(true)
+    }
+
+    // Non-blocking IP detection in background (doesn't delay render)
+    const detectLocationAsync = async () => {
       try {
-        // Try to get location from IP
         const response = await fetch('https://ipapi.co/json/')
         const data = await response.json()
         
-        if (data.country_code === 'ID') {
+        if (data.country_code === 'ID' && !path.startsWith('/eng')) {
           setIsIndonesian(true)
         }
       } catch (error) {
-        console.log('IP detection failed, checking browser language')
-        // Fallback: check browser language
-        const browserLang = navigator.language || navigator.languages?.[0]
-        if (browserLang?.startsWith('id')) {
-          setIsIndonesian(true)
-        }
-      } finally {
-        setIsLoading(false)
+        console.log('IP detection failed, using browser language')
       }
     }
 
-    detectLocation()
+    // Run in background without blocking
+    detectLocationAsync()
   }, [location.pathname])
 
   // Indonesian translations
@@ -76,35 +72,6 @@ const Home: React.FC = () => {
     ogDescription: isIndonesian
       ? "Manufacturer furniture industrial custom untuk cafe, restoran, hotel. Pengalaman 25+ tahun, 1000+ klien puas. Workshop di Bekasi. Harga langsung pabrik."
       : "Manufacturer industrial furniture custom untuk cafe, restoran, hotel. Pengalaman 25+ tahun, 1000+ klien puas. Workshop di Bekasi. Harga langsung pabrik."
-  }
-
-  if (isLoading) {
-    return (
-      <div className="home">
-        <div style={{ 
-          display: 'flex', 
-          justifyContent: 'center', 
-          alignItems: 'center', 
-          height: '100vh',
-          background: '#f8f9fa'
-        }}>
-          <div style={{ textAlign: 'center' }}>
-            <div style={{
-              border: '4px solid #f3f3f3',
-              borderTop: '4px solid #ff6b35',
-              borderRadius: '50%',
-              width: '40px',
-              height: '40px',
-              animation: 'spin 1s linear infinite',
-              margin: '0 auto 20px'
-            }}></div>
-            <p style={{ color: '#666', margin: 0 }}>
-              {isIndonesian ? "Memuat..." : "Loading..."}
-            </p>
-          </div>
-        </div>
-      </div>
-    )
   }
 
   return (
@@ -431,18 +398,36 @@ const Home: React.FC = () => {
       <Header isIndonesian={isIndonesian} />
       <Hero isIndonesian={isIndonesian} />
       
+      {/* Lazy load below-the-fold content for better Speed Index */}
+      <Suspense fallback={<div style={{ minHeight: '400px' }} />}>
+        <CategoriesSection isIndonesian={isIndonesian} />
+      </Suspense>
       
-      <CategoriesSection isIndonesian={isIndonesian} />
-      <BestSellersSection isIndonesian={isIndonesian} />
-      <OurProductsSection isIndonesian={isIndonesian} />
-      <MessageSection isIndonesian={isIndonesian} />
-      <Footer isIndonesian={isIndonesian} />
+      <Suspense fallback={<div style={{ minHeight: '400px' }} />}>
+        <BestSellersSection isIndonesian={isIndonesian} />
+      </Suspense>
       
-      {/* AI Search Optimized Content */}
-      <AISearchOptimizedContent isIndonesian={isIndonesian} />
+      <Suspense fallback={<div style={{ minHeight: '400px' }} />}>
+        <OurProductsSection isIndonesian={isIndonesian} />
+      </Suspense>
       
-      {/* AI Search Features */}
-      <AISearchFeatures isIndonesian={isIndonesian} />
+      <Suspense fallback={<div style={{ minHeight: '300px' }} />}>
+        <MessageSection isIndonesian={isIndonesian} />
+      </Suspense>
+      
+      <Suspense fallback={<div style={{ minHeight: '400px' }} />}>
+        <Footer isIndonesian={isIndonesian} />
+      </Suspense>
+      
+      {/* AI Search Optimized Content - Hidden, no visual impact */}
+      <Suspense fallback={null}>
+        <AISearchOptimizedContent isIndonesian={isIndonesian} />
+      </Suspense>
+      
+      {/* AI Search Features - Hidden, no visual impact */}
+      <Suspense fallback={null}>
+        <AISearchFeatures isIndonesian={isIndonesian} />
+      </Suspense>
     </div>
   )
 }
