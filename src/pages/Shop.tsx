@@ -157,13 +157,58 @@ const Shop: React.FC = () => {
                 "item": {
                   "@type": "Product",
                   "name": product.name,
+                  "description": `Premium industrial ${product.name} dari Mangala Living. Furniture besi berkualitas untuk cafe, restoran, dan kantor.`,
                   "url": `https://mangala-living.com/product/${product.slug}`,
                   "image": product.image,
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Mangala Living"
+                  },
                   "offers": {
                     "@type": "Offer",
                     "price": product.price.replace(/[^\d]/g, ''),
                     "priceCurrency": "IDR",
-                    "availability": "https://schema.org/InStock"
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2025-12-31",
+                    "url": `https://mangala-living.com/product/${product.slug}`,
+                    "hasMerchantReturnPolicy": {
+                      "@type": "MerchantReturnPolicy",
+                      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                      "merchantReturnDays": 30,
+                      "returnMethod": "https://schema.org/ReturnByMail",
+                      "returnFees": "https://schema.org/FreeReturn"
+                    },
+                    "shippingDetails": {
+                      "@type": "OfferShippingDetails",
+                      "shippingRate": {
+                        "@type": "MonetaryAmount",
+                        "value": "0",
+                        "currency": "IDR"
+                      },
+                      "shippingDestination": {
+                        "@type": "DefinedRegion",
+                        "addressCountry": "ID"
+                      },
+                      "deliveryTime": {
+                        "@type": "ShippingDeliveryTime",
+                        "handlingTime": {
+                          "@type": "QuantitativeValue",
+                          "minValue": 3,
+                          "maxValue": 5,
+                          "unitCode": "DAY"
+                        },
+                        "transitTime": {
+                          "@type": "QuantitativeValue",
+                          "minValue": 1,
+                          "maxValue": 3,
+                          "unitCode": "DAY"
+                        }
+                      }
+                    },
+                    "seller": {
+                      "@type": "Organization",
+                      "name": "Mangala Living"
+                    }
                   }
                 }
               }))
