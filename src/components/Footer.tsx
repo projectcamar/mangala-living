@@ -122,13 +122,13 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
           <div className="footer-column">
                       <h4>{isIndonesian ? "Tautan Cepat" : "Quick Links"}</h4>
                       <ul className="footer-links">
-                        <li><Link to="/about">About</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-                        <li><Link to="/shipping-information">{isIndonesian ? "Pengiriman" : "Shipping"}</Link></li>
-                        <li><Link to="/contact-us">Contact Us</Link></li>
-                        <li><Link to="/custom-order">{isIndonesian ? "Custom Order" : "Custom Order"}</Link></li>
-                        <li><Link to="/partnership">{isIndonesian ? "Kerja Sama" : "Partnership"}</Link></li>
-                        <li><Link to="/terms-of-service">{isIndonesian ? "Syarat & Ketentuan" : "Terms of Service"}</Link></li>
+                        <li><Link to="/about" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About</Link></li>
+              <li><Link to="/blog" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Blog</Link></li>
+                        <li><Link to="/shipping-information" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{isIndonesian ? "Pengiriman" : "Shipping"}</Link></li>
+                        <li><Link to="/contact-us" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Contact Us</Link></li>
+                        <li><Link to="/custom-order" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{isIndonesian ? "Custom Order" : "Custom Order"}</Link></li>
+                        <li><Link to="/partnership" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{isIndonesian ? "Kerja Sama" : "Partnership"}</Link></li>
+                        <li><Link to="/terms-of-service" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{isIndonesian ? "Syarat & Ketentuan" : "Terms of Service"}</Link></li>
             </ul>
           </div>
           
@@ -136,16 +136,16 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
           <div className="footer-column">
             <h4>Categories</h4>
             <ul className="footer-links">
-              <li><Link to="/product-category/new-arrivals">New Arrivals</Link></li>
-              <li><Link to="/product-category/lounge-seating-set">Lounge Set</Link></li>
-              <li><Link to="/product-category/industrial-sofa-bench">Sofa Bench</Link></li>
-              <li><Link to="/product-category/dining-set-collection">Dining Set</Link></li>
-              <li><Link to="/product-category/bar-furniture-collection">Bar Set</Link></li>
-              <li><Link to="/product-category/balcony-outdoor-collection">Outdoor</Link></li>
-              <li><Link to="/product-category/daybed-lounge-frame">Daybed</Link></li>
-              <li><Link to="/product-category/accessories-storage">Storage</Link></li>
-              <li><Link to="/product-category/table-collection">Tables</Link></li>
-              <li><Link to="/product-category/dining-table-collection">Dine Table</Link></li>
+              <li><Link to="/product-category/new-arrivals" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>New Arrivals</Link></li>
+              <li><Link to="/product-category/lounge-seating-set" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Lounge Set</Link></li>
+              <li><Link to="/product-category/industrial-sofa-bench" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Sofa Bench</Link></li>
+              <li><Link to="/product-category/dining-set-collection" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Dining Set</Link></li>
+              <li><Link to="/product-category/bar-furniture-collection" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Bar Set</Link></li>
+              <li><Link to="/product-category/balcony-outdoor-collection" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Outdoor</Link></li>
+              <li><Link to="/product-category/daybed-lounge-frame" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Daybed</Link></li>
+              <li><Link to="/product-category/accessories-storage" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Storage</Link></li>
+              <li><Link to="/product-category/table-collection" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Tables</Link></li>
+              <li><Link to="/product-category/dining-table-collection" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Dine Table</Link></li>
             </ul>
           </div>
           
