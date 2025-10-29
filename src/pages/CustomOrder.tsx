@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { Wrench, Palette, Truck, CheckCircle, MessageCircle } from 'lucide-react'
+import { Wrench, Palette, Truck, CheckCircle, MessageCircle, Package } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -250,6 +250,18 @@ const CustomOrder: React.FC = () => {
                 {isIndonesian 
                   ? "Proses ekspor dilakukan dengan sistem yang tertata dan transparan."
                   : "Export process is carried out with a well-organized and transparent system."}
+              </p>
+            </div>
+
+            <div className="custom-order-step">
+              <div className="custom-order-step-icon">
+                <Package size={48} strokeWidth={1.5} />
+              </div>
+              <h3 className="custom-order-step-title">{isIndonesian ? 'Dokumentasi Lengkap' : 'Complete Documentation'}</h3>
+              <p className="custom-order-step-description">
+                {isIndonesian 
+                  ? "Dilengkapi dengan dokumentasi produk dan panduan perawatan untuk ketahanan jangka panjang."
+                  : "Comes with product documentation and maintenance guide for long-term durability."}
               </p>
             </div>
           </div>
