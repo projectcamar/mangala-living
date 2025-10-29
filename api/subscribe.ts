@@ -9,7 +9,7 @@ export default async function handler(
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { firstName, email } = req.body;
+  const { firstName, email, whatsapp } = req.body;
 
   // Validate input
   if (!firstName || !email) {
@@ -34,19 +34,21 @@ export default async function handler(
     const emailData = {
       from: 'Mangala Living <onboarding@resend.dev>', // Will be replaced with verified domain
       to: 'rioanggaraclub@gmail.com',
-      subject: `New Subscription: ${firstName}`,
+      subject: `New Catalog Download: ${firstName}`,
       html: `
-        <h2>New Website Subscription</h2>
+        <h2>New Catalog Download Request</h2>
         <p><strong>First Name:</strong> ${firstName}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Subscribed at:</strong> ${new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' })}</p>
+        ${whatsapp ? `<p><strong>WhatsApp Number:</strong> ${whatsapp}</p>` : ''}
+        <p><strong>Downloaded at:</strong> ${new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' })}</p>
       `,
       text: `
-        New Website Subscription
+        New Catalog Download Request
         
         First Name: ${firstName}
         Email: ${email}
-        Subscribed at: ${new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' })}
+        ${whatsapp ? `WhatsApp Number: ${whatsapp}` : ''}
+        Downloaded at: ${new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' })}
       `
     };
 
