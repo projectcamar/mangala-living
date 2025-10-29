@@ -7,11 +7,13 @@
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, top 0.3s ease;
+  margin: 0;
+  border: none;
 }
 
-/* Push header down when announcement bar is visible */
+/* Push header down when announcement bar is visible - exact height matching */
 body:has(.announcement-bar) .header {
-  top: 48px;
+  top: 36px;
 }
 
 /* Language Switcher Styles */
@@ -473,6 +475,7 @@ body:has(.announcement-bar) .header {
 .header-top {
   border-bottom: 1px solid #ddd;
   padding: 0.875rem 0;
+  margin: 0;
 }
 
 .header-top-content {
@@ -804,12 +807,12 @@ body:has(.announcement-bar) .header {
 
   /* Adjust header position for mobile when announcement bar is visible */
   body:has(.announcement-bar) .header {
-    top: 80px;
+    top: 32px;
   }
 }
 
 @media (max-width: 480px) {
   body:has(.announcement-bar) .header {
-    top: 90px;
+    top: 28px;
   }
 }
