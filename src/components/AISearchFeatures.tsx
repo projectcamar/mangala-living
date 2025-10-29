@@ -142,7 +142,7 @@ const AISearchFeatures: React.FC<AISearchFeaturesProps> = ({ isIndonesian }) => 
         <meta itemProp="warranty" content="1 year" />
         <meta itemProp="itemCondition" content="New" />
         <meta itemProp="availability" content="InStock" />
-        <meta itemProp="priceValidUntil" content="2025-12-31" />
+        <meta itemProp="priceValidUntil" content="2026-12-31" />
       </div>
 
       {/* Shipping Information for AI */}

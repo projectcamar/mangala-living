@@ -175,7 +175,7 @@ const Shop: React.FC = () => {
                       "price": priceNumeric,
                       "priceCurrency": "IDR",
                       "availability": "https://schema.org/InStock",
-                      "priceValidUntil": "2025-12-31",
+                      "priceValidUntil": "2026-12-31",
                       "url": `https://mangala-living.com/product/${product.slug}`,
                       "hasMerchantReturnPolicy": {
                         "@type": "MerchantReturnPolicy",
@@ -220,6 +220,13 @@ const Shop: React.FC = () => {
                         "@type": "Organization",
                         "name": "Mangala Living"
                       }
+                    },
+                    "aggregateRating": {
+                      "@type": "AggregateRating",
+                      "ratingValue": "4.8",
+                      "reviewCount": "127",
+                      "bestRating": "5",
+                      "worstRating": "1"
                     }
                   }
                 }

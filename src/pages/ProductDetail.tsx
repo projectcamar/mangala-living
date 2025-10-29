@@ -286,7 +286,7 @@ const ProductDetail: React.FC = () => {
         "price": numericPrice,
         "priceCurrency": "IDR",
         "availability": "https://schema.org/InStock",
-        "priceValidUntil": "2025-12-31",
+        "priceValidUntil": "2026-12-31",
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
           "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
