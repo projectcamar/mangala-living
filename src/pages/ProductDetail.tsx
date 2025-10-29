@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
-import { generateCanonicalUrl, generateHreflangTags } from '../utils/seo'
+import { generateCanonicalUrl, generateHreflangTags, getProductImageUrl } from '../utils/seo'
 import './ProductDetail.css'
 
 interface ProductDetail {
@@ -260,13 +260,15 @@ const ProductDetail: React.FC = () => {
   const generateStructuredData = () => {
     const price = product.price.replace(/[^\d]/g, '') // Extract numeric price
     const numericPrice = parseInt(price) || 0
+    // Convert all images to full URLs
+    const imageUrls = product.images.map((img: string) => getProductImageUrl(img, product.slug))
     
     return {
       "@context": "https://schema.org",
       "@type": "Product",
       "name": product.name,
       "description": product.description,
-      "image": product.images,
+      "image": imageUrls,
       "brand": {
         "@type": "Brand",
         "name": "Mangala Living"
