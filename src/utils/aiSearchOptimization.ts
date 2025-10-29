@@ -157,7 +157,7 @@ export const generateProductStructuredData = (product: any) => {
       "price": priceNumeric,
       "priceCurrency": "IDR",
       "availability": "https://schema.org/InStock",
-      "priceValidUntil": "2025-12-31",
+      "priceValidUntil": "2026-12-31",
       "url": `https://mangala-living.com/product/${product.slug}`,
       "hasMerchantReturnPolicy": {
         "@type": "MerchantReturnPolicy",

@@ -171,7 +171,7 @@ const Home: React.FC = () => {
                     "price": "3500000",
                     "priceCurrency": "IDR",
                     "availability": "https://schema.org/InStock",
-                    "priceValidUntil": "2025-12-31",
+                    "priceValidUntil": "2026-12-31",
                     "url": "https://mangala-living.com/product/frame-loft-bookshelf",
                     "hasMerchantReturnPolicy": {
                       "@type": "MerchantReturnPolicy",
@@ -241,7 +241,7 @@ const Home: React.FC = () => {
                     "price": "3500000",
                     "priceCurrency": "IDR",
                     "availability": "https://schema.org/InStock",
-                    "priceValidUntil": "2025-12-31",
+                    "priceValidUntil": "2026-12-31",
                     "url": "https://mangala-living.com/product/balcony-bar-table",
                     "hasMerchantReturnPolicy": {
                       "@type": "MerchantReturnPolicy",
@@ -311,7 +311,7 @@ const Home: React.FC = () => {
                     "price": "450000",
                     "priceCurrency": "IDR",
                     "availability": "https://schema.org/InStock",
-                    "priceValidUntil": "2025-12-31",
+                    "priceValidUntil": "2026-12-31",
                     "url": "https://mangala-living.com/product/beam-industrial-bar-chair",
                     "hasMerchantReturnPolicy": {
                       "@type": "MerchantReturnPolicy",
