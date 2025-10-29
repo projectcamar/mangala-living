@@ -1,5 +1,4 @@
 // Import images
-import benchCornerImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
 import mejaMakanImage from '../assets/meja-industrial-mejamakan.webp'
 import kabinetLemariImage from '../assets/Kabinet-Lemari-industrial.webp'
 import mejaKerjaImage from '../assets/Meja-Kerja-Rak-Meja-Belajar-custom.webp'
