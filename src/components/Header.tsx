@@ -12,7 +12,6 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
@@ -22,9 +21,6 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
   const navigate = useNavigate()
   const location = useLocation()
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
 
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen)
@@ -350,7 +346,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
       <div className="header-bottom">
         <div className="container">
           {/* Desktop Navigation */}
-          <nav className={`category-nav ${isMenuOpen ? 'nav-open' : ''}`}>
+          <nav className="category-nav">
             <Link to="/product-category/new-arrivals" className="category-link">New Arrivals</Link>
             <Link to="/product-category/lounge-seating-set" className="category-link">Lounge Set</Link>
             <Link to="/product-category/industrial-sofa-bench" className="category-link">Sofa Bench</Link>
@@ -395,16 +391,6 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
               </button>
             )}
           </nav>
-
-            <button 
-            className="mobile-menu-toggle"
-              onClick={toggleMenu}
-              aria-label={isIndonesian ? "Buka menu" : "Toggle menu"}
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
         </div>
       </div>
 
