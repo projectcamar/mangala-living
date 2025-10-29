@@ -1,5 +1,4 @@
 // Import images
-import benchCornerImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
 import mejaMakanImage from '../assets/meja-industrial-mejamakan.webp'
 import kabinetLemariImage from '../assets/Kabinet-Lemari-industrial.webp'
 import mejaKerjaImage from '../assets/Meja-Kerja-Rak-Meja-Belajar-custom.webp'
@@ -15,6 +14,7 @@ import kursiBarStallImage from '../assets/Kursi-Bar-kursi-stall-chair.webp'
 import rakDisplayPartisiImage from '../assets/rak-display-partisi-industrial-besi.webp'
 import rakGantungIndustrialImage from '../assets/rak-gantung-industrial.webp'
 import daybedBoneOnlyImage from '../assets/industrial-daybed-boneonly.webp'
+import loungeSetCoffeeTableImage from '../assets/longue-set-coffee-table.webp'
 
 export interface Product {
   id: number
@@ -31,7 +31,7 @@ export const ALL_PRODUCTS: Product[] = [
   { id: 2, slug: 'balcony-bar-table', name: 'Balcony Bar Table', categories: ['New Arrivals', 'Bar Set', 'Outdoor'], price: 'Rp3.500.000', image: balconyBarTableImage },
   
   // Lounge Set
-  { id: 3, slug: 'bench-corner-lounge', name: 'Bench Corner Lounge', categories: ['Lounge Set', 'Sofa Bench'], price: 'Rp2.800.000', image: benchCornerImage },
+  { id: 3, slug: 'lounge-set-coffee-table', name: 'Lounge Set Coffee Table', categories: ['Lounge Set', 'Tables'], price: 'Rp2.000.000', image: loungeSetCoffeeTableImage },
   
   // Daybed
   { id: 16, slug: 'industrial-daybed-frame', name: 'Industrial Daybed Frame', categories: ['Daybed'], price: 'Rp3.200.000', image: daybedBoneOnlyImage },
