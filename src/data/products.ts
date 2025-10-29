@@ -15,6 +15,7 @@ import rakDisplayPartisiImage from '../assets/rak-display-partisi-industrial-bes
 import rakGantungIndustrialImage from '../assets/rak-gantung-industrial.webp'
 import daybedBoneOnlyImage from '../assets/industrial-daybed-boneonly.webp'
 import loungeSetCoffeeTableImage from '../assets/longue-set-coffee-table.webp'
+import benchCornerImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
 
 export interface Product {
   id: number
@@ -32,6 +33,7 @@ export const ALL_PRODUCTS: Product[] = [
   
   // Lounge Set
   { id: 3, slug: 'lounge-set-coffee-table', name: 'Lounge Set Coffee Table', categories: ['Lounge Set', 'Tables'], price: 'Rp2.000.000', image: loungeSetCoffeeTableImage },
+  { id: 17, slug: 'bench-corner-lounge', name: 'Bench Corner Lounge', categories: ['Lounge Set', 'Sofa Bench'], price: 'Rp3.800.000', image: benchCornerImage },
   
   // Daybed
   { id: 16, slug: 'industrial-daybed-frame', name: 'Industrial Daybed Frame', categories: ['Daybed'], price: 'Rp3.200.000', image: daybedBoneOnlyImage },
