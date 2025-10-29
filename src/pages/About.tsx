@@ -5,6 +5,8 @@ import { Diamond, DollarSign, Wrench, Globe } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { generateLocalBusinessStructuredData, generateFAQSchema } from '../utils/structuredData'
+import { getFAQBySlug } from '../data/faq'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import showroomImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
 import './About.css'
@@ -61,18 +63,37 @@ const About: React.FC = () => {
     return null
   }
 
+  // Generate LocalBusiness Structured Data
+  const localBusinessSchema = generateLocalBusinessStructuredData()
+  
+  // Get FAQ for About page
+  const faqData = getFAQBySlug('furniture-besi-custom-bekasi')
+  const faqSchema = faqData ? generateFAQSchema(faqData.faqs) : null
+
   return (
     <div className="about-page">
       <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet>
-        <title>{isIndonesian ? 'Tentang Kami - Mangala Living' : 'About Us - Mangala Living'}</title>
+        <title>{isIndonesian ? 'Tentang Kami - Mangala Living Workshop Furniture Industrial Bekasi' : 'About Us - Mangala Living Industrial Furniture Bekasi'}</title>
         <meta name="description" content={isIndonesian 
-          ? "Produsen furniture industrial scandinavian premium sejak 1999. Pengalaman 25 tahun melayani cafe, restoran, dan bisnis di seluruh Indonesia." 
-          : "Premium industrial scandinavian furniture manufacturer since 1999. 25 years of experience serving coffee shops, restaurants, and businesses across Indonesia, Jabodetabek, Jakarta, and major international markets including USA, Japan, Australia, Singapore, Malaysia, Thailand, Vietnam, and Philippines."} />
+          ? "Workshop Furniture Industrial Bekasi sejak 1999. Produsen furniture besi custom untuk cafe, restoran, hotel, kantor. Material premium, finishing powder coating, harga pabrik. Melayani Jakarta, Bekasi, Jabodetabek." 
+          : "Industrial Furniture Workshop Bekasi since 1999. Custom steel furniture manufacturer for coffee shops, restaurants, hotels, offices. Premium materials, powder coating finish, factory prices. Serving Jakarta, Bekasi, Jabodetabek."} />
         <meta name="keywords" content={isIndonesian 
-          ? "tentang mangala living, produsen furniture industrial, furniture scandinavian bekasi, custom furniture industrial, furniture cafe" 
-          : "about mangala living, industrial furniture manufacturer, scandinavian furniture bekasi, custom industrial furniture, coffee shop furniture"} />
+          ? "workshop furniture bekasi, furniture industrial bekasi, furniture besi custom bekasi, produsen furniture industrial, custom furniture bekasi, furniture cafe bekasi, furniture restoran bekasi, workshop furniture besi" 
+          : "furniture workshop bekasi, industrial furniture bekasi, custom steel furniture bekasi, industrial furniture manufacturer, custom furniture bekasi, cafe furniture bekasi, restaurant furniture bekasi"} />
         <link rel="canonical" href="https://mangalaliving.com/about/" />
+        
+        {/* LocalBusiness Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(localBusinessSchema)}
+        </script>
+        
+        {/* FAQ Structured Data */}
+        {faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
       </Helmet>
       
       <Header isIndonesian={isIndonesian} />

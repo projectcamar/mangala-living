@@ -611,6 +611,394 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Tren industrial cafe furniture terbaru 2025. Simak perkembangan desain furniture cafe industrial yang sedang populer dan akan menjadi favorit di tahun depan.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2025-12-01'
+  },
+  // HIGH-INTENT KEYWORDS - PRIORITY FOR PAGE 1 GOOGLE
+  {
+    id: 68,
+    slug: 'furniture-besi-custom-bekasi-workshop-terpercaya',
+    title: 'Furniture Besi Custom Bekasi: Workshop Terpercaya dengan Pengalaman 25 Tahun',
+    category: 'Workshop & Production',
+    excerpt: 'Cari furniture besi custom Bekasi? Mangala Living workshop terpercaya sejak 1999. Produksi langsung, harga pabrik, kualitas premium. Melayani cafe, restoran, hotel, kantor. Free konsultasi desain.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-02'
+  },
+  {
+    id: 69,
+    slug: 'industrial-furniture-bekasi-harga-pabrik-kualitas-premium',
+    title: 'Industrial Furniture Bekasi: Harga Pabrik, Kualitas Premium, Workshop Langsung',
+    category: 'Workshop & Production',
+    excerpt: 'Industrial furniture Bekasi dengan harga pabrik dan kualitas terjamin. Workshop Mangala Living di Bekasi melayani custom furniture untuk cafe, restoran, hotel. 1000+ klien puas. Konsultasi gratis.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-12-03'
+  },
+  {
+    id: 70,
+    slug: 'furniture-cafe-industrial-bekasi-desain-custom-modern',
+    title: 'Furniture Café Industrial Bekasi: Desain Custom Modern untuk Bisnis F&B',
+    category: 'Commercial Furniture',
+    excerpt: 'Furniture café industrial Bekasi dengan desain custom modern. Mangala Living spesialis furniture cafe industrial: meja makan, kursi bar, display rack. Workshop Bekasi, pengalaman 25 tahun.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-12-04'
+  },
+  {
+    id: 71,
+    slug: 'workshop-furniture-besi-bekasi-produksi-langsung',
+    title: 'Workshop Furniture Besi Bekasi: Produksi Langsung, Custom Design, Harga Kompetitif',
+    category: 'Workshop & Production',
+    excerpt: 'Workshop furniture besi Bekasi terpercaya. Mangala Living workshop modern dengan produksi langsung, custom design sesuai kebutuhan. Material berkualitas, finishing powder coating, garansi kualitas.',
+    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop',
+    date: '2025-12-05'
+  },
+  {
+    id: 72,
+    slug: 'jual-furniture-industrial-jakarta-bekasi-terlengkap',
+    title: 'Jual Furniture Industrial Jakarta Bekasi Terlengkap - Harga Pabrik',
+    category: 'Commercial Furniture',
+    excerpt: 'Jual furniture industrial Jakarta dan Bekasi paling lengkap. Mangala Living menyediakan meja, kursi, rak display, kitchen cabinet industrial. Workshop di Bekasi, melayani seluruh Jabodetabek.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-06'
+  },
+  {
+    id: 73,
+    slug: 'meja-makan-besi-custom-bekasi-industrial-minimalis',
+    title: 'Meja Makan Besi Custom Bekasi: Industrial Minimalis untuk Cafe & Restoran',
+    category: 'Commercial Furniture',
+    excerpt: 'Meja makan besi custom Bekasi dengan desain industrial minimalis. Set meja makan + kursi, berbagai ukuran custom. Workshop Mangala Living melayani cafe, restoran, hotel. Kualitas premium, harga terjangkau.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-12-07'
+  },
+  {
+    id: 74,
+    slug: 'meja-cafe-industrial-besi-custom-bekasi-jabodetabek',
+    title: 'Meja Café Industrial Besi Custom Bekasi - Melayani Jabodetabek',
+    category: 'Commercial Furniture',
+    excerpt: 'Meja café industrial besi custom dari Bekasi. Mangala Living produksi meja cafe berbagai model: bar table, dining table, coffee table. Material berkualitas, finishing powder coating, harga kompetitif.',
+    image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
+    date: '2025-12-08'
+  },
+  {
+    id: 75,
+    slug: 'furniture-besi-hotel-custom-desain-eksklusif',
+    title: 'Furniture Besi Hotel Custom: Desain Eksklusif, Kualitas Premium',
+    category: 'Commercial Furniture',
+    excerpt: 'Furniture besi hotel custom dengan desain eksklusif. Mangala Living spesialis furniture hotel industrial: lobby furniture, restaurant furniture, room furniture. Workshop Bekasi, pengalaman project hotel.',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop',
+    date: '2025-12-09'
+  },
+  {
+    id: 76,
+    slug: 'bikin-furniture-besi-custom-jabodetabek-berkualitas',
+    title: 'Bikin Furniture Besi Custom Jabodetabek Berkualitas - Workshop Mangala',
+    category: 'Workshop & Production',
+    excerpt: 'Bikin furniture besi custom Jabodetabek dengan kualitas terjamin. Mangala Living workshop modern di Bekasi melayani custom furniture untuk cafe, restoran, hotel, kantor. Free konsultasi & survey lokasi.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-10'
+  },
+  {
+    id: 77,
+    slug: 'furniture-besi-untuk-restoran-industrial-modern',
+    title: 'Furniture Besi untuk Restoran: Solusi Industrial Modern Berkualitas',
+    category: 'Commercial Furniture',
+    excerpt: 'Furniture besi untuk restoran dengan desain industrial modern. Meja makan, kursi, bar set, storage solution dari Mangala Living. Tahan lama, mudah perawatan, harga kompetitif. Workshop Bekasi.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-12-11'
+  },
+  // MEDIUM-INTENT KEYWORDS - INSPIRASI & EDUKASI
+  {
+    id: 78,
+    slug: 'inspirasi-furniture-industrial-cafe-kecil-minimalis',
+    title: 'Inspirasi Furniture Industrial untuk Café Kecil: Desain Minimalis Maksimal',
+    category: 'Design Inspiration',
+    excerpt: 'Kumpulan inspirasi furniture industrial untuk café kecil dengan konsep minimalis. Tips layout, pemilihan furniture yang tepat, dan desain yang memaksimalkan ruang terbatas. Cocok untuk startup cafe.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-12-12'
+  },
+  {
+    id: 79,
+    slug: 'desain-interior-industrial-besi-kayu-harmonis',
+    title: 'Desain Interior Industrial Besi dan Kayu: Kombinasi Harmonis Modern',
+    category: 'Design Inspiration',
+    excerpt: 'Panduan lengkap desain interior industrial dengan kombinasi besi dan kayu. Tips memadukan material, pemilihan warna, finishing, dan inspirasi desain untuk cafe, restoran, dan kantor modern.',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop',
+    date: '2025-12-13'
+  },
+  {
+    id: 80,
+    slug: 'meja-bar-industrial-minimalis-desain-compact',
+    title: 'Meja Bar Industrial Minimalis: Desain Compact untuk Café Modern',
+    category: 'Design Inspiration',
+    excerpt: 'Inspirasi meja bar industrial minimalis dengan desain compact. Solusi space-efficient untuk cafe kecil. Tips ukuran ideal, material, dan model meja bar yang sesuai konsep industrial minimalis.',
+    image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
+    date: '2025-12-14'
+  },
+  {
+    id: 81,
+    slug: 'desain-ruang-makan-industrial-furniture-besi',
+    title: 'Desain Ruang Makan Industrial dengan Furniture Besi: Panduan Lengkap',
+    category: 'Design Inspiration',
+    excerpt: 'Panduan desain ruang makan industrial dengan furniture besi. Tips layout, pemilihan furniture, lighting, dan dekorasi untuk menciptakan dining area industrial modern yang fungsional dan estetis.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-12-15'
+  },
+  {
+    id: 82,
+    slug: 'contoh-furniture-cafe-industrial-buatan-lokal-indonesia',
+    title: 'Contoh Furniture Café Industrial Buatan Lokal Indonesia Berkualitas',
+    category: 'Design Inspiration',
+    excerpt: 'Kumpulan contoh furniture café industrial buatan lokal Indonesia. Portfolio project Mangala Living: cafe, restoran, hotel dengan furniture industrial berkualitas. Desain custom, material premium.',
+    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop',
+    date: '2025-12-16'
+  },
+  {
+    id: 83,
+    slug: 'furniture-besi-cocok-konsep-vintage-cafe',
+    title: 'Furniture Besi Cocok untuk Konsep Vintage Café: Tips Styling',
+    category: 'Design Inspiration',
+    excerpt: 'Tips styling furniture besi untuk konsep vintage café. Panduan memilih furniture industrial yang cocok untuk tema vintage, pemilihan warna, finishing, dan aksesoris pendukung.',
+    image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop',
+    date: '2025-12-17'
+  },
+  {
+    id: 84,
+    slug: 'desain-meja-industrial-besi-hollow-modern',
+    title: 'Desain Meja Industrial Besi Hollow Modern: Model Terbaru 2025',
+    category: 'Design Inspiration',
+    excerpt: 'Model desain meja industrial besi hollow terbaru 2025. Inspirasi meja kerja, meja makan, meja bar dengan material hollow steel berkualitas. Tips pemilihan ukuran dan finishing powder coating.',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop',
+    date: '2025-12-18'
+  },
+  {
+    id: 85,
+    slug: 'koleksi-furniture-industrial-terbaru-2025-mangala',
+    title: 'Koleksi Furniture Industrial Terbaru 2025 dari Mangala Living',
+    category: 'Product Showcase',
+    excerpt: 'Koleksi furniture industrial terbaru 2025 dari Mangala Living. Meja, kursi, rak display, kitchen cabinet, outdoor furniture dengan desain modern. Material premium, finishing berkualitas, harga kompetitif.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-19'
+  },
+  // LOW-INTENT KEYWORDS - EDUKASI & AUTHORITY BUILDING
+  {
+    id: 86,
+    slug: 'apa-itu-furniture-industrial-panduan-lengkap-pemula',
+    title: 'Apa Itu Furniture Industrial? Panduan Lengkap untuk Pemula',
+    category: 'Educational',
+    excerpt: 'Panduan lengkap apa itu furniture industrial untuk pemula. Sejarah, karakteristik, material, keunggulan, dan tips memilih furniture industrial yang tepat untuk rumah, cafe, atau kantor Anda.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-20'
+  },
+  {
+    id: 87,
+    slug: 'kenapa-furniture-besi-lebih-awet-dari-kayu',
+    title: 'Kenapa Furniture Besi Lebih Awet dari Kayu? Perbandingan Lengkap',
+    category: 'Educational',
+    excerpt: 'Perbandingan lengkap furniture besi vs kayu. Kenapa furniture besi lebih awet? Analisis durabilitas, perawatan, harga, dan nilai investasi jangka panjang untuk bisnis F&B dan kantor.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-12-21'
+  },
+  {
+    id: 88,
+    slug: 'perbandingan-furniture-besi-vs-kayu-cafe-restoran',
+    title: 'Perbandingan Furniture Besi vs Kayu untuk Café & Restoran',
+    category: 'Educational',
+    excerpt: 'Perbandingan detail furniture besi vs kayu untuk bisnis café dan restoran. Analisis kelebihan-kekurangan, investasi jangka panjang, perawatan, dan rekomendasi terbaik untuk bisnis F&B.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-12-22'
+  },
+  {
+    id: 89,
+    slug: 'cara-merawat-furniture-besi-anti-karat-awet',
+    title: 'Cara Merawat Furniture Besi Supaya Gak Berkarat dan Tetap Awet',
+    category: 'Tips and Trick',
+    excerpt: 'Tips lengkap cara merawat furniture besi supaya anti karat dan awet bertahun-tahun. Panduan cleaning, treatment, dan preventive maintenance untuk furniture besi industrial indoor dan outdoor.',
+    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop',
+    date: '2025-12-23'
+  },
+  {
+    id: 90,
+    slug: 'proses-pembuatan-furniture-besi-custom-workshop',
+    title: 'Proses Pembuatan Furniture Besi Custom di Workshop: Behind The Scene',
+    category: 'Educational',
+    excerpt: 'Behind the scene proses pembuatan furniture besi custom di workshop Mangala Living. Dari desain, cutting, welding, finishing hingga quality control. Transparansi proses produksi furniture berkualitas.',
+    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop',
+    date: '2025-12-24'
+  },
+  {
+    id: 91,
+    slug: 'tips-memilih-furniture-besi-untuk-restoran-profesional',
+    title: 'Tips Memilih Furniture Besi untuk Restoran: Panduan Profesional',
+    category: 'Tips and Trick',
+    excerpt: 'Tips profesional memilih furniture besi untuk restoran. Panduan material, ukuran, desain, budget, dan vendor terpercaya. Checklist lengkap untuk pemilik restoran dan interior designer.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-12-25'
+  },
+  {
+    id: 92,
+    slug: 'trend-desain-industrial-2025-furniture-modern',
+    title: 'Trend Desain Industrial 2025: Furniture Modern untuk Bisnis',
+    category: 'Furniture Information',
+    excerpt: 'Trend desain industrial 2025 untuk furniture modern. Prediksi tren material, warna, finishing, dan style furniture industrial yang akan populer. Panduan untuk bisnis cafe, restoran, dan kantor.',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop',
+    date: '2025-12-26'
+  },
+  {
+    id: 93,
+    slug: 'jenis-finishing-furniture-besi-powder-coating-duco',
+    title: 'Jenis Finishing Furniture Besi: Powder Coating, Cat Duco, Elektrostatic',
+    category: 'Educational',
+    excerpt: 'Panduan lengkap jenis finishing furniture besi: powder coating, cat duco, elektrostatic painting. Perbandingan kualitas, harga, durabilitas, dan rekomendasi finishing terbaik untuk furniture industrial.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-27'
+  },
+  // GEO-TARGETED BLOG POSTS - HYPER-LOCAL BEKASI STRATEGY
+  // BEKASI BARAT
+  {
+    id: 94,
+    slug: 'furniture-industrial-bekasi-barat-custom-berkualitas',
+    title: 'Furniture Industrial Bekasi Barat: Custom Berkualitas untuk Café & Restoran',
+    category: 'Local Area Guide',
+    excerpt: 'Workshop furniture industrial di Bekasi Barat. Melayani Bintara, Kranji, Kota Baru, Jakasampurna. Custom meja kursi café, restoran, hotel. Free konsultasi & survey. Harga pabrik langsung.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-12-28'
+  },
+  // BEKASI TIMUR
+  {
+    id: 95,
+    slug: 'furniture-cafe-bekasi-timur-jatiasih-pekayon',
+    title: 'Furniture Café Bekasi Timur: Melayani Jatiasih, Pekayon, Aren Jaya',
+    category: 'Local Area Guide',
+    excerpt: 'Supplier furniture café industrial untuk Bekasi Timur. Coverage area: Jatiasih, Pekayon, Aren Jaya, Duren Jaya. Gratis delivery. Meja bar, kursi café, display rack custom. Workshop terpercaya.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-12-29'
+  },
+  // BEKASI SELATAN
+  {
+    id: 96,
+    slug: 'furniture-besi-bekasi-selatan-kayuringin-margajaya',
+    title: 'Furniture Besi Bekasi Selatan: Kayuringin, Margajaya, Jakasetia',
+    category: 'Local Area Guide',
+    excerpt: 'Jasa furniture besi custom Bekasi Selatan. Melayani Kayuringin Jaya, Margajaya, Jakasetia, Pekayon Jaya. Workshop dekat dengan lokasi Anda. Material premium, finishing powder coating, harga terjangkau.',
+    image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
+    date: '2025-12-30'
+  },
+  // BEKASI UTARA
+  {
+    id: 97,
+    slug: 'furniture-industrial-bekasi-utara-harapan-indah-summarecon',
+    title: 'Furniture Industrial Bekasi Utara: Harapan Indah, Summarecon, Pejuang',
+    category: 'Local Area Guide',
+    excerpt: 'Workshop furniture industrial Bekasi Utara. Coverage: Harapan Indah, Summarecon Bekasi, Pejuang, Teluk Pucung, Kaliabang. Spesialis café, restoran, hotel. Custom design, harga kompetitif.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-31'
+  },
+  // CIKARANG BARAT
+  {
+    id: 98,
+    slug: 'furniture-cafe-cikarang-barat-lippo-cikarang-cibatu',
+    title: 'Furniture Café Cikarang Barat: Lippo Cikarang, Cibatu, Telaga Murni',
+    category: 'Local Area Guide',
+    excerpt: 'Furniture café industrial Cikarang Barat. Melayani Lippo Cikarang, Cibatu, Telaga Murni, Pasir Gombong. Workshop dekat area industri. Custom furniture untuk café karyawan pabrik & F&B bisnis.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2026-01-01'
+  },
+  // CIKARANG UTARA
+  {
+    id: 99,
+    slug: 'furniture-restoran-cikarang-utara-karang-asih-simpangan',
+    title: 'Furniture Restoran Cikarang Utara: Karang Asih, Simpangan, Sukamaju',
+    category: 'Local Area Guide',
+    excerpt: 'Supplier furniture restoran Cikarang Utara. Area: Karang Asih, Simpangan, Sukamaju, Danau Indah. Spesialis meja makan industrial, kursi restoran, furniture outdoor. Produksi lokal Bekasi.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2026-01-02'
+  },
+  // CIKARANG SELATAN
+  {
+    id: 100,
+    slug: 'furniture-industrial-cikarang-selatan-jababeka-greenland',
+    title: 'Furniture Industrial Cikarang Selatan: Jababeka, Greenland, Pasirsari',
+    category: 'Local Area Guide',
+    excerpt: 'Workshop furniture industrial Cikarang Selatan. Coverage Jababeka, Greenland International, Pasirsari, Ciantra. Melayani corporate office, café pabrik, kantin karyawan. Harga volume discount.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2026-01-03'
+  },
+  // CIKARANG TIMUR
+  {
+    id: 101,
+    slug: 'furniture-hotel-cikarang-timur-serang-baru-karangreja',
+    title: 'Furniture Hotel Cikarang Timur: Serang Baru, Karangreja, Jayamukti',
+    category: 'Local Area Guide',
+    excerpt: 'Furniture hotel industrial Cikarang Timur. Melayani Serang Baru, Karangreja, Jayamukti, Sukamanah. Spesialis lobby furniture, restaurant hotel, room furniture. Project hotel & homestay.',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop',
+    date: '2026-01-04'
+  },
+  // CIKARANG PUSAT
+  {
+    id: 102,
+    slug: 'furniture-cafe-cikarang-pusat-taman-galaxy-lemahabang',
+    title: 'Furniture Café Cikarang Pusat: Taman Galaxy, Lemahabang, Hegarmukti',
+    category: 'Local Area Guide',
+    excerpt: 'Furniture café industrial Cikarang Pusat. Area coverage: Taman Galaxy, Lemahabang, Hegarmukti, Kalijaya. Custom meja bar, kursi café, display rack. Free konsultasi desain interior.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2026-01-05'
+  },
+  // TAMBUN SELATAN
+  {
+    id: 103,
+    slug: 'furniture-industrial-tambun-selatan-sertajaya-mangunjaya',
+    title: 'Furniture Industrial Tambun Selatan: Sertajaya, Mangunjaya, Lambangjaya',
+    category: 'Local Area Guide',
+    excerpt: 'Workshop furniture industrial Tambun Selatan. Melayani Sertajaya, Mangunjaya, Lambangjaya, Setiadarma. Produksi furniture café, restoran, kantor. Material berkualitas, harga terjangkau.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2026-01-06'
+  },
+  // TAMBUN UTARA
+  {
+    id: 104,
+    slug: 'furniture-custom-tambun-utara-satria-jaya-karang-satria',
+    title: 'Furniture Custom Tambun Utara: Satria Jaya, Karang Satria, Wanasari',
+    category: 'Local Area Guide',
+    excerpt: 'Jasa furniture custom Tambun Utara. Coverage: Satria Jaya, Karang Satria, Wanasari, Karang Bahagia. Spesialis furniture besi industrial untuk café & restoran. Gratis delivery area Tambun.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2026-01-07'
+  },
+  // PONDOK GEDE
+  {
+    id: 105,
+    slug: 'furniture-cafe-pondok-gede-jatiwaringin-jatibening',
+    title: 'Furniture Café Pondok Gede: Jatiwaringin, Jatibening, Jatiraden',
+    category: 'Local Area Guide',
+    excerpt: 'Furniture café industrial Pondok Gede. Melayani Jatiwaringin, Jatibening, Jatiraden, Jatimakmur. Workshop Bekasi melayani border Jakarta-Bekasi. Custom design, fast production 20 hari.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2026-01-08'
+  },
+  // MUSTIKA JAYA
+  {
+    id: 106,
+    slug: 'furniture-restoran-mustika-jaya-mustikasari-pedurenan',
+    title: 'Furniture Restoran Mustika Jaya: Mustikasari, Pedurenan, Cimuning',
+    category: 'Local Area Guide',
+    excerpt: 'Supplier furniture restoran Mustika Jaya. Area: Mustikasari, Pedurenan, Cimuning. Meja makan industrial, kursi restoran, bar set. Material premium, finishing powder coating tahan lama.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2026-01-09'
+  },
+  // RAWALUMBU
+  {
+    id: 107,
+    slug: 'furniture-industrial-rawalumbu-bojong-rawalumbu-sepanjang-jaya',
+    title: 'Furniture Industrial Rawalumbu: Bojong Rawalumbu, Sepanjang Jaya',
+    category: 'Local Area Guide',
+    excerpt: 'Workshop furniture industrial Rawalumbu. Coverage: Bojong Rawalumbu, Sepanjang Jaya, Pengasinan. Dekat pintu tol, mudah akses. Furniture café, restoran, office. Custom & ready design.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2026-01-10'
+  },
+  // MEDAN SATRIA
+  {
+    id: 108,
+    slug: 'furniture-cafe-medan-satria-kali-baru-pejuang',
+    title: 'Furniture Café Medan Satria: Kali Baru, Pejuang, Harapan Baru',
+    category: 'Local Area Guide',
+    excerpt: 'Furniture café industrial Medan Satria. Melayani Kali Baru, Pejuang, Harapan Baru, Medan Satria. Workshop furniture besi custom untuk café modern. Harga kompetitif, kualitas terjamin.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2026-01-11'
   }
 ]
 

@@ -27,6 +27,11 @@ const BlogPost = lazy(() => import('./pages/BlogPost'))
 const TermsOfService = lazy(() => import('./pages/TermsOfService'))
 const ShippingInformation = lazy(() => import('./pages/ShippingInformation'))
 
+// SEO Landing Pages - Keyword Celah (Anti-Marketplace Strategy)
+const FurnitureBesiCustomBekasi = lazy(() => import('./pages/FurnitureBesiCustomBekasi'))
+// const WorkshopFurnitureBesiBekasi = lazy(() => import('./pages/WorkshopFurnitureBesiBekasi'))
+// const BikinMejaBesiCafeCustom = lazy(() => import('./pages/BikinMejaBesiCafeCustom'))
+
 // Minimal loading for better UX
 const Loading = () => (
   <div style={{
@@ -194,6 +199,25 @@ function App() {
               <ShippingInformation />
             </Suspense>
           } />
+          
+          {/* SEO Landing Pages - Keyword Celah Strategy */}
+          <Route path="/furniture-besi-custom-bekasi" element={
+            <Suspense fallback={<Loading />}>
+              <FurnitureBesiCustomBekasi />
+            </Suspense>
+          } />
+          {/* TODO: Create these landing pages
+          <Route path="/workshop-furniture-besi-bekasi" element={
+            <Suspense fallback={<Loading />}>
+              <WorkshopFurnitureBesiBekasi />
+            </Suspense>
+          } />
+          <Route path="/bikin-meja-besi-cafe-custom" element={
+            <Suspense fallback={<Loading />}>
+              <BikinMejaBesiCafeCustom />
+            </Suspense>
+          } />
+          */}
         </Routes>
         <WhatsAppButton />
         <Analytics />

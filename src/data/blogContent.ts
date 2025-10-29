@@ -4284,6 +4284,310 @@ const BLOG_CONTENTS: BlogContent[] = [
         ]
       }
     ]
+  },
+  // HIGH-INTENT KEYWORD CONTENT - PRIORITY FOR GOOGLE PAGE 1
+  {
+    slug: 'furniture-besi-custom-bekasi-workshop-terpercaya',
+    sections: [
+      {
+        paragraphs: [
+          'Mencari <strong>furniture besi custom Bekasi</strong> berkualitas tinggi dengan harga yang kompetitif? Mangala Living adalah workshop furniture industrial terpercaya di Bekasi yang telah melayani lebih dari 1000 klien sejak tahun 1999. Dengan pengalaman 25 tahun di industri furniture industrial, kami menjadi pilihan utama untuk bisnis café, restoran, hotel, dan kantor di wilayah Jakarta, Bekasi, dan Jabodetabek.',
+          'Workshop kami berlokasi strategis di Jl. Raya Setu Cikarang Bar, Bekasi, dilengkapi dengan mesin-mesin modern dan tim craftsman berpengalaman yang siap mewujudkan desain furniture impian Anda. Produksi langsung dari workshop memastikan kontrol kualitas maksimal dan harga yang lebih terjangkau karena tanpa perantara.'
+        ],
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Workshop Furniture Besi Custom Bekasi - Mangala Living'
+      },
+      {
+        heading: 'Mengapa Memilih Mangala Living untuk Furniture Besi Custom Bekasi?',
+        paragraphs: [
+          'Dalam industri furniture industrial yang kompetitif, Mangala Living menonjol sebagai workshop terpercaya dengan track record yang terbukti. Berikut adalah alasan mengapa ratusan bisnis F&B dan perusahaan memilih kami sebagai partner furniture mereka:'
+        ]
+      },
+      {
+        heading: '1. Workshop Modern di Jantung Bekasi',
+        paragraphs: [
+          'Lokasi workshop kami di Bekasi memberikan akses mudah untuk klien di Jakarta Timur, Bekasi, Cikarang, dan sekitarnya. Workshop seluas 1000m² dilengkapi dengan:',
+          '<strong>Mesin Cutting CNC</strong> untuk presisi maksimal dalam pemotongan material besi hollow dan plat. <strong>Welding Station Professional</strong> dengan 8 stasiun las yang dioperasikan oleh welder bersertifikat. <strong>Powder Coating Booth</strong> dengan sistem elektrostatic untuk finishing berkualitas tinggi yang tahan hingga 10 tahun. <strong>Assembly Area</strong> untuk perakitan furniture dengan quality control ketat.',
+          'Semua proses produksi dilakukan in-house, memastikan kontrol kualitas dari tahap awal hingga furniture siap dikirim ke lokasi Anda.'
+        ]
+      },
+      {
+        heading: '2. Material Berkualitas Premium',
+        paragraphs: [
+          'Kualitas furniture dimulai dari pemilihan material. Mangala Living hanya menggunakan material terbaik untuk setiap project:',
+          '<strong>Besi Hollow</strong> dengan ketebalan 2mm-3mm (bukan hollow tipis 1mm yang mudah penyok). Material kami diimpor dari produsen terpercaya dengan standar SNI. <strong>Plat Besi</strong> thickness 2mm untuk komponen yang membutuhkan kekuatan ekstra seperti tabletop frame dan leg reinforcement. <strong>Kayu Solid</strong> untuk tabletop: Suar, Trembesi, atau Mahogany yang sudah melalui proses kiln-dried untuk mencegah warping. <strong>Engineered Wood</strong> alternatif: HPL grade A atau melamine dengan core MDF water-resistant.'
+        ],
+        image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&auto=format&fit=crop',
+        imageAlt: 'Material Berkualitas untuk Furniture Besi Custom'
+      },
+      {
+        heading: '3. Finishing Powder Coating Tahan Lama',
+        paragraphs: [
+          'Finishing adalah faktor krusial yang membedakan furniture industrial berkualitas tinggi dengan yang biasa. Mangala Living menggunakan <strong>powder coating elektrostatic</strong>, bukan cat semprot biasa. Keunggulan powder coating kami:',
+          '<strong>Ketahanan Superior:</strong> Powder coating tahan gores, benturan, dan korosi hingga 10 tahun dalam kondisi indoor. Untuk outdoor, daya tahan 5-7 tahun dengan proper maintenance. <strong>Warna Konsisten:</strong> Aplikasi elektrostatic menghasilkan lapisan coating yang merata tanpa drip marks atau orange peel. <strong>Eco-Friendly:</strong> Proses powder coating tidak menggunakan solvent berbahaya, lebih aman untuk lingkungan dan pekerja. <strong>Pilihan Warna Lengkap:</strong> Tersedia 50+ pilihan warna, dari hitam matte, putih glossy, hingga custom RAL color sesuai brand identity Anda.'
+        ]
+      },
+      {
+        heading: '4. Custom Design Sesuai Kebutuhan',
+        paragraphs: [
+          'Setiap bisnis memiliki kebutuhan dan identitas yang unik. Oleh karena itu, Mangala Living menawarkan layanan <strong>custom design</strong> yang fleksibel:',
+          '<strong>Free Design Consultation:</strong> Tim desainer kami akan mendiskusikan konsep, kebutuhan, dan budget Anda tanpa biaya konsultasi. <strong>3D Mockup:</strong> Kami membuat visualisasi 3D furniture sebelum produksi dimulai, memastikan desain sesuai ekspektasi. <strong>Ukuran Custom:</strong> Tidak terbatas pada ukuran standar. Kami dapat memproduksi furniture dengan ukuran spesifik sesuai ruangan Anda. <strong>Material Combination:</strong> Kombinasikan besi dengan kayu, kaca, atau material lain untuk menciptakan furniture yang unik.'
+        ]
+      },
+      {
+        heading: 'Portfolio Project Furniture Besi Custom Bekasi',
+        paragraphs: [
+          'Selama 25 tahun beroperasi, Mangala Living telah menyelesaikan ratusan project furniture industrial di berbagai sektor bisnis. Berikut adalah beberapa kategori project yang sering kami tangani:'
+        ],
+        list: [
+          '<strong>Café & Coffee Shop (300+ project):</strong> Meja café, kursi bar, display rack, kitchen cabinet untuk startup café hingga chain coffee shop besar.',
+          '<strong>Restoran (150+ project):</strong> Dining table set, outdoor furniture, bar counter untuk casual dining, fine dining, dan fast casual restaurant.',
+          '<strong>Hotel (50+ project):</strong> Lobby furniture, restaurant furniture, rooftop bar furniture untuk hotel bintang 3-5.',
+          '<strong>Kantor (200+ project):</strong> Meja kerja industrial, meeting table, storage cabinet untuk startup, co-working space, dan corporate office.',
+          '<strong>Retail Store (100+ project):</strong> Display rack, gondola, checkout counter untuk fashion store, bookstore, dan specialty shop.'
+        ],
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Portfolio Furniture Café Industrial Bekasi'
+      },
+      {
+        heading: 'Harga Furniture Besi Custom Bekasi - Transparan & Kompetitif',
+        paragraphs: [
+          'Salah satu concern utama klien adalah harga. Mangala Living berkomitmen memberikan <strong>harga yang transparan dan kompetitif</strong> tanpa mengorbankan kualitas. Berikut adalah estimasi harga furniture besi custom kami (harga dapat berubah tergantung spesifikasi):',
+          '<strong>Meja Café 60x60cm (besi + kayu solid):</strong> Rp 1.200.000 - Rp 1.500.000. <strong>Meja Makan 80x80cm (besi + kayu solid):</strong> Rp 1.800.000 - Rp 2.200.000. <strong>Kursi Bar Industrial (tinggi 75cm):</strong> Rp 380.000 - Rp 550.000. <strong>Meja Bar 120x60x110cm:</strong> Rp 2.500.000 - Rp 3.200.000. <strong>Display Rack 3 Tier (150x60x180cm):</strong> Rp 1.800.000 - Rp 2.400.000. <strong>Kitchen Cabinet Industrial (per meter):</strong> Rp 2.800.000 - Rp 3.500.000.',
+          'Harga sudah termasuk material premium, finishing powder coating, dan garansi kualitas. Untuk project volume besar (20+ pieces), kami memberikan <strong>special discount hingga 15%</strong>.'
+        ]
+      },
+      {
+        heading: 'Proses Order Furniture Besi Custom di Mangala Living',
+        paragraphs: [
+          'Kami memahami bahwa proses custom furniture bisa terasa kompleks bagi klien pertama kali. Oleh karena itu, kami telah menyusun alur kerja yang jelas dan transparan:'
+        ],
+        list: [
+          '<strong>Step 1 - Initial Consultation (Gratis):</strong> Hubungi kami via WhatsApp +62-852-1207-8467 atau email. Ceritakan kebutuhan, budget, dan timeline Anda. Tim kami akan memberikan initial advice dan rough estimate.',
+          '<strong>Step 2 - Site Survey (Optional, Gratis untuk Jabodetabek):</strong> Untuk project besar, kami dapat melakukan survey lokasi untuk mengukur ruangan dan memahami kondisi existing.',
+          '<strong>Step 3 - Design & Quotation (3-5 hari kerja):</strong> Kami membuat design mockup 3D dan detailed quotation. Revisi design gratis hingga Anda puas.',
+          '<strong>Step 4 - Down Payment (30%):</strong> Setelah design approved, lakukan DP 30% untuk memulai produksi. Kami memberikan invoice resmi dan contract agreement.',
+          '<strong>Step 5 - Produksi (15-30 hari kerja):</strong> Proses produksi dimulai. Kami mengirimkan progress photo setiap minggu. Anda dapat visit workshop untuk melihat progress.',
+          '<strong>Step 6 - Quality Control & Finishing (3-5 hari):</strong> Semua furniture di-QC ketat sebelum finishing. Kami mengecek kekuatan struktur, kualitas welding, dan konsistensi warna.',
+          '<strong>Step 7 - Delivery & Installation (Pelunasan):</strong> Furniture dikirim ke lokasi dan diinstall oleh tim kami. Pelunasan setelah instalasi selesai dan Anda puas.',
+          '<strong>Step 8 - After Sales Support:</strong> Garansi 1 tahun untuk struktur dan finishing. Free minor repair untuk 6 bulan pertama.'
+        ]
+      },
+      {
+        heading: 'Kenapa Bisnis F&B di Bekasi & Jakarta Pilih Mangala Living?',
+        paragraphs: [
+          'Dalam industri yang kompetitif, reputasi adalah segalanya. Mangala Living telah dipercaya oleh ratusan bisnis karena:',
+          '<strong>Lokasi Strategis:</strong> Workshop di Bekasi memudahkan akses dan mengurangi biaya delivery untuk klien di Jakarta Timur, Bekasi, Cikarang, dan sekitarnya. <strong>Production Capacity:</strong> Kapasitas produksi 200+ pieces per bulan memastikan deadline project Anda terpenuhi. <strong>Experienced Team:</strong> Tim kami terdiri dari desainer, welder, dan craftsman dengan pengalaman 10-20 tahun di industri furniture industrial. <strong>Quality Assurance:</strong> Setiap furniture melalui 3 tahap QC: welding check, structure test, dan finishing inspection. <strong>Competitive Price:</strong> Produksi langsung tanpa middleman menghasilkan harga 20-30% lebih murah dibanding retailer furniture.',
+          'Testimoni klien kami membuktikan komitmen kami terhadap kualitas dan service excellence. Ratusan café, restoran, dan hotel di Jabodetabek telah menjadi repeat customer kami.'
+        ]
+      },
+      {
+        heading: 'Layanan Area: Bekasi, Jakarta, dan Seluruh Jabodetabek',
+        paragraphs: [
+          'Mangala Living melayani delivery dan instalasi ke seluruh wilayah Jabodetabek dengan biaya yang transparan:',
+          '<strong>Gratis Delivery & Installation:</strong> Bekasi, Jakarta Timur, Cikarang (min. order Rp 10 juta). <strong>Biaya Delivery Rp 200.000-500.000:</strong> Jakarta Pusat, Selatan, Barat, Utara, Depok, Tangerang. <strong>Luar Jabodetabek:</strong> Tersedia dengan biaya dihitung per kilometer atau via ekspedisi.',
+          'Untuk project besar (budget > Rp 50 juta), kami memberikan <strong>free delivery dan installation ke seluruh Indonesia</strong>.'
+        ]
+      },
+      {
+        heading: 'FAQ Furniture Besi Custom Bekasi',
+        list: [
+          '<strong>Q: Berapa lama waktu produksi furniture custom?</strong><br/>A: Untuk 10-20 pieces: 15-20 hari kerja. Untuk 20-50 pieces: 25-30 hari kerja. Rush order bisa dikerjakan dengan biaya tambahan 20%.',
+          '<strong>Q: Apakah bisa pesan 1 piece saja?</strong><br/>A: Bisa. Namun untuk 1-5 pieces, harga per unit akan sedikit lebih tinggi karena tidak ada volume discount. Minimum order tanpa surcharge adalah 10 pieces.',
+          '<strong>Q: Bagaimana cara maintenance furniture besi industrial?</strong><br/>A: Untuk indoor furniture: lap dengan kain microfiber setiap minggu. Hindari cairan asam/alkali kuat. Untuk outdoor: wax coating setiap 6 bulan untuk proteksi ekstra.',
+          '<strong>Q: Apakah ada garansi?</strong><br/>A: Ya. Garansi struktur dan finishing 1 tahun. Garansi mencakup: crack pada welding, bubbling pada powder coating, dan structural failure. Tidak mencakup: damage karena force majeure atau misuse.',
+          '<strong>Q: Bisa request warna custom di luar katalog?</strong><br/>A: Bisa. Kami menerima custom color sesuai RAL code atau sample warna yang Anda berikan. Minimum order untuk custom color adalah 20 pieces atau surcharge Rp 500.000 untuk covering biaya powder coating setup.'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living Sekarang - Free Konsultasi!',
+        paragraphs: [
+          'Siap untuk mewujudkan furniture industrial impian Anda? Tim Mangala Living siap membantu dari konsultasi hingga instalasi. Dapatkan <strong>free design consultation</strong> dan <strong>special discount untuk order pertama</strong>!',
+          '📞 <strong>WhatsApp:</strong> <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>📧 <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>📍 <strong>Workshop:</strong> Jl. Raya Setu Cikarang Bar., Bekasi 17320<br/>⏰ <strong>Jam Operasional:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
+          'Kunjungi showroom kami untuk melihat langsung sample furniture dan diskusikan project Anda dengan tim desain. <strong>Workshop visit by appointment</strong> - hubungi kami untuk jadwalkan kunjungan Anda!'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-furniture-bekasi-harga-pabrik-kualitas-premium',
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Industrial furniture Bekasi</strong> dengan harga pabrik dan kualitas premium kini bukan lagi mimpi. Mangala Living hadir sebagai solusi lengkap untuk kebutuhan furniture industrial bisnis Anda. Dengan workshop langsung di Bekasi, kami menawarkan harga yang jauh lebih kompetitif dibanding retailer atau showroom furniture, tanpa mengorbankan kualitas material dan craftsmanship.',
+          'Sejak 1999, Mangala Living telah menjadi pilihan utama ratusan café, restoran, hotel, dan kantor di Jakarta dan Bekasi untuk furniture industrial berkualitas. Lokasi workshop strategis kami di Jl. Raya Setu Cikarang Bar memungkinkan akses mudah dan biaya delivery yang minimal untuk wilayah Jabodetabek.'
+        ],
+        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Furniture Bekasi Harga Pabrik Kualitas Premium'
+      },
+      {
+        heading: 'Keunggulan Beli Industrial Furniture Langsung dari Workshop Bekasi',
+        paragraphs: [
+          'Membeli furniture industrial langsung dari workshop bukan hanya soal harga yang lebih murah. Ada banyak keunggulan lain yang akan Anda dapatkan:'
+        ]
+      },
+      {
+        heading: '1. Harga Pabrik = Hemat 30-40% dari Harga Retail',
+        paragraphs: [
+          'Ketika Anda membeli dari showroom atau retailer furniture, harga yang Anda bayar sudah termasuk markup 30-50% untuk cover biaya operasional showroom, marketing, dan profit margin mereka. Dengan membeli langsung dari workshop Mangala Living, Anda mendapatkan:',
+          '<strong>Harga Nett dari Pabrik:</strong> Tidak ada markup retailer. Harga yang kami quote adalah harga produksi ditambah profit margin yang reasonable. <strong>Transparent Pricing:</strong> Kami jelaskan breakdown cost: material, labor, finishing, dan profit margin. Anda tahu persis apa yang Anda bayar. <strong>Volume Discount:</strong> Order 20+ pieces? Dapatkan discount hingga 15%. Order 50+ pieces? Discount bisa mencapai 20-25%. <strong>No Hidden Cost:</strong> Harga sudah include finishing powder coating, assembly, dan basic installation. Tidak ada surprise cost di akhir.'
+        ]
+      },
+      {
+        heading: '2. Quality Control Langsung dari Sumber',
+        paragraphs: [
+          'Salah satu masalah terbesar ketika membeli dari retailer adalah Anda tidak tahu dari mana furniture itu diproduksi dan bagaimana quality control-nya. Di Mangala Living:',
+          '<strong>Visit Workshop Anytime:</strong> Anda bisa visit workshop kami (by appointment) untuk melihat langsung proses produksi dan quality control. <strong>3-Stage Quality Check:</strong> Setiap furniture melalui 3 tahap QC: welding inspection, structure test (load bearing test), dan finishing quality check. <strong>Material Verification:</strong> Kami tunjukkan sample material yang akan digunakan sebelum produksi dimulai. Anda bisa verify sendiri thickness besi hollow dan kualitas kayu. <strong>Progress Photo Update:</strong> Untuk order besar, kami kirim progress photo setiap minggu agar Anda bisa monitor kualitas dari jarak jauh.'
+        ],
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Quality Control Furniture Industrial Workshop'
+      },
+      {
+        heading: '3. Customization Tanpa Batas',
+        paragraphs: [
+          'Retailer furniture biasanya hanya menjual ready stock dengan ukuran dan desain standar. Kalau Anda butuh ukuran khusus atau desain custom, mereka tidak bisa membantu atau charge extra yang sangat mahal. Di Mangala Living:',
+          '<strong>Full Customization:</strong> Semua furniture bisa di-customize: ukuran, warna, material tabletop, bentuk leg, dll. <strong>Free Design Revision:</strong> Revisi design gratis sampai Anda puas. Tidak ada limit revisi. <strong>Mix & Match Material:</strong> Kombinasikan besi dengan kayu solid, kaca tempered, marble, atau material lain sesuai konsep Anda. <strong>Brand Identity Integration:</strong> Kami bisa incorporate logo atau brand element Anda ke dalam design furniture (contoh: laser cut logo pada metal panel).'
+        ]
+      },
+      {
+        heading: '4. Faster Lead Time untuk Project Urgent',
+        paragraphs: [
+          'Retailer furniture sering kali perlu 6-8 minggu untuk fulfill order karena mereka tidak stock barang dan harus order dari supplier mereka. Di Mangala Living:',
+          '<strong>Standard Lead Time: 20-25 hari kerja</strong> untuk order 20-30 pieces dengan custom design. <strong>Rush Production Available:</strong> Butuh furniture dalam 10-15 hari? Kami bisa expedite production dengan biaya surcharge 20%. <strong>Partial Delivery:</strong> Untuk order besar, kami bisa arrange partial delivery agar business Anda bisa soft opening lebih cepat.'
+        ]
+      },
+      {
+        heading: 'Katalog Industrial Furniture Bekasi - Best Sellers',
+        paragraphs: [
+          'Mangala Living menawarkan berbagai kategori furniture industrial untuk berbagai kebutuhan bisnis. Berikut adalah best sellers kami yang paling banyak dipesan oleh klien di Bekasi dan Jakarta:'
+        ]
+      },
+      {
+        heading: 'Café Furniture Collection',
+        list: [
+          '<strong>Meja Café Industrial 60x60cm</strong> - Material: Hollow 4x4cm thickness 2mm, top kayu Suar solid 2.5cm. Finishing: Powder coating hitam matte / putih. Harga: <strong>Rp 1.350.000</strong>',
+          '<strong>Kursi Café Industrial dengan Sandaran</strong> - Material: Hollow 4x4cm + flat bar 2x4cm. Seat: Plywood 12mm + cushion busa. Finishing: Powder coating. Harga: <strong>Rp 420.000</strong>',
+          '<strong>Meja Bar Industrial 120x60x110cm</strong> - Material: Hollow 5x5cm thickness 3mm (heavy duty). Top: Kayu Trembesi solid 4cm. Footrest integrated. Harga: <strong>Rp 2.850.000</strong>',
+          '<strong>Kursi Bar Stool Industrial 75cm</strong> - Material: Hollow 4x4cm. Seat: Kayu solid 3cm atau cushion. Adjustable height option. Harga: <strong>Rp 480.000</strong> (fixed) / <strong>Rp 650.000</strong> (adjustable)'
+        ],
+        image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Bar Industrial dan Kursi Bar Stool'
+      },
+      {
+        heading: 'Restaurant Furniture Collection',
+        list: [
+          '<strong>Dining Table 80x80cm (Kapasitas 4 orang)</strong> - Material: Frame besi hollow 5x5cm. Top: Kayu solid atau HPL anti-scratch. Harga: <strong>Rp 1.950.000</strong>',
+          '<strong>Dining Table 120x70cm (Kapasitas 6 orang)</strong> - Material: Frame besi heavy duty. Top: Kayu solid 3cm atau engineered wood. Harga: <strong>Rp 2.650.000</strong>',
+          '<strong>Dining Chair Industrial</strong> - Material: Hollow 4x4cm dengan backrest ergonomic. Seat: Plywood + cushion. Harga: <strong>Rp 390.000</strong>',
+          '<strong>Bench Seating 150cm</strong> - Material: Frame besi hollow 5x5cm. Seat: Kayu solid atau cushion panjang. Kapasitas: 3-4 orang. Harga: <strong>Rp 1.450.000</strong>'
+        ]
+      },
+      {
+        heading: 'Display & Storage Furniture',
+        list: [
+          '<strong>Hollowline Display Rack 3 Tier (150x60x180cm)</strong> - Material: Hollow 4x4cm frame + kayu solid shelves. Load capacity per shelf: 40kg. Harga: <strong>Rp 2.100.000</strong>',
+          '<strong>Wall Hanging Shelf Industrial (120x30x80cm)</strong> - Material: Hollow 3x3cm + kayu solid 2cm. Wall mounted dengan bracket heavy duty. Harga: <strong>Rp 890.000</strong>',
+          '<strong>Display Cabinet with Glass Door (100x40x180cm)</strong> - Material: Frame besi + tempered glass. Lockable door. Perfect untuk retail. Harga: <strong>Rp 3.200.000</strong>',
+          '<strong>Industrial Kitchen Cabinet (per meter running)</strong> - Material: Frame besi + HPL cabinet door. Include soft-close hinges. Harga: <strong>Rp 3.200.000/m</strong>'
+        ]
+      },
+      {
+        heading: 'Office Furniture Industrial',
+        list: [
+          '<strong>Industrial Desk 120x60cm</strong> - Material: Frame besi hollow 4x4cm. Top: Kayu solid atau HPL. Cable management included. Harga: <strong>Rp 2.100.000</strong>',
+          '<strong>Meeting Table 200x100cm</strong> - Material: Heavy duty frame besi. Top: Kayu solid atau engineered wood. Kapasitas: 8-10 orang. Harga: <strong>Rp 4.500.000</strong>',
+          '<strong>Industrial Bookshelf 200x40x200cm</strong> - Material: Frame besi modular + kayu solid shelves. 5 levels shelving. Harga: <strong>Rp 3.800.000</strong>',
+          '<strong>Industrial Cabinet 80x40x180cm</strong> - Material: Frame besi + panel HPL. 2 doors with lockable system. Harga: <strong>Rp 2.400.000</strong>'
+        ]
+      },
+      {
+        heading: 'Outdoor Furniture Collection',
+        list: [
+          '<strong>Steelframe Outdoor Bar Set</strong> - Material: Hollow steel galvanized + powder coating outdoor grade. Tahan hujan & panas. Set: 1 bar table + 4 bar stools. Harga: <strong>Rp 6.500.000/set</strong>',
+          '<strong>Outdoor Bench Industrial 150cm</strong> - Material: Galvanized steel + kayu solid treated. Weather resistant. Harga: <strong>Rp 1.850.000</strong>',
+          '<strong>Outdoor Dining Set (meja 120x80 + 4 kursi)</strong> - Material: Galvanized steel frame + outdoor-grade finish. Harga: <strong>Rp 8.200.000/set</strong>'
+        ]
+      },
+      {
+        heading: 'Material & Finishing Options - Build Your Own Furniture',
+        paragraphs: [
+          'Salah satu keunggulan custom furniture adalah Anda bisa memilih kombinasi material dan finishing sesuai budget dan aesthetic preference Anda:'
+        ]
+      },
+      {
+        heading: 'Frame Material Options',
+        list: [
+          '<strong>Hollow Steel 4x4cm thickness 2mm</strong> - Standard untuk café furniture. Good balance antara strength dan cost. Harga base.',
+          '<strong>Hollow Steel 5x5cm thickness 3mm</strong> - Heavy duty untuk high-traffic restaurant atau bar. Load capacity lebih tinggi. Harga +20%.',
+          '<strong>Flat Bar 2x4cm atau 3x5cm</strong> - Untuk design minimalis dengan profile slim. Biasa dikombinasikan dengan hollow. Harga sama dengan hollow 4x4.',
+          '<strong>Round Pipe 1.5 inch atau 2 inch</strong> - Untuk design industrial dengan aesthetic softer. Harga +10%.'
+        ]
+      },
+      {
+        heading: 'Tabletop Material Options',
+        list: [
+          '<strong>Kayu Solid Suar (2.5-3cm)</strong> - Natural wood grain, warm tone. Requires regular wax maintenance. Harga base.',
+          '<strong>Kayu Solid Trembesi (3-4cm)</strong> - Heavy duty solid wood. Darker tone, exotic grain pattern. Harga +15%.',
+          '<strong>HPL (High Pressure Laminate)</strong> - Low maintenance, anti-scratch, banyak pilihan pattern (wood, marble, solid color). Harga -20%.',
+          '<strong>Melamine Board</strong> - Budget-friendly option. Good for light-use applications. Banyak pilihan warna. Harga -30%.',
+          '<strong>Tempered Glass 10mm</strong> - Modern aesthetic. Easy to clean. Perfect untuk display table. Harga +25%.',
+          '<strong>Marble Composite atau Granite</strong> - Luxurious look. Heavy dan stable. Perfect untuk high-end restaurant. Harga +40%.'
+        ]
+      },
+      {
+        heading: 'Powder Coating Color Options',
+        paragraphs: [
+          'Mangala Living menawarkan 50+ standard powder coating colors. Best sellers:',
+          '<strong>Hitam Matte (RAL 9005 Matte)</strong> - Classic industrial look. Paling populer untuk café dan restaurant. <strong>Putih (RAL 9016 atau 9010)</strong> - Clean dan modern. Popular untuk kantor dan minimalist café. <strong>Abu-abu (RAL 7016 atau 7024)</strong> - Sophisticated look. Perfect untuk office atau upscale restaurant. <strong>Custom RAL Color</strong> - Match dengan brand color Anda. Minimum order 20 pieces atau surcharge Rp 500.000 untuk setup cost.'
+        ]
+      },
+      {
+        heading: 'Proses Order & Timeline - Transparent & Efficient',
+        paragraphs: [
+          'Kami memahami bahwa dalam bisnis, time is money. Oleh karena itu, Mangala Living telah mengoptimalkan proses produksi untuk efficiency maksimal tanpa mengorbankan quality:'
+        ],
+        list: [
+          '<strong>Day 1-2: Consultation & Quotation</strong> - Hubungi kami via WA/email. Explain kebutuhan Anda. Kami akan kirim rough estimate dalam 24 jam. Kalau sudah cocok, kami akan buat detailed quotation dan design mockup.',
+          '<strong>Day 3-5: Design Approval</strong> - Kami kirim 3D mockup design. Free revision hingga Anda approve. Setelah approve, kami kirim invoice untuk DP 30%.',
+          '<strong>Day 6: Production Start</strong> - Setelah DP received, material procurement dimulai. Kami foto material yang akan digunakan untuk verification Anda.',
+          '<strong>Day 7-15: Metal Fabrication</strong> - Proses cutting, welding, dan assembly frame. Progress photo dikirim setiap 3 hari.',
+          '<strong>Day 16-18: Finishing Powder Coating</strong> - Frame yang sudah di-QC masuk ke powder coating booth. Curing process 24 jam di oven 180°C.',
+          '<strong>Day 19-20: Final Assembly & QC</strong> - Tabletop dan frame dirakit. Final quality check: structure test, finish inspection, measurement verification.',
+          '<strong>Day 21-25: Delivery & Installation</strong> - Packing, loading, dan delivery ke lokasi. Tim kami install dan setting furniture. Pelunasan setelah installation complete.'
+        ]
+      },
+      {
+        heading: 'Payment Terms & Warranty',
+        paragraphs: [
+          '<strong>Payment Terms:</strong> DP 30% untuk start production. Pelunasan 70% setelah delivery & installation complete. Untuk corporate client dengan PO, kami bisa consider terms 30 hari nett (minimum transaction Rp 50 juta).',
+          '<strong>Warranty Coverage:</strong> 1 tahun warranty untuk struktur dan finishing. Warranty cover: welding crack, powder coating bubbling/peeling, structural failure. Not covered: damage karena misuse, force majeure, atau normal wear & tear. Free minor repair selama 6 bulan pertama (service call charge apply untuk luar Bekasi).'
+        ]
+      },
+      {
+        heading: 'Why Bekasi is the Hub for Industrial Furniture Manufacturing?',
+        paragraphs: [
+          'Bekasi telah menjadi pusat manufaktur furniture industrial di Indonesia karena beberapa alasan strategis:',
+          '<strong>Proximity to Raw Material Suppliers:</strong> Supplier besi hollow, plat, dan kayu solid banyak berlokasi di Bekasi dan Cikarang. Ini mengurangi cost dan lead time procurement. <strong>Skilled Labor Pool:</strong> Bekasi memiliki banyak welder, fabricator, dan craftsman berpengalaman. Ini hasil dari decades of manufacturing industry development di area ini. <strong>Lower Operational Cost:</strong> Biaya sewa workshop dan labor cost di Bekasi 40-50% lebih murah dibanding Jakarta Selatan atau Pusat. Savings ini kami pass ke customer. <strong>Logistics Advantage:</strong> Lokasi strategis dengan akses ke tol Jakarta-Cikampek dan Tol Becakayu memudahkan delivery ke seluruh Jabodetabek.'
+        ]
+      },
+      {
+        heading: 'Testimoni Klien Industrial Furniture Bekasi',
+        paragraphs: [
+          '"Kami order 45 pieces furniture untuk chain café kami (8 cabang di Jakarta). Mangala Living deliver on time dengan quality yang consistent di semua pieces. Harga juga 30% lebih murah dari vendor kami sebelumnya!" - <strong>Andi, Owner Java Bean Coffee Jakarta</strong>',
+          '"Sebagai interior designer, saya butuh workshop yang bisa execute custom design dengan presisi tinggi. Mangala Living selalu deliver sesuai spec dan timeline. Sudah 15 project saya pakai Mangala." - <strong>Sarah, Interior Designer Jakarta</strong>',
+          '"Workshop-nya bersih dan organized. Production process-nya systematic. Dan penting, mereka welcome client untuk visit dan inspect progress. Transparency seperti ini rare banget!" - <strong>Budi, Restaurant Owner Bekasi</strong>'
+        ]
+      },
+      {
+        heading: 'Hubungi Mangala Living untuk Quote & Konsultasi Gratis',
+        paragraphs: [
+          'Ready untuk upgrade furniture bisnis Anda dengan industrial furniture berkualitas premium dengan harga pabrik? Tim Mangala Living siap membantu dari konsultasi hingga after-sales support.',
+          '📞 <strong>WhatsApp (Fast Response):</strong> <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>📧 <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>📍 <strong>Workshop Address:</strong> Jl. Raya Setu Cikarang Bar., Bekasi 17320<br/>⏰ <strong>Business Hours:</strong> Mon-Fri 08:00-17:00, Sat 08:00-15:00',
+          '<strong>Special Promo:</strong> Untuk order pertama, dapatkan discount 10% + free delivery untuk wilayah Jabodetabek (min. order Rp 10 juta). Quote mention: "PROMO2025".',
+          'Visit workshop kami untuk lihat sample furniture dan diskusi langsung dengan tim produksi. <strong>Appointment required</strong> - contact kami untuk schedule kunjungan!'
+        ]
+      }
+    ]
   }
 ]
 
