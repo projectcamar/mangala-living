@@ -268,6 +268,7 @@ export const generateFAQStructuredData = () => {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "name": "Mangala Living FAQ",
     "mainEntity": [
       {
         "@type": "Question",

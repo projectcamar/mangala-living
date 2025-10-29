@@ -53,6 +53,7 @@ export const generateFAQSchema = (faqs: Array<{ question: string; answer: string
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "name": "Mangala Living FAQ",
     "mainEntity": faqs.map(faq => ({
       "@type": "Question",
       "name": faq.question,
