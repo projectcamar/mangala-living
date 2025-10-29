@@ -178,8 +178,50 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.footer-subscribe-form button:hover {
+.footer-subscribe-form button:hover:not(:disabled) {
   background: #8B7355;
+}
+
+.footer-subscribe-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.footer-subscribe-form input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.subscribe-message {
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 4px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.subscribe-message.success {
+  background: rgba(76, 175, 80, 0.15);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  color: #81c784;
+}
+
+.subscribe-message.error {
+  background: rgba(244, 67, 54, 0.15);
+  border: 1px solid rgba(244, 67, 54, 0.3);
+  color: #e57373;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Footer Bottom */

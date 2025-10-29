@@ -10,13 +10,53 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
   const [email, setEmail] = useState('')
   const [firstName, setFirstName] = useState('')
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null)
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle subscription logic here
-    console.log('Subscribe:', { firstName, email })
-    setFirstName('')
-    setEmail('')
+    setIsSubmitting(true)
+    setMessage(null)
+
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ firstName, email }),
+      })
+
+      if (response.ok) {
+        setMessage({ 
+          type: 'success', 
+          text: isIndonesian 
+            ? 'Terima kasih telah berlangganan!' 
+            : 'Thank you for subscribing!' 
+        })
+        setFirstName('')
+        setEmail('')
+      } else {
+        setMessage({ 
+          type: 'error', 
+          text: isIndonesian 
+            ? 'Gagal berlangganan. Silakan coba lagi.' 
+            : 'Subscription failed. Please try again.' 
+        })
+      }
+    } catch (error) {
+      console.error('Subscription error:', error)
+      setMessage({ 
+        type: 'error', 
+        text: isIndonesian 
+          ? 'Terjadi kesalahan. Silakan coba lagi.' 
+          : 'An error occurred. Please try again.' 
+      })
+    } finally {
+      setIsSubmitting(false)
+      // Clear message after 5 seconds
+      setTimeout(() => setMessage(null), 5000)
+    }
   }
 
   return (
@@ -119,6 +159,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 required
+                disabled={isSubmitting}
               />
               <input
                 type="email"
@@ -126,8 +167,19 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                disabled={isSubmitting}
               />
-              <button type="submit">{isIndonesian ? "BERLANGGANAN" : "SUBSCRIBE"}</button>
+              <button type="submit" disabled={isSubmitting}>
+                {isSubmitting 
+                  ? (isIndonesian ? "Mengirim..." : "Sending...") 
+                  : (isIndonesian ? "BERLANGGANAN" : "SUBSCRIBE")
+                }
+              </button>
+              {message && (
+                <div className={`subscribe-message ${message.type}`}>
+                  {message.text}
+                </div>
+              )}
             </form>
           </div>
         </div>

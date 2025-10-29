@@ -94,7 +94,7 @@ function App() {
         import('./pages/Shop')
         import('./pages/ProductDetail')
       }
-    }, 10000)
+    }, 10000) as unknown as number
     
     return () => {
       events.forEach(event => {
