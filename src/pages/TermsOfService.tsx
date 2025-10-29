@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useLocation } from 'react-router-dom'
+import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
@@ -60,6 +61,7 @@ const TermsOfService: React.FC = () => {
 
   return (
     <div className="terms-page">
+      <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet>
         <title>{isIndonesian ? 'Syarat dan Ketentuan - Mangala Living' : 'Terms of Service - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 

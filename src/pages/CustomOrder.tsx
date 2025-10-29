@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { Wrench, Palette, Truck, CheckCircle, MessageCircle } from 'lucide-react'
+import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
@@ -62,6 +63,7 @@ const CustomOrder: React.FC = () => {
 
   return (
     <div className="custom-order-page">
+      <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet>
         <title>{isIndonesian ? 'Custom Order - Mangala Living' : 'Custom Order - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 

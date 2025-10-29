@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { Diamond, DollarSign, Wrench, Globe } from 'lucide-react'
+import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
@@ -62,6 +63,7 @@ const About: React.FC = () => {
 
   return (
     <div className="about-page">
+      <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet>
         <title>{isIndonesian ? 'Tentang Kami - Mangala Living' : 'About Us - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 

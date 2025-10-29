@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useParams, Link } from 'react-router-dom'
+import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
@@ -20,6 +21,7 @@ const BlogPost: React.FC = () => {
   if (!post || !content) {
     return (
       <div className="blog-post-page">
+        <AnnouncementBar />
         <Header />
         <div className="blog-post-not-found">
           <h1>Article Not Found</h1>
@@ -41,6 +43,7 @@ const BlogPost: React.FC = () => {
 
   return (
     <div className="blog-post-page">
+      <AnnouncementBar />
       <Helmet>
         <title>{post.title} - Mangala Living</title>
         <meta name="description" content={post.slug === 'finishing-furniture-besi-powder-coating-vs-cat'

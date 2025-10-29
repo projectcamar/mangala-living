@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link, useSearchParams } from 'react-router-dom'
+import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
@@ -25,6 +26,7 @@ const Blog: React.FC = () => {
 
   return (
     <div className="blog-page">
+      <AnnouncementBar />
       <Helmet>
         <title>Blog & Article - Mangala Living</title>
         <meta name="description" content="Discover articles on furniture, interior design tips, and industry insights from Mangala Living." />
