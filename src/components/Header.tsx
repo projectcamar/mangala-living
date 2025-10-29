@@ -18,6 +18,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [isLanguageOpen, setIsLanguageOpen] = useState(false)
+  const [showAllCategories, setShowAllCategories] = useState(false)
   const navigate = useNavigate()
   const location = useLocation()
 
@@ -348,6 +349,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
       {/* Bottom Header - Category Navigation */}
       <div className="header-bottom">
         <div className="container">
+          {/* Desktop Navigation */}
           <nav className={`category-nav ${isMenuOpen ? 'nav-open' : ''}`}>
             <Link to="/product-category/new-arrivals" className="category-link">New Arrivals</Link>
             <Link to="/product-category/lounge-seating-set" className="category-link">Lounge Set</Link>
@@ -359,6 +361,39 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
             <Link to="/product-category/accessories-storage" className="category-link">Storage</Link>
             <Link to="/product-category/table-collection" className="category-link">Tables</Link>
             <Link to="/product-category/dining-table-collection" className="category-link">Dine Table</Link>
+          </nav>
+
+          {/* Mobile Compact Category Navigation */}
+          <nav className="mobile-category-nav">
+            {[
+              { to: "/product-category/new-arrivals", label: "New Arrivals" },
+              { to: "/product-category/lounge-seating-set", label: "Lounge Set" },
+              { to: "/product-category/industrial-sofa-bench", label: "Sofa Bench" },
+              { to: "/product-category/dining-set-collection", label: "Dining Set" },
+              { to: "/product-category/bar-furniture-collection", label: "Bar Set" },
+              { to: "/product-category/balcony-outdoor-collection", label: "Outdoor" },
+              { to: "/product-category/daybed-lounge-frame", label: "Daybed" },
+              { to: "/product-category/accessories-storage", label: "Storage" },
+              { to: "/product-category/table-collection", label: "Tables" },
+              { to: "/product-category/dining-table-collection", label: "Dine Table" }
+            ].slice(0, showAllCategories ? 10 : 5).map((category) => (
+              <Link 
+                key={category.to}
+                to={category.to} 
+                className="mobile-category-link"
+              >
+                {category.label}
+              </Link>
+            ))}
+            {!showAllCategories && (
+              <button 
+                className="mobile-category-more"
+                onClick={() => setShowAllCategories(true)}
+                aria-label={isIndonesian ? "Tampilkan lebih banyak" : "Show more"}
+              >
+                More
+              </button>
+            )}
           </nav>
 
             <button 

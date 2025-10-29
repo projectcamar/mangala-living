@@ -615,6 +615,11 @@ body:has(.announcement-bar) .header {
   background: #fff;
 }
 
+.header-bottom .container {
+  position: relative;
+  overflow: hidden;
+}
+
 .category-nav {
   display: flex;
   justify-content: center;
@@ -664,6 +669,7 @@ body:has(.announcement-bar) .header {
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 10;
 }
 
 .mobile-menu-toggle span {
@@ -672,6 +678,65 @@ body:has(.announcement-bar) .header {
   background: #333;
   margin: 3px 0;
   transition: 0.3s;
+}
+
+/* Mobile Compact Category Navigation */
+.mobile-category-nav {
+  display: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 6px 50px 6px 0;
+  gap: 10px;
+  align-items: center;
+  max-width: 100%;
+}
+
+.mobile-category-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-category-link {
+  display: inline-block;
+  padding: 4px 12px;
+  text-decoration: none;
+  color: #555;
+  font-size: 11px;
+  font-weight: 400;
+  white-space: nowrap;
+  border-radius: 12px;
+  background: #f5f5f5;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.mobile-category-link:hover,
+.mobile-category-link:active {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.mobile-category-more {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #2c2c2c;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 4px;
+}
+
+.mobile-category-more:hover {
+  background: #555;
 }
 
 /* Mobile Responsive */
@@ -711,12 +776,17 @@ body:has(.announcement-bar) .header {
     display: flex;
   }
 
+  .mobile-category-nav {
+    display: flex;
+  }
+
   .mobile-menu-toggle {
     display: flex;
   }
 
   .header-bottom {
     position: relative;
+    padding: 0.5rem 0;
   }
 }
 
@@ -755,6 +825,25 @@ body:has(.announcement-bar) .header {
   .search-btn svg {
     width: 16px;
     height: 16px;
+  }
+
+  .mobile-category-nav {
+    padding: 5px 50px 5px 0;
+    gap: 8px;
+  }
+
+  .mobile-category-link {
+    font-size: 10px;
+    padding: 3px 10px;
+  }
+
+  .mobile-category-more {
+    font-size: 10px;
+    padding: 3px 10px;
+  }
+
+  .header-bottom {
+    padding: 0.4rem 0;
   }
 }
 
@@ -803,6 +892,25 @@ body:has(.announcement-bar) .header {
     font-size: 12px;
     width: 16px;
     height: 12px;
+  }
+
+  .mobile-category-nav {
+    padding: 4px 45px 4px 0;
+    gap: 6px;
+  }
+
+  .mobile-category-link {
+    font-size: 9px;
+    padding: 3px 8px;
+  }
+
+  .mobile-category-more {
+    font-size: 9px;
+    padding: 3px 8px;
+  }
+
+  .header-bottom {
+    padding: 0.35rem 0;
   }
 
   /* Adjust header position for mobile when announcement bar is visible */
