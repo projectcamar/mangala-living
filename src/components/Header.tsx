@@ -395,16 +395,6 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
               </button>
             )}
           </nav>
-
-            <button 
-            className="mobile-menu-toggle"
-              onClick={toggleMenu}
-              aria-label={isIndonesian ? "Buka menu" : "Toggle menu"}
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
         </div>
       </div>
 
