@@ -58,9 +58,6 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
   const handleDownload = async (e: React.FormEvent) => {
     e.preventDefault()
     
-    // Store form data (optional - could send to backend/analytics)
-    console.log('Catalog download requested:', formData)
-    
     // Get the button element
     const button = e.currentTarget.querySelector('button[type="submit"]') as HTMLButtonElement
     if (button) {
@@ -72,6 +69,29 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
     const originalContent = document.body.innerHTML
     
     try {
+      // Send form data to email API (dual functionality)
+      try {
+        const response = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            firstName: formData.firstName,
+            email: formData.email,
+            whatsapp: formData.whatsapp
+          }),
+        })
+        
+        if (response.ok) {
+          console.log('Form data sent to email successfully')
+        } else {
+          console.warn('Failed to send form data to email:', await response.text())
+        }
+      } catch (emailError) {
+        // Don't block download if email fails
+        console.error('Error sending email:', emailError)
+      }
       // Show loading state
       document.body.innerHTML = `
         <html>
