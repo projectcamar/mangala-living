@@ -10,6 +10,7 @@ import CatalogModal from '../components/CatalogModal'
 import CategoriesSection from '../components/CategoriesSection'
 import BestSellersSection from '../components/BestSellersSection'
 import OurProductsSection from '../components/OurProductsSection'
+import ServiceAreasSection from '../components/ServiceAreasSection'
 import MessageSection from '../components/MessageSection'
 import Footer from '../components/Footer'
 import AISearchOptimizedContent from '../components/AISearchOptimizedContent'
@@ -435,6 +436,7 @@ const Home: React.FC = () => {
       <CategoriesSection isIndonesian={isIndonesian} />
       <BestSellersSection isIndonesian={isIndonesian} />
       <OurProductsSection isIndonesian={isIndonesian} />
+      <ServiceAreasSection isIndonesian={isIndonesian} />
       <MessageSection isIndonesian={isIndonesian} />
       <Footer isIndonesian={isIndonesian} />
       
