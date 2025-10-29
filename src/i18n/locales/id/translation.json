@@ -1,0 +1,188 @@
+{
+  "common": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "products": "Produk",
+    "contact": "Kontak",
+    "shop": "Toko",
+    "blog": "Blog",
+    "search": "Cari",
+    "menu": "Menu",
+    "close": "Tutup",
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "success": "Berhasil",
+    "readMore": "Baca Selengkapnya",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "getQuote": "Dapatkan Penawaran",
+    "orderNow": "Pesan Sekarang",
+    "viewDetails": "Lihat Detail",
+    "addToCart": "Tambah ke Keranjang",
+    "buyNow": "Beli Sekarang",
+    "phone": "Telepon",
+    "email": "Email",
+    "address": "Alamat",
+    "website": "Website",
+    "followUs": "Ikuti Kami",
+    "newsletter": "Newsletter",
+    "subscribe": "Berlangganan",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat & Ketentuan",
+    "shipping": "Pengiriman",
+    "returns": "Pengembalian",
+    "warranty": "Garansi"
+  },
+  "header": {
+    "title": "Furniture Jepara",
+    "subtitle": "Furniture Kayu Jati Berkualitas Tinggi",
+    "nav": {
+      "home": "Beranda",
+      "about": "Tentang Kami",
+      "products": "Produk",
+      "categories": "Kategori",
+      "blog": "Blog",
+      "contact": "Kontak",
+      "shop": "Toko"
+    },
+    "search": {
+      "placeholder": "Cari produk furniture...",
+      "button": "Cari"
+    },
+    "language": "Bahasa"
+  },
+  "hero": {
+    "title": "Furniture Kayu Jati Jepara Berkualitas Premium",
+    "subtitle": "Koleksi furniture kayu jati terbaik dengan desain modern dan tradisional yang memukau",
+    "cta": {
+      "primary": "Lihat Koleksi",
+      "secondary": "Pelajari Lebih Lanjut"
+    },
+    "features": {
+      "handcrafted": "Handcrafted",
+      "premium": "Premium Quality",
+      "sustainable": "Sustainable"
+    }
+  },
+  "about": {
+    "title": "Tentang Kami",
+    "subtitle": "Menciptakan Furniture Kayu Jati Berkualitas Tinggi Sejak 1985",
+    "description": "Kami adalah produsen furniture kayu jati Jepara yang telah berpengalaman lebih dari 30 tahun. Dengan dedikasi tinggi terhadap kualitas dan inovasi, kami menghadirkan furniture yang tidak hanya indah tetapi juga tahan lama.",
+    "mission": {
+      "title": "Misi Kami",
+      "description": "Menghadirkan furniture kayu jati berkualitas premium dengan desain yang timeless dan sustainable untuk memenuhi kebutuhan pelanggan di seluruh dunia."
+    },
+    "vision": {
+      "title": "Visi Kami",
+      "description": "Menjadi produsen furniture kayu jati terdepan di Indonesia yang dikenal secara internasional karena kualitas dan inovasinya."
+    },
+    "values": {
+      "title": "Nilai-Nilai Kami",
+      "quality": {
+        "title": "Kualitas Tinggi",
+        "description": "Setiap produk dibuat dengan standar kualitas tertinggi"
+      },
+      "craftsmanship": {
+        "title": "Kerajinan Tangan",
+        "description": "Dibuat oleh pengrajin berpengalaman dengan teknik tradisional"
+      },
+      "sustainability": {
+        "title": "Berkelanjutan",
+        "description": "Menggunakan kayu jati yang ditanam secara berkelanjutan"
+      }
+    },
+    "stats": {
+      "experience": "30+ Tahun Pengalaman",
+      "products": "1000+ Produk",
+      "customers": "5000+ Pelanggan",
+      "countries": "20+ Negara"
+    }
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Siap membantu kebutuhan furniture kayu jati Anda",
+    "form": {
+      "name": "Nama Lengkap",
+      "email": "Email",
+      "phone": "Nomor Telepon",
+      "company": "Perusahaan",
+      "subject": "Subjek",
+      "message": "Pesan",
+      "submit": "Kirim Pesan",
+      "required": "Wajib diisi"
+    },
+    "info": {
+      "title": "Informasi Kontak",
+      "address": "Jl. Raya Jepara No. 123, Jepara, Jawa Tengah 59411",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com",
+      "hours": "Senin - Jumat: 08:00 - 17:00 WIB"
+    },
+    "map": {
+      "title": "Lokasi Kami"
+    }
+  },
+  "products": {
+    "title": "Produk Kami",
+    "subtitle": "Koleksi furniture kayu jati berkualitas premium",
+    "categories": {
+      "all": "Semua Kategori",
+      "dining": "Meja Makan",
+      "living": "Ruang Tamu",
+      "bedroom": "Kamar Tidur",
+      "office": "Kantor",
+      "outdoor": "Outdoor"
+    },
+    "filters": {
+      "price": "Harga",
+      "material": "Material",
+      "style": "Gaya",
+      "color": "Warna"
+    },
+    "sort": {
+      "title": "Urutkan",
+      "newest": "Terbaru",
+      "oldest": "Terlama",
+      "priceLow": "Harga Terendah",
+      "priceHigh": "Harga Tertinggi",
+      "name": "Nama A-Z"
+    },
+    "pagination": {
+      "previous": "Sebelumnya",
+      "next": "Selanjutnya",
+      "page": "Halaman",
+      "of": "dari"
+    }
+  },
+  "footer": {
+    "description": "Produsen furniture kayu jati Jepara berkualitas premium dengan pengalaman lebih dari 30 tahun.",
+    "quickLinks": {
+      "title": "Tautan Cepat",
+      "home": "Beranda",
+      "about": "Tentang Kami",
+      "products": "Produk",
+      "contact": "Kontak"
+    },
+    "categories": {
+      "title": "Kategori Produk",
+      "dining": "Meja Makan",
+      "living": "Ruang Tamu",
+      "bedroom": "Kamar Tidur",
+      "office": "Kantor"
+    },
+    "contact": {
+      "title": "Kontak",
+      "address": "Jl. Raya Jepara No. 123",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Dapatkan update produk terbaru dan penawaran khusus",
+      "placeholder": "Masukkan email Anda",
+      "subscribe": "Berlangganan"
+    },
+    "copyright": "© 2024 Furniture Jepara. Semua hak dilindungi.",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat & Ketentuan"
+  }
+}

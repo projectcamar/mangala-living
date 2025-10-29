@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Instagram, Facebook } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import './Footer.css'
 
-interface FooterProps {
-  isIndonesian?: boolean
-}
-
-const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
+const Footer: React.FC = () => {
+  const { t } = useTranslation()
   const [email, setEmail] = useState('')
   const [firstName, setFirstName] = useState('')
 
@@ -27,101 +25,89 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
           <div className="footer-brand">
             <h2 className="footer-logo">MANGALA</h2>
             <p className="footer-description">
-              {isIndonesian 
-                ? "Pilihan terbaik untuk furniture industrial scandinavian premium sejak 1999. Melayani coffee shop, restoran, dan bisnis di seluruh Indonesia. Pesanan custom diterima."
-                : "Your best choice for premium industrial scandinavian furniture since 1999. Serving coffee shops, restaurants, and businesses across Indonesia, Jabodetabek, Jakarta, and major international markets. Custom orders welcome."
-              }
+              {t('footer.description')}
             </p>
-            <div className="footer-contact-info">
-              <h4>{isIndonesian ? "Hubungi Kami" : "Contact Us"}</h4>
-              <p>info@mangala-living.com</p>
-              <p>+62 852 1207 8467</p>
-              <div className="footer-social-icons">
-                <a href="https://instagram.com/mangalaliving" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                  <Instagram size={20} />
-                </a>
-                <a href="https://facebook.com/mangalaliving" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                  <Facebook size={20} />
-                </a>
-              </div>
+            <div className="footer-social">
+              <a href="https://instagram.com/mangalafurniture" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <Instagram size={20} />
+              </a>
+              <a href="https://facebook.com/mangalafurniture" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <Facebook size={20} />
+              </a>
             </div>
           </div>
 
-          {/* Find Us */}
-          <div className="footer-column">
-            <h4>{isIndonesian ? "Temukan Kami" : "Find Us"}</h4>
-            <div className="footer-location">
-              <h5>Workshop Bekasi :</h5>
-              <p>
-                <a
-                  href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="footer-address-link"
-                >
-                  Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
-                </a>
-              </p>
-              <p className="footer-phone">+62 852-1207-8467</p>
+          {/* Quick Links */}
+          <div className="footer-links">
+            <h3>{t('footer.quickLinks.title')}</h3>
+            <ul>
+              <li><Link to="/">{t('footer.quickLinks.home')}</Link></li>
+              <li><Link to="/about">{t('footer.quickLinks.about')}</Link></li>
+              <li><Link to="/products">{t('footer.quickLinks.products')}</Link></li>
+              <li><Link to="/contact">{t('footer.quickLinks.contact')}</Link></li>
+            </ul>
+          </div>
+
+          {/* Categories */}
+          <div className="footer-categories">
+            <h3>{t('footer.categories.title')}</h3>
+            <ul>
+              <li><Link to="/product-category/dining-set-collection">{t('footer.categories.dining')}</Link></li>
+              <li><Link to="/product-category/lounge-seating-set">{t('footer.categories.living')}</Link></li>
+              <li><Link to="/product-category/accessories-storage">{t('footer.categories.bedroom')}</Link></li>
+              <li><Link to="/product-category/table-collection">{t('footer.categories.office')}</Link></li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div className="footer-contact">
+            <h3>{t('footer.contact.title')}</h3>
+            <div className="contact-info">
+              <p><strong>Address:</strong><br />{t('footer.contact.address')}</p>
+              <p><strong>Phone:</strong><br />{t('footer.contact.phone')}</p>
+              <p><strong>Email:</strong><br />{t('footer.contact.email')}</p>
             </div>
           </div>
-          
-          {/* Quick Links */}
-          <div className="footer-column">
-                      <h4>{isIndonesian ? "Tautan Cepat" : "Quick Links"}</h4>
-                      <ul className="footer-links">
-                        <li><Link to="/about">About</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-                        <li><Link to="/shipping-information">{isIndonesian ? "Pengiriman" : "Shipping"}</Link></li>
-                        <li><Link to="/contact-us">Contact Us</Link></li>
-                        <li><Link to="/custom-order">{isIndonesian ? "Custom Order" : "Custom Order"}</Link></li>
-                        <li><Link to="/partnership">{isIndonesian ? "Kerja Sama" : "Partnership"}</Link></li>
-                        <li><Link to="/terms-of-service">{isIndonesian ? "Syarat & Ketentuan" : "Terms of Service"}</Link></li>
-            </ul>
-          </div>
-          
-          {/* Categories */}
-          <div className="footer-column">
-            <h4>Categories</h4>
-            <ul className="footer-links">
-              <li><Link to="/product-category/new-arrivals">New Arrivals</Link></li>
-              <li><Link to="/product-category/lounge-seating-set">Lounge Set</Link></li>
-              <li><Link to="/product-category/industrial-sofa-bench">Sofa Bench</Link></li>
-              <li><Link to="/product-category/dining-set-collection">Dining Set</Link></li>
-              <li><Link to="/product-category/bar-furniture-collection">Bar Set</Link></li>
-              <li><Link to="/product-category/balcony-outdoor-collection">Outdoor</Link></li>
-              <li><Link to="/product-category/daybed-lounge-frame">Daybed</Link></li>
-              <li><Link to="/product-category/accessories-storage">Storage</Link></li>
-              <li><Link to="/product-category/table-collection">Tables</Link></li>
-              <li><Link to="/product-category/dining-table-collection">Dine Table</Link></li>
-            </ul>
-          </div>
-          
-          {/* Subscribe */}
-          <div className="footer-column">
-            <h4>{isIndonesian ? "Berlangganan" : "Subscribe"}</h4>
-            <form onSubmit={handleSubscribe} className="footer-subscribe-form">
-              <input
-                type="text"
-                placeholder={isIndonesian ? "Nama depan" : "First name"}
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-                required
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-              <button type="submit">{isIndonesian ? "BERLANGGANAN" : "SUBSCRIBE"}</button>
+
+          {/* Newsletter */}
+          <div className="footer-newsletter">
+            <h3>{t('footer.newsletter.title')}</h3>
+            <p>{t('footer.newsletter.description')}</p>
+            <form onSubmit={handleSubscribe} className="newsletter-form">
+              <div className="newsletter-inputs">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder={t('footer.newsletter.placeholder')}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
+              <button type="submit" className="newsletter-btn">
+                {t('footer.newsletter.subscribe')}
+              </button>
             </form>
           </div>
         </div>
-        
+
+        {/* Footer Bottom */}
         <div className="footer-bottom">
-          <p>© 2025 Mangala Living. All rights reserved.</p>
+          <div className="footer-bottom-content">
+            <p className="footer-copyright">
+              {t('footer.copyright')}
+            </p>
+            <div className="footer-legal">
+              <Link to="/privacy-policy">{t('footer.privacy')}</Link>
+              <Link to="/terms-of-service">{t('footer.terms')}</Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

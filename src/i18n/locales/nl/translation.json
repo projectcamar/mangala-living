@@ -1,0 +1,188 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "Over ons",
+    "products": "Producten",
+    "contact": "Contact",
+    "shop": "Winkel",
+    "blog": "Blog",
+    "search": "Zoeken",
+    "menu": "Menu",
+    "close": "Sluiten",
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "success": "Succesvol",
+    "readMore": "Lees meer",
+    "learnMore": "Meer informatie",
+    "getQuote": "Offerte aanvragen",
+    "orderNow": "Nu bestellen",
+    "viewDetails": "Details bekijken",
+    "addToCart": "Toevoegen aan winkelwagen",
+    "buyNow": "Nu kopen",
+    "phone": "Telefoon",
+    "email": "E-mail",
+    "address": "Adres",
+    "website": "Website",
+    "followUs": "Volg ons",
+    "newsletter": "Nieuwsbrief",
+    "subscribe": "Abonneren",
+    "privacy": "Privacybeleid",
+    "terms": "Algemene voorwaarden",
+    "shipping": "Verzending",
+    "returns": "Retourneren",
+    "warranty": "Garantie"
+  },
+  "header": {
+    "title": "Jepara Meubelen",
+    "subtitle": "Premium Kwaliteit Teakhout Meubelen",
+    "nav": {
+      "home": "Home",
+      "about": "Over ons",
+      "products": "Producten",
+      "categories": "Categorieën",
+      "blog": "Blog",
+      "contact": "Contact",
+      "shop": "Winkel"
+    },
+    "search": {
+      "placeholder": "Zoek meubelproducten...",
+      "button": "Zoeken"
+    },
+    "language": "Taal"
+  },
+  "hero": {
+    "title": "Premium Kwaliteit Jepara Teakhout Meubelen",
+    "subtitle": "Uitstekende collectie teakhout meubelen met moderne en traditionele designs die betoveren",
+    "cta": {
+      "primary": "Bekijk collectie",
+      "secondary": "Meer informatie"
+    },
+    "features": {
+      "handcrafted": "Handgemaakt",
+      "premium": "Premium Kwaliteit",
+      "sustainable": "Duurzaam"
+    }
+  },
+  "about": {
+    "title": "Over ons",
+    "subtitle": "Premium Kwaliteit Teakhout Meubelen Maken Sinds 1985",
+    "description": "Wij zijn een Jepara teakhout meubelfabrikant met meer dan 30 jaar ervaring. Met hoge toewijding aan kwaliteit en innovatie presenteren wij meubelen die niet alleen mooi zijn maar ook duurzaam.",
+    "mission": {
+      "title": "Onze Missie",
+      "description": "Het leveren van premium kwaliteit teakhout meubelen met tijdloze en duurzame designs om klantbehoeften wereldwijd te vervullen."
+    },
+    "vision": {
+      "title": "Onze Visie",
+      "description": "Indonesië's toonaangevende teakhout meubelfabrikant worden, internationaal erkend voor kwaliteit en innovatie."
+    },
+    "values": {
+      "title": "Onze Waarden",
+      "quality": {
+        "title": "Hoge Kwaliteit",
+        "description": "Elk product wordt gemaakt met de hoogste kwaliteitsstandaarden"
+      },
+      "craftsmanship": {
+        "title": "Handwerk",
+        "description": "Gemaakt door ervaren ambachtslieden met traditionele technieken"
+      },
+      "sustainability": {
+        "title": "Duurzaamheid",
+        "description": "Gebruik van duurzaam geteeld teakhout"
+      }
+    },
+    "stats": {
+      "experience": "30+ Jaar Ervaring",
+      "products": "1000+ Producten",
+      "customers": "5000+ Klanten",
+      "countries": "20+ Landen"
+    }
+  },
+  "contact": {
+    "title": "Neem contact op",
+    "subtitle": "Klaar om te helpen met uw teakhout meubelbehoeften",
+    "form": {
+      "name": "Volledige naam",
+      "email": "E-mail",
+      "phone": "Telefoonnummer",
+      "company": "Bedrijf",
+      "subject": "Onderwerp",
+      "message": "Bericht",
+      "submit": "Bericht verzenden",
+      "required": "Verplicht"
+    },
+    "info": {
+      "title": "Contactinformatie",
+      "address": "Jl. Raya Jepara No. 123, Jepara, Central Java 59411",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com",
+      "hours": "Maandag - Vrijdag: 08:00 - 17:00 WIB"
+    },
+    "map": {
+      "title": "Onze locatie"
+    }
+  },
+  "products": {
+    "title": "Onze Producten",
+    "subtitle": "Collectie van premium kwaliteit teakhout meubelen",
+    "categories": {
+      "all": "Alle categorieën",
+      "dining": "Eettafels",
+      "living": "Woonkamer",
+      "bedroom": "Slaapkamer",
+      "office": "Kantoor",
+      "outdoor": "Buiten"
+    },
+    "filters": {
+      "price": "Prijs",
+      "material": "Materiaal",
+      "style": "Stijl",
+      "color": "Kleur"
+    },
+    "sort": {
+      "title": "Sorteren op",
+      "newest": "Nieuwste",
+      "oldest": "Oudste",
+      "priceLow": "Prijs laag naar hoog",
+      "priceHigh": "Prijs hoog naar laag",
+      "name": "Naam A-Z"
+    },
+    "pagination": {
+      "previous": "Vorige",
+      "next": "Volgende",
+      "page": "Pagina",
+      "of": "van"
+    }
+  },
+  "footer": {
+    "description": "Premium kwaliteit Jepara teakhout meubelfabrikant met meer dan 30 jaar ervaring.",
+    "quickLinks": {
+      "title": "Snelle links",
+      "home": "Home",
+      "about": "Over ons",
+      "products": "Producten",
+      "contact": "Contact"
+    },
+    "categories": {
+      "title": "Productcategorieën",
+      "dining": "Eettafels",
+      "living": "Woonkamer",
+      "bedroom": "Slaapkamer",
+      "office": "Kantoor"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Jl. Raya Jepara No. 123",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com"
+    },
+    "newsletter": {
+      "title": "Nieuwsbrief",
+      "description": "Ontvang de nieuwste productupdates en speciale aanbiedingen",
+      "placeholder": "Voer uw e-mail in",
+      "subscribe": "Abonneren"
+    },
+    "copyright": "© 2024 Furniture Jepara. Alle rechten voorbehouden.",
+    "privacy": "Privacybeleid",
+    "terms": "Algemene voorwaarden"
+  }
+}

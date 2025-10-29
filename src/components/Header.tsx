@@ -1,24 +1,29 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useNavigate, useLocation } from 'react-router-dom'
-import { Search, ChevronDown } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { Search } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import './Header.css'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateCatalog } from '../utils/catalogGenerator'
 import { trackEvent } from '../utils/analytics'
+import LanguageSwitcher from './LanguageSwitcher'
+import { useIPDetection } from '../hooks/useIPDetection'
 
-interface HeaderProps {
-  isIndonesian?: boolean
-}
-
-const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
+const Header: React.FC = () => {
+  const { t, i18n } = useTranslation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
-  const [isLanguageOpen, setIsLanguageOpen] = useState(false)
-  const navigate = useNavigate()
-  const location = useLocation()
+  const { language: detectedLanguage } = useIPDetection()
+
+  // Auto-detect language on first load
+  useEffect(() => {
+    if (detectedLanguage && !localStorage.getItem('i18nextLng')) {
+      i18n.changeLanguage(detectedLanguage)
+    }
+  }, [detectedLanguage, i18n])
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -29,78 +34,10 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     setSearchQuery('')
   }
 
-  const toggleLanguage = () => {
-    setIsLanguageOpen(!isLanguageOpen)
-  }
-
-  const handleLanguageKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault()
-      toggleLanguage()
-    } else if (e.key === 'Escape') {
-      setIsLanguageOpen(false)
-    }
-  }
-
-  const handleLanguageChange = (lang: 'id' | 'en') => {
-    setIsLanguageOpen(false)
-    const currentPath = location.pathname
-    
-    // Track language switch
-    const currentLang = getCurrentLanguageFromUrl() || (isIndonesian ? 'id' : 'en')
-    trackEvent.languageSwitch(currentLang, lang)
-    
-    // Remove existing language prefix if any
-    let cleanPath = currentPath
-    
-    // Handle /id/ and /eng/ (with trailing slash)
-    if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/')) {
-      cleanPath = currentPath.substring(4) // Remove /id/ or /eng/
-    } 
-    // Handle /id and /eng (without trailing slash) - but not /id/ or /eng/
-    else if (currentPath === '/id' || currentPath === '/eng') {
-      cleanPath = '/' // Go to home
-    }
-    // Handle /id or /eng followed by more path (like /id/product-category/...)
-    else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng')) {
-      cleanPath = currentPath.substring(3) // Remove /id or /eng
-    }
-    
-    // If cleanPath is empty or just '/', go to home with language prefix for SEO
-    if (!cleanPath || cleanPath === '/') {
-      const newPath = lang === 'id' ? '/id' : '/eng'
-      navigate(newPath)
-      return
-    }
-
-    // For other paths, preserve the path and set ?lang=...
-    const params = new URLSearchParams(location.search)
-    params.set('lang', lang)
-    navigate({ pathname: cleanPath, search: `?${params.toString()}` })
-  }
-
-
-  const getCurrentLanguageFromUrl = () => {
-    const path = location.pathname
-    if (path.startsWith('/id')) return 'id'
-    if (path.startsWith('/eng')) return 'en'
-    const params = new URLSearchParams(location.search)
-    const qLang = params.get('lang')
-    if (qLang === 'id' || qLang === 'en') return qLang
-    return null
-  }
-
-  const getCurrentLanguageDisplay = () => {
-    const urlLang = getCurrentLanguageFromUrl()
-    if (urlLang) return urlLang
-    return isIndonesian ? 'id' : 'en'
-  }
-
   const closeSearch = () => {
     setIsSearchOpen(false)
     setSearchQuery('')
   }
-
 
   const clearSearch = () => {
     setSearchQuery('')
@@ -162,20 +99,6 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [lastScrollY, isSearchOpen])
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (isLanguageOpen) {
-        const target = event.target as HTMLElement
-        if (!target.closest('.language-switcher')) {
-          setIsLanguageOpen(false)
-        }
-      }
-    }
-
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
-  }, [isLanguageOpen])
-
   return (
     <header className={`header ${!isHeaderVisible ? 'header-hidden' : ''}`} role="banner" itemScope itemType="https://schema.org/WPHeader">
       {/* Top Header */}
@@ -183,10 +106,10 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
       <div className="container">
           <div className="header-top-content">
             <nav className="header-top-nav">
-              <Link to="/about" className="header-top-link">About</Link>
-              <Link to="/blog" className="header-top-link">Blog</Link>
-              <Link to="/shipping-information" className="header-top-link">{isIndonesian ? "Pengiriman" : "Shipping"}</Link>
-              <Link to="/contact-us" className="header-top-link">Contact Us</Link>
+              <Link to="/about" className="header-top-link">{t('common.about')}</Link>
+              <Link to="/blog" className="header-top-link">{t('common.blog')}</Link>
+              <Link to="/shipping-information" className="header-top-link">{t('common.shipping')}</Link>
+              <Link to="/contact-us" className="header-top-link">{t('common.contact')}</Link>
             </nav>
             
             <Link to="/" className="logo">
@@ -195,59 +118,11 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
             
             <div className="header-top-actions">
               {/* Language Switcher */}
-              <div className="language-switcher">
-                <button 
-                  className="language-btn" 
-                  onClick={toggleLanguage}
-                  onKeyDown={handleLanguageKeyDown}
-                  aria-label={isIndonesian ? "Pilih bahasa" : "Choose language"}
-                  aria-expanded={isLanguageOpen}
-                  aria-haspopup="true"
-                  tabIndex={0}
-                >
-                  <span className={`flag ${getCurrentLanguageDisplay() === 'id' ? 'flag-id' : 'flag-us'}`}></span>
-                  <span className="language-text">{getCurrentLanguageDisplay() === 'id' ? "ID" : "EN"}</span>
-                  <ChevronDown size={16} />
-                </button>
-                {isLanguageOpen && (
-                  <div className="language-dropdown" onClick={(e) => e.stopPropagation()} role="menu" aria-label={isIndonesian ? "Pilih bahasa" : "Choose language"}>
-                    <button 
-                      className="language-option"
-                      role="menuitem"
-                      tabIndex={0}
-                      onClick={() => handleLanguageChange('id')}
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                          e.preventDefault()
-                          handleLanguageChange('id')
-                        }
-                      }}
-                    >
-                      <span className="flag flag-id"></span>
-                      <span>Indonesia</span>
-                    </button>
-                    <button 
-                      className="language-option"
-                      role="menuitem"
-                      tabIndex={0}
-                      onClick={() => handleLanguageChange('en')}
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                          e.preventDefault()
-                          handleLanguageChange('en')
-                        }
-                      }}
-                    >
-                      <span className="flag flag-us"></span>
-                      <span>English</span>
-                    </button>
-                  </div>
-                )}
-              </div>
+              <LanguageSwitcher />
               
-              <button className="search-btn" aria-label={isIndonesian ? "Cari" : "Search"} onClick={toggleSearch}>
+              <button className="search-btn" aria-label={t('common.search')} onClick={toggleSearch}>
                 <Search size={20} />
-                <span>{isIndonesian ? "Cari" : "Search"}</span>
+                <span>{t('common.search')}</span>
               </button>
         <button 
           className="catalog-btn" 
@@ -255,7 +130,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
             try {
               // Show loading state
               const button = event.target as HTMLButtonElement
-              button.textContent = isIndonesian ? 'MEMBUAT...' : 'GENERATING...'
+              button.textContent = t('common.loading')
               button.disabled = true
               
               // Generate catalog in new tab
@@ -302,8 +177,8 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                     <body>
                       <div class="loading">
                         <div class="spinner"></div>
-                        <h2>${isIndonesian ? "Membuat Katalog..." : "Generating Catalog..."}</h2>
-                        <p>${isIndonesian ? "Mohon tunggu sementara kami menyiapkan katalog furniture Anda" : "Please wait while we prepare your furniture catalog"}</p>
+                        <h2>${t('common.loading')}</h2>
+                        <p>${t('common.loading')}</p>
                       </div>
                     </body>
                   </html>
@@ -321,21 +196,21 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
               }
               
               // Reset button
-              button.textContent = isIndonesian ? 'UNDUH KATALOG KAMI' : 'DOWNLOAD OUR CATALOG'
+              button.textContent = t('common.getQuote')
               button.disabled = false
               
             } catch (error) {
               console.error('Error generating catalog:', error)
-              alert(isIndonesian ? 'Gagal mengunduh katalog. Silakan coba lagi.' : 'Failed to download catalog. Please try again.')
+              alert(t('common.error'))
               
               // Reset button on error
               const button = event.target as HTMLButtonElement
-              button.textContent = isIndonesian ? 'UNDUH KATALOG KAMI' : 'DOWNLOAD OUR CATALOG'
+              button.textContent = t('common.getQuote')
               button.disabled = false
             }
           }}
         >
-          {isIndonesian ? "UNDUH KATALOG KAMI" : "DOWNLOAD OUR CATALOG"}
+          {t('common.getQuote')}
               </button>
             </div>
           </div>
@@ -361,7 +236,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
             <button 
             className="mobile-menu-toggle"
               onClick={toggleMenu}
-              aria-label={isIndonesian ? "Buka menu" : "Toggle menu"}
+              aria-label={t('common.menu')}
             >
               <span></span>
               <span></span>
@@ -376,7 +251,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
           <div className="search-modal-backdrop" onClick={closeSearch}></div>
           <div className="search-modal-container">
             <div className="search-modal-content">
-              <button className="search-close-btn" onClick={closeSearch} aria-label={isIndonesian ? "Tutup pencarian" : "Close search"}>
+              <button className="search-close-btn" onClick={closeSearch} aria-label={t('common.close')}>
                 ×
               </button>
               <div className="search-modal-inner">
@@ -385,7 +260,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                   <input
                     type="text"
                     className="search-modal-input"
-                    placeholder={isIndonesian ? "Cari di sini" : "Search here"}
+                    placeholder={t('header.search.placeholder')}
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     onKeyPress={handleKeyPress}
@@ -393,10 +268,10 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                   />
                   {searchQuery ? (
                     <>
-                      <button className="search-clear-btn" onClick={clearSearch} aria-label={isIndonesian ? "Hapus pencarian" : "Clear search"}>
+                      <button className="search-clear-btn" onClick={clearSearch} aria-label={t('common.close')}>
                         ×
                       </button>
-                      <button className="search-submit-btn" onClick={handleSearch} aria-label={isIndonesian ? "Cari" : "Search"}>
+                      <button className="search-submit-btn" onClick={handleSearch} aria-label={t('common.search')}>
                         <Search size={20} />
                       </button>
                     </>

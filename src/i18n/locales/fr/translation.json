@@ -1,0 +1,188 @@
+{
+  "common": {
+    "home": "Accueil",
+    "about": "À propos",
+    "products": "Produits",
+    "contact": "Contact",
+    "shop": "Boutique",
+    "blog": "Blog",
+    "search": "Rechercher",
+    "menu": "Menu",
+    "close": "Fermer",
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "success": "Succès",
+    "readMore": "Lire la suite",
+    "learnMore": "En savoir plus",
+    "getQuote": "Demander un devis",
+    "orderNow": "Commander maintenant",
+    "viewDetails": "Voir les détails",
+    "addToCart": "Ajouter au panier",
+    "buyNow": "Acheter maintenant",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "address": "Adresse",
+    "website": "Site web",
+    "followUs": "Suivez-nous",
+    "newsletter": "Newsletter",
+    "subscribe": "S'abonner",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales",
+    "shipping": "Livraison",
+    "returns": "Retours",
+    "warranty": "Garantie"
+  },
+  "header": {
+    "title": "Mobilier Jepara",
+    "subtitle": "Mobilier en Teck de Qualité Premium",
+    "nav": {
+      "home": "Accueil",
+      "about": "À propos",
+      "products": "Produits",
+      "categories": "Catégories",
+      "blog": "Blog",
+      "contact": "Contact",
+      "shop": "Boutique"
+    },
+    "search": {
+      "placeholder": "Rechercher des meubles...",
+      "button": "Rechercher"
+    },
+    "language": "Langue"
+  },
+  "hero": {
+    "title": "Mobilier en Teck Jepara de Qualité Premium",
+    "subtitle": "Collection exquise de mobilier en teck avec des designs modernes et traditionnels qui captivent",
+    "cta": {
+      "primary": "Voir la collection",
+      "secondary": "En savoir plus"
+    },
+    "features": {
+      "handcrafted": "Fait main",
+      "premium": "Qualité Premium",
+      "sustainable": "Durable"
+    }
+  },
+  "about": {
+    "title": "À propos de nous",
+    "subtitle": "Créer des meubles en teck de qualité premium depuis 1985",
+    "description": "Nous sommes un fabricant de meubles en teck Jepara avec plus de 30 ans d'expérience. Avec un dévouement élevé à la qualité et à l'innovation, nous présentons des meubles qui sont non seulement beaux mais aussi durables.",
+    "mission": {
+      "title": "Notre mission",
+      "description": "Livrer des meubles en teck de qualité premium avec des designs intemporels et durables pour répondre aux besoins des clients dans le monde entier."
+    },
+    "vision": {
+      "title": "Notre vision",
+      "description": "Devenir le principal fabricant de meubles en teck d'Indonésie, reconnu internationalement pour sa qualité et son innovation."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "quality": {
+        "title": "Haute qualité",
+        "description": "Chaque produit est fabriqué selon les plus hauts standards de qualité"
+      },
+      "craftsmanship": {
+        "title": "Artisanat",
+        "description": "Fabriqué par des artisans expérimentés avec des techniques traditionnelles"
+      },
+      "sustainability": {
+        "title": "Durabilité",
+        "description": "Utilisation de teck cultivé de manière durable"
+      }
+    },
+    "stats": {
+      "experience": "30+ ans d'expérience",
+      "products": "1000+ produits",
+      "customers": "5000+ clients",
+      "countries": "20+ pays"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Prêt à vous aider avec vos besoins en mobilier teck",
+    "form": {
+      "name": "Nom complet",
+      "email": "E-mail",
+      "phone": "Numéro de téléphone",
+      "company": "Entreprise",
+      "subject": "Sujet",
+      "message": "Message",
+      "submit": "Envoyer le message",
+      "required": "Requis"
+    },
+    "info": {
+      "title": "Informations de contact",
+      "address": "Jl. Raya Jepara No. 123, Jepara, Central Java 59411",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com",
+      "hours": "Lundi - Vendredi: 08:00 - 17:00 WIB"
+    },
+    "map": {
+      "title": "Notre emplacement"
+    }
+  },
+  "products": {
+    "title": "Nos produits",
+    "subtitle": "Collection de meubles en teck de qualité premium",
+    "categories": {
+      "all": "Toutes les catégories",
+      "dining": "Tables à manger",
+      "living": "Salon",
+      "bedroom": "Chambre",
+      "office": "Bureau",
+      "outdoor": "Extérieur"
+    },
+    "filters": {
+      "price": "Prix",
+      "material": "Matériau",
+      "style": "Style",
+      "color": "Couleur"
+    },
+    "sort": {
+      "title": "Trier par",
+      "newest": "Plus récent",
+      "oldest": "Plus ancien",
+      "priceLow": "Prix croissant",
+      "priceHigh": "Prix décroissant",
+      "name": "Nom A-Z"
+    },
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant",
+      "page": "Page",
+      "of": "de"
+    }
+  },
+  "footer": {
+    "description": "Fabricant de meubles en teck Jepara de qualité premium avec plus de 30 ans d'expérience.",
+    "quickLinks": {
+      "title": "Liens rapides",
+      "home": "Accueil",
+      "about": "À propos",
+      "products": "Produits",
+      "contact": "Contact"
+    },
+    "categories": {
+      "title": "Catégories de produits",
+      "dining": "Tables à manger",
+      "living": "Salon",
+      "bedroom": "Chambre",
+      "office": "Bureau"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Jl. Raya Jepara No. 123",
+      "phone": "+62 291 123456",
+      "email": "info@furniturejepara.com"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Recevez les dernières mises à jour de produits et offres spéciales",
+      "placeholder": "Entrez votre e-mail",
+      "subscribe": "S'abonner"
+    },
+    "copyright": "© 2024 Furniture Jepara. Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales"
+  }
+}
