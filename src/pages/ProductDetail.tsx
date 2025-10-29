@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateCanonicalUrl, generateHreflangTags, getProductImageUrl } from '../utils/seo'
+import { sendBackgroundEmail } from '../utils/emailHelpers'
 import './ProductDetail.css'
 
 interface ProductDetail {
@@ -489,6 +490,15 @@ const ProductDetail: React.FC = () => {
               <button 
                 className="order-now-btn"
                 onClick={() => {
+                  // Send background email notification
+                  sendBackgroundEmail('order_now', {
+                    productName: product.name,
+                    productSlug: product.slug,
+                    productPrice: product.price,
+                    productCategory: product.categories.join(', '),
+                    productUrl: window.location.href,
+                  })
+
                   const whatsappMessage = `Halo Mangala Living,
 
 Saya tertarik dengan produk:
