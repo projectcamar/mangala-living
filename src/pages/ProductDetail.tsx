@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
@@ -236,6 +237,7 @@ const ProductDetail: React.FC = () => {
   if (!product) {
     return (
       <div>
+        <AnnouncementBar />
         <Header />
         <div className="container" style={{ padding: '100px 20px', textAlign: 'center' }}>
           <h1>Product not found</h1>
@@ -406,6 +408,7 @@ const ProductDetail: React.FC = () => {
 
   return (
     <div className="product-detail-page">
+      <AnnouncementBar />
       <Helmet>
         <title>{product.name === 'Hollowline Display Rack' 
           ? 'Hollowline Display Rack ✓ Harga Murah Rp4.5 Juta ✓ Call Mangala +62 852 1207 8467'

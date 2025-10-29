@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { ChevronDown } from 'lucide-react'
+import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
@@ -52,6 +53,7 @@ const ProductCategory: React.FC = () => {
 
   return (
     <div className="product-category-page">
+      <AnnouncementBar />
       <Helmet>
         <title>{categoryName} - Mangala Living</title>
         <meta name="description" content={`Browse our ${categoryName} collection at Mangala Living. Industrial furniture besi custom untuk ${categoryName.toLowerCase()}. Kualitas terbaik, harga terjangkau.`} />

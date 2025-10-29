@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { useLocation } from 'react-router-dom'
 
 // Components
+import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import CatalogModal from '../components/CatalogModal'
@@ -426,6 +427,7 @@ const Home: React.FC = () => {
           {JSON.stringify(generateWebSiteStructuredData())}
         </script>
       </Helmet>
+      <AnnouncementBar isIndonesian={isIndonesian} />
       <Header isIndonesian={isIndonesian} />
       <Hero isIndonesian={isIndonesian} />
       

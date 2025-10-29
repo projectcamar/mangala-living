@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { ChevronDown } from 'lucide-react'
+import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
@@ -46,6 +47,7 @@ const BestSellers: React.FC = () => {
 
   return (
     <div className="product-category-page">
+      <AnnouncementBar />
       <Helmet>
         <title>Best Sellers - Mangala Living</title>
         <meta name="description" content="Browse our best-selling industrial furniture collection at Mangala Living" />

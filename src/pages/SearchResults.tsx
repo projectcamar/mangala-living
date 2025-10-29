@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useLocation, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
@@ -62,6 +63,7 @@ function SearchResults() {
 
   return (
     <div className="search-results-page">
+      <AnnouncementBar />
       <Helmet>
         <title>Search: {query} - Mangala Living</title>
         <meta name="description" content={`Search results for ${query}`} />
