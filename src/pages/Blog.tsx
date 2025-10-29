@@ -70,7 +70,7 @@ const Blog: React.FC = () => {
             ))}
           </div>
 
-          {/* Pagination */}
+          {/* Pagination - Compact Version */}
           {totalPages > 1 && (
             <div className="blog-pagination">
               {currentPage > 1 && (
@@ -82,15 +82,52 @@ const Blog: React.FC = () => {
                 </button>
               )}
               
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                <button
-                  key={page}
-                  className={`pagination-btn pagination-number ${currentPage === page ? 'active' : ''}`}
-                  onClick={() => handlePageChange(page)}
-                >
-                  Page {page}
-                </button>
-              ))}
+              {/* Smart Pagination with Ellipsis */}
+              {(() => {
+                const pages: (number | string)[] = [];
+                const showEllipsis = totalPages > 7;
+                
+                if (!showEllipsis) {
+                  // Show all pages if 7 or less
+                  for (let i = 1; i <= totalPages; i++) {
+                    pages.push(i);
+                  }
+                } else {
+                  // Always show first page
+                  pages.push(1);
+                  
+                  if (currentPage <= 3) {
+                    // Near the beginning
+                    pages.push(2, 3, 4, 5, '...', totalPages);
+                  } else if (currentPage >= totalPages - 2) {
+                    // Near the end
+                    pages.push('...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
+                  } else {
+                    // In the middle
+                    pages.push('...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages);
+                  }
+                }
+                
+                return pages.map((page, index) => {
+                  if (page === '...') {
+                    return (
+                      <span key={`ellipsis-${index}`} className="pagination-ellipsis">
+                        ...
+                      </span>
+                    );
+                  }
+                  
+                  return (
+                    <button
+                      key={page}
+                      className={`pagination-btn pagination-number ${currentPage === page ? 'active' : ''}`}
+                      onClick={() => handlePageChange(page as number)}
+                    >
+                      {page}
+                    </button>
+                  );
+                });
+              })()}
               
               {currentPage < totalPages && (
                 <button 
