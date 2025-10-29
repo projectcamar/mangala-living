@@ -185,7 +185,6 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
             <nav className="header-top-nav">
               <Link to="/about" className="header-top-link">About</Link>
               <Link to="/blog" className="header-top-link">Blog</Link>
-              <Link to="/shipping-information" className="header-top-link">{isIndonesian ? "Pengiriman" : "Shipping"}</Link>
               <Link to="/contact-us" className="header-top-link">Contact Us</Link>
             </nav>
             
