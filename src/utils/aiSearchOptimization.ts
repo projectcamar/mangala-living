@@ -1,4 +1,6 @@
 // AI Search Optimization utilities for Mangala Living
+import { getProductImageUrl } from './seo'
+
 export const generateAIOptimizedStructuredData = () => {
   return {
     "@context": "https://schema.org",
@@ -123,12 +125,15 @@ export const generateAIOptimizedStructuredData = () => {
 }
 
 export const generateProductStructuredData = (product: any) => {
+  const imageUrl = getProductImageUrl(product.image, product.slug)
+  const priceNumeric = product.price?.replace(/[^\d]/g, '') || "0"
+  
   return {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": product.name,
-    "description": product.description || `Industrial furniture ${product.name} by Mangala Living`,
-    "image": product.image,
+    "description": product.description || `Industrial furniture ${product.name} by Mangala Living. Premium quality furniture made in Indonesia since 1999.`,
+    "image": imageUrl,
     "url": `https://mangala-living.com/product/${product.slug}`,
     "brand": {
       "@type": "Brand",
@@ -149,11 +154,50 @@ export const generateProductStructuredData = (product: any) => {
     ],
     "offers": {
       "@type": "Offer",
-      "price": product.price?.replace(/[^\d]/g, '') || "0",
+      "price": priceNumeric,
       "priceCurrency": "IDR",
       "availability": "https://schema.org/InStock",
       "priceValidUntil": "2025-12-31",
       "url": `https://mangala-living.com/product/${product.slug}`,
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "IDR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "ID"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "businessDays": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+          },
+          "cutoffTime": "14:00",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 3,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 3,
+            "unitCode": "DAY"
+          }
+        }
+      },
       "seller": {
         "@type": "Organization",
         "name": "Mangala Living"

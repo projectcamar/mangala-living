@@ -8,6 +8,7 @@ import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORIES } from '../data/categories'
 import { generateMerchantStructuredData } from '../utils/structuredData'
+import { getProductImageUrl } from '../utils/seo'
 import './ProductCategory.css'
 import './Shop.css'
 
@@ -151,22 +152,78 @@ const Shop: React.FC = () => {
             "mainEntity": {
               "@type": "ItemList",
               "numberOfItems": ALL_PRODUCTS.length,
-              "itemListElement": ALL_PRODUCTS.map((product, index) => ({
-                "@type": "ListItem",
-                "position": index + 1,
-                "item": {
-                  "@type": "Product",
-                  "name": product.name,
-                  "url": `https://mangala-living.com/product/${product.slug}`,
-                  "image": product.image,
-                  "offers": {
-                    "@type": "Offer",
-                    "price": product.price.replace(/[^\d]/g, ''),
-                    "priceCurrency": "IDR",
-                    "availability": "https://schema.org/InStock"
+              "itemListElement": ALL_PRODUCTS.map((product, index) => {
+                const imageUrl = getProductImageUrl(product.image, product.slug)
+                const priceNumeric = product.price.replace(/[^\d]/g, '')
+                const description = `Industrial furniture ${product.name} by Mangala Living. Premium quality furniture made in Indonesia since 1999.`
+                
+                return {
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": product.name,
+                    "description": description,
+                    "url": `https://mangala-living.com/product/${product.slug}`,
+                    "image": imageUrl,
+                    "brand": {
+                      "@type": "Brand",
+                      "name": "Mangala Living"
+                    },
+                    "offers": {
+                      "@type": "Offer",
+                      "price": priceNumeric,
+                      "priceCurrency": "IDR",
+                      "availability": "https://schema.org/InStock",
+                      "priceValidUntil": "2025-12-31",
+                      "url": `https://mangala-living.com/product/${product.slug}`,
+                      "hasMerchantReturnPolicy": {
+                        "@type": "MerchantReturnPolicy",
+                        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                        "merchantReturnDays": 30,
+                        "returnMethod": "https://schema.org/ReturnByMail",
+                        "returnFees": "https://schema.org/FreeReturn"
+                      },
+                      "shippingDetails": {
+                        "@type": "OfferShippingDetails",
+                        "shippingRate": {
+                          "@type": "MonetaryAmount",
+                          "value": "0",
+                          "currency": "IDR"
+                        },
+                        "shippingDestination": {
+                          "@type": "DefinedRegion",
+                          "addressCountry": "ID"
+                        },
+                        "deliveryTime": {
+                          "@type": "ShippingDeliveryTime",
+                          "businessDays": {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+                          },
+                          "cutoffTime": "14:00",
+                          "handlingTime": {
+                            "@type": "QuantitativeValue",
+                            "minValue": 3,
+                            "maxValue": 5,
+                            "unitCode": "DAY"
+                          },
+                          "transitTime": {
+                            "@type": "QuantitativeValue",
+                            "minValue": 1,
+                            "maxValue": 3,
+                            "unitCode": "DAY"
+                          }
+                        }
+                      },
+                      "seller": {
+                        "@type": "Organization",
+                        "name": "Mangala Living"
+                      }
+                    }
                   }
                 }
-              }))
+              })
             }
           })}
         </script>
