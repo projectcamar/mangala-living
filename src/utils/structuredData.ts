@@ -1,4 +1,69 @@
 // Structured Data utilities for Mangala Living
+
+// Generate BlogPosting Schema for SEO
+export const generateBlogPostingSchema = (post: {
+  title: string
+  excerpt: string
+  slug: string
+  date: string
+  image: string
+  category: string
+}) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": post.image,
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "author": {
+      "@type": "Organization",
+      "name": "Mangala Living",
+      "url": "https://mangala-living.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Mangala Living",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mangala-living.com/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://mangala-living.com/blog/${post.slug}`
+    },
+    "articleSection": post.category,
+    "inLanguage": "id-ID",
+    "keywords": [
+      "furniture industrial",
+      "furniture besi custom",
+      "furniture bekasi",
+      "meja industrial",
+      "kursi bar",
+      "furniture cafe",
+      "furniture restoran"
+    ]
+  }
+}
+
+// Generate FAQ Schema for educational content
+export const generateFAQSchema = (faqs: Array<{ question: string; answer: string }>) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  }
+}
+
 export const generateMerchantStructuredData = () => {
   return {
     "@context": "https://schema.org",
@@ -119,10 +184,11 @@ export const generateMerchantStructuredData = () => {
 export const generateLocalBusinessStructuredData = () => {
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Mangala Living",
+    "@type": ["FurnitureStore", "LocalBusiness"],
+    "name": "Mangala Living - Workshop Furniture Industrial Bekasi",
+    "alternateName": "Mangala Living Furniture Industrial Bekasi",
     "image": "https://mangala-living.com/og-image.jpg",
-    "description": "Premium Industrial Scandinavian Furniture for Coffee Shops, Restaurants & Offices. Custom Solutions Since 1999.",
+    "description": "Workshop Furniture Besi Custom Bekasi sejak 1999. Spesialis Industrial Furniture untuk Cafe, Restoran, Hotel, Kantor. Produksi langsung harga pabrik, material berkualitas, finishing powder coating. Melayani Jakarta, Bekasi, Jabodetabek.",
     "url": "https://mangala-living.com",
     "telephone": "+62-852-1207-8467",
     "email": "info@mangala-living.com",
@@ -139,6 +205,31 @@ export const generateLocalBusinessStructuredData = () => {
       "latitude": -6.2088,
       "longitude": 107.1602
     },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Bekasi"
+      },
+      {
+        "@type": "City",
+        "name": "Jakarta"
+      },
+      {
+        "@type": "State",
+        "name": "Jabodetabek"
+      }
+    ],
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": -6.2088,
+        "longitude": 107.1602
+      },
+      "geoRadius": "100000"
+    },
+    "slogan": "Furniture Industrial Bekasi - Workshop Terpercaya Sejak 1999",
+    "foundingDate": "1999",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -163,6 +254,37 @@ export const generateLocalBusinessStructuredData = () => {
       "reviewCount": "127",
       "bestRating": "5",
       "worstRating": "1"
-    }
+    },
+    "brand": {
+      "@type": "Brand",
+      "name": "Mangala Living"
+    },
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Furniture Besi Custom Bekasi",
+          "description": "Jasa pembuatan furniture besi custom untuk cafe, restoran, hotel, dan kantor"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Industrial Furniture Bekasi",
+          "description": "Produksi furniture industrial dengan desain modern dan material berkualitas"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Furniture Café Industrial Bekasi",
+          "description": "Spesialis furniture cafe industrial: meja, kursi, display rack, kitchen cabinet"
+        }
+      }
+    ],
+    "keywords": "furniture besi custom bekasi, industrial furniture bekasi, furniture café industrial bekasi, workshop furniture besi bekasi, jual furniture industrial jakarta bekasi, meja makan besi custom bekasi, meja café industrial besi, furniture besi hotel custom, bikin furniture besi custom jabodetabek, furniture besi untuk restoran"
   }
 }

@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import { getPostBySlug, BLOG_POSTS } from '../data/blog'
 import { getBlogPostContent } from '../data/blogContent'
+import { generateBlogPostingSchema } from '../utils/structuredData'
 import './BlogPost.css'
 
 const BlogPost: React.FC = () => {
@@ -41,26 +42,59 @@ const BlogPost: React.FC = () => {
     { label: post.title, path: `/blog/${post.slug}` }
   ]
 
+  // Generate SEO-optimized keywords based on post slug
+  const generateKeywords = (slug: string, title: string) => {
+    const keywordMap: { [key: string]: string } = {
+      // HIGH-INTENT KEYWORDS
+      'furniture-besi-custom-bekasi-workshop-terpercaya': 'furniture besi custom bekasi, workshop furniture bekasi, jasa furniture besi bekasi, custom furniture bekasi, furniture besi bekasi terpercaya',
+      'industrial-furniture-bekasi-harga-pabrik-kualitas-premium': 'industrial furniture bekasi, furniture industrial bekasi harga pabrik, workshop furniture industrial bekasi, furniture cafe bekasi',
+      'furniture-cafe-industrial-bekasi-desain-custom-modern': 'furniture café industrial bekasi, furniture cafe bekasi, meja kursi cafe bekasi, desain cafe industrial bekasi',
+      'workshop-furniture-besi-bekasi-produksi-langsung': 'workshop furniture besi bekasi, produksi furniture besi bekasi, pabrik furniture bekasi, workshop furniture industrial',
+      'jual-furniture-industrial-jakarta-bekasi-terlengkap': 'jual furniture industrial jakarta, jual furniture industrial bekasi, furniture industrial jakarta, toko furniture industrial',
+      'meja-makan-besi-custom-bekasi-industrial-minimalis': 'meja makan besi custom bekasi, meja makan industrial bekasi, custom dining table bekasi, meja cafe bekasi',
+      'meja-cafe-industrial-besi-custom-bekasi-jabodetabek': 'meja café industrial besi custom, meja cafe custom bekasi, meja bar industrial bekasi, furniture cafe jabodetabek',
+      'furniture-besi-hotel-custom-desain-eksklusif': 'furniture besi hotel custom, custom furniture hotel, furniture hotel industrial, desain furniture hotel',
+      'bikin-furniture-besi-custom-jabodetabek-berkualitas': 'bikin furniture besi custom, custom furniture jabodetabek, jasa bikin furniture besi, workshop furniture jabodetabek',
+      'furniture-besi-untuk-restoran-industrial-modern': 'furniture besi untuk restoran, furniture restoran industrial, meja kursi restoran besi, furniture commercial',
+      // FINISHING & TECHNIQUE
+      'finishing-furniture-besi-powder-coating-vs-cat': 'cat powder coating, finishing furniture besi, powder coating vs cat biasa, furniture coating bekasi',
+      'kombinasi-kayu-dan-besi-untuk-furniture-modern': 'kombinasi kayu dan besi, furniture modern, material industrial, meja kursi kayu besi',
+      'desain-meja-bar-industrial-untuk-ruang-terbatas': 'desain meja bar, meja bar ruang terbatas, meja cafe compact, furniture space efficient'
+    }
+    return keywordMap[slug] || `${title}, furniture industrial, furniture besi custom, furniture bekasi, mangala living`
+  }
+
+  // Generate BlogPosting Schema
+  const blogSchema = generateBlogPostingSchema(post)
+
   return (
     <div className="blog-post-page">
       <AnnouncementBar />
       <Helmet>
         <title>{post.title} - Mangala Living</title>
-        <meta name="description" content={post.slug === 'finishing-furniture-besi-powder-coating-vs-cat'
-          ? 'Cat Powder Coating vs Cat Biasa ✓ Perbandingan Lengkap ✓ Tips Finishing Furniture Besi ✓ Workshop Mangala Bekasi'
-          : post.slug === 'kombinasi-kayu-dan-besi-untuk-furniture-modern'
-          ? 'Kombinasi Kayu & Besi untuk Furniture Modern ✓ Desain Industrial ✓ Tips Material ✓ Workshop Bekasi'
-          : post.slug === 'desain-meja-bar-industrial-untuk-ruang-terbatas'
-          ? 'Desain Meja Bar Industrial untuk Ruang Terbatas ✓ Solusi Space-Efficient ✓ Meja Bar Murah ✓ Call Mangala'
-          : post.excerpt} />
-        <meta name="keywords" content={post.slug === 'finishing-furniture-besi-powder-coating-vs-cat'
-          ? 'cat powder coating, finishing furniture besi, powder coating vs cat biasa, furniture coating bekasi'
-          : post.slug === 'kombinasi-kayu-dan-besi-untuk-furniture-modern'
-          ? 'kombinasi kayu dan besi, furniture modern, material industrial, meja kursi kayu besi'
-          : post.slug === 'desain-meja-bar-industrial-untuk-ruang-terbatas'
-          ? 'desain meja bar, meja bar ruang terbatas, meja cafe compact, furniture space efficient'
-          : `${post.title}, furniture, industrial furniture, mangala living, furniture bekasi`} />
+        <meta name="description" content={post.excerpt} />
+        <meta name="keywords" content={generateKeywords(post.slug, post.title)} />
         <link rel="canonical" href={`https://mangala-living.com/blog/${post.slug}`} />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:image" content={post.image} />
+        <meta property="og:url" content={`https://mangala-living.com/blog/${post.slug}`} />
+        <meta property="og:type" content="article" />
+        <meta property="article:published_time" content={post.date} />
+        <meta property="article:author" content="Mangala Living" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:image" content={post.image} />
+        
+        {/* BlogPosting Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(blogSchema)}
+        </script>
       </Helmet>
       
       <Header />
