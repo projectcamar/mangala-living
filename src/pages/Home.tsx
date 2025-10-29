@@ -17,6 +17,8 @@ import AISearchFeatures from '../components/AISearchFeatures'
 
 // Utils
 import { generateAIOptimizedStructuredData, generateFAQStructuredData, generateWebSiteStructuredData } from '../utils/aiSearchOptimization'
+import { ALL_PRODUCTS } from '../data/products'
+import { getProductImageUrl } from '../utils/seo'
 
 const Home: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(false)
@@ -148,227 +150,90 @@ const Home: React.FC = () => {
         
         {/* Structured Data - Product Catalog */}
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "ItemList",
-              "name": "Furniture Industrial Mangala Living",
-              "description": "Koleksi furniture industrial besi custom untuk cafe, restoran, dan hotel",
-              "numberOfItems": 3,
-              "itemListElement": [
-                {
-                  "@type": "Product",
-                  "position": 1,
-                  "name": "Frame Loft Bookshelf",
-                  "description": "Rak buku industrial dengan desain loft modern untuk cafe dan kantor",
-                  "image": "https://mangala-living.com/assets/frame-Loft-Bookshelf.webp",
-                  "url": "https://mangala-living.com/product/frame-loft-bookshelf",
-                  "brand": {
-                    "@type": "Brand",
-                    "name": "Mangala Living"
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Furniture Industrial Mangala Living",
+            "description": "Koleksi furniture industrial besi custom untuk cafe, restoran, dan hotel",
+            "numberOfItems": ALL_PRODUCTS.length,
+            "itemListElement": ALL_PRODUCTS.map((product, index) => {
+              const imageUrl = getProductImageUrl(product.image, product.slug)
+              const priceNumeric = product.price.replace(/[^\d]/g, '')
+              const description = `Industrial furniture ${product.name} by Mangala Living. Premium quality furniture made in Indonesia since 1999.`
+              
+              return {
+                "@type": "Product",
+                "position": index + 1,
+                "name": product.name,
+                "description": description,
+                "image": imageUrl,
+                "url": `https://mangala-living.com/product/${product.slug}`,
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Mangala Living"
+                },
+                "offers": {
+                  "@type": "Offer",
+                  "price": priceNumeric,
+                  "priceCurrency": "IDR",
+                  "availability": "https://schema.org/InStock",
+                  "priceValidUntil": "2026-12-31",
+                  "url": `https://mangala-living.com/product/${product.slug}`,
+                  "hasMerchantReturnPolicy": {
+                    "@type": "MerchantReturnPolicy",
+                    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                    "merchantReturnDays": 30,
+                    "returnMethod": "https://schema.org/ReturnByMail",
+                    "returnFees": "https://schema.org/FreeReturn",
+                    "applicableCountry": "ID"
                   },
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "3500000",
-                    "priceCurrency": "IDR",
-                    "availability": "https://schema.org/InStock",
-                    "priceValidUntil": "2026-12-31",
-                    "url": "https://mangala-living.com/product/frame-loft-bookshelf",
-                    "hasMerchantReturnPolicy": {
-                      "@type": "MerchantReturnPolicy",
-                      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-                      "merchantReturnDays": 30,
-                      "returnMethod": "https://schema.org/ReturnByMail",
-                      "returnFees": "https://schema.org/FreeReturn"
+                  "shippingDetails": {
+                    "@type": "OfferShippingDetails",
+                    "shippingRate": {
+                      "@type": "MonetaryAmount",
+                      "value": "0",
+                      "currency": "IDR"
                     },
-                    "shippingDetails": {
-                      "@type": "OfferShippingDetails",
-                      "shippingRate": {
-                        "@type": "MonetaryAmount",
-                        "value": "0",
-                        "currency": "IDR"
+                    "shippingDestination": {
+                      "@type": "DefinedRegion",
+                      "addressCountry": "ID"
+                    },
+                    "deliveryTime": {
+                      "@type": "ShippingDeliveryTime",
+                      "businessDays": {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
                       },
-                      "shippingDestination": {
-                        "@type": "DefinedRegion",
-                        "addressCountry": "ID"
+                      "cutoffTime": "14:00",
+                      "handlingTime": {
+                        "@type": "QuantitativeValue",
+                        "minValue": 3,
+                        "maxValue": 5,
+                        "unitCode": "DAY"
                       },
-                      "deliveryTime": {
-                        "@type": "ShippingDeliveryTime",
-                        "businessDays": {
-                          "@type": "OpeningHoursSpecification",
-                          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-                        },
-                        "cutoffTime": "14:00",
-                        "handlingTime": {
-                          "@type": "QuantitativeValue",
-                          "minValue": 3,
-                          "maxValue": 5,
-                          "unitCode": "DAY"
-                        },
-                        "transitTime": {
-                          "@type": "QuantitativeValue",
-                          "minValue": 1,
-                          "maxValue": 3,
-                          "unitCode": "DAY"
-                        }
+                      "transitTime": {
+                        "@type": "QuantitativeValue",
+                        "minValue": 1,
+                        "maxValue": 3,
+                        "unitCode": "DAY"
                       }
-                    },
-                    "seller": {
-                      "@type": "Organization",
-                      "name": "Mangala Living"
                     }
                   },
-                  "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.8",
-                    "reviewCount": "127",
-                    "bestRating": "5",
-                    "worstRating": "1"
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "Mangala Living"
                   }
                 },
-                {
-                  "@type": "Product",
-                  "position": 2,
-                  "name": "Balcony Bar Table",
-                  "description": "Meja bar balkon industrial untuk area outdoor cafe dan restoran",
-                  "image": "https://mangala-living.com/assets/balcony-bar-table.webp",
-                  "url": "https://mangala-living.com/product/balcony-bar-table",
-                  "brand": {
-                    "@type": "Brand",
-                    "name": "Mangala Living"
-                  },
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "3500000",
-                    "priceCurrency": "IDR",
-                    "availability": "https://schema.org/InStock",
-                    "priceValidUntil": "2026-12-31",
-                    "url": "https://mangala-living.com/product/balcony-bar-table",
-                    "hasMerchantReturnPolicy": {
-                      "@type": "MerchantReturnPolicy",
-                      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-                      "merchantReturnDays": 30,
-                      "returnMethod": "https://schema.org/ReturnByMail",
-                      "returnFees": "https://schema.org/FreeReturn"
-                    },
-                    "shippingDetails": {
-                      "@type": "OfferShippingDetails",
-                      "shippingRate": {
-                        "@type": "MonetaryAmount",
-                        "value": "0",
-                        "currency": "IDR"
-                      },
-                      "shippingDestination": {
-                        "@type": "DefinedRegion",
-                        "addressCountry": "ID"
-                      },
-                      "deliveryTime": {
-                        "@type": "ShippingDeliveryTime",
-                        "businessDays": {
-                          "@type": "OpeningHoursSpecification",
-                          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-                        },
-                        "cutoffTime": "14:00",
-                        "handlingTime": {
-                          "@type": "QuantitativeValue",
-                          "minValue": 3,
-                          "maxValue": 5,
-                          "unitCode": "DAY"
-                        },
-                        "transitTime": {
-                          "@type": "QuantitativeValue",
-                          "minValue": 1,
-                          "maxValue": 3,
-                          "unitCode": "DAY"
-                        }
-                      }
-                    },
-                    "seller": {
-                      "@type": "Organization",
-                      "name": "Mangala Living"
-                    }
-                  },
-                  "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.8",
-                    "reviewCount": "127",
-                    "bestRating": "5",
-                    "worstRating": "1"
-                  }
-                },
-                {
-                  "@type": "Product",
-                  "position": 3,
-                  "name": "Beam Industrial Bar Chair",
-                  "description": "Kursi bar industrial besi dengan desain beam modern untuk cafe",
-                  "image": "https://mangala-living.com/assets/Kursi-Barstool-Besi-Behel.webp",
-                  "url": "https://mangala-living.com/product/beam-industrial-bar-chair",
-                  "brand": {
-                    "@type": "Brand",
-                    "name": "Mangala Living"
-                  },
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "450000",
-                    "priceCurrency": "IDR",
-                    "availability": "https://schema.org/InStock",
-                    "priceValidUntil": "2026-12-31",
-                    "url": "https://mangala-living.com/product/beam-industrial-bar-chair",
-                    "hasMerchantReturnPolicy": {
-                      "@type": "MerchantReturnPolicy",
-                      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-                      "merchantReturnDays": 30,
-                      "returnMethod": "https://schema.org/ReturnByMail",
-                      "returnFees": "https://schema.org/FreeReturn"
-                    },
-                    "shippingDetails": {
-                      "@type": "OfferShippingDetails",
-                      "shippingRate": {
-                        "@type": "MonetaryAmount",
-                        "value": "0",
-                        "currency": "IDR"
-                      },
-                      "shippingDestination": {
-                        "@type": "DefinedRegion",
-                        "addressCountry": "ID"
-                      },
-                      "deliveryTime": {
-                        "@type": "ShippingDeliveryTime",
-                        "businessDays": {
-                          "@type": "OpeningHoursSpecification",
-                          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-                        },
-                        "cutoffTime": "14:00",
-                        "handlingTime": {
-                          "@type": "QuantitativeValue",
-                          "minValue": 3,
-                          "maxValue": 5,
-                          "unitCode": "DAY"
-                        },
-                        "transitTime": {
-                          "@type": "QuantitativeValue",
-                          "minValue": 1,
-                          "maxValue": 3,
-                          "unitCode": "DAY"
-                        }
-                      }
-                    },
-                    "seller": {
-                      "@type": "Organization",
-                      "name": "Mangala Living"
-                    }
-                  },
-                  "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.8",
-                    "reviewCount": "127",
-                    "bestRating": "5",
-                    "worstRating": "1"
-                  }
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.8",
+                  "reviewCount": "127",
+                  "bestRating": "5",
+                  "worstRating": "1"
                 }
-              ]
-            }
-          `}
+              }
+            })
+          })}
         </script>
         
         {/* Local Business Schema */}

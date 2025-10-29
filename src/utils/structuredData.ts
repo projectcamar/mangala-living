@@ -135,7 +135,8 @@ export const generateMerchantStructuredData = () => {
             "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
             "merchantReturnDays": 30,
             "returnMethod": "https://schema.org/ReturnByMail",
-            "returnFees": "https://schema.org/FreeReturn"
+            "returnFees": "https://schema.org/FreeReturn",
+            "applicableCountry": "ID"
           },
           "shippingDetails": {
             "@type": "OfferShippingDetails",
