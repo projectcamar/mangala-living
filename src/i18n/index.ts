@@ -79,11 +79,24 @@ i18n
     },
   });
 
-// Auto-detect language on first load
-if (!localStorage.getItem('i18nextLng')) {
-  detectLanguageFromIP().then(language => {
-    i18n.changeLanguage(language);
-  });
+// Auto-detect language on first load (guard localStorage access)
+if (typeof window !== 'undefined') {
+  let storedLang: string | null = null;
+  try {
+    storedLang = window.localStorage.getItem('i18nextLng');
+  } catch {
+    // localStorage may be unavailable (privacy mode/security settings)
+  }
+  if (!storedLang) {
+    detectLanguageFromIP().then((language) => {
+      i18n.changeLanguage(language);
+      try {
+        window.localStorage.setItem('i18nextLng', language);
+      } catch {
+        // ignore if localStorage is not available
+      }
+    });
+  }
 }
 
 export default i18n;
