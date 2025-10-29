@@ -1,19 +1,21 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, lazy, Suspense } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useLocation } from 'react-router-dom'
 
-// Components
+// Critical above-the-fold components - Load immediately
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import CatalogModal from '../components/CatalogModal'
-import CategoriesSection from '../components/CategoriesSection'
-import BestSellersSection from '../components/BestSellersSection'
-import OurProductsSection from '../components/OurProductsSection'
-import MessageSection from '../components/MessageSection'
-import Footer from '../components/Footer'
-import AISearchOptimizedContent from '../components/AISearchOptimizedContent'
-import AISearchFeatures from '../components/AISearchFeatures'
+
+// Below-the-fold components - Lazy load for better Speed Index
+const CategoriesSection = lazy(() => import('../components/CategoriesSection'))
+const BestSellersSection = lazy(() => import('../components/BestSellersSection'))
+const OurProductsSection = lazy(() => import('../components/OurProductsSection'))
+const MessageSection = lazy(() => import('../components/MessageSection'))
+const Footer = lazy(() => import('../components/Footer'))
+const AISearchOptimizedContent = lazy(() => import('../components/AISearchOptimizedContent'))
+const AISearchFeatures = lazy(() => import('../components/AISearchFeatures'))
 
 // Utils
 import { generateAIOptimizedStructuredData, generateFAQStructuredData, generateWebSiteStructuredData } from '../utils/aiSearchOptimization'
