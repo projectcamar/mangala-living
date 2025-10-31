@@ -238,7 +238,7 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
       {
         heading: 'Solusi Produksi Mangala Living',
         paragraphs: [
-          '<strong>Workshop Modern di Bekasi:</strong> Fasilitas produksi seluas 800m? dengan welding station, powder coating booth, dan finishing room memastikan quality control optimal dari raw material hingga final product.',
+          '<strong>Workshop Modern di Bekasi:</strong> Fasilitas produksi seluas 800m² dengan welding station, powder coating booth, dan finishing room memastikan quality control optimal dari raw material hingga final product.',
           '<strong>Design Consultation Gratis:</strong> Tim kami (interior consultant + drafter + production supervisor) akan membantu menterjemahkan konsep Anda menjadi technical drawing dan 3D rendering sebelum produksi.',
           '<strong>Material Grade A:</strong> Kami menggunakan besi hollow galvanis (bukan besi hitam yang mudah karat), solid wood grade A/B (bukan MDF/particle board), dan powder coating imported dari Taiwan.',
           '<strong>Transparent Process:</strong> Klien dapat visit workshop any time untuk melihat progress produksi. Kami kirim photo update via WhatsApp di setiap milestone.',
@@ -4567,7 +4567,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          'Mencari <strong>furniture besi custom Bekasi</strong> berkualitas tinggi dengan harga yang kompetitif? Mangala Living adalah workshop furniture industrial terpercaya di Bekasi yang telah melayani lebih dari 1000 klien sejak tahun 1999. Dengan pengalaman 25 tahun di industri furniture industrial, kami menjadi pilihan utama untuk bisnis caf?, restoran, hotel, dan kantor di wilayah Jakarta, Bekasi, dan Jabodetabek.',
+          'Mencari <strong>furniture besi custom Bekasi</strong> berkualitas tinggi dengan harga yang kompetitif? Mangala Living adalah workshop furniture industrial terpercaya di Bekasi yang telah melayani lebih dari 1000 klien sejak tahun 1999. Dengan pengalaman 25 tahun di industri furniture industrial, kami menjadi pilihan utama untuk bisnis café, restoran, hotel, dan kantor di wilayah Jakarta, Bekasi, dan Jabodetabek.',
           'Workshop kami berlokasi strategis di Jl. Raya Setu Cikarang Bar, Bekasi, dilengkapi dengan mesin-mesin modern dan tim craftsman berpengalaman yang siap mewujudkan desain furniture impian Anda. Produksi langsung dari workshop memastikan kontrol kualitas maksimal dan harga yang lebih terjangkau karena tanpa perantara.'
         ],
         image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
@@ -4616,20 +4616,20 @@ const BLOG_CONTENTS: BlogContent[] = [
           'Selama 25 tahun beroperasi, Mangala Living telah menyelesaikan ratusan project furniture industrial di berbagai sektor bisnis. Berikut adalah beberapa kategori project yang sering kami tangani:'
         ],
         list: [
-          '<strong>Caf? & Coffee Shop (300+ project):</strong> Meja caf?, kursi bar, display rack, kitchen cabinet untuk startup caf? hingga chain coffee shop besar.',
+          '<strong>Café & Coffee Shop (300+ project):</strong> Meja café, kursi bar, display rack, kitchen cabinet untuk startup café hingga chain coffee shop besar.',
           '<strong>Restoran (150+ project):</strong> Dining table set, outdoor furniture, bar counter untuk casual dining, fine dining, dan fast casual restaurant.',
           '<strong>Hotel (50+ project):</strong> Lobby furniture, restaurant furniture, rooftop bar furniture untuk hotel bintang 3-5.',
           '<strong>Kantor (200+ project):</strong> Meja kerja industrial, meeting table, storage cabinet untuk startup, co-working space, dan corporate office.',
           '<strong>Retail Store (100+ project):</strong> Display rack, gondola, checkout counter untuk fashion store, bookstore, dan specialty shop.'
         ],
         image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
-        imageAlt: 'Portfolio Furniture Caf? Industrial Bekasi'
+        imageAlt: 'Portfolio Furniture Café Industrial Bekasi'
       },
       {
         heading: 'Harga Furniture Besi Custom Bekasi - Transparan & Kompetitif',
         paragraphs: [
           'Salah satu concern utama klien adalah harga. Mangala Living berkomitmen memberikan <strong>harga yang transparan dan kompetitif</strong> tanpa mengorbankan kualitas. Berikut adalah estimasi harga furniture besi custom kami (harga dapat berubah tergantung spesifikasi):',
-          '<strong>Meja Caf? 60x60cm (besi + kayu solid):</strong> Rp 1.200.000 - Rp 1.500.000. <strong>Meja Makan 80x80cm (besi + kayu solid):</strong> Rp 1.800.000 - Rp 2.200.000. <strong>Kursi Bar Industrial (tinggi 75cm):</strong> Rp 380.000 - Rp 550.000. <strong>Meja Bar 120x60x110cm:</strong> Rp 2.500.000 - Rp 3.200.000. <strong>Display Rack 3 Tier (150x60x180cm):</strong> Rp 1.800.000 - Rp 2.400.000. <strong>Kitchen Cabinet Industrial (per meter):</strong> Rp 2.800.000 - Rp 3.500.000.',
+          '<strong>Meja Café 60x60cm (besi + kayu solid):</strong> Rp 1.200.000 - Rp 1.500.000. <strong>Meja Makan 80x80cm (besi + kayu solid):</strong> Rp 1.800.000 - Rp 2.200.000. <strong>Kursi Bar Industrial (tinggi 75cm):</strong> Rp 380.000 - Rp 550.000. <strong>Meja Bar 120x60x110cm:</strong> Rp 2.500.000 - Rp 3.200.000. <strong>Display Rack 3 Tier (150x60x180cm):</strong> Rp 1.800.000 - Rp 2.400.000. <strong>Kitchen Cabinet Industrial (per meter):</strong> Rp 2.800.000 - Rp 3.500.000.',
           'Harga sudah termasuk material premium, finishing powder coating, dan garansi kualitas. Untuk project volume besar (20+ pieces), kami memberikan <strong>special discount hingga 15%</strong>.'
         ]
       },
@@ -4654,7 +4654,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Dalam industri yang kompetitif, reputasi adalah segalanya. Mangala Living telah dipercaya oleh ratusan bisnis karena:',
           '<strong>Lokasi Strategis:</strong> Workshop di Bekasi memudahkan akses dan mengurangi biaya delivery untuk klien di Jakarta Timur, Bekasi, Cikarang, dan sekitarnya. <strong>Production Capacity:</strong> Kapasitas produksi 200+ pieces per bulan memastikan deadline project Anda terpenuhi. <strong>Experienced Team:</strong> Tim kami terdiri dari desainer, welder, dan craftsman dengan pengalaman 10-20 tahun di industri furniture industrial. <strong>Quality Assurance:</strong> Setiap furniture melalui 3 tahap QC: welding check, structure test, dan finishing inspection. <strong>Competitive Price:</strong> Produksi langsung tanpa middleman menghasilkan harga 20-30% lebih murah dibanding retailer furniture.',
-          'Testimoni klien kami membuktikan komitmen kami terhadap kualitas dan service excellence. Ratusan caf?, restoran, dan hotel di Jabodetabek telah menjadi repeat customer kami.'
+          'Testimoni klien kami membuktikan komitmen kami terhadap kualitas dan service excellence. Ratusan café, restoran, dan hotel di Jabodetabek telah menjadi repeat customer kami.'
         ]
       },
       {
@@ -4691,7 +4691,7 @@ const BLOG_CONTENTS: BlogContent[] = [
       {
         paragraphs: [
           '<strong>Industrial furniture Bekasi</strong> dengan harga pabrik dan kualitas premium kini bukan lagi mimpi. Mangala Living hadir sebagai solusi lengkap untuk kebutuhan furniture industrial bisnis Anda. Dengan workshop langsung di Bekasi, kami menawarkan harga yang jauh lebih kompetitif dibanding retailer atau showroom furniture, tanpa mengorbankan kualitas material dan craftsmanship.',
-          'Sejak 1999, Mangala Living telah menjadi pilihan utama ratusan caf?, restoran, hotel, dan kantor di Jakarta dan Bekasi untuk furniture industrial berkualitas. Lokasi workshop strategis kami di Jl. Raya Setu Cikarang Bar memungkinkan akses mudah dan biaya delivery yang minimal untuk wilayah Jabodetabek.'
+          'Sejak 1999, Mangala Living telah menjadi pilihan utama ratusan café, restoran, hotel, dan kantor di Jakarta dan Bekasi untuk furniture industrial berkualitas. Lokasi workshop strategis kami di Jl. Raya Setu Cikarang Bar memungkinkan akses mudah dan biaya delivery yang minimal untuk wilayah Jabodetabek.'
         ],
         image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop',
         imageAlt: 'Industrial Furniture Bekasi Harga Pabrik Kualitas Premium'
@@ -4739,10 +4739,10 @@ const BLOG_CONTENTS: BlogContent[] = [
         ]
       },
       {
-        heading: 'Caf? Furniture Collection',
+        heading: 'Café Furniture Collection',
         list: [
-          '<strong>Meja Caf? Industrial 60x60cm</strong> - Material: Hollow 4x4cm thickness 2mm, top kayu Suar solid 2.5cm. Finishing: Powder coating hitam matte / putih. Harga: <strong>Rp 1.350.000</strong>',
-          '<strong>Kursi Caf? Industrial dengan Sandaran</strong> - Material: Hollow 4x4cm + flat bar 2x4cm. Seat: Plywood 12mm + cushion busa. Finishing: Powder coating. Harga: <strong>Rp 420.000</strong>',
+          '<strong>Meja Café Industrial 60x60cm</strong> - Material: Hollow 4x4cm thickness 2mm, top kayu Suar solid 2.5cm. Finishing: Powder coating hitam matte / putih. Harga: <strong>Rp 1.350.000</strong>',
+          '<strong>Kursi Café Industrial dengan Sandaran</strong> - Material: Hollow 4x4cm + flat bar 2x4cm. Seat: Plywood 12mm + cushion busa. Finishing: Powder coating. Harga: <strong>Rp 420.000</strong>',
           '<strong>Meja Bar Industrial 120x60x110cm</strong> - Material: Hollow 5x5cm thickness 3mm (heavy duty). Top: Kayu Trembesi solid 4cm. Footrest integrated. Harga: <strong>Rp 2.850.000</strong>',
           '<strong>Kursi Bar Stool Industrial 75cm</strong> - Material: Hollow 4x4cm. Seat: Kayu solid 3cm atau cushion. Adjustable height option. Harga: <strong>Rp 480.000</strong> (fixed) / <strong>Rp 650.000</strong> (adjustable)'
         ],
@@ -4793,7 +4793,7 @@ const BLOG_CONTENTS: BlogContent[] = [
       {
         heading: 'Frame Material Options',
         list: [
-          '<strong>Hollow Steel 4x4cm thickness 2mm</strong> - Standard untuk caf? furniture. Good balance antara strength dan cost. Harga base.',
+          '<strong>Hollow Steel 4x4cm thickness 2mm</strong> - Standard untuk café furniture. Good balance antara strength dan cost. Harga base.',
           '<strong>Hollow Steel 5x5cm thickness 3mm</strong> - Heavy duty untuk high-traffic restaurant atau bar. Load capacity lebih tinggi. Harga +20%.',
           '<strong>Flat Bar 2x4cm atau 3x5cm</strong> - Untuk design minimalis dengan profile slim. Biasa dikombinasikan dengan hollow. Harga sama dengan hollow 4x4.',
           '<strong>Round Pipe 1.5 inch atau 2 inch</strong> - Untuk design industrial dengan aesthetic softer. Harga +10%.'
@@ -4814,7 +4814,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Powder Coating Color Options',
         paragraphs: [
           'Mangala Living menawarkan 50+ standard powder coating colors. Best sellers:',
-          '<strong>Hitam Matte (RAL 9005 Matte)</strong> - Classic industrial look. Paling populer untuk caf? dan restaurant. <strong>Putih (RAL 9016 atau 9010)</strong> - Clean dan modern. Popular untuk kantor dan minimalist caf?. <strong>Abu-abu (RAL 7016 atau 7024)</strong> - Sophisticated look. Perfect untuk office atau upscale restaurant. <strong>Custom RAL Color</strong> - Match dengan brand color Anda. Minimum order 20 pieces atau surcharge Rp 500.000 untuk setup cost.'
+          '<strong>Hitam Matte (RAL 9005 Matte)</strong> - Classic industrial look. Paling populer untuk café dan restaurant. <strong>Putih (RAL 9016 atau 9010)</strong> - Clean dan modern. Popular untuk kantor dan minimalist café. <strong>Abu-abu (RAL 7016 atau 7024)</strong> - Sophisticated look. Perfect untuk office atau upscale restaurant. <strong>Custom RAL Color</strong> - Match dengan brand color Anda. Minimum order 20 pieces atau surcharge Rp 500.000 untuk setup cost.'
         ]
       },
       {
@@ -4849,7 +4849,7 @@ const BLOG_CONTENTS: BlogContent[] = [
       {
         heading: 'Testimoni Klien Industrial Furniture Bekasi',
         paragraphs: [
-          '"Kami order 45 pieces furniture untuk chain caf? kami (8 cabang di Jakarta). Mangala Living deliver on time dengan quality yang consistent di semua pieces. Harga juga 30% lebih murah dari vendor kami sebelumnya!" - <strong>Andi, Owner Java Bean Coffee Jakarta</strong>',
+          '"Kami order 45 pieces furniture untuk chain café kami (8 cabang di Jakarta). Mangala Living deliver on time dengan quality yang consistent di semua pieces. Harga juga 30% lebih murah dari vendor kami sebelumnya!" - <strong>Andi, Owner Java Bean Coffee Jakarta</strong>',
           '"Sebagai interior designer, saya butuh workshop yang bisa execute custom design dengan presisi tinggi. Mangala Living selalu deliver sesuai spec dan timeline. Sudah 15 project saya pakai Mangala." - <strong>Sarah, Interior Designer Jakarta</strong>',
           '"Workshop-nya bersih dan organized. Production process-nya systematic. Dan penting, mereka welcome client untuk visit dan inspect progress. Transparency seperti ini rare banget!" - <strong>Budi, Restaurant Owner Bekasi</strong>'
         ]
@@ -4871,8 +4871,8 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          'Summarecon Bekasi telah menjadi destinasi F&B dan lifestyle terpopuler di Bekasi dengan traffic pengunjung yang tinggi setiap harinya. Sebagai pemilik caf? atau restoran di area Summarecon Mall Bekasi, pemilihan furniture yang tepat sangat krusial untuk menciptakan dining experience yang memorable bagi pelanggan Anda.',
-          'Dalam artikel ini, kami akan membahas secara lengkap strategi pemilihan furniture caf? industrial untuk tenant Summarecon Bekasi, termasuk tips layout, material terbaik, dan rekomendasi produk yang sesuai dengan konsep premium mall area.'
+          'Summarecon Bekasi telah menjadi destinasi F&B dan lifestyle terpopuler di Bekasi dengan traffic pengunjung yang tinggi setiap harinya. Sebagai pemilik café atau restoran di area Summarecon Mall Bekasi, pemilihan furniture yang tepat sangat krusial untuk menciptakan dining experience yang memorable bagi pelanggan Anda.',
+          'Dalam artikel ini, kami akan membahas secara lengkap strategi pemilihan furniture café industrial untuk tenant Summarecon Bekasi, termasuk tips layout, material terbaik, dan rekomendasi produk yang sesuai dengan konsep premium mall area.'
         ]
       },
       {
@@ -4880,7 +4880,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Summarecon Bekasi memiliki karakteristik yang berbeda dengan mall lainnya. Pengunjung Summarecon didominasi oleh middle-upper class family dengan spending power yang tinggi, sehingga ekspektasi terhadap kualitas furniture dan ambiance juga tinggi.',
           '<strong>Demographics Pengunjung:</strong> 60% keluarga muda (25-40 tahun), 25% mahasiswa/young professional, 15% senior. <strong>Peak Hours:</strong> Weekday lunch (12:00-14:00), weekend evening (18:00-21:00). <strong>Spending Average:</strong> Rp 150.000-300.000 per visit untuk F&B. <strong>Dwell Time:</strong> Average 90-120 menit per kunjungan, lebih lama di weekend.',
-          'Dengan karakteristik ini, furniture caf? Anda harus balance antara durability untuk high-traffic, comfort untuk long dwell time, dan aesthetic appeal untuk Instagram-worthy moments yang penting untuk word-of-mouth marketing.'
+          'Dengan karakteristik ini, furniture café Anda harus balance antara durability untuk high-traffic, comfort untuk long dwell time, dan aesthetic appeal untuk Instagram-worthy moments yang penting untuk word-of-mouth marketing.'
         ]
       },
       {
@@ -4891,7 +4891,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Lounge Seating untuk Comfort:</strong> <a href="/product/bench-corner-lounge">Sofa industrial corner set</a> sangat cocok untuk area lounge atau waiting area. Upholstery dengan fabric yang stain-resistant dan mudah dibersihkan (microfiber atau vinyl leather) adalah must. Tambahkan coffee table industrial dengan height 45cm untuk complement sofa seating.'
         ],
         image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Caf? Industrial Summarecon Bekasi'
+        imageAlt: 'Furniture Café Industrial Summarecon Bekasi'
       },
       {
         heading: 'Layout Strategy untuk Space Optimization',
@@ -4942,7 +4942,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          'Harapan Indah telah berkembang menjadi kawasan hunian dan komersial terpadu yang dinamis di Bekasi Utara. Dengan pertumbuhan caf?, restoran, dan home-based business yang pesat, kebutuhan akan furniture industrial berkualitas tinggi semakin meningkat.',
+          'Harapan Indah telah berkembang menjadi kawasan hunian dan komersial terpadu yang dinamis di Bekasi Utara. Dengan pertumbuhan café, restoran, dan home-based business yang pesat, kebutuhan akan furniture industrial berkualitas tinggi semakin meningkat.',
           'Artikel ini akan membahas secara komprehensif tentang furniture industrial untuk area Harapan Indah, termasuk karakteristik unik kawasan, tips pemilihan furniture, dan solusi custom design untuk berbagai jenis bisnis F&B dan home office.'
         ]
       },
@@ -4950,19 +4950,19 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Profil Kawasan Harapan Indah: Residential Meets Commercial',
         paragraphs: [
           'Harapan Indah unik karena merupakan perpaduan antara residential area yang established dengan commercial district yang berkembang pesat. Demographics pengunjung sangat diverse:',
-          '<strong>Residential Profile:</strong> Middle-income families (60%), young couples (25%), senior residents (15%). Average household income: Rp 15-35 juta/bulan. <strong>Commercial Hotspots:</strong> Boulevard Harapan Indah (main commercial strip), Ruko Harapan Indah (cluster ruko), Area sekitar Giant Hypermarket (high foot traffic). <strong>Business Types:</strong> Caf? & coffee shop (35%), restaurant & eatery (30%), home-based business/home office (20%), salon & spa (15%).',
+          '<strong>Residential Profile:</strong> Middle-income families (60%), young couples (25%), senior residents (15%). Average household income: Rp 15-35 juta/bulan. <strong>Commercial Hotspots:</strong> Boulevard Harapan Indah (main commercial strip), Ruko Harapan Indah (cluster ruko), Area sekitar Giant Hypermarket (high foot traffic). <strong>Business Types:</strong> Café & coffee shop (35%), restaurant & eatery (30%), home-based business/home office (20%), salon & spa (15%).',
           'Dengan profile ini, furniture industrial yang cocok untuk Harapan Indah harus memenuhi kriteria: <strong>Residential-friendly aesthetic</strong> (tidak terlalu industrial/rough), <strong>Durable untuk commercial use</strong> namun <strong>affordable untuk UMKM budget</strong>, dan <strong>Flexible design</strong> yang bisa adapt untuk berbagai space size (dari 30m? hingga 150m?).'
         ]
       },
       {
-        heading: 'Furniture Industrial untuk Caf? & Coffee Shop di Harapan Indah',
+        heading: 'Furniture Industrial untuk Café & Coffee Shop di Harapan Indah',
         paragraphs: [
-          '<strong>1. Space-Efficient Bar Seating:</strong> Untuk caf? dengan space 50-80m?, <a href="/product/balcony-bar-table">bar table set</a> adalah pilihan paling space-efficient. Ukuran 80x40cm bisa accommodate 2 pax dengan footprint yang minimal. Posisikan bar seating di window area untuk maximize natural light dan create Instagram-worthy spot.',
+          '<strong>1. Space-Efficient Bar Seating:</strong> Untuk café dengan space 50-80m?, <a href="/product/balcony-bar-table">bar table set</a> adalah pilihan paling space-efficient. Ukuran 80x40cm bisa accommodate 2 pax dengan footprint yang minimal. Posisikan bar seating di window area untuk maximize natural light dan create Instagram-worthy spot.',
           '<strong>2. Community Table untuk Social Dining:</strong> Tren community table sangat cocok untuk area Harapan Indah yang community-oriented. <a href="/product-category/dining-table-collection">Meja panjang industrial</a> dengan ukuran 200x80cm bisa accommodate 8-10 pax dan encourage social interaction. Material: solid wood top dengan steel frame untuk industrial-meets-warm aesthetic.',
           '<strong>3. Outdoor Seating untuk Tropical Climate:</strong> Harapan Indah perfect untuk outdoor seating karena pedestrian-friendly dan shaded area. <a href="/product-category/balcony-outdoor-collection">Furniture outdoor industrial</a> dengan powder coating weather-resistant dan quick-dry cushion adalah must. Setup outdoor seating bisa increase capacity 30-40% tanpa expand indoor space.'
         ],
         image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Caf? Industrial Harapan Indah Bekasi'
+        imageAlt: 'Furniture Café Industrial Harapan Indah Bekasi'
       },
       {
         heading: 'Furniture untuk Home-Based Business & Home Office',
@@ -4986,7 +4986,7 @@ const BLOG_CONTENTS: BlogContent[] = [
       {
         heading: 'Budget Planning untuk Furniture Industrial Harapan Indah',
         paragraphs: [
-          '<strong>Caf? Kecil (40-60m?, 20-25 seats):</strong> Bar table (4 units x Rp 2.500.000) = Rp 10.000.000. Bar stool (16 pcs x Rp 450.000) = Rp 7.200.000. Dining table + chairs (3 sets x Rp 6.000.000) = Rp 18.000.000. Display rack/counter (2 units x Rp 4.000.000) = Rp 8.000.000. <strong>Total estimate: Rp 43.200.000</strong> (complete furniture setup).',
+          '<strong>Café Kecil (40-60m?, 20-25 seats):</strong> Bar table (4 units x Rp 2.500.000) = Rp 10.000.000. Bar stool (16 pcs x Rp 450.000) = Rp 7.200.000. Dining table + chairs (3 sets x Rp 6.000.000) = Rp 18.000.000. Display rack/counter (2 units x Rp 4.000.000) = Rp 8.000.000. <strong>Total estimate: Rp 43.200.000</strong> (complete furniture setup).',
           '<strong>Home Office (15-25m?):</strong> Meja kerja dengan rak = Rp 5.500.000. Kursi kerja industrial = Rp 2.500.000. Partisi/rak display = Rp 4.500.000. Side table/storage = Rp 2.000.000. <strong>Total estimate: Rp 14.500.000</strong> (fully furnished home office).',
           '<strong>Payment Flexibility:</strong> Untuk UMKM di Harapan Indah, kami offer payment terms: DP 30% untuk start production, 40% saat barang ready, 30% setelah delivery & installation. Atau cicilan 3x tanpa bunga untuk transaction di atas Rp 15 juta. <em>Terms berlaku untuk resident Harapan Indah dengan verifikasi.</em>'
         ]
@@ -4995,7 +4995,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Delivery & Installation Service untuk Area Harapan Indah',
         paragraphs: [
           'Workshop Mangala Living di Setu, Bekasi hanya berjarak 12km (20 menit drive) dari Harapan Indah. Proximity ini memberikan beberapa advantage:',
-          '<strong>Free Delivery:</strong> Gratis delivery untuk area Harapan Indah (residential & commercial) untuk transaction minimum Rp 5 juta. <strong>Flexible Scheduling:</strong> Delivery bisa dijadwalkan di weekday (untuk commercial) atau weekend (untuk residential) sesuai kebutuhan. <strong>Professional Installation:</strong> Tim installer kami berpengalaman dengan space constraint residential dan commercial. Installation biasanya complete dalam 4-6 jam untuk caf? size kecil, 1 hari untuk medium caf?. <strong>Post-Installation Support:</strong> Minor adjustment atau fix dalam 7 hari setelah installation adalah complimentary. Service call untuk area Harapan Indah no charge.'
+          '<strong>Free Delivery:</strong> Gratis delivery untuk area Harapan Indah (residential & commercial) untuk transaction minimum Rp 5 juta. <strong>Flexible Scheduling:</strong> Delivery bisa dijadwalkan di weekday (untuk commercial) atau weekend (untuk residential) sesuai kebutuhan. <strong>Professional Installation:</strong> Tim installer kami berpengalaman dengan space constraint residential dan commercial. Installation biasanya complete dalam 4-6 jam untuk café size kecil, 1 hari untuk medium café. <strong>Post-Installation Support:</strong> Minor adjustment atau fix dalam 7 hari setelah installation adalah complimentary. Service call untuk area Harapan Indah no charge.'
         ]
       },
       {
@@ -5022,7 +5022,7 @@ const BLOG_CONTENTS: BlogContent[] = [
       {
         paragraphs: [
           'Lippo Cikarang adalah kawasan mixed-use development terbesar di Cikarang dengan kombinasi mall, residential, office, dan education hub. Sebagai destinasi F&B dan retail yang ramai dikunjungi karyawan pabrik, mahasiswa, dan keluarga, Lippo Cikarang menawarkan peluang bisnis yang sangat menjanjikan.',
-          'Dalam artikel ini, kami akan membahas strategi furniture caf? industrial untuk area Lippo Cikarang, termasuk tips customize furniture untuk demographics unik kawasan ini, material selection untuk high-traffic environment, dan budget planning untuk tenant mall dan ruko commercial.'
+          'Dalam artikel ini, kami akan membahas strategi furniture café industrial untuk area Lippo Cikarang, termasuk tips customize furniture untuk demographics unik kawasan ini, material selection untuk high-traffic environment, dan budget planning untuk tenant mall dan ruko commercial.'
         ]
       },
       {
@@ -5042,13 +5042,13 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Family Zone untuk Weekend:</strong> <a href="/product-category/dining-table-collection">Dining table set</a> dengan 4-6 seater, spacing yang lebih generous untuk stroller access. Rounded edge table untuk child safety. <a href="/product/bench-corner-lounge">Sofa corner set</a> untuk comfortable family lounging.'
         ],
         image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Caf? Industrial Lippo Cikarang'
+        imageAlt: 'Furniture Café Industrial Lippo Cikarang'
       },
       {
         heading: 'Material Selection untuk Extreme High-Traffic',
         paragraphs: [
           'Lippo Cikarang area adalah high-traffic environment yang extreme. Furniture harus withstand:',
-          '<strong>Heavy Daily Usage:</strong> 200-300+ customer per day untuk caf? medium size. Table turnover 4-6x per day di peak hours. Constant cleaning dan sanitization (post-COVID protocol). Accidental spills, bumps, dan rough handling.',
+          '<strong>Heavy Daily Usage:</strong> 200-300+ customer per day untuk café medium size. Table turnover 4-6x per day di peak hours. Constant cleaning dan sanitization (post-COVID protocol). Accidental spills, bumps, dan rough handling.',
           '<strong>Recommended Material Specification:</strong> <strong>Frame:</strong> Besi hollow 4x8 atau square pipe 5x5 dengan wall thickness 1.5mm (extra thick untuk commercial grade). Welding full-penetration di semua joints untuk maximum strength. Powder coating epoxy dengan thickness 80-100 microns untuk superior durability. <strong>Table Top:</strong> HPL (High Pressure Laminate) grade A+ dengan thickness 12mm, impact-resistant dan heat-resistant hingga 180?C. ABS edge banding dengan minimal 2mm thickness untuk protect against chips. Avoid glass top (breakage risk) atau natural wood (staining issues) untuk high-traffic area. <strong>Seating:</strong> Metal seat dengan cushion pad (removable untuk easy cleaning) atau solid wood seat dengan clear coat polyurethane (durable dan easy maintain).',
           'Investment di material yang right akan save money in long run. Cheap furniture akan breakdown in 6-12 bulan and need replacement, while quality furniture last 5+ years with minimal maintenance.'
         ]
@@ -5066,8 +5066,8 @@ const BLOG_CONTENTS: BlogContent[] = [
       {
         heading: 'Budget Breakdown: Furniture Investment untuk Lippo Cikarang',
         paragraphs: [
-          '<strong>Small Caf?/Coffee Shop (60-80m?, 30-35 seats):</strong> Bar table set (5 units) = Rp 12.500.000. Dining table 2-seater (8 sets) = Rp 32.000.000. Dining table 4-seater (3 sets) = Rp 18.000.000. Display rack & counter (3 units) = Rp 12.000.000. Outdoor furniture (optional, 2 sets) = Rp 8.000.000. <strong>Total: Rp 74.500.000 - Rp 82.500.000</strong>',
-          '<strong>Medium Restaurant/Caf? (100-150m?, 50-60 seats):</strong> Mix of bar, 2-seater, 4-seater, dan sofa seating. Estimated budget: <strong>Rp 110.000.000 - Rp 140.000.000</strong> untuk complete furniture setup (including storage, display, dan outdoor).',
+          '<strong>Small Café/Coffee Shop (60-80m?, 30-35 seats):</strong> Bar table set (5 units) = Rp 12.500.000. Dining table 2-seater (8 sets) = Rp 32.000.000. Dining table 4-seater (3 sets) = Rp 18.000.000. Display rack & counter (3 units) = Rp 12.000.000. Outdoor furniture (optional, 2 sets) = Rp 8.000.000. <strong>Total: Rp 74.500.000 - Rp 82.500.000</strong>',
+          '<strong>Medium Restaurant/Café (100-150m?, 50-60 seats):</strong> Mix of bar, 2-seater, 4-seater, dan sofa seating. Estimated budget: <strong>Rp 110.000.000 - Rp 140.000.000</strong> untuk complete furniture setup (including storage, display, dan outdoor).',
           '<strong>ROI Perspective:</strong> Dengan average spending Rp 50.000/pax dan table turnover 4x/day, sebuah 4-seater table bisa generate: Rp 50.000 x 4 pax x 4 turnover = Rp 800.000/day. Monthly: Rp 24.000.000 (assuming 30 days operation). Furniture cost per table ~Rp 6.000.000 akan break-even in 7-8 hari. After that, it\'s pure profit generator!',
           '<em>Numbers ini simplified calculation, actual akan depend on occupancy rate, seasonality, etc. But it shows furniture is not "expense" - it\'s investment yang direct contribute to revenue.</em>'
         ]
@@ -5082,16 +5082,16 @@ const BLOG_CONTENTS: BlogContent[] = [
         ]
       },
       {
-        heading: 'Case Study: Successful Caf? di Lippo Cikarang dengan Furniture Mangala',
+        heading: 'Case Study: Successful Café di Lippo Cikarang dengan Furniture Mangala',
         paragraphs: [
-          '"Kami buka caf? di Lippo Mall Cikarang tahun 2023. Dari awal kami pilih Mangala Living untuk furniture karena lokasi dekat dan bisa lihat langsung sample. Material quality excellent dan survive heavy traffic (kami serve 250+ customer per day!). Setelah 1.5 tahun, furniture masih looks good as new - hanya minor touch-up finishing. ROI dari furniture ini luar biasa!" - <strong>Andri, Owner Java & Co. Lippo Mall Cikarang</strong>',
+          '"Kami buka café di Lippo Mall Cikarang tahun 2023. Dari awal kami pilih Mangala Living untuk furniture karena lokasi dekat dan bisa lihat langsung sample. Material quality excellent dan survive heavy traffic (kami serve 250+ customer per day!). Setelah 1.5 tahun, furniture masih looks good as new - hanya minor touch-up finishing. ROI dari furniture ini luar biasa!" - <strong>Andri, Owner Java & Co. Lippo Mall Cikarang</strong>',
           '"Sebagai franchise operator, saya appreciate consistency Mangala Living. Kami order furniture untuk 3 outlet di Cikarang area (Lippo, Jababeka, Deltamas) dan semuanya deliver dengan quality yang sama. Timeline juga on-point - critical untuk chain opening yang harus synchronized." - <strong>Budi, Franchise Manager Kopi Kenangan Cikarang Area</strong>'
         ]
       },
       {
         heading: 'Hubungi Kami untuk Quote & Konsultasi Furniture Lippo Cikarang',
         paragraphs: [
-          'Ready untuk setup caf? atau restaurant di Lippo Cikarang dengan furniture industrial berkualitas premium dengan harga factory direct? Tim Mangala Living siap support dari design hingga installation.',
+          'Ready untuk setup café atau restaurant di Lippo Cikarang dengan furniture industrial berkualitas premium dengan harga factory direct? Tim Mangala Living siap support dari design hingga installation.',
           '?? <strong>Contact (Fast Response):</strong> <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>?? <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>?? <strong>Workshop Address:</strong> Jl. Raya Setu Cikarang Bar., Bekasi (25 menit dari Lippo Cikarang)<br/>? <strong>Showroom Hours:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
           '<strong>Special Offer Lippo Cikarang Area:</strong> <em>Discount 12%</em> untuk first order + <em>free delivery & installation</em> untuk area Lippo Cikarang (Lippo Mall, Lippo Village, Orange County) + <em>free design consultation with 3D mockup</em>. Minimum order Rp 10 juta. Quote mention: "LIPPO2025".',
           '?? <strong>Workshop Visit Welcome!</strong> Kami encourage client untuk visit workshop before order. Lihat sample furniture, material library, production facility, dan meet the team. <strong>Appointment via WhatsApp required</strong> untuk ensure kami bisa allocate time untuk proper consultation.'
@@ -5266,9 +5266,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Jakarta dan Bekasi vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -5281,7 +5281,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Jakarta dan Bekasi.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE137" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE137" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5335,9 +5335,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di area outdoor dengan cuaca ekstrem vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -5350,7 +5350,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di area outdoor dengan cuaca ekstrem.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE138" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE138" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5404,9 +5404,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di area residential dan perumahan vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -5419,7 +5419,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di area residential dan perumahan.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE139" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE139" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5473,9 +5473,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di semua area dengan konsep unik vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -5488,7 +5488,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di semua area dengan konsep unik.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE140" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE140" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5542,9 +5542,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di BSD City dan Serpong vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -5557,7 +5557,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di BSD City dan Serpong.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE141" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE141" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5611,9 +5611,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Sentul dan Bogor area vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -5626,7 +5626,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Sentul dan Bogor area.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE142" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE142" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5680,9 +5680,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Margonda, UI, area kampus vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -5695,7 +5695,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Margonda, UI, area kampus.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE143" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE143" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5749,9 +5749,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Kemang, SCBD, Senopati vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -5764,7 +5764,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Kemang, SCBD, Senopati.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE144" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE144" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5818,9 +5818,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Dago, Riau, Progo Bandung vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -5833,7 +5833,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Dago, Riau, Progo Bandung.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE145" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE145" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5887,9 +5887,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Canggu, Seminyak, Ubud vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -5902,7 +5902,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Canggu, Seminyak, Ubud.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE146" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE146" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5956,9 +5956,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Galaxy Mall, Pakuwon vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -5971,7 +5971,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Galaxy Mall, Pakuwon.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE147" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE147" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6025,9 +6025,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Prawirotaman, Malioboro, Kaliurang vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -6040,7 +6040,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Prawirotaman, Malioboro, Kaliurang.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE148" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE148" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6094,9 +6094,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Malang dan Batu vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -6109,7 +6109,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Malang dan Batu.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE149" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE149" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6163,9 +6163,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Bogor dan Puncak vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -6178,7 +6178,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Bogor dan Puncak.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE150" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE150" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6232,9 +6232,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Medan, Sumatera Utara vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -6247,7 +6247,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Medan, Sumatera Utara.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE151" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE151" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6301,9 +6301,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Semarang, Jawa Tengah vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -6316,7 +6316,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Semarang, Jawa Tengah.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE152" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE152" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6370,9 +6370,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di Makassar, Sulawesi Selatan vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -6385,7 +6385,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Makassar, Sulawesi Selatan.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE153" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE153" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6439,9 +6439,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di area residential lokal vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -6454,7 +6454,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di area residential lokal.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE154" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE154" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6508,9 +6508,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di semua cafe dengan fokus F&B vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -6523,7 +6523,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di semua cafe dengan fokus F&B.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE155" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE155" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6577,9 +6577,9 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Budget Planning: Investment yang Worthwhile',
         paragraphs: [
           'Budget furniture untuk cafe di urban area dengan brand positioning premium vary based on size dan positioning. Berikut rough guide:',
-          '<strong>Small Cafe (40-60m²):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
-          '<strong>Medium Cafe (80-120m²):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
-          '<strong>Large Premium Cafe (150m²+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          '<strong>Small Cafe (40-60m?):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m?):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m?+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
           'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
         ]
       },
@@ -6592,7 +6592,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di urban area dengan brand positioning premium.',
-          '📞 <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>📧 <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>💬 Mention "CAFE156" untuk special consideration dalam quotation.'
+          '?? <strong>Contact:</strong> <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>?? <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? Mention "CAFE156" untuk special consideration dalam quotation.'
         ]
       },
       {
