@@ -5227,7 +5227,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         ]
       }
     ]
-  }
+  },
   // Cafe 24 Jam Jakarta & Bekasi
   {
     slug: 'cafe-24-jam-jakarta-bekasi-furniture-tahan-lama-operasional-non-stop',
