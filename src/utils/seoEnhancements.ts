@@ -2,13 +2,13 @@
 // Optimized for Google Page 1 Ranking
 
 /**
- * Generate comprehensive Organization schema with E-E-A-T signals
+ * Generate comprehensive LocalBusiness schema with E-E-A-T signals
  * E-E-A-T = Experience, Expertise, Authoritativeness, Trustworthiness
  */
 export const generateEnhancedOrganizationSchema = () => {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "LocalBusiness",
     "name": "Mangala Living",
     "alternateName": [
       "Mangala Living Furniture",
