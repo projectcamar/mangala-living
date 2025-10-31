@@ -574,7 +574,7 @@ export const generateEnhancedLocalBusinessSchema = () => {
     },
     "paymentAccepted": "Cash, Bank Transfer, Credit Card",
     "currenciesAccepted": "IDR",
-    "hasMap": "https://maps.google.com/?q=-6.2088,107.1602"
+    "hasMap": "https://maps.app.goo.gl/5Bc5ymfVtAYRPtpK7"
   }
 }
 

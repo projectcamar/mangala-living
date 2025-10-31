@@ -384,7 +384,7 @@ const TermsOfService: React.FC = () => {
                   </strong>
                   <p>
                     <a
-                      href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9"
+                      href="https://maps.app.goo.gl/5Bc5ymfVtAYRPtpK7"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="workshop-address"
