@@ -162,79 +162,82 @@ const Home: React.FC = () => {
               const description = `Industrial furniture ${product.name} by Mangala Living. Premium quality furniture made in Indonesia since 1999.`
               
               return {
-                "@type": "Product",
+                "@type": "ListItem",
                 "position": index + 1,
-                "name": product.name,
-                "description": description,
-                "image": imageUrl,
-                "url": `https://mangala-living.com/product/${product.slug}`,
-                "brand": {
-                  "@type": "Brand",
-                  "name": "Mangala Living"
-                },
-                "offers": {
-                  "@type": "Offer",
-                  "price": priceNumeric,
-                  "priceCurrency": "IDR",
-                  "availability": "https://schema.org/InStock",
-                  "priceValidUntil": "2026-12-31",
+                "item": {
+                  "@type": "Product",
+                  "name": product.name,
+                  "description": description,
+                  "image": imageUrl,
                   "url": `https://mangala-living.com/product/${product.slug}`,
-                  "hasMerchantReturnPolicy": {
-                    "@type": "MerchantReturnPolicy",
-                    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-                    "merchantReturnDays": 30,
-                    "returnMethod": "https://schema.org/ReturnByMail",
-                    "returnFees": "https://schema.org/FreeReturn",
-                    "applicableCountry": "ID"
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Mangala Living"
                   },
-                  "shippingDetails": {
-                    "@type": "OfferShippingDetails",
-                    "shippingRate": {
-                      "@type": "MonetaryAmount",
-                      "value": "0",
-                      "currency": "IDR"
+                  "offers": {
+                    "@type": "Offer",
+                    "price": priceNumeric,
+                    "priceCurrency": "IDR",
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2026-12-31",
+                    "url": `https://mangala-living.com/product/${product.slug}`,
+                    "hasMerchantReturnPolicy": {
+                      "@type": "MerchantReturnPolicy",
+                      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                      "merchantReturnDays": 30,
+                      "returnMethod": "https://schema.org/ReturnByMail",
+                      "returnFees": "https://schema.org/FreeReturn",
+                      "applicableCountry": "ID"
                     },
-                    "shippingDestination": {
-                      "@type": "DefinedRegion",
-                      "addressCountry": "ID"
-                    },
-                    "deliveryTime": {
-                      "@type": "ShippingDeliveryTime",
-                      "businessDays": {
-                        "@type": "OpeningHoursSpecification",
-                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+                    "shippingDetails": {
+                      "@type": "OfferShippingDetails",
+                      "shippingRate": {
+                        "@type": "MonetaryAmount",
+                        "value": "0",
+                        "currency": "IDR"
                       },
-                      "cutoffTime": "14:00",
-                      "handlingTime": {
-                        "@type": "QuantitativeValue",
-                        "minValue": 3,
-                        "maxValue": 5,
-                        "unitCode": "DAY"
+                      "shippingDestination": {
+                        "@type": "DefinedRegion",
+                        "addressCountry": "ID"
                       },
-                      "transitTime": {
-                        "@type": "QuantitativeValue",
-                        "minValue": 1,
-                        "maxValue": 3,
-                        "unitCode": "DAY"
+                      "deliveryTime": {
+                        "@type": "ShippingDeliveryTime",
+                        "businessDays": {
+                          "@type": "OpeningHoursSpecification",
+                          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+                        },
+                        "cutoffTime": "14:00",
+                        "handlingTime": {
+                          "@type": "QuantitativeValue",
+                          "minValue": 3,
+                          "maxValue": 5,
+                          "unitCode": "DAY"
+                        },
+                        "transitTime": {
+                          "@type": "QuantitativeValue",
+                          "minValue": 1,
+                          "maxValue": 3,
+                          "unitCode": "DAY"
+                        }
                       }
+                    },
+                    "seller": {
+                      "@type": "Organization",
+                      "name": "Mangala Living",
+                      "url": "https://mangala-living.com",
+                      "logo": "https://mangala-living.com/logo.png",
+                      "image": "https://mangala-living.com/og-image.jpg"
                     }
                   },
-                  "seller": {
-                    "@type": "Organization",
-                    "name": "Mangala Living",
-                    "url": "https://mangala-living.com",
-                    "logo": "https://mangala-living.com/logo.png",
-                    "image": "https://mangala-living.com/og-image.jpg"
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "ratingCount": "127",
+                    "reviewCount": "127",
+                    "bestRating": "5",
+                    "worstRating": "1"
                   }
-                },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "ratingCount": "127",
-                "reviewCount": "127",
-                "bestRating": "5",
-                "worstRating": "1"
-              }
+                }
               }
             })
           })}
