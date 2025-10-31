@@ -1,6 +1,6 @@
 // Structured Data utilities for Mangala Living
 
-// Generate BlogPosting Schema for SEO
+// Generate BlogPosting Schema for SEO with Author E-E-A-T
 export const generateBlogPostingSchema = (post: {
   title: string
   excerpt: string
@@ -8,7 +8,88 @@ export const generateBlogPostingSchema = (post: {
   date: string
   image: string
   category: string
+  author?: string
 }) => {
+  // If author is specified (Helmi Ramdan), use Person schema with full credentials
+  // Otherwise fallback to Organization
+  const authorSchema = post.author === 'Helmi Ramdan' ? {
+    "@type": "Person",
+    "name": "Helmi Ramdan",
+    "url": "https://www.linkedin.com/in/helmi-ramdan-067912118/",
+    "sameAs": "https://www.linkedin.com/in/helmi-ramdan-067912118/",
+    "jobTitle": "Associate - Housing & Settlement Infrastructure",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Universitas Diponegoro"
+    },
+    "knowsAbout": [
+      "Architecture",
+      "Interior Design",
+      "Commercial Space Design",
+      "Infrastructure Engineering",
+      "Construction",
+      "Furniture Design",
+      "Industrial Furniture",
+      "Space Planning",
+      "Project Management"
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "educationalLevel": "Diploma III",
+        "name": "Desain Arsitektur"
+      }
+    ],
+    "hasOccupation": [
+      {
+        "@type": "Occupation",
+        "name": "Associate",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Jakarta"
+        },
+        "skills": "Architecture, Infrastructure, Design Engineering"
+      },
+      {
+        "@type": "Occupation",
+        "name": "Infrastructure Engineer",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Bekasi"
+        },
+        "skills": "Infrastructure Development, Project Management"
+      },
+      {
+        "@type": "Occupation",
+        "name": "Design Engineer",
+        "skills": "Architectural Design, CAD, Technical Drawing"
+      },
+      {
+        "@type": "Occupation",
+        "name": "Architectural Drafter",
+        "skills": "AutoCAD, 3D Modeling, Construction Documentation"
+      }
+    ],
+    "description": "Architecture and infrastructure professional with 10+ years of experience in commercial space design, construction, and furniture consultation. Currently serving as Associate at Jakarta Provincial Housing and Settlement Agency, with previous roles in infrastructure engineering, procurement, and architectural drafting.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jakarta",
+      "addressRegion": "DKI Jakarta",
+      "addressCountry": "ID"
+    }
+  } : {
+    "@type": "Organization",
+    "name": "Mangala Living",
+    "url": "https://mangala-living.com",
+    "logo": "https://mangala-living.com/logo.png",
+    "image": "https://mangala-living.com/og-image.jpg"
+  }
+
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -17,13 +98,7 @@ export const generateBlogPostingSchema = (post: {
     "image": post.image,
     "datePublished": post.date,
     "dateModified": post.date,
-    "author": {
-      "@type": "Organization",
-      "name": "Mangala Living",
-      "url": "https://mangala-living.com",
-      "logo": "https://mangala-living.com/logo.png",
-      "image": "https://mangala-living.com/og-image.jpg"
-    },
+    "author": authorSchema,
     "publisher": {
       "@type": "Organization",
       "name": "Mangala Living",
@@ -329,12 +404,12 @@ export const generateLocalBusinessStructuredData = () => {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Furniture Café Industrial Bekasi",
+          "name": "Furniture Caf? Industrial Bekasi",
           "description": "Spesialis furniture cafe industrial: meja, kursi, display rack, kitchen cabinet"
         }
       }
     ],
-    "keywords": "furniture besi custom bekasi, industrial furniture bekasi, furniture café industrial bekasi, workshop furniture besi bekasi, jual furniture industrial jakarta bekasi, meja makan besi custom bekasi, meja café industrial besi, furniture besi hotel custom, bikin furniture besi custom jabodetabek, furniture besi untuk restoran, furniture bekasi barat, furniture bekasi timur, furniture bekasi selatan, furniture bekasi utara, furniture cikarang barat, furniture cikarang utara, furniture cikarang selatan, furniture cikarang timur, furniture cikarang pusat, furniture harapan indah, furniture summarecon bekasi, furniture jatiasih, furniture pekayon, furniture tambun, furniture pondok gede, furniture mustika jaya, furniture rawalumbu, furniture medan satria, furniture lippo cikarang, furniture jababeka, furniture grand galaxy city, furniture galaxy bekasi, furniture kemang pratama, furniture deltamas, furniture ejip, furniture greenland cikarang, furniture mm2100, furniture jakarta timur, furniture jakarta pusat, furniture jakarta selatan, furniture depok, furniture bogor, furniture karawang, furniture cibitung, furniture setu, furniture kranji, furniture bintara, furniture kayuringin, furniture pekayon jaya, furniture margahayu, furniture kaliabang"
+    "keywords": "furniture besi custom bekasi, industrial furniture bekasi, furniture caf? industrial bekasi, workshop furniture besi bekasi, jual furniture industrial jakarta bekasi, meja makan besi custom bekasi, meja caf? industrial besi, furniture besi hotel custom, bikin furniture besi custom jabodetabek, furniture besi untuk restoran, furniture bekasi barat, furniture bekasi timur, furniture bekasi selatan, furniture bekasi utara, furniture cikarang barat, furniture cikarang utara, furniture cikarang selatan, furniture cikarang timur, furniture cikarang pusat, furniture harapan indah, furniture summarecon bekasi, furniture jatiasih, furniture pekayon, furniture tambun, furniture pondok gede, furniture mustika jaya, furniture rawalumbu, furniture medan satria, furniture lippo cikarang, furniture jababeka, furniture grand galaxy city, furniture galaxy bekasi, furniture kemang pratama, furniture deltamas, furniture ejip, furniture greenland cikarang, furniture mm2100, furniture jakarta timur, furniture jakarta pusat, furniture jakarta selatan, furniture depok, furniture bogor, furniture karawang, furniture cibitung, furniture setu, furniture kranji, furniture bintara, furniture kayuringin, furniture pekayon jaya, furniture margahayu, furniture kaliabang"
   }
 }
 
