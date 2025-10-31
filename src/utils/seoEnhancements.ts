@@ -144,13 +144,13 @@ export const generateEnhancedOrganizationSchema = () => {
       },
       {
         "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "IDR",
         "itemOffered": {
           "@type": "Service",
           "name": "Furniture Design Consultation",
           "description": "Konsultasi gratis untuk desain furniture industrial sesuai kebutuhan bisnis Anda",
-          "serviceType": "Consultation",
-          "price": "0",
-          "priceCurrency": "IDR"
+          "serviceType": "Consultation"
         }
       },
       {
