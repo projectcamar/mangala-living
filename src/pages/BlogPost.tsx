@@ -117,7 +117,16 @@ const BlogPost: React.FC = () => {
         <meta property="og:url" content={`https://mangala-living.com/blog/${post.slug}`} />
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content={post.date} />
-        <meta property="article:author" content="Mangala Living" />
+        <meta property="article:author" content={post.author || 'Mangala Living'} />
+        {post.author === 'Helmi Ramdan' && (
+          <>
+            <meta name="author" content="Helmi Ramdan" />
+            <meta name="article:author:role" content="Architect, Infrastructure Engineer" />
+            <meta name="article:author:expertise" content="Architecture, Commercial Space Design, Infrastructure, Furniture Consultation" />
+            <meta name="article:author:experience" content="10+ years in architecture and infrastructure" />
+            <link rel="author" href="https://www.linkedin.com/in/helmi-ramdan-067912118/" />
+          </>
+        )}
         
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -154,7 +163,7 @@ const BlogPost: React.FC = () => {
                   <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
                   <circle cx="12" cy="7" r="4"/>
                 </svg>
-                Mangala Living
+                {post.author || 'Mangala Living'}
               </span>
               <span className="blog-post-date">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

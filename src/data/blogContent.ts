@@ -5105,7 +5105,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior | Alumni Universitas Diponegoro</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction | Alumni Universitas Diponegoro</em>',
           'Sebagai praktisi arsitektur yang sudah belasan tahun terlibat dalam proyek renovasi dan desain ruang komersial?mulai dari perumahan hingga cafe dan restoran?saya sering mendapat pertanyaan dari klien: <strong>"Kenapa cafe tertentu selalu ramai, sementara yang lain sepi padahal lokasi sama-sama strategis?"</strong>',
           'Jawabannya bukan cuma soal menu atau harga kopi. Dari pengalaman saya menangani project di Jakarta, Bekasi, hingga area Cikarang, ada satu faktor yang sering dilupakan tapi sangat menentukan: <strong>furniture</strong>. Ya, furniture yang tepat bisa jadi game-changer yang bikin pelanggan betah berlama-lama, beli lebih banyak, dan balik lagi.',
           'Dalam artikel ini, saya akan berbagi insight berdasarkan pengalaman lapangan saya, kenapa cafe hits di Jakarta, Bandung, Bali, Surabaya, hingga Jogja punya satu kesamaan: mereka invest di furniture industrial berkualitas yang tidak hanya Instagrammable, tapi juga fungsional dan durable.'
@@ -5223,7 +5223,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '?? <strong>Contact Mangala Living:</strong><br/><a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/><a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>?? <strong>Workshop:</strong> Jl. Raya Setu, Bekasi (Dekat pintu tol Cikarang Barat)<br/>?? <strong>Jam Operasional:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
           '<em>Tip: Mention kode "CAFE2025" saat inquiry untuk free design consultation dan 3D mockup!</em>',
           'Semoga artikel ini helpful untuk Anda yang lagi dalam journey membuka atau renovate cafe. Jika ada pertanyaan atau mau discuss lebih detail tentang space planning dan furniture selection, feel free to reach out!',
-          '? <strong>Helmi Ramdan</strong><br/><em>Associate, Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta<br/>Pengalaman 10+ Tahun dalam Arsitektur, Desain Interior, dan Project Commercial Space<br/>LinkedIn: linkedin.com/in/helmi-ramdan</em>'
+          '? <strong>Helmi Ramdan</strong><br/><em>Associate, Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta<br/>Pengalaman 10+ Tahun dalam Arsitektur, Desain Interior, dan Project Commercial Space<br/>LinkedIn: https://www.https://www.linkedin.com/in/helmi-ramdan-067912118/-067912118/</em>'
         ]
       }
     ]
@@ -5238,7 +5238,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Jakarta dan Bekasi, saya notice bahwa <strong>furniture tahan lama untuk operasional non-stop</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: intensitas usage 3x lipat, maintenance minimal.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe 24 Jam Jakarta & Bekasi, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5307,7 +5307,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di area outdoor dengan cuaca ekstrem, saya notice bahwa <strong>furniture outdoor tahan cuaca tropis Indonesia</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: material weatherproof, design tropical-industrial.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Alam Outdoor, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5376,7 +5376,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di area residential dan perumahan, saya notice bahwa <strong>furniture strategy menarik pelanggan lokal</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: community-oriented design, family-friendly seating.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Sekitar Residential Area, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5445,7 +5445,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di semua area dengan konsep unik, saya notice bahwa <strong>sinkronisasi furniture dengan brand identity</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: furniture sebagai visual branding tool.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Branding Cafe dengan Nama Unik, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5514,7 +5514,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di BSD City dan Serpong, saya notice bahwa <strong>furniture industrial untuk demographics premium</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: high expectation, premium material, design sophisticated.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe BSD Serpong Premium, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5583,7 +5583,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Sentul dan Bogor area, saya notice bahwa <strong>kombinasi alam dan industrial style</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: tropical-industrial, material tahan kelembaban.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Sentul Bogor Tropical, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5652,7 +5652,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Margonda, UI, area kampus, saya notice bahwa <strong>furniture student-friendly dan affordable</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: power outlet banyak, study-friendly layout.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Area Kampus Depok, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5721,7 +5721,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Kemang, SCBD, Senopati, saya notice bahwa <strong>furniture high-end industrial chic</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: material premium, design sophisticated, ROI high-spending customer.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Jakarta Selatan Premium, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5790,7 +5790,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Dago, Riau, Progo Bandung, saya notice bahwa <strong>furniture instagrammable yang viral</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: photogenic design, trend Bandung aesthetic.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Hits Bandung, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5859,7 +5859,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Canggu, Seminyak, Ubud, saya notice bahwa <strong>furniture tropical industrial beach style</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: material tahan garam laut, design tropical.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Bali Beach Vibes, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5928,7 +5928,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Galaxy Mall, Pakuwon, saya notice bahwa <strong>furniture spacious dan comfortable</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: spacious seating preference, modern design.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Surabaya Modern, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5997,7 +5997,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Prawirotaman, Malioboro, Kaliurang, saya notice bahwa <strong>furniture vintage industrial heritage</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: kombinasi heritage dan industrial, reclaimed material.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Jogja Heritage, berdasarkan observasi dan consultation project saya.'
         ]
@@ -6066,7 +6066,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Malang dan Batu, saya notice bahwa <strong>furniture outdoor dengan view pegunungan</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: maximize view, nature-meets-industrial.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Malang Mountain View, berdasarkan observasi dan consultation project saya.'
         ]
@@ -6135,7 +6135,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Bogor dan Puncak, saya notice bahwa <strong>furniture untuk dataran tinggi sejuk</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: material tahan kelembaban tinggi, cozy highland vibes.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Bogor Highland, berdasarkan observasi dan consultation project saya.'
         ]
@@ -6204,7 +6204,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Medan, Sumatera Utara, saya notice bahwa <strong>furniture untuk kultur nongkrong Medan</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: spacious table, group-friendly seating.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Medan Spacious, berdasarkan observasi dan consultation project saya.'
         ]
@@ -6273,7 +6273,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Semarang, Jawa Tengah, saya notice bahwa <strong>furniture compact untuk mall dan ruko</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: space efficiency, layout optimal tenant terbatas.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Semarang Compact, berdasarkan observasi dan consultation project saya.'
         ]
@@ -6342,7 +6342,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di Makassar, Sulawesi Selatan, saya notice bahwa <strong>furniture coastal industrial beach style</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: material tahan angin laut, beach industrial.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Makassar Coastal, berdasarkan observasi dan consultation project saya.'
         ]
@@ -6411,7 +6411,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di area residential lokal, saya notice bahwa <strong>furniture strategy jadi pilihan lokal pertama</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: community-oriented, comfortable for regulars.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Terdekat Strategy, berdasarkan observasi dan consultation project saya.'
         ]
@@ -6480,7 +6480,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di semua cafe dengan fokus F&B, saya notice bahwa <strong>furniture mendukung pengalaman kuliner</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: sinkronisasi menu dengan furniture, enhance experience.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Menu Cafe & Furniture Synergy, berdasarkan observasi dan consultation project saya.'
         ]
@@ -6549,7 +6549,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
-          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | 10+ Tahun Pengalaman Arsitektur & Desain Interior</em>',
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di urban area dengan brand positioning premium, saya notice bahwa <strong>furniture minimalis less is more</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: minimalist aesthetic, monochrome palette, timeless.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe The Cafe Minimalist Concept, berdasarkan observasi dan consultation project saya.'
         ]
