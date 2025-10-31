@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ChevronRight } from 'lucide-react';
 import './Breadcrumb.css';
+import { generateBreadcrumbSchema } from '../utils/seoEnhancements';
 
 interface BreadcrumbProps {
   items?: { label: string; path: string }[];
@@ -30,32 +32,58 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
     ? breadcrumbItems 
     : [{ label: 'Home', path: '/' }, ...breadcrumbItems];
 
+  // Generate JSON-LD schema for better SEO
+  const breadcrumbSchema = generateBreadcrumbSchema(
+    allItems.map(item => ({ name: item.label, url: item.path }))
+  );
+
   return (
-    <nav className="breadcrumb" aria-label="breadcrumb">
-      <ol
-        itemScope
-        itemType="https://schema.org/BreadcrumbList"
-        className="breadcrumb-list"
-      >
-        {allItems.map((item, index) => (
-          <li
-            key={item.path}
-            itemProp="itemListElement"
-            itemScope
-            itemType="https://schema.org/ListItem"
-            className="breadcrumb-item"
-          >
-            <Link to={item.path} itemProp="item">
-              <span itemProp="name">{item.label}</span>
-            </Link>
-            <meta itemProp="position" content={String(index + 1)} />
-            {index < allItems.length - 1 && (
-              <ChevronRight size={16} className="breadcrumb-separator" />
-            )}
-          </li>
-        ))}
-      </ol>
-    </nav>
+    <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+      
+      <nav className="breadcrumb" aria-label="breadcrumb">
+        <ol
+          itemScope
+          itemType="https://schema.org/BreadcrumbList"
+          className="breadcrumb-list"
+        >
+          {allItems.map((item, index) => {
+            const isLast = index === allItems.length - 1;
+            
+            return (
+              <li
+                key={item.path}
+                itemProp="itemListElement"
+                itemScope
+                itemType="https://schema.org/ListItem"
+                className="breadcrumb-item"
+              >
+                {!isLast ? (
+                  <>
+                    <Link to={item.path} itemProp="item">
+                      <span itemProp="name">{item.label}</span>
+                    </Link>
+                    <meta itemProp="position" content={String(index + 1)} />
+                    <ChevronRight size={16} className="breadcrumb-separator" aria-hidden="true" />
+                  </>
+                ) : (
+                  <>
+                    <span itemProp="name" aria-current="page">
+                      {item.label}
+                    </span>
+                    <meta itemProp="position" content={String(index + 1)} />
+                  </>
+                )}
+              </li>
+            );
+          })}
+        </ol>
+      </nav>
+    </>
   );
 };
 
