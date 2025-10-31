@@ -67,6 +67,7 @@ export const generateAIOptimizedStructuredData = () => {
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "4.8",
+              "ratingCount": "127",
               "reviewCount": "127",
               "bestRating": "5",
               "worstRating": "1"
@@ -123,6 +124,7 @@ export const generateAIOptimizedStructuredData = () => {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
+      "ratingCount": "127",
       "reviewCount": "127",
       "bestRating": "5",
       "worstRating": "1"
@@ -202,7 +204,9 @@ export const generateProductStructuredData = (product: any) => {
     "manufacturer": {
       "@type": "Organization",
       "name": "Mangala Living",
-      "url": "https://mangala-living.com"
+      "url": "https://mangala-living.com",
+      "logo": "https://mangala-living.com/logo.png",
+      "image": "https://mangala-living.com/og-image.jpg"
     },
     "category": product.categories?.[0] || "Industrial Furniture",
     "keywords": [
@@ -261,12 +265,16 @@ export const generateProductStructuredData = (product: any) => {
       },
       "seller": {
         "@type": "Organization",
-        "name": "Mangala Living"
+        "name": "Mangala Living",
+        "url": "https://mangala-living.com",
+        "logo": "https://mangala-living.com/logo.png",
+        "image": "https://mangala-living.com/og-image.jpg"
       }
     },
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
+      "ratingCount": "127",
       "reviewCount": "127",
       "bestRating": "5",
       "worstRating": "1"
@@ -344,7 +352,9 @@ export const generateWebSiteStructuredData = () => {
     "publisher": {
       "@type": "Organization",
       "name": "Mangala Living",
-      "url": "https://mangala-living.com"
+      "url": "https://mangala-living.com",
+      "logo": "https://mangala-living.com/logo.png",
+      "image": "https://mangala-living.com/og-image.jpg"
     }
   }
 }

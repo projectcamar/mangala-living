@@ -279,7 +279,9 @@ const ProductDetail: React.FC = () => {
       "manufacturer": {
         "@type": "Organization",
         "name": "Mangala Living",
-        "url": "https://mangala-living.com"
+        "url": "https://mangala-living.com",
+        "logo": "https://mangala-living.com/logo.png",
+        "image": "https://mangala-living.com/og-image.jpg"
       },
       "category": product.categories.join(", "),
       "sku": product.slug,
@@ -357,6 +359,7 @@ const ProductDetail: React.FC = () => {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
+        "ratingCount": "127",
         "reviewCount": "127",
         "bestRating": "5",
         "worstRating": "1"

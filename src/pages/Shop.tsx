@@ -221,16 +221,20 @@ const Shop: React.FC = () => {
                       },
                       "seller": {
                         "@type": "Organization",
-                        "name": "Mangala Living"
+                        "name": "Mangala Living",
+                        "url": "https://mangala-living.com",
+                        "logo": "https://mangala-living.com/logo.png",
+                        "image": "https://mangala-living.com/og-image.jpg"
                       }
                     },
-                    "aggregateRating": {
-                      "@type": "AggregateRating",
-                      "ratingValue": "4.8",
-                      "reviewCount": "127",
-                      "bestRating": "5",
-                      "worstRating": "1"
-                    }
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.8",
+                  "ratingCount": "127",
+                  "reviewCount": "127",
+                  "bestRating": "5",
+                  "worstRating": "1"
+                }
                   }
                 }
               })
