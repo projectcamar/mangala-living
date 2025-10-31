@@ -307,7 +307,7 @@ const CustomOrder: React.FC = () => {
               </strong>
               <p className="custom-order-contact-address">
                 <a 
-                  href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9" 
+                  href="https://maps.app.goo.gl/5Bc5ymfVtAYRPtpK7" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   style={{ color: '#2c2c2c', textDecoration: 'underline' }}

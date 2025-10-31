@@ -378,7 +378,7 @@ const Shop: React.FC = () => {
 
                   {getPaginationRange().map((page, index) => (
                     page === '...' ? (
-                      <span key={`ellipsis-${index}`} className="pagination-ellipsis">?</span>
+                      <span key={`ellipsis-${index}`} className="pagination-ellipsis">&hellip;</span>
                     ) : (
                       <button
                         key={page}
