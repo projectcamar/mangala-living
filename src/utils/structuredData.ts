@@ -20,7 +20,9 @@ export const generateBlogPostingSchema = (post: {
     "author": {
       "@type": "Organization",
       "name": "Mangala Living",
-      "url": "https://mangala-living.com"
+      "url": "https://mangala-living.com",
+      "logo": "https://mangala-living.com/logo.png",
+      "image": "https://mangala-living.com/og-image.jpg"
     },
     "publisher": {
       "@type": "Organization",
@@ -129,6 +131,7 @@ export const generateMerchantStructuredData = () => {
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "4.8",
+              "ratingCount": "127",
               "reviewCount": "127",
               "bestRating": "5",
               "worstRating": "1"
@@ -184,6 +187,7 @@ export const generateMerchantStructuredData = () => {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
+      "ratingCount": "127",
       "reviewCount": "127",
       "bestRating": "5",
       "worstRating": "1"
@@ -295,6 +299,7 @@ export const generateLocalBusinessStructuredData = () => {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
+      "ratingCount": "127",
       "reviewCount": "127",
       "bestRating": "5",
       "worstRating": "1"
