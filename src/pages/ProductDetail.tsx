@@ -480,7 +480,11 @@ const ProductDetail: React.FC = () => {
                 ))}
               </div>
               <div className="gallery-main">
-                <img src={product.images[selectedImage]} alt={product.name} />
+                <img 
+                  src={product.images[selectedImage]} 
+                  alt={product.name} 
+                  className={selectedImage === 1 || selectedImage === 3 ? 'flipped' : ''}
+                />
               </div>
             </div>
 

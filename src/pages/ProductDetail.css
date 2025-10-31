@@ -70,6 +70,11 @@
   object-fit: cover;
 }
 
+/* Flip main image when flipped thumbnail is selected */
+.gallery-main img.flipped {
+  transform: scaleX(-1);
+}
+
 /* Right Side - Product Info */
 .product-info-section {
   display: flex;
