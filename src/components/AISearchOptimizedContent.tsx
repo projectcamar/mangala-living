@@ -124,16 +124,16 @@ const AISearchOptimizedContent: React.FC<AISearchOptimizedContentProps> = ({ isI
       </h2>
       
       <ul>
-        <li>✓ {isIndonesian ? "Pengalaman 25+ tahun sebagai manufacturer furniture industrial" : "25+ years experience as industrial furniture manufacturer"}</li>
-        <li>✓ {isIndonesian ? "1000+ klien puas di seluruh Indonesia, Jabodetabek, Jakarta, dan pasar internasional utama" : "1000+ satisfied clients throughout Indonesia, Jabodetabek, Jakarta, and major international markets"}</li>
-        <li>✓ {isIndonesian ? "Custom design sesuai kebutuhan bisnis Anda" : "Custom design according to your business needs"}</li>
-        <li>✓ {isIndonesian ? "Material industrial grade berkualitas tinggi" : "High-quality industrial grade materials"}</li>
-        <li>✓ {isIndonesian ? "Harga kompetitif langsung dari pabrik" : "Competitive prices directly from factory"}</li>
-        <li>✓ {isIndonesian ? "Garansi kualitas produk" : "Product quality guarantee"}</li>
-        <li>✓ {isIndonesian ? "Workshop di Bekasi dengan akses mudah" : "Workshop in Bekasi with easy access"}</li>
-        <li>✓ {isIndonesian ? "Pengiriman ke seluruh Indonesia, Jabodetabek, Jakarta, dan pasar internasional utama" : "Shipping throughout Indonesia, Jabodetabek, Jakarta, and major international markets"}</li>
-        <li>✓ {isIndonesian ? "Konsultasi desain gratis" : "Free design consultation"}</li>
-        <li>✓ {isIndonesian ? "Pengerjaan sesuai deadline" : "Work according to deadline"}</li>
+        <li>{isIndonesian ? "Pengalaman 25+ tahun sebagai manufacturer furniture industrial" : "25+ years experience as industrial furniture manufacturer"}</li>
+        <li>{isIndonesian ? "1000+ klien puas di seluruh Indonesia, Jabodetabek, Jakarta, dan pasar internasional utama" : "1000+ satisfied clients throughout Indonesia, Jabodetabek, Jakarta, and major international markets"}</li>
+        <li>{isIndonesian ? "Custom design sesuai kebutuhan bisnis Anda" : "Custom design according to your business needs"}</li>
+        <li>{isIndonesian ? "Material industrial grade berkualitas tinggi" : "High-quality industrial grade materials"}</li>
+        <li>{isIndonesian ? "Harga kompetitif langsung dari pabrik" : "Competitive prices directly from factory"}</li>
+        <li>{isIndonesian ? "Garansi kualitas produk" : "Product quality guarantee"}</li>
+        <li>{isIndonesian ? "Workshop di Bekasi dengan akses mudah" : "Workshop in Bekasi with easy access"}</li>
+        <li>{isIndonesian ? "Pengiriman ke seluruh Indonesia, Jabodetabek, Jakarta, dan pasar internasional utama" : "Shipping throughout Indonesia, Jabodetabek, Jakarta, and major international markets"}</li>
+        <li>{isIndonesian ? "Konsultasi desain gratis" : "Free design consultation"}</li>
+        <li>{isIndonesian ? "Pengerjaan sesuai deadline" : "Work according to deadline"}</li>
       </ul>
       
       <h2>

@@ -68,11 +68,11 @@ const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false 
   if (!isVisible) return null
 
   const content = isIndonesian ? {
-    text: '✨ Wujudkan Furniture Impian Anda!',
+    text: 'Wujudkan Furniture Impian Anda!',
     cta: 'Pesan Custom Sekarang',
     highlight: 'Gratis Konsultasi Desain'
   } : {
-    text: '✨ Bring Your Dream Furniture to Life!',
+    text: 'Bring Your Dream Furniture to Life!',
     cta: 'Order Custom Now',
     highlight: 'Free Design Consultation'
   }
@@ -84,7 +84,7 @@ const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false 
           {content.text} <span className="announcement-highlight">{content.highlight}</span>
         </span>
         <Link to="/custom-order" className="announcement-cta">
-          {content.cta} →
+          {content.cta} >
         </Link>
       </div>
       <button 

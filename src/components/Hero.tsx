@@ -34,7 +34,7 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false }) => {
           }
         </p>
         <Link to="/shop" className="hero-btn">
-          {isIndonesian ? "• BELANJA SEKARANG" : "• SHOP NOW"}
+          {isIndonesian ? "BELANJA SEKARANG" : "SHOP NOW"}
         </Link>
       </div>
     </section>

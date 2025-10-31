@@ -18,7 +18,7 @@ export const FAQ_DATA: FAQCategory[] = [
     faqs: [
       {
         question: 'Berapa harga furniture besi custom per piece di Bekasi?',
-        answer: 'Harga furniture besi custom di Mangala Living Bekasi bervariasi tergantung ukuran dan material. Meja café 60x60cm mulai dari Rp 1.200.000, kursi bar industrial Rp 380.000-550.000, dan meja makan 80x80cm Rp 1.800.000-2.200.000. Harga sudah termasuk finishing powder coating dan garansi kualitas. Untuk order volume besar (20+ pieces), tersedia discount hingga 15%.'
+        answer: 'Harga furniture besi custom di Mangala Living Bekasi bervariasi tergantung ukuran dan material. Meja cafe 60x60cm mulai dari Rp 1.200.000, kursi bar industrial Rp 380.000-550.000, dan meja makan 80x80cm Rp 1.800.000-2.200.000. Harga sudah termasuk finishing powder coating dan garansi kualitas. Untuk order volume besar (20+ pieces), tersedia discount hingga 15%.'
       },
       {
         question: 'Berapa lama waktu produksi furniture besi custom?',
@@ -59,16 +59,16 @@ export const FAQ_DATA: FAQCategory[] = [
         answer: 'Membeli langsung dari workshop Mangala Living di Bekasi memberikan beberapa keunggulan: (1) Harga pabrik yang 30-40% lebih murah dibanding retailer, (2) Quality control langsung dari sumber dengan 3-stage QC, (3) Full customization tanpa batasan desain, (4) Lead time lebih cepat 20-25 hari kerja, (5) Transparansi proses produksi dengan progress photo update, (6) No hidden cost - harga sudah include finishing dan installation.'
       },
       {
-        question: 'Kenapa industrial furniture cocok untuk café dan restoran?',
-        answer: 'Industrial furniture sangat cocok untuk café dan restoran karena: (1) Durability tinggi - tahan heavy-use daily operations, (2) Low maintenance - mudah dibersihkan, tidak perlu treatment khusus, (3) Aesthetic modern yang Instagram-worthy dan menarik customers, (4) Versatile - cocok untuk berbagai konsep dari minimalis hingga vintage, (5) Investment jangka panjang - furniture tahan 10+ tahun dengan proper care. Material besi dan finishing powder coating memastikan furniture tetap kokoh dan terlihat baru meskipun digunakan intensif.'
+        question: 'Kenapa industrial furniture cocok untuk cafe dan restoran?',
+        answer: 'Industrial furniture sangat cocok untuk cafe dan restoran karena: (1) Durability tinggi - tahan heavy-use daily operations, (2) Low maintenance - mudah dibersihkan, tidak perlu treatment khusus, (3) Aesthetic modern yang Instagram-worthy dan menarik customers, (4) Versatile - cocok untuk berbagai konsep dari minimalis hingga vintage, (5) Investment jangka panjang - furniture tahan 10+ tahun dengan proper care. Material besi dan finishing powder coating memastikan furniture tetap kokoh dan terlihat baru meskipun digunakan intensif.'
       },
       {
-        question: 'Berapa budget minimal untuk furnish café ukuran 50-100 m²?',
-        answer: 'Untuk café ukuran 50-100m² (kapasitas 30-50 orang), budget furniture industrial berkisar Rp 30-50 juta sudah include: 10-12 meja café 60x60cm atau 80x80cm, 30-40 kursi/bar stool, 2-3 display rack, 1 bar counter/meja bar, dan 1-2 outdoor furniture set (jika ada area outdoor). Ini sudah menggunakan material berkualitas premium dan finishing powder coating. Untuk budget lebih hemat, bisa dimulai dari Rp 20-25 juta dengan kombinasi material engineered wood (HPL) untuk tabletop.'
+        question: 'Berapa budget minimal untuk furnish cafe ukuran 50-100 m2?',
+        answer: 'Untuk cafe ukuran 50-100m2 (kapasitas 30-50 orang), budget furniture industrial berkisar Rp 30-50 juta sudah include: 10-12 meja cafe 60x60cm atau 80x80cm, 30-40 kursi/bar stool, 2-3 display rack, 1 bar counter/meja bar, dan 1-2 outdoor furniture set (jika ada area outdoor). Ini sudah menggunakan material berkualitas premium dan finishing powder coating. Untuk budget lebih hemat, bisa dimulai dari Rp 20-25 juta dengan kombinasi material engineered wood (HPL) untuk tabletop.'
       },
       {
-        question: 'Apa material terbaik untuk tabletop furniture café?',
-        answer: 'Pilihan material tabletop tergantung budget dan konsep: (1) Kayu Solid Suar/Trembesi - paling populer, natural grain, warm aesthetic, butuh maintenance wax 6 bulan sekali, harga premium. (2) HPL (High Pressure Laminate) - paling practical, anti-scratch, low maintenance, banyak pattern, harga mid-range. (3) Melamine Board - budget-friendly, cocok untuk light-use, harga ekonomis. (4) Tempered Glass - modern look, easy clean, cocok untuk display table. Untuk café high-traffic, kami recommend HPL atau kayu solid thickness 3cm+ untuk durability optimal.'
+        question: 'Apa material terbaik untuk tabletop furniture cafe?',
+        answer: 'Pilihan material tabletop tergantung budget dan konsep: (1) Kayu Solid Suar/Trembesi - paling populer, natural grain, warm aesthetic, butuh maintenance wax 6 bulan sekali, harga premium. (2) HPL (High Pressure Laminate) - paling practical, anti-scratch, low maintenance, banyak pattern, harga mid-range. (3) Melamine Board - budget-friendly, cocok untuk light-use, harga ekonomis. (4) Tempered Glass - modern look, easy clean, cocok untuk display table. Untuk cafe high-traffic, kami recommend HPL atau kayu solid thickness 3cm+ untuk durability optimal.'
       },
       {
         question: 'Apakah furniture industrial bisa untuk outdoor area?',
@@ -94,15 +94,15 @@ export const FAQ_DATA: FAQCategory[] = [
     faqs: [
       {
         question: 'Apa itu furniture industrial?',
-        answer: 'Furniture industrial adalah style furniture yang terinspirasi dari era industrial revolution di Eropa dan Amerika pada abad 19-20. Karakteristik utamanya adalah kombinasi material besi/metal dengan kayu, ekspos struktur dan material, warna-warna netral (hitam, abu-abu, natural wood), dan desain yang fungsional dengan aesthetic raw/unfinished. Furniture industrial modern menggabungkan strength industrial classic dengan comfort dan functionality untuk kebutuhan komersial (café, restaurant, office) dan residential.'
+        answer: 'Furniture industrial adalah style furniture yang terinspirasi dari era industrial revolution di Eropa dan Amerika pada abad 19-20. Karakteristik utamanya adalah kombinasi material besi/metal dengan kayu, ekspos struktur dan material, warna-warna netral (hitam, abu-abu, natural wood), dan desain yang fungsional dengan aesthetic raw/unfinished. Furniture industrial modern menggabungkan strength industrial classic dengan comfort dan functionality untuk kebutuhan komersial (cafe, restaurant, office) dan residential.'
       },
       {
         question: 'Apa perbedaan furniture industrial dengan furniture modern/minimalis?',
         answer: 'Perbedaan utama: (1) Material - industrial dominan besi/metal+kayu, modern/minimalis lebih variatif (plastic, fabric, glass). (2) Aesthetic - industrial raw/exposed structure, modern clean lines/sleek. (3) Color palette - industrial netral (black, grey, wood), modern lebih colorful/bright. (4) Function - industrial heavy-duty/sturdy, modern fokus form follows function. (5) Durability - industrial tahan 10-15 tahun, modern 5-8 tahun. Furniture industrial cocok untuk high-traffic commercial space, sementara modern/minimalis lebih cocok untuk residential atau low-traffic office.'
       },
       {
-        question: 'Kenapa furniture industrial populer untuk café dan restoran?',
-        answer: 'Furniture industrial menjadi pilihan utama café dan restoran karena: (1) Instagram-worthy aesthetic yang menarik millennial dan Gen-Z customers, (2) Durability superior untuk high-traffic daily operations, (3) Low maintenance dibanding furniture kayu solid atau fabric, (4) Versatile - cocok dengan berbagai konsep dari industrial-rustic hingga industrial-modern, (5) ROI tinggi - investment sekali untuk 10+ tahun penggunaan, (6) Easy to clean - penting untuk F&B hygiene standards. Kombinasi aesthetic appeal dan practical benefits membuat industrial furniture menjadi standard untuk café dan restaurant modern.'
+        question: 'Kenapa furniture industrial populer untuk cafe dan restoran?',
+        answer: 'Furniture industrial menjadi pilihan utama cafe dan restoran karena: (1) Instagram-worthy aesthetic yang menarik millennial dan Gen-Z customers, (2) Durability superior untuk high-traffic daily operations, (3) Low maintenance dibanding furniture kayu solid atau fabric, (4) Versatile - cocok dengan berbagai konsep dari industrial-rustic hingga industrial-modern, (5) ROI tinggi - investment sekali untuk 10+ tahun penggunaan, (6) Easy to clean - penting untuk F&B hygiene standards. Kombinasi aesthetic appeal dan practical benefits membuat industrial furniture menjadi standard untuk cafe dan restaurant modern.'
       },
       {
         question: 'Apakah furniture industrial hanya cocok untuk style industrial?',
@@ -110,11 +110,11 @@ export const FAQ_DATA: FAQCategory[] = [
       },
       {
         question: 'Berapa harga furniture industrial dibanding furniture kayu biasa?',
-        answer: 'Initial cost furniture industrial mungkin 15-25% lebih tinggi dari furniture kayu biasa karena material premium dan finishing powder coating. Namun, dari sisi Total Cost of Ownership (TCO), furniture industrial jauh lebih ekonomis: (1) Lifespan 10-15 tahun vs kayu biasa 5-7 tahun, (2) Low maintenance cost - tidak perlu refinishing/reupholstery, (3) Tidak perlu replacement frequent, (4) Resale value lebih tinggi. Contoh: Meja café industrial Rp 1.500.000 tahan 12 tahun = Rp 125.000/tahun. Meja kayu biasa Rp 1.000.000 tahan 5 tahun = Rp 200.000/tahun (+ maintenance). Long-term, industrial furniture 30-40% lebih hemat.'
+        answer: 'Initial cost furniture industrial mungkin 15-25% lebih tinggi dari furniture kayu biasa karena material premium dan finishing powder coating. Namun, dari sisi Total Cost of Ownership (TCO), furniture industrial jauh lebih ekonomis: (1) Lifespan 10-15 tahun vs kayu biasa 5-7 tahun, (2) Low maintenance cost - tidak perlu refinishing/reupholstery, (3) Tidak perlu replacement frequent, (4) Resale value lebih tinggi. Contoh: Meja cafe industrial Rp 1.500.000 tahan 12 tahun = Rp 125.000/tahun. Meja kayu biasa Rp 1.000.000 tahan 5 tahun = Rp 200.000/tahun (+ maintenance). Long-term, industrial furniture 30-40% lebih hemat.'
       },
       {
         question: 'Apakah furniture industrial berat dan sulit dipindahkan?',
-        answer: 'Furniture industrial memang cenderung lebih berat karena konstruksi besi yang kokoh. Namun, ini justru advantage untuk stability terutama di café/restaurant yang ramai. Tips untuk mobility: (1) Request furniture dengan stackable design (untuk kursi), (2) Tambahkan felt pads di bottom leg untuk easy sliding, (3) Order furniture dengan modular design yang bisa di-breakdown, (4) Untuk meja besar, request design dengan separable base dan top. Mangala Living bisa customize design untuk balance antara sturdiness dan mobility sesuai kebutuhan space Anda.'
+        answer: 'Furniture industrial memang cenderung lebih berat karena konstruksi besi yang kokoh. Namun, ini justru advantage untuk stability terutama di cafe/restaurant yang ramai. Tips untuk mobility: (1) Request furniture dengan stackable design (untuk kursi), (2) Tambahkan felt pads di bottom leg untuk easy sliding, (3) Order furniture dengan modular design yang bisa di-breakdown, (4) Untuk meja besar, request design dengan separable base dan top. Mangala Living bisa customize design untuk balance antara sturdiness dan mobility sesuai kebutuhan space Anda.'
       },
       {
         question: 'Dimana bisa beli furniture industrial berkualitas di Bekasi/Jakarta?',
@@ -132,7 +132,7 @@ export const FAQ_DATA: FAQCategory[] = [
     faqs: [
       {
         question: 'Bagaimana cara membersihkan furniture besi industrial sehari-hari?',
-        answer: 'Cleaning harian furniture besi industrial sangat mudah: (1) Lap frame besi dengan kain microfiber kering atau sedikit lembab untuk remove dust, (2) Untuk stain/noda membandel, gunakan mild soap solution (sabun cuci piring + air), lap dan segera keringkan, (3) Tabletop kayu: lap dengan kain lembab, keringkan, spray wood polish (optional), (4) Tabletop HPL/melamine: lap dengan all-purpose cleaner, (5) Hindari: bleach, abrasive cleaner, steel wool/wire brush yang bisa scratch powder coating. Cleaning routine 2-3x seminggu sudah cukup untuk menjaga furniture tetap bersih dan shiny. Untuk café/restaurant, quick wipe setiap end of day.'
+        answer: 'Cleaning harian furniture besi industrial sangat mudah: (1) Lap frame besi dengan kain microfiber kering atau sedikit lembab untuk remove dust, (2) Untuk stain/noda membandel, gunakan mild soap solution (sabun cuci piring + air), lap dan segera keringkan, (3) Tabletop kayu: lap dengan kain lembab, keringkan, spray wood polish (optional), (4) Tabletop HPL/melamine: lap dengan all-purpose cleaner, (5) Hindari: bleach, abrasive cleaner, steel wool/wire brush yang bisa scratch powder coating. Cleaning routine 2-3x seminggu sudah cukup untuk menjaga furniture tetap bersih dan shiny. Untuk cafe/restaurant, quick wipe setiap end of day.'
       },
       {
         question: 'Bagaimana cara mencegah furniture besi berkarat?',

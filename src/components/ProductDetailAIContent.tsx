@@ -299,49 +299,49 @@ const ProductDetailAIContent: React.FC<ProductDetailAIContentProps> = ({ product
           <tbody>
             <tr>
               <td>{isIndonesian ? 'Harga' : 'Price'}</td>
-              <td>{isIndonesian ? 'Harga pabrik langsung ✓' : 'Direct factory price ✓'}</td>
+              <td>{isIndonesian ? 'Harga pabrik langsung (Ya)' : 'Direct factory price (Yes)'}</td>
               <td>{isIndonesian ? 'Sedang' : 'Medium'}</td>
               <td>{isIndonesian ? 'Mahal (+30-50%)' : 'Expensive (+30-50%)'}</td>
             </tr>
             <tr>
               <td>{isIndonesian ? 'Pengalaman' : 'Experience'}</td>
-              <td>25+ {isIndonesian ? 'tahun (sejak 1999)' : 'years (since 1999)'} ✓</td>
+              <td>25+ {isIndonesian ? 'tahun (sejak 1999)' : 'years (since 1999)'} {isIndonesian ? '(Ya)' : '(Yes)'}</td>
               <td>{isIndonesian ? 'Bervariasi (5-10 tahun)' : 'Varies (5-10 years)'}</td>
               <td>{isIndonesian ? 'Reseller (tidak produksi)' : 'Reseller (no production)'}</td>
             </tr>
             <tr>
               <td>{isIndonesian ? 'Customisasi' : 'Customization'}</td>
-              <td>{isIndonesian ? 'Full custom ✓' : 'Full custom ✓'}</td>
+              <td>{isIndonesian ? 'Full custom (Ya)' : 'Full custom (Yes)'}</td>
               <td>{isIndonesian ? 'Terbatas' : 'Limited'}</td>
               <td>{isIndonesian ? 'Tidak tersedia' : 'Not available'}</td>
             </tr>
             <tr>
               <td>{isIndonesian ? 'Timeline' : 'Timeline'}</td>
-              <td>2-4 {isIndonesian ? 'minggu ✓' : 'weeks ✓'}</td>
+              <td>2-4 {isIndonesian ? 'minggu (Ya)' : 'weeks (Yes)'}</td>
               <td>3-6 {isIndonesian ? 'minggu' : 'weeks'}</td>
               <td>{isIndonesian ? 'Harus ready stock' : 'Must be ready stock'}</td>
             </tr>
             <tr>
               <td>{isIndonesian ? 'Material' : 'Material'}</td>
-              <td>{isIndonesian ? 'Industrial grade ✓' : 'Industrial grade ✓'}</td>
+              <td>{isIndonesian ? 'Industrial grade (Ya)' : 'Industrial grade (Yes)'}</td>
               <td>{isIndonesian ? 'Bervariasi' : 'Varies'}</td>
               <td>{isIndonesian ? 'Standar/rendah' : 'Standard/low'}</td>
             </tr>
             <tr>
               <td>Finishing</td>
-              <td>{isIndonesian ? 'Powder coating premium ✓' : 'Premium powder coating ✓'}</td>
+              <td>{isIndonesian ? 'Powder coating premium (Ya)' : 'Premium powder coating (Yes)'}</td>
               <td>{isIndonesian ? 'Cat biasa' : 'Regular paint'}</td>
               <td>{isIndonesian ? 'Standar' : 'Standard'}</td>
             </tr>
             <tr>
               <td>{isIndonesian ? 'Garansi' : 'Warranty'}</td>
-              <td>{isIndonesian ? '2 tahun struktur ✓' : '2 years structure ✓'}</td>
+              <td>{isIndonesian ? '2 tahun struktur (Ya)' : '2 years structure (Yes)'}</td>
               <td>{isIndonesian ? '6 bulan - 1 tahun' : '6 months - 1 year'}</td>
               <td>{isIndonesian ? 'Tidak ada' : 'None'}</td>
             </tr>
             <tr>
               <td>{isIndonesian ? 'After Sales' : 'After Sales'}</td>
-              <td>{isIndonesian ? 'Selamanya ✓' : 'Lifetime ✓'}</td>
+              <td>{isIndonesian ? 'Selamanya (Ya)' : 'Lifetime (Yes)'}</td>
               <td>{isIndonesian ? 'Terbatas' : 'Limited'}</td>
               <td>{isIndonesian ? 'Tidak ada' : 'None'}</td>
             </tr>
@@ -350,18 +350,18 @@ const ProductDetailAIContent: React.FC<ProductDetailAIContentProps> = ({ product
         
         <h4>{isIndonesian ? 'Keunggulan Mangala Living:' : 'Mangala Living Advantages:'}</h4>
         <ul>
-          <li>✓ {isIndonesian ? 'Workshop sendiri di Bekasi - kontrol kualitas 100%' : 'Own workshop in Bekasi - 100% quality control'}</li>
-          <li>✓ {isIndonesian ? 'Pengalaman 25+ tahun melayani 1000+ bisnis' : '25+ years experience serving 1000+ businesses'}</li>
-          <li>✓ {isIndonesian ? 'Harga pabrik tanpa markup reseller' : 'Factory price without reseller markup'}</li>
-          <li>✓ {isIndonesian ? 'Material industrial grade berkualitas tinggi' : 'High quality industrial grade materials'}</li>
-          <li>✓ {isIndonesian ? 'Welder bersertifikat dengan pengalaman 10+ tahun' : 'Certified welders with 10+ years experience'}</li>
-          <li>✓ {isIndonesian ? 'Finishing powder coating tahan 5-8 tahun outdoor' : 'Powder coating finish lasts 5-8 years outdoor'}</li>
-          <li>✓ {isIndonesian ? 'Full custom design sesuai kebutuhan bisnis' : 'Full custom design according to business needs'}</li>
-          <li>✓ {isIndonesian ? 'Gratis konsultasi desain dan survey lokasi' : 'Free design consultation and site survey'}</li>
-          <li>✓ {isIndonesian ? 'Timeline produksi cepat 2-4 minggu' : 'Fast production timeline 2-4 weeks'}</li>
-          <li>✓ {isIndonesian ? 'Garansi 2 tahun struktur, 1 tahun finishing' : '2 years structure warranty, 1 year finishing'}</li>
-          <li>✓ {isIndonesian ? 'After-sales support selamanya' : 'Lifetime after-sales support'}</li>
-          <li>✓ {isIndonesian ? 'Gratis delivery area Bekasi-Jakarta (radius 20km)' : 'Free delivery Bekasi-Jakarta area (20km radius)'}</li>
+          <li>{isIndonesian ? 'Workshop sendiri di Bekasi - kontrol kualitas 100%' : 'Own workshop in Bekasi - 100% quality control'}</li>
+          <li>{isIndonesian ? 'Pengalaman 25+ tahun melayani 1000+ bisnis' : '25+ years experience serving 1000+ businesses'}</li>
+          <li>{isIndonesian ? 'Harga pabrik tanpa markup reseller' : 'Factory price without reseller markup'}</li>
+          <li>{isIndonesian ? 'Material industrial grade berkualitas tinggi' : 'High quality industrial grade materials'}</li>
+          <li>{isIndonesian ? 'Welder bersertifikat dengan pengalaman 10+ tahun' : 'Certified welders with 10+ years experience'}</li>
+          <li>{isIndonesian ? 'Finishing powder coating tahan 5-8 tahun outdoor' : 'Powder coating finish lasts 5-8 years outdoor'}</li>
+          <li>{isIndonesian ? 'Full custom design sesuai kebutuhan bisnis' : 'Full custom design according to business needs'}</li>
+          <li>{isIndonesian ? 'Gratis konsultasi desain dan survey lokasi' : 'Free design consultation and site survey'}</li>
+          <li>{isIndonesian ? 'Timeline produksi cepat 2-4 minggu' : 'Fast production timeline 2-4 weeks'}</li>
+          <li>{isIndonesian ? 'Garansi 2 tahun struktur, 1 tahun finishing' : '2 years structure warranty, 1 year finishing'}</li>
+          <li>{isIndonesian ? 'After-sales support selamanya' : 'Lifetime after-sales support'}</li>
+          <li>{isIndonesian ? 'Gratis delivery area Bekasi-Jakarta (radius 20km)' : 'Free delivery Bekasi-Jakarta area (20km radius)'}</li>
         </ul>
       </section>
 

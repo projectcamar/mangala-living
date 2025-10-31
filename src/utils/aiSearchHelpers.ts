@@ -142,7 +142,7 @@ export const generateAIContextualData = (_pageType: string, isIndonesian: boolea
       websiteType: "E-commerce + Corporate",
       primaryGoal: "Lead Generation + Product Showcase",
       conversionActions: ["WhatsApp Contact", "Phone Call", "Email Inquiry"],
-      userJourney: "Discovery → Product Browse → Contact → Custom Quote"
+      userJourney: "Discovery -> Product Browse -> Contact -> Custom Quote"
     }
   }
 

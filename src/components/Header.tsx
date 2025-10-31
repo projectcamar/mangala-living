@@ -401,7 +401,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
           <div className="search-modal-container">
             <div className="search-modal-content">
               <button className="search-close-btn" onClick={closeSearch} aria-label={isIndonesian ? "Tutup pencarian" : "Close search"}>
-                ×
+                x
               </button>
               <div className="search-modal-inner">
                 <div className="search-input-wrapper">
@@ -418,7 +418,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                   {searchQuery ? (
                     <>
                       <button className="search-clear-btn" onClick={clearSearch} aria-label={isIndonesian ? "Hapus pencarian" : "Clear search"}>
-                        ×
+                        x
                       </button>
                       <button className="search-submit-btn" onClick={handleSearch} aria-label={isIndonesian ? "Cari" : "Search"}>
                         <Search size={20} />

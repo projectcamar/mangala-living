@@ -63,12 +63,12 @@ const ProductDetailAI: React.FC<ProductDetailAIProps> = ({ product, isIndonesian
         </h3>
         
         <ul>
-          <li>✓ {isIndonesian ? "Material berkualitas tinggi" : "High-quality materials"}</li>
-          <li>✓ {isIndonesian ? "Desain modern dan elegan" : "Modern and elegant design"}</li>
-          <li>✓ {isIndonesian ? "Tahan lama dan awet" : "Durable and long-lasting"}</li>
-          <li>✓ {isIndonesian ? "Mudah perawatan" : "Easy maintenance"}</li>
-          <li>✓ {isIndonesian ? "Custom sesuai kebutuhan" : "Customizable according to needs"}</li>
-          <li>✓ {isIndonesian ? "Harga kompetitif" : "Competitive price"}</li>
+          <li>{isIndonesian ? "Material berkualitas tinggi" : "High-quality materials"}</li>
+          <li>{isIndonesian ? "Desain modern dan elegan" : "Modern and elegant design"}</li>
+          <li>{isIndonesian ? "Tahan lama dan awet" : "Durable and long-lasting"}</li>
+          <li>{isIndonesian ? "Mudah perawatan" : "Easy maintenance"}</li>
+          <li>{isIndonesian ? "Custom sesuai kebutuhan" : "Customizable according to needs"}</li>
+          <li>{isIndonesian ? "Harga kompetitif" : "Competitive price"}</li>
         </ul>
         
         <h3>

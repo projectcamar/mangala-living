@@ -98,7 +98,7 @@ const Partnership: React.FC = () => {
                 {isIndonesian ? (
                   <>
                     <p className="partnership-main-paragraph">
-                      Baik itu pengadaan furnitur hotel, vila, restoran, atau rumah tinggal—yang dibutuhkan bukan hanya produk, tapi mitra kerja yang bisa dipercaya. Mangala Living hadir bukan sebagai penjual, tapi sebagai bagian dari tim Anda.
+                      Baik itu pengadaan furnitur hotel, vila, restoran, atau rumah tinggal - yang dibutuhkan bukan hanya produk, tapi mitra kerja yang bisa dipercaya. Mangala Living hadir bukan sebagai penjual, tapi sebagai bagian dari tim Anda.
                     </p>
                     <p className="partnership-main-paragraph">
                       Kami mengerti bahwa sebuah proyek berarti tenggat, spesifikasi ketat, revisi mendadak, dan harapan yang tinggi. Anda butuh rekan yang bisa mengakomodasi, bukan menambah kerumitan. Yang bisa mendengar, bukan hanya menjawab.
@@ -107,7 +107,7 @@ const Partnership: React.FC = () => {
                 ) : (
                   <>
                     <p className="partnership-main-paragraph">
-                      Whether it's hotel, villa, restaurant, or residential furniture procurement—what's needed is not just products, but a trusted work partner. Mangala Living is here not as a seller, but as part of your team.
+                      Whether it's hotel, villa, restaurant, or residential furniture procurement - what's needed is not just products, but a trusted work partner. Mangala Living is here not as a seller, but as part of your team.
                     </p>
                     <p className="partnership-main-paragraph">
                       We understand that a project means deadlines, strict specifications, sudden revisions, and high expectations. You need a partner who can accommodate, not add complexity. Who can listen, not just answer.
@@ -136,7 +136,7 @@ const Partnership: React.FC = () => {
             {isIndonesian ? (
               <>
                 <p className="partnership-experience-description">
-                  Kami sudah terbiasa ikut dalam banyak skema proyek—dari apartemen di tengah kota, resor di pinggir pantai, hingga pengadaan ruang publik. Setiap klien membawa tantangan berbeda. Justru itu yang membuat kami terlatih, bukan sekadar ahli membuat furnitur, tapi juga memahami dinamika proyeknya.
+                  Kami sudah terbiasa ikut dalam banyak skema proyek - dari apartemen di tengah kota, resor di pinggir pantai, hingga pengadaan ruang publik. Setiap klien membawa tantangan berbeda. Justru itu yang membuat kami terlatih, bukan sekadar ahli membuat furnitur, tapi juga memahami dinamika proyeknya.
                 </p>
                 <p className="partnership-experience-description">
                   Mulai dari proses penyesuaian desain, pemilihan material, hingga skema pengiriman bertahap, semuanya bisa dikomunikasikan. Anda tidak perlu menjelaskan dua kali. Kami tahu bagaimana menyusun alur kerja yang efisien.
@@ -145,7 +145,7 @@ const Partnership: React.FC = () => {
             ) : (
               <>
                 <p className="partnership-experience-description">
-                  We're already accustomed to participating in many project schemes—from apartments in the city center, resorts on the beach, to public space procurement. Each client brings different challenges. That's exactly what makes us trained, not just experts at making furniture, but also understanding project dynamics.
+                  We're already accustomed to participating in many project schemes - from apartments in the city center, resorts on the beach, to public space procurement. Each client brings different challenges. That's exactly what makes us trained, not just experts at making furniture, but also understanding project dynamics.
                 </p>
                 <p className="partnership-experience-description">
                   From the design adjustment process, material selection, to phased delivery schemes, everything can be communicated. You don't need to explain twice. We know how to organize efficient workflows.
@@ -261,7 +261,7 @@ const Partnership: React.FC = () => {
               rel="noopener noreferrer"
               className="partnership-cta-button"
             >
-              {isIndonesian ? '📩 Hubungi kami sekarang' : '📩 Contact us now'}
+              {isIndonesian ? 'Hubungi kami sekarang' : 'Contact us now'}
             </a>
           </div>
         </div>
