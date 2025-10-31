@@ -251,7 +251,7 @@ Thank you!`
             </div>
             <div>
               <a 
-                href="tel:+6285212078467" 
+                href="https://wa.me/6285212078467" 
                 style={{ color: '#8B7355', textDecoration: 'underline', fontWeight: '500' }}
               >
                 +62 852-1207-8467

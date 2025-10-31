@@ -185,11 +185,11 @@ const ShippingInformation: React.FC = () => {
           <div className="shipping-container-content">
             {isIndonesian ? (
               <p className="shipping-container-description">
-                Volume pengiriman kami menggunakan kontainer 20' (dua puluh kaki) – 40' (empat puluh kaki) – 40'HC (empat puluh kaki high cube).
+                Volume pengiriman kami menggunakan kontainer 20' (dua puluh kaki) ? 40' (empat puluh kaki) ? 40'HC (empat puluh kaki high cube).
               </p>
             ) : (
               <p className="shipping-container-description">
-                Our shipping volumes are by 20' (twenty foot) – 40' (forty foot) – 40'HC (forty foot high cube) containers.
+                Our shipping volumes are by 20' (twenty foot) ? 40' (forty foot) ? 40'HC (forty foot high cube) containers.
               </p>
             )}
           </div>
@@ -301,7 +301,7 @@ const ShippingInformation: React.FC = () => {
               <div className="shipping-contact-details">
                 <h3 className="shipping-contact-label">{isIndonesian ? 'Telepon' : 'Phone'}</h3>
                 <p className="shipping-contact-value">
-                  <a href="tel:+6285212078467" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                  <a href="https://wa.me/6285212078467" style={{ color: '#8B7355', textDecoration: 'underline' }}>
                     +62 852-1207-8467
                   </a>
                 </p>
