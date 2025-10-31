@@ -6,6 +6,7 @@ import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
+import CategoryAIContent from '../components/CategoryAIContent'
 import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORIES } from '../data/categories'
 import { generateMerchantStructuredData } from '../utils/structuredData'
@@ -377,7 +378,7 @@ const Shop: React.FC = () => {
 
                   {getPaginationRange().map((page, index) => (
                     page === '...' ? (
-                      <span key={`ellipsis-${index}`} className="pagination-ellipsis">…</span>
+                      <span key={`ellipsis-${index}`} className="pagination-ellipsis">?</span>
                     ) : (
                       <button
                         key={page}
@@ -398,6 +399,13 @@ const Shop: React.FC = () => {
                   </button>
                 </div>
               )}
+              
+              {/* AI-Optimized Content for Shop Page */}
+              <CategoryAIContent 
+                category="All Products"
+                productCount={ALL_PRODUCTS.length}
+                isIndonesian={true}
+              />
             </div>
           </div>
         </div>
