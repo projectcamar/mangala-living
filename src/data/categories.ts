@@ -21,8 +21,11 @@ export const CATEGORY_MAP: { [key: string]: string } = {
   'balcony-outdoor-collection': 'Outdoor',
   'outdoor': 'Outdoor', // Add direct mapping
   'daybed-lounge-frame': 'Daybed',
+  'daybed-collection': 'Daybed',
   'accessories-storage': 'Storage',
+  'storage-shelving': 'Storage',
   'table-collection': 'Tables',
+  'work-study-tables': 'Tables',
   'dining-table-collection': 'Dine Table',
 }
 
