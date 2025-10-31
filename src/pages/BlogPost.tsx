@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import ServiceAreasSection from '../components/ServiceAreasSection'
+import AuthorCard from '../components/AuthorCard'
 import { getPostBySlug, BLOG_POSTS } from '../data/blog'
 import { getBlogPostContent } from '../data/blogContent'
 import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structuredData'
@@ -121,9 +122,12 @@ const BlogPost: React.FC = () => {
         {post.author === 'Helmi Ramdan' && (
           <>
             <meta name="author" content="Helmi Ramdan" />
-            <meta name="article:author:role" content="Architect, Infrastructure Engineer" />
-            <meta name="article:author:expertise" content="Architecture, Commercial Space Design, Infrastructure, Furniture Consultation" />
-            <meta name="article:author:experience" content="10+ years in architecture and infrastructure" />
+            <meta name="article:author" content="Helmi Ramdan" />
+            <meta name="article:author:role" content="Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta, Infrastructure Engineer" />
+            <meta name="article:author:expertise" content="Commercial Space Design, Construction Management, Infrastructure Engineering, Architectural Drafting, Furniture Design Consultation" />
+            <meta name="article:author:experience" content="8+ years total: 3+ years Infrastructure Engineering at Damai Putra Group, 5+ years Design Engineering & Architectural Drafting" />
+            <meta name="article:author:education" content="Universitas Diponegoro" />
+            <meta name="article:author:specialization" content="Commercial Space Design & Construction" />
             <link rel="author" href="https://www.linkedin.com/in/helmi-ramdan-067912118/" />
           </>
         )}
@@ -201,6 +205,21 @@ const BlogPost: React.FC = () => {
                   )}
                 </div>
               ))}
+
+              {/* Author Card Section */}
+              {post.author === 'Helmi Ramdan' && (
+                <AuthorCard
+                  name="Helmi Ramdan"
+                  title="Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta"
+                  experience={[
+                    'Infrastructure Engineer at Damai Putra Group (3+ tahun)',
+                    'Design Engineer & Architectural Drafter (5+ tahun)',
+                    'Alumni Universitas Diponegoro',
+                    'Spesialis Commercial Space Design & Construction'
+                  ]}
+                  linkedIn="https://www.linkedin.com/in/helmi-ramdan-067912118/"
+                />
+              )}
 
               {/* CTA Section */}
               <div className="blog-post-cta">
