@@ -84,7 +84,7 @@ const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false 
           {content.text} <span className="announcement-highlight">{content.highlight}</span>
         </span>
         <Link to="/custom-order" className="announcement-cta">
-          {content.cta} >
+          {content.cta}{' >'}
         </Link>
       </div>
       <button 
