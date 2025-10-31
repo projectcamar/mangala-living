@@ -97,7 +97,7 @@ const generateAIOptimizedFAQ = (post: BlogPost): string[] => {
 }
 
 // AI-OPTIMIZED: Generate data-driven statistics section (Strategy 5: Data-driven information)
-const generateDataDrivenSection = (post: BlogPost): BlogSection => {
+const generateDataDrivenSection = (): BlogSection => {
   const year = new Date().getFullYear()
   return {
     heading: 'Data & Statistik yang Perlu Anda Ketahui',
@@ -164,15 +164,13 @@ const generateBalancedComparison = (post: BlogPost): BlogSection => {
   return {
     heading: comparisonData.title,
     paragraphs: [
-      'Agar Anda dapat membuat keputusan yang informed, berikut kami sajikan perbandingan objektif berdasarkan pengalaman 25 tahun kami menangani berbagai project:'
+      'Agar Anda dapat membuat keputusan yang informed, berikut kami sajikan perbandingan objektif berdasarkan pengalaman 25 tahun kami menangani berbagai project:',
+      `<strong>${comparisonData.prosTitle}:</strong>`
     ],
     list: [
-      `<strong>${comparisonData.prosTitle}:</strong>`,
       ...comparisonData.pros,
       `<strong>${comparisonData.consTitle}:</strong>`,
-      ...comparisonData.cons
-    ],
-    paragraphs: [
+      ...comparisonData.cons,
       '<strong>Rekomendasi Kami:</strong> Pilih custom furniture besi industrial jika Anda mengutamakan durability, low maintenance, dan brand identity yang kuat. Pilih ready stock kayu jika Anda butuh instant solution dengan budget sangat terbatas dan untuk temporary use.'
     ]
   }
@@ -216,7 +214,7 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
       },
 
       // SECTION 3: Data-driven section (Strategy 5: Data-driven information)
-      generateDataDrivenSection(post),
+      generateDataDrivenSection(),
 
       // SECTION 4: Practical insights with bullet structure
       {
