@@ -29,7 +29,7 @@ export interface Product {
 export const ALL_PRODUCTS: Product[] = [
   // New Arrivals - Original products with specific images
   { id: 1, slug: 'frame-loft-bookshelf', name: 'Frame Loft Bookshelf', categories: ['New Arrivals', 'Storage'], price: 'Rp3.500.000', image: frameLoftBookshelfImage },
-  { id: 2, slug: 'balcony-bar-table', name: 'Balcony Bar Table', categories: ['New Arrivals', 'Bar Set', 'Outdoor'], price: 'Rp3.500.000', image: balconyBarTableImage },
+  { id: 2, slug: 'balcony-bar-table', name: 'Balcony Bar Table', categories: ['New Arrivals', 'Bar Set', 'Outdoor'], price: 'Rp350.000', image: balconyBarTableImage },
   
   // Lounge Set
   { id: 3, slug: 'lounge-set-coffee-table', name: 'Lounge Set Coffee Table', categories: ['Lounge Set', 'Tables'], price: 'Rp2.000.000', image: loungeSetCoffeeTableImage },
