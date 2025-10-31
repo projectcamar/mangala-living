@@ -189,13 +189,13 @@ const CategoryAIContent: React.FC<CategoryAIContentProps> = ({ category, product
           }
         </p>
         <ul>
-          <li>☕ Cafe & Coffee Shop</li>
-          <li>🍽️ Restaurant & Dining</li>
-          <li>🏨 Hotel & Hospitality</li>
-          <li>🏢 Office & Co-working Space</li>
-          <li>🛍️ Retail Store & Boutique</li>
-          <li>💼 Corporate Canteen</li>
-          <li>🏠 Home & Residential</li>
+          <li>Cafe & Coffee Shop</li>
+          <li>Restaurant & Dining</li>
+          <li>Hotel & Hospitality</li>
+          <li>Office & Co-working Space</li>
+          <li>Retail Store & Boutique</li>
+          <li>Corporate Canteen</li>
+          <li>Home & Residential</li>
         </ul>
       </section>
 

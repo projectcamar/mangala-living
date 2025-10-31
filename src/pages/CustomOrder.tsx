@@ -98,7 +98,7 @@ const CustomOrder: React.FC = () => {
                 {isIndonesian ? (
                   <>
                     <p className="custom-order-main-paragraph">
-                      Dan sering kali, selera itu tak bisa diwakili oleh produk jadi yang sudah ada di pasaran. Itulah mengapa kami membuka pintu bagi Anda yang ingin sesuatu yang lebih personal—lebih dekat dengan karakter, fungsi, dan nilai estetika yang Anda yakini.
+                      Dan sering kali, selera itu tak bisa diwakili oleh produk jadi yang sudah ada di pasaran. Itulah mengapa kami membuka pintu bagi Anda yang ingin sesuatu yang lebih personal - lebih dekat dengan karakter, fungsi, dan nilai estetika yang Anda yakini.
                     </p>
                     <p className="custom-order-main-paragraph">
                       Kami tidak sekadar membuat furnitur. Kami membentuknya dari pemahaman. Tentang gaya hidup Anda, tentang ruangan yang ingin Anda bangun, dan tentang cerita yang ingin Anda hadirkan di dalamnya.
@@ -107,7 +107,7 @@ const CustomOrder: React.FC = () => {
                 ) : (
                   <>
                     <p className="custom-order-main-paragraph">
-                      And often, that taste cannot be represented by ready-made products available in the market. That's why we open our doors to those who want something more personal—closer to the character, function, and aesthetic values you believe in.
+                      And often, that taste cannot be represented by ready-made products available in the market. That's why we open our doors to those who want something more personal - closer to the character, function, and aesthetic values you believe in.
                     </p>
                     <p className="custom-order-main-paragraph">
                       We don't just make furniture. We shape it from understanding. About your lifestyle, about the room you want to build, and about the story you want to present in it.
@@ -150,7 +150,7 @@ const CustomOrder: React.FC = () => {
       {/* Styles Section */}
       <section className="custom-order-styles-section">
         <div className="custom-order-styles-container">
-          <h2 className="custom-order-styles-title">{isIndonesian ? 'Banyak Gaya dan Konsep — Semua Bisa Diatur' : 'Many Styles and Concepts — All Can Be Arranged'}</h2>
+          <h2 className="custom-order-styles-title">{isIndonesian ? 'Banyak Gaya dan Konsep  -  Semua Bisa Diatur' : 'Many Styles and Concepts  -  All Can Be Arranged'}</h2>
           
           <div className="custom-order-styles-content">
             {isIndonesian ? (
@@ -188,8 +188,8 @@ const CustomOrder: React.FC = () => {
           <h2 className="custom-order-steps-title">{isIndonesian ? 'Proses yang Nyata dan Bisa Diandalkan' : 'Real and Reliable Process'}</h2>
           <p className="custom-order-steps-subtitle">
             {isIndonesian 
-              ? "Tidak semua orang paham proses produksi furnitur. Dan Anda tidak perlu paham—cukup punya ide. Biarkan sisanya kami bantu urus."
-              : "Not everyone understands the furniture production process. And you don't need to understand—just have an idea. Let us handle the rest."}
+              ? "Tidak semua orang paham proses produksi furnitur. Dan Anda tidak perlu paham - cukup punya ide. Biarkan sisanya kami bantu urus."
+              : "Not everyone understands the furniture production process. And you don't need to understand - just have an idea. Let us handle the rest."}
           </p>
           
           <div className="custom-order-steps-grid">
@@ -290,7 +290,7 @@ const CustomOrder: React.FC = () => {
               rel="noopener noreferrer"
               className="custom-order-cta-button"
             >
-              {isIndonesian ? '📩 Langsung hubungi kami sekarang' : '📩 Contact us now'}
+              {isIndonesian ? 'Langsung hubungi kami sekarang' : 'Contact us now'}
             </a>
           </div>
         </div>

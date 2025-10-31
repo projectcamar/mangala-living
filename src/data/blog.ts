@@ -704,9 +704,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 70,
     slug: 'furniture-cafe-industrial-bekasi-desain-custom-modern',
-    title: 'Furniture Café Industrial Bekasi: Desain Custom Modern untuk Bisnis F&B',
+    title: 'Furniture Cafe Industrial Bekasi: Desain Custom Modern untuk Bisnis F&B',
     category: 'Commercial Furniture',
-    excerpt: 'Furniture café industrial Bekasi dengan desain custom modern. Mangala Living spesialis furniture cafe industrial: meja makan, kursi bar, display rack. Workshop Bekasi, pengalaman 25 tahun.',
+    excerpt: 'Furniture cafe industrial Bekasi dengan desain custom modern. Mangala Living spesialis furniture cafe industrial: meja makan, kursi bar, display rack. Workshop Bekasi, pengalaman 25 tahun.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2025-12-04',
     author: 'Helmi Ramdan'
@@ -744,9 +744,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 74,
     slug: 'meja-cafe-industrial-besi-custom-bekasi-jabodetabek',
-    title: 'Meja Café Industrial Besi Custom Bekasi - Melayani Jabodetabek',
+    title: 'Meja Cafe Industrial Besi Custom Bekasi - Melayani Jabodetabek',
     category: 'Commercial Furniture',
-    excerpt: 'Meja café industrial besi custom dari Bekasi. Mangala Living produksi meja cafe berbagai model: bar table, dining table, coffee table. Material berkualitas, finishing powder coating, harga kompetitif.',
+    excerpt: 'Meja cafe industrial besi custom dari Bekasi. Mangala Living produksi meja cafe berbagai model: bar table, dining table, coffee table. Material berkualitas, finishing powder coating, harga kompetitif.',
     image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
     date: '2025-12-08',
     author: 'Helmi Ramdan'
@@ -785,9 +785,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 78,
     slug: 'inspirasi-furniture-industrial-cafe-kecil-minimalis',
-    title: 'Inspirasi Furniture Industrial untuk Café Kecil: Desain Minimalis Maksimal',
+    title: 'Inspirasi Furniture Industrial untuk Cafe Kecil: Desain Minimalis Maksimal',
     category: 'Design Inspiration',
-    excerpt: 'Kumpulan inspirasi furniture industrial untuk café kecil dengan konsep minimalis. Tips layout, pemilihan furniture yang tepat, dan desain yang memaksimalkan ruang terbatas. Cocok untuk startup cafe.',
+    excerpt: 'Kumpulan inspirasi furniture industrial untuk cafe kecil dengan konsep minimalis. Tips layout, pemilihan furniture yang tepat, dan desain yang memaksimalkan ruang terbatas. Cocok untuk startup cafe.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2025-12-12',
     author: 'Helmi Ramdan'
@@ -805,7 +805,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 80,
     slug: 'meja-bar-industrial-minimalis-desain-compact',
-    title: 'Meja Bar Industrial Minimalis: Desain Compact untuk Café Modern',
+    title: 'Meja Bar Industrial Minimalis: Desain Compact untuk Cafe Modern',
     category: 'Design Inspiration',
     excerpt: 'Inspirasi meja bar industrial minimalis dengan desain compact. Solusi space-efficient untuk cafe kecil. Tips ukuran ideal, material, dan model meja bar yang sesuai konsep industrial minimalis.',
     image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
@@ -825,9 +825,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 82,
     slug: 'contoh-furniture-cafe-industrial-buatan-lokal-indonesia',
-    title: 'Contoh Furniture Café Industrial Buatan Lokal Indonesia Berkualitas',
+    title: 'Contoh Furniture Cafe Industrial Buatan Lokal Indonesia Berkualitas',
     category: 'Design Inspiration',
-    excerpt: 'Kumpulan contoh furniture café industrial buatan lokal Indonesia. Portfolio project Mangala Living: cafe, restoran, hotel dengan furniture industrial berkualitas. Desain custom, material premium.',
+    excerpt: 'Kumpulan contoh furniture cafe industrial buatan lokal Indonesia. Portfolio project Mangala Living: cafe, restoran, hotel dengan furniture industrial berkualitas. Desain custom, material premium.',
     image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop',
     date: '2025-12-16',
     author: 'Helmi Ramdan'
@@ -835,9 +835,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 83,
     slug: 'furniture-besi-cocok-konsep-vintage-cafe',
-    title: 'Furniture Besi Cocok untuk Konsep Vintage Café: Tips Styling',
+    title: 'Furniture Besi Cocok untuk Konsep Vintage Cafe: Tips Styling',
     category: 'Design Inspiration',
-    excerpt: 'Tips styling furniture besi untuk konsep vintage café. Panduan memilih furniture industrial yang cocok untuk tema vintage, pemilihan warna, finishing, dan aksesoris pendukung.',
+    excerpt: 'Tips styling furniture besi untuk konsep vintage cafe. Panduan memilih furniture industrial yang cocok untuk tema vintage, pemilihan warna, finishing, dan aksesoris pendukung.',
     image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop',
     date: '2025-12-17',
     author: 'Helmi Ramdan'
@@ -886,9 +886,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 88,
     slug: 'perbandingan-furniture-besi-vs-kayu-cafe-restoran',
-    title: 'Perbandingan Furniture Besi vs Kayu untuk Café & Restoran',
+    title: 'Perbandingan Furniture Besi vs Kayu untuk Cafe & Restoran',
     category: 'Educational',
-    excerpt: 'Perbandingan detail furniture besi vs kayu untuk bisnis café dan restoran. Analisis kelebihan-kekurangan, investasi jangka panjang, perawatan, dan rekomendasi terbaik untuk bisnis F&B.',
+    excerpt: 'Perbandingan detail furniture besi vs kayu untuk bisnis cafe dan restoran. Analisis kelebihan-kekurangan, investasi jangka panjang, perawatan, dan rekomendasi terbaik untuk bisnis F&B.',
     image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
     date: '2025-12-22',
     author: 'Helmi Ramdan'
@@ -948,9 +948,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 94,
     slug: 'furniture-industrial-bekasi-barat-custom-berkualitas',
-    title: 'Furniture Industrial Bekasi Barat: Custom Berkualitas untuk Café & Restoran',
+    title: 'Furniture Industrial Bekasi Barat: Custom Berkualitas untuk Cafe & Restoran',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial di Bekasi Barat. Melayani Bintara, Kranji, Kota Baru, Jakasampurna. Custom meja kursi café, restoran, hotel. Free konsultasi & survey. Harga pabrik langsung.',
+    excerpt: 'Workshop furniture industrial di Bekasi Barat. Melayani Bintara, Kranji, Kota Baru, Jakasampurna. Custom meja kursi cafe, restoran, hotel. Free konsultasi & survey. Harga pabrik langsung.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2025-12-28',
     author: 'Helmi Ramdan'
@@ -959,9 +959,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 95,
     slug: 'furniture-cafe-bekasi-timur-jatiasih-pekayon',
-    title: 'Furniture Café Bekasi Timur: Melayani Jatiasih, Pekayon, Aren Jaya',
+    title: 'Furniture Cafe Bekasi Timur: Melayani Jatiasih, Pekayon, Aren Jaya',
     category: 'Local Area Guide',
-    excerpt: 'Supplier furniture café industrial untuk Bekasi Timur. Coverage area: Jatiasih, Pekayon, Aren Jaya, Duren Jaya. Gratis delivery. Meja bar, kursi café, display rack custom. Workshop terpercaya.',
+    excerpt: 'Supplier furniture cafe industrial untuk Bekasi Timur. Coverage area: Jatiasih, Pekayon, Aren Jaya, Duren Jaya. Gratis delivery. Meja bar, kursi cafe, display rack custom. Workshop terpercaya.',
     image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
     date: '2025-12-29',
     author: 'Helmi Ramdan'
@@ -983,7 +983,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-bekasi-utara-harapan-indah-summarecon',
     title: 'Furniture Industrial Bekasi Utara: Harapan Indah, Summarecon, Pejuang',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial Bekasi Utara. Coverage: Harapan Indah, Summarecon Bekasi, Pejuang, Teluk Pucung, Kaliabang. Spesialis café, restoran, hotel. Custom design, harga kompetitif.',
+    excerpt: 'Workshop furniture industrial Bekasi Utara. Coverage: Harapan Indah, Summarecon Bekasi, Pejuang, Teluk Pucung, Kaliabang. Spesialis cafe, restoran, hotel. Custom design, harga kompetitif.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2025-12-31',
     author: 'Helmi Ramdan'
@@ -992,9 +992,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 98,
     slug: 'furniture-cafe-cikarang-barat-lippo-cikarang-cibatu',
-    title: 'Furniture Café Cikarang Barat: Lippo Cikarang, Cibatu, Telaga Murni',
+    title: 'Furniture Cafe Cikarang Barat: Lippo Cikarang, Cibatu, Telaga Murni',
     category: 'Local Area Guide',
-    excerpt: 'Furniture café industrial Cikarang Barat. Melayani Lippo Cikarang, Cibatu, Telaga Murni, Pasir Gombong. Workshop dekat area industri. Custom furniture untuk café karyawan pabrik & F&B bisnis.',
+    excerpt: 'Furniture cafe industrial Cikarang Barat. Melayani Lippo Cikarang, Cibatu, Telaga Murni, Pasir Gombong. Workshop dekat area industri. Custom furniture untuk cafe karyawan pabrik & F&B bisnis.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-01-01',
     author: 'Helmi Ramdan'
@@ -1016,7 +1016,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-cikarang-selatan-jababeka-greenland',
     title: 'Furniture Industrial Cikarang Selatan: Jababeka, Greenland, Pasirsari',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial Cikarang Selatan. Coverage Jababeka, Greenland International, Pasirsari, Ciantra. Melayani corporate office, café pabrik, kantin karyawan. Harga volume discount.',
+    excerpt: 'Workshop furniture industrial Cikarang Selatan. Coverage Jababeka, Greenland International, Pasirsari, Ciantra. Melayani corporate office, cafe pabrik, kantin karyawan. Harga volume discount.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-01-03',
     author: 'Helmi Ramdan'
@@ -1036,9 +1036,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 102,
     slug: 'furniture-cafe-cikarang-pusat-taman-galaxy-lemahabang',
-    title: 'Furniture Café Cikarang Pusat: Taman Galaxy, Lemahabang, Hegarmukti',
+    title: 'Furniture Cafe Cikarang Pusat: Taman Galaxy, Lemahabang, Hegarmukti',
     category: 'Local Area Guide',
-    excerpt: 'Furniture café industrial Cikarang Pusat. Area coverage: Taman Galaxy, Lemahabang, Hegarmukti, Kalijaya. Custom meja bar, kursi café, display rack. Free konsultasi desain interior.',
+    excerpt: 'Furniture cafe industrial Cikarang Pusat. Area coverage: Taman Galaxy, Lemahabang, Hegarmukti, Kalijaya. Custom meja bar, kursi cafe, display rack. Free konsultasi desain interior.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-01-05',
     author: 'Helmi Ramdan'
@@ -1049,7 +1049,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-tambun-selatan-sertajaya-mangunjaya',
     title: 'Furniture Industrial Tambun Selatan: Sertajaya, Mangunjaya, Lambangjaya',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial Tambun Selatan. Melayani Sertajaya, Mangunjaya, Lambangjaya, Setiadarma. Produksi furniture café, restoran, kantor. Material berkualitas, harga terjangkau.',
+    excerpt: 'Workshop furniture industrial Tambun Selatan. Melayani Sertajaya, Mangunjaya, Lambangjaya, Setiadarma. Produksi furniture cafe, restoran, kantor. Material berkualitas, harga terjangkau.',
     image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
     date: '2026-01-06',
     author: 'Helmi Ramdan'
@@ -1060,7 +1060,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-custom-tambun-utara-satria-jaya-karang-satria',
     title: 'Furniture Custom Tambun Utara: Satria Jaya, Karang Satria, Wanasari',
     category: 'Local Area Guide',
-    excerpt: 'Jasa furniture custom Tambun Utara. Coverage: Satria Jaya, Karang Satria, Wanasari, Karang Bahagia. Spesialis furniture besi industrial untuk café & restoran. Gratis delivery area Tambun.',
+    excerpt: 'Jasa furniture custom Tambun Utara. Coverage: Satria Jaya, Karang Satria, Wanasari, Karang Bahagia. Spesialis furniture besi industrial untuk cafe & restoran. Gratis delivery area Tambun.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-01-07',
     author: 'Helmi Ramdan'
@@ -1069,9 +1069,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 105,
     slug: 'furniture-cafe-pondok-gede-jatiwaringin-jatibening',
-    title: 'Furniture Café Pondok Gede: Jatiwaringin, Jatibening, Jatiraden',
+    title: 'Furniture Cafe Pondok Gede: Jatiwaringin, Jatibening, Jatiraden',
     category: 'Local Area Guide',
-    excerpt: 'Furniture café industrial Pondok Gede. Melayani Jatiwaringin, Jatibening, Jatiraden, Jatimakmur. Workshop Bekasi melayani border Jakarta-Bekasi. Custom design, fast production 20 hari.',
+    excerpt: 'Furniture cafe industrial Pondok Gede. Melayani Jatiwaringin, Jatibening, Jatiraden, Jatimakmur. Workshop Bekasi melayani border Jakarta-Bekasi. Custom design, fast production 20 hari.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-01-08',
     author: 'Helmi Ramdan'
@@ -1093,7 +1093,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-rawalumbu-bojong-rawalumbu-sepanjang-jaya',
     title: 'Furniture Industrial Rawalumbu: Bojong Rawalumbu, Sepanjang Jaya',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial Rawalumbu. Coverage: Bojong Rawalumbu, Sepanjang Jaya, Pengasinan. Dekat pintu tol, mudah akses. Furniture café, restoran, office. Custom & ready design.',
+    excerpt: 'Workshop furniture industrial Rawalumbu. Coverage: Bojong Rawalumbu, Sepanjang Jaya, Pengasinan. Dekat pintu tol, mudah akses. Furniture cafe, restoran, office. Custom & ready design.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-01-10',
     author: 'Helmi Ramdan'
@@ -1102,9 +1102,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 108,
     slug: 'furniture-cafe-medan-satria-kali-baru-pejuang',
-    title: 'Furniture Café Medan Satria: Kali Baru, Pejuang, Harapan Baru',
+    title: 'Furniture Cafe Medan Satria: Kali Baru, Pejuang, Harapan Baru',
     category: 'Local Area Guide',
-    excerpt: 'Furniture café industrial Medan Satria. Melayani Kali Baru, Pejuang, Harapan Baru, Medan Satria. Workshop furniture besi custom untuk café modern. Harga kompetitif, kualitas terjamin.',
+    excerpt: 'Furniture cafe industrial Medan Satria. Melayani Kali Baru, Pejuang, Harapan Baru, Medan Satria. Workshop furniture besi custom untuk cafe modern. Harga kompetitif, kualitas terjamin.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-01-11',
     author: 'Helmi Ramdan'
@@ -1113,9 +1113,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 109,
     slug: 'furniture-cafe-summarecon-bekasi-premium-mall-area',
-    title: 'Furniture Café Summarecon Bekasi: Premium Mall Area - Custom Design',
+    title: 'Furniture Cafe Summarecon Bekasi: Premium Mall Area - Custom Design',
     category: 'Local Area Guide',
-    excerpt: 'Spesialis furniture café industrial untuk area Summarecon Bekasi. Melayani Mall Summarecon, Boulevard area, residential Summarecon. Custom design premium untuk F&B tenant mall. Workshop terdekat.',
+    excerpt: 'Spesialis furniture cafe industrial untuk area Summarecon Bekasi. Melayani Mall Summarecon, Boulevard area, residential Summarecon. Custom design premium untuk F&B tenant mall. Workshop terdekat.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-01-12',
     author: 'Helmi Ramdan'
@@ -1126,7 +1126,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-harapan-indah-residential-commercial',
     title: 'Furniture Industrial Harapan Indah: Residential & Commercial Area',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial terdekat untuk Harapan Indah. Coverage: Boulevard Harapan Indah, Taman Harapan Indah, area komersial. Spesialis café, restoran, office. Free survey & konsultasi desain.',
+    excerpt: 'Workshop furniture industrial terdekat untuk Harapan Indah. Coverage: Boulevard Harapan Indah, Taman Harapan Indah, area komersial. Spesialis cafe, restoran, office. Free survey & konsultasi desain.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-01-13',
     author: 'Helmi Ramdan'
@@ -1135,9 +1135,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 111,
     slug: 'furniture-cafe-grand-galaxy-city-bekasi-superblok',
-    title: 'Furniture Café Grand Galaxy City Bekasi: Superblok F&B Area',
+    title: 'Furniture Cafe Grand Galaxy City Bekasi: Superblok F&B Area',
     category: 'Local Area Guide',
-    excerpt: 'Furniture café industrial untuk Grand Galaxy City Bekasi. Melayani tenant mall, foodcourt, café strip. Custom furniture dengan delivery cepat ke area Grand Galaxy. Workshop Bekasi berpengalaman.',
+    excerpt: 'Furniture cafe industrial untuk Grand Galaxy City Bekasi. Melayani tenant mall, foodcourt, cafe strip. Custom furniture dengan delivery cepat ke area Grand Galaxy. Workshop Bekasi berpengalaman.',
     image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
     date: '2026-01-14',
     author: 'Helmi Ramdan'
@@ -1148,7 +1148,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-restoran-galaxy-bekasi-mall-tenant',
     title: 'Furniture Restoran Galaxy Bekasi: Mall Tenant & Foodcourt Specialist',
     category: 'Local Area Guide',
-    excerpt: 'Supplier furniture restoran untuk Galaxy Bekasi mall tenant. Spesialis foodcourt furniture, café tenant, restaurant area. Fast production 15-20 hari. Custom design sesuai konsep mall. Harga volume.',
+    excerpt: 'Supplier furniture restoran untuk Galaxy Bekasi mall tenant. Spesialis foodcourt furniture, cafe tenant, restaurant area. Fast production 15-20 hari. Custom design sesuai konsep mall. Harga volume.',
     image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
     date: '2026-01-15',
     author: 'Helmi Ramdan'
@@ -1159,7 +1159,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-kemang-pratama-bekasi-premium',
     title: 'Furniture Industrial Kemang Pratama Bekasi: Premium Residential Area',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial untuk area Kemang Pratama. Melayani residential, café, home office. Custom furniture besi berkualitas dengan desain modern. Dekat dengan lokasi, delivery gratis area Kemang Pratama.',
+    excerpt: 'Workshop furniture industrial untuk area Kemang Pratama. Melayani residential, cafe, home office. Custom furniture besi berkualitas dengan desain modern. Dekat dengan lokasi, delivery gratis area Kemang Pratama.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-01-16',
     author: 'Helmi Ramdan'
@@ -1170,7 +1170,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-jababeka-cikarang-kawasan-pabrik',
     title: 'Furniture Industrial Jababeka Cikarang: Kawasan Pabrik & Corporate',
     category: 'Local Area Guide',
-    excerpt: 'Spesialis furniture industrial untuk Jababeka Industrial Estate. Melayani kantin pabrik, café karyawan, corporate office, mess. Volume discount untuk project besar. Workshop dekat Jababeka.',
+    excerpt: 'Spesialis furniture industrial untuk Jababeka Industrial Estate. Melayani kantin pabrik, cafe karyawan, corporate office, mess. Volume discount untuk project besar. Workshop dekat Jababeka.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-01-17',
     author: 'Helmi Ramdan'
@@ -1179,9 +1179,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 115,
     slug: 'furniture-cafe-lippo-cikarang-mall-commercial',
-    title: 'Furniture Café Lippo Cikarang: Mall & Commercial District',
+    title: 'Furniture Cafe Lippo Cikarang: Mall & Commercial District',
     category: 'Local Area Guide',
-    excerpt: 'Furniture café industrial untuk Lippo Cikarang area. Coverage: Mall Lippo Cikarang, Lippo Village, commercial district. Spesialis tenant mall, café, restoran. Custom design dengan timeline cepat.',
+    excerpt: 'Furniture cafe industrial untuk Lippo Cikarang area. Coverage: Mall Lippo Cikarang, Lippo Village, commercial district. Spesialis tenant mall, cafe, restoran. Custom design dengan timeline cepat.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-01-18',
     author: 'Helmi Ramdan'
@@ -1192,7 +1192,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-deltamas-cikarang-mixed-development',
     title: 'Furniture Industrial Deltamas Cikarang: Mixed-Use Development',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial untuk kawasan Deltamas. Melayani commercial area, residential, F&B tenant. Custom furniture café, restoran, kantor. Material premium, harga kompetitif, delivery gratis.',
+    excerpt: 'Workshop furniture industrial untuk kawasan Deltamas. Melayani commercial area, residential, F&B tenant. Custom furniture cafe, restoran, kantor. Material premium, harga kompetitif, delivery gratis.',
     image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
     date: '2026-01-19',
     author: 'Helmi Ramdan'
@@ -1201,9 +1201,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 117,
     slug: 'furniture-cafe-ejip-cikarang-industrial-park',
-    title: 'Furniture Café EJIP Cikarang: East Jakarta Industrial Park Area',
+    title: 'Furniture Cafe EJIP Cikarang: East Jakarta Industrial Park Area',
     category: 'Local Area Guide',
-    excerpt: 'Supplier furniture café untuk EJIP Industrial Park. Spesialis kantin pabrik, café employee, mess karyawan. Volume pricing untuk corporate project. Workshop terdekat dengan EJIP, fast delivery.',
+    excerpt: 'Supplier furniture cafe untuk EJIP Industrial Park. Spesialis kantin pabrik, cafe employee, mess karyawan. Volume pricing untuk corporate project. Workshop terdekat dengan EJIP, fast delivery.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-01-20',
     author: 'Helmi Ramdan'
@@ -1214,7 +1214,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-restoran-greenland-cikarang-commercial',
     title: 'Furniture Restoran Greenland Cikarang: Commercial & Residential',
     category: 'Local Area Guide',
-    excerpt: 'Furniture restoran industrial untuk Greenland International Cikarang. Custom design untuk commercial area, residential café. Material berkualitas, finishing powder coating. Workshop lokal Bekasi.',
+    excerpt: 'Furniture restoran industrial untuk Greenland International Cikarang. Custom design untuk commercial area, residential cafe. Material berkualitas, finishing powder coating. Workshop lokal Bekasi.',
     image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
     date: '2026-01-21',
     author: 'Helmi Ramdan'
@@ -1223,9 +1223,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 119,
     slug: 'furniture-cafe-kota-harapan-indah-bekasi-cluster',
-    title: 'Furniture Café Kota Harapan Indah Bekasi: Cluster Commercial Area',
+    title: 'Furniture Cafe Kota Harapan Indah Bekasi: Cluster Commercial Area',
     category: 'Local Area Guide',
-    excerpt: 'Jasa furniture café industrial Kota Harapan Indah. Melayani commercial cluster, café residential, home business. Custom design sesuai space. Free konsultasi & measurement. Delivery gratis Harapan Indah.',
+    excerpt: 'Jasa furniture cafe industrial Kota Harapan Indah. Melayani commercial cluster, cafe residential, home business. Custom design sesuai space. Free konsultasi & measurement. Delivery gratis Harapan Indah.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-01-22',
     author: 'Helmi Ramdan'
@@ -1236,7 +1236,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-margahayu-bekasi-timur-area',
     title: 'Furniture Industrial Margahayu Bekasi Timur: Residential & F&B',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial untuk Margahayu, Bekasi Timur. Coverage area: Margahayu Raya, sekitar kampus. Spesialis furniture café mahasiswa, warung, restoran. Harga terjangkau, kualitas premium.',
+    excerpt: 'Workshop furniture industrial untuk Margahayu, Bekasi Timur. Coverage area: Margahayu Raya, sekitar kampus. Spesialis furniture cafe mahasiswa, warung, restoran. Harga terjangkau, kualitas premium.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-01-23',
     author: 'Helmi Ramdan'
@@ -1245,9 +1245,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 121,
     slug: 'furniture-cafe-kaliabang-bekasi-utara-tengah',
-    title: 'Furniture Café Kaliabang Bekasi Utara Tengah: Area Komersial',
+    title: 'Furniture Cafe Kaliabang Bekasi Utara Tengah: Area Komersial',
     category: 'Local Area Guide',
-    excerpt: 'Furniture café industrial untuk Kaliabang Bekasi Utara Tengah. Melayani café, warung, restoran area komersial. Custom furniture dengan harga pabrik. Workshop terdekat, fast production 20 hari.',
+    excerpt: 'Furniture cafe industrial untuk Kaliabang Bekasi Utara Tengah. Melayani cafe, warung, restoran area komersial. Custom furniture dengan harga pabrik. Workshop terdekat, fast production 20 hari.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-01-24',
     author: 'Helmi Ramdan'
@@ -1267,9 +1267,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 123,
     slug: 'furniture-cafe-pekayon-jaya-bekasi-selatan-area',
-    title: 'Furniture Café Pekayon Jaya Bekasi Selatan: Commercial District',
+    title: 'Furniture Cafe Pekayon Jaya Bekasi Selatan: Commercial District',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture café Pekayon Jaya. Melayani area Pekayon, Jakasetia, commercial district. Custom furniture besi industrial untuk café modern. Free delivery area Bekasi Selatan. Garansi kualitas.',
+    excerpt: 'Workshop furniture cafe Pekayon Jaya. Melayani area Pekayon, Jakasetia, commercial district. Custom furniture besi industrial untuk cafe modern. Free delivery area Bekasi Selatan. Garansi kualitas.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-01-26',
     author: 'Helmi Ramdan'
@@ -1280,7 +1280,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-jakasampurna-bekasi-barat-area',
     title: 'Furniture Industrial Jakasampurna Bekasi Barat: Custom Workshop',
     category: 'Local Area Guide',
-    excerpt: 'Furniture industrial custom Jakasampurna, Bekasi Barat. Coverage: Jakasampurna, Kota Baru. Spesialis café, restoran, office furniture. Workshop lokal Bekasi, produksi cepat, harga kompetitif.',
+    excerpt: 'Furniture industrial custom Jakasampurna, Bekasi Barat. Coverage: Jakasampurna, Kota Baru. Spesialis cafe, restoran, office furniture. Workshop lokal Bekasi, produksi cepat, harga kompetitif.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-01-27',
     author: 'Helmi Ramdan'
@@ -1289,9 +1289,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 125,
     slug: 'furniture-cafe-kranji-bekasi-barat-pinggir-jakarta',
-    title: 'Furniture Café Kranji Bekasi Barat: Pinggir Jakarta Border',
+    title: 'Furniture Cafe Kranji Bekasi Barat: Pinggir Jakarta Border',
     category: 'Local Area Guide',
-    excerpt: 'Jasa furniture café industrial Kranji, Bekasi Barat. Strategis border Jakarta-Bekasi. Melayani café, restoran, home office. Custom design modern, material berkualitas. Delivery Jakarta & Bekasi.',
+    excerpt: 'Jasa furniture cafe industrial Kranji, Bekasi Barat. Strategis border Jakarta-Bekasi. Melayani cafe, restoran, home office. Custom design modern, material berkualitas. Delivery Jakarta & Bekasi.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-01-28',
     author: 'Helmi Ramdan'
@@ -1313,7 +1313,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-karawang-terdekat-dari-bekasi',
     title: 'Furniture Industrial Karawang: Workshop Terdekat dari Bekasi',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial terdekat untuk Karawang. Lokasi di Bekasi dekat border Karawang. Melayani Karawang Barat, Karawang Timur. Spesialis café pabrik, kantin karyawan, corporate office.',
+    excerpt: 'Workshop furniture industrial terdekat untuk Karawang. Lokasi di Bekasi dekat border Karawang. Melayani Karawang Barat, Karawang Timur. Spesialis cafe pabrik, kantin karyawan, corporate office.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-01-30',
     author: 'Helmi Ramdan'
@@ -1322,9 +1322,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 128,
     slug: 'furniture-cafe-cibitung-bekasi-kawasan-industri',
-    title: 'Furniture Café Cibitung Bekasi: Kawasan Industri & Pabrik',
+    title: 'Furniture Cafe Cibitung Bekasi: Kawasan Industri & Pabrik',
     category: 'Local Area Guide',
-    excerpt: 'Furniture café industrial untuk Cibitung, Bekasi. Spesialis kantin pabrik, café karyawan, mess area. Volume discount untuk corporate project. Workshop dekat kawasan industri Cibitung. Fast delivery.',
+    excerpt: 'Furniture cafe industrial untuk Cibitung, Bekasi. Spesialis kantin pabrik, cafe karyawan, mess area. Volume discount untuk corporate project. Workshop dekat kawasan industri Cibitung. Fast delivery.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-01-31',
     author: 'Helmi Ramdan'
@@ -1335,7 +1335,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-setu-bekasi-workshop-langsung',
     title: 'Furniture Industrial Setu Bekasi: Workshop Langsung - Harga Pabrik',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial di Setu, Bekasi. Lokasi produksi langsung, harga pabrik tanpa markup. Custom furniture café, restoran, hotel, kantor. Material premium, finishing powder coating berkualitas.',
+    excerpt: 'Workshop furniture industrial di Setu, Bekasi. Lokasi produksi langsung, harga pabrik tanpa markup. Custom furniture cafe, restoran, hotel, kantor. Material premium, finishing powder coating berkualitas.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-02-01',
     author: 'Helmi Ramdan'
@@ -1344,9 +1344,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 130,
     slug: 'furniture-cafe-metland-transyogi-cileungsi-commercial',
-    title: 'Furniture Café Metland Transyogi Cileungsi: Commercial Area',
+    title: 'Furniture Cafe Metland Transyogi Cileungsi: Commercial Area',
     category: 'Local Area Guide',
-    excerpt: 'Furniture café industrial untuk Metland Transyogi, Cileungsi. Coverage: commercial area, residential. Workshop Bekasi melayani Cileungsi & sekitar. Custom design, delivery gratis area Metland.',
+    excerpt: 'Furniture cafe industrial untuk Metland Transyogi, Cileungsi. Coverage: commercial area, residential. Workshop Bekasi melayani Cileungsi & sekitar. Custom design, delivery gratis area Metland.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-02-02',
     author: 'Helmi Ramdan'
@@ -1357,7 +1357,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-jakarta-timur-perbatasan-bekasi',
     title: 'Furniture Industrial Jakarta Timur: Perbatasan Bekasi - Fast Delivery',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial terdekat untuk Jakarta Timur. Coverage: Cakung, Kramat Jati, Makasar, Cipayung. Dekat border Bekasi-Jakarta. Custom furniture café, restoran. Delivery cepat Jakarta Timur.',
+    excerpt: 'Workshop furniture industrial terdekat untuk Jakarta Timur. Coverage: Cakung, Kramat Jati, Makasar, Cipayung. Dekat border Bekasi-Jakarta. Custom furniture cafe, restoran. Delivery cepat Jakarta Timur.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-02-03',
     author: 'Helmi Ramdan'
@@ -1366,9 +1366,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 132,
     slug: 'furniture-cafe-jakarta-pusat-cbd-office-building',
-    title: 'Furniture Café Jakarta Pusat: CBD & Office Building Specialist',
+    title: 'Furniture Cafe Jakarta Pusat: CBD & Office Building Specialist',
     category: 'Local Area Guide',
-    excerpt: 'Supplier furniture café industrial Jakarta Pusat. Spesialis tenant gedung perkantoran, corporate café, co-working space. Workshop Bekasi melayani Jakarta. Custom design premium, project experience.',
+    excerpt: 'Supplier furniture cafe industrial Jakarta Pusat. Spesialis tenant gedung perkantoran, corporate cafe, co-working space. Workshop Bekasi melayani Jakarta. Custom design premium, project experience.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-02-04',
     author: 'Helmi Ramdan'
@@ -1388,9 +1388,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 134,
     slug: 'furniture-cafe-depok-terdekat-dari-bekasi-workshop',
-    title: 'Furniture Café Depok: Workshop Terdekat dari Bekasi',
+    title: 'Furniture Cafe Depok: Workshop Terdekat dari Bekasi',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture café industrial terdekat untuk Depok. Coverage: Margonda, UI, Sawangan. Melayani café kampus, restoran, F&B bisnis. Custom furniture berkualitas, harga terjangkau mahasiswa.',
+    excerpt: 'Workshop furniture cafe industrial terdekat untuk Depok. Coverage: Margonda, UI, Sawangan. Melayani cafe kampus, restoran, F&B bisnis. Custom furniture berkualitas, harga terjangkau mahasiswa.',
     image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
     date: '2026-02-06',
     author: 'Helmi Ramdan'
@@ -1401,7 +1401,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-bogor-workshop-bekasi-melayani',
     title: 'Furniture Industrial Bogor: Workshop Bekasi Melayani Area Bogor',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial Bekasi melayani Bogor. Coverage: Bogor Kota, Cibinong, Sentul. Spesialis café, villa, resort furniture. Custom design tropical industrial. Delivery Bekasi-Bogor tersedia.',
+    excerpt: 'Workshop furniture industrial Bekasi melayani Bogor. Coverage: Bogor Kota, Cibinong, Sentul. Spesialis cafe, villa, resort furniture. Custom design tropical industrial. Delivery Bekasi-Bogor tersedia.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-02-07',
     author: 'Helmi Ramdan'

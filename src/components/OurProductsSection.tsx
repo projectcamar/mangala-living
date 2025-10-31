@@ -27,7 +27,7 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
             {isIndonesian ? "Produk Kami" : "Our Products"}
           </h2>
           <Link to="/shop" className="view-all-link">
-            {isIndonesian ? "• LIHAT SEMUA" : "• VIEW ALL"}
+            {isIndonesian ? "LIHAT SEMUA" : "VIEW ALL"}
           </Link>
         </div>
 

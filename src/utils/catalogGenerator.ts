@@ -81,7 +81,7 @@ export const generateCatalog = async () => {
     
     doc.setFontSize(8)
     doc.setTextColor(150, 150, 150)
-    doc.text('© 2025 Mangala Living. All rights reserved.', pageWidth / 2, 280, { align: 'center' })
+    doc.text('Copyright 2025 Mangala Living. All rights reserved.', pageWidth / 2, 280, { align: 'center' })
     
     // Group products by category
     const productsByCategory: { [key: string]: Product[] } = {}
@@ -216,7 +216,7 @@ export const generateCatalog = async () => {
     
     doc.setFontSize(8)
     doc.setTextColor(150, 150, 150)
-    doc.text('© 2025 Mangala Living. All rights reserved.', pageWidth / 2, 280, { align: 'center' })
+    doc.text('Copyright 2025 Mangala Living. All rights reserved.', pageWidth / 2, 280, { align: 'center' })
     
     // Save PDF
     doc.save('Mangala-Living-Catalog-2025.pdf')

@@ -230,7 +230,7 @@
 }
 
 .why-choose-card ul li::before {
-  content: "✓";
+  content: "-";
   position: absolute;
   left: 0;
   color: #28a745;
@@ -414,7 +414,7 @@
 }
 
 .faq-item[open] summary::before {
-  content: "−";
+  content: "-";
 }
 
 .faq-item p {

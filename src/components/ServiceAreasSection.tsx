@@ -36,17 +36,17 @@ const ServiceAreasSection: React.FC<ServiceAreasSectionProps> = ({ isIndonesian 
     komersial: {
       title: "KAWASAN KOMERSIAL & INDUSTRIAL",
       areas: [
-        { name: "Summarecon Bekasi", icon: "🏢", desc: "Mall & Boulevard Area" },
-        { name: "Harapan Indah", icon: "🏘️", desc: "Residential & Commercial" },
-        { name: "Grand Galaxy City", icon: "🏬", desc: "Superblock F&B District" },
-        { name: "Galaxy Bekasi", icon: "🏪", desc: "Mall & Entertainment" },
-        { name: "Kemang Pratama", icon: "🏡", desc: "Premium Residential" },
-        { name: "Lippo Cikarang", icon: "🏢", desc: "Mall & Commercial Hub" },
-        { name: "Jababeka", icon: "🏭", desc: "Industrial Estate" },
-        { name: "Deltamas", icon: "🌆", desc: "Mixed-Use Development" },
-        { name: "EJIP Cikarang", icon: "🏭", desc: "East Jakarta Industrial Park" },
-        { name: "Greenland International", icon: "🏢", desc: "Commercial & Residential" },
-        { name: "MM2100", icon: "🏭", desc: "Industrial Town" }
+        { name: "Summarecon Bekasi", icon: "MB", desc: "Mall & Boulevard Area" },
+        { name: "Harapan Indah", icon: "RC", desc: "Residential & Commercial" },
+        { name: "Grand Galaxy City", icon: "GG", desc: "Superblock F&B District" },
+        { name: "Galaxy Bekasi", icon: "ME", desc: "Mall & Entertainment" },
+        { name: "Kemang Pratama", icon: "PR", desc: "Premium Residential" },
+        { name: "Lippo Cikarang", icon: "LC", desc: "Mall & Commercial Hub" },
+        { name: "Jababeka", icon: "IN", desc: "Industrial Estate" },
+        { name: "Deltamas", icon: "MU", desc: "Mixed-Use Development" },
+        { name: "EJIP Cikarang", icon: "EI", desc: "East Jakarta Industrial Park" },
+        { name: "Greenland International", icon: "CR", desc: "Commercial & Residential" },
+        { name: "MM2100", icon: "IT", desc: "Industrial Town" }
       ]
     },
     jakarta: {
@@ -80,7 +80,7 @@ const ServiceAreasSection: React.FC<ServiceAreasSectionProps> = ({ isIndonesian 
         {/* Bekasi Kota */}
         <div className="service-area-group">
           <h3 className="area-group-title">
-            <span className="area-icon">📍</span>
+            <span className="area-icon">*</span>
             {serviceAreas.bekasiKota.title}
           </h3>
           <div className="areas-grid">
@@ -96,7 +96,7 @@ const ServiceAreasSection: React.FC<ServiceAreasSectionProps> = ({ isIndonesian 
         {/* Cikarang & Sekitarnya */}
         <div className="service-area-group">
           <h3 className="area-group-title">
-            <span className="area-icon">🏭</span>
+            <span className="area-icon">*</span>
             {serviceAreas.cikarang.title}
           </h3>
           <div className="areas-grid">
@@ -112,7 +112,7 @@ const ServiceAreasSection: React.FC<ServiceAreasSectionProps> = ({ isIndonesian 
         {/* Kawasan Komersial */}
         <div className="service-area-group commercial">
           <h3 className="area-group-title">
-            <span className="area-icon">🏢</span>
+            <span className="area-icon">*</span>
             {serviceAreas.komersial.title}
           </h3>
           <div className="commercial-grid">
@@ -129,7 +129,7 @@ const ServiceAreasSection: React.FC<ServiceAreasSectionProps> = ({ isIndonesian 
         {/* Jakarta & Jabodetabek */}
         <div className="service-area-group">
           <h3 className="area-group-title">
-            <span className="area-icon">🌆</span>
+            <span className="area-icon">*</span>
             {serviceAreas.jakarta.title}
           </h3>
           <div className="areas-grid">
@@ -161,7 +161,7 @@ const ServiceAreasSection: React.FC<ServiceAreasSectionProps> = ({ isIndonesian 
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="whatsapp-icon">💬</span>
+              <span className="whatsapp-icon">WA</span>
               {isIndonesian ? "Konsultasi Gratis" : "Free Consultation"}
             </a>
           </div>
@@ -174,7 +174,7 @@ const ServiceAreasSection: React.FC<ServiceAreasSectionProps> = ({ isIndonesian 
             Bekasi (Bekasi Barat, Bekasi Timur, Bekasi Selatan, Bekasi Utara, Cikarang, Tambun), Jakarta 
             (Jakarta Timur, Jakarta Pusat, Jakarta Selatan), dan Jabodetabek (Depok, Bogor, Tangerang, Karawang). 
             Dengan lokasi workshop di Setu, Bekasi, kami memberikan layanan custom furniture besi industrial untuk 
-            café, restoran, hotel, kantor dengan harga pabrik langsung. Pengalaman 25+ tahun, 1000+ klien puas. 
+            cafe, restoran, hotel, kantor dengan harga pabrik langsung. Pengalaman 25+ tahun, 1000+ klien puas. 
             Melayani kawasan komersial premium seperti Summarecon Bekasi, Harapan Indah, Grand Galaxy City, 
             Lippo Cikarang, Jababeka, dan area industrial estate di Cikarang.
           </p>

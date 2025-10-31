@@ -45,7 +45,7 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
             {isIndonesian ? "Produk Terlaris" : "Best Sellers"}
           </h2>
           <Link to="/product-tag/best-seller" className="view-all-link">
-            {isIndonesian ? "• LIHAT SEMUA" : "• VIEW ALL"}
+            {isIndonesian ? "LIHAT SEMUA" : "VIEW ALL"}
           </Link>
         </div>
 

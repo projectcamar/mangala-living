@@ -25,7 +25,7 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
     <div className="landing-page furniture-besi-custom-bekasi">
       <Helmet>
         <title>Furniture Besi Custom Bekasi - Workshop Terpercaya Harga Pabrik | Mangala Living</title>
-        <meta name="description" content="🏭 Furniture Besi Custom Bekasi ✓ Workshop Langsung Harga Pabrik ✓ Material Premium ✓ Finishing Powder Coating ✓ Free Konsultasi ✓ Garansi 1 Tahun ✓ Melayani Jabodetabek ☎ 0852-1207-8467" />
+        <meta name="description" content="Furniture Besi Custom Bekasi - Workshop Langsung Harga Pabrik - Material Premium - Finishing Powder Coating - Free Konsultasi - Garansi 1 Tahun - Melayani Jabodetabek (Hubungi 0852-1207-8467)" />
         <meta name="keywords" content="furniture besi custom bekasi, custom furniture besi bekasi, jasa furniture besi bekasi, workshop furniture bekasi, furniture custom bekasi, meja besi custom bekasi, kursi besi custom bekasi, furniture industrial bekasi, tukang furniture besi bekasi, bikin furniture besi bekasi" />
         <link rel="canonical" href="https://mangala-living.com/furniture-besi-custom-bekasi" />
         
@@ -63,7 +63,7 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
           </h1>
           
           <p className="landing-hero-subtitle">
-            Produksi furniture besi custom berkualitas premium untuk café, restoran, hotel, dan kantor di Bekasi & Jabodetabek. Material terbaik, finishing powder coating tahan 10 tahun, garansi kualitas.
+            Produksi furniture besi custom berkualitas premium untuk cafe, restoran, hotel, dan kantor di Bekasi & Jabodetabek. Material terbaik, finishing powder coating tahan 10 tahun, garansi kualitas.
           </p>
 
           <div className="landing-hero-features">
@@ -140,7 +140,7 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
                 <strong> Gratis delivery untuk Bekasi & Jakarta Timur!</strong>
               </p>
               <ul>
-                <li>Workshop 1000m² dengan mesin modern</li>
+                <li>Workshop 1000 m2 dengan mesin modern</li>
                 <li>8 stasiun welding profesional</li>
                 <li>Powder coating booth elektrostatic</li>
                 <li>Quality control 3 tahap</li>
@@ -208,15 +208,15 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
 
           <div className="catalog-categories">
             <div className="catalog-category">
-              <h3>Furniture Café & Coffee Shop</h3>
+              <h3>Furniture Cafe & Coffee Shop</h3>
               <div className="catalog-items">
                 <div className="catalog-item">
-                  <strong>Meja Café 60x60cm</strong>
+                  <strong>Meja Cafe 60x60cm</strong>
                   <span>Frame besi 4x4cm + top kayu solid</span>
                   <div className="price">Rp 1.350.000</div>
                 </div>
                 <div className="catalog-item">
-                  <strong>Kursi Café Industrial</strong>
+                  <strong>Kursi Cafe Industrial</strong>
                   <span>Dengan sandaran + cushion</span>
                   <div className="price">Rp 420.000</div>
                 </div>
@@ -313,7 +313,7 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
           </div>
 
           <div className="catalog-cta">
-            <p><strong>💡 Semua harga sudah include finishing powder coating & garansi kualitas</strong></p>
+            <p><strong>Catatan: Semua harga sudah termasuk finishing powder coating & garansi kualitas</strong></p>
             <p>Volume discount hingga 15% untuk order 20+ pieces | 25% untuk 50+ pieces</p>
             <a href="https://wa.me/6285212078467?text=Halo%2C%20saya%20mau%20tanya%20harga%20detail%20furniture%20besi%20custom%20Bekasi" 
                className="cta-button primary" 
@@ -359,7 +359,7 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
             <div className="process-step">
               <div className="step-number">5</div>
               <h3>QC & Finishing</h3>
-              <p>3-stage quality check: welding, structure test, finishing inspection. Powder coating di oven 180°C selama 24 jam.</p>
+              <p>3-stage quality check: welding, structure test, finishing inspection. Powder coating di oven 180 deg C selama 24 jam.</p>
             </div>
 
             <div className="process-step">
@@ -370,7 +370,7 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
           </div>
 
           <div className="process-timeline">
-            <p><strong>⏱️ Total Timeline: 20-25 Hari Kerja</strong> (standard) | 10-15 Hari (rush order +20%)</p>
+            <p><strong>Timeline Total: 20-25 Hari Kerja</strong> (standard) | 10-15 Hari (rush order +20%)</p>
           </div>
         </div>
       </section>

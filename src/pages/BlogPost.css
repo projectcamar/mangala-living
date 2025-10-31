@@ -135,7 +135,7 @@
 }
 
 .blog-post-list li::before {
-  content: "•";
+  content: "-";
   position: absolute;
   left: 10px;
   color: #3498db;
