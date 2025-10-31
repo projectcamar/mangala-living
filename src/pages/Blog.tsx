@@ -9,20 +9,21 @@ import { getPostsByPage, getTotalPages } from '../data/blog'
 import './Blog.css'
 
 const Blog: React.FC = () => {
-  const [searchParams, setSearchParams] = useSearchParams()
-  const currentPage = parseInt(searchParams.get('page') || '1')
+  const [searchParams] = useSearchParams()
   const postsPerPage = 8
-  
-  const posts = getPostsByPage(currentPage, postsPerPage)
+  const rawPage = Number.parseInt(searchParams.get('page') || '1', 10)
   const totalPages = getTotalPages(postsPerPage)
+  const currentPage = Number.isNaN(rawPage) ? 1 : Math.min(Math.max(rawPage, 1), totalPages || 1)
+  const posts = getPostsByPage(currentPage, postsPerPage)
+
+  const buildPageUrl = (page: number) => (page <= 1 ? '/blog' : `/blog?page=${page}`)
+  const canonicalUrl = buildPageUrl(currentPage)
+  const prevUrl = currentPage > 1 ? buildPageUrl(currentPage - 1) : null
+  const nextUrl = currentPage < totalPages ? buildPageUrl(currentPage + 1) : null
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [currentPage])
-
-  const handlePageChange = (page: number) => {
-    setSearchParams({ page: page.toString() })
-  }
 
   return (
     <div className="blog-page">
@@ -31,7 +32,9 @@ const Blog: React.FC = () => {
         <title>Blog Furniture Industrial & Tips Desain Cafe Restoran - Mangala Living</title>
         <meta name="description" content="Panduan lengkap furniture industrial untuk cafe, restoran, hotel. Tips memilih furniture besi custom, cara merawat, tren desain 2025, perbandingan material, harga, dan area workshop Bekasi Jakarta. 135+ artikel berbasis pengalaman 25 tahun Mangala Living." />
         <meta name="keywords" content="blog furniture industrial, tips furniture cafe, cara memilih furniture restoran, furniture besi custom panduan, workshop furniture bekasi, harga furniture industrial 2025, tips desain interior industrial, furniture cafe murah, perbandingan furniture besi vs kayu, cara merawat furniture industrial, tren furniture 2025, furniture bekasi guide, furniture jakarta tips, inspirasi desain cafe industrial" />
-        <link rel="canonical" href="https://mangala-living.com/blog" />
+        <link rel="canonical" href={`https://mangala-living.com${canonicalUrl}`} />
+        {prevUrl && <link rel="prev" href={`https://mangala-living.com${prevUrl}`} />}
+        {nextUrl && <link rel="next" href={`https://mangala-living.com${nextUrl}`} />}
         
         {/* AI Search Optimization: Clear article purpose */}
         <meta property="og:title" content="Blog Furniture Industrial - 135+ Artikel Tips & Panduan Lengkap" />
@@ -97,72 +100,76 @@ const Blog: React.FC = () => {
 
           {/* Pagination - Compact Version */}
           {totalPages > 1 && (
-            <div className="blog-pagination">
+            <nav className="blog-pagination" aria-label="Blog pagination">
               {currentPage > 1 && (
-                <button 
+                <Link
+                  to={buildPageUrl(currentPage - 1)}
                   className="pagination-btn pagination-prev"
-                  onClick={() => handlePageChange(currentPage - 1)}
+                  aria-label="Previous page"
                 >
                   Prev
-                </button>
+                </Link>
               )}
-              
+
               {/* Smart Pagination with Ellipsis */}
               {(() => {
-                const pages: (number | string)[] = [];
-                const showEllipsis = totalPages > 7;
-                
+                const pages: (number | string)[] = []
+                const showEllipsis = totalPages > 7
+
                 if (!showEllipsis) {
                   // Show all pages if 7 or less
                   for (let i = 1; i <= totalPages; i++) {
-                    pages.push(i);
+                    pages.push(i)
                   }
                 } else {
                   // Always show first page
-                  pages.push(1);
-                  
+                  pages.push(1)
+
                   if (currentPage <= 3) {
                     // Near the beginning
-                    pages.push(2, 3, 4, 5, '...', totalPages);
+                    pages.push(2, 3, 4, 5, '...', totalPages)
                   } else if (currentPage >= totalPages - 2) {
                     // Near the end
-                    pages.push('...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
+                    pages.push('...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages)
                   } else {
                     // In the middle
-                    pages.push('...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages);
+                    pages.push('...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages)
                   }
                 }
-                
+
                 return pages.map((page, index) => {
                   if (page === '...') {
                     return (
-                      <span key={`ellipsis-${index}`} className="pagination-ellipsis">
+                      <span key={`ellipsis-${index}`} className="pagination-ellipsis" aria-hidden="true">
                         ...
                       </span>
-                    );
+                    )
                   }
-                  
+
+                  const pageNumber = page as number
                   return (
-                    <button
-                      key={page}
-                      className={`pagination-btn pagination-number ${currentPage === page ? 'active' : ''}`}
-                      onClick={() => handlePageChange(page as number)}
+                    <Link
+                      key={pageNumber}
+                      to={buildPageUrl(pageNumber)}
+                      className={`pagination-btn pagination-number ${currentPage === pageNumber ? 'active' : ''}`}
+                      aria-current={currentPage === pageNumber ? 'page' : undefined}
                     >
-                      {page}
-                    </button>
-                  );
-                });
+                      {pageNumber}
+                    </Link>
+                  )
+                })
               })()}
-              
+
               {currentPage < totalPages && (
-                <button 
+                <Link
+                  to={buildPageUrl(currentPage + 1)}
                   className="pagination-btn pagination-next"
-                  onClick={() => handlePageChange(currentPage + 1)}
+                  aria-label="Next page"
                 >
                   Next
-                </button>
+                </Link>
               )}
-            </div>
+            </nav>
           )}
         </div>
       </section>
