@@ -65,14 +65,14 @@ const Partnership: React.FC = () => {
     <div className="partnership-page">
       <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet>
-        <title>{isIndonesian ? 'Kerja Sama - Mangala Living' : 'Partnership - Mangala Living'}</title>
+        <title>{isIndonesian ? 'Partnership Program Furniture Industrial: Kontraktor, Desainer, Developer - Mangala Living' : 'Industrial Furniture Partnership Program: Contractors, Designers, Developers - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 
-          ? "Kerja sama furniture untuk proyek hotel, vila, restoran, dan rumah tinggal. Mitra terpercaya untuk pengadaan furnitur komersial." 
-          : "Furniture partnership for hotel, villa, restaurant, and residential projects. Trusted partner for commercial furniture procurement."} />
+          ? "Bagaimana cara kerja sama dengan Mangala Living untuk project furniture? Program partnership untuk kontraktor, interior designer, property developer, hotel chain. Keuntungan partnership: Volume pricing hingga 20% discount, dedicated project manager, priority production, 3D rendering gratis, technical support on-site, invoice termin fleksibel. Pengalaman handling project hotel 100+ kamar, restoran chain 10+ outlet, mall tenant 50+ unit. Syarat partnership minimum project Rp 50 juta atau 5+ project/tahun."
+          : "How to partner with Mangala Living for furniture projects? Partnership program for contractors, interior designers, property developers, hotel chains. Partnership benefits: Volume pricing up to 20% discount, dedicated project manager, priority production, free 3D rendering, on-site technical support, flexible payment terms. Experience handling 100+ room hotel projects, 10+ outlet restaurant chains, 50+ mall tenant units. Partnership requirements: minimum Rp 50 million project or 5+ projects/year."} />
         <meta name="keywords" content={isIndonesian 
-          ? "kerja sama furniture, partnership furniture, kontraktor mebel, pengadaan furniture hotel, furniture proyek" 
-          : "furniture partnership, furniture contractor, hotel furniture procurement, commercial furniture projects"} />
-        <link rel="canonical" href="https://mangalaliving.com/partnership/" />
+          ? "partnership furniture bekasi, kerja sama furniture industrial, program mitra furniture bekasi, diskon volume furniture bekasi, kontraktor furniture partner, interior designer furniture supplier, developer furniture bekasi, pengadaan furniture hotel bekasi, furniture project besar bekasi, supplier furniture kontraktor, mitra furniture restoran chain, furniture mall tenant bekasi"
+          : "furniture partnership bekasi, industrial furniture collaboration, furniture contractor bekasi, interior designer furniture supplier, developer furniture partnership, hotel furniture procurement, commercial furniture supplier"} />
+        <link rel="canonical" href="https://mangala-living.com/partnership" />
       </Helmet>
       
       <Header isIndonesian={isIndonesian} />

@@ -75,14 +75,14 @@ const About: React.FC = () => {
     <div className="about-page">
       <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet>
-        <title>{isIndonesian ? 'Tentang Kami - Mangala Living Workshop Furniture Industrial Bekasi' : 'About Us - Mangala Living Industrial Furniture Bekasi'}</title>
+        <title>{isIndonesian ? 'Tentang Mangala Living: Workshop Furniture Besi Bekasi Sejak 1999 - 1000+ Project' : 'About Mangala Living: Custom Industrial Furniture Workshop Bekasi Since 1999'}</title>
         <meta name="description" content={isIndonesian 
-          ? "Workshop Furniture Industrial Bekasi sejak 1999. Produsen furniture besi custom untuk cafe, restoran, hotel, kantor. Material premium, finishing powder coating, harga pabrik. Melayani Jakarta, Bekasi, Jabodetabek." 
-          : "Industrial Furniture Workshop Bekasi since 1999. Custom steel furniture manufacturer for coffee shops, restaurants, hotels, offices. Premium materials, powder coating finish, factory prices. Serving Jakarta, Bekasi, Jabodetabek."} />
+          ? "Siapa Mangala Living? Workshop furniture besi custom Bekasi terpercaya sejak 1999 dengan 1000+ project completed. Spesialis furniture industrial untuk cafe, restoran, hotel - material premium, finishing powder coating, harga pabrik. Kenapa memilih Mangala? Pengalaman 25 tahun, workshop modern 800m?, free konsultasi desain, garansi 2 tahun, melayani Jabodetabek." 
+          : "Who is Mangala Living? Trusted custom steel furniture workshop in Bekasi since 1999 with 1000+ completed projects. Specialists in industrial furniture for cafes, restaurants, hotels - premium materials, powder coating finish, factory prices. Why choose Mangala? 25 years experience, 800m? modern workshop, free design consultation, 2-year warranty, serving Greater Jakarta."} />
         <meta name="keywords" content={isIndonesian 
-          ? "workshop furniture bekasi, furniture industrial bekasi, furniture besi custom bekasi, produsen furniture industrial, custom furniture bekasi, furniture cafe bekasi, furniture restoran bekasi, workshop furniture besi" 
-          : "furniture workshop bekasi, industrial furniture bekasi, custom steel furniture bekasi, industrial furniture manufacturer, custom furniture bekasi, cafe furniture bekasi, restaurant furniture bekasi"} />
-        <link rel="canonical" href="https://mangalaliving.com/about/" />
+          ? "tentang mangala living, siapa mangala living, workshop furniture bekasi terpercaya, furniture industrial bekasi sejak 1999, pengalaman furniture besi bekasi, produsen furniture industrial bekasi, workshop furniture besi terpercaya, custom furniture bekasi berpengalaman, furniture cafe bekasi workshop, furniture restoran bekasi pabrik, kenapa memilih mangala living, keunggulan furniture industrial bekasi, testimoni furniture bekasi" 
+          : "about mangala living, who is mangala living, trusted furniture workshop bekasi, industrial furniture bekasi since 1999, experienced steel furniture manufacturer, custom furniture bekasi workshop, cafe furniture bekasi factory, why choose mangala living"} />
+        <link rel="canonical" href="https://mangala-living.com/about" />
         
         {/* LocalBusiness Structured Data */}
         <script type="application/ld+json">
@@ -243,8 +243,8 @@ const About: React.FC = () => {
               <h3 className="why-choose-item-title">{isIndonesian ? 'Harga Pabrik Langsung' : 'Factory Direct Pricing'}</h3>
               <p className="why-choose-item-description">
                 {isIndonesian 
-                  ? "Kami memproduksi semua produk in-house—tanpa tengkulak, hanya harga terbaik untuk furniture industrial berkualitas."
-                  : "We manufacture everything in-house—no middlemen, just the best prices for quality industrial furniture."}
+                  ? "Kami memproduksi semua produk in-house?tanpa tengkulak, hanya harga terbaik untuk furniture industrial berkualitas."
+                  : "We manufacture everything in-house?no middlemen, just the best prices for quality industrial furniture."}
               </p>
             </div>
 

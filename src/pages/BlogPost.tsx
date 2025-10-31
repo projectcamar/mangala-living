@@ -8,7 +8,7 @@ import Breadcrumb from '../components/Breadcrumb'
 import ServiceAreasSection from '../components/ServiceAreasSection'
 import { getPostBySlug, BLOG_POSTS } from '../data/blog'
 import { getBlogPostContent } from '../data/blogContent'
-import { generateBlogPostingSchema } from '../utils/structuredData'
+import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structuredData'
 import './BlogPost.css'
 
 const BlogPost: React.FC = () => {
@@ -68,6 +68,35 @@ const BlogPost: React.FC = () => {
   // Generate BlogPosting Schema
   const blogSchema = generateBlogPostingSchema(post)
 
+  // Extract FAQ from content for AI Search Optimization (Strategy 1 & 5)
+  const extractFAQFromContent = () => {
+    if (!content?.sections) return []
+    
+    const faqSection = content.sections.find(section => 
+      section.heading?.toLowerCase().includes('faq') || 
+      section.heading?.toLowerCase().includes('pertanyaan')
+    )
+    
+    if (!faqSection?.list) return []
+    
+    // Parse FAQ list items (format: <strong>Question</strong><br/>Answer)
+    return faqSection.list.map(item => {
+      const cleanItem = item.replace(/<[^>]*>/g, ' ').trim()
+      const parts = cleanItem.split(/\s+(?:br\/|:)\s*/)
+      
+      if (parts.length >= 2) {
+        return {
+          question: parts[0].trim(),
+          answer: parts.slice(1).join(' ').trim()
+        }
+      }
+      return null
+    }).filter(Boolean) as Array<{ question: string; answer: string }>
+  }
+
+  const faqData = extractFAQFromContent()
+  const faqSchema = faqData.length > 0 ? generateFAQSchema(faqData) : null
+
   // Check if this blog post should show Service Areas Section
   // Show only for "Local Area Guide" category (geo-targeted posts)
   const shouldShowServiceAreas = post.category === 'Local Area Guide'
@@ -100,6 +129,13 @@ const BlogPost: React.FC = () => {
         <script type="application/ld+json">
           {JSON.stringify(blogSchema)}
         </script>
+        
+        {/* FAQ Structured Data for AI Search Optimization */}
+        {faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
       </Helmet>
       
       <Header />
