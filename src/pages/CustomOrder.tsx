@@ -65,14 +65,14 @@ const CustomOrder: React.FC = () => {
     <div className="custom-order-page">
       <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet>
-        <title>{isIndonesian ? 'Custom Order - Mangala Living' : 'Custom Order - Mangala Living'}</title>
+        <title>{isIndonesian ? 'Cara Order Furniture Besi Custom Bekasi: Proses, Harga, Timeline - Mangala Living' : 'How to Order Custom Industrial Furniture: Process, Price, Timeline - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 
-          ? "Custom furniture industrial scandinavian premium sesuai kebutuhan Anda. Konsultasi gratis, desain custom, dan kualitas eksport." 
-          : "Premium custom industrial scandinavian furniture tailored to your needs. Free consultation, custom design, and export quality."} />
+          ? "Bagaimana cara order furniture besi custom di Bekasi? Panduan lengkap: 1) Konsultasi gratis via WhatsApp, 2) Survey & measurement FREE, 3) Quotation + 3D rendering dalam 2-3 hari, 4) Produksi 15-25 hari, 5) Delivery & instalasi. Berapa harga furniture custom? Mulai Rp 2.5 juta/set. DP 50%, material premium, garansi 2 tahun. Workshop Mangala Living Bekasi melayani cafe, restoran, hotel, kantor." 
+          : "How to order custom steel furniture in Bekasi? Complete guide: 1) Free consultation via WhatsApp, 2) FREE survey & measurement, 3) Quotation + 3D rendering in 2-3 days, 4) Production 15-25 days, 5) Delivery & installation. Custom furniture price? Starting from Rp 2.5 million/set. 50% down payment, premium materials, 2-year warranty. Mangala Living Workshop Bekasi serves cafes, restaurants, hotels, offices."} />
         <meta name="keywords" content={isIndonesian 
-          ? "custom furniture, furniture custom, mebel custom, furniture industrial custom, desain furniture custom" 
-          : "custom furniture, custom industrial furniture, custom scandinavian furniture, bespoke furniture design"} />
-        <link rel="canonical" href="https://mangalaliving.com/custom-order/" />
+          ? "cara order furniture custom bekasi, bagaimana order furniture besi bekasi, proses custom furniture bekasi, harga furniture custom bekasi, biaya furniture besi custom, berapa lama produksi furniture custom, timeline furniture industrial, cara bikin furniture custom, custom furniture bekasi proses, furniture industrial custom order, dp furniture custom bekasi, garansi furniture besi bekasi" 
+          : "how to order custom furniture bekasi, custom steel furniture ordering process, custom furniture price bekasi, custom industrial furniture timeline, furniture production process"} />
+        <link rel="canonical" href="https://mangala-living.com/custom-order" />
       </Helmet>
       
       <Header isIndonesian={isIndonesian} />

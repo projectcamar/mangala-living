@@ -28,10 +28,16 @@ const Blog: React.FC = () => {
     <div className="blog-page">
       <AnnouncementBar />
       <Helmet>
-        <title>Blog & Article - Mangala Living</title>
-        <meta name="description" content="Discover articles on furniture, interior design tips, and industry insights from Mangala Living." />
-        <meta name="keywords" content="furniture blog, industrial furniture tips, interior design, furniture care, cafe furniture" />
-        <link rel="canonical" href="https://mangalaliving.com/blog/" />
+        <title>Blog Furniture Industrial & Tips Desain Cafe Restoran - Mangala Living</title>
+        <meta name="description" content="Panduan lengkap furniture industrial untuk cafe, restoran, hotel. Tips memilih furniture besi custom, cara merawat, tren desain 2025, perbandingan material, harga, dan area workshop Bekasi Jakarta. 135+ artikel berbasis pengalaman 25 tahun Mangala Living." />
+        <meta name="keywords" content="blog furniture industrial, tips furniture cafe, cara memilih furniture restoran, furniture besi custom panduan, workshop furniture bekasi, harga furniture industrial 2025, tips desain interior industrial, furniture cafe murah, perbandingan furniture besi vs kayu, cara merawat furniture industrial, tren furniture 2025, furniture bekasi guide, furniture jakarta tips, inspirasi desain cafe industrial" />
+        <link rel="canonical" href="https://mangala-living.com/blog" />
+        
+        {/* AI Search Optimization: Clear article purpose */}
+        <meta property="og:title" content="Blog Furniture Industrial - 135+ Artikel Tips & Panduan Lengkap" />
+        <meta property="og:description" content="Artikel komprehensif tentang furniture industrial: tips pemilihan, perbandingan material, panduan harga, area coverage Jabodetabek, dan best practices dari 1000+ project sejak 1999." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mangala-living.com/blog" />
       </Helmet>
       
       <Header />
@@ -50,7 +56,26 @@ const Blog: React.FC = () => {
       {/* Blog Content Section */}
       <section className="blog-content-section">
         <div className="blog-container">
-          <h2 className="blog-main-title">Discover Articles on Furniture</h2>
+          {/* AI Search Optimized: Clear intent and value proposition */}
+          <h2 className="blog-main-title">135+ Artikel Furniture Industrial: Panduan Lengkap dari Workshop Bekasi</h2>
+          <div style={{ 
+            maxWidth: '900px', 
+            margin: '0 auto 3rem', 
+            padding: '1.5rem', 
+            background: '#f8f9fa', 
+            borderRadius: '8px',
+            borderLeft: '4px solid #2C3E50'
+          }}>
+            <p style={{ margin: '0 0 1rem', fontSize: '1rem', lineHeight: '1.6', color: '#2C3E50' }}>
+              <strong>Temukan jawaban lengkap untuk pertanyaan Anda tentang furniture industrial.</strong> Artikel kami ditulis berdasarkan pengalaman nyata menangani 1000+ project sejak 1999 di Jabodetabek.
+            </p>
+            <ul style={{ margin: 0, paddingLeft: '1.5rem', fontSize: '0.95rem', lineHeight: '1.7', color: '#555' }}>
+              <li><strong>Tips & Panduan Praktis:</strong> Cara memilih, merawat, dan mengoptimalkan furniture industrial untuk bisnis Anda</li>
+              <li><strong>Perbandingan Material & Harga:</strong> Data objektif furniture besi vs kayu, custom vs ready, powder coating vs cat</li>
+              <li><strong>Local Area Guide:</strong> Coverage area lengkap Bekasi, Cikarang, Jakarta dengan workshop terdekat</li>
+              <li><strong>Design Inspiration:</strong> Tren 2025, kombinasi material, layout optimization untuk cafe dan restoran</li>
+            </ul>
+          </div>
           
           {/* Blog Grid */}
           <div className="blog-grid">
