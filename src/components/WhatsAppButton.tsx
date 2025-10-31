@@ -206,11 +206,11 @@ const WhatsAppButton: React.FC = () => {
         <div className="whatsapp-chat">
           <div className="chat-header">
             <div className="chat-title">
-              <Bot size={20} />
+              <Bot size={16} />
               <span>AI Assistant</span>
             </div>
             <button className="close-chat" onClick={handleExpand} aria-label="Close chat">
-              <X size={16} />
+              <X size={14} />
             </button>
           </div>
           
@@ -218,7 +218,7 @@ const WhatsAppButton: React.FC = () => {
             {messages.map((message) => (
               <div key={message.id} className={`message ${message.isUser ? 'user-message' : 'ai-message'}`}>
                 <div className="message-avatar">
-                  {message.isUser ? <User size={16} /> : <Bot size={16} />}
+                  {message.isUser ? <User size={14} /> : <Bot size={14} />}
                 </div>
                 <div className="message-content">
                   <MessageRenderer text={message.text} />
@@ -233,7 +233,7 @@ const WhatsAppButton: React.FC = () => {
             {conversationStage === 'collecting_info' && !userInfo.isCompleted && (
               <div className="message ai-message">
                 <div className="message-avatar">
-                  <Bot size={16} />
+                  <Bot size={14} />
                 </div>
                 <div className="message-content">
                   <div className="message-text">
@@ -281,7 +281,7 @@ const WhatsAppButton: React.FC = () => {
             {isLoading && (
               <div className="message ai-message">
                 <div className="message-avatar">
-                  <Bot size={16} />
+                  <Bot size={14} />
                 </div>
                 <div className="message-content">
                   <div className="typing-indicator">
@@ -310,13 +310,13 @@ const WhatsAppButton: React.FC = () => {
               disabled={!inputText.trim() || isLoading}
               aria-label="Send message"
             >
-              <Send size={16} />
+              <Send size={14} />
             </button>
             </div>
           
           <div className="chat-footer">
             <button className="whatsapp-redirect" onClick={handleWhatsAppRedirect} aria-label={isIndonesian ? "Lanjutkan di WhatsApp" : "Continue on WhatsApp"}>
-              <MessageCircle size={16} />
+              <MessageCircle size={14} />
               <span>{isIndonesian ? "Lanjutkan di WhatsApp" : "Continue on WhatsApp"}</span>
             </button>
           </div>
@@ -325,7 +325,7 @@ const WhatsAppButton: React.FC = () => {
 
       {/* WhatsApp Button */}
       <button className="whatsapp-button" onClick={handleExpand} aria-label={isIndonesian ? "Hubungi Kami" : "Contact Us"}>
-        <MessageCircle size={24} />
+        <MessageCircle size={18} />
         <span>{isIndonesian ? "Hubungi Kami" : "Contact Us"}</span>
       </button>
     </div>
