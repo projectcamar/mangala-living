@@ -80,7 +80,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
                 </a>
               </p>
               <p>
-                <a href="tel:+6285212078467" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                <a href="https://wa.me/6285212078467" style={{ color: 'inherit', textDecoration: 'underline' }}>
                   +62 852 1207 8467
                 </a>
               </p>
@@ -111,7 +111,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
                 </a>
               </p>
               <p className="footer-phone">
-                <a href="tel:+6285212078467" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                <a href="https://wa.me/6285212078467" style={{ color: 'inherit', textDecoration: 'underline' }}>
                   +62 852-1207-8467
                 </a>
               </p>
@@ -185,7 +185,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
         </div>
         
         <div className="footer-bottom">
-          <p>© 2025 Mangala Living. All rights reserved.</p>
+          <p>? 2025 Mangala Living. All rights reserved.</p>
         </div>
       </div>
     </footer>
