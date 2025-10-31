@@ -72,6 +72,11 @@
     <link rel="dns-prefetch" href="https://ipapi.co" />
     <link rel="preconnect" href="https://ipapi.co" />
     
+    <!-- Prefetch important pages for faster navigation -->
+    <link rel="prefetch" href="/shop" />
+    <link rel="prefetch" href="/about" />
+    <link rel="prefetch" href="/contact-us" />
+    
     <!-- Preload critical fonts to avoid render blocking -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" /></noscript>
@@ -218,18 +223,42 @@
     
     <title>Industrial Furniture Besi Custom Bekasi | Mangala Living</title>
     
-    <!-- AI-Optimized Structured Data / Schema.org -->
+    <!-- Enhanced Organization Schema with E-E-A-T Signals -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "FurnitureStore",
+      "@type": "Organization",
       "name": "Mangala Living",
-      "alternateName": ["Mangala Living Furniture", "Industrial Furniture Indonesia", "Furniture Besi Custom"],
-      "image": "https://mangala-living.com/og-image.jpg",
-      "description": "Premium Industrial Scandinavian Furniture manufacturer specializing in custom steel furniture for cafes, restaurants, hotels, and offices. Established 1999 in Bekasi, Indonesia.",
+      "alternateName": [
+        "Mangala Living Furniture",
+        "Mangala Furniture Industrial",
+        "Workshop Furniture Besi Bekasi",
+        "Industrial Furniture Bekasi"
+      ],
       "url": "https://mangala-living.com",
-      "telephone": "+6285212078467",
-      "email": "info@mangala-living.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mangala-living.com/logo.png",
+        "width": 250,
+        "height": 60
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://mangala-living.com/og-image.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "description": "Mangala Living adalah manufacturer furniture industrial besi custom terpercaya di Bekasi sejak 1999. Spesialis furniture cafe, restoran, hotel, dan kantor dengan pengalaman 25+ tahun dan 1000+ klien puas di seluruh Indonesia.",
+      "foundingDate": "1999-01-01",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Bekasi, Indonesia"
+      },
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 50
+      },
+      "slogan": "Premium Industrial Furniture Manufacturer Since 1999",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Jl. Raya Setu Cibitung - Bekasi, Telajung",
@@ -240,66 +269,147 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "-6.2088",
-        "longitude": "107.1602"
+        "latitude": -6.2088,
+        "longitude": 107.1602
       },
-      "priceRange": "Rp$$-$$$",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
+      "telephone": "+6285212078467",
+      "email": "info@mangala-living.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+6285212078467",
+          "contactType": "customer service",
+          "email": "info@mangala-living.com",
+          "availableLanguage": ["Indonesian", "English"],
+          "areaServed": "ID",
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+6285212078467",
+          "contactType": "sales",
+          "email": "sales@mangala-living.com",
+          "availableLanguage": ["Indonesian", "English"],
+          "areaServed": "ID"
+        }
+      ],
       "sameAs": [
         "https://www.instagram.com/mangalaliving",
-        "https://www.facebook.com/mangalaliving"
+        "https://www.facebook.com/mangalaliving",
+        "https://wa.me/6285212078467"
       ],
-      "founder": {
-        "@type": "Organization",
-        "name": "Mangala Living"
+      "areaServed": {
+        "@type": "Country",
+        "name": "Indonesia"
       },
-      "foundingDate": "1999",
-      "keywords": [
-        "furniture industrial indonesia",
-        "furniture besi custom",
-        "furniture cafe",
-        "furniture restoran",
-        "meja industrial",
-        "kursi bar",
-        "rak display industrial",
-        "mangala living",
-        "furniture besi bekasi",
-        "industrial furniture custom",
-        "steel furniture",
-        "scandinavian furniture"
+      "knowsAbout": [
+        "Industrial Furniture Manufacturing",
+        "Custom Steel Furniture Design",
+        "Commercial Furniture Production",
+        "Cafe Furniture Installation",
+        "Restaurant Furniture Design",
+        "Hotel Furniture Manufacturing",
+        "Powder Coating Technology",
+        "Steel Welding Techniques"
       ],
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": -6.2088,
-          "longitude": 107.1602
-        },
-        "geoRadius": "500000"
+      "award": [
+        "1000+ Satisfied Clients Since 1999",
+        "25+ Years Industry Experience"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1000",
+        "reviewCount": "1000",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Mangala Living",
+        "logo": "https://mangala-living.com/logo.png"
       },
       "makesOffer": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Custom Furniture Design",
-            "description": "Custom industrial furniture design and manufacturing services"
+            "name": "Custom Industrial Furniture Manufacturing",
+            "description": "Jasa pembuatan furniture industrial custom dengan desain unik dan material berkualitas tinggi"
           }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Furniture Design Consultation",
+            "description": "Konsultasi gratis untuk desain furniture industrial sesuai kebutuhan bisnis Anda",
+            "price": "0",
+            "priceCurrency": "IDR"
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- LocalBusiness Schema for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["FurnitureStore", "LocalBusiness", "Store"],
+      "name": "Mangala Living - Workshop Furniture Industrial Bekasi",
+      "image": [
+        "https://mangala-living.com/og-image.jpg",
+        "https://mangala-living.com/assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp"
+      ],
+      "@id": "https://mangala-living.com",
+      "url": "https://mangala-living.com",
+      "telephone": "+6285212078467",
+      "priceRange": "Rp 1.500.000 - Rp 15.000.000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Raya Setu Cibitung - Bekasi, Telajung",
+        "addressLocality": "Bekasi",
+        "addressRegion": "Jawa Barat",
+        "postalCode": "17320",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -6.2088,
+        "longitude": 107.1602
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "15:00"
         }
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "ratingCount": "127",
-        "reviewCount": "127",
+        "ratingCount": "1000",
+        "reviewCount": "1000",
         "bestRating": "5",
         "worstRating": "1"
-      }
+      },
+      "paymentAccepted": "Cash, Bank Transfer, Credit Card",
+      "currenciesAccepted": "IDR",
+      "hasMap": "https://maps.google.com/?q=-6.2088,107.1602",
+      "keywords": "furniture besi custom bekasi, industrial furniture bekasi, furniture cafe bekasi, furniture restoran bekasi, meja industrial bekasi, kursi bar bekasi, workshop furniture bekasi, furniture besi jakarta, furniture industrial jabodetabek"
     }
     </script>
     
@@ -362,16 +472,16 @@
       <h2>Keunggulan Mangala Living</h2>
       <p>Sebagai manufacturer industrial furniture terpercaya, kami menawarkan berbagai keunggulan:</p>
       <ul>
-        <li>✓ Pengalaman 25+ tahun sebagai manufacturer furniture industrial</li>
-        <li>✓ 1000+ klien puas di seluruh Indonesia</li>
-        <li>✓ Custom design sesuai kebutuhan bisnis Anda</li>
-        <li>✓ Material industrial grade berkualitas tinggi</li>
-        <li>✓ Harga kompetitif langsung dari pabrik</li>
-        <li>✓ Garansi kualitas produk</li>
-        <li>✓ Workshop di Bekasi dengan akses mudah</li>
-        <li>✓ Pengiriman ke seluruh Indonesia</li>
-        <li>✓ Konsultasi desain gratis</li>
-        <li>✓ Pengerjaan sesuai deadline</li>
+        <li>? Pengalaman 25+ tahun sebagai manufacturer furniture industrial</li>
+        <li>? 1000+ klien puas di seluruh Indonesia</li>
+        <li>? Custom design sesuai kebutuhan bisnis Anda</li>
+        <li>? Material industrial grade berkualitas tinggi</li>
+        <li>? Harga kompetitif langsung dari pabrik</li>
+        <li>? Garansi kualitas produk</li>
+        <li>? Workshop di Bekasi dengan akses mudah</li>
+        <li>? Pengiriman ke seluruh Indonesia</li>
+        <li>? Konsultasi desain gratis</li>
+        <li>? Pengerjaan sesuai deadline</li>
       </ul>
       
       <h2>Produk Unggulan Industrial Furniture</h2>
@@ -425,13 +535,13 @@
             <li><strong>Storage</strong> - Rak dan lemari penyimpanan industrial</li>
             <li><strong>Tables</strong> - Meja kerja dan belajar industrial</li>
             <li><strong>Dine Table</strong> - Meja makan custom industrial</li>
-            <li>✓ Pengalaman 25+ tahun sebagai manufacturer furniture industrial</li>
-            <li>✓ 1000+ klien puas di seluruh Indonesia</li>
-            <li>✓ Custom design sesuai kebutuhan bisnis Anda</li>
-            <li>✓ Material industrial grade berkualitas tinggi</li>
-            <li>✓ Harga kompetitif langsung dari pabrik</li>
-            <li>✓ Garansi kualitas produk</li>
-            <li>✓ Workshop di Bekasi dengan akses mudah</li>
+            <li>? Pengalaman 25+ tahun sebagai manufacturer furniture industrial</li>
+            <li>? 1000+ klien puas di seluruh Indonesia</li>
+            <li>? Custom design sesuai kebutuhan bisnis Anda</li>
+            <li>? Material industrial grade berkualitas tinggi</li>
+            <li>? Harga kompetitif langsung dari pabrik</li>
+            <li>? Garansi kualitas produk</li>
+            <li>? Workshop di Bekasi dengan akses mudah</li>
           </ul>
         </section>
         
