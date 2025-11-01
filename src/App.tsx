@@ -4,6 +4,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import { Suspense, lazy } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/react'
+import { enableImageProtection, addImageProtectionStyles } from './utils/imageProtection'
 import './App.css'
 
 // Critical components loaded immediately - NO LAZY LOADING for Home
@@ -61,6 +62,17 @@ const Loading = () => (
 )
 
 function App() {
+  // Enable image protection globally - mencegah visitor download gambar
+  useEffect(() => {
+    // Tambahkan CSS protection styles
+    addImageProtectionStyles()
+    
+    // Enable JavaScript-based protection
+    const cleanup = enableImageProtection()
+    
+    return cleanup
+  }, [])
+
   // Smart batch preloading with user interaction detection
   useEffect(() => {
     let hasUserInteracted = false
