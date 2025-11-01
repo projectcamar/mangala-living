@@ -225,7 +225,7 @@ Thank you!`
 
               <div className="form-submit-wrapper">
                 <button type="submit" className="send-enquiry-btn">
-                  {isIndonesian ? '? KIRIM PERTANYAAN' : '? SEND ENQUIRY'}
+                  {isIndonesian ? 'KIRIM PERTANYAAN' : 'SEND ENQUIRY'}
                 </button>
               </div>
               </form>
