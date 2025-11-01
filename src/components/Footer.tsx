@@ -185,7 +185,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2025 Mangala Living. All rights reserved.</p>
+          <p>? 2025 Mangala Living. All rights reserved.</p>
         </div>
       </div>
     </footer>

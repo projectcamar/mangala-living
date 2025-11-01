@@ -492,7 +492,7 @@ const ProductDetail: React.FC = () => {
             {/* Product Info */}
             <div className="product-info-section">
               <h1 className="product-detail-title">{product.name}</h1>
-              <p className="product-detail-categories">{product.categories.join(' ? ')}</p>
+              <p className="product-detail-categories">{product.categories.join(' & ')}</p>
               <p className="product-detail-price">{product.price}</p>
               <p className="product-price-note">*Price may vary based on customization</p>
 
