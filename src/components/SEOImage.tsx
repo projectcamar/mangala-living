@@ -63,12 +63,8 @@ const SEOImage: React.FC<SEOImageProps> = ({
       style={{
         ...style,
         userSelect: 'none',
-        WebkitUserSelect: 'none',
-        MozUserSelect: 'none',
-        msUserSelect: 'none',
-        WebkitUserDrag: 'none',
-        userDrag: 'none',
-      }}
+        // CSS properties untuk drag prevention sudah di-handle oleh CSS global di imageProtection.ts
+      } as React.CSSProperties}
       width={width}
       height={height}
       loading={loadingStrategy.loading}
