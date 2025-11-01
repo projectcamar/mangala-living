@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { ChevronDown } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
@@ -14,10 +14,25 @@ import './ProductCategory.css'
 
 const ProductCategory: React.FC = () => {
   const { category } = useParams<{ category: string }>()
+  const location = useLocation()
   const [sortBy, setSortBy] = useState('default')
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const [isIndonesian, setIsIndonesian] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
 
   const categoryName = CATEGORY_MAP[category || ''] || 'Products'
+
+  // Language detection
+  useEffect(() => {
+    const detectLanguage = async () => {
+      const { detectLanguage: detectLang } = await import('../utils/languageManager')
+      const lang = await detectLang(location.pathname, location.search)
+      setIsIndonesian(lang === 'id')
+      setIsLoading(false)
+    }
+
+    detectLanguage()
+  }, [location.pathname, location.search])
 
   // Scroll to top when category changes
   useEffect(() => {
@@ -51,6 +66,50 @@ const ProductCategory: React.FC = () => {
     { label: 'Home', path: '/' },
     { label: categoryName, path: `/product-category/${category}` }
   ]
+
+  // Translations
+  const translations = {
+    showingResults: isIndonesian 
+      ? `Menampilkan 1-${filteredProducts.length} dari ${filteredProducts.length} hasil`
+      : `Showing 1-${filteredProducts.length} of ${filteredProducts.length} results`,
+    sortBy: isIndonesian ? 'Urutkan:' : 'Sort by:',
+    default: isIndonesian ? 'Default' : 'Default',
+    priceLow: isIndonesian ? 'Harga: Rendah ke Tinggi' : 'Price: Low to High',
+    priceHigh: isIndonesian ? 'Harga: Tinggi ke Rendah' : 'Price: High to Low',
+    noResults: isIndonesian ? 'Tidak ada produk ditemukan' : 'No products found'
+  }
+
+  if (isLoading) {
+    return (
+      <div className="product-category-page">
+        <AnnouncementBar />
+        <Header isIndonesian={isIndonesian} />
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          alignItems: 'center', 
+          height: '50vh',
+          background: '#f8f9fa'
+        }}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              border: '4px solid #f3f3f3',
+              borderTop: '4px solid #8B7355',
+              borderRadius: '50%',
+              width: '40px',
+              height: '40px',
+              animation: 'spin 1s linear infinite',
+              margin: '0 auto 20px'
+            }}></div>
+            <p style={{ color: '#666', margin: 0 }}>
+              {isIndonesian ? "Memuat..." : "Loading..."}
+            </p>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    )
+  }
 
   return (
     <div className="product-category-page">
@@ -132,7 +191,7 @@ const ProductCategory: React.FC = () => {
         </script>
       </Helmet>
       
-      <Header />
+      <Header isIndonesian={isIndonesian} />
       
       <main className="category-main">
         <div className="container">
@@ -141,27 +200,33 @@ const ProductCategory: React.FC = () => {
           <h1 className="category-page-title">{categoryName}</h1>
           
           <div className="category-controls">
-            <p className="showing-results">
-              Showing 1-{filteredProducts.length} of {filteredProducts.length} results
-            </p>
+            {filteredProducts.length > 0 ? (
+              <p className="showing-results">
+                {translations.showingResults}
+              </p>
+            ) : (
+              <p className="showing-results">{translations.noResults}</p>
+            )}
             
-            <div className="sort-dropdown">
-              <button 
-                className="sort-button"
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              >
-                Sort by: {sortBy === 'default' ? 'Default' : sortBy === 'price-low' ? 'Price: Low to High' : 'Price: High to Low'}
-                <ChevronDown size={16} />
-              </button>
-              
-              {isDropdownOpen && (
-                <div className="sort-options">
-                  <button onClick={() => { setSortBy('default'); setIsDropdownOpen(false); }}>Default</button>
-                  <button onClick={() => { setSortBy('price-low'); setIsDropdownOpen(false); }}>Price: Low to High</button>
-                  <button onClick={() => { setSortBy('price-high'); setIsDropdownOpen(false); }}>Price: High to Low</button>
-                </div>
-              )}
-            </div>
+            {filteredProducts.length > 0 && (
+              <div className="sort-dropdown">
+                <button 
+                  className="sort-button" 
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                >
+                  {translations.sortBy} {sortBy === 'default' ? translations.default : sortBy === 'price-low' ? translations.priceLow : translations.priceHigh}
+                  <ChevronDown size={16} />
+                </button>
+                
+                {isDropdownOpen && (
+                  <div className="sort-options">
+                    <button onClick={() => { setSortBy('default'); setIsDropdownOpen(false); }}>{translations.default}</button>
+                    <button onClick={() => { setSortBy('price-low'); setIsDropdownOpen(false); }}>{translations.priceLow}</button>
+                    <button onClick={() => { setSortBy('price-high'); setIsDropdownOpen(false); }}>{translations.priceHigh}</button>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
           
           <div className="category-products-grid">
@@ -199,7 +264,7 @@ const ProductCategory: React.FC = () => {
           <CategoryAIContent 
             category={categoryName}
             productCount={filteredProducts.length}
-            isIndonesian={true}
+            isIndonesian={isIndonesian}
           />
         </div>
       </main>

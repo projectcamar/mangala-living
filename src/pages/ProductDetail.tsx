@@ -10,7 +10,8 @@ import { ALL_PRODUCTS } from '../data/products'
 import { getProductDescription, getProductImageAlt, getProductImageCaption, getProductName } from '../data/productDescriptions'
 import { generateCanonicalUrl, generateHreflangTags, getProductImageUrl } from '../utils/seo'
 import { sendBackgroundEmail } from '../utils/emailHelpers'
-import { detectUserCountry, convertIDRToUSD } from '../utils/currencyConverter'
+import { convertIDRToUSD } from '../utils/currencyConverter'
+import { getCategorySlug } from '../utils/categoryHelpers'
 import './ProductDetail.css'
 
 interface ProductDetail {
@@ -240,49 +241,10 @@ const ProductDetail: React.FC = () => {
   // Language and country detection
   useEffect(() => {
     const detectLanguage = async () => {
-      // 1) Check query parameter ?lang=
-      const searchParams = new URLSearchParams(location.search)
-      const lang = searchParams.get('lang')
-      if (lang === 'id' || lang === 'en') {
-        setIsIndonesian(lang === 'id')
-        setIsLoading(false)
-        return
-      }
-
-      // 2) Check URL for language prefix
-      const path = location.pathname
-      if (path.startsWith('/id')) {
-        setIsIndonesian(true)
-        setIsLoading(false)
-        return
-      }
-      if (path.startsWith('/eng')) {
-        setIsIndonesian(false)
-        setIsLoading(false)
-        return
-      }
-
-      // 3) Detect from IP
-      try {
-        const countryCode = await detectUserCountry()
-        
-        if (countryCode === 'ID') {
-          setIsIndonesian(true)
-        } else {
-          setIsIndonesian(false)
-        }
-      } catch (error) {
-        console.log('IP detection failed, checking browser language')
-        // Fallback: check browser language
-        const browserLang = navigator.language || navigator.languages?.[0]
-        if (browserLang?.startsWith('id')) {
-          setIsIndonesian(true)
-        } else {
-          setIsIndonesian(false)
-        }
-      } finally {
-        setIsLoading(false)
-      }
+      const { detectLanguage: detectLang } = await import('../utils/languageManager')
+      const lang = await detectLang(location.pathname, location.search)
+      setIsIndonesian(lang === 'id')
+      setIsLoading(false)
     }
 
     detectLanguage()
@@ -413,9 +375,13 @@ const ProductDetail: React.FC = () => {
     ? (isIndonesian ? productDesc.id.description : productDesc.en.description)
     : product.description
 
+  // Build breadcrumb with proper category slug mapping
+  const primaryCategory = product.categories[0]
+  const categorySlug = getCategorySlug(primaryCategory)
+  
   const breadcrumbItems = [
     { label: 'Home', path: '/' },
-    { label: product.categories[0], path: `/product-category/${product.categories[0].toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}` },
+    { label: primaryCategory, path: `/product-category/${categorySlug}` },
     { label: translatedProductName, path: `/product/${product.slug}` }
   ]
 
