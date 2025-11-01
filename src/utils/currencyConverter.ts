@@ -28,7 +28,7 @@ export const isEnglishSpeakingCountry = (countryCode: string | undefined | null)
 let cachedExchangeRate: number | null = null
 
 export const getExchangeRate = async (): Promise<number> => {
-  if (cachedExchangeRate) {
+  if (cachedExchangeRate !== null) {
     return cachedExchangeRate
   }
 
@@ -36,17 +36,19 @@ export const getExchangeRate = async (): Promise<number> => {
     // Try to fetch current exchange rate from a free API
     const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD')
     const data = await response.json()
-    if (data.rates && data.rates.IDR) {
-      cachedExchangeRate = data.rates.IDR
-      return cachedExchangeRate
+    if (data.rates && data.rates.IDR && typeof data.rates.IDR === 'number') {
+      const rate = data.rates.IDR
+      cachedExchangeRate = rate
+      return rate
     }
   } catch (error) {
     console.log('Failed to fetch exchange rate, using default')
   }
 
   // Fallback to default rate if API fails
-  cachedExchangeRate = 15000
-  return cachedExchangeRate
+  const defaultRate = 15000
+  cachedExchangeRate = defaultRate
+  return defaultRate
 }
 
 /**
