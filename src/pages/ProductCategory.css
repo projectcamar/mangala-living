@@ -10,6 +10,15 @@
   padding: 8px 0 60px;
 }
 
+/* Adjust margin when currency highlight is visible */
+body:has(.currency-highlight) .category-main {
+  margin-top: 148px; /* 100px (header) + 48px (currency highlight) */
+}
+
+body:has(.announcement-bar):has(.currency-highlight) .category-main {
+  margin-top: 184px; /* 36px (announcement) + 100px (header) + 48px (currency highlight) */
+}
+
 .category-page-title {
   font-size: 2.5rem;
   font-weight: 400;
@@ -172,6 +181,15 @@
 @media (max-width: 768px) {
   .category-main {
     padding: 5px 0 40px;
+    margin-top: 90px;
+  }
+
+  body:has(.currency-highlight) .category-main {
+    margin-top: 138px; /* 90px + 48px */
+  }
+
+  body:has(.announcement-bar):has(.currency-highlight) .category-main {
+    margin-top: 174px; /* 36px + 90px + 48px */
   }
 
   .category-page-title {

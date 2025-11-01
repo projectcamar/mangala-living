@@ -1,9 +1,10 @@
 import React, { useState, useMemo, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { ChevronDown } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
+import CurrencyHighlight from '../components/CurrencyHighlight'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import CategoryAIContent from '../components/CategoryAIContent'
@@ -23,10 +24,28 @@ const Shop: React.FC = () => {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const [priceRange, setPriceRange] = useState([0, 60000000])
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [isIndonesian, setIsIndonesian] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [currentPage])
+
+  useEffect(() => {
+    // Check URL for language prefix
+    const path = location.pathname
+    if (path.startsWith('/id')) {
+      setIsIndonesian(true)
+    } else if (path.startsWith('/eng')) {
+      setIsIndonesian(false)
+    } else {
+      // Detect from browser language or IP
+      const browserLang = navigator.language || navigator.languages?.[0]
+      if (browserLang?.startsWith('id')) {
+        setIsIndonesian(true)
+      }
+    }
+  }, [location.pathname])
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategories(prev =>
@@ -125,7 +144,7 @@ const Shop: React.FC = () => {
 
   return (
     <div className="product-category-page shop-page-layout">
-      <AnnouncementBar />
+      <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet>
         <title>All Products - Industrial Furniture Collection | Mangala Living</title>
         <meta name="description" content="Browse all industrial furniture products at Mangala Living. Industrial furniture besi custom untuk cafe, restoran, hotel. Kualitas terbaik, harga terjangkau." />
@@ -249,7 +268,8 @@ const Shop: React.FC = () => {
         </script>
       </Helmet>
       
-      <Header />
+      <Header isIndonesian={isIndonesian} />
+      <CurrencyHighlight isIndonesian={isIndonesian} />
       
       <main className="category-main">
         <div className="container">
@@ -416,14 +436,14 @@ const Shop: React.FC = () => {
               <CategoryAIContent 
                 category="All Products"
                 productCount={ALL_PRODUCTS.length}
-                isIndonesian={true}
+                isIndonesian={isIndonesian}
               />
             </div>
           </div>
         </div>
       </main>
       
-      <Footer />
+      <Footer isIndonesian={isIndonesian} />
     </div>
   )
 }
