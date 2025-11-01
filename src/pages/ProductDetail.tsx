@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import ProductDetailAIContent from '../components/ProductDetailAIContent'
 import { ALL_PRODUCTS } from '../data/products'
-import { getProductDescription, getProductImageAlt, getProductImageCaption } from '../data/productDescriptions'
+import { getProductDescription, getProductImageAlt, getProductImageCaption, getProductName } from '../data/productDescriptions'
 import { generateCanonicalUrl, generateHreflangTags, getProductImageUrl } from '../utils/seo'
 import { sendBackgroundEmail } from '../utils/emailHelpers'
 import { detectUserCountry, convertIDRToUSD } from '../utils/currencyConverter'
@@ -404,10 +404,19 @@ const ProductDetail: React.FC = () => {
 
   const relatedProducts = getRelatedProducts(slug || '')
 
+  // Get translated product name and description
+  const productDesc = getProductDescription(product.slug)
+  const translatedProductName = productDesc 
+    ? getProductName(product.slug, isIndonesian)
+    : product.name
+  const translatedDescription = productDesc
+    ? (isIndonesian ? productDesc.id.description : productDesc.en.description)
+    : product.description
+
   const breadcrumbItems = [
     { label: 'Home', path: '/' },
     { label: product.categories[0], path: `/product-category/${product.categories[0].toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}` },
-    { label: product.name, path: `/product/${product.slug}` }
+    { label: translatedProductName, path: `/product/${product.slug}` }
   ]
 
   // Generate structured data for the product
@@ -420,8 +429,8 @@ const ProductDetail: React.FC = () => {
     return {
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": product.name,
-      "description": product.description,
+      "name": translatedProductName,
+      "description": translatedDescription,
       "image": imageUrls,
       "brand": {
         "@type": "Brand",
@@ -566,9 +575,9 @@ const ProductDetail: React.FC = () => {
     <div className="product-detail-page">
       <AnnouncementBar />
       <Helmet>
-        <title>{product.name === 'Hollowline Display Rack' 
-          ? 'Hollowline Display Rack ? Harga Murah Rp4.5 Juta ? Call Mangala +62 852 1207 8467'
-          : `${product.name} - Mangala Living`}</title>
+        <title>{product.slug === 'hollowline-display-rack' 
+          ? (isIndonesian ? 'Hollowline Display Rack ? Harga Murah Rp4.5 Juta ? Call Mangala +62 852 1207 8467' : 'Hollowline Display Rack - Affordable Price Rp4.5 Million - Call Mangala +62 852 1207 8467')
+          : `${translatedProductName} - Mangala Living`}</title>
         <meta name="description" content={product.name === 'Hollowline Display Rack'
           ? 'Hollowline Display Rack Industrial ? Display Shelf Rack Modern ? Harga Rp4.500.000 ? Workshop Bekasi ? Garansi Kualitas ? Call Mangala +62 852 1207 8467'
           : (() => {
@@ -595,16 +604,16 @@ const ProductDetail: React.FC = () => {
         <link rel="alternate" hrefLang="x-default" href={generateHreflangTags(`/product/${product.slug}`).default} />
         
         {/* Open Graph */}
-        <meta property="og:title" content={`${product.name} - Mangala Living`} />
-        <meta property="og:description" content={`${product.name} - ${product.details}`} />
+        <meta property="og:title" content={`${translatedProductName} - Mangala Living`} />
+        <meta property="og:description" content={`${translatedProductName} - ${translateProductDetails(product.details)}`} />
         <meta property="og:image" content={product.images[0]} />
         <meta property="og:url" content={`https://mangala-living.com/product/${product.slug}`} />
         <meta property="og:type" content="product" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${product.name} - Mangala Living`} />
-        <meta name="twitter:description" content={`${product.name} - ${product.details}`} />
+        <meta name="twitter:title" content={`${translatedProductName} - Mangala Living`} />
+        <meta name="twitter:description" content={`${translatedProductName} - ${translateProductDetails(product.details)}`} />
         <meta name="twitter:image" content={product.images[0]} />
         
         {/* Structured Data */}
@@ -620,8 +629,8 @@ const ProductDetail: React.FC = () => {
               "@type": "ImageObject",
               "url": getProductImageUrl(img, product.slug),
               "contentUrl": getProductImageUrl(img, product.slug),
-              "caption": `${product.name} - Image ${index + 1} - Industrial Furniture ${product.categories.join(' ')} Mangala Living`,
-              "description": `${product.name} - Premium Industrial Furniture from Mangala Living Workshop Bekasi - ${product.price}`,
+              "caption": `${translatedProductName} - Image ${index + 1} - ${isIndonesian ? 'Furniture Industrial' : 'Industrial Furniture'} ${product.categories.join(' ')} Mangala Living`,
+              "description": `${translatedProductName} - ${isIndonesian ? 'Furniture Industrial Premium dari' : 'Premium Industrial Furniture from'} Mangala Living Workshop Bekasi - ${product.price}`,
               "width": 800,
               "height": 600,
               "creditText": "Mangala Living",
@@ -696,7 +705,7 @@ const ProductDetail: React.FC = () => {
 
             {/* Product Info */}
             <div className="product-info-section">
-              <h1 className="product-detail-title">{product.name}</h1>
+              <h1 className="product-detail-title">{translatedProductName}</h1>
               <p className="product-detail-categories">{product.categories.join(' & ')}</p>
               
               {/* Price with dual display - primary price highlighted, secondary in gray */}
@@ -750,7 +759,7 @@ const ProductDetail: React.FC = () => {
                 onClick={() => {
                   // Send background email notification
                   sendBackgroundEmail('order_now', {
-                    productName: product.name,
+                    productName: translatedProductName,
                     productSlug: product.slug,
                     productPrice: product.price,
                     productCategory: product.categories.join(', '),
@@ -761,7 +770,7 @@ const ProductDetail: React.FC = () => {
                     ? `Halo Mangala Living,
 
 Saya tertarik dengan produk:
-*${product.name}*
+*${translatedProductName}*
 
 Kategori: ${product.categories.join(', ')}
 Harga: ${product.price}
@@ -774,7 +783,7 @@ Terima kasih!`
                     : `Hello Mangala Living,
 
 I'm interested in the product:
-*${product.name}*
+*${translatedProductName}*
 
 Category: ${product.categories.join(', ')}
 Price: ${product.price}
@@ -801,9 +810,9 @@ Thank you!`
 
           {/* About Product */}
           <div className="about-product-section">
-            <h2>{translations.about} {product.name}</h2>
+            <h2>{translations.about} {translatedProductName}</h2>
             <div className="about-product-content">
-              {product.description.split('\n\n').map((paragraph, index) => (
+              {translatedDescription.split('\n\n').map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
@@ -846,12 +855,12 @@ Thank you!`
           {/* AI-Optimized Content for Search Engines */}
           <ProductDetailAIContent 
             product={{
-              name: product.name,
+              name: translatedProductName,
               price: product.price,
               categories: product.categories,
               slug: product.slug
             }}
-            isIndonesian={true}
+            isIndonesian={isIndonesian}
           />
         </div>
       </main>
