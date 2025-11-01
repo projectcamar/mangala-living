@@ -460,7 +460,7 @@ export const getProductDescription = (slug: string): DualLanguageDescription | n
  * Get caption for product image (SEO-friendly dual language)
  */
 export const getProductImageCaption = (slug: string, isIndonesian: boolean): string => {
-  const desc = getProductDescription(slug, isIndonesian)
+  const desc = getProductDescription(slug)
   if (!desc) {
     // Fallback to generic caption
     return isIndonesian 
@@ -474,7 +474,7 @@ export const getProductImageCaption = (slug: string, isIndonesian: boolean): str
  * Get short caption for product image (for alt text)
  */
 export const getProductImageAlt = (slug: string, isIndonesian: boolean): string => {
-  const desc = getProductDescription(slug, isIndonesian)
+  const desc = getProductDescription(slug)
   if (!desc) {
     // Fallback to generic alt
     return isIndonesian 
