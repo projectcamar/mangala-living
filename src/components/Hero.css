@@ -8,6 +8,15 @@
   overflow: hidden;
 }
 
+/* Adjust margin when currency highlight is visible */
+body:has(.currency-highlight) .hero {
+  margin-top: 148px; /* 100px (header) + 48px (currency highlight) */
+}
+
+body:has(.announcement-bar):has(.currency-highlight) .hero {
+  margin-top: 184px; /* 36px (announcement) + 100px (header) + 48px (currency highlight) */
+}
+
 .hero-background {
   position: absolute;
   top: 0;
@@ -89,6 +98,14 @@
     min-height: 400px;
   }
 
+  body:has(.currency-highlight) .hero {
+    margin-top: 138px; /* 90px + 48px */
+  }
+
+  body:has(.announcement-bar):has(.currency-highlight) .hero {
+    margin-top: 174px; /* 36px + 90px + 48px */
+  }
+
   .hero-title {
     font-size: 2rem;
     letter-spacing: 0.2em;
@@ -111,6 +128,14 @@
     margin-top: 80px;
     height: 50vh;
     min-height: 350px;
+  }
+
+  body:has(.currency-highlight) .hero {
+    margin-top: 128px; /* 80px + 48px */
+  }
+
+  body:has(.announcement-bar):has(.currency-highlight) .hero {
+    margin-top: 164px; /* 36px + 80px + 48px */
   }
 
   .hero-title {
