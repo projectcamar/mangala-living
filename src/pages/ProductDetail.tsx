@@ -10,7 +10,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import { getProductDescription, getProductImageAlt, getProductImageCaption } from '../data/productDescriptions'
 import { generateCanonicalUrl, generateHreflangTags, getProductImageUrl } from '../utils/seo'
 import { sendBackgroundEmail } from '../utils/emailHelpers'
-import { detectUserCountry, isEnglishSpeakingCountry, convertIDRToUSD } from '../utils/currencyConverter'
+import { detectUserCountry, convertIDRToUSD } from '../utils/currencyConverter'
 import './ProductDetail.css'
 
 interface ProductDetail {
@@ -235,10 +235,8 @@ const ProductDetail: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState(0)
   const [isIndonesian, setIsIndonesian] = useState(true)
   const [isLoading, setIsLoading] = useState(true)
-  const [isEnglishCountry, setIsEnglishCountry] = useState(false)
   const [usdPrice, setUsdPrice] = useState<string | null>(null)
   const [showUsdTooltip, setShowUsdTooltip] = useState(false)
-  const [showUsdPrice, setShowUsdPrice] = useState(false)
   const [currentCurrency, setCurrentCurrency] = useState<'IDR' | 'USD'>('IDR')
 
   // Language and country detection
@@ -269,8 +267,6 @@ const ProductDetail: React.FC = () => {
       // 3) Detect from IP
       try {
         const countryCode = await detectUserCountry()
-        const isEnglish = isEnglishSpeakingCountry(countryCode)
-        setIsEnglishCountry(isEnglish)
         
         if (countryCode === 'ID') {
           setIsIndonesian(true)
@@ -578,7 +574,7 @@ const ProductDetail: React.FC = () => {
         <meta name="description" content={product.name === 'Hollowline Display Rack'
           ? 'Hollowline Display Rack Industrial ? Display Shelf Rack Modern ? Harga Rp4.500.000 ? Workshop Bekasi ? Garansi Kualitas ? Call Mangala +62 852 1207 8467'
           : (() => {
-              const desc = getProductDescription(product.slug, isIndonesian)
+              const desc = getProductDescription(product.slug)
               return desc ? (isIndonesian ? desc.id.metaDescription : desc.en.metaDescription) : `${product.name} - ${product.details}`
             })()} />
         <meta name="keywords" content={

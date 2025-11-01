@@ -450,7 +450,7 @@ Sempurna untuk kantor, workshop, studio, dan ruang komersial, meja kerja industr
 /**
  * Get dual language description for a product by slug
  */
-export const getProductDescription = (slug: string, isIndonesian: boolean): DualLanguageDescription | null => {
+export const getProductDescription = (slug: string): DualLanguageDescription | null => {
   const desc = PRODUCT_DESCRIPTIONS[slug]
   if (!desc) return null
   return desc
