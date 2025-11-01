@@ -14,16 +14,6 @@ const CurrencyHighlight: React.FC<CurrencyHighlightProps> = ({ isIndonesian = fa
   const location = useLocation()
 
   useEffect(() => {
-    // Check URL for language prefix first
-    const path = location.pathname
-    let detectedIsIndonesian = isIndonesian
-
-    if (path.startsWith('/id')) {
-      detectedIsIndonesian = true
-    } else if (path.startsWith('/eng')) {
-      detectedIsIndonesian = false
-    }
-
     const fetchExchangeRate = async () => {
       try {
         const rate = await getExchangeRate()
