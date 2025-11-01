@@ -13,7 +13,21 @@ const NotFound: React.FC = () => {
   const location = useLocation()
 
   useEffect(() => {
-    // Check URL for language prefix first
+    // Check query parameter first (lang=id or lang=en)
+    const searchParams = new URLSearchParams(location.search)
+    const langParam = searchParams.get('lang')
+    if (langParam === 'id') {
+      setIsIndonesian(true)
+      setIsLoading(false)
+      return
+    }
+    if (langParam === 'en' || langParam === 'eng') {
+      setIsIndonesian(false)
+      setIsLoading(false)
+      return
+    }
+
+    // Check URL for language prefix
     const path = location.pathname
     if (path.startsWith('/id')) {
       setIsIndonesian(true)
@@ -49,7 +63,7 @@ const NotFound: React.FC = () => {
     }
 
     detectLocation()
-  }, [location.pathname])
+  }, [location.pathname, location.search])
 
   // Get 4 featured products (mix of different categories)
   const featuredProducts = ALL_PRODUCTS.slice(0, 4)
