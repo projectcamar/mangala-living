@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import CategoryAIContent from '../components/CategoryAIContent'
+import CurrencyHighlight from '../components/CurrencyHighlight'
 import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORIES } from '../data/categories'
 import { generateMerchantStructuredData } from '../utils/structuredData'
@@ -32,21 +33,16 @@ const Shop: React.FC = () => {
     window.scrollTo(0, 0)
   }, [currentPage])
 
+  // Language detection
   useEffect(() => {
-    // Check URL for language prefix
-    const path = location.pathname
-    if (path.startsWith('/id')) {
-      setIsIndonesian(true)
-    } else if (path.startsWith('/eng')) {
-      setIsIndonesian(false)
-    } else {
-      // Detect from browser language or IP
-      const browserLang = navigator.language || navigator.languages?.[0]
-      if (browserLang?.startsWith('id')) {
-        setIsIndonesian(true)
-      }
+    const detectLanguage = async () => {
+      const { detectLanguage: detectLang } = await import('../utils/languageManager')
+      const lang = await detectLang(location.pathname, location.search)
+      setIsIndonesian(lang === 'id')
     }
-  }, [location.pathname])
+
+    detectLanguage()
+  }, [location.pathname, location.search])
 
   useEffect(() => {
     const convertPrices = async () => {
@@ -282,6 +278,7 @@ const Shop: React.FC = () => {
       </Helmet>
       
       <Header isIndonesian={isIndonesian} />
+      <CurrencyHighlight isIndonesian={isIndonesian} />
       
       <main className="category-main">
         <div className="container">

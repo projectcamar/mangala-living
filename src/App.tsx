@@ -144,6 +144,16 @@ function App() {
               <Shop />
             </Suspense>
           } />
+          <Route path="/id/shop" element={
+            <Suspense fallback={<Loading />}>
+              <Shop />
+            </Suspense>
+          } />
+          <Route path="/eng/shop" element={
+            <Suspense fallback={<Loading />}>
+              <Shop />
+            </Suspense>
+          } />
           <Route path="/product-tag/best-seller" element={
             <Suspense fallback={<Loading />}>
               <BestSellers />
