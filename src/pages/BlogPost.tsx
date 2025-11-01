@@ -99,8 +99,11 @@ const BlogPost: React.FC = () => {
   const faqSchema = faqData.length > 0 ? generateFAQSchema(faqData) : null
 
   // Check if this blog post should show Service Areas Section
-  // Show only for "Local Area Guide" category (geo-targeted posts)
-  const shouldShowServiceAreas = post.category === 'Local Area Guide'
+  // Show for "Local Area Guide" category (geo-targeted posts) or specific workshop-related posts
+  const shouldShowServiceAreas = 
+    post.category === 'Local Area Guide' || 
+    post.slug === 'furniture-besi-custom-bekasi-workshop-terpercaya' ||
+    post.slug === 'bikin-furniture-besi-custom-jabodetabek-berkualitas'
 
   return (
     <div className="blog-post-page">

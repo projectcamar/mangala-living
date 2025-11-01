@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import ServiceAreasSection from '../components/ServiceAreasSection'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import showroomImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
 import './Partnership.css'
@@ -266,9 +265,6 @@ const Partnership: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Service Areas Section */}
-      <ServiceAreasSection isIndonesian={isIndonesian} />
 
       {/* Contact Info */}
       <section className="partnership-contact-section">
