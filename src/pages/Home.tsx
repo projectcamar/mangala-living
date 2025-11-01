@@ -93,7 +93,7 @@ const Home: React.FC = () => {
           <div style={{ textAlign: 'center' }}>
             <div style={{
               border: '4px solid #f3f3f3',
-              borderTop: '4px solid #ff6b35',
+              borderTop: '4px solid #8B7355',
               borderRadius: '50%',
               width: '40px',
               height: '40px',

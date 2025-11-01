@@ -281,7 +281,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                         }
                         .spinner {
                           border: 4px solid #f3f3f3;
-                          border-top: 4px solid #ff6b35;
+                          border-top: 4px solid #8B7355;
                           border-radius: 50%;
                           width: 40px;
                           height: 40px;
