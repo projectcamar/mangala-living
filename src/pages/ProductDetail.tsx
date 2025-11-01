@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import ProductDetailAIContent from '../components/ProductDetailAIContent'
 import { ALL_PRODUCTS } from '../data/products'
+import { getProductDescription, getProductImageAlt, getProductImageCaption } from '../data/productDescriptions'
 import { generateCanonicalUrl, generateHreflangTags, getProductImageUrl } from '../utils/seo'
 import { sendBackgroundEmail } from '../utils/emailHelpers'
 import { detectUserCountry, isEnglishSpeakingCountry, convertIDRToUSD } from '../utils/currencyConverter'
@@ -238,6 +239,7 @@ const ProductDetail: React.FC = () => {
   const [usdPrice, setUsdPrice] = useState<string | null>(null)
   const [showUsdTooltip, setShowUsdTooltip] = useState(false)
   const [showUsdPrice, setShowUsdPrice] = useState(false)
+  const [currentCurrency, setCurrentCurrency] = useState<'IDR' | 'USD'>('IDR')
 
   // Language and country detection
   useEffect(() => {
@@ -292,16 +294,16 @@ const ProductDetail: React.FC = () => {
     detectLanguage()
   }, [location.pathname, location.search])
 
-  // Convert price to USD if English-speaking country
+  // Convert price to USD - always available for all users
   useEffect(() => {
     const convertPrice = async () => {
-      if (isEnglishCountry && product) {
+      if (product) {
         const converted = await convertIDRToUSD(product.price)
         setUsdPrice(converted)
       }
     }
     convertPrice()
-  }, [isEnglishCountry, product])
+  }, [product])
 
   // Scroll to top when product changes
   useEffect(() => {
@@ -327,7 +329,10 @@ const ProductDetail: React.FC = () => {
       : 'You Might be Interested',
     clickToConvertUsd: isIndonesian
       ? 'Klik untuk konversi ke USD'
-      : 'Click to convert to USD'
+      : 'Click to convert to USD',
+    clickToConvertIdr: isIndonesian
+      ? 'Klik untuk kembali ke IDR'
+      : 'Click to convert back to IDR'
   }
 
   // Translate product details based on language
@@ -572,7 +577,10 @@ const ProductDetail: React.FC = () => {
           : `${product.name} - Mangala Living`}</title>
         <meta name="description" content={product.name === 'Hollowline Display Rack'
           ? 'Hollowline Display Rack Industrial ? Display Shelf Rack Modern ? Harga Rp4.500.000 ? Workshop Bekasi ? Garansi Kualitas ? Call Mangala +62 852 1207 8467'
-          : `${product.name} - ${product.details}`} />
+          : (() => {
+              const desc = getProductDescription(product.slug, isIndonesian)
+              return desc ? (isIndonesian ? desc.id.metaDescription : desc.en.metaDescription) : `${product.name} - ${product.details}`
+            })()} />
         <meta name="keywords" content={
           product.name === 'Hollowline Display Rack'
             ? 'hollowline display rack, display shelf rack, rak display industrial, hollowline storage, call mangala furniture, furniture bekasi murah'
@@ -660,8 +668,8 @@ const ProductDetail: React.FC = () => {
                   >
                     <img 
                       src={image} 
-                      alt={`${product.name} - Image ${index + 1} - Industrial Furniture ${product.categories.join(' ')} Mangala Living`}
-                      title={`${product.name} - View ${index + 1} - Premium Industrial Furniture by Mangala Living`}
+                      alt={getProductImageAlt(product.slug, isIndonesian) + (index > 0 ? ` - Image ${index + 1}` : '')}
+                      title={getProductImageCaption(product.slug, isIndonesian) + (index > 0 ? ` - View ${index + 1}` : '')}
                       loading={index === 0 ? "eager" : "lazy"}
                       width="100"
                       height="100"
@@ -676,8 +684,8 @@ const ProductDetail: React.FC = () => {
               <div className="gallery-main">
                 <img 
                   src={product.images[selectedImage]} 
-                  alt={`${product.name} - Premium Industrial Furniture ${product.categories.join(' ')} - Mangala Living Workshop Bekasi`}
-                  title={`${product.name} - Custom Industrial Furniture from Mangala Living - ${product.price}`}
+                  alt={getProductImageAlt(product.slug, isIndonesian)}
+                  title={getProductImageCaption(product.slug, isIndonesian)}
                   className={selectedImage === 1 || selectedImage === 3 ? 'flipped' : ''}
                   loading="eager"
                   fetchPriority="high"
@@ -697,37 +705,35 @@ const ProductDetail: React.FC = () => {
               <h1 className="product-detail-title">{product.name}</h1>
               <p className="product-detail-categories">{product.categories.join(' & ')}</p>
               
-              {/* Price with USD conversion on hover */}
+              {/* Price with USD conversion - available for all users */}
               <div 
                 className="product-price-wrapper"
                 style={{ position: 'relative', display: 'inline-block' }}
                 onMouseEnter={() => {
-                  if (isEnglishCountry && usdPrice) {
+                  if (usdPrice) {
                     setShowUsdTooltip(true)
-                    setShowUsdPrice(true)
                   }
                 }}
                 onMouseLeave={() => {
                   setShowUsdTooltip(false)
-                  setShowUsdPrice(false)
                 }}
-                onClick={async () => {
-                  if (isEnglishCountry && usdPrice) {
+                onClick={() => {
+                  if (usdPrice) {
                     // Toggle between IDR and USD on click
-                    setShowUsdPrice(!showUsdPrice)
+                    setCurrentCurrency(currentCurrency === 'IDR' ? 'USD' : 'IDR')
                   }
                 }}
               >
                 <p 
                   className="product-detail-price"
                   style={{ 
-                    cursor: isEnglishCountry && usdPrice ? 'pointer' : 'default',
+                    cursor: usdPrice ? 'pointer' : 'default',
                     transition: 'all 0.3s ease'
                   }}
                 >
-                  {showUsdPrice && isEnglishCountry && usdPrice ? usdPrice : product.price}
+                  {currentCurrency === 'USD' && usdPrice ? usdPrice : product.price}
                 </p>
-                {isEnglishCountry && usdPrice && showUsdTooltip && (
+                {usdPrice && showUsdTooltip && (
                   <div 
                     className="usd-price-tooltip"
                     style={{
@@ -746,7 +752,7 @@ const ProductDetail: React.FC = () => {
                       boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
                     }}
                   >
-                    {translations.clickToConvertUsd}
+                    {currentCurrency === 'IDR' ? translations.clickToConvertUsd : translations.clickToConvertIdr}
                     <div style={{
                       position: 'absolute',
                       bottom: '-4px',
