@@ -63,7 +63,11 @@ const SEOImage: React.FC<SEOImageProps> = ({
   };
   
   // Build image attributes for SEO
-  const imageAttributes: React.ImgHTMLAttributes<HTMLImageElement> = {
+  const imageAttributes: React.ImgHTMLAttributes<HTMLImageElement> & {
+    'data-image-type'?: string;
+    'data-product-name'?: string;
+    'data-category'?: string;
+  } = {
     src,
     alt: altText,
     title: titleText,
