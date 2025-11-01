@@ -7,9 +7,11 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import CategoryAIContent from '../components/CategoryAIContent'
+import CurrencyHighlight from '../components/CurrencyHighlight'
 import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORY_MAP } from '../data/categories'
 import { generateCanonicalUrl, generateHreflangTags } from '../utils/seo'
+import { convertIDRToUSD } from '../utils/currencyConverter'
 import './ProductCategory.css'
 
 const ProductCategory: React.FC = () => {
@@ -19,6 +21,7 @@ const ProductCategory: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const [isIndonesian, setIsIndonesian] = useState(true)
   const [isLoading, setIsLoading] = useState(true)
+  const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
 
   const categoryName = CATEGORY_MAP[category || ''] || 'Products'
 
@@ -38,6 +41,19 @@ const ProductCategory: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [category])
+
+  // Convert prices to USD
+  useEffect(() => {
+    const convertPrices = async () => {
+      const prices: { [key: number]: string } = {}
+      for (const product of ALL_PRODUCTS) {
+        const usdPrice = await convertIDRToUSD(product.price)
+        prices[product.id] = usdPrice
+      }
+      setUsdPrices(prices)
+    }
+    convertPrices()
+  }, [])
 
   const filteredProducts = useMemo(() => {
     let products = ALL_PRODUCTS.filter(product => 
@@ -192,6 +208,7 @@ const ProductCategory: React.FC = () => {
       </Helmet>
       
       <Header isIndonesian={isIndonesian} />
+      <CurrencyHighlight isIndonesian={isIndonesian} />
       
       <main className="category-main">
         <div className="container">
@@ -254,7 +271,33 @@ const ProductCategory: React.FC = () => {
                 <div className="category-product-info">
                   <h3 className="category-product-name">{product.name}</h3>
                   <p className="category-product-cats">{product.categories.join(', ')}</p>
-                  <p className="category-product-price">{product.price}</p>
+                  {usdPrices[product.id] ? (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                      <p 
+                        className="category-product-price"
+                        style={{ 
+                          margin: 0,
+                          fontSize: isIndonesian ? '0.875rem' : '0.75rem',
+                          fontWeight: isIndonesian ? 600 : 400,
+                          color: isIndonesian ? '#333' : '#999'
+                        }}
+                      >
+                        {product.price}
+                      </p>
+                      <p 
+                        style={{ 
+                          margin: 0,
+                          fontSize: isIndonesian ? '0.75rem' : '0.875rem',
+                          fontWeight: isIndonesian ? 400 : 600,
+                          color: isIndonesian ? '#999' : '#333'
+                        }}
+                      >
+                        {usdPrices[product.id]}
+                      </p>
+                    </div>
+                  ) : (
+                    <p className="category-product-price">{product.price}</p>
+                  )}
                 </div>
               </Link>
             ))}
