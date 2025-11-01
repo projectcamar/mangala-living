@@ -236,8 +236,6 @@ const ProductDetail: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(true)
   const [isLoading, setIsLoading] = useState(true)
   const [usdPrice, setUsdPrice] = useState<string | null>(null)
-  const [showUsdTooltip, setShowUsdTooltip] = useState(false)
-  const [currentCurrency, setCurrentCurrency] = useState<'IDR' | 'USD'>('IDR')
 
   // Language and country detection
   useEffect(() => {
@@ -360,7 +358,7 @@ const ProductDetail: React.FC = () => {
     return (
       <div className="product-detail-page">
         <AnnouncementBar />
-        <Header />
+        <Header isIndonesian={isIndonesian} />
         <div style={{ 
           display: 'flex', 
           justifyContent: 'center', 
@@ -392,7 +390,7 @@ const ProductDetail: React.FC = () => {
     return (
       <div>
         <AnnouncementBar />
-        <Header />
+        <Header isIndonesian={isIndonesian} />
         <div className="container" style={{ padding: '100px 20px', textAlign: 'center' }}>
           <h1>Product not found</h1>
           <Link to="/shop" style={{ color: '#333', textDecoration: 'underline' }}>
@@ -642,10 +640,10 @@ const ProductDetail: React.FC = () => {
               }
             })}
           </script>
-        ))}
+        )        )}
       </Helmet>
 
-      <Header />
+      <Header isIndonesian={isIndonesian} />
 
       <main className="product-detail-main">
         <div className="container">
@@ -701,66 +699,47 @@ const ProductDetail: React.FC = () => {
               <h1 className="product-detail-title">{product.name}</h1>
               <p className="product-detail-categories">{product.categories.join(' & ')}</p>
               
-              {/* Price with USD conversion - available for all users */}
-              <div 
-                className="product-price-wrapper"
-                style={{ position: 'relative', display: 'inline-block' }}
-                onMouseEnter={() => {
-                  if (usdPrice) {
-                    setShowUsdTooltip(true)
-                  }
-                }}
-                onMouseLeave={() => {
-                  setShowUsdTooltip(false)
-                }}
-                onClick={() => {
-                  if (usdPrice) {
-                    // Toggle between IDR and USD on click
-                    setCurrentCurrency(currentCurrency === 'IDR' ? 'USD' : 'IDR')
-                  }
-                }}
-              >
-                <p 
-                  className="product-detail-price"
-                  style={{ 
-                    cursor: usdPrice ? 'pointer' : 'default',
-                    transition: 'all 0.3s ease'
-                  }}
-                >
-                  {currentCurrency === 'USD' && usdPrice ? usdPrice : product.price}
-                </p>
-                {usdPrice && showUsdTooltip && (
-                  <div 
-                    className="usd-price-tooltip"
-                    style={{
-                      position: 'absolute',
-                      top: '-35px',
-                      left: '50%',
-                      transform: 'translateX(-50%)',
-                      background: '#333',
-                      color: '#fff',
-                      padding: '6px 10px',
-                      borderRadius: '4px',
-                      fontSize: '0.75rem',
-                      whiteSpace: 'nowrap',
-                      zIndex: 10,
-                      pointerEvents: 'none',
-                      boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
+              {/* Price with dual display - primary price highlighted, secondary in gray */}
+              <div className="product-price-wrapper">
+                {usdPrice ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    {/* Primary price - highlighted based on language */}
+                    <p 
+                      className="product-detail-price"
+                      style={{ 
+                        margin: 0,
+                        fontSize: '1.5rem',
+                        fontWeight: 600,
+                        color: '#333'
+                      }}
+                    >
+                      {isIndonesian ? product.price : usdPrice}
+                    </p>
+                    {/* Secondary price - gray, smaller */}
+                    <p 
+                      style={{ 
+                        margin: 0,
+                        fontSize: '0.875rem',
+                        fontWeight: 400,
+                        color: '#999',
+                        lineHeight: 1.2
+                      }}
+                    >
+                      {isIndonesian ? usdPrice : product.price}
+                    </p>
+                  </div>
+                ) : (
+                  <p 
+                    className="product-detail-price"
+                    style={{ 
+                      margin: 0,
+                      fontSize: '1.5rem',
+                      fontWeight: 600,
+                      color: '#333'
                     }}
                   >
-                    {currentCurrency === 'IDR' ? translations.clickToConvertUsd : translations.clickToConvertIdr}
-                    <div style={{
-                      position: 'absolute',
-                      bottom: '-4px',
-                      left: '50%',
-                      transform: 'translateX(-50%)',
-                      width: 0,
-                      height: 0,
-                      borderLeft: '4px solid transparent',
-                      borderRight: '4px solid transparent',
-                      borderTop: '4px solid #333'
-                    }}></div>
-                  </div>
+                    {product.price}
+                  </p>
                 )}
               </div>
               
