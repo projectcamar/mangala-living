@@ -20,6 +20,7 @@ interface SEOImageProps {
  * - SEO-friendly alt text generation
  * - Performance optimization with fetchPriority
  * - Responsive image loading
+ * - Image protection (disable right-click and drag)
  */
 const SEOImage: React.FC<SEOImageProps> = ({
   src,
@@ -42,19 +43,41 @@ const SEOImage: React.FC<SEOImageProps> = ({
     category,
     action: 'furniture besi custom'
   });
+
+  // Handler untuk mencegah right-click dan drag
+  const handleContextMenu = (e: React.MouseEvent<HTMLImageElement>) => {
+    e.preventDefault();
+    return false;
+  };
+
+  const handleDragStart = (e: React.DragEvent<HTMLImageElement>) => {
+    e.preventDefault();
+    return false;
+  };
   
   return (
     <img
       src={src}
       alt={altText}
       className={className}
-      style={style}
+      style={{
+        ...style,
+        userSelect: 'none',
+        WebkitUserSelect: 'none',
+        MozUserSelect: 'none',
+        msUserSelect: 'none',
+        WebkitUserDrag: 'none',
+        userDrag: 'none',
+      }}
       width={width}
       height={height}
       loading={loadingStrategy.loading}
       fetchPriority={loadingStrategy.fetchPriority}
       decoding={loadingStrategy.decoding}
       onClick={onClick}
+      onContextMenu={handleContextMenu}
+      onDragStart={handleDragStart}
+      draggable={false}
     />
   );
 };
