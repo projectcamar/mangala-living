@@ -6,6 +6,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import { generateCatalog } from '../utils/catalogGenerator'
 import { trackEvent } from '../utils/analytics'
 import { sendBackgroundEmail } from '../utils/emailHelpers'
+import { storeLanguage } from '../utils/languageManager'
 
 interface HeaderProps {
   isIndonesian?: boolean
@@ -43,6 +44,9 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
   const handleLanguageChange = (lang: 'id' | 'en') => {
     setIsLanguageOpen(false)
     const currentPath = location.pathname
+    
+    // Store language preference
+    storeLanguage(lang)
     
     // Track language switch
     const currentLang = getCurrentLanguageFromUrl() || (isIndonesian ? 'id' : 'en')
