@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ALL_PRODUCTS } from '../data/products'
 import { trackEvent } from '../utils/analytics'
+import { convertIDRToUSD } from '../utils/currencyConverter'
 import './OurProductsSection.css'
 
 interface OurProductsSectionProps {
@@ -19,6 +20,20 @@ const products = ALL_PRODUCTS.slice(8, 28).map(p => ({
 }))
 
 const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = false }) => {
+  const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
+
+  useEffect(() => {
+    const convertPrices = async () => {
+      const prices: { [key: number]: string } = {}
+      for (const product of products) {
+        const usdPrice = await convertIDRToUSD(product.price)
+        prices[product.id] = usdPrice
+      }
+      setUsdPrices(prices)
+    }
+    convertPrices()
+  }, [])
+
   return (
     <section className="our-products-section">
       <div className="container">
@@ -57,7 +72,33 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
               <div className="product-info-full">
                 <h3 className="product-name-full">{product.name}</h3>
                 <p className="product-category-full">{product.category}</p>
-                <p className="product-price-full">{product.price}</p>
+                {usdPrices[product.id] ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                    <p 
+                      className="product-price-full"
+                      style={{ 
+                        margin: 0,
+                        fontSize: isIndonesian ? '0.875rem' : '0.75rem',
+                        fontWeight: isIndonesian ? 600 : 400,
+                        color: isIndonesian ? '#333' : '#999'
+                      }}
+                    >
+                      {product.price}
+                    </p>
+                    <p 
+                      style={{ 
+                        margin: 0,
+                        fontSize: isIndonesian ? '0.75rem' : '0.875rem',
+                        fontWeight: isIndonesian ? 400 : 600,
+                        color: isIndonesian ? '#999' : '#333'
+                      }}
+                    >
+                      {usdPrices[product.id]}
+                    </p>
+                  </div>
+                ) : (
+                  <p className="product-price-full">{product.price}</p>
+                )}
               </div>
             </Link>
           ))}
