@@ -44,12 +44,7 @@ const SEOImage: React.FC<SEOImageProps> = ({
     action: 'furniture besi custom'
   });
 
-  // Handler untuk mencegah right-click dan drag
-  const handleContextMenu = (e: React.MouseEvent<HTMLImageElement>) => {
-    e.preventDefault();
-    return false;
-  };
-
+  // Handler untuk mencegah drag (context menu sudah di-handle global di imageProtection.ts)
   const handleDragStart = (e: React.DragEvent<HTMLImageElement>) => {
     e.preventDefault();
     return false;
@@ -71,7 +66,7 @@ const SEOImage: React.FC<SEOImageProps> = ({
       fetchPriority={loadingStrategy.fetchPriority}
       decoding={loadingStrategy.decoding}
       onClick={onClick}
-      onContextMenu={handleContextMenu}
+      // Context menu sekarang di-handle global untuk menampilkan menu halaman, bukan menu gambar
       onDragStart={handleDragStart}
       draggable={false}
     />
