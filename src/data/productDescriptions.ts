@@ -5,6 +5,7 @@
 
 export interface DualLanguageDescription {
   en: {
+    name: string
     caption: string
     shortCaption: string
     description: string
@@ -12,6 +13,7 @@ export interface DualLanguageDescription {
     imageAlt: string
   }
   id: {
+    name: string
     caption: string
     shortCaption: string
     description: string
@@ -23,6 +25,7 @@ export interface DualLanguageDescription {
 export const PRODUCT_DESCRIPTIONS: Record<string, DualLanguageDescription> = {
   'industrial-hanging-shelf': {
     en: {
+      name: 'Industrial Hanging Shelf',
       caption: 'Industrial Hanging Shelf from Mangala Living - Premium Steel Wall-Mounted Storage Shelf | Workshop Bekasi Indonesia',
       shortCaption: 'Industrial Hanging Shelf - Steel Wall Storage Shelf',
       description: `The Industrial Hanging Shelf from Mangala Living is expertly crafted industrial furniture designed for modern spaces. Built in our workshop in Bekasi, Indonesia, each piece showcases superior welding techniques and attention to detail.
@@ -38,6 +41,7 @@ Mangala Living is committed to quality and precision, ensuring that every weld a
       imageAlt: 'Industrial Hanging Shelf - Steel Wall Storage Shelf - Premium Industrial Furniture from Mangala Living Workshop Bekasi'
     },
     id: {
+      name: 'Rak Gantung Industrial',
       caption: 'Rak Gantung Industrial dari Mangala Living - Rak Dinding Baja Premium untuk Penyimpanan | Workshop Bekasi Indonesia',
       shortCaption: 'Rak Gantung Industrial - Rak Dinding Baja Penyimpanan',
       description: `Rak Gantung Industrial dari Mangala Living adalah furniture industrial yang dibuat dengan ahli untuk ruang modern. Dibuat di workshop kami di Bekasi, Indonesia, setiap bagian menampilkan teknik pengelasan superior dan perhatian terhadap detail.
@@ -55,6 +59,7 @@ Mangala Living berkomitmen pada kualitas dan presisi, memastikan bahwa setiap la
   },
   'frame-loft-bookshelf': {
     en: {
+      name: 'Frame Loft Bookshelf',
       caption: 'Frame Loft Bookshelf - Industrial Storage Bookshelf for Modern Spaces | Mangala Living Workshop Bekasi',
       shortCaption: 'Frame Loft Bookshelf - Industrial Bookshelf Storage',
       description: `The Frame Loft Bookshelf from Mangala Living is the perfect industrial storage solution for modern homes, offices, and commercial spaces. This premium frame loft bookshelf features a sleek industrial design with modular construction that provides maximum storage flexibility and visual appeal.
@@ -68,6 +73,7 @@ Built to commercial-grade standards, this frame loft bookshelf is designed to wi
       imageAlt: 'Frame Loft Bookshelf - Industrial Bookshelf Storage - Premium Furniture from Mangala Living'
     },
     id: {
+      name: 'Frame Loft Bookshelf',
       caption: 'Frame Loft Bookshelf - Rak Buku Industrial untuk Ruang Modern | Workshop Mangala Living Bekasi',
       shortCaption: 'Frame Loft Bookshelf - Rak Buku Industrial Penyimpanan',
       description: `Frame Loft Bookshelf dari Mangala Living adalah solusi penyimpanan industrial sempurna untuk rumah modern, kantor, dan ruang komersial. Rak buku frame loft premium ini menampilkan desain industrial yang ramping dengan konstruksi modular yang memberikan fleksibilitas penyimpanan maksimal dan daya tarik visual.
@@ -83,6 +89,7 @@ Dibuat sesuai standar kualitas komersial, frame loft bookshelf ini dirancang unt
   },
   'balcony-bar-table': {
     en: {
+      name: 'Balcony Bar Table',
       caption: 'Balcony Bar Table - Outdoor Industrial Bar Table for Patio and Terrace | Mangala Living',
       shortCaption: 'Balcony Bar Table - Outdoor Bar Table',
       description: `The Balcony Bar Table from Mangala Living is the ultimate outdoor dining and entertainment solution for modern spaces. This premium balcony bar table features a robust industrial design with weather-resistant construction that provides maximum durability for outdoor use.
@@ -96,6 +103,7 @@ Built to commercial-grade standards, this balcony bar table is designed to withs
       imageAlt: 'Balcony Bar Table - Outdoor Industrial Bar Table - Weather Resistant Furniture from Mangala Living'
     },
     id: {
+      name: 'Meja Bar Balkon',
       caption: 'Balcony Bar Table - Meja Bar Outdoor Industrial untuk Teras dan Balkon | Mangala Living',
       shortCaption: 'Balcony Bar Table - Meja Bar Outdoor',
       description: `Balcony Bar Table dari Mangala Living adalah solusi makan dan hiburan outdoor terbaik untuk ruang modern. Meja bar balkon premium ini menampilkan desain industrial yang kokoh dengan konstruksi tahan cuaca yang memberikan ketahanan maksimal untuk penggunaan outdoor.
@@ -111,6 +119,7 @@ Dibuat sesuai standar kualitas komersial, meja bar balkon ini dirancang untuk me
   },
   'lounge-set-coffee-table': {
     en: {
+      name: 'Lounge Set Coffee Table',
       caption: 'Lounge Set Coffee Table - Industrial Coffee Table for Living Room | Mangala Living',
       shortCaption: 'Lounge Set Coffee Table - Industrial Coffee Table',
       description: `The Lounge Set Coffee Table from Mangala Living is expertly crafted industrial furniture designed for modern living spaces. This premium coffee table features a robust industrial design with steel construction that provides maximum durability and visual appeal.
@@ -122,6 +131,7 @@ Perfect for living rooms, lounges, waiting areas, and commercial spaces, this lo
       imageAlt: 'Lounge Set Coffee Table - Industrial Coffee Table - Premium Furniture from Mangala Living'
     },
     id: {
+      name: 'Meja Kopi Lounge Set',
       caption: 'Lounge Set Coffee Table - Meja Kopi Industrial untuk Ruang Tamu | Mangala Living',
       shortCaption: 'Lounge Set Coffee Table - Meja Kopi Industrial',
       description: `Lounge Set Coffee Table dari Mangala Living adalah furniture industrial yang dibuat dengan ahli untuk ruang hidup modern. Meja kopi premium ini menampilkan desain industrial yang kokoh dengan konstruksi baja yang memberikan ketahanan maksimal dan daya tarik visual.
@@ -135,6 +145,7 @@ Sempurna untuk ruang tamu, lounge, area tunggu, dan ruang komersial, meja kopi l
   },
   'bench-corner-lounge': {
     en: {
+      name: 'Bench Corner Lounge',
       caption: 'Bench Corner Lounge - Industrial Corner Bench for Cafes and Restaurants | Mangala Living',
       shortCaption: 'Bench Corner Lounge - Industrial Corner Bench',
       description: `The Bench Corner Lounge from Mangala Living is the perfect industrial seating solution for modern cafes, restaurants, and commercial spaces. This premium bench corner lounge features a sleek industrial design with comfortable seating that provides maximum comfort and visual appeal.
@@ -146,6 +157,7 @@ Perfect for cafes, restaurants, waiting areas, and commercial spaces, this bench
       imageAlt: 'Bench Corner Lounge - Industrial Corner Bench - Premium Seating from Mangala Living'
     },
     id: {
+      name: 'Kursi Sudut Lounge',
       caption: 'Bench Corner Lounge - Kursi Sudut Industrial untuk Kafe dan Restoran | Mangala Living',
       shortCaption: 'Bench Corner Lounge - Kursi Sudut Industrial',
       description: `Bench Corner Lounge dari Mangala Living adalah solusi tempat duduk industrial sempurna untuk kafe modern, restoran, dan ruang komersial. Kursi sudut premium ini menampilkan desain industrial yang ramping dengan tempat duduk yang nyaman yang memberikan kenyamanan maksimal dan daya tarik visual.
@@ -159,6 +171,7 @@ Sempurna untuk kafe, restoran, area tunggu, dan ruang komersial, kursi sudut ini
   },
   'industrial-daybed-frame': {
     en: {
+      name: 'Industrial Daybed Frame',
       caption: 'Industrial Daybed Frame - Steel Daybed Frame for Lounge Areas | Mangala Living',
       shortCaption: 'Industrial Daybed Frame - Steel Daybed',
       description: `The Industrial Daybed Frame from Mangala Living is the perfect industrial furniture solution for modern spaces. This premium industrial daybed frame features a robust industrial design with steel construction that provides maximum durability and visual appeal.
@@ -170,6 +183,7 @@ Perfect for lounges, waiting areas, hotels, and commercial spaces, this industri
       imageAlt: 'Industrial Daybed Frame - Steel Daybed - Premium Furniture from Mangala Living'
     },
     id: {
+      name: 'Rangka Daybed Industrial',
       caption: 'Industrial Daybed Frame - Rangka Daybed Baja untuk Area Lounge | Mangala Living',
       shortCaption: 'Industrial Daybed Frame - Daybed Baja',
       description: `Industrial Daybed Frame dari Mangala Living adalah solusi furniture industrial sempurna untuk ruang modern. Rangka daybed industrial premium ini menampilkan desain industrial yang kokoh dengan konstruksi baja yang memberikan ketahanan maksimal dan daya tarik visual.
@@ -183,6 +197,7 @@ Sempurna untuk lounge, area tunggu, hotel, dan ruang komersial, rangka daybed in
   },
   'bandung-pipe-dining-table': {
     en: {
+      name: 'Bandung Pipe Dining Table',
       caption: 'Bandung Pipe Dining Table - Industrial Dining Table for Home and Restaurant | Mangala Living',
       shortCaption: 'Bandung Pipe Dining Table - Industrial Dining Table',
       description: `The Bandung Pipe Dining Table from Mangala Living is the perfect industrial dining solution for modern homes, cafes, and restaurants. This premium industrial dining table features a robust industrial design with steel construction that provides maximum durability and visual appeal.
@@ -194,6 +209,7 @@ Perfect for homes, cafes, restaurants, and commercial dining spaces, this indust
       imageAlt: 'Bandung Pipe Dining Table - Industrial Dining Table - Premium Furniture from Mangala Living'
     },
     id: {
+      name: 'Meja Makan Pipa Bandung',
       caption: 'Bandung Pipe Dining Table - Meja Makan Industrial untuk Rumah dan Restoran | Mangala Living',
       shortCaption: 'Bandung Pipe Dining Table - Meja Makan Industrial',
       description: `Bandung Pipe Dining Table dari Mangala Living adalah solusi makan industrial sempurna untuk rumah modern, kafe, dan restoran. Meja makan industrial premium ini menampilkan desain industrial yang kokoh dengan konstruksi baja yang memberikan ketahanan maksimal dan daya tarik visual.
@@ -207,6 +223,7 @@ Sempurna untuk rumah, kafe, restoran, dan ruang makan komersial, meja makan indu
   },
   'dining-set-with-2-chairs': {
     en: {
+      name: 'Dining Set with 2 Chairs',
       caption: 'Dining Set with 2 Chairs - Complete Industrial Dining Set | Mangala Living',
       shortCaption: 'Dining Set with 2 Chairs - Complete Dining Set',
       description: `The Dining Set with 2 Chairs from Mangala Living is the perfect industrial dining solution for modern homes, cafes, and restaurants. This premium industrial dining set features a robust industrial design with steel construction that provides maximum durability and visual appeal.
@@ -218,6 +235,7 @@ Perfect for homes, cafes, restaurants, and commercial dining spaces, this indust
       imageAlt: 'Dining Set with 2 Chairs - Complete Industrial Dining Set - Premium Furniture from Mangala Living'
     },
     id: {
+      name: 'Set Meja Makan dengan 2 Kursi',
       caption: 'Dining Set with 2 Chairs - Set Meja Makan Industrial Lengkap | Mangala Living',
       shortCaption: 'Dining Set with 2 Chairs - Set Meja Makan Lengkap',
       description: `Dining Set with 2 Chairs dari Mangala Living adalah solusi makan industrial sempurna untuk rumah modern, kafe, dan restoran. Set meja makan industrial premium ini menampilkan desain industrial yang kokoh dengan konstruksi baja yang memberikan ketahanan maksimal dan daya tarik visual.
@@ -231,6 +249,7 @@ Sempurna untuk rumah, kafe, restoran, dan ruang makan komersial, set meja makan 
   },
   'beam-industrial-bar-chair': {
     en: {
+      name: 'Beam Industrial Bar Chair',
       caption: 'Beam Industrial Bar Chair - Industrial Bar Stool for Counter and Bar | Mangala Living',
       shortCaption: 'Beam Industrial Bar Chair - Industrial Bar Stool',
       description: `The Beam Industrial Bar Chair from Mangala Living is the perfect industrial bar seating solution for modern cafes, restaurants, and commercial spaces. This premium industrial bar chair features a sleek industrial design with steel construction that provides maximum comfort and visual appeal.
@@ -242,6 +261,7 @@ Perfect for bars, cafes, restaurants, and commercial spaces, this industrial bar
       imageAlt: 'Beam Industrial Bar Chair - Industrial Bar Stool - Premium Seating from Mangala Living'
     },
     id: {
+      name: 'Kursi Bar Beam Industrial',
       caption: 'Beam Industrial Bar Chair - Kursi Bar Industrial untuk Counter dan Bar | Mangala Living',
       shortCaption: 'Beam Industrial Bar Chair - Kursi Bar Industrial',
       description: `Beam Industrial Bar Chair dari Mangala Living adalah solusi tempat duduk bar industrial sempurna untuk kafe modern, restoran, dan ruang komersial. Kursi bar industrial premium ini menampilkan desain industrial yang ramping dengan konstruksi baja yang memberikan kenyamanan maksimal dan daya tarik visual.
@@ -255,6 +275,7 @@ Sempurna untuk bar, kafe, restoran, dan ruang komersial, kursi bar industrial in
   },
   'bar-stall-chair': {
     en: {
+      name: 'Bar Stall Chair',
       caption: 'Bar Stall Chair - Industrial Stall Chair for Bar and Counter | Mangala Living',
       shortCaption: 'Bar Stall Chair - Industrial Stall Chair',
       description: `The Bar Stall Chair from Mangala Living is the perfect industrial bar seating solution for modern cafes, restaurants, and commercial spaces. This premium industrial bar chair features a sleek industrial design with steel construction that provides maximum comfort and visual appeal.
@@ -266,6 +287,7 @@ Perfect for bars, cafes, restaurants, and commercial spaces, this industrial bar
       imageAlt: 'Bar Stall Chair - Industrial Stall Chair - Premium Seating from Mangala Living'
     },
     id: {
+      name: 'Kursi Stall Bar',
       caption: 'Bar Stall Chair - Kursi Stall Industrial untuk Bar dan Counter | Mangala Living',
       shortCaption: 'Bar Stall Chair - Kursi Stall Industrial',
       description: `Bar Stall Chair dari Mangala Living adalah solusi tempat duduk bar industrial sempurna untuk kafe modern, restoran, dan ruang komersial. Kursi bar industrial premium ini menampilkan desain industrial yang ramping dengan konstruksi baja yang memberikan kenyamanan maksimal dan daya tarik visual.
@@ -279,6 +301,7 @@ Sempurna untuk bar, kafe, restoran, dan ruang komersial, kursi bar industrial in
   },
   'steelframe-outdoor-bar-set': {
     en: {
+      name: 'Steelframe Outdoor Bar Set',
       caption: 'Steelframe Outdoor Bar Set - Outdoor Industrial Bar Furniture Set | Mangala Living',
       shortCaption: 'Steelframe Outdoor Bar Set - Outdoor Bar Set',
       description: `The Steelframe Outdoor Bar Set from Mangala Living is the perfect industrial outdoor furniture solution for modern spaces. This premium industrial outdoor bar set features a robust industrial design with weather-resistant construction that provides maximum durability for outdoor use.
@@ -290,6 +313,7 @@ Perfect for outdoor cafes, restaurants, patios, and commercial outdoor spaces, t
       imageAlt: 'Steelframe Outdoor Bar Set - Outdoor Industrial Bar Furniture - Weather Resistant from Mangala Living'
     },
     id: {
+      name: 'Set Bar Outdoor Steelframe',
       caption: 'Steelframe Outdoor Bar Set - Set Furniture Bar Outdoor Industrial | Mangala Living',
       shortCaption: 'Steelframe Outdoor Bar Set - Set Bar Outdoor',
       description: `Steelframe Outdoor Bar Set dari Mangala Living adalah solusi furniture outdoor industrial sempurna untuk ruang modern. Set bar outdoor industrial premium ini menampilkan desain industrial yang kokoh dengan konstruksi tahan cuaca yang memberikan ketahanan maksimal untuk penggunaan outdoor.
@@ -303,6 +327,7 @@ Sempurna untuk kafe outdoor, restoran, patio, dan ruang outdoor komersial, set b
   },
   'industrial-kitchen-cabinet': {
     en: {
+      name: 'Industrial Kitchen Cabinet',
       caption: 'Industrial Kitchen Cabinet - Steel Kitchen Storage Cabinet | Mangala Living',
       shortCaption: 'Industrial Kitchen Cabinet - Steel Kitchen Cabinet',
       description: `The Industrial Kitchen Cabinet from Mangala Living is the perfect industrial storage solution for modern spaces. This premium industrial storage furniture features a robust industrial design with steel construction that provides maximum storage capacity and visual appeal.
@@ -314,6 +339,7 @@ Perfect for offices, cafes, restaurants, and commercial spaces, this industrial 
       imageAlt: 'Industrial Kitchen Cabinet - Steel Kitchen Cabinet - Premium Storage from Mangala Living'
     },
     id: {
+      name: 'Kabinet Dapur Industrial',
       caption: 'Industrial Kitchen Cabinet - Kabinet Dapur Baja Penyimpanan | Mangala Living',
       shortCaption: 'Industrial Kitchen Cabinet - Kabinet Dapur Baja',
       description: `Industrial Kitchen Cabinet dari Mangala Living adalah solusi penyimpanan industrial sempurna untuk ruang modern. Furniture penyimpanan industrial premium ini menampilkan desain industrial yang kokoh dengan konstruksi baja yang memberikan kapasitas penyimpanan maksimal dan daya tarik visual.
@@ -327,6 +353,7 @@ Sempurna untuk kantor, kafe, restoran, dan ruang komersial, furniture penyimpana
   },
   'kabinet-lemari-industrial': {
     en: {
+      name: 'Kabinet Lemari Industrial',
       caption: 'Kabinet Lemari Industrial - Industrial Storage Cabinet | Mangala Living',
       shortCaption: 'Kabinet Lemari Industrial - Industrial Cabinet',
       description: `The Kabinet Lemari Industrial from Mangala Living is the perfect industrial storage solution for modern spaces. This premium industrial storage furniture features a robust industrial design with steel construction that provides maximum storage capacity and visual appeal.
@@ -338,6 +365,7 @@ Perfect for offices, cafes, restaurants, and commercial spaces, this industrial 
       imageAlt: 'Kabinet Lemari Industrial - Industrial Cabinet - Premium Storage from Mangala Living'
     },
     id: {
+      name: 'Kabinet Lemari Industrial',
       caption: 'Kabinet Lemari Industrial - Kabinet Penyimpanan Industrial | Mangala Living',
       shortCaption: 'Kabinet Lemari Industrial - Kabinet Industrial',
       description: `Kabinet Lemari Industrial dari Mangala Living adalah solusi penyimpanan industrial sempurna untuk ruang modern. Furniture penyimpanan industrial premium ini menampilkan desain industrial yang kokoh dengan konstruksi baja yang memberikan kapasitas penyimpanan maksimal dan daya tarik visual.
@@ -351,6 +379,7 @@ Sempurna untuk kantor, kafe, restoran, dan ruang komersial, furniture penyimpana
   },
   'hollowline-display-rack': {
     en: {
+      name: 'Hollowline Display Rack',
       caption: 'Hollowline Display Rack - Industrial Display Shelf Rack | Mangala Living',
       shortCaption: 'Hollowline Display Rack - Display Rack',
       description: `The Hollowline Display Rack from Mangala Living is the perfect industrial storage solution for modern retail and commercial spaces. This premium hollowline display rack features a sleek industrial design with hollow steel construction that provides maximum durability and visual appeal.
@@ -362,6 +391,7 @@ Perfect for retail stores, cafes, restaurants, and offices, this hollowline disp
       imageAlt: 'Hollowline Display Rack - Industrial Display Rack - Premium Storage from Mangala Living'
     },
     id: {
+      name: 'Rak Display Hollowline',
       caption: 'Hollowline Display Rack - Rak Display Industrial | Mangala Living',
       shortCaption: 'Hollowline Display Rack - Rak Display',
       description: `Hollowline Display Rack dari Mangala Living adalah solusi penyimpanan industrial sempurna untuk ruang ritel dan komersial modern. Rak display hollowline premium ini menampilkan desain industrial yang ramping dengan konstruksi baja hollow yang memberikan ketahanan maksimal dan daya tarik visual.
@@ -375,6 +405,7 @@ Sempurna untuk toko ritel, kafe, restoran, dan kantor, rak display hollowline in
   },
   'ladder-frame-display-stand': {
     en: {
+      name: 'Ladder Frame Display Stand',
       caption: 'Ladder Frame Display Stand - Industrial Ladder Display Stand | Mangala Living',
       shortCaption: 'Ladder Frame Display Stand - Ladder Display',
       description: `The Ladder Frame Display Stand from Mangala Living is the perfect industrial storage solution for modern spaces. This premium industrial storage furniture features a robust industrial design with steel construction that provides maximum storage capacity and visual appeal.
@@ -386,6 +417,7 @@ Perfect for offices, cafes, restaurants, and commercial spaces, this industrial 
       imageAlt: 'Ladder Frame Display Stand - Industrial Ladder Display - Premium Storage from Mangala Living'
     },
     id: {
+      name: 'Stand Display Rangka Tangga',
       caption: 'Ladder Frame Display Stand - Stand Display Tangga Industrial | Mangala Living',
       shortCaption: 'Ladder Frame Display Stand - Display Tangga',
       description: `Ladder Frame Display Stand dari Mangala Living adalah solusi penyimpanan industrial sempurna untuk ruang modern. Furniture penyimpanan industrial premium ini menampilkan desain industrial yang kokoh dengan konstruksi baja yang memberikan kapasitas penyimpanan maksimal dan daya tarik visual.
@@ -399,6 +431,7 @@ Sempurna untuk kantor, kafe, restoran, dan ruang komersial, furniture penyimpana
   },
   'industrial-coat-rack': {
     en: {
+      name: 'Industrial Coat Rack',
       caption: 'Industrial Coat Rack - Steel Coat Rack Hanger | Mangala Living',
       shortCaption: 'Industrial Coat Rack - Coat Rack',
       description: `The Industrial Coat Rack from Mangala Living is the perfect industrial storage solution for modern spaces. This premium industrial storage furniture features a robust industrial design with steel construction that provides maximum storage capacity and visual appeal.
@@ -410,6 +443,7 @@ Perfect for offices, cafes, restaurants, and commercial spaces, this industrial 
       imageAlt: 'Industrial Coat Rack - Steel Coat Rack - Premium Storage from Mangala Living'
     },
     id: {
+      name: 'Gantungan Baju Industrial',
       caption: 'Industrial Coat Rack - Gantungan Baju Industrial Baja | Mangala Living',
       shortCaption: 'Industrial Coat Rack - Gantungan Baju',
       description: `Industrial Coat Rack dari Mangala Living adalah solusi penyimpanan industrial sempurna untuk ruang modern. Furniture penyimpanan industrial premium ini menampilkan desain industrial yang kokoh dengan konstruksi baja yang memberikan kapasitas penyimpanan maksimal dan daya tarik visual.
@@ -423,6 +457,7 @@ Sempurna untuk kantor, kafe, restoran, dan ruang komersial, furniture penyimpana
   },
   'meja-kerja-industrial': {
     en: {
+      name: 'Meja Kerja Industrial',
       caption: 'Meja Kerja Industrial - Industrial Work Table Desk | Mangala Living',
       shortCaption: 'Meja Kerja Industrial - Work Table',
       description: `The Meja Kerja Industrial from Mangala Living is the perfect industrial work table solution for modern offices and commercial spaces. This premium industrial work table features a robust industrial design with steel construction that provides maximum durability and functionality.
@@ -434,6 +469,7 @@ Perfect for offices, workshops, studios, and commercial spaces, this industrial 
       imageAlt: 'Meja Kerja Industrial - Industrial Work Table - Premium Office Furniture from Mangala Living'
     },
     id: {
+      name: 'Meja Kerja Industrial',
       caption: 'Meja Kerja Industrial - Meja Kerja Industrial | Mangala Living',
       shortCaption: 'Meja Kerja Industrial - Meja Kerja',
       description: `Meja Kerja Industrial dari Mangala Living adalah solusi meja kerja industrial sempurna untuk kantor modern dan ruang komersial. Meja kerja industrial premium ini menampilkan desain industrial yang kokoh dengan konstruksi baja yang memberikan ketahanan maksimal dan fungsionalitas.
@@ -482,4 +518,16 @@ export const getProductImageAlt = (slug: string, isIndonesian: boolean): string 
       : 'Premium Industrial Furniture from Mangala Living'
   }
   return isIndonesian ? desc.id.imageAlt : desc.en.imageAlt
+}
+
+/**
+ * Get translated product name
+ */
+export const getProductName = (slug: string, isIndonesian: boolean): string => {
+  const desc = getProductDescription(slug)
+  if (!desc) {
+    // Fallback - get name from products.ts
+    return ''
+  }
+  return isIndonesian ? desc.id.name : desc.en.name
 }
