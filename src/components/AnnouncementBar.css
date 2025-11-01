@@ -40,13 +40,13 @@
 }
 
 .announcement-highlight {
-  color: #ffd700;
+  color: #8B7355;
   font-weight: 500;
   margin-left: 6px;
 }
 
 .announcement-cta {
-  background: #ff6b35;
+  background: #8B7355;
   color: #ffffff;
   padding: 6px 20px;
   border-radius: 4px;
@@ -61,7 +61,7 @@
 }
 
 .announcement-cta:hover {
-  background: #ff8c5a;
+  background: #a68a6a;
 }
 
 .announcement-close {

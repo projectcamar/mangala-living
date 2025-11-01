@@ -47,7 +47,7 @@ body:has(.announcement-bar) .header {
 }
 
 .language-btn:focus {
-  outline: 2px solid #ff6b35;
+  outline: 2px solid #8B7355;
   outline-offset: 2px;
 }
 
@@ -119,7 +119,7 @@ body:has(.announcement-bar) .header {
 
 .language-option:focus {
   background: #f8f9fa;
-  outline: 2px solid #ff6b35;
+  outline: 2px solid #8B7355;
   outline-offset: -2px;
 }
 

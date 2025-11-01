@@ -8,6 +8,7 @@
 .not-found-main {
   flex: 1;
   padding: 2rem 0 4rem;
+  padding-top: 140px; /* Account for fixed header + announcement bar */
 }
 
 .not-found-content {
@@ -24,7 +25,7 @@
 .not-found-title {
   font-size: 8rem;
   font-weight: 900;
-  color: #ff6b35;
+  color: #2c2c2c;
   margin: 0;
   line-height: 1;
   letter-spacing: -0.02em;
@@ -83,14 +84,14 @@
 }
 
 .quicklink-card:hover {
-  border-color: #ff6b35;
-  color: #ff6b35;
+  border-color: #8B7355;
+  color: #8B7355;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.15);
+  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.15);
 }
 
 .quicklink-card svg {
-  color: #ff6b35;
+  color: #8B7355;
   transition: transform 0.3s ease;
 }
 
@@ -121,27 +122,27 @@
 }
 
 .btn-primary {
-  background: #ff6b35;
+  background: #2c2c2c;
   color: white;
 }
 
 .btn-primary:hover {
-  background: #e55a2b;
+  background: #8B7355;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 12px rgba(44, 44, 44, 0.3);
 }
 
 .btn-secondary {
   background: white;
-  color: #ff6b35;
-  border: 2px solid #ff6b35;
+  color: #8B7355;
+  border: 2px solid #8B7355;
 }
 
 .btn-secondary:hover {
-  background: #ff6b35;
+  background: #8B7355;
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.2);
+  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.2);
 }
 
 /* Featured Products Section */
@@ -226,7 +227,7 @@
 .product-price {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #ff6b35;
+  color: #8B7355;
   margin: auto 0 0;
 }
 
@@ -238,7 +239,7 @@
 .btn-view-all {
   display: inline-block;
   padding: 0.875rem 2.5rem;
-  background: #ff6b35;
+  background: #2c2c2c;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -248,13 +249,17 @@
 }
 
 .btn-view-all:hover {
-  background: #e55a2b;
+  background: #8B7355;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 12px rgba(44, 44, 44, 0.3);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .not-found-main {
+    padding-top: 120px; /* Adjusted for mobile header */
+  }
+
   .not-found-title {
     font-size: 5rem;
   }
@@ -318,6 +323,10 @@
 }
 
 @media (max-width: 480px) {
+  .not-found-main {
+    padding-top: 100px; /* Adjusted for small mobile header */
+  }
+
   .not-found-title {
     font-size: 4rem;
   }
