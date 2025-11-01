@@ -1,5 +1,81 @@
 // Structured Data utilities for Mangala Living
 
+/**
+ * Generate ImageObject schema for SEO-optimized image indexing
+ * This helps Google understand and index images better for image search
+ */
+export const generateImageObjectSchema = (image: {
+  url: string
+  alt?: string
+  title?: string
+  width?: number
+  height?: number
+  contentUrl?: string
+  description?: string
+  caption?: string
+}) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    "url": image.url,
+    "contentUrl": image.contentUrl || image.url,
+    "caption": image.caption || image.alt || image.title || "Industrial Furniture by Mangala Living",
+    "description": image.description || image.alt || image.title || "Premium Industrial Furniture from Mangala Living Workshop Bekasi",
+    ...(image.width && { "width": image.width }),
+    ...(image.height && { "height": image.height }),
+    "creditText": "Mangala Living",
+    "copyrightHolder": {
+      "@type": "Organization",
+      "name": "Mangala Living"
+    },
+    "license": "https://mangala-living.com",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Mangala Living",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mangala-living.com/logo.png"
+      }
+    }
+  }
+}
+
+/**
+ * Generate multiple ImageObject schemas for product galleries
+ */
+export const generateProductImageGallerySchema = (images: Array<{
+  url: string
+  alt?: string
+  title?: string
+  width?: number
+  height?: number
+}>, productName: string) => {
+  return images.map((img, index) => ({
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    "url": img.url,
+    "contentUrl": img.url,
+    "caption": img.alt || `${productName} - Image ${index + 1} - Mangala Living`,
+    "description": img.title || img.alt || `${productName} Premium Industrial Furniture - Mangala Living`,
+    ...(img.width && { "width": img.width }),
+    ...(img.height && { "height": img.height }),
+    "creditText": "Mangala Living",
+    "copyrightHolder": {
+      "@type": "Organization",
+      "name": "Mangala Living"
+    },
+    "license": "https://mangala-living.com",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Mangala Living",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mangala-living.com/logo.png"
+      }
+    }
+  }))
+}
+
 // Generate BlogPosting Schema for SEO with Author E-E-A-T
 export const generateBlogPostingSchema = (post: {
   title: string
@@ -95,7 +171,20 @@ export const generateBlogPostingSchema = (post: {
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.excerpt,
-    "image": post.image,
+    "image": {
+      "@type": "ImageObject",
+      "url": post.image,
+      "contentUrl": post.image,
+      "caption": `${post.title} - ${post.category} Blog Furniture Industrial`,
+      "description": post.excerpt,
+      "width": 1200,
+      "height": 630,
+      "creditText": "Mangala Living",
+      "copyrightHolder": {
+        "@type": "Organization",
+        "name": "Mangala Living"
+      }
+    },
     "datePublished": post.date,
     "dateModified": post.date,
     "author": authorSchema,

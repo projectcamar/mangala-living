@@ -77,7 +77,18 @@ const TermsOfService: React.FC = () => {
       {/* Hero Section */}
       <section className="terms-hero">
         <div className="terms-hero-image">
-          <img src={heroImage} alt="Terms of Service" loading="eager" />
+          <img 
+            src={heroImage} 
+            alt="Terms of Service - Syarat dan Ketentuan Mangala Living Furniture Industrial"
+            title="Terms of Service - Terms and Conditions for Mangala Living Products"
+            loading="eager"
+            fetchPriority="high"
+            width="1920"
+            height="1080"
+            itemProp="image"
+            data-image-type="terms-hero"
+            data-category="terms"
+          />
           <div className="terms-hero-overlay"></div>
         </div>
         <div className="terms-hero-content">

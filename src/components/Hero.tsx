@@ -13,12 +13,16 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false }) => {
       <div className="hero-background">
         <img 
           src={heroImage}
-          alt="Industrial Furniture Collection by Mangala Living" 
+          alt="Industrial Furniture Collection by Mangala Living - Premium Furniture Besi Custom Bekasi Since 1999" 
+          title="Mangala Living - Industrial Furniture Manufacturer Workshop Bekasi - Premium Quality Since 1999"
           className="hero-bg-image"
           loading="eager"
           fetchPriority="high"
           width="1920"
           height="1080"
+          itemProp="image"
+          data-image-type="hero"
+          data-category="hero-banner"
         />
         <div className="hero-overlay"></div>
         </div>

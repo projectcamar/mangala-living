@@ -101,7 +101,18 @@ const About: React.FC = () => {
       {/* Hero Section */}
       <section className="about-hero">
         <div className="about-hero-image">
-          <img src={heroImage} alt="About Mangala Living" loading="eager" />
+          <img 
+            src={heroImage} 
+            alt="About Mangala Living - Workshop Furniture Industrial Bekasi Since 1999 - Premium Quality Manufacturer"
+            title="About Mangala Living - Industrial Furniture Manufacturer with 25+ Years Experience"
+            loading="eager"
+            fetchPriority="high"
+            width="1920"
+            height="1080"
+            itemProp="image"
+            data-image-type="about-hero"
+            data-category="about"
+          />
           <div className="about-hero-overlay"></div>
         </div>
         <div className="about-hero-content">

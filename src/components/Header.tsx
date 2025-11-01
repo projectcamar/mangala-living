@@ -438,7 +438,17 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                         onClick={closeSearch}
                       >
                         <div className="search-result-image">
-                          <img src={product.image} alt={product.name} />
+                          <img 
+                            src={product.image} 
+                            alt={`${product.name} - ${product.category} Industrial Furniture Mangala Living`}
+                            title={`${product.name} - Quick Search Result`}
+                            loading="lazy"
+                            width="60"
+                            height="60"
+                            itemProp="image"
+                            data-image-type="header-search"
+                            data-product-name={product.name}
+                          />
                         </div>
                         <div className="search-result-info">
                           <div className="search-result-name">{product.name}</div>

@@ -93,7 +93,18 @@ const BestSellers: React.FC = () => {
                 className="category-product-card"
               >
                 <div className="category-product-image">
-                  <img src={product.image} alt={product.name} loading="lazy" />
+                  <img 
+                    src={product.image} 
+                    alt={`${product.name} - Best Seller Industrial Furniture ${product.categories.join(' ')} Mangala Living`}
+                    title={`${product.name} - Best Seller ${product.categories.join(' ')} Premium Furniture`}
+                    loading="lazy"
+                    width="300"
+                    height="200"
+                    itemProp="image"
+                    data-image-type="best-seller"
+                    data-product-name={product.name}
+                    data-category={product.categories.join(',')}
+                  />
                 </div>
                 <div className="category-product-info">
                   <h3 className="category-product-name">{product.name}</h3>

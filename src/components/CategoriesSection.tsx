@@ -108,11 +108,15 @@ const CategoriesSection: React.FC<CategoriesSectionProps> = ({ isIndonesian = fa
               <div className="category-image-wrapper">
                 <img 
                   src={category.image} 
-                  alt={category.name}
+                  alt={`${category.name} Industrial Furniture Collection - Mangala Living Bekasi`}
+                  title={`${category.name} Industrial Furniture - Premium Quality from Mangala Living`}
                   className="category-image"
                   loading="lazy"
                   width="300"
                   height="200"
+                  itemProp="image"
+                  data-image-type="category"
+                  data-category={category.name.toLowerCase().replace(/\s+/g, '-')}
                 />
               </div>
               <h3 className="category-name">{category.name}</h3>

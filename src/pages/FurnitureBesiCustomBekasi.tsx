@@ -115,9 +115,18 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
         </div>
 
         <div className="landing-hero-image">
-          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop" 
-               alt="Furniture Besi Custom Bekasi Workshop Mangala Living" 
-               loading="eager" />
+          <img 
+            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop" 
+            alt="Furniture Besi Custom Bekasi - Workshop Industrial Furniture Mangala Living Since 1999"
+            title="Furniture Besi Custom Bekasi - Premium Industrial Furniture Workshop with 25+ Years Experience"
+            loading="eager"
+            fetchPriority="high"
+            width="1200"
+            height="630"
+            itemProp="image"
+            data-image-type="landing-hero"
+            data-category="furniture-besi-custom-bekasi"
+          />
         </div>
       </section>
 

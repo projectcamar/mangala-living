@@ -79,7 +79,18 @@ const Partnership: React.FC = () => {
       {/* Hero Section */}
       <section className="partnership-hero">
         <div className="partnership-hero-image">
-          <img src={heroImage} alt="Partnership" loading="eager" />
+          <img 
+            src={heroImage} 
+            alt="Partnership Mangala Living - Kerja Sama Workshop Furniture Industrial Bekasi"
+            title="Partnership - Partner with Mangala Living Industrial Furniture Manufacturer"
+            loading="eager"
+            fetchPriority="high"
+            width="1920"
+            height="1080"
+            itemProp="image"
+            data-image-type="partnership-hero"
+            data-category="partnership"
+          />
           <div className="partnership-hero-overlay"></div>
         </div>
         <div className="partnership-hero-content">

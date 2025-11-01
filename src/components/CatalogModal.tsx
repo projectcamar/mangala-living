@@ -150,7 +150,17 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
               </div>
               <div className="catalog-preview-image">
                 <div className="catalog-year">2025</div>
-                <img src={catalogPreview} alt="Mangala Living Catalog 2025" />
+                <img 
+                  src={catalogPreview} 
+                  alt="Mangala Living Catalog 2025 - Industrial Furniture Collection PDF Download"
+                  title="Mangala Living Catalog 2025 - Download Free PDF Catalog Industrial Furniture"
+                  loading="lazy"
+                  width="400"
+                  height="500"
+                  itemProp="image"
+                  data-image-type="catalog"
+                  data-catalog-year="2025"
+                />
               </div>
             </div>
           </div>

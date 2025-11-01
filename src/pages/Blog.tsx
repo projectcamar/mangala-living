@@ -48,7 +48,18 @@ const Blog: React.FC = () => {
       {/* Hero Section */}
       <section className="blog-hero">
         <div className="blog-hero-image">
-          <img src={heroImage} alt="Blog & Article" loading="eager" />
+          <img 
+            src={heroImage} 
+            alt="Blog Furniture Industrial & Tips Desain Cafe Restoran - 135+ Artikel Panduan Lengkap Mangala Living"
+            title="Blog Furniture Industrial - Tips & Panduan Lengkap dari Workshop Bekasi Mangala Living"
+            loading="eager"
+            fetchPriority="high"
+            width="1920"
+            height="1080"
+            itemProp="image"
+            data-image-type="blog-hero"
+            data-category="blog"
+          />
           <div className="blog-hero-overlay"></div>
         </div>
         <div className="blog-hero-content">
@@ -86,7 +97,18 @@ const Blog: React.FC = () => {
               <article key={post.id} className="blog-card">
                 <Link to={`/blog/${post.slug}`} className="blog-card-link">
                   <div className="blog-card-image">
-                    <img src={post.image} alt={post.title} loading="lazy" />
+                    <img 
+                      src={post.image} 
+                      alt={`${post.title} - ${post.category} Blog Furniture Industrial Mangala Living`}
+                      title={`${post.title} - ${post.category} Artikel Furniture Industrial`}
+                      loading="lazy"
+                      width="400"
+                      height="250"
+                      itemProp="image"
+                      data-image-type="blog-post"
+                      data-post-slug={post.slug}
+                      data-category={post.category}
+                    />
                     <div className="blog-card-badge">MANGALA</div>
                   </div>
                   <div className="blog-card-content">

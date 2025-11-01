@@ -102,7 +102,18 @@ function SearchResults() {
                 className="product-card"
               >
                 <div className="product-image">
-                  <img src={product.image} alt={product.name} loading="lazy" />
+                  <img 
+                    src={product.image} 
+                    alt={`${product.name} - Industrial Furniture ${product.category} Search Results Mangala Living`}
+                    title={`${product.name} - ${product.category} Industrial Furniture - Mangala Living`}
+                    loading="lazy"
+                    width="300"
+                    height="200"
+                    itemProp="image"
+                    data-image-type="search-result"
+                    data-product-name={product.name}
+                    data-category={product.category}
+                  />
                 </div>
                 <div className="product-info">
                   <h3 className="product-name">{product.name}</h3>

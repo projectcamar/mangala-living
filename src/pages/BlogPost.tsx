@@ -194,7 +194,18 @@ const BlogPost: React.FC = () => {
                   
                   {section.image && (
                     <div className="blog-post-image">
-                      <img src={section.image} alt={section.imageAlt || post.title} loading="lazy" />
+                      <img 
+                        src={section.image} 
+                        alt={section.imageAlt || `${post.title} - ${section.heading || 'Industrial Furniture Article'} - Mangala Living`}
+                        title={section.imageAlt || `${post.title} - ${section.heading || 'Furniture Industrial Guide'} by Mangala Living`}
+                        loading="lazy"
+                        width="800"
+                        height="500"
+                        itemProp="image"
+                        data-image-type="blog-content"
+                        data-post-slug={post.slug}
+                        data-section-heading={section.heading || ''}
+                      />
                       <div className="blog-image-badge">MANGALA</div>
                     </div>
                   )}
@@ -243,7 +254,18 @@ const BlogPost: React.FC = () => {
               {otherArticles.map((article) => (
                 <Link key={article.id} to={`/blog/${article.slug}`} className="sidebar-article-card">
                   <div className="sidebar-article-image">
-                    <img src={article.image} alt={article.title} loading="lazy" />
+                    <img 
+                      src={article.image} 
+                      alt={`${article.title} - ${article.category} Blog Furniture Industrial Mangala Living`}
+                      title={`${article.title} - Related Article ${article.category}`}
+                      loading="lazy"
+                      width="200"
+                      height="125"
+                      itemProp="image"
+                      data-image-type="sidebar-article"
+                      data-post-slug={article.slug}
+                      data-category={article.category}
+                    />
                     <div className="sidebar-article-badge">MANGALA</div>
                   </div>
                   <div className="sidebar-article-content">

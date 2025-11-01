@@ -417,10 +417,10 @@ const ProductDetail: React.FC = () => {
       <AnnouncementBar />
       <Helmet>
         <title>{product.name === 'Hollowline Display Rack' 
-          ? 'Hollowline Display Rack • Harga Murah Rp4.5 Juta • Call Mangala +62 852 1207 8467'
+          ? 'Hollowline Display Rack ? Harga Murah Rp4.5 Juta ? Call Mangala +62 852 1207 8467'
           : `${product.name} - Mangala Living`}</title>
         <meta name="description" content={product.name === 'Hollowline Display Rack'
-          ? 'Hollowline Display Rack Industrial • Display Shelf Rack Modern • Harga Rp4.500.000 • Workshop Bekasi • Garansi Kualitas • Call Mangala +62 852 1207 8467'
+          ? 'Hollowline Display Rack Industrial ? Display Shelf Rack Modern ? Harga Rp4.500.000 ? Workshop Bekasi ? Garansi Kualitas ? Call Mangala +62 852 1207 8467'
           : `${product.name} - ${product.details}`} />
         <meta name="keywords" content={
           product.name === 'Hollowline Display Rack'
@@ -458,6 +458,36 @@ const ProductDetail: React.FC = () => {
         <script type="application/ld+json">
           {JSON.stringify(generateStructuredData())}
         </script>
+        
+        {/* ImageObject Structured Data for Image SEO */}
+        {product.images.map((img, index) => (
+          <script key={index} type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ImageObject",
+              "url": getProductImageUrl(img, product.slug),
+              "contentUrl": getProductImageUrl(img, product.slug),
+              "caption": `${product.name} - Image ${index + 1} - Industrial Furniture ${product.categories.join(' ')} Mangala Living`,
+              "description": `${product.name} - Premium Industrial Furniture from Mangala Living Workshop Bekasi - ${product.price}`,
+              "width": 800,
+              "height": 600,
+              "creditText": "Mangala Living",
+              "copyrightHolder": {
+                "@type": "Organization",
+                "name": "Mangala Living"
+              },
+              "license": "https://mangala-living.com",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Mangala Living",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://mangala-living.com/logo.png"
+                }
+              }
+            })}
+          </script>
+        ))}
       </Helmet>
 
       <Header />
@@ -475,16 +505,38 @@ const ProductDetail: React.FC = () => {
                     key={index}
                     className={`thumbnail ${selectedImage === index ? 'active' : ''}`}
                     onClick={() => setSelectedImage(index)}
+                    aria-label={`View ${product.name} image ${index + 1}`}
                   >
-                    <img src={image} alt={`${product.name} ${index + 1}`} />
+                    <img 
+                      src={image} 
+                      alt={`${product.name} - Image ${index + 1} - Industrial Furniture ${product.categories.join(' ')} Mangala Living`}
+                      title={`${product.name} - View ${index + 1} - Premium Industrial Furniture by Mangala Living`}
+                      loading={index === 0 ? "eager" : "lazy"}
+                      width="100"
+                      height="100"
+                      itemProp="image"
+                      data-image-type="product-thumbnail"
+                      data-product-name={product.name}
+                      data-image-index={index + 1}
+                    />
                   </button>
                 ))}
               </div>
               <div className="gallery-main">
                 <img 
                   src={product.images[selectedImage]} 
-                  alt={product.name} 
+                  alt={`${product.name} - Premium Industrial Furniture ${product.categories.join(' ')} - Mangala Living Workshop Bekasi`}
+                  title={`${product.name} - Custom Industrial Furniture from Mangala Living - ${product.price}`}
                   className={selectedImage === 1 || selectedImage === 3 ? 'flipped' : ''}
+                  loading="eager"
+                  fetchPriority="high"
+                  width="800"
+                  height="600"
+                  itemProp="image"
+                  data-image-type="product-main"
+                  data-product-name={product.name}
+                  data-product-slug={product.slug}
+                  data-selected-index={selectedImage}
                 />
               </div>
             </div>
@@ -557,7 +609,18 @@ Terima kasih!`
                   className="related-product-card"
                 >
                   <div className="related-product-image">
-                    <img src={relatedProduct.image} alt={relatedProduct.name} />
+                    <img 
+                      src={relatedProduct.image} 
+                      alt={`${relatedProduct.name} - Related Industrial Furniture ${relatedProduct.category} Mangala Living`}
+                      title={`${relatedProduct.name} - Premium Industrial Furniture ${relatedProduct.category} by Mangala Living`}
+                      loading="lazy"
+                      width="300"
+                      height="200"
+                      itemProp="image"
+                      data-image-type="related-product"
+                      data-product-name={relatedProduct.name}
+                      data-category={relatedProduct.category}
+                    />
                   </div>
                   <div className="related-product-info">
                     <h3>{relatedProduct.name}</h3>
