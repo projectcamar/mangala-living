@@ -10,7 +10,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import { getProductDescription, getProductImageAlt, getProductImageCaption, getProductName } from '../data/productDescriptions'
 import { generateCanonicalUrl, generateHreflangTags, getProductImageUrl } from '../utils/seo'
 import { sendBackgroundEmail } from '../utils/emailHelpers'
-import { detectUserCountry, convertIDRToUSD } from '../utils/currencyConverter'
+import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getCategorySlug } from '../utils/categoryHelpers'
 import './ProductDetail.css'
 
