@@ -69,11 +69,11 @@ const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false 
 
   const content = isIndonesian ? {
     text: 'Wujudkan Furniture Impian Anda!',
-    cta: 'Pesan Custom Sekarang',
+    cta: 'Pesan Custom Order Sekarang',
     highlight: 'Gratis Konsultasi Desain'
   } : {
     text: 'Bring Your Dream Furniture to Life!',
-    cta: 'Order Custom Now',
+    cta: 'Order Custom Order Now',
     highlight: 'Free Design Consultation'
   }
 
