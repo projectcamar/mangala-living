@@ -133,7 +133,18 @@ Thank you!`
       {/* Hero Section */}
       <section className="contact-hero">
         <div className="contact-hero-image">
-          <img src={heroImage} alt="Contact Mangala Living" loading="eager" />
+          <img 
+            src={heroImage} 
+            alt="Contact Mangala Living - Hubungi Workshop Furniture Industrial Bekasi - WhatsApp +62 852 1207 8467"
+            title="Contact Mangala Living - Get in Touch with Industrial Furniture Manufacturer"
+            loading="eager"
+            fetchPriority="high"
+            width="1920"
+            height="1080"
+            itemProp="image"
+            data-image-type="contact-hero"
+            data-category="contact"
+          />
           <div className="contact-hero-overlay"></div>
         </div>
           <div className="contact-hero-content">

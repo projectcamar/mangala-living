@@ -80,7 +80,18 @@ const CustomOrder: React.FC = () => {
       {/* Hero Section */}
       <section className="custom-order-hero">
         <div className="custom-order-hero-image">
-          <img src={heroImage} alt="Custom Order" loading="eager" />
+          <img 
+            src={heroImage} 
+            alt="Custom Order Furniture Industrial - Pesan Furniture Besi Custom Design Mangala Living Bekasi"
+            title="Custom Order - Design Your Own Industrial Furniture with Mangala Living"
+            loading="eager"
+            fetchPriority="high"
+            width="1920"
+            height="1080"
+            itemProp="image"
+            data-image-type="custom-order-hero"
+            data-category="custom-order"
+          />
           <div className="custom-order-hero-overlay"></div>
         </div>
         <div className="custom-order-hero-content">

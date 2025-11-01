@@ -354,7 +354,19 @@ const Shop: React.FC = () => {
                     className="category-product-card"
                   >
                     <div className="category-product-image">
-                      <img src={product.image} alt={product.name} loading="lazy" />
+                      <img 
+                        src={product.image} 
+                        alt={`${product.name} - Industrial Furniture ${product.categories.join(' ')} Mangala Living Shop`}
+                        title={`${product.name} - Premium Industrial Furniture ${product.categories.join(' ')} - Shop Now`}
+                        loading="lazy"
+                        width="300"
+                        height="200"
+                        itemProp="image"
+                        data-image-type="shop-product"
+                        data-product-name={product.name}
+                        data-product-slug={product.slug}
+                        data-category={product.categories.join(',')}
+                      />
                     </div>
                     <div className="category-product-info">
                       <h3 className="category-product-name">{product.name}</h3>

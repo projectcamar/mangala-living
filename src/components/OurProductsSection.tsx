@@ -42,11 +42,16 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
               <div className="product-image-wrapper-full">
                 <img 
                   src={product.image} 
-                  alt={product.name} 
+                  alt={`${product.name} - Industrial Furniture ${product.category} Mangala Living Workshop Bekasi`}
+                  title={`${product.name} - Custom Industrial Furniture from Mangala Living`}
                   className="product-image-full"
                   loading="lazy"
                   width="400"
                   height="300"
+                  itemProp="image"
+                  data-image-type="product"
+                  data-product-name={product.name}
+                  data-category={product.category}
                 />
               </div>
               <div className="product-info-full">

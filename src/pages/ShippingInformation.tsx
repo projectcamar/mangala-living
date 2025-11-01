@@ -80,7 +80,18 @@ const ShippingInformation: React.FC = () => {
       {/* Hero Section */}
       <section className="shipping-hero">
         <div className="shipping-hero-image">
-          <img src={heroImage} alt="Shipping Information" loading="eager" />
+          <img 
+            src={heroImage} 
+            alt="Shipping Information - Informasi Pengiriman Furniture Industrial Mangala Living Seluruh Indonesia"
+            title="Shipping Information - Delivery Service for Industrial Furniture Across Indonesia"
+            loading="eager"
+            fetchPriority="high"
+            width="1920"
+            height="1080"
+            itemProp="image"
+            data-image-type="shipping-hero"
+            data-category="shipping"
+          />
           <div className="shipping-hero-overlay"></div>
         </div>
         <div className="shipping-hero-content">

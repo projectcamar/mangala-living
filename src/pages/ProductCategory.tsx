@@ -172,7 +172,19 @@ const ProductCategory: React.FC = () => {
                 className="category-product-card"
               >
                 <div className="category-product-image">
-                  <img src={product.image} alt={product.name} loading="lazy" />
+                  <img 
+                    src={product.image} 
+                    alt={`${product.name} - ${categoryName} Industrial Furniture Collection Mangala Living`}
+                    title={`${product.name} - ${categoryName} Premium Furniture from Mangala Living Workshop Bekasi`}
+                    loading="lazy"
+                    width="300"
+                    height="200"
+                    itemProp="image"
+                    data-image-type="category-product"
+                    data-product-name={product.name}
+                    data-product-slug={product.slug}
+                    data-category={categoryName}
+                  />
                 </div>
                 <div className="category-product-info">
                   <h3 className="category-product-name">{product.name}</h3>
