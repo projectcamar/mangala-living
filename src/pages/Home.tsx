@@ -5,7 +5,6 @@ import { useLocation } from 'react-router-dom'
 // Components
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
-import CurrencyHighlight from '../components/CurrencyHighlight'
 import Hero from '../components/Hero'
 import CatalogModal from '../components/CatalogModal'
 import CategoriesSection from '../components/CategoriesSection'
@@ -305,7 +304,6 @@ const Home: React.FC = () => {
       </Helmet>
       <AnnouncementBar isIndonesian={isIndonesian} />
       <Header isIndonesian={isIndonesian} />
-      <CurrencyHighlight isIndonesian={isIndonesian} />
       <Hero isIndonesian={isIndonesian} />
       
       

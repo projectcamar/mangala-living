@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async'
 import { ChevronDown } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
-import CurrencyHighlight from '../components/CurrencyHighlight'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import CategoryAIContent from '../components/CategoryAIContent'
@@ -12,6 +11,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORIES } from '../data/categories'
 import { generateMerchantStructuredData } from '../utils/structuredData'
 import { getProductImageUrl } from '../utils/seo'
+import { convertIDRToUSD } from '../utils/currencyConverter'
 import './ProductCategory.css'
 import './Shop.css'
 
@@ -25,6 +25,7 @@ const Shop: React.FC = () => {
   const [priceRange, setPriceRange] = useState([0, 60000000])
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const [isIndonesian, setIsIndonesian] = useState(false)
+  const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
   const location = useLocation()
 
   useEffect(() => {
@@ -46,6 +47,18 @@ const Shop: React.FC = () => {
       }
     }
   }, [location.pathname])
+
+  useEffect(() => {
+    const convertPrices = async () => {
+      const prices: { [key: number]: string } = {}
+      for (const product of ALL_PRODUCTS) {
+        const usdPrice = await convertIDRToUSD(product.price)
+        prices[product.id] = usdPrice
+      }
+      setUsdPrices(prices)
+    }
+    convertPrices()
+  }, [])
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategories(prev =>
@@ -269,7 +282,6 @@ const Shop: React.FC = () => {
       </Helmet>
       
       <Header isIndonesian={isIndonesian} />
-      <CurrencyHighlight isIndonesian={isIndonesian} />
       
       <main className="category-main">
         <div className="container">
@@ -391,7 +403,33 @@ const Shop: React.FC = () => {
                     <div className="category-product-info">
                       <h3 className="category-product-name">{product.name}</h3>
                       <p className="category-product-cats">{product.categories.join(', ')}</p>
-                      <p className="category-product-price">{product.price}</p>
+                      {usdPrices[product.id] ? (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                          <p 
+                            className="category-product-price"
+                            style={{ 
+                              margin: 0,
+                              fontSize: isIndonesian ? '0.875rem' : '0.75rem',
+                              fontWeight: isIndonesian ? 600 : 400,
+                              color: isIndonesian ? '#333' : '#999'
+                            }}
+                          >
+                            {product.price}
+                          </p>
+                          <p 
+                            style={{ 
+                              margin: 0,
+                              fontSize: isIndonesian ? '0.75rem' : '0.875rem',
+                              fontWeight: isIndonesian ? 400 : 600,
+                              color: isIndonesian ? '#999' : '#333'
+                            }}
+                          >
+                            {usdPrices[product.id]}
+                          </p>
+                        </div>
+                      ) : (
+                        <p className="category-product-price">{product.price}</p>
+                      )}
                     </div>
                   </Link>
                 ))}
