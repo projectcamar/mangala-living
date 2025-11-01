@@ -8,6 +8,7 @@ import './App.css'
 
 // Critical components loaded immediately - NO LAZY LOADING for Home
 import Home from './pages/Home'
+import NotFound from './pages/NotFound'
 import WhatsAppButton from './components/WhatsAppButton'
 import ScrollToTop from './components/ScrollToTop'
 
@@ -220,6 +221,9 @@ function App() {
             </Suspense>
           } />
           */}
+          
+          {/* 404 - Catch all unmatched routes */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <WhatsAppButton />
         <Analytics />
