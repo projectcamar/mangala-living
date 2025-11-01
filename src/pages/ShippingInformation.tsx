@@ -185,11 +185,11 @@ const ShippingInformation: React.FC = () => {
           <div className="shipping-container-content">
             {isIndonesian ? (
               <p className="shipping-container-description">
-                Volume pengiriman kami menggunakan kontainer 20' (dua puluh kaki) ? 40' (empat puluh kaki) ? 40'HC (empat puluh kaki high cube).
+                Volume pengiriman kami menggunakan kontainer 20' (dua puluh kaki) & 40' (empat puluh kaki) & 40'HC (empat puluh kaki high cube).
               </p>
             ) : (
               <p className="shipping-container-description">
-                Our shipping volumes are by 20' (twenty foot) ? 40' (forty foot) ? 40'HC (forty foot high cube) containers.
+                Our shipping volumes are by 20' (twenty foot) & 40' (forty foot) & 40'HC (forty foot high cube) containers.
               </p>
             )}
           </div>

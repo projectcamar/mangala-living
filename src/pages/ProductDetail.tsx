@@ -417,10 +417,10 @@ const ProductDetail: React.FC = () => {
       <AnnouncementBar />
       <Helmet>
         <title>{product.name === 'Hollowline Display Rack' 
-          ? 'Hollowline Display Rack ? Harga Murah Rp4.5 Juta ? Call Mangala +62 852 1207 8467'
+          ? 'Hollowline Display Rack • Harga Murah Rp4.5 Juta • Call Mangala +62 852 1207 8467'
           : `${product.name} - Mangala Living`}</title>
         <meta name="description" content={product.name === 'Hollowline Display Rack'
-          ? 'Hollowline Display Rack Industrial ? Display Shelf Rack Modern ? Harga Rp4.500.000 ? Workshop Bekasi ? Garansi Kualitas ? Call Mangala +62 852 1207 8467'
+          ? 'Hollowline Display Rack Industrial • Display Shelf Rack Modern • Harga Rp4.500.000 • Workshop Bekasi • Garansi Kualitas • Call Mangala +62 852 1207 8467'
           : `${product.name} - ${product.details}`} />
         <meta name="keywords" content={
           product.name === 'Hollowline Display Rack'
@@ -492,7 +492,7 @@ const ProductDetail: React.FC = () => {
             {/* Product Info */}
             <div className="product-info-section">
               <h1 className="product-detail-title">{product.name}</h1>
-              <p className="product-detail-categories">{product.categories.join(' ? ')}</p>
+              <p className="product-detail-categories">{product.categories.join(' & ')}</p>
               <p className="product-detail-price">{product.price}</p>
               <p className="product-price-note">*Price may vary based on customization</p>
 

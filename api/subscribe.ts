@@ -116,7 +116,7 @@ export default async function handler(
                   <!-- Footer -->
                   <tr>
                     <td style="background-color: #f8f9fa; padding: 25px 30px; text-align: center; border-top: 1px solid #e8e8e8;">
-                      <p style="margin: 0; color: #666; font-size: 12px;">? ${new Date().getFullYear()} Mangala Living. All rights reserved.</p>
+                      <p style="margin: 0; color: #666; font-size: 12px;">© ${new Date().getFullYear()} Mangala Living. All rights reserved.</p>
                       <p style="margin: 8px 0 0; color: #999; font-size: 11px;">Industrial Furniture | Custom Made | Jakarta & Bekasi</p>
                     </td>
                   </tr>
@@ -207,7 +207,7 @@ export default async function handler(
                   <!-- Footer -->
                   <tr>
                     <td style="background-color: #f8f9fa; padding: 25px 30px; text-align: center; border-top: 1px solid #e8e8e8;">
-                      <p style="margin: 0; color: #666; font-size: 12px;">? ${new Date().getFullYear()} Mangala Living. All rights reserved.</p>
+                      <p style="margin: 0; color: #666; font-size: 12px;">© ${new Date().getFullYear()} Mangala Living. All rights reserved.</p>
                       <p style="margin: 8px 0 0; color: #999; font-size: 11px;">Industrial Furniture | Custom Made | Jakarta & Bekasi</p>
                     </td>
                   </tr>
