@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
@@ -9,6 +9,7 @@ import ProductDetailAIContent from '../components/ProductDetailAIContent'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateCanonicalUrl, generateHreflangTags, getProductImageUrl } from '../utils/seo'
 import { sendBackgroundEmail } from '../utils/emailHelpers'
+import { detectUserCountry, isEnglishSpeakingCountry, convertIDRToUSD } from '../utils/currencyConverter'
 import './ProductDetail.css'
 
 interface ProductDetail {
@@ -227,14 +228,164 @@ const getRelatedProducts = (currentSlug: string) => {
 
 const ProductDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
+  const location = useLocation()
   const product = products[slug || '']
   
   const [selectedImage, setSelectedImage] = useState(0)
+  const [isIndonesian, setIsIndonesian] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
+  const [isEnglishCountry, setIsEnglishCountry] = useState(false)
+  const [usdPrice, setUsdPrice] = useState<string | null>(null)
+  const [showUsdTooltip, setShowUsdTooltip] = useState(false)
+  const [showUsdPrice, setShowUsdPrice] = useState(false)
+
+  // Language and country detection
+  useEffect(() => {
+    const detectLanguage = async () => {
+      // 1) Check query parameter ?lang=
+      const searchParams = new URLSearchParams(location.search)
+      const lang = searchParams.get('lang')
+      if (lang === 'id' || lang === 'en') {
+        setIsIndonesian(lang === 'id')
+        setIsLoading(false)
+        return
+      }
+
+      // 2) Check URL for language prefix
+      const path = location.pathname
+      if (path.startsWith('/id')) {
+        setIsIndonesian(true)
+        setIsLoading(false)
+        return
+      }
+      if (path.startsWith('/eng')) {
+        setIsIndonesian(false)
+        setIsLoading(false)
+        return
+      }
+
+      // 3) Detect from IP
+      try {
+        const countryCode = await detectUserCountry()
+        const isEnglish = isEnglishSpeakingCountry(countryCode)
+        setIsEnglishCountry(isEnglish)
+        
+        if (countryCode === 'ID') {
+          setIsIndonesian(true)
+        } else {
+          setIsIndonesian(false)
+        }
+      } catch (error) {
+        console.log('IP detection failed, checking browser language')
+        // Fallback: check browser language
+        const browserLang = navigator.language || navigator.languages?.[0]
+        if (browserLang?.startsWith('id')) {
+          setIsIndonesian(true)
+        } else {
+          setIsIndonesian(false)
+        }
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
+    detectLanguage()
+  }, [location.pathname, location.search])
+
+  // Convert price to USD if English-speaking country
+  useEffect(() => {
+    const convertPrice = async () => {
+      if (isEnglishCountry && product) {
+        const converted = await convertIDRToUSD(product.price)
+        setUsdPrice(converted)
+      }
+    }
+    convertPrice()
+  }, [isEnglishCountry, product])
 
   // Scroll to top when product changes
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [slug])
+
+  // Translations
+  const translations = {
+    priceNote: isIndonesian 
+      ? '*Harga dapat bervariasi berdasarkan kustomisasi'
+      : '*Price may vary based on customization',
+    orderNow: isIndonesian 
+      ? 'PESAN SEKARANG'
+      : 'ORDER NOW',
+    productDetails: isIndonesian 
+      ? 'Detail Produk'
+      : 'Product Details',
+    about: isIndonesian 
+      ? 'Tentang'
+      : 'About',
+    youMightBeInterested: isIndonesian 
+      ? 'Anda Mungkin Tertarik'
+      : 'You Might be Interested',
+    clickToConvertUsd: isIndonesian
+      ? 'Klik untuk konversi ke USD'
+      : 'Click to convert to USD'
+  }
+
+  // Translate product details based on language
+  const translateProductDetails = (details: string): string => {
+    if (isIndonesian) {
+      return details
+        .replace(/Welded Steel Construction/g, 'Konstruksi Baja Las')
+        .replace(/Ergonomic Design/g, 'Desain Ergonomis')
+        .replace(/Weather Resistant Finish/g, 'Finishing Tahan Cuaca')
+        .replace(/Industrial Steel Frame/g, 'Rangka Baja Industrial')
+        .replace(/Powder Coated Finish/g, 'Finishing Powder Coating')
+        .replace(/Solid Wood\/Metal Top/g, 'Top Kayu Solid\/Metal')
+        .replace(/High-Grade Steel Pipe/g, 'Pipa Baja Kualitas Tinggi')
+        .replace(/Footrest Support/g, 'Penopang Sandaran Kaki')
+        .replace(/Commercial Grade/g, 'Kualitas Komersial')
+        .replace(/Heavy Duty Construction/g, 'Konstruksi Heavy Duty')
+        .replace(/Multiple Shelves\/Compartments/g, 'Beberapa Rak\/Kompartemen')
+        .replace(/Easy Assembly/g, 'Mudah Dipasang')
+        .replace(/Premium Steel Construction/g, 'Konstruksi Baja Premium')
+        .replace(/Powder Coated Black Finish/g, 'Finishing Powder Coating Hitam')
+        .replace(/Industrial Design/g, 'Desain Industrial')
+        .replace(/Built to Last/g, 'Dibuat untuk Tahan Lama')
+    }
+    return details
+  }
+
+  // Loading state
+  if (isLoading) {
+    return (
+      <div className="product-detail-page">
+        <AnnouncementBar />
+        <Header />
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          alignItems: 'center', 
+          height: '50vh',
+          background: '#f8f9fa'
+        }}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              border: '4px solid #f3f3f3',
+              borderTop: '4px solid #8B7355',
+              borderRadius: '50%',
+              width: '40px',
+              height: '40px',
+              animation: 'spin 1s linear infinite',
+              margin: '0 auto 20px'
+            }}></div>
+            <p style={{ color: '#666', margin: 0 }}>
+              {isIndonesian ? "Memuat..." : "Loading..."}
+            </p>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    )
+  }
 
   if (!product) {
     return (
@@ -545,8 +696,73 @@ const ProductDetail: React.FC = () => {
             <div className="product-info-section">
               <h1 className="product-detail-title">{product.name}</h1>
               <p className="product-detail-categories">{product.categories.join(' & ')}</p>
-              <p className="product-detail-price">{product.price}</p>
-              <p className="product-price-note">*Price may vary based on customization</p>
+              
+              {/* Price with USD conversion on hover */}
+              <div 
+                className="product-price-wrapper"
+                style={{ position: 'relative', display: 'inline-block' }}
+                onMouseEnter={() => {
+                  if (isEnglishCountry && usdPrice) {
+                    setShowUsdTooltip(true)
+                    setShowUsdPrice(true)
+                  }
+                }}
+                onMouseLeave={() => {
+                  setShowUsdTooltip(false)
+                  setShowUsdPrice(false)
+                }}
+                onClick={async () => {
+                  if (isEnglishCountry && usdPrice) {
+                    // Toggle between IDR and USD on click
+                    setShowUsdPrice(!showUsdPrice)
+                  }
+                }}
+              >
+                <p 
+                  className="product-detail-price"
+                  style={{ 
+                    cursor: isEnglishCountry && usdPrice ? 'pointer' : 'default',
+                    transition: 'all 0.3s ease'
+                  }}
+                >
+                  {showUsdPrice && isEnglishCountry && usdPrice ? usdPrice : product.price}
+                </p>
+                {isEnglishCountry && usdPrice && showUsdTooltip && (
+                  <div 
+                    className="usd-price-tooltip"
+                    style={{
+                      position: 'absolute',
+                      top: '-35px',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      background: '#333',
+                      color: '#fff',
+                      padding: '6px 10px',
+                      borderRadius: '4px',
+                      fontSize: '0.75rem',
+                      whiteSpace: 'nowrap',
+                      zIndex: 10,
+                      pointerEvents: 'none',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
+                    }}
+                  >
+                    {translations.clickToConvertUsd}
+                    <div style={{
+                      position: 'absolute',
+                      bottom: '-4px',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      width: 0,
+                      height: 0,
+                      borderLeft: '4px solid transparent',
+                      borderRight: '4px solid transparent',
+                      borderTop: '4px solid #333'
+                    }}></div>
+                  </div>
+                )}
+              </div>
+              
+              <p className="product-price-note">{translations.priceNote}</p>
 
               <button 
                 className="order-now-btn"
@@ -560,7 +776,8 @@ const ProductDetail: React.FC = () => {
                     productUrl: window.location.href,
                   })
 
-                  const whatsappMessage = `Halo Mangala Living,
+                  const whatsappMessage = isIndonesian 
+                    ? `Halo Mangala Living,
 
 Saya tertarik dengan produk:
 *${product.name}*
@@ -573,24 +790,37 @@ Link Produk: ${window.location.href}
 Mohon informasi lebih lanjut dan cara pemesanannya.
 
 Terima kasih!`
+                    : `Hello Mangala Living,
+
+I'm interested in the product:
+*${product.name}*
+
+Category: ${product.categories.join(', ')}
+Price: ${product.price}
+
+Product Link: ${window.location.href}
+
+Please provide more information and how to order.
+
+Thank you!`
                   
                   const whatsappUrl = `https://wa.me/6285212078467?text=${encodeURIComponent(whatsappMessage)}`
                   window.location.href = whatsappUrl
                 }}
               >
-                ORDER NOW
+                {translations.orderNow}
               </button>
 
               <div className="product-details-box">
-                <h3>Product Details</h3>
-                <p>{product.details}</p>
+                <h3>{translations.productDetails}</h3>
+                <p>{translateProductDetails(product.details)}</p>
               </div>
             </div>
           </div>
 
           {/* About Product */}
           <div className="about-product-section">
-            <h2>About {product.name}</h2>
+            <h2>{translations.about} {product.name}</h2>
             <div className="about-product-content">
               {product.description.split('\n\n').map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
@@ -600,7 +830,7 @@ Terima kasih!`
 
           {/* Related Products */}
           <div className="related-products-section">
-            <h2>You Might be Interested</h2>
+            <h2>{translations.youMightBeInterested}</h2>
             <div className="related-products-grid">
               {relatedProducts.map((relatedProduct) => (
                 <Link
