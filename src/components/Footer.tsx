@@ -129,6 +129,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
                         <li><Link to="/custom-order" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{isIndonesian ? "Custom Order" : "Custom Order"}</Link></li>
                         <li><Link to="/partnership" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{isIndonesian ? "Kerja Sama" : "Partnership"}</Link></li>
                         <li><Link to="/terms-of-service" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{isIndonesian ? "Syarat & Ketentuan" : "Terms of Service"}</Link></li>
+                        <li><Link to="/image-license" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{isIndonesian ? "Lisensi Gambar" : "Image License"}</Link></li>
             </ul>
           </div>
           
@@ -185,7 +186,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
         </div>
         
         <div className="footer-bottom">
-          <p>© 2025 Mangala Living. All rights reserved.</p>
+          <p>Copyright 2025 Mangala Living. All rights reserved.</p>
         </div>
       </div>
     </footer>
