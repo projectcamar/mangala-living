@@ -28,6 +28,16 @@ const formatDateTime = (date) => {
   return date.toISOString()
 }
 
+const escapeXml = (str) => {
+  if (!str) return ''
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;')
+}
+
 const clampToPastDate = (dateString) => {
   const parsed = new Date(dateString)
   const now = new Date()
@@ -55,8 +65,8 @@ const parseBlogPosts = (source) => {
     posts.push({
       id: parseInt(id),
       slug,
-      title: title.replace(/'/g, '&apos;'),
-      image,
+      title: escapeXml(title),
+      image: escapeXml(image),
       loc: `${BASE_URL}/blog/${slug}`,
       lastmod: clampToPastDate(dateString),
       changefreq: 'monthly',
@@ -77,8 +87,8 @@ const parseProducts = (source) => {
     products.push({
       id: parseInt(id),
       slug,
-      name: name.replace(/'/g, '&apos;'),
-      image: `${BASE_URL}/src/assets/${imageFilename}`,
+      name: escapeXml(name),
+      image: escapeXml(`${BASE_URL}/src/assets/${imageFilename}`),
       loc: `${BASE_URL}/product/${slug}`,
       changefreq: 'monthly',
       priority: 0.6
@@ -95,7 +105,7 @@ const parseCategorySlugs = (source) => {
     const [, key, value] = match
     categories.push({
       slug: key,
-      name: value.replace(/'/g, '&apos;')
+      name: escapeXml(value)
     })
   }
   return categories
@@ -189,7 +199,7 @@ const generateSitemapIndex = (sitemaps) => {
   const entries = sitemaps.map((sitemap) => {
     return [
       '  <sitemap>',
-      `    <loc>${sitemap.loc}</loc>`,
+      `    <loc>${escapeXml(sitemap.loc)}</loc>`,
       `    <lastmod>${formatDateTime(sitemap.lastmod)}</lastmod>`,
       '  </sitemap>'
     ].join('\n')
@@ -207,7 +217,7 @@ const generatePostSitemap = (posts) => {
   const entries = posts.map((post) => {
     const parts = [
       '  <url>',
-      `    <loc>${post.loc}</loc>`,
+      `    <loc>${escapeXml(post.loc)}</loc>`,
       `    <lastmod>${formatDate(post.lastmod)}</lastmod>`,
       `    <changefreq>${post.changefreq}</changefreq>`,
       `    <priority>${post.priority.toFixed(2)}</priority>`
@@ -226,7 +236,7 @@ const generatePostSitemap = (posts) => {
     const alternates = buildLanguageAlternates(post.loc, post.alternates)
     alternates.forEach((alternate) => {
       if (alternate?.href && alternate?.hrefLang) {
-        parts.push(`    <xhtml:link rel="alternate" hreflang="${alternate.hrefLang}" href="${alternate.href}" />`)
+        parts.push(`    <xhtml:link rel="alternate" hreflang="${escapeXml(alternate.hrefLang)}" href="${escapeXml(alternate.href)}" />`)
       }
     })
 
@@ -246,7 +256,7 @@ const generatePageSitemap = (pages) => {
   const entries = pages.map((page) => {
     const parts = [
       '  <url>',
-      `    <loc>${page.loc}</loc>`,
+      `    <loc>${escapeXml(page.loc)}</loc>`,
       `    <lastmod>${formatDate(page.lastmod)}</lastmod>`,
       `    <changefreq>${page.changefreq}</changefreq>`,
       `    <priority>${page.priority.toFixed(2)}</priority>`
@@ -256,7 +266,7 @@ const generatePageSitemap = (pages) => {
     const alternates = buildLanguageAlternates(page.loc, page.alternates)
     alternates.forEach((alternate) => {
       if (alternate?.href && alternate?.hrefLang) {
-        parts.push(`    <xhtml:link rel="alternate" hreflang="${alternate.hrefLang}" href="${alternate.href}" />`)
+        parts.push(`    <xhtml:link rel="alternate" hreflang="${escapeXml(alternate.hrefLang)}" href="${escapeXml(alternate.href)}" />`)
       }
     })
 
@@ -276,7 +286,7 @@ const generateCategorySitemap = (categories) => {
   const entries = categories.map((category) => {
     const parts = [
       '  <url>',
-      `    <loc>${category.loc}</loc>`,
+      `    <loc>${escapeXml(category.loc)}</loc>`,
       `    <lastmod>${formatDate(category.lastmod)}</lastmod>`,
       `    <changefreq>${category.changefreq}</changefreq>`,
       `    <priority>${category.priority.toFixed(2)}</priority>`
@@ -286,7 +296,7 @@ const generateCategorySitemap = (categories) => {
     const alternates = buildLanguageAlternates(category.loc, category.alternates)
     alternates.forEach((alternate) => {
       if (alternate?.href && alternate?.hrefLang) {
-        parts.push(`    <xhtml:link rel="alternate" hreflang="${alternate.hrefLang}" href="${alternate.href}" />`)
+        parts.push(`    <xhtml:link rel="alternate" hreflang="${escapeXml(alternate.hrefLang)}" href="${escapeXml(alternate.href)}" />`)
       }
     })
 
@@ -311,7 +321,7 @@ const generateAttachmentSitemap = (products, posts) => {
     if (product.image) {
       entries.push([
         '  <url>',
-        `    <loc>${product.loc}</loc>`,
+        `    <loc>${escapeXml(product.loc)}</loc>`,
         `    <lastmod>${formatDate(now)}</lastmod>`,
         '    <changefreq>monthly</changefreq>',
         '    <priority>0.50</priority>',
@@ -330,7 +340,7 @@ const generateAttachmentSitemap = (products, posts) => {
     if (post.image) {
       entries.push([
         '  <url>',
-        `    <loc>${post.loc}</loc>`,
+        `    <loc>${escapeXml(post.loc)}</loc>`,
         `    <lastmod>${formatDate(post.lastmod)}</lastmod>`,
         '    <changefreq>monthly</changefreq>',
         '    <priority>0.50</priority>',
