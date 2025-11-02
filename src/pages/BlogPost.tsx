@@ -6,17 +6,32 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import ServiceAreasSection from '../components/ServiceAreasSection'
+import AuthorCard from '../components/AuthorCard'
 import { getPostBySlug, BLOG_POSTS } from '../data/blog'
 import { getBlogPostContent } from '../data/blogContent'
 import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structuredData'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import './BlogPost.css'
 
+const AUTHOR_DETAILS: Record<string, { title?: string; experience?: string[]; linkedIn?: string }> = {
+  'Helmi Ramdan': {
+    title: 'Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta',
+    experience: [
+      'Infrastructure Engineer at Damai Putra Group (3+ tahun)',
+      'Design Engineer & Architectural Drafter (5+ tahun pengalaman)',
+      'Alumni Universitas Diponegoro',
+      'Spesialis Commercial Space Design & Construction'
+    ],
+    linkedIn: 'https://www.linkedin.com/in/helmi-ramdan-067912118/'
+  }
+}
+
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
   const location = useLocation()
   const post = slug ? getPostBySlug(slug) : undefined
   const content = slug ? getBlogPostContent(slug) : undefined
+  const authorDetails = post?.author ? AUTHOR_DETAILS[post.author] : undefined
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -232,6 +247,15 @@ const BlogPost: React.FC = () => {
                   )}
                 </div>
               ))}
+
+              {post.author && authorDetails && (
+                <AuthorCard
+                  name={post.author}
+                  title={authorDetails.title || ''}
+                  experience={authorDetails.experience || []}
+                  linkedIn={authorDetails.linkedIn}
+                />
+              )}
 
               {/* CTA Section */}
               <div className="blog-post-cta">

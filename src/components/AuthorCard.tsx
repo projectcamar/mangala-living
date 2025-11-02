@@ -3,14 +3,14 @@ import './AuthorCard.css'
 
 interface AuthorCardProps {
   name: string
-  title: string
-  experience: string[]
+  title?: string
+  experience?: string[]
   linkedIn?: string
 }
 
-const AuthorCard: React.FC<AuthorCardProps> = ({ name, title, experience, linkedIn }) => {
+const AuthorCard: React.FC<AuthorCardProps> = ({ name, title, experience = [], linkedIn }) => {
   return (
-    <div className="author-card">
+    <section className="author-card" aria-label={`Profil penulis ${name}`}>
       <div className="author-card-header">
         <div className="author-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -20,19 +20,23 @@ const AuthorCard: React.FC<AuthorCardProps> = ({ name, title, experience, linked
         </div>
         <div className="author-info">
           <h4 className="author-name">Oleh: {name}</h4>
-          <p className="author-title">{title}</p>
+          {title && <p className="author-title">{title}</p>}
         </div>
       </div>
-      <div className="author-experience">
-        {experience.map((exp, index) => (
-          <span key={index} className="experience-item">{exp}</span>
-        ))}
-      </div>
+
+      {experience.length > 0 && (
+        <ul className="author-credentials">
+          {experience.map((exp, index) => (
+            <li key={index} className="credentials-item">{exp}</li>
+          ))}
+        </ul>
+      )}
+
       {linkedIn && (
-        <a 
-          href={linkedIn} 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href={linkedIn}
+          target="_blank"
+          rel="noopener noreferrer"
           className="author-linkedin"
           aria-label={`LinkedIn profile of ${name}`}
         >
@@ -42,7 +46,7 @@ const AuthorCard: React.FC<AuthorCardProps> = ({ name, title, experience, linked
           LinkedIn Profile
         </a>
       )}
-    </div>
+    </section>
   )
 }
 
