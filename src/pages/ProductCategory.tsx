@@ -7,7 +7,6 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import CategoryAIContent from '../components/CategoryAIContent'
-import CurrencyHighlight from '../components/CurrencyHighlight'
 import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORY_MAP } from '../data/categories'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
@@ -213,7 +212,6 @@ const ProductCategory: React.FC = () => {
       </Helmet>
       
       <Header isIndonesian={isIndonesian} />
-      <CurrencyHighlight isIndonesian={isIndonesian} />
       
       <main className="category-main">
         <div className="container">
