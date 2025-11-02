@@ -238,6 +238,7 @@ const ProductDetail: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(true)
   const [isLoading, setIsLoading] = useState(true)
   const [usdPrice, setUsdPrice] = useState<string | null>(null)
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false)
 
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
@@ -657,7 +658,7 @@ const ProductDetail: React.FC = () => {
                   </button>
                 ))}
               </div>
-              <div className="gallery-main">
+              <div className="gallery-main" onClick={() => setIsImageModalOpen(true)} style={{ cursor: 'pointer' }}>
                 <img 
                   src={product.images[selectedImage]} 
                   alt={getProductImageAlt(product.slug, isIndonesian)}
@@ -837,6 +838,28 @@ Thank you!`
           />
         </div>
       </main>
+
+      {/* Image Modal Popup */}
+      {isImageModalOpen && (
+        <div className="image-modal-overlay" onClick={() => setIsImageModalOpen(false)}>
+          <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button 
+              className="image-modal-close" 
+              onClick={() => setIsImageModalOpen(false)}
+              aria-label="Close image"
+            >
+              ?
+            </button>
+            <img 
+              src={product.images[selectedImage]} 
+              alt={getProductImageAlt(product.slug, isIndonesian)}
+              title={getProductImageCaption(product.slug, isIndonesian)}
+              className={selectedImage === 1 || selectedImage === 3 ? 'flipped' : ''}
+            />
+            <div className="image-modal-title">{translatedProductName}</div>
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>
