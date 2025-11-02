@@ -74,26 +74,26 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
                 <p className="product-category-full">{product.category}</p>
                 {usdPrices[product.id] ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                    <p 
+                    <p
                       className="product-price-full"
-                      style={{ 
+                      style={{
                         margin: 0,
-                        fontSize: isIndonesian ? '0.875rem' : '0.75rem',
-                        fontWeight: isIndonesian ? 600 : 400,
-                        color: isIndonesian ? '#333' : '#999'
+                        fontSize: '0.875rem',
+                        fontWeight: 600,
+                        color: '#333'
                       }}
                     >
-                      {product.price}
+                      {isIndonesian ? product.price : usdPrices[product.id]}
                     </p>
-                    <p 
-                      style={{ 
+                    <p
+                      style={{
                         margin: 0,
-                        fontSize: isIndonesian ? '0.75rem' : '0.875rem',
-                        fontWeight: isIndonesian ? 400 : 600,
-                        color: isIndonesian ? '#999' : '#333'
+                        fontSize: '0.75rem',
+                        fontWeight: 400,
+                        color: '#999'
                       }}
                     >
-                      {usdPrices[product.id]}
+                      {isIndonesian ? usdPrices[product.id] : product.price}
                     </p>
                   </div>
                 ) : (
