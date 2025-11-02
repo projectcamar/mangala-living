@@ -67,7 +67,16 @@ const Shop: React.FC = () => {
 
   const handlePriceChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
     const newRange = [...priceRange]
-    newRange[index] = parseInt(e.target.value)
+    const newValue = parseInt(e.target.value)
+    
+    if (index === 0) {
+      // Min slider - ensure it doesn't exceed max
+      newRange[0] = Math.min(newValue, priceRange[1])
+    } else {
+      // Max slider - ensure it doesn't go below min
+      newRange[1] = Math.max(newValue, priceRange[0])
+    }
+    
     setPriceRange(newRange as [number, number])
     setCurrentPage(1)
   }
@@ -329,24 +338,26 @@ const Shop: React.FC = () => {
               <div className="filter-section">
                 <h3 className="filter-title">Price</h3>
                 <div className="price-range">
-                  <input
-                    type="range"
-                    min="0"
-                    max="60000000"
-                    step="100000"
-                    value={priceRange[0]}
-                    onChange={(e) => handlePriceChange(e, 0)}
-                    className="price-slider"
-                  />
-                  <input
-                    type="range"
-                    min="0"
-                    max="60000000"
-                    step="100000"
-                    value={priceRange[1]}
-                    onChange={(e) => handlePriceChange(e, 1)}
-                    className="price-slider"
-                  />
+                  <div className="dual-range-slider">
+                    <input
+                      type="range"
+                      min="0"
+                      max="60000000"
+                      step="100000"
+                      value={priceRange[0]}
+                      onChange={(e) => handlePriceChange(e, 0)}
+                      className="price-slider price-slider-min"
+                    />
+                    <input
+                      type="range"
+                      min="0"
+                      max="60000000"
+                      step="100000"
+                      value={priceRange[1]}
+                      onChange={(e) => handlePriceChange(e, 1)}
+                      className="price-slider price-slider-max"
+                    />
+                  </div>
                   <div className="price-labels">
                     <span>Rp{priceRange[0].toLocaleString('id-ID')}</span>
                     <span>Rp{priceRange[1].toLocaleString('id-ID')}</span>
