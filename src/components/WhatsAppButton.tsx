@@ -14,7 +14,6 @@ interface Message {
 interface UserInfo {
   name: string
   email: string
-  phone: string
   isCompleted: boolean
 }
 
@@ -35,10 +34,10 @@ const WhatsAppButton: React.FC = () => {
   const [userInfo, setUserInfo] = useState<UserInfo>({
     name: '',
     email: '',
-    phone: '',
     isCompleted: false
   })
-  const [conversationStage, setConversationStage] = useState<'greeting' | 'collecting_info' | 'assisting'>('greeting')
+  const [firstMessage, setFirstMessage] = useState('')
+  const [conversationStage, setConversationStage] = useState<'greeting' | 'collecting_info' | 'assisting'>('collecting_info')
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
   const scrollToBottom = () => {
@@ -52,6 +51,13 @@ const WhatsAppButton: React.FC = () => {
   // Language detection effect
   useEffect(() => {
     const detectLanguage = async () => {
+      const now = new Date()
+      const timeString = now.toLocaleTimeString('en-US', { 
+        hour: 'numeric', 
+        minute: '2-digit',
+        hour12: true 
+      })
+      
       try {
         // Try to get location from IP
         const response = await fetch('https://ipapi.co/json/')
@@ -62,7 +68,14 @@ const WhatsAppButton: React.FC = () => {
           // Update initial message to Indonesian
           setMessages([{
             id: '1',
-            text: 'Halo! Bagaimana saya bisa membantu kebutuhan furniture Anda di Mangala Living?',
+            text: `${timeString}\n\nHai ??! Selamat datang di Mangala Living. Beri tahu saya jika Anda memiliki pertanyaan.\n\nJangan ragu untuk whatsapp di [+62 852 1207 8467](https://wa.me/6285212078467)`,
+            isUser: false,
+            timestamp: new Date()
+          }])
+        } else {
+          setMessages([{
+            id: '1',
+            text: `${timeString}\n\nHi there ??! Welcome to the Mangala Living. Let me know if you have any questions.\n\nFeel free to whatsapp on [+62 852 1207 8467](https://wa.me/6285212078467)`,
             isUser: false,
             timestamp: new Date()
           }])
@@ -75,13 +88,18 @@ const WhatsAppButton: React.FC = () => {
           setIsIndonesian(true)
           setMessages([{
             id: '1',
-            text: 'Halo! Bagaimana saya bisa membantu kebutuhan furniture Anda di Mangala Living?',
+            text: `${timeString}\n\nHai ??! Selamat datang di Mangala Living. Beri tahu saya jika Anda memiliki pertanyaan.\n\nJangan ragu untuk whatsapp di [+62 852 1207 8467](https://wa.me/6285212078467)`,
+            isUser: false,
+            timestamp: new Date()
+          }])
+        } else {
+          setMessages([{
+            id: '1',
+            text: `${timeString}\n\nHi there ??! Welcome to the Mangala Living. Let me know if you have any questions.\n\nFeel free to whatsapp on [+62 852 1207 8467](https://wa.me/6285212078467)`,
             isUser: false,
             timestamp: new Date()
           }])
         }
-      } finally {
-        // Language detection completed
       }
     }
 
@@ -115,17 +133,35 @@ const WhatsAppButton: React.FC = () => {
     return getSimpleResponse()
   }
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (userInfo.name && userInfo.email && userInfo.phone) {
+    if (userInfo.name && userInfo.email) {
       setUserInfo(prev => ({ ...prev, isCompleted: true }))
       setConversationStage('assisting')
+      
+      // Send lead data to API
+      try {
+        await fetch('/api/chatbot-lead', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: userInfo.name,
+            email: userInfo.email,
+            firstMessage: firstMessage,
+            language: isIndonesian ? 'id' : 'en'
+          }),
+        })
+      } catch (error) {
+        console.error('Failed to send lead data:', error)
+      }
       
       const formMessage: Message = {
         id: Date.now().toString(),
         text: isIndonesian 
-          ? `Terima kasih, ${userInfo.name} telah mengirimkan detail Anda. Saya di sini untuk membantu Anda dengan informasi terkait furniture Mangala Living. Untuk pertanyaan yang tidak terkait dengan produk furniture kami, saya sarankan untuk mencari sumber lain. Bagaimana saya bisa membantu Anda dengan Mangala Living hari ini?`
-          : `Thank you, ${userInfo.name} for submitting your details. I am here to assist you with information related to Mangala Living furniture. For questions unrelated to our furniture products, I kindly suggest looking for other resources. How may I assist you with Mangala Living today?`,
+          ? `Terima kasih, ${userInfo.name}! Saya di sini untuk membantu Anda dengan informasi terkait furniture Mangala Living. Bagaimana saya bisa membantu Anda hari ini?`
+          : `Thank you, ${userInfo.name}! I am here to assist you with information related to Mangala Living furniture. How may I help you today?`,
         isUser: false,
         timestamp: new Date()
       }
@@ -154,6 +190,21 @@ const WhatsAppButton: React.FC = () => {
 
   const sendMessage = async () => {
     if (!inputText.trim() || isLoading) return
+
+    // If user hasn't completed info, store the first message and show form
+    if (!userInfo.isCompleted) {
+      setFirstMessage(inputText)
+      const userMessage: Message = {
+        id: Date.now().toString(),
+        text: inputText,
+        isUser: true,
+        timestamp: new Date()
+      }
+      setMessages(prev => [...prev, userMessage])
+      setInputText('')
+      // Form will show automatically since conversationStage is 'collecting_info'
+      return
+    }
 
     const userMessage: Message = {
       id: Date.now().toString(),
@@ -205,9 +256,14 @@ const WhatsAppButton: React.FC = () => {
       {isExpanded && (
         <div className="whatsapp-chat">
           <div className="chat-header">
-            <div className="chat-title">
-              <Bot size={16} />
-              <span>AI Assistant</span>
+            <div className="chat-header-content">
+              <div className="chat-title">
+                <Bot size={16} />
+                <span>Mangala Living</span>
+              </div>
+              <div className="chat-subtitle">
+                {isIndonesian ? "Kami akan membalas secepat mungkin" : "We'll reply as soon as we can"}
+              </div>
             </div>
             <button className="close-chat" onClick={handleExpand} aria-label="Close chat">
               <X size={14} />
@@ -230,14 +286,14 @@ const WhatsAppButton: React.FC = () => {
             ))}
             
             {/* Form UI for collecting info */}
-            {conversationStage === 'collecting_info' && !userInfo.isCompleted && (
+            {conversationStage === 'collecting_info' && !userInfo.isCompleted && firstMessage && (
               <div className="message ai-message">
                 <div className="message-avatar">
                   <Bot size={14} />
                 </div>
                 <div className="message-content">
                   <div className="message-text">
-                    {isIndonesian ? 'Silakan isi detail Anda untuk bantuan yang lebih baik:' : 'Please fill in your details for better assistance:'}
+                    {isIndonesian ? 'Hei, silakan tinggalkan detail Anda agar kami dapat menghubungi Anda bahkan jika Anda sudah tidak berada di situs ini.' : 'Hey there, please leave your details so we can contact you even if you are no longer on the site.'}
                   </div>
                   <form onSubmit={handleFormSubmit} className="info-form">
                     <div className="form-group">
@@ -246,7 +302,7 @@ const WhatsAppButton: React.FC = () => {
                         type="text"
                         value={userInfo.name}
                         onChange={(e) => setUserInfo(prev => ({ ...prev, name: e.target.value }))}
-                        placeholder={isIndonesian ? 'Nama lengkap Anda' : 'Your full name'}
+                        placeholder={isIndonesian ? 'Pastikan untuk menambahkan nama Anda' : 'Make sure to add your name'}
                         required
                       />
                     </div>
@@ -260,18 +316,8 @@ const WhatsAppButton: React.FC = () => {
                         required
                       />
                     </div>
-                    <div className="form-group">
-                      <label>{isIndonesian ? 'Telepon' : 'Phone'}</label>
-                      <input
-                        type="tel"
-                        value={userInfo.phone}
-                        onChange={(e) => setUserInfo(prev => ({ ...prev, phone: e.target.value }))}
-                        placeholder="+62 812 3456 7890"
-                        required
-                      />
-                    </div>
                     <button type="submit" className="submit-form-btn">
-                      {isIndonesian ? 'Kirim Detail' : 'Submit Details'}
+                      {isIndonesian ? 'Kirim' : 'Submit'}
                     </button>
                   </form>
                 </div>
@@ -302,12 +348,12 @@ const WhatsAppButton: React.FC = () => {
               onChange={(e) => setInputText(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder={isIndonesian ? "Ketik pesan Anda..." : "Type your message..."}
-              disabled={isLoading}
+              disabled={isLoading || Boolean(conversationStage === 'collecting_info' && firstMessage && !userInfo.isCompleted)}
             />
             <button 
               className="send-button" 
               onClick={sendMessage}
-              disabled={!inputText.trim() || isLoading}
+              disabled={!inputText.trim() || isLoading || Boolean(conversationStage === 'collecting_info' && firstMessage && !userInfo.isCompleted)}
               aria-label="Send message"
             >
               <Send size={14} />
