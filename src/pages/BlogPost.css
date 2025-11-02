@@ -14,6 +14,13 @@
   width: 100%;
 }
 
+/* Adjust padding-top when announcement bar is visible */
+/* Header is ~120px (from sidebar top position), Announcement bar is 36px */
+/* Total: 120px + 36px + 20px spacing = 176px */
+body:has(.announcement-bar) .blog-post-container {
+  padding-top: 176px;
+}
+
 /* Layout */
 .blog-post-layout {
   display: grid;
@@ -251,6 +258,11 @@
   height: fit-content;
 }
 
+/* Adjust sidebar top position when announcement bar is visible */
+body:has(.announcement-bar) .blog-post-sidebar {
+  top: 156px; /* Default 120px + Announcement bar 36px */
+}
+
 .sidebar-title {
   font-size: 1.5rem;
   font-weight: 400;
@@ -369,6 +381,14 @@
     position: static;
   }
 
+  /* Adjust padding when announcement bar is visible on tablet */
+  /* Header ~120px + Announcement bar 32px + spacing = 172px */
+  body:has(.announcement-bar) .blog-post-container {
+    padding-top: 172px;
+  }
+
+  /* Sidebar is static on tablet, so no adjustment needed */
+
   .sidebar-articles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -379,6 +399,12 @@
 @media (max-width: 768px) {
   .blog-post-container {
     padding: 30px 15px 60px;
+  }
+
+  /* Adjust padding when announcement bar is visible on mobile */
+  /* Header ~110px + Announcement bar 32px + spacing = 162px */
+  body:has(.announcement-bar) .blog-post-container {
+    padding-top: 162px;
   }
 
   .blog-post-title {
@@ -418,6 +444,12 @@
 @media (max-width: 480px) {
   .blog-post-title {
     font-size: 1.6rem;
+  }
+
+  /* Adjust padding when announcement bar is visible on small mobile */
+  /* Header ~100px + Announcement bar 28px + spacing = 148px */
+  body:has(.announcement-bar) .blog-post-container {
+    padding-top: 148px;
   }
 
   .blog-post-content {
