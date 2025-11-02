@@ -30,6 +30,20 @@
   margin-bottom: 30px;
 }
 
+.message-body h3,
+.about-message-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 20px 0 10px 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.message-body h3:first-child,
+.about-message-subtitle:first-child {
+  margin-top: 0;
+}
+
 .message-body p {
   font-size: 0.95rem;
   line-height: 1.7;
