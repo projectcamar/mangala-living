@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
+import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import './SearchResults.css'
 
 interface Product {
@@ -30,6 +31,10 @@ function SearchResults() {
   const location = useLocation()
   const searchParams = new URLSearchParams(location.search)
   const query = searchParams.get('q') || ''
+  const langParam = searchParams.get('lang')
+  const isIndonesian = langParam === 'id'
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
   
   const [sortBy, setSortBy] = useState('default')
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([])
@@ -63,13 +68,22 @@ function SearchResults() {
 
   return (
     <div className="search-results-page">
-      <AnnouncementBar />
-      <Helmet>
+      <AnnouncementBar isIndonesian={isIndonesian} />
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>Search: {query} - Mangala Living</title>
         <meta name="description" content={`Search results for ${query}`} />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`search-results-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
+        <meta property="og:url" content={localizedUrls.canonical} />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
       </Helmet>
 
-      <Header />
+      <Header isIndonesian={isIndonesian} />
 
       <div className="container">
         <Breadcrumb items={breadcrumbItems} />

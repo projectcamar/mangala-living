@@ -1,18 +1,26 @@
 import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { CheckCircle, Phone, Mail, MapPin, Clock, Award, Shield, Zap } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { generateLocalBusinessStructuredData, generateFAQSchema } from '../utils/structuredData'
 import { getFAQBySlug } from '../data/faq'
+import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import './LandingPage.css'
 
 // LANDING PAGE KHUSUS: Furniture Besi Custom Bekasi
 // Target Keyword: "furniture besi custom bekasi" - HIGH INTENT LOCAL KEYWORD
 
 const FurnitureBesiCustomBekasi: React.FC = () => {
+  const location = useLocation()
+  const searchParams = new URLSearchParams(location.search)
+  const langParam = searchParams.get('lang')
+  const isIndonesian = langParam !== 'en'
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -23,17 +31,24 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
 
   return (
     <div className="landing-page furniture-besi-custom-bekasi">
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>Furniture Besi Custom Bekasi - Workshop Terpercaya Harga Pabrik | Mangala Living</title>
         <meta name="description" content="Furniture Besi Custom Bekasi - Workshop Langsung Harga Pabrik - Material Premium - Finishing Powder Coating - Free Konsultasi - Garansi 1 Tahun - Melayani Jabodetabek (Hubungi 0852-1207-8467)" />
         <meta name="keywords" content="furniture besi custom bekasi, custom furniture besi bekasi, jasa furniture besi bekasi, workshop furniture bekasi, furniture custom bekasi, meja besi custom bekasi, kursi besi custom bekasi, furniture industrial bekasi, tukang furniture besi bekasi, bikin furniture besi bekasi" />
-        <link rel="canonical" href="https://mangala-living.com/furniture-besi-custom-bekasi" />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`furniture-besi-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
         
         {/* Open Graph */}
         <meta property="og:title" content="Furniture Besi Custom Bekasi - Workshop Harga Pabrik" />
         <meta property="og:description" content="Workshop furniture besi custom di Bekasi. Produksi langsung, harga pabrik, material premium, finishing powder coating. Free konsultasi & garansi 1 tahun." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mangala-living.com/furniture-besi-custom-bekasi" />
+        <meta property="og:url" content={localizedUrls.canonical} />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
         
         {/* Structured Data */}
         <script type="application/ld+json">
@@ -46,8 +61,8 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
         )}
       </Helmet>
 
-      <AnnouncementBar />
-      <Header />
+      <AnnouncementBar isIndonesian={isIndonesian} />
+      <Header isIndonesian={isIndonesian} />
 
       {/* Hero Section - Above the Fold Optimization */}
       <section className="landing-hero">

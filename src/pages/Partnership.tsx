@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import showroomImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
+import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import './Partnership.css'
 
 const Partnership: React.FC = () => {
@@ -60,10 +61,13 @@ const Partnership: React.FC = () => {
     return null
   }
 
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+
   return (
     <div className="partnership-page">
       <AnnouncementBar isIndonesian={isIndonesian} />
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{isIndonesian ? 'Partnership Program Furniture Industrial: Kontraktor, Desainer, Developer - Mangala Living' : 'Industrial Furniture Partnership Program: Contractors, Designers, Developers - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 
           ? "Bagaimana cara kerja sama dengan Mangala Living untuk project furniture? Program partnership untuk kontraktor, interior designer, property developer, hotel chain. Keuntungan partnership: Volume pricing hingga 20% discount, dedicated project manager, priority production, 3D rendering gratis, technical support on-site, invoice termin fleksibel. Pengalaman handling project hotel 100+ kamar, restoran chain 10+ outlet, mall tenant 50+ unit. Syarat partnership minimum project Rp 50 juta atau 5+ project/tahun."
@@ -71,7 +75,15 @@ const Partnership: React.FC = () => {
         <meta name="keywords" content={isIndonesian 
           ? "partnership furniture bekasi, kerja sama furniture industrial, program mitra furniture bekasi, diskon volume furniture bekasi, kontraktor furniture partner, interior designer furniture supplier, developer furniture bekasi, pengadaan furniture hotel bekasi, furniture project besar bekasi, supplier furniture kontraktor, mitra furniture restoran chain, furniture mall tenant bekasi"
           : "furniture partnership bekasi, industrial furniture collaboration, furniture contractor bekasi, interior designer furniture supplier, developer furniture partnership, hotel furniture procurement, commercial furniture supplier"} />
-        <link rel="canonical" href="https://mangala-living.com/partnership" />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`partnership-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
+        <meta property="og:url" content={localizedUrls.canonical} />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
       </Helmet>
       
       <Header isIndonesian={isIndonesian} />

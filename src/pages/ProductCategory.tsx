@@ -10,7 +10,7 @@ import CategoryAIContent from '../components/CategoryAIContent'
 import CurrencyHighlight from '../components/CurrencyHighlight'
 import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORY_MAP } from '../data/categories'
-import { generateCanonicalUrl, generateHreflangTags } from '../utils/seo'
+import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import './ProductCategory.css'
 
@@ -83,6 +83,9 @@ const ProductCategory: React.FC = () => {
     { label: categoryName, path: `/product-category/${category}` }
   ]
 
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+
   // Translations
   const translations = {
     showingResults: isIndonesian 
@@ -130,23 +133,25 @@ const ProductCategory: React.FC = () => {
   return (
     <div className="product-category-page">
       <AnnouncementBar />
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{categoryName} Industrial Bekasi - Furniture Berkualitas | Mangala Living</title>
         <meta name="description" content={`${categoryName} industrial custom dari Mangala Living Bekasi. Harga pabrik, kualitas premium, pengalaman 25+ tahun. Workshop langsung melayani Jabodetabek. ${filteredProducts.length} produk tersedia.`} />
         <meta name="keywords" content={`${categoryName.toLowerCase()}, ${categoryName.toLowerCase()} bekasi, ${categoryName.toLowerCase()} industrial, ${categoryName.toLowerCase()} custom, furniture industrial bekasi, furniture besi custom, mangala living`} />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={generateCanonicalUrl(`/product-category/${category}`)} />
-        
-        {/* Hreflang for language variants */}
-        <link rel="alternate" hrefLang="id" href={generateHreflangTags(`/product-category/${category}`).id} />
-        <link rel="alternate" hrefLang="en" href={generateHreflangTags(`/product-category/${category}`).en} />
-        <link rel="alternate" hrefLang="x-default" href={generateHreflangTags(`/product-category/${category}`).default} />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`product-category-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
         
         {/* Open Graph */}
         <meta property="og:title" content={`${categoryName} Industrial - Mangala Living Bekasi`} />
         <meta property="og:description" content={`${categoryName} industrial custom dengan harga pabrik. Workshop di Bekasi, pengalaman 25+ tahun.`} />
-        <meta property="og:url" content={`https://mangala-living.com/product-category/${category}`} />
+        <meta property="og:url" content={localizedUrls.canonical} />
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />

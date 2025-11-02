@@ -137,9 +137,40 @@ const deduplicate = (items) => {
   })
 }
 
+const buildLanguageAlternates = (loc, explicitAlternates) => {
+  if (explicitAlternates && explicitAlternates.length > 0) {
+    return explicitAlternates
+  }
+
+  try {
+    const url = new URL(loc)
+    const params = url.searchParams
+    params.delete('lang')
+
+    const buildUrl = (lang) => {
+      const cloned = new URL(loc)
+      cloned.searchParams.delete('lang')
+      if (lang) {
+        cloned.searchParams.set('lang', lang)
+      }
+      return cloned.toString()
+    }
+
+    const defaultUrl = buildUrl(null)
+    return [
+      { hrefLang: 'id-ID', href: buildUrl('id') },
+      { hrefLang: 'en', href: buildUrl('en') },
+      { hrefLang: 'x-default', href: defaultUrl }
+    ]
+  } catch (error) {
+    console.warn('[sitemap] Failed to build alternates for', loc, error.message)
+    return []
+  }
+}
+
 const generateXml = (entries) => {
   const header = '<?xml version="1.0" encoding="UTF-8"?>'
-  const urlsetOpen = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+  const urlsetOpen = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
   const urlsetClose = '</urlset>'
 
   const lines = entries.map((entry) => {
@@ -155,6 +186,13 @@ const generateXml = (entries) => {
     if (entry.priority !== undefined) {
       parts.push(`    <priority>${entry.priority.toFixed(2)}</priority>`)
     }
+
+    const alternates = buildLanguageAlternates(entry.loc, entry.alternates)
+    alternates.forEach((alternate) => {
+      if (alternate?.href && alternate?.hrefLang) {
+        parts.push(`    <xhtml:link rel="alternate" hreflang="${alternate.hrefLang}" href="${alternate.href}" />`)
+      }
+    })
 
     parts.push('  </url>')
     return parts.join('\n')
