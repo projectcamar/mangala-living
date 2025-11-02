@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { Product } from '../data/products'
+import type { Product } from '../data/products'
 import { convertIDRToUSD } from '../utils/currencyConverter'
-import { generateImageObjectSchema, generateProductImageGallerySchema } from '../utils/structuredData'
+import { generateImageObjectSchema } from '../utils/structuredData'
 import './BlogProductShowcase.css'
 
 interface BlogProductShowcaseProps {
@@ -53,7 +53,7 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
       "@type": "Product",
       "name": product.name,
       "description": `${product.name} - ${product.categories.join(', ')} Industrial Furniture berkualitas premium dari Mangala Living Workshop Bekasi. Material industrial grade, finishing powder coating tahan lama.`,
-      "image": typeof product.image === 'string' ? product.image : product.image.src || product.image,
+      "image": product.image,
       "category": product.categories.join(', '),
       "brand": {
         "@type": "Brand",
@@ -108,9 +108,8 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
 
   // Generate image schemas untuk semua produk
   const productImageSchemas = displayProducts.map(product => {
-    const imageUrl = typeof product.image === 'string' ? product.image : product.image.src || product.image
     return generateImageObjectSchema({
-      url: imageUrl,
+      url: product.image,
       alt: `${product.name} - ${product.categories.join(' ')} Industrial Furniture Mangala Living Bekasi`,
       title: `${product.name} - Premium Quality Industrial Furniture`,
       width: 350,
@@ -132,15 +131,15 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
         </script>
         
         {/* Product Schemas */}
-        {displayProducts.map((product, index) => (
+        {displayProducts.map((product) => (
           <script key={`product-schema-${product.id}`} type="application/ld+json">
             {JSON.stringify(generateProductSchema(product))}
           </script>
         ))}
         
         {/* Image Schemas */}
-        {productImageSchemas.map((imgSchema, index) => (
-          <script key={`image-schema-${index}`} type="application/ld+json">
+        {productImageSchemas.map((imgSchema, imgIndex) => (
+          <script key={`image-schema-${imgIndex}`} type="application/ld+json">
             {JSON.stringify(imgSchema)}
           </script>
         ))}
@@ -157,7 +156,6 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
 
         <div className="blog-product-showcase-grid" itemProp="itemListElement" itemScope itemType="https://schema.org/ItemList">
           {displayProducts.map((product, index) => {
-            const imageUrl = typeof product.image === 'string' ? product.image : product.image.src || product.image
             const fullAlt = `${product.name} - ${product.categories.join(' ')} Industrial Furniture Mangala Living Bekasi. Material berkualitas, finishing powder coating, harga ${product.price}.`
             const fullTitle = `${product.name} - Premium Quality Industrial Furniture dari Mangala Living Workshop Bekasi. ${product.categories.join(', ')} dengan desain modern dan durable.`
             
@@ -179,7 +177,7 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
                 >
                   <div className="blog-product-showcase-image-wrapper" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
                     <img
-                      src={imageUrl}
+                      src={product.image}
                       alt={fullAlt}
                       title={fullTitle}
                       className="blog-product-showcase-image"
@@ -198,7 +196,7 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
                     />
                     <meta itemProp="caption" content={`${product.name} - ${product.categories.join(', ')} Industrial Furniture`} />
                     <meta itemProp="description" content={`Produk ${product.name} dengan kualitas premium dari Mangala Living Workshop Bekasi`} />
-                    <meta itemProp="url" content={imageUrl} />
+                    <meta itemProp="url" content={product.image} />
                     <div className="blog-product-showcase-badge">
                       <span className="blog-product-badge-text">PRODUK KAMI</span>
                     </div>

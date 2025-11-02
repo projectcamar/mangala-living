@@ -1,4 +1,5 @@
-import { Product, ALL_PRODUCTS } from '../data/products'
+import type { Product } from '../data/products'
+import { ALL_PRODUCTS } from '../data/products'
 
 /**
  * Mapping keywords dari artikel blog ke produk yang relevan
