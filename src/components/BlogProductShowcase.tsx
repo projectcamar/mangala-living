@@ -42,8 +42,8 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
     return null
   }
 
-  // Tampilkan maksimal 6 produk dalam grid 2x3 atau 3x2
-  const displayProducts = products.slice(0, 6)
+  // Tampilkan maksimal 3 produk untuk compact view
+  const displayProducts = products.slice(0, 3)
 
   // Generate Product schema untuk setiap produk
   const generateProductSchema = (product: Product) => {
@@ -149,9 +149,6 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
         <div className="blog-product-showcase-container">
           <div className="blog-product-showcase-header">
             <h2 className="blog-product-showcase-heading" itemProp="name">{heading}</h2>
-            {description && (
-              <p className="blog-product-showcase-description" itemProp="description">{description}</p>
-            )}
           </div>
 
         <div className="blog-product-showcase-grid" itemProp="itemListElement" itemScope itemType="https://schema.org/ItemList">
@@ -252,20 +249,11 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
           <Link 
             to="/shop" 
             className="blog-product-showcase-all-products-btn"
-            title="Lihat Semua Produk Industrial Mangala Living - Meja, Kursi, Rak, Display Rack, Kitchen Cabinet"
+            title="Lihat Semua Produk Industrial Mangala Living"
             rel="nofollow"
             aria-label="Lihat semua produk furniture industrial"
           >
             {isIndonesian ? 'Lihat Semua Produk' : 'View All Products'}
-          </Link>
-          <Link 
-            to="/contact-us" 
-            className="blog-product-showcase-contact-btn"
-            title="Konsultasi Gratis dengan Tim Mangala Living - WhatsApp +62 852-1207-8467"
-            rel="nofollow"
-            aria-label="Konsultasi gratis untuk furniture industrial custom"
-          >
-            {isIndonesian ? 'Konsultasi Gratis' : 'Free Consultation'}
           </Link>
         </div>
       </div>
