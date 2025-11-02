@@ -51,13 +51,6 @@ const WhatsAppButton: React.FC = () => {
   // Language detection effect
   useEffect(() => {
     const detectLanguage = async () => {
-      const now = new Date()
-      const timeString = now.toLocaleTimeString('en-US', { 
-        hour: 'numeric', 
-        minute: '2-digit',
-        hour12: true 
-      })
-      
       try {
         // Try to get location from IP
         const response = await fetch('https://ipapi.co/json/')
@@ -68,14 +61,14 @@ const WhatsAppButton: React.FC = () => {
           // Update initial message to Indonesian
           setMessages([{
             id: '1',
-            text: `${timeString}\n\nHai ??! Selamat datang di Mangala Living. Beri tahu saya jika Anda memiliki pertanyaan.\n\nJangan ragu untuk whatsapp di [+62 852 1207 8467](https://wa.me/6285212078467)`,
+            text: `Hai ??! Selamat datang di Mangala Living. Beri tahu saya jika Anda memiliki pertanyaan.\n\nJangan ragu untuk whatsapp di [+62 852 1207 8467](https://wa.me/6285212078467)`,
             isUser: false,
             timestamp: new Date()
           }])
         } else {
           setMessages([{
             id: '1',
-            text: `${timeString}\n\nHi there ??! Welcome to the Mangala Living. Let me know if you have any questions.\n\nFeel free to whatsapp on [+62 852 1207 8467](https://wa.me/6285212078467)`,
+            text: `Hi there ??! Welcome to the Mangala Living. Let me know if you have any questions.\n\nFeel free to whatsapp on [+62 852 1207 8467](https://wa.me/6285212078467)`,
             isUser: false,
             timestamp: new Date()
           }])
@@ -88,14 +81,14 @@ const WhatsAppButton: React.FC = () => {
           setIsIndonesian(true)
           setMessages([{
             id: '1',
-            text: `${timeString}\n\nHai ??! Selamat datang di Mangala Living. Beri tahu saya jika Anda memiliki pertanyaan.\n\nJangan ragu untuk whatsapp di [+62 852 1207 8467](https://wa.me/6285212078467)`,
+            text: `Hai ??! Selamat datang di Mangala Living. Beri tahu saya jika Anda memiliki pertanyaan.\n\nJangan ragu untuk whatsapp di [+62 852 1207 8467](https://wa.me/6285212078467)`,
             isUser: false,
             timestamp: new Date()
           }])
         } else {
           setMessages([{
             id: '1',
-            text: `${timeString}\n\nHi there ??! Welcome to the Mangala Living. Let me know if you have any questions.\n\nFeel free to whatsapp on [+62 852 1207 8467](https://wa.me/6285212078467)`,
+            text: `Hi there ??! Welcome to the Mangala Living. Let me know if you have any questions.\n\nFeel free to whatsapp on [+62 852 1207 8467](https://wa.me/6285212078467)`,
             isUser: false,
             timestamp: new Date()
           }])
@@ -215,6 +208,7 @@ const WhatsAppButton: React.FC = () => {
     }
 
     setMessages(prev => [...prev, userMessage])
+    const currentMessage = inputText
     setInputText('')
     setIsLoading(true)
 
@@ -229,6 +223,25 @@ const WhatsAppButton: React.FC = () => {
       }
 
       setMessages(prev => [...prev, aiMessage])
+
+      // Send email notification with the chat message
+      try {
+        await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            firstName: userInfo.name,
+            email: userInfo.email,
+            chatMessage: currentMessage,
+            language: isIndonesian ? 'id' : 'en',
+            notificationType: 'chatbot_message'
+          }),
+        })
+      } catch (emailError) {
+        console.error('Failed to send chat message notification:', emailError)
+      }
     } catch (error) {
       console.error('Error generating response:', error)
       // Use simple response for error
