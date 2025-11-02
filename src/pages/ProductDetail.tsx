@@ -9,6 +9,7 @@ import ProductDetailAIContent from '../components/ProductDetailAIContent'
 import { ALL_PRODUCTS } from '../data/products'
 import { getProductDescription, getProductImageAlt, getProductImageCaption, getProductName } from '../data/productDescriptions'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
+import { DEFAULT_IMAGE_RIGHTS_METADATA } from '../utils/structuredData'
 import { sendBackgroundEmail } from '../utils/emailHelpers'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getCategorySlug } from '../utils/categoryHelpers'
@@ -609,18 +610,19 @@ const ProductDetail: React.FC = () => {
                 "@type": "Organization",
                 "name": "Mangala Living"
               },
-              "license": "https://mangala-living.com",
+              ...DEFAULT_IMAGE_RIGHTS_METADATA,
               "publisher": {
                 "@type": "Organization",
                 "name": "Mangala Living",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://mangala-living.com/logo.png"
+                  "url": "https://mangala-living.com/logo.png",
+                  ...DEFAULT_IMAGE_RIGHTS_METADATA
                 }
               }
             })}
           </script>
-        )        )}
+        ))}
       </Helmet>
 
       <Header isIndonesian={isIndonesian} />

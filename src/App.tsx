@@ -29,6 +29,7 @@ const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 const TermsOfService = lazy(() => import('./pages/TermsOfService'))
 const ShippingInformation = lazy(() => import('./pages/ShippingInformation'))
+const ImageLicense = lazy(() => import('./pages/ImageLicense'))
 
 // SEO Landing Pages - Keyword Celah (Anti-Marketplace Strategy)
 const FurnitureBesiCustomBekasi = lazy(() => import('./pages/FurnitureBesiCustomBekasi'))
@@ -222,6 +223,21 @@ function App() {
           <Route path="/eng/shipping-information" element={
             <Suspense fallback={<Loading />}>
               <ShippingInformation />
+            </Suspense>
+          } />
+          <Route path="/image-license" element={
+            <Suspense fallback={<Loading />}>
+              <ImageLicense />
+            </Suspense>
+          } />
+          <Route path="/id/image-license" element={
+            <Suspense fallback={<Loading />}>
+              <ImageLicense />
+            </Suspense>
+          } />
+          <Route path="/eng/image-license" element={
+            <Suspense fallback={<Loading />}>
+              <ImageLicense />
             </Suspense>
           } />
           

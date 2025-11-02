@@ -1,5 +1,18 @@
 // Structured Data utilities for Mangala Living
 
+const IMAGE_LICENSE_PAGE = "https://mangala-living.com/image-license"
+
+export const DEFAULT_IMAGE_RIGHTS_METADATA = {
+  acquireLicensePage: `${IMAGE_LICENSE_PAGE}#request-license`,
+  license: `${IMAGE_LICENSE_PAGE}#usage-terms`,
+  copyrightNotice: "Copyright 1999-2025 Mangala Living. All image rights reserved.",
+  creator: {
+    "@type": "Organization",
+    "name": "Mangala Living",
+    "url": "https://mangala-living.com"
+  }
+} as const
+
 /**
  * Generate ImageObject schema for SEO-optimized image indexing
  * This helps Google understand and index images better for image search
@@ -13,7 +26,23 @@ export const generateImageObjectSchema = (image: {
   contentUrl?: string
   description?: string
   caption?: string
+  acquireLicensePage?: string
+  license?: string
+  copyrightNotice?: string
+  creator?: {
+    "@type": string
+    name: string
+    url?: string
+  }
 }) => {
+  const rightsMetadata = {
+    ...DEFAULT_IMAGE_RIGHTS_METADATA,
+    ...(image.acquireLicensePage && { acquireLicensePage: image.acquireLicensePage }),
+    ...(image.license && { license: image.license }),
+    ...(image.copyrightNotice && { copyrightNotice: image.copyrightNotice }),
+    ...(image.creator && { creator: image.creator })
+  }
+
   return {
     "@context": "https://schema.org",
     "@type": "ImageObject",
@@ -28,13 +57,14 @@ export const generateImageObjectSchema = (image: {
       "@type": "Organization",
       "name": "Mangala Living"
     },
-    "license": "https://mangala-living.com",
+    ...rightsMetadata,
     "publisher": {
       "@type": "Organization",
       "name": "Mangala Living",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://mangala-living.com/logo.png"
+        "url": "https://mangala-living.com/logo.png",
+        ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     }
   }
@@ -64,13 +94,14 @@ export const generateProductImageGallerySchema = (images: Array<{
       "@type": "Organization",
       "name": "Mangala Living"
     },
-    "license": "https://mangala-living.com",
+    ...DEFAULT_IMAGE_RIGHTS_METADATA,
     "publisher": {
       "@type": "Organization",
       "name": "Mangala Living",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://mangala-living.com/logo.png"
+        "url": "https://mangala-living.com/logo.png",
+        ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     }
   }))
@@ -183,7 +214,8 @@ export const generateBlogPostingSchema = (post: {
       "copyrightHolder": {
         "@type": "Organization",
         "name": "Mangala Living"
-      }
+      },
+      ...DEFAULT_IMAGE_RIGHTS_METADATA
     },
     "datePublished": post.date,
     "dateModified": post.date,
@@ -193,7 +225,8 @@ export const generateBlogPostingSchema = (post: {
       "name": "Mangala Living",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://mangala-living.com/logo.png"
+        "url": "https://mangala-living.com/logo.png",
+        ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     },
     "mainEntityOfPage": {

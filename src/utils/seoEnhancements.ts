@@ -1,3 +1,5 @@
+import { DEFAULT_IMAGE_RIGHTS_METADATA } from './structuredData'
+
 // Advanced SEO Enhancement Utilities for Mangala Living
 // Optimized for Google Page 1 Ranking
 
@@ -20,13 +22,15 @@ export const generateEnhancedOrganizationSchema = () => {
       "@type": "ImageObject",
       "url": "https://mangala-living.com/logo.png",
       "width": 250,
-      "height": 60
+      "height": 60,
+      ...DEFAULT_IMAGE_RIGHTS_METADATA
     },
     "image": {
       "@type": "ImageObject",
       "url": "https://mangala-living.com/og-image.jpg",
       "width": 1200,
-      "height": 630
+      "height": 630,
+      ...DEFAULT_IMAGE_RIGHTS_METADATA
     },
     "description": "Mangala Living adalah manufacturer furniture industrial besi custom terpercaya di Bekasi sejak 1999. Spesialis furniture cafe, restoran, hotel, dan kantor dengan pengalaman 25+ tahun dan 1000+ klien puas di seluruh Indonesia.",
     "foundingDate": "1999-01-01",
@@ -219,7 +223,8 @@ export const generateWebPageSchema = (page: {
       "name": "Mangala Living",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://mangala-living.com/logo.png"
+        "url": "https://mangala-living.com/logo.png",
+        ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     },
     ...(page.datePublished && { datePublished: page.datePublished }),
@@ -229,7 +234,8 @@ export const generateWebPageSchema = (page: {
         "@type": "ImageObject",
         "url": page.image,
         "width": 1200,
-        "height": 630
+        "height": 630,
+        ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     })
   }
@@ -258,7 +264,8 @@ export const generateHowToSchema = (howto: {
       ...(step.image && {
         image: {
           "@type": "ImageObject",
-          "url": step.image
+          "url": step.image,
+          ...DEFAULT_IMAGE_RIGHTS_METADATA
         }
       })
     }))
@@ -388,7 +395,8 @@ export const generateVideoSchema = (video: {
       "name": "Mangala Living",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://mangala-living.com/logo.png"
+        "url": "https://mangala-living.com/logo.png",
+        ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     }
   }
@@ -502,7 +510,8 @@ export const generateArticleSchema = (article: {
         "@type": "ImageObject",
         "url": "https://mangala-living.com/logo.png",
         "width": 250,
-        "height": 60
+        "height": 60,
+        ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     },
     "mainEntityOfPage": {
@@ -530,8 +539,16 @@ export const generateEnhancedLocalBusinessSchema = () => {
     "@type": ["FurnitureStore", "LocalBusiness", "Store"],
     "name": "Mangala Living - Workshop Furniture Industrial Bekasi",
     "image": [
-      "https://mangala-living.com/og-image.jpg",
-      "https://mangala-living.com/assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp"
+      {
+        "@type": "ImageObject",
+        "url": "https://mangala-living.com/og-image.jpg",
+        ...DEFAULT_IMAGE_RIGHTS_METADATA
+      },
+      {
+        "@type": "ImageObject",
+        "url": "https://mangala-living.com/assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp",
+        ...DEFAULT_IMAGE_RIGHTS_METADATA
+      }
     ],
     "@id": "https://mangala-living.com",
     "url": "https://mangala-living.com",
