@@ -53,6 +53,11 @@
   }
 }
 
+.blog-product-showcase-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .blog-product-showcase-card {
   display: flex;
   flex-direction: column;
@@ -64,6 +69,7 @@
   text-decoration: none;
   color: inherit;
   position: relative;
+  height: 100%;
 }
 
 .blog-product-showcase-card:hover {
