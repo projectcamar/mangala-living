@@ -19,7 +19,6 @@ const Blog: React.FC = () => {
   const posts = getPostsByPage(currentPage, postsPerPage)
 
   const buildPageUrl = (page: number) => (page <= 1 ? '/blog' : `/blog?page=${page}`)
-  const canonicalUrl = buildPageUrl(currentPage)
   const prevUrl = currentPage > 1 ? buildPageUrl(currentPage - 1) : null
   const nextUrl = currentPage < totalPages ? buildPageUrl(currentPage + 1) : null
 
