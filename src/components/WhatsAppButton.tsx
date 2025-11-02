@@ -141,16 +141,17 @@ const WhatsAppButton: React.FC = () => {
       
       // Send lead data to API
       try {
-        await fetch('/api/chatbot-lead', {
+        await fetch('/api/subscribe', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            name: userInfo.name,
+            firstName: userInfo.name,
             email: userInfo.email,
             firstMessage: firstMessage,
-            language: isIndonesian ? 'id' : 'en'
+            language: isIndonesian ? 'id' : 'en',
+            notificationType: 'chatbot_lead'
           }),
         })
       } catch (error) {

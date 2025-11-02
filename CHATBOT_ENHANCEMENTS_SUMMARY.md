@@ -30,8 +30,9 @@ Enhanced the Mangala Living chatbot with lead generation functionality, improved
 - Form message: "Hey there, please leave your details so we can contact you even if you are no longer on the site."
 
 ### 4. **Email Integration**
-- Created new API endpoint: `/api/chatbot-lead.ts`
-- Sends lead information to `rioanggaraclub@gmail.com` using Resend
+- Uses existing API endpoint: `/api/subscribe` (no new API needed!)
+- Added new notification type: `chatbot_lead`
+- Sends lead information to `rioanggaraclub@gmail.com` using Resend (same as order tracking)
 - Email includes:
   - Lead name
   - Lead email
@@ -81,29 +82,28 @@ Language detection based on:
 
 ## Technical Implementation
 
-### New Files
-- `/api/chatbot-lead.ts` - API endpoint for lead submission
-
 ### Modified Files
 - `/workspace/src/components/WhatsAppButton.tsx` - Main chatbot component
 - `/workspace/src/components/WhatsAppButton.css` - Chatbot styling
+- `/workspace/api/subscribe.ts` - Added `chatbot_lead` notification type
 
-### Dependencies Added
-- `resend` - Email service for lead notifications
+### Dependencies
+- Uses existing `resend` package (already installed)
 
-### Environment Variables Required
-- `RESEND_API_KEY` - API key for Resend email service
+### Environment Variables
+- `RESEND_API_KEY` - Already configured for order tracking
 
 ## API Endpoint
 
-### POST /api/chatbot-lead
-**Request Body:**
+### POST /api/subscribe (existing endpoint)
+**Request Body for Chatbot Lead:**
 ```json
 {
-  "name": "John Doe",
+  "firstName": "John Doe",
   "email": "john@example.com",
   "firstMessage": "User's first message",
-  "language": "en" // or "id"
+  "language": "en",
+  "notificationType": "chatbot_lead"
 }
 ```
 
@@ -111,9 +111,14 @@ Language detection based on:
 ```json
 {
   "success": true,
-  "message": "Lead submitted successfully"
+  "message": "Subscription successful"
 }
 ```
+
+**Other notification types supported:**
+- `order_now` - Track product order clicks
+- `catalog_download` - Track catalog downloads
+- `chatbot_lead` - Track chatbot leads (NEW)
 
 ## Email Template
 Beautiful branded email template includes:
@@ -138,9 +143,9 @@ Beautiful branded email template includes:
 - [x] Responsive on mobile devices
 
 ## Next Steps
-1. Configure `RESEND_API_KEY` in Vercel environment variables
-2. Test email delivery in production
-3. Monitor lead submissions
+1. ~~Configure `RESEND_API_KEY`~~ ✅ Already configured (used for order tracking)
+2. Test chatbot flow in production
+3. Monitor lead submissions at rioanggaraclub@gmail.com
 4. Consider adding more lead tracking/analytics
 
 ## Notes
