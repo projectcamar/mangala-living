@@ -1616,6 +1616,306 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop',
     date: '2025-11-20',
     author: 'Helmi Ramdan'
+  },
+  {
+    id: 157,
+    slug: 'jasa-furniture-industrial-minimalis-murah-bekasi-berkualitas',
+    title: 'Jasa Furniture Industrial Minimalis Murah Bekasi - Berkualitas Premium',
+    category: 'Commercial Furniture',
+    excerpt: 'Jasa furniture industrial minimalis murah Bekasi dengan kualitas premium. Workshop langsung, harga pabrik, custom design untuk cafe dan resto modern. Pengalaman 25 tahun, 1000+ klien puas.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-08',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 158,
+    slug: 'jual-meja-cafe-modern-minimalis-murah-berkualitas-jakarta-bekasi',
+    title: 'Jual Meja Cafe Modern Minimalis Murah - Berkualitas Jakarta Bekasi',
+    category: 'Commercial Furniture',
+    excerpt: 'Jual meja cafe modern minimalis murah dengan kualitas terjamin. Meja makan industrial, meja bar, meja kerja untuk cafe dan resto. Harga kompetitif, workshop Bekasi langsung.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-12-09',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 159,
+    slug: 'kursi-resto-modern-minimalis-murah-berkualitas-harga-terbaik',
+    title: 'Kursi Resto Modern Minimalis Murah - Berkualitas Harga Terbaik 2025',
+    category: 'Commercial Furniture',
+    excerpt: 'Kursi resto modern minimalis murah dengan kualitas premium. Kursi bar industrial, stall chair, kursi makan untuk resto dan cafe. Material berkualitas, finishing powder coating tahan lama.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-12-10',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 160,
+    slug: 'furniture-cafe-minimalis-modern-murah-jasa-custom-berkualitas',
+    title: 'Furniture Cafe Minimalis Modern Murah - Jasa Custom Berkualitas',
+    category: 'Commercial Furniture',
+    excerpt: 'Furniture cafe minimalis modern murah dengan jasa custom berkualitas. Meja, kursi, display rack industrial untuk cafe dan resto. Custom design sesuai konsep, harga terjangkau.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-12-11',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 161,
+    slug: 'meja-resto-industrial-modern-minimalis-murah-berkualitas',
+    title: 'Meja Resto Industrial Modern Minimalis Murah - Berkualitas Premium',
+    category: 'Commercial Furniture',
+    excerpt: 'Meja resto industrial modern minimalis murah dengan kualitas premium. Meja makan, meja bar untuk resto dan cafe. Material berkualitas, finishing powder coating, harga kompetitif.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-12-12',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 162,
+    slug: 'jasa-bikin-furniture-cafe-custom-minimalis-murah-bekasi',
+    title: 'Jasa Bikin Furniture Cafe Custom Minimalis Murah Bekasi - Workshop Langsung',
+    category: 'Workshop & Production',
+    excerpt: 'Jasa bikin furniture cafe custom minimalis murah Bekasi. Workshop langsung di Bekasi, harga pabrik, custom design sesuai konsep cafe Anda. Pengalaman 25 tahun, kualitas terjamin.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-13',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 163,
+    slug: 'furniture-resto-modern-minimalis-murah-jual-berkualitas',
+    title: 'Furniture Resto Modern Minimalis Murah - Jual Berkualitas Harga Terbaik',
+    category: 'Commercial Furniture',
+    excerpt: 'Furniture resto modern minimalis murah dengan kualitas terjamin. Jual meja makan, kursi resto, bar set industrial berkualitas. Harga kompetitif, material premium, finishing tahan lama.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-12-14',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 164,
+    slug: 'display-rack-cafe-modern-minimalis-murah-berkualitas-industrial',
+    title: 'Display Rack Cafe Modern Minimalis Murah - Berkualitas Industrial',
+    category: 'Commercial Furniture',
+    excerpt: 'Display rack cafe modern minimalis murah dengan kualitas industrial premium. Rak display retail, rak gantung untuk cafe dan toko. Material besi berkualitas, desain modern.',
+    image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop',
+    date: '2025-12-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 165,
+    slug: 'bar-set-cafe-modern-minimalis-murah-jasa-custom-berkualitas',
+    title: 'Bar Set Cafe Modern Minimalis Murah - Jasa Custom Berkualitas',
+    category: 'Commercial Furniture',
+    excerpt: 'Bar set cafe modern minimalis murah dengan jasa custom berkualitas. Balcony bar table, bar stool industrial untuk cafe outdoor dan indoor. Custom design, harga terjangkau.',
+    image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
+    date: '2025-12-16',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 166,
+    slug: 'kitchen-cabinet-resto-modern-minimalis-murah-berkualitas',
+    title: 'Kitchen Cabinet Resto Modern Minimalis Murah - Berkualitas Custom',
+    category: 'Commercial Furniture',
+    excerpt: 'Kitchen cabinet resto modern minimalis murah dengan kualitas custom premium. Kabinet dapur industrial untuk resto dan cafe. Storage solution berkualitas, harga kompetitif.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-17',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 167,
+    slug: 'jual-furniture-industrial-modern-minimalis-murah-jakarta-bekasi',
+    title: 'Jual Furniture Industrial Modern Minimalis Murah Jakarta Bekasi',
+    category: 'Commercial Furniture',
+    excerpt: 'Jual furniture industrial modern minimalis murah untuk Jakarta dan Bekasi. Meja, kursi, rak display untuk cafe, resto, kantor. Workshop Bekasi, harga pabrik, kualitas premium.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-18',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 168,
+    slug: 'meja-kursi-cafe-modern-minimalis-murah-set-berkualitas',
+    title: 'Meja Kursi Cafe Modern Minimalis Murah - Set Berkualitas Harga Terbaik',
+    category: 'Commercial Furniture',
+    excerpt: 'Set meja kursi cafe modern minimalis murah dengan kualitas terjamin. Paket lengkap meja makan + kursi untuk cafe dan resto. Harga terjangkau, material berkualitas premium.',
+    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop',
+    date: '2025-12-19',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 169,
+    slug: 'jasa-furniture-resto-custom-modern-minimalis-murah',
+    title: 'Jasa Furniture Resto Custom Modern Minimalis Murah - Berkualitas',
+    category: 'Workshop & Production',
+    excerpt: 'Jasa furniture resto custom modern minimalis murah dengan kualitas premium. Custom design sesuai konsep resto Anda. Workshop Bekasi, pengalaman 25 tahun, harga kompetitif.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-12-20',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 170,
+    slug: 'outdoor-furniture-cafe-modern-minimalis-murah-berkualitas',
+    title: 'Outdoor Furniture Cafe Modern Minimalis Murah - Berkualitas Tahan Cuaca',
+    category: 'Commercial Furniture',
+    excerpt: 'Outdoor furniture cafe modern minimalis murah dengan kualitas tahan cuaca. Daybed outdoor, bar set outdoor untuk cafe. Material berkualitas, finishing powder coating outdoor-grade.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-12-21',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 171,
+    slug: 'rak-display-resto-modern-minimalis-murah-jual-berkualitas',
+    title: 'Rak Display Resto Modern Minimalis Murah - Jual Berkualitas Industrial',
+    category: 'Commercial Furniture',
+    excerpt: 'Rak display resto modern minimalis murah dengan kualitas industrial premium. Jual rak display retail, storage solution untuk resto. Material besi berkualitas, desain modern.',
+    image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop',
+    date: '2025-12-22',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 172,
+    slug: 'meja-kerja-cafe-modern-minimalis-murah-berkualitas-multifungsi',
+    title: 'Meja Kerja Cafe Modern Minimalis Murah - Berkualitas Multifungsi',
+    category: 'Commercial Furniture',
+    excerpt: 'Meja kerja cafe modern minimalis murah dengan kualitas multifungsi premium. Meja belajar custom, meja kerja untuk co-working space cafe. Desain modern, harga terjangkau.',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop',
+    date: '2025-12-23',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 173,
+    slug: 'jasa-buat-furniture-cafe-custom-modern-minimalis-murah',
+    title: 'Jasa Buat Furniture Cafe Custom Modern Minimalis Murah Bekasi',
+    category: 'Workshop & Production',
+    excerpt: 'Jasa buat furniture cafe custom modern minimalis murah di Bekasi. Workshop langsung, custom design sesuai konsep cafe. Harga pabrik, kualitas premium, pengalaman 25 tahun.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-12-24',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 174,
+    slug: 'kursi-bar-cafe-modern-minimalis-murah-jual-berkualitas',
+    title: 'Kursi Bar Cafe Modern Minimalis Murah - Jual Berkualitas Industrial',
+    category: 'Commercial Furniture',
+    excerpt: 'Jual kursi bar cafe modern minimalis murah dengan kualitas industrial premium. Barstool besi, stall chair untuk cafe dan resto. Material berkualitas, finishing tahan lama.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-12-25',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 175,
+    slug: 'furniture-kantin-industrial-modern-minimalis-murah-berkualitas',
+    title: 'Furniture Kantin Industrial Modern Minimalis Murah - Berkualitas',
+    category: 'Commercial Furniture',
+    excerpt: 'Furniture kantin industrial modern minimalis murah dengan kualitas premium. Meja makan, kursi untuk kantin pabrik, cafe karyawan. Material berkualitas, harga terjangkau.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-26',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 176,
+    slug: 'meja-makan-resto-modern-minimalis-murah-set-berkualitas',
+    title: 'Meja Makan Resto Modern Minimalis Murah - Set Berkualitas Lengkap',
+    category: 'Commercial Furniture',
+    excerpt: 'Set meja makan resto modern minimalis murah dengan kualitas lengkap premium. Paket meja + kursi untuk resto. Custom size, material berkualitas, harga kompetitif.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-12-27',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 177,
+    slug: 'jasa-furniture-hotel-custom-modern-minimalis-murah-berkualitas',
+    title: 'Jasa Furniture Hotel Custom Modern Minimalis Murah - Berkualitas Premium',
+    category: 'Commercial Furniture',
+    excerpt: 'Jasa furniture hotel custom modern minimalis murah dengan kualitas premium. Lobby furniture, restaurant hotel, room furniture. Custom design eksklusif, harga kompetitif.',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop',
+    date: '2025-12-28',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 178,
+    slug: 'rak-buku-cafe-modern-minimalis-murah-jual-berkualitas',
+    title: 'Rak Buku Cafe Modern Minimalis Murah - Jual Berkualitas Industrial',
+    category: 'Commercial Furniture',
+    excerpt: 'Jual rak buku cafe modern minimalis murah dengan kualitas industrial premium. Rak buku cafe literasi, perpustakaan cafe. Material besi berkualitas, desain modern fungsional.',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop',
+    date: '2025-12-29',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 179,
+    slug: 'daybed-cafe-modern-minimalis-murah-berkualitas-lounge-area',
+    title: 'Daybed Cafe Modern Minimalis Murah - Berkualitas Lounge Area',
+    category: 'Commercial Furniture',
+    excerpt: 'Daybed cafe modern minimalis murah dengan kualitas premium untuk lounge area. Daybed industrial untuk hotel, cafe, restoran. Material berkualitas, desain modern nyaman.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-12-30',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 180,
+    slug: 'jasa-furniture-kantor-industrial-modern-minimalis-murah',
+    title: 'Jasa Furniture Kantor Industrial Modern Minimalis Murah - Berkualitas',
+    category: 'Commercial Furniture',
+    excerpt: 'Jasa furniture kantor industrial modern minimalis murah dengan kualitas premium. Meja kerja, rak storage untuk kantor. Custom design, material berkualitas, harga terjangkau.',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop',
+    date: '2025-12-31',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 181,
+    slug: 'sofa-bench-cafe-modern-minimalis-murah-jual-berkualitas',
+    title: 'Sofa Bench Cafe Modern Minimalis Murah - Jual Berkualitas Industrial',
+    category: 'Commercial Furniture',
+    excerpt: 'Jual sofa bench cafe modern minimalis murah dengan kualitas industrial premium. Sofa bench industrial untuk cafe lounge area. Material berkualitas, desain modern nyaman.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2026-01-01',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 182,
+    slug: 'meja-coffee-cafe-modern-minimalis-murah-berkualitas-berkualitas',
+    title: 'Meja Coffee Cafe Modern Minimalis Murah - Berkualitas Industrial',
+    category: 'Commercial Furniture',
+    excerpt: 'Meja coffee cafe modern minimalis murah dengan kualitas industrial premium. Coffee table, side table untuk cafe. Material besi berkualitas, desain modern minimalis.',
+    image: 'https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800&auto=format&fit=crop',
+    date: '2026-01-02',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 183,
+    slug: 'jasa-furniture-cafe-custom-minimalis-modern-murah-bekasi-jakarta',
+    title: 'Jasa Furniture Cafe Custom Minimalis Modern Murah Bekasi Jakarta',
+    category: 'Workshop & Production',
+    excerpt: 'Jasa furniture cafe custom minimalis modern murah untuk Bekasi dan Jakarta. Workshop Bekasi, custom design sesuai konsep cafe. Harga pabrik, kualitas premium, pengalaman 25 tahun.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2026-01-03',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 184,
+    slug: 'furniture-mall-cafe-resto-modern-minimalis-murah-berkualitas',
+    title: 'Furniture Mall Cafe Resto Modern Minimalis Murah - Berkualitas',
+    category: 'Commercial Furniture',
+    excerpt: 'Furniture mall cafe resto modern minimalis murah dengan kualitas premium. Meja, kursi untuk tenant mall, foodcourt. Custom design sesuai konsep mall, harga kompetitif.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2026-01-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 185,
+    slug: 'rak-gantung-cafe-modern-minimalis-murah-jual-berkualitas',
+    title: 'Rak Gantung Cafe Modern Minimalis Murah - Jual Berkualitas Industrial',
+    category: 'Commercial Furniture',
+    excerpt: 'Jual rak gantung cafe modern minimalis murah dengan kualitas industrial premium. Rak gantung wall mount untuk cafe dan resto. Material besi berkualitas, desain modern.',
+    image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop',
+    date: '2026-01-05',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 186,
+    slug: 'jasa-furniture-besi-custom-modern-minimalis-murah-jabodetabek',
+    title: 'Jasa Furniture Besi Custom Modern Minimalis Murah Jabodetabek',
+    category: 'Workshop & Production',
+    excerpt: 'Jasa furniture besi custom modern minimalis murah untuk Jabodetabek. Workshop Bekasi, custom design untuk cafe, resto, kantor. Harga kompetitif, kualitas premium, 1000+ klien puas.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2026-01-06',
+    author: 'Helmi Ramdan'
   }
 ]
 

@@ -235,7 +235,7 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
                     
                     <div className="blog-product-showcase-cta">
                       <span className="blog-product-showcase-link">
-                        {isIndonesian ? 'Lihat Detail Produk ?' : 'View Product Details ?'}
+                        {isIndonesian ? 'Lihat Detail Produk' : 'View Product Details'}
                       </span>
                     </div>
                   </div>
