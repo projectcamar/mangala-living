@@ -154,7 +154,7 @@ Whether you need office furniture, work tables, or industrial workspace solution
 
 Handcrafted by experienced welders and metalworkers, every piece demonstrates exceptional craftsmanship. Constructed from premium materials including high-grade steel hollow sections, solid steel plates, and powder-coated finishes, this furniture delivers both strength and refined industrial aesthetics.
 
-Designed for durability and style, this piece features carefully selected materials that ensure long-lasting performance. The industrial design paired with expert craftsmanship makes it a standout piece in any modern setting?whether in cafes, restaurants, offices, or contemporary homes.
+Designed for durability and style, this piece features carefully selected materials that ensure long-lasting performance. The industrial design paired with expert craftsmanship makes it a standout piece in any modern setting - whether in cafes, restaurants, offices, or contemporary homes.
 
 Built to commercial-grade standards, this furniture is meticulously welded using professional equipment that can withstand heavy daily use for years to come. The sophisticated design effortlessly blends functionality, strength, and industrial character, making it an ideal choice for hospitality venues, co-working spaces, and modern residences.
 
@@ -542,10 +542,10 @@ const ProductDetail: React.FC = () => {
       <AnnouncementBar />
       <Helmet>
         <title>{product.slug === 'hollowline-display-rack' 
-          ? (isIndonesian ? 'Hollowline Display Rack ? Harga Murah Rp4.5 Juta ? Call Mangala +62 852 1207 8467' : 'Hollowline Display Rack - Affordable Price Rp4.5 Million - Call Mangala +62 852 1207 8467')
+          ? (isIndonesian ? 'Hollowline Display Rack - Harga Murah Rp4.5 Juta - Call Mangala +62 852 1207 8467' : 'Hollowline Display Rack - Affordable Price Rp4.5 Million - Call Mangala +62 852 1207 8467')
           : `${translatedProductName} - Mangala Living`}</title>
         <meta name="description" content={product.name === 'Hollowline Display Rack'
-          ? 'Hollowline Display Rack Industrial ? Display Shelf Rack Modern ? Harga Rp4.500.000 ? Workshop Bekasi ? Garansi Kualitas ? Call Mangala +62 852 1207 8467'
+          ? 'Hollowline Display Rack Industrial - Display Shelf Rack Modern - Harga Rp4.500.000 - Workshop Bekasi - Garansi Kualitas - Call Mangala +62 852 1207 8467'
           : (() => {
               const desc = getProductDescription(product.slug)
               return desc ? (isIndonesian ? desc.id.metaDescription : desc.en.metaDescription) : `${product.name} - ${product.details}`
