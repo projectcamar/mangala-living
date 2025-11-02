@@ -6,7 +6,6 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import ServiceAreasSection from '../components/ServiceAreasSection'
-import AuthorCard from '../components/AuthorCard'
 import { getPostBySlug, BLOG_POSTS } from '../data/blog'
 import { getBlogPostContent } from '../data/blogContent'
 import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structuredData'
@@ -233,21 +232,6 @@ const BlogPost: React.FC = () => {
                   )}
                 </div>
               ))}
-
-              {/* Author Card Section */}
-              {post.author === 'Helmi Ramdan' && (
-                <AuthorCard
-                  name="Helmi Ramdan"
-                  title="Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta"
-                  experience={[
-                    'Infrastructure Engineer at Damai Putra Group (3+ tahun)',
-                    'Design Engineer & Architectural Drafter (5+ tahun)',
-                    'Alumni Universitas Diponegoro',
-                    'Spesialis Commercial Space Design & Construction'
-                  ]}
-                  linkedIn="https://www.linkedin.com/in/helmi-ramdan-067912118/"
-                />
-              )}
 
               {/* CTA Section */}
               <div className="blog-post-cta">
