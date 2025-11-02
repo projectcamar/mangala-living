@@ -967,10 +967,52 @@
     <priority>0.70</priority>
   </url>
   <url>
+    <loc>https://mangala-living.com/eng</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://mangala-living.com/eng/shipping-information</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://mangala-living.com/eng/shop</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
     <loc>https://mangala-living.com/furniture-besi-custom-bekasi</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://mangala-living.com/id</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://mangala-living.com/id/shipping-information</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://mangala-living.com/id/shop</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://mangala-living.com/id/terms-of-service</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/partnership</loc>
@@ -980,85 +1022,85 @@
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/accessories-storage</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/balcony-outdoor-collection</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/bar-furniture-collection</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/daybed-collection</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/daybed-lounge-frame</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/dining-set-collection</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/dining-table-collection</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/industrial-sofa-bench</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/lounge-seating-set</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/new-arrivals</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/outdoor</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/storage-shelving</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/table-collection</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
     <loc>https://mangala-living.com/product-category/work-study-tables</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>

@@ -94,14 +94,21 @@ const getFileLastModified = async (relativePath) => {
 const buildStaticPages = async () => {
   const staticPages = [
     { loc: `${BASE_URL}/`, file: 'src/pages/Home.tsx', changefreq: 'weekly', priority: 1.0 },
+    { loc: `${BASE_URL}/id`, file: 'src/pages/Home.tsx', changefreq: 'weekly', priority: 1.0 },
+    { loc: `${BASE_URL}/eng`, file: 'src/pages/Home.tsx', changefreq: 'weekly', priority: 1.0 },
     { loc: `${BASE_URL}/shop`, file: 'src/pages/Shop.tsx', changefreq: 'weekly', priority: 0.9 },
+    { loc: `${BASE_URL}/id/shop`, file: 'src/pages/Shop.tsx', changefreq: 'weekly', priority: 0.9 },
+    { loc: `${BASE_URL}/eng/shop`, file: 'src/pages/Shop.tsx', changefreq: 'weekly', priority: 0.9 },
     { loc: `${BASE_URL}/blog`, file: 'src/pages/Blog.tsx', changefreq: 'daily', priority: 0.9 },
     { loc: `${BASE_URL}/about`, file: 'src/pages/About.tsx', changefreq: 'monthly', priority: 0.7 },
     { loc: `${BASE_URL}/contact-us`, file: 'src/pages/Contact.tsx', changefreq: 'monthly', priority: 0.7 },
     { loc: `${BASE_URL}/custom-order`, file: 'src/pages/CustomOrder.tsx', changefreq: 'monthly', priority: 0.7 },
     { loc: `${BASE_URL}/partnership`, file: 'src/pages/Partnership.tsx', changefreq: 'monthly', priority: 0.7 },
     { loc: `${BASE_URL}/terms-of-service`, file: 'src/pages/TermsOfService.tsx', changefreq: 'yearly', priority: 0.4 },
+    { loc: `${BASE_URL}/id/terms-of-service`, file: 'src/pages/TermsOfService.tsx', changefreq: 'yearly', priority: 0.4 },
     { loc: `${BASE_URL}/shipping-information`, file: 'src/pages/ShippingInformation.tsx', changefreq: 'yearly', priority: 0.4 },
+    { loc: `${BASE_URL}/id/shipping-information`, file: 'src/pages/ShippingInformation.tsx', changefreq: 'yearly', priority: 0.4 },
+    { loc: `${BASE_URL}/eng/shipping-information`, file: 'src/pages/ShippingInformation.tsx', changefreq: 'yearly', priority: 0.4 },
     { loc: `${BASE_URL}/search`, file: 'src/pages/SearchResults.tsx', changefreq: 'monthly', priority: 0.4 },
     { loc: `${BASE_URL}/product-tag/best-seller`, file: 'src/pages/BestSellers.tsx', changefreq: 'weekly', priority: 0.6 },
     { loc: `${BASE_URL}/furniture-besi-custom-bekasi`, file: 'src/pages/FurnitureBesiCustomBekasi.tsx', changefreq: 'monthly', priority: 0.75 }
@@ -115,12 +122,14 @@ const buildStaticPages = async () => {
 
 const buildCategoryPages = async (categorySlugs) => {
   const entries = []
+  const lastmod = await getFileLastModified('src/data/products.ts')
   for (const slug of categorySlugs) {
+    // Add base URL for category pages (language handled via hreflang)
     entries.push({
       loc: `${BASE_URL}/product-category/${slug}`,
       changefreq: 'weekly',
       priority: 0.65,
-      lastmod: await getFileLastModified('src/data/products.ts')
+      lastmod
     })
   }
   return entries

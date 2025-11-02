@@ -1,11 +1,13 @@
 User-agent: *
 Allow: /
 
-# Block language-specific URLs from indexing to avoid duplicate content
-Disallow: /id/
-Disallow: /eng/
+# Allow all language-specific URLs for proper multilingual indexing
+Allow: /id
+Allow: /id/
+Allow: /eng
+Allow: /eng/
 
-# Allow main pages
+# Allow main pages (both language versions will be indexed)
 Allow: /
 Allow: /about
 Allow: /blog
@@ -17,7 +19,7 @@ Allow: /partnership
 Allow: /terms-of-service
 Allow: /shipping-information
 
-# Allow product pages (canonical versions)
+# Allow product pages (both language versions)
 Allow: /product/
 Allow: /product-category/
 
