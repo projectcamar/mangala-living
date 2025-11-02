@@ -11,6 +11,8 @@ import { getPostBySlug, BLOG_POSTS } from '../data/blog'
 import { getBlogPostContent } from '../data/blogContent'
 import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structuredData'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
+import BlogProductShowcase from '../components/BlogProductShowcase'
+import { getRelevantProductsForBlog, getProductShowcaseHeading } from '../utils/blogProductMapping'
 import './BlogPost.css'
 
 const BlogPost: React.FC = () => {
@@ -199,7 +201,8 @@ const BlogPost: React.FC = () => {
 
             <div className="blog-post-content">
               {content.sections.map((section, index) => (
-                <div key={index} className="blog-section">
+                <React.Fragment key={index}>
+                  <div className="blog-section">
                   {section.heading && <h2>{section.heading}</h2>}
                   
                   {section.paragraphs && section.paragraphs.map((para, pIndex) => (
@@ -231,7 +234,30 @@ const BlogPost: React.FC = () => {
                       ))}
                     </ul>
                   )}
-                </div>
+                  </div>
+                  
+                  {/* Product Showcase - Tampilkan setelah section ke-2 jika artikel membahas produk */}
+                  {index === 2 && (() => {
+                    const relevantProducts = getRelevantProductsForBlog(post.slug, post.title, post.excerpt)
+                    // Hanya tampilkan jika ada produk yang relevan dan artikel membahas produk tertentu
+                    const hasProductKeywords = /meja|kursi|rak|display|bar|dining|kitchen|furniture|cabinet|shelf|chair|table/i.test(post.slug + post.title)
+                    
+                    if (relevantProducts.length > 0 && hasProductKeywords) {
+                      const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
+                      const showcaseDescription = `Berikut adalah produk industrial pilihan kami yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium dan material industrial grade di workshop kami di Bekasi.`
+                      
+                      return (
+                        <BlogProductShowcase
+                          products={relevantProducts}
+                          heading={showcaseHeading}
+                          description={showcaseDescription}
+                          isIndonesian={true}
+                        />
+                      )
+                    }
+                    return null
+                  })()}
+                </React.Fragment>
               ))}
 
               {/* Author Card - Only for Helmi Ramdan posts */}
@@ -248,6 +274,33 @@ const BlogPost: React.FC = () => {
                   linkedIn="https://www.linkedin.com/in/helmi-ramdan-067912118/"
                 />
               )}
+
+              {/* Product Showcase - Backup di akhir artikel jika showcase belum muncul di tengah */}
+              {(() => {
+                // Cek apakah showcase sudah muncul di tengah (artikel dengan section > 2 akan punya showcase di index 2)
+                const showcaseAlreadyShown = content.sections.length > 3
+                
+                if (!showcaseAlreadyShown) {
+                  const relevantProducts = getRelevantProductsForBlog(post.slug, post.title, post.excerpt)
+                  const hasProductKeywords = /meja|kursi|rak|display|bar|dining|kitchen|furniture|cabinet|shelf|chair|table/i.test(post.slug + post.title)
+                  
+                  // Tampilkan sebagai backup untuk artikel pendek atau yang tidak punya cukup section
+                  if (relevantProducts.length > 0 && hasProductKeywords) {
+                    const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
+                    const showcaseDescription = `Temukan produk industrial berkualitas tinggi yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium, material industrial grade, dan finishing powder coating tahan lama di workshop kami di Bekasi. Harga pabrik langsung, tidak ada perantara!`
+                    
+                    return (
+                      <BlogProductShowcase
+                        products={relevantProducts}
+                        heading={showcaseHeading}
+                        description={showcaseDescription}
+                        isIndonesian={true}
+                      />
+                    )
+                  }
+                }
+                return null
+              })()}
 
               {/* CTA Section */}
               <div className="blog-post-cta">
