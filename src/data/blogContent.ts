@@ -6587,6 +6587,1002 @@ const BLOG_CONTENTS: BlogContent[] = [
       }
     ]
   },
+  {
+    slug: 'jasa-furniture-industrial-minimalis-murah-bekasi-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Mencari jasa furniture industrial minimalis murah di Bekasi yang berkualitas? Mangala Living adalah workshop furniture industrial terpercaya yang melayani custom furniture minimalis modern dengan harga terjangkau namun tetap berkualitas premium.',
+          'Sebagai jasa furniture industrial berpengalaman 25 tahun, kami memahami bahwa pemilik cafe dan resto membutuhkan furniture yang tidak hanya modern dan minimalis, tapi juga murah dan berkualitas untuk mendukung operasional bisnis.',
+          'Dalam artikel ini, Anda akan menemukan informasi lengkap tentang jasa furniture industrial minimalis murah berkualitas yang kami tawarkan, termasuk jenis produk, material berkualitas yang digunakan, dan mengapa harga kami tetap kompetitif meskipun kualitas premium.'
+        ]
+      },
+      {
+        heading: 'Kenapa Memilih Jasa Furniture Industrial Minimalis Murah Berkualitas?',
+        paragraphs: [
+          'Furniture industrial dengan desain minimalis modern saat ini sangat populer untuk cafe dan resto. Namun, menemukan jasa furniture yang menawarkan produk murah namun tetap berkualitas memang tidak mudah.',
+          'Sebagai jasa furniture industrial berpengalaman, kami memahami bahwa kualitas dan harga harus seimbang. Furniture minimalis modern yang berkualitas akan memberikan nilai lebih untuk bisnis cafe dan resto Anda dalam jangka panjang.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Industrial Minimalis Modern Murah Berkualitas Bekasi'
+      },
+      {
+        heading: 'Produk Jasa Furniture Industrial Minimalis Murah Berkualitas',
+        list: [
+          '<strong>Meja Cafe Minimalis Modern:</strong> Jasa pembuatan <a href="/product-category/dining-table-collection">meja cafe minimalis</a> dengan desain modern yang murah namun berkualitas. Material besi hollow berkualitas dengan finishing powder coating tahan lama.',
+          '<strong>Kursi Bar Minimalis:</strong> <a href="/product-category/bar-furniture-collection">Kursi bar industrial minimalis</a> modern yang murah dan berkualitas. Ergonomis, nyaman, dengan konstruksi besi berkualitas premium.',
+          '<strong>Display Rack Modern:</strong> <a href="/product-category/storage-shelving">Display rack industrial minimalis</a> untuk cafe dan resto. Storage solution yang murah, fungsional, dan berkualitas.',
+          '<strong>Set Meja Kursi:</strong> Paket lengkap meja + kursi cafe minimalis modern dengan harga murah namun kualitas premium. Cocok untuk cafe dan resto dengan budget terbatas.',
+          '<strong>Furniture Custom:</strong> Jasa custom furniture minimalis modern sesuai kebutuhan. Harga murah, kualitas terjamin, dengan desain yang match dengan konsep cafe atau resto Anda.'
+        ]
+      },
+      {
+        heading: 'Material Berkualitas untuk Furniture Minimalis Modern Murah',
+        paragraphs: [
+          'Meskipun kami menawarkan harga murah, kami tidak mengkompromi kualitas material. Semua furniture minimalis modern yang kami produksi menggunakan material berkualitas premium:',
+          'Besi hollow galvanis grade A untuk frame yang kuat dan tahan lama. Top table menggunakan kayu solid atau engineered wood berkualitas. Finishing powder coating outdoor-grade yang tahan cuaca dan anti-karat.',
+          'Dengan material berkualitas ini, furniture minimalis modern yang murah dari kami tetap awet bertahun-tahun, menghemat biaya replacement jangka panjang.'
+        ]
+      },
+      {
+        heading: 'Jasa Furniture Industrial Minimalis Murah Bekasi - Workshop Langsung',
+        paragraphs: [
+          'Mangala Living adalah jasa furniture industrial minimalis murah berkualitas dengan workshop langsung di Bekasi. Sejak 1999, kami telah melayani lebih dari 1000 klien di seluruh Indonesia dengan produk furniture minimalis modern yang murah namun berkualitas.',
+          'Kelebihan jasa kami: Workshop langsung di Bekasi berarti harga pabrik tanpa markup distributor. Material berkualitas premium dengan kontrol kualitas ketat. Custom design minimalis modern sesuai konsep cafe atau resto Anda. Tim berpengalaman 25 tahun yang memahami kebutuhan bisnis F&B.',
+          'Untuk konsultasi jasa furniture industrial minimalis murah berkualitas, hubungi kami di <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi. Tim kami siap membantu Anda mendapatkan furniture minimalis modern berkualitas dengan harga terjangkau.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'jual-meja-cafe-modern-minimalis-murah-berkualitas-jakarta-bekasi',
+    sections: [
+      {
+        paragraphs: [
+          'Jual meja cafe modern minimalis murah dengan kualitas premium untuk Jakarta dan Bekasi. Sebagai produsen meja cafe industrial terpercaya, kami memahami bahwa pemilik cafe membutuhkan meja yang modern, minimalis, murah, namun tetap berkualitas untuk mendukung operasional cafe.',
+          'Meja cafe modern minimalis yang kami jual dirancang khusus untuk memberikan keseimbangan sempurna antara estetika modern, fungsionalitas, dan harga yang terjangkau tanpa mengorbankan kualitas.',
+          'Artikel ini akan membahas lengkap tentang meja cafe modern minimalis murah berkualitas yang kami jual, mulai dari jenis-jenis meja, material berkualitas, hingga tips memilih meja cafe yang tepat untuk bisnis Anda.'
+        ]
+      },
+      {
+        heading: 'Jenis Meja Cafe Modern Minimalis Murah Berkualitas',
+        list: [
+          '<strong>Meja Makan Cafe:</strong> <a href="/product-category/dining-table-collection">Meja makan cafe modern minimalis</a> dengan ukuran standar 60x60cm hingga 120x60cm. Murah namun berkualitas, cocok untuk 2-4 orang. Material besi berkualitas dengan top kayu solid.',
+          '<strong>Meja Bar Industrial:</strong> <a href="/product-category/bar-furniture-collection">Meja bar cafe modern minimalis</a> tinggi untuk area counter atau coffee bar. Harga murah, desain modern minimalis yang instagram-worthy.',
+          '<strong>Meja Kerja Cafe:</strong> Meja kerja modern minimalis untuk co-working space cafe. Murah, fungsional, dengan desain minimalis yang tidak mengganggu kenyamanan pelanggan.',
+          '<strong>Coffee Table:</strong> Coffee table modern minimalis untuk area lounge cafe. Harga terjangkau, kualitas premium, dengan desain minimalis modern yang timeless.',
+          '<strong>Meja Bulat Cafe:</strong> Meja bulat modern minimalis untuk cafe yang ingin variasi bentuk. Murah, berkualitas, dengan diameter custom sesuai kebutuhan.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Cafe Modern Minimalis Murah Berkualitas Jakarta Bekasi'
+      },
+      {
+        heading: 'Mengapa Meja Cafe Kami Murah Namun Berkualitas?',
+        paragraphs: [
+          'Banyak yang bertanya: bagaimana kami bisa jual meja cafe modern minimalis dengan harga murah namun tetap berkualitas? Jawabannya adalah workshop langsung di Bekasi.',
+          'Karena kami produsen langsung tanpa perantara, harga meja cafe modern minimalis kami bisa lebih murah hingga 30-40% dibanding distributor lain, namun dengan kualitas yang sama atau bahkan lebih baik.',
+          'Material yang kami gunakan tetap berkualitas premium: besi hollow galvanis grade A, top table kayu solid atau engineered wood berkualitas, finishing powder coating outdoor-grade. Kami tidak mengkompromi kualitas hanya untuk harga murah.'
+        ]
+      },
+      {
+        heading: 'Jual Meja Cafe Modern Minimalis Murah Jakarta Bekasi',
+        paragraphs: [
+          'Mangala Living jual meja cafe modern minimalis murah berkualitas untuk area Jakarta dan Bekasi. Sejak 1999, kami telah menjadi supplier meja cafe terpercaya dengan pengalaman 25 tahun dan 1000+ klien puas.',
+          'Kelebihan meja cafe yang kami jual: Harga murah langsung dari workshop Bekasi. Kualitas premium dengan material berkualitas terbaik. Desain modern minimalis yang instagram-worthy. Custom size sesuai kebutuhan cafe Anda. Finishing powder coating tahan lama dan mudah perawatan.',
+          'Untuk melihat koleksi meja cafe modern minimalis murah berkualitas atau konsultasi custom design, kunjungi <a href="/shop">showroom kami</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a>. Tim sales kami siap membantu Anda memilih meja cafe modern minimalis yang tepat untuk bisnis cafe Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'kursi-resto-modern-minimalis-murah-berkualitas-harga-terbaik',
+    sections: [
+      {
+        paragraphs: [
+          'Kursi resto modern minimalis murah dengan kualitas premium dan harga terbaik 2025. Sebagai produsen kursi resto industrial terpercaya, kami memahami bahwa pemilik resto membutuhkan kursi yang modern, minimalis, murah, namun tetap berkualitas dan nyaman untuk pelanggan.',
+          'Kursi resto modern minimalis yang kami produksi dirancang untuk memberikan kenyamanan optimal dengan desain yang modern dan minimalis, namun dengan harga yang terjangkau tanpa mengorbankan kualitas material dan konstruksi.',
+          'Artikel ini membahas lengkap tentang kursi resto modern minimalis murah berkualitas dengan harga terbaik yang kami tawarkan, termasuk jenis-jenis kursi, material berkualitas, dan tips memilih kursi resto yang tepat.'
+        ]
+      },
+      {
+        heading: 'Jenis Kursi Resto Modern Minimalis Murah Berkualitas',
+        list: [
+          '<strong>Kursi Bar Industrial:</strong> <a href="/product-category/bar-furniture-collection">Kursi bar resto modern minimalis</a> tinggi untuk area bar counter. Harga murah, desain minimalis modern, dengan kualitas konstruksi premium.',
+          '<strong>Stall Chair:</strong> Kursi resto modern minimalis dengan desain stall chair yang ergonomis. Murah, berkualitas, cocok untuk resto dengan konsep modern minimalis.',
+          '<strong>Kursi Makan Resto:</strong> <a href="/product-category/dining-set-collection">Kursi makan resto modern minimalis</a> dengan konstruksi besi berkualitas. Harga terjangkau, desain minimalis yang timeless, dengan kenyamanan optimal.',
+          '<strong>Stackable Chair:</strong> Kursi resto minimalis modern yang bisa ditumpuk untuk menghemat space. Murah, fungsional, dengan kualitas konstruksi yang kuat.',
+          '<strong>Kursi Custom:</strong> Kursi resto custom modern minimalis sesuai konsep resto Anda. Harga kompetitif, kualitas premium, dengan desain yang match dengan brand resto.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop',
+        imageAlt: 'Kursi Resto Modern Minimalis Murah Berkualitas Harga Terbaik'
+      },
+      {
+        heading: 'Material Berkualitas untuk Kursi Resto Modern Minimalis',
+        paragraphs: [
+          'Meskipun kami menawarkan harga murah, semua kursi resto modern minimalis yang kami produksi menggunakan material berkualitas premium:',
+          'Frame besi hollow galvanis grade A dengan ketebalan yang sesuai untuk beban commercial. Seat dan backrest dengan pilihan material berkualitas: kayu solid, engineered wood, atau metal mesh. Finishing powder coating yang tahan gores dan mudah perawatan. Joint welding berkualitas tinggi untuk konstruksi yang kuat dan awet.',
+          'Dengan material berkualitas ini, kursi resto modern minimalis yang murah dari kami tetap mampu bertahan untuk penggunaan intensif di resto selama bertahun-tahun.'
+        ]
+      },
+      {
+        heading: 'Kursi Resto Modern Minimalis Murah Berkualitas - Harga Terbaik',
+        paragraphs: [
+          'Mangala Living adalah produsen kursi resto modern minimalis murah berkualitas dengan harga terbaik di pasar. Sejak 1999, kami telah memproduksi ribuan kursi resto untuk berbagai resto di seluruh Indonesia.',
+          'Mengapa harga kursi resto kami terbaik: Workshop langsung di Bekasi = harga pabrik tanpa markup. Material berkualitas premium namun dengan efisiensi produksi yang optimal. Volume production yang besar = harga lebih murah per unit. Tidak ada perantara = harga langsung dari produsen.',
+          'Untuk informasi harga kursi resto modern minimalis murah berkualitas atau custom design, hubungi kami di <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi kursi resto</a> kami. Tim sales kami siap memberikan penawaran harga terbaik untuk kebutuhan kursi resto Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-cafe-minimalis-modern-murah-jasa-custom-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture cafe minimalis modern murah dengan jasa custom berkualitas dari Mangala Living. Kami adalah produsen furniture cafe industrial terpercaya yang menawarkan furniture minimalis modern dengan harga terjangkau namun tetap berkualitas premium.',
+          'Furniture cafe minimalis modern yang kami produksi dirancang khusus untuk menciptakan suasana cafe yang modern, estetis, dan instagram-worthy tanpa biaya yang mahal.',
+          'Artikel ini membahas lengkap tentang furniture cafe minimalis modern murah dengan jasa custom berkualitas yang kami tawarkan, termasuk jenis produk, keunggulan custom design, dan mengapa furniture minimalis modern kami berkualitas namun tetap murah.'
+        ]
+      },
+      {
+        heading: 'Furniture Cafe Minimalis Modern Murah - Jasa Custom Berkualitas',
+        list: [
+          '<strong>Meja Cafe Minimalis:</strong> <a href="/product-category/dining-table-collection">Meja cafe minimalis modern</a> dengan jasa custom sesuai ukuran cafe Anda. Murah, berkualitas, dengan desain minimalis yang timeless.',
+          '<strong>Kursi Cafe Modern:</strong> <a href="/product-category/bar-furniture-collection">Kursi cafe minimalis modern</a> dengan jasa custom untuk kenyamanan optimal. Harga terjangkau, material berkualitas premium.',
+          '<strong>Display Rack Minimalis:</strong> Rak display cafe modern minimalis dengan jasa custom untuk storage yang fungsional. Murah, berkualitas, dengan desain minimalis modern.',
+          '<strong>Bar Set Custom:</strong> Bar set cafe minimalis modern dengan jasa custom sesuai konsep cafe. Harga kompetitif, kualitas premium, desain modern minimalis.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Cafe Minimalis Modern Murah Jasa Custom Berkualitas'
+      },
+      {
+        heading: 'Jasa Custom Furniture Cafe Minimalis Modern Murah',
+        paragraphs: [
+          'Mangala Living menawarkan jasa custom furniture cafe minimalis modern murah berkualitas. Workshop langsung di Bekasi, custom design sesuai konsep cafe Anda, dengan harga terjangkau namun kualitas premium.',
+          'Kelebihan jasa custom kami: Desain minimalis modern sesuai konsep cafe Anda. Ukuran custom sesuai space cafe. Material berkualitas premium dengan harga terjangkau. Tim berpengalaman 25 tahun yang memahami kebutuhan cafe.',
+          'Untuk konsultasi jasa custom furniture cafe minimalis modern murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'meja-resto-industrial-modern-minimalis-murah-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Meja resto industrial modern minimalis murah dengan kualitas premium. Sebagai produsen meja resto industrial terpercaya, kami memahami bahwa pemilik resto membutuhkan meja yang modern, minimalis, industrial, murah, namun tetap berkualitas untuk operasional resto.',
+          'Meja resto industrial modern minimalis yang kami produksi memberikan keseimbangan sempurna antara karakter industrial yang kuat, estetika modern minimalis, dan harga yang terjangkau.'
+        ]
+      },
+      {
+        heading: 'Meja Resto Industrial Modern Minimalis Murah Berkualitas',
+        list: [
+          '<strong>Meja Makan Resto:</strong> <a href="/product-category/dining-table-collection">Meja makan resto industrial modern minimalis</a> dengan berbagai ukuran. Murah, berkualitas, dengan desain industrial minimalis yang timeless.',
+          '<strong>Meja Bar Resto:</strong> Meja bar resto industrial modern minimalis untuk area bar counter. Harga terjangkau, kualitas premium, dengan karakter industrial yang kuat.',
+          '<strong>Custom Size:</strong> Meja resto custom size industrial modern minimalis sesuai kebutuhan resto Anda. Material berkualitas, finishing powder coating tahan lama.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Resto Industrial Modern Minimalis Murah Berkualitas'
+      },
+      {
+        heading: 'Mangala Living - Meja Resto Industrial Modern Minimalis Murah',
+        paragraphs: [
+          'Mangala Living adalah produsen meja resto industrial modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Sejak 1999, kami telah memproduksi ribuan meja resto untuk berbagai resto di seluruh Indonesia.',
+          'Material berkualitas premium: besi hollow galvanis grade A, top table kayu solid atau engineered wood berkualitas, finishing powder coating outdoor-grade. Harga murah langsung dari workshop tanpa markup distributor.',
+          'Untuk informasi meja resto industrial modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi meja resto</a> kami.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'jasa-bikin-furniture-cafe-custom-minimalis-murah-bekasi',
+    sections: [
+      {
+        paragraphs: [
+          'Jasa bikin furniture cafe custom minimalis murah Bekasi dengan workshop langsung. Mangala Living adalah jasa furniture cafe custom terpercaya yang menawarkan furniture minimalis modern dengan harga terjangkau namun berkualitas premium.',
+          'Jasa bikin furniture cafe custom kami melayani berbagai kebutuhan cafe, dari furniture minimalis modern hingga desain custom yang sesuai dengan konsep brand cafe Anda.'
+        ]
+      },
+      {
+        heading: 'Jasa Bikin Furniture Cafe Custom Minimalis Murah',
+        list: [
+          '<strong>Custom Design:</strong> Jasa bikin furniture cafe custom minimalis modern sesuai konsep cafe Anda. Desain unique, harga terjangkau, kualitas premium.',
+          '<strong>Material Berkualitas:</strong> Semua furniture cafe custom menggunakan material berkualitas premium: besi hollow galvanis, kayu solid, finishing powder coating.',
+          '<strong>Workshop Langsung:</strong> Jasa bikin furniture cafe custom dengan workshop langsung di Bekasi = harga pabrik tanpa markup.',
+          '<strong>Tim Ahli:</strong> Tim berpengalaman 25 tahun yang memahami kebutuhan furniture cafe custom minimalis modern.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Jasa Bikin Furniture Cafe Custom Minimalis Murah Bekasi'
+      },
+      {
+        heading: 'Jasa Bikin Furniture Cafe Custom Bekasi - Workshop Langsung',
+        paragraphs: [
+          'Mangala Living adalah jasa bikin furniture cafe custom minimalis murah Bekasi dengan workshop langsung. Pengalaman 25 tahun, 1000+ klien puas, dengan harga terjangkau namun kualitas premium.',
+          'Proses jasa bikin furniture cafe custom: Konsultasi konsep cafe &rarr; Design proposal &rarr; Approval & quotation &rarr; Produksi di workshop Bekasi &rarr; Quality control &rarr; Delivery & instalasi.',
+          'Untuk konsultasi jasa bikin furniture cafe custom minimalis murah Bekasi, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-resto-modern-minimalis-murah-jual-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture resto modern minimalis murah yang kami jual dengan kualitas premium. Sebagai produsen furniture resto industrial terpercaya, kami jual berbagai furniture resto modern minimalis dengan harga terjangkau namun tetap berkualitas.',
+          'Furniture resto modern minimalis yang kami jual dirancang khusus untuk menciptakan suasana resto yang modern, estetis, dan nyaman untuk pelanggan dengan budget yang terjangkau.'
+        ]
+      },
+      {
+        heading: 'Furniture Resto Modern Minimalis Murah - Jual Berkualitas',
+        list: [
+          '<strong>Meja Resto:</strong> <a href="/product-category/dining-table-collection">Meja resto modern minimalis</a> yang kami jual dengan harga terjangkau. Material berkualitas, desain modern minimalis.',
+          '<strong>Kursi Resto:</strong> <a href="/product-category/dining-set-collection">Kursi resto modern minimalis</a> yang kami jual dengan kualitas premium. Ergonomis, nyaman, harga terjangkau.',
+          '<strong>Bar Set Resto:</strong> Bar set resto modern minimalis yang kami jual untuk area bar counter. Harga kompetitif, kualitas premium.',
+          '<strong>Set Lengkap:</strong> Paket furniture resto modern minimalis lengkap yang kami jual dengan harga special. Meja + kursi + bar set dengan harga lebih murah.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Resto Modern Minimalis Murah Jual Berkualitas'
+      },
+      {
+        heading: 'Jual Furniture Resto Modern Minimalis Murah Berkualitas',
+        paragraphs: [
+          'Mangala Living jual furniture resto modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
+          'Mengapa furniture resto yang kami jual lebih murah: Workshop langsung = harga pabrik tanpa markup. Material berkualitas namun dengan efisiensi produksi optimal. Volume production besar = harga lebih murah per unit.',
+          'Untuk melihat koleksi furniture resto modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'display-rack-cafe-modern-minimalis-murah-berkualitas-industrial',
+    sections: [
+      {
+        paragraphs: [
+          'Display rack cafe modern minimalis murah dengan kualitas industrial premium. Sebagai produsen display rack industrial terpercaya, kami menawarkan rak display cafe modern minimalis dengan harga terjangkau namun berkualitas industrial.',
+          'Display rack cafe modern minimalis yang kami produksi memberikan solusi storage yang fungsional dengan desain modern minimalis yang instagram-worthy.'
+        ]
+      },
+      {
+        heading: 'Display Rack Cafe Modern Minimalis Murah - Industrial',
+        list: [
+          '<strong>Rak Display Retail:</strong> <a href="/product-category/storage-shelving">Rak display cafe modern minimalis</a> untuk retail merchandise. Material besi berkualitas, desain industrial minimalis.',
+          '<strong>Rak Gantung Wall:</strong> Rak gantung cafe modern minimalis untuk wall mounting. Murah, fungsional, dengan desain minimalis modern.',
+          '<strong>Hollowline Rack:</strong> Display rack hollowline cafe modern minimalis dengan konstruksi hollow steel berkualitas. Harga terjangkau, kualitas premium.',
+          '<strong>Custom Rack:</strong> Display rack custom cafe modern minimalis sesuai kebutuhan. Ukuran custom, material berkualitas, harga kompetitif.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Display Rack Cafe Modern Minimalis Murah Berkualitas Industrial'
+      },
+      {
+        heading: 'Display Rack Cafe Modern Minimalis Murah - Mangala Living',
+        paragraphs: [
+          'Mangala Living adalah produsen display rack cafe modern minimalis murah dengan kualitas industrial premium. Workshop Bekasi, material besi berkualitas, dengan harga terjangkau.',
+          'Material display rack: besi hollow galvanis grade A untuk frame kuat, finishing powder coating tahan lama, desain modern minimalis yang timeless. Harga murah langsung dari workshop tanpa markup.',
+          'Untuk informasi display rack cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi display rack</a> kami.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'bar-set-cafe-modern-minimalis-murah-jasa-custom-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Bar set cafe modern minimalis murah dengan jasa custom berkualitas dari Mangala Living. Kami adalah produsen bar set industrial terpercaya yang menawarkan bar set cafe modern minimalis dengan harga terjangkau namun berkualitas premium.',
+          'Bar set cafe modern minimalis yang kami produksi cocok untuk area bar counter cafe indoor maupun outdoor, dengan desain modern minimalis yang instagram-worthy.'
+        ]
+      },
+      {
+        heading: 'Bar Set Cafe Modern Minimalis Murah - Jasa Custom',
+        list: [
+          '<strong>Bar Table:</strong> <a href="/product-category/bar-furniture-collection">Bar table cafe modern minimalis</a> dengan jasa custom sesuai ukuran. Harga terjangkau, material berkualitas.',
+          '<strong>Bar Stool:</strong> Bar stool cafe modern minimalis dengan jasa custom untuk kenyamanan optimal. Ergonomis, material premium, harga kompetitif.',
+          '<strong>Balcony Bar Set:</strong> Bar set outdoor cafe modern minimalis untuk balcony area. Tahan cuaca, material berkualitas, desain modern minimalis.',
+          '<strong>Complete Set:</strong> Bar set lengkap cafe modern minimalis (table + stool) dengan jasa custom. Harga special untuk paket lengkap.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=1200&auto=format&fit=crop',
+        imageAlt: 'Bar Set Cafe Modern Minimalis Murah Jasa Custom Berkualitas'
+      },
+      {
+        heading: 'Jasa Custom Bar Set Cafe Modern Minimalis Murah',
+        paragraphs: [
+          'Mangala Living menawarkan jasa custom bar set cafe modern minimalis murah berkualitas. Workshop Bekasi, custom design sesuai konsep cafe, dengan harga terjangkau namun kualitas premium.',
+          'Kelebihan jasa custom bar set: Desain modern minimalis sesuai konsep cafe. Ukuran custom sesuai space bar area. Material berkualitas premium dengan harga terjangkau. Tim ahli berpengalaman 25 tahun.',
+          'Untuk konsultasi jasa custom bar set cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'kitchen-cabinet-resto-modern-minimalis-murah-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Kitchen cabinet resto modern minimalis murah dengan kualitas custom premium. Sebagai produsen kitchen cabinet industrial terpercaya, kami menawarkan kabinet dapur resto modern minimalis dengan harga terjangkau namun berkualitas.',
+          'Kitchen cabinet resto modern minimalis yang kami produksi memberikan solusi storage yang fungsional untuk dapur resto dengan desain modern minimalis yang estetis.'
+        ]
+      },
+      {
+        heading: 'Kitchen Cabinet Resto Modern Minimalis Murah',
+        list: [
+          '<strong>Kabinet Dapur:</strong> Kitchen cabinet resto modern minimalis untuk storage dapur resto. Material besi berkualitas, desain industrial minimalis, harga terjangkau.',
+          '<strong>Storage Solution:</strong> Kitchen cabinet dengan storage solution fungsional untuk resto. Murah, berkualitas, dengan desain modern minimalis.',
+          '<strong>Custom Design:</strong> Kitchen cabinet custom resto modern minimalis sesuai kebutuhan dapur resto. Ukuran custom, material premium, harga kompetitif.',
+          '<strong>Industrial Style:</strong> Kitchen cabinet industrial resto modern minimalis dengan karakter industrial yang kuat namun tetap minimalis.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Kitchen Cabinet Resto Modern Minimalis Murah Berkualitas'
+      },
+      {
+        heading: 'Kitchen Cabinet Resto Modern Minimalis - Mangala Living',
+        paragraphs: [
+          'Mangala Living adalah produsen kitchen cabinet resto modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, custom design, dengan harga terjangkau.',
+          'Material kitchen cabinet: frame besi hollow galvanis grade A, finishing powder coating tahan lama, storage solution fungsional. Harga murah langsung dari workshop tanpa markup distributor.',
+          'Untuk informasi kitchen cabinet resto modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi kitchen cabinet</a> kami.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'jual-furniture-industrial-modern-minimalis-murah-jakarta-bekasi',
+    sections: [
+      {
+        paragraphs: [
+          'Jual furniture industrial modern minimalis murah untuk Jakarta dan Bekasi dengan kualitas premium. Mangala Living adalah produsen furniture industrial terpercaya yang jual berbagai furniture modern minimalis dengan harga terjangkau namun berkualitas.',
+          'Furniture industrial modern minimalis yang kami jual cocok untuk cafe, resto, kantor, dan berbagai kebutuhan komersial dengan desain modern minimalis yang instagram-worthy.'
+        ]
+      },
+      {
+        heading: 'Jual Furniture Industrial Modern Minimalis Murah',
+        list: [
+          '<strong>Meja Industrial:</strong> <a href="/product-category/dining-table-collection">Meja industrial modern minimalis</a> yang kami jual untuk cafe dan resto. Harga terjangkau, material berkualitas, desain modern minimalis.',
+          '<strong>Kursi Industrial:</strong> <a href="/product-category/bar-furniture-collection">Kursi industrial modern minimalis</a> yang kami jual dengan kualitas premium. Ergonomis, nyaman, harga kompetitif.',
+          '<strong>Rak Display:</strong> <a href="/product-category/storage-shelving">Rak display industrial modern minimalis</a> yang kami jual untuk retail dan cafe. Fungsional, material berkualitas, harga terjangkau.',
+          '<strong>Furniture Lengkap:</strong> Paket furniture industrial modern minimalis lengkap yang kami jual dengan harga special untuk Jakarta dan Bekasi.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Jual Furniture Industrial Modern Minimalis Murah Jakarta Bekasi'
+      },
+      {
+        heading: 'Jual Furniture Industrial Modern Minimalis Jakarta Bekasi',
+        paragraphs: [
+          'Mangala Living jual furniture industrial modern minimalis murah berkualitas untuk area Jakarta dan Bekasi. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
+          'Mengapa furniture industrial yang kami jual lebih murah: Workshop langsung = harga pabrik tanpa markup. Material berkualitas dengan efisiensi produksi optimal. Volume production besar = harga lebih murah per unit. Delivery gratis untuk area Jakarta dan Bekasi.',
+          'Untuk melihat koleksi furniture industrial modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'meja-kursi-cafe-modern-minimalis-murah-set-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Set meja kursi cafe modern minimalis murah dengan kualitas premium. Sebagai produsen furniture cafe terpercaya, kami menawarkan paket lengkap meja + kursi cafe modern minimalis dengan harga terjangkau namun berkualitas.',
+          'Set meja kursi cafe modern minimalis yang kami produksi memberikan solusi lengkap untuk cafe dengan budget terbatas namun tetap menginginkan kualitas premium dan desain modern minimalis.'
+        ]
+      },
+      {
+        heading: 'Set Meja Kursi Cafe Modern Minimalis Murah',
+        list: [
+          '<strong>Paket Lengkap:</strong> <a href="/product-category/dining-set-collection">Set meja kursi cafe modern minimalis</a> lengkap dengan harga terjangkau. Paket 1 meja + 2 kursi atau custom sesuai kebutuhan.',
+          '<strong>Material Berkualitas:</strong> Set meja kursi cafe menggunakan material berkualitas premium: besi hollow galvanis, top table kayu solid, finishing powder coating.',
+          '<strong>Desain Modern:</strong> Set meja kursi cafe dengan desain modern minimalis yang instagram-worthy. Warna matching, konsistensi design, estetika modern.',
+          '<strong>Harga Special:</strong> Set meja kursi cafe dengan harga special untuk paket lengkap. Lebih murah dibanding beli terpisah.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Set Meja Kursi Cafe Modern Minimalis Murah Berkualitas'
+      },
+      {
+        heading: 'Set Meja Kursi Cafe Modern Minimalis - Mangala Living',
+        paragraphs: [
+          'Mangala Living menawarkan set meja kursi cafe modern minimalis murah berkualitas dengan paket lengkap. Workshop Bekasi, material berkualitas premium, dengan harga terjangkau untuk paket lengkap.',
+          'Kelebihan set meja kursi cafe kami: Harga special untuk paket lengkap. Material berkualitas premium dengan finishing tahan lama. Desain modern minimalis yang match dan instagram-worthy. Custom jumlah sesuai kebutuhan cafe Anda.',
+          'Untuk informasi set meja kursi cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi dining set</a> kami.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'jasa-furniture-resto-custom-modern-minimalis-murah',
+    sections: [
+      {
+        paragraphs: [
+          'Jasa furniture resto custom modern minimalis murah berkualitas dari Mangala Living. Kami adalah produsen furniture resto custom terpercaya dengan workshop langsung di Bekasi yang menawarkan furniture modern minimalis dengan harga terjangkau namun berkualitas premium.',
+          'Jasa furniture resto custom kami melayani berbagai kebutuhan resto, dari furniture minimalis modern hingga desain custom yang sesuai dengan konsep brand resto Anda.'
+        ]
+      },
+      {
+        heading: 'Jasa Furniture Resto Custom Modern Minimalis Murah',
+        list: [
+          '<strong>Custom Design:</strong> Jasa furniture resto custom modern minimalis sesuai konsep resto Anda. Desain unique, harga terjangkau, kualitas premium.',
+          '<strong>Material Berkualitas:</strong> Semua furniture resto custom menggunakan material berkualitas premium: besi hollow galvanis, kayu solid, finishing powder coating.',
+          '<strong>Workshop Langsung:</strong> Jasa furniture resto custom dengan workshop langsung di Bekasi = harga pabrik tanpa markup.',
+          '<strong>Tim Ahli:</strong> Tim berpengalaman 25 tahun yang memahami kebutuhan furniture resto custom modern minimalis.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Jasa Furniture Resto Custom Modern Minimalis Murah Berkualitas'
+      },
+      {
+        heading: 'Jasa Furniture Resto Custom Bekasi - Workshop Langsung',
+        paragraphs: [
+          'Mangala Living adalah jasa furniture resto custom modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Pengalaman 25 tahun, 1000+ klien puas, dengan harga terjangkau namun kualitas premium.',
+          'Untuk konsultasi jasa furniture resto custom modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'outdoor-furniture-cafe-modern-minimalis-murah-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Outdoor furniture cafe modern minimalis murah dengan kualitas tahan cuaca. Sebagai produsen outdoor furniture industrial terpercaya, kami menawarkan furniture outdoor cafe modern minimalis dengan harga terjangkau namun berkualitas premium dan tahan cuaca.',
+          'Outdoor furniture cafe modern minimalis yang kami produksi cocok untuk area outdoor cafe dengan material tahan hujan, panas, dan kondisi tropis Indonesia.'
+        ]
+      },
+      {
+        heading: 'Outdoor Furniture Cafe Modern Minimalis Murah',
+        list: [
+          '<strong>Daybed Outdoor:</strong> <a href="/product-category/daybed-collection">Daybed outdoor cafe modern minimalis</a> untuk lounge area outdoor. Tahan cuaca, material berkualitas, harga terjangkau.',
+          '<strong>Bar Set Outdoor:</strong> <a href="/product-category/balcony-outdoor-collection">Bar set outdoor cafe modern minimalis</a> untuk area outdoor bar. Material tahan cuaca, desain modern minimalis.',
+          '<strong>Outdoor Table:</strong> Meja outdoor cafe modern minimalis dengan material tahan cuaca. Harga terjangkau, kualitas premium, finishing outdoor-grade.',
+          '<strong>Complete Outdoor Set:</strong> Paket lengkap outdoor furniture cafe modern minimalis dengan harga special untuk paket lengkap.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Outdoor Furniture Cafe Modern Minimalis Murah Berkualitas'
+      },
+      {
+        heading: 'Outdoor Furniture Cafe Modern Minimalis - Mangala Living',
+        paragraphs: [
+          'Mangala Living adalah produsen outdoor furniture cafe modern minimalis murah berkualitas dengan material tahan cuaca. Workshop Bekasi, finishing powder coating outdoor-grade, dengan harga terjangkau.',
+          'Material outdoor furniture: besi hollow galvanis grade A, finishing powder coating outdoor-grade tahan hujan dan panas, desain modern minimalis yang timeless. Harga murah langsung dari workshop tanpa markup.',
+          'Untuk informasi outdoor furniture cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi outdoor furniture</a> kami.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'rak-display-resto-modern-minimalis-murah-jual-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Rak display resto modern minimalis murah yang kami jual dengan kualitas industrial premium. Sebagai produsen rak display industrial terpercaya, kami jual berbagai rak display resto modern minimalis dengan harga terjangkau namun berkualitas.',
+          'Rak display resto modern minimalis yang kami jual memberikan solusi storage yang fungsional untuk resto dengan desain modern minimalis yang estetis.'
+        ]
+      },
+      {
+        heading: 'Rak Display Resto Modern Minimalis Murah - Jual Berkualitas',
+        list: [
+          '<strong>Rak Display Retail:</strong> <a href="/product-category/storage-shelving">Rak display resto modern minimalis</a> yang kami jual untuk retail merchandise. Material besi berkualitas, desain industrial minimalis.',
+          '<strong>Storage Solution:</strong> Rak display dengan storage solution fungsional untuk resto. Murah, berkualitas, dengan desain modern minimalis.',
+          '<strong>Hollowline Rack:</strong> Rak display hollowline resto modern minimalis dengan konstruksi hollow steel berkualitas. Harga terjangkau, kualitas premium.',
+          '<strong>Custom Rack:</strong> Rak display custom resto modern minimalis sesuai kebutuhan. Ukuran custom, material berkualitas, harga kompetitif.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Rak Display Resto Modern Minimalis Murah Jual Berkualitas'
+      },
+      {
+        heading: 'Jual Rak Display Resto Modern Minimalis Murah Berkualitas',
+        paragraphs: [
+          'Mangala Living jual rak display resto modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
+          'Material rak display: besi hollow galvanis grade A untuk frame kuat, finishing powder coating tahan lama, desain modern minimalis yang timeless. Harga murah langsung dari workshop tanpa markup distributor.',
+          'Untuk melihat koleksi rak display resto modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'meja-kerja-cafe-modern-minimalis-murah-berkualitas-multifungsi',
+    sections: [
+      {
+        paragraphs: [
+          'Meja kerja cafe modern minimalis murah dengan kualitas multifungsi premium. Sebagai produsen meja kerja industrial terpercaya, kami menawarkan meja kerja cafe modern minimalis dengan harga terjangkau namun berkualitas dan multifungsi.',
+          'Meja kerja cafe modern minimalis yang kami produksi cocok untuk co-working space cafe dengan desain modern minimalis yang tidak mengganggu kenyamanan pelanggan.'
+        ]
+      },
+      {
+        heading: 'Meja Kerja Cafe Modern Minimalis Murah - Multifungsi',
+        list: [
+          '<strong>Meja Kerja Standard:</strong> <a href="/product-category/work-study-tables">Meja kerja cafe modern minimalis</a> untuk co-working space. Harga terjangkau, material berkualitas, desain minimalis modern.',
+          '<strong>Meja dengan Rak Buku:</strong> Meja kerja cafe dengan rak buku multifungsi. Murah, fungsional, dengan desain modern minimalis.',
+          '<strong>Custom Size:</strong> Meja kerja custom cafe modern minimalis sesuai kebutuhan space. Ukuran custom, material premium, harga kompetitif.',
+          '<strong>Multifungsi Design:</strong> Meja kerja cafe dengan design multifungsi untuk berbagai aktivitas. Storage built-in, cable management, desain modern minimalis.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Kerja Cafe Modern Minimalis Murah Berkualitas Multifungsi'
+      },
+      {
+        heading: 'Meja Kerja Cafe Modern Minimalis - Mangala Living',
+        paragraphs: [
+          'Mangala Living adalah produsen meja kerja cafe modern minimalis murah berkualitas dengan design multifungsi. Workshop Bekasi, material besi berkualitas, dengan harga terjangkau.',
+          'Material meja kerja: frame besi hollow galvanis grade A, top table kayu solid atau engineered wood berkualitas, finishing powder coating tahan lama. Harga murah langsung dari workshop tanpa markup.',
+          'Untuk informasi meja kerja cafe modern minimalis murah berkualitas multifungsi, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi meja kerja</a> kami.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'jasa-buat-furniture-cafe-custom-modern-minimalis-murah',
+    sections: [
+      {
+        paragraphs: [
+          'Jasa buat furniture cafe custom modern minimalis murah Bekasi dengan workshop langsung. Mangala Living adalah jasa furniture cafe custom terpercaya yang menawarkan furniture minimalis modern dengan harga terjangkau namun berkualitas premium.',
+          'Jasa buat furniture cafe custom kami melayani berbagai kebutuhan cafe, dari furniture minimalis modern hingga desain custom yang sesuai dengan konsep brand cafe Anda.'
+        ]
+      },
+      {
+        heading: 'Jasa Buat Furniture Cafe Custom Modern Minimalis Murah',
+        list: [
+          '<strong>Custom Design:</strong> Jasa buat furniture cafe custom minimalis modern sesuai konsep cafe Anda. Desain unique, harga terjangkau, kualitas premium.',
+          '<strong>Material Berkualitas:</strong> Semua furniture cafe custom menggunakan material berkualitas premium: besi hollow galvanis, kayu solid, finishing powder coating.',
+          '<strong>Workshop Langsung:</strong> Jasa buat furniture cafe custom dengan workshop langsung di Bekasi = harga pabrik tanpa markup.',
+          '<strong>Tim Ahli:</strong> Tim berpengalaman 25 tahun yang memahami kebutuhan furniture cafe custom minimalis modern.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Jasa Buat Furniture Cafe Custom Modern Minimalis Murah Bekasi'
+      },
+      {
+        heading: 'Jasa Buat Furniture Cafe Custom Bekasi - Workshop Langsung',
+        paragraphs: [
+          'Mangala Living adalah jasa buat furniture cafe custom modern minimalis murah Bekasi dengan workshop langsung. Pengalaman 25 tahun, 1000+ klien puas, dengan harga terjangkau namun kualitas premium.',
+          'Proses jasa buat furniture cafe custom: Konsultasi konsep cafe &rarr; Design proposal &rarr; Approval & quotation &rarr; Produksi di workshop Bekasi &rarr; Quality control &rarr; Delivery & instalasi.',
+          'Untuk konsultasi jasa buat furniture cafe custom modern minimalis murah Bekasi, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'kursi-bar-cafe-modern-minimalis-murah-jual-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Kursi bar cafe modern minimalis murah yang kami jual dengan kualitas industrial premium. Sebagai produsen kursi bar industrial terpercaya, kami jual berbagai kursi bar cafe modern minimalis dengan harga terjangkau namun berkualitas.',
+          'Kursi bar cafe modern minimalis yang kami jual dirancang untuk memberikan kenyamanan optimal dengan desain modern minimalis yang instagram-worthy.'
+        ]
+      },
+      {
+        heading: 'Kursi Bar Cafe Modern Minimalis Murah - Jual Berkualitas',
+        list: [
+          '<strong>Bar Stool Industrial:</strong> <a href="/product-category/bar-furniture-collection">Kursi bar cafe modern minimalis</a> yang kami jual untuk area bar counter. Harga terjangkau, material berkualitas, desain modern minimalis.',
+          '<strong>Stall Chair:</strong> Kursi bar stall chair cafe modern minimalis yang kami jual dengan kualitas premium. Ergonomis, nyaman, harga kompetitif.',
+          '<strong>Adjustable Height:</strong> Kursi bar cafe dengan adjustable height yang kami jual. Murah, fungsional, dengan desain modern minimalis.',
+          '<strong>Custom Design:</strong> Kursi bar custom cafe modern minimalis sesuai konsep cafe. Harga kompetitif, kualitas premium, desain modern minimalis.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop',
+        imageAlt: 'Kursi Bar Cafe Modern Minimalis Murah Jual Berkualitas'
+      },
+      {
+        heading: 'Jual Kursi Bar Cafe Modern Minimalis Murah Berkualitas',
+        paragraphs: [
+          'Mangala Living jual kursi bar cafe modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
+          'Material kursi bar: frame besi hollow galvanis grade A, seat material berkualitas (kayu solid atau engineered wood), finishing powder coating tahan gores. Harga murah langsung dari workshop tanpa markup distributor.',
+          'Untuk melihat koleksi kursi bar cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-kantin-industrial-modern-minimalis-murah-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture kantin industrial modern minimalis murah dengan kualitas premium. Sebagai produsen furniture kantin industrial terpercaya, kami menawarkan furniture kantin modern minimalis dengan harga terjangkau namun berkualitas untuk kantin pabrik dan cafe karyawan.',
+          'Furniture kantin industrial modern minimalis yang kami produksi memberikan solusi lengkap untuk kantin dengan budget terbatas namun tetap menginginkan kualitas premium dan desain modern minimalis.'
+        ]
+      },
+      {
+        heading: 'Furniture Kantin Industrial Modern Minimalis Murah',
+        list: [
+          '<strong>Meja Kantin:</strong> <a href="/product-category/dining-table-collection">Meja kantin industrial modern minimalis</a> untuk kantin pabrik dan cafe karyawan. Harga terjangkau, material berkualitas, desain modern minimalis.',
+          '<strong>Kursi Kantin:</strong> <a href="/product-category/dining-set-collection">Kursi kantin industrial modern minimalis</a> dengan konstruksi kuat. Murah, berkualitas, ergonomis untuk penggunaan intensif.',
+          '<strong>Set Lengkap:</strong> Paket furniture kantin industrial modern minimalis lengkap dengan harga special. Meja + kursi dengan harga lebih murah untuk volume order.',
+          '<strong>Custom Design:</strong> Furniture kantin custom industrial modern minimalis sesuai kebutuhan kantin. Ukuran custom, material premium, harga kompetitif untuk volume.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Kantin Industrial Modern Minimalis Murah Berkualitas'
+      },
+      {
+        heading: 'Furniture Kantin Industrial Modern Minimalis - Mangala Living',
+        paragraphs: [
+          'Mangala Living adalah produsen furniture kantin industrial modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, custom design untuk volume order, dengan harga terjangkau.',
+          'Kelebihan furniture kantin kami: Harga volume discount untuk order besar. Material berkualitas premium dengan konstruksi kuat untuk penggunaan intensif. Desain modern minimalis yang estetis. Custom size sesuai kebutuhan kantin.',
+          'Untuk informasi furniture kantin industrial modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi furniture kantin</a> kami.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'meja-makan-resto-modern-minimalis-murah-set-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Set meja makan resto modern minimalis murah dengan kualitas lengkap premium. Sebagai produsen furniture resto terpercaya, kami menawarkan paket lengkap meja makan resto modern minimalis dengan harga terjangkau namun berkualitas.',
+          'Set meja makan resto modern minimalis yang kami produksi memberikan solusi lengkap untuk resto dengan budget terbatas namun tetap menginginkan kualitas premium dan desain modern minimalis.'
+        ]
+      },
+      {
+        heading: 'Set Meja Makan Resto Modern Minimalis Murah',
+        list: [
+          '<strong>Paket Lengkap:</strong> <a href="/product-category/dining-set-collection">Set meja makan resto modern minimalis</a> lengkap dengan harga terjangkau. Paket 1 meja + 2 kursi atau custom sesuai kebutuhan resto.',
+          '<strong>Material Berkualitas:</strong> Set meja makan resto menggunakan material berkualitas premium: besi hollow galvanis, top table kayu solid, finishing powder coating.',
+          '<strong>Desain Modern:</strong> Set meja makan resto dengan desain modern minimalis yang instagram-worthy. Warna matching, konsistensi design, estetika modern.',
+          '<strong>Harga Special:</strong> Set meja makan resto dengan harga special untuk paket lengkap. Lebih murah dibanding beli terpisah.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Set Meja Makan Resto Modern Minimalis Murah Berkualitas'
+      },
+      {
+        heading: 'Set Meja Makan Resto Modern Minimalis - Mangala Living',
+        paragraphs: [
+          'Mangala Living menawarkan set meja makan resto modern minimalis murah berkualitas dengan paket lengkap. Workshop Bekasi, material berkualitas premium, dengan harga terjangkau untuk paket lengkap.',
+          'Kelebihan set meja makan resto kami: Harga special untuk paket lengkap. Material berkualitas premium dengan finishing tahan lama. Desain modern minimalis yang match dan instagram-worthy. Custom jumlah sesuai kebutuhan resto Anda.',
+          'Untuk informasi set meja makan resto modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi dining set</a> kami.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'jasa-furniture-hotel-custom-modern-minimalis-murah-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Jasa furniture hotel custom modern minimalis murah berkualitas premium dari Mangala Living. Kami adalah produsen furniture hotel custom terpercaya yang menawarkan furniture modern minimalis untuk hotel dengan harga terjangkau namun berkualitas.',
+          'Jasa furniture hotel custom kami melayani berbagai kebutuhan hotel, dari lobby furniture, restaurant hotel, hingga room furniture dengan desain modern minimalis yang estetis.'
+        ]
+      },
+      {
+        heading: 'Jasa Furniture Hotel Custom Modern Minimalis Murah',
+        list: [
+          '<strong>Lobby Furniture:</strong> Jasa furniture hotel custom untuk lobby area dengan desain modern minimalis. Murah, berkualitas, dengan karakter premium.',
+          '<strong>Restaurant Hotel:</strong> Jasa furniture hotel custom untuk restaurant hotel dengan desain modern minimalis. Material berkualitas, harga kompetitif.',
+          '<strong>Room Furniture:</strong> Jasa furniture hotel custom untuk room furniture dengan desain modern minimalis. Harga terjangkau, kualitas premium.',
+          '<strong>Custom Design:</strong> Jasa furniture hotel custom dengan design eksklusif sesuai konsep hotel. Material premium, finishing berkualitas, harga kompetitif untuk project hotel.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&auto=format&fit=crop',
+        imageAlt: 'Jasa Furniture Hotel Custom Modern Minimalis Murah Berkualitas'
+      },
+      {
+        heading: 'Jasa Furniture Hotel Custom - Mangala Living',
+        paragraphs: [
+          'Mangala Living adalah jasa furniture hotel custom modern minimalis murah berkualitas premium dengan workshop langsung di Bekasi. Pengalaman 25 tahun, project hotel experience, dengan harga terjangkau namun kualitas premium.',
+          'Kelebihan jasa furniture hotel custom kami: Custom design eksklusif sesuai konsep hotel. Material berkualitas premium dengan finishing tahan lama. Tim berpengalaman project hotel. Harga kompetitif untuk volume project hotel.',
+          'Untuk konsultasi jasa furniture hotel custom modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'rak-buku-cafe-modern-minimalis-murah-jual-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Rak buku cafe modern minimalis murah yang kami jual dengan kualitas industrial premium. Sebagai produsen rak buku industrial terpercaya, kami jual berbagai rak buku cafe modern minimalis dengan harga terjangkau namun berkualitas.',
+          'Rak buku cafe modern minimalis yang kami jual cocok untuk cafe literasi dan perpustakaan cafe dengan desain modern minimalis yang fungsional dan estetis.'
+        ]
+      },
+      {
+        heading: 'Rak Buku Cafe Modern Minimalis Murah - Jual Berkualitas',
+        list: [
+          '<strong>Rak Buku Wall:</strong> <a href="/product-category/storage-shelving">Rak buku cafe modern minimalis</a> yang kami jual untuk wall mounting. Material besi berkualitas, desain industrial minimalis.',
+          '<strong>Freestanding Rack:</strong> Rak buku freestanding cafe modern minimalis yang kami jual. Murah, fungsional, dengan desain modern minimalis.',
+          '<strong>Modular System:</strong> Rak buku modular cafe modern minimalis yang kami jual dengan sistem modular. Harga terjangkau, kualitas premium, dapat dikombinasikan.',
+          '<strong>Custom Design:</strong> Rak buku custom cafe modern minimalis sesuai kebutuhan cafe literasi. Ukuran custom, material berkualitas, harga kompetitif.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Rak Buku Cafe Modern Minimalis Murah Jual Berkualitas'
+      },
+      {
+        heading: 'Jual Rak Buku Cafe Modern Minimalis Murah Berkualitas',
+        paragraphs: [
+          'Mangala Living jual rak buku cafe modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
+          'Material rak buku: besi hollow galvanis grade A untuk frame kuat, finishing powder coating tahan lama, desain modern minimalis yang timeless dan fungsional. Harga murah langsung dari workshop tanpa markup distributor.',
+          'Untuk melihat koleksi rak buku cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'daybed-cafe-modern-minimalis-murah-berkualitas-lounge-area',
+    sections: [
+      {
+        paragraphs: [
+          'Daybed cafe modern minimalis murah dengan kualitas premium untuk lounge area. Sebagai produsen daybed industrial terpercaya, kami menawarkan daybed cafe modern minimalis dengan harga terjangkau namun berkualitas untuk area lounge cafe, hotel, dan restoran.',
+          'Daybed cafe modern minimalis yang kami produksi memberikan solusi seating yang nyaman untuk lounge area dengan desain modern minimalis yang estetis dan instagram-worthy.'
+        ]
+      },
+      {
+        heading: 'Daybed Cafe Modern Minimalis Murah - Lounge Area',
+        list: [
+          '<strong>Daybed Standard:</strong> <a href="/product-category/daybed-collection">Daybed cafe modern minimalis</a> untuk lounge area. Harga terjangkau, material berkualitas, desain modern minimalis.',
+          '<strong>Daybed dengan Storage:</strong> Daybed cafe modern minimalis dengan storage built-in. Murah, fungsional, dengan desain modern minimalis.',
+          '<strong>Outdoor Daybed:</strong> Daybed outdoor cafe modern minimalis untuk area outdoor lounge. Tahan cuaca, material berkualitas, finishing outdoor-grade.',
+          '<strong>Custom Design:</strong> Daybed custom cafe modern minimalis sesuai kebutuhan lounge area. Ukuran custom, material premium, harga kompetitif.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Daybed Cafe Modern Minimalis Murah Berkualitas Lounge Area'
+      },
+      {
+        heading: 'Daybed Cafe Modern Minimalis - Mangala Living',
+        paragraphs: [
+          'Mangala Living adalah produsen daybed cafe modern minimalis murah berkualitas untuk lounge area. Workshop Bekasi, material besi berkualitas, dengan harga terjangkau.',
+          'Material daybed: frame besi hollow galvanis grade A, cushion material berkualitas, finishing powder coating tahan lama, desain modern minimalis yang nyaman dan estetis. Harga murah langsung dari workshop tanpa markup.',
+          'Untuk informasi daybed cafe modern minimalis murah berkualitas untuk lounge area, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi daybed</a> kami.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'jasa-furniture-kantor-industrial-modern-minimalis-murah',
+    sections: [
+      {
+        paragraphs: [
+          'Jasa furniture kantor industrial modern minimalis murah berkualitas dari Mangala Living. Kami adalah produsen furniture kantor industrial terpercaya yang menawarkan furniture kantor modern minimalis dengan harga terjangkau namun berkualitas.',
+          'Jasa furniture kantor industrial kami melayani berbagai kebutuhan kantor, dari meja kerja, rak storage, hingga furniture kantor lengkap dengan desain modern minimalis yang fungsional.'
+        ]
+      },
+      {
+        heading: 'Jasa Furniture Kantor Industrial Modern Minimalis Murah',
+        list: [
+          '<strong>Meja Kerja:</strong> <a href="/product-category/work-study-tables">Meja kerja kantor industrial modern minimalis</a> dengan jasa custom. Harga terjangkau, material berkualitas, desain modern minimalis.',
+          '<strong>Rak Storage:</strong> Rak storage kantor industrial modern minimalis dengan jasa custom untuk storage yang fungsional. Murah, berkualitas, dengan desain modern minimalis.',
+          '<strong>Furniture Lengkap:</strong> Paket furniture kantor industrial modern minimalis lengkap dengan harga special. Meja kerja + rak storage dengan harga lebih murah.',
+          '<strong>Custom Design:</strong> Furniture kantor custom industrial modern minimalis sesuai kebutuhan kantor. Ukuran custom, material premium, harga kompetitif.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&auto=format&fit=crop',
+        imageAlt: 'Jasa Furniture Kantor Industrial Modern Minimalis Murah Berkualitas'
+      },
+      {
+        heading: 'Jasa Furniture Kantor Industrial - Mangala Living',
+        paragraphs: [
+          'Mangala Living adalah jasa furniture kantor industrial modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, custom design, dengan harga terjangkau.',
+          'Kelebihan jasa furniture kantor kami: Custom design sesuai kebutuhan kantor. Material berkualitas premium dengan konstruksi kuat. Desain modern minimalis yang fungsional. Harga terjangkau untuk volume order kantor.',
+          'Untuk konsultasi jasa furniture kantor industrial modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'sofa-bench-cafe-modern-minimalis-murah-jual-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Sofa bench cafe modern minimalis murah yang kami jual dengan kualitas industrial premium. Sebagai produsen sofa bench industrial terpercaya, kami jual berbagai sofa bench cafe modern minimalis dengan harga terjangkau namun berkualitas.',
+          'Sofa bench cafe modern minimalis yang kami jual cocok untuk area lounge cafe dengan desain modern minimalis yang nyaman dan estetis.'
+        ]
+      },
+      {
+        heading: 'Sofa Bench Cafe Modern Minimalis Murah - Jual Berkualitas',
+        list: [
+          '<strong>Sofa Bench Standard:</strong> <a href="/product-category/industrial-sofa-bench">Sofa bench cafe modern minimalis</a> yang kami jual untuk lounge area. Harga terjangkau, material berkualitas, desain modern minimalis.',
+          '<strong>Sofa Bench dengan Back:</strong> Sofa bench cafe dengan backrest yang kami jual. Murah, nyaman, dengan desain modern minimalis.',
+          '<strong>Modular Bench:</strong> Sofa bench modular cafe modern minimalis yang kami jual dengan sistem modular. Harga terjangkau, kualitas premium, dapat dikombinasikan.',
+          '<strong>Custom Design:</strong> Sofa bench custom cafe modern minimalis sesuai kebutuhan cafe. Ukuran custom, material premium, harga kompetitif.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Sofa Bench Cafe Modern Minimalis Murah Jual Berkualitas'
+      },
+      {
+        heading: 'Jual Sofa Bench Cafe Modern Minimalis Murah Berkualitas',
+        paragraphs: [
+          'Mangala Living jual sofa bench cafe modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
+          'Material sofa bench: frame besi hollow galvanis grade A, cushion material berkualitas, finishing powder coating tahan lama, desain modern minimalis yang nyaman dan estetis. Harga murah langsung dari workshop tanpa markup distributor.',
+          'Untuk melihat koleksi sofa bench cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'meja-coffee-cafe-modern-minimalis-murah-berkualitas-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Meja coffee cafe modern minimalis murah dengan kualitas industrial premium. Sebagai produsen coffee table industrial terpercaya, kami menawarkan meja coffee cafe modern minimalis dengan harga terjangkau namun berkualitas.',
+          'Meja coffee cafe modern minimalis yang kami produksi cocok untuk area lounge cafe dengan desain modern minimalis yang estetis dan instagram-worthy.'
+        ]
+      },
+      {
+        heading: 'Meja Coffee Cafe Modern Minimalis Murah - Industrial',
+        list: [
+          '<strong>Coffee Table Standard:</strong> <a href="/product-category/table-collection">Meja coffee cafe modern minimalis</a> untuk lounge area. Harga terjangkau, material berkualitas, desain modern minimalis.',
+          '<strong>Side Table:</strong> Side table cafe modern minimalis sebagai complement coffee table. Murah, fungsional, dengan desain modern minimalis.',
+          '<strong>Nesting Table:</strong> Coffee table nesting cafe modern minimalis yang dapat ditumpuk. Harga terjangkau, kualitas premium, desain modern minimalis.',
+          '<strong>Custom Design:</strong> Meja coffee custom cafe modern minimalis sesuai kebutuhan cafe. Ukuran custom, material premium, harga kompetitif.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1200&auto=format&fit=crop',
+        imageAlt: 'Meja Coffee Cafe Modern Minimalis Murah Berkualitas Industrial'
+      },
+      {
+        heading: 'Meja Coffee Cafe Modern Minimalis - Mangala Living',
+        paragraphs: [
+          'Mangala Living adalah produsen meja coffee cafe modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, desain modern minimalis, dengan harga terjangkau.',
+          'Material meja coffee: frame besi hollow galvanis grade A, top table kayu solid atau engineered wood berkualitas, finishing powder coating tahan lama. Harga murah langsung dari workshop tanpa markup.',
+          'Untuk informasi meja coffee cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi coffee table</a> kami.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'jasa-furniture-cafe-custom-minimalis-modern-murah-bekasi-jakarta',
+    sections: [
+      {
+        paragraphs: [
+          'Jasa furniture cafe custom minimalis modern murah untuk Bekasi dan Jakarta dengan kualitas premium. Mangala Living adalah jasa furniture cafe custom terpercaya yang menawarkan furniture minimalis modern dengan harga terjangkau namun berkualitas.',
+          'Jasa furniture cafe custom kami melayani area Bekasi dan Jakarta dengan workshop langsung di Bekasi untuk memberikan harga terbaik dan kualitas premium.'
+        ]
+      },
+      {
+        heading: 'Jasa Furniture Cafe Custom Minimalis Modern Murah Bekasi Jakarta',
+        list: [
+          '<strong>Workshop Bekasi:</strong> Jasa furniture cafe custom dengan workshop langsung di Bekasi = harga pabrik untuk area Bekasi dan Jakarta.',
+          '<strong>Custom Design:</strong> Jasa furniture cafe custom minimalis modern sesuai konsep cafe Anda. Desain unique, harga terjangkau, kualitas premium.',
+          '<strong>Material Berkualitas:</strong> Semua furniture cafe custom menggunakan material berkualitas premium: besi hollow galvanis, kayu solid, finishing powder coating.',
+          '<strong>Delivery Area:</strong> Jasa furniture cafe custom dengan delivery gratis untuk area Bekasi dan Jakarta. Fast delivery dengan tim lokal.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Jasa Furniture Cafe Custom Minimalis Modern Murah Bekasi Jakarta'
+      },
+      {
+        heading: 'Jasa Furniture Cafe Custom Bekasi Jakarta - Workshop Langsung',
+        paragraphs: [
+          'Mangala Living adalah jasa furniture cafe custom minimalis modern murah berkualitas untuk area Bekasi dan Jakarta dengan workshop langsung di Bekasi. Pengalaman 25 tahun, 1000+ klien puas, dengan harga terjangkau namun kualitas premium.',
+          'Kelebihan jasa furniture cafe custom untuk Bekasi Jakarta: Workshop langsung = harga pabrik tanpa markup. Custom design minimalis modern sesuai konsep cafe. Material berkualitas premium dengan harga terjangkau. Delivery gratis untuk area Bekasi dan Jakarta.',
+          'Untuk konsultasi jasa furniture cafe custom minimalis modern murah Bekasi Jakarta, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-mall-cafe-resto-modern-minimalis-murah-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture mall cafe resto modern minimalis murah dengan kualitas premium. Sebagai produsen furniture mall terpercaya, kami menawarkan furniture mall cafe resto modern minimalis dengan harga terjangkau namun berkualitas untuk tenant mall dan foodcourt.',
+          'Furniture mall cafe resto modern minimalis yang kami produksi cocok untuk tenant mall dan foodcourt dengan desain modern minimalis yang estetis dan fungsional.'
+        ]
+      },
+      {
+        heading: 'Furniture Mall Cafe Resto Modern Minimalis Murah',
+        list: [
+          '<strong>Tenant Mall:</strong> <a href="/product-category/dining-table-collection">Furniture mall cafe resto modern minimalis</a> untuk tenant mall. Harga terjangkau, material berkualitas, desain modern minimalis.',
+          '<strong>Foodcourt:</strong> Furniture foodcourt cafe resto modern minimalis dengan design compact. Murah, fungsional, dengan desain modern minimalis.',
+          '<strong>Volume Discount:</strong> Furniture mall cafe resto dengan volume discount untuk tenant mall. Harga special untuk order volume besar.',
+          '<strong>Custom Design:</strong> Furniture mall custom cafe resto modern minimalis sesuai requirement mall. Ukuran custom, material premium, harga kompetitif untuk project mall.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Mall Cafe Resto Modern Minimalis Murah Berkualitas'
+      },
+      {
+        heading: 'Furniture Mall Cafe Resto Modern Minimalis - Mangala Living',
+        paragraphs: [
+          'Mangala Living adalah produsen furniture mall cafe resto modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, custom design untuk mall, dengan harga terjangkau untuk volume order.',
+          'Kelebihan furniture mall kami: Volume discount untuk tenant mall dan foodcourt. Material berkualitas premium dengan konstruksi kuat untuk penggunaan intensif. Desain modern minimalis yang sesuai requirement mall. Custom design sesuai konsep mall dengan harga kompetitif.',
+          'Untuk informasi furniture mall cafe resto modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi furniture mall</a> kami.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'rak-gantung-cafe-modern-minimalis-murah-jual-berkualitas',
+    sections: [
+      {
+        paragraphs: [
+          'Rak gantung cafe modern minimalis murah yang kami jual dengan kualitas industrial premium. Sebagai produsen rak gantung industrial terpercaya, kami jual berbagai rak gantung cafe modern minimalis dengan harga terjangkau namun berkualitas.',
+          'Rak gantung cafe modern minimalis yang kami jual cocok untuk wall mounting dengan desain modern minimalis yang fungsional dan estetis tanpa mengambil space lantai.'
+        ]
+      },
+      {
+        heading: 'Rak Gantung Cafe Modern Minimalis Murah - Jual Berkualitas',
+        list: [
+          '<strong>Wall Mount Rack:</strong> <a href="/product-category/storage-shelving">Rak gantung cafe modern minimalis</a> yang kami jual untuk wall mounting. Material besi berkualitas, desain industrial minimalis.',
+          '<strong>Floating Shelf:</strong> Rak gantung floating cafe modern minimalis yang kami jual. Murah, estetis, dengan desain modern minimalis.',
+          '<strong>Modular System:</strong> Rak gantung modular cafe modern minimalis yang kami jual dengan sistem modular. Harga terjangkau, kualitas premium, dapat dikombinasikan.',
+          '<strong>Custom Design:</strong> Rak gantung custom cafe modern minimalis sesuai kebutuhan cafe. Ukuran custom, material premium, harga kompetitif.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Rak Gantung Cafe Modern Minimalis Murah Jual Berkualitas'
+      },
+      {
+        heading: 'Jual Rak Gantung Cafe Modern Minimalis Murah Berkualitas',
+        paragraphs: [
+          'Mangala Living jual rak gantung cafe modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
+          'Material rak gantung: besi hollow galvanis grade A untuk frame kuat, finishing powder coating tahan lama, wall mounting system berkualitas, desain modern minimalis yang timeless dan fungsional. Harga murah langsung dari workshop tanpa markup distributor.',
+          'Untuk melihat koleksi rak gantung cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'jasa-furniture-besi-custom-modern-minimalis-murah-jabodetabek',
+    sections: [
+      {
+        paragraphs: [
+          'Jasa furniture besi custom modern minimalis murah untuk Jabodetabek dengan kualitas premium. Mangala Living adalah jasa furniture besi custom terpercaya yang menawarkan furniture besi modern minimalis dengan harga terjangkau namun berkualitas untuk seluruh area Jabodetabek.',
+          'Jasa furniture besi custom kami melayani area Jabodetabek dengan workshop langsung di Bekasi untuk memberikan harga terbaik dan kualitas premium dengan coverage area yang luas.'
+        ]
+      },
+      {
+        heading: 'Jasa Furniture Besi Custom Modern Minimalis Murah Jabodetabek',
+        list: [
+          '<strong>Workshop Bekasi:</strong> Jasa furniture besi custom dengan workshop langsung di Bekasi = harga pabrik untuk area Jabodetabek.',
+          '<strong>Custom Design:</strong> Jasa furniture besi custom modern minimalis sesuai kebutuhan cafe, resto, kantor. Desain unique, harga terjangkau, kualitas premium.',
+          '<strong>Material Besi Berkualitas:</strong> Semua furniture besi custom menggunakan material berkualitas premium: besi hollow galvanis grade A, finishing powder coating tahan lama.',
+          '<strong>Coverage Area:</strong> Jasa furniture besi custom melayani seluruh Jabodetabek: Jakarta, Bogor, Depok, Tangerang, Bekasi. Delivery tersedia dengan tim lokal.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Jasa Furniture Besi Custom Modern Minimalis Murah Jabodetabek'
+      },
+      {
+        heading: 'Jasa Furniture Besi Custom Jabodetabek - Workshop Bekasi',
+        paragraphs: [
+          'Mangala Living adalah jasa furniture besi custom modern minimalis murah berkualitas untuk seluruh area Jabodetabek dengan workshop langsung di Bekasi. Pengalaman 25 tahun, 1000+ klien puas di Jabodetabek, dengan harga terjangkau namun kualitas premium.',
+          'Kelebihan jasa furniture besi custom untuk Jabodetabek: Workshop langsung di Bekasi = harga pabrik tanpa markup. Custom design modern minimalis sesuai kebutuhan. Material besi berkualitas premium dengan finishing tahan lama. Coverage area luas untuk seluruh Jabodetabek dengan delivery tersedia.',
+          'Untuk konsultasi jasa furniture besi custom modern minimalis murah Jabodetabek, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+        ]
+      }
+    ]
+  }
 ]
 
 export const getBlogPostContent = (slug: string): BlogContent | undefined => {
