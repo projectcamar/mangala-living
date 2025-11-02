@@ -39,7 +39,7 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
       <div className="container">
         <div className="section-header-row">
           <h2 className="our-products-title">
-            {isIndonesian ? "Produk Kami" : "Our Products"}
+            {isIndonesian ? "Koleksi Produk: Bar Set, Lounge Set, Storage & Furniture Industrial" : "Our Collection: Bar Set, Lounge Set, Storage & Industrial Furniture"}
           </h2>
           <Link to="/shop" className="view-all-link">
             {isIndonesian ? "LIHAT SEMUA" : "VIEW ALL"}

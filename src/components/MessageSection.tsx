@@ -25,10 +25,10 @@ const MessageSection: React.FC<MessageSectionProps> = ({ isIndonesian = false })
                     Jaringan kami menjangkau seluruh kepulauan Indonesia, dan kami telah berhasil menyelesaikan lebih dari 1.000 pesanan untuk berbagai bisnis di seluruh negeri. Dari cafe kecil hingga hotel besar, kami melayani semua dengan standar kualitas yang sama tinggi.
                   </p>
                   
-                  <h3 className="about-message-subtitle">Spesialisasi Furniture Industrial untuk Ruang Komersial</h3>
+                  <h3 className="about-message-subtitle">Bar Set, Lounge Set, Sofa Bench & Storage untuk Ruang Komersial</h3>
                   <p className="about-message-paragraph">
-                    Kami mengkhususkan diri dalam menciptakan furniture yang tahan lama dan estetis mencolok untuk berbagai ruang komersial. Dari coffee shop trendy 
-                    dan restoran ramai hingga kantor modern dan hotel butik yang elegan, furniture industrial scandinavian kami memberikan sentuhan yang sempurna untuk menciptakan atmosfer unik. 
+                    Kami mengkhususkan diri dalam menciptakan bar set outdoor, lounge set, sofa bench, storage rack dan furniture industrial lainnya yang tahan lama untuk berbagai ruang komersial. Dari coffee shop trendy 
+                    dan restoran ramai hingga kantor modern dan hotel butik yang elegan, koleksi new arrivals kami memberikan sentuhan yang sempurna untuk menciptakan atmosfer unik. 
                     Kami sepenuhnya menerima permintaan custom dan bekerja sama dengan klien untuk merancang produk yang sesuai dengan identitas merek unik mereka
                     dan kebutuhan fungsional mereka. Setiap produk dirancang dengan mempertimbangkan kenyamanan, estetika, dan daya tahan jangka panjang.
                   </p>
@@ -51,10 +51,10 @@ const MessageSection: React.FC<MessageSectionProps> = ({ isIndonesian = false })
                     various businesses nationwide. From small cafes to large hotels, we serve all with the same high quality standards.
                   </p>
                   
-                  <h3 className="about-message-subtitle">Specializing in Industrial Furniture for Commercial Spaces</h3>
+                  <h3 className="about-message-subtitle">Bar Set, Lounge Set, Sofa Bench & Storage for Commercial Spaces</h3>
                   <p className="about-message-paragraph">
-                    We specialize in creating durable, aesthetically striking furniture for various commercial spaces. From trendy coffee shops 
-                    and bustling restaurants to modern offices and elegant boutique hotels, our industrial scandinavian furniture sets the perfect tone to create a unique atmosphere. 
+                    We specialize in creating bar set outdoor, lounge set, sofa bench, storage rack and other durable industrial furniture for various commercial spaces. From trendy coffee shops 
+                    and bustling restaurants to modern offices and elegant boutique hotels, our new arrivals collection sets the perfect tone to create a unique atmosphere. 
                     We fully accept custom requests and work collaboratively with our clients to design pieces that match their unique brand identity 
                     and functional requirements. Each product is designed with consideration for comfort, aesthetics, and long-term durability.
                   </p>

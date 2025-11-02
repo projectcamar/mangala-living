@@ -70,17 +70,17 @@ const Home: React.FC = () => {
   // Indonesian translations
   const translations = {
     title: isIndonesian 
-      ? "Furniture Industrial Besi Custom Bekasi | Mangala Living"
-      : "Industrial Furniture Besi Custom Bekasi | Mangala Living",
+      ? "Furniture Industrial Besi Bar Set Lounge Set Storage New Arrivals | Mangala Living"
+      : "Industrial Furniture Bar Set Lounge Set Storage New Arrivals | Mangala Living",
     description: isIndonesian
-      ? "Sejak 1999, kami menghadirkan Industrial Set terbaik untuk cafe, hotel dan restoran dengan kualitas premium dari workshop Bekasi dan pengalaman 25 tahun"
-      : "Since 1999, we deliver premium Industrial Sets for cafes, hotels and restaurants with superior quality from our Bekasi workshop and 25 years of experience",
+      ? "Sejak 1999, Mangala Living menghadirkan furniture industrial terbaik: bar set outdoor, lounge set sofa bench, storage rak display, new arrivals untuk cafe hotel restoran. Workshop Bekasi 25+ tahun pengalaman"
+      : "Since 1999, Mangala Living delivers premium industrial furniture: bar set outdoor, lounge set sofa bench, storage display rack, new arrivals for cafes hotels restaurants. Bekasi workshop 25+ years experience",
     ogTitle: isIndonesian
       ? "Furniture Industrial Besi Custom Bekasi | Cafe & Restoran"
       : "Industrial Furniture Besi Custom Bekasi | Cafe & Restoran",
     ogDescription: isIndonesian
-      ? "Manufacturer furniture industrial custom untuk cafe, restoran, hotel. Pengalaman 25+ tahun, 1000+ klien puas. Workshop di Bekasi. Harga langsung pabrik."
-      : "Manufacturer industrial furniture custom untuk cafe, restoran, hotel. Pengalaman 25+ tahun, 1000+ klien puas. Workshop di Bekasi. Harga langsung pabrik."
+      ? "Manufacturer furniture industrial: bar set outdoor, lounge set, sofa bench, storage rack, new arrivals untuk cafe restoran hotel. Workshop Bekasi 25+ tahun. Harga pabrik."
+      : "Manufacturer industrial furniture: bar set outdoor, lounge set, sofa bench, storage rack, new arrivals for cafes restaurants hotels. Bekasi workshop 25+ years. Factory prices."
   }
 
   if (isLoading) {
@@ -118,7 +118,7 @@ const Home: React.FC = () => {
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{translations.title}</title>
         <meta name="description" content={translations.description} />
-        <meta name="keywords" content="hollowline display rack, set furniture industrial, display shelf rack, call mangala furniture, mangala showroom, mangala kitchen cabinet, furniture bekasi murah, industrial furniture murah, meja kursi cafe, stall chair design" />
+        <meta name="keywords" content="bar set outdoor, lounge set, sofa bench, storage rack, new arrivals, furniture industrial set, display rack, bar furniture, outdoor furniture set, lounge furniture, mangala living, furniture bekasi, industrial furniture, meja kursi cafe" />
         <meta httpEquiv="content-language" content={localeMeta.lang} />
         
         {/* Open Graph / Facebook */}
@@ -133,8 +133,8 @@ const Home: React.FC = () => {
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Furniture Industrial Besi Custom Bekasi - Mangala Living" />
-        <meta name="twitter:description" content="Manufacturer furniture industrial custom untuk cafe, restoran, hotel. Workshop Bekasi. Pengalaman 25+ tahun." />
+        <meta name="twitter:title" content="Furniture Industrial Bar Set Lounge Set Storage - Mangala Living" />
+        <meta name="twitter:description" content="Bar set outdoor, lounge set sofa bench, storage rack, new arrivals furniture industrial untuk cafe restoran hotel. Workshop Bekasi 25+ tahun." />
         <meta name="twitter:image" content="https://mangala-living.com/og-image.jpg" />
         
         {/* Additional SEO tags */}
