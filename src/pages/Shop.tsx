@@ -167,9 +167,9 @@ const Shop: React.FC = () => {
     <div className="product-category-page shop-page-layout">
       <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
-        <title>All Products - Industrial Furniture Collection | Mangala Living</title>
-        <meta name="description" content="Browse all industrial furniture products at Mangala Living. Industrial furniture besi custom untuk cafe, restoran, hotel. Kualitas terbaik, harga terjangkau." />
-        <meta name="keywords" content="industrial furniture, furniture besi, furniture custom, furniture cafe, furniture restoran, mangala living, furniture bekasi" />
+        <title>All Products - Bar Set Lounge Set Storage Furniture Industrial | Mangala Living</title>
+        <meta name="description" content="Browse all industrial furniture: bar set outdoor, lounge set sofa bench, storage rack display, new arrivals untuk cafe restoran hotel. Kualitas terbaik, harga terjangkau." />
+        <meta name="keywords" content="bar set, lounge set, sofa bench, storage rack, new arrivals, outdoor furniture set, industrial furniture, furniture besi, furniture custom, furniture cafe, furniture restoran, mangala living, furniture bekasi" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="content-language" content={localeMeta.lang} />
         <link rel="canonical" href={localizedUrls.canonical} />
@@ -178,8 +178,8 @@ const Shop: React.FC = () => {
         ))}
         
         {/* Open Graph */}
-        <meta property="og:title" content="All Products - Industrial Furniture Collection | Mangala Living" />
-        <meta property="og:description" content="Browse all industrial furniture products at Mangala Living. Industrial furniture besi custom untuk cafe, restoran, hotel." />
+        <meta property="og:title" content="All Products - Bar Set Lounge Set Storage Furniture Industrial | Mangala Living" />
+        <meta property="og:description" content="Browse all furniture industrial: bar set outdoor, lounge set, sofa bench, storage rack, new arrivals untuk cafe restoran hotel." />
         <meta property="og:url" content={localizedUrls.canonical} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content={localeMeta.locale} />
@@ -188,8 +188,8 @@ const Shop: React.FC = () => {
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="All Products - Industrial Furniture Collection | Mangala Living" />
-        <meta name="twitter:description" content="Browse all industrial furniture products at Mangala Living." />
+        <meta name="twitter:title" content="All Products - Bar Set Lounge Set Storage New Arrivals | Mangala Living" />
+        <meta name="twitter:description" content="Browse bar set outdoor, lounge set sofa bench, storage rack display, new arrivals furniture industrial at Mangala Living." />
         
         {/* Structured Data */}
         <script type="application/ld+json">
