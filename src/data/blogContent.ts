@@ -1317,13 +1317,13 @@ const BLOG_CONTENTS: BlogContent[] = [
           'Kami menyediakan berbagai koleksi industrial furniture besi custom termasuk <a href="/product-category/new-arrivals">New Arrivals</a>, <a href="/product-category/lounge-seating-set">Lounge Set</a>, <a href="/product-category/industrial-sofa-bench">Sofa Bench</a>, <a href="/product-category/dining-set-collection">Dining Set</a>, <a href="/product-category/bar-furniture-collection">Bar Set</a>, <a href="/product-category/outdoor">Outdoor</a>, <a href="/product-category/daybed-collection">Daybed</a>, <a href="/product-category/storage-shelving">Storage</a>, <a href="/product-category/work-study-tables">Tables</a>, dan <a href="/product-category/dining-table-collection">Dine Table</a>. Semua produk dapat disesuaikan dengan kebutuhan bisnis Anda.'
         ],
         list: [
-          '? Pengalaman 25+ tahun sebagai manufacturer furniture industrial',
-          '? 1000+ klien puas di seluruh Indonesia',
-          '? Custom design sesuai kebutuhan bisnis Anda',
-          '? Material industrial grade berkualitas tinggi',
-          '? Harga kompetitif langsung dari pabrik',
-          '? Garansi kualitas produk',
-          '? Workshop di Bekasi dengan akses mudah'
+          'Pengalaman 25+ tahun sebagai manufacturer furniture industrial',
+          '1000+ klien puas di seluruh Indonesia',
+          'Custom design sesuai kebutuhan bisnis Anda',
+          'Material industrial grade berkualitas tinggi',
+          'Harga kompetitif langsung dari pabrik',
+          'Garansi kualitas produk',
+          'Workshop di Bekasi dengan akses mudah'
         ]
       },
       {
