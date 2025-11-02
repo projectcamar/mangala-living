@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { MessageCircle, X, Send, Bot, User } from 'lucide-react'
+import { useLocation } from 'react-router-dom'
 import './WhatsAppButton.css'
 import { trackEvent } from '../utils/analytics'
 import MessageRenderer from './MessageRenderer'
+import { detectLanguage } from '../utils/languageManager'
 
 interface Message {
   id: string
@@ -19,6 +21,7 @@ interface UserInfo {
 
 
 const WhatsAppButton: React.FC = () => {
+  const location = useLocation()
   const [isExpanded, setIsExpanded] = useState(false)
   const [isIndonesian, setIsIndonesian] = useState(false)
   const [messages, setMessages] = useState<Message[]>([
@@ -48,56 +51,30 @@ const WhatsAppButton: React.FC = () => {
     scrollToBottom()
   }, [messages])
 
-  // Language detection effect
+  // Language detection effect - respects user's language choice from Header
   useEffect(() => {
-    const detectLanguage = async () => {
+    const initLanguage = async () => {
       try {
-        // Try to get location from IP
-        const response = await fetch('https://ipapi.co/json/')
-        const data = await response.json()
+        const lang = await detectLanguage(location.pathname, location.search)
+        const isID = lang === 'id'
+        setIsIndonesian(isID)
         
-        if (data.country_code === 'ID') {
-          setIsIndonesian(true)
-          // Update initial message to Indonesian
-          setMessages([{
-            id: '1',
-            text: `Hai ??! Selamat datang di Mangala Living. Beri tahu saya jika Anda memiliki pertanyaan.\n\nJangan ragu untuk whatsapp di [+62 852 1207 8467](https://wa.me/6285212078467)`,
-            isUser: false,
-            timestamp: new Date()
-          }])
-        } else {
-          setMessages([{
-            id: '1',
-            text: `Hi there ??! Welcome to the Mangala Living. Let me know if you have any questions.\n\nFeel free to whatsapp on [+62 852 1207 8467](https://wa.me/6285212078467)`,
-            isUser: false,
-            timestamp: new Date()
-          }])
-        }
+        // Update initial message based on detected language
+        setMessages([{
+          id: '1',
+          text: isID 
+            ? `Hai ??! Selamat datang di Mangala Living. Beri tahu saya jika Anda memiliki pertanyaan.\n\nJangan ragu untuk whatsapp di [+62 852 1207 8467](https://wa.me/6285212078467)`
+            : `Hi there ??! Welcome to the Mangala Living. Let me know if you have any questions.\n\nFeel free to whatsapp on [+62 852 1207 8467](https://wa.me/6285212078467)`,
+          isUser: false,
+          timestamp: new Date()
+        }])
       } catch (error) {
-        console.log('IP detection failed, checking browser language')
-        // Fallback: check browser language
-        const browserLang = navigator.language || navigator.languages?.[0]
-        if (browserLang?.startsWith('id')) {
-          setIsIndonesian(true)
-          setMessages([{
-            id: '1',
-            text: `Hai ??! Selamat datang di Mangala Living. Beri tahu saya jika Anda memiliki pertanyaan.\n\nJangan ragu untuk whatsapp di [+62 852 1207 8467](https://wa.me/6285212078467)`,
-            isUser: false,
-            timestamp: new Date()
-          }])
-        } else {
-          setMessages([{
-            id: '1',
-            text: `Hi there ??! Welcome to the Mangala Living. Let me know if you have any questions.\n\nFeel free to whatsapp on [+62 852 1207 8467](https://wa.me/6285212078467)`,
-            isUser: false,
-            timestamp: new Date()
-          }])
-        }
+        console.log('Language detection failed, using default')
       }
     }
 
-    detectLanguage()
-  }, [])
+    initLanguage()
+  }, [location.pathname, location.search])
 
   useEffect(() => {
     scrollToBottom()
