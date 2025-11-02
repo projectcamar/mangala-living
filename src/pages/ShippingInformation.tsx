@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import ServiceAreasSection from '../components/ServiceAreasSection'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
+import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import './ShippingInformation.css'
 
 const ShippingInformation: React.FC = () => {
@@ -61,10 +62,13 @@ const ShippingInformation: React.FC = () => {
     return null
   }
 
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+
   return (
     <div className="shipping-information-page">
       <AnnouncementBar isIndonesian={isIndonesian} />
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{isIndonesian ? 'Informasi Pengiriman - Mangala Living' : 'Shipping Information - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 
           ? "Informasi lengkap tentang pengiriman furniture dari Mangala Living. Waktu pengiriman, biaya, dan prosedur pengiriman internasional." 
@@ -72,7 +76,15 @@ const ShippingInformation: React.FC = () => {
         <meta name="keywords" content={isIndonesian 
           ? "pengiriman furniture, shipping furniture, ekspor furniture, pengiriman internasional" 
           : "furniture shipping, international shipping, furniture export, shipping times"} />
-        <link rel="canonical" href="https://mangalaliving.com/shipping-information/" />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`shipping-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
+        <meta property="og:url" content={localizedUrls.canonical} />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
       </Helmet>
       
       <Header isIndonesian={isIndonesian} />

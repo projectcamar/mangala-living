@@ -5,6 +5,7 @@ import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
+import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import './Contact.css'
 
 const Contact: React.FC = () => {
@@ -114,10 +115,13 @@ Thank you!`
     return null
   }
 
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+
   return (
     <div className="contact-page">
       <AnnouncementBar isIndonesian={isIndonesian} />
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{isIndonesian ? 'Hubungi Workshop Furniture Bekasi: WhatsApp, Lokasi, Jam Operasional - Mangala Living' : 'Contact Furniture Workshop Bekasi: WhatsApp, Location, Operating Hours - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 
           ? "Bagaimana cara menghubungi Mangala Living? WhatsApp: +62 852-1207-8467 (response 1-3 jam), Email: info@mangala-living.com, Alamat workshop: Jl. Raya Setu Cibitung Bekasi (10 menit dari tol Cibitung, 25 menit dari Jakarta Timur). Jam buka: Senin-Sabtu 08.00-17.00 WIB. Area melayani: FREE survey Bekasi, Jakarta Timur, Cikarang. Konsultasi furniture industrial gratis via WhatsApp."
@@ -125,7 +129,15 @@ Thank you!`
         <meta name="keywords" content={isIndonesian 
           ? "hubungi mangala living, whatsapp furniture bekasi, nomor workshop furniture bekasi, lokasi workshop furniture bekasi, alamat mangala living bekasi, jam buka furniture bekasi, cara menghubungi workshop furniture, konsultasi furniture industrial gratis, kontak furniture besi bekasi, email mangala living, survey furniture gratis bekasi"
           : "contact mangala living, whatsapp furniture bekasi, furniture workshop bekasi contact, mangala living location, workshop address bekasi, operating hours furniture bekasi, free furniture consultation"} />
-        <link rel="canonical" href="https://mangala-living.com/contact-us" />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`contact-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
+        <meta property="og:url" content={localizedUrls.canonical} />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
       </Helmet>
       
       <Header isIndonesian={isIndonesian} />

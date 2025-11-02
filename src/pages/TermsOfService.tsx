@@ -5,6 +5,7 @@ import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
+import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import './TermsOfService.css'
 
 const TermsOfService: React.FC = () => {
@@ -59,17 +60,28 @@ const TermsOfService: React.FC = () => {
     return null
   }
 
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+
   return (
     <div className="terms-page">
       <AnnouncementBar isIndonesian={isIndonesian} />
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{isIndonesian ? 'Syarat dan Ketentuan - Mangala Living' : 'Terms of Service - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 
           ? 'Syarat dan ketentuan layanan Mangala Living untuk pemesanan furniture industrial scandinavian premium' 
           : 'Terms of service for Mangala Living premium industrial scandinavian furniture orders'
         } />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`https://mangala-living.com${isIndonesian ? '/id' : ''}/terms-of-service`} />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`tos-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
+        <meta property="og:url" content={localizedUrls.canonical} />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
       </Helmet>
 
       <Header isIndonesian={isIndonesian} />

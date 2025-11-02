@@ -9,6 +9,7 @@ import { generateLocalBusinessStructuredData, generateFAQSchema } from '../utils
 import { getFAQBySlug } from '../data/faq'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import showroomImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
+import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import './About.css'
 
 const About: React.FC = () => {
@@ -70,10 +71,13 @@ const About: React.FC = () => {
   const faqData = getFAQBySlug('furniture-besi-custom-bekasi')
   const faqSchema = faqData ? generateFAQSchema(faqData.faqs) : null
 
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+
   return (
     <div className="about-page">
       <AnnouncementBar isIndonesian={isIndonesian} />
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{isIndonesian ? 'Tentang Mangala Living: Workshop Furniture Besi Bekasi Sejak 1999 - 1000+ Project' : 'About Mangala Living: Custom Industrial Furniture Workshop Bekasi Since 1999'}</title>
         <meta name="description" content={isIndonesian 
           ? "Siapa Mangala Living? Workshop furniture besi custom Bekasi terpercaya sejak 1999 dengan 1000+ project completed. Spesialis furniture industrial untuk cafe, restoran, hotel - material premium, finishing powder coating, harga pabrik. Kenapa memilih Mangala? Pengalaman 25 tahun, workshop modern 800 m2, free konsultasi desain, garansi 2 tahun, melayani Jabodetabek." 
@@ -81,7 +85,15 @@ const About: React.FC = () => {
         <meta name="keywords" content={isIndonesian 
           ? "tentang mangala living, siapa mangala living, workshop furniture bekasi terpercaya, furniture industrial bekasi sejak 1999, pengalaman furniture besi bekasi, produsen furniture industrial bekasi, workshop furniture besi terpercaya, custom furniture bekasi berpengalaman, furniture cafe bekasi workshop, furniture restoran bekasi pabrik, kenapa memilih mangala living, keunggulan furniture industrial bekasi, testimoni furniture bekasi" 
           : "about mangala living, who is mangala living, trusted furniture workshop bekasi, industrial furniture bekasi since 1999, experienced steel furniture manufacturer, custom furniture bekasi workshop, cafe furniture bekasi factory, why choose mangala living"} />
-        <link rel="canonical" href="https://mangala-living.com/about" />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`about-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
+        <meta property="og:url" content={localizedUrls.canonical} />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
         
         {/* LocalBusiness Structured Data */}
         <script type="application/ld+json">

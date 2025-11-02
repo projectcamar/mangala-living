@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { ChevronDown } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
@@ -7,12 +7,20 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
+import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import './ProductCategory.css'
 
 // Best sellers - first 10 products from ALL_PRODUCTS
 const bestSellersProducts = ALL_PRODUCTS.slice(0, 10)
 
 const BestSellers: React.FC = () => {
+  const location = useLocation()
+  const searchParams = new URLSearchParams(location.search)
+  const langParam = searchParams.get('lang')
+  const isIndonesian = langParam === 'id'
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+
   const [sortBy, setSortBy] = useState('default')
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
@@ -47,13 +55,22 @@ const BestSellers: React.FC = () => {
 
   return (
     <div className="product-category-page">
-      <AnnouncementBar />
-      <Helmet>
+      <AnnouncementBar isIndonesian={isIndonesian} />
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>Best Sellers - Mangala Living</title>
         <meta name="description" content="Browse our best-selling industrial furniture collection at Mangala Living" />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`best-sellers-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
+        <meta property="og:url" content={localizedUrls.canonical} />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
       </Helmet>
       
-      <Header />
+      <Header isIndonesian={isIndonesian} />
       
       <main className="category-main">
         <div className="container">

@@ -11,7 +11,7 @@ import CurrencyHighlight from '../components/CurrencyHighlight'
 import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORIES } from '../data/categories'
 import { generateMerchantStructuredData } from '../utils/structuredData'
-import { getProductImageUrl } from '../utils/seo'
+import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import './ProductCategory.css'
 import './Shop.css'
@@ -151,21 +151,31 @@ const Shop: React.FC = () => {
     { label: 'Shop', path: '/shop' }
   ]
 
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+
   return (
     <div className="product-category-page shop-page-layout">
       <AnnouncementBar isIndonesian={isIndonesian} />
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>All Products - Industrial Furniture Collection | Mangala Living</title>
         <meta name="description" content="Browse all industrial furniture products at Mangala Living. Industrial furniture besi custom untuk cafe, restoran, hotel. Kualitas terbaik, harga terjangkau." />
         <meta name="keywords" content="industrial furniture, furniture besi, furniture custom, furniture cafe, furniture restoran, mangala living, furniture bekasi" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://mangala-living.com/shop" />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`shop-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
         
         {/* Open Graph */}
         <meta property="og:title" content="All Products - Industrial Furniture Collection | Mangala Living" />
         <meta property="og:description" content="Browse all industrial furniture products at Mangala Living. Industrial furniture besi custom untuk cafe, restoran, hotel." />
-        <meta property="og:url" content="https://mangala-living.com/shop" />
+        <meta property="og:url" content={localizedUrls.canonical} />
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />

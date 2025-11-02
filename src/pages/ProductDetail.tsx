@@ -8,7 +8,7 @@ import Breadcrumb from '../components/Breadcrumb'
 import ProductDetailAIContent from '../components/ProductDetailAIContent'
 import { ALL_PRODUCTS } from '../data/products'
 import { getProductDescription, getProductImageAlt, getProductImageCaption, getProductName } from '../data/productDescriptions'
-import { generateCanonicalUrl, generateHreflangTags, getProductImageUrl } from '../utils/seo'
+import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
 import { sendBackgroundEmail } from '../utils/emailHelpers'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getCategorySlug } from '../utils/categoryHelpers'
@@ -237,6 +237,9 @@ const ProductDetail: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(true)
   const [isLoading, setIsLoading] = useState(true)
   const [usdPrice, setUsdPrice] = useState<string | null>(null)
+
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
 
   // Language and country detection
   useEffect(() => {
@@ -540,7 +543,7 @@ const ProductDetail: React.FC = () => {
   return (
     <div className="product-detail-page">
       <AnnouncementBar />
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{product.slug === 'hollowline-display-rack' 
           ? (isIndonesian ? 'Hollowline Display Rack - Harga Murah Rp4.5 Juta - Call Mangala +62 852 1207 8467' : 'Hollowline Display Rack - Affordable Price Rp4.5 Million - Call Mangala +62 852 1207 8467')
           : `${translatedProductName} - Mangala Living`}</title>
@@ -562,19 +565,21 @@ const ProductDetail: React.FC = () => {
             : `${product.name}, industrial furniture, furniture besi, ${product.categories.join(', ')}, mangala living`
         } />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={generateCanonicalUrl(`/product/${product.slug}`)} />
-        
-        {/* Hreflang for language variants */}
-        <link rel="alternate" hrefLang="id" href={generateHreflangTags(`/product/${product.slug}`).id} />
-        <link rel="alternate" hrefLang="en" href={generateHreflangTags(`/product/${product.slug}`).en} />
-        <link rel="alternate" hrefLang="x-default" href={generateHreflangTags(`/product/${product.slug}`).default} />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`product-detail-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
         
         {/* Open Graph */}
         <meta property="og:title" content={`${translatedProductName} - Mangala Living`} />
         <meta property="og:description" content={`${translatedProductName} - ${translateProductDetails(product.details)}`} />
         <meta property="og:image" content={product.images[0]} />
-        <meta property="og:url" content={`https://mangala-living.com/product/${product.slug}`} />
+        <meta property="og:url" content={localizedUrls.canonical} />
         <meta property="og:type" content="product" />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />

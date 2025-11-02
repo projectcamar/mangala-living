@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link, useLocation, useSearchParams } from 'react-router-dom'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import { getPostsByPage, getTotalPages } from '../data/blog'
+import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import './Blog.css'
 
 const Blog: React.FC = () => {
+  const location = useLocation()
   const [searchParams] = useSearchParams()
   const postsPerPage = 8
   const rawPage = Number.parseInt(searchParams.get('page') || '1', 10)
@@ -25,14 +27,21 @@ const Blog: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [currentPage])
 
+  const localeMeta = generateLanguageSpecificMeta(true)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+
   return (
     <div className="blog-page">
       <AnnouncementBar />
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>Blog Furniture Industrial & Tips Desain Cafe Restoran - Mangala Living</title>
         <meta name="description" content="Panduan lengkap furniture industrial untuk cafe, restoran, hotel. Tips memilih furniture besi custom, cara merawat, tren desain 2025, perbandingan material, harga, dan area workshop Bekasi Jakarta. 135+ artikel berbasis pengalaman 25 tahun Mangala Living." />
         <meta name="keywords" content="blog furniture industrial, tips furniture cafe, cara memilih furniture restoran, furniture besi custom panduan, workshop furniture bekasi, harga furniture industrial 2025, tips desain interior industrial, furniture cafe murah, perbandingan furniture besi vs kayu, cara merawat furniture industrial, tren furniture 2025, furniture bekasi guide, furniture jakarta tips, inspirasi desain cafe industrial" />
-        <link rel="canonical" href={`https://mangala-living.com${canonicalUrl}`} />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`blog-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
         {prevUrl && <link rel="prev" href={`https://mangala-living.com${prevUrl}`} />}
         {nextUrl && <link rel="next" href={`https://mangala-living.com${nextUrl}`} />}
         
@@ -40,7 +49,10 @@ const Blog: React.FC = () => {
         <meta property="og:title" content="Blog Furniture Industrial - 135+ Artikel Tips & Panduan Lengkap" />
         <meta property="og:description" content="Artikel komprehensif tentang furniture industrial: tips pemilihan, perbandingan material, panduan harga, area coverage Jabodetabek, dan best practices dari 1000+ project sejak 1999." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mangala-living.com/blog" />
+        <meta property="og:url" content={localizedUrls.canonical} />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
       </Helmet>
       
       <Header />

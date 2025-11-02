@@ -1,37 +1,68 @@
-// SEO utility functions for canonical URLs and hreflang
-export const generateCanonicalUrl = (path: string): string => {
-  const baseUrl = 'https://mangala-living.com'
-  
-  // Remove language prefixes for canonical URLs
-  let cleanPath = path
-  if (path.startsWith('/id/') || path.startsWith('/eng/')) {
-    cleanPath = path.substring(4) // Remove /id/ or /eng/
-  } else if (path === '/id' || path === '/eng') {
-    cleanPath = '/'
-  } else if (path.startsWith('/id') || path.startsWith('/eng')) {
-    cleanPath = path.substring(3) // Remove /id or /eng
+const BASE_URL = 'https://mangala-living.com'
+
+const normalizePath = (path: string): string => {
+  if (!path) return '/'
+  const hasLeadingSlash = path.startsWith('/')
+  let normalized = hasLeadingSlash ? path : `/${path}`
+
+  // Remove duplicate trailing slashes except for root
+  if (normalized.length > 1 && normalized.endsWith('/')) {
+    normalized = normalized.replace(/\/+$/, '')
   }
-  
-  return `${baseUrl}${cleanPath}`
+
+  return normalized || '/'
 }
 
-export const generateHreflangTags = (currentPath: string) => {
-  const baseUrl = 'https://mangala-living.com'
-  
-  // Clean the current path
-  let cleanPath = currentPath
-  if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/')) {
-    cleanPath = currentPath.substring(4)
-  } else if (currentPath === '/id' || currentPath === '/eng') {
-    cleanPath = '/'
-  } else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng')) {
-    cleanPath = currentPath.substring(3)
+const buildUrlFromParams = (path: string, params: URLSearchParams): string => {
+  const normalizedPath = normalizePath(path)
+  const query = params.toString()
+  return `${BASE_URL}${normalizedPath}${query ? `?${query}` : ''}`
+}
+
+// SEO utility functions for canonical URLs and hreflang
+export const generateCanonicalUrl = (path: string, search: string = ''): string => {
+  const params = new URLSearchParams(search)
+  return buildUrlFromParams(path, params)
+}
+
+export const generateLocalizedUrls = (pathname: string, search: string = '') => {
+  const baseParams = new URLSearchParams(search)
+  const canonical = buildUrlFromParams(pathname, baseParams)
+
+  const defaultParams = new URLSearchParams(baseParams)
+  defaultParams.delete('lang')
+  const xDefault = buildUrlFromParams(pathname, defaultParams)
+
+  const buildLangUrl = (lang: 'id' | 'en') => {
+    const params = new URLSearchParams(defaultParams)
+    params.set('lang', lang)
+    return buildUrlFromParams(pathname, params)
   }
-  
+
   return {
-    id: `${baseUrl}/id${cleanPath === '/' ? '' : cleanPath}`,
-    en: `${baseUrl}/eng${cleanPath === '/' ? '' : cleanPath}`,
-    default: `${baseUrl}${cleanPath}`
+    canonical,
+    alternates: [
+      { hrefLang: 'id-ID', href: buildLangUrl('id') },
+      { hrefLang: 'en', href: buildLangUrl('en') },
+      { hrefLang: 'x-default', href: xDefault }
+    ]
+  }
+}
+
+export const generateHreflangTags = (path: string, search: string = '') => {
+  const defaultParams = new URLSearchParams(search)
+  defaultParams.delete('lang')
+
+  const buildLangUrl = (lang: 'id' | 'en') => {
+    const params = new URLSearchParams(defaultParams)
+    params.set('lang', lang)
+    return buildUrlFromParams(path, params)
+  }
+
+  return {
+    id: buildLangUrl('id'),
+    en: buildLangUrl('en'),
+    default: buildUrlFromParams(path, defaultParams)
   }
 }
 

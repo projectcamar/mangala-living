@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useLocation } from 'react-router-dom'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -10,10 +10,12 @@ import AuthorCard from '../components/AuthorCard'
 import { getPostBySlug, BLOG_POSTS } from '../data/blog'
 import { getBlogPostContent } from '../data/blogContent'
 import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structuredData'
+import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import './BlogPost.css'
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
+  const location = useLocation()
   const post = slug ? getPostBySlug(slug) : undefined
   const content = slug ? getBlogPostContent(slug) : undefined
 
@@ -105,23 +107,35 @@ const BlogPost: React.FC = () => {
     post.slug === 'furniture-besi-custom-bekasi-workshop-terpercaya' ||
     post.slug === 'bikin-furniture-besi-custom-jabodetabek-berkualitas'
 
+  const searchParams = new URLSearchParams(location.search)
+  const langParam = searchParams.get('lang')
+  const localeMeta = generateLanguageSpecificMeta(langParam === 'id')
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+
   return (
     <div className="blog-post-page">
       <AnnouncementBar />
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{post.title} - Mangala Living</title>
         <meta name="description" content={post.excerpt} />
         <meta name="keywords" content={generateKeywords(post.slug, post.title)} />
-        <link rel="canonical" href={`https://mangala-living.com/blog/${post.slug}`} />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`blog-post-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
         
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:image" content={post.image} />
-        <meta property="og:url" content={`https://mangala-living.com/blog/${post.slug}`} />
+        <meta property="og:url" content={localizedUrls.canonical} />
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:author" content={post.author || 'Mangala Living'} />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
         {post.author === 'Helmi Ramdan' && (
           <>
             <meta name="author" content="Helmi Ramdan" />

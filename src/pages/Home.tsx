@@ -18,7 +18,7 @@ import AISearchFeatures from '../components/AISearchFeatures'
 // Utils
 import { generateAIOptimizedStructuredData, generateFAQStructuredData, generateWebSiteStructuredData } from '../utils/aiSearchOptimization'
 import { ALL_PRODUCTS } from '../data/products'
-import { getProductImageUrl } from '../utils/seo'
+import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
 
 const Home: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(false)
@@ -63,6 +63,9 @@ const Home: React.FC = () => {
 
     detectLocation()
   }, [location.pathname])
+
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
 
   // Indonesian translations
   const translations = {
@@ -112,18 +115,21 @@ const Home: React.FC = () => {
   return (
     <div className="home">
       <CatalogModal />
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{translations.title}</title>
         <meta name="description" content={translations.description} />
         <meta name="keywords" content="hollowline display rack, set furniture industrial, display shelf rack, call mangala furniture, mangala showroom, mangala kitchen cabinet, furniture bekasi murah, industrial furniture murah, meja kursi cafe, stall chair design" />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={translations.ogTitle} />
         <meta property="og:description" content={translations.ogDescription} />
         <meta property="og:image" content="https://mangala-living.com/og-image.jpg" />
-        <meta property="og:url" content="https://mangala-living.com/" />
-        <meta property="og:locale" content="id_ID" />
+        <meta property="og:url" content={localizedUrls.canonical} />
+        <meta property="og:locale" content={localeMeta.locale} />
+        <meta property="og:locale:alternate" content="id_ID" />
+        <meta property="og:locale:alternate" content="en_US" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -137,16 +143,11 @@ const Home: React.FC = () => {
         <meta name="geo.region" content="ID-JB" />
         <meta name="geo.placename" content="Bekasi" />
         <meta name="geo.position" content="-6.2088;107.1602" />
-        {/* Canonical URL - Always point to main domain */}
-        <link rel="canonical" href="https://mangala-living.com/" />
-        
-        {/* Hreflang for language variants */}
-        <link rel="alternate" hrefLang="id" href="https://mangala-living.com/id" />
-        <link rel="alternate" hrefLang="en" href="https://mangala-living.com/eng" />
-        <link rel="alternate" hrefLang="x-default" href="https://mangala-living.com/" />
-        
-        {/* Language-specific meta tags */}
-        <meta property="og:locale" content={isIndonesian ? "id_ID" : "en_US"} />
+        {/* Canonical and Hreflang */}
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`home-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
         
         {/* Structured Data - Product Catalog */}
         <script type="application/ld+json">
