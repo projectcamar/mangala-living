@@ -5,6 +5,7 @@ import type { Product } from '../data/products'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import { generateImageObjectSchema } from '../utils/structuredData'
 import './BlogProductShowcase.css'
+import './DualLanguage.css'
 
 interface BlogProductShowcaseProps {
   products: Product[]
@@ -148,7 +149,22 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
       <section className="blog-product-showcase" itemScope itemType="https://schema.org/ItemList">
         <div className="blog-product-showcase-container">
           <div className="blog-product-showcase-header">
-            <h2 className="blog-product-showcase-heading" itemProp="name">{heading}</h2>
+            <h2 className="blog-product-showcase-heading" itemProp="name">
+              <span className="dual-lang-text">
+                <span className="lang-id">Produk Industrial Terkait</span>
+                <span className="lang-divider"> | </span>
+                <span className="lang-en">Related Industrial Products</span>
+              </span>
+            </h2>
+            {description && (
+              <p className="blog-product-showcase-description">
+                <span className="dual-lang-text">
+                  <span className="lang-id">{description}</span>
+                  <span className="lang-divider"> | </span>
+                  <span className="lang-en">Discover our premium industrial furniture collection, manufactured in our Bekasi workshop with high-quality materials and powder coating finish.</span>
+                </span>
+              </p>
+            )}
           </div>
 
         <div className="blog-product-showcase-grid" itemProp="itemListElement" itemScope itemType="https://schema.org/ItemList">
@@ -235,7 +251,11 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
                     
                     <div className="blog-product-showcase-cta">
                       <span className="blog-product-showcase-link">
-                        {isIndonesian ? 'Lihat Detail Produk' : 'View Product Details'}
+                        <span className="dual-lang-text">
+                          <span className="lang-id">Lihat Detail Produk</span>
+                          <span className="lang-divider"> | </span>
+                          <span className="lang-en">View Product Details</span>
+                        </span>
                       </span>
                     </div>
                   </div>
@@ -249,11 +269,15 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
           <Link 
             to="/shop" 
             className="blog-product-showcase-all-products-btn"
-            title="Lihat Semua Produk Industrial Mangala Living"
+            title="Lihat Semua Produk Industrial Mangala Living | View All Industrial Products"
             rel="nofollow"
-            aria-label="Lihat semua produk furniture industrial"
+            aria-label="Lihat semua produk furniture industrial | View all industrial furniture products"
           >
-            {isIndonesian ? 'Lihat Semua Produk' : 'View All Products'}
+            <span className="dual-lang-text">
+              <span className="lang-id">Lihat Semua Produk</span>
+              <span className="lang-divider"> | </span>
+              <span className="lang-en">View All Products</span>
+            </span>
           </Link>
         </div>
       </div>

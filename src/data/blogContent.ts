@@ -7582,6 +7582,288 @@ const BLOG_CONTENTS: BlogContent[] = [
         ]
       }
     ]
+  },
+  // EXPORT-FOCUSED ARTICLES - 20 NEW SEO-WINNING CONTENT FOR INTERNATIONAL BUYERS
+  {
+    slug: 'indonesian-industrial-furniture-export-quality-global-standards',
+    sections: [
+      {
+        paragraphs: [
+          'Indonesia has emerged as a leading hub for industrial furniture manufacturing and export, combining traditional craftsmanship with modern production techniques. International buyers are increasingly turning to Indonesian manufacturers for their competitive pricing, high-quality standards, and reliable export services.',
+          'As a furniture manufacturer with 25 years of experience serving international clients, we understand what export buyers look for: consistent quality, transparent communication, competitive FOB pricing, and reliable delivery schedules. Indonesian industrial furniture manufacturers offer all of this, making them an attractive alternative to Chinese and Vietnamese suppliers.'
+        ]
+      },
+      {
+        heading: 'Why Choose Indonesian Industrial Furniture for Export?',
+        list: [
+          '<strong>Cost-Effective Manufacturing:</strong> Indonesian labor costs remain competitive while maintaining skilled craftsmanship, resulting in 20-30% lower FOB prices compared to Western manufacturers.',
+          '<strong>Quality Materials:</strong> Access to high-grade steel, sustainable timber, and advanced finishing technologies. Powder coating facilities meet international outdoor durability standards.',
+          '<strong>Export Infrastructure:</strong> Proximity to major ports (Jakarta, Surabaya) ensures efficient container loading and competitive shipping rates to USA, Europe, Australia, and Middle East.',
+          '<strong>Flexible MOQ:</strong> Many Indonesian manufacturers, including us, work with reasonable minimum order quantities (1 container / 20ft or 40ft), suitable for growing businesses and chains.',
+          '<strong>English Communication:</strong> Most export-oriented manufacturers have English-speaking teams, making communication smooth for international buyers.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Indonesian Industrial Furniture Manufacturing Facility for Export'
+      },
+      {
+        heading: 'Quality Standards and Certifications',
+        paragraphs: [
+          'Indonesian furniture manufacturers are increasingly adopting international quality standards to meet export requirements. ISO 9001 certification, FSC sustainable wood sourcing, and compliance with EU and US safety regulations are becoming standard practice.',
+          'Our manufacturing process includes rigorous quality control checkpoints: material inspection, welding strength testing, finishing uniformity checks, and pre-shipment inspection. We welcome third-party inspection agencies like SGS, Bureau Veritas, or Intertek to verify quality before container loading.'
+        ]
+      },
+      {
+        heading: 'Export Process and Documentation',
+        paragraphs: [
+          'We handle complete export documentation to ensure smooth customs clearance: Commercial Invoice, Packing List, Certificate of Origin (Form E for ASEAN, or standard CO), Bill of Lading, and Phytosanitary Certificate for wood components if required.',
+          'Lead time for export orders is typically 30-45 days from confirmed order and deposit: 10-15 days for production, 5-7 days for quality control and finishing touch-ups, 3-5 days for professional packing (bubble wrap, cardboard corners, wooden crates for fragile items), and 2-3 days for container loading and documentation.'
+        ]
+      },
+      {
+        heading: 'Product Range for Export',
+        list: [
+          '<strong>Restaurant & Cafe Furniture:</strong> Industrial dining tables, cafe chairs, bar stools, bar tables, booth seating. Popular materials: steel frame with solid wood or engineered wood top.',
+          '<strong>Hotel Furniture:</strong> Lobby seating, reception desks, restaurant furniture, guest room furniture, outdoor patio sets. Custom design available to match brand identity.',
+          '<strong>Retail & Display:</strong> Display shelves, clothing racks, storage units, checkout counters. Modular systems for easy assembly and flexibility.',
+          '<strong>Outdoor Furniture:</strong> Powder-coated steel frames designed for tropical and humid climates. Weather-resistant, UV-protected, and easy to maintain.'
+        ]
+      },
+      {
+        heading: 'FOB Pricing and Payment Terms',
+        paragraphs: [
+          'Typical FOB pricing from our factory in Bekasi, Indonesia: Dining tables (120x70cm steel frame + wood top): USD 85-120 per unit. Cafe chairs (metal frame): USD 35-55 per unit. Bar stools (adjustable height): USD 45-70 per unit. Display racks (180cm height): USD 150-250 per unit. Prices vary based on material specifications, finishing requirements, and order volume.',
+          'Standard payment terms: 30% deposit upon order confirmation, 70% balance before shipment. For established clients with repeat orders, we can discuss LC (Letter of Credit) terms. Wire transfer to Indonesian bank account, with all banking fees borne by respective parties.'
+        ]
+      },
+      {
+        heading: 'Shipping and Logistics',
+        paragraphs: [
+          'We work with trusted freight forwarders who offer competitive rates to major destinations: USA West Coast (Los Angeles, San Francisco): 18-25 days sea freight. USA East Coast (New York, Miami): 30-35 days sea freight. Europe (Rotterdam, Hamburg): 25-30 days. Australia (Sydney, Melbourne): 12-15 days. Middle East (Dubai, Jeddah): 15-20 days.',
+          'Container options: 20ft container (suitable for 200-300 chairs or 80-120 dining tables), 40ft container (double capacity of 20ft), 40ft High Cube (additional height for display racks). We optimize packing to maximize container utilization and minimize your shipping cost per unit.'
+        ]
+      },
+      {
+        heading: 'Why Choose Mangala Living for Export?',
+        paragraphs: [
+          '25 years manufacturing experience since 1999. Export to 15+ countries including USA, Australia, Singapore, Malaysia, UAE. 10,000+ sqm production facility in Bekasi with in-house powder coating line. Dedicated export team with fluent English communication. Transparent pricing with no hidden costs. Quality guarantee and professional packing to ensure goods arrive in perfect condition.',
+          'Ready to start your export order? Contact us today for detailed quotations and product catalogs. WhatsApp: +62 852-1207-8467 | Email: info@mangala-living.com'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'custom-metal-furniture-manufacturer-indonesia-export-worldwide',
+    sections: [
+      {
+        paragraphs: [
+          'Looking for a reliable custom metal furniture manufacturer in Indonesia for export? Mangala Living specializes in manufacturing high-quality industrial and commercial metal furniture for international markets. With 25 years of experience and export to 15+ countries, we are your trusted partner for custom furniture manufacturing.',
+          'As a B2B furniture manufacturer, we understand the unique needs of international buyers: custom design capabilities, consistent quality across large orders, competitive export pricing, and reliable delivery schedules. Our Bekasi factory is strategically located near Jakarta port, ensuring efficient export logistics.'
+        ]
+      },
+      {
+        heading: 'Our Custom Metal Furniture Capabilities',
+        list: [
+          '<strong>Design Flexibility:</strong> Work directly with our in-house design team to create custom furniture matching your brand identity. CAD drawings, 3D renderings, and physical samples available.',
+          '<strong>Material Options:</strong> Carbon steel (MS - Mild Steel), stainless steel (SS304, SS316 for marine environments), aluminum (lightweight outdoor furniture), galvanized steel (rust-resistant for tropical climates).',
+          '<strong>Finishing Options:</strong> Powder coating (outdoor-grade, 60-80 microns thickness, RAL color matching), electroplating (chrome, brass, copper finishes), brushed or polished stainless steel, industrial raw steel with clear coating.',
+          '<strong>Production Capacity:</strong> 5,000-8,000 pieces per month depending on complexity. Scalable production to meet your growing demand. Rush orders available for urgent projects.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop',
+        imageAlt: 'Custom Metal Furniture Manufacturing Process for Export'
+      },
+      {
+        heading: 'Popular Export Products',
+        paragraphs: [
+          '<strong>Restaurant Furniture:</strong> Custom dining tables (various sizes, steel frame with wood/marble/glass top), metal dining chairs (with or without upholstery), bar stools and bar tables, booth seating systems, outdoor patio furniture.',
+          '<strong>Hotel Furniture:</strong> Lobby furniture (reception desks, lounge seating), restaurant and bar furniture (complete F&B solutions), guest room furniture (bed frames, desks, luggage racks), outdoor furniture (pool area, garden, rooftop).',
+          '<strong>Commercial Furniture:</strong> Office desks and workstations, retail display systems, storage solutions and shelving, reception and waiting area furniture.'
+        ]
+      },
+      {
+        heading: 'Quality Control and Testing',
+        paragraphs: [
+          'Every piece of furniture undergoes strict quality control before shipment: Material inspection (thickness verification, grade certification), welding quality check (X-ray testing for critical joints), finishing inspection (coating thickness, color matching, uniformity), load testing (exceeding standard commercial use requirements), pre-shipment inspection (third-party inspection welcome).',
+          'Our quality standards comply with international regulations: EN 1728 (Furniture - Seating strength), BIFMA (Business and Institutional Furniture Manufacturers Association) standards, ASTM standards for furniture durability. Certificates and test reports available upon request.'
+        ]
+      },
+      {
+        heading: 'Custom Design Process',
+        paragraphs: [
+          '<strong>Step 1 - Inquiry & Concept:</strong> Share your concept, photos, sketches, or technical drawings. Specify dimensions, materials, finishing, and quantity requirements.',
+          '<strong>Step 2 - Quotation:</strong> Within 48 hours, receive detailed quotation including FOB price, specifications, lead time, and MOQ.',
+          '<strong>Step 3 - Sample Production:</strong> For custom designs, we produce sample (1-2 units) for approval. Sample cost refundable upon confirmed order.',
+          '<strong>Step 4 - Bulk Production:</strong> Upon sample approval and deposit payment, production begins. Regular photo updates provided during production.',
+          '<strong>Step 5 - QC & Shipment:</strong> Final inspection, professional packing, container loading, and shipment with complete documentation.'
+        ]
+      },
+      {
+        heading: 'Export Pricing and MOQ',
+        paragraphs: [
+          'Our export pricing is transparent and competitive: Sample unit: Higher price to cover individual production setup. 50-100 units: Moderate discount from sample price. 100-300 units (1 container): Best FOB price with volume discount. 300+ units (multiple containers): Negotiable pricing for long-term partnership.',
+          'Minimum Order Quantity: Generally 50-100 units per design to be cost-effective. For simple designs, MOQ can be lower. Mixed container welcome - combine different products in one container. Contact us to discuss your specific requirements.'
+        ]
+      },
+      {
+        heading: 'Why International Buyers Choose Us',
+        paragraphs: [
+          '<strong>Experience:</strong> 25+ years in furniture manufacturing, 15+ years in export business. Worked with hotel chains, restaurant franchises, furniture importers, interior designers, and procurement companies worldwide.',
+          '<strong>Communication:</strong> English-speaking export team. Prompt response within 24 hours. Clear and transparent communication throughout the process.',
+          '<strong>Reliability:</strong> On-time delivery track record. Properly packed to prevent damage during sea freight. All export documentation handled professionally.',
+          '<strong>Flexibility:</strong> OEM and ODM accepted. Private label and branding options. Flexible payment terms for repeat clients.'
+        ]
+      },
+      {
+        heading: 'Get Your Custom Quote Today',
+        paragraphs: [
+          'Ready to start your custom metal furniture project? Contact our export team with your requirements: Product type and quantity, dimensions and specifications, material and finishing preferences, target price range (if any), delivery destination.',
+          'We will respond within 48 hours with a detailed quotation and recommendations. For urgent projects, WhatsApp us directly at +62 852-1207-8467 for faster response. Visit our website for product catalog and factory profile: www.mangala-living.com'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'wholesale-industrial-furniture-indonesia-bulk-orders-export',
+    sections: [
+      {
+        paragraphs: [
+          'Wholesale industrial furniture from Indonesia offers unbeatable value for bulk orders and export. As a leading manufacturer in Bekasi, we specialize in supplying large quantities of industrial furniture for hotels, restaurant chains, corporate offices, and furniture importers worldwide.',
+          'With our 10,000 sqm production facility and 25 years of manufacturing experience, we can handle bulk orders from 500 to 10,000+ pieces per project. Our efficient production process, quality control systems, and export logistics ensure you receive high-quality furniture at competitive wholesale prices with reliable delivery schedules.'
+        ]
+      },
+      {
+        heading: 'Bulk Order Advantages',
+        list: [
+          '<strong>Volume Discounts:</strong> Significant price reduction for bulk orders: 10-15% discount for 1 container (20ft/40ft), 15-20% discount for 2-3 containers, 20-25% discount for 4+ containers, Custom pricing for projects exceeding 10 containers.',
+          '<strong>Consistent Quality:</strong> Batch production ensures uniformity across all units. Same material source, same finishing process, same quality control standards. Ideal for hotel chains and restaurant franchises requiring standardized furniture.',
+          '<strong>Production Priority:</strong> Large orders receive priority scheduling. Dedicated production line for your order. Faster turnaround time compared to mixed small orders.',
+          '<strong>Flexible Payment:</strong> For bulk orders, we can offer flexible payment terms: 30% deposit, 40% upon production completion, 30% before shipment. LC (Letter of Credit) accepted for orders above USD 50,000.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Wholesale Industrial Furniture Bulk Production for Export'
+      },
+      {
+        heading: 'Popular Wholesale Products',
+        paragraphs: [
+          '<strong>Hotel Package Deals:</strong> Complete furniture solutions for hotel projects. Lobby furniture set (reception desk, lounge seating, coffee tables). Restaurant/bar furniture set (dining tables, chairs, bar stools). Guest room furniture set (bed frame, desk, luggage rack, chair). Outdoor furniture set (pool area, garden furniture). Wholesale price packages available - contact us for bulk quotations.',
+          '<strong>Restaurant Chain Packages:</strong> Standardized furniture for restaurant franchises. Multiple outlet supply with identical specifications. Dining tables (various sizes), dining chairs (stackable or fixed), bar stools and bar tables, display shelves and storage. Branding and customization options available.',
+          '<strong>Office Furniture Bulk Supply:</strong> Corporate office furniture for large organizations. Office desks and workstations. Meeting tables and conference furniture. Storage and filing systems. Reception and waiting area furniture. Bulk pricing for 100+ units.'
+        ]
+      },
+      {
+        heading: 'Wholesale Pricing Structure',
+        paragraphs: [
+          'Transparent wholesale pricing from our Bekasi factory: <strong>Dining Tables (120x70x75cm, steel frame + wood top):</strong> 50-99 units: USD 95 per unit, 100-299 units: USD 85 per unit, 300+ units: USD 75 per unit. <strong>Cafe Chairs (metal frame with padded seat):</strong> 100-299 units: USD 42 per unit, 300-499 units: USD 38 per unit, 500+ units: USD 35 per unit. <strong>Bar Stools (adjustable height, footrest):</strong> 50-99 units: USD 55 per unit, 100-299 units: USD 48 per unit, 300+ units: USD 42 per unit.',
+          'FOB Bekasi/Jakarta prices above. Shipping costs depend on destination and container type. Request detailed quotation for your specific requirements: product models, quantities, material/finishing specifications, delivery destination. We will provide comprehensive quotation including unit price, total product cost, packing cost, container loading supervision, export documentation.'
+        ]
+      },
+      {
+        heading: 'Production Lead Time for Bulk Orders',
+        paragraphs: [
+          '100-500 units: 25-35 days production + 7 days packing/loading. 500-1,000 units: 35-45 days production + 10 days packing/loading. 1,000-3,000 units: 45-60 days production (parallel batch production) + 14 days packing/loading. 3,000+ units: Project-specific timeline - contact us for customized production schedule.',
+          'We understand the importance of timely delivery for your business operations. Weekly photo updates during production, advance notice before completion for final inspection arrangements, flexible scheduling to meet your project deadlines, rush production available for urgent projects (additional fee applies).'
+        ]
+      },
+      {
+        heading: 'Quality Assurance for Bulk Orders',
+        paragraphs: [
+          'Large orders require even stricter quality control to ensure consistency: <strong>Raw Material Batch Control:</strong> Single batch material procurement for uniformity. Material test reports from suppliers. <strong>Production Standard Operating Procedures:</strong> Documented manufacturing process. Worker training for specific project requirements. <strong>In-Process Inspection:</strong> Random sampling during production (5-10% of units). Immediate correction if defects detected. <strong>Final Inspection:</strong> 100% inspection before packing. Dimensional accuracy check. Finishing quality verification. Functional testing (load bearing, stability). <strong>Third-Party Inspection Welcome:</strong> SGS, Bureau Veritas, Intertek, or your designated inspector. Arrange inspection 5-7 days before shipment date.'
+        ]
+      },
+      {
+        heading: 'Export Logistics for Bulk Orders',
+        paragraphs: [
+          'Efficient container utilization to minimize your shipping cost: <strong>20ft Container Capacity:</strong> Dining tables: 80-120 units (depending on size), Chairs: 200-300 units, Bar stools: 150-200 units, Mixed loading: Optimized combination. <strong>40ft Container Capacity:</strong> Approximately double of 20ft capacity, More cost-effective per unit, Recommended for bulk orders. <strong>40ft High Cube Container:</strong> Extra height for display racks and tall furniture, 10-15% more capacity than standard 40ft.',
+          'We work with reliable freight forwarders who offer competitive rates for bulk shipments. Container consolidation service available if you\'re ordering from multiple Indonesian suppliers. Door-to-door service available for major destinations (USA, Europe, Australia). Free container loading supervision to ensure proper packing and loading.'
+        ]
+      },
+      {
+        heading: 'Start Your Bulk Order Today',
+        paragraphs: [
+          'Ready to place a bulk order? Here\'s how to get started: <strong>Step 1:</strong> Send us your requirements (product type, quantity, specifications). <strong>Step 2:</strong> Receive detailed quotation within 48-72 hours. <strong>Step 3:</strong> Sample approval (if required for custom designs). <strong>Step 4:</strong> Confirm order with 30% deposit. <strong>Step 5:</strong> Production begins with regular updates. <strong>Step 6:</strong> Final inspection and shipment.',
+          'For urgent inquiries or projects with tight deadlines, WhatsApp our export team directly at +62 852-1207-8467. We can arrange video calls to discuss your project in detail. Email detailed RFQ (Request for Quotation) to: export@mangala-living.com. Include: product specifications, target quantities, delivery destination, ideal delivery timeline. We will respond with a comprehensive proposal within 72 hours.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'indonesian-furniture-factory-custom-commercial-furniture-export',
+    sections: [
+      {
+        paragraphs: [
+          'Our furniture factory in Bekasi, Indonesia, specializes in custom commercial furniture manufacturing for export. With 25 years of experience serving international markets, we produce high-quality industrial and commercial furniture for hotels, restaurants, cafes, offices, and retail spaces worldwide.',
+          'Unlike trading companies or middlemen, we are a direct manufacturer with our own 10,000+ sqm production facility. This means you get factory-direct pricing, direct communication with production team, and full control over customization and quality standards. We handle everything from design consultation to final shipment.'
+        ]
+      },
+      {
+        heading: 'Our Factory Capabilities',
+        list: [
+          '<strong>Production Capacity:</strong> 5,000-8,000 furniture pieces per month. Multiple production lines for parallel manufacturing. In-house powder coating facility (outdoor-grade quality). Metal fabrication: cutting, bending, welding, finishing. Woodworking section: solid wood and engineered wood processing.',
+          '<strong>Custom Design Services:</strong> In-house design team with 10+ years experience. CAD and 3D modeling capability. Sample production and approval process. Design modification and refinement. Prototyping for new product development.',
+          '<strong>Quality Control Systems:</strong> Incoming material inspection. In-process quality monitoring. Final product inspection (100% for export orders). Pre-shipment inspection coordination. Quality documentation and test reports.',
+          '<strong>Export Infrastructure:</strong> Dedicated export department with English-speaking staff. Professional packing facility. Container loading supervision. Export documentation processing. Partnership with trusted freight forwarders.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Indonesian Furniture Factory Manufacturing Custom Commercial Furniture'
+      },
+      {
+        heading: 'Custom Commercial Furniture Range',
+        paragraphs: [
+          '<strong>Restaurant & Cafe Furniture:</strong> Custom dining tables in any size (square, rectangular, round, oval). Dining chairs (metal, wood, upholstered, or combination). Bar stools and bar tables (adjustable or fixed height). Booth seating systems (L-shape, U-shape, straight). Outdoor patio furniture (weather-resistant powder coating). Service stations and POS counters. Display shelves and wine racks.',
+          '<strong>Hotel Furniture:</strong> Lobby furniture (reception desk, lounge seating, coffee tables). Restaurant and bar furniture (complete F&B area solutions). Guest room furniture (bed frames, desks, luggage racks). Outdoor furniture (pool, garden, rooftop areas). Custom pieces matching hotel branding and theme.',
+          '<strong>Office Furniture:</strong> Office desks and workstations (individual or benching systems). Conference tables and meeting furniture. Reception desks and waiting area furniture. Storage solutions and filing systems. Pantry and break room furniture.',
+          '<strong>Retail Furniture:</strong> Display racks and shelving systems. Clothing racks and accessories displays. Checkout counters and cash wrap. Fitting room furniture. Window display platforms.'
+        ]
+      },
+      {
+        heading: 'Why Work Directly with Our Factory?',
+        paragraphs: [
+          '<strong>No Middleman Markup:</strong> Get factory-direct pricing without trading company commission (typically 15-30% markup). Transparent cost breakdown. Better value for your budget. Higher quality at lower price point.',
+          '<strong>Direct Communication:</strong> Speak directly with production team. Faster response to questions and clarifications. Real-time production updates. Video call factory tours available. Better understanding of your requirements.',
+          '<strong>Full Customization Control:</strong> Design changes can be implemented quickly. Material and finishing options fully customizable. No restrictions from pre-set catalog. Branding and private label welcome. Flexibility in production scheduling.',
+          '<strong>Quality Accountability:</strong> Direct responsibility for product quality. No "blame game" between factory and trading company. Issues resolved directly and quickly. Long-term relationship building. Repeat order discounts and priority service.'
+        ]
+      },
+      {
+        heading: 'From Design to Delivery: Our Process',
+        paragraphs: [
+          '<strong>Phase 1 - Consultation & Design (Week 1-2):</strong> Initial consultation to understand your needs. Review your concepts, photos, or technical drawings. Discuss materials, finishes, dimensions. Receive preliminary quotation and recommendations. Design refinement based on your feedback. CAD drawings and 3D renderings provided.',
+          '<strong>Phase 2 - Sample Production (Week 3-4):</strong> Sample unit produced based on approved design. Photos sent for remote approval. Physical sample shipped if required (sample cost refundable upon order). Design modifications if needed.',
+          '<strong>Phase 3 - Bulk Production (Week 5-9):</strong> Upon sample approval and 30% deposit. Production begins with dedicated batch. Weekly photo updates sent to you. Quality control checkpoints throughout production. Pre-notification 1 week before completion.',
+          '<strong>Phase 4 - Inspection & Shipment (Week 10):</strong> Final inspection (your QC inspector welcome). Professional packing (bubble wrap, cardboard corners, wooden crates). Container loading with our supervision. Complete export documentation. 70% balance payment before shipment. Bill of Lading sent upon vessel departure.'
+        ]
+      },
+      {
+        heading: 'Factory-Direct Export Pricing',
+        paragraphs: [
+          'Sample unit pricing (1-5 units): Higher due to individual production setup. Exact dimensions, material, and finishing customization. Used for design approval and marketing purposes. Small batch pricing (50-100 units): 20-30% discount from sample price. Good for boutique hotels and restaurants. Testing market before larger commitment. Medium batch pricing (100-300 units / 1-2 containers): 30-40% discount from sample price. Optimal cost-effectiveness. Suitable for restaurant chains and hotels. Large batch pricing (300+ units / 3+ containers): 40-50% discount from sample price. Best value for large projects. Priority production scheduling.',
+          'All prices are FOB (Free on Board) from Bekasi/Jakarta port. Request detailed quotation with your specific requirements for accurate pricing. We can also provide CIF (Cost, Insurance, and Freight) quotation if you prefer door-to-port service.'
+        ]
+      },
+      {
+        heading: 'International Quality Standards',
+        paragraphs: [
+          'Our factory adheres to international quality and safety standards: <strong>Material Standards:</strong> Steel: ASTM A36, JIS G3101 SS400, or equivalent. Stainless Steel: SS304, SS316 (marine grade). Aluminum: 6061-T6 for lightweight applications. Wood: FSC-certified sustainable sources. Powder Coating: ASTM D3359 adhesion test, 500+ hours salt spray test.',
+          '<strong>Product Standards:</strong> EN 1728 (Furniture - Seating - Test methods for strength and durability). BIFMA (Business and Institutional Furniture Manufacturers Association). ASTM furniture testing standards. Load capacity testing exceeding commercial use requirements. Stability testing for safety compliance.',
+          '<strong>Documentation:</strong> Material certificates from suppliers. Test reports for load capacity and durability. Certificate of Origin (Form E for ASEAN, standard CO for others). Packing list and commercial invoice. Photos and videos of finished products. Third-party inspection reports (if arranged).'
+        ]
+      },
+      {
+        heading: 'Ready to Start Your Export Project?',
+        paragraphs: [
+          'Contact our factory export team today to discuss your custom commercial furniture needs. We welcome: Furniture importers and distributors. Hotel chains and hospitality groups. Restaurant and cafe chains. Interior designers and architects. Procurement companies and buying offices. Retailers looking for private label furniture.',
+          'What we need from you to provide accurate quotation: Product type and intended use (restaurant, hotel, office, etc). Quantity requirements. Dimensions and specifications (if you have them). Material and finishing preferences. Reference photos or drawings (if available). Delivery destination. Target budget or price range (optional but helpful).',
+          'Contact us: WhatsApp (preferred for faster response): +62 852-1207-8467. Email: export@mangala-living.com. Visit our factory: Arrange factory visit in Bekasi (30 minutes from Jakarta). See production process, quality control, and sample products firsthand. We look forward to partnering with you for your furniture needs!'
+        ]
+      }
+    ]
   }
 ]
 
