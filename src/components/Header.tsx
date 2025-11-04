@@ -16,6 +16,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [isSearchClosing, setIsSearchClosing] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [isLanguageOpen, setIsLanguageOpen] = useState(false)
   const [showAllCategories, setShowAllCategories] = useState(false)
@@ -24,8 +25,13 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
 
 
   const toggleSearch = () => {
-    setIsSearchOpen(!isSearchOpen)
-    setSearchQuery('')
+    if (isSearchOpen) {
+      closeSearch()
+    } else {
+      setIsSearchOpen(true)
+      setIsSearchClosing(false)
+      setSearchQuery('')
+    }
   }
 
   const toggleLanguage = () => {
@@ -99,8 +105,12 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
   }
 
   const closeSearch = () => {
-    setIsSearchOpen(false)
-    setSearchQuery('')
+    setIsSearchClosing(true)
+    setTimeout(() => {
+      setIsSearchOpen(false)
+      setIsSearchClosing(false)
+      setSearchQuery('')
+    }, 300) // Match the CSS transition duration
   }
 
 
@@ -401,8 +411,8 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
       {/* Search Modal */}
       {isSearchOpen && (
         <>
-          <div className="search-modal-backdrop" onClick={closeSearch}></div>
-          <div className="search-modal-container">
+          <div className={`search-modal-backdrop ${isSearchClosing ? 'closing' : ''}`} onClick={closeSearch}></div>
+          <div className={`search-modal-container ${isSearchClosing ? 'closing' : ''}`}>
             <div className="search-modal-content">
               <button className="search-close-btn" onClick={closeSearch} aria-label={isIndonesian ? "Tutup pencarian" : "Close search"}>
                 x
