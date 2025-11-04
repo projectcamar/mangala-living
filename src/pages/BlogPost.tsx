@@ -245,14 +245,16 @@ const BlogPost: React.FC = () => {
                     
                     if (relevantProducts.length > 0 && hasProductKeywords) {
                       const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
-                      const showcaseDescription = `Berikut adalah produk industrial pilihan kami yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium dan material industrial grade di workshop kami di Bekasi.`
+                      const showcaseDescription = post.category === 'Export & International'
+                        ? `Discover our premium industrial furniture collection, manufactured in our Bekasi workshop with high-quality materials and powder coating finish.`
+                        : `Berikut adalah produk industrial pilihan kami yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium dan material industrial grade di workshop kami di Bekasi.`
                       
                       return (
                         <BlogProductShowcase
                           products={relevantProducts}
                           heading={showcaseHeading}
                           description={showcaseDescription}
-                          isIndonesian={true}
+                          isIndonesian={post.category !== 'Export & International'}
                         />
                       )
                     }
@@ -265,14 +267,24 @@ const BlogPost: React.FC = () => {
               {post.author === 'Helmi Ramdan' && (
                 <AuthorCard
                   name="Helmi Ramdan"
-                  title="Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta"
-                  experience={[
-                    'Infrastructure Engineer at Damai Putra Group (3+ tahun)',
-                    'Design Engineer & Architectural Drafter (5+ tahun)',
-                    'Alumni Universitas Diponegoro',
-                    'Spesialis Commercial Space Design & Construction'
-                  ]}
+                  title={post.category === 'Export & International' 
+                    ? "Associate at Housing and Settlement Department, DKI Jakarta Province"
+                    : "Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta"}
+                  experience={post.category === 'Export & International' 
+                    ? [
+                        'Infrastructure Engineer at Damai Putra Group (3+ years)',
+                        'Design Engineer & Architectural Drafter (5+ years)',
+                        'Alumni of Diponegoro University',
+                        'Commercial Space Design & Construction Specialist'
+                      ]
+                    : [
+                        'Infrastructure Engineer at Damai Putra Group (3+ tahun)',
+                        'Design Engineer & Architectural Drafter (5+ tahun)',
+                        'Alumni Universitas Diponegoro',
+                        'Spesialis Commercial Space Design & Construction'
+                      ]}
                   linkedIn="https://www.linkedin.com/in/helmi-ramdan-067912118/"
+                  isIndonesian={post.category !== 'Export & International'}
                 />
               )}
 
@@ -288,14 +300,16 @@ const BlogPost: React.FC = () => {
                   // Tampilkan sebagai backup untuk artikel pendek atau yang tidak punya cukup section
                   if (relevantProducts.length > 0 && hasProductKeywords) {
                     const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
-                    const showcaseDescription = `Temukan produk industrial berkualitas tinggi yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium, material industrial grade, dan finishing powder coating tahan lama di workshop kami di Bekasi. Harga pabrik langsung, tidak ada perantara!`
+                    const showcaseDescription = post.category === 'Export & International'
+                      ? `Discover high-quality industrial furniture collection related to this article. All products are manufactured with premium materials, industrial-grade quality, and durable powder coating finish in our Bekasi workshop. Factory-direct pricing with no intermediaries!`
+                      : `Temukan produk industrial berkualitas tinggi yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium, material industrial grade, dan finishing powder coating tahan lama di workshop kami di Bekasi. Harga pabrik langsung, tidak ada perantara!`
                     
                     return (
                       <BlogProductShowcase
                         products={relevantProducts}
                         heading={showcaseHeading}
                         description={showcaseDescription}
-                        isIndonesian={true}
+                        isIndonesian={post.category !== 'Export & International'}
                       />
                     )
                   }
@@ -303,28 +317,24 @@ const BlogPost: React.FC = () => {
                 return null
               })()}
 
-              {/* CTA Section - Dual Language */}
+              {/* CTA Section - Conditional Language Based on Article Category */}
               <div className="blog-post-cta">
-                <h3 className="dual-lang-heading">
-                  <span className="lang-id">Tertarik dengan Furniture Industrial Kami?</span>
-                  <span className="lang-divider"> | </span>
-                  <span className="lang-en">Interested in Our Industrial Furniture?</span>
+                <h3>
+                  {post.category === 'Export & International' 
+                    ? 'Interested in Our Industrial Furniture?'
+                    : 'Tertarik dengan Furniture Industrial Kami? | Interested in Our Industrial Furniture?'}
                 </h3>
-                <p className="dual-lang-paragraph">
-                  <span className="lang-id">Kunjungi koleksi lengkap furniture industrial custom berkualitas tinggi dari Mangala Living.</span>
-                  <span className="lang-divider"> | </span>
-                  <span className="lang-en">Visit our complete collection of high-quality custom industrial furniture from Mangala Living.</span>
+                <p>
+                  {post.category === 'Export & International'
+                    ? 'Visit our complete collection of high-quality custom industrial furniture from Mangala Living.'
+                    : 'Kunjungi koleksi lengkap furniture industrial custom berkualitas tinggi dari Mangala Living. | Visit our complete collection of high-quality custom industrial furniture from Mangala Living.'}
                 </p>
                 <div className="blog-cta-buttons">
                   <Link to="/shop" className="blog-cta-btn primary">
-                    <span className="lang-id">Lihat Semua Produk</span>
-                    <span className="lang-divider"> | </span>
-                    <span className="lang-en">View All Products</span>
+                    {post.category === 'Export & International' ? 'View All Products' : 'Lihat Semua Produk | View All Products'}
                   </Link>
                   <Link to="/contact-us" className="blog-cta-btn secondary">
-                    <span className="lang-id">Hubungi Kami</span>
-                    <span className="lang-divider"> | </span>
-                    <span className="lang-en">Contact Us</span>
+                    {post.category === 'Export & International' ? 'Contact Us' : 'Hubungi Kami | Contact Us'}
                   </Link>
                 </div>
               </div>

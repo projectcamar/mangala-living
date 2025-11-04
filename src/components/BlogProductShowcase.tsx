@@ -251,11 +251,7 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
                     
                     <div className="blog-product-showcase-cta">
                       <span className="blog-product-showcase-link">
-                        <span className="dual-lang-text">
-                          <span className="lang-id">Lihat Detail Produk</span>
-                          <span className="lang-divider"> | </span>
-                          <span className="lang-en">View Product Details</span>
-                        </span>
+                        {isIndonesian ? 'Lihat Detail Produk' : 'View Product Details'}
                       </span>
                     </div>
                   </div>
@@ -269,15 +265,11 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
           <Link 
             to="/shop" 
             className="blog-product-showcase-all-products-btn"
-            title="Lihat Semua Produk Industrial Mangala Living | View All Industrial Products"
+            title={isIndonesian ? "Lihat Semua Produk Industrial Mangala Living" : "View All Industrial Products"}
             rel="nofollow"
-            aria-label="Lihat semua produk furniture industrial | View all industrial furniture products"
+            aria-label={isIndonesian ? "Lihat semua produk furniture industrial" : "View all industrial furniture products"}
           >
-            <span className="dual-lang-text">
-              <span className="lang-id">Lihat Semua Produk</span>
-              <span className="lang-divider"> | </span>
-              <span className="lang-en">View All Products</span>
-            </span>
+            {isIndonesian ? 'Lihat Semua Produk' : 'View All Products'}
           </Link>
         </div>
       </div>
