@@ -6,9 +6,10 @@ interface AuthorCardProps {
   title: string
   experience: string[]
   linkedIn?: string
+  isIndonesian?: boolean
 }
 
-const AuthorCard: React.FC<AuthorCardProps> = ({ name, title, experience, linkedIn }) => {
+const AuthorCard: React.FC<AuthorCardProps> = ({ name, title, experience, linkedIn, isIndonesian = true }) => {
   return (
     <div className="author-card">
       <div className="author-card-header">
@@ -19,7 +20,7 @@ const AuthorCard: React.FC<AuthorCardProps> = ({ name, title, experience, linked
           </svg>
         </div>
         <div className="author-info">
-          <h4 className="author-name">Oleh: {name}</h4>
+          <h4 className="author-name">{isIndonesian ? 'Oleh:' : 'By:'} {name}</h4>
           <p className="author-title">{title}</p>
         </div>
       </div>

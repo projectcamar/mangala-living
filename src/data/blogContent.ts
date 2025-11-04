@@ -7864,6 +7864,893 @@ const BLOG_CONTENTS: BlogContent[] = [
         ]
       }
     ]
+  },
+  // ARTICLE 5 - Metal Furniture Supplier Indonesia Export
+  {
+    slug: 'metal-furniture-supplier-indonesia-export-hotels-restaurants',
+    sections: [
+      {
+        paragraphs: [
+          'As a leading metal furniture supplier in Indonesia, Mangala Living specializes in manufacturing and exporting premium-quality steel furniture for hotels and restaurants worldwide. Our 25 years of experience in the industry has positioned us as a trusted partner for international hospitality projects.',
+          'We understand the demanding requirements of commercial hospitality environments: furniture must be durable, aesthetically pleasing, easy to maintain, and capable of withstanding heavy daily use. Our metal furniture solutions are engineered specifically for these high-traffic applications.'
+        ]
+      },
+      {
+        heading: 'Why Choose Metal Furniture for Hospitality?',
+        list: [
+          '<strong>Superior Durability:</strong> Steel frame construction can withstand 5-10 years of heavy commercial use without structural degradation.',
+          '<strong>Low Maintenance:</strong> Powder-coated finishes require minimal upkeep—simple wipe-down cleaning is sufficient.',
+          '<strong>Design Versatility:</strong> Metal frames can be combined with various materials (wood, upholstery, marble, glass) for diverse aesthetic options.',
+          '<strong>Cost-Effectiveness:</strong> Lower total cost of ownership due to extended lifespan and reduced replacement frequency.',
+          '<strong>Hygiene Standards:</strong> Non-porous metal surfaces are easier to sanitize, meeting health and safety requirements.',
+          '<strong>Consistency:</strong> Manufactured furniture ensures uniformity across multiple locations—ideal for hotel and restaurant chains.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Premium Metal Furniture for Hotels and Restaurants'
+      },
+      {
+        heading: 'Our Product Range for Export',
+        paragraphs: [
+          '<strong>Restaurant Furniture:</strong> Dining tables (various sizes and top materials), dining chairs (stackable and non-stackable options), bar stools and high tables, booth seating systems, outdoor terrace furniture, buffet and service stations.',
+          '<strong>Hotel Furniture:</strong> Lobby seating and reception desks, restaurant and bar furniture packages, guest room furniture (bed frames, desks, luggage racks), conference and meeting room furniture, outdoor pool and garden furniture.',
+          '<strong>Cafe Furniture:</strong> Industrial-style tables and chairs, bar counters and display units, outdoor seating solutions, custom-branded furniture pieces.'
+        ]
+      },
+      {
+        heading: 'Export Quality Standards',
+        paragraphs: [
+          'All our export furniture meets international quality standards: <strong>Material Grade:</strong> We use MS (Mild Steel), SS304/SS316 stainless steel, and galvanized steel for corrosion resistance. <strong>Welding Quality:</strong> MIG/TIG welding techniques ensure strong, clean joints. Load testing to 150% of rated capacity. <strong>Finishing:</strong> Powder coating with 60-80 microns thickness, outdoor-grade quality. Electroplating options (chrome, brass, copper) for premium finishes. Multi-stage surface preparation for maximum adhesion.',
+          '<strong>Safety Compliance:</strong> BIFMA standards for commercial furniture. EN 1728 (Furniture - Seating strength and durability testing). Stability testing to prevent tipping. Sharp edge elimination for user safety.'
+        ]
+      },
+      {
+        heading: 'Export Process and Timeline',
+        paragraphs: [
+          '<strong>Phase 1 - Inquiry and Quotation (1-3 days):</strong> Send us your requirements (product type, quantities, specifications). Receive detailed FOB quotation with product specifications. Review our portfolio and previous projects.',
+          '<strong>Phase 2 - Sample Approval (2-3 weeks):</strong> Sample production based on your specifications. Photos sent for approval. Physical sample shipping (if required). Design modifications if needed.',
+          '<strong>Phase 3 - Production (4-6 weeks):</strong> Bulk production upon 30% deposit and sample approval. Weekly progress photo updates. Quality control checkpoints throughout manufacturing.',
+          '<strong>Phase 4 - Shipping (1 week):</strong> Final inspection and professional packing. Export documentation preparation. Container loading and shipment. 70% balance payment before departure.'
+        ]
+      },
+      {
+        heading: 'Competitive FOB Pricing',
+        paragraphs: [
+          'Sample pricing for reference (FOB Bekasi/Jakarta): Metal dining chairs: USD 35-60 per unit. Dining tables (120x70cm): USD 90-130 per unit. Bar stools: USD 45-75 per unit. Bar tables: USD 110-150 per unit. Booth seating systems: USD 200-350 per set.',
+          'Volume discounts available: 50-100 units: 10-15% discount. 100-300 units (1-2 containers): 20-30% discount. 300+ units (3+ containers): 30-40% discount. Prices vary based on material specifications, finishing options, and design complexity.'
+        ]
+      },
+      {
+        heading: 'Why Partner with Us?',
+        paragraphs: [
+          'Direct manufacturer—no trading company markup. 25 years experience serving international clients. In-house design team and CAD capabilities. Own powder coating facility for quality control. English-speaking export team. Transparent communication and pricing. Reliable delivery schedule. After-sales support and warranty.',
+          'Contact us for detailed quotations and product catalogs: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+        ]
+      }
+    ]
+  },
+  // ARTICLE 6 - Indonesia Industrial Furniture Manufacturer OEM ODM Export
+  {
+    slug: 'indonesia-industrial-furniture-manufacturer-oem-odm-export',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living offers comprehensive OEM (Original Equipment Manufacturing) and ODM (Original Design Manufacturing) services for industrial furniture export. We partner with international brands, furniture importers, and hospitality chains to manufacture custom furniture according to their specifications or based on our design expertise.',
+          'With 25 years of manufacturing experience and a 10,000+ sqm production facility, we have the capacity, expertise, and quality control systems to handle OEM/ODM orders ranging from small batches to large-scale production for global markets.'
+        ]
+      },
+      {
+        heading: 'OEM vs ODM: Understanding the Difference',
+        paragraphs: [
+          '<strong>OEM (Original Equipment Manufacturing):</strong> You provide complete specifications, technical drawings, and design details. We manufacture according to your exact requirements. Your brand name and identity applied to the products. Ideal for brands with established designs wanting cost-effective manufacturing.',
+          '<strong>ODM (Original Design Manufacturing):</strong> We provide design expertise and product development services. You select from our existing designs or we create custom designs for you. We handle engineering, prototyping, and manufacturing. Ideal for brands wanting to launch furniture lines without in-house design capability.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'OEM ODM Industrial Furniture Manufacturing in Indonesia'
+      },
+      {
+        heading: 'Our OEM/ODM Capabilities',
+        list: [
+          '<strong>Design Services (ODM):</strong> In-house design team with 10+ years experience in commercial furniture. CAD modeling and 3D rendering. Prototyping and sample production. Design refinement based on your feedback. Trend analysis and product development consultation.',
+          '<strong>Manufacturing Expertise:</strong> Steel fabrication (cutting, bending, welding, finishing). Woodworking for wood components (solid wood and engineered wood). Upholstery and cushioning. Powder coating and electroplating finishing. Assembly and packaging.',
+          '<strong>Production Capacity:</strong> 5,000-8,000 furniture pieces per month. Scalable production for growing demand. Multiple production lines for different product categories. Rush order capability for urgent projects.',
+          '<strong>Quality Control:</strong> Incoming material inspection. In-process quality monitoring. Final product inspection (100% for export). Load testing and durability testing. Pre-shipment inspection coordination.'
+        ]
+      },
+      {
+        heading: 'Industries We Serve',
+        paragraphs: [
+          '<strong>Furniture Brands and Importers:</strong> Private label manufacturing for furniture retailers. Consistent quality across multiple orders. Cost-effective production for competitive pricing. Flexible MOQ for growing businesses.',
+          '<strong>Hospitality Chains:</strong> Custom furniture for hotel and restaurant chains. Brand-specific design and finishes. Consistent furniture across multiple locations. Volume discounts for large projects.',
+          '<strong>Interior Design Firms:</strong> Custom pieces for commercial projects. Design collaboration and consultation. Project-based manufacturing. Quick turnaround for tight deadlines.',
+          '<strong>Property Developers:</strong> Furniture packages for residential and commercial developments. Custom designs matching building aesthetic. Bulk ordering for multiple units. Direct factory pricing.'
+        ]
+      },
+      {
+        heading: 'OEM/ODM Process Flow',
+        paragraphs: [
+          '<strong>Step 1 - Consultation and NDA:</strong> Initial discussion about your requirements. Non-disclosure agreement for design protection. Review your concept, drawings, or reference images. Discuss materials, finishes, quantities, and timeline.',
+          '<strong>Step 2 - Design and Quotation:</strong> ODM: Our design team creates concepts and 3D renderings. OEM: Review your technical drawings and specifications. Detailed quotation with material breakdown. MOQ and pricing tiers provided.',
+          '<strong>Step 3 - Sampling:</strong> Sample production based on approved design. Quality and functionality testing. Photos and physical sample (if required). Design modifications if needed.',
+          '<strong>Step 4 - Bulk Production:</strong> Production begins upon sample approval and deposit. Weekly progress updates with photos. Quality control checkpoints. Pre-notification before completion.',
+          '<strong>Step 5 - Inspection and Shipment:</strong> Final inspection (third-party QC welcome). Professional packing and container loading. Complete export documentation. Shipment and tracking information provided.'
+        ]
+      },
+      {
+        heading: 'Pricing Structure',
+        paragraphs: [
+          'OEM/ODM pricing depends on several factors: Design complexity and engineering requirements. Material specifications (steel grade, wood type, finishing). Order quantity (larger volume = lower unit price). Customization level (more custom = higher price). Timeline requirements (rush orders incur premium).',
+          'Typical MOQ: Small batch (50-100 units): Good for product testing and market entry. Medium batch (100-300 units): Optimal cost-effectiveness for growing brands. Large batch (300+ units): Best pricing for established markets. Sample orders (1-5 units): Higher unit cost, refundable upon bulk order.',
+          'Payment terms: 30% deposit upon order confirmation. 70% balance before shipment. Letter of Credit (LC) for established clients. Flexible terms for repeat orders.'
+        ]
+      },
+      {
+        heading: 'Why Choose Mangala Living for OEM/ODM?',
+        paragraphs: [
+          '<strong>Experience and Reputation:</strong> 25 years in furniture manufacturing. Export to 15+ countries. Trusted by international brands and chains. Strong track record of on-time delivery.',
+          '<strong>Quality Assurance:</strong> ISO-standard manufacturing process. Comprehensive quality control system. Material traceability. Third-party inspection coordination.',
+          '<strong>Confidentiality Protection:</strong> NDA agreements for design protection. Dedicated production runs for your orders. No direct competition in retail market. Your brand identity respected.',
+          '<strong>Communication and Support:</strong> English-speaking export team. Regular progress updates. Responsive to inquiries and changes. Technical support and consultation.',
+          'Ready to discuss your OEM/ODM furniture project? Contact us today: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+        ]
+      }
+    ]
+  },
+  // ARTICLE 7 - Export Quality Restaurant Furniture Indonesia Manufacturer
+  {
+    slug: 'export-quality-restaurant-furniture-indonesia-manufacturer',
+    sections: [
+      {
+        paragraphs: [
+          'As a specialized manufacturer of export-quality restaurant furniture in Indonesia, Mangala Living delivers comprehensive furniture solutions for restaurants, cafes, and food service establishments worldwide. Our 25 years of experience in commercial furniture manufacturing ensures that every piece meets the demanding standards of the hospitality industry.',
+          'We understand that restaurant furniture must balance aesthetics, durability, comfort, and budget. Our manufacturing process is designed to deliver furniture that not only looks great on opening day but continues to perform reliably through years of heavy commercial use.'
+        ]
+      },
+      {
+        heading: 'Restaurant Furniture Product Range',
+        list: [
+          '<strong>Dining Tables:</strong> Various sizes from 2-seater to 10-seater configurations. Multiple top materials: solid wood, engineered wood, laminate, marble, or glass. Steel or wooden bases with powder-coated finishes. Custom sizes and shapes available.',
+          '<strong>Dining Chairs:</strong> Metal frame chairs with or without upholstery. Stackable options for space efficiency. Various styles: industrial, modern, classic. Comfortable seating for extended dining periods.',
+          '<strong>Bar Furniture:</strong> Bar stools with adjustable or fixed height. Bar tables and counters. High-top tables for casual dining. Footrests for comfort.',
+          '<strong>Booth Seating:</strong> Fixed booth systems with upholstered seating. Modular booth configurations. Custom sizes to fit your floor plan. Built-in storage options available.',
+          '<strong>Outdoor Furniture:</strong> Weather-resistant powder-coated finishes. UV-protected materials. Stackable for easy storage. Designed for tropical climates.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Export Quality Restaurant Furniture Manufacturing'
+      },
+      {
+        heading: 'Why Indonesian Restaurant Furniture?',
+        paragraphs: [
+          '<strong>Competitive Pricing:</strong> 20-35% lower manufacturing costs compared to European or North American production. Direct factory pricing eliminates middleman markup. Economy of scale for bulk orders.',
+          '<strong>Quality Craftsmanship:</strong> Skilled workforce with generations of furniture-making experience. Modern machinery combined with traditional techniques. Attention to detail in finishing.',
+          '<strong>Export Infrastructure:</strong> Strategic location near major ports (Jakarta, Surabaya). Established shipping routes to all major destinations. Professional packing to ensure safe arrival.',
+          '<strong>Flexible Production:</strong> Reasonable MOQ suitable for independent restaurants and small chains. Custom design capability. Quick turnaround for repeat orders.'
+        ]
+      },
+      {
+        heading: 'Quality Standards for Export',
+        paragraphs: [
+          'All our restaurant furniture is manufactured to international standards: <strong>Durability Testing:</strong> Chairs tested to 150,000+ cycles (BIFMA standards). Tables tested for load capacity and stability. Welding strength testing for metal components.',
+          '<strong>Safety Compliance:</strong> No sharp edges or protruding hardware. Stability testing to prevent tipping. Fire-retardant upholstery options. Compliance with EU and US safety regulations.',
+          '<strong>Finish Quality:</strong> Powder coating: 500+ hours salt spray test resistance. Multi-stage surface preparation. Even coating thickness (60-80 microns). Scratch and chip-resistant finishes.'
+        ]
+      },
+      {
+        heading: 'Export Process',
+        paragraphs: [
+          '<strong>Step 1 - Quotation (1-2 days):</strong> Share your requirements (style, quantity, timeline). Receive detailed FOB quotation. Review our portfolio and references.',
+          '<strong>Step 2 - Sample Approval (2-3 weeks):</strong> Sample production and photos. Physical sample shipping if needed. Design adjustments if required.',
+          '<strong>Step 3 - Production (4-6 weeks):</strong> Bulk production upon 30% deposit. Weekly photo updates. Quality checkpoints throughout production.',
+          '<strong>Step 4 - Shipping (1 week):</strong> Professional packing and container loading. Complete export documentation. Shipment tracking information.'
+        ]
+      },
+      {
+        heading: 'Pricing Guide (FOB Indonesia)',
+        paragraphs: [
+          'Restaurant dining chairs: USD 35-70 per unit (depending on design and upholstery). Restaurant dining tables (120x70cm): USD 90-140 per unit. Bar stools: USD 45-80 per unit. Bar tables: USD 100-160 per unit. Booth seating: USD 250-400 per linear meter.',
+          'Volume discounts: 50-100 pieces: 10-15% discount. 100-300 pieces (1-2 containers): 20-25% discount. 300+ pieces (3+ containers): 30-35% discount. Prices include professional packing suitable for sea freight.'
+        ]
+      },
+      {
+        heading: 'Contact Us for Restaurant Furniture Export',
+        paragraphs: [
+          'Ready to furnish your restaurant or cafe? Contact our export team: WhatsApp: +62 852-1207-8467 (Fast response). Email: export@mangala-living.com. Factory visit: Welcome to visit our factory in Bekasi (30 minutes from Jakarta). Let us help you create the perfect dining environment for your customers!'
+        ]
+      }
+    ]
+  },
+  // ARTICLE 8 - Indonesian Furniture Exporter Bekasi Factory Direct Pricing
+  {
+    slug: 'indonesian-furniture-exporter-bekasi-factory-direct-pricing',
+    sections: [
+      {
+        paragraphs: [
+          'As a direct furniture exporter based in Bekasi, Indonesia, Mangala Living offers factory-direct pricing that eliminates middleman markup and trading company commissions. Our location in Bekasi, Indonesia\'s industrial heartland, provides strategic advantages for cost-effective manufacturing and efficient export logistics.',
+          'When you work directly with us, you\'re connecting with the actual manufacturer—not a trading company or intermediary. This means better prices, direct communication with our production team, and complete transparency throughout the manufacturing process.'
+        ]
+      },
+      {
+        heading: 'Advantages of Factory-Direct Export',
+        list: [
+          '<strong>Lower Prices:</strong> Save 20-40% compared to buying through trading companies. No middleman commission added to your costs. Direct factory pricing based on actual production costs.',
+          '<strong>Direct Communication:</strong> Speak directly with our production manager. Faster response to questions and concerns. Real-time production updates. Video calls and factory tours available.',
+          '<strong>Quality Control:</strong> Direct oversight of manufacturing process. Your specifications implemented precisely. Immediate resolution of any quality issues. Visit factory anytime during production.',
+          '<strong>Customization Flexibility:</strong> Easy design modifications during sampling phase. Custom materials and finishes available. No limitations from pre-set catalog. Responsive to your specific needs.',
+          '<strong>Relationship Building:</strong> Long-term partnership potential. Priority service for repeat orders. Preferential pricing as volumes grow. Direct support from decision-makers.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Factory in Bekasi Indonesia'
+      },
+      {
+        heading: 'Why Bekasi as Manufacturing Base?',
+        paragraphs: [
+          '<strong>Strategic Location:</strong> 30 minutes from Jakarta port (Tanjung Priok). 45 minutes from Soekarno-Hatta International Airport. Easy access for container trucks. Close to major highways for material sourcing.',
+          '<strong>Industrial Infrastructure:</strong> Established industrial zone with reliable utilities. Skilled labor pool with furniture manufacturing experience. Supporting industries (steel, wood, paint, hardware) nearby. Lower operational costs than Jakarta.',
+          '<strong>Export Advantages:</strong> Bekasi designated as Export Processing Zone. Streamlined export documentation process. Container booking and customs clearance support. Competitive shipping rates to all major destinations.'
+        ]
+      },
+      {
+        heading: 'Our Factory Capabilities',
+        paragraphs: [
+          '<strong>Production Facility:</strong> 10,000+ sqm manufacturing space. Metal fabrication workshop with MIG/TIG welding. Woodworking section for solid and engineered wood. In-house powder coating line (outdoor-grade quality). Assembly and QC area. Professional packing facility.',
+          '<strong>Production Capacity:</strong> 5,000-8,000 furniture pieces monthly. Multiple production lines for different products. Scalable capacity for large orders. Rush production capability available.',
+          '<strong>Quality Control:</strong> Incoming material inspection. In-process quality monitoring. Final product 100% inspection. Load and stability testing. Pre-shipment inspection coordination.'
+        ]
+      },
+      {
+        heading: 'Factory-Direct Pricing Structure',
+        paragraphs: [
+          '<strong>How We Calculate Prices:</strong> Raw material costs (steel, wood, powder coating, hardware). Direct labor costs (welding, assembly, finishing). Factory overhead (utilities, equipment, facility). Quality control and testing. Professional packing for export. Profit margin (transparent and fair).',
+          '<strong>What\'s Included in FOB Price:</strong> Complete manufacturing to your specifications. Quality inspection and testing. Professional packing (bubble wrap, cardboard protection, wooden crates if needed). Delivery to Bekasi/Jakarta port. Container loading supervision. Export documentation (invoice, packing list, CO).',
+          '<strong>What\'s NOT Included:</strong> Shipping freight (we can arrange and quote separately). Destination port charges. Import duties and customs clearance at destination. Inland transport from destination port to your address.'
+        ]
+      },
+      {
+        heading: 'Minimum Order Quantity (MOQ)',
+        paragraphs: [
+          'Our factory-direct model allows flexible MOQ: Small batch (50-100 units): Good for testing products and market entry. Approximately USD 3,000-5,000 order value. Medium batch (100-300 units / 1-2 containers): Optimal cost-effectiveness. Best price-to-quality ratio. Large batch (300+ units / 3+ containers): Maximum volume discount. Priority production scheduling. Lowest per-unit cost.',
+          'Sample orders (1-10 units): Available for design approval and marketing purposes. Higher unit cost due to individual setup. Sample cost refundable upon bulk order. Faster turnaround (1-2 weeks).'
+        ]
+      },
+      {
+        heading: 'Price Comparison: Factory Direct vs Trading Company',
+        paragraphs: [
+          '<strong>Example: Metal Dining Chair</strong> Factory direct price (Mangala Living): USD 38/unit (FOB, 200 units). Through trading company: USD 52-58/unit (FOB, 200 units). Your savings: USD 14-20 per unit = USD 2,800-4,000 total (for 200 units).',
+          '<strong>Example: Dining Table 120x70cm</strong> Factory direct price (Mangala Living): USD 95/unit (FOB, 100 units). Through trading company: USD 125-140/unit (FOB, 100 units). Your savings: USD 30-45 per unit = USD 3,000-4,500 total (for 100 units).',
+          'Additional hidden costs with trading companies: Longer lead time (they need to coordinate with factory). Less flexibility for design changes. Slower communication (goes through middleman). No direct factory oversight.'
+        ]
+      },
+      {
+        heading: 'How to Get Started',
+        paragraphs: [
+          '<strong>Step 1 - Send Inquiry:</strong> Email us at export@mangala-living.com or WhatsApp +62 852-1207-8467. Include: Product type/style, Quantity, Destination country, Timeline, Reference photos (if available).',
+          '<strong>Step 2 - Receive Quotation:</strong> Detailed FOB pricing within 1-2 business days. Product specifications and material breakdown. Production timeline. Payment terms.',
+          '<strong>Step 3 - Sample or Direct Order:</strong> Option A: Order samples for approval. Option B: Proceed directly to bulk order (if design is clear).',
+          '<strong>Step 4 - Production and Shipment:</strong> 30% deposit to start production. Weekly photo updates during manufacturing. Final inspection and balance payment. Shipment with complete documentation.',
+          'Start saving with factory-direct pricing today! Contact us: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+        ]
+      }
+    ]
+  },
+  // ARTICLE 9 - Custom Hospitality Furniture Indonesia Export Hotels Worldwide
+  {
+    slug: 'custom-hospitality-furniture-indonesia-export-hotels-worldwide',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living specializes in manufacturing custom hospitality furniture for hotels, resorts, and hospitality chains worldwide. With 25 years of experience in commercial furniture production, we deliver tailored furniture solutions that match your brand identity, functional requirements, and budget.',
+          'We understand that hospitality furniture must meet stringent standards: durability for high guest traffic, aesthetic appeal for positive guest experience, compliance with safety regulations, and consistency across multiple properties. Our custom manufacturing process ensures all these requirements are met.'
+        ]
+      },
+      {
+        heading: 'Custom Hospitality Furniture Range',
+        list: [
+          '<strong>Hotel Lobbies:</strong> Reception desks and check-in counters. Lounge seating (sofas, armchairs, ottomans). Coffee tables and side tables. Luggage racks and bellhop carts. Feature furniture pieces (statement chairs, decorative cabinets).',
+          '<strong>Guest Rooms:</strong> Bed frames (all sizes: twin, full, queen, king). Headboards (upholstered, wooden, metal). Nightstands and bedside tables. Desks and chairs. Wardrobes and luggage racks. TV cabinets.',
+          '<strong>Restaurants and Bars:</strong> Dining tables and chairs. Bar stools and bar tables. Booth seating systems. Buffet stations. Hostess stands.',
+          '<strong>Outdoor Areas:</strong> Pool lounge chairs. Garden furniture sets. Rooftop bar furniture. Terrace dining furniture. Weather-resistant powder coating.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&auto=format&fit=crop',
+        imageAlt: 'Custom Hospitality Furniture for Hotels'
+      },
+      {
+        heading: 'Custom Design Process',
+        paragraphs: [
+          '<strong>Phase 1 - Consultation:</strong> Understand your hotel concept and brand identity. Review floor plans and space requirements. Discuss style preferences and functional needs. Receive initial concept sketches.',
+          '<strong>Phase 2 - Design Development:</strong> CAD drawings and 3D renderings. Material and finish selection. Compliance review (safety, fire codes). Cost estimation and budget alignment.',
+          '<strong>Phase 3 - Sampling:</strong> Sample production for key furniture pieces. Quality and functionality testing. Guest comfort assessment. Design refinement based on feedback.',
+          '<strong>Phase 4 - Production:</strong> Bulk production for full hotel furniture package. Phased delivery for staged openings. Quality control throughout manufacturing. Pre-shipment inspection.'
+        ]
+      },
+      {
+        heading: 'Why Choose Indonesian Custom Furniture?',
+        paragraphs: [
+          '<strong>Cost Advantage:</strong> 30-50% lower manufacturing costs than Western countries. Skilled craftsmanship at competitive labor rates. No compromise on quality.',
+          '<strong>Customization Capability:</strong> Full design flexibility to match your brand. Custom sizes to fit your floor plans. Material and finish options. Private label and branding.',
+          '<strong>Quality Standards:</strong> International hospitality furniture standards. Durability testing to commercial specifications. Safe, non-toxic finishes. Fire-retardant materials available.',
+          '<strong>Volume Capacity:</strong> Can handle large hotel projects (100+ rooms). Multiple production lines for diverse furniture types. Consistent quality across bulk orders.'
+        ]
+      },
+      {
+        heading: 'Export and Logistics',
+        paragraphs: [
+          'We handle complete export process: Professional furniture packing (blanket wrap, cardboard corners, wooden crates). Container loading optimization. Export documentation (CO, invoice, packing list). Freight arrangement (FOB or CIF). Shipment tracking and updates.',
+          'Lead times: Design and sampling: 6-8 weeks. Bulk production: 8-12 weeks (depending on volume). Shipping: 2-6 weeks (depending on destination). Total project timeline: 4-6 months for full hotel furniture package.'
+        ]
+      },
+      {
+        heading: 'Pricing',
+        paragraphs: [
+          'Custom hospitality furniture pricing depends on: Design complexity. Materials and finishes. Order volume. Customization level. Timeline requirements.',
+          'Typical pricing examples (FOB Indonesia): Guest room furniture package (bed frame, 2 nightstands, desk, chair, wardrobe): USD 450-850 per room. Restaurant dining set (table + 4 chairs): USD 250-400 per set. Bar stool: USD 50-90 per unit. Lobby lounge chair: USD 150-300 per unit.',
+          'Volume discounts available for large hotel projects. Contact us for detailed project quotation: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+        ]
+      }
+    ]
+  },
+  // ARTICLE 10 - Industrial Metal Furniture Indonesia Powder Coating Export
+  {
+    slug: 'industrial-metal-furniture-indonesia-powder-coating-export',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living manufactures premium industrial metal furniture with professional powder coating finish for export worldwide. Our in-house powder coating facility ensures consistent, durable finishes that meet international quality standards for both indoor and outdoor applications.',
+          'Powder coating is superior to liquid paint for metal furniture: more durable finish, better corrosion resistance, environmentally friendly (no VOC emissions), uniform coating thickness, and cost-effective for bulk production. All our export furniture features powder coating as standard finishing.'
+        ]
+      },
+      {
+        heading: 'Powder Coating Advantages',
+        list: [
+          '<strong>Superior Durability:</strong> Harder, more scratch-resistant finish than liquid paint. Impact-resistant coating. 500+ hours salt spray test resistance. 5-8 years lifespan for outdoor applications.',
+          '<strong>Weather Resistance:</strong> Outdoor-grade quality for all climates. UV-protected (no fading). Moisture and humidity resistant. Temperature resistant (-40°C to +80°C).',
+          '<strong>Aesthetic Quality:</strong> Smooth, uniform finish. No brush marks or drips. Consistent color across all pieces. RAL and Pantone color matching available.',
+          '<strong>Environmental Benefits:</strong> No VOC emissions. Recyclable overspray. No hazardous waste. Safe for indoor furniture.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Powder Coated Industrial Metal Furniture'
+      },
+      {
+        heading: 'Our Powder Coating Process',
+        paragraphs: [
+          '<strong>Surface Preparation:</strong> Degreasing to remove oils and contaminants. Sand blasting or chemical treatment. Phosphate coating for corrosion resistance. Complete surface cleaning.',
+          '<strong>Powder Application:</strong> Electrostatic spray application. Uniform coating thickness (60-80 microns). Full coverage including hard-to-reach areas. Controlled application for consistent quality.',
+          '<strong>Curing:</strong> High-temperature oven curing (180-200°C). Complete powder melting and bonding. Proper curing time for maximum durability. Quality inspection after cooling.',
+          '<strong>Quality Control:</strong> Visual inspection for uniformity. Adhesion testing. Thickness measurement. Impact and scratch resistance testing.'
+        ]
+      },
+      {
+        heading: 'Color and Finish Options',
+        paragraphs: [
+          '<strong>Standard Colors:</strong> Matte Black (most popular for industrial furniture). Glossy Black. White (matte or glossy). Grey (various shades). Brown/Bronze tones.',
+          '<strong>Custom Colors:</strong> RAL color system (200+ standard colors). Pantone color matching. Custom color development. Metallic and textured finishes.',
+          '<strong>Finish Types:</strong> Matte (contemporary, industrial look). Glossy (classic, easy to clean). Textured (hides minor imperfections). Metallic (premium aesthetic).'
+        ]
+      },
+      {
+        heading: 'Product Range',
+        paragraphs: [
+          'All our industrial metal furniture features powder coating: Dining tables and chairs. Bar stools and bar tables. Display racks and shelving. Office furniture. Outdoor furniture. Custom metal fabrications.',
+          'Suitable for: Restaurants and cafes. Hotels and resorts. Offices and co-working spaces. Retail stores. Residential (indoor and outdoor). Public spaces.'
+        ]
+      },
+      {
+        heading: 'Export Quality Assurance',
+        paragraphs: [
+          'Our powder coating meets international standards: ASTM D3359 (adhesion test). ASTM B117 (salt spray test - 500+ hours). ISO 2409 (cross-cut tape test). ASTM D2794 (impact resistance). Quality certificates provided upon request.',
+          'Professional packing: Protective wrapping to prevent scratches. Cardboard corners and edge protection. Wooden crates for fragile items. Container loading supervision.'
+        ]
+      },
+      {
+        heading: 'Pricing and Lead Time',
+        paragraphs: [
+          'Powder coating adds approximately 15-20% to base metal fabrication cost, but provides superior value compared to liquid paint. Lead time: Standard colors: 3-4 weeks production. Custom colors: 4-5 weeks (sample approval required). Rush orders available with additional fee.',
+          'For export quotations on powder-coated metal furniture: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+        ]
+      }
+    ]
+  },
+  // ARTICLE 11 - Indonesia Furniture Manufacturer Container Pricing Export
+  {
+    slug: 'indonesia-furniture-manufacturer-container-pricing-export',
+    sections: [
+      {
+        paragraphs: [
+          'Understanding container pricing is essential for furniture importers. As an Indonesian furniture manufacturer, Mangala Living provides transparent container-based pricing for export orders, helping you calculate accurate landed costs and maximize your import budget.',
+          'Container shipping is the most cost-effective method for furniture export. We optimize packing to maximize container utilization, reducing your per-unit shipping cost and overall import expense.'
+        ]
+      },
+      {
+        heading: 'Container Options',
+        list: [
+          '<strong>20ft Container:</strong> Internal dimensions: 5.9m x 2.35m x 2.39m (LxWxH). Volume: approximately 33 cubic meters. Typical capacity: 200-300 chairs, 80-120 dining tables, or mixed furniture load. Suitable for: Small to medium orders, Testing new products, Regional distribution.',
+          '<strong>40ft Standard Container:</strong> Internal dimensions: 12.03m x 2.35m x 2.39m (LxWxH). Volume: approximately 67 cubic meters. Double capacity of 20ft container. Most cost-effective per-unit shipping. Suitable for: Medium to large orders, Multiple product types, Established import business.',
+          '<strong>40ft High Cube (HC) Container:</strong> Internal dimensions: 12.03m x 2.35m x 2.69m (LxWxH). Volume: approximately 76 cubic meters. Extra height for tall items (display racks, wardrobes). 15% more volume than standard 40ft. Suitable for: Bulky or tall furniture, Maximum container utilization.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Container Loading Furniture for Export'
+      },
+      {
+        heading: 'Container Loading Capacity Examples',
+        paragraphs: [
+          '<strong>Dining Chairs (stackable):</strong> 20ft container: 250-300 chairs. 40ft container: 500-600 chairs. 40ft HC: 600-700 chairs.',
+          '<strong>Dining Tables (120x70cm):</strong> 20ft container: 80-100 tables. 40ft container: 180-220 tables. 40ft HC: 200-240 tables.',
+          '<strong>Bar Stools:</strong> 20ft container: 200-250 stools. 40ft container: 450-500 stools. 40ft HC: 500-600 stools.',
+          '<strong>Mixed Load (typical restaurant furniture package):</strong> 40ft container can fit: 150 dining chairs + 50 dining tables + 30 bar stools + accessories. Complete furniture for 50-seat restaurant. Optimized packing for space efficiency.'
+        ]
+      },
+      {
+        heading: 'Container Pricing Structure',
+        paragraphs: [
+          '<strong>FOB (Free on Board) Pricing:</strong> Our responsibility: Manufacturing, Quality control, Professional packing, Delivery to port, Container loading, Export documentation. Your responsibility: Shipping freight, Destination charges, Import customs, Inland transport.',
+          '<strong>CIF (Cost, Insurance, Freight) Pricing:</strong> Our responsibility: All FOB services plus, Sea freight to destination port, Marine insurance. Your responsibility: Destination port charges, Import customs and duties, Inland transport from port.',
+          'We can provide both FOB and CIF quotations. Most clients prefer FOB and arrange their own freight forwarder for better control and competitive rates.'
+        ]
+      },
+      {
+        heading: 'Sample Container Pricing',
+        paragraphs: [
+          '<strong>Example 1: Restaurant Dining Chairs</strong> Product: Metal dining chairs. Quantity: 500 units (1x 40ft container). FOB price per unit: USD 38. Total FOB value: USD 19,000. Estimated sea freight (to USA West Coast): USD 2,500-3,500. Landed cost per unit: approximately USD 42-45.',
+          '<strong>Example 2: Mixed Restaurant Furniture</strong> 40ft container with: 150 dining chairs @ USD 38 = USD 5,700. 50 dining tables @ USD 95 = USD 4,750. 30 bar stools @ USD 55 = USD 1,650. Total FOB value: USD 12,100. Estimated sea freight (to Europe): USD 3,000-4,000. Average landed cost savings of 25-35% vs local purchasing.'
+        ]
+      },
+      {
+        heading: 'Maximizing Container Efficiency',
+        paragraphs: [
+          '<strong>Our Optimization Services:</strong> Professional packing to maximize space utilization. Stackable furniture design options. Knock-down (KD) furniture for flat packing. Mixed product combinations for full container loads. Loading supervision by experienced team.',
+          '<strong>Tips for Buyers:</strong> Order in full container loads when possible for best per-unit cost. Mix different products to fill container capacity. Consider stackable furniture designs. Plan inventory to reduce multiple small shipments. Factor in cubic meters, not just weight.'
+        ]
+      },
+      {
+        heading: 'Timeline and Process',
+        paragraphs: [
+          '<strong>Typical Export Timeline:</strong> Production: 4-6 weeks after deposit. Packing and loading: 3-5 days. Documentation: 1-2 days. Sea freight: 2-6 weeks (depending on destination). Total: 7-13 weeks from order to arrival.',
+          '<strong>Documentation Provided:</strong> Commercial invoice. Packing list (detailed item breakdown). Certificate of Origin (Form E for ASEAN, standard CO for others). Bill of Lading (B/L). Photos and videos of loading. Weight and measurement certificate.',
+          'For detailed container pricing quotations: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com. Provide: Product types and quantities, Destination port, Preferred container size (20ft, 40ft, 40ft HC), FOB or CIF pricing preference.'
+        ]
+      }
+    ]
+  },
+  // REMAINING EXPORT ARTICLES 12-20 (Final Batch)
+  {
+    slug: 'cafe-furniture-manufacturer-indonesia-export-international',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living is a leading cafe furniture manufacturer in Indonesia, specializing in industrial-style furniture for cafes worldwide. We export custom and ready-to-order cafe furniture that combines style, durability, and value—perfect for independent cafes, coffee chains, and hospitality businesses.',
+          'Our 25 years of experience in commercial furniture manufacturing ensures that every piece we produce meets the demanding requirements of busy cafe environments: heavy daily use, aesthetic appeal for Instagram-worthy interiors, and budget-friendly pricing without compromising quality.'
+        ]
+      },
+      {
+        heading: 'Cafe Furniture Product Range',
+        list: [
+          '<strong>Cafe Tables:</strong> Various sizes (60x60cm to 120x70cm). Materials: steel frame with wood, marble, or HPL top. Indoor and outdoor options. Stackable and space-saving designs.',
+          '<strong>Cafe Chairs:</strong> Industrial metal chairs. Upholstered options for comfort. Stackable designs. Indoor/outdoor rated. Custom colors available.',
+          '<strong>Bar Furniture:</strong> Bar stools (adjustable and fixed height). Bar tables and counters. Footrests for comfort. Modern industrial aesthetic.',
+          '<strong>Display & Storage:</strong> Display racks for merchandise. Shelving for retail products. Storage cabinets. Custom branding options.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Cafe Furniture Manufacturing for Export'
+      },
+      {
+        heading: 'Why Choose Indonesian Cafe Furniture?',
+        paragraphs: [
+          'Competitive pricing 30-40% lower than Western manufacturers. High-quality craftsmanship and materials. Export-ready with international standards. Fast production and reliable delivery. Custom design capability for unique cafe concepts.'
+        ]
+      },
+      {
+        heading: 'Export Process',
+        paragraphs: [
+          'Simple 4-step process: 1) Send inquiry with your requirements. 2) Receive quotation and samples. 3) Approve and place order with deposit. 4) Production, packing, and shipment with complete documentation.',
+          'Lead time: 4-6 weeks production plus 2-4 weeks shipping. FOB or CIF pricing available. Minimum order: 1 container (approximately 50-100 furniture pieces).'
+        ]
+      },
+      {
+        heading: 'Contact for Export',
+        paragraphs: [
+          'Ready to furnish your cafe? WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'indonesian-steel-furniture-supplier-export-quality-assurance',
+    sections: [
+      {
+        paragraphs: [
+          'As a quality-assured steel furniture supplier in Indonesia, Mangala Living implements comprehensive quality control systems throughout the manufacturing process. Our commitment to international quality standards ensures that exported furniture arrives in perfect condition and performs reliably for years.',
+          'Quality assurance is not just final inspection—it\'s integrated into every step of our production: material selection, fabrication, finishing, packing, and shipping. We welcome third-party inspections and provide complete quality documentation for every export order.'
+        ]
+      },
+      {
+        heading: 'Quality Control Checkpoints',
+        list: [
+          '<strong>Material Inspection:</strong> Steel grade verification. Thickness measurement. Surface quality check. Material certificates from suppliers.',
+          '<strong>Production Quality:</strong> Welding inspection (visual and strength). Dimensional accuracy checks. Assembly fit and finish. Surface preparation before coating.',
+          '<strong>Finishing Quality:</strong> Powder coating thickness (60-80 microns). Color consistency. Adhesion testing. Impact and scratch resistance.',
+          '<strong>Final Inspection:</strong> 100% visual inspection. Stability and load testing. Packaging quality. Pre-shipment inspection coordination.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop',
+        imageAlt: 'Quality Assured Steel Furniture Manufacturing'
+      },
+      {
+        heading: 'International Standards',
+        paragraphs: [
+          'Our manufacturing meets: BIFMA standards for commercial furniture. EN 1728 (European furniture testing). ASTM standards (American Society for Testing and Materials). ISO 9001 quality management principles.',
+          'Testing capabilities: Load capacity testing to 150% of rated capacity. Stability testing for safety. Salt spray corrosion testing (500+ hours). Impact and scratch resistance testing.'
+        ]
+      },
+      {
+        heading: 'Quality Documentation',
+        paragraphs: [
+          'Every export order includes: Material certificates. Inspection reports. Test results (load, stability, coating). Photos of finished products. Packing list with item details. Third-party inspection reports (if arranged).',
+          'We work with international inspection agencies: SGS, Bureau Veritas, Intertek, TUV. Coordinate pre-shipment inspection at no additional cost.'
+        ]
+      },
+      {
+        heading: 'Quality Guarantee',
+        paragraphs: [
+          'We stand behind our quality: 2-year structural warranty. 1-year finish warranty. Manufacturing defects covered. Responsive after-sales support. Replacement parts available.',
+          'Contact our quality assurance team: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'outdoor-furniture-manufacturer-indonesia-weather-resistant-export',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living specializes in manufacturing weather-resistant outdoor furniture for export to tropical and humid climates worldwide. Our powder-coated steel furniture is engineered to withstand extreme weather conditions: intense sun, heavy rain, high humidity, and salt air exposure.',
+          'With Indonesia\'s tropical climate, we understand the challenges of outdoor furniture durability. Our manufacturing process includes outdoor-grade powder coating, rust-resistant materials, and rigorous testing to ensure furniture performance in challenging environments.'
+        ]
+      },
+      {
+        heading: 'Weather-Resistant Features',
+        list: [
+          '<strong>Powder Coating:</strong> Outdoor-grade coating (80+ microns thickness). UV-protected to prevent fading. 500+ hours salt spray test resistance. Moisture and humidity resistant.',
+          '<strong>Material Selection:</strong> Galvanized steel for corrosion resistance. Marine-grade stainless steel options. Rust-resistant hardware. Treated wood components (if applicable).',
+          '<strong>Design Features:</strong> Drainage holes to prevent water pooling. Welded construction (no exposed fasteners). Smooth surfaces for easy cleaning. Stackable for storage.',
+          '<strong>Testing:</strong> Accelerated weathering tests. Salt spray corrosion testing. UV exposure testing. Temperature cycling tests.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Weather Resistant Outdoor Furniture'
+      },
+      {
+        heading: 'Product Range',
+        paragraphs: [
+          'Outdoor dining sets. Pool lounge furniture. Garden and patio furniture. Rooftop bar furniture. Resort and hotel outdoor furniture. Commercial outdoor seating.',
+          'Suitable for: Beachfront resorts. Poolside areas. Garden restaurants. Rooftop bars. Outdoor cafes. Public spaces.'
+        ]
+      },
+      {
+        heading: 'Climate Performance',
+        paragraphs: [
+          'Tested for tropical climates: High temperature resistance (up to 60°C). High humidity (90%+ RH). Saltwater exposure (coastal areas). Intense UV radiation. Heavy rainfall.',
+          'Estimated lifespan: 5-8 years with minimal maintenance in tropical outdoor environments. 8-12 years in temperate climates.'
+        ]
+      },
+      {
+        heading: 'Export and Pricing',
+        paragraphs: [
+          'FOB pricing examples (outdoor-grade finish): Outdoor dining chair: USD 45-75 per unit. Outdoor dining table: USD 120-180 per unit. Pool lounge chair: USD 80-130 per unit. Bar set (1 table + 2 stools): USD 200-300 per set.',
+          'Minimum order: 50-100 pieces or 1 container. Lead time: 4-6 weeks production. Volume discounts available.',
+          'Contact us for weather-resistant outdoor furniture: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-factory-bekasi-indonesia-export-international-buyers',
+    sections: [
+      {
+        paragraphs: [
+          'Our modern furniture factory in Bekasi, Indonesia, serves international buyers seeking reliable manufacturing partnership for commercial furniture export. With 10,000+ sqm production facility and 25 years of experience, we deliver quality furniture with competitive pricing and on-time delivery.',
+          'Bekasi is Indonesia\'s industrial center, strategically located 30 minutes from Jakarta port and international airport. This location advantage means efficient logistics, lower operational costs, and faster export processing for our international clients.'
+        ]
+      },
+      {
+        heading: 'Factory Capabilities',
+        list: [
+          '<strong>Production Facility:</strong> 10,000+ sqm manufacturing space. Metal fabrication workshop. Woodworking section. In-house powder coating line. Assembly and QC area.',
+          '<strong>Production Capacity:</strong> 5,000-8,000 furniture pieces monthly. Multiple product lines. Scalable for large projects. Rush production available.',
+          '<strong>Equipment:</strong> CNC cutting machines. MIG/TIG welding stations. Powder coating booth (outdoor-grade). Woodworking machinery. Modern tools and equipment.',
+          '<strong>Workforce:</strong> 50+ skilled workers. Experienced supervisors. English-speaking export team. Quality control specialists.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Factory in Bekasi Indonesia'
+      },
+      {
+        heading: 'Why Choose Our Factory?',
+        paragraphs: [
+          'Direct manufacturer—no trading company markup. Factory-direct pricing. Transparent production process. Quality control at source. Custom design capability. Flexible MOQ. English communication. Reliable delivery schedule.'
+        ]
+      },
+      {
+        heading: 'Factory Visit Welcome',
+        paragraphs: [
+          'We welcome factory visits from international buyers: See production process firsthand. Meet our team. Inspect quality control systems. Review samples and materials. Discuss your project requirements.',
+          'Location: Jl. Raya Setu Cibitung, Bekasi, West Java, Indonesia. 30 minutes from Jakarta port. 45 minutes from airport. Easy access by car or taxi.',
+          'Schedule your visit: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'indonesian-furniture-exporter-fob-cif-pricing-international',
+    sections: [
+      {
+        paragraphs: [
+          'Understanding FOB and CIF pricing is essential for international furniture buyers. As an Indonesian furniture exporter, Mangala Living provides clear pricing structures for both FOB (Free on Board) and CIF (Cost, Insurance, Freight) terms, helping you calculate accurate landed costs.',
+          'We work transparently with international buyers, providing detailed cost breakdowns and helping you choose the most cost-effective shipping terms for your destination.'
+        ]
+      },
+      {
+        heading: 'FOB vs CIF: What\'s the Difference?',
+        paragraphs: [
+          '<strong>FOB (Free on Board) Indonesia:</strong> Our responsibility: Manufacturing, Quality control, Professional packing, Delivery to Indonesian port, Export documentation, Container loading. Your responsibility: Ocean freight from Indonesia, Marine insurance, Destination port charges, Import customs, Inland transport.',
+          '<strong>CIF (Cost, Insurance, Freight) Destination Port:</strong> Our responsibility: All FOB services PLUS, Ocean freight to your destination port, Marine insurance. Your responsibility: Destination port charges, Import customs and duties, Inland transport from port to your location.',
+          '<strong>Which to Choose?</strong> FOB: Choose if you have preferred freight forwarder or can get better shipping rates. More control over shipping arrangements. Suitable for experienced importers. CIF: Choose for convenience and predictable costs. We handle shipping arrangements. Good for first-time importers.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'FOB CIF Pricing for Furniture Export'
+      },
+      {
+        heading: 'Sample Pricing Calculation',
+        paragraphs: [
+          '<strong>Example: 500 Metal Dining Chairs</strong> FOB Bekasi/Jakarta: Unit price: USD 38. Total FOB: USD 19,000. Add: Ocean freight to USA West Coast: USD 2,500-3,500. Marine insurance (1%): USD 215. Total CIF price: USD 21,715-22,715. Landed cost per chair: USD 43-45.',
+          '<strong>Additional Costs at Destination:</strong> Port charges: USD 200-500. Customs clearance: USD 150-300. Import duties (varies by country): 0-15%. Inland transport: Varies by distance. Total landed cost typically 15-25% above CIF price.'
+        ]
+      },
+      {
+        heading: 'Shipping Destinations and Rates',
+        paragraphs: [
+          '<strong>Typical Ocean Freight Rates (40ft Container from Indonesia):</strong> USA West Coast: USD 2,500-3,500 (18-25 days). USA East Coast: USD 3,500-4,500 (30-35 days). Europe (Rotterdam, Hamburg): USD 2,800-3,800 (25-30 days). Australia: USD 1,800-2,500 (12-15 days). Middle East: USD 2,000-3,000 (15-20 days). Singapore/Malaysia: USD 800-1,200 (3-5 days).',
+          'Note: Shipping rates fluctuate based on season, fuel prices, and market conditions. Request current rates for accurate quotation.'
+        ]
+      },
+      {
+        heading: 'Payment Terms',
+        paragraphs: [
+          'Standard terms: 30% deposit upon order confirmation. 70% balance before shipment. Payment methods: Wire transfer (T/T). Letter of Credit (LC) for established clients. All banking fees borne by respective parties.',
+          'For FOB and CIF quotations: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com. Provide: Product details, Quantity, Destination port, Preferred pricing term (FOB or CIF)'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'commercial-furniture-supplier-indonesia-export-documentation',
+    sections: [
+      {
+        paragraphs: [
+          'Proper export documentation is critical for smooth customs clearance and successful international furniture shipments. As an experienced commercial furniture supplier in Indonesia, Mangala Living handles complete export documentation, ensuring your furniture order clears customs efficiently.',
+          'We understand that documentation errors can cause delays, additional costs, and frustration. Our export team is experienced in preparing accurate, complete documentation for destinations worldwide.'
+        ]
+      },
+      {
+        heading: 'Required Export Documents',
+        list: [
+          '<strong>Commercial Invoice:</strong> Detailed description of goods. Unit prices and total value. Currency and payment terms. Shipping information. Exporter and importer details.',
+          '<strong>Packing List:</strong> Item-by-item breakdown. Quantities and dimensions. Weight (gross and net). Packing method. Marks and numbers.',
+          '<strong>Certificate of Origin (CO):</strong> Form E for ASEAN countries (preferential tariff). Standard CO for other countries. Issued by Indonesian Trade Ministry. Original copy for customs.',
+          '<strong>Bill of Lading (B/L):</strong> Issued by shipping line. Proof of shipment. Required for cargo release. Original for consignee.',
+          '<strong>Additional Documents (if required):</strong> Phytosanitary certificate (for wood components). Fumigation certificate. Test reports. Insurance certificate (for CIF). Other destination-specific documents.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=1200&auto=format&fit=crop',
+        imageAlt: 'Export Documentation for Commercial Furniture'
+      },
+      {
+        heading: 'Documentation Process',
+        paragraphs: [
+          '<strong>Before Production:</strong> Confirm importer details for documents. Verify destination country requirements. Agree on product descriptions and HS codes.',
+          '<strong>After Production:</strong> Prepare commercial invoice and packing list. Apply for Certificate of Origin (2-3 days). Coordinate with shipping line for B/L. Arrange additional certificates if needed.',
+          '<strong>Shipment:</strong> Provide all documents to freight forwarder. Send scanned copies to buyer immediately. Express original documents to consignee. Track shipment and update buyer.'
+        ]
+      },
+      {
+        heading: 'Common Documentation Issues and Solutions',
+        paragraphs: [
+          '<strong>Issue: Incorrect HS codes.</strong> Solution: We verify correct codes for your destination country. Consult with customs broker if needed.',
+          '<strong>Issue: Missing or incomplete packing list.</strong> Solution: Our detailed packing list includes all required information. Photos of packed goods provided.',
+          '<strong>Issue: Certificate of Origin delays.</strong> Solution: We apply for CO immediately after production. Rush processing available if needed.',
+          '<strong>Issue: Description mismatch.</strong> Solution: Product descriptions consistent across all documents. Match your purchase order exactly.'
+        ]
+      },
+      {
+        heading: 'Customs Clearance Support',
+        paragraphs: [
+          'While we cannot handle import customs in your country, we provide: Accurate documentation for smooth clearance. Product information for your customs broker. Support via email/WhatsApp during clearance. Past export experience to your country.',
+          'Tips for smooth customs clearance: Work with experienced customs broker. Provide all documents promptly. Declare correct product value. Check import regulations for your country. Factor customs time into delivery planning.'
+        ]
+      },
+      {
+        heading: 'Contact for Export Documentation',
+        paragraphs: [
+          'Questions about export documentation? Our export team is ready to help: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com. We ensure complete, accurate documentation for every export order.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'indonesia-metal-furniture-factory-custom-design-export',
+    sections: [
+      {
+        paragraphs: [
+          'Our metal furniture factory in Indonesia specializes in custom design manufacturing for export. Whether you have detailed technical drawings or just a concept sketch, we bring your furniture designs to life with precision manufacturing and quality materials.',
+          'Custom design furniture allows you to differentiate your brand, optimize for your specific space requirements, and create unique pieces that perfectly match your vision. Our experienced design and production team makes custom manufacturing accessible and affordable.'
+        ]
+      },
+      {
+        heading: 'Custom Design Services',
+        list: [
+          '<strong>Design Consultation:</strong> Understand your requirements and concept. Review reference images and inspiration. Discuss materials, finishes, and budget. Provide expert recommendations.',
+          '<strong>Technical Design:</strong> CAD drawings and 3D models. Engineering for structural integrity. Material specifications. Manufacturing method planning.',
+          '<strong>Prototyping:</strong> Sample production based on approved design. Quality and functionality testing. Design refinement if needed. Photo documentation.',
+          '<strong>Production:</strong> Bulk manufacturing to approved specifications. Quality control throughout production. Consistent quality across all units. Professional packing for export.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Custom Metal Furniture Design and Manufacturing'
+      },
+      {
+        heading: 'Custom Design Capabilities',
+        paragraphs: [
+          'Material options: MS (Mild Steel), Stainless steel (SS304, SS316), Aluminum, Galvanized steel. Fabrication techniques: Laser/plasma cutting, CNC bending, MIG/TIG welding, Metal forming, Assembly. Finishing options: Powder coating (all RAL colors), Electroplating (chrome, brass, copper), Brushed or polished finish, Industrial raw steel with clear coat.'
+        ]
+      },
+      {
+        heading: 'Custom Design Process',
+        paragraphs: [
+          '<strong>Step 1 - Inquiry & Consultation (Week 1):</strong> Submit your design concept or drawings. Initial consultation to clarify requirements. Discuss materials, finishes, and budget. Receive preliminary feedback and recommendations.',
+          '<strong>Step 2 - Design Development (Week 2-3):</strong> Our team creates CAD drawings and 3D renderings. Engineering review for manufacturability. Material and cost optimization. Submit for your approval.',
+          '<strong>Step 3 - Sampling (Week 4-6):</strong> Sample production based on approved design. Quality inspection and testing. Photos sent for approval. Physical sample shipped if required. Design modifications if needed.',
+          '<strong>Step 4 - Bulk Production (Week 7-12):</strong> Production begins upon sample approval and deposit. Weekly progress updates. Quality control checkpoints. Pre-shipment inspection.',
+          '<strong>Step 5 - Export (Week 13):</strong> Professional packing. Container loading. Complete documentation. Shipment to your destination.'
+        ]
+      },
+      {
+        heading: 'Custom Design Pricing',
+        paragraphs: [
+          'Custom design factors: Design complexity and engineering requirements. Material type and quantity. Finishing requirements. Order volume (MOQ typically 50-100 units). Timeline (rush orders incur premium).',
+          'Design fees: Simple customization (size, color changes): No design fee. Moderate customization (design modifications): USD 200-500 (refundable upon order). Complex custom design (new product development): USD 500-1,500 (partially refundable).',
+          'Contact our design team: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'wholesale-restaurant-furniture-indonesia-bulk-order-export',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living offers wholesale restaurant furniture from Indonesia with special bulk order pricing for international buyers. Perfect for restaurant chains, franchises, hospitality groups, and furniture distributors seeking cost-effective solutions without compromising quality.',
+          'Bulk orders benefit from economies of scale: lower per-unit manufacturing costs, optimized shipping, streamlined production scheduling, and dedicated project management. We handle large orders efficiently with consistent quality across all pieces.'
+        ]
+      },
+      {
+        heading: 'Wholesale Pricing Tiers',
+        list: [
+          '<strong>Small Wholesale (100-300 units):</strong> 15-20% discount from retail pricing. 1-2 containers. Good for growing chains. Flexible product mix.',
+          '<strong>Medium Wholesale (300-1,000 units):</strong> 25-30% discount from retail pricing. 3-8 containers. Multiple locations or complete restaurant packages. Priority production scheduling.',
+          '<strong>Large Wholesale (1,000+ units):</strong> 35-45% discount from retail pricing. 10+ containers. Restaurant chains and franchises. Custom design and private label available. Dedicated account manager.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Wholesale Restaurant Furniture Bulk Orders'
+      },
+      {
+        heading: 'Bulk Order Advantages',
+        paragraphs: [
+          'Lower per-unit cost through volume discount. Consistent quality across all locations. Single source for entire furniture package. Streamlined logistics and shipping. Flexible payment terms for large orders. Priority customer service. Stock planning for future locations.'
+        ]
+      },
+      {
+        heading: 'Product Range',
+        paragraphs: [
+          'Complete restaurant furniture packages: Dining tables (all sizes). Dining chairs. Bar stools and bar tables. Booth seating systems. Outdoor furniture. Storage and display. Custom pieces.',
+          'Also available: Hotel furniture. Cafe furniture. Retail furniture. Office furniture. Outdoor commercial furniture.'
+        ]
+      },
+      {
+        heading: 'Bulk Order Process',
+        paragraphs: [
+          '<strong>Step 1 - Requirement Analysis:</strong> Discuss your complete furniture needs. Floor plans and quantity requirements. Budget and timeline. Delivery schedule (if phased).',
+          '<strong>Step 2 - Wholesale Quotation:</strong> Detailed pricing for bulk order. Volume discount applied. Payment terms proposal. Production and delivery timeline.',
+          '<strong>Step 3 - Sample Approval:</strong> Sample production of key items. Quality verification. Design approval.',
+          '<strong>Step 4 - Bulk Production:</strong> Phased production for large orders. Regular progress updates. Quality control throughout. Flexible delivery schedule.',
+          '<strong>Step 5 - Delivery:</strong> Container optimization for cost efficiency. Complete export documentation. Coordination for multiple deliveries.'
+        ]
+      },
+      {
+        heading: 'For Restaurant Chains',
+        paragraphs: [
+          'Special services for chains: Standardized furniture for brand consistency. Stock program for expansion. Rush production for new openings. Private label and branding. Design consultation for new concepts.',
+          'Contact wholesale team: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com. Provide: Number of locations, Furniture quantities, Target delivery dates, Budget range'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'indonesian-furniture-manufacturer-sustainable-export-quality',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living is committed to sustainable furniture manufacturing practices while maintaining export quality standards. As environmental responsibility becomes increasingly important to international buyers, we integrate eco-friendly practices throughout our production process.',
+          'Sustainable manufacturing doesn\'t mean compromising on quality or cost-effectiveness. Our approach combines environmental responsibility with the durability, aesthetics, and competitive pricing that international buyers expect from Indonesian manufacturers.'
+        ]
+      },
+      {
+        heading: 'Sustainable Manufacturing Practices',
+        list: [
+          '<strong>Material Sourcing:</strong> FSC-certified wood from sustainable forests. Recycled steel content in metal components. Water-based finishes and low-VOC options. Recyclable packaging materials. Responsible supplier selection.',
+          '<strong>Production Efficiency:</strong> Optimized cutting to minimize material waste. Scrap metal recycling program. Energy-efficient equipment. Water recycling in production processes. Waste reduction initiatives.',
+          '<strong>Finishing:</strong> Powder coating (no VOC emissions). Water-based wood finishes available. Non-toxic materials. Safe for indoor use. Environmentally friendly packaging.',
+          '<strong>Durability Focus:</strong> Long-lasting furniture reduces replacement needs. Quality construction for extended lifespan. Repair-friendly designs. Timeless aesthetics (not fast furniture).'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Sustainable Furniture Manufacturing Indonesia'
+      },
+      {
+        heading: 'Environmental Certifications',
+        paragraphs: [
+          'Available certifications for export: FSC Chain of Custody (for wood products). ISO 14001 Environmental Management (in progress). SVLK (Indonesian legal wood certification). Low-VOC finish certification. Third-party sustainability audits available.'
+        ]
+      },
+      {
+        heading: 'Sustainable Product Range',
+        paragraphs: [
+          'All our products can be manufactured with sustainable options: Restaurant and cafe furniture. Hotel furniture packages. Office furniture. Residential furniture. Outdoor furniture.',
+          'Eco-friendly features available: FSC-certified wood components. Recycled steel frames. Water-based finishes. Recyclable packaging. Carbon footprint documentation.'
+        ]
+      },
+      {
+        heading: 'Corporate Responsibility',
+        paragraphs: [
+          'Beyond materials and processes: Fair labor practices and safe working conditions. Local community engagement. Continuous improvement in sustainability. Transparent supply chain. Employee training on environmental practices.'
+        ]
+      },
+      {
+        heading: 'Sustainability and Export',
+        paragraphs: [
+          'Meeting international requirements: EU timber regulations compliance. US Lacey Act compliance. CARB (California Air Resources Board) compliant finishes. Documentation for green building certifications. Sustainability reporting for corporate buyers.',
+          'Pricing: Sustainable options typically add 5-15% to standard pricing. Long-term cost savings through durability. Enhanced brand value for eco-conscious buyers. Attractive to environmentally responsible end-users.'
+        ]
+      },
+      {
+        heading: 'Contact for Sustainable Furniture',
+        paragraphs: [
+          'Interested in sustainable furniture export? WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com. Request: Product details with sustainability requirements, Required certifications, Quantity and timeline'
+        ]
+      }
+    ]
   }
 ]
 
