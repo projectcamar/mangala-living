@@ -1916,6 +1916,207 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2026-01-06',
     author: 'Helmi Ramdan'
+  },
+  // EXPORT-FOCUSED ARTICLES - 20 NEW ARTICLES FOR INTERNATIONAL BUYERS
+  {
+    id: 187,
+    slug: 'indonesian-industrial-furniture-export-quality-global-standards',
+    title: 'Indonesian Industrial Furniture Export: Quality Meets Global Standards',
+    category: 'Export & International',
+    excerpt: 'Discover why Indonesian industrial furniture manufacturers are becoming the preferred choice for international buyers. Quality craftsmanship, competitive pricing, and reliable export services.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 188,
+    slug: 'custom-metal-furniture-manufacturer-indonesia-export-worldwide',
+    title: 'Custom Metal Furniture Manufacturer Indonesia - Export Worldwide',
+    category: 'Export & International',
+    excerpt: 'Leading custom metal furniture manufacturer in Indonesia specializing in export. We deliver high-quality industrial furniture to hotels, restaurants, and commercial spaces globally.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 189,
+    slug: 'wholesale-industrial-furniture-indonesia-bulk-orders-export',
+    title: 'Wholesale Industrial Furniture Indonesia - Bulk Orders & Export',
+    category: 'Export & International',
+    excerpt: 'Wholesale industrial furniture manufacturer in Indonesia offering competitive pricing for bulk orders. We handle export documentation, shipping, and quality assurance for international clients.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 190,
+    slug: 'indonesian-furniture-factory-custom-commercial-furniture-export',
+    title: 'Indonesian Furniture Factory: Custom Commercial Furniture Export',
+    category: 'Export & International',
+    excerpt: 'Direct from factory in Bekasi, Indonesia. We manufacture custom commercial furniture for hotels, restaurants, cafes, and offices. Export-ready with international quality standards.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 191,
+    slug: 'metal-furniture-supplier-indonesia-export-hotels-restaurants',
+    title: 'Metal Furniture Supplier Indonesia - Export to Hotels & Restaurants',
+    category: 'Export & International',
+    excerpt: 'Trusted metal furniture supplier in Indonesia exporting to hotels and restaurants worldwide. Premium quality steel furniture with powder coating finish and competitive FOB prices.',
+    image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 192,
+    slug: 'indonesia-industrial-furniture-manufacturer-oem-odm-export',
+    title: 'Indonesia Industrial Furniture Manufacturer - OEM & ODM Export',
+    category: 'Export & International',
+    excerpt: 'OEM and ODM industrial furniture manufacturer in Indonesia. We work with international brands, furniture importers, and hospitality chains. Custom design and private label available.',
+    image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 193,
+    slug: 'export-quality-restaurant-furniture-indonesia-manufacturer',
+    title: 'Export Quality Restaurant Furniture - Indonesia Manufacturer',
+    category: 'Export & International',
+    excerpt: 'Manufacturer of export-quality restaurant furniture in Indonesia. Industrial dining tables, chairs, bar stools, and custom commercial furniture. Competitive pricing for international buyers.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 194,
+    slug: 'indonesian-furniture-exporter-bekasi-factory-direct-pricing',
+    title: 'Indonesian Furniture Exporter Bekasi - Factory Direct Pricing',
+    category: 'Export & International',
+    excerpt: 'Factory-direct furniture exporter based in Bekasi, Indonesia. Eliminate middlemen and get the best FOB prices for industrial furniture. Minimum order: 1 container (20ft/40ft).',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 195,
+    slug: 'custom-hospitality-furniture-indonesia-export-hotels-worldwide',
+    title: 'Custom Hospitality Furniture Indonesia - Export Hotels Worldwide',
+    category: 'Export & International',
+    excerpt: 'Specialized hospitality furniture manufacturer in Indonesia. Custom furniture for hotel lobbies, restaurants, guest rooms, and outdoor areas. Export documentation and shipping support.',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 196,
+    slug: 'industrial-metal-furniture-indonesia-powder-coating-export',
+    title: 'Industrial Metal Furniture Indonesia - Powder Coating Export',
+    category: 'Export & International',
+    excerpt: 'Premium powder-coated industrial metal furniture from Indonesia. Durable outdoor-grade finish, rust-resistant, and weather-proof. Perfect for tropical and humid climates worldwide.',
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 197,
+    slug: 'indonesia-furniture-manufacturer-container-pricing-export',
+    title: 'Indonesia Furniture Manufacturer - Container Pricing & Export',
+    category: 'Export & International',
+    excerpt: 'Transparent container pricing for furniture export from Indonesia. 20ft and 40ft container options available. We handle documentation, quality control, and loading supervision.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 198,
+    slug: 'cafe-furniture-manufacturer-indonesia-export-international',
+    title: 'Cafe Furniture Manufacturer Indonesia - Export International',
+    category: 'Export & International',
+    excerpt: 'Leading cafe furniture manufacturer in Indonesia exporting to cafes worldwide. Industrial-style tables, chairs, bar sets, and display racks. Custom design and branding available.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 199,
+    slug: 'indonesian-steel-furniture-supplier-export-quality-assurance',
+    title: 'Indonesian Steel Furniture Supplier - Export Quality Assurance',
+    category: 'Export & International',
+    excerpt: 'Quality-assured steel furniture supplier in Indonesia. ISO-standard manufacturing process, pre-shipment inspection, and quality documentation for international export.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 200,
+    slug: 'outdoor-furniture-manufacturer-indonesia-weather-resistant-export',
+    title: 'Outdoor Furniture Manufacturer Indonesia - Weather Resistant Export',
+    category: 'Export & International',
+    excerpt: 'Weather-resistant outdoor furniture manufacturer in Indonesia. Specialized in powder-coated steel furniture for tropical climates. Export to resorts, hotels, and restaurants globally.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 201,
+    slug: 'furniture-factory-bekasi-indonesia-export-international-buyers',
+    title: 'Furniture Factory Bekasi Indonesia - Export for International Buyers',
+    category: 'Export & International',
+    excerpt: 'Modern furniture factory in Bekasi serving international buyers. 25 years experience, 10,000+ sqm production facility. We handle custom design, manufacturing, and export logistics.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 202,
+    slug: 'indonesian-furniture-exporter-fob-cif-pricing-international',
+    title: 'Indonesian Furniture Exporter - FOB & CIF Pricing International',
+    category: 'Export & International',
+    excerpt: 'Transparent FOB and CIF pricing from Indonesian furniture exporter. Calculate landed cost easily. We work with freight forwarders worldwide for competitive shipping rates.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 203,
+    slug: 'commercial-furniture-supplier-indonesia-export-documentation',
+    title: 'Commercial Furniture Supplier Indonesia - Export Documentation',
+    category: 'Export & International',
+    excerpt: 'Complete export documentation support for commercial furniture buyers. Certificate of Origin, Packing List, Invoice, and custom clearance assistance for international shipping.',
+    image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 204,
+    slug: 'indonesia-metal-furniture-factory-custom-design-export',
+    title: 'Indonesia Metal Furniture Factory - Custom Design Export',
+    category: 'Export & International',
+    excerpt: 'Custom design metal furniture factory in Indonesia. Work directly with our design team to create unique furniture for your brand. Export-ready with competitive MOQ.',
+    image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 205,
+    slug: 'wholesale-restaurant-furniture-indonesia-bulk-order-export',
+    title: 'Wholesale Restaurant Furniture Indonesia - Bulk Order Export',
+    category: 'Export & International',
+    excerpt: 'Bulk order discounts for wholesale restaurant furniture from Indonesia. Perfect for restaurant chains, franchises, and hospitality groups expanding internationally.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 206,
+    slug: 'indonesian-furniture-manufacturer-sustainable-export-quality',
+    title: 'Indonesian Furniture Manufacturer - Sustainable Export Quality',
+    category: 'Export & International',
+    excerpt: 'Sustainable furniture manufacturing in Indonesia with eco-friendly practices. Recycled materials, water-based finishes, and responsible sourcing. Export certification available.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-11-04',
+    author: 'Helmi Ramdan'
   }
 ]
 

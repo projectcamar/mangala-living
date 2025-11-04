@@ -14,6 +14,7 @@ import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/se
 import BlogProductShowcase from '../components/BlogProductShowcase'
 import { getRelevantProductsForBlog, getProductShowcaseHeading } from '../utils/blogProductMapping'
 import './BlogPost.css'
+import '../components/DualLanguage.css'
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
@@ -302,13 +303,29 @@ const BlogPost: React.FC = () => {
                 return null
               })()}
 
-              {/* CTA Section */}
+              {/* CTA Section - Dual Language */}
               <div className="blog-post-cta">
-                <h3>Tertarik dengan Furniture Industrial Kami?</h3>
-                <p>Kunjungi koleksi lengkap furniture industrial custom berkualitas tinggi dari Mangala Living.</p>
+                <h3 className="dual-lang-heading">
+                  <span className="lang-id">Tertarik dengan Furniture Industrial Kami?</span>
+                  <span className="lang-divider"> | </span>
+                  <span className="lang-en">Interested in Our Industrial Furniture?</span>
+                </h3>
+                <p className="dual-lang-paragraph">
+                  <span className="lang-id">Kunjungi koleksi lengkap furniture industrial custom berkualitas tinggi dari Mangala Living.</span>
+                  <span className="lang-divider"> | </span>
+                  <span className="lang-en">Visit our complete collection of high-quality custom industrial furniture from Mangala Living.</span>
+                </p>
                 <div className="blog-cta-buttons">
-                  <Link to="/shop" className="blog-cta-btn primary">Lihat Semua Produk</Link>
-                  <Link to="/contact-us" className="blog-cta-btn secondary">Hubungi Kami</Link>
+                  <Link to="/shop" className="blog-cta-btn primary">
+                    <span className="lang-id">Lihat Semua Produk</span>
+                    <span className="lang-divider"> | </span>
+                    <span className="lang-en">View All Products</span>
+                  </Link>
+                  <Link to="/contact-us" className="blog-cta-btn secondary">
+                    <span className="lang-id">Hubungi Kami</span>
+                    <span className="lang-divider"> | </span>
+                    <span className="lang-en">Contact Us</span>
+                  </Link>
                 </div>
               </div>
             </div>
