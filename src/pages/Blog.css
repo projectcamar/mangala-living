@@ -236,9 +236,28 @@
     height: 200px;
   }
 
+  .blog-pagination {
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+  }
+
   .pagination-btn {
     padding: 8px 15px;
     font-size: 0.85rem;
+    min-width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pagination-number {
+    display: inline-flex !important;
+  }
+
+  .pagination-ellipsis {
+    display: inline-block !important;
+    padding: 8px 4px;
   }
 }
 
@@ -258,12 +277,26 @@
 
   .blog-pagination {
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
+    justify-content: center;
   }
 
   .pagination-btn {
     padding: 8px 12px;
     font-size: 0.8rem;
+    min-width: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pagination-number {
+    display: inline-flex !important;
+  }
+
+  .pagination-ellipsis {
+    display: inline-block !important;
+    padding: 8px 4px;
   }
 }
 
