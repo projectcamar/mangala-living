@@ -195,43 +195,60 @@ body:has(.announcement-bar) .header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
   z-index: 998;
-  animation: fadeIn 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease, 
+              backdrop-filter 0.3s ease,
+              -webkit-backdrop-filter 0.3s ease,
+              background 0.3s ease;
+  /* Apply final state immediately after mount */
+  animation: backdropEnter 0.01s ease forwards;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+@keyframes backdropEnter {
   to {
     opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
+}
+
+.search-modal-backdrop.closing {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
 }
 
 .search-modal-container {
   position: fixed;
   top: 140px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-20px);
   width: 100%;
   max-width: 800px;
   z-index: 999;
   padding: 0 40px;
-  animation: slideDown 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* Apply final state immediately after mount */
+  animation: containerEnter 0.01s ease forwards;
 }
 
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateX(-50%) translateY(-20px);
-  }
+@keyframes containerEnter {
   to {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
   }
+}
+
+.search-modal-container.closing {
+  opacity: 0;
+  transform: translateX(-50%) translateY(-20px);
 }
 
 .search-modal-content {
