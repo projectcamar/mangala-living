@@ -150,19 +150,13 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
         <div className="blog-product-showcase-container">
           <div className="blog-product-showcase-header">
             <h2 className="blog-product-showcase-heading" itemProp="name">
-              <span className="dual-lang-text">
-                <span className="lang-id">Produk Industrial Terkait</span>
-                <span className="lang-divider"> | </span>
-                <span className="lang-en">Related Industrial Products</span>
-              </span>
+              {isIndonesian ? 'Produk Industrial Terkait' : 'Related Industrial Products'}
             </h2>
             {description && (
               <p className="blog-product-showcase-description">
-                <span className="dual-lang-text">
-                  <span className="lang-id">{description}</span>
-                  <span className="lang-divider"> | </span>
-                  <span className="lang-en">Discover our premium industrial furniture collection, manufactured in our Bekasi workshop with high-quality materials and powder coating finish.</span>
-                </span>
+                {isIndonesian 
+                  ? description 
+                  : 'Discover our premium industrial furniture collection, manufactured in our Bekasi workshop with high-quality materials and powder coating finish.'}
               </p>
             )}
           </div>
