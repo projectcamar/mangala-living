@@ -23,6 +23,7 @@ export const generateEnhancedOrganizationSchema = () => {
       "url": "https://mangala-living.com/logo.png",
       "width": 250,
       "height": 60,
+      "creditText": "Mangala Living",
       ...DEFAULT_IMAGE_RIGHTS_METADATA
     },
     "image": {
@@ -30,6 +31,7 @@ export const generateEnhancedOrganizationSchema = () => {
       "url": "https://mangala-living.com/og-image.jpg",
       "width": 1200,
       "height": 630,
+      "creditText": "Mangala Living",
       ...DEFAULT_IMAGE_RIGHTS_METADATA
     },
     "description": "Mangala Living adalah manufacturer furniture industrial besi custom terpercaya di Bekasi sejak 1999. Spesialis furniture cafe, restoran, hotel, dan kantor dengan pengalaman 25+ tahun dan 1000+ klien puas di seluruh Indonesia.",
@@ -224,6 +226,7 @@ export const generateWebPageSchema = (page: {
       "logo": {
         "@type": "ImageObject",
         "url": "https://mangala-living.com/logo.png",
+        "creditText": "Mangala Living",
         ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     },
@@ -235,6 +238,7 @@ export const generateWebPageSchema = (page: {
         "url": page.image,
         "width": 1200,
         "height": 630,
+        "creditText": "Mangala Living",
         ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     })
@@ -265,6 +269,7 @@ export const generateHowToSchema = (howto: {
         image: {
           "@type": "ImageObject",
           "url": step.image,
+          "creditText": "Mangala Living",
           ...DEFAULT_IMAGE_RIGHTS_METADATA
         }
       })
@@ -396,6 +401,7 @@ export const generateVideoSchema = (video: {
       "logo": {
         "@type": "ImageObject",
         "url": "https://mangala-living.com/logo.png",
+        "creditText": "Mangala Living",
         ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     }
@@ -511,6 +517,7 @@ export const generateArticleSchema = (article: {
         "url": "https://mangala-living.com/logo.png",
         "width": 250,
         "height": 60,
+        "creditText": "Mangala Living",
         ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     },
@@ -542,11 +549,13 @@ export const generateEnhancedLocalBusinessSchema = () => {
       {
         "@type": "ImageObject",
         "url": "https://mangala-living.com/og-image.jpg",
+        "creditText": "Mangala Living",
         ...DEFAULT_IMAGE_RIGHTS_METADATA
       },
       {
         "@type": "ImageObject",
         "url": "https://mangala-living.com/assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp",
+        "creditText": "Mangala Living",
         ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     ],

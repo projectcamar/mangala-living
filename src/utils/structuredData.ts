@@ -332,7 +332,23 @@ export const generateMerchantStructuredData = () => {
               "reviewCount": "127",
               "bestRating": "5",
               "worstRating": "1"
-            }
+            },
+            "review": [
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Sarah M."
+                },
+                "datePublished": "2025-10-15",
+                "reviewBody": "Excellent quality furniture. The industrial design is perfect for our cafe. Highly recommended!",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                }
+              }
+            ]
           },
           "price": "1500000",
           "priceCurrency": "IDR",

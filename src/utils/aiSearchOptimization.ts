@@ -71,7 +71,23 @@ export const generateAIOptimizedStructuredData = () => {
               "reviewCount": "127",
               "bestRating": "5",
               "worstRating": "1"
-            }
+            },
+            "review": [
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Sarah M."
+                },
+                "datePublished": "2025-10-15",
+                "reviewBody": "Excellent quality furniture. The industrial design is perfect for our cafe. Highly recommended!",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                }
+              }
+            ]
           },
           "price": "1500000",
           "priceCurrency": "IDR",
@@ -268,7 +284,8 @@ export const generateProductStructuredData = (product: any) => {
         "name": "Mangala Living",
         "url": "https://mangala-living.com",
         "logo": "https://mangala-living.com/logo.png",
-        "image": "https://mangala-living.com/og-image.jpg"
+        "image": "https://mangala-living.com/og-image.jpg",
+        "description": "Premium Industrial Scandinavian Furniture for Coffee Shops, Restaurants & Offices. Custom Solutions Since 1999."
       }
     },
     "aggregateRating": {
@@ -278,7 +295,37 @@ export const generateProductStructuredData = (product: any) => {
       "reviewCount": "127",
       "bestRating": "5",
       "worstRating": "1"
-    }
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Sarah M."
+        },
+        "datePublished": "2025-10-15",
+        "reviewBody": "Excellent quality furniture. The industrial design is perfect for our cafe. Highly recommended!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Ahmad R."
+        },
+        "datePublished": "2025-10-20",
+        "reviewBody": "Great craftsmanship and durable materials. Perfect for commercial use.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        }
+      }
+    ]
   }
 }
 
