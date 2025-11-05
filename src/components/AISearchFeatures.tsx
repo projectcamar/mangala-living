@@ -40,9 +40,6 @@ const AISearchFeatures: React.FC<AISearchFeaturesProps> = ({ isIndonesian }) => 
             : "Industrial steel custom furniture for cafes, restaurants, hotels, and offices"
         } />
         <meta itemProp="priceRange" content="Rp 500.000 - Rp 10.000.000" />
-        <meta itemProp="aggregateRating" content="4.8/5" />
-        <meta itemProp="ratingCount" content="127" />
-        <meta itemProp="reviewCount" content="127" />
         <meta itemProp="hasOfferCatalog" content="Industrial Furniture Collection" />
         <meta itemProp="makesOffer" content="Custom Furniture Design, Furniture Installation" />
         <meta itemProp="areaServed" content="Indonesia, USA, Japan, Australia, Singapore, Malaysia, Thailand, Vietnam, Philippines, Jabodetabek, Jakarta" />

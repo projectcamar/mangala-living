@@ -65,7 +65,9 @@ const Home: React.FC = () => {
   }, [location.pathname])
 
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
-  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+  // For /id and /eng routes, canonical should point to /
+  const canonicalPath = (location.pathname === '/id' || location.pathname === '/eng') ? '/' : location.pathname
+  const localizedUrls = generateLocalizedUrls(canonicalPath, location.search)
 
   // Indonesian translations
   const translations = {
@@ -227,7 +229,8 @@ const Home: React.FC = () => {
                       "name": "Mangala Living",
                       "url": "https://mangala-living.com",
                       "logo": "https://mangala-living.com/logo.png",
-                      "image": "https://mangala-living.com/og-image.jpg"
+                      "image": "https://mangala-living.com/og-image.jpg",
+                      "description": "Premium Industrial Scandinavian Furniture for Coffee Shops, Restaurants & Offices. Custom Solutions Since 1999."
                     }
                   },
                   "aggregateRating": {
@@ -275,15 +278,7 @@ const Home: React.FC = () => {
                 "opens": "08:00",
                 "closes": "17:00"
               },
-              "priceRange": "Rp$$-$$$",
-                "aggregateRating": {
-                  "@type": "AggregateRating",
-                  "ratingValue": "4.8",
-                  "ratingCount": "1000",
-                  "reviewCount": "1000",
-                  "bestRating": "5",
-                  "worstRating": "1"
-                }
+              "priceRange": "Rp$$-$$$"
             }
           `}
         </script>
