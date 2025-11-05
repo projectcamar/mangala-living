@@ -317,6 +317,7 @@ export const generateMerchantStructuredData = () => {
             "name": "Industrial Furniture",
             "category": "Furniture",
             "description": "Premium industrial furniture made from high-quality materials",
+            "image": "https://mangala-living.com/og-image.jpg",
             "offers": {
               "@type": "Offer",
               "price": "1500000",
@@ -324,14 +325,6 @@ export const generateMerchantStructuredData = () => {
               "availability": "https://schema.org/InStock",
               "priceValidUntil": "2026-12-31",
               "url": "https://mangala-living.com/shop"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "ratingCount": "127",
-              "reviewCount": "127",
-              "bestRating": "5",
-              "worstRating": "1"
             }
           },
           "price": "1500000",
@@ -380,14 +373,6 @@ export const generateMerchantStructuredData = () => {
           }
         }
       ]
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "127",
-      "reviewCount": "127",
-      "bestRating": "5",
-      "worstRating": "1"
     }
   }
 }
@@ -493,14 +478,6 @@ export const generateLocalBusinessStructuredData = () => {
     "paymentAccepted": ["Cash", "Bank Transfer", "Credit Card"],
     "currenciesAccepted": "IDR",
     "hasMap": "https://maps.app.goo.gl/5Bc5ymfVtAYRPtpK7",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "127",
-      "reviewCount": "127",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "brand": {
       "@type": "Brand",
       "name": "Mangala Living"

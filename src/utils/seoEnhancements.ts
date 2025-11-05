@@ -118,14 +118,6 @@ export const generateEnhancedOrganizationSchema = () => {
       "25+ Years Industry Experience",
       "Premium Quality Manufacturing"
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "1000",
-      "reviewCount": "1000",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "brand": {
       "@type": "Brand",
       "name": "Mangala Living",
@@ -581,14 +573,6 @@ export const generateEnhancedLocalBusinessSchema = () => {
         "closes": "15:00"
       }
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "1000",
-      "reviewCount": "1000",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "paymentAccepted": "Cash, Bank Transfer, Credit Card",
     "currenciesAccepted": "IDR",
     "hasMap": "https://maps.app.goo.gl/5Bc5ymfVtAYRPtpK7"
