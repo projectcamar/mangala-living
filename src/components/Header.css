@@ -200,20 +200,27 @@ body:has(.announcement-bar) .header {
   -webkit-backdrop-filter: blur(0px);
   z-index: 998;
   opacity: 0;
-  transition: opacity 0.3s ease, 
-              backdrop-filter 0.3s ease,
-              -webkit-backdrop-filter 0.3s ease,
-              background 0.3s ease;
-  /* Apply final state immediately after mount */
-  animation: backdropEnter 0.01s ease forwards;
+  /* iPhone-style smooth cubic-bezier timing */
+  transition: opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1), 
+              backdrop-filter 0.4s cubic-bezier(0.32, 0.72, 0, 1),
+              -webkit-backdrop-filter 0.4s cubic-bezier(0.32, 0.72, 0, 1),
+              background 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+  /* Apply final state with smooth animation */
+  animation: backdropEnter 0.4s cubic-bezier(0.32, 0.72, 0, 1) forwards;
 }
 
 @keyframes backdropEnter {
-  to {
+  0% {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+  100% {
     opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 }
 
@@ -222,41 +229,57 @@ body:has(.announcement-bar) .header {
   background: rgba(0, 0, 0, 0);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 1, 1), 
+              backdrop-filter 0.35s cubic-bezier(0.4, 0, 1, 1),
+              -webkit-backdrop-filter 0.35s cubic-bezier(0.4, 0, 1, 1),
+              background 0.35s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .search-modal-container {
   position: fixed;
   top: 140px;
   left: 50%;
-  transform: translateX(-50%) translateY(-20px);
+  transform: translateX(-50%) translateY(-30px) scale(0.92);
   width: 100%;
   max-width: 800px;
   z-index: 999;
   padding: 0 40px;
   opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  /* Apply final state immediately after mount */
-  animation: containerEnter 0.01s ease forwards;
+  /* iPhone-style spring animation */
+  transition: opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1), 
+              transform 0.45s cubic-bezier(0.32, 0.72, 0, 1);
+  /* Apply final state with smooth spring animation */
+  animation: containerEnter 0.45s cubic-bezier(0.32, 0.72, 0, 1) forwards;
 }
 
 @keyframes containerEnter {
-  to {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-30px) scale(0.92);
+  }
+  100% {
     opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    transform: translateX(-50%) translateY(0) scale(1);
   }
 }
 
 .search-modal-container.closing {
   opacity: 0;
-  transform: translateX(-50%) translateY(-20px);
+  transform: translateX(-50%) translateY(-20px) scale(0.95);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 1, 1), 
+              transform 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .search-modal-content {
   background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25), 
+              0 8px 20px rgba(0, 0, 0, 0.15);
   padding: 30px 40px;
   position: relative;
+  will-change: transform;
+  /* Smooth backdrop for glassmorphism effect */
+  overflow: hidden;
 }
 
 .search-close-btn {
@@ -270,7 +293,8 @@ body:has(.announcement-bar) .header {
   cursor: pointer;
   padding: 0;
   line-height: 1;
-  transition: color 0.3s ease;
+  transition: color 0.2s cubic-bezier(0.32, 0.72, 0, 1),
+              transform 0.2s cubic-bezier(0.32, 0.72, 0, 1);
   width: 32px;
   height: 32px;
   display: flex;
@@ -280,6 +304,7 @@ body:has(.announcement-bar) .header {
 
 .search-close-btn:hover {
   color: #2c2c2c;
+  transform: scale(1.1) rotate(90deg);
 }
 
 .search-modal-inner {
@@ -294,6 +319,9 @@ body:has(.announcement-bar) .header {
   align-items: center;
   border-bottom: 1.5px solid #ddd;
   padding-bottom: 12px;
+  animation: fadeSlideIn 0.25s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+  animation-delay: 0.05s;
+  opacity: 0;
 }
 
 .search-input-icon {
@@ -310,6 +338,7 @@ body:has(.announcement-bar) .header {
   color: #2c2c2c;
   background: transparent;
   font-family: 'Montserrat', sans-serif;
+  transition: transform 0.2s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 .search-modal-input::placeholder {
@@ -324,11 +353,25 @@ body:has(.announcement-bar) .header {
   cursor: pointer;
   padding: 0 5px;
   line-height: 1;
-  transition: color 0.3s ease;
+  transition: color 0.2s cubic-bezier(0.32, 0.72, 0, 1),
+              transform 0.2s cubic-bezier(0.32, 0.72, 0, 1);
+  animation: fadeScaleIn 0.2s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+
+@keyframes fadeScaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .search-clear-btn:hover {
   color: #2c2c2c;
+  transform: scale(1.15);
 }
 
 .search-submit-btn {
@@ -342,11 +385,14 @@ body:has(.announcement-bar) .header {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  transition: all 0.25s cubic-bezier(0.32, 0.72, 0, 1);
+  animation: fadeScaleIn 0.25s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+  transform: scale(1);
 }
 
 .search-submit-btn:hover {
   background: #8B7355;
+  transform: scale(1.05);
 }
 
 /* Search Results */
@@ -359,6 +405,18 @@ body:has(.announcement-bar) .header {
   margin: -10px -40px -30px -40px;
   padding: 10px 0;
   border-top: 1px solid #f0f0f0;
+  animation: fadeSlideIn 0.3s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .search-result-item {
@@ -367,12 +425,14 @@ body:has(.announcement-bar) .header {
   gap: 15px;
   padding: 15px 40px;
   text-decoration: none;
-  transition: background 0.2s ease;
+  transition: background 0.25s cubic-bezier(0.32, 0.72, 0, 1),
+              transform 0.2s cubic-bezier(0.32, 0.72, 0, 1);
   cursor: pointer;
 }
 
 .search-result-item:hover {
   background: #f9f9f9;
+  transform: translateX(4px);
 }
 
 .search-result-image {
@@ -412,6 +472,7 @@ body:has(.announcement-bar) .header {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  animation: fadeSlideIn 0.3s cubic-bezier(0.32, 0.72, 0, 1) forwards;
 }
 
 .suggestions-label {
@@ -428,13 +489,15 @@ body:has(.announcement-bar) .header {
   text-decoration: none;
   font-size: 0.85rem;
   border-radius: 25px;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+  transform: scale(1);
 }
 
 .suggestion-tag:hover {
   background: #2c2c2c;
   color: #fff;
   border-color: #2c2c2c;
+  transform: scale(1.05);
 }
 
 /* Responsive Search Modal */
@@ -442,10 +505,24 @@ body:has(.announcement-bar) .header {
   .search-modal-container {
     top: 120px;
     padding: 0 20px;
+    /* Optimize animations for mobile */
+    transform: translateX(-50%) translateY(-20px) scale(0.95);
+  }
+  
+  @keyframes containerEnter {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-20px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0) scale(1);
+    }
   }
 
   .search-modal-content {
     padding: 25px 25px;
+    border-radius: 12px;
   }
 
   .search-close-btn {
@@ -455,7 +532,7 @@ body:has(.announcement-bar) .header {
   }
 
   .search-modal-input {
-  font-size: 1rem;
+    font-size: 1rem;
   }
 
   .search-results {
@@ -910,5 +987,33 @@ body:has(.announcement-bar) .header {
 @media (max-width: 480px) {
   body:has(.announcement-bar) .header {
     top: 28px;
+  }
+}
+
+/* Accessibility: Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .search-modal-backdrop,
+  .search-modal-container,
+  .search-modal-content,
+  .search-results,
+  .search-suggestions,
+  .search-result-item,
+  .suggestion-tag,
+  .search-close-btn,
+  .search-clear-btn,
+  .search-submit-btn,
+  .search-input-wrapper {
+    animation: none !important;
+    transition: opacity 0.15s ease, background 0.15s ease !important;
+  }
+  
+  .search-modal-container {
+    transform: translateX(-50%) translateY(0) scale(1) !important;
+  }
+  
+  .search-close-btn:hover,
+  .suggestion-tag:hover,
+  .search-result-item:hover {
+    transform: none !important;
   }
 }

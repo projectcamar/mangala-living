@@ -110,7 +110,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
       setIsSearchOpen(false)
       setIsSearchClosing(false)
       setSearchQuery('')
-    }, 300) // Match the CSS transition duration
+    }, 350) // Match the CSS transition duration for closing animation
   }
 
 
