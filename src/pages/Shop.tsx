@@ -275,8 +275,7 @@ const Shop: React.FC = () => {
                         "image": "https://mangala-living.com/og-image.jpg",
                         "description": "Premium Industrial Scandinavian Furniture for Coffee Shops, Restaurants & Offices. Custom Solutions Since 1999."
                       }
-                    },
-                    "availability": "https://schema.org/InStock"
+                    }
                   },
                 "aggregateRating": {
                   "@type": "AggregateRating",
