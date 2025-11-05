@@ -270,9 +270,8 @@ const Home: React.FC = () => {
                     }
                   }
                 ]
-                }
               }
-            })
+            }
           })}
         </script>
         

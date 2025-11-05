@@ -277,48 +277,47 @@ const Shop: React.FC = () => {
                       }
                     }
                   },
-                "aggregateRating": {
-                  "@type": "AggregateRating",
-                  "ratingValue": "4.8",
-                  "ratingCount": "127",
-                  "reviewCount": "127",
-                  "bestRating": "5",
-                  "worstRating": "1"
-                },
-                "review": [
-                  {
-                    "@type": "Review",
-                    "author": {
-                      "@type": "Person",
-                      "name": "Sarah M."
-                    },
-                    "datePublished": "2025-10-15",
-                    "reviewBody": "Excellent quality furniture. The industrial design is perfect for our cafe. Highly recommended!",
-                    "reviewRating": {
-                      "@type": "Rating",
-                      "ratingValue": "5",
-                      "bestRating": "5"
-                    }
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "ratingCount": "127",
+                    "reviewCount": "127",
+                    "bestRating": "5",
+                    "worstRating": "1"
                   },
-                  {
-                    "@type": "Review",
-                    "author": {
-                      "@type": "Person",
-                      "name": "Ahmad R."
+                  "review": [
+                    {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Sarah M."
+                      },
+                      "datePublished": "2025-10-15",
+                      "reviewBody": "Excellent quality furniture. The industrial design is perfect for our cafe. Highly recommended!",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5"
+                      }
                     },
-                    "datePublished": "2025-10-20",
-                    "reviewBody": "Great craftsmanship and durable materials. Perfect for commercial use.",
-                    "reviewRating": {
-                      "@type": "Rating",
-                      "ratingValue": "5",
-                      "bestRating": "5"
+                    {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Ahmad R."
+                      },
+                      "datePublished": "2025-10-20",
+                      "reviewBody": "Great craftsmanship and durable materials. Perfect for commercial use.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5"
+                      }
                     }
-                  }
-                ]
-                  }
+                  ]
                 }
-              })
-            }
+              }
+            })
           })}
         </script>
         
