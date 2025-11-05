@@ -9,15 +9,17 @@ interface OurProductsSectionProps {
   isIndonesian?: boolean
 }
 
-// Our Products - products 9-28 (20 products)
-const products = ALL_PRODUCTS.slice(8, 28).map(p => ({
-  id: p.id,
-  name: p.name,
-  category: p.categories.join(', '),
-  price: p.price,
-  image: p.image,
-  link: `/product/${p.slug}`
-}))
+// Our Products - products 9-28 (20 products), excluding Meja Kerja Industrial
+const products = ALL_PRODUCTS.slice(8, 28)
+  .filter(p => p.slug !== 'meja-kerja-industrial')
+  .map(p => ({
+    id: p.id,
+    name: p.name,
+    category: p.categories.join(', '),
+    price: p.price,
+    image: p.image,
+    link: `/product/${p.slug}`
+  }))
 
 const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = false }) => {
   const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
