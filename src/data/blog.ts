@@ -2117,6 +2117,309 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2025-11-04',
     author: 'Helmi Ramdan'
+  },
+  // 30 NEW SEO ARTICLES - PATIO & OUTDOOR FURNITURE (15 Indonesian + 15 English)
+  // INDONESIAN ARTICLES (15)
+  {
+    id: 207,
+    slug: 'furniture-outdoor-industrial-beli-bekasi-jakarta',
+    title: 'Furniture Outdoor Industrial - Beli di Bekasi Jakarta',
+    category: 'Commercial Furniture',
+    excerpt: 'Beli furniture outdoor industrial berkualitas untuk cafe, restoran, dan area patio. Workshop kami di Bekasi melayani Jakarta dan sekitarnya dengan harga kompetitif.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 208,
+    slug: 'patio-furniture-industrial-custom-bekasi',
+    title: 'Patio Furniture Industrial Custom di Bekasi - Harga Terbaik',
+    category: 'Commercial Furniture',
+    excerpt: 'Patio furniture industrial custom untuk area outdoor cafe dan restoran. Workshop Bekasi dengan layanan custom desain sesuai kebutuhan bisnis Anda.',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 209,
+    slug: 'beli-heavy-duty-commercial-outdoor-furniture-bekasi',
+    title: 'Beli Heavy Duty Commercial Outdoor Furniture di Bekasi',
+    category: 'Commercial Furniture',
+    excerpt: 'Heavy duty commercial outdoor furniture tahan cuaca untuk cafe, restoran, hotel. Kualitas export dengan finishing powder coating premium. Lokasi workshop Bekasi.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 210,
+    slug: 'custom-patio-furniture-besi-industrial-jakarta',
+    title: 'Custom Patio Furniture Besi Industrial Jakarta - Desain Khusus',
+    category: 'Workshop & Production',
+    excerpt: 'Jasa custom patio furniture besi industrial untuk Jakarta. Desain khusus sesuai konsep cafe, restoran, atau area outdoor. Workshop Bekasi dengan pengalaman 25 tahun.',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 211,
+    slug: 'cafe-patio-outdoor-furniture-industrial-bekasi',
+    title: 'Cafe Patio Outdoor Furniture Industrial Bekasi - Inspirasi Desain',
+    category: 'Design Inspiration',
+    excerpt: 'Inspirasi desain cafe patio dengan outdoor furniture industrial. Tips memilih furniture tahan cuaca, gaya industrial modern, dan layout optimal untuk area outdoor.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 212,
+    slug: 'gaya-patio-industrial-furniture-outdoor-inspirasi',
+    title: 'Gaya Patio Industrial - Furniture Outdoor Inspirasi Desain 2025',
+    category: 'Design Inspiration',
+    excerpt: 'Gaya patio industrial dengan furniture outdoor modern. Inspirasi desain untuk cafe, restoran, dan area outdoor. Kombinasi material besi dan kayu untuk estetika industrial.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 213,
+    slug: 'patio-jakarta-furniture-industrial-custom-area-outdoor',
+    title: 'Patio Jakarta - Furniture Industrial Custom untuk Area Outdoor',
+    category: 'Local Area Guide',
+    excerpt: 'Furniture industrial custom untuk patio Jakarta. Workshop Bekasi melayani area Jakarta dengan layanan survey, custom desain, dan instalasi area outdoor cafe restoran.',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 214,
+    slug: 'patio-bekasi-furniture-outdoor-industrial-workshop-lokal',
+    title: 'Patio Bekasi - Furniture Outdoor Industrial dari Workshop Lokal',
+    category: 'Local Area Guide',
+    excerpt: 'Furniture outdoor industrial untuk patio Bekasi. Workshop lokal dengan pengalaman 25 tahun, melayani custom desain dan produksi furniture tahan cuaca untuk area outdoor.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 215,
+    slug: 'inspirasi-furniture-outdoor-industrial-untuk-patio-cafe',
+    title: 'Inspirasi Furniture Outdoor Industrial untuk Patio Cafe',
+    category: 'Design Inspiration',
+    excerpt: 'Inspirasi furniture outdoor industrial untuk patio cafe. Tips memilih meja, kursi, dan dekorasi industrial yang tahan cuaca dan cocok untuk area outdoor cafe modern.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 216,
+    slug: 'cafe-patio-furniture-besi-industrial-murah-jakarta',
+    title: 'Cafe Patio Furniture Besi Industrial Murah Jakarta',
+    category: 'Commercial Furniture',
+    excerpt: 'Cafe patio furniture besi industrial murah untuk Jakarta. Set meja dan kursi outdoor tahan cuaca dengan finishing powder coating. Harga kompetitif dari workshop Bekasi.',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 217,
+    slug: 'furniture-outdoor-tahan-hujan-industrial-bekasi',
+    title: 'Furniture Outdoor Tahan Hujan Industrial Bekasi - Kualitas Premium',
+    category: 'Commercial Furniture',
+    excerpt: 'Furniture outdoor tahan hujan industrial untuk area patio. Finishing powder coating premium anti-karat, cocok untuk cuaca tropis Indonesia. Workshop Bekasi dengan garansi kualitas.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 218,
+    slug: 'custom-patio-set-besi-industrial-jakarta-bekasi',
+    title: 'Custom Patio Set Besi Industrial Jakarta Bekasi - Desain Khusus',
+    category: 'Workshop & Production',
+    excerpt: 'Jasa custom patio set besi industrial untuk Jakarta dan Bekasi. Desain khusus sesuai kebutuhan cafe, restoran, atau area outdoor. Produksi di workshop Bekasi dengan kualitas export.',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 219,
+    slug: 'gaya-industrial-modern-furniture-outdoor-patio',
+    title: 'Gaya Industrial Modern - Furniture Outdoor Patio Inspirasi',
+    category: 'Design Inspiration',
+    excerpt: 'Gaya industrial modern untuk furniture outdoor patio. Inspirasi desain kombinasi besi dan kayu, warna matte black, dan layout yang fungsional untuk area outdoor modern.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 220,
+    slug: 'furniture-outdoor-commercial-heavy-duty-bekasi',
+    title: 'Furniture Outdoor Commercial Heavy Duty Bekasi - Tahan Lama',
+    category: 'Commercial Furniture',
+    excerpt: 'Furniture outdoor commercial heavy duty untuk cafe dan restoran. Konstruksi kuat dengan material besi hollow grade A, finishing powder coating premium. Workshop Bekasi.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 221,
+    slug: 'tips-memilih-patio-furniture-industrial-outdoor',
+    title: 'Tips Memilih Patio Furniture Industrial Outdoor - Panduan Lengkap',
+    category: 'Tips and Trick',
+    excerpt: 'Tips memilih patio furniture industrial outdoor yang tepat. Panduan material, finishing, ukuran, dan layout untuk area outdoor cafe, restoran, atau rumah tinggal.',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  // ENGLISH ARTICLES (15) - TARGETING INTERNATIONAL BUYERS
+  {
+    id: 222,
+    slug: 'industrial-outdoor-furniture-indonesia-export-quality',
+    title: 'Industrial Outdoor Furniture Indonesia - Export Quality',
+    category: 'Export & International',
+    excerpt: 'Premium industrial outdoor furniture from Indonesia. Weather-resistant powder coating, heavy-duty construction for commercial use. Export-ready with competitive FOB pricing.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 223,
+    slug: 'patio-furniture-manufacturer-indonesia-custom-export',
+    title: 'Patio Furniture Manufacturer Indonesia - Custom Export',
+    category: 'Export & International',
+    excerpt: 'Custom patio furniture manufacturer in Indonesia. We design and manufacture industrial-style outdoor furniture for cafes, restaurants, and hotels worldwide. Export quality guaranteed.',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 224,
+    slug: 'buy-heavy-duty-commercial-outdoor-furniture-indonesia',
+    title: 'Buy Heavy Duty Commercial Outdoor Furniture from Indonesia',
+    category: 'Export & International',
+    excerpt: 'Heavy duty commercial outdoor furniture from Indonesian manufacturer. Perfect for cafes, restaurants, hotels, and resorts. Weather-resistant, rust-proof, and built to last.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 225,
+    slug: 'custom-patio-furniture-indonesia-export-manufacturer',
+    title: 'Custom Patio Furniture Indonesia - Export Manufacturer',
+    category: 'Export & International',
+    excerpt: 'Custom patio furniture manufacturer in Indonesia. Work with our design team to create unique outdoor furniture for your brand. Export-ready with OEM/ODM services available.',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 226,
+    slug: 'cafe-patio-outdoor-furniture-industrial-style-indonesia',
+    title: 'Cafe Patio Outdoor Furniture - Industrial Style Indonesia',
+    category: 'Export & International',
+    excerpt: 'Industrial-style cafe patio outdoor furniture from Indonesia. Metal tables, chairs, and bar sets with powder coating finish. Perfect for modern cafes and restaurants worldwide.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 227,
+    slug: 'industrial-patio-furniture-style-inspiration-design',
+    title: 'Industrial Patio Furniture - Style & Inspiration Design',
+    category: 'Design Inspiration',
+    excerpt: 'Industrial patio furniture style inspiration for modern outdoor spaces. Design ideas combining metal and wood, color schemes, and layout tips for cafes and restaurants.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 228,
+    slug: 'outdoor-furniture-indonesia-weather-resistant-tropical',
+    title: 'Outdoor Furniture Indonesia - Weather Resistant for Tropical Climate',
+    category: 'Export & International',
+    excerpt: 'Weather-resistant outdoor furniture from Indonesia designed for tropical climates. Powder coating finish withstands rain, sun, and humidity. Perfect for resorts and hotels in tropical regions.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 229,
+    slug: 'commercial-outdoor-furniture-indonesia-bulk-order-export',
+    title: 'Commercial Outdoor Furniture Indonesia - Bulk Order Export',
+    category: 'Export & International',
+    excerpt: 'Bulk order commercial outdoor furniture from Indonesia. Competitive pricing for restaurant chains, hotel groups, and hospitality businesses. Minimum order: 1 container (20ft/40ft).',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 230,
+    slug: 'patio-furniture-set-indonesia-custom-manufacturer',
+    title: 'Patio Furniture Set Indonesia - Custom Manufacturer',
+    category: 'Export & International',
+    excerpt: 'Custom patio furniture sets from Indonesian manufacturer. Tables, chairs, and bar sets designed for outdoor cafes and restaurants. OEM/ODM services with competitive MOQ.',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 231,
+    slug: 'industrial-metal-outdoor-furniture-indonesia-powder-coating',
+    title: 'Industrial Metal Outdoor Furniture Indonesia - Powder Coating',
+    category: 'Export & International',
+    excerpt: 'Industrial metal outdoor furniture from Indonesia with premium powder coating finish. Rust-resistant, UV-protected, and weather-proof. Export quality with international standards.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 232,
+    slug: 'cafe-outdoor-furniture-indonesia-export-manufacturer',
+    title: 'Cafe Outdoor Furniture Indonesia - Export Manufacturer',
+    category: 'Export & International',
+    excerpt: 'Cafe outdoor furniture manufacturer in Indonesia. Industrial-style tables, chairs, and bar sets for outdoor dining areas. Export to cafes worldwide with competitive pricing.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 233,
+    slug: 'patio-furniture-inspiration-industrial-design-trends',
+    title: 'Patio Furniture Inspiration - Industrial Design Trends 2025',
+    category: 'Design Inspiration',
+    excerpt: 'Patio furniture inspiration with industrial design trends for 2025. Color schemes, material combinations, and layout ideas for modern outdoor spaces in cafes and restaurants.',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 234,
+    slug: 'outdoor-furniture-manufacturer-indonesia-factory-direct',
+    title: 'Outdoor Furniture Manufacturer Indonesia - Factory Direct',
+    category: 'Export & International',
+    excerpt: 'Factory-direct outdoor furniture manufacturer in Indonesia. Eliminate middlemen and get best FOB prices. We handle custom design, production, and export documentation.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 235,
+    slug: 'heavy-duty-outdoor-furniture-indonesia-export-quality',
+    title: 'Heavy Duty Outdoor Furniture Indonesia - Export Quality',
+    category: 'Export & International',
+    excerpt: 'Heavy duty outdoor furniture from Indonesia built for commercial use. Strong construction, durable materials, and weather-resistant finish. Export quality with competitive pricing.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 236,
+    slug: 'custom-outdoor-furniture-indonesia-design-manufacturing',
+    title: 'Custom Outdoor Furniture Indonesia - Design & Manufacturing',
+    category: 'Export & International',
+    excerpt: 'Custom outdoor furniture design and manufacturing in Indonesia. From concept to production, we create unique outdoor furniture for your brand. Export services with quality assurance.',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
+    date: '2025-11-15',
+    author: 'Helmi Ramdan'
   }
 ]
 

@@ -8751,6 +8751,1431 @@ const BLOG_CONTENTS: BlogContent[] = [
         ]
       }
     ]
+  },
+  // 30 NEW SEO ARTICLES CONTENT - PATIO & OUTDOOR FURNITURE
+  // INDONESIAN ARTICLES CONTENT (15)
+  {
+    slug: 'furniture-outdoor-industrial-beli-bekasi-jakarta',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture outdoor industrial menjadi pilihan utama untuk cafe, restoran, dan area patio yang membutuhkan furniture tahan cuaca dengan estetika modern. Di Bekasi, Mangala Living menyediakan furniture outdoor industrial berkualitas tinggi dengan harga kompetitif.',
+          'Workshop kami di Bekasi melayani area Jakarta dan sekitarnya dengan layanan lengkap mulai dari konsultasi desain, produksi custom, hingga instalasi di lokasi. Dengan pengalaman 25 tahun sejak 1999, kami telah menyelesaikan 1000+ project furniture industrial untuk berbagai bisnis F&B.'
+        ]
+      },
+      {
+        heading: 'Mengapa Pilih Furniture Outdoor Industrial?',
+        list: [
+          '<strong>Tahan Cuaca:</strong> Finishing powder coating premium anti-karat, tahan hujan, panas matahari, dan kelembaban tinggi. Cocok untuk cuaca tropis Indonesia.',
+          '<strong>Konstruksi Kuat:</strong> Material besi hollow grade A dengan ketebalan optimal untuk menahan beban berat dan penggunaan intensif di area commercial.',
+          '<strong>Desain Modern:</strong> Gaya industrial minimalis yang timeless, mudah dipadukan dengan berbagai konsep interior cafe dan restoran.',
+          '<strong>Durable:</strong> Umur pakai panjang hingga 5-10 tahun dengan perawatan minimal, lebih hemat dibanding furniture kayu outdoor.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Outdoor Industrial Bekasi Jakarta'
+      },
+      {
+        heading: 'Produk Furniture Outdoor Industrial Kami',
+        paragraphs: [
+          'Set Meja Patio: Meja outdoor dengan frame besi dan top kayu solid atau HPL tahan cuaca. Ukuran custom sesuai kebutuhan.',
+          'Kursi Outdoor: Kursi industrial dengan konstruksi kuat, nyaman untuk duduk lama, dan mudah ditumpuk untuk penyimpanan.',
+          'Bar Set Outdoor: Meja bar dan barstool untuk area outdoor cafe dengan tinggi standar bar (110cm) atau counter (90cm).',
+          'Lounge Set: Sofa outdoor dan coffee table untuk area santai dengan bantal tahan air dan rangka besi powder coating.'
+        ]
+      },
+      {
+        heading: 'Layanan untuk Jakarta dan Sekitarnya',
+        paragraphs: [
+          'Workshop kami di Bekasi strategis untuk melayani area Jakarta Timur, Jakarta Selatan, Jakarta Pusat, dan sekitarnya. Layanan yang kami sediakan:',
+          '• Survey gratis untuk area Jakarta (dengan appointment)',
+          '• Konsultasi desain custom sesuai konsep cafe/restoran Anda',
+          '• Produksi di workshop Bekasi dengan kualitas export',
+          '• Delivery dan instalasi untuk area Jakarta dan Bekasi',
+          '• After-sales service dan garansi konstruksi 2 tahun'
+        ]
+      },
+      {
+        heading: 'Harga Furniture Outdoor Industrial',
+        paragraphs: [
+          'Harga furniture outdoor industrial mulai dari:',
+          '• Set meja + 2 kursi: Rp 2.5-4 juta (tergantung ukuran dan material)',
+          '• Bar set (meja + 2 barstool): Rp 3-5 juta',
+          '• Lounge set (sofa + coffee table): Rp 5-8 juta',
+          'Volume discount tersedia untuk order 10 set atau lebih. Harga dapat berubah sesuai kompleksitas desain dan material yang dipilih.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'patio-furniture-industrial-custom-bekasi',
+    sections: [
+      {
+        paragraphs: [
+          'Patio furniture industrial custom di Bekasi menjadi solusi tepat untuk area outdoor cafe dan restoran yang membutuhkan furniture unik sesuai konsep bisnis. Workshop Bekasi Mangala Living menyediakan layanan custom desain dan produksi patio furniture dengan kualitas premium.',
+          'Custom patio furniture memungkinkan Anda menciptakan furniture yang sesuai dengan brand identity, ukuran area, dan kebutuhan fungsional cafe atau restoran Anda. Kami bekerja sama dengan Anda dari konsep hingga instalasi.'
+        ]
+      },
+      {
+        heading: 'Keunggulan Custom Patio Furniture',
+        list: [
+          '<strong>Desain Khusus:</strong> Furniture dibuat sesuai konsep dan kebutuhan spesifik cafe/restoran Anda, tidak ada yang sama.',
+          '<strong>Ukuran Optimal:</strong> Disesuaikan dengan luas area patio dan kapasitas yang diinginkan untuk maximize revenue.',
+          '<strong>Material Pilihan:</strong> Pilih kombinasi material sesuai budget dan estetika: besi + kayu, besi + HPL, atau full besi.',
+          '<strong>Brand Identity:</strong> Furniture dapat disesuaikan dengan warna brand, logo, atau elemen desain khusus untuk brand reinforcement.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Custom Patio Furniture Industrial Bekasi'
+      },
+      {
+        heading: 'Proses Custom Patio Furniture',
+        paragraphs: [
+          '1. Konsultasi: Diskusi kebutuhan, konsep, budget, dan timeline. Survey lokasi untuk ukuran dan kondisi area.',
+          '2. Design: Tim kami membuat desain 3D dan quotation detail dengan spesifikasi material, ukuran, dan harga.',
+          '3. Approval: Review desain dan quotation, revisi jika diperlukan hingga sesuai dengan ekspektasi.',
+          '4. Produksi: Setelah DP 50%, produksi dimulai di workshop Bekasi dengan quality control di setiap tahap.',
+          '5. Delivery & Instalasi: Furniture siap di-deliver dan di-install di lokasi dengan tim profesional kami.'
+        ]
+      },
+      {
+        heading: 'Harga Custom Patio Furniture Bekasi',
+        paragraphs: [
+          'Harga custom patio furniture bervariasi tergantung:',
+          '• Kompleksitas desain dan ukuran',
+          '• Material yang dipilih (besi hollow, kayu solid, HPL, dll)',
+          '• Finishing (powder coating standard vs premium, warna custom)',
+          '• Volume order (semakin banyak semakin ekonomis)',
+          'Range harga: Rp 2.5-8 juta per set (meja + 2 kursi). Konsultasi gratis untuk mendapatkan quotation detail sesuai kebutuhan Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'beli-heavy-duty-commercial-outdoor-furniture-bekasi',
+    sections: [
+      {
+        paragraphs: [
+          'Heavy duty commercial outdoor furniture adalah investasi jangka panjang untuk cafe, restoran, dan hotel yang membutuhkan furniture tahan lama untuk penggunaan intensif. Di Bekasi, Mangala Living memproduksi heavy duty outdoor furniture dengan standar kualitas export.',
+          'Furniture heavy duty dirancang khusus untuk penggunaan commercial dengan konstruksi ekstra kuat, material premium, dan finishing yang tahan terhadap cuaca ekstrem dan penggunaan berat.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Heavy Duty Commercial Outdoor Furniture',
+        list: [
+          '<strong>Konstruksi Ekstra Kuat:</strong> Besi hollow dengan ketebalan lebih besar (2-3mm), sambungan welding yang solid, dan reinforcement di titik-titik beban.',
+          '<strong>Material Premium:</strong> Besi hollow grade A dengan anti-rust treatment, kayu solid tebal untuk top table, dan hardware berkualitas.',
+          '<strong>Finishing Premium:</strong> Powder coating 2-3 layer dengan priming anti-karat, UV protection, dan weather-proof coating.',
+          '<strong>Durability:</strong> Umur pakai 7-10 tahun bahkan lebih dengan perawatan minimal, jauh lebih tahan lama dibanding furniture standard.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Heavy Duty Commercial Outdoor Furniture Bekasi'
+      },
+      {
+        heading: 'Produk Heavy Duty Outdoor Furniture',
+        paragraphs: [
+          'Dining Set Heavy Duty: Meja dan kursi outdoor dengan konstruksi ekstra kuat untuk restaurant dan cafe dengan traffic tinggi.',
+          'Bar Set Commercial: Bar table dan barstool heavy duty untuk bar outdoor yang tahan terhadap penggunaan intensif.',
+          'Lounge Furniture: Sofa dan coffee table outdoor dengan frame besi tebal dan bantal commercial grade tahan air.',
+          'Bench & Table Set: Bench panjang dan table set untuk area outdoor yang membutuhkan kapasitas besar.'
+        ]
+      },
+      {
+        heading: 'Mengapa Beli di Bekasi?',
+        paragraphs: [
+          'Workshop Lokal: Produksi langsung di Bekasi, Anda bisa visit workshop untuk melihat proses produksi dan quality control.',
+          'Harga Kompetitif: Factory direct pricing tanpa middleman, harga lebih ekonomis dengan kualitas premium.',
+          'Custom Service: Bisa custom desain, ukuran, dan finishing sesuai kebutuhan spesifik bisnis Anda.',
+          'Quick Response: Lokasi dekat memudahkan komunikasi, survey, dan instalasi lebih cepat dan efisien.',
+          'Garansi & Support: Garansi konstruksi 2 tahun dan after-sales service responsif untuk maintenance dan repair.'
+        ]
+      },
+      {
+        heading: 'Harga Heavy Duty Outdoor Furniture',
+        paragraphs: [
+          'Harga heavy duty commercial outdoor furniture mulai dari:',
+          '• Set meja + 2 kursi heavy duty: Rp 3.5-6 juta',
+          '• Bar set heavy duty: Rp 4-7 juta',
+          '• Lounge set heavy duty: Rp 6-10 juta',
+          'Harga lebih tinggi dibanding standard karena material dan konstruksi premium, namun memberikan ROI yang lebih baik dalam jangka panjang.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'custom-patio-furniture-besi-industrial-jakarta',
+    sections: [
+      {
+        paragraphs: [
+          'Jasa custom patio furniture besi industrial untuk Jakarta dari workshop Bekasi Mangala Living. Kami membantu mewujudkan konsep patio cafe atau restoran Anda dengan furniture custom yang unik dan fungsional.',
+          'Custom patio furniture memungkinkan Anda memiliki furniture yang sesuai dengan brand identity, ukuran area, dan kebutuhan operasional. Kami melayani area Jakarta dengan layanan survey, desain, produksi, dan instalasi.'
+        ]
+      },
+      {
+        heading: 'Layanan Custom Patio Furniture Jakarta',
+        list: [
+          '<strong>Design Consultation:</strong> Konsultasi gratis untuk memahami konsep, kebutuhan, dan budget. Tim kami akan memberikan rekomendasi desain yang optimal.',
+          '<strong>3D Visualization:</strong> Desain 3D untuk preview sebelum produksi, memastikan furniture sesuai dengan ekspektasi dan konsep.',
+          '<strong>Material Selection:</strong> Bimbingan memilih material yang tepat: besi hollow, kayu solid, HPL, atau kombinasi sesuai budget dan estetika.',
+          '<strong>Production:</strong> Produksi di workshop Bekasi dengan quality control ketat di setiap tahap untuk memastikan kualitas export.',
+          '<strong>Installation:</strong> Tim instalasi profesional untuk memastikan furniture terpasang dengan benar dan aman di lokasi Jakarta Anda.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Custom Patio Furniture Besi Industrial Jakarta'
+      },
+      {
+        heading: 'Konsep Patio Furniture yang Populer',
+        paragraphs: [
+          'Industrial Modern: Kombinasi besi hitam matte dengan kayu natural atau dark wood, minimalis dan timeless.',
+          'Rustic Industrial: Besi dengan tekstur kasar, kayu reclaimed, dan finishing yang memberikan kesan vintage namun tetap modern.',
+          'Minimalist Industrial: Desain clean dengan garis lurus, warna monochrome (black, white, grey), dan detail minimal.',
+          'Tropical Industrial: Kombinasi besi dengan kayu teak atau rattan untuk memberikan kesan tropis namun tetap industrial.'
+        ]
+      },
+      {
+        heading: 'Area Coverage Jakarta',
+        paragraphs: [
+          'Kami melayani seluruh area Jakarta:',
+          '• Jakarta Pusat, Jakarta Selatan, Jakarta Utara, Jakarta Barat, Jakarta Timur',
+          '• Area sekitarnya: Tangerang, Depok, Bekasi, Cikarang',
+          'Survey gratis untuk area Jakarta dengan appointment. Delivery dan instalasi termasuk dalam paket service kami.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'cafe-patio-outdoor-furniture-industrial-bekasi',
+    sections: [
+      {
+        paragraphs: [
+          'Inspirasi desain cafe patio dengan outdoor furniture industrial dari workshop Bekasi. Patio area menjadi extension penting untuk cafe modern yang ingin maximize seating capacity dan memberikan pengalaman outdoor dining yang menyenangkan.',
+          'Furniture outdoor industrial untuk cafe patio harus memenuhi beberapa kriteria: tahan cuaca, nyaman untuk duduk lama, mudah dibersihkan, dan estetika yang menarik untuk Instagram.'
+        ]
+      },
+      {
+        heading: 'Tips Memilih Furniture Tahan Cuaca untuk Patio',
+        list: [
+          '<strong>Material Frame:</strong> Pilih besi hollow dengan finishing powder coating premium yang anti-karat dan tahan UV.',
+          '<strong>Top Table:</strong> Kayu solid dengan treatment water-resistant atau HPL outdoor grade yang tidak mudah lapuk.',
+          '<strong>Kursi:</strong> Frame besi dengan bantal tahan air atau tanpa bantal untuk kemudahan maintenance.',
+          '<strong>Finishing:</strong> Powder coating 2-3 layer dengan primer anti-karat untuk proteksi maksimal terhadap hujan dan panas.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Cafe Patio Outdoor Furniture Industrial Bekasi'
+      },
+      {
+        heading: 'Gaya Industrial Modern untuk Cafe Patio',
+        paragraphs: [
+          'Gaya industrial modern sangat cocok untuk cafe patio karena memberikan kesan modern, clean, dan Instagram-worthy. Karakteristik gaya ini:',
+          '• Warna dominan: Black, grey, white dengan accent natural wood',
+          '• Bentuk: Geometris, minimalis, dengan garis lurus yang clean',
+          '• Material: Besi hitam matte + kayu natural atau dark wood',
+          '• Detail: Minimal, fokus pada bentuk dan proporsi yang baik',
+          '• Lighting: Kombinasi dengan industrial lighting untuk menciptakan ambiance yang cozy di malam hari'
+        ]
+      },
+      {
+        heading: 'Layout Optimal untuk Cafe Patio',
+        paragraphs: [
+          'Maximize Space: Gunakan meja berbentuk square atau rectangle yang lebih efisien dibanding round table.',
+          'Flexible Seating: Kombinasi meja 2-seater dan 4-seater untuk fleksibilitas mengakomodasi berbagai ukuran grup.',
+          'Bar Area: Pertimbangkan bar table di area tertentu untuk single diners dan memberikan variasi seating.',
+          'Walkway: Pastikan ada space cukup untuk waiters dan customer movement (minimal 90cm clearance).',
+          'Shade: Pertimbangkan pergola atau canopy untuk memberikan shade tanpa mengurangi estetika industrial.'
+        ]
+      },
+      {
+        heading: 'Produk Cafe Patio Furniture dari Bekasi',
+        paragraphs: [
+          'Workshop Bekasi kami memproduksi berbagai furniture cafe patio:',
+          '• Set meja + kursi outdoor (2-seater, 4-seater)',
+          '• Bar set outdoor (bar table + barstool)',
+          '• Bench dan table set untuk kapasitas besar',
+          '• Lounge set untuk area santai',
+          'Semua produk bisa custom ukuran, warna, dan finishing sesuai konsep cafe Anda.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'gaya-patio-industrial-furniture-outdoor-inspirasi',
+    sections: [
+      {
+        paragraphs: [
+          'Gaya patio industrial dengan furniture outdoor modern menjadi tren yang terus berkembang untuk cafe, restoran, dan area outdoor. Kombinasi material besi dan kayu menciptakan estetika yang kuat namun tetap hangat dan welcoming.',
+          'Gaya industrial untuk patio outdoor memungkinkan Anda menciptakan space yang modern, fungsional, dan Instagram-worthy. Furniture industrial outdoor cocok untuk berbagai konsep: dari modern minimalist hingga rustic industrial.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Gaya Patio Industrial',
+        list: [
+          '<strong>Material Kombinasi:</strong> Besi (frame) + kayu (top table) adalah kombinasi klasik yang timeless dan tahan lama.',
+          '<strong>Warna Palette:</strong> Dominan dark (black, dark grey, charcoal) dengan accent natural wood atau warm tones.',
+          '<strong>Bentuk:</strong> Clean lines, geometric shapes, minimal ornamentation. Fokus pada proporsi dan fungsi.',
+          '<strong>Texture:</strong> Kontras antara smooth metal finish dan natural wood grain menciptakan visual interest.',
+          '<strong>Details:</strong> Exposed hardware, visible welding (pada rustic style), dan industrial lighting untuk complete the look.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Gaya Patio Industrial Furniture Outdoor'
+      },
+      {
+        heading: 'Inspirasi Desain Patio Industrial 2025',
+        paragraphs: [
+          'Modern Industrial Minimalist:',
+          '• Warna: Black frame + white atau light wood top',
+          '• Bentuk: Square tables, straight lines, minimal details',
+          '• Fitur: Stackable chairs, modular design',
+          '',
+          'Rustic Industrial:',
+          '• Warna: Dark grey frame + reclaimed wood atau dark wood',
+          '• Bentuk: Slightly organic shapes, mixed materials',
+          '• Fitur: Visible texture, industrial lighting, vintage accents',
+          '',
+          'Tropical Industrial:',
+          '• Warna: Black frame + teak wood atau rattan accents',
+          '• Bentuk: Combination of modern and organic',
+          '• Fitur: Plants integration, natural materials'
+        ]
+      },
+      {
+        heading: 'Kombinasi Material untuk Estetika Industrial',
+        paragraphs: [
+          'Besi + Kayu Natural: Kombinasi klasik yang timeless. Besi memberikan struktur kuat, kayu memberikan warmth.',
+          'Besi + Dark Wood: Lebih sophisticated dan modern. Cocok untuk upscale cafe dan restaurant.',
+          'Besi + HPL: Lebih ekonomis dan praktis untuk maintenance. HPL outdoor grade tahan cuaca.',
+          'Full Metal: Untuk ultra-modern look. Powder coating dengan warna matte atau glossy sesuai konsep.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'patio-jakarta-furniture-industrial-custom-area-outdoor',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture industrial custom untuk patio Jakarta dari workshop Bekasi. Area outdoor cafe dan restoran di Jakarta membutuhkan furniture yang tidak hanya tahan cuaca tropis, tetapi juga sesuai dengan karakter urban dan estetika modern.',
+          'Workshop Bekasi kami melayani seluruh area Jakarta dengan layanan lengkap: survey lokasi, custom desain, produksi, delivery, dan instalasi. Dengan pengalaman 25 tahun, kami memahami kebutuhan furniture outdoor untuk bisnis F&B di Jakarta.'
+        ]
+      },
+      {
+        heading: 'Layanan untuk Area Jakarta',
+        list: [
+          '<strong>Survey Lokasi:</strong> Tim kami dapat visit lokasi di Jakarta untuk survey area, ukuran, dan kondisi untuk memberikan rekomendasi furniture yang optimal.',
+          '<strong>Custom Design:</strong> Desain furniture sesuai konsep cafe/restoran, ukuran area, dan kapasitas yang diinginkan.',
+          '<strong>Production:</strong> Produksi di workshop Bekasi dengan quality control ketat untuk memastikan kualitas export.',
+          '<strong>Delivery:</strong> Delivery ke lokasi Jakarta dengan packaging yang aman untuk melindungi furniture selama transport.',
+          '<strong>Installation:</strong> Instalasi profesional di lokasi untuk memastikan furniture terpasang dengan benar dan aman.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Patio Jakarta Furniture Industrial Custom'
+      },
+      {
+        heading: 'Kebutuhan Furniture Outdoor untuk Jakarta',
+        paragraphs: [
+          'Jakarta memiliki karakteristik cuaca tropis dengan hujan deras, panas terik, dan kelembaban tinggi. Furniture outdoor untuk Jakarta harus:',
+          '• Tahan hujan: Finishing powder coating premium anti-karat dan waterproof',
+          '• Tahan UV: Proteksi terhadap sinar matahari yang kuat untuk mencegah fading dan degradation',
+          '• Mudah maintenance: Design yang mudah dibersihkan dari debu dan polusi urban',
+          '• Strong construction: Tahan terhadap penggunaan intensif di area commercial yang ramai'
+        ]
+      },
+      {
+        heading: 'Area Coverage Jakarta',
+        paragraphs: [
+          'Kami melayani seluruh area Jakarta:',
+          '• Jakarta Pusat: Menteng, Thamrin, Sudirman, dll',
+          '• Jakarta Selatan: Kebayoran, Cilandak, Pondok Indah, dll',
+          '• Jakarta Utara: Kelapa Gading, Pluit, Ancol, dll',
+          '• Jakarta Barat: Kebon Jeruk, Puri, Grogol, dll',
+          '• Jakarta Timur: Cakung, Cibubur, Duren Sawit, dll',
+          'Survey gratis untuk area Jakarta dengan appointment. Delivery dan instalasi termasuk dalam paket layanan.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'patio-bekasi-furniture-outdoor-industrial-workshop-lokal',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture outdoor industrial untuk patio Bekasi dari workshop lokal dengan pengalaman 25 tahun. Sebagai workshop lokal Bekasi, kami memahami kebutuhan furniture outdoor untuk cafe, restoran, dan area patio di area Bekasi dan sekitarnya.',
+          'Workshop lokal memiliki keunggulan dalam hal aksesibilitas, komunikasi yang lebih mudah, dan layanan yang lebih personal. Kami melayani custom desain dan produksi furniture outdoor industrial dengan kualitas premium.'
+        ]
+      },
+      {
+        heading: 'Keunggulan Workshop Lokal Bekasi',
+        list: [
+          '<strong>Lokasi Strategis:</strong> Workshop di Bekasi mudah diakses untuk survey, konsultasi, dan visit selama proses produksi.',
+          '<strong>Komunikasi Mudah:</strong> Komunikasi langsung tanpa barrier bahasa dan timezone, response lebih cepat.',
+          '<strong>Personal Service:</strong> Layanan lebih personal dengan attention to detail yang lebih baik.',
+          '<strong>Quick Response:</strong> Survey, revisi, dan instalasi bisa dilakukan lebih cepat karena lokasi dekat.',
+          '<strong>Local Support:</strong> After-sales service dan maintenance lebih mudah karena lokasi yang sama.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Patio Bekasi Furniture Outdoor Industrial Workshop Lokal'
+      },
+      {
+        heading: 'Layanan Workshop Lokal Bekasi',
+        paragraphs: [
+          'Custom Design: Desain furniture sesuai kebutuhan spesifik cafe/restoran di Bekasi dengan konsultasi langsung.',
+          'Production: Produksi di workshop Bekasi dengan quality control ketat dan bisa di-visit untuk melihat proses.',
+          'Material Selection: Bimbingan memilih material yang tepat sesuai budget dan kebutuhan, dengan akses langsung ke supplier lokal.',
+          'Installation: Tim instalasi lokal yang familiar dengan area Bekasi, memudahkan koordinasi dan eksekusi.',
+          'Maintenance: Layanan maintenance dan repair lebih mudah karena lokasi workshop yang sama.'
+        ]
+      },
+      {
+        heading: 'Area Bekasi yang Kami Layani',
+        paragraphs: [
+          'Workshop kami melayani seluruh area Bekasi:',
+          '• Bekasi Kota, Bekasi Selatan, Bekasi Utara, Bekasi Timur, Bekasi Barat',
+          '• Cikarang, Cibitung, Tambun, Karawang',
+          '• Area sekitarnya: Jakarta Timur, Depok',
+          'Survey gratis untuk area Bekasi. Delivery lokal lebih cepat dan efisien.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'inspirasi-furniture-outdoor-industrial-untuk-patio-cafe',
+    sections: [
+      {
+        paragraphs: [
+          'Inspirasi furniture outdoor industrial untuk patio cafe yang modern dan fungsional. Patio cafe membutuhkan furniture yang tidak hanya estetis, tetapi juga tahan cuaca, nyaman, dan mudah di-maintain.',
+          'Furniture outdoor industrial sangat cocok untuk patio cafe karena memberikan kesan modern, clean, dan Instagram-worthy. Kombinasi material besi dan kayu menciptakan estetika yang kuat namun tetap welcoming.'
+        ]
+      },
+      {
+        heading: 'Tips Memilih Furniture untuk Patio Cafe',
+        list: [
+          '<strong>Meja Patio:</strong> Pilih meja dengan frame besi kuat dan top kayu atau HPL tahan cuaca. Ukuran disesuaikan dengan space dan kapasitas.',
+          '<strong>Kursi Outdoor:</strong> Kursi dengan frame besi dan bantal tahan air atau tanpa bantal untuk kemudahan cleaning. Pilih yang nyaman untuk duduk lama.',
+          '<strong>Bar Set:</strong> Bar table dan barstool untuk variasi seating dan maximize space. Height standar 110cm untuk bar atau 90cm untuk counter.',
+          '<strong>Dekorasi:</strong> Tambahkan elemen industrial seperti metal shelving, industrial lighting, atau planters untuk complete the look.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Inspirasi Furniture Outdoor Industrial Patio Cafe'
+      },
+      {
+        heading: 'Konsep Desain Patio Cafe Industrial',
+        paragraphs: [
+          'Modern Minimalist Industrial:',
+          '• Warna: Black, white, grey dengan accent natural wood',
+          '• Furniture: Clean lines, geometric shapes, minimal details',
+          '• Mood: Modern, clean, Instagram-worthy',
+          '',
+          'Rustic Industrial:',
+          '• Warna: Dark grey, brown dengan reclaimed wood',
+          '• Furniture: Mixed materials, visible texture, vintage accents',
+          '• Mood: Cozy, warm, authentic',
+          '',
+          'Tropical Industrial:',
+          '• Warna: Black frame dengan teak atau natural wood',
+          '• Furniture: Combination modern + natural elements',
+          '• Mood: Fresh, relaxed, tropical'
+        ]
+      },
+      {
+        heading: 'Layout Ideas untuk Patio Cafe',
+        paragraphs: [
+          'Zoning: Bagi area menjadi beberapa zone: dining area, bar area, lounge area untuk memberikan variasi experience.',
+          'Flexible Seating: Kombinasi 2-seater dan 4-seater tables untuk fleksibilitas mengakomodasi berbagai ukuran grup.',
+          'Bar Counter: Pertimbangkan bar counter untuk single diners dan memberikan focal point.',
+          'Walkway: Pastikan ada space cukup untuk waiters dan customer flow (minimal 90cm).',
+          'Shade Elements: Pergola, canopy, atau umbrellas untuk memberikan shade tanpa mengurangi estetika.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'cafe-patio-furniture-besi-industrial-murah-jakarta',
+    sections: [
+      {
+        paragraphs: [
+          'Cafe patio furniture besi industrial murah untuk Jakarta dari workshop Bekasi. Harga kompetitif tidak berarti mengorbankan kualitas - kami menawarkan furniture outdoor industrial berkualitas dengan harga yang terjangkau.',
+          'Workshop Bekasi kami memproduksi cafe patio furniture dengan sistem produksi efisien yang memungkinkan kami menawarkan harga lebih ekonomis tanpa mengurangi kualitas material dan finishing.'
+        ]
+      },
+      {
+        heading: 'Mengapa Harga Lebih Murah?',
+        list: [
+          '<strong>Factory Direct:</strong> Produksi langsung di workshop tanpa middleman, harga lebih kompetitif.',
+          '<strong>Efficient Production:</strong> Sistem produksi yang efisien dan terstandar untuk menekan cost tanpa mengurangi kualitas.',
+          '<strong>Local Material:</strong> Sourcing material lokal yang lebih ekonomis dengan kualitas yang sama.',
+          '<strong>Volume Production:</strong> Produksi dalam volume untuk standard items memberikan harga lebih baik.',
+          '<strong>No Showroom Cost:</strong> Workshop langsung tanpa showroom overhead, cost saving diteruskan ke customer.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Cafe Patio Furniture Besi Industrial Murah Jakarta'
+      },
+      {
+        heading: 'Produk Cafe Patio Furniture dengan Harga Kompetitif',
+        paragraphs: [
+          'Set Meja + 2 Kursi Standard: Rp 2.5-3.5 juta',
+          'Bar Set (Meja + 2 Barstool): Rp 3-4.5 juta',
+          'Lounge Set (Sofa + Coffee Table): Rp 5-7 juta',
+          'Bench + Table Set: Rp 4-6 juta',
+          'Harga dapat berubah sesuai material, ukuran, dan finishing yang dipilih. Volume discount untuk order 10 set atau lebih.'
+        ]
+      },
+      {
+        heading: 'Kualitas Tetap Premium',
+        paragraphs: [
+          'Meskipun harga lebih murah, kualitas tetap premium:',
+          '• Material: Besi hollow grade A dengan ketebalan optimal',
+          '• Finishing: Powder coating 2 layer dengan primer anti-karat',
+          '• Construction: Welding yang solid dan reinforcement di titik beban',
+          '• Garansi: Konstruksi 2 tahun dan finishing 1 tahun',
+          'Kami tidak mengorbankan kualitas untuk harga murah - kami efisien dalam proses, bukan dalam material.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-outdoor-tahan-hujan-industrial-bekasi',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture outdoor tahan hujan industrial untuk area patio dari workshop Bekasi. Cuaca tropis Indonesia dengan hujan deras dan kelembaban tinggi membutuhkan furniture outdoor yang benar-benar tahan terhadap kondisi cuaca ekstrem.',
+          'Furniture outdoor industrial dengan finishing powder coating premium dirancang khusus untuk tahan terhadap hujan, panas matahari, dan kelembaban tinggi. Workshop Bekasi kami memproduksi furniture outdoor yang teruji untuk kondisi cuaca Indonesia.'
+        ]
+      },
+      {
+        heading: 'Teknologi Finishing Tahan Hujan',
+        list: [
+          '<strong>Powder Coating Premium:</strong> Finishing 2-3 layer dengan primer anti-karat, base coat, dan top coat untuk proteksi maksimal.',
+          '<strong>Anti-Rust Treatment:</strong> Pre-treatment sebelum powder coating untuk mencegah karat di level material.',
+          '<strong>UV Protection:</strong> Top coat dengan UV inhibitors untuk mencegah fading dan degradation akibat sinar matahari.',
+          '<strong>Weather-Proof Coating:</strong> Finishing yang waterproof dan tidak mudah terkelupas meskipun terpapar hujan terus-menerus.',
+          '<strong>Quality Control:</strong> Testing terhadap cuaca dan kelembaban untuk memastikan durability sebelum delivery.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Outdoor Tahan Hujan Industrial Bekasi'
+      },
+      {
+        heading: 'Material Tahan Hujan untuk Outdoor Furniture',
+        paragraphs: [
+          'Frame Besi: Besi hollow dengan anti-rust treatment dan powder coating premium. Tidak akan berkarat meskipun terpapar hujan.',
+          'Top Table: Kayu solid dengan treatment water-resistant atau HPL outdoor grade yang tidak mudah lapuk dan tahan air.',
+          'Hardware: Hardware stainless steel atau galvanized untuk mencegah karat pada baut dan sambungan.',
+          'Cushion (jika ada): Bantal dengan fabric outdoor grade yang tahan air dan cepat kering, atau pilih tanpa bantal untuk kemudahan maintenance.'
+        ]
+      },
+      {
+        heading: 'Garansi Kualitas untuk Furniture Tahan Hujan',
+        paragraphs: [
+          'Workshop Bekasi kami memberikan garansi:',
+          '• Konstruksi: 2 tahun garansi untuk frame dan struktur',
+          '• Finishing: 1 tahun garansi untuk powder coating (tidak mengelupas, tidak berkarat)',
+          '• Material: Garansi material untuk manufacturing defect',
+          'Dengan perawatan minimal (cleaning rutin), furniture outdoor kami dapat bertahan 5-10 tahun bahkan lebih di kondisi cuaca tropis Indonesia.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'custom-patio-set-besi-industrial-jakarta-bekasi',
+    sections: [
+      {
+        paragraphs: [
+          'Jasa custom patio set besi industrial untuk Jakarta dan Bekasi dari workshop lokal. Patio set custom memungkinkan Anda memiliki furniture yang sesuai dengan konsep, ukuran area, dan kebutuhan spesifik cafe atau restoran Anda.',
+          'Custom patio set biasanya terdiri dari meja, kursi, dan terkadang bar set atau lounge furniture yang dirancang sebagai satu set yang cohesive. Kami membantu mewujudkan konsep patio Anda dengan furniture custom berkualitas export.'
+        ]
+      },
+      {
+        heading: 'Komponen Patio Set Custom',
+        list: [
+          '<strong>Dining Set:</strong> Meja dining dengan berbagai ukuran (2-seater, 4-seater, 6-seater) dan kursi matching dengan jumlah yang disesuaikan.',
+          '<strong>Bar Set:</strong> Bar table dengan tinggi standar (110cm) atau counter height (90cm) dan barstool matching.',
+          '<strong>Lounge Set:</strong> Sofa outdoor, coffee table, dan side table untuk area santai.',
+          '<strong>Accessories:</strong> Planters, shelving, atau decorative elements untuk complete the set.',
+          '<strong>Lighting:</strong> Industrial lighting yang integrated dengan furniture untuk ambiance di malam hari.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Custom Patio Set Besi Industrial Jakarta Bekasi'
+      },
+      {
+        heading: 'Proses Custom Patio Set',
+        paragraphs: [
+          '1. Consultation: Diskusi kebutuhan, konsep, ukuran area, dan budget. Survey lokasi untuk measurement dan assessment.',
+          '2. Design: Desain 3D untuk preview patio set lengkap dengan semua komponen. Revisi hingga sesuai ekspektasi.',
+          '3. Quotation: Detail quotation dengan breakdown harga per komponen dan total package.',
+          '4. Production: Setelah DP 50%, produksi dimulai dengan quality control di setiap tahap.',
+          '5. Delivery & Installation: Delivery ke lokasi dan instalasi profesional untuk memastikan semua komponen terpasang dengan benar.'
+        ]
+      },
+      {
+        heading: 'Keunggulan Custom Patio Set',
+        paragraphs: [
+          'Cohesive Design: Semua komponen dirancang sebagai satu set yang cohesive dengan estetika yang konsisten.',
+          'Optimal Space Usage: Ukuran dan layout disesuaikan dengan area patio untuk maximize space efficiency.',
+          'Brand Consistency: Furniture dapat disesuaikan dengan brand identity, warna, atau elemen desain khusus.',
+          'Quality Control: Produksi di workshop dengan quality control ketat untuk memastikan semua komponen berkualitas sama.',
+          'One-Stop Solution: Semua furniture patio dari satu workshop, memudahkan koordinasi dan maintenance.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'gaya-industrial-modern-furniture-outdoor-patio',
+    sections: [
+      {
+        paragraphs: [
+          'Gaya industrial modern untuk furniture outdoor patio yang timeless dan Instagram-worthy. Gaya ini menggabungkan elemen industrial (besi, metal) dengan estetika modern minimalis yang clean dan sophisticated.',
+          'Furniture outdoor dengan gaya industrial modern sangat cocok untuk cafe, restoran, dan area outdoor modern. Kombinasi material besi dan kayu dengan warna palette yang netral menciptakan estetika yang kuat namun tetap welcoming.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Gaya Industrial Modern',
+        list: [
+          '<strong>Clean Lines:</strong> Garis lurus yang clean, geometric shapes, minimal ornamentation. Fokus pada proporsi dan fungsi.',
+          '<strong>Color Palette:</strong> Dominan neutral: black, white, grey dengan accent natural wood atau warm tones.',
+          '<strong>Material Combination:</strong> Besi (frame) + kayu (top table) atau full metal dengan powder coating matte.',
+          '<strong>Minimal Details:</strong> Tidak ada detail yang berlebihan, fokus pada bentuk dan fungsi furniture.',
+          '<strong>Modern Aesthetic:</strong> Timeless design yang tidak cepat outdated, cocok untuk berbagai konsep modern.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Gaya Industrial Modern Furniture Outdoor Patio'
+      },
+      {
+        heading: 'Inspirasi Warna untuk Industrial Modern',
+        paragraphs: [
+          'Monochrome: Black frame + white top atau vice versa untuk ultra-modern look yang clean dan minimalis.',
+          'Natural: Black atau grey frame + natural wood top untuk memberikan warmth dan natural touch.',
+          'Dark Sophisticated: Charcoal atau dark grey frame + dark wood top untuk look yang lebih sophisticated.',
+          'Accent Colors: Frame hitam dengan accent color pada detail tertentu (misalnya kaki meja atau backrest kursi) untuk pop of color.'
+        ]
+      },
+      {
+        heading: 'Layout Ideas untuk Industrial Modern Patio',
+        paragraphs: [
+          'Grid Layout: Meja disusun dalam grid pattern untuk clean, organized look yang maximize space.',
+          'Mixed Seating: Kombinasi dining set dan bar set untuk variasi dan fleksibilitas.',
+          'Modular Design: Furniture modular yang bisa diatur ulang sesuai kebutuhan dan event.',
+          'Focal Point: Bar counter atau feature wall sebagai focal point dengan furniture surrounding.',
+          'Zoning: Bagi area menjadi beberapa zone dengan furniture yang berbeda untuk variasi experience.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-outdoor-commercial-heavy-duty-bekasi',
+    sections: [
+      {
+        paragraphs: [
+          'Furniture outdoor commercial heavy duty untuk cafe dan restoran dari workshop Bekasi. Heavy duty furniture dirancang khusus untuk penggunaan commercial yang intensif dengan konstruksi ekstra kuat dan material premium.',
+          'Furniture heavy duty berbeda dengan furniture standard karena dirancang untuk menahan beban berat, penggunaan intensif, dan kondisi cuaca ekstrem. Investasi yang lebih besar di awal memberikan ROI yang lebih baik dalam jangka panjang karena durability yang jauh lebih baik.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Heavy Duty Commercial Furniture',
+        list: [
+          '<strong>Konstruksi Ekstra Kuat:</strong> Besi hollow dengan ketebalan lebih besar (2-3mm), sambungan welding yang solid, dan reinforcement di titik-titik beban kritis.',
+          '<strong>Material Premium:</strong> Besi hollow grade A dengan anti-rust treatment, kayu solid tebal untuk top table, dan hardware berkualitas tinggi.',
+          '<strong>Finishing Premium:</strong> Powder coating 2-3 layer dengan primer anti-karat, base coat, dan top coat dengan UV protection.',
+          '<strong>Durability:</strong> Umur pakai 7-10 tahun bahkan lebih dengan perawatan minimal, jauh lebih tahan lama dibanding furniture standard.',
+          '<strong>Weight Capacity:</strong> Designed untuk menahan beban lebih berat dan penggunaan yang lebih intensif.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Furniture Outdoor Commercial Heavy Duty Bekasi'
+      },
+      {
+        heading: 'Produk Heavy Duty Outdoor Furniture',
+        paragraphs: [
+          'Dining Set Heavy Duty: Meja dan kursi dengan konstruksi ekstra kuat untuk restaurant dan cafe dengan traffic tinggi. Frame besi tebal dengan reinforcement.',
+          'Bar Set Commercial: Bar table dan barstool heavy duty untuk bar outdoor yang tahan terhadap penggunaan intensif. Height standar untuk commercial use.',
+          'Bench & Table Set: Bench panjang dan table set untuk area outdoor yang membutuhkan kapasitas besar dengan konstruksi yang sangat kuat.',
+          'Lounge Furniture: Sofa dan coffee table dengan frame besi tebal dan bantal commercial grade yang tahan air dan mudah dibersihkan.'
+        ]
+      },
+      {
+        heading: 'Mengapa Investasi Heavy Duty?',
+        paragraphs: [
+          'Long-term ROI: Meskipun harga lebih tinggi, furniture heavy duty bertahan lebih lama sehingga cost per tahun lebih rendah.',
+          'Less Maintenance: Konstruksi kuat berarti less frequent repairs dan maintenance, saving time dan cost.',
+          'Professional Image: Furniture yang solid memberikan kesan professional dan premium untuk brand Anda.',
+          'Customer Comfort: Furniture yang kuat dan stabil memberikan comfort yang lebih baik untuk customers.',
+          'Warranty: Garansi konstruksi 2 tahun dan finishing 1 tahun untuk peace of mind.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'tips-memilih-patio-furniture-industrial-outdoor',
+    sections: [
+      {
+        paragraphs: [
+          'Tips memilih patio furniture industrial outdoor yang tepat untuk cafe, restoran, atau area outdoor. Memilih furniture outdoor yang tepat adalah investasi penting yang mempengaruhi estetika, functionality, dan long-term cost.',
+          'Panduan lengkap ini membantu Anda memilih patio furniture industrial yang sesuai dengan kebutuhan, budget, dan konsep bisnis Anda. Dari material hingga layout, semua aspek penting dipertimbangkan.'
+        ]
+      },
+      {
+        heading: 'Pertimbangan Material',
+        list: [
+          '<strong>Frame Material:</strong> Pilih besi hollow grade A dengan ketebalan minimal 1.5mm untuk durability. Ketebalan lebih besar untuk heavy duty use.',
+          '<strong>Top Table:</strong> Kayu solid dengan treatment water-resistant atau HPL outdoor grade. Pilih berdasarkan budget dan estetika.',
+          '<strong>Finishing:</strong> Powder coating premium 2-3 layer dengan primer anti-karat untuk proteksi maksimal. Matte finish lebih modern, glossy lebih mudah dibersihkan.',
+          '<strong>Hardware:</strong> Stainless steel atau galvanized hardware untuk mencegah karat pada sambungan dan baut.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Tips Memilih Patio Furniture Industrial Outdoor'
+      },
+      {
+        heading: 'Pertimbangan Ukuran dan Layout',
+        paragraphs: [
+          'Measure Area: Ukur area patio dengan teliti untuk menentukan ukuran dan jumlah furniture yang optimal.',
+          'Space Planning: Alokasikan space untuk walkway (minimal 90cm), customer movement, dan waiters path.',
+          'Seating Capacity: Tentukan target kapasitas dan pilih kombinasi 2-seater dan 4-seater tables untuk fleksibilitas.',
+          'Clearance: Pastikan ada clearance cukup untuk kursi (minimal 60cm dari meja) dan space untuk duduk/berdiri.',
+          'Flexibility: Pertimbangkan furniture yang bisa diatur ulang untuk event atau kebutuhan khusus.'
+        ]
+      },
+      {
+        heading: 'Pertimbangan Budget dan Kualitas',
+        paragraphs: [
+          'Budget Allocation: Alokasikan budget untuk furniture yang berkualitas - investasi di furniture yang tahan lama lebih hemat jangka panjang.',
+          'Quality vs Price: Harga murah tidak selalu berarti lebih baik. Investasi di furniture berkualitas memberikan ROI lebih baik.',
+          'Maintenance Cost: Pertimbangkan maintenance cost - furniture yang lebih mahal tapi mudah di-maintain bisa lebih hemat total cost.',
+          'Warranty: Pilih furniture dengan garansi yang jelas untuk konstruksi dan finishing.',
+          'Volume Discount: Untuk order besar, negosiasi volume discount untuk mendapatkan harga lebih baik.'
+        ]
+      },
+      {
+        heading: 'Tips Maintenance',
+        paragraphs: [
+          'Regular Cleaning: Bersihkan furniture secara rutin dengan air dan sabun lembut untuk menghilangkan debu dan kotoran.',
+          'Inspection: Lakukan inspection rutin untuk mendeteksi masalah early (karat, loose hardware, dll).',
+          'Protection: Pertimbangkan cover atau storage untuk furniture saat tidak digunakan dalam waktu lama.',
+          'Touch-up: Lakukan touch-up powder coating jika diperlukan untuk maintain appearance.',
+          'Professional Service: Untuk masalah besar, gunakan professional service untuk repair atau refinishing.'
+        ]
+      }
+    ]
+  },
+  // ENGLISH ARTICLES CONTENT (15)
+  {
+    slug: 'industrial-outdoor-furniture-indonesia-export-quality',
+    sections: [
+      {
+        paragraphs: [
+          'Premium industrial outdoor furniture from Indonesia with export quality standards. Indonesian manufacturers are becoming the preferred choice for international buyers seeking high-quality, weather-resistant outdoor furniture at competitive prices.',
+          'Our industrial outdoor furniture is designed for commercial use in cafes, restaurants, hotels, and resorts worldwide. With weather-resistant powder coating, heavy-duty construction, and international quality standards, our furniture is ready for export to global markets.'
+        ]
+      },
+      {
+        heading: 'Export Quality Standards',
+        list: [
+          '<strong>Material Quality:</strong> Grade A steel hollow with anti-rust treatment. Premium solid wood or outdoor-grade HPL for table tops. High-quality hardware for durability.',
+          '<strong>Finishing:</strong> Premium powder coating 2-3 layers with anti-rust primer, base coat, and UV-protected top coat. Weather-proof and fade-resistant.',
+          '<strong>Construction:</strong> Solid welding at all joints. Reinforcement at load-bearing points. Professional quality control at every production stage.',
+          '<strong>Durability:</strong> Designed to last 7-10 years or more with minimal maintenance. Suitable for tropical and humid climates worldwide.',
+          '<strong>Certification:</strong> Export-ready with necessary documentation. Quality assurance meets international standards.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Outdoor Furniture Indonesia Export Quality'
+      },
+      {
+        heading: 'Product Range',
+        paragraphs: [
+          'Dining Sets: Outdoor dining tables and chairs in various sizes (2-seater, 4-seater, 6-seater). Custom sizes available.',
+          'Bar Sets: Bar tables and barstools for outdoor bar areas. Standard bar height (110cm) or counter height (90cm) available.',
+          'Lounge Sets: Outdoor sofas, coffee tables, and side tables for relaxation areas.',
+          'Commercial Furniture: Heavy-duty furniture for high-traffic commercial spaces. Extra-strong construction for intensive use.'
+        ]
+      },
+      {
+        heading: 'Export Services',
+        paragraphs: [
+          'FOB Pricing: Competitive FOB prices from Indonesian port. We work with freight forwarders worldwide for competitive shipping rates.',
+          'Documentation: Complete export documentation including Certificate of Origin, Packing List, Commercial Invoice, and custom clearance assistance.',
+          'Quality Control: Pre-shipment inspection and quality assurance. Photos and documentation provided before shipping.',
+          'Packaging: Professional packaging to protect furniture during shipping. Suitable for container loading (20ft/40ft).',
+          'MOQ: Minimum order quantity typically 1 container (20ft or 40ft). Smaller orders available with additional handling fee.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'patio-furniture-manufacturer-indonesia-custom-export',
+    sections: [
+      {
+        paragraphs: [
+          'Custom patio furniture manufacturer in Indonesia specializing in export. We design and manufacture industrial-style outdoor furniture for cafes, restaurants, and hotels worldwide. Our custom service allows you to create unique furniture that matches your brand identity and specific requirements.',
+          'As an export manufacturer, we understand the importance of quality, timely delivery, and excellent communication. We work closely with international buyers to ensure their vision is realized with furniture that meets export quality standards.'
+        ]
+      },
+      {
+        heading: 'Custom Design Service',
+        list: [
+          '<strong>Design Consultation:</strong> Free consultation to understand your needs, concept, and requirements. Our design team works with you to create the perfect furniture.',
+          '<strong>3D Visualization:</strong> 3D design renderings for preview before production. Revisions until the design matches your expectations.',
+          '<strong>Material Selection:</strong> Guidance on selecting the right materials based on your budget, aesthetic preferences, and functional requirements.',
+          '<strong>Prototype:</strong> Prototype available for approval before mass production (for large orders).',
+          '<strong>Brand Integration:</strong> Furniture can be customized with your brand colors, logos, or design elements for brand consistency.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Custom Patio Furniture Manufacturer Indonesia Export'
+      },
+      {
+        heading: 'Manufacturing Capabilities',
+        paragraphs: [
+          'Production Facility: 10,000+ sqm production facility in Bekasi, Indonesia with modern equipment and experienced craftsmen.',
+          'Capacity: Large production capacity to handle bulk orders and meet tight deadlines. Flexible production scheduling.',
+          'Quality Control: Strict quality control at every stage of production. Quality inspection before shipment.',
+          'Experience: 25 years of experience since 1999. 1000+ completed projects for international and local clients.',
+          'Certifications: Export-ready with necessary certifications. Quality standards meet international requirements.'
+        ]
+      },
+      {
+        heading: 'Export Process',
+        paragraphs: [
+          '1. Inquiry: Send us your requirements, design, quantity, and timeline. We provide quotation within 24-48 hours.',
+          '2. Design & Approval: Design development and 3D visualization. Revisions until approval.',
+          '3. Production: After deposit (typically 30-50%), production begins with regular progress updates.',
+          '4. Quality Inspection: Pre-shipment inspection with photos and documentation provided for approval.',
+          '5. Shipping: Arrangement of shipping and export documentation. Delivery to your designated port.',
+          '6. Support: After-sales support and communication for any questions or concerns.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'buy-heavy-duty-commercial-outdoor-furniture-indonesia',
+    sections: [
+      {
+        paragraphs: [
+          'Buy heavy duty commercial outdoor furniture from Indonesian manufacturer. Perfect for cafes, restaurants, hotels, and resorts that require furniture built to withstand intensive commercial use and harsh weather conditions.',
+          'Heavy duty furniture is designed for high-traffic commercial spaces with extra-strong construction, premium materials, and weather-resistant finish. While the initial investment is higher, the long-term ROI is better due to superior durability and reduced maintenance costs.'
+        ]
+      },
+      {
+        heading: 'Why Heavy Duty Commercial Furniture?',
+        list: [
+          '<strong>Durability:</strong> Built to last 7-10 years or more with minimal maintenance. Superior construction withstands intensive use.',
+          '<strong>Cost Efficiency:</strong> Lower cost per year despite higher initial investment. Less frequent replacement and repairs.',
+          '<strong>Professional Image:</strong> Solid, well-built furniture projects a professional and premium brand image.',
+          '<strong>Customer Comfort:</strong> Strong and stable furniture provides better comfort and safety for customers.',
+          '<strong>Weather Resistance:</strong> Designed to withstand harsh weather conditions including rain, sun, and humidity.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Heavy Duty Commercial Outdoor Furniture Indonesia'
+      },
+      {
+        heading: 'Heavy Duty Construction Features',
+        paragraphs: [
+          'Frame: Thicker steel hollow (2-3mm) with reinforcement at load-bearing points. Solid welding at all joints for maximum strength.',
+          'Material: Grade A steel with anti-rust treatment. Premium solid wood or outdoor-grade HPL for table tops.',
+          'Finishing: Premium powder coating 2-3 layers with anti-rust primer, base coat, and UV-protected top coat.',
+          'Hardware: High-quality stainless steel or galvanized hardware to prevent rust and ensure longevity.',
+          'Weight Capacity: Designed to handle heavier loads and more intensive use than standard furniture.'
+        ]
+      },
+      {
+        heading: 'Product Range',
+        paragraphs: [
+          'Heavy Duty Dining Sets: Tables and chairs with extra-strong construction for high-traffic restaurants and cafes.',
+          'Commercial Bar Sets: Bar tables and barstools built for intensive use in outdoor bar areas.',
+          'Bench & Table Sets: Long benches and tables for large capacity outdoor areas with very strong construction.',
+          'Commercial Lounge Furniture: Sofas and coffee tables with thick frames and commercial-grade cushions that are water-resistant and easy to clean.'
+        ]
+      },
+      {
+        heading: 'Buying Guide',
+        paragraphs: [
+          'MOQ: Minimum order typically 1 container (20ft or 40ft) for best pricing. Smaller orders available with additional handling fee.',
+          'Pricing: FOB pricing from Indonesian port. Competitive pricing for bulk orders. Volume discounts available.',
+          'Timeline: Production time typically 20-30 working days depending on order size and complexity. Rush orders available with additional fee.',
+          'Quality Assurance: Pre-shipment inspection with photos and documentation. Quality guarantee for manufacturing defects.',
+          'Warranty: 2-year warranty for construction, 1-year warranty for finishing. After-sales support available.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'custom-patio-furniture-indonesia-export-manufacturer',
+    sections: [
+      {
+        paragraphs: [
+          'Custom patio furniture manufacturer in Indonesia specializing in export. We work with international buyers to create unique outdoor furniture that matches their brand identity and specific requirements. Our custom service covers everything from design to production to export.',
+          'Custom patio furniture allows you to create furniture that is perfectly suited to your space, concept, and brand. We work closely with you throughout the process to ensure your vision is realized with export-quality furniture.'
+        ]
+      },
+      {
+        heading: 'Custom Design Capabilities',
+        list: [
+          '<strong>Unique Design:</strong> Furniture designed specifically for your brand and space. No two designs are the same.',
+          '<strong>Size Customization:</strong> Dimensions tailored to your patio area and seating capacity requirements.',
+          '<strong>Material Selection:</strong> Choose from various materials and combinations based on your budget and aesthetic preferences.',
+          '<strong>Color & Finishing:</strong> Custom colors and finishing options to match your brand identity.',
+          '<strong>Brand Integration:</strong> Logo, brand colors, or design elements can be incorporated into the furniture design.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Custom Patio Furniture Indonesia Export Manufacturer'
+      },
+      {
+        heading: 'OEM & ODM Services',
+        paragraphs: [
+          'OEM (Original Equipment Manufacturing): We manufacture furniture according to your exact specifications and design. Your design, our production.',
+          'ODM (Original Design Manufacturing): We design and manufacture furniture for you. Our design team creates furniture based on your requirements and brand identity.',
+          'Private Label: Furniture can be branded with your logo and brand elements. Perfect for furniture importers and retailers.',
+          'Flexibility: Flexible MOQ depending on design complexity. Prototype available for approval before mass production.'
+        ]
+      },
+      {
+        heading: 'Export Service',
+        paragraphs: [
+          'FOB Pricing: Competitive FOB prices from Indonesian port. We work with freight forwarders worldwide.',
+          'Documentation: Complete export documentation including Certificate of Origin, Packing List, Commercial Invoice.',
+          'Quality Control: Pre-shipment inspection with photos and documentation. Quality assurance before shipping.',
+          'Packaging: Professional packaging suitable for container shipping. Protection during transit.',
+          'Communication: Regular updates throughout production. Responsive communication for any questions or concerns.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'cafe-patio-outdoor-furniture-industrial-style-indonesia',
+    sections: [
+      {
+        paragraphs: [
+          'Industrial-style cafe patio outdoor furniture from Indonesia. Metal tables, chairs, and bar sets with powder coating finish perfect for modern cafes and restaurants worldwide. Industrial style combines functionality with aesthetic appeal, creating outdoor spaces that are both practical and Instagram-worthy.',
+          'Our industrial-style outdoor furniture is designed for cafes and restaurants that want to create a modern, urban atmosphere. The combination of metal frames and natural wood or HPL tops creates a timeless aesthetic that appeals to contemporary diners.'
+        ]
+      },
+      {
+        heading: 'Industrial Style Characteristics',
+        list: [
+          '<strong>Metal Frames:</strong> Steel frames with matte black or dark grey powder coating for that industrial look.',
+          '<strong>Natural Materials:</strong> Combination with natural wood tops or outdoor-grade HPL for warmth and texture.',
+          '<strong>Clean Lines:</strong> Geometric shapes, straight lines, minimal ornamentation. Focus on function and proportion.',
+          '<strong>Color Palette:</strong> Dominant dark colors (black, grey) with natural wood accents. Monochrome or with warm tones.',
+          '<strong>Modern Aesthetic:</strong> Timeless design that doesn\'t go out of style. Suitable for various modern concepts.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Cafe Patio Outdoor Furniture Industrial Style Indonesia'
+      },
+      {
+        heading: 'Product Range',
+        paragraphs: [
+          'Dining Sets: Industrial-style dining tables and chairs in various sizes. Metal frames with wood or HPL tops.',
+          'Bar Sets: Bar tables and barstools with industrial design. Perfect for outdoor bar areas in cafes.',
+          'Lounge Sets: Outdoor sofas and coffee tables with industrial frames. Comfortable seating for relaxation areas.',
+          'Accessories: Metal shelving, planters, and decorative elements to complete the industrial look.'
+        ]
+      },
+      {
+        heading: 'Why Industrial Style for Cafe Patio?',
+        paragraphs: [
+          'Modern Appeal: Industrial style is very popular among modern cafe-goers and creates an Instagram-worthy atmosphere.',
+          'Durability: Metal frames are extremely durable and weather-resistant, perfect for outdoor use.',
+          'Easy Maintenance: Metal and outdoor-grade materials are easy to clean and maintain.',
+          'Versatility: Industrial style works well with various design concepts and can be easily accessorized.',
+          'Timeless: Industrial design is timeless and won\'t go out of style quickly, making it a good long-term investment.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-patio-furniture-style-inspiration-design',
+    sections: [
+      {
+        paragraphs: [
+          'Industrial patio furniture style inspiration for modern outdoor spaces. Design ideas combining metal and wood, color schemes, and layout tips for cafes and restaurants. Industrial style is perfect for creating outdoor spaces that are both functional and aesthetically appealing.',
+          'Whether you\'re designing a new patio space or updating an existing one, industrial style offers endless possibilities. From minimalist modern to rustic industrial, there\'s a style that fits every concept and brand identity.'
+        ]
+      },
+      {
+        heading: 'Industrial Style Variations',
+        list: [
+          '<strong>Modern Minimalist Industrial:</strong> Clean lines, geometric shapes, monochrome color palette (black, white, grey). Minimal details, focus on function.',
+          '<strong>Rustic Industrial:</strong> Mixed materials, visible texture, vintage accents. Dark colors with reclaimed wood or rough finishes.',
+          '<strong>Tropical Industrial:</strong> Combination of industrial elements with tropical materials (teak, rattan). Natural wood with metal frames.',
+          '<strong>Contemporary Industrial:</strong> Modern industrial with contemporary touches. Mix of materials and colors for a fresh look.',
+          '<strong>Urban Industrial:</strong> Strong industrial aesthetic with urban elements. Perfect for city cafes and restaurants.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Patio Furniture Style Inspiration Design'
+      },
+      {
+        heading: 'Color Scheme Ideas',
+        paragraphs: [
+          'Monochrome: Black, white, and grey for a clean, modern look. Timeless and versatile.',
+          'Natural: Black or grey frames with natural wood for warmth and natural touch.',
+          'Dark Sophisticated: Charcoal or dark grey with dark wood for a more sophisticated look.',
+          'Accent Colors: Black frames with accent colors (red, blue, green) for a pop of color and brand identity.',
+          'Earth Tones: Brown, copper, bronze accents for a warmer, more natural industrial look.'
+        ]
+      },
+      {
+        heading: 'Layout Inspiration',
+        paragraphs: [
+          'Grid Layout: Tables arranged in a grid pattern for clean, organized look that maximizes space.',
+          'Mixed Seating: Combination of dining sets and bar sets for variety and flexibility.',
+          'Zoning: Divide area into different zones (dining, bar, lounge) with different furniture for varied experiences.',
+          'Focal Point: Bar counter or feature wall as focal point with furniture surrounding it.',
+          'Flexible Modular: Modular furniture that can be rearranged for different events or needs.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'outdoor-furniture-indonesia-weather-resistant-tropical',
+    sections: [
+      {
+        paragraphs: [
+          'Weather-resistant outdoor furniture from Indonesia designed for tropical climates. Powder coating finish withstands rain, sun, and humidity. Perfect for resorts and hotels in tropical regions worldwide.',
+          'Tropical climates present unique challenges for outdoor furniture: heavy rainfall, intense sunlight, high humidity, and temperature variations. Our furniture is specifically designed and finished to withstand these conditions while maintaining aesthetic appeal and functionality.'
+        ]
+      },
+      {
+        heading: 'Tropical Climate Challenges',
+        list: [
+          '<strong>Heavy Rainfall:</strong> Furniture must be waterproof and rust-resistant. Powder coating prevents water penetration and rust formation.',
+          '<strong>Intense Sunlight:</strong> UV protection prevents fading and material degradation. Top coat with UV inhibitors maintains color and finish.',
+          '<strong>High Humidity:</strong> Anti-rust treatment and moisture-resistant materials prevent corrosion and mold growth.',
+          '<strong>Temperature Variations:</strong> Materials and finishes must withstand expansion and contraction without cracking or peeling.',
+          '<strong>Salt Air:</strong> For coastal areas, additional protection against salt corrosion is available.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Outdoor Furniture Indonesia Weather Resistant Tropical'
+      },
+      {
+        heading: 'Weather-Resistant Features',
+        paragraphs: [
+          'Powder Coating: Premium 2-3 layer powder coating with anti-rust primer, base coat, and UV-protected top coat. Waterproof and fade-resistant.',
+          'Anti-Rust Treatment: Pre-treatment before powder coating to prevent rust at material level. Galvanized or treated steel.',
+          'Material Selection: Outdoor-grade materials that withstand tropical conditions. HPL outdoor grade, treated wood, or metal tops.',
+          'Construction: Solid construction with proper drainage to prevent water accumulation. Reinforced joints for durability.',
+          'Hardware: Stainless steel or galvanized hardware to prevent rust and ensure longevity.'
+        ]
+      },
+      {
+        heading: 'Perfect for Tropical Resorts & Hotels',
+        paragraphs: [
+          'Resorts: Weather-resistant furniture for pool areas, beach bars, and outdoor dining areas in tropical resorts.',
+          'Hotels: Durable outdoor furniture for hotel patios, restaurants, and public areas that can withstand tropical weather.',
+          'Restaurants: Commercial outdoor furniture for restaurants in tropical climates that need to function year-round.',
+          'Cafes: Cafe patio furniture that maintains its appearance despite exposure to tropical weather conditions.',
+          'Longevity: Furniture designed to last 5-10 years in tropical conditions with minimal maintenance, providing excellent ROI.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'commercial-outdoor-furniture-indonesia-bulk-order-export',
+    sections: [
+      {
+        paragraphs: [
+          'Bulk order commercial outdoor furniture from Indonesia. Competitive pricing for restaurant chains, hotel groups, and hospitality businesses. Minimum order: 1 container (20ft/40ft). We specialize in bulk orders for international buyers who need consistent quality and competitive pricing.',
+          'Bulk orders allow us to offer better pricing while maintaining quality standards. Our production facility can handle large orders efficiently, ensuring timely delivery and consistent quality across all items.'
+        ]
+      },
+      {
+        heading: 'Benefits of Bulk Orders',
+        list: [
+          '<strong>Competitive Pricing:</strong> Better unit prices for bulk orders. Volume discounts make large orders more cost-effective.',
+          '<strong>Consistent Quality:</strong> Production in one batch ensures consistency in quality, color, and finish across all items.',
+          '<strong>Efficient Production:</strong> Streamlined production process for bulk orders reduces costs and improves efficiency.',
+          '<strong>Container Shipping:</strong> Full container loads (FCL) are more cost-effective than less-than-container loads (LCL).',
+          '<strong>Lower Shipping Cost:</strong> Per-unit shipping cost is lower for full container loads compared to partial loads.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Commercial Outdoor Furniture Indonesia Bulk Order Export'
+      },
+      {
+        heading: 'Bulk Order Options',
+        paragraphs: [
+          '20ft Container: Approximately 15-20 sets of dining furniture (depending on size and design). Suitable for smaller orders.',
+          '40ft Container: Approximately 35-45 sets of dining furniture (depending on size and design). More cost-effective per unit.',
+          'Mixed Products: Combine different products (dining sets, bar sets, lounge sets) in one container for variety.',
+          'Custom Mix: Work with us to create the optimal mix of products for your container to maximize space and value.'
+        ]
+      },
+      {
+        heading: 'Bulk Order Process',
+        paragraphs: [
+          '1. Inquiry: Send us your requirements, quantity, and timeline. We provide detailed quotation.',
+          '2. Design & Approval: Design development if custom, or selection from standard catalog. Approval before production.',
+          '3. Production: After deposit, production begins with regular progress updates and quality control.',
+          '4. Inspection: Pre-shipment inspection with photos and documentation for approval.',
+          '5. Shipping: Container loading and shipping arrangement. Export documentation provided.',
+          '6. Delivery: Delivery to your designated port. Support throughout the process.'
+        ]
+      },
+      {
+        heading: 'Ideal for',
+        paragraphs: [
+          'Restaurant Chains: Consistent furniture across multiple locations. Brand consistency and cost efficiency.',
+          'Hotel Groups: Furniture for hotel outdoor areas, restaurants, and public spaces. Bulk pricing for multiple properties.',
+          'Hospitality Businesses: Cafes, restaurants, and resorts expanding or renovating. Cost-effective furniture solution.',
+          'Furniture Importers: Importers buying for distribution. Competitive pricing and export-ready quality.',
+          'Property Developers: Furniture for commercial properties, mixed-use developments, and hospitality projects.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'patio-furniture-set-indonesia-custom-manufacturer',
+    sections: [
+      {
+        paragraphs: [
+          'Custom patio furniture sets from Indonesian manufacturer. Tables, chairs, and bar sets designed for outdoor cafes and restaurants. OEM/ODM services with competitive MOQ. A complete patio set creates a cohesive outdoor space with furniture designed to work together.',
+          'Our custom patio sets are designed as complete solutions, with all components working together to create a cohesive aesthetic and functional outdoor space. Each set is tailored to your specific needs, space, and brand identity.'
+        ]
+      },
+      {
+        heading: 'Complete Patio Set Components',
+        list: [
+          '<strong>Dining Sets:</strong> Tables in various sizes (2-seater, 4-seater, 6-seater) with matching chairs. Designed as a cohesive set.',
+          '<strong>Bar Sets:</strong> Bar tables with standard bar height (110cm) or counter height (90cm) with matching barstools.',
+          '<strong>Lounge Sets:</strong> Outdoor sofas, coffee tables, and side tables designed as a complete lounge area.',
+          '<strong>Accessories:</strong> Planters, shelving, lighting, or decorative elements to complete the set.',
+          '<strong>Consistent Design:</strong> All components share the same design language, colors, and materials for cohesive look.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Patio Furniture Set Indonesia Custom Manufacturer'
+      },
+      {
+        heading: 'Custom Design Benefits',
+        paragraphs: [
+          'Cohesive Aesthetic: All furniture designed as one set creates a cohesive, professional look.',
+          'Space Optimization: Dimensions tailored to your patio area for maximum space efficiency.',
+          'Brand Consistency: Furniture can incorporate brand colors, logos, or design elements.',
+          'Functional Design: Layout and design optimized for your specific functional requirements.',
+          'Quality Consistency: All components produced together ensure consistent quality and finish.'
+        ]
+      },
+      {
+        heading: 'OEM & ODM Services',
+        paragraphs: [
+          'OEM: We manufacture according to your exact specifications. Your design, our production expertise.',
+          'ODM: We design and manufacture for you. Our design team creates based on your requirements.',
+          'Private Label: Furniture can be branded with your logo and brand elements.',
+          'Flexible MOQ: Minimum order quantity depends on design complexity. Prototype available for approval.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-metal-outdoor-furniture-indonesia-powder-coating',
+    sections: [
+      {
+        paragraphs: [
+          'Industrial metal outdoor furniture from Indonesia with premium powder coating finish. Rust-resistant, UV-protected, and weather-proof. Export quality with international standards. Powder coating is the preferred finish for outdoor metal furniture due to its durability, weather resistance, and aesthetic appeal.',
+          'Our powder coating process ensures that your outdoor furniture maintains its appearance and functionality even after years of exposure to harsh weather conditions. The finish is not just about aesthetics - it\'s about protection and longevity.'
+        ]
+      },
+      {
+        heading: 'Powder Coating Process',
+        list: [
+          '<strong>Pre-Treatment:</strong> Surface cleaning and anti-rust treatment to prepare the metal for coating.',
+          '<strong>Primer:</strong> Anti-rust primer layer for maximum protection against corrosion.',
+          '<strong>Base Coat:</strong> Powder coating base layer applied evenly for color and coverage.',
+          '<strong>Top Coat:</strong> Protective top coat with UV inhibitors to prevent fading and degradation.',
+          '<strong>Curing:</strong> High-temperature curing process ensures proper adhesion and durability.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Metal Outdoor Furniture Indonesia Powder Coating'
+      },
+      {
+        heading: 'Powder Coating Benefits',
+        paragraphs: [
+          'Durability: Powder coating is more durable than paint, lasting 5-10 years or more with minimal maintenance.',
+          'Weather Resistance: Waterproof and rust-resistant, perfect for outdoor use in various climates.',
+          'UV Protection: UV inhibitors in the top coat prevent fading and color degradation from sunlight.',
+          'Easy Maintenance: Smooth surface is easy to clean. Resistant to stains and easy to maintain.',
+          'Aesthetic Options: Wide range of colors and finishes (matte, glossy, textured) for different looks.',
+          'Environmental: Powder coating is more environmentally friendly than liquid paint, with no VOCs.'
+        ]
+      },
+      {
+        heading: 'Color & Finish Options',
+        paragraphs: [
+          'Standard Colors: Black, white, grey, brown, and other standard colors available.',
+          'Custom Colors: Custom colors can be matched to your brand or design requirements.',
+          'Matte Finish: Modern, non-reflective finish popular for industrial style.',
+          'Glossy Finish: Easy to clean, more reflective finish for different aesthetic.',
+          'Textured Finish: Textured powder coating for additional visual interest and grip.',
+          'Two-Tone: Combination of colors for frames and accents for design flexibility.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'cafe-outdoor-furniture-indonesia-export-manufacturer',
+    sections: [
+      {
+        paragraphs: [
+          'Cafe outdoor furniture manufacturer in Indonesia. Industrial-style tables, chairs, and bar sets for outdoor dining areas. Export to cafes worldwide with competitive pricing. Our cafe furniture is designed specifically for the needs of modern cafes: durability, aesthetics, and functionality.',
+          'We understand that cafe furniture needs to be both functional and Instagram-worthy. Our industrial-style outdoor furniture creates the perfect atmosphere for modern cafes while withstanding the demands of commercial use and outdoor weather conditions.'
+        ]
+      },
+      {
+        heading: 'Cafe Furniture Solutions',
+        list: [
+          '<strong>Dining Sets:</strong> Tables and chairs in various sizes for different cafe layouts. 2-seater, 4-seater, and larger options.',
+          '<strong>Bar Sets:</strong> Bar tables and barstools for cafe bar areas. Perfect for single diners and maximizing space.',
+          '<strong>Lounge Sets:</strong> Outdoor sofas and coffee tables for relaxed seating areas in cafes.',
+          '<strong>Flexible Layout:</strong> Furniture designed for flexible arrangements to accommodate different group sizes and events.',
+          '<strong>Instagram-Worthy:</strong> Modern industrial design that creates attractive spaces for social media.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
+        imageAlt: 'Cafe Outdoor Furniture Indonesia Export Manufacturer'
+      },
+      {
+        heading: 'Why Choose Indonesian Cafe Furniture?',
+        paragraphs: [
+          'Quality: Export-quality furniture with international standards. Durable construction for commercial use.',
+          'Competitive Pricing: Factory-direct pricing makes Indonesian furniture very competitive compared to other sources.',
+          'Customization: Custom design and sizing available to match your cafe concept and brand identity.',
+          'Weather Resistance: Designed for outdoor use with weather-resistant finish suitable for various climates.',
+          'Quick Response: Responsive communication and efficient production process for timely delivery.',
+          'Experience: 25 years of experience manufacturing furniture for cafes, restaurants, and hospitality businesses.'
+        ]
+      },
+      {
+        heading: 'Export Service for Cafes',
+        paragraphs: [
+          'FOB Pricing: Competitive FOB prices from Indonesian port. We work with freight forwarders worldwide.',
+          'Documentation: Complete export documentation for smooth customs clearance.',
+          'Quality Assurance: Pre-shipment inspection with photos and documentation.',
+          'Packaging: Professional packaging to protect furniture during shipping.',
+          'Support: Communication and support throughout the process and after delivery.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'patio-furniture-inspiration-industrial-design-trends',
+    sections: [
+      {
+        paragraphs: [
+          'Patio furniture inspiration with industrial design trends for 2025. Color schemes, material combinations, and layout ideas for modern outdoor spaces in cafes and restaurants. Industrial design continues to evolve, and staying updated with trends helps create spaces that are both current and timeless.',
+          'The best industrial design for patio furniture balances current trends with timeless elements. This ensures your outdoor space remains attractive and functional for years to come, maximizing your investment.'
+        ]
+      },
+      {
+        heading: 'Industrial Design Trends 2025',
+        list: [
+          '<strong>Earth Tones:</strong> Movement towards brown, copper, bronze, and other earth tones alongside traditional black and grey.',
+          '<strong>Natural Materials:</strong> Increased use of natural wood, stone, and other organic materials with metal frames.',
+          '<strong>Minimalist Lines:</strong> Clean, geometric shapes with minimal details. Focus on function and proportion.',
+          '<strong>Sustainable Design:</strong> Emphasis on durable, long-lasting furniture over fast furniture. Quality over quantity.',
+          '<strong>Mixed Materials:</strong> Creative combinations of metal, wood, stone, and other materials for visual interest.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Patio Furniture Inspiration Industrial Design Trends'
+      },
+      {
+        heading: 'Color Trends',
+        paragraphs: [
+          'Matte Black: Still popular, matte black remains timeless for industrial furniture frames.',
+          'Earth Tones: Brown oxide, copper, bronze are trending as accent colors or main finishes.',
+          'Natural Wood: Light and natural wood tones are popular for table tops and accents.',
+          'Two-Tone: Combination of dark frames with light or colored accents for visual interest.',
+          'Monochrome: Black, white, and grey combinations remain popular for minimalist industrial look.'
+        ]
+      },
+      {
+        heading: 'Layout Trends',
+        paragraphs: [
+          'Flexible Modular: Modular furniture that can be rearranged for different events and needs.',
+          'Zoning: Dividing outdoor space into different zones (dining, bar, lounge) with different furniture.',
+          'Mixed Heights: Combining different table heights (standard, counter, bar) for visual interest.',
+          'Green Integration: Incorporating plants and green elements into industrial patio design.',
+          'Lighting Integration: Industrial lighting integrated with furniture for ambiance and functionality.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'outdoor-furniture-manufacturer-indonesia-factory-direct',
+    sections: [
+      {
+        paragraphs: [
+          'Factory-direct outdoor furniture manufacturer in Indonesia. Eliminate middlemen and get best FOB prices. We handle custom design, production, and export documentation. Buying factory-direct means better prices, better communication, and better control over the production process.',
+          'As a factory-direct manufacturer, we work directly with international buyers, eliminating the markup from middlemen and traders. This allows us to offer competitive pricing while maintaining quality standards and providing excellent service.'
+        ]
+      },
+      {
+        heading: 'Benefits of Factory-Direct',
+        list: [
+          '<strong>Best Pricing:</strong> No middleman markup means better prices for you. Factory-direct pricing is typically 20-30% lower.',
+          '<strong>Direct Communication:</strong> Communicate directly with the production team. Faster response and better understanding of requirements.',
+          '<strong>Quality Control:</strong> Direct oversight of production process. Quality control at every stage.',
+          '<strong>Customization:</strong> Easier to customize and make changes during production with direct factory access.',
+          '<strong>Transparency:</strong> Clear understanding of production process, materials, and costs. No hidden fees.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Outdoor Furniture Manufacturer Indonesia Factory Direct'
+      },
+      {
+        heading: 'Factory Capabilities',
+        paragraphs: [
+          'Production Facility: 10,000+ sqm production facility with modern equipment and experienced craftsmen.',
+          'Capacity: Large production capacity to handle bulk orders and meet deadlines. Flexible scheduling.',
+          'Quality Control: Strict QC at every stage. Quality inspection before shipment.',
+          'Experience: 25 years since 1999. 1000+ completed projects for international and local clients.',
+          'Certifications: Export-ready with necessary certifications. Quality standards meet international requirements.'
+        ]
+      },
+      {
+        heading: 'Factory-Direct Process',
+        paragraphs: [
+          '1. Inquiry: Direct communication with factory. Get quotation directly from source.',
+          '2. Design & Production: Work directly with production team. Customization and changes easily accommodated.',
+          '3. Quality Control: Direct oversight of QC process. Photos and updates during production.',
+          '4. Shipping: Direct arrangement of shipping and documentation. No extra layers.',
+          '5. Support: Direct after-sales support. Easy communication for any questions or concerns.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'heavy-duty-outdoor-furniture-indonesia-export-quality',
+    sections: [
+      {
+        paragraphs: [
+          'Heavy duty outdoor furniture from Indonesia built for commercial use. Strong construction, durable materials, and weather-resistant finish. Export quality with competitive pricing. Heavy duty furniture is designed to withstand intensive commercial use and harsh weather conditions, making it ideal for cafes, restaurants, hotels, and resorts.',
+          'While heavy duty furniture requires a higher initial investment, it provides better long-term ROI due to superior durability, reduced maintenance costs, and less frequent replacement needs.'
+        ]
+      },
+      {
+        heading: 'Heavy Duty Construction',
+        list: [
+          '<strong>Thicker Materials:</strong> Steel hollow with 2-3mm thickness (vs 1.5mm for standard). Extra strength for commercial use.',
+          '<strong>Reinforcement:</strong> Additional reinforcement at load-bearing points. Solid welding at all joints.',
+          '<strong>Premium Materials:</strong> Grade A steel with anti-rust treatment. Premium solid wood or outdoor-grade HPL.',
+          '<strong>Premium Finishing:</strong> 2-3 layer powder coating with anti-rust primer, base coat, and UV-protected top coat.',
+          '<strong>Quality Hardware:</strong> High-quality stainless steel or galvanized hardware for longevity.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Heavy Duty Outdoor Furniture Indonesia Export Quality'
+      },
+      {
+        heading: 'Why Heavy Duty for Commercial Use?',
+        paragraphs: [
+          'Durability: Built to last 7-10 years or more with minimal maintenance. Superior construction withstands intensive use.',
+          'Cost Efficiency: Lower cost per year despite higher initial investment. Less frequent replacement and repairs.',
+          'Professional Image: Solid, well-built furniture projects a professional and premium brand image.',
+          'Customer Safety: Strong and stable furniture provides better safety and comfort for customers.',
+          'Weather Resistance: Designed to withstand harsh weather conditions including rain, sun, and humidity.',
+          'Warranty: 2-year warranty for construction, 1-year warranty for finishing for peace of mind.'
+        ]
+      },
+      {
+        heading: 'Export Quality Standards',
+        paragraphs: [
+          'International Standards: Quality meets international standards for commercial outdoor furniture.',
+          'Quality Assurance: Pre-shipment inspection with photos and documentation. Quality guarantee.',
+          'Durability Testing: Furniture tested for durability and weather resistance before shipment.',
+          'Documentation: Complete export documentation including quality certificates and specifications.',
+          'Support: After-sales support and communication for any questions or concerns.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'custom-outdoor-furniture-indonesia-design-manufacturing',
+    sections: [
+      {
+        paragraphs: [
+          'Custom outdoor furniture design and manufacturing in Indonesia. From concept to production, we create unique outdoor furniture for your brand. Export services with quality assurance. Custom furniture allows you to create outdoor spaces that are perfectly tailored to your brand, space, and functional requirements.',
+          'Our design and manufacturing process ensures that your vision is realized with furniture that meets export quality standards. We work closely with you throughout the process to ensure every detail is perfect.'
+        ]
+      },
+      {
+        heading: 'Design Process',
+        list: [
+          '<strong>Consultation:</strong> Free consultation to understand your needs, concept, space, and requirements.',
+          '<strong>Concept Development:</strong> Our design team develops concepts based on your requirements and brand identity.',
+          '<strong>3D Visualization:</strong> 3D renderings for preview before production. Revisions until perfect.',
+          '<strong>Material Selection:</strong> Guidance on selecting materials based on budget, aesthetics, and functionality.',
+          '<strong>Prototype:</strong> Prototype available for approval before mass production (for large orders).'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Custom Outdoor Furniture Indonesia Design Manufacturing'
+      },
+      {
+        heading: 'Manufacturing Process',
+        paragraphs: [
+          'Production Planning: Detailed production plan based on approved design. Timeline and milestones established.',
+          'Material Preparation: Sourcing and preparation of materials according to specifications. Quality check of materials.',
+          'Production: Manufacturing process with quality control at every stage. Regular progress updates provided.',
+          'Quality Control: Strict QC during production. Inspection before final assembly and finishing.',
+          'Finishing: Powder coating or other finishing according to specifications. Quality check of finish.',
+          'Final Inspection: Complete inspection before packaging. Photos and documentation provided.'
+        ]
+      },
+      {
+        heading: 'Export Services',
+        paragraphs: [
+          'FOB Pricing: Competitive FOB prices from Indonesian port. We work with freight forwarders worldwide.',
+          'Documentation: Complete export documentation including Certificate of Origin, Packing List, Commercial Invoice.',
+          'Quality Assurance: Pre-shipment inspection with photos and documentation. Quality guarantee.',
+          'Packaging: Professional packaging suitable for container shipping. Protection during transit.',
+          'Support: Communication and support throughout the process and after delivery.'
+        ]
+      }
+    ]
   }
 ]
 
