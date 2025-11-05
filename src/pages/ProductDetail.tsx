@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import { X } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -848,7 +849,7 @@ Thank you!`
               onClick={() => setIsImageModalOpen(false)}
               aria-label="Close image"
             >
-              ?
+              <X size={24} />
             </button>
             <img 
               src={product.images[selectedImage]} 
