@@ -271,7 +271,8 @@ const Home: React.FC = () => {
                   ]
                 }
               }
-            })}
+            })
+          })}
         </script>
         
         {/* Local Business Schema */}
