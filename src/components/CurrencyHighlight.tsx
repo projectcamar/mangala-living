@@ -11,6 +11,7 @@ interface CurrencyHighlightProps {
 const CurrencyHighlight: React.FC<CurrencyHighlightProps> = ({ isIndonesian = false }) => {
   const [exchangeRate, setExchangeRate] = useState<number | null>(null)
   const [isLoading, setIsLoading] = useState(true)
+  const [isVisible, setIsVisible] = useState(true)
   const location = useLocation()
 
   useEffect(() => {
@@ -30,8 +31,19 @@ const CurrencyHighlight: React.FC<CurrencyHighlightProps> = ({ isIndonesian = fa
     fetchExchangeRate()
   }, [location.pathname, isIndonesian])
 
-  // Don't render while loading
-  if (isLoading || exchangeRate === null) {
+  // Auto-hide after 3 seconds
+  useEffect(() => {
+    if (!isLoading && exchangeRate !== null) {
+      const timer = setTimeout(() => {
+        setIsVisible(false)
+      }, 3000)
+
+      return () => clearTimeout(timer)
+    }
+  }, [isLoading, exchangeRate])
+
+  // Don't render while loading or after hiding
+  if (isLoading || exchangeRate === null || !isVisible) {
     return null
   }
 
