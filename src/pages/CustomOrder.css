@@ -1,288 +1,446 @@
-/* ═══════════════════════════════════════════════════════════════
-   CUSTOM ORDER PAGE - CLEAN & NATURAL DESIGN
-   ═══════════════════════════════════════════════════════════════ */
-
 .custom-order-page {
-  min-height: 100vh;
-  background-color: #ffffff;
+  background: #fff;
 }
 
-/* ─────────────────────────── Hero Section ─────────────────────────── */
-
+/* Hero Section */
 .custom-order-hero {
-  background-color: #1a1a1a;
-  padding: 80px 20px;
-  text-align: center;
-  color: #ffffff;
+  position: relative;
+  height: 400px;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.custom-order-hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-order-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-order-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .custom-order-hero-content {
-  max-width: 800px;
-  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 .custom-order-hero-title {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   margin: 0;
-  letter-spacing: -0.02em;
+}
+
+/* Message Section */
+.custom-order-message-section {
+  background: #fff;
+  padding: 80px 0;
+}
+
+.custom-order-message-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.custom-order-message-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.custom-order-message-text {
+  padding-right: 20px;
+}
+
+.custom-order-message-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.02em;
+}
+
+.custom-order-message-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.custom-order-message-paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #666;
+  margin: 0;
+}
+
+.custom-order-message-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.custom-order-message-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.custom-order-message-image-wrapper:hover .custom-order-message-image {
+  transform: scale(1.05);
+}
+
+/* Ideas Section */
+.custom-order-ideas-section {
+  background: #f9f9f9;
+  padding: 80px 0;
+}
+
+.custom-order-ideas-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.custom-order-ideas-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin: 0 0 20px 0;
+}
+
+.custom-order-ideas-intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #666;
+  margin: 0 0 40px 0;
+}
+
+.custom-order-ideas-description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #666;
+  margin: 0 0 40px 0;
+}
+
+/* Process Section */
+.custom-order-process-section {
+  background: #fff;
+  padding: 80px 0 100px 0;
+}
+
+.custom-order-process-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.custom-order-process-main-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+
+.custom-order-process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 80px;
+}
+
+.custom-order-process-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.custom-order-process-icon {
+  color: #2c2c2c;
+  margin-bottom: 20px;
+}
+
+.custom-order-process-item-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin: 0 0 12px 0;
+}
+
+.custom-order-process-item-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+}
+
+/* CTA Section */
+.custom-order-cta-section {
+  background: #f9f9f9;
+  padding: 80px 0;
+}
+
+.custom-order-cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.custom-order-cta-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin: 0 0 20px 0;
+}
+
+.custom-order-cta-intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #666;
+  margin: 0 0 40px 0;
+}
+
+.custom-order-locations {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.custom-order-location {
+  text-align: center;
+  max-width: 500px;
+}
+
+.custom-order-location h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin: 0 0 10px 0;
+}
+
+.custom-order-location p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.custom-order-location a {
+  color: #2c2c2c;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.custom-order-location a:hover {
+  color: #8B7355;
+}
+
+.custom-order-cta-description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #666;
+  margin: 0 0 40px 0;
+}
+
+.custom-order-cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.custom-order-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: #2c2c2c;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  border: 2px solid #2c2c2c;
+}
+
+.custom-order-btn:hover {
+  background: #8B7355;
+  border-color: #8B7355;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .custom-order-message-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .custom-order-message-text {
+    padding-right: 0;
+  }
+
+  .custom-order-process-grid {
+    gap: 50px 60px;
+  }
 }
 
 @media (max-width: 768px) {
   .custom-order-hero {
-    padding: 60px 20px;
+    height: 300px;
+    margin-top: 80px;
   }
-  
+
   .custom-order-hero-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
-}
 
-/* ─────────────────────────── Sections ─────────────────────────── */
-
-.custom-order-section {
-  padding: 80px 20px;
-}
-
-.custom-order-section-gray {
-  background-color: #f8f8f8;
-}
-
-.custom-order-section-dark {
-  background-color: #1a1a1a;
-  color: #ffffff;
-}
-
-.custom-order-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.custom-order-cta-container {
-  text-align: center;
-}
-
-/* ─────────────────────────── Typography ─────────────────────────── */
-
-.custom-order-heading {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0 0 30px 0;
-  line-height: 1.3;
-  color: #1a1a1a;
-}
-
-.custom-order-heading-light {
-  color: #ffffff;
-}
-
-.custom-order-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin: 0 0 20px 0;
-  color: #4a4a4a;
-}
-
-.custom-order-text-center {
-  text-align: center;
-}
-
-.custom-order-text-light {
-  color: #e0e0e0;
-}
-
-.custom-order-badge {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #8b7355;
-  color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: 600;
-  border-radius: 5px;
-  margin-bottom: 30px;
-}
-
-/* ─────────────────────────── Content with Image ─────────────────────────── */
-
-.custom-order-content-with-image {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-  margin-top: 30px;
-}
-
-.custom-order-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-  .custom-order-content-with-image {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  .custom-order-message-section {
+    padding: 60px 0;
   }
-}
 
-/* ─────────────────────────── Process Grid ─────────────────────────── */
+  .custom-order-message-container {
+    padding: 0 20px;
+  }
 
-.custom-order-process-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  margin-top: 50px;
-}
+  .custom-order-message-title {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
 
-.custom-order-process-item {
-  text-align: center;
-}
+  .custom-order-message-image-wrapper {
+    min-height: 300px;
+  }
 
-.custom-order-process-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #8b7355;
-  color: #ffffff;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
-}
+  .custom-order-ideas-section {
+    padding: 60px 0;
+  }
 
-.custom-order-process-icon:hover {
-  transform: scale(1.05);
-}
+  .custom-order-ideas-container {
+    padding: 0 20px;
+  }
 
-.custom-order-process-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: 0 0 15px 0;
-  color: #1a1a1a;
-}
+  .custom-order-ideas-title {
+    font-size: 1.6rem;
+  }
 
-.custom-order-process-desc {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #666666;
-  margin: 0;
-}
+  .custom-order-process-section {
+    padding: 60px 0 80px 0;
+  }
 
-@media (max-width: 768px) {
+  .custom-order-process-container {
+    padding: 0 20px;
+  }
+
+  .custom-order-process-main-title {
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+  }
+
   .custom-order-process-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .custom-order-process-icon {
+    margin-bottom: 15px;
+  }
+
+  .custom-order-cta-section {
+    padding: 60px 0;
+  }
+
+  .custom-order-cta-container {
+    padding: 0 20px;
+  }
+
+  .custom-order-cta-title {
+    font-size: 1.6rem;
+  }
+
+  .custom-order-locations {
+    grid-template-columns: 1fr;
     gap: 30px;
   }
-}
 
-/* ─────────────────────────── CTA Button ─────────────────────────── */
-
-.custom-order-cta-button-wrapper {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-.custom-order-cta-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 18px 40px;
-  background-color: #8b7355;
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.3);
-}
-
-.custom-order-cta-button:hover {
-  background-color: #6f5a44;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(139, 115, 85, 0.4);
-}
-
-.custom-order-cta-button:active {
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .custom-order-cta-button {
-    padding: 15px 30px;
-    font-size: 1rem;
+  .custom-order-cta-buttons {
+    flex-direction: column;
   }
-}
 
-/* ─────────────────────────── Contact Info ─────────────────────────── */
-
-.custom-order-contact-info {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.custom-order-contact-info p {
-  margin-bottom: 20px;
-}
-
-.custom-order-link {
-  color: #b8860b;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.custom-order-link:hover {
-  color: #d4af37;
-  text-decoration: underline;
-}
-
-/* ─────────────────────────── Responsive ─────────────────────────── */
-
-@media (max-width: 1024px) {
-  .custom-order-section {
-    padding: 60px 20px;
-  }
-  
-  .custom-order-heading {
-    font-size: 1.75rem;
-  }
-  
-  .custom-order-text {
-    font-size: 1rem;
+  .custom-order-btn {
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  .custom-order-section {
-    padding: 40px 15px;
+  .custom-order-hero {
+    height: 250px;
   }
-  
-  .custom-order-heading {
-    font-size: 1.5rem;
+
+  .custom-order-hero-title {
+    font-size: 2rem;
   }
-  
-  .custom-order-text {
+
+  .custom-order-message-title {
+    font-size: 1.4rem;
+  }
+
+  .custom-order-message-paragraph {
     font-size: 0.95rem;
   }
-  
-  .custom-order-badge {
-    font-size: 0.85rem;
-    padding: 8px 16px;
+
+  .custom-order-ideas-title {
+    font-size: 1.4rem;
   }
-  
-  .custom-order-process-icon {
-    width: 60px;
-    height: 60px;
+
+  .custom-order-cta-title {
+    font-size: 1.4rem;
   }
-  
-  .custom-order-process-title {
+
+  .custom-order-location h3 {
     font-size: 1.1rem;
   }
-  
-  .custom-order-process-desc {
+
+  .custom-order-location p {
     font-size: 0.9rem;
+  }
+
+  .custom-order-process-main-title {
+    font-size: 1.5rem;
+  }
+
+  .custom-order-process-item-title {
+    font-size: 1.1rem;
+  }
+
+  .custom-order-process-icon svg {
+    width: 40px;
+    height: 40px;
   }
 }
