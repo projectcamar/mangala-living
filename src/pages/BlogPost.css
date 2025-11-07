@@ -90,14 +90,14 @@ body:has(.announcement-bar) .blog-post-container {
 }
 
 .blog-section p a {
-  color: #3498db;
+  color: #8B7355;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .blog-section p a:hover {
-  color: #2980b9;
+  color: #6f5b42;
   text-decoration: underline;
 }
 
@@ -145,7 +145,7 @@ body:has(.announcement-bar) .blog-post-container {
   content: "-";
   position: absolute;
   left: 10px;
-  color: #3498db;
+  color: #8B7355;
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -156,23 +156,23 @@ body:has(.announcement-bar) .blog-post-container {
 }
 
 .blog-post-list li a {
-  color: #3498db;
+  color: #8B7355;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .blog-post-list li a:hover {
-  color: #2980b9;
+  color: #6f5b42;
   text-decoration: underline;
 }
 
 /* CTA Section */
 .blog-post-cta {
-  background: #2c3e50;
+  background: #2c2c2c;
   color: white;
   padding: 50px 40px;
-  border-left: 4px solid #3498db;
+  border-left: 4px solid #8B7355;
   text-align: center;
   margin-top: 60px;
   position: relative;
@@ -185,7 +185,7 @@ body:has(.announcement-bar) .blog-post-container {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(52, 152, 219, 0.05) 0%, rgba(44, 62, 80, 0) 100%);
+  background: linear-gradient(135deg, rgba(139, 115, 85, 0.08) 0%, rgba(44, 44, 44, 0) 100%);
   pointer-events: none;
 }
 
@@ -226,16 +226,16 @@ body:has(.announcement-bar) .blog-post-container {
 }
 
 .blog-cta-btn.primary {
-  background: #3498db;
+  background: #8B7355;
   color: white;
-  border: 2px solid #3498db;
+  border: 2px solid #8B7355;
 }
 
 .blog-cta-btn.primary:hover {
-  background: #2980b9;
-  border-color: #2980b9;
+  background: #6f5b42;
+  border-color: #6f5b42;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 8px 20px rgba(139, 115, 85, 0.3);
 }
 
 .blog-cta-btn.secondary {
@@ -341,7 +341,7 @@ body:has(.announcement-bar) .blog-post-sidebar {
 }
 
 .sidebar-article-card:hover .sidebar-article-title {
-  color: #3498db;
+  color: #8B7355;
 }
 
 /* Not Found */
@@ -359,7 +359,7 @@ body:has(.announcement-bar) .blog-post-sidebar {
 .back-to-blog-btn {
   display: inline-block;
   padding: 12px 30px;
-  background: #3498db;
+  background: #8B7355;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -367,7 +367,7 @@ body:has(.announcement-bar) .blog-post-sidebar {
 }
 
 .back-to-blog-btn:hover {
-  background: #2980b9;
+  background: #6f5b42;
 }
 
 /* Responsive Design */
