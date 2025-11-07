@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { X } from 'lucide-react'
+import { X, Play } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -25,6 +25,7 @@ interface ProductDetail {
   images: string[]
   details: string
   description: string
+  video?: string
 }
 
 // Generate product description
@@ -210,9 +211,10 @@ ALL_PRODUCTS.forEach(p => {
     name: p.name,
     categories: p.categories,
     price: p.price,
-    images: [p.image, p.image, p.image, p.image],
+    images: [p.image, p.image, p.video || p.image, p.image],
     details: generateProductDetails(p.categories),
-    description: generateProductDescription(p.name)
+    description: generateProductDescription(p.name),
+    video: p.video
   } as ProductDetail
 })
 
@@ -637,44 +639,86 @@ const ProductDetail: React.FC = () => {
             {/* Product Gallery */}
             <div className="product-gallery">
               <div className="gallery-thumbnails">
-                {product.images.map((image, index) => (
-                  <button
-                    key={index}
-                    className={`thumbnail ${selectedImage === index ? 'active' : ''}`}
-                    onClick={() => setSelectedImage(index)}
-                    aria-label={`View ${product.name} image ${index + 1}`}
-                  >
-                    <img 
-                      src={image} 
-                      alt={getProductImageAlt(product.slug, isIndonesian) + (index > 0 ? ` - Image ${index + 1}` : '')}
-                      title={getProductImageCaption(product.slug, isIndonesian) + (index > 0 ? ` - View ${index + 1}` : '')}
-                      loading={index === 0 ? "eager" : "lazy"}
-                      width="100"
-                      height="100"
-                      itemProp="image"
-                      data-image-type="product-thumbnail"
-                      data-product-name={product.name}
-                      data-image-index={index + 1}
-                    />
-                  </button>
-                ))}
+                {product.images.map((image, index) => {
+                  const isVideo = index === 2 && product.video
+                  return (
+                    <button
+                      key={index}
+                      className={`thumbnail ${selectedImage === index ? 'active' : ''}`}
+                      onClick={() => setSelectedImage(index)}
+                      aria-label={`View ${product.name} ${isVideo ? 'video' : 'image'} ${index + 1}`}
+                      style={{ position: 'relative' }}
+                    >
+                      {isVideo ? (
+                        <>
+                          <video 
+                            src={image}
+                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            muted
+                          />
+                          <div style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            background: 'rgba(0, 0, 0, 0.6)',
+                            borderRadius: '50%',
+                            width: '30px',
+                            height: '30px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            pointerEvents: 'none'
+                          }}>
+                            <Play size={16} color="white" fill="white" />
+                          </div>
+                        </>
+                      ) : (
+                        <img 
+                          src={image} 
+                          alt={getProductImageAlt(product.slug, isIndonesian) + (index > 0 ? ` - Image ${index + 1}` : '')}
+                          title={getProductImageCaption(product.slug, isIndonesian) + (index > 0 ? ` - View ${index + 1}` : '')}
+                          loading={index === 0 ? "eager" : "lazy"}
+                          width="100"
+                          height="100"
+                          itemProp="image"
+                          data-image-type="product-thumbnail"
+                          data-product-name={product.name}
+                          data-image-index={index + 1}
+                        />
+                      )}
+                    </button>
+                  )
+                })}
               </div>
-              <div className="gallery-main" onClick={() => setIsImageModalOpen(true)} style={{ cursor: 'pointer' }}>
-                <img 
-                  src={product.images[selectedImage]} 
-                  alt={getProductImageAlt(product.slug, isIndonesian)}
-                  title={getProductImageCaption(product.slug, isIndonesian)}
-                  className={selectedImage === 1 || selectedImage === 3 ? 'flipped' : ''}
-                  loading="eager"
-                  fetchPriority="high"
-                  width="800"
-                  height="600"
-                  itemProp="image"
-                  data-image-type="product-main"
-                  data-product-name={product.name}
-                  data-product-slug={product.slug}
-                  data-selected-index={selectedImage}
-                />
+              <div className="gallery-main" onClick={() => selectedImage === 2 && product.video ? null : setIsImageModalOpen(true)} style={{ cursor: 'pointer' }}>
+                {selectedImage === 2 && product.video ? (
+                  <video 
+                    src={product.images[selectedImage]}
+                    controls
+                    autoPlay
+                    loop
+                    muted
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    playsInline
+                  />
+                ) : (
+                  <img 
+                    src={product.images[selectedImage]} 
+                    alt={getProductImageAlt(product.slug, isIndonesian)}
+                    title={getProductImageCaption(product.slug, isIndonesian)}
+                    className={selectedImage === 1 || selectedImage === 3 ? 'flipped' : ''}
+                    loading="eager"
+                    fetchPriority="high"
+                    width="800"
+                    height="600"
+                    itemProp="image"
+                    data-image-type="product-main"
+                    data-product-name={product.name}
+                    data-product-slug={product.slug}
+                    data-selected-index={selectedImage}
+                  />
+                )}
               </div>
             </div>
 
