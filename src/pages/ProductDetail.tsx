@@ -480,7 +480,7 @@ const ProductDetail: React.FC = () => {
           },
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+62-852-1207-8467",
+            "telephone": "+62-888-0114-6881",
             "contactType": "customer service",
             "email": "info@mangala-living.com",
             "availableLanguage": ["Indonesian", "English"]
@@ -548,10 +548,10 @@ const ProductDetail: React.FC = () => {
       <AnnouncementBar />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{product.slug === 'hollowline-display-rack' 
-          ? (isIndonesian ? 'Hollowline Display Rack - Harga Murah Rp4.5 Juta - Call Mangala +62 852 1207 8467' : 'Hollowline Display Rack - Affordable Price Rp4.5 Million - Call Mangala +62 852 1207 8467')
+          ? (isIndonesian ? 'Hollowline Display Rack - Harga Murah Rp4.5 Juta - Call Mangala +62 888 0114 6881' : 'Hollowline Display Rack - Affordable Price Rp4.5 Million - Call Mangala +62 888 0114 6881')
           : `${translatedProductName} - Mangala Living`}</title>
         <meta name="description" content={product.name === 'Hollowline Display Rack'
-          ? 'Hollowline Display Rack Industrial - Display Shelf Rack Modern - Harga Rp4.500.000 - Workshop Bekasi - Garansi Kualitas - Call Mangala +62 852 1207 8467'
+          ? 'Hollowline Display Rack Industrial - Display Shelf Rack Modern - Harga Rp4.500.000 - Workshop Bekasi - Garansi Kualitas - Call Mangala +62 888 0114 6881'
           : (() => {
               const desc = getProductDescription(product.slug)
               return desc ? (isIndonesian ? desc.id.metaDescription : desc.en.metaDescription) : `${product.name} - ${product.details}`
@@ -769,7 +769,7 @@ Please provide more information and how to order.
 
 Thank you!`
                   
-                  const whatsappUrl = `https://wa.me/6285212078467?text=${encodeURIComponent(whatsappMessage)}`
+                  const whatsappUrl = `https://wa.me/6288801146881?text=${encodeURIComponent(whatsappMessage)}`
                   window.location.href = whatsappUrl
                 }}
               >

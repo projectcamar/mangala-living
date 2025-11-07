@@ -262,7 +262,7 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
           'Ready untuk transform space Anda dengan furniture industrial berkualitas? Ikuti langkah-langkah berikut:'
         ],
         list: [
-          '<strong>Step 1 - Konsultasi Gratis (15-30 menit):</strong> Kirim brief project Anda via <a href="https://wa.me/6285212078467">WhatsApp +62 852-1207-8467</a>. Include: jenis bisnis, jumlah seat yang dibutuhkan, budget range, dan timeline target. Kami response dalam 1-3 jam (working hours).',
+          '<strong>Step 1 - Konsultasi Gratis (15-30 menit):</strong> Kirim brief project Anda via <a href="https://wa.me/6288801146881">WhatsApp +62 888-0114-6881</a>. Include: jenis bisnis, jumlah seat yang dibutuhkan, budget range, dan timeline target. Kami response dalam 1-3 jam (working hours).',
           '<strong>Step 2 - Site Survey & Measurement:</strong> Tim kami visit lokasi Anda (FREE untuk area Bekasi-Jakarta Timur-Cikarang) untuk measurement akurat dan assess kondisi space. Durasi: 30-60 menit.',
           '<strong>Step 3 - Quotation & Design Mockup:</strong> Dalam 2-3 hari, kami kirim quotation detail + 3D rendering + technical drawing untuk approval. Revision unlimited sampai design approved.',
           '<strong>Step 4 - Production & Quality Control:</strong> Setelah DP 50% confirmed, produksi dimulai. Lead time standard: 15-25 hari kerja dengan photo update berkala.',
@@ -275,7 +275,7 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
       {
         heading: 'Hubungi Mangala Living Workshop',
         paragraphs: [
-          '<strong>WhatsApp (Fastest Response):</strong> <a href="https://wa.me/6285212078467">+62 852-1207-8467</a> - Chat langsung dengan tim project manager kami.',
+          '<strong>WhatsApp (Fastest Response):</strong> <a href="https://wa.me/6288801146881">+62 888-0114-6881</a> - Chat langsung dengan tim project manager kami.',
           '<strong>Email:</strong> <a href="mailto:info@mangala-living.com">info@mangala-living.com</a> - Untuk inquiry formal atau kirim attachment design reference.',
           '<strong>Workshop Address:</strong> Jl. Raya Setu Cibitung, Bekasi Timur, Jawa Barat (10 menit dari pintu tol Cibitung, 25 menit dari Jakarta Timur).',
           '<strong>Operating Hours:</strong> Senin-Sabtu: 08.00-17.00 WIB | Minggu & tanggal merah: By appointment only.',
@@ -369,7 +369,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya sejak 1999, <a href="/about">Mangala Living</a> telah melayani lebih dari 1000 klien di seluruh Indonesia. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan furniture industrial berkualitas tinggi dengan finishing powder coating yang tahan lama, material besi hollow berkualitas, dan kayu solid yang awet. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain kafe industrial minimalis dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>.'
+          'Untuk konsultasi desain kafe industrial minimalis dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>.'
         ]
       }
     ]
@@ -487,7 +487,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living telah melayani lebih dari 1000 klien di seluruh Indonesia. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan furniture industrial berkualitas tinggi dengan harga kompetitif, garansi kualitas, dan layanan purna jual yang profesional. Semua produk kami menggunakan material berkualitas tinggi dan finishing powder coating yang tahan lama.',
-          'Untuk informasi harga furniture industrial terbaru dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda mendapatkan furniture industrial terbaik sesuai budget dan kebutuhan.'
+          'Untuk informasi harga furniture industrial terbaru dan konsultasi desain, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda mendapatkan furniture industrial terbaik sesuai budget dan kebutuhan.'
         ]
       }
     ]
@@ -627,7 +627,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus furniture restoran. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman dalam menciptakan furniture restoran berkualitas tinggi.',
           'Kami menawarkan furniture restoran industrial dengan material berkualitas tinggi, finishing food-safe, dan desain yang fungsional. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain restoran industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan restoran industrial yang sempurna.'
+          'Untuk konsultasi desain restoran industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan restoran industrial yang sempurna.'
         ]
       }
     ]
@@ -785,7 +785,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus furniture kantor modern. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman dalam menciptakan furniture kantor berkualitas tinggi.',
           'Kami menawarkan meja kantor industrial dengan material berkualitas tinggi, desain ergonomis, dan finishing yang tahan lama. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain kantor industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan workspace industrial yang produktif dan estetis.'
+          'Untuk konsultasi desain kantor industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan workspace industrial yang produktif dan estetis.'
         ]
       }
     ]
@@ -940,7 +940,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami tren desain terbaru dan kebutuhan modern. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman dalam menciptakan furniture industrial Scandinavian berkualitas tinggi.',
           'Kami menawarkan furniture industrial Scandinavian dengan material berkualitas tinggi, desain yang timeless, dan finishing yang tahan lama. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain industrial Scandinavian dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan ruang industrial Scandinavian yang sempurna sesuai tren 2025.'
+          'Untuk konsultasi desain industrial Scandinavian dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan ruang industrial Scandinavian yang sempurna sesuai tren 2025.'
         ]
       }
     ]
@@ -1047,7 +1047,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus hollowline display rack untuk berbagai aplikasi komersial. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan hollowline display rack berkualitas tinggi dengan konstruksi hollow steel yang kuat, finishing powder coating tahan lama, dan desain modular yang fleksibel. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk informasi hollowline display rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda mendapatkan hollowline display rack terbaik sesuai kebutuhan bisnis.'
+          'Untuk informasi hollowline display rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda mendapatkan hollowline display rack terbaik sesuai kebutuhan bisnis.'
         ]
       }
     ]
@@ -1146,7 +1146,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya, Mangala Living menawarkan display shelf rack berkualitas tinggi dengan desain yang fungsional dan estetis. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menyediakan display shelf rack industrial dengan material berkualitas tinggi, finishing powder coating tahan lama, dan desain yang dapat disesuaikan dengan kebutuhan spesifik. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk informasi display shelf rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan display yang menarik dan fungsional.'
+          'Untuk informasi display shelf rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan display yang menarik dan fungsional.'
         ]
       }
     ]
@@ -1261,7 +1261,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus stall chair design untuk berbagai aplikasi komersial. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan stall chair design industrial berkualitas tinggi dengan konstruksi besi hollow yang kuat, finishing powder coating tahan lama, dan desain ergonomis yang nyaman. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk informasi stall chair design dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan stall chair design yang sempurna sesuai konsep bisnis.'
+          'Untuk informasi stall chair design dan konsultasi desain, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan stall chair design yang sempurna sesuai konsep bisnis.'
         ]
       }
     ]
@@ -1308,7 +1308,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah manufacturer industrial furniture besi custom terpercaya di Bekasi sejak 1999. Dengan pengalaman 25+ tahun, kami telah melayani lebih dari 1000 bisnis di seluruh Indonesia.',
           'Kami memproduksi industrial furniture custom untuk cafe, restoran, hotel, kantor, dan berbagai kebutuhan komersial. Setiap produk dibuat dengan teknik pengelasan berkualitas tinggi dan material industrial grade terbaik. <a href="/shop">Lihat koleksi lengkap</a> atau <a href="/contact-us">hubungi kami</a> untuk konsultasi custom.',
-          'Lokasi Workshop: Bekasi, Jawa Barat | Telp/WA: +62 852-1207-8467 | Email: info@mangalaliving.com'
+          'Lokasi Workshop: Bekasi, Jawa Barat | Telp/WA: +62 888-0114-6881 | Email: info@mangalaliving.com'
         ]
       },
       {
@@ -2994,7 +2994,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen <a href="/shop">furniture industrial</a> terpercaya sejak 1999, Mangala Living menawarkan harga workshop langsung yang jauh lebih murah dibanding toko furniture konvensional. Workshop kami di Bekasi memproduksi langsung semua pesanan, sehingga Anda mendapat harga terbaik tanpa margin distributor.',
           'Semua meja cafe kami dilengkapi dengan garansi kualitas dan jamin uma panjang. Finishing powder coating anti karat, frame besi hollow berkualitas, dan kayu solid yang awet. Sudah lebih dari 1000 klien puas dengan produk kami.',
-          'Hubungi kami sekarang di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a> untuk konsultasi dan penawaran harga meja cafe murah.'
+          'Hubungi kami sekarang di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a> untuk konsultasi dan penawaran harga meja cafe murah.'
         ]
       }
     ]
@@ -3040,7 +3040,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Kursi Bar Cafe Murah',
         paragraphs: [
           'Mangala Living adalah produsen furniture industrial terpercaya dengan workshop di Bekasi. Dengan pengalaman 25 tahun dan lebih dari 1000 klien puas, kami menjamin kualitas produk dan pelayanan yang terbaik.',
-          'Kami menawarkan <a href="/shop">kursi bar cafe murah</a> dengan harga terbaik dan kualitas premium. Produk ready stock tersedia untuk pengiriman cepat. Hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau WhatsApp untuk informasi harga dan ketersediaan stock.'
+          'Kami menawarkan <a href="/shop">kursi bar cafe murah</a> dengan harga terbaik dan kualitas premium. Produk ready stock tersedia untuk pengiriman cepat. Hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau WhatsApp untuk informasi harga dan ketersediaan stock.'
         ]
       }
     ]
@@ -3087,7 +3087,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living Sekarang',
         paragraphs: [
           'Tertarik dengan furniture cafe murah Bekasi? Mangala Living siap membantu mewujudkan konsep cafe impian Anda dengan furniture industrial berkualitas tinggi dan harga pabrik yang terjangkau.',
-          'Konsultasikan kebutuhan furniture cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Kami akan memberikan penawaran terbaik sesuai budget Anda.'
+          'Konsultasikan kebutuhan furniture cafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Kami akan memberikan penawaran terbaik sesuai budget Anda.'
         ]
       }
     ]
@@ -3135,7 +3135,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah <a href="/about">produsen furniture industrial</a> terpercaya dengan pengalaman 25 tahun melayani ribuan cafe dan restoran di seluruh Indonesia. Kami memahami kebutuhan furniture cafe yang bukan hanya estetis, tetapi juga fungsional dan durable.',
           'Workshop kami di Bekasi menggunakan teknologi modern dan material berkualitas tinggi. Semua meja makan cafe kami dilengkapi dengan garansi kualitas dan jaminan ketahanan.',
-          'Hubungi kami di <a href="/contact">+62 852-1207-8467</a> untuk konsultasi meja makan cafe industrial minimalis dan penawaran harga terbaik.'
+          'Hubungi kami di <a href="/contact">+62 888-0114-6881</a> untuk konsultasi meja makan cafe industrial minimalis dan penawaran harga terbaik.'
         ]
       }
     ]
@@ -3183,7 +3183,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Display Rack Cafe Murah',
         paragraphs: [
           'Mangala Living menawarkan display rack cafe industrial dengan harga terbaik dan kualitas premium. Workshop kami di Bekasi memproduksi semua display rack dengan material berkualitas tinggi dan finishing yang sempurna.',
-          'Konsultasikan kebutuhan display rack cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan display rack cafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -3233,7 +3233,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen <a href="/shop">furniture outdoor industrial</a> terpercaya dengan pengalaman 25 tahun. Kami memahami kebutuhan furniture outdoor yang tidak hanya estetis, tetapi juga tahan cuaca dan durable untuk penggunaan jangka panjang.',
           'Workshop kami di Bekasi menggunakan teknologi modern dan material berkualitas tinggi. Semua furniture outdoor dilengkapi dengan garansi kualitas.',
-          'Konsultasikan kebutuhan bar set cafe outdoor Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan bar set cafe outdoor Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -3282,7 +3282,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Industrial Murah',
         paragraphs: [
           'Ready untuk memulai project furniture industrial Anda? Mangala Living siap membantu dengan <a href="/shop">furniture industrial harga murah</a> berkualitas tinggi dari workshop Bekasi.',
-          'Hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a> untuk konsultasi gratis dan penawaran harga terbaik.'
+          'Hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a> untuk konsultasi gratis dan penawaran harga terbaik.'
         ]
       }
     ]
@@ -3334,7 +3334,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Mengapa Tambahkan Working Space di Cafe?',
         paragraphs: [
           'Working space di cafe sangat profitable karena:<br><strong>1. Higher Ticket:</strong> Pelanggan yang bekerja cenderung stay lebih lama dan order multiple drinks.<br><strong>2. Customer Loyalty:</strong> Pelanggan akan kembali untuk working space yang nyaman.<br><strong>3. Community Building:</strong> Working space menarik komunitas profesional dan freelancer.<br><strong>4. Differentiate:</strong> Memberikan competitive advantage dibanding cafe tanpa working space.',
-          'Mangala Living siap membantu Anda menciptakan working space yang perfect dengan meja kerja industrial berkualitas tinggi. Hubungi kami di <a href="/contact">+62 852-1207-8467</a> untuk konsultasi gratis.'
+          'Mangala Living siap membantu Anda menciptakan working space yang perfect dengan meja kerja industrial berkualitas tinggi. Hubungi kami di <a href="/contact">+62 888-0114-6881</a> untuk konsultasi gratis.'
         ]
       }
     ]
@@ -3383,7 +3383,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Kitchen Cabinet Cafe Murah',
         paragraphs: [
           'Mangala Living menawarkan kitchen cabinet cafe industrial dengan kualitas premium dan harga terjangkau. Workshop kami di Bekasi memproduksi semua cabinet dengan material berkualitas dan finishing yang sempurna.',
-          'Konsultasikan kebutuhan kitchen cabinet cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai layout dapur dan budget Anda.'
+          'Konsultasikan kebutuhan kitchen cabinet cafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan rekomendasi terbaik sesuai layout dapur dan budget Anda.'
         ]
       }
     ]
@@ -3433,7 +3433,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Mengapa Investasi Outdoor Furniture?',
         paragraphs: [
           '<strong>Increased Capacity:</strong> Area outdoor bisa menambah 30-50% seating capacity.<br><strong>Unique Experience:</strong> Memberikan pengalaman berbeda yang memorable.<br><strong>Higher Ticket:</strong> Customer di outdoor cenderung stay longer dan order more.<br><strong>Instagram Worthy:</strong> Area outdoor yang photogenic akan menarik organic marketing.<br><strong>Seasonal Flexibility:</strong> Bisa optimize according to weather.',
-          'Mangala Living menawarkan outdoor furniture cafe tahan cuaca dengan harga terjangkau. Workshop kami di Bekasi memproduksi semua outdoor furniture dengan kualitas premium dan garansi. Hubungi kami di <a href="/contact">+62 852-1207-8467</a> untuk konsultasi gratis.'
+          'Mangala Living menawarkan outdoor furniture cafe tahan cuaca dengan harga terjangkau. Workshop kami di Bekasi memproduksi semua outdoor furniture dengan kualitas premium dan garansi. Hubungi kami di <a href="/contact">+62 888-0114-6881</a> untuk konsultasi gratis.'
         ]
       }
     ]
@@ -3497,7 +3497,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya sejak 1999, <a href="/about">Mangala Living</a> telah melayani lebih dari 1000 klien di seluruh Indonesia. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan meja kafe industrial berkualitas tinggi dengan material besi hollow berkualitas, kayu solid yang awet, dan finishing powder coating yang tahan lama. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain meja kafe industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>.'
+          'Untuk konsultasi desain meja kafe industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>.'
         ]
       }
     ]
@@ -3568,7 +3568,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Meja Kafe Bulat Industrial',
         paragraphs: [
           'Mangala Living memproduksi meja kafe bulat industrial berkualitas tinggi dengan custom design sesuai kebutuhan cafe Anda. Workshop kami di Bekasi dilengkapi dengan peralatan modern untuk menghasilkan furniture yang presisi dan tahan lama.',
-          'Konsultasikan kebutuhan meja kafe bulat industrial Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep dan budget cafe Anda.'
+          'Konsultasikan kebutuhan meja kafe bulat industrial Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep dan budget cafe Anda.'
         ]
       }
     ]
@@ -3641,7 +3641,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Set Meja Kursi Kafe Industrial',
         paragraphs: [
           'Mangala Living menawarkan berbagai pilihan set meja kursi kafe industrial berkualitas tinggi dengan harga kompetitif. Workshop kami di Bekasi memproduksi semua furniture dengan standar kualitas internasional.',
-          'Konsultasikan kebutuhan set furniture cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
+          'Konsultasikan kebutuhan set furniture cafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
         ]
       }
     ]
@@ -3714,7 +3714,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Kursi Meja Kafe Industrial',
         paragraphs: [
           'Mangala Living memproduksi berbagai model kursi meja kafe industrial berkualitas tinggi dengan desain modern dan fungsional. Workshop kami di Bekasi dilengkapi dengan peralatan modern untuk menghasilkan furniture yang presisi dan tahan lama.',
-          'Konsultasikan kebutuhan kursi meja kafe industrial Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
+          'Konsultasikan kebutuhan kursi meja kafe industrial Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
         ]
       }
     ]
@@ -3798,7 +3798,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Custom Meja Kafe Murah',
         paragraphs: [
           'Mangala Living menawarkan layanan custom meja kafe dengan harga terjangkau dan kualitas premium. Workshop kami di Bekasi memproduksi furniture custom dengan standar internasional dan garansi kualitas.',
-          'Konsultasikan kebutuhan custom meja kafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan penawaran terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan custom meja kafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan penawaran terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -3871,7 +3871,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Kafe Murah',
         paragraphs: [
           'Mangala Living menawarkan furniture kafe murah tapi bagus dengan kualitas premium dan harga terjangkau. Workshop kami di Bekasi memproduksi furniture dengan standar kualitas internasional dan harga pabrik.',
-          'Konsultasikan kebutuhan furniture kafe murah Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan furniture kafe murah Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -3957,7 +3957,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Konsultasi Furniture Kafe Industrial',
         paragraphs: [
           'Mangala Living menyediakan layanan konsultasi lengkap untuk pemilihan furniture kafe industrial yang tepat. Tim desain kami akan membantu Anda memilih furniture yang sesuai dengan konsep, budget, dan kebutuhan cafe Anda.',
-          'Konsultasikan kebutuhan furniture kafe industrial Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
+          'Konsultasikan kebutuhan furniture kafe industrial Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
         ]
       }
     ]
@@ -4030,7 +4030,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Solusi Budget Terbatas',
         paragraphs: [
           'Mangala Living memahami tantangan budget terbatas dalam memulai bisnis cafe. Kami menawarkan solusi furniture kafe murah dengan kualitas premium dan harga terjangkau.',
-          'Konsultasikan kebutuhan furniture kafe dengan budget terbatas Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan solusi terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan furniture kafe dengan budget terbatas Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan solusi terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -4105,7 +4105,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Konsultasi Furnitur Kafe',
         paragraphs: [
           'Mangala Living menyediakan layanan konsultasi lengkap untuk pemilihan furnitur kafe yang tepat. Tim desain kami akan membantu Anda memilih furniture yang sesuai dengan konsep, budget, dan kebutuhan cafe Anda.',
-          'Konsultasikan kebutuhan furnitur kafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
+          'Konsultasikan kebutuhan furnitur kafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
         ]
       }
     ]
@@ -4178,7 +4178,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Kafe 2 Lantai',
         paragraphs: [
           'Mangala Living menyediakan layanan desain dan produksi furniture kafe 2 lantai dengan konsep sederhana modern. Tim desain kami akan membantu Anda menciptakan cafe yang fungsional dan menarik.',
-          'Konsultasikan kebutuhan furniture kafe 2 lantai Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan inspirasi desain dan solusi terbaik untuk cafe Anda.'
+          'Konsultasikan kebutuhan furniture kafe 2 lantai Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan inspirasi desain dan solusi terbaik untuk cafe Anda.'
         ]
       }
     ]
@@ -4262,7 +4262,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Cafe Tren Terbaru',
         paragraphs: [
           'Mangala Living terus mengikuti perkembangan tren furniture cafe terbaru dan mengintegrasikannya dalam produk kami. Kami menawarkan furniture cafe dengan desain modern dan teknologi terkini.',
-          'Konsultasikan kebutuhan furniture cafe tren terbaru Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan solusi terbaru dan inovatif untuk cafe Anda.'
+          'Konsultasikan kebutuhan furniture cafe tren terbaru Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan solusi terbaru dan inovatif untuk cafe Anda.'
         ]
       }
     ]
@@ -4335,7 +4335,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Cafe Literasi',
         paragraphs: [
           'Mangala Living menyediakan furniture khusus untuk cafe literasi dengan desain yang fungsional dan nyaman. Tim desain kami akan membantu Anda menciptakan ruang literasi yang ideal untuk pelanggan.',
-          'Konsultasikan kebutuhan furniture cafe literasi Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan solusi terbaik untuk konsep cafe literasi modern Anda.'
+          'Konsultasikan kebutuhan furniture cafe literasi Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan solusi terbaik untuk konsep cafe literasi modern Anda.'
         ]
       }
     ]
@@ -4408,7 +4408,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Industrial Vintage',
         paragraphs: [
           'Mangala Living menyediakan furniture industrial vintage berkualitas tinggi dengan desain yang autentik dan berkarakter. Workshop kami di Bekasi memproduksi furniture dengan finishing distressed dan material reclaimed.',
-          'Konsultasikan kebutuhan furniture industrial vintage Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk cafe bergaya industrial vintage Anda.'
+          'Konsultasikan kebutuhan furniture industrial vintage Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk cafe bergaya industrial vintage Anda.'
         ]
       }
     ]
@@ -4481,7 +4481,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Unik',
         paragraphs: [
           'Mangala Living menyediakan layanan desain dan produksi furniture unik untuk cafe dengan konsep kreatif dan out-of-the-box. Tim desain kami akan membantu Anda menciptakan furniture yang memorable dan viral.',
-          'Konsultasikan kebutuhan furniture unik untuk cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan inspirasi kreatif dan solusi terbaik untuk cafe yang unik dan menarik.'
+          'Konsultasikan kebutuhan furniture unik untuk cafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan inspirasi kreatif dan solusi terbaik untuk cafe yang unik dan menarik.'
         ]
       }
     ]
@@ -4556,7 +4556,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Konsultasi Budget Furniture',
         paragraphs: [
           'Mangala Living menyediakan layanan konsultasi lengkap untuk perhitungan budget dan layout furniture kafe. Tim desain kami akan membantu Anda merencanakan investasi furniture yang optimal dan efisien.',
-          'Konsultasikan kebutuhan perhitungan furniture kafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk budget dan layout cafe Anda.'
+          'Konsultasikan kebutuhan perhitungan furniture kafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk budget dan layout cafe Anda.'
         ]
       }
     ]
@@ -4639,7 +4639,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           'Kami memahami bahwa proses custom furniture bisa terasa kompleks bagi klien pertama kali. Oleh karena itu, kami telah menyusun alur kerja yang jelas dan transparan:'
         ],
         list: [
-          '<strong>Step 1 - Initial Consultation (Gratis):</strong> Hubungi kami via WhatsApp +62-852-1207-8467 atau email. Ceritakan kebutuhan, budget, dan timeline Anda. Tim kami akan memberikan initial advice dan rough estimate.',
+          '<strong>Step 1 - Initial Consultation (Gratis):</strong> Hubungi kami via WhatsApp +62-888-0114-6881 atau email. Ceritakan kebutuhan, budget, dan timeline Anda. Tim kami akan memberikan initial advice dan rough estimate.',
           '<strong>Step 2 - Site Survey (Optional, Gratis untuk Jabodetabek):</strong> Untuk project besar, kami dapat melakukan survey lokasi untuk mengukur ruangan dan memahami kondisi existing.',
           '<strong>Step 3 - Design & Quotation (3-5 hari kerja):</strong> Kami membuat design mockup 3D dan detailed quotation. Revisi design gratis hingga Anda puas.',
           '<strong>Step 4 - Down Payment (30%):</strong> Setelah design approved, lakukan DP 30% untuk memulai produksi. Kami memberikan invoice resmi dan contract agreement.',
@@ -4679,7 +4679,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living Sekarang - Free Konsultasi!',
         paragraphs: [
           'Siap untuk mewujudkan furniture industrial impian Anda? Tim Mangala Living siap membantu dari konsultasi hingga instalasi. Dapatkan <strong>free design consultation</strong> dan <strong>special discount untuk order pertama</strong>!',
-          '&bull; <strong>WhatsApp:</strong> <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop:</strong> Jl. Raya Setu Cikarang Bar., Bekasi 17320<br/>&bull; <strong>Jam Operasional:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
+          '&bull; <strong>WhatsApp:</strong> <a href="https://wa.me/6288801146881">+62-888-0114-6881</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop:</strong> Jl. Raya Setu Cikarang Bar., Bekasi 17320<br/>&bull; <strong>Jam Operasional:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
           'Kunjungi showroom kami untuk melihat langsung sample furniture dan diskusikan project Anda dengan tim desain. <strong>Workshop visit by appointment</strong> - hubungi kami untuk jadwalkan kunjungan Anda!'
         ]
       }
@@ -4858,7 +4858,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Quote & Konsultasi Gratis',
         paragraphs: [
           'Ready untuk upgrade furniture bisnis Anda dengan industrial furniture berkualitas premium dengan harga pabrik? Tim Mangala Living siap membantu dari konsultasi hingga after-sales support.',
-          '&bull; <strong>WhatsApp (Fast Response):</strong> <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop Address:</strong> Jl. Raya Setu Cikarang Bar., Bekasi 17320<br/>&bull; <strong>Business Hours:</strong> Mon-Fri 08:00-17:00, Sat 08:00-15:00',
+          '&bull; <strong>WhatsApp (Fast Response):</strong> <a href="https://wa.me/6288801146881">+62-888-0114-6881</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop Address:</strong> Jl. Raya Setu Cikarang Bar., Bekasi 17320<br/>&bull; <strong>Business Hours:</strong> Mon-Fri 08:00-17:00, Sat 08:00-15:00',
           '<strong>Special Promo:</strong> Untuk order pertama, dapatkan discount 10% + free delivery untuk wilayah Jabodetabek (min. order Rp 10 juta). Quote mention: "PROMO2025".',
           'Visit workshop kami untuk lihat sample furniture dan diskusi langsung dengan tim produksi. <strong>Appointment required</strong> - contact kami untuk schedule kunjungan!'
         ]
@@ -4930,7 +4930,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai workshop furniture industrial terpercaya di Bekasi sejak 1999, <strong>Mangala Living</strong> telah melayani puluhan tenant di Summarecon Bekasi dan mall-mall premium lainnya di Jabodetabek. Workshop kami di Setu, Bekasi hanya 15 menit dari Summarecon Bekasi, memudahkan komunikasi dan koordinasi.',
           '<strong>Keunggulan Mangala Living:</strong><br/>&bull; Berpengalaman dengan standar dan requirement mall premium.<br/>&bull; Material berkualitas tinggi dengan garansi 1 tahun untuk struktur dan finishing.<br/>&bull; Custom design sesuai konsep brand Anda dengan 3D mockup visualization.<br/>&bull; After-sales service dengan response time maksimal 24 jam untuk area Bekasi.<br/>&bull; Harga pabrik langsung tanpa markup reseller (hemat 30-40% vs furniture store).<br/>&bull; Free delivery dan installation untuk area Summarecon Bekasi.',
-          '<strong>Hubungi Kami untuk Konsultasi & Quote:</strong><br/>&bull; WhatsApp: <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>&bull; Email: <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; Workshop: Jl. Raya Setu Cikarang Bar., Bekasi (15 menit dari Summarecon Bekasi)',
+          '<strong>Hubungi Kami untuk Konsultasi & Quote:</strong><br/>&bull; WhatsApp: <a href="https://wa.me/6288801146881">+62-888-0114-6881</a><br/>&bull; Email: <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; Workshop: Jl. Raya Setu Cikarang Bar., Bekasi (15 menit dari Summarecon Bekasi)',
           '<strong>Special Offer untuk Tenant Summarecon:</strong> Discount 10% untuk first order + free design consultation + free delivery & installation. Quote mention: "SUMMARECON2025". <em>Promo berlaku hingga Desember 2025.</em>'
         ]
       }
@@ -5009,7 +5009,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living - Workshop Terdekat dari Harapan Indah',
         paragraphs: [
           'Mangala Living adalah workshop furniture industrial terdekat dan terpercaya untuk area Harapan Indah. Dengan pengalaman 25+ tahun dan 1000+ klien satisfied di seluruh Indonesia, kami siap membantu mewujudkan furniture impian Anda.',
-          '&bull; <strong>WhatsApp (Fast Response):</strong> <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop:</strong> Jl. Raya Setu Cikarang Bar., Bekasi (20 menit dari Harapan Indah)<br/>&bull; <strong>Visit Hours:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00 (by appointment)',
+          '&bull; <strong>WhatsApp (Fast Response):</strong> <a href="https://wa.me/6288801146881">+62-888-0114-6881</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop:</strong> Jl. Raya Setu Cikarang Bar., Bekasi (20 menit dari Harapan Indah)<br/>&bull; <strong>Visit Hours:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00 (by appointment)',
           '<strong>Promo Harapan Indah Resident:</strong> Discount 15% untuk resident Harapan Indah + free consultation + free delivery & installation. Tunjukkan KTP atau bukti domisili Harapan Indah untuk claim promo. <em>Limited offer!</em>'
         ]
       }
@@ -5092,7 +5092,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Kami untuk Quote & Konsultasi Furniture Lippo Cikarang',
         paragraphs: [
           'Ready untuk setup cafe atau restaurant di Lippo Cikarang dengan furniture industrial berkualitas premium dengan harga factory direct? Tim Mangala Living siap support dari design hingga installation.',
-          '&bull; <strong>Contact (Fast Response):</strong> <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop Address:</strong> Jl. Raya Setu Cikarang Bar., Bekasi (25 menit dari Lippo Cikarang)<br/>&bull; <strong>Showroom Hours:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
+          '&bull; <strong>Contact (Fast Response):</strong> <a href="https://wa.me/6288801146881">+62-888-0114-6881</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop Address:</strong> Jl. Raya Setu Cikarang Bar., Bekasi (25 menit dari Lippo Cikarang)<br/>&bull; <strong>Showroom Hours:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
           '<strong>Special Offer Lippo Cikarang Area:</strong> <em>Discount 12%</em> untuk first order + <em>free delivery & installation</em> untuk area Lippo Cikarang (Lippo Mall, Lippo Village, Orange County) + <em>free design consultation with 3D mockup</em>. Minimum order Rp 10 juta. Quote mention: "LIPPO2025".',
           '<strong>Workshop Visit Welcome!</strong> Kami encourage client untuk visit workshop before order. Lihat sample furniture, material library, production facility, dan meet the team. <strong>Appointment via WhatsApp required</strong> untuk ensure kami bisa allocate time untuk proper consultation.'
         ]
@@ -5219,7 +5219,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<ul><li>Create first impression yang strong (people judge cafe dalam 3 detik pertama mereka masuk)</li><li>Enhance customer experience dan increase dwell time</li><li>Reduce maintenance cost dan operational hassle</li><li>Differentiate Anda dari kompetitor</li><li>Generate organic marketing via Instagram posts dari customer</li></ul>',
           'Investasi di quality furniture adalah investasi untuk long-term success cafe Anda. Jangan compromise on this.',
           'Jika Anda lagi planning buka cafe di <strong>Jakarta</strong>, <strong>Bandung</strong>, <strong>Bekasi</strong>, <strong>Cikarang</strong>, atau area Jabodetabek lainnya dan butuh partner untuk furniture industrial berkualitas, saya personally recommend Anda untuk at least consult dengan <strong>Mangala Living</strong>. Workshop mereka accessible (di Setu, Bekasi), team responsive, dan track record proven.',
-          '<strong>Contact Mangala Living:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; <strong>Workshop:</strong> Jl. Raya Setu, Bekasi (Dekat pintu tol Cikarang Barat)<br/>&bull; <strong>Jam Operasional:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
+          '<strong>Contact Mangala Living:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; <strong>Workshop:</strong> Jl. Raya Setu, Bekasi (Dekat pintu tol Cikarang Barat)<br/>&bull; <strong>Jam Operasional:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
           '<em>Tip: Mention kode "CAFE2025" saat inquiry untuk free design consultation dan 3D mockup!</em>',
           'Semoga artikel ini helpful untuk Anda yang lagi dalam journey membuka atau renovate cafe. Jika ada pertanyaan atau mau discuss lebih detail tentang space planning dan furniture selection, feel free to reach out!',
           '&mdash; <strong>Helmi Ramdan</strong><br/><em>Associate, Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta<br/>Pengalaman 10+ Tahun dalam Arsitektur, Desain Interior, dan Project Commercial Space<br/>LinkedIn: https://www.linkedin.com/in/helmi-ramdan-067912118/</em>'
@@ -5279,7 +5279,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Jakarta dan Bekasi.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE137" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE137" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5347,7 +5347,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di area outdoor dengan cuaca ekstrem.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE138" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE138" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5415,7 +5415,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di area residential dan perumahan.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE139" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE139" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5483,7 +5483,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di semua area dengan konsep unik.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE140" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE140" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5551,7 +5551,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di BSD City dan Serpong.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE141" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE141" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5619,7 +5619,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Sentul dan Bogor area.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE142" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE142" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5687,7 +5687,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Margonda, UI, area kampus.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE143" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE143" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5755,7 +5755,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Kemang, SCBD, Senopati.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE144" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE144" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5823,7 +5823,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Dago, Riau, Progo Bandung.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE145" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE145" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5891,7 +5891,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Canggu, Seminyak, Ubud.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE146" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE146" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5959,7 +5959,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Galaxy Mall, Pakuwon.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE147" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE147" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6027,7 +6027,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Prawirotaman, Malioboro, Kaliurang.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE148" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE148" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6095,7 +6095,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Malang dan Batu.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE149" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE149" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6163,7 +6163,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Bogor dan Puncak.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE150" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE150" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6231,7 +6231,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Medan, Sumatera Utara.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE151" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE151" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6299,7 +6299,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Semarang, Jawa Tengah.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE152" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE152" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6367,7 +6367,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Makassar, Sulawesi Selatan.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE153" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE153" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6435,7 +6435,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di area residential lokal.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE154" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE154" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6503,7 +6503,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di semua cafe dengan fokus F&B.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE155" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE155" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6571,7 +6571,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di urban area dengan brand positioning premium.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE156" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE156" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -6631,7 +6631,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah jasa furniture industrial minimalis murah berkualitas dengan workshop langsung di Bekasi. Sejak 1999, kami telah melayani lebih dari 1000 klien di seluruh Indonesia dengan produk furniture minimalis modern yang murah namun berkualitas.',
           'Kelebihan jasa kami: Workshop langsung di Bekasi berarti harga pabrik tanpa markup distributor. Material berkualitas premium dengan kontrol kualitas ketat. Custom design minimalis modern sesuai konsep cafe atau resto Anda. Tim berpengalaman 25 tahun yang memahami kebutuhan bisnis F&B.',
-          'Untuk konsultasi jasa furniture industrial minimalis murah berkualitas, hubungi kami di <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi. Tim kami siap membantu Anda mendapatkan furniture minimalis modern berkualitas dengan harga terjangkau.'
+          'Untuk konsultasi jasa furniture industrial minimalis murah berkualitas, hubungi kami di <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi. Tim kami siap membantu Anda mendapatkan furniture minimalis modern berkualitas dengan harga terjangkau.'
         ]
       }
     ]
@@ -6673,7 +6673,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living jual meja cafe modern minimalis murah berkualitas untuk area Jakarta dan Bekasi. Sejak 1999, kami telah menjadi supplier meja cafe terpercaya dengan pengalaman 25 tahun dan 1000+ klien puas.',
           'Kelebihan meja cafe yang kami jual: Harga murah langsung dari workshop Bekasi. Kualitas premium dengan material berkualitas terbaik. Desain modern minimalis yang instagram-worthy. Custom size sesuai kebutuhan cafe Anda. Finishing powder coating tahan lama dan mudah perawatan.',
-          'Untuk melihat koleksi meja cafe modern minimalis murah berkualitas atau konsultasi custom design, kunjungi <a href="/shop">showroom kami</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a>. Tim sales kami siap membantu Anda memilih meja cafe modern minimalis yang tepat untuk bisnis cafe Anda.'
+          'Untuk melihat koleksi meja cafe modern minimalis murah berkualitas atau konsultasi custom design, kunjungi <a href="/shop">showroom kami</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a>. Tim sales kami siap membantu Anda memilih meja cafe modern minimalis yang tepat untuk bisnis cafe Anda.'
         ]
       }
     ]
@@ -6715,7 +6715,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen kursi resto modern minimalis murah berkualitas dengan harga terbaik di pasar. Sejak 1999, kami telah memproduksi ribuan kursi resto untuk berbagai resto di seluruh Indonesia.',
           'Mengapa harga kursi resto kami terbaik: Workshop langsung di Bekasi = harga pabrik tanpa markup. Material berkualitas premium namun dengan efisiensi produksi yang optimal. Volume production yang besar = harga lebih murah per unit. Tidak ada perantara = harga langsung dari produsen.',
-          'Untuk informasi harga kursi resto modern minimalis murah berkualitas atau custom design, hubungi kami di <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi kursi resto</a> kami. Tim sales kami siap memberikan penawaran harga terbaik untuk kebutuhan kursi resto Anda.'
+          'Untuk informasi harga kursi resto modern minimalis murah berkualitas atau custom design, hubungi kami di <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi kursi resto</a> kami. Tim sales kami siap memberikan penawaran harga terbaik untuk kebutuhan kursi resto Anda.'
         ]
       }
     ]
@@ -6748,7 +6748,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living menawarkan jasa custom furniture cafe minimalis modern murah berkualitas. Workshop langsung di Bekasi, custom design sesuai konsep cafe Anda, dengan harga terjangkau namun kualitas premium.',
           'Kelebihan jasa custom kami: Desain minimalis modern sesuai konsep cafe Anda. Ukuran custom sesuai space cafe. Material berkualitas premium dengan harga terjangkau. Tim berpengalaman 25 tahun yang memahami kebutuhan cafe.',
-          'Untuk konsultasi jasa custom furniture cafe minimalis modern murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+          'Untuk konsultasi jasa custom furniture cafe minimalis modern murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
         ]
       }
     ]
@@ -6779,7 +6779,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen meja resto industrial modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Sejak 1999, kami telah memproduksi ribuan meja resto untuk berbagai resto di seluruh Indonesia.',
           'Material berkualitas premium: besi hollow galvanis grade A, top table kayu solid atau engineered wood berkualitas, finishing powder coating outdoor-grade. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk informasi meja resto industrial modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi meja resto</a> kami.'
+          'Untuk informasi meja resto industrial modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi meja resto</a> kami.'
         ]
       }
     ]
@@ -6811,7 +6811,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah jasa bikin furniture cafe custom minimalis murah Bekasi dengan workshop langsung. Pengalaman 25 tahun, 1000+ klien puas, dengan harga terjangkau namun kualitas premium.',
           'Proses jasa bikin furniture cafe custom: Konsultasi konsep cafe &rarr; Design proposal &rarr; Approval & quotation &rarr; Produksi di workshop Bekasi &rarr; Quality control &rarr; Delivery & instalasi.',
-          'Untuk konsultasi jasa bikin furniture cafe custom minimalis murah Bekasi, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+          'Untuk konsultasi jasa bikin furniture cafe custom minimalis murah Bekasi, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
         ]
       }
     ]
@@ -6843,7 +6843,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living jual furniture resto modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
           'Mengapa furniture resto yang kami jual lebih murah: Workshop langsung = harga pabrik tanpa markup. Material berkualitas namun dengan efisiensi produksi optimal. Volume production besar = harga lebih murah per unit.',
-          'Untuk melihat koleksi furniture resto modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+          'Untuk melihat koleksi furniture resto modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
         ]
       }
     ]
@@ -6875,7 +6875,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen display rack cafe modern minimalis murah dengan kualitas industrial premium. Workshop Bekasi, material besi berkualitas, dengan harga terjangkau.',
           'Material display rack: besi hollow galvanis grade A untuk frame kuat, finishing powder coating tahan lama, desain modern minimalis yang timeless. Harga murah langsung dari workshop tanpa markup.',
-          'Untuk informasi display rack cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi display rack</a> kami.'
+          'Untuk informasi display rack cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi display rack</a> kami.'
         ]
       }
     ]
@@ -6907,7 +6907,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living menawarkan jasa custom bar set cafe modern minimalis murah berkualitas. Workshop Bekasi, custom design sesuai konsep cafe, dengan harga terjangkau namun kualitas premium.',
           'Kelebihan jasa custom bar set: Desain modern minimalis sesuai konsep cafe. Ukuran custom sesuai space bar area. Material berkualitas premium dengan harga terjangkau. Tim ahli berpengalaman 25 tahun.',
-          'Untuk konsultasi jasa custom bar set cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+          'Untuk konsultasi jasa custom bar set cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
         ]
       }
     ]
@@ -6939,7 +6939,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen kitchen cabinet resto modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, custom design, dengan harga terjangkau.',
           'Material kitchen cabinet: frame besi hollow galvanis grade A, finishing powder coating tahan lama, storage solution fungsional. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk informasi kitchen cabinet resto modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi kitchen cabinet</a> kami.'
+          'Untuk informasi kitchen cabinet resto modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi kitchen cabinet</a> kami.'
         ]
       }
     ]
@@ -6971,7 +6971,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living jual furniture industrial modern minimalis murah berkualitas untuk area Jakarta dan Bekasi. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
           'Mengapa furniture industrial yang kami jual lebih murah: Workshop langsung = harga pabrik tanpa markup. Material berkualitas dengan efisiensi produksi optimal. Volume production besar = harga lebih murah per unit. Delivery gratis untuk area Jakarta dan Bekasi.',
-          'Untuk melihat koleksi furniture industrial modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+          'Untuk melihat koleksi furniture industrial modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
         ]
       }
     ]
@@ -7003,7 +7003,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living menawarkan set meja kursi cafe modern minimalis murah berkualitas dengan paket lengkap. Workshop Bekasi, material berkualitas premium, dengan harga terjangkau untuk paket lengkap.',
           'Kelebihan set meja kursi cafe kami: Harga special untuk paket lengkap. Material berkualitas premium dengan finishing tahan lama. Desain modern minimalis yang match dan instagram-worthy. Custom jumlah sesuai kebutuhan cafe Anda.',
-          'Untuk informasi set meja kursi cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi dining set</a> kami.'
+          'Untuk informasi set meja kursi cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi dining set</a> kami.'
         ]
       }
     ]
@@ -7034,7 +7034,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Jasa Furniture Resto Custom Bekasi - Workshop Langsung',
         paragraphs: [
           'Mangala Living adalah jasa furniture resto custom modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Pengalaman 25 tahun, 1000+ klien puas, dengan harga terjangkau namun kualitas premium.',
-          'Untuk konsultasi jasa furniture resto custom modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+          'Untuk konsultasi jasa furniture resto custom modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
         ]
       }
     ]
@@ -7066,7 +7066,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen outdoor furniture cafe modern minimalis murah berkualitas dengan material tahan cuaca. Workshop Bekasi, finishing powder coating outdoor-grade, dengan harga terjangkau.',
           'Material outdoor furniture: besi hollow galvanis grade A, finishing powder coating outdoor-grade tahan hujan dan panas, desain modern minimalis yang timeless. Harga murah langsung dari workshop tanpa markup.',
-          'Untuk informasi outdoor furniture cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi outdoor furniture</a> kami.'
+          'Untuk informasi outdoor furniture cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi outdoor furniture</a> kami.'
         ]
       }
     ]
@@ -7098,7 +7098,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living jual rak display resto modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
           'Material rak display: besi hollow galvanis grade A untuk frame kuat, finishing powder coating tahan lama, desain modern minimalis yang timeless. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk melihat koleksi rak display resto modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+          'Untuk melihat koleksi rak display resto modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
         ]
       }
     ]
@@ -7130,7 +7130,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen meja kerja cafe modern minimalis murah berkualitas dengan design multifungsi. Workshop Bekasi, material besi berkualitas, dengan harga terjangkau.',
           'Material meja kerja: frame besi hollow galvanis grade A, top table kayu solid atau engineered wood berkualitas, finishing powder coating tahan lama. Harga murah langsung dari workshop tanpa markup.',
-          'Untuk informasi meja kerja cafe modern minimalis murah berkualitas multifungsi, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi meja kerja</a> kami.'
+          'Untuk informasi meja kerja cafe modern minimalis murah berkualitas multifungsi, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi meja kerja</a> kami.'
         ]
       }
     ]
@@ -7162,7 +7162,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah jasa buat furniture cafe custom modern minimalis murah Bekasi dengan workshop langsung. Pengalaman 25 tahun, 1000+ klien puas, dengan harga terjangkau namun kualitas premium.',
           'Proses jasa buat furniture cafe custom: Konsultasi konsep cafe &rarr; Design proposal &rarr; Approval & quotation &rarr; Produksi di workshop Bekasi &rarr; Quality control &rarr; Delivery & instalasi.',
-          'Untuk konsultasi jasa buat furniture cafe custom modern minimalis murah Bekasi, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+          'Untuk konsultasi jasa buat furniture cafe custom modern minimalis murah Bekasi, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
         ]
       }
     ]
@@ -7194,7 +7194,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living jual kursi bar cafe modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
           'Material kursi bar: frame besi hollow galvanis grade A, seat material berkualitas (kayu solid atau engineered wood), finishing powder coating tahan gores. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk melihat koleksi kursi bar cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+          'Untuk melihat koleksi kursi bar cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
         ]
       }
     ]
@@ -7226,7 +7226,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen furniture kantin industrial modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, custom design untuk volume order, dengan harga terjangkau.',
           'Kelebihan furniture kantin kami: Harga volume discount untuk order besar. Material berkualitas premium dengan konstruksi kuat untuk penggunaan intensif. Desain modern minimalis yang estetis. Custom size sesuai kebutuhan kantin.',
-          'Untuk informasi furniture kantin industrial modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi furniture kantin</a> kami.'
+          'Untuk informasi furniture kantin industrial modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi furniture kantin</a> kami.'
         ]
       }
     ]
@@ -7258,7 +7258,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living menawarkan set meja makan resto modern minimalis murah berkualitas dengan paket lengkap. Workshop Bekasi, material berkualitas premium, dengan harga terjangkau untuk paket lengkap.',
           'Kelebihan set meja makan resto kami: Harga special untuk paket lengkap. Material berkualitas premium dengan finishing tahan lama. Desain modern minimalis yang match dan instagram-worthy. Custom jumlah sesuai kebutuhan resto Anda.',
-          'Untuk informasi set meja makan resto modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi dining set</a> kami.'
+          'Untuk informasi set meja makan resto modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi dining set</a> kami.'
         ]
       }
     ]
@@ -7290,7 +7290,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah jasa furniture hotel custom modern minimalis murah berkualitas premium dengan workshop langsung di Bekasi. Pengalaman 25 tahun, project hotel experience, dengan harga terjangkau namun kualitas premium.',
           'Kelebihan jasa furniture hotel custom kami: Custom design eksklusif sesuai konsep hotel. Material berkualitas premium dengan finishing tahan lama. Tim berpengalaman project hotel. Harga kompetitif untuk volume project hotel.',
-          'Untuk konsultasi jasa furniture hotel custom modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+          'Untuk konsultasi jasa furniture hotel custom modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
         ]
       }
     ]
@@ -7322,7 +7322,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living jual rak buku cafe modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
           'Material rak buku: besi hollow galvanis grade A untuk frame kuat, finishing powder coating tahan lama, desain modern minimalis yang timeless dan fungsional. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk melihat koleksi rak buku cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+          'Untuk melihat koleksi rak buku cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
         ]
       }
     ]
@@ -7354,7 +7354,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen daybed cafe modern minimalis murah berkualitas untuk lounge area. Workshop Bekasi, material besi berkualitas, dengan harga terjangkau.',
           'Material daybed: frame besi hollow galvanis grade A, cushion material berkualitas, finishing powder coating tahan lama, desain modern minimalis yang nyaman dan estetis. Harga murah langsung dari workshop tanpa markup.',
-          'Untuk informasi daybed cafe modern minimalis murah berkualitas untuk lounge area, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi daybed</a> kami.'
+          'Untuk informasi daybed cafe modern minimalis murah berkualitas untuk lounge area, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi daybed</a> kami.'
         ]
       }
     ]
@@ -7386,7 +7386,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah jasa furniture kantor industrial modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, custom design, dengan harga terjangkau.',
           'Kelebihan jasa furniture kantor kami: Custom design sesuai kebutuhan kantor. Material berkualitas premium dengan konstruksi kuat. Desain modern minimalis yang fungsional. Harga terjangkau untuk volume order kantor.',
-          'Untuk konsultasi jasa furniture kantor industrial modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+          'Untuk konsultasi jasa furniture kantor industrial modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
         ]
       }
     ]
@@ -7418,7 +7418,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living jual sofa bench cafe modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
           'Material sofa bench: frame besi hollow galvanis grade A, cushion material berkualitas, finishing powder coating tahan lama, desain modern minimalis yang nyaman dan estetis. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk melihat koleksi sofa bench cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+          'Untuk melihat koleksi sofa bench cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
         ]
       }
     ]
@@ -7450,7 +7450,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen meja coffee cafe modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, desain modern minimalis, dengan harga terjangkau.',
           'Material meja coffee: frame besi hollow galvanis grade A, top table kayu solid atau engineered wood berkualitas, finishing powder coating tahan lama. Harga murah langsung dari workshop tanpa markup.',
-          'Untuk informasi meja coffee cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi coffee table</a> kami.'
+          'Untuk informasi meja coffee cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi coffee table</a> kami.'
         ]
       }
     ]
@@ -7482,7 +7482,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah jasa furniture cafe custom minimalis modern murah berkualitas untuk area Bekasi dan Jakarta dengan workshop langsung di Bekasi. Pengalaman 25 tahun, 1000+ klien puas, dengan harga terjangkau namun kualitas premium.',
           'Kelebihan jasa furniture cafe custom untuk Bekasi Jakarta: Workshop langsung = harga pabrik tanpa markup. Custom design minimalis modern sesuai konsep cafe. Material berkualitas premium dengan harga terjangkau. Delivery gratis untuk area Bekasi dan Jakarta.',
-          'Untuk konsultasi jasa furniture cafe custom minimalis modern murah Bekasi Jakarta, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+          'Untuk konsultasi jasa furniture cafe custom minimalis modern murah Bekasi Jakarta, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
         ]
       }
     ]
@@ -7514,7 +7514,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen furniture mall cafe resto modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, custom design untuk mall, dengan harga terjangkau untuk volume order.',
           'Kelebihan furniture mall kami: Volume discount untuk tenant mall dan foodcourt. Material berkualitas premium dengan konstruksi kuat untuk penggunaan intensif. Desain modern minimalis yang sesuai requirement mall. Custom design sesuai konsep mall dengan harga kompetitif.',
-          'Untuk informasi furniture mall cafe resto modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi <a href="/shop">koleksi furniture mall</a> kami.'
+          'Untuk informasi furniture mall cafe resto modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi furniture mall</a> kami.'
         ]
       }
     ]
@@ -7546,7 +7546,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living jual rak gantung cafe modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
           'Material rak gantung: besi hollow galvanis grade A untuk frame kuat, finishing powder coating tahan lama, wall mounting system berkualitas, desain modern minimalis yang timeless dan fungsional. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk melihat koleksi rak gantung cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 852-1207-8467</a> untuk konsultasi.'
+          'Untuk melihat koleksi rak gantung cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
         ]
       }
     ]
@@ -7578,7 +7578,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah jasa furniture besi custom modern minimalis murah berkualitas untuk seluruh area Jabodetabek dengan workshop langsung di Bekasi. Pengalaman 25 tahun, 1000+ klien puas di Jabodetabek, dengan harga terjangkau namun kualitas premium.',
           'Kelebihan jasa furniture besi custom untuk Jabodetabek: Workshop langsung di Bekasi = harga pabrik tanpa markup. Custom design modern minimalis sesuai kebutuhan. Material besi berkualitas premium dengan finishing tahan lama. Coverage area luas untuk seluruh Jabodetabek dengan delivery tersedia.',
-          'Untuk konsultasi jasa furniture besi custom modern minimalis murah Jabodetabek, hubungi <a href="/contact-us">+62 852-1207-8467</a> atau kunjungi workshop kami di Bekasi.'
+          'Untuk konsultasi jasa furniture besi custom modern minimalis murah Jabodetabek, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
         ]
       }
     ]
@@ -7648,7 +7648,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Why Choose Mangala Living for Export?',
         paragraphs: [
           '25 years manufacturing experience since 1999. Export to 15+ countries including USA, Australia, Singapore, Malaysia, UAE. 10,000+ sqm production facility in Bekasi with in-house powder coating line. Dedicated export team with fluent English communication. Transparent pricing with no hidden costs. Quality guarantee and professional packing to ensure goods arrive in perfect condition.',
-          'Ready to start your export order? Contact us today for detailed quotations and product catalogs. WhatsApp: +62 852-1207-8467 | Email: info@mangala-living.com'
+          'Ready to start your export order? Contact us today for detailed quotations and product catalogs. WhatsApp: +62 888-0114-6881 | Email: info@mangala-living.com'
         ]
       }
     ]
@@ -7720,7 +7720,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Get Your Custom Quote Today',
         paragraphs: [
           'Ready to start your custom metal furniture project? Contact our export team with your requirements: Product type and quantity, dimensions and specifications, material and finishing preferences, target price range (if any), delivery destination.',
-          'We will respond within 48 hours with a detailed quotation and recommendations. For urgent projects, WhatsApp us directly at +62 852-1207-8467 for faster response. Visit our website for product catalog and factory profile: www.mangala-living.com'
+          'We will respond within 48 hours with a detailed quotation and recommendations. For urgent projects, WhatsApp us directly at +62 888-0114-6881 for faster response. Visit our website for product catalog and factory profile: www.mangala-living.com'
         ]
       }
     ]
@@ -7786,7 +7786,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Start Your Bulk Order Today',
         paragraphs: [
           'Ready to place a bulk order? Here\'s how to get started: <strong>Step 1:</strong> Send us your requirements (product type, quantity, specifications). <strong>Step 2:</strong> Receive detailed quotation within 48-72 hours. <strong>Step 3:</strong> Sample approval (if required for custom designs). <strong>Step 4:</strong> Confirm order with 30% deposit. <strong>Step 5:</strong> Production begins with regular updates. <strong>Step 6:</strong> Final inspection and shipment.',
-          'For urgent inquiries or projects with tight deadlines, WhatsApp our export team directly at +62 852-1207-8467. We can arrange video calls to discuss your project in detail. Email detailed RFQ (Request for Quotation) to: export@mangala-living.com. Include: product specifications, target quantities, delivery destination, ideal delivery timeline. We will respond with a comprehensive proposal within 72 hours.'
+          'For urgent inquiries or projects with tight deadlines, WhatsApp our export team directly at +62 888-0114-6881. We can arrange video calls to discuss your project in detail. Email detailed RFQ (Request for Quotation) to: export@mangala-living.com. Include: product specifications, target quantities, delivery destination, ideal delivery timeline. We will respond with a comprehensive proposal within 72 hours.'
         ]
       }
     ]
@@ -7860,7 +7860,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Contact our factory export team today to discuss your custom commercial furniture needs. We welcome: Furniture importers and distributors. Hotel chains and hospitality groups. Restaurant and cafe chains. Interior designers and architects. Procurement companies and buying offices. Retailers looking for private label furniture.',
           'What we need from you to provide accurate quotation: Product type and intended use (restaurant, hotel, office, etc). Quantity requirements. Dimensions and specifications (if you have them). Material and finishing preferences. Reference photos or drawings (if available). Delivery destination. Target budget or price range (optional but helpful).',
-          'Contact us: WhatsApp (preferred for faster response): +62 852-1207-8467. Email: export@mangala-living.com. Visit our factory: Arrange factory visit in Bekasi (30 minutes from Jakarta). See production process, quality control, and sample products firsthand. We look forward to partnering with you for your furniture needs!'
+          'Contact us: WhatsApp (preferred for faster response): +62 888-0114-6881. Email: export@mangala-living.com. Visit our factory: Arrange factory visit in Bekasi (30 minutes from Jakarta). See production process, quality control, and sample products firsthand. We look forward to partnering with you for your furniture needs!'
         ]
       }
     ]
@@ -7925,7 +7925,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Why Partner with Us?',
         paragraphs: [
           'Direct manufacturer—no trading company markup. 25 years experience serving international clients. In-house design team and CAD capabilities. Own powder coating facility for quality control. English-speaking export team. Transparent communication and pricing. Reliable delivery schedule. After-sales support and warranty.',
-          'Contact us for detailed quotations and product catalogs: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+          'Contact us for detailed quotations and product catalogs: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
         ]
       }
     ]
@@ -7994,7 +7994,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>Quality Assurance:</strong> ISO-standard manufacturing process. Comprehensive quality control system. Material traceability. Third-party inspection coordination.',
           '<strong>Confidentiality Protection:</strong> NDA agreements for design protection. Dedicated production runs for your orders. No direct competition in retail market. Your brand identity respected.',
           '<strong>Communication and Support:</strong> English-speaking export team. Regular progress updates. Responsive to inquiries and changes. Technical support and consultation.',
-          'Ready to discuss your OEM/ODM furniture project? Contact us today: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+          'Ready to discuss your OEM/ODM furniture project? Contact us today: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
         ]
       }
     ]
@@ -8059,7 +8059,7 @@ const BLOG_CONTENTS: BlogContent[] = [
       {
         heading: 'Contact Us for Restaurant Furniture Export',
         paragraphs: [
-          'Ready to furnish your restaurant or cafe? Contact our export team: WhatsApp: +62 852-1207-8467 (Fast response). Email: export@mangala-living.com. Factory visit: Welcome to visit our factory in Bekasi (30 minutes from Jakarta). Let us help you create the perfect dining environment for your customers!'
+          'Ready to furnish your restaurant or cafe? Contact our export team: WhatsApp: +62 888-0114-6881 (Fast response). Email: export@mangala-living.com. Factory visit: Welcome to visit our factory in Bekasi (30 minutes from Jakarta). Let us help you create the perfect dining environment for your customers!'
         ]
       }
     ]
@@ -8130,11 +8130,11 @@ const BLOG_CONTENTS: BlogContent[] = [
       {
         heading: 'How to Get Started',
         paragraphs: [
-          '<strong>Step 1 - Send Inquiry:</strong> Email us at export@mangala-living.com or WhatsApp +62 852-1207-8467. Include: Product type/style, Quantity, Destination country, Timeline, Reference photos (if available).',
+          '<strong>Step 1 - Send Inquiry:</strong> Email us at export@mangala-living.com or WhatsApp +62 888-0114-6881. Include: Product type/style, Quantity, Destination country, Timeline, Reference photos (if available).',
           '<strong>Step 2 - Receive Quotation:</strong> Detailed FOB pricing within 1-2 business days. Product specifications and material breakdown. Production timeline. Payment terms.',
           '<strong>Step 3 - Sample or Direct Order:</strong> Option A: Order samples for approval. Option B: Proceed directly to bulk order (if design is clear).',
           '<strong>Step 4 - Production and Shipment:</strong> 30% deposit to start production. Weekly photo updates during manufacturing. Final inspection and balance payment. Shipment with complete documentation.',
-          'Start saving with factory-direct pricing today! Contact us: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+          'Start saving with factory-direct pricing today! Contact us: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
         ]
       }
     ]
@@ -8192,7 +8192,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Custom hospitality furniture pricing depends on: Design complexity. Materials and finishes. Order volume. Customization level. Timeline requirements.',
           'Typical pricing examples (FOB Indonesia): Guest room furniture package (bed frame, 2 nightstands, desk, chair, wardrobe): USD 450-850 per room. Restaurant dining set (table + 4 chairs): USD 250-400 per set. Bar stool: USD 50-90 per unit. Lobby lounge chair: USD 150-300 per unit.',
-          'Volume discounts available for large hotel projects. Contact us for detailed project quotation: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+          'Volume discounts available for large hotel projects. Contact us for detailed project quotation: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
         ]
       }
     ]
@@ -8255,7 +8255,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Pricing and Lead Time',
         paragraphs: [
           'Powder coating adds approximately 15-20% to base metal fabrication cost, but provides superior value compared to liquid paint. Lead time: Standard colors: 3-4 weeks production. Custom colors: 4-5 weeks (sample approval required). Rush orders available with additional fee.',
-          'For export quotations on powder-coated metal furniture: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+          'For export quotations on powder-coated metal furniture: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
         ]
       }
     ]
@@ -8318,7 +8318,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           '<strong>Typical Export Timeline:</strong> Production: 4-6 weeks after deposit. Packing and loading: 3-5 days. Documentation: 1-2 days. Sea freight: 2-6 weeks (depending on destination). Total: 7-13 weeks from order to arrival.',
           '<strong>Documentation Provided:</strong> Commercial invoice. Packing list (detailed item breakdown). Certificate of Origin (Form E for ASEAN, standard CO for others). Bill of Lading (B/L). Photos and videos of loading. Weight and measurement certificate.',
-          'For detailed container pricing quotations: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com. Provide: Product types and quantities, Destination port, Preferred container size (20ft, 40ft, 40ft HC), FOB or CIF pricing preference.'
+          'For detailed container pricing quotations: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com. Provide: Product types and quantities, Destination port, Preferred container size (20ft, 40ft, 40ft HC), FOB or CIF pricing preference.'
         ]
       }
     ]
@@ -8362,7 +8362,7 @@ const BLOG_CONTENTS: BlogContent[] = [
       {
         heading: 'Contact for Export',
         paragraphs: [
-          'Ready to furnish your cafe? WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+          'Ready to furnish your cafe? WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
         ]
       }
     ]
@@ -8407,7 +8407,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Quality Guarantee',
         paragraphs: [
           'We stand behind our quality: 2-year structural warranty. 1-year finish warranty. Manufacturing defects covered. Responsive after-sales support. Replacement parts available.',
-          'Contact our quality assurance team: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+          'Contact our quality assurance team: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
         ]
       }
     ]
@@ -8453,7 +8453,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'FOB pricing examples (outdoor-grade finish): Outdoor dining chair: USD 45-75 per unit. Outdoor dining table: USD 120-180 per unit. Pool lounge chair: USD 80-130 per unit. Bar set (1 table + 2 stools): USD 200-300 per set.',
           'Minimum order: 50-100 pieces or 1 container. Lead time: 4-6 weeks production. Volume discounts available.',
-          'Contact us for weather-resistant outdoor furniture: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+          'Contact us for weather-resistant outdoor furniture: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
         ]
       }
     ]
@@ -8491,7 +8491,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'We welcome factory visits from international buyers: See production process firsthand. Meet our team. Inspect quality control systems. Review samples and materials. Discuss your project requirements.',
           'Location: Jl. Raya Setu Cibitung, Bekasi, West Java, Indonesia. 30 minutes from Jakarta port. 45 minutes from airport. Easy access by car or taxi.',
-          'Schedule your visit: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+          'Schedule your visit: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
         ]
       }
     ]
@@ -8535,7 +8535,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Payment Terms',
         paragraphs: [
           'Standard terms: 30% deposit upon order confirmation. 70% balance before shipment. Payment methods: Wire transfer (T/T). Letter of Credit (LC) for established clients. All banking fees borne by respective parties.',
-          'For FOB and CIF quotations: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com. Provide: Product details, Quantity, Destination port, Preferred pricing term (FOB or CIF)'
+          'For FOB and CIF quotations: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com. Provide: Product details, Quantity, Destination port, Preferred pricing term (FOB or CIF)'
         ]
       }
     ]
@@ -8590,7 +8590,7 @@ const BLOG_CONTENTS: BlogContent[] = [
       {
         heading: 'Contact for Export Documentation',
         paragraphs: [
-          'Questions about export documentation? Our export team is ready to help: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com. We ensure complete, accurate documentation for every export order.'
+          'Questions about export documentation? Our export team is ready to help: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com. We ensure complete, accurate documentation for every export order.'
         ]
       }
     ]
@@ -8638,7 +8638,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Custom design factors: Design complexity and engineering requirements. Material type and quantity. Finishing requirements. Order volume (MOQ typically 50-100 units). Timeline (rush orders incur premium).',
           'Design fees: Simple customization (size, color changes): No design fee. Moderate customization (design modifications): USD 200-500 (refundable upon order). Complex custom design (new product development): USD 500-1,500 (partially refundable).',
-          'Contact our design team: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com'
+          'Contact our design team: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
         ]
       }
     ]
@@ -8691,7 +8691,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'For Restaurant Chains',
         paragraphs: [
           'Special services for chains: Standardized furniture for brand consistency. Stock program for expansion. Rush production for new openings. Private label and branding. Design consultation for new concepts.',
-          'Contact wholesale team: WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com. Provide: Number of locations, Furniture quantities, Target delivery dates, Budget range'
+          'Contact wholesale team: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com. Provide: Number of locations, Furniture quantities, Target delivery dates, Budget range'
         ]
       }
     ]
@@ -8747,7 +8747,7 @@ const BLOG_CONTENTS: BlogContent[] = [
       {
         heading: 'Contact for Sustainable Furniture',
         paragraphs: [
-          'Interested in sustainable furniture export? WhatsApp: +62 852-1207-8467 | Email: export@mangala-living.com. Request: Product details with sustainability requirements, Required certifications, Quantity and timeline'
+          'Interested in sustainable furniture export? WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com. Request: Product details with sustainability requirements, Required certifications, Quantity and timeline'
         ]
       }
     ]

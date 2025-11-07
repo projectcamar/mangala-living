@@ -63,12 +63,12 @@ export const generateEnhancedOrganizationSchema = () => {
       "latitude": -6.2088,
       "longitude": 107.1602
     },
-    "telephone": "+62-852-1207-8467",
+    "telephone": "+62-888-0114-6881",
     "email": "info@mangala-living.com",
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+62-852-1207-8467",
+        "telephone": "+62-888-0114-6881",
         "contactType": "customer service",
         "email": "info@mangala-living.com",
         "availableLanguage": ["Indonesian", "English"],
@@ -82,7 +82,7 @@ export const generateEnhancedOrganizationSchema = () => {
       },
       {
         "@type": "ContactPoint",
-        "telephone": "+62-852-1207-8467",
+        "telephone": "+62-888-0114-6881",
         "contactType": "sales",
         "email": "sales@mangala-living.com",
         "availableLanguage": ["Indonesian", "English"],
@@ -92,7 +92,7 @@ export const generateEnhancedOrganizationSchema = () => {
     "sameAs": [
       "https://www.instagram.com/mangalaliving",
       "https://www.facebook.com/mangalaliving",
-      "https://wa.me/6285212078467"
+      "https://wa.me/6288801146881"
     ],
     "areaServed": {
       "@type": "Country",
@@ -544,7 +544,7 @@ export const generateEnhancedLocalBusinessSchema = () => {
     ],
     "@id": "https://mangala-living.com",
     "url": "https://mangala-living.com",
-    "telephone": "+6285212078467",
+    "telephone": "+6288801146881",
     "priceRange": "Rp 1.500.000 - Rp 15.000.000",
     "address": {
       "@type": "PostalAddress",

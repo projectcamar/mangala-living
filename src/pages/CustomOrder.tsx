@@ -253,7 +253,7 @@ const CustomOrder: React.FC = () => {
                   Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
                 </a>
               </p>
-              <p className="footer-phone">+62 852-1207-8467</p>
+              <p className="footer-phone">+62 888-0114-6881</p>
             </div>
           </div>
 
@@ -265,7 +265,7 @@ const CustomOrder: React.FC = () => {
 
           <div className="custom-order-cta-buttons">
             <a 
-              href="https://wa.me/6285212078467" 
+              href="https://wa.me/6288801146881" 
               target="_blank" 
               rel="noopener noreferrer"
               className="custom-order-btn"

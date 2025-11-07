@@ -131,7 +131,7 @@ const content = {
     contactInfo: 'Untuk konsultasi gratis, quotation, atau kunjungan showroom:',
     
     whatsappTitle: 'WhatsApp & Telepon',
-    whatsappNumber: '+62 852-1207-8467',
+    whatsappNumber: '+62 888-0114-6881',
     whatsappHours: 'Senin - Sabtu: 08.00 - 17.00 WIB',
     whatsappResponse: 'Response time: 1-3 jam (jam kerja)',
     
@@ -263,7 +263,7 @@ const content = {
     contactInfo: 'For free consultation, quotation, or showroom visit:',
     
     whatsappTitle: 'WhatsApp & Phone',
-    whatsappNumber: '+62 852-1207-8467',
+    whatsappNumber: '+62 888-0114-6881',
     whatsappHours: 'Monday - Saturday: 08.00 - 17.00 WIB',
     whatsappResponse: 'Response time: 1-3 hours (working hours)',
     
@@ -452,9 +452,9 @@ export const generateCatalog = async () => {
     doc.setFontSize(11)
     doc.setFont('helvetica', 'bold')
     doc.setTextColor(...colors.goldAccent)
-    doc.textWithLink('+62 852-1207-8467', pageWidth / 2, 210, { 
+    doc.textWithLink('+62 888-0114-6881', pageWidth / 2, 210, { 
       align: 'center',
-      url: 'https://wa.me/6285212078467'
+      url: 'https://wa.me/6288801146881'
     })
     doc.textWithLink('info@mangala-living.com', pageWidth / 2, 220, { 
       align: 'center',
@@ -956,7 +956,7 @@ export const generateCatalog = async () => {
     doc.setTextColor(...colors.textLight)
     doc.textWithLink(t.whatsappNumber, pageWidth / 2, yPos, { 
       align: 'center',
-      url: 'https://wa.me/6285212078467'
+      url: 'https://wa.me/6288801146881'
     })
     yPos += 8
     

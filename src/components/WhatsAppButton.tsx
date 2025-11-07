@@ -63,8 +63,8 @@ const WhatsAppButton: React.FC = () => {
         setMessages([{
           id: '1',
           text: isID 
-            ? `Hai ??! Selamat datang di Mangala Living. Beri tahu saya jika Anda memiliki pertanyaan.\n\nJangan ragu untuk whatsapp di [+62 852 1207 8467](https://wa.me/6285212078467)`
-            : `Hi there ??! Welcome to the Mangala Living. Let me know if you have any questions.\n\nFeel free to whatsapp on [+62 852 1207 8467](https://wa.me/6285212078467)`,
+            ? `Hai ??! Selamat datang di Mangala Living. Beri tahu saya jika Anda memiliki pertanyaan.\n\nJangan ragu untuk whatsapp di [+62 888 0114 6881](https://wa.me/6288801146881)`
+            : `Hi there ??! Welcome to the Mangala Living. Let me know if you have any questions.\n\nFeel free to whatsapp on [+62 888 0114 6881](https://wa.me/6288801146881)`,
           isUser: false,
           timestamp: new Date()
         }])
@@ -92,7 +92,7 @@ const WhatsAppButton: React.FC = () => {
     const whatsappMessage = isIndonesian 
       ? `Halo, saya tertarik dengan furniture Mangala Living. Bisakah saya mendapatkan informasi lebih lanjut?`
       : `Hello, I'm interested in Mangala Living furniture. Can I get more information?`
-    const whatsappUrl = `https://wa.me/6285212078467?text=${encodeURIComponent(whatsappMessage)}`
+    const whatsappUrl = `https://wa.me/6288801146881?text=${encodeURIComponent(whatsappMessage)}`
     window.open(whatsappUrl, '_blank')
   }
 

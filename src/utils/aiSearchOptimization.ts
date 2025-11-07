@@ -32,7 +32,7 @@ export const generateAIOptimizedStructuredData = () => {
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+62-852-1207-8467",
+        "telephone": "+62-888-0114-6881",
         "contactType": "customer service",
         "email": "info@mangala-living.com",
         "availableLanguage": ["Indonesian", "English"],
@@ -42,7 +42,7 @@ export const generateAIOptimizedStructuredData = () => {
     "sameAs": [
       "https://www.instagram.com/mangalaliving",
       "https://www.facebook.com/mangalaliving",
-      "https://wa.me/6285212078467"
+      "https://wa.me/6288801146881"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
