@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mangala-living.com/</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/?lang=id" />
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://mangala-living.com/blog</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/blog?lang=id" />
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://mangala-living.com/custom-order</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/custom-order?lang=id" />
@@ -93,7 +93,7 @@
   </url>
   <url>
     <loc>https://mangala-living.com/shop</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/shop?lang=id" />
