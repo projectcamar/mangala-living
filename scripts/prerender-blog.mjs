@@ -43,69 +43,305 @@ const readFileSafe = async (filePath) => {
   }
 }
 
-const parseBlogPosts = (source) => {
-  const posts = []
-  const regex = /{[^}]*?id:\s*(\d+)[^}]*?slug:\s*'([^']+)'[^}]*?title:\s*'([^']+)'[^}]*?category:\s*'([^']+)'[^}]*?excerpt:\s*'([^']+)'[^}]*?image:\s*'([^']+)'[^}]*?date:\s*'([^']+)'[^}]*?author:\s*'([^']+)'[^}]*?}/gs
-  let match
-  while ((match = regex.exec(source))) {
-    const [, id, slug, title, category, excerpt, image, date, author] = match
-    posts.push({
-      id: parseInt(id),
-      slug,
-      title,
-      category,
-      excerpt,
-      image,
-      date,
-      author: author || 'Helmi Ramdan'
+const formatDate = (isoDate) => {
+  try {
+    return new Date(isoDate).toLocaleDateString('id-ID', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
     })
+  } catch {
+    return isoDate
   }
-  return posts
 }
 
-const parseBlogContent = (source, slug) => {
-  // Find the content for this specific slug
-  const regex = new RegExp(`'${slug}':\\s*{[^}]*?metaDescription:\\s*'([^']+)'[^}]*?introduction:\\s*'([^']+)'[^}]*?sections:\\s*\\[([\\s\\S]*?)\\]`, 'g')
-  const match = regex.exec(source)
-  
-  if (!match) return null
-  
-  const [, metaDescription, introduction, sectionsStr] = match
-  
-  // Parse sections - simplified parsing
-  const sections = []
-  const sectionRegex = /{[^}]*?heading:\s*'([^']*?)'[^}]*?content:\s*'([^']*?)'[^}]*?}/gs
-  let sectionMatch
-  while ((sectionMatch = sectionRegex.exec(sectionsStr))) {
-    const [, heading, content] = sectionMatch
-    sections.push({ heading, content })
+const sanitizeTypeScript = (code) => {
+  let result = ''
+  let inString = false
+  let stringChar = ''
+  let escaped = false
+  let inLineComment = false
+  let inBlockComment = false
+
+  for (let i = 0; i < code.length; i++) {
+    const char = code[i]
+    const next = code[i + 1]
+
+    if (inLineComment) {
+      if (char === '\n') {
+        inLineComment = false
+        result += char
+      }
+      continue
+    }
+
+    if (inBlockComment) {
+      if (char === '*' && next === '/') {
+        inBlockComment = false
+        i++
+      }
+      continue
+    }
+
+    if (inString) {
+      result += char
+      if (escaped) {
+        escaped = false
+        continue
+      }
+      if (char === '\\') {
+        escaped = true
+        continue
+      }
+      if (char === stringChar) {
+        inString = false
+      }
+      continue
+    }
+
+    if (char === '/' && next === '/') {
+      inLineComment = true
+      i++
+      continue
+    }
+
+    if (char === '/' && next === '*') {
+      inBlockComment = true
+      i++
+      continue
+    }
+
+    if (char === "'" || char === '"' || char === '`') {
+      inString = true
+      stringChar = char
+      result += char
+      continue
+    }
+
+    result += char
   }
-  
+
+  return result
+}
+
+const extractArrayLiteral = (source, identifier) => {
+  const pattern = new RegExp(`const\\s+${identifier}\\b[^=]*=`, 'm')
+  const match = pattern.exec(source)
+  if (!match) {
+    return null
+  }
+
+  let index = match.index + match[0].length
+  const length = source.length
+
+  // Skip whitespace
+  while (index < length && /\s/.test(source[index])) {
+    index++
+  }
+
+  if (source[index] !== '[') {
+    return null
+  }
+
+  const start = index
+  let depth = 0
+  let inString = false
+  let stringChar = ''
+  let escaped = false
+
+  for (let i = index; i < length; i++) {
+    const char = source[i]
+
+    if (inString) {
+      if (escaped) {
+        escaped = false
+      } else if (char === '\\') {
+        escaped = true
+      } else if (char === stringChar) {
+        inString = false
+      }
+      continue
+    }
+
+    if (char === "'" || char === '"' || char === '`') {
+      inString = true
+      stringChar = char
+      continue
+    }
+
+    if (char === '[') {
+      depth++
+    } else if (char === ']') {
+      depth--
+      if (depth === 0) {
+        return source.slice(start, i + 1)
+      }
+    }
+  }
+
+  return null
+}
+
+const evaluateArrayLiteral = (literal, identifier) => {
+  if (!literal) {
+    console.warn(`[prerender] Unable to locate array literal for ${identifier}`)
+    return []
+  }
+
+  const sanitized = sanitizeTypeScript(literal)
+
+  try {
+    // Wrap in parentheses so Function can evaluate array literal
+    return Function(`"use strict"; return (${sanitized});`)()
+  } catch (error) {
+    console.error(`[prerender] Failed to evaluate array literal for ${identifier}:`, error.message)
+    return []
+  }
+}
+
+const parseTypeScriptArray = (source, identifier) => {
+  const literal = extractArrayLiteral(source, identifier)
+  return evaluateArrayLiteral(literal, identifier)
+}
+
+const parseBlogPosts = (source) => {
+  return parseTypeScriptArray(source, 'BLOG_POSTS').map(post => ({
+    ...post,
+    author: post.author || 'Helmi Ramdan'
+  }))
+}
+
+const parseBlogContents = (source) => {
+  const contents = parseTypeScriptArray(source, 'BLOG_CONTENTS')
+  return Array.isArray(contents) ? contents : []
+}
+
+const createFallbackContent = (post) => {
+  const titleHighlight = post.title.replace(/-/g, ' ')
   return {
-    metaDescription,
-    introduction,
-    sections
+    sections: [
+      {
+        paragraphs: [
+          post.excerpt,
+          `Mangala Living memproduksi ${titleHighlight.toLowerCase()} dengan kualitas workshop premium di Bekasi. Semua furniture dibuat menggunakan material industrial grade, konstruksi welding profesional, dan finishing powder coating tahan lama.`,
+          `Kami telah membantu 1000+ project komersial sejak 1999. Dengan pengalaman lebih dari 25 tahun, kami memahami standar kualitas, timeline, dan anggaran yang diperlukan untuk menghadirkan solusi furniture yang tepat untuk bisnis Anda.`
+        ]
+      },
+      {
+        heading: 'Keunggulan Utama Mangala Living',
+        list: [
+          '<strong>Produksi In-House:</strong> Semua proses mulai dari design, fabrikasi, powder coating, hingga quality control dilakukan di workshop kami sendiri.',
+          '<strong>Custom Sesuai Project:</strong> Dimensi, material, dan finishing bisa disesuaikan dengan kebutuhan brand atau konsep interior Anda.',
+          '<strong>Durability Terjamin:</strong> Struktur besi berkualitas, powder coating outdoor-grade, dan kayu pilihan memastikan ketahanan 5-8 tahun untuk penggunaan komersial.',
+          '<strong>Pengiriman Profesional:</strong> Packing aman, supervisi loading, serta dokumentasi lengkap untuk pengiriman domestik maupun ekspor.'
+        ]
+      },
+      {
+        heading: 'Solusi Furniture yang Kami Sediakan',
+        paragraphs: [
+          'Tim design dan produksi kami melayani kebutuhan cafe, restoran, hotel, kantor, hingga developer properti. Produk meliputi meja-kursi dining, bar set, lounge furniture, rak display, cabinetry, hingga custom furniture untuk area outdoor.',
+          'Setiap project mendapat pendampingan konsultatif: mulai dari pemilihan produk, layout, penyesuaian budget, hingga instalasi di lokasi.'
+        ]
+      },
+      {
+        heading: 'Langkah Order & Konsultasi',
+        list: [
+          '<strong>1. Konsultasi Awal:</strong> Kirimkan kebutuhan melalui WhatsApp atau email. Sertakan jumlah unit, ukuran ruangan, referensi desain, dan target budget.',
+          '<strong>2. Proposal & Quotation:</strong> Kami susun rekomendasi produk, material, serta estimasi biaya lengkap dengan timeline produksi.',
+          '<strong>3. Produksi & Quality Control:</strong> Setelah DP 50%, produksi dimulai. Kami kirimkan update berkala (foto/video) dan jadwalkan inspeksi sebelum pengiriman.',
+          '<strong>4. Pengiriman & Instalasi:</strong> Tim kami menyiapkan packing aman, koordinasi logistik, serta instalasi (untuk area Jabodetabek).'
+        ]
+      },
+      {
+        heading: 'Hubungi Tim Mangala Living',
+        paragraphs: [
+          'Hubungi kami untuk konsultasi gratis dan mendapatkan katalog terbaru:',
+          '<strong>WhatsApp:</strong> +62 888-0114-6881 (Fast Response)',
+          '<strong>Email:</strong> info@mangala-living.com',
+          '<strong>Workshop:</strong> Jl. Raya Setu Cibitung - Bekasi, Jawa Barat 17320',
+          'Kami siap membantu Anda mewujudkan furniture industrial yang estetik, fungsional, dan tahan lama untuk bisnis Anda.'
+        ]
+      }
+    ]
   }
 }
 
 const generateBlogPostHTML = (post, content) => {
-  const metaDescription = content?.metaDescription || post.excerpt
-  const introduction = content?.introduction || post.excerpt
-  
-  // Generate sections HTML
-  let sectionsHTML = ''
-  if (content?.sections) {
-    sectionsHTML = content.sections.map(section => {
-      if (!section.heading && !section.content) return ''
-      return `
-        <section style="margin: 30px 0;">
-          ${section.heading ? `<h2 style="color: #333; font-size: 24px; margin-bottom: 15px;">${escapeHtml(section.heading)}</h2>` : ''}
-          ${section.content ? `<p style="line-height: 1.8; color: #555;">${escapeHtml(section.content)}</p>` : ''}
-        </section>
-      `
-    }).join('')
-  }
-  
+  const introductionParagraphs = content?.sections?.[0]?.paragraphs?.length
+    ? content.sections[0].paragraphs
+    : [post.excerpt]
+
+  const metaDescription = post.excerpt
+
+  const sectionsHTML = (content?.sections || []).map((section, index) => {
+    const parts = []
+
+    if (section.heading) {
+      parts.push(`
+        <h2 style="color: #2c3e50; font-size: 24px; margin: 35px 0 18px; font-weight: 600; line-height: 1.4;">
+          ${escapeHtml(section.heading)}
+        </h2>
+      `)
+    }
+
+    if (section.image) {
+      parts.push(`
+        <figure style="margin: 30px 0; border-radius: 12px; overflow: hidden; background: #f7f9fc; border: 1px solid #e0e6ef;">
+          <img 
+            src="${section.image}" 
+            alt="${escapeHtml(section.imageAlt || `${post.title} - ${section.heading || 'Mangala Living'}`)}"
+            style="width: 100%; display: block;"
+            loading="${index < 2 ? 'eager' : 'lazy'}"
+          />
+          <figcaption style="font-size: 13px; color: #6b7a8f; padding: 12px 18px;">
+            ${escapeHtml(section.imageAlt || `${post.title} by Mangala Living`)}
+          </figcaption>
+        </figure>
+      `)
+    }
+
+    if (section.paragraphs?.length) {
+      section.paragraphs.forEach(paragraph => {
+        if (!paragraph) return
+        parts.push(`
+          <p style="line-height: 1.8; color: #34495e; margin-bottom: 18px; font-size: 17px;">
+            ${paragraph}
+          </p>
+        `)
+      })
+    }
+
+    if (section.list?.length) {
+      const listItems = section.list.map(item => `
+        <li style="margin-bottom: 12px;">
+          <span style="display: inline-block; color: #34495e; line-height: 1.7; font-size: 16px;">${item}</span>
+        </li>
+      `).join('')
+
+      parts.push(`
+        <ul style="margin: 20px 0 28px 18px; padding: 0 0 0 12px; list-style: disc; color: #34495e;">
+          ${listItems}
+        </ul>
+      `)
+    }
+
+    if (!parts.length) {
+      return ''
+    }
+
+    return `
+      <section style="margin: 30px 0;">
+        ${parts.join('\n')}
+      </section>
+    `
+  }).join('\n')
+
+  const introductionHTML = introductionParagraphs.map(paragraph => `
+    <p style="font-size: 18px; font-weight: 500; color: #2c3e50; line-height: 1.8; margin-bottom: 20px;">
+      ${paragraph}
+    </p>
+  `).join('\n')
+
   return `<!DOCTYPE html>
 <html lang="id">
 <head>
@@ -209,7 +445,7 @@ const generateBlogPostHTML = (post, content) => {
       color: #333;
       max-width: 800px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 20px 20px 60px;
       background: #f9f9f9;
     }
     .article-header {
@@ -285,15 +521,15 @@ const generateBlogPostHTML = (post, content) => {
     <header class="article-header">
       <h1 class="article-title">${escapeHtml(post.title)}</h1>
       <div class="article-meta">
-        <span>📁 ${escapeHtml(post.category)}</span> | 
-        <span>✍️ ${escapeHtml(post.author)}</span> | 
-        <span>📅 ${post.date}</span>
+          <span>📁 ${escapeHtml(post.category)}</span> | 
+          <span>✍️ ${escapeHtml(post.author)}</span> | 
+          <span>📅 ${formatDate(post.date)}</span>
       </div>
       ${post.image ? `<img src="${post.image}" alt="${escapeHtml(post.title)}" class="article-image" loading="lazy">` : ''}
     </header>
     
     <div class="article-content">
-      <p style="font-size: 18px; font-weight: 500; color: #333;">${escapeHtml(introduction)}</p>
+        ${introductionHTML}
       
       ${sectionsHTML}
       
@@ -335,6 +571,10 @@ const main = async () => {
   // Parse blog posts
   const blogPosts = parseBlogPosts(blogSource)
   console.log(`[prerender] Found ${blogPosts.length} blog posts`)
+
+  const blogContents = parseBlogContents(blogContentSource)
+  const blogContentMap = new Map(blogContents.map(content => [content.slug, content]))
+  console.log(`[prerender] Found ${blogContents.length} manual content entries`)
   
   // Create output directory
   try {
@@ -347,11 +587,15 @@ const main = async () => {
   // Generate HTML for each blog post
   let successCount = 0
   let failCount = 0
+  let fallbackCount = 0
   
   for (const post of blogPosts) {
     try {
-      // Parse content for this post
-      const content = parseBlogContent(blogContentSource, post.slug)
+      const manualContent = blogContentMap.get(post.slug)
+      const content = manualContent || createFallbackContent(post)
+      if (!manualContent) {
+        fallbackCount++
+      }
       
       // Generate HTML
       const html = generateBlogPostHTML(post, content)
@@ -378,6 +622,9 @@ const main = async () => {
   console.log(`[prerender] ✅ Successfully generated ${successCount} blog post HTML files`)
   if (failCount > 0) {
     console.log(`[prerender] ❌ Failed to generate ${failCount} files`)
+  }
+  if (fallbackCount > 0) {
+    console.log(`[prerender] ℹ️ Used fallback content for ${fallbackCount} posts`)
   }
   console.log(`[prerender] 📁 Output directory: ${OUTPUT_DIR}`)
   console.log('[prerender] 🎉 Pre-rendering complete!')
