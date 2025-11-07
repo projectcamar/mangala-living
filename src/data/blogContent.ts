@@ -10176,6 +10176,1341 @@ const BLOG_CONTENTS: BlogContent[] = [
         ]
       }
     ]
+  },
+  {
+    slug: 'industrial-dining-tables-export-quality-indonesia',
+    sections: [
+      {
+        heading: 'Premium Industrial Dining Tables from Indonesia',
+        paragraphs: [
+          'Indonesia has emerged as a leading manufacturer of high-quality industrial furniture, particularly dining tables that combine robust steel frames with beautiful wood tops. Our industrial dining tables are designed specifically for export markets, meeting international quality standards while offering competitive pricing.',
+          'Each dining table we manufacture features precision-welded steel frames using premium hollow section steel, paired with solid wood or engineered wood tops. The combination creates furniture pieces that are not only aesthetically pleasing but also incredibly durable for commercial environments.'
+        ]
+      },
+      {
+        heading: 'Materials and Construction',
+        paragraphs: [
+          'Our industrial dining tables use only high-quality materials selected for durability and appearance:'
+        ],
+        list: [
+          '<strong>Steel Frame:</strong> Premium hollow section steel (40x40mm to 60x60mm) with 2-3mm wall thickness for exceptional strength and stability.',
+          '<strong>Wood Top Options:</strong> Solid teak, mango wood, or engineered wood with various finishes including natural, stained, or distressed looks.',
+          '<strong>Welding:</strong> Professional MIG welding with ground and polished joints for a clean, seamless appearance.',
+          '<strong>Finishing:</strong> Industrial-grade powder coating in various colors including matte black, bronze, grey, and custom RAL colors.',
+          '<strong>Protection:</strong> Anti-rust primer treatment before powder coating ensures long-lasting durability even in humid climates.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Dining Tables Export Quality Indonesia'
+      },
+      {
+        heading: 'Standard and Custom Sizes',
+        paragraphs: [
+          'We offer both standard sizes and fully customizable dimensions to meet your specific requirements:',
+          '<strong>Standard Dining Table Sizes:</strong>'
+        ],
+        list: [
+          '120cm x 70cm - Perfect for 2-4 people, ideal for small cafes',
+          '150cm x 80cm - Comfortable for 4-6 people, most popular size',
+          '180cm x 90cm - Spacious for 6-8 people, restaurant standard',
+          '200cm x 100cm - Large gathering table for 8-10 people',
+          'Bar height tables: 110cm height for standing or bar stool use'
+        ],
+        paragraphs: [
+          '<strong>Custom Dimensions:</strong> Any size can be manufactured according to your specifications. We can create extra-long communal tables, narrow tables for compact spaces, or unique shapes to fit your layout perfectly.'
+        ]
+      },
+      {
+        heading: 'Applications and Markets',
+        paragraphs: [
+          'Our industrial dining tables are perfect for various commercial applications:'
+        ],
+        list: [
+          '<strong>Restaurants:</strong> Durable dining tables that withstand heavy daily use while maintaining their appearance.',
+          '<strong>Cafes and Coffee Shops:</strong> Modern industrial aesthetic that appeals to contemporary customers.',
+          '<strong>Hotels and Resorts:</strong> Reliable furniture for dining areas and breakfast rooms.',
+          '<strong>Co-working Spaces:</strong> Multi-functional tables for working and dining.',
+          '<strong>Residential Projects:</strong> High-quality dining tables for modern homes and apartments.',
+          '<strong>Contract Furniture:</strong> Bulk orders for hospitality chains and commercial projects.'
+        ]
+      },
+      {
+        heading: 'Quality Control and Export Standards',
+        paragraphs: [
+          'Every dining table undergoes rigorous quality control before export:',
+          'Structure Testing: Each table is load-tested to ensure it can handle commercial use. We test up to 200kg static load to guarantee stability.',
+          'Finish Inspection: Powder coating is checked for consistency, adhesion, and coverage. No runs, sags, or thin spots are acceptable.',
+          'Wood Quality: All wood tops are checked for defects, proper sealing, and finish quality. Moisture content is controlled to prevent warping.',
+          'Packaging: Professional packaging with corner protection, bubble wrap, and cardboard to ensure safe arrival at destination.',
+          'Documentation: Complete export documentation including material specifications, care instructions, and warranty information.'
+        ]
+      },
+      {
+        heading: 'Minimum Order and Pricing',
+        paragraphs: [
+          'We welcome both small and large orders from international buyers:',
+          '<strong>Minimum Order Quantity:</strong> Flexible MOQ starting from 10 pieces for standard designs. Custom designs may require higher MOQ.',
+          '<strong>Pricing Structure:</strong> Factory-direct pricing with volume discounts. Typical range: $150-$400 per table depending on size, materials, and finishing.',
+          '<strong>Volume Discounts:</strong> 5% off for 50+ pieces, 10% off for 100+ pieces, custom pricing for container loads.',
+          '<strong>Payment Terms:</strong> 50% deposit to start production, 50% balance before shipping. LC available for established buyers.',
+          '<strong>Lead Time:</strong> 30-45 days for production depending on order quantity, plus shipping time.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Dining Table Manufacturing Process'
+      },
+      {
+        heading: 'Why Choose Indonesian Industrial Furniture',
+        paragraphs: [
+          'Indonesia offers unique advantages for industrial furniture manufacturing:',
+          '<strong>Skilled Craftsmanship:</strong> Over 25 years of experience in metal and wood working. Our welders and craftsmen are highly skilled in industrial furniture production.',
+          '<strong>Quality Materials:</strong> Access to premium steel and beautiful tropical hardwoods like teak and mango.',
+          '<strong>Competitive Pricing:</strong> Lower labor costs compared to developed countries without compromising quality.',
+          '<strong>Export Infrastructure:</strong> Well-established export procedures and proximity to major shipping ports.',
+          '<strong>Flexibility:</strong> Ability to customize designs and adapt to specific market requirements.',
+          '<strong>Sustainability:</strong> Use of sustainably sourced wood and eco-friendly finishing processes.'
+        ]
+      },
+      {
+        heading: 'Shipping and Logistics',
+        paragraphs: [
+          'We provide comprehensive export services to make your buying experience smooth:',
+          '<strong>FOB Terms:</strong> Competitive FOB pricing from Jakarta or Surabaya port. We handle all local logistics.',
+          '<strong>Container Loading:</strong> Efficient packing to maximize container capacity. Typical 40ft container holds 150-200 dining tables.',
+          '<strong>Freight Forwarding:</strong> We work with reliable freight forwarders worldwide for competitive shipping rates.',
+          '<strong>Tracking:</strong> Full tracking information provided from production through delivery.',
+          '<strong>Insurance:</strong> Marine insurance available to protect your investment during transit.'
+        ]
+      },
+      {
+        heading: 'Getting Started with Your Order',
+        paragraphs: [
+          'Ordering industrial dining tables from Indonesia is straightforward:',
+          '1. <strong>Inquiry:</strong> Contact us with your requirements - size, quantity, finish preferences.',
+          '2. <strong>Quotation:</strong> We provide detailed quotation including product specifications, pricing, and timeline.',
+          '3. <strong>Samples:</strong> We can provide photos, videos, or physical samples for evaluation.',
+          '4. <strong>Confirmation:</strong> Approve designs and specifications. We provide production drawings if needed.',
+          '5. <strong>Production:</strong> 50% deposit starts production. Regular progress updates with photos.',
+          '6. <strong>Quality Check:</strong> Pre-shipment inspection with detailed photos and documentation.',
+          '7. <strong>Shipping:</strong> Final payment and shipping arranged. Full documentation provided.',
+          '<strong>Contact us today to discuss your project requirements and receive a customized quotation.</strong> We serve buyers worldwide including USA, Europe, Australia, Middle East, and Asia Pacific regions.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'metal-bar-stools-indonesia-manufacturer-exporter',
+    sections: [
+      {
+        heading: 'Professional Metal Bar Stool Manufacturing in Indonesia',
+        paragraphs: [
+          'As a leading metal bar stool manufacturer in Indonesia, we specialize in producing high-quality industrial-style bar chairs for export to international markets. Our bar stools combine robust steel construction with thoughtful design, creating seating solutions that are both durable and visually appealing.',
+          'With over 25 years of experience in metal furniture fabrication, we understand the specific requirements of commercial bar seating. Our products are designed to withstand heavy daily use in busy bars, restaurants, and cafes while maintaining their appearance for years.'
+        ]
+      },
+      {
+        heading: 'Bar Stool Design Options',
+        paragraphs: [
+          'We offer a comprehensive range of bar stool designs suitable for various commercial environments:'
+        ],
+        list: [
+          '<strong>Backless Bar Stools:</strong> Compact and space-efficient, perfect for bar counters. Heights from 65cm to 75cm.',
+          '<strong>Low Back Bar Stools:</strong> Added comfort with short backrest while maintaining compact profile.',
+          '<strong>High Back Bar Stools:</strong> Maximum comfort for extended seating, ideal for restaurants.',
+          '<strong>Swivel Bar Stools:</strong> 360-degree swivel mechanism with smooth rotation.',
+          '<strong>Adjustable Height Bar Stools:</strong> Gas lift mechanism for height adjustment (60-80cm range).',
+          '<strong>Fixed Height Bar Stools:</strong> More robust construction for heavy commercial use.',
+          '<strong>Footrest Designs:</strong> Single ring, double ring, or flat footrest options.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?w=1200&auto=format&fit=crop',
+        imageAlt: 'Metal Bar Stools Indonesia Manufacturer'
+      },
+      {
+        heading: 'Materials and Construction Quality',
+        paragraphs: [
+          'Quality materials ensure long-lasting performance in commercial environments:',
+          '<strong>Frame Materials:</strong>'
+        ],
+        list: [
+          'Hollow section steel: 25x25mm to 40x40mm with 2mm wall thickness',
+          'Round tube steel: 32mm diameter for curved designs',
+          'Flat bar steel: 30x6mm for industrial aesthetic',
+          'Premium grade mild steel for consistent quality'
+        ],
+        paragraphs: [
+          '<strong>Seat Options:</strong>'
+        ],
+        list: [
+          'Solid wood seat: Teak, mango wood, or rubber wood',
+          'Plywood with veneer or laminate',
+          'Metal seat with embossed pattern',
+          'Upholstered seat with high-density foam (PU leather or fabric)',
+          'Vintage metal seat with distressed finish'
+        ],
+        paragraphs: [
+          '<strong>Construction Features:</strong> Professional MIG welding with ground joints. Reinforced connection points at seat and footrest. Protective rubber or nylon floor protectors. Weight capacity: 150kg minimum for commercial use.'
+        ]
+      },
+      {
+        heading: 'Finishing Options',
+        paragraphs: [
+          'We offer multiple finishing options to match your design requirements:',
+          '<strong>Powder Coating:</strong> Most popular choice for commercial furniture. Available in any RAL color. Most common: Matte black, glossy black, grey, white, bronze. Durable finish resistant to scratches and chipping.',
+          '<strong>Electroplating:</strong> Chrome finish for modern look. Available in chrome, brass, or copper. Requires more maintenance but provides premium appearance.',
+          '<strong>Raw/Clear Coat:</strong> Natural steel look with clear protective coating. Industrial aesthetic popular in modern venues.',
+          '<strong>Distressed Finish:</strong> Vintage or antique appearance. Combines colored base with manual distressing. Popular for rustic or vintage-themed venues.'
+        ]
+      },
+      {
+        heading: 'Standard Heights and Dimensions',
+        paragraphs: [
+          'Bar stools are available in standard heights to match different counter heights:',
+          '<strong>Counter Height (65cm seat height):</strong> For standard kitchen counters at 90-95cm height. Total height approximately 85-90cm.',
+          '<strong>Bar Height (75cm seat height):</strong> For bar counters at 105-110cm height. Total height approximately 95-105cm.',
+          '<strong>Extra Tall (80-85cm seat height):</strong> For extra high bars or standing tables. Custom height available.',
+          '<strong>Seat Dimensions:</strong> Typical 35cm x 35cm for comfort. Round seats: 35cm diameter. Can be customized to 30cm or 40cm.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=1200&auto=format&fit=crop',
+        imageAlt: 'Bar Stool Design and Manufacturing'
+      },
+      {
+        heading: 'Commercial Applications',
+        paragraphs: [
+          'Our bar stools are designed for various commercial settings:'
+        ],
+        list: [
+          '<strong>Bars and Pubs:</strong> Heavy-duty construction for high-traffic environments',
+          '<strong>Restaurants:</strong> Comfortable seating for counter dining',
+          '<strong>Cafes and Coffee Shops:</strong> Modern designs that enhance ambiance',
+          '<strong>Hotels:</strong> Consistent quality for lobby bars and breakfast areas',
+          '<strong>Food Courts:</strong> Durable and easy-to-clean options',
+          '<strong>Offices:</strong> Breakroom and pantry seating',
+          '<strong>Home Use:</strong> Premium quality for residential kitchen islands'
+        ]
+      },
+      {
+        heading: 'Customization Services',
+        paragraphs: [
+          'We offer comprehensive customization to match your brand identity:',
+          '<strong>Design Customization:</strong> Modify existing designs or create entirely new ones. Adjust dimensions, proportions, or features. Add logo embossing or cutouts in metal seats.',
+          '<strong>Color Matching:</strong> Match any color sample or RAL code. Create two-tone combinations. Special finishes like metallic or textured powder coating.',
+          '<strong>Material Combinations:</strong> Mix metal frame with wood, leather, or fabric seats. Combine different metals (steel + brass accents). Add decorative elements or patterns.',
+          '<strong>Branding Options:</strong> Embossed or engraved logos. Custom seat shapes or cutouts. Branded metal tags or nameplates.'
+        ]
+      },
+      {
+        heading: 'Quality Assurance for Export',
+        paragraphs: [
+          'Every bar stool undergoes strict quality control:',
+          '<strong>Structural Testing:</strong> Load test to 150kg minimum. Stability test on uneven surfaces. Durability test for moving parts (swivel, gas lift).',
+          '<strong>Finish Quality:</strong> Powder coating adhesion test. Thickness measurement (minimum 60 microns). Visual inspection for consistency.',
+          '<strong>Assembly Check:</strong> All connection points checked for tightness. Welding inspected for strength and appearance. Floor protectors properly installed.',
+          '<strong>Packaging:</strong> Individual wrapping for each stool. Corner protection for vulnerable points. Stackable packaging to optimize container space.'
+        ]
+      },
+      {
+        heading: 'Pricing and Minimum Order',
+        paragraphs: [
+          '<strong>Price Range:</strong> $30-$80 per stool depending on design complexity, materials, and finish. Backless stools: $30-$45. With backrest: $40-$60. Upholstered options: $50-$80.',
+          '<strong>Minimum Order Quantity:</strong> 50 pieces for standard designs (can be mixed styles). 100 pieces for custom designs. Sample orders: 5-10 pieces available for evaluation.',
+          '<strong>Volume Discounts:</strong> 100-500 pieces: 5% discount. 500-1000 pieces: 10% discount. 1000+ pieces: Custom pricing available.',
+          '<strong>Lead Time:</strong> Samples: 15-20 days. Standard production: 35-45 days. Rush orders: Possible with 15% surcharge.',
+          '<strong>Container Capacity:</strong> 20ft container: 400-500 stools (backless). 40ft container: 800-1000 stools. Depends on design and packaging.'
+        ]
+      },
+      {
+        heading: 'Export Services and Support',
+        paragraphs: [
+          'We provide complete export support for international buyers:',
+          '<strong>Documentation:</strong> Commercial invoice and packing list. Certificate of Origin (Form E for ASEAN, etc.). Material safety data sheets. Assembly instructions if needed.',
+          '<strong>Shipping Options:</strong> FOB Jakarta/Surabaya port. CIF to your destination port available. Works with your freight forwarder or ours.',
+          '<strong>Quality Guarantee:</strong> 2-year warranty on structural integrity. 1-year warranty on powder coating and moving parts. Replacement parts available.',
+          '<strong>After-Sales Support:</strong> Technical support and documentation. Spare parts supply. Assistance with future orders and designs.',
+          '<strong>Contact us for detailed specifications, quotations, and samples. We serve importers, distributors, and project buyers worldwide.</strong>'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-lounge-furniture-indonesia-export',
+    sections: [
+      {
+        heading: 'Premium Industrial Lounge Furniture from Indonesia',
+        paragraphs: [
+          'Indonesian manufacturers have established a strong reputation for producing high-quality industrial lounge furniture that combines modern design with exceptional durability. Our lounge furniture collection features robust steel frames paired with comfortable cushioning, creating pieces that are perfect for commercial hospitality environments.',
+          'Industrial lounge furniture has become increasingly popular in hotels, cafes, airports, and commercial spaces worldwide due to its contemporary aesthetic and long-lasting construction. Made in Indonesia with expert craftsmanship and quality materials, our lounge sets offer international buyers excellent value without compromising on quality.'
+        ]
+      },
+      {
+        heading: 'Lounge Furniture Collection',
+        paragraphs: [
+          'Our industrial lounge furniture range includes various pieces to create complete seating areas:'
+        ],
+        list: [
+          '<strong>Lounge Chairs:</strong> Single seater chairs with steel frames and comfortable cushions. Available with or without armrests.',
+          '<strong>Two-Seater Sofas:</strong> Compact sofas perfect for intimate seating areas. Dimensions typically 120-140cm width.',
+          '<strong>Three-Seater Sofas:</strong> Standard size sofas for lobby or lounge areas. Width 180-200cm.',
+          '<strong>Corner Lounges:</strong> L-shaped configurations for maximizing seating in corners. Modular options available.',
+          '<strong>Benches:</strong> Backless or low-back benches for flexible seating arrangements. Various lengths from 120-200cm.',
+          '<strong>Coffee Tables:</strong> Matching tables with steel frames and wood or glass tops. Heights from 40-45cm.',
+          '<strong>Side Tables:</strong> Smaller accent tables for placing drinks or décor. 40-50cm diameter or square.',
+          '<strong>Daybeds:</strong> Extended lounge seating for relaxation areas. 180-200cm length with cushioning.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Lounge Furniture Indonesia'
+      },
+      {
+        heading: 'Frame Construction and Materials',
+        paragraphs: [
+          'The foundation of durable lounge furniture is a properly constructed steel frame:',
+          '<strong>Frame Materials:</strong> Hollow section steel 40x40mm to 60x40mm with 2-3mm wall thickness. Flat bar steel 40x8mm for modern minimalist designs. Round tube steel 32mm for curved elements and armrests.',
+          '<strong>Welding Quality:</strong> Professional MIG welding with full penetration welds. All joints ground smooth for clean appearance. Reinforced corners and stress points.',
+          '<strong>Frame Treatment:</strong> Sandblasting or chemical treatment before coating. Anti-rust primer as base protection. Powder coating as final finish.',
+          '<strong>Engineering:</strong> Designed for weight distribution and stability. Support structure for cushion placement. Reinforced frame for commercial use (200kg+ capacity per seat).'
+        ]
+      },
+      {
+        heading: 'Cushioning and Upholstery Options',
+        paragraphs: [
+          'Comfortable and durable cushioning is essential for lounge furniture:',
+          '<strong>Cushion Construction:</strong> High-density foam (density 28-35 kg/m³) for seat cushions. Medium-density foam for back cushions (25-30 kg/m³). Multi-layer construction with different densities for optimal comfort.',
+          '<strong>Upholstery Materials:</strong>'
+        ],
+        list: [
+          'PU Leather: Easy to clean, durable, available in many colors',
+          'Genuine Leather: Premium option, naturally ages beautifully',
+          'Commercial-grade Fabric: Breathable, comfortable, various textures and patterns',
+          'Outdoor Fabric: UV and water-resistant for outdoor use',
+          'Vinyl: Most durable and easiest to maintain for high-traffic areas'
+        ],
+        paragraphs: [
+          '<strong>Cushion Attachment:</strong> Velcro straps to secure cushions to frame. Zippered covers for easy removal and cleaning. Removable cushions for flexibility in maintenance.'
+        ]
+      },
+      {
+        heading: 'Design Styles and Aesthetics',
+        paragraphs: [
+          'We offer various industrial design styles to suit different commercial environments:',
+          '<strong>Classic Industrial:</strong> Exposed steel frame with visible welds and bolts. Matte black or raw steel finish. Leather or dark fabric upholstery. Straight lines and minimal ornamentation.',
+          '<strong>Modern Industrial:</strong> Sleeker steel profiles with hidden joints. Powder coated in various colors. Mix of materials (steel, wood, fabric). Clean lines with some curves for comfort.',
+          '<strong>Rustic Industrial:</strong> Combination of steel and reclaimed wood elements. Distressed or antique finishes. Natural or earth-toned upholstery. Vintage-inspired details.',
+          '<strong>Minimalist Industrial:</strong> Simple geometric forms. Thin steel profiles. Neutral color palettes. Focus on functionality and clean design.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Lounge Set Design'
+      },
+      {
+        heading: 'Applications and Target Markets',
+        paragraphs: [
+          'Industrial lounge furniture is versatile and suitable for many commercial applications:'
+        ],
+        list: [
+          '<strong>Hotels and Resorts:</strong> Lobby lounge areas, outdoor terraces, pool side seating. Durable furniture that maintains appearance with heavy use.',
+          '<strong>Cafes and Restaurants:</strong> Comfortable seating that encourages customers to linger. Instagram-worthy designs that attract social media attention.',
+          '<strong>Airports and Terminals:</strong> Comfortable waiting areas with durable, easy-to-clean furniture. Modern aesthetic appropriate for public spaces.',
+          '<strong>Corporate Offices:</strong> Break rooms, reception areas, informal meeting spaces. Professional appearance with comfortable functionality.',
+          '<strong>Co-working Spaces:</strong> Flexible lounge areas for relaxation and informal work. Modern design appealing to young professionals.',
+          '<strong>Shopping Malls:</strong> Rest areas and food court seating. High-durability furniture for public use.',
+          '<strong>Healthcare Facilities:</strong> Waiting rooms requiring comfortable, cleanable furniture. Calm, professional aesthetic.'
+        ]
+      },
+      {
+        heading: 'Customization Capabilities',
+        paragraphs: [
+          'We offer extensive customization options to meet specific project requirements:',
+          '<strong>Dimensional Customization:</strong> Any size lounge furniture can be manufactured. Adjust proportions for different space constraints. Create oversized pieces for large lobbies or compact versions for small spaces.',
+          '<strong>Configuration Options:</strong> Modular designs that can be arranged in various configurations. Left or right-facing corner units. Straight, L-shaped, or U-shaped arrangements.',
+          '<strong>Material Combinations:</strong> Mix steel frames with wood armrests or details. Combine different upholstery materials. Add decorative elements like brass accents or leather straps.',
+          '<strong>Color and Finish:</strong> Any powder coating color available (RAL color system). Two-tone frames (black legs with bronze frame, etc.). Matching or contrasting upholstery colors.',
+          '<strong>Brand Integration:</strong> Embossed logos on steel frames. Custom cushion patterns or embroidery. Branded metal tags or nameplates.'
+        ]
+      },
+      {
+        heading: 'Quality Standards for Export',
+        paragraphs: [
+          'Strict quality control ensures furniture meets international standards:',
+          '<strong>Frame Testing:</strong> Load testing to exceed expected use (200kg+ per seat). Welding inspection using visual and strength tests. Coating thickness measurement and adhesion testing.',
+          '<strong>Cushion Quality:</strong> Foam density verification. Compression set testing (foam recovery). Upholstery seam strength testing.',
+          '<strong>Stability and Safety:</strong> Tip-over testing for freestanding pieces. Sharp edge elimination for safety. Floor protector installation to prevent damage.',
+          '<strong>Durability Testing:</strong> Cyclic loading tests simulating years of use. Abrasion resistance testing on upholstery. Color fastness testing for fabrics.',
+          '<strong>Documentation:</strong> Material specifications and certificates. Fire retardancy certificates if required. Assembly instructions and care guides.'
+        ]
+      },
+      {
+        heading: 'Pricing and Order Information',
+        paragraphs: [
+          '<strong>Price Ranges:</strong> Single lounge chair: $200-$400. Two-seater sofa: $400-$700. Three-seater sofa: $600-$1,000. Coffee table: $150-$300. Complete lounge set: $1,500-$3,000. Prices vary based on size, materials, and customization.',
+          '<strong>Minimum Order Quantity:</strong> Standard designs: 10 sets minimum. Custom designs: 20 sets minimum. Sample production: 2-5 pieces available for approval.',
+          '<strong>Production Timeline:</strong> Sample development: 20-30 days. Standard production: 45-60 days after approval. Rush production: Available with surcharge (30-40 days).',
+          '<strong>Payment Terms:</strong> 50% deposit upon order confirmation. 50% balance before shipment. LC accepted for qualified buyers. Flexible terms for established relationships.',
+          '<strong>Shipping:</strong> FOB from Jakarta or Surabaya port. One 40ft container typically holds 8-12 complete lounge sets. Professional packing to prevent damage during transit.'
+        ]
+      },
+      {
+        heading: 'Why Choose Indonesian Lounge Furniture',
+        paragraphs: [
+          '<strong>Skilled Craftsmanship:</strong> Decades of experience in furniture manufacturing. Skilled welders, upholsterers, and finishers. Attention to detail in every piece.',
+          '<strong>Quality Materials:</strong> Access to premium steel and upholstery materials. Sustainable wood options from certified sources. High-quality foam and fabrics.',
+          '<strong>Competitive Pricing:</strong> Factory-direct pricing without middlemen. Lower labor costs than developed countries. Excellent quality-to-price ratio.',
+          '<strong>Customization Flexibility:</strong> Ability to adapt designs to specific requirements. No rigid MOQ for customization. Responsive to design feedback.',
+          '<strong>Export Experience:</strong> Proven track record shipping worldwide. Understanding of international quality standards. Professional export documentation and support.',
+          '<strong>Contact us to discuss your lounge furniture requirements and receive a detailed quotation. We work with hospitality groups, interior designers, and furniture importers globally.</strong>'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-storage-solutions-metal-shelving-export',
+    sections: [
+      {
+        heading: 'Industrial Storage Solutions Export from Indonesia',
+        paragraphs: [
+          'Indonesia has become a leading source for industrial storage solutions, offering metal shelving, display racks, and storage cabinets that combine robust construction with modern industrial aesthetics. Our storage furniture is designed for commercial applications worldwide, providing reliable organization solutions for retail, hospitality, and industrial environments.',
+          'With skilled metal fabrication capabilities and competitive pricing, Indonesian manufacturers deliver storage solutions that meet international quality standards while remaining cost-effective for bulk orders and custom projects.'
+        ]
+      },
+      {
+        heading: 'Product Range',
+        paragraphs: [
+          'Our industrial storage collection includes:'
+        ],
+        list: [
+          '<strong>Open Shelving Units:</strong> Multi-tier metal shelves with adjustable heights. Steel frame construction with wood or metal shelves. Heights from 180cm to 250cm.',
+          '<strong>Display Racks:</strong> Retail display solutions for showrooms and stores. Freestanding or wall-mounted options. Custom configurations for specific products.',
+          '<strong>Storage Cabinets:</strong> Enclosed storage with metal doors. Industrial kitchen cabinets for commercial use. Tool storage and workshop cabinets.',
+          '<strong>Hanging Shelves:</strong> Wall-mounted shelving systems. Steel rod or chain suspension. Adjustable height configurations.',
+          '<strong>Partition Racks:</strong> Room dividers with storage functionality. Open design for visual flow. Custom heights and widths.',
+          '<strong>Wine Racks:</strong> Industrial-style bottle storage. Wall-mounted or freestanding. Custom capacity designs.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Storage Solutions Metal Shelving'
+      },
+      {
+        heading: 'Materials and Construction',
+        paragraphs: [
+          '<strong>Frame Materials:</strong> Hollow section steel 40x40mm to 50x50mm for vertical supports. Flat bar steel 40x5mm for horizontal supports. Round tube 25-32mm for hanging shelves. All steel sandblasted and powder coated.',
+          '<strong>Shelf Materials:</strong> Solid wood shelves (teak, mango, or pine). Plywood with laminate or veneer finish. Metal mesh shelves for industrial look. Tempered glass shelves for premium units.',
+          '<strong>Load Capacity:</strong> Standard shelf load: 30-50kg per shelf. Heavy-duty option: up to 100kg per shelf. Proper engineering for weight distribution. Reinforced for commercial use.',
+          '<strong>Finishing:</strong> Industrial-grade powder coating. Colors: Matte black, white, grey, bronze, or custom RAL. Wood shelves sealed with clear coat or stain. Durable finish resistant to daily wear.'
+        ]
+      },
+      {
+        heading: 'Customization Options',
+        paragraphs: [
+          'Full customization available for commercial projects:',
+          '<strong>Dimensional Customization:</strong> Any height, width, and depth can be manufactured. Extra tall units for high ceilings. Narrow units for tight spaces. Extra deep shelves for large items.',
+          '<strong>Configuration:</strong> Number of shelves adjustable. Shelf spacing customized for your products. Add drawers, doors, or dividers. Combine open and closed storage.',
+          '<strong>Design Elements:</strong> Industrial pipe shelving aesthetic. Minimalist modern frames. Vintage distressed finish. Ladder-style leaning shelves. Modular systems that expand.',
+          '<strong>Branding:</strong> Custom metal tags or nameplates. Logo cutouts in steel frames. Branded color schemes. Custom packaging for retail.'
+        ]
+      },
+      {
+        heading: 'Applications',
+        paragraphs: [
+          'Our storage solutions serve various industries:'
+        ],
+        list: [
+          '<strong>Retail Stores:</strong> Product display and merchandising. Backroom storage organization. Point-of-sale display fixtures.',
+          '<strong>Restaurants and Cafes:</strong> Kitchen storage and organization. Display for retail products. Bar back shelving.',
+          '<strong>Hotels:</strong> Storage rooms and housekeeping. Display in public areas. Minibar and pantry organization.',
+          '<strong>Offices:</strong> Document and supply storage. Display for products or awards. Breakroom organization.',
+          '<strong>Warehouses:</strong> Heavy-duty industrial shelving. Tool and equipment storage. Inventory organization.',
+          '<strong>Residential:</strong> Home office organization. Kitchen pantry systems. Garage and workshop storage.'
+        ]
+      },
+      {
+        heading: 'Quality and Export Standards',
+        paragraphs: [
+          '<strong>Structural Testing:</strong> Load testing on each shelf level. Stability testing when fully loaded. Tipping test for freestanding units. Weld strength verification.',
+          '<strong>Finish Quality:</strong> Powder coating adhesion testing. Color consistency across batches. Wood finish quality inspection. Protection during shipping.',
+          '<strong>Packaging:</strong> Flat-pack design for efficient shipping. All hardware included with instructions. Corner protection on finished pieces. Moisture protection for ocean freight.',
+          '<strong>Documentation:</strong> Assembly instructions with diagrams. Load capacity specifications. Material certificates. Care and maintenance guide.'
+        ]
+      },
+      {
+        heading: 'Pricing and MOQ',
+        paragraphs: [
+          '<strong>Price Range:</strong> Simple shelving units: $150-$300. Display racks: $200-$500. Storage cabinets: $300-$800. Custom designs: Quote based on specifications.',
+          '<strong>Minimum Order:</strong> Standard designs: 20 pieces. Custom designs: 30-50 pieces depending on complexity. Sample orders available.',
+          '<strong>Production Time:</strong> Samples: 20-25 days. Standard production: 40-50 days. Container capacity: 40ft holds 100-150 units depending on size.',
+          '<strong>Payment Terms:</strong> 50% deposit, 50% before shipment. LC accepted for qualified buyers. FOB Jakarta/Surabaya port.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'custom-metal-furniture-manufacturing-indonesia',
+    sections: [
+      {
+        heading: 'Professional Custom Metal Furniture Manufacturing in Indonesia',
+        paragraphs: [
+          'Indonesia offers world-class custom metal furniture manufacturing services, combining skilled craftsmanship with competitive pricing. Our facility specializes in creating bespoke industrial furniture for international clients, from initial design concepts through final delivery.',
+          'With over 25 years of metal fabrication experience, we provide comprehensive manufacturing services including design development, prototyping, mass production, and export logistics. Our team works collaboratively with clients worldwide to bring their furniture visions to life.'
+        ]
+      },
+      {
+        heading: 'Manufacturing Capabilities',
+        paragraphs: [
+          'Our facility offers complete metal furniture manufacturing:'
+        ],
+        list: [
+          '<strong>Design Services:</strong> In-house designers for concept development. 3D rendering and technical drawings. Material and finish recommendations. Engineering for structural integrity.',
+          '<strong>Prototyping:</strong> Sample production for approval. Modifications based on feedback. Testing for quality and functionality. Photo and video documentation.',
+          '<strong>Metal Fabrication:</strong> Laser cutting for precision parts. CNC bending for complex curves. Professional MIG/TIG welding. In-house tooling and jigs.',
+          '<strong>Surface Finishing:</strong> Sandblasting and chemical treatment. Industrial powder coating line. Electroplating capabilities. Custom finishes and effects.',
+          '<strong>Assembly:</strong> Component assembly and integration. Wood working for mixed-material pieces. Upholstery for cushioned furniture. Quality control at each stage.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&auto=format&fit=crop',
+        imageAlt: 'Custom Metal Furniture Manufacturing'
+      },
+      {
+        heading: 'Materials We Work With',
+        paragraphs: [
+          '<strong>Metals:</strong> Mild steel (most common for industrial furniture). Stainless steel for corrosion resistance. Aluminum for lightweight applications. Brass and copper for accents and details.',
+          '<strong>Steel Profiles:</strong> Hollow section (square and rectangular). Round tube in various diameters. Flat bar and angle iron. Custom bent sections.',
+          '<strong>Complementary Materials:</strong> Solid wood (teak, mango, pine, oak). Engineered wood (plywood, MDF). Leather and fabric upholstery. Glass and acrylic. Rope, chain, and other accents.',
+          '<strong>Hardware:</strong> Commercial-grade hinges and slides. Industrial casters and levelers. Locks and latches. Specialty hardware sourced globally.'
+        ]
+      },
+      {
+        heading: 'Custom Design Process',
+        paragraphs: [
+          '<strong>Step 1 - Consultation:</strong> Discuss your vision and requirements. Review reference images and sketches. Understand target market and price point. Clarify quantities and timeline.',
+          '<strong>Step 2 - Design Development:</strong> Create initial design concepts. Provide 3D renderings for visualization. Develop technical drawings with dimensions. Suggest materials and finishes.',
+          '<strong>Step 3 - Quotation:</strong> Detailed pricing based on specifications. Volume pricing for different quantities. Timeline estimate for production. Terms and conditions.',
+          '<strong>Step 4 - Sample Production:</strong> Manufacture sample for approval. Ship sample for evaluation. Collect feedback and make revisions. Final approval before mass production.',
+          '<strong>Step 5 - Production:</strong> Order confirmation and deposit. Mass production with quality control. Regular progress updates. Pre-shipment inspection and approval.',
+          '<strong>Step 6 - Delivery:</strong> Professional packaging. Export documentation. Shipping arrangement. Ongoing support.'
+        ]
+      },
+      {
+        heading: 'Quality Assurance',
+        paragraphs: [
+          'Strict quality control throughout manufacturing:',
+          '<strong>Material Inspection:</strong> Verification of steel grades and dimensions. Wood moisture content and quality check. Surface preparation standards. Component dimensional accuracy.',
+          '<strong>Process Control:</strong> Welding inspection (visual and destructive testing). Coating thickness measurement. Assembly tolerances. Functionality testing.',
+          '<strong>Final Inspection:</strong> Complete dimensional check. Finish quality assessment. Stability and load testing. Packaging inspection.',
+          '<strong>Certifications:</strong> Material certificates available. Third-party inspection services. Export quality documentation. Warranty coverage.'
+        ]
+      },
+      {
+        heading: 'Industries We Serve',
+        paragraphs: [
+          'We manufacture custom furniture for diverse sectors:'
+        ],
+        list: [
+          '<strong>Hospitality:</strong> Hotels, resorts, restaurants, cafes. Complete furniture packages. Brand-specific custom designs.',
+          '<strong>Retail:</strong> Store fixtures and displays. Checkout counters. Shelving systems. Branded furniture.',
+          '<strong>Commercial:</strong> Office furniture. Corporate spaces. Co-working furniture. Reception areas.',
+          '<strong>Residential:</strong> High-end custom furniture. Interior designer projects. Unique statement pieces.',
+          '<strong>Industrial:</strong> Workshop furniture. Factory storage. Heavy-duty applications.',
+          '<strong>Institutional:</strong> Schools and universities. Healthcare facilities. Government projects.'
+        ]
+      },
+      {
+        heading: 'Why Choose Our Manufacturing Services',
+        paragraphs: [
+          '<strong>Experience:</strong> 25+ years in metal furniture manufacturing. 1000+ custom projects completed. International export experience. Understanding of diverse market requirements.',
+          '<strong>Capabilities:</strong> Complete in-house manufacturing. Design to delivery under one roof. Flexible production capacity. Short lead times for samples.',
+          '<strong>Quality:</strong> Skilled craftsmen and modern equipment. Strict quality control processes. International quality standards. Consistent results across production runs.',
+          '<strong>Service:</strong> Responsive communication. Transparent process with regular updates. Problem-solving approach. Long-term partnership focus.',
+          '<strong>Pricing:</strong> Direct factory pricing. No middlemen markups. Competitive labor costs. Volume discounts available.',
+          '<strong>Logistics:</strong> Complete export services. FOB or CIF terms. Reliable shipping partners. Professional packaging.'
+        ]
+      },
+      {
+        heading: 'Getting Started',
+        paragraphs: [
+          'Ready to manufacture your custom furniture design?',
+          '<strong>Contact us with:</strong> Design sketches or reference images. Specifications and dimensions. Target quantity and timeline. Budget range. Destination country.',
+          '<strong>We will provide:</strong> Design feedback and recommendations. Detailed quotation. Timeline for sample and production. Material and finish options. Terms and conditions.',
+          '<strong>Next steps:</strong> Sample production for approval. Order confirmation and deposit. Production with regular updates. Quality inspection. Shipping and delivery.',
+          '<strong>Contact our team today to discuss your custom metal furniture project. We work with international clients worldwide and are ready to help bring your designs to life with Indonesian quality and competitive pricing.</strong>'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-kitchen-cabinets-commercial-export',
+    sections: [
+      {
+        heading: 'Industrial Kitchen Cabinets for Commercial Export',
+        paragraphs: [
+          'Industrial-style kitchen cabinets manufactured in Indonesia combine robust steel construction with functional design, perfect for commercial kitchens, restaurants, cafes, and modern residential spaces. Our commercial-grade cabinets are built to withstand the demands of professional environments while offering contemporary industrial aesthetics.',
+          'With export-quality manufacturing standards and competitive pricing, Indonesian industrial kitchen cabinets provide international buyers with durable storage solutions that enhance both functionality and visual appeal.'
+        ]
+      },
+      {
+        heading: 'Product Features',
+        list: [
+          '<strong>Steel Frame Construction:</strong> Heavy-duty hollow section steel for robust structural integrity',
+          '<strong>Door Options:</strong> Metal doors, glass doors, or open shelving configurations',
+          '<strong>Commercial Grade:</strong> Designed for heavy daily use in professional kitchens',
+          '<strong>Modular Design:</strong> Multiple units can be combined for custom layouts',
+          '<strong>Adjustable Shelving:</strong> Interior shelves adjustable for various storage needs',
+          '<strong>Powder Coated Finish:</strong> Durable, easy-to-clean surfaces in various colors',
+          '<strong>Stainless Steel Option:</strong> Available for environments requiring maximum hygiene',
+          '<strong>Custom Dimensions:</strong> Any size configuration to fit your kitchen layout'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Kitchen Cabinets Commercial'
+      },
+      {
+        heading: 'Applications',
+        paragraphs: [
+          '<strong>Restaurant Kitchens:</strong> Professional storage for commercial cooking environments. Heavy-duty construction for daily professional use.',
+          '<strong>Cafe and Coffee Shops:</strong> Storage for equipment, supplies, and ingredients. Modern industrial aesthetic visible to customers.',
+          '<strong>Hotels:</strong> Commercial kitchen storage for large-scale food service. Consistent quality across multiple locations.',
+          '<strong>Catering Businesses:</strong> Organized storage for mobile food operations. Durable construction for frequent access.',
+          '<strong>Residential:</strong> Industrial-style kitchens in modern homes. High-quality cabinets with professional appearance.',
+          '<strong>Price Range:</strong> $300-$800 per unit depending on size and specifications. MOQ: 10 units for standard designs. Production: 40-50 days. FOB Jakarta/Surabaya.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'outdoor-bar-sets-weather-resistant-indonesia',
+    sections: [
+      {
+        heading: 'Weather-Resistant Outdoor Bar Sets from Indonesia',
+        paragraphs: [
+          'Indonesian-manufactured outdoor bar sets feature weather-resistant construction perfect for outdoor hospitality spaces, rooftop bars, patios, and balconies. Our sets combine galvanized steel frames with outdoor-grade powder coating to withstand harsh weather conditions while maintaining their appearance.',
+          'Designed specifically for commercial outdoor applications, these bar sets offer durability, style, and functionality for venues worldwide.'
+        ]
+      },
+      {
+        heading: 'Product Specifications',
+        list: [
+          '<strong>Weather-Resistant Construction:</strong> Galvanized steel with outdoor powder coating',
+          '<strong>Complete Sets:</strong> Bar table with 2-4 matching bar stools',
+          '<strong>Standard Heights:</strong> Bar height (110cm) or counter height (95cm) tables',
+          '<strong>Materials:</strong> Steel frame with teak, synthetic rattan, or metal tops',
+          '<strong>Finish Options:</strong> Outdoor-grade powder coating in various colors',
+          '<strong>UV Protection:</strong> Coating resistant to sun damage and fading',
+          '<strong>Rain Resistant:</strong> Proper drainage and rust-proof construction',
+          '<strong>Easy Maintenance:</strong> Simple cleaning with water and mild soap'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Weather-Resistant Outdoor Bar Sets'
+      },
+      {
+        heading: 'Ideal For',
+        paragraphs: [
+          '<strong>Rooftop Bars:</strong> Stylish furniture for elevated outdoor venues. Weather-resistant for exposed locations.',
+          '<strong>Beachside Restaurants:</strong> Corrosion-resistant for coastal environments. Salt air and humidity tolerant.',
+          '<strong>Hotel Patios:</strong> Durable furniture for guest outdoor areas. Professional appearance with reliability.',
+          '<strong>Garden Cafes:</strong> Weather-proof seating for year-round outdoor dining. Modern industrial aesthetic.',
+          '<strong>Price Range:</strong> Complete bar set (table + 2 stools): $400-$700. Table + 4 stools: $650-$1,000. MOQ: 10 sets. Production: 35-45 days.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-daybed-frames-metal-furniture-export',
+    sections: [
+      {
+        heading: 'Industrial Daybed Frames - Export Quality Metal Furniture',
+        paragraphs: [
+          'Industrial daybed frames from Indonesia offer minimalist design with robust steel construction, perfect for hotels, lounges, spas, and modern residential spaces. Our daybed frames provide the foundation for comfortable lounge seating with contemporary industrial aesthetics.',
+          'Manufactured with precision welding and professional finishing, these frames are designed for commercial durability while maintaining sleek visual appeal.'
+        ]
+      },
+      {
+        heading: 'Frame Specifications',
+        list: [
+          '<strong>Dimensions:</strong> Standard 180cm x 80cm or custom sizes available',
+          '<strong>Frame Material:</strong> Hollow section steel 40x40mm with reinforcement',
+          '<strong>Weight Capacity:</strong> 250kg+ for commercial use',
+          '<strong>Finish:</strong> Powder coating in matte black, bronze, or custom colors',
+          '<strong>Design:</strong> Minimalist industrial with clean lines',
+          '<strong>Cushion Support:</strong> Slat or mesh base for cushion placement',
+          '<strong>Variations:</strong> With or without backrest, armrests optional',
+          '<strong>Mobility:</strong> Optional casters for easy movement'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Daybed Frames Metal Furniture'
+      },
+      {
+        heading: 'Applications and Pricing',
+        paragraphs: [
+          '<strong>Hotels and Resorts:</strong> Pool side lounge areas. Lobby seating. Spa waiting rooms.',
+          '<strong>Cafes and Lounges:</strong> Comfortable seating for extended stays. Instagram-worthy furniture. Modern aesthetic.',
+          '<strong>Offices:</strong> Break room lounge areas. Reception waiting areas. Creative workspace seating.',
+          '<strong>Price Range:</strong> Basic frame: $200-$350. With cushions: $350-$600. Custom designs: Quote based on specifications. MOQ: 15 pieces. Production: 30-40 days.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'metal-display-racks-retail-furniture-indonesia',
+    sections: [
+      {
+        heading: 'Metal Display Racks - Retail Furniture from Indonesia',
+        paragraphs: [
+          'Industrial metal display racks manufactured in Indonesia provide versatile retail merchandising solutions for stores, showrooms, and commercial spaces worldwide. Our display racks combine functional design with modern industrial aesthetics, creating effective product presentation systems.',
+          'Custom-designed for specific retail needs or available in standard configurations, our display racks help maximize sales through attractive product visibility.'
+        ]
+      },
+      {
+        heading: 'Display Rack Types',
+        list: [
+          '<strong>Clothing Racks:</strong> Garment display with hanging rails. Height-adjustable options. Mobile or stationary configurations.',
+          '<strong>Shoe Displays:</strong> Angled shelves for footwear presentation. Multi-tier designs. Custom branding options.',
+          '<strong>Product Shelving:</strong> Adjustable shelves for various merchandise. Open or enclosed designs. Modular systems.',
+          '<strong>Wall-Mounted Displays:</strong> Space-saving retail solutions. Various shelf depths. Easy installation systems.',
+          '<strong>Freestanding Units:</strong> Double-sided access for floor displays. Custom heights and configurations. Stable base design.',
+          '<strong>Counter Displays:</strong> Point-of-sale merchandising. Compact designs. Eye-catching presentation.',
+          '<strong>Specialty Racks:</strong> Wine bottle displays. Book displays. Electronics displays. Custom for specific products.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=1200&auto=format&fit=crop',
+        imageAlt: 'Metal Display Racks Retail Furniture'
+      },
+      {
+        heading: 'Customization and Pricing',
+        paragraphs: [
+          '<strong>Branding Options:</strong> Custom colors matching your brand. Logo plates or decals. Branded signage holders. Custom dimensions.',
+          '<strong>Materials:</strong> Steel frame powder coated. Wood shelves or metal mesh. Glass shelves for premium display. Combination designs.',
+          '<strong>Applications:</strong> Fashion boutiques. Shoe stores. Gift shops. Bookstores. Electronics stores. Wholesale showrooms.',
+          '<strong>Pricing:</strong> Simple racks: $100-$250. Complex displays: $250-$600. Custom designs: Based on specifications. MOQ: 20 pieces. Production: 35-45 days.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-work-tables-office-furniture-export',
+    sections: [
+      {
+        heading: 'Industrial Work Tables - Office Furniture Export',
+        paragraphs: [
+          'Industrial work tables from Indonesia combine sturdy steel frames with functional work surfaces, ideal for modern offices, co-working spaces, studios, and workshops. Our tables are designed for professional environments requiring durable, reliable work surfaces with contemporary industrial styling.',
+          'Manufactured to commercial standards with customizable dimensions and finishes, these work tables serve international markets across various professional sectors.'
+        ]
+      },
+      {
+        heading: 'Table Specifications',
+        list: [
+          '<strong>Frame Construction:</strong> Hollow section steel 40x40mm to 60x40mm',
+          '<strong>Top Materials:</strong> Solid wood, plywood, or metal tops. Thickness 25-40mm for stability',
+          '<strong>Standard Sizes:</strong> 120x60cm (individual desks) to 200x80cm (large work tables)',
+          '<strong>Height Options:</strong> Standard 75cm or standing desk height 105cm',
+          '<strong>Load Capacity:</strong> 100-150kg evenly distributed weight',
+          '<strong>Cable Management:</strong> Optional wire management solutions',
+          '<strong>Mobility:</strong> Fixed legs or caster wheels available',
+          '<strong>Finish:</strong> Powder-coated steel, sealed wood surfaces'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1595428773629-6e5cf2e1d8f1?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Work Tables Office Furniture'
+      },
+      {
+        heading: 'Applications and Pricing',
+        paragraphs: [
+          '<strong>Modern Offices:</strong> Individual workstations. Collaborative work tables. Meeting room tables.',
+          '<strong>Co-working Spaces:</strong> Hot-desking tables. Communal work surfaces. Private office desks.',
+          '<strong>Studios:</strong> Design studios. Art studios. Photography studios. Architecture firms.',
+          '<strong>Workshops:</strong> Assembly tables. Tool benches. Project tables.',
+          '<strong>Pricing:</strong> Single desk 120cm: $180-$300. Large table 200cm: $350-$550. Custom sizes: Based on specifications. MOQ: 15 pieces. Production: 30-40 days. FOB Jakarta/Surabaya port.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'metal-coat-racks-commercial-furniture-indonesia',
+    sections: [
+      {
+        heading: 'Metal Coat Racks - Commercial Furniture from Indonesia',
+        paragraphs: [
+          'Industrial metal coat racks from Indonesia provide functional storage solutions for commercial spaces including offices, hotels, restaurants, and retail environments. Our coat racks feature robust steel construction with modern industrial design, offering reliable garment storage with visual appeal.',
+          'Available in freestanding and wall-mounted configurations, our coat racks are designed for heavy commercial use while maintaining clean, contemporary aesthetics.'
+        ]
+      },
+      {
+        heading: 'Product Range',
+        list: [
+          '<strong>Freestanding Coat Racks:</strong> Floor-standing units with multiple hooks. Height 170-200cm. Stable weighted base.',
+          '<strong>Wall-Mounted Hooks:</strong> Space-saving wall installations. Various hook quantities. Industrial pipe designs.',
+          '<strong>Coat Trees:</strong> Central pole with radiating hooks. Modern minimalist styling. Heavy-duty construction.',
+          '<strong>Hall Trees:</strong> Combined seating and coat storage. Bench with overhead hooks. Shoe storage options.',
+          '<strong>Commercial Wardrobes:</strong> Open wardrobe systems. Hanging rail with shelf. Mobile or fixed versions.',
+          '<strong>Hotel Valets:</strong> Garment hanging with trouser bar. Compact footprint. Professional appearance.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=1200&auto=format&fit=crop',
+        imageAlt: 'Metal Coat Racks Commercial Furniture'
+      },
+      {
+        heading: 'Specifications and Pricing',
+        paragraphs: [
+          '<strong>Materials:</strong> Steel tube 25-40mm diameter. Powder-coated finish. Quality hooks and hardware.',
+          '<strong>Capacity:</strong> Freestanding: 15-25 coats. Wall-mounted: 5-10 coats per meter. Heavy-duty options available.',
+          '<strong>Finish Options:</strong> Matte black most popular. Bronze, grey, white available. Custom RAL colors.',
+          '<strong>Applications:</strong> Office reception areas. Hotel room furniture. Restaurant entryways. Retail fitting rooms. Gym and spa facilities.',
+          '<strong>Pricing:</strong> Wall hooks: $40-$80. Freestanding racks: $100-$250. Hall trees: $200-$400. MOQ: 30 pieces. Production: 25-35 days.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-bookshelf-metal-frame-export-indonesia',
+    sections: [
+      {
+        heading: 'Industrial Bookshelves - Metal Frame Export from Indonesia',
+        paragraphs: [
+          'Industrial-style bookshelves with metal frames manufactured in Indonesia offer modern storage solutions for offices, libraries, residential spaces, and commercial environments. Our bookshelves combine steel structural frames with wood or metal shelves, creating durable and attractive storage systems.',
+          'Designed for both functionality and aesthetic appeal, these bookshelves serve international markets requiring quality furniture with contemporary industrial character.'
+        ]
+      },
+      {
+        heading: 'Bookshelf Designs',
+        list: [
+          '<strong>Ladder Bookshelves:</strong> Leaning design against wall. Progressive shelf depths. Modern minimalist aesthetic.',
+          '<strong>Cube Storage Systems:</strong> Modular cube configurations. Mix of open and closed cubes. Customizable arrangements.',
+          '<strong>Industrial Shelving Units:</strong> Traditional rectangular shelving. Adjustable shelf heights. Various widths and heights.',
+          '<strong>Wall-Mounted Shelves:</strong> Floating shelf appearance. Steel brackets or frames. Various lengths available.',
+          '<strong>Room Divider Shelves:</strong> Double-sided access. Open design for light flow. Partition functionality.',
+          '<strong>Corner Bookshelves:</strong> Space-efficient corner units. Triangular or L-shaped. Maximizes unused space.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1595428773629-6e5cf2e1d8f1?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Bookshelf Metal Frame'
+      },
+      {
+        heading: 'Specifications and Applications',
+        paragraphs: [
+          '<strong>Materials:</strong> Steel frame 30x30mm to 40x40mm. Wood shelves in teak, mango, or pine. Metal mesh shelf options. Powder-coated finishes.',
+          '<strong>Dimensions:</strong> Heights 180cm to 240cm. Widths 80cm to 200cm. Depths 30cm to 45cm. Custom sizes available.',
+          '<strong>Load Capacity:</strong> 25-40kg per shelf depending on design. Reinforced for heavy book collections. Proper weight distribution.',
+          '<strong>Applications:</strong> Home libraries. Office spaces. Bookstores. Educational institutions. Hotels and lobbies. Cafes with book displays.',
+          '<strong>Pricing:</strong> Small units (80cm wide): $180-$300. Large units (150cm+ wide): $350-$600. Custom designs: Quote based on specs. MOQ: 15 pieces. Production: 35-45 days.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'balcony-furniture-space-saving-designs-indonesia',
+    sections: [
+      {
+        heading: 'Balcony Furniture - Space-Saving Designs from Indonesia',
+        paragraphs: [
+          'Space-efficient balcony furniture manufactured in Indonesia provides compact solutions for small outdoor spaces. Our designs maximize functionality in limited areas while offering weather-resistant construction and modern industrial styling perfect for urban balconies, small patios, and compact outdoor areas.',
+          'Specially designed for small-space living, these furniture pieces help create comfortable outdoor environments without overcrowding limited square footage.'
+        ]
+      },
+      {
+        heading: 'Space-Saving Furniture Range',
+        list: [
+          '<strong>Folding Bar Tables:</strong> Wall-mounted fold-down tables. Compact when not in use. Various sizes 60-100cm width.',
+          '<strong>Stackable Chairs:</strong> Space-efficient storage. Comfortable seating. Industrial metal or mixed materials.',
+          '<strong>Corner Benches:</strong> L-shaped seating utilizing corners. Maximizes seating in small areas. Storage underneath options.',
+          '<strong>Compact Bar Sets:</strong> Small bistro tables 60-70cm diameter. Matching compact stools. Perfect for 2-person setups.',
+          '<strong>Hanging Planters:</strong> Vertical garden solutions. Save floor space. Industrial metal designs.',
+          '<strong>Rail-Mounted Tables:</strong> Attach to balcony railings. Folds flat when not needed. Smart space utilization.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Balcony Furniture Space-Saving Designs'
+      },
+      {
+        heading: 'Features and Pricing',
+        paragraphs: [
+          '<strong>Weather Resistance:</strong> Galvanized steel with outdoor coating. Rust-proof construction. UV-resistant finishes. Easy maintenance.',
+          '<strong>Compact Dimensions:</strong> Tables 60-80cm for tight spaces. Chairs designed for small footprint. Vertical storage solutions.',
+          '<strong>Multi-Functional:</strong> Furniture with dual purposes. Seating with storage. Tables with planters.',
+          '<strong>Target Markets:</strong> Apartment balconies. Small urban patios. Compact roof terraces. Hotel room balconies. Airbnb properties.',
+          '<strong>Pricing:</strong> Compact bistro set: $200-$350. Folding table: $80-$150. Stackable chairs (per pair): $100-$180. MOQ: 20 pieces. Production: 30-40 days.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'steel-frame-furniture-manufacturer-indonesia',
+    sections: [
+      {
+        heading: 'Leading Steel Frame Furniture Manufacturer in Indonesia',
+        paragraphs: [
+          'As a premier steel frame furniture manufacturer in Indonesia, we specialize in producing high-quality industrial furniture for export to global markets. Our facility combines modern fabrication equipment with skilled craftsmanship to deliver consistent quality across large production runs.',
+          'With comprehensive manufacturing capabilities from raw steel to finished furniture, we serve international buyers, distributors, and project contractors worldwide.'
+        ]
+      },
+      {
+        heading: 'Manufacturing Capabilities',
+        list: [
+          '<strong>Steel Processing:</strong> In-house steel cutting and preparation. Laser cutting for precision. CNC bending capabilities. Tube and profile processing.',
+          '<strong>Welding:</strong> Skilled MIG/TIG welders. Robotic welding for consistency. Quality weld inspection. Clean joint finishing.',
+          '<strong>Surface Treatment:</strong> Sandblasting facilities. Chemical pre-treatment. Powder coating line. Electroplating options.',
+          '<strong>Assembly:</strong> Complete furniture assembly. Multi-material integration. Quality control checkpoints. Efficient production flow.',
+          '<strong>Packaging:</strong> Professional export packaging. Flat-pack or assembled options. Container optimization. Protection during transit.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&auto=format&fit=crop',
+        imageAlt: 'Steel Frame Furniture Manufacturing'
+      },
+      {
+        heading: 'Product Range',
+        paragraphs: [
+          '<strong>Furniture Categories:</strong> Dining tables and chairs. Bar furniture. Lounge seating. Office furniture. Storage solutions. Outdoor furniture. Custom designs.',
+          '<strong>Quality Standards:</strong> ISO-compliant processes. Material traceability. Load testing protocols. Finish quality standards. Export documentation.',
+          '<strong>Production Capacity:</strong> Large-scale production runs. Container-load quantities. Consistent quality across batches. Flexible scheduling.',
+          '<strong>Export Services:</strong> FOB/CIF terms available. Complete export documentation. Freight forwarding partnerships. Quality guarantees. After-sales support.',
+          '<strong>Why Choose Us:</strong> 25+ years manufacturing experience. 1000+ successful export projects. Competitive factory-direct pricing. Reliable delivery timelines. Quality consistency. Responsive communication.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-bench-seating-commercial-furniture',
+    sections: [
+      {
+        heading: 'Industrial Bench Seating - Commercial Furniture',
+        paragraphs: [
+          'Industrial bench seating from Indonesia provides versatile seating solutions for commercial environments including cafes, restaurants, waiting areas, and public spaces. Our benches feature robust steel frames with various back and cushioning options, designed for heavy commercial use.',
+          'Manufactured to withstand constant use while maintaining visual appeal, our bench seating serves markets worldwide requiring durable, attractive commercial furniture.'
+        ]
+      },
+      {
+        heading: 'Bench Seating Types',
+        list: [
+          '<strong>Backless Benches:</strong> Simple design for flexible use. Easy to slide under tables. Modern minimalist aesthetic.',
+          '<strong>Low-Back Benches:</strong> Comfortable support without bulk. Suitable for dining areas. Clean industrial lines.',
+          '<strong>High-Back Banquettes:</strong> Maximum comfort for extended seating. Restaurant booth seating. Upholstered options.',
+          '<strong>Corner Benches:</strong> L-shaped for corner placement. Maximizes seating capacity. Space-efficient design.',
+          '<strong>Modular Benches:</strong> Units that connect together. Flexible configurations. Scalable seating systems.',
+          '<strong>Outdoor Benches:</strong> Weather-resistant construction. Parks and public spaces. Durable finishes.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Bench Seating Commercial'
+      },
+      {
+        heading: 'Applications and Pricing',
+        paragraphs: [
+          '<strong>Restaurants and Cafes:</strong> Booth seating for dining. Communal table benches. Outdoor patio seating.',
+          '<strong>Waiting Areas:</strong> Airports and terminals. Hospital waiting rooms. Office reception areas.',
+          '<strong>Public Spaces:</strong> Shopping malls. Parks and plazas. Educational institutions.',
+          '<strong>Specifications:</strong> Lengths from 120cm to 300cm. Seat height 45cm standard. Steel frame with wood or upholstered seats. Load capacity 400kg+.',
+          '<strong>Pricing:</strong> Backless bench 150cm: $180-$300. With backrest 150cm: $280-$450. Upholstered banquette: $400-$700. MOQ: 15 pieces. Production: 35-45 days.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'hospitality-furniture-supplier-indonesia-export',
+    sections: [
+      {
+        heading: 'Hospitality Furniture Supplier - Indonesia Export',
+        paragraphs: [
+          'As a comprehensive hospitality furniture supplier in Indonesia, we provide complete furniture solutions for hotels, resorts, restaurants, and commercial hospitality projects worldwide. Our extensive range covers all furniture needs from guest rooms to public spaces, manufactured to commercial hospitality standards.',
+          'With experience supplying major hospitality projects across multiple countries, we understand the unique requirements of the hospitality industry including durability, aesthetics, budget management, and timeline adherence.'
+        ]
+      },
+      {
+        heading: 'Complete Furniture Solutions',
+        list: [
+          '<strong>Guest Room Furniture:</strong> Bed frames and headboards. Nightstands and dressers. Desks and chairs. Luggage racks. Wardrobes.',
+          '<strong>Lobby and Public Areas:</strong> Lounge seating. Coffee tables. Reception desks. Display shelving. Decorative pieces.',
+          '<strong>Dining Furniture:</strong> Restaurant tables and chairs. Bar stools and counters. Buffet stations. Service carts.',
+          '<strong>Outdoor Furniture:</strong> Pool side loungers. Patio dining sets. Garden benches. Cabanas and daybeds.',
+          '<strong>Back-of-House:</strong> Staff areas. Storage solutions. Utility furniture. Kitchen equipment.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&auto=format&fit=crop',
+        imageAlt: 'Hospitality Furniture Supplier Indonesia'
+      },
+      {
+        heading: 'Project Services',
+        paragraphs: [
+          '<strong>Design Consultation:</strong> Understanding project requirements. Style development. Space planning. Material recommendations.',
+          '<strong>Customization:</strong> Brand-specific designs. Custom dimensions. Unique finishes. Logo integration.',
+          '<strong>Project Management:</strong> Timeline coordination. Phased delivery. Quality consistency. On-time completion.',
+          '<strong>Large-Scale Production:</strong> Multiple container capacity. Consistent quality across quantities. Bulk pricing. Staged delivery options.',
+          '<strong>Case Studies:</strong> 50+ room boutique hotels. 200+ room resort projects. Restaurant chains. Spa and wellness centers.',
+          '<strong>Advantages:</strong> One-stop furniture sourcing. Consistent quality and style. Competitive project pricing. Reliable timelines. Full export support. Post-delivery service.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'restaurant-furniture-indonesia-wholesale-export',
+    sections: [
+      {
+        heading: 'Restaurant Furniture Indonesia - Wholesale Export',
+        paragraphs: [
+          'Wholesale restaurant furniture manufacturer in Indonesia offering complete dining furniture solutions for export to international markets. Our product range includes dining tables, chairs, bar furniture, and storage specifically designed for commercial restaurant use.',
+          'With competitive wholesale pricing and consistent quality for bulk orders, we serve restaurant chains, hospitality groups, furniture distributors, and project contractors worldwide.'
+        ]
+      },
+      {
+        heading: 'Restaurant Furniture Range',
+        list: [
+          '<strong>Dining Tables:</strong> Various sizes and configurations. 2-seater to 10-seater options. Round, square, rectangular. Indoor and outdoor versions.',
+          '<strong>Dining Chairs:</strong> Side chairs and armchairs. Stackable options. Metal, wood, or upholstered. Commercial-grade construction.',
+          '<strong>Booth Seating:</strong> Banquette benches. Corner booths. Custom configurations. Upholstery options.',
+          '<strong>Bar Furniture:</strong> Bar height tables. Bar stools and chairs. Bar counters. Back bar storage.',
+          '<strong>Outdoor Dining:</strong> Weather-resistant tables and chairs. Patio furniture. Rooftop dining sets. Folding options.',
+          '<strong>Auxiliary Furniture:</strong> Hostess stations. Server stations. Wine racks. Display shelving.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&auto=format&fit=crop',
+        imageAlt: 'Restaurant Furniture Wholesale Indonesia'
+      },
+      {
+        heading: 'Wholesale Advantages',
+        paragraphs: [
+          '<strong>Volume Pricing:</strong> Competitive rates for bulk orders. Tiered pricing discounts. Container-load pricing. Long-term partnership rates.',
+          '<strong>Consistent Quality:</strong> Standardized production processes. Quality control for large batches. Material consistency. Repeat order reliability.',
+          '<strong>Flexible MOQ:</strong> Mixed container loads. Combine different items. Start with smaller test orders. Scale up for full projects.',
+          '<strong>Production Capacity:</strong> Large-scale manufacturing. Multiple containers monthly. Fast turnaround on repeat orders. Reliable scheduling.',
+          '<strong>Target Buyers:</strong> Restaurant chains. Furniture distributors. Hospitality groups. Interior design firms. Project contractors.',
+          '<strong>Pricing Examples:</strong> Dining set (table + 2 chairs): $180-$350. Bar stool: $35-$65. Booth seating per meter: $350-$600. 40ft container value: $15,000-$30,000 typical.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'cafe-furniture-wholesale-indonesia-manufacturer',
+    sections: [
+      {
+        heading: 'Cafe Furniture Wholesale - Indonesia Manufacturer',
+        paragraphs: [
+          'Wholesale cafe furniture manufacturer in Indonesia specializing in modern industrial-style furniture perfect for coffee shops and cafes worldwide. Our comprehensive range includes dining tables, chairs, bar stools, and lounge seating designed specifically for cafe environments.',
+          'With Instagram-worthy designs and commercial-grade construction, our cafe furniture helps create inviting spaces that attract customers while withstanding heavy daily use.'
+        ]
+      },
+      {
+        heading: 'Cafe Furniture Collection',
+        list: [
+          '<strong>Cafe Tables:</strong> Small 2-person tables 60-70cm. Medium 4-person tables 80-100cm. Communal tables 200cm+. Various heights including bar height.',
+          '<strong>Cafe Chairs:</strong> Lightweight yet durable. Stackable options. Industrial metal chairs. Mixed material designs. Cushioned seats available.',
+          '<strong>Lounge Seating:</strong> Sofas and benches. Comfortable for extended stays. Modern industrial styling. Various upholstery options.',
+          '<strong>Bar Furniture:</strong> Bar counters. Bar stools. High tables. Standing height options.',
+          '<strong>Outdoor Options:</strong> Sidewalk cafe furniture. Patio tables and chairs. Weather-resistant finishes. Foldable for storage.',
+          '<strong>Display and Storage:</strong> Retail product shelving. Pastry display cases. Coffee equipment stations. Menu boards.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Cafe Furniture Wholesale Indonesia'
+      },
+      {
+        heading: 'Wholesale for Cafe Businesses',
+        paragraphs: [
+          '<strong>Design Trends:</strong> Industrial modern style. Minimalist Scandinavian. Vintage rustic. Contemporary urban. Mix-and-match capability.',
+          '<strong>Space Optimization:</strong> Furniture for small cafes. Maximize seating capacity. Flexible arrangements. Multi-functional pieces.',
+          '<strong>Budget-Friendly:</strong> Startup cafe packages. Wholesale pricing. Volume discounts. Mixed containers. Payment terms for businesses.',
+          '<strong>Fast Turnaround:</strong> Stock designs: 30-40 days. Popular color options. Standard sizes. Container optimization.',
+          '<strong>Target Markets:</strong> Coffee shop chains. Independent cafes. Franchise operators. Interior designers. Hospitality groups. Furniture importers.',
+          '<strong>Package Examples:</strong> Starter package (10 tables + 20 chairs): $2,500-$4,000. Medium cafe (20 tables + 40 chairs + lounge): $6,000-$10,000. Large cafe complete setup: $12,000-$20,000.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-furniture-hotels-contract-furniture',
+    sections: [
+      {
+        heading: 'Industrial Furniture for Hotels - Contract Furniture',
+        paragraphs: [
+          'Specialized contract furniture manufacturing for hotel projects, providing industrial-style furniture solutions for guest rooms, lobbies, restaurants, and all hotel public spaces. Our contract furniture division handles large-scale hotel projects with experience in multi-phase delivery and maintaining quality consistency across hundreds of rooms.',
+          'We understand the unique requirements of hotel furniture including durability for commercial use, aesthetic appeal, budget management, and strict timeline adherence critical to hotel opening schedules.'
+        ]
+      },
+      {
+        heading: 'Hotel Furniture Solutions',
+        list: [
+          '<strong>Guest Room Furniture:</strong> Platform beds and headboards. Nightstands and lighting. Work desks and chairs. Wardrobes and luggage racks. TV units. Mini bar cabinets.',
+          '<strong>Lobby Furniture:</strong> Reception desks. Lounge seating arrangements. Coffee tables. Decorative shelving. Accent pieces.',
+          '<strong>Restaurant and Bar:</strong> Dining furniture. Bar counters and stools. Buffet stations. Banquette seating. Outdoor dining.',
+          '<strong>Public Spaces:</strong> Conference room furniture. Gym equipment frames. Spa furniture. Laundry room solutions.',
+          '<strong>Suite Furniture:</strong> Living room sets. Dining areas. Kitchen furniture. Luxury finishes.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1596436889106-be35e843f974?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Hotel Contract Furniture'
+      },
+      {
+        heading: 'Contract Services',
+        paragraphs: [
+          '<strong>Project Management:</strong> Dedicated project manager. Timeline coordination. Phased delivery scheduling. Quality consistency. Communication protocols.',
+          '<strong>Customization:</strong> Brand-specific designs. Custom dimensions for spaces. Unique finishes and materials. Logo integration. Color matching.',
+          '<strong>Large-Scale Production:</strong> 50-500+ room capacity. Consistent quality across batches. Multiple container coordination. Warehousing and staging. Installation support.',
+          '<strong>Budget Management:</strong> Competitive contract pricing. Value engineering. Payment schedules. Cost control. Transparent quotations.',
+          '<strong>Quality Assurance:</strong> Pre-production samples. In-process inspections. Final inspections. Third-party QC available. Warranty coverage. Spare parts provision.',
+          '<strong>Experience:</strong> Boutique hotels 20-50 rooms. Mid-scale hotels 100-200 rooms. Large hotels 200+ rooms. Resort projects. Hotel chain projects.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'powder-coating-metal-furniture-finishing-indonesia',
+    sections: [
+      {
+        heading: 'Powder Coating Metal Furniture - Professional Finishing in Indonesia',
+        paragraphs: [
+          'Professional powder coating services for metal furniture in Indonesia, providing durable, high-quality finishes for export-quality furniture. Our industrial powder coating line ensures consistent color application, excellent durability, and superior finish quality for all types of metal furniture.',
+          'Powder coating is the preferred finishing method for commercial metal furniture due to its exceptional durability, environmental benefits, and wide range of color and texture options.'
+        ]
+      },
+      {
+        heading: 'Powder Coating Process',
+        list: [
+          '<strong>Surface Preparation:</strong> Chemical degreasing to remove oils. Phosphate treatment for adhesion. Rinsing and drying. Clean room environment.',
+          '<strong>Priming:</strong> Anti-rust primer application. Special primers for different environments. Enhanced corrosion protection. Foundation for topcoat.',
+          '<strong>Powder Application:</strong> Electrostatic spray application. Even powder distribution. Full coverage including corners. Efficient material use.',
+          '<strong>Curing:</strong> Industrial curing oven. Controlled temperature 180-200°C. Proper cure time 10-20 minutes. Consistent heat distribution.',
+          '<strong>Quality Control:</strong> Thickness measurement (60-100 microns). Adhesion testing. Color matching. Surface inspection. Gloss level verification.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&auto=format&fit=crop',
+        imageAlt: 'Powder Coating Metal Furniture Professional Finishing'
+      },
+      {
+        heading: 'Finish Options and Benefits',
+        paragraphs: [
+          '<strong>Color Options:</strong> Any RAL color available. Custom color matching. Metallic finishes. Textured finishes. Two-tone combinations.',
+          '<strong>Gloss Levels:</strong> Matte finish (most popular for industrial furniture). Semi-gloss. High gloss. Satin finish.',
+          '<strong>Special Finishes:</strong> Hammertone texture. Wrinkle finish. Antique/distressed effects. Metallic sparkle. Candy colors.',
+          '<strong>Durability Benefits:</strong> Scratch and chip resistant. UV resistant for outdoor use. Corrosion protection. Chemical resistant. Easy to clean and maintain. 5-10 year outdoor durability.',
+          '<strong>Environmental Benefits:</strong> No VOC emissions. No solvents or toxins. Recyclable overspray. Energy efficient process. Eco-friendly choice.',
+          '<strong>Quality Standards:</strong> ISO coating processes. Thickness standards. Adhesion requirements. Color tolerance. Outdoor durability testing. Export quality assurance.',
+          '<strong>Applications:</strong> All metal furniture types. Indoor and outdoor furniture. Commercial and residential. Architecture and construction. Automotive and industrial.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'custom-order-process-international-buyers-indonesia',
+    sections: [
+      {
+        heading: 'Complete Guide to Custom Ordering Industrial Furniture from Indonesia',
+        paragraphs: [
+          'Ordering custom industrial furniture from Indonesia offers international buyers access to high-quality products at competitive prices. However, working with overseas manufacturers can seem daunting if you are unfamiliar with the process. This comprehensive guide walks you through every step of custom ordering furniture from Indonesia, from initial inquiry to final delivery.',
+          'With over 25 years of experience working with international clients, we have streamlined our process to make custom ordering as smooth and transparent as possible. Our goal is to deliver exactly what you envision, on time and within budget.'
+        ]
+      },
+      {
+        heading: 'Step 1: Initial Inquiry and Requirements',
+        paragraphs: [
+          'The first step is reaching out with your project requirements. The more information you provide initially, the more accurate our response will be:',
+          '<strong>What to Include in Your Inquiry:</strong>'
+        ],
+        list: [
+          '<strong>Product Type:</strong> Specify what furniture you need (dining tables, bar stools, lounge furniture, etc.)',
+          '<strong>Quantity:</strong> Approximate quantity helps us quote accurately and plan production',
+          '<strong>Dimensions:</strong> If you have specific sizes in mind, include measurements',
+          '<strong>Materials:</strong> Preferences for steel types, wood species, upholstery, etc.',
+          '<strong>Finish:</strong> Color preferences, powder coating vs. other finishes',
+          '<strong>Budget Range:</strong> Helps us recommend appropriate options',
+          '<strong>Timeline:</strong> When do you need the furniture delivered?',
+          '<strong>Destination:</strong> Shipping destination affects logistics and pricing',
+          '<strong>Reference Images:</strong> Photos of styles you like are extremely helpful'
+        ],
+        paragraphs: [
+          '<strong>How to Contact Us:</strong> Email is best for detailed inquiries with attachments. WhatsApp for quick questions and discussions. Video calls can be arranged for complex projects.',
+          '<strong>Response Time:</strong> We typically respond to inquiries within 24 hours with initial feedback. Detailed quotations follow within 2-3 business days after clarifying requirements.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop',
+        imageAlt: 'Custom Order Process Industrial Furniture'
+      },
+      {
+        heading: 'Step 2: Design Development and Quotation',
+        paragraphs: [
+          'Once we understand your requirements, we develop design concepts and provide a detailed quotation:',
+          '<strong>Design Development:</strong>'
+        ],
+        list: [
+          'Review your reference images and requirements',
+          'Create initial sketches or 3D renderings if needed',
+          'Suggest materials and construction methods',
+          'Propose modifications based on our expertise',
+          'Provide technical drawings with dimensions'
+        ],
+        paragraphs: [
+          '<strong>Quotation Details:</strong> Our quotation includes:'
+        ],
+        list: [
+          'Detailed product specifications',
+          'Materials to be used (steel type, wood species, finish)',
+          'Dimensions and any variations if needed',
+          'Unit price and total price based on quantity',
+          'Production timeline estimate',
+          'Payment terms',
+          'Shipping terms (FOB, CIF, etc.)',
+          'Warranty information',
+          'Validity period of quotation'
+        ],
+        paragraphs: [
+          '<strong>Revisions:</strong> We welcome feedback on designs and quotations. Reasonable revisions are provided at no charge. We work collaboratively to arrive at the perfect solution.'
+        ]
+      },
+      {
+        heading: 'Step 3: Sample Production (If Required)',
+        paragraphs: [
+          'For custom designs or large orders, we strongly recommend sample production:',
+          '<strong>Benefits of Samples:</strong> Verify design, dimensions, and proportions. Assess material quality and finish. Test functionality and comfort. Make adjustments before full production. Reduce risk of miscommunication.',
+          '<strong>Sample Process:</strong> Sample quotation provided (typically at premium pricing). 50-100% payment upfront for samples. Production time: 15-25 days depending on complexity. Shipping arranged to your location. Feedback collected for any modifications.',
+          '<strong>Sample Costs:</strong> Samples typically cost 1.5-2x the production unit price (due to setup costs). Sample costs are often credited if full production order is placed. Shipping costs are additional and borne by buyer.',
+          '<strong>Modifications:</strong> Based on sample evaluation, we can make adjustments. One round of modifications is typically included. Additional rounds may incur fees depending on extent of changes.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&auto=format&fit=crop',
+        imageAlt: 'Industrial Furniture Manufacturing Process'
+      },
+      {
+        heading: 'Step 4: Production Order Confirmation',
+        paragraphs: [
+          'Once designs are approved, we proceed with production order confirmation:',
+          '<strong>Order Confirmation Includes:</strong>'
+        ],
+        list: [
+          'Final specifications document with all details',
+          'Approved drawings or renderings',
+          'Material specifications',
+          'Quantity and any variations',
+          'Final pricing and payment schedule',
+          'Production timeline with milestones',
+          'Shipping and delivery terms',
+          'Quality standards and inspection protocol'
+        ],
+        paragraphs: [
+          '<strong>Proforma Invoice:</strong> We issue a proforma invoice that serves as the contract. Review carefully before signing. Any special requirements should be noted. Keep copy for your records and customs.',
+          '<strong>Production Timeline:</strong> Standard production: 35-50 days depending on quantity and complexity. Rush orders: May be possible with surcharge (consult us). Timeline starts after deposit payment received. We provide production schedule with key milestones.'
+        ]
+      },
+      {
+        heading: 'Step 5: Deposit Payment and Production Start',
+        paragraphs: [
+          'Production begins upon receipt of deposit payment:',
+          '<strong>Standard Payment Terms:</strong> 50% deposit to start production. 50% balance before shipment. LC (Letter of Credit) accepted for qualified buyers. Flexible terms possible for established customers.',
+          '<strong>Payment Methods:</strong> Bank wire transfer (T/T) - most common. Letter of Credit (LC) - for large orders. PayPal or Western Union - possible for smaller amounts (fees apply).',
+          '<strong>Production Commencement:</strong> Material procurement begins immediately after deposit. We provide regular updates on production progress. Photos/videos shared at key milestones. Open communication throughout production.'
+        ]
+      },
+      {
+        heading: 'Step 6: Production and Quality Control',
+        paragraphs: [
+          'During production, we maintain strict quality control and keep you informed:',
+          '<strong>Production Stages:</strong>'
+        ],
+        list: [
+          '<strong>Material Preparation:</strong> Steel cutting and preparation. Wood processing and drying if applicable. Material inspection.',
+          '<strong>Frame Fabrication:</strong> Steel cutting and bending. Welding and assembly. Joint grinding and smoothing.',
+          '<strong>Surface Treatment:</strong> Sandblasting or chemical cleaning. Primer application. Powder coating or other finishing.',
+          '<strong>Assembly:</strong> Final assembly of components. Addition of wood tops, cushions, or other elements. Hardware installation.',
+          '<strong>Quality Inspection:</strong> Structural integrity check. Finish quality assessment. Dimension verification. Functionality testing.'
+        ],
+        paragraphs: [
+          '<strong>Progress Updates:</strong> Weekly progress reports via email. Photos at key stages. Video updates for complex projects. Immediate notification of any issues.',
+          '<strong>Quality Control:</strong> In-process inspection at each stage. Final inspection before packaging. Third-party inspection available upon request. Detailed QC report provided.'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&auto=format&fit=crop',
+        imageAlt: 'Quality Control Process'
+      },
+      {
+        heading: 'Step 7: Pre-Shipment Inspection and Balance Payment',
+        paragraphs: [
+          'Before shipping, final inspection ensures everything meets requirements:',
+          '<strong>Pre-Shipment Inspection:</strong> Complete inspection of all items. Detailed photos of finished products. Photos of packaging process. Verification against order specifications. Measurement checks. Functionality testing.',
+          '<strong>Inspection Report:</strong> Comprehensive photo documentation. Any minor variations noted and explained. Confirmation of quantity and packaging. Ready-to-ship certification.',
+          '<strong>Customer Approval:</strong> We send inspection report for your approval. You have opportunity to raise concerns. Minor adjustments can be made if needed. Approval required before proceeding to shipping.',
+          '<strong>Balance Payment:</strong> 50% balance payment due upon approval of inspection. We provide invoice and payment instructions. Payment must clear before goods depart factory. Commercial invoice and packing list provided.'
+        ]
+      },
+      {
+        heading: 'Step 8: Shipping and Export Documentation',
+        paragraphs: [
+          'We handle all export formalities and arrange shipping:',
+          '<strong>Packaging:</strong> Professional packaging suitable for ocean freight. Corner protection for vulnerable points. Bubble wrap, foam, or cardboard as needed. Moisture protection for ocean shipping. Proper labeling with your marks if required.',
+          '<strong>Export Documentation:</strong>'
+        ],
+        list: [
+          'Commercial Invoice - details of goods and value',
+          'Packing List - itemized list of contents',
+          'Certificate of Origin - preferential tariffs if applicable',
+          'Bill of Lading or Airway Bill - shipping document',
+          'Insurance Certificate - if insurance arranged',
+          'Other documents as required by destination country'
+        ],
+        paragraphs: [
+          '<strong>Shipping Options:</strong>'
+        ],
+        list: [
+          '<strong>FOB (Free on Board):</strong> Most common. We deliver to port and handle export clearance. You arrange ocean freight and insurance.',
+          '<strong>CIF (Cost, Insurance, Freight):</strong> We arrange shipping to your destination port. Includes ocean freight and insurance. You handle import clearance.',
+          '<strong>Door-to-Door:</strong> We arrange everything including delivery to your door. Most convenient but higher cost. You pay all import duties and taxes.'
+        ],
+        paragraphs: [
+          '<strong>Transit Time:</strong> Ocean freight to USA: 25-35 days. To Europe: 30-40 days. To Australia: 15-25 days. To Middle East: 20-30 days. Air freight available for urgent orders (5-10 days).'
+        ]
+      },
+      {
+        heading: 'Step 9: Tracking and Delivery',
+        paragraphs: [
+          'We provide full tracking information and support during transit:',
+          '<strong>Tracking Information:</strong> Bill of Lading number provided. Container number for ocean freight. Tracking number for air freight. Estimated arrival date at destination. Updates on any delays.',
+          '<strong>Import Clearance Assistance:</strong> We provide all necessary documents promptly. Assistance with any customs queries. Guidance on import duties and procedures. Recommend customs brokers if needed.',
+          '<strong>Delivery Coordination:</strong> For door-to-door: we coordinate with local delivery. For FOB/CIF: we support with any documentation issues. Inspection recommended upon receipt. Report any damage immediately for insurance claims.'
+        ]
+      },
+      {
+        heading: 'Step 10: After-Sales Support',
+        paragraphs: [
+          'Our relationship does not end with delivery:',
+          '<strong>Quality Guarantee:</strong> 2-year warranty on structural integrity. 1-year warranty on powder coating and finishes. Warranty covers manufacturing defects, not normal wear or misuse.',
+          '<strong>Ongoing Support:</strong> Technical support for assembly if needed. Care and maintenance instructions provided. Spare parts available if required. Support for future orders and projects.',
+          '<strong>Feedback:</strong> We welcome feedback on products and service. Use feedback to continuously improve. Build long-term relationships with satisfied customers.',
+          '<strong>Repeat Orders:</strong> Easier process for repeat customers. Specifications on file for consistency. Potential for improved pricing and terms. Priority production scheduling.'
+        ]
+      },
+      {
+        heading: 'Important Considerations for International Buyers',
+        paragraphs: [
+          '<strong>Communication:</strong> Clear communication is key to successful custom orders. Do not hesitate to ask questions at any stage. Use drawings, photos, and samples to clarify requirements. Different time zones - we accommodate your schedule.',
+          '<strong>Realistic Timelines:</strong> Custom manufacturing takes time - plan ahead. Rush orders possible but may cost more. Build in buffer for potential delays. Ocean freight adds significant transit time.',
+          '<strong>Budget Planning:</strong> Product cost is just part of total landed cost. Consider: shipping, insurance, import duties, taxes, customs clearance, local delivery. Import duties vary by country and product classification. Plan for 25-50% above FOB cost for total landed cost.',
+          '<strong>Import Regulations:</strong> Check your country import requirements. Some materials may require certificates. Wood products may need fumigation or treatment certificates. Understand duty rates and any quotas.',
+          '<strong>Currency Exchange:</strong> Prices quoted in USD typically. Monitor exchange rates when timing payments. Consider hedging for large orders.',
+          '<strong>Building Relationships:</strong> First order is about establishing trust. Be clear about expectations and requirements. We value long-term partnerships. Many customers order repeatedly for years.',
+          '<strong>Ready to Start Your Custom Furniture Project?</strong> Contact us today to discuss your requirements and receive a customized quotation. We work with international buyers worldwide and are experienced in making the custom ordering process smooth and transparent. Our team is ready to help bring your furniture vision to life with Indonesian quality and competitive pricing.'
+        ]
+      }
+    ]
   }
 ]
 

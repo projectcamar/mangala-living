@@ -2420,6 +2420,216 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
     date: '2025-11-15',
     author: 'Helmi Ramdan'
+  },
+  {
+    id: 237,
+    slug: 'industrial-dining-tables-export-quality-indonesia',
+    title: 'Industrial Dining Tables Export Quality from Indonesia',
+    category: 'Export & International',
+    excerpt: 'Premium industrial dining tables manufactured in Indonesia for export. Combining steel frames with solid wood tops, our dining tables offer durability and modern aesthetics for commercial spaces worldwide.',
+    image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 238,
+    slug: 'metal-bar-stools-indonesia-manufacturer-exporter',
+    title: 'Metal Bar Stools Indonesia - Manufacturer & Exporter',
+    category: 'Export & International',
+    excerpt: 'High-quality metal bar stools from Indonesia. We manufacture industrial-style bar chairs with robust steel construction, perfect for bars, restaurants, and cafes. Export services available worldwide.',
+    image: 'https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 239,
+    slug: 'industrial-lounge-furniture-indonesia-export',
+    title: 'Industrial Lounge Furniture Indonesia - Export Quality',
+    category: 'Export & International',
+    excerpt: 'Indonesian industrial lounge furniture for commercial spaces. Our lounge sets combine comfort and durability with modern industrial design. Ideal for hotels, lounges, and hospitality projects.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 240,
+    slug: 'industrial-storage-solutions-metal-shelving-export',
+    title: 'Industrial Storage Solutions - Metal Shelving Export',
+    category: 'Export & International',
+    excerpt: 'Custom industrial storage solutions from Indonesia. Metal shelving, display racks, and storage cabinets built for commercial use. Durable construction with modern industrial aesthetics.',
+    image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 241,
+    slug: 'custom-metal-furniture-manufacturing-indonesia',
+    title: 'Custom Metal Furniture Manufacturing in Indonesia',
+    category: 'Export & International',
+    excerpt: 'Professional custom metal furniture manufacturing services in Indonesia. From design to production, we create bespoke industrial furniture for international clients with complete export support.',
+    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 242,
+    slug: 'industrial-kitchen-cabinets-commercial-export',
+    title: 'Industrial Kitchen Cabinets - Commercial Export',
+    category: 'Export & International',
+    excerpt: 'Industrial-style kitchen cabinets for commercial kitchens. Manufactured in Indonesia with heavy-duty steel construction and professional finishing. Perfect for restaurants and commercial spaces.',
+    image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 243,
+    slug: 'outdoor-bar-sets-weather-resistant-indonesia',
+    title: 'Outdoor Bar Sets - Weather Resistant from Indonesia',
+    category: 'Export & International',
+    excerpt: 'Premium outdoor bar sets manufactured in Indonesia. Weather-resistant powder coating and galvanized steel construction ensure long-lasting performance in any climate. Export quality guaranteed.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 244,
+    slug: 'industrial-daybed-frames-metal-furniture-export',
+    title: 'Industrial Daybed Frames - Metal Furniture Export',
+    category: 'Export & International',
+    excerpt: 'Modern industrial daybed frames from Indonesia. Minimalist steel construction perfect for lounges, hotels, and residential projects. Customizable dimensions and finishes for international markets.',
+    image: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 245,
+    slug: 'metal-display-racks-retail-furniture-indonesia',
+    title: 'Metal Display Racks - Retail Furniture from Indonesia',
+    category: 'Export & International',
+    excerpt: 'Industrial display racks and retail shelving from Indonesia. Custom designs for retail stores, showrooms, and commercial spaces. Strong construction with modern industrial styling.',
+    image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 246,
+    slug: 'industrial-work-tables-office-furniture-export',
+    title: 'Industrial Work Tables - Office Furniture Export',
+    category: 'Export & International',
+    excerpt: 'Industrial work tables and office desks manufactured in Indonesia. Steel frame construction with solid wood or metal tops. Perfect for modern offices, co-working spaces, and studios.',
+    image: 'https://images.unsplash.com/photo-1595428773629-6e5cf2e1d8f1?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 247,
+    slug: 'metal-coat-racks-commercial-furniture-indonesia',
+    title: 'Metal Coat Racks - Commercial Furniture Indonesia',
+    category: 'Export & International',
+    excerpt: 'Industrial metal coat racks and wall hooks from Indonesia. Heavy-duty construction for commercial use in offices, hotels, and restaurants. Modern design with reliable functionality.',
+    image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 248,
+    slug: 'industrial-bookshelf-metal-frame-export-indonesia',
+    title: 'Industrial Bookshelf - Metal Frame Export from Indonesia',
+    category: 'Export & International',
+    excerpt: 'Industrial-style bookshelves with steel frames from Indonesia. Custom sizes and configurations available. Perfect for offices, libraries, and residential projects requiring durable storage solutions.',
+    image: 'https://images.unsplash.com/photo-1595428773629-6e5cf2e1d8f1?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 249,
+    slug: 'balcony-furniture-space-saving-designs-indonesia',
+    title: 'Balcony Furniture - Space-Saving Designs from Indonesia',
+    category: 'Export & International',
+    excerpt: 'Space-efficient balcony furniture manufactured in Indonesia. Compact bar tables and seating solutions perfect for small outdoor spaces. Weather-resistant and stylish industrial designs.',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 250,
+    slug: 'steel-frame-furniture-manufacturer-indonesia',
+    title: 'Steel Frame Furniture Manufacturer in Indonesia',
+    category: 'Export & International',
+    excerpt: 'Leading steel frame furniture manufacturer in Indonesia. We produce high-quality industrial furniture with precision welding and professional finishing. Export services to global markets.',
+    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 251,
+    slug: 'industrial-bench-seating-commercial-furniture',
+    title: 'Industrial Bench Seating - Commercial Furniture',
+    category: 'Export & International',
+    excerpt: 'Industrial bench seating and corner lounges from Indonesia. Robust steel frames with comfortable cushioning options. Ideal for cafes, restaurants, and commercial waiting areas.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 252,
+    slug: 'hospitality-furniture-supplier-indonesia-export',
+    title: 'Hospitality Furniture Supplier Indonesia - Export',
+    category: 'Export & International',
+    excerpt: 'Complete hospitality furniture solutions from Indonesia. We supply hotels, resorts, and restaurants worldwide with durable industrial-style furniture. Custom designs and bulk orders welcome.',
+    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 253,
+    slug: 'restaurant-furniture-indonesia-wholesale-export',
+    title: 'Restaurant Furniture Indonesia - Wholesale Export',
+    category: 'Export & International',
+    excerpt: 'Wholesale restaurant furniture manufacturer in Indonesia. Industrial dining tables, chairs, and bar furniture for commercial restaurants. Competitive pricing with consistent quality for bulk orders.',
+    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 254,
+    slug: 'cafe-furniture-wholesale-indonesia-manufacturer',
+    title: 'Cafe Furniture Wholesale - Indonesia Manufacturer',
+    category: 'Export & International',
+    excerpt: 'Wholesale cafe furniture from Indonesia. Modern industrial designs perfect for coffee shops and cafes worldwide. Competitive bulk pricing with reliable production timelines and quality control.',
+    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 255,
+    slug: 'industrial-furniture-hotels-contract-furniture',
+    title: 'Industrial Furniture for Hotels - Contract Furniture',
+    category: 'Export & International',
+    excerpt: 'Contract furniture solutions for hotels and hospitality projects. Indonesian industrial furniture manufacturer with experience in large-scale hotel furniture projects worldwide.',
+    image: 'https://images.unsplash.com/photo-1596436889106-be35e843f974?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 256,
+    slug: 'powder-coating-metal-furniture-finishing-indonesia',
+    title: 'Powder Coating Metal Furniture - Professional Finishing',
+    category: 'Export & International',
+    excerpt: 'Expert powder coating services for metal furniture in Indonesia. High-quality finishes with excellent durability and color consistency. We use industrial-grade powder coating for export-quality products.',
+    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 257,
+    slug: 'custom-order-process-international-buyers-indonesia',
+    title: 'Custom Order Process for International Buyers',
+    category: 'Export & International',
+    excerpt: 'Complete guide to ordering custom industrial furniture from Indonesia. Learn about our streamlined process from design consultation to international shipping, with quality assurance at every step.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-11-06',
+    author: 'Helmi Ramdan'
   }
 ]
 
