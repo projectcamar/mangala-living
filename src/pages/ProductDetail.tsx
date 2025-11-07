@@ -655,6 +655,7 @@ const ProductDetail: React.FC = () => {
                             src={image}
                             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             muted
+                            playsInline
                           />
                           <div style={{
                             position: 'absolute',
@@ -695,12 +696,13 @@ const ProductDetail: React.FC = () => {
                 {selectedImage === 2 && product.video ? (
                   <video 
                     src={product.images[selectedImage]}
-                    controls
                     autoPlay
                     loop
                     muted
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     playsInline
+                    disablePictureInPicture
+                    controlsList="nodownload nofullscreen noremoteplayback"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', pointerEvents: 'none' }}
                   />
                 ) : (
                   <img 

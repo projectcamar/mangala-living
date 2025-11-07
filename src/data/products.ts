@@ -48,8 +48,8 @@ export const ALL_PRODUCTS: Product[] = [
   { id: 16, slug: 'industrial-daybed-frame', name: 'Industrial Daybed Frame', categories: ['Daybed'], price: 'Rp3.200.000', image: daybedBoneOnlyImage },
   
   // Dining Set
-  { id: 4, slug: 'bandung-pipe-dining-table', name: 'Bandung Pipe Dining Table', categories: ['Dining Set', 'Dine Table'], price: 'Rp2.800.000', image: mejaMakanImage, video: mejaMakanVideo },
-  { id: 5, slug: 'dining-set-with-2-chairs', name: 'Dining Set with 2 Chairs', categories: ['Dining Set', 'Dine Table'], price: 'Rp4.000.000', image: mejaMakanSetImage },
+  { id: 4, slug: 'bandung-pipe-dining-table', name: 'Bandung Pipe Dining Table', categories: ['Dining Set', 'Dine Table'], price: 'Rp2.800.000', image: mejaMakanImage },
+  { id: 5, slug: 'dining-set-with-2-chairs', name: 'Dining Set with 2 Chairs', categories: ['Dining Set', 'Dine Table'], price: 'Rp4.000.000', image: mejaMakanSetImage, video: mejaMakanVideo },
   
   // Bar Set
   { id: 6, slug: 'beam-industrial-bar-chair', name: 'Beam Industrial Bar Chair', categories: ['Bar Set'], price: 'Rp450.000', image: barChairImage, video: kursiBarstoolVideo },
@@ -59,8 +59,8 @@ export const ALL_PRODUCTS: Product[] = [
   // Storage
   { id: 9, slug: 'industrial-kitchen-cabinet', name: 'Industrial Kitchen Cabinet', categories: ['Storage'], price: 'Rp4.500.000', image: kabinetDapurImage, video: kabinetDapurVideo },
   { id: 10, slug: 'kabinet-lemari-industrial', name: 'Kabinet Lemari Industrial', categories: ['Storage'], price: 'Rp4.500.000', image: kabinetLemariImage, video: kabinetLemariVideo },
-  { id: 11, slug: 'hollowline-display-rack', name: 'Hollowline Display Rack', categories: ['Storage'], price: 'Rp4.500.000', image: hollowlineDisplayRackImage },
-  { id: 12, slug: 'ladder-frame-display-stand', name: 'Ladder Frame Display Stand', categories: ['Storage'], price: 'Rp3.700.000', image: rakDisplayPartisiImage, video: rakDisplayPartisiVideo },
+  { id: 11, slug: 'hollowline-display-rack', name: 'Hollowline Display Rack', categories: ['Storage'], price: 'Rp4.500.000', image: hollowlineDisplayRackImage, video: rakDisplayPartisiVideo },
+  { id: 12, slug: 'ladder-frame-display-stand', name: 'Ladder Frame Display Stand', categories: ['Storage'], price: 'Rp3.700.000', image: rakDisplayPartisiImage },
   { id: 13, slug: 'industrial-hanging-shelf', name: 'Industrial Hanging Shelf', categories: ['Storage'], price: 'Rp1.200.000', image: rakGantungIndustrialImage },
   { id: 14, slug: 'industrial-coat-rack', name: 'Industrial Coat Rack', categories: ['Storage'], price: 'Rp2.500.000', image: gantunganBajuImage },
   
