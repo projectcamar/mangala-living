@@ -101,12 +101,12 @@ const content = {
     pricingTitle: 'Panduan Harga Estimasi',
     pricingSubtitle: 'Harga Transparan untuk Planning Budget Anda',
     
-    pricingNote1: '💰 Harga dalam katalog ini adalah estimasi harga starting point untuk desain standard dengan material grade reguler.',
-    pricingNote2: '🎨 Custom design dengan kompleksitas tinggi, material premium (besi 6x6cm, kayu jati, electroplating finish), atau dimensi extra large akan menyesuaikan harga.',
-    pricingNote3: '✅ Harga sudah termasuk: Material, produksi, standard finishing (powder coating/painting), quality control, dan packing aman.',
-    pricingNote4: '🚚 Delivery: FREE untuk area Bekasi, Jakarta Timur, Cikarang. Luar area dikenakan biaya berdasarkan jarak (nego).',
-    pricingNote5: '💳 Sistem Pembayaran: DP 50% setelah desain approved, Pelunasan 50% setelah instalasi selesai. Terima Rupiah (IDR) dan Dollar (USD).',
-    pricingNote6: '🎁 Diskon Volume: 5-10 unit (diskon 5%), 11-20 unit (diskon 10%), 21+ unit (negotiable hingga 15%).',
+    pricingNote1: '• Harga dalam katalog ini adalah estimasi harga starting point untuk desain standard dengan material grade reguler.',
+    pricingNote2: '• Custom design dengan kompleksitas tinggi, material premium (besi 6x6cm, kayu jati, electroplating finish), atau dimensi extra large akan menyesuaikan harga.',
+    pricingNote3: '• Harga sudah termasuk: Material, produksi, standard finishing (powder coating/painting), quality control, dan packing aman.',
+    pricingNote4: '• Delivery: FREE untuk area Bekasi, Jakarta Timur, Cikarang. Luar area dikenakan biaya berdasarkan jarak (nego).',
+    pricingNote5: '• Sistem Pembayaran: DP 50% setelah desain approved, Pelunasan 50% setelah instalasi selesai. Terima Rupiah (IDR) dan Dollar (USD).',
+    pricingNote6: '• Diskon Volume: 5-10 unit (diskon 5%), 11-20 unit (diskon 10%), 21+ unit (negotiable hingga 15%).',
     
     // ─────────────────────────── Material Excellence ───────────────────────────
     materialTitle: 'Material Premium yang Kami Gunakan',
@@ -154,9 +154,9 @@ const content = {
     website: 'www.mangala-living.com',
     websiteNote: 'Lihat portfolio lengkap, artikel furniture tips, dan update produk terbaru',
     
-    exportExp: '📦 Export Experience: Malaysia, Singapura, Australia',
-    workshopSize: '🏭 Workshop: 500m² dengan tim produksi 18 orang',
-    projectDone: '✅ Project Completed: 1,200+ project sejak 1999',
+    exportExp: '• Export Experience: Malaysia, Singapura, Australia',
+    workshopSize: '• Workshop: 500m² dengan tim produksi 18 orang',
+    projectDone: '• Project Completed: 1,200+ project sejak 1999',
     
     continued: '(lanjutan)',
     
@@ -166,9 +166,9 @@ const content = {
     priceFormat: 'Mulai dari',
     
     // ─────────────────────────── Call to Actions ───────────────────────────
-    cta1: '📱 WhatsApp kami untuk konsultasi & quotation gratis',
-    cta2: '🏢 Kunjungi workshop kami di Bekasi untuk lihat produk langsung',
-    cta3: '💻 Eksplor koleksi lengkap di www.mangala-living.com',
+    cta1: '• WhatsApp kami untuk konsultasi & quotation gratis',
+    cta2: '• Kunjungi workshop kami di Bekasi untuk lihat produk langsung',
+    cta3: '• Eksplor koleksi lengkap di www.mangala-living.com',
   },
   
   en: {
@@ -233,12 +233,12 @@ const content = {
     pricingTitle: 'Estimated Price Guide',
     pricingSubtitle: 'Transparent Pricing for Your Budget Planning',
     
-    pricingNote1: '💰 Prices in this catalog are estimated starting points for standard designs with regular grade materials.',
-    pricingNote2: '🎨 Custom designs with high complexity, premium materials (6x6cm steel, teak wood, electroplating finish), or extra-large dimensions will adjust pricing.',
-    pricingNote3: '✅ Prices include: Materials, production, standard finishing (powder coating/painting), quality control, and safe packing.',
-    pricingNote4: '🚚 Delivery: FREE for Bekasi, East Jakarta, Cikarang areas. Outside areas charged based on distance (negotiable).',
-    pricingNote5: '💳 Payment System: 50% DP after design approved, 50% settlement after installation complete. Accept Rupiah (IDR) and Dollar (USD).',
-    pricingNote6: '🎁 Volume Discount: 5-10 units (5% off), 11-20 units (10% off), 21+ units (negotiable up to 15%).',
+    pricingNote1: '• Prices in this catalog are estimated starting points for standard designs with regular grade materials.',
+    pricingNote2: '• Custom designs with high complexity, premium materials (6x6cm steel, teak wood, electroplating finish), or extra-large dimensions will adjust pricing.',
+    pricingNote3: '• Prices include: Materials, production, standard finishing (powder coating/painting), quality control, and safe packing.',
+    pricingNote4: '• Delivery: FREE for Bekasi, East Jakarta, Cikarang areas. Outside areas charged based on distance (negotiable).',
+    pricingNote5: '• Payment System: 50% DP after design approved, 50% settlement after installation complete. Accept Rupiah (IDR) and Dollar (USD).',
+    pricingNote6: '• Volume Discount: 5-10 units (5% off), 11-20 units (10% off), 21+ units (negotiable up to 15%).',
     
     // ─────────────────────────── Material Excellence ───────────────────────────
     materialTitle: 'Premium Materials We Use',
@@ -286,9 +286,9 @@ const content = {
     website: 'www.mangala-living.com',
     websiteNote: 'View complete portfolio, furniture tips articles, and latest product updates',
     
-    exportExp: '📦 Export Experience: Malaysia, Singapore, Australia',
-    workshopSize: '🏭 Workshop: 500m² with 18-person production team',
-    projectDone: '✅ Projects Completed: 1,200+ projects since 1999',
+    exportExp: '• Export Experience: Malaysia, Singapore, Australia',
+    workshopSize: '• Workshop: 500m² with 18-person production team',
+    projectDone: '• Projects Completed: 1,200+ projects since 1999',
     
     continued: '(cont.)',
     
@@ -298,9 +298,9 @@ const content = {
     priceFormat: 'Starting from',
     
     // ─────────────────────────── Call to Actions ───────────────────────────
-    cta1: '📱 WhatsApp us for free consultation & quotation',
-    cta2: '🏢 Visit our workshop in Bekasi to see products directly',
-    cta3: '💻 Explore full collection at www.mangala-living.com',
+    cta1: '• WhatsApp us for free consultation & quotation',
+    cta2: '• Visit our workshop in Bekasi to see products directly',
+    cta3: '• Explore full collection at www.mangala-living.com',
   }
 }
 
@@ -508,21 +508,21 @@ export const generateCatalog = async () => {
     doc.setTextColor(...colors.secondaryAccent)
     doc.text(t.welcomeSubtitle, pageWidth / 2, 42, { align: 'center' })
     
-    // Content area
+    // Content area - optimized to fit on ONE page
     const margin = 22
-    let yPos = 70
-    const lineHeight = 7
+    let yPos = 68
+    const lineHeight = 6
     
     doc.setTextColor(...colors.textDark)
-    doc.setFontSize(11)
+    doc.setFontSize(10)
     doc.setFont('helvetica', 'normal')
     
     // Introduction paragraph
     const introLines = doc.splitTextToSize(t.welcomeIntro, pageWidth - (margin * 2))
     doc.text(introLines, margin, yPos)
-    yPos += introLines.length * lineHeight + 8
+    yPos += introLines.length * lineHeight + 4
     
-    // Paragraphs with proper spacing
+    // Combine all paragraphs with minimal spacing
     const paragraphs = [
       t.welcomePara1,
       t.welcomePara2,
@@ -531,49 +531,27 @@ export const generateCatalog = async () => {
       t.welcomePara5
     ]
     
-    paragraphs.forEach((para, index) => {
+    paragraphs.forEach((para) => {
       const paraLines = doc.splitTextToSize(para, pageWidth - (margin * 2))
-      
-      // Check if we need a new page
-      if (yPos + (paraLines.length * lineHeight) > 260) {
-        doc.addPage()
-        pageNumber++
-        doc.setFillColor(...colors.backgroundLight)
-        doc.rect(0, 0, pageWidth, pageHeight, 'F')
-        
-        // Header for continuation page
-        doc.setFillColor(...colors.primaryDark)
-        doc.rect(0, 0, pageWidth, 40, 'F')
-        doc.setTextColor(...colors.textLight)
-        doc.setFontSize(22)
-        doc.setFont('helvetica', 'bold')
-        doc.text(t.welcomeTitle, pageWidth / 2, 25, { align: 'center' })
-        
-        yPos = 55
-        doc.setTextColor(...colors.textDark)
-        doc.setFontSize(11)
-        doc.setFont('helvetica', 'normal')
-      }
-      
       doc.text(paraLines, margin, yPos)
-      yPos += paraLines.length * lineHeight + 6
+      yPos += paraLines.length * lineHeight + 4
     })
     
     // CTA section
-    yPos += 6
-    doc.setFontSize(12)
+    yPos += 3
+    doc.setFontSize(11)
     doc.setFont('helvetica', 'bold')
     doc.setTextColor(...colors.goldAccent)
     const ctaLines = doc.splitTextToSize(t.welcomeCTA, pageWidth - (margin * 2))
     doc.text(ctaLines, margin, yPos)
-    yPos += ctaLines.length * 7 + 10
+    yPos += ctaLines.length * 6 + 8
     
     // Signature
     doc.setFontSize(10)
     doc.setFont('helvetica', 'italic')
     doc.setTextColor(...colors.textDark)
     doc.text(t.welcomeSignature, margin, yPos)
-    yPos += 6
+    yPos += 5
     doc.setFont('helvetica', 'bold')
     doc.text(t.welcomeTeam, margin, yPos)
     
@@ -583,7 +561,7 @@ export const generateCatalog = async () => {
     doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
     
     // ══════════════════════════════════════════════════════════════════════════
-    // WHY CHOOSE US PAGE
+    // WHY CHOOSE US PAGE - ALL 6 REASONS ON ONE PAGE
     // ══════════════════════════════════════════════════════════════════════════
     doc.addPage()
     pageNumber++
@@ -591,103 +569,52 @@ export const generateCatalog = async () => {
     doc.setFillColor(...colors.backgroundLight)
     doc.rect(0, 0, pageWidth, pageHeight, 'F')
     
-    // Elegant header
+    // Elegant header - more compact
     doc.setFillColor(...colors.primaryDark)
-    doc.rect(0, 0, pageWidth, 50, 'F')
+    doc.rect(0, 0, pageWidth, 45, 'F')
     
     doc.setTextColor(...colors.textLight)
-    doc.setFontSize(26)
+    doc.setFontSize(24)
     doc.setFont('helvetica', 'bold')
-    doc.text(t.whyChooseTitle, pageWidth / 2, 25, { align: 'center' })
+    doc.text(t.whyChooseTitle, pageWidth / 2, 23, { align: 'center' })
     
     doc.setFontSize(10)
     doc.setFont('helvetica', 'italic')
     doc.setTextColor(...colors.secondaryAccent)
-    doc.text(t.whyChooseSubtitle, pageWidth / 2, 38, { align: 'center' })
+    doc.text(t.whyChooseSubtitle, pageWidth / 2, 35, { align: 'center' })
     
-    // Reasons section
-    yPos = 65
-    const reasons = [
+    // All 6 reasons with optimized spacing
+    yPos = 55
+    const allReasons = [
       { title: t.reason1Title, desc: t.reason1Desc },
       { title: t.reason2Title, desc: t.reason2Desc },
       { title: t.reason3Title, desc: t.reason3Desc },
-    ]
-    
-    reasons.forEach((reason, index) => {
-      // Check if we need a new page
-      if (yPos > 240) {
-        doc.addPage()
-        pageNumber++
-        doc.setFillColor(...colors.backgroundLight)
-        doc.rect(0, 0, pageWidth, pageHeight, 'F')
-        yPos = 30
-      }
-      
-      // Reason title with number
-      doc.setFontSize(13)
-      doc.setFont('helvetica', 'bold')
-      doc.setTextColor(...colors.goldAccent)
-      doc.text(reason.title, margin, yPos)
-      yPos += 8
-      
-      // Reason description
-      doc.setFontSize(10)
-      doc.setFont('helvetica', 'normal')
-      doc.setTextColor(...colors.textDark)
-      const descLines = doc.splitTextToSize(reason.desc, pageWidth - (margin * 2))
-      doc.text(descLines, margin, yPos)
-      yPos += descLines.length * 6 + 10
-      
-      // Decorative separator
-      if (index < reasons.length - 1) {
-        doc.setDrawColor(...colors.lineAccent)
-        doc.setLineWidth(0.3)
-        doc.line(margin, yPos - 5, pageWidth - margin, yPos - 5)
-      }
-    })
-    
-    // Page number
-    doc.setFontSize(8)
-    doc.setTextColor(...colors.textMuted)
-    doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
-    
-    // ══════════════════════════════════════════════════════════════════════════
-    // REASONS CONTINUATION PAGE
-    // ══════════════════════════════════════════════════════════════════════════
-    doc.addPage()
-    pageNumber++
-    
-    doc.setFillColor(...colors.backgroundLight)
-    doc.rect(0, 0, pageWidth, pageHeight, 'F')
-    
-    yPos = 30
-    const moreReasons = [
       { title: t.reason4Title, desc: t.reason4Desc },
       { title: t.reason5Title, desc: t.reason5Desc },
       { title: t.reason6Title, desc: t.reason6Desc },
     ]
     
-    moreReasons.forEach((reason, index) => {
-      // Reason title with number
-      doc.setFontSize(13)
+    allReasons.forEach((reason, index) => {
+      // Reason title with number - more compact
+      doc.setFontSize(11)
       doc.setFont('helvetica', 'bold')
       doc.setTextColor(...colors.goldAccent)
       doc.text(reason.title, margin, yPos)
-      yPos += 8
+      yPos += 6
       
-      // Reason description
-      doc.setFontSize(10)
+      // Reason description - smaller font and spacing
+      doc.setFontSize(9)
       doc.setFont('helvetica', 'normal')
       doc.setTextColor(...colors.textDark)
       const descLines = doc.splitTextToSize(reason.desc, pageWidth - (margin * 2))
       doc.text(descLines, margin, yPos)
-      yPos += descLines.length * 6 + 10
+      yPos += descLines.length * 5 + 6
       
-      // Decorative separator
-      if (index < moreReasons.length - 1) {
+      // Decorative separator - thinner
+      if (index < allReasons.length - 1) {
         doc.setDrawColor(...colors.lineAccent)
-        doc.setLineWidth(0.3)
-        doc.line(margin, yPos - 5, pageWidth - margin, yPos - 5)
+        doc.setLineWidth(0.2)
+        doc.line(margin, yPos - 3, pageWidth - margin, yPos - 3)
       }
     })
     
