@@ -119,19 +119,21 @@
   position: absolute;
   top: -6px;
   right: -6px;
-  z-index: 2;
+  z-index: 10;
   background: white;
   border-radius: 4px;
   padding: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.catalog-preview-image {
-  background: white;
-  padding: 20px 15px 15px 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+/* Collage container */
+.catalog-collage {
   position: relative;
-  text-align: center;
+  width: 100%;
+  height: 280px;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .catalog-year {
@@ -142,6 +144,75 @@
   margin-bottom: 12px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.05em;
+  position: relative;
+  z-index: 1;
+}
+
+/* Collage image styling - overlapping effect */
+.collage-image {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, z-index 0s 0.3s;
+}
+
+.collage-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.collage-image:hover {
+  transform: scale(1.05);
+  z-index: 5;
+  transition: transform 0.3s ease, z-index 0s;
+}
+
+/* Position each image in the collage */
+.collage-image-1 {
+  top: 40px;
+  left: 10px;
+  z-index: 3;
+  transform: rotate(-8deg);
+}
+
+.collage-image-1:hover {
+  transform: rotate(-8deg) scale(1.05);
+}
+
+.collage-image-2 {
+  top: 80px;
+  left: 50px;
+  z-index: 4;
+  transform: rotate(5deg);
+}
+
+.collage-image-2:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+.collage-image-3 {
+  top: 130px;
+  left: 20px;
+  z-index: 2;
+  transform: rotate(-3deg);
+}
+
+.collage-image-3:hover {
+  transform: rotate(-3deg) scale(1.05);
+}
+
+/* Legacy support for old catalog-preview-image class */
+.catalog-preview-image {
+  background: white;
+  padding: 20px 15px 15px 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
 }
 
 .catalog-preview-image img {
@@ -272,9 +343,33 @@
     max-width: 180px;
   }
 
+  .catalog-collage {
+    height: 250px;
+  }
+
   .catalog-year {
     font-size: 1.5rem;
     margin-bottom: 10px;
+  }
+
+  .collage-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .collage-image-1 {
+    top: 45px;
+    left: 15px;
+  }
+
+  .collage-image-2 {
+    top: 75px;
+    left: 50px;
+  }
+
+  .collage-image-3 {
+    top: 120px;
+    left: 25px;
   }
 
   .pdf-icon svg {
@@ -330,9 +425,34 @@
     max-width: 150px;
   }
 
+  .catalog-collage {
+    height: 220px;
+    padding: 10px;
+  }
+
   .catalog-year {
     font-size: 1.2rem;
     margin-bottom: 8px;
+  }
+
+  .collage-image {
+    width: 95px;
+    height: 95px;
+  }
+
+  .collage-image-1 {
+    top: 40px;
+    left: 10px;
+  }
+
+  .collage-image-2 {
+    top: 65px;
+    left: 42px;
+  }
+
+  .collage-image-3 {
+    top: 105px;
+    left: 18px;
   }
 
   .catalog-preview-image {
