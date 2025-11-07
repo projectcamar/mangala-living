@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useParams, Link, useLocation } from 'react-router-dom'
 import AnnouncementBar from '../components/AnnouncementBar'
@@ -19,6 +19,8 @@ import '../components/DualLanguage.css'
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
   const location = useLocation()
+  const [isIndonesian, setIsIndonesian] = useState(false)
+  const [isLanguageLoading, setIsLanguageLoading] = useState(true)
   const post = slug ? getPostBySlug(slug) : undefined
   const content = slug ? getBlogPostContent(slug) : undefined
 
@@ -26,16 +28,66 @@ const BlogPost: React.FC = () => {
     window.scrollTo(0, 0)
   }, [slug])
 
+  useEffect(() => {
+    const path = location.pathname
+
+    if (path.startsWith('/id')) {
+      setIsIndonesian(true)
+      setIsLanguageLoading(false)
+      return
+    }
+
+    if (path.startsWith('/eng')) {
+      setIsIndonesian(false)
+      setIsLanguageLoading(false)
+      return
+    }
+
+    const params = new URLSearchParams(location.search)
+    const lang = params.get('lang')
+
+    if (lang === 'id' || lang === 'en') {
+      setIsIndonesian(lang === 'id')
+      setIsLanguageLoading(false)
+      return
+    }
+
+    const detectLocation = async () => {
+      try {
+        const response = await fetch('https://ipapi.co/json/')
+        const data = await response.json()
+
+        if (data.country_code === 'ID') {
+          setIsIndonesian(true)
+        } else {
+          const browserLang = navigator.language || navigator.languages?.[0]
+          setIsIndonesian(Boolean(browserLang?.startsWith('id')))
+        }
+      } catch (error) {
+        const browserLang = navigator.language || navigator.languages?.[0]
+        setIsIndonesian(Boolean(browserLang?.startsWith('id')))
+      } finally {
+        setIsLanguageLoading(false)
+      }
+    }
+
+    detectLocation()
+  }, [location.pathname, location.search])
+
+  if (isLanguageLoading) {
+    return null
+  }
+
   if (!post || !content) {
     return (
       <div className="blog-post-page">
-        <AnnouncementBar />
-        <Header />
+        <AnnouncementBar isIndonesian={isIndonesian} />
+        <Header isIndonesian={isIndonesian} />
         <div className="blog-post-not-found">
           <h1>Article Not Found</h1>
           <Link to="/blog" className="back-to-blog-btn">Back to Blog</Link>
         </div>
-        <Footer />
+        <Footer isIndonesian={isIndonesian} />
       </div>
     )
   }
@@ -110,14 +162,12 @@ const BlogPost: React.FC = () => {
     post.slug === 'furniture-besi-custom-bekasi-workshop-terpercaya' ||
     post.slug === 'bikin-furniture-besi-custom-jabodetabek-berkualitas'
 
-  const searchParams = new URLSearchParams(location.search)
-  const langParam = searchParams.get('lang')
-  const localeMeta = generateLanguageSpecificMeta(langParam === 'id')
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
 
   return (
-    <div className="blog-post-page">
-      <AnnouncementBar />
+      <div className="blog-post-page">
+        <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{post.title} - Mangala Living</title>
         <meta name="description" content={post.excerpt} />
@@ -171,7 +221,7 @@ const BlogPost: React.FC = () => {
         )}
       </Helmet>
       
-      <Header />
+        <Header isIndonesian={isIndonesian} />
       
       <div className="blog-post-container">
         <Breadcrumb items={breadcrumbItems} />
@@ -374,9 +424,9 @@ const BlogPost: React.FC = () => {
       </div>
 
       {/* Service Areas Section - Only for Local Area Guide posts */}
-      {shouldShowServiceAreas && <ServiceAreasSection isIndonesian={true} />}
+        {shouldShowServiceAreas && <ServiceAreasSection isIndonesian={isIndonesian} />}
 
-      <Footer />
+        <Footer isIndonesian={isIndonesian} />
     </div>
   )
 }

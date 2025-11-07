@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link, useLocation, useSearchParams } from 'react-router-dom'
 import AnnouncementBar from '../components/AnnouncementBar'
@@ -12,6 +12,8 @@ import './Blog.css'
 const Blog: React.FC = () => {
   const location = useLocation()
   const [searchParams] = useSearchParams()
+  const [isIndonesian, setIsIndonesian] = useState(false)
+  const [isLanguageLoading, setIsLanguageLoading] = useState(true)
   const postsPerPage = 8
   const rawPage = Number.parseInt(searchParams.get('page') || '1', 10)
   const totalPages = getTotalPages(postsPerPage)
@@ -26,12 +28,62 @@ const Blog: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [currentPage])
 
-  const localeMeta = generateLanguageSpecificMeta(true)
+  useEffect(() => {
+    const path = location.pathname
+
+    if (path.startsWith('/id')) {
+      setIsIndonesian(true)
+      setIsLanguageLoading(false)
+      return
+    }
+
+    if (path.startsWith('/eng')) {
+      setIsIndonesian(false)
+      setIsLanguageLoading(false)
+      return
+    }
+
+    const params = new URLSearchParams(location.search)
+    const lang = params.get('lang')
+
+    if (lang === 'id' || lang === 'en') {
+      setIsIndonesian(lang === 'id')
+      setIsLanguageLoading(false)
+      return
+    }
+
+    const detectLocation = async () => {
+      try {
+        const response = await fetch('https://ipapi.co/json/')
+        const data = await response.json()
+
+        if (data.country_code === 'ID') {
+          setIsIndonesian(true)
+        } else {
+          const browserLang = navigator.language || navigator.languages?.[0]
+          setIsIndonesian(Boolean(browserLang?.startsWith('id')))
+        }
+      } catch (error) {
+        const browserLang = navigator.language || navigator.languages?.[0]
+        setIsIndonesian(Boolean(browserLang?.startsWith('id')))
+      } finally {
+        setIsLanguageLoading(false)
+      }
+    }
+
+    detectLocation()
+  }, [location.pathname, location.search])
+
+  if (isLanguageLoading) {
+    return null
+  }
+
+  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
 
   return (
-    <div className="blog-page">
-      <AnnouncementBar />
+      <div className="blog-page">
+        <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>Blog Furniture Industrial & Tips Desain Cafe Restoran - Mangala Living</title>
         <meta name="description" content="Panduan lengkap furniture industrial untuk cafe, restoran, hotel. Tips memilih furniture besi custom, cara merawat, tren desain 2025, perbandingan material, harga, dan area workshop Bekasi Jakarta. 135+ artikel berbasis pengalaman 25 tahun Mangala Living." />
@@ -54,7 +106,7 @@ const Blog: React.FC = () => {
         <meta property="og:locale:alternate" content="en_US" />
       </Helmet>
       
-      <Header />
+        <Header isIndonesian={isIndonesian} />
       
       {/* Hero Section */}
       <section className="blog-hero">
@@ -208,7 +260,7 @@ const Blog: React.FC = () => {
       </section>
       
 
-      <Footer />
+        <Footer isIndonesian={isIndonesian} />
     </div>
   )
 }
