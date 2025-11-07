@@ -3,7 +3,12 @@ import { X } from 'lucide-react'
 import './CatalogModal.css'
 import { generateCatalog } from '../utils/catalogGenerator'
 import { trackEvent } from '../utils/analytics'
-import catalogPreview from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
+import { setLanguagePreferenceByLocation } from '../utils/geolocation'
+
+// Import multiple product images for collage
+import catalogPreview1 from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
+import catalogPreview2 from '../assets/meja-industrial-mejamakan.webp'
+import catalogPreview3 from '../assets/Kursi-Bar-kursi-stall-chair.webp'
 
 interface CatalogModalProps {
   onClose?: () => void
@@ -11,48 +16,76 @@ interface CatalogModalProps {
 
 const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
   const [isVisible, setIsVisible] = useState(false)
+  const [language, setLanguage] = useState<'id' | 'en'>('id')
   const [formData, setFormData] = useState({
     firstName: '',
     email: '',
     whatsapp: ''
   })
 
+  // Translations for the modal
+  const translations = {
+    id: {
+      title: 'GRATIS DOWNLOAD KATALOG\nMANGALA LIVING 2025',
+      firstName: 'Nama Depan',
+      email: 'Email',
+      whatsapp: 'Nomor WhatsApp',
+      download: 'DOWNLOAD'
+    },
+    en: {
+      title: 'FREE GET NEW 2025\nMANGALA LIVING CATALOG',
+      firstName: 'First name',
+      email: 'Email',
+      whatsapp: 'WhatsApp Number',
+      download: 'DOWNLOAD'
+    }
+  }
+
+  const t = translations[language]
+
   useEffect(() => {
-    // Check if user has downloaded catalog recently (within 3 days)
-    const lastDownloadTime = localStorage.getItem('catalogLastDownload')
-    
-    if (lastDownloadTime) {
-      const threeDaysInMs = 3 * 24 * 60 * 60 * 1000 // 3 days in milliseconds
-      const timeSinceDownload = Date.now() - parseInt(lastDownloadTime)
+    // Detect visitor location and set language preference
+    const initializeModal = async () => {
+      // Detect location and set language
+      const detectedLang = await setLanguagePreferenceByLocation()
+      setLanguage(detectedLang)
+
+      // Check if user has downloaded catalog recently (within 3 days)
+      const lastDownloadTime = localStorage.getItem('catalogLastDownload')
       
-      // If less than 3 days have passed, don't show the modal
-      if (timeSinceDownload < threeDaysInMs) {
-        return
+      if (lastDownloadTime) {
+        const threeDaysInMs = 3 * 24 * 60 * 60 * 1000 // 3 days in milliseconds
+        const timeSinceDownload = Date.now() - parseInt(lastDownloadTime)
+        
+        // If less than 3 days have passed, don't show the modal
+        if (timeSinceDownload < threeDaysInMs) {
+          return
+        }
+      }
+      
+      // Check if this is the first visit
+      const hasVisitedBefore = localStorage.getItem('hasVisitedMangala')
+      
+      let shouldShow = false
+      
+      if (!hasVisitedBefore) {
+        // First visit = 100% show
+        shouldShow = true
+        localStorage.setItem('hasVisitedMangala', 'true')
+      } else {
+        // Return visits = 70% chance
+        shouldShow = Math.random() < 0.7
+      }
+      
+      if (shouldShow) {
+        // Show modal after 2 seconds
+        setTimeout(() => {
+          setIsVisible(true)
+        }, 2000)
       }
     }
-    
-    // Check if this is the first visit
-    const hasVisitedBefore = localStorage.getItem('hasVisitedMangala')
-    
-    let shouldShow = false
-    
-    if (!hasVisitedBefore) {
-      // First visit = 100% show
-      shouldShow = true
-      localStorage.setItem('hasVisitedMangala', 'true')
-    } else {
-      // Return visits = 70% chance
-      shouldShow = Math.random() < 0.7
-    }
-    
-    if (shouldShow) {
-      // Show modal after 2 seconds
-      const timer = setTimeout(() => {
-        setIsVisible(true)
-      }, 2000)
 
-      return () => clearTimeout(timer)
-    }
+    initializeModal()
   }, [])
 
   const handleClose = () => {
@@ -139,7 +172,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
         </button>
 
         <div className="catalog-modal-content">
-          {/* Left Side - Catalog Preview */}
+          {/* Left Side - Product Collage */}
           <div className="catalog-preview">
             <div className="catalog-preview-wrapper">
               <div className="pdf-icon">
@@ -149,19 +182,34 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
                   <text x="12" y="17" fontSize="6" fill="white" textAnchor="middle" fontWeight="bold">PDF</text>
                 </svg>
               </div>
-              <div className="catalog-preview-image">
+              
+              {/* Collage of 3 overlapping product images */}
+              <div className="catalog-collage">
                 <div className="catalog-year">2025</div>
-                <img 
-                  src={catalogPreview} 
-                  alt="Mangala Living Catalog 2025 - Industrial Furniture Collection PDF Download"
-                  title="Mangala Living Catalog 2025 - Download Free PDF Catalog Industrial Furniture"
-                  loading="lazy"
-                  width="400"
-                  height="500"
-                  itemProp="image"
-                  data-image-type="catalog"
-                  data-catalog-year="2025"
-                />
+                
+                <div className="collage-image collage-image-1">
+                  <img 
+                    src={catalogPreview1} 
+                    alt="Mangala Living Industrial Furniture - Corner Bench"
+                    loading="lazy"
+                  />
+                </div>
+                
+                <div className="collage-image collage-image-2">
+                  <img 
+                    src={catalogPreview2} 
+                    alt="Mangala Living Industrial Furniture - Dining Table"
+                    loading="lazy"
+                  />
+                </div>
+                
+                <div className="collage-image collage-image-3">
+                  <img 
+                    src={catalogPreview3} 
+                    alt="Mangala Living Industrial Furniture - Bar Chair"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -169,13 +217,17 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
           {/* Right Side - Form */}
           <div className="catalog-form-section">
             <h2 className="catalog-modal-title">
-              FREE GET NEW 2025<br />
-              MANGALA LIVING CATALOG
+              {t.title.split('\n').map((line, i) => (
+                <React.Fragment key={i}>
+                  {line}
+                  {i === 0 && <br />}
+                </React.Fragment>
+              ))}
             </h2>
 
             <form onSubmit={handleDownload} className="catalog-form">
               <div className="form-group">
-                <label htmlFor="firstName">First name</label>
+                <label htmlFor="firstName">{t.firstName}</label>
                 <input
                   type="text"
                   id="firstName"
@@ -187,7 +239,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">{t.email}</label>
                 <input
                   type="email"
                   id="email"
@@ -199,7 +251,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="whatsapp">WhatsApp Number</label>
+                <label htmlFor="whatsapp">{t.whatsapp}</label>
                 <input
                   type="tel"
                   id="whatsapp"
@@ -211,7 +263,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
               </div>
 
               <button type="submit" className="catalog-download-btn">
-                DOWNLOAD
+                {t.download}
               </button>
             </form>
           </div>
