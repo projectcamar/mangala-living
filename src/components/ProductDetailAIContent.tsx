@@ -156,8 +156,8 @@ const ProductDetailAIContent: React.FC<ProductDetailAIContentProps> = ({ product
           <li>
             <strong>{isIndonesian ? 'Konsultasi Awal (Gratis):' : 'Initial Consultation (Free):'}</strong> 
             {isIndonesian 
-              ? ` Hubungi kami via WhatsApp +62 852-1207-8467 untuk diskusi ${product.name}. Tim kami akan bantu sesuaikan dengan kebutuhan dan budget Anda.`
-              : ` Contact us via WhatsApp +62 852-1207-8467 to discuss ${product.name}. Our team will help adjust to your needs and budget.`
+              ? ` Hubungi kami via WhatsApp +62 888-0114-6881 untuk diskusi ${product.name}. Tim kami akan bantu sesuaikan dengan kebutuhan dan budget Anda.`
+              : ` Contact us via WhatsApp +62 888-0114-6881 to discuss ${product.name}. Our team will help adjust to your needs and budget.`
             }
           </li>
           <li>
@@ -459,7 +459,7 @@ const ProductDetailAIContent: React.FC<ProductDetailAIContentProps> = ({ product
         <h3>{isIndonesian ? 'Hubungi Kami untuk Order' : 'Contact Us to Order'} {product.name}</h3>
         
         <p>
-          <strong>WhatsApp/Telp:</strong> +62 852-1207-8467 <br/>
+          <strong>WhatsApp/Telp:</strong> +62 888-0114-6881 <br/>
           <strong>Email:</strong> info@mangala-living.com <br/>
           <strong>{isIndonesian ? 'Alamat Workshop:' : 'Workshop Address:'}</strong> Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320 <br/>
           <strong>{isIndonesian ? 'Jam Operasional:' : 'Operating Hours:'}</strong> {isIndonesian ? 'Senin - Sabtu, 08.00 - 17.00 WIB' : 'Monday - Saturday, 08.00 - 17.00 WIB'}

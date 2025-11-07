@@ -98,7 +98,7 @@ ${formData.message}
 
 Thank you!`
     
-    const whatsappUrl = `https://wa.me/6285212078467?text=${encodeURIComponent(whatsappMessage)}`
+    const whatsappUrl = `https://wa.me/6288801146881?text=${encodeURIComponent(whatsappMessage)}`
     window.open(whatsappUrl, '_blank')
     
     // Reset form
@@ -124,8 +124,8 @@ Thank you!`
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{isIndonesian ? 'Hubungi Workshop Furniture Bekasi: WhatsApp, Lokasi, Jam Operasional - Mangala Living' : 'Contact Furniture Workshop Bekasi: WhatsApp, Location, Operating Hours - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 
-          ? "Bagaimana cara menghubungi Mangala Living? WhatsApp: +62 852-1207-8467 (response 1-3 jam), Email: info@mangala-living.com, Alamat workshop: Jl. Raya Setu Cibitung Bekasi (10 menit dari tol Cibitung, 25 menit dari Jakarta Timur). Jam buka: Senin-Sabtu 08.00-17.00 WIB. Area melayani: FREE survey Bekasi, Jakarta Timur, Cikarang. Konsultasi furniture industrial gratis via WhatsApp."
-          : "How to contact Mangala Living? WhatsApp: +62 852-1207-8467 (1-3 hour response), Email: info@mangala-living.com, Workshop address: Jl. Raya Setu Cibitung Bekasi (10 minutes from Cibitung toll gate, 25 minutes from East Jakarta). Operating hours: Monday-Saturday 08.00-17.00 WIB. Service area: FREE survey for Bekasi, East Jakarta, Cikarang. Free industrial furniture consultation via WhatsApp."} />
+          ? "Bagaimana cara menghubungi Mangala Living? WhatsApp: +62 888-0114-6881 (response 1-3 jam), Email: info@mangala-living.com, Alamat workshop: Jl. Raya Setu Cibitung Bekasi (10 menit dari tol Cibitung, 25 menit dari Jakarta Timur). Jam buka: Senin-Sabtu 08.00-17.00 WIB. Area melayani: FREE survey Bekasi, Jakarta Timur, Cikarang. Konsultasi furniture industrial gratis via WhatsApp."
+          : "How to contact Mangala Living? WhatsApp: +62 888-0114-6881 (1-3 hour response), Email: info@mangala-living.com, Workshop address: Jl. Raya Setu Cibitung Bekasi (10 minutes from Cibitung toll gate, 25 minutes from East Jakarta). Operating hours: Monday-Saturday 08.00-17.00 WIB. Service area: FREE survey for Bekasi, East Jakarta, Cikarang. Free industrial furniture consultation via WhatsApp."} />
         <meta name="keywords" content={isIndonesian 
           ? "hubungi mangala living, whatsapp furniture bekasi, nomor workshop furniture bekasi, lokasi workshop furniture bekasi, alamat mangala living bekasi, jam buka furniture bekasi, cara menghubungi workshop furniture, konsultasi furniture industrial gratis, kontak furniture besi bekasi, email mangala living, survey furniture gratis bekasi"
           : "contact mangala living, whatsapp furniture bekasi, furniture workshop bekasi contact, mangala living location, workshop address bekasi, operating hours furniture bekasi, free furniture consultation"} />
@@ -147,7 +147,7 @@ Thank you!`
         <div className="contact-hero-image">
           <img 
             src={heroImage} 
-            alt="Contact Mangala Living - Hubungi Workshop Furniture Industrial Bekasi - WhatsApp +62 852 1207 8467"
+            alt="Contact Mangala Living - Hubungi Workshop Furniture Industrial Bekasi - WhatsApp +62 888 0114 6881"
             title="Contact Mangala Living - Get in Touch with Industrial Furniture Manufacturer"
             loading="eager"
             fetchPriority="high"
@@ -274,10 +274,10 @@ Thank you!`
             </div>
             <div>
               <a 
-                href="https://wa.me/6285212078467" 
+                href="https://wa.me/6288801146881" 
                 style={{ color: '#8B7355', textDecoration: 'underline', fontWeight: '500' }}
               >
-                +62 852-1207-8467
+                +62 888-0114-6881
               </a>
             </div>
           </div>

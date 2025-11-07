@@ -278,7 +278,7 @@ const Partnership: React.FC = () => {
           
           <div className="partnership-cta-buttons">
             <a 
-              href="https://wa.me/6285212078467" 
+              href="https://wa.me/6288801146881" 
               target="_blank" 
               rel="noopener noreferrer"
               className="partnership-cta-button"
@@ -310,8 +310,8 @@ const Partnership: React.FC = () => {
               </p>
             </div>
             <p className="partnership-contact-phone">
-              <a href="https://wa.me/6285212078467" style={{ color: '#8B7355', textDecoration: 'underline' }}>
-                +62 852-1207-8467
+              <a href="https://wa.me/6288801146881" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                +62 888-0114-6881
               </a>
             </p>
             <p className="partnership-contact-email">
