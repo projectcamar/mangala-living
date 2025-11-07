@@ -50,6 +50,19 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
       const detectedLang = await setLanguagePreferenceByLocation()
       setLanguage(detectedLang)
 
+      // Check if user clicked X (close button) recently (within 12 hours)
+      const lastClosedTime = localStorage.getItem('catalogLastClosed')
+      
+      if (lastClosedTime) {
+        const twelveHoursInMs = 12 * 60 * 60 * 1000 // 12 hours in milliseconds
+        const timeSinceClosed = Date.now() - parseInt(lastClosedTime)
+        
+        // If less than 12 hours have passed since user closed, don't show the modal
+        if (timeSinceClosed < twelveHoursInMs) {
+          return
+        }
+      }
+
       // Check if user has downloaded catalog recently (within 3 days)
       const lastDownloadTime = localStorage.getItem('catalogLastDownload')
       
@@ -90,6 +103,11 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
 
   const handleClose = () => {
     setIsVisible(false)
+    
+    // Store the timestamp when user closes the modal
+    // This prevents the popup from showing again for 12 hours
+    localStorage.setItem('catalogLastClosed', Date.now().toString())
+    
     if (onClose) onClose()
   }
 
