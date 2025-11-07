@@ -1,6 +1,5 @@
 import type { BlogPost } from './blog'
 import { BLOG_POSTS } from './blog'
-import { generateCafeLocationContent, CAFE_LOCATION_CONFIGS } from '../utils/blogContentTemplates'
 
 export interface BlogSection {
   heading?: string
@@ -263,7 +262,7 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
           'Ready untuk transform space Anda dengan furniture industrial berkualitas? Ikuti langkah-langkah berikut:'
         ],
         list: [
-          '<strong>Step 1 - Konsultasi Gratis (15-30 menit):</strong> Kirim brief project Anda via <a href="https://wa.me/6288801146881">WhatsApp +62 888-0114-6881</a>. Include: jenis bisnis, jumlah seat yang dibutuhkan, budget range, dan timeline target. Kami response dalam 1-3 jam (working hours).',
+          '<strong>Step 1 - Konsultasi Gratis (15-30 menit):</strong> Kirim brief project Anda via <a href="https://wa.me/6285212078467">WhatsApp +62 852-1207-8467</a>. Include: jenis bisnis, jumlah seat yang dibutuhkan, budget range, dan timeline target. Kami response dalam 1-3 jam (working hours).',
           '<strong>Step 2 - Site Survey & Measurement:</strong> Tim kami visit lokasi Anda (FREE untuk area Bekasi-Jakarta Timur-Cikarang) untuk measurement akurat dan assess kondisi space. Durasi: 30-60 menit.',
           '<strong>Step 3 - Quotation & Design Mockup:</strong> Dalam 2-3 hari, kami kirim quotation detail + 3D rendering + technical drawing untuk approval. Revision unlimited sampai design approved.',
           '<strong>Step 4 - Production & Quality Control:</strong> Setelah DP 50% confirmed, produksi dimulai. Lead time standard: 15-25 hari kerja dengan photo update berkala.',
@@ -276,7 +275,7 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
       {
         heading: 'Hubungi Mangala Living Workshop',
         paragraphs: [
-          '<strong>WhatsApp (Fastest Response):</strong> <a href="https://wa.me/6288801146881">+62 888-0114-6881</a> - Chat langsung dengan tim project manager kami.',
+          '<strong>WhatsApp (Fastest Response):</strong> <a href="https://wa.me/6285212078467">+62 852-1207-8467</a> - Chat langsung dengan tim project manager kami.',
           '<strong>Email:</strong> <a href="mailto:info@mangala-living.com">info@mangala-living.com</a> - Untuk inquiry formal atau kirim attachment design reference.',
           '<strong>Workshop Address:</strong> Jl. Raya Setu Cibitung, Bekasi Timur, Jawa Barat (10 menit dari pintu tol Cibitung, 25 menit dari Jakarta Timur).',
           '<strong>Operating Hours:</strong> Senin-Sabtu: 08.00-17.00 WIB | Minggu & tanggal merah: By appointment only.',
@@ -370,7 +369,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya sejak 1999, <a href="/about">Mangala Living</a> telah melayani lebih dari 1000 klien di seluruh Indonesia. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan furniture industrial berkualitas tinggi dengan finishing powder coating yang tahan lama, material besi hollow berkualitas, dan kayu solid yang awet. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain kafe industrial minimalis dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>.'
+          'Untuk konsultasi desain kafe industrial minimalis dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>.'
         ]
       }
     ]
@@ -488,7 +487,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living telah melayani lebih dari 1000 klien di seluruh Indonesia. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan furniture industrial berkualitas tinggi dengan harga kompetitif, garansi kualitas, dan layanan purna jual yang profesional. Semua produk kami menggunakan material berkualitas tinggi dan finishing powder coating yang tahan lama.',
-          'Untuk informasi harga furniture industrial terbaru dan konsultasi desain, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda mendapatkan furniture industrial terbaik sesuai budget dan kebutuhan.'
+          'Untuk informasi harga furniture industrial terbaru dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda mendapatkan furniture industrial terbaik sesuai budget dan kebutuhan.'
         ]
       }
     ]
@@ -628,7 +627,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus furniture restoran. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman dalam menciptakan furniture restoran berkualitas tinggi.',
           'Kami menawarkan furniture restoran industrial dengan material berkualitas tinggi, finishing food-safe, dan desain yang fungsional. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain restoran industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan restoran industrial yang sempurna.'
+          'Untuk konsultasi desain restoran industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan restoran industrial yang sempurna.'
         ]
       }
     ]
@@ -786,7 +785,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus furniture kantor modern. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman dalam menciptakan furniture kantor berkualitas tinggi.',
           'Kami menawarkan meja kantor industrial dengan material berkualitas tinggi, desain ergonomis, dan finishing yang tahan lama. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain kantor industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan workspace industrial yang produktif dan estetis.'
+          'Untuk konsultasi desain kantor industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan workspace industrial yang produktif dan estetis.'
         ]
       }
     ]
@@ -941,7 +940,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami tren desain terbaru dan kebutuhan modern. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman dalam menciptakan furniture industrial Scandinavian berkualitas tinggi.',
           'Kami menawarkan furniture industrial Scandinavian dengan material berkualitas tinggi, desain yang timeless, dan finishing yang tahan lama. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain industrial Scandinavian dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan ruang industrial Scandinavian yang sempurna sesuai tren 2025.'
+          'Untuk konsultasi desain industrial Scandinavian dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan ruang industrial Scandinavian yang sempurna sesuai tren 2025.'
         ]
       }
     ]
@@ -1048,7 +1047,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus hollowline display rack untuk berbagai aplikasi komersial. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan hollowline display rack berkualitas tinggi dengan konstruksi hollow steel yang kuat, finishing powder coating tahan lama, dan desain modular yang fleksibel. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk informasi hollowline display rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda mendapatkan hollowline display rack terbaik sesuai kebutuhan bisnis.'
+          'Untuk informasi hollowline display rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda mendapatkan hollowline display rack terbaik sesuai kebutuhan bisnis.'
         ]
       }
     ]
@@ -1147,7 +1146,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya, Mangala Living menawarkan display shelf rack berkualitas tinggi dengan desain yang fungsional dan estetis. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menyediakan display shelf rack industrial dengan material berkualitas tinggi, finishing powder coating tahan lama, dan desain yang dapat disesuaikan dengan kebutuhan spesifik. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk informasi display shelf rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan display yang menarik dan fungsional.'
+          'Untuk informasi display shelf rack dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan display yang menarik dan fungsional.'
         ]
       }
     ]
@@ -1262,7 +1261,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya dengan pengalaman 25 tahun, Mangala Living memahami kebutuhan khusus stall chair design untuk berbagai aplikasi komersial. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan stall chair design industrial berkualitas tinggi dengan konstruksi besi hollow yang kuat, finishing powder coating tahan lama, dan desain ergonomis yang nyaman. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk informasi stall chair design dan konsultasi desain, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan stall chair design yang sempurna sesuai konsep bisnis.'
+          'Untuk informasi stall chair design dan konsultasi desain, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Tim sales kami siap membantu Anda menciptakan stall chair design yang sempurna sesuai konsep bisnis.'
         ]
       }
     ]
@@ -1309,7 +1308,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah manufacturer industrial furniture besi custom terpercaya di Bekasi sejak 1999. Dengan pengalaman 25+ tahun, kami telah melayani lebih dari 1000 bisnis di seluruh Indonesia.',
           'Kami memproduksi industrial furniture custom untuk cafe, restoran, hotel, kantor, dan berbagai kebutuhan komersial. Setiap produk dibuat dengan teknik pengelasan berkualitas tinggi dan material industrial grade terbaik. <a href="/shop">Lihat koleksi lengkap</a> atau <a href="/contact-us">hubungi kami</a> untuk konsultasi custom.',
-          'Lokasi Workshop: Bekasi, Jawa Barat | Telp/WA: +62 888-0114-6881 | Email: info@mangalaliving.com'
+          'Lokasi Workshop: Bekasi, Jawa Barat | Telp/WA: +62 852-1207-8467 | Email: info@mangalaliving.com'
         ]
       },
       {
@@ -1318,13 +1317,13 @@ const BLOG_CONTENTS: BlogContent[] = [
           'Kami menyediakan berbagai koleksi industrial furniture besi custom termasuk <a href="/product-category/new-arrivals">New Arrivals</a>, <a href="/product-category/lounge-seating-set">Lounge Set</a>, <a href="/product-category/industrial-sofa-bench">Sofa Bench</a>, <a href="/product-category/dining-set-collection">Dining Set</a>, <a href="/product-category/bar-furniture-collection">Bar Set</a>, <a href="/product-category/outdoor">Outdoor</a>, <a href="/product-category/daybed-collection">Daybed</a>, <a href="/product-category/storage-shelving">Storage</a>, <a href="/product-category/work-study-tables">Tables</a>, dan <a href="/product-category/dining-table-collection">Dine Table</a>. Semua produk dapat disesuaikan dengan kebutuhan bisnis Anda.'
         ],
         list: [
-          'Pengalaman 25+ tahun sebagai manufacturer furniture industrial',
-          '1000+ klien puas di seluruh Indonesia',
-          'Custom design sesuai kebutuhan bisnis Anda',
-          'Material industrial grade berkualitas tinggi',
-          'Harga kompetitif langsung dari pabrik',
-          'Garansi kualitas produk',
-          'Workshop di Bekasi dengan akses mudah'
+          '? Pengalaman 25+ tahun sebagai manufacturer furniture industrial',
+          '? 1000+ klien puas di seluruh Indonesia',
+          '? Custom design sesuai kebutuhan bisnis Anda',
+          '? Material industrial grade berkualitas tinggi',
+          '? Harga kompetitif langsung dari pabrik',
+          '? Garansi kualitas produk',
+          '? Workshop di Bekasi dengan akses mudah'
         ]
       },
       {
@@ -2995,7 +2994,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen <a href="/shop">furniture industrial</a> terpercaya sejak 1999, Mangala Living menawarkan harga workshop langsung yang jauh lebih murah dibanding toko furniture konvensional. Workshop kami di Bekasi memproduksi langsung semua pesanan, sehingga Anda mendapat harga terbaik tanpa margin distributor.',
           'Semua meja cafe kami dilengkapi dengan garansi kualitas dan jamin uma panjang. Finishing powder coating anti karat, frame besi hollow berkualitas, dan kayu solid yang awet. Sudah lebih dari 1000 klien puas dengan produk kami.',
-          'Hubungi kami sekarang di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a> untuk konsultasi dan penawaran harga meja cafe murah.'
+          'Hubungi kami sekarang di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a> untuk konsultasi dan penawaran harga meja cafe murah.'
         ]
       }
     ]
@@ -3041,7 +3040,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Kursi Bar Cafe Murah',
         paragraphs: [
           'Mangala Living adalah produsen furniture industrial terpercaya dengan workshop di Bekasi. Dengan pengalaman 25 tahun dan lebih dari 1000 klien puas, kami menjamin kualitas produk dan pelayanan yang terbaik.',
-          'Kami menawarkan <a href="/shop">kursi bar cafe murah</a> dengan harga terbaik dan kualitas premium. Produk ready stock tersedia untuk pengiriman cepat. Hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau WhatsApp untuk informasi harga dan ketersediaan stock.'
+          'Kami menawarkan <a href="/shop">kursi bar cafe murah</a> dengan harga terbaik dan kualitas premium. Produk ready stock tersedia untuk pengiriman cepat. Hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau WhatsApp untuk informasi harga dan ketersediaan stock.'
         ]
       }
     ]
@@ -3088,7 +3087,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living Sekarang',
         paragraphs: [
           'Tertarik dengan furniture cafe murah Bekasi? Mangala Living siap membantu mewujudkan konsep cafe impian Anda dengan furniture industrial berkualitas tinggi dan harga pabrik yang terjangkau.',
-          'Konsultasikan kebutuhan furniture cafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Kami akan memberikan penawaran terbaik sesuai budget Anda.'
+          'Konsultasikan kebutuhan furniture cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Kami akan memberikan penawaran terbaik sesuai budget Anda.'
         ]
       }
     ]
@@ -3136,7 +3135,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah <a href="/about">produsen furniture industrial</a> terpercaya dengan pengalaman 25 tahun melayani ribuan cafe dan restoran di seluruh Indonesia. Kami memahami kebutuhan furniture cafe yang bukan hanya estetis, tetapi juga fungsional dan durable.',
           'Workshop kami di Bekasi menggunakan teknologi modern dan material berkualitas tinggi. Semua meja makan cafe kami dilengkapi dengan garansi kualitas dan jaminan ketahanan.',
-          'Hubungi kami di <a href="/contact">+62 888-0114-6881</a> untuk konsultasi meja makan cafe industrial minimalis dan penawaran harga terbaik.'
+          'Hubungi kami di <a href="/contact">+62 852-1207-8467</a> untuk konsultasi meja makan cafe industrial minimalis dan penawaran harga terbaik.'
         ]
       }
     ]
@@ -3184,7 +3183,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Display Rack Cafe Murah',
         paragraphs: [
           'Mangala Living menawarkan display rack cafe industrial dengan harga terbaik dan kualitas premium. Workshop kami di Bekasi memproduksi semua display rack dengan material berkualitas tinggi dan finishing yang sempurna.',
-          'Konsultasikan kebutuhan display rack cafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan display rack cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -3234,7 +3233,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Mangala Living adalah produsen <a href="/shop">furniture outdoor industrial</a> terpercaya dengan pengalaman 25 tahun. Kami memahami kebutuhan furniture outdoor yang tidak hanya estetis, tetapi juga tahan cuaca dan durable untuk penggunaan jangka panjang.',
           'Workshop kami di Bekasi menggunakan teknologi modern dan material berkualitas tinggi. Semua furniture outdoor dilengkapi dengan garansi kualitas.',
-          'Konsultasikan kebutuhan bar set cafe outdoor Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan bar set cafe outdoor Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -3283,7 +3282,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Industrial Murah',
         paragraphs: [
           'Ready untuk memulai project furniture industrial Anda? Mangala Living siap membantu dengan <a href="/shop">furniture industrial harga murah</a> berkualitas tinggi dari workshop Bekasi.',
-          'Hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a> untuk konsultasi gratis dan penawaran harga terbaik.'
+          'Hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a> untuk konsultasi gratis dan penawaran harga terbaik.'
         ]
       }
     ]
@@ -3335,7 +3334,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Mengapa Tambahkan Working Space di Cafe?',
         paragraphs: [
           'Working space di cafe sangat profitable karena:<br><strong>1. Higher Ticket:</strong> Pelanggan yang bekerja cenderung stay lebih lama dan order multiple drinks.<br><strong>2. Customer Loyalty:</strong> Pelanggan akan kembali untuk working space yang nyaman.<br><strong>3. Community Building:</strong> Working space menarik komunitas profesional dan freelancer.<br><strong>4. Differentiate:</strong> Memberikan competitive advantage dibanding cafe tanpa working space.',
-          'Mangala Living siap membantu Anda menciptakan working space yang perfect dengan meja kerja industrial berkualitas tinggi. Hubungi kami di <a href="/contact">+62 888-0114-6881</a> untuk konsultasi gratis.'
+          'Mangala Living siap membantu Anda menciptakan working space yang perfect dengan meja kerja industrial berkualitas tinggi. Hubungi kami di <a href="/contact">+62 852-1207-8467</a> untuk konsultasi gratis.'
         ]
       }
     ]
@@ -3384,7 +3383,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Kitchen Cabinet Cafe Murah',
         paragraphs: [
           'Mangala Living menawarkan kitchen cabinet cafe industrial dengan kualitas premium dan harga terjangkau. Workshop kami di Bekasi memproduksi semua cabinet dengan material berkualitas dan finishing yang sempurna.',
-          'Konsultasikan kebutuhan kitchen cabinet cafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan rekomendasi terbaik sesuai layout dapur dan budget Anda.'
+          'Konsultasikan kebutuhan kitchen cabinet cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai layout dapur dan budget Anda.'
         ]
       }
     ]
@@ -3434,7 +3433,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Mengapa Investasi Outdoor Furniture?',
         paragraphs: [
           '<strong>Increased Capacity:</strong> Area outdoor bisa menambah 30-50% seating capacity.<br><strong>Unique Experience:</strong> Memberikan pengalaman berbeda yang memorable.<br><strong>Higher Ticket:</strong> Customer di outdoor cenderung stay longer dan order more.<br><strong>Instagram Worthy:</strong> Area outdoor yang photogenic akan menarik organic marketing.<br><strong>Seasonal Flexibility:</strong> Bisa optimize according to weather.',
-          'Mangala Living menawarkan outdoor furniture cafe tahan cuaca dengan harga terjangkau. Workshop kami di Bekasi memproduksi semua outdoor furniture dengan kualitas premium dan garansi. Hubungi kami di <a href="/contact">+62 888-0114-6881</a> untuk konsultasi gratis.'
+          'Mangala Living menawarkan outdoor furniture cafe tahan cuaca dengan harga terjangkau. Workshop kami di Bekasi memproduksi semua outdoor furniture dengan kualitas premium dan garansi. Hubungi kami di <a href="/contact">+62 852-1207-8467</a> untuk konsultasi gratis.'
         ]
       }
     ]
@@ -3498,7 +3497,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai produsen furniture industrial terpercaya sejak 1999, <a href="/about">Mangala Living</a> telah melayani lebih dari 1000 klien di seluruh Indonesia. Workshop kami di Bekasi dilengkapi dengan peralatan modern dan tim ahli yang berpengalaman.',
           'Kami menawarkan meja kafe industrial berkualitas tinggi dengan material besi hollow berkualitas, kayu solid yang awet, dan finishing powder coating yang tahan lama. Semua produk kami dilengkapi dengan garansi kualitas dan layanan purna jual yang profesional.',
-          'Untuk konsultasi desain meja kafe industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 888-0114-6881</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>.'
+          'Untuk konsultasi desain meja kafe industrial dan informasi produk lebih lanjut, hubungi kami di <a href="/contact">+62 852-1207-8467</a> atau email <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a>.'
         ]
       }
     ]
@@ -3569,7 +3568,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Meja Kafe Bulat Industrial',
         paragraphs: [
           'Mangala Living memproduksi meja kafe bulat industrial berkualitas tinggi dengan custom design sesuai kebutuhan cafe Anda. Workshop kami di Bekasi dilengkapi dengan peralatan modern untuk menghasilkan furniture yang presisi dan tahan lama.',
-          'Konsultasikan kebutuhan meja kafe bulat industrial Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep dan budget cafe Anda.'
+          'Konsultasikan kebutuhan meja kafe bulat industrial Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep dan budget cafe Anda.'
         ]
       }
     ]
@@ -3642,7 +3641,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Set Meja Kursi Kafe Industrial',
         paragraphs: [
           'Mangala Living menawarkan berbagai pilihan set meja kursi kafe industrial berkualitas tinggi dengan harga kompetitif. Workshop kami di Bekasi memproduksi semua furniture dengan standar kualitas internasional.',
-          'Konsultasikan kebutuhan set furniture cafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
+          'Konsultasikan kebutuhan set furniture cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
         ]
       }
     ]
@@ -3715,7 +3714,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Kursi Meja Kafe Industrial',
         paragraphs: [
           'Mangala Living memproduksi berbagai model kursi meja kafe industrial berkualitas tinggi dengan desain modern dan fungsional. Workshop kami di Bekasi dilengkapi dengan peralatan modern untuk menghasilkan furniture yang presisi dan tahan lama.',
-          'Konsultasikan kebutuhan kursi meja kafe industrial Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
+          'Konsultasikan kebutuhan kursi meja kafe industrial Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai konsep, budget, dan kapasitas cafe Anda.'
         ]
       }
     ]
@@ -3799,7 +3798,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Custom Meja Kafe Murah',
         paragraphs: [
           'Mangala Living menawarkan layanan custom meja kafe dengan harga terjangkau dan kualitas premium. Workshop kami di Bekasi memproduksi furniture custom dengan standar internasional dan garansi kualitas.',
-          'Konsultasikan kebutuhan custom meja kafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan penawaran terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan custom meja kafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan penawaran terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -3872,7 +3871,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Kafe Murah',
         paragraphs: [
           'Mangala Living menawarkan furniture kafe murah tapi bagus dengan kualitas premium dan harga terjangkau. Workshop kami di Bekasi memproduksi furniture dengan standar kualitas internasional dan harga pabrik.',
-          'Konsultasikan kebutuhan furniture kafe murah Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan furniture kafe murah Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan rekomendasi terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -3958,7 +3957,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Konsultasi Furniture Kafe Industrial',
         paragraphs: [
           'Mangala Living menyediakan layanan konsultasi lengkap untuk pemilihan furniture kafe industrial yang tepat. Tim desain kami akan membantu Anda memilih furniture yang sesuai dengan konsep, budget, dan kebutuhan cafe Anda.',
-          'Konsultasikan kebutuhan furniture kafe industrial Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
+          'Konsultasikan kebutuhan furniture kafe industrial Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
         ]
       }
     ]
@@ -4031,7 +4030,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Solusi Budget Terbatas',
         paragraphs: [
           'Mangala Living memahami tantangan budget terbatas dalam memulai bisnis cafe. Kami menawarkan solusi furniture kafe murah dengan kualitas premium dan harga terjangkau.',
-          'Konsultasikan kebutuhan furniture kafe dengan budget terbatas Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan solusi terbaik sesuai budget dan konsep cafe Anda.'
+          'Konsultasikan kebutuhan furniture kafe dengan budget terbatas Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan solusi terbaik sesuai budget dan konsep cafe Anda.'
         ]
       }
     ]
@@ -4106,7 +4105,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Konsultasi Furnitur Kafe',
         paragraphs: [
           'Mangala Living menyediakan layanan konsultasi lengkap untuk pemilihan furnitur kafe yang tepat. Tim desain kami akan membantu Anda memilih furniture yang sesuai dengan konsep, budget, dan kebutuhan cafe Anda.',
-          'Konsultasikan kebutuhan furnitur kafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
+          'Konsultasikan kebutuhan furnitur kafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan rekomendasi terbaik untuk cafe Anda.'
         ]
       }
     ]
@@ -4179,7 +4178,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Kafe 2 Lantai',
         paragraphs: [
           'Mangala Living menyediakan layanan desain dan produksi furniture kafe 2 lantai dengan konsep sederhana modern. Tim desain kami akan membantu Anda menciptakan cafe yang fungsional dan menarik.',
-          'Konsultasikan kebutuhan furniture kafe 2 lantai Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan inspirasi desain dan solusi terbaik untuk cafe Anda.'
+          'Konsultasikan kebutuhan furniture kafe 2 lantai Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan inspirasi desain dan solusi terbaik untuk cafe Anda.'
         ]
       }
     ]
@@ -4263,7 +4262,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Cafe Tren Terbaru',
         paragraphs: [
           'Mangala Living terus mengikuti perkembangan tren furniture cafe terbaru dan mengintegrasikannya dalam produk kami. Kami menawarkan furniture cafe dengan desain modern dan teknologi terkini.',
-          'Konsultasikan kebutuhan furniture cafe tren terbaru Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan solusi terbaru dan inovatif untuk cafe Anda.'
+          'Konsultasikan kebutuhan furniture cafe tren terbaru Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan solusi terbaru dan inovatif untuk cafe Anda.'
         ]
       }
     ]
@@ -4336,7 +4335,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Cafe Literasi',
         paragraphs: [
           'Mangala Living menyediakan furniture khusus untuk cafe literasi dengan desain yang fungsional dan nyaman. Tim desain kami akan membantu Anda menciptakan ruang literasi yang ideal untuk pelanggan.',
-          'Konsultasikan kebutuhan furniture cafe literasi Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan solusi terbaik untuk konsep cafe literasi modern Anda.'
+          'Konsultasikan kebutuhan furniture cafe literasi Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan solusi terbaik untuk konsep cafe literasi modern Anda.'
         ]
       }
     ]
@@ -4409,7 +4408,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Industrial Vintage',
         paragraphs: [
           'Mangala Living menyediakan furniture industrial vintage berkualitas tinggi dengan desain yang autentik dan berkarakter. Workshop kami di Bekasi memproduksi furniture dengan finishing distressed dan material reclaimed.',
-          'Konsultasikan kebutuhan furniture industrial vintage Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk cafe bergaya industrial vintage Anda.'
+          'Konsultasikan kebutuhan furniture industrial vintage Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk cafe bergaya industrial vintage Anda.'
         ]
       }
     ]
@@ -4482,7 +4481,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Furniture Unik',
         paragraphs: [
           'Mangala Living menyediakan layanan desain dan produksi furniture unik untuk cafe dengan konsep kreatif dan out-of-the-box. Tim desain kami akan membantu Anda menciptakan furniture yang memorable dan viral.',
-          'Konsultasikan kebutuhan furniture unik untuk cafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan inspirasi kreatif dan solusi terbaik untuk cafe yang unik dan menarik.'
+          'Konsultasikan kebutuhan furniture unik untuk cafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan inspirasi kreatif dan solusi terbaik untuk cafe yang unik dan menarik.'
         ]
       }
     ]
@@ -4557,7 +4556,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Konsultasi Budget Furniture',
         paragraphs: [
           'Mangala Living menyediakan layanan konsultasi lengkap untuk perhitungan budget dan layout furniture kafe. Tim desain kami akan membantu Anda merencanakan investasi furniture yang optimal dan efisien.',
-          'Konsultasikan kebutuhan perhitungan furniture kafe Anda dengan tim kami di <a href="/contact">+62 888-0114-6881</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk budget dan layout cafe Anda.'
+          'Konsultasikan kebutuhan perhitungan furniture kafe Anda dengan tim kami di <a href="/contact">+62 852-1207-8467</a>. Kami akan memberikan panduan lengkap dan solusi terbaik untuk budget dan layout cafe Anda.'
         ]
       }
     ]
@@ -4640,7 +4639,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           'Kami memahami bahwa proses custom furniture bisa terasa kompleks bagi klien pertama kali. Oleh karena itu, kami telah menyusun alur kerja yang jelas dan transparan:'
         ],
         list: [
-          '<strong>Step 1 - Initial Consultation (Gratis):</strong> Hubungi kami via WhatsApp +62-888-0114-6881 atau email. Ceritakan kebutuhan, budget, dan timeline Anda. Tim kami akan memberikan initial advice dan rough estimate.',
+          '<strong>Step 1 - Initial Consultation (Gratis):</strong> Hubungi kami via WhatsApp +62-852-1207-8467 atau email. Ceritakan kebutuhan, budget, dan timeline Anda. Tim kami akan memberikan initial advice dan rough estimate.',
           '<strong>Step 2 - Site Survey (Optional, Gratis untuk Jabodetabek):</strong> Untuk project besar, kami dapat melakukan survey lokasi untuk mengukur ruangan dan memahami kondisi existing.',
           '<strong>Step 3 - Design & Quotation (3-5 hari kerja):</strong> Kami membuat design mockup 3D dan detailed quotation. Revisi design gratis hingga Anda puas.',
           '<strong>Step 4 - Down Payment (30%):</strong> Setelah design approved, lakukan DP 30% untuk memulai produksi. Kami memberikan invoice resmi dan contract agreement.',
@@ -4680,7 +4679,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living Sekarang - Free Konsultasi!',
         paragraphs: [
           'Siap untuk mewujudkan furniture industrial impian Anda? Tim Mangala Living siap membantu dari konsultasi hingga instalasi. Dapatkan <strong>free design consultation</strong> dan <strong>special discount untuk order pertama</strong>!',
-          '&bull; <strong>WhatsApp:</strong> <a href="https://wa.me/6288801146881">+62-888-0114-6881</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop:</strong> Jl. Raya Setu Cikarang Bar., Bekasi 17320<br/>&bull; <strong>Jam Operasional:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
+          '&bull; <strong>WhatsApp:</strong> <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop:</strong> Jl. Raya Setu Cikarang Bar., Bekasi 17320<br/>&bull; <strong>Jam Operasional:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
           'Kunjungi showroom kami untuk melihat langsung sample furniture dan diskusikan project Anda dengan tim desain. <strong>Workshop visit by appointment</strong> - hubungi kami untuk jadwalkan kunjungan Anda!'
         ]
       }
@@ -4859,7 +4858,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living untuk Quote & Konsultasi Gratis',
         paragraphs: [
           'Ready untuk upgrade furniture bisnis Anda dengan industrial furniture berkualitas premium dengan harga pabrik? Tim Mangala Living siap membantu dari konsultasi hingga after-sales support.',
-          '&bull; <strong>WhatsApp (Fast Response):</strong> <a href="https://wa.me/6288801146881">+62-888-0114-6881</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop Address:</strong> Jl. Raya Setu Cikarang Bar., Bekasi 17320<br/>&bull; <strong>Business Hours:</strong> Mon-Fri 08:00-17:00, Sat 08:00-15:00',
+          '&bull; <strong>WhatsApp (Fast Response):</strong> <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop Address:</strong> Jl. Raya Setu Cikarang Bar., Bekasi 17320<br/>&bull; <strong>Business Hours:</strong> Mon-Fri 08:00-17:00, Sat 08:00-15:00',
           '<strong>Special Promo:</strong> Untuk order pertama, dapatkan discount 10% + free delivery untuk wilayah Jabodetabek (min. order Rp 10 juta). Quote mention: "PROMO2025".',
           'Visit workshop kami untuk lihat sample furniture dan diskusi langsung dengan tim produksi. <strong>Appointment required</strong> - contact kami untuk schedule kunjungan!'
         ]
@@ -4931,7 +4930,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         paragraphs: [
           'Sebagai workshop furniture industrial terpercaya di Bekasi sejak 1999, <strong>Mangala Living</strong> telah melayani puluhan tenant di Summarecon Bekasi dan mall-mall premium lainnya di Jabodetabek. Workshop kami di Setu, Bekasi hanya 15 menit dari Summarecon Bekasi, memudahkan komunikasi dan koordinasi.',
           '<strong>Keunggulan Mangala Living:</strong><br/>&bull; Berpengalaman dengan standar dan requirement mall premium.<br/>&bull; Material berkualitas tinggi dengan garansi 1 tahun untuk struktur dan finishing.<br/>&bull; Custom design sesuai konsep brand Anda dengan 3D mockup visualization.<br/>&bull; After-sales service dengan response time maksimal 24 jam untuk area Bekasi.<br/>&bull; Harga pabrik langsung tanpa markup reseller (hemat 30-40% vs furniture store).<br/>&bull; Free delivery dan installation untuk area Summarecon Bekasi.',
-          '<strong>Hubungi Kami untuk Konsultasi & Quote:</strong><br/>&bull; WhatsApp: <a href="https://wa.me/6288801146881">+62-888-0114-6881</a><br/>&bull; Email: <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; Workshop: Jl. Raya Setu Cikarang Bar., Bekasi (15 menit dari Summarecon Bekasi)',
+          '<strong>Hubungi Kami untuk Konsultasi & Quote:</strong><br/>&bull; WhatsApp: <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>&bull; Email: <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; Workshop: Jl. Raya Setu Cikarang Bar., Bekasi (15 menit dari Summarecon Bekasi)',
           '<strong>Special Offer untuk Tenant Summarecon:</strong> Discount 10% untuk first order + free design consultation + free delivery & installation. Quote mention: "SUMMARECON2025". <em>Promo berlaku hingga Desember 2025.</em>'
         ]
       }
@@ -5010,7 +5009,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Mangala Living - Workshop Terdekat dari Harapan Indah',
         paragraphs: [
           'Mangala Living adalah workshop furniture industrial terdekat dan terpercaya untuk area Harapan Indah. Dengan pengalaman 25+ tahun dan 1000+ klien satisfied di seluruh Indonesia, kami siap membantu mewujudkan furniture impian Anda.',
-          '&bull; <strong>WhatsApp (Fast Response):</strong> <a href="https://wa.me/6288801146881">+62-888-0114-6881</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop:</strong> Jl. Raya Setu Cikarang Bar., Bekasi (20 menit dari Harapan Indah)<br/>&bull; <strong>Visit Hours:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00 (by appointment)',
+          '&bull; <strong>WhatsApp (Fast Response):</strong> <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop:</strong> Jl. Raya Setu Cikarang Bar., Bekasi (20 menit dari Harapan Indah)<br/>&bull; <strong>Visit Hours:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00 (by appointment)',
           '<strong>Promo Harapan Indah Resident:</strong> Discount 15% untuk resident Harapan Indah + free consultation + free delivery & installation. Tunjukkan KTP atau bukti domisili Harapan Indah untuk claim promo. <em>Limited offer!</em>'
         ]
       }
@@ -5093,7 +5092,7 @@ const BLOG_CONTENTS: BlogContent[] = [
         heading: 'Hubungi Kami untuk Quote & Konsultasi Furniture Lippo Cikarang',
         paragraphs: [
           'Ready untuk setup cafe atau restaurant di Lippo Cikarang dengan furniture industrial berkualitas premium dengan harga factory direct? Tim Mangala Living siap support dari design hingga installation.',
-          '&bull; <strong>Contact (Fast Response):</strong> <a href="https://wa.me/6288801146881">+62-888-0114-6881</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop Address:</strong> Jl. Raya Setu Cikarang Bar., Bekasi (25 menit dari Lippo Cikarang)<br/>&bull; <strong>Showroom Hours:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
+          '&bull; <strong>Contact (Fast Response):</strong> <a href="https://wa.me/6285212078467">+62-852-1207-8467</a><br/>&bull; <strong>Email:</strong> <a href="mailto:info@mangalaliving.com">info@mangalaliving.com</a><br/>&bull; <strong>Workshop Address:</strong> Jl. Raya Setu Cikarang Bar., Bekasi (25 menit dari Lippo Cikarang)<br/>&bull; <strong>Showroom Hours:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
           '<strong>Special Offer Lippo Cikarang Area:</strong> <em>Discount 12%</em> untuk first order + <em>free delivery & installation</em> untuk area Lippo Cikarang (Lippo Mall, Lippo Village, Orange County) + <em>free design consultation with 3D mockup</em>. Minimum order Rp 10 juta. Quote mention: "LIPPO2025".',
           '<strong>Workshop Visit Welcome!</strong> Kami encourage client untuk visit workshop before order. Lihat sample furniture, material library, production facility, dan meet the team. <strong>Appointment via WhatsApp required</strong> untuk ensure kami bisa allocate time untuk proper consultation.'
         ]
@@ -5106,6 +5105,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction | Alumni Universitas Diponegoro</em>',
           'Sebagai praktisi arsitektur yang sudah belasan tahun terlibat dalam proyek renovasi dan desain ruang komersial - mulai dari perumahan hingga cafe dan restoran - saya sering mendapat pertanyaan dari klien: <strong>"Kenapa cafe tertentu selalu ramai, sementara yang lain sepi padahal lokasi sama-sama strategis?"</strong>',
           'Jawabannya bukan cuma soal menu atau harga kopi. Dari pengalaman saya menangani project di Jakarta, Bekasi, hingga area Cikarang, ada satu faktor yang sering dilupakan tapi sangat menentukan: <strong>furniture</strong>. Ya, furniture yang tepat bisa jadi game-changer yang bikin pelanggan betah berlama-lama, beli lebih banyak, dan balik lagi.',
           'Dalam artikel ini, saya akan berbagi insight berdasarkan pengalaman lapangan saya, kenapa cafe hits di Jakarta, Bandung, Bali, Surabaya, hingga Jogja punya satu kesamaan: mereka invest di furniture industrial berkualitas yang tidak hanya Instagrammable, tapi juga fungsional dan durable.'
@@ -5220,7 +5220,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<ul><li>Create first impression yang strong (people judge cafe dalam 3 detik pertama mereka masuk)</li><li>Enhance customer experience dan increase dwell time</li><li>Reduce maintenance cost dan operational hassle</li><li>Differentiate Anda dari kompetitor</li><li>Generate organic marketing via Instagram posts dari customer</li></ul>',
           'Investasi di quality furniture adalah investasi untuk long-term success cafe Anda. Jangan compromise on this.',
           'Jika Anda lagi planning buka cafe di <strong>Jakarta</strong>, <strong>Bandung</strong>, <strong>Bekasi</strong>, <strong>Cikarang</strong>, atau area Jabodetabek lainnya dan butuh partner untuk furniture industrial berkualitas, saya personally recommend Anda untuk at least consult dengan <strong>Mangala Living</strong>. Workshop mereka accessible (di Setu, Bekasi), team responsive, dan track record proven.',
-          '<strong>Contact Mangala Living:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; <strong>Workshop:</strong> Jl. Raya Setu, Bekasi (Dekat pintu tol Cikarang Barat)<br/>&bull; <strong>Jam Operasional:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
+          '<strong>Contact Mangala Living:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; <strong>Workshop:</strong> Jl. Raya Setu, Bekasi (Dekat pintu tol Cikarang Barat)<br/>&bull; <strong>Jam Operasional:</strong> Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00',
           '<em>Tip: Mention kode "CAFE2025" saat inquiry untuk free design consultation dan 3D mockup!</em>',
           'Semoga artikel ini helpful untuk Anda yang lagi dalam journey membuka atau renovate cafe. Jika ada pertanyaan atau mau discuss lebih detail tentang space planning dan furniture selection, feel free to reach out!',
           '&mdash; <strong>Helmi Ramdan</strong><br/><em>Associate, Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta<br/>Pengalaman 10+ Tahun dalam Arsitektur, Desain Interior, dan Project Commercial Space<br/>LinkedIn: https://www.linkedin.com/in/helmi-ramdan-067912118/</em>'
@@ -5228,20 +5228,212 @@ const BLOG_CONTENTS: BlogContent[] = [
       }
     ]
   },
-  // Cafe 24 Jam Jakarta Bekasi Furniture Tahan Lama Operasional Non Stop - Using Reusable Template
+  // Cafe 24 Jam Jakarta & Bekasi
   {
     slug: 'cafe-24-jam-jakarta-bekasi-furniture-tahan-lama-operasional-non-stop',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-24-jam-jakarta-bekasi-furniture-tahan-lama-operasional-non-stop'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Jakarta dan Bekasi, saya notice bahwa <strong>furniture tahan lama untuk operasional non-stop</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: intensitas usage 3x lipat, maintenance minimal.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe 24 Jam Jakarta & Bekasi, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe 24 Jam Jakarta & Bekasi: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Jakarta dan Bekasi</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Jakarta dan Bekasi mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Jakarta dan Bekasi invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe 24 Jam Jakarta & Bekasi dengan furniture industrial - Desain optimal untuk Jakarta dan Bekasi yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe 24 Jam Jakarta & Bekasi',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Jakarta dan Bekasi, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>intensitas usage 3x lipat, maintenance minimal</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Jakarta dan Bekasi yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Jakarta dan Bekasi vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Jakarta dan Bekasi?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Jakarta dan Bekasi. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Jakarta dan Bekasi.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE137" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Jakarta dan Bekasi',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Jakarta dan Bekasi.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Alam Outdoor Furniture Industrial Tahan Cuaca Tropis - Using Reusable Template
+  // Cafe Alam Outdoor
   {
     slug: 'cafe-alam-outdoor-furniture-industrial-tahan-cuaca-tropis',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-alam-outdoor-furniture-industrial-tahan-cuaca-tropis'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di area outdoor dengan cuaca ekstrem, saya notice bahwa <strong>furniture outdoor tahan cuaca tropis Indonesia</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: material weatherproof, design tropical-industrial.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Alam Outdoor, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Alam Outdoor: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>area outdoor dengan cuaca ekstrem</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment area outdoor dengan cuaca ekstrem mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di area outdoor dengan cuaca ekstrem invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Alam Outdoor dengan furniture industrial - Desain optimal untuk area outdoor dengan cuaca ekstrem yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Alam Outdoor',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di area outdoor dengan cuaca ekstrem, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>material weatherproof, design tropical-industrial</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di area outdoor dengan cuaca ekstrem yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di area outdoor dengan cuaca ekstrem vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di area outdoor dengan cuaca ekstrem?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics area outdoor dengan cuaca ekstrem. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di area outdoor dengan cuaca ekstrem.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE138" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di area outdoor dengan cuaca ekstrem',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di area outdoor dengan cuaca ekstrem.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Sekitar Saya Strategi Furniture Menarik Pelanggan Lokal - Using Reusable Template
+  // Cafe Sekitar Residential Area
   {
     slug: 'cafe-sekitar-saya-strategi-furniture-menarik-pelanggan-lokal',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-sekitar-saya-strategi-furniture-menarik-pelanggan-lokal'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di area residential dan perumahan, saya notice bahwa <strong>furniture strategy menarik pelanggan lokal</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: community-oriented design, family-friendly seating.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Sekitar Residential Area, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Sekitar Residential Area: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>area residential dan perumahan</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment area residential dan perumahan mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di area residential dan perumahan invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Sekitar Residential Area dengan furniture industrial - Desain optimal untuk area residential dan perumahan yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Sekitar Residential Area',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di area residential dan perumahan, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>community-oriented design, family-friendly seating</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di area residential dan perumahan yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di area residential dan perumahan vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di area residential dan perumahan?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics area residential dan perumahan. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di area residential dan perumahan.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE139" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di area residential dan perumahan',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di area residential dan perumahan.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
   // Branding Cafe dengan Nama Unik
   {
@@ -5249,6 +5441,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di semua area dengan konsep unik, saya notice bahwa <strong>sinkronisasi furniture dengan brand identity</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: furniture sebagai visual branding tool.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Branding Cafe dengan Nama Unik, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5295,7 +5488,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di semua area dengan konsep unik.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE140" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE140" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5311,70 +5504,902 @@ const BLOG_CONTENTS: BlogContent[] = [
       }
     ]
   },
-  // Cafe Bsd Serpong Furniture Industrial Area Premium - Using Reusable Template
+  // Cafe BSD Serpong Premium
   {
     slug: 'cafe-bsd-serpong-furniture-industrial-area-premium',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-bsd-serpong-furniture-industrial-area-premium'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di BSD City dan Serpong, saya notice bahwa <strong>furniture industrial untuk demographics premium</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: high expectation, premium material, design sophisticated.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe BSD Serpong Premium, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe BSD Serpong Premium: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>BSD City dan Serpong</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment BSD City dan Serpong mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di BSD City dan Serpong invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe BSD Serpong Premium dengan furniture industrial - Desain optimal untuk BSD City dan Serpong yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe BSD Serpong Premium',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di BSD City dan Serpong, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>high expectation, premium material, design sophisticated</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di BSD City dan Serpong yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di BSD City dan Serpong vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di BSD City dan Serpong?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics BSD City dan Serpong. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di BSD City dan Serpong.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE141" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di BSD City dan Serpong',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di BSD City dan Serpong.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Sentul Bogor Furniture Konsep Alam Industrial - Using Reusable Template
+  // Cafe Sentul Bogor Tropical
   {
     slug: 'cafe-sentul-bogor-furniture-konsep-alam-industrial',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-sentul-bogor-furniture-konsep-alam-industrial'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Sentul dan Bogor area, saya notice bahwa <strong>kombinasi alam dan industrial style</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: tropical-industrial, material tahan kelembaban.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Sentul Bogor Tropical, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Sentul Bogor Tropical: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Sentul dan Bogor area</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Sentul dan Bogor area mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Sentul dan Bogor area invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Sentul Bogor Tropical dengan furniture industrial - Desain optimal untuk Sentul dan Bogor area yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Sentul Bogor Tropical',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Sentul dan Bogor area, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>tropical-industrial, material tahan kelembaban</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Sentul dan Bogor area yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Sentul dan Bogor area vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Sentul dan Bogor area?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Sentul dan Bogor area. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Sentul dan Bogor area.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE142" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Sentul dan Bogor area',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Sentul dan Bogor area.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Depok Margonda Ui Furniture Student Friendly - Using Reusable Template
+  // Cafe Area Kampus Depok
   {
     slug: 'cafe-depok-margonda-ui-furniture-student-friendly',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-depok-margonda-ui-furniture-student-friendly'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Margonda, UI, area kampus, saya notice bahwa <strong>furniture student-friendly dan affordable</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: power outlet banyak, study-friendly layout.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Area Kampus Depok, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Area Kampus Depok: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Margonda, UI, area kampus</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Margonda, UI, area kampus mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Margonda, UI, area kampus invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Area Kampus Depok dengan furniture industrial - Desain optimal untuk Margonda, UI, area kampus yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Area Kampus Depok',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Margonda, UI, area kampus, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>power outlet banyak, study-friendly layout</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Margonda, UI, area kampus yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Margonda, UI, area kampus vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Margonda, UI, area kampus?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Margonda, UI, area kampus. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Margonda, UI, area kampus.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE143" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Margonda, UI, area kampus',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Margonda, UI, area kampus.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Jakarta Selatan Kemang Scbd Furniture Premium - Using Reusable Template
+  // Cafe Jakarta Selatan Premium
   {
     slug: 'cafe-jakarta-selatan-kemang-scbd-furniture-premium',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-jakarta-selatan-kemang-scbd-furniture-premium'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Kemang, SCBD, Senopati, saya notice bahwa <strong>furniture high-end industrial chic</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: material premium, design sophisticated, ROI high-spending customer.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Jakarta Selatan Premium, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Jakarta Selatan Premium: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Kemang, SCBD, Senopati</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Kemang, SCBD, Senopati mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Kemang, SCBD, Senopati invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Jakarta Selatan Premium dengan furniture industrial - Desain optimal untuk Kemang, SCBD, Senopati yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Jakarta Selatan Premium',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Kemang, SCBD, Senopati, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>material premium, design sophisticated, ROI high-spending customer</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Kemang, SCBD, Senopati yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Kemang, SCBD, Senopati vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Kemang, SCBD, Senopati?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Kemang, SCBD, Senopati. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Kemang, SCBD, Senopati.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE144" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Kemang, SCBD, Senopati',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Kemang, SCBD, Senopati.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Hits Bandung - Using Reusable Template
+  // Cafe Hits Bandung
   {
     slug: 'cafe-bandung-dago-riau-furniture-instagrammable-hits',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-bandung-dago-riau-furniture-instagrammable-hits'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Dago, Riau, Progo Bandung, saya notice bahwa <strong>furniture instagrammable yang viral</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: photogenic design, trend Bandung aesthetic.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Hits Bandung, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Hits Bandung: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Dago, Riau, Progo Bandung</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Dago, Riau, Progo Bandung mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Dago, Riau, Progo Bandung invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Hits Bandung dengan furniture industrial - Desain optimal untuk Dago, Riau, Progo Bandung yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Hits Bandung',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Dago, Riau, Progo Bandung, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>photogenic design, trend Bandung aesthetic</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Dago, Riau, Progo Bandung yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Dago, Riau, Progo Bandung vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Dago, Riau, Progo Bandung?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Dago, Riau, Progo Bandung. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Dago, Riau, Progo Bandung.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE145" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Dago, Riau, Progo Bandung',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Dago, Riau, Progo Bandung.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Bali Beach Vibes - Using Reusable Template
+  // Cafe Bali Beach Vibes
   {
     slug: 'cafe-bali-canggu-seminyak-furniture-tropical-industrial',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-bali-canggu-seminyak-furniture-tropical-industrial'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Canggu, Seminyak, Ubud, saya notice bahwa <strong>furniture tropical industrial beach style</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: material tahan garam laut, design tropical.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Bali Beach Vibes, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Bali Beach Vibes: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Canggu, Seminyak, Ubud</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Canggu, Seminyak, Ubud mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Canggu, Seminyak, Ubud invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Bali Beach Vibes dengan furniture industrial - Desain optimal untuk Canggu, Seminyak, Ubud yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Bali Beach Vibes',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Canggu, Seminyak, Ubud, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>material tahan garam laut, design tropical</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Canggu, Seminyak, Ubud yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Canggu, Seminyak, Ubud vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Canggu, Seminyak, Ubud?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Canggu, Seminyak, Ubud. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Canggu, Seminyak, Ubud.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE146" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Canggu, Seminyak, Ubud',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Canggu, Seminyak, Ubud.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Surabaya Modern - Using Reusable Template
+  // Cafe Surabaya Modern
   {
     slug: 'cafe-surabaya-galaxy-pakuwon-furniture-modern-spacious',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-surabaya-galaxy-pakuwon-furniture-modern-spacious'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Galaxy Mall, Pakuwon, saya notice bahwa <strong>furniture spacious dan comfortable</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: spacious seating preference, modern design.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Surabaya Modern, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Surabaya Modern: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Galaxy Mall, Pakuwon</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Galaxy Mall, Pakuwon mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Galaxy Mall, Pakuwon invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Surabaya Modern dengan furniture industrial - Desain optimal untuk Galaxy Mall, Pakuwon yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Surabaya Modern',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Galaxy Mall, Pakuwon, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>spacious seating preference, modern design</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Galaxy Mall, Pakuwon yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Galaxy Mall, Pakuwon vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Galaxy Mall, Pakuwon?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Galaxy Mall, Pakuwon. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Galaxy Mall, Pakuwon.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE147" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Galaxy Mall, Pakuwon',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Galaxy Mall, Pakuwon.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Jogja Heritage - Using Reusable Template
+  // Cafe Jogja Heritage
   {
     slug: 'cafe-jogja-prawirotaman-malioboro-furniture-vintage-industrial',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-jogja-prawirotaman-malioboro-furniture-vintage-industrial'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Prawirotaman, Malioboro, Kaliurang, saya notice bahwa <strong>furniture vintage industrial heritage</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: kombinasi heritage dan industrial, reclaimed material.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Jogja Heritage, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Jogja Heritage: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Prawirotaman, Malioboro, Kaliurang</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Prawirotaman, Malioboro, Kaliurang mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Prawirotaman, Malioboro, Kaliurang invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Jogja Heritage dengan furniture industrial - Desain optimal untuk Prawirotaman, Malioboro, Kaliurang yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Jogja Heritage',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Prawirotaman, Malioboro, Kaliurang, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>kombinasi heritage dan industrial, reclaimed material</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Prawirotaman, Malioboro, Kaliurang yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Prawirotaman, Malioboro, Kaliurang vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Prawirotaman, Malioboro, Kaliurang?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Prawirotaman, Malioboro, Kaliurang. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Prawirotaman, Malioboro, Kaliurang.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE148" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Prawirotaman, Malioboro, Kaliurang',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Prawirotaman, Malioboro, Kaliurang.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Malang Mountain View - Using Reusable Template
+  // Cafe Malang Mountain View
   {
     slug: 'cafe-malang-batu-furniture-mountain-view-industrial',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-malang-batu-furniture-mountain-view-industrial'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Malang dan Batu, saya notice bahwa <strong>furniture outdoor dengan view pegunungan</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: maximize view, nature-meets-industrial.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Malang Mountain View, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Malang Mountain View: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Malang dan Batu</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Malang dan Batu mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Malang dan Batu invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Malang Mountain View dengan furniture industrial - Desain optimal untuk Malang dan Batu yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Malang Mountain View',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Malang dan Batu, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>maximize view, nature-meets-industrial</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Malang dan Batu yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Malang dan Batu vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Malang dan Batu?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Malang dan Batu. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Malang dan Batu.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE149" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Malang dan Batu',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Malang dan Batu.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Bogor Puncak Furniture Sejuk Highland Industrial - Using Reusable Template
+  // Cafe Bogor Highland
   {
     slug: 'cafe-bogor-puncak-furniture-sejuk-highland-industrial',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-bogor-puncak-furniture-sejuk-highland-industrial'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Bogor dan Puncak, saya notice bahwa <strong>furniture untuk dataran tinggi sejuk</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: material tahan kelembaban tinggi, cozy highland vibes.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Bogor Highland, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Bogor Highland: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Bogor dan Puncak</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Bogor dan Puncak mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Bogor dan Puncak invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Bogor Highland dengan furniture industrial - Desain optimal untuk Bogor dan Puncak yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Bogor Highland',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Bogor dan Puncak, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>material tahan kelembaban tinggi, cozy highland vibes</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Bogor dan Puncak yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Bogor dan Puncak vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Bogor dan Puncak?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Bogor dan Puncak. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Bogor dan Puncak.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE150" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Bogor dan Puncak',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Bogor dan Puncak.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Medan Furniture Spacious Culture Sumatera - Using Reusable Template
+  // Cafe Medan Spacious
   {
     slug: 'cafe-medan-furniture-spacious-culture-sumatera',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-medan-furniture-spacious-culture-sumatera'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Medan, Sumatera Utara, saya notice bahwa <strong>furniture untuk kultur nongkrong Medan</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: spacious table, group-friendly seating.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Medan Spacious, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Medan Spacious: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Medan, Sumatera Utara</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Medan, Sumatera Utara mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Medan, Sumatera Utara invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Medan Spacious dengan furniture industrial - Desain optimal untuk Medan, Sumatera Utara yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Medan Spacious',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Medan, Sumatera Utara, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>spacious table, group-friendly seating</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Medan, Sumatera Utara yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Medan, Sumatera Utara vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Medan, Sumatera Utara?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Medan, Sumatera Utara. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Medan, Sumatera Utara.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE151" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Medan, Sumatera Utara',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Medan, Sumatera Utara.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Semarang Furniture Compact Efficient Mall Ruko - Using Reusable Template
+  // Cafe Semarang Compact
   {
     slug: 'cafe-semarang-furniture-compact-efficient-mall-ruko',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-semarang-furniture-compact-efficient-mall-ruko'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Semarang, Jawa Tengah, saya notice bahwa <strong>furniture compact untuk mall dan ruko</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: space efficiency, layout optimal tenant terbatas.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Semarang Compact, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Semarang Compact: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Semarang, Jawa Tengah</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Semarang, Jawa Tengah mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Semarang, Jawa Tengah invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Semarang Compact dengan furniture industrial - Desain optimal untuk Semarang, Jawa Tengah yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Semarang Compact',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Semarang, Jawa Tengah, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>space efficiency, layout optimal tenant terbatas</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Semarang, Jawa Tengah yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Semarang, Jawa Tengah vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Semarang, Jawa Tengah?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Semarang, Jawa Tengah. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Semarang, Jawa Tengah.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE152" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Semarang, Jawa Tengah',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Semarang, Jawa Tengah.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
-  // Cafe Makassar Furniture Coastal Industrial Sulawesi - Using Reusable Template
+  // Cafe Makassar Coastal
   {
     slug: 'cafe-makassar-furniture-coastal-industrial-sulawesi',
-    sections: generateCafeLocationContent(CAFE_LOCATION_CONFIGS['cafe-makassar-furniture-coastal-industrial-sulawesi'])
+    sections: [
+      {
+        paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
+          'Dari pengalaman saya handle commercial space di Makassar, Sulawesi Selatan, saya notice bahwa <strong>furniture coastal industrial beach style</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: material tahan angin laut, beach industrial.',
+          'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Makassar Coastal, berdasarkan observasi dan consultation project saya.'
+        ]
+      },
+      {
+        heading: 'Karakteristik Unique Cafe Makassar Coastal: Challenge & Opportunity',
+        paragraphs: [
+          'Setiap location punya karakteristik unik. Untuk <strong>Makassar, Sulawesi Selatan</strong>, berikut yang saya observe:',
+          '<strong>Demographics & Behavior:</strong> Target customer di area ini punya preference specific yang harus di-accommodate dalam furniture selection.',
+          '<strong>Climate & Environment:</strong> Kondisi cuaca dan environment Makassar, Sulawesi Selatan mempengaruhi material selection. Furniture harus match dengan condition lokal.',
+          '<strong>Competition Landscape:</strong> Cafe di area ini compete ketat. Furniture yang right bisa jadi differentiator yang significant.',
+          'Dari analisis saya, cafe sukses di Makassar, Sulawesi Selatan invest in <strong>furniture industrial berkualitas</strong> yang designed specifically untuk condition dan customer mereka.'
+        ],
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
+        imageAlt: 'Interior cafe Cafe Makassar Coastal dengan furniture industrial - Desain optimal untuk Makassar, Sulawesi Selatan yang menarik pelanggan'
+      },
+      {
+        heading: 'Furniture Strategy yang Proven untuk Cafe Makassar Coastal',
+        paragraphs: [
+          'Berdasarkan experience consult berbagai cafe di Makassar, Sulawesi Selatan, berikut furniture strategy yang work:',
+          '<strong>1. Material Selection:</strong> Pilih material yang sesuai dengan <strong>material tahan angin laut, beach industrial</strong>. <a href="/product-category/dining-table-collection">Furniture industrial</a> dengan finishing proper adalah pilihan terbaik.',
+          '<strong>2. Layout Optimization:</strong> Design layout yang maximize space utility tanpa sacrifice customer comfort. Zone-based seating approach proven effective.',
+          '<strong>3. Seating Mix:</strong> Kombinasi <a href="/product/balcony-bar-table">bar table</a>, dining table 2-4 seater, dan <a href="/product/bench-corner-lounge">lounge seating</a> untuk accommodate different customer needs.',
+          '<strong>4. Aesthetic Consistency:</strong> Furniture harus align dengan brand identity cafe. Industrial style flexible dan bisa di-customize untuk various concept.',
+          'Case study: Cafe di Makassar, Sulawesi Selatan yang implement strategy ini see significant improvement in customer dwell time dan repeat visit rate.'
+        ]
+      },
+      {
+        heading: 'Budget Planning: Investment yang Worthwhile',
+        paragraphs: [
+          'Budget furniture untuk cafe di Makassar, Sulawesi Selatan vary based on size dan positioning. Berikut rough guide:',
+          '<strong>Small Cafe (40-60m&sup2;):</strong> Budget Rp 60-90 juta untuk complete furniture setup (dining set, bar seating, storage).',
+          '<strong>Medium Cafe (80-120m&sup2;):</strong> Budget Rp 120-180 juta untuk comprehensive furniture dengan mix seating types.',
+          '<strong>Large Premium Cafe (150m&sup2;+):</strong> Budget Rp 200-350 juta untuk full custom furniture dengan premium material.',
+          'ROI perspective: Quality <strong>furniture industrial dari Mangala Living</strong> dengan proper material last 5-7 years dengan minimal maintenance. This is significantly cheaper than replace cheap furniture every 1-2 years.'
+        ]
+      },
+      {
+        heading: 'Mengapa Mangala Living untuk Cafe di Makassar, Sulawesi Selatan?',
+        paragraphs: [
+          'Sebagai praktisi yang sering recommend vendors untuk commercial project, saya consider <strong>Mangala Living</strong> reliable option karena:',
+          '<strong>1. Experience dengan Diverse Location:</strong> Mereka already handle project di berbagai area Indonesia dengan condition berbeda. Understanding local requirement adalah plus.',
+          '<strong>2. Custom Design Capability:</strong> Bisa design furniture yang specific untuk unique characteristics Makassar, Sulawesi Selatan. Not one-size-fits-all approach.',
+          '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
+          '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
+          'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di Makassar, Sulawesi Selatan.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE153" untuk special consideration dalam quotation.'
+        ]
+      },
+      {
+        heading: 'Tips Praktis: Maximize Furniture Performance di Makassar, Sulawesi Selatan',
+        paragraphs: [
+          '<strong>1. Regular Maintenance:</strong> Clean furniture daily dengan proper method. Industrial furniture dengan powder coating mudah maintain.',
+          '<strong>2. Seasonal Adjustment:</strong> Adjust seating arrangement based on season atau peak period di Makassar, Sulawesi Selatan.',
+          '<strong>3. Customer Feedback Loop:</strong> Monitor customer comfort dan adjust furniture placement based on feedback.',
+          '<strong>4. Document Everything:</strong> Keep record furniture condition dan maintenance done. Helpful untuk planning future investment.',
+          '<strong>5. Partner dengan Reliable Supplier:</strong> Having vendor yang responsive seperti Mangala Living make difference dalam long-term operation.',
+          'Dari experience, cafe yang implement proper furniture strategy dan maintenance protocol see consistent growth in customer satisfaction dan revenue.'
+        ]
+      }
+    ]
   },
   // Cafe Terdekat Strategy
   {
@@ -5382,6 +6407,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di area residential lokal, saya notice bahwa <strong>furniture strategy jadi pilihan lokal pertama</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: community-oriented, comfortable for regulars.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Cafe Terdekat Strategy, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5428,7 +6454,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di area residential lokal.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE154" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE154" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5450,6 +6476,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di semua cafe dengan fokus F&B, saya notice bahwa <strong>furniture mendukung pengalaman kuliner</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: sinkronisasi menu dengan furniture, enhance experience.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe Menu Cafe & Furniture Synergy, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5496,7 +6523,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di semua cafe dengan fokus F&B.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE155" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE155" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5518,6 +6545,7 @@ const BLOG_CONTENTS: BlogContent[] = [
     sections: [
       {
         paragraphs: [
+          '<strong>Oleh: Helmi Ramdan</strong><br/><em>Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta | Infrastructure Engineer at Damai Putra Group (3+ tahun) | Design Engineer & Architectural Drafter (5+ tahun pengalaman) | Alumni Universitas Diponegoro | Spesialis Commercial Space Design & Construction</em>',
           'Dari pengalaman saya handle commercial space di urban area dengan brand positioning premium, saya notice bahwa <strong>furniture minimalis less is more</strong> adalah kunci sukses cafe di area ini. Karakteristik unique: minimalist aesthetic, monochrome palette, timeless.',
           'Artikel ini akan share insight praktis furniture industrial untuk cafe The Cafe Minimalist Concept, berdasarkan observasi dan consultation project saya.'
         ]
@@ -5564,7 +6592,7 @@ const BLOG_CONTENTS: BlogContent[] = [
           '<strong>3. Material Quality Consistent:</strong> Furniture yang saya inspect dari mereka show consistent quality. Material spec sesuai dengan yang di-promise.',
           '<strong>4. After-Sales Support:</strong> Workshop di Bekasi memberikan advantage untuk Jabodetabek area. Response time cepat jika ada issue.',
           'Workshop location: <strong>Jl. Raya Setu, Bekasi</strong>. Free consultation untuk cafe project di urban area dengan brand positioning premium.',
-          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">WhatsApp: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE156" untuk special consideration dalam quotation.'
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/6285212078467" target="_blank">WhatsApp: +62-852-1207-8467</a><br/>&bull; <a href="mailto:info@mangalaliving.com">Email: info@mangalaliving.com</a><br/>&bull; Mention "CAFE156" untuk special consideration dalam quotation.'
         ]
       },
       {
@@ -5580,4931 +6608,6 @@ const BLOG_CONTENTS: BlogContent[] = [
       }
     ]
   },
-  {
-    slug: 'jasa-furniture-industrial-minimalis-murah-bekasi-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Mencari jasa furniture industrial minimalis murah di Bekasi yang berkualitas? Mangala Living adalah workshop furniture industrial terpercaya yang melayani custom furniture minimalis modern dengan harga terjangkau namun tetap berkualitas premium.',
-          'Sebagai jasa furniture industrial berpengalaman 25 tahun, kami memahami bahwa pemilik cafe dan resto membutuhkan furniture yang tidak hanya modern dan minimalis, tapi juga murah dan berkualitas untuk mendukung operasional bisnis.',
-          'Dalam artikel ini, Anda akan menemukan informasi lengkap tentang jasa furniture industrial minimalis murah berkualitas yang kami tawarkan, termasuk jenis produk, material berkualitas yang digunakan, dan mengapa harga kami tetap kompetitif meskipun kualitas premium.'
-        ]
-      },
-      {
-        heading: 'Kenapa Memilih Jasa Furniture Industrial Minimalis Murah Berkualitas?',
-        paragraphs: [
-          'Furniture industrial dengan desain minimalis modern saat ini sangat populer untuk cafe dan resto. Namun, menemukan jasa furniture yang menawarkan produk murah namun tetap berkualitas memang tidak mudah.',
-          'Sebagai jasa furniture industrial berpengalaman, kami memahami bahwa kualitas dan harga harus seimbang. Furniture minimalis modern yang berkualitas akan memberikan nilai lebih untuk bisnis cafe dan resto Anda dalam jangka panjang.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Industrial Minimalis Modern Murah Berkualitas Bekasi'
-      },
-      {
-        heading: 'Produk Jasa Furniture Industrial Minimalis Murah Berkualitas',
-        list: [
-          '<strong>Meja Cafe Minimalis Modern:</strong> Jasa pembuatan <a href="/product-category/dining-table-collection">meja cafe minimalis</a> dengan desain modern yang murah namun berkualitas. Material besi hollow berkualitas dengan finishing powder coating tahan lama.',
-          '<strong>Kursi Bar Minimalis:</strong> <a href="/product-category/bar-furniture-collection">Kursi bar industrial minimalis</a> modern yang murah dan berkualitas. Ergonomis, nyaman, dengan konstruksi besi berkualitas premium.',
-          '<strong>Display Rack Modern:</strong> <a href="/product-category/storage-shelving">Display rack industrial minimalis</a> untuk cafe dan resto. Storage solution yang murah, fungsional, dan berkualitas.',
-          '<strong>Set Meja Kursi:</strong> Paket lengkap meja + kursi cafe minimalis modern dengan harga murah namun kualitas premium. Cocok untuk cafe dan resto dengan budget terbatas.',
-          '<strong>Furniture Custom:</strong> Jasa custom furniture minimalis modern sesuai kebutuhan. Harga murah, kualitas terjamin, dengan desain yang match dengan konsep cafe atau resto Anda.'
-        ]
-      },
-      {
-        heading: 'Material Berkualitas untuk Furniture Minimalis Modern Murah',
-        paragraphs: [
-          'Meskipun kami menawarkan harga murah, kami tidak mengkompromi kualitas material. Semua furniture minimalis modern yang kami produksi menggunakan material berkualitas premium:',
-          'Besi hollow galvanis grade A untuk frame yang kuat dan tahan lama. Top table menggunakan kayu solid atau engineered wood berkualitas. Finishing powder coating outdoor-grade yang tahan cuaca dan anti-karat.',
-          'Dengan material berkualitas ini, furniture minimalis modern yang murah dari kami tetap awet bertahun-tahun, menghemat biaya replacement jangka panjang.'
-        ]
-      },
-      {
-        heading: 'Jasa Furniture Industrial Minimalis Murah Bekasi - Workshop Langsung',
-        paragraphs: [
-          'Mangala Living adalah jasa furniture industrial minimalis murah berkualitas dengan workshop langsung di Bekasi. Sejak 1999, kami telah melayani lebih dari 1000 klien di seluruh Indonesia dengan produk furniture minimalis modern yang murah namun berkualitas.',
-          'Kelebihan jasa kami: Workshop langsung di Bekasi berarti harga pabrik tanpa markup distributor. Material berkualitas premium dengan kontrol kualitas ketat. Custom design minimalis modern sesuai konsep cafe atau resto Anda. Tim berpengalaman 25 tahun yang memahami kebutuhan bisnis F&B.',
-          'Untuk konsultasi jasa furniture industrial minimalis murah berkualitas, hubungi kami di <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi. Tim kami siap membantu Anda mendapatkan furniture minimalis modern berkualitas dengan harga terjangkau.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'jual-meja-cafe-modern-minimalis-murah-berkualitas-jakarta-bekasi',
-    sections: [
-      {
-        paragraphs: [
-          'Jual meja cafe modern minimalis murah dengan kualitas premium untuk Jakarta dan Bekasi. Sebagai produsen meja cafe industrial terpercaya, kami memahami bahwa pemilik cafe membutuhkan meja yang modern, minimalis, murah, namun tetap berkualitas untuk mendukung operasional cafe.',
-          'Meja cafe modern minimalis yang kami jual dirancang khusus untuk memberikan keseimbangan sempurna antara estetika modern, fungsionalitas, dan harga yang terjangkau tanpa mengorbankan kualitas.',
-          'Artikel ini akan membahas lengkap tentang meja cafe modern minimalis murah berkualitas yang kami jual, mulai dari jenis-jenis meja, material berkualitas, hingga tips memilih meja cafe yang tepat untuk bisnis Anda.'
-        ]
-      },
-      {
-        heading: 'Jenis Meja Cafe Modern Minimalis Murah Berkualitas',
-        list: [
-          '<strong>Meja Makan Cafe:</strong> <a href="/product-category/dining-table-collection">Meja makan cafe modern minimalis</a> dengan ukuran standar 60x60cm hingga 120x60cm. Murah namun berkualitas, cocok untuk 2-4 orang. Material besi berkualitas dengan top kayu solid.',
-          '<strong>Meja Bar Industrial:</strong> <a href="/product-category/bar-furniture-collection">Meja bar cafe modern minimalis</a> tinggi untuk area counter atau coffee bar. Harga murah, desain modern minimalis yang instagram-worthy.',
-          '<strong>Meja Kerja Cafe:</strong> Meja kerja modern minimalis untuk co-working space cafe. Murah, fungsional, dengan desain minimalis yang tidak mengganggu kenyamanan pelanggan.',
-          '<strong>Coffee Table:</strong> Coffee table modern minimalis untuk area lounge cafe. Harga terjangkau, kualitas premium, dengan desain minimalis modern yang timeless.',
-          '<strong>Meja Bulat Cafe:</strong> Meja bulat modern minimalis untuk cafe yang ingin variasi bentuk. Murah, berkualitas, dengan diameter custom sesuai kebutuhan.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Meja Cafe Modern Minimalis Murah Berkualitas Jakarta Bekasi'
-      },
-      {
-        heading: 'Mengapa Meja Cafe Kami Murah Namun Berkualitas?',
-        paragraphs: [
-          'Banyak yang bertanya: bagaimana kami bisa jual meja cafe modern minimalis dengan harga murah namun tetap berkualitas? Jawabannya adalah workshop langsung di Bekasi.',
-          'Karena kami produsen langsung tanpa perantara, harga meja cafe modern minimalis kami bisa lebih murah hingga 30-40% dibanding distributor lain, namun dengan kualitas yang sama atau bahkan lebih baik.',
-          'Material yang kami gunakan tetap berkualitas premium: besi hollow galvanis grade A, top table kayu solid atau engineered wood berkualitas, finishing powder coating outdoor-grade. Kami tidak mengkompromi kualitas hanya untuk harga murah.'
-        ]
-      },
-      {
-        heading: 'Jual Meja Cafe Modern Minimalis Murah Jakarta Bekasi',
-        paragraphs: [
-          'Mangala Living jual meja cafe modern minimalis murah berkualitas untuk area Jakarta dan Bekasi. Sejak 1999, kami telah menjadi supplier meja cafe terpercaya dengan pengalaman 25 tahun dan 1000+ klien puas.',
-          'Kelebihan meja cafe yang kami jual: Harga murah langsung dari workshop Bekasi. Kualitas premium dengan material berkualitas terbaik. Desain modern minimalis yang instagram-worthy. Custom size sesuai kebutuhan cafe Anda. Finishing powder coating tahan lama dan mudah perawatan.',
-          'Untuk melihat koleksi meja cafe modern minimalis murah berkualitas atau konsultasi custom design, kunjungi <a href="/shop">showroom kami</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a>. Tim sales kami siap membantu Anda memilih meja cafe modern minimalis yang tepat untuk bisnis cafe Anda.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'kursi-resto-modern-minimalis-murah-berkualitas-harga-terbaik',
-    sections: [
-      {
-        paragraphs: [
-          'Kursi resto modern minimalis murah dengan kualitas premium dan harga terbaik 2025. Sebagai produsen kursi resto industrial terpercaya, kami memahami bahwa pemilik resto membutuhkan kursi yang modern, minimalis, murah, namun tetap berkualitas dan nyaman untuk pelanggan.',
-          'Kursi resto modern minimalis yang kami produksi dirancang untuk memberikan kenyamanan optimal dengan desain yang modern dan minimalis, namun dengan harga yang terjangkau tanpa mengorbankan kualitas material dan konstruksi.',
-          'Artikel ini membahas lengkap tentang kursi resto modern minimalis murah berkualitas dengan harga terbaik yang kami tawarkan, termasuk jenis-jenis kursi, material berkualitas, dan tips memilih kursi resto yang tepat.'
-        ]
-      },
-      {
-        heading: 'Jenis Kursi Resto Modern Minimalis Murah Berkualitas',
-        list: [
-          '<strong>Kursi Bar Industrial:</strong> <a href="/product-category/bar-furniture-collection">Kursi bar resto modern minimalis</a> tinggi untuk area bar counter. Harga murah, desain minimalis modern, dengan kualitas konstruksi premium.',
-          '<strong>Stall Chair:</strong> Kursi resto modern minimalis dengan desain stall chair yang ergonomis. Murah, berkualitas, cocok untuk resto dengan konsep modern minimalis.',
-          '<strong>Kursi Makan Resto:</strong> <a href="/product-category/dining-set-collection">Kursi makan resto modern minimalis</a> dengan konstruksi besi berkualitas. Harga terjangkau, desain minimalis yang timeless, dengan kenyamanan optimal.',
-          '<strong>Stackable Chair:</strong> Kursi resto minimalis modern yang bisa ditumpuk untuk menghemat space. Murah, fungsional, dengan kualitas konstruksi yang kuat.',
-          '<strong>Kursi Custom:</strong> Kursi resto custom modern minimalis sesuai konsep resto Anda. Harga kompetitif, kualitas premium, dengan desain yang match dengan brand resto.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop',
-        imageAlt: 'Kursi Resto Modern Minimalis Murah Berkualitas Harga Terbaik'
-      },
-      {
-        heading: 'Material Berkualitas untuk Kursi Resto Modern Minimalis',
-        paragraphs: [
-          'Meskipun kami menawarkan harga murah, semua kursi resto modern minimalis yang kami produksi menggunakan material berkualitas premium:',
-          'Frame besi hollow galvanis grade A dengan ketebalan yang sesuai untuk beban commercial. Seat dan backrest dengan pilihan material berkualitas: kayu solid, engineered wood, atau metal mesh. Finishing powder coating yang tahan gores dan mudah perawatan. Joint welding berkualitas tinggi untuk konstruksi yang kuat dan awet.',
-          'Dengan material berkualitas ini, kursi resto modern minimalis yang murah dari kami tetap mampu bertahan untuk penggunaan intensif di resto selama bertahun-tahun.'
-        ]
-      },
-      {
-        heading: 'Kursi Resto Modern Minimalis Murah Berkualitas - Harga Terbaik',
-        paragraphs: [
-          'Mangala Living adalah produsen kursi resto modern minimalis murah berkualitas dengan harga terbaik di pasar. Sejak 1999, kami telah memproduksi ribuan kursi resto untuk berbagai resto di seluruh Indonesia.',
-          'Mengapa harga kursi resto kami terbaik: Workshop langsung di Bekasi = harga pabrik tanpa markup. Material berkualitas premium namun dengan efisiensi produksi yang optimal. Volume production yang besar = harga lebih murah per unit. Tidak ada perantara = harga langsung dari produsen.',
-          'Untuk informasi harga kursi resto modern minimalis murah berkualitas atau custom design, hubungi kami di <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi kursi resto</a> kami. Tim sales kami siap memberikan penawaran harga terbaik untuk kebutuhan kursi resto Anda.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'furniture-cafe-minimalis-modern-murah-jasa-custom-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Furniture cafe minimalis modern murah dengan jasa custom berkualitas dari Mangala Living. Kami adalah produsen furniture cafe industrial terpercaya yang menawarkan furniture minimalis modern dengan harga terjangkau namun tetap berkualitas premium.',
-          'Furniture cafe minimalis modern yang kami produksi dirancang khusus untuk menciptakan suasana cafe yang modern, estetis, dan instagram-worthy tanpa biaya yang mahal.',
-          'Artikel ini membahas lengkap tentang furniture cafe minimalis modern murah dengan jasa custom berkualitas yang kami tawarkan, termasuk jenis produk, keunggulan custom design, dan mengapa furniture minimalis modern kami berkualitas namun tetap murah.'
-        ]
-      },
-      {
-        heading: 'Furniture Cafe Minimalis Modern Murah - Jasa Custom Berkualitas',
-        list: [
-          '<strong>Meja Cafe Minimalis:</strong> <a href="/product-category/dining-table-collection">Meja cafe minimalis modern</a> dengan jasa custom sesuai ukuran cafe Anda. Murah, berkualitas, dengan desain minimalis yang timeless.',
-          '<strong>Kursi Cafe Modern:</strong> <a href="/product-category/bar-furniture-collection">Kursi cafe minimalis modern</a> dengan jasa custom untuk kenyamanan optimal. Harga terjangkau, material berkualitas premium.',
-          '<strong>Display Rack Minimalis:</strong> Rak display cafe modern minimalis dengan jasa custom untuk storage yang fungsional. Murah, berkualitas, dengan desain minimalis modern.',
-          '<strong>Bar Set Custom:</strong> Bar set cafe minimalis modern dengan jasa custom sesuai konsep cafe. Harga kompetitif, kualitas premium, desain modern minimalis.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Cafe Minimalis Modern Murah Jasa Custom Berkualitas'
-      },
-      {
-        heading: 'Jasa Custom Furniture Cafe Minimalis Modern Murah',
-        paragraphs: [
-          'Mangala Living menawarkan jasa custom furniture cafe minimalis modern murah berkualitas. Workshop langsung di Bekasi, custom design sesuai konsep cafe Anda, dengan harga terjangkau namun kualitas premium.',
-          'Kelebihan jasa custom kami: Desain minimalis modern sesuai konsep cafe Anda. Ukuran custom sesuai space cafe. Material berkualitas premium dengan harga terjangkau. Tim berpengalaman 25 tahun yang memahami kebutuhan cafe.',
-          'Untuk konsultasi jasa custom furniture cafe minimalis modern murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'meja-resto-industrial-modern-minimalis-murah-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Meja resto industrial modern minimalis murah dengan kualitas premium. Sebagai produsen meja resto industrial terpercaya, kami memahami bahwa pemilik resto membutuhkan meja yang modern, minimalis, industrial, murah, namun tetap berkualitas untuk operasional resto.',
-          'Meja resto industrial modern minimalis yang kami produksi memberikan keseimbangan sempurna antara karakter industrial yang kuat, estetika modern minimalis, dan harga yang terjangkau.'
-        ]
-      },
-      {
-        heading: 'Meja Resto Industrial Modern Minimalis Murah Berkualitas',
-        list: [
-          '<strong>Meja Makan Resto:</strong> <a href="/product-category/dining-table-collection">Meja makan resto industrial modern minimalis</a> dengan berbagai ukuran. Murah, berkualitas, dengan desain industrial minimalis yang timeless.',
-          '<strong>Meja Bar Resto:</strong> Meja bar resto industrial modern minimalis untuk area bar counter. Harga terjangkau, kualitas premium, dengan karakter industrial yang kuat.',
-          '<strong>Custom Size:</strong> Meja resto custom size industrial modern minimalis sesuai kebutuhan resto Anda. Material berkualitas, finishing powder coating tahan lama.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Meja Resto Industrial Modern Minimalis Murah Berkualitas'
-      },
-      {
-        heading: 'Mangala Living - Meja Resto Industrial Modern Minimalis Murah',
-        paragraphs: [
-          'Mangala Living adalah produsen meja resto industrial modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Sejak 1999, kami telah memproduksi ribuan meja resto untuk berbagai resto di seluruh Indonesia.',
-          'Material berkualitas premium: besi hollow galvanis grade A, top table kayu solid atau engineered wood berkualitas, finishing powder coating outdoor-grade. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk informasi meja resto industrial modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi meja resto</a> kami.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'jasa-bikin-furniture-cafe-custom-minimalis-murah-bekasi',
-    sections: [
-      {
-        paragraphs: [
-          'Jasa bikin furniture cafe custom minimalis murah Bekasi dengan workshop langsung. Mangala Living adalah jasa furniture cafe custom terpercaya yang menawarkan furniture minimalis modern dengan harga terjangkau namun berkualitas premium.',
-          'Jasa bikin furniture cafe custom kami melayani berbagai kebutuhan cafe, dari furniture minimalis modern hingga desain custom yang sesuai dengan konsep brand cafe Anda.'
-        ]
-      },
-      {
-        heading: 'Jasa Bikin Furniture Cafe Custom Minimalis Murah',
-        list: [
-          '<strong>Custom Design:</strong> Jasa bikin furniture cafe custom minimalis modern sesuai konsep cafe Anda. Desain unique, harga terjangkau, kualitas premium.',
-          '<strong>Material Berkualitas:</strong> Semua furniture cafe custom menggunakan material berkualitas premium: besi hollow galvanis, kayu solid, finishing powder coating.',
-          '<strong>Workshop Langsung:</strong> Jasa bikin furniture cafe custom dengan workshop langsung di Bekasi = harga pabrik tanpa markup.',
-          '<strong>Tim Ahli:</strong> Tim berpengalaman 25 tahun yang memahami kebutuhan furniture cafe custom minimalis modern.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Jasa Bikin Furniture Cafe Custom Minimalis Murah Bekasi'
-      },
-      {
-        heading: 'Jasa Bikin Furniture Cafe Custom Bekasi - Workshop Langsung',
-        paragraphs: [
-          'Mangala Living adalah jasa bikin furniture cafe custom minimalis murah Bekasi dengan workshop langsung. Pengalaman 25 tahun, 1000+ klien puas, dengan harga terjangkau namun kualitas premium.',
-          'Proses jasa bikin furniture cafe custom: Konsultasi konsep cafe &rarr; Design proposal &rarr; Approval & quotation &rarr; Produksi di workshop Bekasi &rarr; Quality control &rarr; Delivery & instalasi.',
-          'Untuk konsultasi jasa bikin furniture cafe custom minimalis murah Bekasi, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'furniture-resto-modern-minimalis-murah-jual-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Furniture resto modern minimalis murah yang kami jual dengan kualitas premium. Sebagai produsen furniture resto industrial terpercaya, kami jual berbagai furniture resto modern minimalis dengan harga terjangkau namun tetap berkualitas.',
-          'Furniture resto modern minimalis yang kami jual dirancang khusus untuk menciptakan suasana resto yang modern, estetis, dan nyaman untuk pelanggan dengan budget yang terjangkau.'
-        ]
-      },
-      {
-        heading: 'Furniture Resto Modern Minimalis Murah - Jual Berkualitas',
-        list: [
-          '<strong>Meja Resto:</strong> <a href="/product-category/dining-table-collection">Meja resto modern minimalis</a> yang kami jual dengan harga terjangkau. Material berkualitas, desain modern minimalis.',
-          '<strong>Kursi Resto:</strong> <a href="/product-category/dining-set-collection">Kursi resto modern minimalis</a> yang kami jual dengan kualitas premium. Ergonomis, nyaman, harga terjangkau.',
-          '<strong>Bar Set Resto:</strong> Bar set resto modern minimalis yang kami jual untuk area bar counter. Harga kompetitif, kualitas premium.',
-          '<strong>Set Lengkap:</strong> Paket furniture resto modern minimalis lengkap yang kami jual dengan harga special. Meja + kursi + bar set dengan harga lebih murah.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Resto Modern Minimalis Murah Jual Berkualitas'
-      },
-      {
-        heading: 'Jual Furniture Resto Modern Minimalis Murah Berkualitas',
-        paragraphs: [
-          'Mangala Living jual furniture resto modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
-          'Mengapa furniture resto yang kami jual lebih murah: Workshop langsung = harga pabrik tanpa markup. Material berkualitas namun dengan efisiensi produksi optimal. Volume production besar = harga lebih murah per unit.',
-          'Untuk melihat koleksi furniture resto modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'display-rack-cafe-modern-minimalis-murah-berkualitas-industrial',
-    sections: [
-      {
-        paragraphs: [
-          'Display rack cafe modern minimalis murah dengan kualitas industrial premium. Sebagai produsen display rack industrial terpercaya, kami menawarkan rak display cafe modern minimalis dengan harga terjangkau namun berkualitas industrial.',
-          'Display rack cafe modern minimalis yang kami produksi memberikan solusi storage yang fungsional dengan desain modern minimalis yang instagram-worthy.'
-        ]
-      },
-      {
-        heading: 'Display Rack Cafe Modern Minimalis Murah - Industrial',
-        list: [
-          '<strong>Rak Display Retail:</strong> <a href="/product-category/storage-shelving">Rak display cafe modern minimalis</a> untuk retail merchandise. Material besi berkualitas, desain industrial minimalis.',
-          '<strong>Rak Gantung Wall:</strong> Rak gantung cafe modern minimalis untuk wall mounting. Murah, fungsional, dengan desain minimalis modern.',
-          '<strong>Hollowline Rack:</strong> Display rack hollowline cafe modern minimalis dengan konstruksi hollow steel berkualitas. Harga terjangkau, kualitas premium.',
-          '<strong>Custom Rack:</strong> Display rack custom cafe modern minimalis sesuai kebutuhan. Ukuran custom, material berkualitas, harga kompetitif.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Display Rack Cafe Modern Minimalis Murah Berkualitas Industrial'
-      },
-      {
-        heading: 'Display Rack Cafe Modern Minimalis Murah - Mangala Living',
-        paragraphs: [
-          'Mangala Living adalah produsen display rack cafe modern minimalis murah dengan kualitas industrial premium. Workshop Bekasi, material besi berkualitas, dengan harga terjangkau.',
-          'Material display rack: besi hollow galvanis grade A untuk frame kuat, finishing powder coating tahan lama, desain modern minimalis yang timeless. Harga murah langsung dari workshop tanpa markup.',
-          'Untuk informasi display rack cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi display rack</a> kami.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'bar-set-cafe-modern-minimalis-murah-jasa-custom-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Bar set cafe modern minimalis murah dengan jasa custom berkualitas dari Mangala Living. Kami adalah produsen bar set industrial terpercaya yang menawarkan bar set cafe modern minimalis dengan harga terjangkau namun berkualitas premium.',
-          'Bar set cafe modern minimalis yang kami produksi cocok untuk area bar counter cafe indoor maupun outdoor, dengan desain modern minimalis yang instagram-worthy.'
-        ]
-      },
-      {
-        heading: 'Bar Set Cafe Modern Minimalis Murah - Jasa Custom',
-        list: [
-          '<strong>Bar Table:</strong> <a href="/product-category/bar-furniture-collection">Bar table cafe modern minimalis</a> dengan jasa custom sesuai ukuran. Harga terjangkau, material berkualitas.',
-          '<strong>Bar Stool:</strong> Bar stool cafe modern minimalis dengan jasa custom untuk kenyamanan optimal. Ergonomis, material premium, harga kompetitif.',
-          '<strong>Balcony Bar Set:</strong> Bar set outdoor cafe modern minimalis untuk balcony area. Tahan cuaca, material berkualitas, desain modern minimalis.',
-          '<strong>Complete Set:</strong> Bar set lengkap cafe modern minimalis (table + stool) dengan jasa custom. Harga special untuk paket lengkap.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=1200&auto=format&fit=crop',
-        imageAlt: 'Bar Set Cafe Modern Minimalis Murah Jasa Custom Berkualitas'
-      },
-      {
-        heading: 'Jasa Custom Bar Set Cafe Modern Minimalis Murah',
-        paragraphs: [
-          'Mangala Living menawarkan jasa custom bar set cafe modern minimalis murah berkualitas. Workshop Bekasi, custom design sesuai konsep cafe, dengan harga terjangkau namun kualitas premium.',
-          'Kelebihan jasa custom bar set: Desain modern minimalis sesuai konsep cafe. Ukuran custom sesuai space bar area. Material berkualitas premium dengan harga terjangkau. Tim ahli berpengalaman 25 tahun.',
-          'Untuk konsultasi jasa custom bar set cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'kitchen-cabinet-resto-modern-minimalis-murah-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Kitchen cabinet resto modern minimalis murah dengan kualitas custom premium. Sebagai produsen kitchen cabinet industrial terpercaya, kami menawarkan kabinet dapur resto modern minimalis dengan harga terjangkau namun berkualitas.',
-          'Kitchen cabinet resto modern minimalis yang kami produksi memberikan solusi storage yang fungsional untuk dapur resto dengan desain modern minimalis yang estetis.'
-        ]
-      },
-      {
-        heading: 'Kitchen Cabinet Resto Modern Minimalis Murah',
-        list: [
-          '<strong>Kabinet Dapur:</strong> Kitchen cabinet resto modern minimalis untuk storage dapur resto. Material besi berkualitas, desain industrial minimalis, harga terjangkau.',
-          '<strong>Storage Solution:</strong> Kitchen cabinet dengan storage solution fungsional untuk resto. Murah, berkualitas, dengan desain modern minimalis.',
-          '<strong>Custom Design:</strong> Kitchen cabinet custom resto modern minimalis sesuai kebutuhan dapur resto. Ukuran custom, material premium, harga kompetitif.',
-          '<strong>Industrial Style:</strong> Kitchen cabinet industrial resto modern minimalis dengan karakter industrial yang kuat namun tetap minimalis.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Kitchen Cabinet Resto Modern Minimalis Murah Berkualitas'
-      },
-      {
-        heading: 'Kitchen Cabinet Resto Modern Minimalis - Mangala Living',
-        paragraphs: [
-          'Mangala Living adalah produsen kitchen cabinet resto modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, custom design, dengan harga terjangkau.',
-          'Material kitchen cabinet: frame besi hollow galvanis grade A, finishing powder coating tahan lama, storage solution fungsional. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk informasi kitchen cabinet resto modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi kitchen cabinet</a> kami.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'jual-furniture-industrial-modern-minimalis-murah-jakarta-bekasi',
-    sections: [
-      {
-        paragraphs: [
-          'Jual furniture industrial modern minimalis murah untuk Jakarta dan Bekasi dengan kualitas premium. Mangala Living adalah produsen furniture industrial terpercaya yang jual berbagai furniture modern minimalis dengan harga terjangkau namun berkualitas.',
-          'Furniture industrial modern minimalis yang kami jual cocok untuk cafe, resto, kantor, dan berbagai kebutuhan komersial dengan desain modern minimalis yang instagram-worthy.'
-        ]
-      },
-      {
-        heading: 'Jual Furniture Industrial Modern Minimalis Murah',
-        list: [
-          '<strong>Meja Industrial:</strong> <a href="/product-category/dining-table-collection">Meja industrial modern minimalis</a> yang kami jual untuk cafe dan resto. Harga terjangkau, material berkualitas, desain modern minimalis.',
-          '<strong>Kursi Industrial:</strong> <a href="/product-category/bar-furniture-collection">Kursi industrial modern minimalis</a> yang kami jual dengan kualitas premium. Ergonomis, nyaman, harga kompetitif.',
-          '<strong>Rak Display:</strong> <a href="/product-category/storage-shelving">Rak display industrial modern minimalis</a> yang kami jual untuk retail dan cafe. Fungsional, material berkualitas, harga terjangkau.',
-          '<strong>Furniture Lengkap:</strong> Paket furniture industrial modern minimalis lengkap yang kami jual dengan harga special untuk Jakarta dan Bekasi.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Jual Furniture Industrial Modern Minimalis Murah Jakarta Bekasi'
-      },
-      {
-        heading: 'Jual Furniture Industrial Modern Minimalis Jakarta Bekasi',
-        paragraphs: [
-          'Mangala Living jual furniture industrial modern minimalis murah berkualitas untuk area Jakarta dan Bekasi. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
-          'Mengapa furniture industrial yang kami jual lebih murah: Workshop langsung = harga pabrik tanpa markup. Material berkualitas dengan efisiensi produksi optimal. Volume production besar = harga lebih murah per unit. Delivery gratis untuk area Jakarta dan Bekasi.',
-          'Untuk melihat koleksi furniture industrial modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'meja-kursi-cafe-modern-minimalis-murah-set-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Set meja kursi cafe modern minimalis murah dengan kualitas premium. Sebagai produsen furniture cafe terpercaya, kami menawarkan paket lengkap meja + kursi cafe modern minimalis dengan harga terjangkau namun berkualitas.',
-          'Set meja kursi cafe modern minimalis yang kami produksi memberikan solusi lengkap untuk cafe dengan budget terbatas namun tetap menginginkan kualitas premium dan desain modern minimalis.'
-        ]
-      },
-      {
-        heading: 'Set Meja Kursi Cafe Modern Minimalis Murah',
-        list: [
-          '<strong>Paket Lengkap:</strong> <a href="/product-category/dining-set-collection">Set meja kursi cafe modern minimalis</a> lengkap dengan harga terjangkau. Paket 1 meja + 2 kursi atau custom sesuai kebutuhan.',
-          '<strong>Material Berkualitas:</strong> Set meja kursi cafe menggunakan material berkualitas premium: besi hollow galvanis, top table kayu solid, finishing powder coating.',
-          '<strong>Desain Modern:</strong> Set meja kursi cafe dengan desain modern minimalis yang instagram-worthy. Warna matching, konsistensi design, estetika modern.',
-          '<strong>Harga Special:</strong> Set meja kursi cafe dengan harga special untuk paket lengkap. Lebih murah dibanding beli terpisah.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
-        imageAlt: 'Set Meja Kursi Cafe Modern Minimalis Murah Berkualitas'
-      },
-      {
-        heading: 'Set Meja Kursi Cafe Modern Minimalis - Mangala Living',
-        paragraphs: [
-          'Mangala Living menawarkan set meja kursi cafe modern minimalis murah berkualitas dengan paket lengkap. Workshop Bekasi, material berkualitas premium, dengan harga terjangkau untuk paket lengkap.',
-          'Kelebihan set meja kursi cafe kami: Harga special untuk paket lengkap. Material berkualitas premium dengan finishing tahan lama. Desain modern minimalis yang match dan instagram-worthy. Custom jumlah sesuai kebutuhan cafe Anda.',
-          'Untuk informasi set meja kursi cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi dining set</a> kami.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'jasa-furniture-resto-custom-modern-minimalis-murah',
-    sections: [
-      {
-        paragraphs: [
-          'Jasa furniture resto custom modern minimalis murah berkualitas dari Mangala Living. Kami adalah produsen furniture resto custom terpercaya dengan workshop langsung di Bekasi yang menawarkan furniture modern minimalis dengan harga terjangkau namun berkualitas premium.',
-          'Jasa furniture resto custom kami melayani berbagai kebutuhan resto, dari furniture minimalis modern hingga desain custom yang sesuai dengan konsep brand resto Anda.'
-        ]
-      },
-      {
-        heading: 'Jasa Furniture Resto Custom Modern Minimalis Murah',
-        list: [
-          '<strong>Custom Design:</strong> Jasa furniture resto custom modern minimalis sesuai konsep resto Anda. Desain unique, harga terjangkau, kualitas premium.',
-          '<strong>Material Berkualitas:</strong> Semua furniture resto custom menggunakan material berkualitas premium: besi hollow galvanis, kayu solid, finishing powder coating.',
-          '<strong>Workshop Langsung:</strong> Jasa furniture resto custom dengan workshop langsung di Bekasi = harga pabrik tanpa markup.',
-          '<strong>Tim Ahli:</strong> Tim berpengalaman 25 tahun yang memahami kebutuhan furniture resto custom modern minimalis.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Jasa Furniture Resto Custom Modern Minimalis Murah Berkualitas'
-      },
-      {
-        heading: 'Jasa Furniture Resto Custom Bekasi - Workshop Langsung',
-        paragraphs: [
-          'Mangala Living adalah jasa furniture resto custom modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Pengalaman 25 tahun, 1000+ klien puas, dengan harga terjangkau namun kualitas premium.',
-          'Untuk konsultasi jasa furniture resto custom modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'outdoor-furniture-cafe-modern-minimalis-murah-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Outdoor furniture cafe modern minimalis murah dengan kualitas tahan cuaca. Sebagai produsen outdoor furniture industrial terpercaya, kami menawarkan furniture outdoor cafe modern minimalis dengan harga terjangkau namun berkualitas premium dan tahan cuaca.',
-          'Outdoor furniture cafe modern minimalis yang kami produksi cocok untuk area outdoor cafe dengan material tahan hujan, panas, dan kondisi tropis Indonesia.'
-        ]
-      },
-      {
-        heading: 'Outdoor Furniture Cafe Modern Minimalis Murah',
-        list: [
-          '<strong>Daybed Outdoor:</strong> <a href="/product-category/daybed-collection">Daybed outdoor cafe modern minimalis</a> untuk lounge area outdoor. Tahan cuaca, material berkualitas, harga terjangkau.',
-          '<strong>Bar Set Outdoor:</strong> <a href="/product-category/balcony-outdoor-collection">Bar set outdoor cafe modern minimalis</a> untuk area outdoor bar. Material tahan cuaca, desain modern minimalis.',
-          '<strong>Outdoor Table:</strong> Meja outdoor cafe modern minimalis dengan material tahan cuaca. Harga terjangkau, kualitas premium, finishing outdoor-grade.',
-          '<strong>Complete Outdoor Set:</strong> Paket lengkap outdoor furniture cafe modern minimalis dengan harga special untuk paket lengkap.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Outdoor Furniture Cafe Modern Minimalis Murah Berkualitas'
-      },
-      {
-        heading: 'Outdoor Furniture Cafe Modern Minimalis - Mangala Living',
-        paragraphs: [
-          'Mangala Living adalah produsen outdoor furniture cafe modern minimalis murah berkualitas dengan material tahan cuaca. Workshop Bekasi, finishing powder coating outdoor-grade, dengan harga terjangkau.',
-          'Material outdoor furniture: besi hollow galvanis grade A, finishing powder coating outdoor-grade tahan hujan dan panas, desain modern minimalis yang timeless. Harga murah langsung dari workshop tanpa markup.',
-          'Untuk informasi outdoor furniture cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi outdoor furniture</a> kami.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'rak-display-resto-modern-minimalis-murah-jual-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Rak display resto modern minimalis murah yang kami jual dengan kualitas industrial premium. Sebagai produsen rak display industrial terpercaya, kami jual berbagai rak display resto modern minimalis dengan harga terjangkau namun berkualitas.',
-          'Rak display resto modern minimalis yang kami jual memberikan solusi storage yang fungsional untuk resto dengan desain modern minimalis yang estetis.'
-        ]
-      },
-      {
-        heading: 'Rak Display Resto Modern Minimalis Murah - Jual Berkualitas',
-        list: [
-          '<strong>Rak Display Retail:</strong> <a href="/product-category/storage-shelving">Rak display resto modern minimalis</a> yang kami jual untuk retail merchandise. Material besi berkualitas, desain industrial minimalis.',
-          '<strong>Storage Solution:</strong> Rak display dengan storage solution fungsional untuk resto. Murah, berkualitas, dengan desain modern minimalis.',
-          '<strong>Hollowline Rack:</strong> Rak display hollowline resto modern minimalis dengan konstruksi hollow steel berkualitas. Harga terjangkau, kualitas premium.',
-          '<strong>Custom Rack:</strong> Rak display custom resto modern minimalis sesuai kebutuhan. Ukuran custom, material berkualitas, harga kompetitif.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Rak Display Resto Modern Minimalis Murah Jual Berkualitas'
-      },
-      {
-        heading: 'Jual Rak Display Resto Modern Minimalis Murah Berkualitas',
-        paragraphs: [
-          'Mangala Living jual rak display resto modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
-          'Material rak display: besi hollow galvanis grade A untuk frame kuat, finishing powder coating tahan lama, desain modern minimalis yang timeless. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk melihat koleksi rak display resto modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'meja-kerja-cafe-modern-minimalis-murah-berkualitas-multifungsi',
-    sections: [
-      {
-        paragraphs: [
-          'Meja kerja cafe modern minimalis murah dengan kualitas multifungsi premium. Sebagai produsen meja kerja industrial terpercaya, kami menawarkan meja kerja cafe modern minimalis dengan harga terjangkau namun berkualitas dan multifungsi.',
-          'Meja kerja cafe modern minimalis yang kami produksi cocok untuk co-working space cafe dengan desain modern minimalis yang tidak mengganggu kenyamanan pelanggan.'
-        ]
-      },
-      {
-        heading: 'Meja Kerja Cafe Modern Minimalis Murah - Multifungsi',
-        list: [
-          '<strong>Meja Kerja Standard:</strong> <a href="/product-category/work-study-tables">Meja kerja cafe modern minimalis</a> untuk co-working space. Harga terjangkau, material berkualitas, desain minimalis modern.',
-          '<strong>Meja dengan Rak Buku:</strong> Meja kerja cafe dengan rak buku multifungsi. Murah, fungsional, dengan desain modern minimalis.',
-          '<strong>Custom Size:</strong> Meja kerja custom cafe modern minimalis sesuai kebutuhan space. Ukuran custom, material premium, harga kompetitif.',
-          '<strong>Multifungsi Design:</strong> Meja kerja cafe dengan design multifungsi untuk berbagai aktivitas. Storage built-in, cable management, desain modern minimalis.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&auto=format&fit=crop',
-        imageAlt: 'Meja Kerja Cafe Modern Minimalis Murah Berkualitas Multifungsi'
-      },
-      {
-        heading: 'Meja Kerja Cafe Modern Minimalis - Mangala Living',
-        paragraphs: [
-          'Mangala Living adalah produsen meja kerja cafe modern minimalis murah berkualitas dengan design multifungsi. Workshop Bekasi, material besi berkualitas, dengan harga terjangkau.',
-          'Material meja kerja: frame besi hollow galvanis grade A, top table kayu solid atau engineered wood berkualitas, finishing powder coating tahan lama. Harga murah langsung dari workshop tanpa markup.',
-          'Untuk informasi meja kerja cafe modern minimalis murah berkualitas multifungsi, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi meja kerja</a> kami.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'jasa-buat-furniture-cafe-custom-modern-minimalis-murah',
-    sections: [
-      {
-        paragraphs: [
-          'Jasa buat furniture cafe custom modern minimalis murah Bekasi dengan workshop langsung. Mangala Living adalah jasa furniture cafe custom terpercaya yang menawarkan furniture minimalis modern dengan harga terjangkau namun berkualitas premium.',
-          'Jasa buat furniture cafe custom kami melayani berbagai kebutuhan cafe, dari furniture minimalis modern hingga desain custom yang sesuai dengan konsep brand cafe Anda.'
-        ]
-      },
-      {
-        heading: 'Jasa Buat Furniture Cafe Custom Modern Minimalis Murah',
-        list: [
-          '<strong>Custom Design:</strong> Jasa buat furniture cafe custom minimalis modern sesuai konsep cafe Anda. Desain unique, harga terjangkau, kualitas premium.',
-          '<strong>Material Berkualitas:</strong> Semua furniture cafe custom menggunakan material berkualitas premium: besi hollow galvanis, kayu solid, finishing powder coating.',
-          '<strong>Workshop Langsung:</strong> Jasa buat furniture cafe custom dengan workshop langsung di Bekasi = harga pabrik tanpa markup.',
-          '<strong>Tim Ahli:</strong> Tim berpengalaman 25 tahun yang memahami kebutuhan furniture cafe custom minimalis modern.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
-        imageAlt: 'Jasa Buat Furniture Cafe Custom Modern Minimalis Murah Bekasi'
-      },
-      {
-        heading: 'Jasa Buat Furniture Cafe Custom Bekasi - Workshop Langsung',
-        paragraphs: [
-          'Mangala Living adalah jasa buat furniture cafe custom modern minimalis murah Bekasi dengan workshop langsung. Pengalaman 25 tahun, 1000+ klien puas, dengan harga terjangkau namun kualitas premium.',
-          'Proses jasa buat furniture cafe custom: Konsultasi konsep cafe &rarr; Design proposal &rarr; Approval & quotation &rarr; Produksi di workshop Bekasi &rarr; Quality control &rarr; Delivery & instalasi.',
-          'Untuk konsultasi jasa buat furniture cafe custom modern minimalis murah Bekasi, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'kursi-bar-cafe-modern-minimalis-murah-jual-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Kursi bar cafe modern minimalis murah yang kami jual dengan kualitas industrial premium. Sebagai produsen kursi bar industrial terpercaya, kami jual berbagai kursi bar cafe modern minimalis dengan harga terjangkau namun berkualitas.',
-          'Kursi bar cafe modern minimalis yang kami jual dirancang untuk memberikan kenyamanan optimal dengan desain modern minimalis yang instagram-worthy.'
-        ]
-      },
-      {
-        heading: 'Kursi Bar Cafe Modern Minimalis Murah - Jual Berkualitas',
-        list: [
-          '<strong>Bar Stool Industrial:</strong> <a href="/product-category/bar-furniture-collection">Kursi bar cafe modern minimalis</a> yang kami jual untuk area bar counter. Harga terjangkau, material berkualitas, desain modern minimalis.',
-          '<strong>Stall Chair:</strong> Kursi bar stall chair cafe modern minimalis yang kami jual dengan kualitas premium. Ergonomis, nyaman, harga kompetitif.',
-          '<strong>Adjustable Height:</strong> Kursi bar cafe dengan adjustable height yang kami jual. Murah, fungsional, dengan desain modern minimalis.',
-          '<strong>Custom Design:</strong> Kursi bar custom cafe modern minimalis sesuai konsep cafe. Harga kompetitif, kualitas premium, desain modern minimalis.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop',
-        imageAlt: 'Kursi Bar Cafe Modern Minimalis Murah Jual Berkualitas'
-      },
-      {
-        heading: 'Jual Kursi Bar Cafe Modern Minimalis Murah Berkualitas',
-        paragraphs: [
-          'Mangala Living jual kursi bar cafe modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
-          'Material kursi bar: frame besi hollow galvanis grade A, seat material berkualitas (kayu solid atau engineered wood), finishing powder coating tahan gores. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk melihat koleksi kursi bar cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'furniture-kantin-industrial-modern-minimalis-murah-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Furniture kantin industrial modern minimalis murah dengan kualitas premium. Sebagai produsen furniture kantin industrial terpercaya, kami menawarkan furniture kantin modern minimalis dengan harga terjangkau namun berkualitas untuk kantin pabrik dan cafe karyawan.',
-          'Furniture kantin industrial modern minimalis yang kami produksi memberikan solusi lengkap untuk kantin dengan budget terbatas namun tetap menginginkan kualitas premium dan desain modern minimalis.'
-        ]
-      },
-      {
-        heading: 'Furniture Kantin Industrial Modern Minimalis Murah',
-        list: [
-          '<strong>Meja Kantin:</strong> <a href="/product-category/dining-table-collection">Meja kantin industrial modern minimalis</a> untuk kantin pabrik dan cafe karyawan. Harga terjangkau, material berkualitas, desain modern minimalis.',
-          '<strong>Kursi Kantin:</strong> <a href="/product-category/dining-set-collection">Kursi kantin industrial modern minimalis</a> dengan konstruksi kuat. Murah, berkualitas, ergonomis untuk penggunaan intensif.',
-          '<strong>Set Lengkap:</strong> Paket furniture kantin industrial modern minimalis lengkap dengan harga special. Meja + kursi dengan harga lebih murah untuk volume order.',
-          '<strong>Custom Design:</strong> Furniture kantin custom industrial modern minimalis sesuai kebutuhan kantin. Ukuran custom, material premium, harga kompetitif untuk volume.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Kantin Industrial Modern Minimalis Murah Berkualitas'
-      },
-      {
-        heading: 'Furniture Kantin Industrial Modern Minimalis - Mangala Living',
-        paragraphs: [
-          'Mangala Living adalah produsen furniture kantin industrial modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, custom design untuk volume order, dengan harga terjangkau.',
-          'Kelebihan furniture kantin kami: Harga volume discount untuk order besar. Material berkualitas premium dengan konstruksi kuat untuk penggunaan intensif. Desain modern minimalis yang estetis. Custom size sesuai kebutuhan kantin.',
-          'Untuk informasi furniture kantin industrial modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi furniture kantin</a> kami.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'meja-makan-resto-modern-minimalis-murah-set-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Set meja makan resto modern minimalis murah dengan kualitas lengkap premium. Sebagai produsen furniture resto terpercaya, kami menawarkan paket lengkap meja makan resto modern minimalis dengan harga terjangkau namun berkualitas.',
-          'Set meja makan resto modern minimalis yang kami produksi memberikan solusi lengkap untuk resto dengan budget terbatas namun tetap menginginkan kualitas premium dan desain modern minimalis.'
-        ]
-      },
-      {
-        heading: 'Set Meja Makan Resto Modern Minimalis Murah',
-        list: [
-          '<strong>Paket Lengkap:</strong> <a href="/product-category/dining-set-collection">Set meja makan resto modern minimalis</a> lengkap dengan harga terjangkau. Paket 1 meja + 2 kursi atau custom sesuai kebutuhan resto.',
-          '<strong>Material Berkualitas:</strong> Set meja makan resto menggunakan material berkualitas premium: besi hollow galvanis, top table kayu solid, finishing powder coating.',
-          '<strong>Desain Modern:</strong> Set meja makan resto dengan desain modern minimalis yang instagram-worthy. Warna matching, konsistensi design, estetika modern.',
-          '<strong>Harga Special:</strong> Set meja makan resto dengan harga special untuk paket lengkap. Lebih murah dibanding beli terpisah.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Set Meja Makan Resto Modern Minimalis Murah Berkualitas'
-      },
-      {
-        heading: 'Set Meja Makan Resto Modern Minimalis - Mangala Living',
-        paragraphs: [
-          'Mangala Living menawarkan set meja makan resto modern minimalis murah berkualitas dengan paket lengkap. Workshop Bekasi, material berkualitas premium, dengan harga terjangkau untuk paket lengkap.',
-          'Kelebihan set meja makan resto kami: Harga special untuk paket lengkap. Material berkualitas premium dengan finishing tahan lama. Desain modern minimalis yang match dan instagram-worthy. Custom jumlah sesuai kebutuhan resto Anda.',
-          'Untuk informasi set meja makan resto modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi dining set</a> kami.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'jasa-furniture-hotel-custom-modern-minimalis-murah-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Jasa furniture hotel custom modern minimalis murah berkualitas premium dari Mangala Living. Kami adalah produsen furniture hotel custom terpercaya yang menawarkan furniture modern minimalis untuk hotel dengan harga terjangkau namun berkualitas.',
-          'Jasa furniture hotel custom kami melayani berbagai kebutuhan hotel, dari lobby furniture, restaurant hotel, hingga room furniture dengan desain modern minimalis yang estetis.'
-        ]
-      },
-      {
-        heading: 'Jasa Furniture Hotel Custom Modern Minimalis Murah',
-        list: [
-          '<strong>Lobby Furniture:</strong> Jasa furniture hotel custom untuk lobby area dengan desain modern minimalis. Murah, berkualitas, dengan karakter premium.',
-          '<strong>Restaurant Hotel:</strong> Jasa furniture hotel custom untuk restaurant hotel dengan desain modern minimalis. Material berkualitas, harga kompetitif.',
-          '<strong>Room Furniture:</strong> Jasa furniture hotel custom untuk room furniture dengan desain modern minimalis. Harga terjangkau, kualitas premium.',
-          '<strong>Custom Design:</strong> Jasa furniture hotel custom dengan design eksklusif sesuai konsep hotel. Material premium, finishing berkualitas, harga kompetitif untuk project hotel.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&auto=format&fit=crop',
-        imageAlt: 'Jasa Furniture Hotel Custom Modern Minimalis Murah Berkualitas'
-      },
-      {
-        heading: 'Jasa Furniture Hotel Custom - Mangala Living',
-        paragraphs: [
-          'Mangala Living adalah jasa furniture hotel custom modern minimalis murah berkualitas premium dengan workshop langsung di Bekasi. Pengalaman 25 tahun, project hotel experience, dengan harga terjangkau namun kualitas premium.',
-          'Kelebihan jasa furniture hotel custom kami: Custom design eksklusif sesuai konsep hotel. Material berkualitas premium dengan finishing tahan lama. Tim berpengalaman project hotel. Harga kompetitif untuk volume project hotel.',
-          'Untuk konsultasi jasa furniture hotel custom modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'rak-buku-cafe-modern-minimalis-murah-jual-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Rak buku cafe modern minimalis murah yang kami jual dengan kualitas industrial premium. Sebagai produsen rak buku industrial terpercaya, kami jual berbagai rak buku cafe modern minimalis dengan harga terjangkau namun berkualitas.',
-          'Rak buku cafe modern minimalis yang kami jual cocok untuk cafe literasi dan perpustakaan cafe dengan desain modern minimalis yang fungsional dan estetis.'
-        ]
-      },
-      {
-        heading: 'Rak Buku Cafe Modern Minimalis Murah - Jual Berkualitas',
-        list: [
-          '<strong>Rak Buku Wall:</strong> <a href="/product-category/storage-shelving">Rak buku cafe modern minimalis</a> yang kami jual untuk wall mounting. Material besi berkualitas, desain industrial minimalis.',
-          '<strong>Freestanding Rack:</strong> Rak buku freestanding cafe modern minimalis yang kami jual. Murah, fungsional, dengan desain modern minimalis.',
-          '<strong>Modular System:</strong> Rak buku modular cafe modern minimalis yang kami jual dengan sistem modular. Harga terjangkau, kualitas premium, dapat dikombinasikan.',
-          '<strong>Custom Design:</strong> Rak buku custom cafe modern minimalis sesuai kebutuhan cafe literasi. Ukuran custom, material berkualitas, harga kompetitif.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Rak Buku Cafe Modern Minimalis Murah Jual Berkualitas'
-      },
-      {
-        heading: 'Jual Rak Buku Cafe Modern Minimalis Murah Berkualitas',
-        paragraphs: [
-          'Mangala Living jual rak buku cafe modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
-          'Material rak buku: besi hollow galvanis grade A untuk frame kuat, finishing powder coating tahan lama, desain modern minimalis yang timeless dan fungsional. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk melihat koleksi rak buku cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'daybed-cafe-modern-minimalis-murah-berkualitas-lounge-area',
-    sections: [
-      {
-        paragraphs: [
-          'Daybed cafe modern minimalis murah dengan kualitas premium untuk lounge area. Sebagai produsen daybed industrial terpercaya, kami menawarkan daybed cafe modern minimalis dengan harga terjangkau namun berkualitas untuk area lounge cafe, hotel, dan restoran.',
-          'Daybed cafe modern minimalis yang kami produksi memberikan solusi seating yang nyaman untuk lounge area dengan desain modern minimalis yang estetis dan instagram-worthy.'
-        ]
-      },
-      {
-        heading: 'Daybed Cafe Modern Minimalis Murah - Lounge Area',
-        list: [
-          '<strong>Daybed Standard:</strong> <a href="/product-category/daybed-collection">Daybed cafe modern minimalis</a> untuk lounge area. Harga terjangkau, material berkualitas, desain modern minimalis.',
-          '<strong>Daybed dengan Storage:</strong> Daybed cafe modern minimalis dengan storage built-in. Murah, fungsional, dengan desain modern minimalis.',
-          '<strong>Outdoor Daybed:</strong> Daybed outdoor cafe modern minimalis untuk area outdoor lounge. Tahan cuaca, material berkualitas, finishing outdoor-grade.',
-          '<strong>Custom Design:</strong> Daybed custom cafe modern minimalis sesuai kebutuhan lounge area. Ukuran custom, material premium, harga kompetitif.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Daybed Cafe Modern Minimalis Murah Berkualitas Lounge Area'
-      },
-      {
-        heading: 'Daybed Cafe Modern Minimalis - Mangala Living',
-        paragraphs: [
-          'Mangala Living adalah produsen daybed cafe modern minimalis murah berkualitas untuk lounge area. Workshop Bekasi, material besi berkualitas, dengan harga terjangkau.',
-          'Material daybed: frame besi hollow galvanis grade A, cushion material berkualitas, finishing powder coating tahan lama, desain modern minimalis yang nyaman dan estetis. Harga murah langsung dari workshop tanpa markup.',
-          'Untuk informasi daybed cafe modern minimalis murah berkualitas untuk lounge area, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi daybed</a> kami.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'jasa-furniture-kantor-industrial-modern-minimalis-murah',
-    sections: [
-      {
-        paragraphs: [
-          'Jasa furniture kantor industrial modern minimalis murah berkualitas dari Mangala Living. Kami adalah produsen furniture kantor industrial terpercaya yang menawarkan furniture kantor modern minimalis dengan harga terjangkau namun berkualitas.',
-          'Jasa furniture kantor industrial kami melayani berbagai kebutuhan kantor, dari meja kerja, rak storage, hingga furniture kantor lengkap dengan desain modern minimalis yang fungsional.'
-        ]
-      },
-      {
-        heading: 'Jasa Furniture Kantor Industrial Modern Minimalis Murah',
-        list: [
-          '<strong>Meja Kerja:</strong> <a href="/product-category/work-study-tables">Meja kerja kantor industrial modern minimalis</a> dengan jasa custom. Harga terjangkau, material berkualitas, desain modern minimalis.',
-          '<strong>Rak Storage:</strong> Rak storage kantor industrial modern minimalis dengan jasa custom untuk storage yang fungsional. Murah, berkualitas, dengan desain modern minimalis.',
-          '<strong>Furniture Lengkap:</strong> Paket furniture kantor industrial modern minimalis lengkap dengan harga special. Meja kerja + rak storage dengan harga lebih murah.',
-          '<strong>Custom Design:</strong> Furniture kantor custom industrial modern minimalis sesuai kebutuhan kantor. Ukuran custom, material premium, harga kompetitif.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&auto=format&fit=crop',
-        imageAlt: 'Jasa Furniture Kantor Industrial Modern Minimalis Murah Berkualitas'
-      },
-      {
-        heading: 'Jasa Furniture Kantor Industrial - Mangala Living',
-        paragraphs: [
-          'Mangala Living adalah jasa furniture kantor industrial modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, custom design, dengan harga terjangkau.',
-          'Kelebihan jasa furniture kantor kami: Custom design sesuai kebutuhan kantor. Material berkualitas premium dengan konstruksi kuat. Desain modern minimalis yang fungsional. Harga terjangkau untuk volume order kantor.',
-          'Untuk konsultasi jasa furniture kantor industrial modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'sofa-bench-cafe-modern-minimalis-murah-jual-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Sofa bench cafe modern minimalis murah yang kami jual dengan kualitas industrial premium. Sebagai produsen sofa bench industrial terpercaya, kami jual berbagai sofa bench cafe modern minimalis dengan harga terjangkau namun berkualitas.',
-          'Sofa bench cafe modern minimalis yang kami jual cocok untuk area lounge cafe dengan desain modern minimalis yang nyaman dan estetis.'
-        ]
-      },
-      {
-        heading: 'Sofa Bench Cafe Modern Minimalis Murah - Jual Berkualitas',
-        list: [
-          '<strong>Sofa Bench Standard:</strong> <a href="/product-category/industrial-sofa-bench">Sofa bench cafe modern minimalis</a> yang kami jual untuk lounge area. Harga terjangkau, material berkualitas, desain modern minimalis.',
-          '<strong>Sofa Bench dengan Back:</strong> Sofa bench cafe dengan backrest yang kami jual. Murah, nyaman, dengan desain modern minimalis.',
-          '<strong>Modular Bench:</strong> Sofa bench modular cafe modern minimalis yang kami jual dengan sistem modular. Harga terjangkau, kualitas premium, dapat dikombinasikan.',
-          '<strong>Custom Design:</strong> Sofa bench custom cafe modern minimalis sesuai kebutuhan cafe. Ukuran custom, material premium, harga kompetitif.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Sofa Bench Cafe Modern Minimalis Murah Jual Berkualitas'
-      },
-      {
-        heading: 'Jual Sofa Bench Cafe Modern Minimalis Murah Berkualitas',
-        paragraphs: [
-          'Mangala Living jual sofa bench cafe modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
-          'Material sofa bench: frame besi hollow galvanis grade A, cushion material berkualitas, finishing powder coating tahan lama, desain modern minimalis yang nyaman dan estetis. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk melihat koleksi sofa bench cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'meja-coffee-cafe-modern-minimalis-murah-berkualitas-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Meja coffee cafe modern minimalis murah dengan kualitas industrial premium. Sebagai produsen coffee table industrial terpercaya, kami menawarkan meja coffee cafe modern minimalis dengan harga terjangkau namun berkualitas.',
-          'Meja coffee cafe modern minimalis yang kami produksi cocok untuk area lounge cafe dengan desain modern minimalis yang estetis dan instagram-worthy.'
-        ]
-      },
-      {
-        heading: 'Meja Coffee Cafe Modern Minimalis Murah - Industrial',
-        list: [
-          '<strong>Coffee Table Standard:</strong> <a href="/product-category/table-collection">Meja coffee cafe modern minimalis</a> untuk lounge area. Harga terjangkau, material berkualitas, desain modern minimalis.',
-          '<strong>Side Table:</strong> Side table cafe modern minimalis sebagai complement coffee table. Murah, fungsional, dengan desain modern minimalis.',
-          '<strong>Nesting Table:</strong> Coffee table nesting cafe modern minimalis yang dapat ditumpuk. Harga terjangkau, kualitas premium, desain modern minimalis.',
-          '<strong>Custom Design:</strong> Meja coffee custom cafe modern minimalis sesuai kebutuhan cafe. Ukuran custom, material premium, harga kompetitif.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1200&auto=format&fit=crop',
-        imageAlt: 'Meja Coffee Cafe Modern Minimalis Murah Berkualitas Industrial'
-      },
-      {
-        heading: 'Meja Coffee Cafe Modern Minimalis - Mangala Living',
-        paragraphs: [
-          'Mangala Living adalah produsen meja coffee cafe modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, desain modern minimalis, dengan harga terjangkau.',
-          'Material meja coffee: frame besi hollow galvanis grade A, top table kayu solid atau engineered wood berkualitas, finishing powder coating tahan lama. Harga murah langsung dari workshop tanpa markup.',
-          'Untuk informasi meja coffee cafe modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi coffee table</a> kami.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'jasa-furniture-cafe-custom-minimalis-modern-murah-bekasi-jakarta',
-    sections: [
-      {
-        paragraphs: [
-          'Jasa furniture cafe custom minimalis modern murah untuk Bekasi dan Jakarta dengan kualitas premium. Mangala Living adalah jasa furniture cafe custom terpercaya yang menawarkan furniture minimalis modern dengan harga terjangkau namun berkualitas.',
-          'Jasa furniture cafe custom kami melayani area Bekasi dan Jakarta dengan workshop langsung di Bekasi untuk memberikan harga terbaik dan kualitas premium.'
-        ]
-      },
-      {
-        heading: 'Jasa Furniture Cafe Custom Minimalis Modern Murah Bekasi Jakarta',
-        list: [
-          '<strong>Workshop Bekasi:</strong> Jasa furniture cafe custom dengan workshop langsung di Bekasi = harga pabrik untuk area Bekasi dan Jakarta.',
-          '<strong>Custom Design:</strong> Jasa furniture cafe custom minimalis modern sesuai konsep cafe Anda. Desain unique, harga terjangkau, kualitas premium.',
-          '<strong>Material Berkualitas:</strong> Semua furniture cafe custom menggunakan material berkualitas premium: besi hollow galvanis, kayu solid, finishing powder coating.',
-          '<strong>Delivery Area:</strong> Jasa furniture cafe custom dengan delivery gratis untuk area Bekasi dan Jakarta. Fast delivery dengan tim lokal.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
-        imageAlt: 'Jasa Furniture Cafe Custom Minimalis Modern Murah Bekasi Jakarta'
-      },
-      {
-        heading: 'Jasa Furniture Cafe Custom Bekasi Jakarta - Workshop Langsung',
-        paragraphs: [
-          'Mangala Living adalah jasa furniture cafe custom minimalis modern murah berkualitas untuk area Bekasi dan Jakarta dengan workshop langsung di Bekasi. Pengalaman 25 tahun, 1000+ klien puas, dengan harga terjangkau namun kualitas premium.',
-          'Kelebihan jasa furniture cafe custom untuk Bekasi Jakarta: Workshop langsung = harga pabrik tanpa markup. Custom design minimalis modern sesuai konsep cafe. Material berkualitas premium dengan harga terjangkau. Delivery gratis untuk area Bekasi dan Jakarta.',
-          'Untuk konsultasi jasa furniture cafe custom minimalis modern murah Bekasi Jakarta, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'furniture-mall-cafe-resto-modern-minimalis-murah-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Furniture mall cafe resto modern minimalis murah dengan kualitas premium. Sebagai produsen furniture mall terpercaya, kami menawarkan furniture mall cafe resto modern minimalis dengan harga terjangkau namun berkualitas untuk tenant mall dan foodcourt.',
-          'Furniture mall cafe resto modern minimalis yang kami produksi cocok untuk tenant mall dan foodcourt dengan desain modern minimalis yang estetis dan fungsional.'
-        ]
-      },
-      {
-        heading: 'Furniture Mall Cafe Resto Modern Minimalis Murah',
-        list: [
-          '<strong>Tenant Mall:</strong> <a href="/product-category/dining-table-collection">Furniture mall cafe resto modern minimalis</a> untuk tenant mall. Harga terjangkau, material berkualitas, desain modern minimalis.',
-          '<strong>Foodcourt:</strong> Furniture foodcourt cafe resto modern minimalis dengan design compact. Murah, fungsional, dengan desain modern minimalis.',
-          '<strong>Volume Discount:</strong> Furniture mall cafe resto dengan volume discount untuk tenant mall. Harga special untuk order volume besar.',
-          '<strong>Custom Design:</strong> Furniture mall custom cafe resto modern minimalis sesuai requirement mall. Ukuran custom, material premium, harga kompetitif untuk project mall.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Mall Cafe Resto Modern Minimalis Murah Berkualitas'
-      },
-      {
-        heading: 'Furniture Mall Cafe Resto Modern Minimalis - Mangala Living',
-        paragraphs: [
-          'Mangala Living adalah produsen furniture mall cafe resto modern minimalis murah berkualitas dengan workshop langsung di Bekasi. Material besi berkualitas, custom design untuk mall, dengan harga terjangkau untuk volume order.',
-          'Kelebihan furniture mall kami: Volume discount untuk tenant mall dan foodcourt. Material berkualitas premium dengan konstruksi kuat untuk penggunaan intensif. Desain modern minimalis yang sesuai requirement mall. Custom design sesuai konsep mall dengan harga kompetitif.',
-          'Untuk informasi furniture mall cafe resto modern minimalis murah berkualitas, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi <a href="/shop">koleksi furniture mall</a> kami.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'rak-gantung-cafe-modern-minimalis-murah-jual-berkualitas',
-    sections: [
-      {
-        paragraphs: [
-          'Rak gantung cafe modern minimalis murah yang kami jual dengan kualitas industrial premium. Sebagai produsen rak gantung industrial terpercaya, kami jual berbagai rak gantung cafe modern minimalis dengan harga terjangkau namun berkualitas.',
-          'Rak gantung cafe modern minimalis yang kami jual cocok untuk wall mounting dengan desain modern minimalis yang fungsional dan estetis tanpa mengambil space lantai.'
-        ]
-      },
-      {
-        heading: 'Rak Gantung Cafe Modern Minimalis Murah - Jual Berkualitas',
-        list: [
-          '<strong>Wall Mount Rack:</strong> <a href="/product-category/storage-shelving">Rak gantung cafe modern minimalis</a> yang kami jual untuk wall mounting. Material besi berkualitas, desain industrial minimalis.',
-          '<strong>Floating Shelf:</strong> Rak gantung floating cafe modern minimalis yang kami jual. Murah, estetis, dengan desain modern minimalis.',
-          '<strong>Modular System:</strong> Rak gantung modular cafe modern minimalis yang kami jual dengan sistem modular. Harga terjangkau, kualitas premium, dapat dikombinasikan.',
-          '<strong>Custom Design:</strong> Rak gantung custom cafe modern minimalis sesuai kebutuhan cafe. Ukuran custom, material premium, harga kompetitif.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Rak Gantung Cafe Modern Minimalis Murah Jual Berkualitas'
-      },
-      {
-        heading: 'Jual Rak Gantung Cafe Modern Minimalis Murah Berkualitas',
-        paragraphs: [
-          'Mangala Living jual rak gantung cafe modern minimalis murah berkualitas untuk seluruh Indonesia. Workshop langsung di Bekasi, harga pabrik, dengan material berkualitas premium.',
-          'Material rak gantung: besi hollow galvanis grade A untuk frame kuat, finishing powder coating tahan lama, wall mounting system berkualitas, desain modern minimalis yang timeless dan fungsional. Harga murah langsung dari workshop tanpa markup distributor.',
-          'Untuk melihat koleksi rak gantung cafe modern minimalis murah berkualitas yang kami jual, kunjungi <a href="/shop">showroom online</a> atau hubungi <a href="/contact-us">+62 888-0114-6881</a> untuk konsultasi.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'jasa-furniture-besi-custom-modern-minimalis-murah-jabodetabek',
-    sections: [
-      {
-        paragraphs: [
-          'Jasa furniture besi custom modern minimalis murah untuk Jabodetabek dengan kualitas premium. Mangala Living adalah jasa furniture besi custom terpercaya yang menawarkan furniture besi modern minimalis dengan harga terjangkau namun berkualitas untuk seluruh area Jabodetabek.',
-          'Jasa furniture besi custom kami melayani area Jabodetabek dengan workshop langsung di Bekasi untuk memberikan harga terbaik dan kualitas premium dengan coverage area yang luas.'
-        ]
-      },
-      {
-        heading: 'Jasa Furniture Besi Custom Modern Minimalis Murah Jabodetabek',
-        list: [
-          '<strong>Workshop Bekasi:</strong> Jasa furniture besi custom dengan workshop langsung di Bekasi = harga pabrik untuk area Jabodetabek.',
-          '<strong>Custom Design:</strong> Jasa furniture besi custom modern minimalis sesuai kebutuhan cafe, resto, kantor. Desain unique, harga terjangkau, kualitas premium.',
-          '<strong>Material Besi Berkualitas:</strong> Semua furniture besi custom menggunakan material berkualitas premium: besi hollow galvanis grade A, finishing powder coating tahan lama.',
-          '<strong>Coverage Area:</strong> Jasa furniture besi custom melayani seluruh Jabodetabek: Jakarta, Bogor, Depok, Tangerang, Bekasi. Delivery tersedia dengan tim lokal.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Jasa Furniture Besi Custom Modern Minimalis Murah Jabodetabek'
-      },
-      {
-        heading: 'Jasa Furniture Besi Custom Jabodetabek - Workshop Bekasi',
-        paragraphs: [
-          'Mangala Living adalah jasa furniture besi custom modern minimalis murah berkualitas untuk seluruh area Jabodetabek dengan workshop langsung di Bekasi. Pengalaman 25 tahun, 1000+ klien puas di Jabodetabek, dengan harga terjangkau namun kualitas premium.',
-          'Kelebihan jasa furniture besi custom untuk Jabodetabek: Workshop langsung di Bekasi = harga pabrik tanpa markup. Custom design modern minimalis sesuai kebutuhan. Material besi berkualitas premium dengan finishing tahan lama. Coverage area luas untuk seluruh Jabodetabek dengan delivery tersedia.',
-          'Untuk konsultasi jasa furniture besi custom modern minimalis murah Jabodetabek, hubungi <a href="/contact-us">+62 888-0114-6881</a> atau kunjungi workshop kami di Bekasi.'
-        ]
-      }
-    ]
-  },
-  // EXPORT-FOCUSED ARTICLES - 20 NEW SEO-WINNING CONTENT FOR INTERNATIONAL BUYERS
-  {
-    slug: 'indonesian-industrial-furniture-export-quality-global-standards',
-    sections: [
-      {
-        paragraphs: [
-          'Indonesia has emerged as a leading hub for industrial furniture manufacturing and export, combining traditional craftsmanship with modern production techniques. International buyers are increasingly turning to Indonesian manufacturers for their competitive pricing, high-quality standards, and reliable export services.',
-          'As a furniture manufacturer with 25 years of experience serving international clients, we understand what export buyers look for: consistent quality, transparent communication, competitive FOB pricing, and reliable delivery schedules. Indonesian industrial furniture manufacturers offer all of this, making them an attractive alternative to Chinese and Vietnamese suppliers.'
-        ]
-      },
-      {
-        heading: 'Why Choose Indonesian Industrial Furniture for Export?',
-        list: [
-          '<strong>Cost-Effective Manufacturing:</strong> Indonesian labor costs remain competitive while maintaining skilled craftsmanship, resulting in 20-30% lower FOB prices compared to Western manufacturers.',
-          '<strong>Quality Materials:</strong> Access to high-grade steel, sustainable timber, and advanced finishing technologies. Powder coating facilities meet international outdoor durability standards.',
-          '<strong>Export Infrastructure:</strong> Proximity to major ports (Jakarta, Surabaya) ensures efficient container loading and competitive shipping rates to USA, Europe, Australia, and Middle East.',
-          '<strong>Flexible MOQ:</strong> Many Indonesian manufacturers, including us, work with reasonable minimum order quantities (1 container / 20ft or 40ft), suitable for growing businesses and chains.',
-          '<strong>English Communication:</strong> Most export-oriented manufacturers have English-speaking teams, making communication smooth for international buyers.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Indonesian Industrial Furniture Manufacturing Facility for Export'
-      },
-      {
-        heading: 'Quality Standards and Certifications',
-        paragraphs: [
-          'Indonesian furniture manufacturers are increasingly adopting international quality standards to meet export requirements. ISO 9001 certification, FSC sustainable wood sourcing, and compliance with EU and US safety regulations are becoming standard practice.',
-          'Our manufacturing process includes rigorous quality control checkpoints: material inspection, welding strength testing, finishing uniformity checks, and pre-shipment inspection. We welcome third-party inspection agencies like SGS, Bureau Veritas, or Intertek to verify quality before container loading.'
-        ]
-      },
-      {
-        heading: 'Export Process and Documentation',
-        paragraphs: [
-          'We handle complete export documentation to ensure smooth customs clearance: Commercial Invoice, Packing List, Certificate of Origin (Form E for ASEAN, or standard CO), Bill of Lading, and Phytosanitary Certificate for wood components if required.',
-          'Lead time for export orders is typically 30-45 days from confirmed order and deposit: 10-15 days for production, 5-7 days for quality control and finishing touch-ups, 3-5 days for professional packing (bubble wrap, cardboard corners, wooden crates for fragile items), and 2-3 days for container loading and documentation.'
-        ]
-      },
-      {
-        heading: 'Product Range for Export',
-        list: [
-          '<strong>Restaurant & Cafe Furniture:</strong> Industrial dining tables, cafe chairs, bar stools, bar tables, booth seating. Popular materials: steel frame with solid wood or engineered wood top.',
-          '<strong>Hotel Furniture:</strong> Lobby seating, reception desks, restaurant furniture, guest room furniture, outdoor patio sets. Custom design available to match brand identity.',
-          '<strong>Retail & Display:</strong> Display shelves, clothing racks, storage units, checkout counters. Modular systems for easy assembly and flexibility.',
-          '<strong>Outdoor Furniture:</strong> Powder-coated steel frames designed for tropical and humid climates. Weather-resistant, UV-protected, and easy to maintain.'
-        ]
-      },
-      {
-        heading: 'FOB Pricing and Payment Terms',
-        paragraphs: [
-          'Typical FOB pricing from our factory in Bekasi, Indonesia: Dining tables (120x70cm steel frame + wood top): USD 85-120 per unit. Cafe chairs (metal frame): USD 35-55 per unit. Bar stools (adjustable height): USD 45-70 per unit. Display racks (180cm height): USD 150-250 per unit. Prices vary based on material specifications, finishing requirements, and order volume.',
-          'Standard payment terms: 30% deposit upon order confirmation, 70% balance before shipment. For established clients with repeat orders, we can discuss LC (Letter of Credit) terms. Wire transfer to Indonesian bank account, with all banking fees borne by respective parties.'
-        ]
-      },
-      {
-        heading: 'Shipping and Logistics',
-        paragraphs: [
-          'We work with trusted freight forwarders who offer competitive rates to major destinations: USA West Coast (Los Angeles, San Francisco): 18-25 days sea freight. USA East Coast (New York, Miami): 30-35 days sea freight. Europe (Rotterdam, Hamburg): 25-30 days. Australia (Sydney, Melbourne): 12-15 days. Middle East (Dubai, Jeddah): 15-20 days.',
-          'Container options: 20ft container (suitable for 200-300 chairs or 80-120 dining tables), 40ft container (double capacity of 20ft), 40ft High Cube (additional height for display racks). We optimize packing to maximize container utilization and minimize your shipping cost per unit.'
-        ]
-      },
-      {
-        heading: 'Why Choose Mangala Living for Export?',
-        paragraphs: [
-          '25 years manufacturing experience since 1999. Export to 15+ countries including USA, Australia, Singapore, Malaysia, UAE. 10,000+ sqm production facility in Bekasi with in-house powder coating line. Dedicated export team with fluent English communication. Transparent pricing with no hidden costs. Quality guarantee and professional packing to ensure goods arrive in perfect condition.',
-          'Ready to start your export order? Contact us today for detailed quotations and product catalogs. WhatsApp: +62 888-0114-6881 | Email: info@mangala-living.com'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'custom-metal-furniture-manufacturer-indonesia-export-worldwide',
-    sections: [
-      {
-        paragraphs: [
-          'Looking for a reliable custom metal furniture manufacturer in Indonesia for export? Mangala Living specializes in manufacturing high-quality industrial and commercial metal furniture for international markets. With 25 years of experience and export to 15+ countries, we are your trusted partner for custom furniture manufacturing.',
-          'As a B2B furniture manufacturer, we understand the unique needs of international buyers: custom design capabilities, consistent quality across large orders, competitive export pricing, and reliable delivery schedules. Our Bekasi factory is strategically located near Jakarta port, ensuring efficient export logistics.'
-        ]
-      },
-      {
-        heading: 'Our Custom Metal Furniture Capabilities',
-        list: [
-          '<strong>Design Flexibility:</strong> Work directly with our in-house design team to create custom furniture matching your brand identity. CAD drawings, 3D renderings, and physical samples available.',
-          '<strong>Material Options:</strong> Carbon steel (MS - Mild Steel), stainless steel (SS304, SS316 for marine environments), aluminum (lightweight outdoor furniture), galvanized steel (rust-resistant for tropical climates).',
-          '<strong>Finishing Options:</strong> Powder coating (outdoor-grade, 60-80 microns thickness, RAL color matching), electroplating (chrome, brass, copper finishes), brushed or polished stainless steel, industrial raw steel with clear coating.',
-          '<strong>Production Capacity:</strong> 5,000-8,000 pieces per month depending on complexity. Scalable production to meet your growing demand. Rush orders available for urgent projects.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop',
-        imageAlt: 'Custom Metal Furniture Manufacturing Process for Export'
-      },
-      {
-        heading: 'Popular Export Products',
-        paragraphs: [
-          '<strong>Restaurant Furniture:</strong> Custom dining tables (various sizes, steel frame with wood/marble/glass top), metal dining chairs (with or without upholstery), bar stools and bar tables, booth seating systems, outdoor patio furniture.',
-          '<strong>Hotel Furniture:</strong> Lobby furniture (reception desks, lounge seating), restaurant and bar furniture (complete F&B solutions), guest room furniture (bed frames, desks, luggage racks), outdoor furniture (pool area, garden, rooftop).',
-          '<strong>Commercial Furniture:</strong> Office desks and workstations, retail display systems, storage solutions and shelving, reception and waiting area furniture.'
-        ]
-      },
-      {
-        heading: 'Quality Control and Testing',
-        paragraphs: [
-          'Every piece of furniture undergoes strict quality control before shipment: Material inspection (thickness verification, grade certification), welding quality check (X-ray testing for critical joints), finishing inspection (coating thickness, color matching, uniformity), load testing (exceeding standard commercial use requirements), pre-shipment inspection (third-party inspection welcome).',
-          'Our quality standards comply with international regulations: EN 1728 (Furniture - Seating strength), BIFMA (Business and Institutional Furniture Manufacturers Association) standards, ASTM standards for furniture durability. Certificates and test reports available upon request.'
-        ]
-      },
-      {
-        heading: 'Custom Design Process',
-        paragraphs: [
-          '<strong>Step 1 - Inquiry & Concept:</strong> Share your concept, photos, sketches, or technical drawings. Specify dimensions, materials, finishing, and quantity requirements.',
-          '<strong>Step 2 - Quotation:</strong> Within 48 hours, receive detailed quotation including FOB price, specifications, lead time, and MOQ.',
-          '<strong>Step 3 - Sample Production:</strong> For custom designs, we produce sample (1-2 units) for approval. Sample cost refundable upon confirmed order.',
-          '<strong>Step 4 - Bulk Production:</strong> Upon sample approval and deposit payment, production begins. Regular photo updates provided during production.',
-          '<strong>Step 5 - QC & Shipment:</strong> Final inspection, professional packing, container loading, and shipment with complete documentation.'
-        ]
-      },
-      {
-        heading: 'Export Pricing and MOQ',
-        paragraphs: [
-          'Our export pricing is transparent and competitive: Sample unit: Higher price to cover individual production setup. 50-100 units: Moderate discount from sample price. 100-300 units (1 container): Best FOB price with volume discount. 300+ units (multiple containers): Negotiable pricing for long-term partnership.',
-          'Minimum Order Quantity: Generally 50-100 units per design to be cost-effective. For simple designs, MOQ can be lower. Mixed container welcome - combine different products in one container. Contact us to discuss your specific requirements.'
-        ]
-      },
-      {
-        heading: 'Why International Buyers Choose Us',
-        paragraphs: [
-          '<strong>Experience:</strong> 25+ years in furniture manufacturing, 15+ years in export business. Worked with hotel chains, restaurant franchises, furniture importers, interior designers, and procurement companies worldwide.',
-          '<strong>Communication:</strong> English-speaking export team. Prompt response within 24 hours. Clear and transparent communication throughout the process.',
-          '<strong>Reliability:</strong> On-time delivery track record. Properly packed to prevent damage during sea freight. All export documentation handled professionally.',
-          '<strong>Flexibility:</strong> OEM and ODM accepted. Private label and branding options. Flexible payment terms for repeat clients.'
-        ]
-      },
-      {
-        heading: 'Get Your Custom Quote Today',
-        paragraphs: [
-          'Ready to start your custom metal furniture project? Contact our export team with your requirements: Product type and quantity, dimensions and specifications, material and finishing preferences, target price range (if any), delivery destination.',
-          'We will respond within 48 hours with a detailed quotation and recommendations. For urgent projects, WhatsApp us directly at +62 888-0114-6881 for faster response. Visit our website for product catalog and factory profile: www.mangala-living.com'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'wholesale-industrial-furniture-indonesia-bulk-orders-export',
-    sections: [
-      {
-        paragraphs: [
-          'Wholesale industrial furniture from Indonesia offers unbeatable value for bulk orders and export. As a leading manufacturer in Bekasi, we specialize in supplying large quantities of industrial furniture for hotels, restaurant chains, corporate offices, and furniture importers worldwide.',
-          'With our 10,000 sqm production facility and 25 years of manufacturing experience, we can handle bulk orders from 500 to 10,000+ pieces per project. Our efficient production process, quality control systems, and export logistics ensure you receive high-quality furniture at competitive wholesale prices with reliable delivery schedules.'
-        ]
-      },
-      {
-        heading: 'Bulk Order Advantages',
-        list: [
-          '<strong>Volume Discounts:</strong> Significant price reduction for bulk orders: 10-15% discount for 1 container (20ft/40ft), 15-20% discount for 2-3 containers, 20-25% discount for 4+ containers, Custom pricing for projects exceeding 10 containers.',
-          '<strong>Consistent Quality:</strong> Batch production ensures uniformity across all units. Same material source, same finishing process, same quality control standards. Ideal for hotel chains and restaurant franchises requiring standardized furniture.',
-          '<strong>Production Priority:</strong> Large orders receive priority scheduling. Dedicated production line for your order. Faster turnaround time compared to mixed small orders.',
-          '<strong>Flexible Payment:</strong> For bulk orders, we can offer flexible payment terms: 30% deposit, 40% upon production completion, 30% before shipment. LC (Letter of Credit) accepted for orders above USD 50,000.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Wholesale Industrial Furniture Bulk Production for Export'
-      },
-      {
-        heading: 'Popular Wholesale Products',
-        paragraphs: [
-          '<strong>Hotel Package Deals:</strong> Complete furniture solutions for hotel projects. Lobby furniture set (reception desk, lounge seating, coffee tables). Restaurant/bar furniture set (dining tables, chairs, bar stools). Guest room furniture set (bed frame, desk, luggage rack, chair). Outdoor furniture set (pool area, garden furniture). Wholesale price packages available - contact us for bulk quotations.',
-          '<strong>Restaurant Chain Packages:</strong> Standardized furniture for restaurant franchises. Multiple outlet supply with identical specifications. Dining tables (various sizes), dining chairs (stackable or fixed), bar stools and bar tables, display shelves and storage. Branding and customization options available.',
-          '<strong>Office Furniture Bulk Supply:</strong> Corporate office furniture for large organizations. Office desks and workstations. Meeting tables and conference furniture. Storage and filing systems. Reception and waiting area furniture. Bulk pricing for 100+ units.'
-        ]
-      },
-      {
-        heading: 'Wholesale Pricing Structure',
-        paragraphs: [
-          'Transparent wholesale pricing from our Bekasi factory: <strong>Dining Tables (120x70x75cm, steel frame + wood top):</strong> 50-99 units: USD 95 per unit, 100-299 units: USD 85 per unit, 300+ units: USD 75 per unit. <strong>Cafe Chairs (metal frame with padded seat):</strong> 100-299 units: USD 42 per unit, 300-499 units: USD 38 per unit, 500+ units: USD 35 per unit. <strong>Bar Stools (adjustable height, footrest):</strong> 50-99 units: USD 55 per unit, 100-299 units: USD 48 per unit, 300+ units: USD 42 per unit.',
-          'FOB Bekasi/Jakarta prices above. Shipping costs depend on destination and container type. Request detailed quotation for your specific requirements: product models, quantities, material/finishing specifications, delivery destination. We will provide comprehensive quotation including unit price, total product cost, packing cost, container loading supervision, export documentation.'
-        ]
-      },
-      {
-        heading: 'Production Lead Time for Bulk Orders',
-        paragraphs: [
-          '100-500 units: 25-35 days production + 7 days packing/loading. 500-1,000 units: 35-45 days production + 10 days packing/loading. 1,000-3,000 units: 45-60 days production (parallel batch production) + 14 days packing/loading. 3,000+ units: Project-specific timeline - contact us for customized production schedule.',
-          'We understand the importance of timely delivery for your business operations. Weekly photo updates during production, advance notice before completion for final inspection arrangements, flexible scheduling to meet your project deadlines, rush production available for urgent projects (additional fee applies).'
-        ]
-      },
-      {
-        heading: 'Quality Assurance for Bulk Orders',
-        paragraphs: [
-          'Large orders require even stricter quality control to ensure consistency: <strong>Raw Material Batch Control:</strong> Single batch material procurement for uniformity. Material test reports from suppliers. <strong>Production Standard Operating Procedures:</strong> Documented manufacturing process. Worker training for specific project requirements. <strong>In-Process Inspection:</strong> Random sampling during production (5-10% of units). Immediate correction if defects detected. <strong>Final Inspection:</strong> 100% inspection before packing. Dimensional accuracy check. Finishing quality verification. Functional testing (load bearing, stability). <strong>Third-Party Inspection Welcome:</strong> SGS, Bureau Veritas, Intertek, or your designated inspector. Arrange inspection 5-7 days before shipment date.'
-        ]
-      },
-      {
-        heading: 'Export Logistics for Bulk Orders',
-        paragraphs: [
-          'Efficient container utilization to minimize your shipping cost: <strong>20ft Container Capacity:</strong> Dining tables: 80-120 units (depending on size), Chairs: 200-300 units, Bar stools: 150-200 units, Mixed loading: Optimized combination. <strong>40ft Container Capacity:</strong> Approximately double of 20ft capacity, More cost-effective per unit, Recommended for bulk orders. <strong>40ft High Cube Container:</strong> Extra height for display racks and tall furniture, 10-15% more capacity than standard 40ft.',
-          'We work with reliable freight forwarders who offer competitive rates for bulk shipments. Container consolidation service available if you\'re ordering from multiple Indonesian suppliers. Door-to-door service available for major destinations (USA, Europe, Australia). Free container loading supervision to ensure proper packing and loading.'
-        ]
-      },
-      {
-        heading: 'Start Your Bulk Order Today',
-        paragraphs: [
-          'Ready to place a bulk order? Here\'s how to get started: <strong>Step 1:</strong> Send us your requirements (product type, quantity, specifications). <strong>Step 2:</strong> Receive detailed quotation within 48-72 hours. <strong>Step 3:</strong> Sample approval (if required for custom designs). <strong>Step 4:</strong> Confirm order with 30% deposit. <strong>Step 5:</strong> Production begins with regular updates. <strong>Step 6:</strong> Final inspection and shipment.',
-          'For urgent inquiries or projects with tight deadlines, WhatsApp our export team directly at +62 888-0114-6881. We can arrange video calls to discuss your project in detail. Email detailed RFQ (Request for Quotation) to: export@mangala-living.com. Include: product specifications, target quantities, delivery destination, ideal delivery timeline. We will respond with a comprehensive proposal within 72 hours.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'indonesian-furniture-factory-custom-commercial-furniture-export',
-    sections: [
-      {
-        paragraphs: [
-          'Our furniture factory in Bekasi, Indonesia, specializes in custom commercial furniture manufacturing for export. With 25 years of experience serving international markets, we produce high-quality industrial and commercial furniture for hotels, restaurants, cafes, offices, and retail spaces worldwide.',
-          'Unlike trading companies or middlemen, we are a direct manufacturer with our own 10,000+ sqm production facility. This means you get factory-direct pricing, direct communication with production team, and full control over customization and quality standards. We handle everything from design consultation to final shipment.'
-        ]
-      },
-      {
-        heading: 'Our Factory Capabilities',
-        list: [
-          '<strong>Production Capacity:</strong> 5,000-8,000 furniture pieces per month. Multiple production lines for parallel manufacturing. In-house powder coating facility (outdoor-grade quality). Metal fabrication: cutting, bending, welding, finishing. Woodworking section: solid wood and engineered wood processing.',
-          '<strong>Custom Design Services:</strong> In-house design team with 10+ years experience. CAD and 3D modeling capability. Sample production and approval process. Design modification and refinement. Prototyping for new product development.',
-          '<strong>Quality Control Systems:</strong> Incoming material inspection. In-process quality monitoring. Final product inspection (100% for export orders). Pre-shipment inspection coordination. Quality documentation and test reports.',
-          '<strong>Export Infrastructure:</strong> Dedicated export department with English-speaking staff. Professional packing facility. Container loading supervision. Export documentation processing. Partnership with trusted freight forwarders.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
-        imageAlt: 'Indonesian Furniture Factory Manufacturing Custom Commercial Furniture'
-      },
-      {
-        heading: 'Custom Commercial Furniture Range',
-        paragraphs: [
-          '<strong>Restaurant & Cafe Furniture:</strong> Custom dining tables in any size (square, rectangular, round, oval). Dining chairs (metal, wood, upholstered, or combination). Bar stools and bar tables (adjustable or fixed height). Booth seating systems (L-shape, U-shape, straight). Outdoor patio furniture (weather-resistant powder coating). Service stations and POS counters. Display shelves and wine racks.',
-          '<strong>Hotel Furniture:</strong> Lobby furniture (reception desk, lounge seating, coffee tables). Restaurant and bar furniture (complete F&B area solutions). Guest room furniture (bed frames, desks, luggage racks). Outdoor furniture (pool, garden, rooftop areas). Custom pieces matching hotel branding and theme.',
-          '<strong>Office Furniture:</strong> Office desks and workstations (individual or benching systems). Conference tables and meeting furniture. Reception desks and waiting area furniture. Storage solutions and filing systems. Pantry and break room furniture.',
-          '<strong>Retail Furniture:</strong> Display racks and shelving systems. Clothing racks and accessories displays. Checkout counters and cash wrap. Fitting room furniture. Window display platforms.'
-        ]
-      },
-      {
-        heading: 'Why Work Directly with Our Factory?',
-        paragraphs: [
-          '<strong>No Middleman Markup:</strong> Get factory-direct pricing without trading company commission (typically 15-30% markup). Transparent cost breakdown. Better value for your budget. Higher quality at lower price point.',
-          '<strong>Direct Communication:</strong> Speak directly with production team. Faster response to questions and clarifications. Real-time production updates. Video call factory tours available. Better understanding of your requirements.',
-          '<strong>Full Customization Control:</strong> Design changes can be implemented quickly. Material and finishing options fully customizable. No restrictions from pre-set catalog. Branding and private label welcome. Flexibility in production scheduling.',
-          '<strong>Quality Accountability:</strong> Direct responsibility for product quality. No "blame game" between factory and trading company. Issues resolved directly and quickly. Long-term relationship building. Repeat order discounts and priority service.'
-        ]
-      },
-      {
-        heading: 'From Design to Delivery: Our Process',
-        paragraphs: [
-          '<strong>Phase 1 - Consultation & Design (Week 1-2):</strong> Initial consultation to understand your needs. Review your concepts, photos, or technical drawings. Discuss materials, finishes, dimensions. Receive preliminary quotation and recommendations. Design refinement based on your feedback. CAD drawings and 3D renderings provided.',
-          '<strong>Phase 2 - Sample Production (Week 3-4):</strong> Sample unit produced based on approved design. Photos sent for remote approval. Physical sample shipped if required (sample cost refundable upon order). Design modifications if needed.',
-          '<strong>Phase 3 - Bulk Production (Week 5-9):</strong> Upon sample approval and 30% deposit. Production begins with dedicated batch. Weekly photo updates sent to you. Quality control checkpoints throughout production. Pre-notification 1 week before completion.',
-          '<strong>Phase 4 - Inspection & Shipment (Week 10):</strong> Final inspection (your QC inspector welcome). Professional packing (bubble wrap, cardboard corners, wooden crates). Container loading with our supervision. Complete export documentation. 70% balance payment before shipment. Bill of Lading sent upon vessel departure.'
-        ]
-      },
-      {
-        heading: 'Factory-Direct Export Pricing',
-        paragraphs: [
-          'Sample unit pricing (1-5 units): Higher due to individual production setup. Exact dimensions, material, and finishing customization. Used for design approval and marketing purposes. Small batch pricing (50-100 units): 20-30% discount from sample price. Good for boutique hotels and restaurants. Testing market before larger commitment. Medium batch pricing (100-300 units / 1-2 containers): 30-40% discount from sample price. Optimal cost-effectiveness. Suitable for restaurant chains and hotels. Large batch pricing (300+ units / 3+ containers): 40-50% discount from sample price. Best value for large projects. Priority production scheduling.',
-          'All prices are FOB (Free on Board) from Bekasi/Jakarta port. Request detailed quotation with your specific requirements for accurate pricing. We can also provide CIF (Cost, Insurance, and Freight) quotation if you prefer door-to-port service.'
-        ]
-      },
-      {
-        heading: 'International Quality Standards',
-        paragraphs: [
-          'Our factory adheres to international quality and safety standards: <strong>Material Standards:</strong> Steel: ASTM A36, JIS G3101 SS400, or equivalent. Stainless Steel: SS304, SS316 (marine grade). Aluminum: 6061-T6 for lightweight applications. Wood: FSC-certified sustainable sources. Powder Coating: ASTM D3359 adhesion test, 500+ hours salt spray test.',
-          '<strong>Product Standards:</strong> EN 1728 (Furniture - Seating - Test methods for strength and durability). BIFMA (Business and Institutional Furniture Manufacturers Association). ASTM furniture testing standards. Load capacity testing exceeding commercial use requirements. Stability testing for safety compliance.',
-          '<strong>Documentation:</strong> Material certificates from suppliers. Test reports for load capacity and durability. Certificate of Origin (Form E for ASEAN, standard CO for others). Packing list and commercial invoice. Photos and videos of finished products. Third-party inspection reports (if arranged).'
-        ]
-      },
-      {
-        heading: 'Ready to Start Your Export Project?',
-        paragraphs: [
-          'Contact our factory export team today to discuss your custom commercial furniture needs. We welcome: Furniture importers and distributors. Hotel chains and hospitality groups. Restaurant and cafe chains. Interior designers and architects. Procurement companies and buying offices. Retailers looking for private label furniture.',
-          'What we need from you to provide accurate quotation: Product type and intended use (restaurant, hotel, office, etc). Quantity requirements. Dimensions and specifications (if you have them). Material and finishing preferences. Reference photos or drawings (if available). Delivery destination. Target budget or price range (optional but helpful).',
-          'Contact us: WhatsApp (preferred for faster response): +62 888-0114-6881. Email: export@mangala-living.com. Visit our factory: Arrange factory visit in Bekasi (30 minutes from Jakarta). See production process, quality control, and sample products firsthand. We look forward to partnering with you for your furniture needs!'
-        ]
-      }
-    ]
-  },
-  // ARTICLE 5 - Metal Furniture Supplier Indonesia Export
-  {
-    slug: 'metal-furniture-supplier-indonesia-export-hotels-restaurants',
-    sections: [
-      {
-        paragraphs: [
-          'As a leading metal furniture supplier in Indonesia, Mangala Living specializes in manufacturing and exporting premium-quality steel furniture for hotels and restaurants worldwide. Our 25 years of experience in the industry has positioned us as a trusted partner for international hospitality projects.',
-          'We understand the demanding requirements of commercial hospitality environments: furniture must be durable, aesthetically pleasing, easy to maintain, and capable of withstanding heavy daily use. Our metal furniture solutions are engineered specifically for these high-traffic applications.'
-        ]
-      },
-      {
-        heading: 'Why Choose Metal Furniture for Hospitality?',
-        list: [
-          '<strong>Superior Durability:</strong> Steel frame construction can withstand 5-10 years of heavy commercial use without structural degradation.',
-          '<strong>Low Maintenance:</strong> Powder-coated finishes require minimal upkeep—simple wipe-down cleaning is sufficient.',
-          '<strong>Design Versatility:</strong> Metal frames can be combined with various materials (wood, upholstery, marble, glass) for diverse aesthetic options.',
-          '<strong>Cost-Effectiveness:</strong> Lower total cost of ownership due to extended lifespan and reduced replacement frequency.',
-          '<strong>Hygiene Standards:</strong> Non-porous metal surfaces are easier to sanitize, meeting health and safety requirements.',
-          '<strong>Consistency:</strong> Manufactured furniture ensures uniformity across multiple locations—ideal for hotel and restaurant chains.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Premium Metal Furniture for Hotels and Restaurants'
-      },
-      {
-        heading: 'Our Product Range for Export',
-        paragraphs: [
-          '<strong>Restaurant Furniture:</strong> Dining tables (various sizes and top materials), dining chairs (stackable and non-stackable options), bar stools and high tables, booth seating systems, outdoor terrace furniture, buffet and service stations.',
-          '<strong>Hotel Furniture:</strong> Lobby seating and reception desks, restaurant and bar furniture packages, guest room furniture (bed frames, desks, luggage racks), conference and meeting room furniture, outdoor pool and garden furniture.',
-          '<strong>Cafe Furniture:</strong> Industrial-style tables and chairs, bar counters and display units, outdoor seating solutions, custom-branded furniture pieces.'
-        ]
-      },
-      {
-        heading: 'Export Quality Standards',
-        paragraphs: [
-          'All our export furniture meets international quality standards: <strong>Material Grade:</strong> We use MS (Mild Steel), SS304/SS316 stainless steel, and galvanized steel for corrosion resistance. <strong>Welding Quality:</strong> MIG/TIG welding techniques ensure strong, clean joints. Load testing to 150% of rated capacity. <strong>Finishing:</strong> Powder coating with 60-80 microns thickness, outdoor-grade quality. Electroplating options (chrome, brass, copper) for premium finishes. Multi-stage surface preparation for maximum adhesion.',
-          '<strong>Safety Compliance:</strong> BIFMA standards for commercial furniture. EN 1728 (Furniture - Seating strength and durability testing). Stability testing to prevent tipping. Sharp edge elimination for user safety.'
-        ]
-      },
-      {
-        heading: 'Export Process and Timeline',
-        paragraphs: [
-          '<strong>Phase 1 - Inquiry and Quotation (1-3 days):</strong> Send us your requirements (product type, quantities, specifications). Receive detailed FOB quotation with product specifications. Review our portfolio and previous projects.',
-          '<strong>Phase 2 - Sample Approval (2-3 weeks):</strong> Sample production based on your specifications. Photos sent for approval. Physical sample shipping (if required). Design modifications if needed.',
-          '<strong>Phase 3 - Production (4-6 weeks):</strong> Bulk production upon 30% deposit and sample approval. Weekly progress photo updates. Quality control checkpoints throughout manufacturing.',
-          '<strong>Phase 4 - Shipping (1 week):</strong> Final inspection and professional packing. Export documentation preparation. Container loading and shipment. 70% balance payment before departure.'
-        ]
-      },
-      {
-        heading: 'Competitive FOB Pricing',
-        paragraphs: [
-          'Sample pricing for reference (FOB Bekasi/Jakarta): Metal dining chairs: USD 35-60 per unit. Dining tables (120x70cm): USD 90-130 per unit. Bar stools: USD 45-75 per unit. Bar tables: USD 110-150 per unit. Booth seating systems: USD 200-350 per set.',
-          'Volume discounts available: 50-100 units: 10-15% discount. 100-300 units (1-2 containers): 20-30% discount. 300+ units (3+ containers): 30-40% discount. Prices vary based on material specifications, finishing options, and design complexity.'
-        ]
-      },
-      {
-        heading: 'Why Partner with Us?',
-        paragraphs: [
-          'Direct manufacturer—no trading company markup. 25 years experience serving international clients. In-house design team and CAD capabilities. Own powder coating facility for quality control. English-speaking export team. Transparent communication and pricing. Reliable delivery schedule. After-sales support and warranty.',
-          'Contact us for detailed quotations and product catalogs: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
-        ]
-      }
-    ]
-  },
-  // ARTICLE 6 - Indonesia Industrial Furniture Manufacturer OEM ODM Export
-  {
-    slug: 'indonesia-industrial-furniture-manufacturer-oem-odm-export',
-    sections: [
-      {
-        paragraphs: [
-          'Mangala Living offers comprehensive OEM (Original Equipment Manufacturing) and ODM (Original Design Manufacturing) services for industrial furniture export. We partner with international brands, furniture importers, and hospitality chains to manufacture custom furniture according to their specifications or based on our design expertise.',
-          'With 25 years of manufacturing experience and a 10,000+ sqm production facility, we have the capacity, expertise, and quality control systems to handle OEM/ODM orders ranging from small batches to large-scale production for global markets.'
-        ]
-      },
-      {
-        heading: 'OEM vs ODM: Understanding the Difference',
-        paragraphs: [
-          '<strong>OEM (Original Equipment Manufacturing):</strong> You provide complete specifications, technical drawings, and design details. We manufacture according to your exact requirements. Your brand name and identity applied to the products. Ideal for brands with established designs wanting cost-effective manufacturing.',
-          '<strong>ODM (Original Design Manufacturing):</strong> We provide design expertise and product development services. You select from our existing designs or we create custom designs for you. We handle engineering, prototyping, and manufacturing. Ideal for brands wanting to launch furniture lines without in-house design capability.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'OEM ODM Industrial Furniture Manufacturing in Indonesia'
-      },
-      {
-        heading: 'Our OEM/ODM Capabilities',
-        list: [
-          '<strong>Design Services (ODM):</strong> In-house design team with 10+ years experience in commercial furniture. CAD modeling and 3D rendering. Prototyping and sample production. Design refinement based on your feedback. Trend analysis and product development consultation.',
-          '<strong>Manufacturing Expertise:</strong> Steel fabrication (cutting, bending, welding, finishing). Woodworking for wood components (solid wood and engineered wood). Upholstery and cushioning. Powder coating and electroplating finishing. Assembly and packaging.',
-          '<strong>Production Capacity:</strong> 5,000-8,000 furniture pieces per month. Scalable production for growing demand. Multiple production lines for different product categories. Rush order capability for urgent projects.',
-          '<strong>Quality Control:</strong> Incoming material inspection. In-process quality monitoring. Final product inspection (100% for export). Load testing and durability testing. Pre-shipment inspection coordination.'
-        ]
-      },
-      {
-        heading: 'Industries We Serve',
-        paragraphs: [
-          '<strong>Furniture Brands and Importers:</strong> Private label manufacturing for furniture retailers. Consistent quality across multiple orders. Cost-effective production for competitive pricing. Flexible MOQ for growing businesses.',
-          '<strong>Hospitality Chains:</strong> Custom furniture for hotel and restaurant chains. Brand-specific design and finishes. Consistent furniture across multiple locations. Volume discounts for large projects.',
-          '<strong>Interior Design Firms:</strong> Custom pieces for commercial projects. Design collaboration and consultation. Project-based manufacturing. Quick turnaround for tight deadlines.',
-          '<strong>Property Developers:</strong> Furniture packages for residential and commercial developments. Custom designs matching building aesthetic. Bulk ordering for multiple units. Direct factory pricing.'
-        ]
-      },
-      {
-        heading: 'OEM/ODM Process Flow',
-        paragraphs: [
-          '<strong>Step 1 - Consultation and NDA:</strong> Initial discussion about your requirements. Non-disclosure agreement for design protection. Review your concept, drawings, or reference images. Discuss materials, finishes, quantities, and timeline.',
-          '<strong>Step 2 - Design and Quotation:</strong> ODM: Our design team creates concepts and 3D renderings. OEM: Review your technical drawings and specifications. Detailed quotation with material breakdown. MOQ and pricing tiers provided.',
-          '<strong>Step 3 - Sampling:</strong> Sample production based on approved design. Quality and functionality testing. Photos and physical sample (if required). Design modifications if needed.',
-          '<strong>Step 4 - Bulk Production:</strong> Production begins upon sample approval and deposit. Weekly progress updates with photos. Quality control checkpoints. Pre-notification before completion.',
-          '<strong>Step 5 - Inspection and Shipment:</strong> Final inspection (third-party QC welcome). Professional packing and container loading. Complete export documentation. Shipment and tracking information provided.'
-        ]
-      },
-      {
-        heading: 'Pricing Structure',
-        paragraphs: [
-          'OEM/ODM pricing depends on several factors: Design complexity and engineering requirements. Material specifications (steel grade, wood type, finishing). Order quantity (larger volume = lower unit price). Customization level (more custom = higher price). Timeline requirements (rush orders incur premium).',
-          'Typical MOQ: Small batch (50-100 units): Good for product testing and market entry. Medium batch (100-300 units): Optimal cost-effectiveness for growing brands. Large batch (300+ units): Best pricing for established markets. Sample orders (1-5 units): Higher unit cost, refundable upon bulk order.',
-          'Payment terms: 30% deposit upon order confirmation. 70% balance before shipment. Letter of Credit (LC) for established clients. Flexible terms for repeat orders.'
-        ]
-      },
-      {
-        heading: 'Why Choose Mangala Living for OEM/ODM?',
-        paragraphs: [
-          '<strong>Experience and Reputation:</strong> 25 years in furniture manufacturing. Export to 15+ countries. Trusted by international brands and chains. Strong track record of on-time delivery.',
-          '<strong>Quality Assurance:</strong> ISO-standard manufacturing process. Comprehensive quality control system. Material traceability. Third-party inspection coordination.',
-          '<strong>Confidentiality Protection:</strong> NDA agreements for design protection. Dedicated production runs for your orders. No direct competition in retail market. Your brand identity respected.',
-          '<strong>Communication and Support:</strong> English-speaking export team. Regular progress updates. Responsive to inquiries and changes. Technical support and consultation.',
-          'Ready to discuss your OEM/ODM furniture project? Contact us today: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
-        ]
-      }
-    ]
-  },
-  // ARTICLE 7 - Export Quality Restaurant Furniture Indonesia Manufacturer
-  {
-    slug: 'export-quality-restaurant-furniture-indonesia-manufacturer',
-    sections: [
-      {
-        paragraphs: [
-          'As a specialized manufacturer of export-quality restaurant furniture in Indonesia, Mangala Living delivers comprehensive furniture solutions for restaurants, cafes, and food service establishments worldwide. Our 25 years of experience in commercial furniture manufacturing ensures that every piece meets the demanding standards of the hospitality industry.',
-          'We understand that restaurant furniture must balance aesthetics, durability, comfort, and budget. Our manufacturing process is designed to deliver furniture that not only looks great on opening day but continues to perform reliably through years of heavy commercial use.'
-        ]
-      },
-      {
-        heading: 'Restaurant Furniture Product Range',
-        list: [
-          '<strong>Dining Tables:</strong> Various sizes from 2-seater to 10-seater configurations. Multiple top materials: solid wood, engineered wood, laminate, marble, or glass. Steel or wooden bases with powder-coated finishes. Custom sizes and shapes available.',
-          '<strong>Dining Chairs:</strong> Metal frame chairs with or without upholstery. Stackable options for space efficiency. Various styles: industrial, modern, classic. Comfortable seating for extended dining periods.',
-          '<strong>Bar Furniture:</strong> Bar stools with adjustable or fixed height. Bar tables and counters. High-top tables for casual dining. Footrests for comfort.',
-          '<strong>Booth Seating:</strong> Fixed booth systems with upholstered seating. Modular booth configurations. Custom sizes to fit your floor plan. Built-in storage options available.',
-          '<strong>Outdoor Furniture:</strong> Weather-resistant powder-coated finishes. UV-protected materials. Stackable for easy storage. Designed for tropical climates.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Export Quality Restaurant Furniture Manufacturing'
-      },
-      {
-        heading: 'Why Indonesian Restaurant Furniture?',
-        paragraphs: [
-          '<strong>Competitive Pricing:</strong> 20-35% lower manufacturing costs compared to European or North American production. Direct factory pricing eliminates middleman markup. Economy of scale for bulk orders.',
-          '<strong>Quality Craftsmanship:</strong> Skilled workforce with generations of furniture-making experience. Modern machinery combined with traditional techniques. Attention to detail in finishing.',
-          '<strong>Export Infrastructure:</strong> Strategic location near major ports (Jakarta, Surabaya). Established shipping routes to all major destinations. Professional packing to ensure safe arrival.',
-          '<strong>Flexible Production:</strong> Reasonable MOQ suitable for independent restaurants and small chains. Custom design capability. Quick turnaround for repeat orders.'
-        ]
-      },
-      {
-        heading: 'Quality Standards for Export',
-        paragraphs: [
-          'All our restaurant furniture is manufactured to international standards: <strong>Durability Testing:</strong> Chairs tested to 150,000+ cycles (BIFMA standards). Tables tested for load capacity and stability. Welding strength testing for metal components.',
-          '<strong>Safety Compliance:</strong> No sharp edges or protruding hardware. Stability testing to prevent tipping. Fire-retardant upholstery options. Compliance with EU and US safety regulations.',
-          '<strong>Finish Quality:</strong> Powder coating: 500+ hours salt spray test resistance. Multi-stage surface preparation. Even coating thickness (60-80 microns). Scratch and chip-resistant finishes.'
-        ]
-      },
-      {
-        heading: 'Export Process',
-        paragraphs: [
-          '<strong>Step 1 - Quotation (1-2 days):</strong> Share your requirements (style, quantity, timeline). Receive detailed FOB quotation. Review our portfolio and references.',
-          '<strong>Step 2 - Sample Approval (2-3 weeks):</strong> Sample production and photos. Physical sample shipping if needed. Design adjustments if required.',
-          '<strong>Step 3 - Production (4-6 weeks):</strong> Bulk production upon 30% deposit. Weekly photo updates. Quality checkpoints throughout production.',
-          '<strong>Step 4 - Shipping (1 week):</strong> Professional packing and container loading. Complete export documentation. Shipment tracking information.'
-        ]
-      },
-      {
-        heading: 'Pricing Guide (FOB Indonesia)',
-        paragraphs: [
-          'Restaurant dining chairs: USD 35-70 per unit (depending on design and upholstery). Restaurant dining tables (120x70cm): USD 90-140 per unit. Bar stools: USD 45-80 per unit. Bar tables: USD 100-160 per unit. Booth seating: USD 250-400 per linear meter.',
-          'Volume discounts: 50-100 pieces: 10-15% discount. 100-300 pieces (1-2 containers): 20-25% discount. 300+ pieces (3+ containers): 30-35% discount. Prices include professional packing suitable for sea freight.'
-        ]
-      },
-      {
-        heading: 'Contact Us for Restaurant Furniture Export',
-        paragraphs: [
-          'Ready to furnish your restaurant or cafe? Contact our export team: WhatsApp: +62 888-0114-6881 (Fast response). Email: export@mangala-living.com. Factory visit: Welcome to visit our factory in Bekasi (30 minutes from Jakarta). Let us help you create the perfect dining environment for your customers!'
-        ]
-      }
-    ]
-  },
-  // ARTICLE 8 - Indonesian Furniture Exporter Bekasi Factory Direct Pricing
-  {
-    slug: 'indonesian-furniture-exporter-bekasi-factory-direct-pricing',
-    sections: [
-      {
-        paragraphs: [
-          'As a direct furniture exporter based in Bekasi, Indonesia, Mangala Living offers factory-direct pricing that eliminates middleman markup and trading company commissions. Our location in Bekasi, Indonesia\'s industrial heartland, provides strategic advantages for cost-effective manufacturing and efficient export logistics.',
-          'When you work directly with us, you\'re connecting with the actual manufacturer—not a trading company or intermediary. This means better prices, direct communication with our production team, and complete transparency throughout the manufacturing process.'
-        ]
-      },
-      {
-        heading: 'Advantages of Factory-Direct Export',
-        list: [
-          '<strong>Lower Prices:</strong> Save 20-40% compared to buying through trading companies. No middleman commission added to your costs. Direct factory pricing based on actual production costs.',
-          '<strong>Direct Communication:</strong> Speak directly with our production manager. Faster response to questions and concerns. Real-time production updates. Video calls and factory tours available.',
-          '<strong>Quality Control:</strong> Direct oversight of manufacturing process. Your specifications implemented precisely. Immediate resolution of any quality issues. Visit factory anytime during production.',
-          '<strong>Customization Flexibility:</strong> Easy design modifications during sampling phase. Custom materials and finishes available. No limitations from pre-set catalog. Responsive to your specific needs.',
-          '<strong>Relationship Building:</strong> Long-term partnership potential. Priority service for repeat orders. Preferential pricing as volumes grow. Direct support from decision-makers.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Factory in Bekasi Indonesia'
-      },
-      {
-        heading: 'Why Bekasi as Manufacturing Base?',
-        paragraphs: [
-          '<strong>Strategic Location:</strong> 30 minutes from Jakarta port (Tanjung Priok). 45 minutes from Soekarno-Hatta International Airport. Easy access for container trucks. Close to major highways for material sourcing.',
-          '<strong>Industrial Infrastructure:</strong> Established industrial zone with reliable utilities. Skilled labor pool with furniture manufacturing experience. Supporting industries (steel, wood, paint, hardware) nearby. Lower operational costs than Jakarta.',
-          '<strong>Export Advantages:</strong> Bekasi designated as Export Processing Zone. Streamlined export documentation process. Container booking and customs clearance support. Competitive shipping rates to all major destinations.'
-        ]
-      },
-      {
-        heading: 'Our Factory Capabilities',
-        paragraphs: [
-          '<strong>Production Facility:</strong> 10,000+ sqm manufacturing space. Metal fabrication workshop with MIG/TIG welding. Woodworking section for solid and engineered wood. In-house powder coating line (outdoor-grade quality). Assembly and QC area. Professional packing facility.',
-          '<strong>Production Capacity:</strong> 5,000-8,000 furniture pieces monthly. Multiple production lines for different products. Scalable capacity for large orders. Rush production capability available.',
-          '<strong>Quality Control:</strong> Incoming material inspection. In-process quality monitoring. Final product 100% inspection. Load and stability testing. Pre-shipment inspection coordination.'
-        ]
-      },
-      {
-        heading: 'Factory-Direct Pricing Structure',
-        paragraphs: [
-          '<strong>How We Calculate Prices:</strong> Raw material costs (steel, wood, powder coating, hardware). Direct labor costs (welding, assembly, finishing). Factory overhead (utilities, equipment, facility). Quality control and testing. Professional packing for export. Profit margin (transparent and fair).',
-          '<strong>What\'s Included in FOB Price:</strong> Complete manufacturing to your specifications. Quality inspection and testing. Professional packing (bubble wrap, cardboard protection, wooden crates if needed). Delivery to Bekasi/Jakarta port. Container loading supervision. Export documentation (invoice, packing list, CO).',
-          '<strong>What\'s NOT Included:</strong> Shipping freight (we can arrange and quote separately). Destination port charges. Import duties and customs clearance at destination. Inland transport from destination port to your address.'
-        ]
-      },
-      {
-        heading: 'Minimum Order Quantity (MOQ)',
-        paragraphs: [
-          'Our factory-direct model allows flexible MOQ: Small batch (50-100 units): Good for testing products and market entry. Approximately USD 3,000-5,000 order value. Medium batch (100-300 units / 1-2 containers): Optimal cost-effectiveness. Best price-to-quality ratio. Large batch (300+ units / 3+ containers): Maximum volume discount. Priority production scheduling. Lowest per-unit cost.',
-          'Sample orders (1-10 units): Available for design approval and marketing purposes. Higher unit cost due to individual setup. Sample cost refundable upon bulk order. Faster turnaround (1-2 weeks).'
-        ]
-      },
-      {
-        heading: 'Price Comparison: Factory Direct vs Trading Company',
-        paragraphs: [
-          '<strong>Example: Metal Dining Chair</strong> Factory direct price (Mangala Living): USD 38/unit (FOB, 200 units). Through trading company: USD 52-58/unit (FOB, 200 units). Your savings: USD 14-20 per unit = USD 2,800-4,000 total (for 200 units).',
-          '<strong>Example: Dining Table 120x70cm</strong> Factory direct price (Mangala Living): USD 95/unit (FOB, 100 units). Through trading company: USD 125-140/unit (FOB, 100 units). Your savings: USD 30-45 per unit = USD 3,000-4,500 total (for 100 units).',
-          'Additional hidden costs with trading companies: Longer lead time (they need to coordinate with factory). Less flexibility for design changes. Slower communication (goes through middleman). No direct factory oversight.'
-        ]
-      },
-      {
-        heading: 'How to Get Started',
-        paragraphs: [
-          '<strong>Step 1 - Send Inquiry:</strong> Email us at export@mangala-living.com or WhatsApp +62 888-0114-6881. Include: Product type/style, Quantity, Destination country, Timeline, Reference photos (if available).',
-          '<strong>Step 2 - Receive Quotation:</strong> Detailed FOB pricing within 1-2 business days. Product specifications and material breakdown. Production timeline. Payment terms.',
-          '<strong>Step 3 - Sample or Direct Order:</strong> Option A: Order samples for approval. Option B: Proceed directly to bulk order (if design is clear).',
-          '<strong>Step 4 - Production and Shipment:</strong> 30% deposit to start production. Weekly photo updates during manufacturing. Final inspection and balance payment. Shipment with complete documentation.',
-          'Start saving with factory-direct pricing today! Contact us: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
-        ]
-      }
-    ]
-  },
-  // ARTICLE 9 - Custom Hospitality Furniture Indonesia Export Hotels Worldwide
-  {
-    slug: 'custom-hospitality-furniture-indonesia-export-hotels-worldwide',
-    sections: [
-      {
-        paragraphs: [
-          'Mangala Living specializes in manufacturing custom hospitality furniture for hotels, resorts, and hospitality chains worldwide. With 25 years of experience in commercial furniture production, we deliver tailored furniture solutions that match your brand identity, functional requirements, and budget.',
-          'We understand that hospitality furniture must meet stringent standards: durability for high guest traffic, aesthetic appeal for positive guest experience, compliance with safety regulations, and consistency across multiple properties. Our custom manufacturing process ensures all these requirements are met.'
-        ]
-      },
-      {
-        heading: 'Custom Hospitality Furniture Range',
-        list: [
-          '<strong>Hotel Lobbies:</strong> Reception desks and check-in counters. Lounge seating (sofas, armchairs, ottomans). Coffee tables and side tables. Luggage racks and bellhop carts. Feature furniture pieces (statement chairs, decorative cabinets).',
-          '<strong>Guest Rooms:</strong> Bed frames (all sizes: twin, full, queen, king). Headboards (upholstered, wooden, metal). Nightstands and bedside tables. Desks and chairs. Wardrobes and luggage racks. TV cabinets.',
-          '<strong>Restaurants and Bars:</strong> Dining tables and chairs. Bar stools and bar tables. Booth seating systems. Buffet stations. Hostess stands.',
-          '<strong>Outdoor Areas:</strong> Pool lounge chairs. Garden furniture sets. Rooftop bar furniture. Terrace dining furniture. Weather-resistant powder coating.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&auto=format&fit=crop',
-        imageAlt: 'Custom Hospitality Furniture for Hotels'
-      },
-      {
-        heading: 'Custom Design Process',
-        paragraphs: [
-          '<strong>Phase 1 - Consultation:</strong> Understand your hotel concept and brand identity. Review floor plans and space requirements. Discuss style preferences and functional needs. Receive initial concept sketches.',
-          '<strong>Phase 2 - Design Development:</strong> CAD drawings and 3D renderings. Material and finish selection. Compliance review (safety, fire codes). Cost estimation and budget alignment.',
-          '<strong>Phase 3 - Sampling:</strong> Sample production for key furniture pieces. Quality and functionality testing. Guest comfort assessment. Design refinement based on feedback.',
-          '<strong>Phase 4 - Production:</strong> Bulk production for full hotel furniture package. Phased delivery for staged openings. Quality control throughout manufacturing. Pre-shipment inspection.'
-        ]
-      },
-      {
-        heading: 'Why Choose Indonesian Custom Furniture?',
-        paragraphs: [
-          '<strong>Cost Advantage:</strong> 30-50% lower manufacturing costs than Western countries. Skilled craftsmanship at competitive labor rates. No compromise on quality.',
-          '<strong>Customization Capability:</strong> Full design flexibility to match your brand. Custom sizes to fit your floor plans. Material and finish options. Private label and branding.',
-          '<strong>Quality Standards:</strong> International hospitality furniture standards. Durability testing to commercial specifications. Safe, non-toxic finishes. Fire-retardant materials available.',
-          '<strong>Volume Capacity:</strong> Can handle large hotel projects (100+ rooms). Multiple production lines for diverse furniture types. Consistent quality across bulk orders.'
-        ]
-      },
-      {
-        heading: 'Export and Logistics',
-        paragraphs: [
-          'We handle complete export process: Professional furniture packing (blanket wrap, cardboard corners, wooden crates). Container loading optimization. Export documentation (CO, invoice, packing list). Freight arrangement (FOB or CIF). Shipment tracking and updates.',
-          'Lead times: Design and sampling: 6-8 weeks. Bulk production: 8-12 weeks (depending on volume). Shipping: 2-6 weeks (depending on destination). Total project timeline: 4-6 months for full hotel furniture package.'
-        ]
-      },
-      {
-        heading: 'Pricing',
-        paragraphs: [
-          'Custom hospitality furniture pricing depends on: Design complexity. Materials and finishes. Order volume. Customization level. Timeline requirements.',
-          'Typical pricing examples (FOB Indonesia): Guest room furniture package (bed frame, 2 nightstands, desk, chair, wardrobe): USD 450-850 per room. Restaurant dining set (table + 4 chairs): USD 250-400 per set. Bar stool: USD 50-90 per unit. Lobby lounge chair: USD 150-300 per unit.',
-          'Volume discounts available for large hotel projects. Contact us for detailed project quotation: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
-        ]
-      }
-    ]
-  },
-  // ARTICLE 10 - Industrial Metal Furniture Indonesia Powder Coating Export
-  {
-    slug: 'industrial-metal-furniture-indonesia-powder-coating-export',
-    sections: [
-      {
-        paragraphs: [
-          'Mangala Living manufactures premium industrial metal furniture with professional powder coating finish for export worldwide. Our in-house powder coating facility ensures consistent, durable finishes that meet international quality standards for both indoor and outdoor applications.',
-          'Powder coating is superior to liquid paint for metal furniture: more durable finish, better corrosion resistance, environmentally friendly (no VOC emissions), uniform coating thickness, and cost-effective for bulk production. All our export furniture features powder coating as standard finishing.'
-        ]
-      },
-      {
-        heading: 'Powder Coating Advantages',
-        list: [
-          '<strong>Superior Durability:</strong> Harder, more scratch-resistant finish than liquid paint. Impact-resistant coating. 500+ hours salt spray test resistance. 5-8 years lifespan for outdoor applications.',
-          '<strong>Weather Resistance:</strong> Outdoor-grade quality for all climates. UV-protected (no fading). Moisture and humidity resistant. Temperature resistant (-40°C to +80°C).',
-          '<strong>Aesthetic Quality:</strong> Smooth, uniform finish. No brush marks or drips. Consistent color across all pieces. RAL and Pantone color matching available.',
-          '<strong>Environmental Benefits:</strong> No VOC emissions. Recyclable overspray. No hazardous waste. Safe for indoor furniture.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Powder Coated Industrial Metal Furniture'
-      },
-      {
-        heading: 'Our Powder Coating Process',
-        paragraphs: [
-          '<strong>Surface Preparation:</strong> Degreasing to remove oils and contaminants. Sand blasting or chemical treatment. Phosphate coating for corrosion resistance. Complete surface cleaning.',
-          '<strong>Powder Application:</strong> Electrostatic spray application. Uniform coating thickness (60-80 microns). Full coverage including hard-to-reach areas. Controlled application for consistent quality.',
-          '<strong>Curing:</strong> High-temperature oven curing (180-200°C). Complete powder melting and bonding. Proper curing time for maximum durability. Quality inspection after cooling.',
-          '<strong>Quality Control:</strong> Visual inspection for uniformity. Adhesion testing. Thickness measurement. Impact and scratch resistance testing.'
-        ]
-      },
-      {
-        heading: 'Color and Finish Options',
-        paragraphs: [
-          '<strong>Standard Colors:</strong> Matte Black (most popular for industrial furniture). Glossy Black. White (matte or glossy). Grey (various shades). Brown/Bronze tones.',
-          '<strong>Custom Colors:</strong> RAL color system (200+ standard colors). Pantone color matching. Custom color development. Metallic and textured finishes.',
-          '<strong>Finish Types:</strong> Matte (contemporary, industrial look). Glossy (classic, easy to clean). Textured (hides minor imperfections). Metallic (premium aesthetic).'
-        ]
-      },
-      {
-        heading: 'Product Range',
-        paragraphs: [
-          'All our industrial metal furniture features powder coating: Dining tables and chairs. Bar stools and bar tables. Display racks and shelving. Office furniture. Outdoor furniture. Custom metal fabrications.',
-          'Suitable for: Restaurants and cafes. Hotels and resorts. Offices and co-working spaces. Retail stores. Residential (indoor and outdoor). Public spaces.'
-        ]
-      },
-      {
-        heading: 'Export Quality Assurance',
-        paragraphs: [
-          'Our powder coating meets international standards: ASTM D3359 (adhesion test). ASTM B117 (salt spray test - 500+ hours). ISO 2409 (cross-cut tape test). ASTM D2794 (impact resistance). Quality certificates provided upon request.',
-          'Professional packing: Protective wrapping to prevent scratches. Cardboard corners and edge protection. Wooden crates for fragile items. Container loading supervision.'
-        ]
-      },
-      {
-        heading: 'Pricing and Lead Time',
-        paragraphs: [
-          'Powder coating adds approximately 15-20% to base metal fabrication cost, but provides superior value compared to liquid paint. Lead time: Standard colors: 3-4 weeks production. Custom colors: 4-5 weeks (sample approval required). Rush orders available with additional fee.',
-          'For export quotations on powder-coated metal furniture: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
-        ]
-      }
-    ]
-  },
-  // ARTICLE 11 - Indonesia Furniture Manufacturer Container Pricing Export
-  {
-    slug: 'indonesia-furniture-manufacturer-container-pricing-export',
-    sections: [
-      {
-        paragraphs: [
-          'Understanding container pricing is essential for furniture importers. As an Indonesian furniture manufacturer, Mangala Living provides transparent container-based pricing for export orders, helping you calculate accurate landed costs and maximize your import budget.',
-          'Container shipping is the most cost-effective method for furniture export. We optimize packing to maximize container utilization, reducing your per-unit shipping cost and overall import expense.'
-        ]
-      },
-      {
-        heading: 'Container Options',
-        list: [
-          '<strong>20ft Container:</strong> Internal dimensions: 5.9m x 2.35m x 2.39m (LxWxH). Volume: approximately 33 cubic meters. Typical capacity: 200-300 chairs, 80-120 dining tables, or mixed furniture load. Suitable for: Small to medium orders, Testing new products, Regional distribution.',
-          '<strong>40ft Standard Container:</strong> Internal dimensions: 12.03m x 2.35m x 2.39m (LxWxH). Volume: approximately 67 cubic meters. Double capacity of 20ft container. Most cost-effective per-unit shipping. Suitable for: Medium to large orders, Multiple product types, Established import business.',
-          '<strong>40ft High Cube (HC) Container:</strong> Internal dimensions: 12.03m x 2.35m x 2.69m (LxWxH). Volume: approximately 76 cubic meters. Extra height for tall items (display racks, wardrobes). 15% more volume than standard 40ft. Suitable for: Bulky or tall furniture, Maximum container utilization.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Container Loading Furniture for Export'
-      },
-      {
-        heading: 'Container Loading Capacity Examples',
-        paragraphs: [
-          '<strong>Dining Chairs (stackable):</strong> 20ft container: 250-300 chairs. 40ft container: 500-600 chairs. 40ft HC: 600-700 chairs.',
-          '<strong>Dining Tables (120x70cm):</strong> 20ft container: 80-100 tables. 40ft container: 180-220 tables. 40ft HC: 200-240 tables.',
-          '<strong>Bar Stools:</strong> 20ft container: 200-250 stools. 40ft container: 450-500 stools. 40ft HC: 500-600 stools.',
-          '<strong>Mixed Load (typical restaurant furniture package):</strong> 40ft container can fit: 150 dining chairs + 50 dining tables + 30 bar stools + accessories. Complete furniture for 50-seat restaurant. Optimized packing for space efficiency.'
-        ]
-      },
-      {
-        heading: 'Container Pricing Structure',
-        paragraphs: [
-          '<strong>FOB (Free on Board) Pricing:</strong> Our responsibility: Manufacturing, Quality control, Professional packing, Delivery to port, Container loading, Export documentation. Your responsibility: Shipping freight, Destination charges, Import customs, Inland transport.',
-          '<strong>CIF (Cost, Insurance, Freight) Pricing:</strong> Our responsibility: All FOB services plus, Sea freight to destination port, Marine insurance. Your responsibility: Destination port charges, Import customs and duties, Inland transport from port.',
-          'We can provide both FOB and CIF quotations. Most clients prefer FOB and arrange their own freight forwarder for better control and competitive rates.'
-        ]
-      },
-      {
-        heading: 'Sample Container Pricing',
-        paragraphs: [
-          '<strong>Example 1: Restaurant Dining Chairs</strong> Product: Metal dining chairs. Quantity: 500 units (1x 40ft container). FOB price per unit: USD 38. Total FOB value: USD 19,000. Estimated sea freight (to USA West Coast): USD 2,500-3,500. Landed cost per unit: approximately USD 42-45.',
-          '<strong>Example 2: Mixed Restaurant Furniture</strong> 40ft container with: 150 dining chairs @ USD 38 = USD 5,700. 50 dining tables @ USD 95 = USD 4,750. 30 bar stools @ USD 55 = USD 1,650. Total FOB value: USD 12,100. Estimated sea freight (to Europe): USD 3,000-4,000. Average landed cost savings of 25-35% vs local purchasing.'
-        ]
-      },
-      {
-        heading: 'Maximizing Container Efficiency',
-        paragraphs: [
-          '<strong>Our Optimization Services:</strong> Professional packing to maximize space utilization. Stackable furniture design options. Knock-down (KD) furniture for flat packing. Mixed product combinations for full container loads. Loading supervision by experienced team.',
-          '<strong>Tips for Buyers:</strong> Order in full container loads when possible for best per-unit cost. Mix different products to fill container capacity. Consider stackable furniture designs. Plan inventory to reduce multiple small shipments. Factor in cubic meters, not just weight.'
-        ]
-      },
-      {
-        heading: 'Timeline and Process',
-        paragraphs: [
-          '<strong>Typical Export Timeline:</strong> Production: 4-6 weeks after deposit. Packing and loading: 3-5 days. Documentation: 1-2 days. Sea freight: 2-6 weeks (depending on destination). Total: 7-13 weeks from order to arrival.',
-          '<strong>Documentation Provided:</strong> Commercial invoice. Packing list (detailed item breakdown). Certificate of Origin (Form E for ASEAN, standard CO for others). Bill of Lading (B/L). Photos and videos of loading. Weight and measurement certificate.',
-          'For detailed container pricing quotations: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com. Provide: Product types and quantities, Destination port, Preferred container size (20ft, 40ft, 40ft HC), FOB or CIF pricing preference.'
-        ]
-      }
-    ]
-  },
-  // REMAINING EXPORT ARTICLES 12-20 (Final Batch)
-  {
-    slug: 'cafe-furniture-manufacturer-indonesia-export-international',
-    sections: [
-      {
-        paragraphs: [
-          'Mangala Living is a leading cafe furniture manufacturer in Indonesia, specializing in industrial-style furniture for cafes worldwide. We export custom and ready-to-order cafe furniture that combines style, durability, and value—perfect for independent cafes, coffee chains, and hospitality businesses.',
-          'Our 25 years of experience in commercial furniture manufacturing ensures that every piece we produce meets the demanding requirements of busy cafe environments: heavy daily use, aesthetic appeal for Instagram-worthy interiors, and budget-friendly pricing without compromising quality.'
-        ]
-      },
-      {
-        heading: 'Cafe Furniture Product Range',
-        list: [
-          '<strong>Cafe Tables:</strong> Various sizes (60x60cm to 120x70cm). Materials: steel frame with wood, marble, or HPL top. Indoor and outdoor options. Stackable and space-saving designs.',
-          '<strong>Cafe Chairs:</strong> Industrial metal chairs. Upholstered options for comfort. Stackable designs. Indoor/outdoor rated. Custom colors available.',
-          '<strong>Bar Furniture:</strong> Bar stools (adjustable and fixed height). Bar tables and counters. Footrests for comfort. Modern industrial aesthetic.',
-          '<strong>Display & Storage:</strong> Display racks for merchandise. Shelving for retail products. Storage cabinets. Custom branding options.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
-        imageAlt: 'Cafe Furniture Manufacturing for Export'
-      },
-      {
-        heading: 'Why Choose Indonesian Cafe Furniture?',
-        paragraphs: [
-          'Competitive pricing 30-40% lower than Western manufacturers. High-quality craftsmanship and materials. Export-ready with international standards. Fast production and reliable delivery. Custom design capability for unique cafe concepts.'
-        ]
-      },
-      {
-        heading: 'Export Process',
-        paragraphs: [
-          'Simple 4-step process: 1) Send inquiry with your requirements. 2) Receive quotation and samples. 3) Approve and place order with deposit. 4) Production, packing, and shipment with complete documentation.',
-          'Lead time: 4-6 weeks production plus 2-4 weeks shipping. FOB or CIF pricing available. Minimum order: 1 container (approximately 50-100 furniture pieces).'
-        ]
-      },
-      {
-        heading: 'Contact for Export',
-        paragraphs: [
-          'Ready to furnish your cafe? WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'indonesian-steel-furniture-supplier-export-quality-assurance',
-    sections: [
-      {
-        paragraphs: [
-          'As a quality-assured steel furniture supplier in Indonesia, Mangala Living implements comprehensive quality control systems throughout the manufacturing process. Our commitment to international quality standards ensures that exported furniture arrives in perfect condition and performs reliably for years.',
-          'Quality assurance is not just final inspection—it\'s integrated into every step of our production: material selection, fabrication, finishing, packing, and shipping. We welcome third-party inspections and provide complete quality documentation for every export order.'
-        ]
-      },
-      {
-        heading: 'Quality Control Checkpoints',
-        list: [
-          '<strong>Material Inspection:</strong> Steel grade verification. Thickness measurement. Surface quality check. Material certificates from suppliers.',
-          '<strong>Production Quality:</strong> Welding inspection (visual and strength). Dimensional accuracy checks. Assembly fit and finish. Surface preparation before coating.',
-          '<strong>Finishing Quality:</strong> Powder coating thickness (60-80 microns). Color consistency. Adhesion testing. Impact and scratch resistance.',
-          '<strong>Final Inspection:</strong> 100% visual inspection. Stability and load testing. Packaging quality. Pre-shipment inspection coordination.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop',
-        imageAlt: 'Quality Assured Steel Furniture Manufacturing'
-      },
-      {
-        heading: 'International Standards',
-        paragraphs: [
-          'Our manufacturing meets: BIFMA standards for commercial furniture. EN 1728 (European furniture testing). ASTM standards (American Society for Testing and Materials). ISO 9001 quality management principles.',
-          'Testing capabilities: Load capacity testing to 150% of rated capacity. Stability testing for safety. Salt spray corrosion testing (500+ hours). Impact and scratch resistance testing.'
-        ]
-      },
-      {
-        heading: 'Quality Documentation',
-        paragraphs: [
-          'Every export order includes: Material certificates. Inspection reports. Test results (load, stability, coating). Photos of finished products. Packing list with item details. Third-party inspection reports (if arranged).',
-          'We work with international inspection agencies: SGS, Bureau Veritas, Intertek, TUV. Coordinate pre-shipment inspection at no additional cost.'
-        ]
-      },
-      {
-        heading: 'Quality Guarantee',
-        paragraphs: [
-          'We stand behind our quality: 2-year structural warranty. 1-year finish warranty. Manufacturing defects covered. Responsive after-sales support. Replacement parts available.',
-          'Contact our quality assurance team: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'outdoor-furniture-manufacturer-indonesia-weather-resistant-export',
-    sections: [
-      {
-        paragraphs: [
-          'Mangala Living specializes in manufacturing weather-resistant outdoor furniture for export to tropical and humid climates worldwide. Our powder-coated steel furniture is engineered to withstand extreme weather conditions: intense sun, heavy rain, high humidity, and salt air exposure.',
-          'With Indonesia\'s tropical climate, we understand the challenges of outdoor furniture durability. Our manufacturing process includes outdoor-grade powder coating, rust-resistant materials, and rigorous testing to ensure furniture performance in challenging environments.'
-        ]
-      },
-      {
-        heading: 'Weather-Resistant Features',
-        list: [
-          '<strong>Powder Coating:</strong> Outdoor-grade coating (80+ microns thickness). UV-protected to prevent fading. 500+ hours salt spray test resistance. Moisture and humidity resistant.',
-          '<strong>Material Selection:</strong> Galvanized steel for corrosion resistance. Marine-grade stainless steel options. Rust-resistant hardware. Treated wood components (if applicable).',
-          '<strong>Design Features:</strong> Drainage holes to prevent water pooling. Welded construction (no exposed fasteners). Smooth surfaces for easy cleaning. Stackable for storage.',
-          '<strong>Testing:</strong> Accelerated weathering tests. Salt spray corrosion testing. UV exposure testing. Temperature cycling tests.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Weather Resistant Outdoor Furniture'
-      },
-      {
-        heading: 'Product Range',
-        paragraphs: [
-          'Outdoor dining sets. Pool lounge furniture. Garden and patio furniture. Rooftop bar furniture. Resort and hotel outdoor furniture. Commercial outdoor seating.',
-          'Suitable for: Beachfront resorts. Poolside areas. Garden restaurants. Rooftop bars. Outdoor cafes. Public spaces.'
-        ]
-      },
-      {
-        heading: 'Climate Performance',
-        paragraphs: [
-          'Tested for tropical climates: High temperature resistance (up to 60°C). High humidity (90%+ RH). Saltwater exposure (coastal areas). Intense UV radiation. Heavy rainfall.',
-          'Estimated lifespan: 5-8 years with minimal maintenance in tropical outdoor environments. 8-12 years in temperate climates.'
-        ]
-      },
-      {
-        heading: 'Export and Pricing',
-        paragraphs: [
-          'FOB pricing examples (outdoor-grade finish): Outdoor dining chair: USD 45-75 per unit. Outdoor dining table: USD 120-180 per unit. Pool lounge chair: USD 80-130 per unit. Bar set (1 table + 2 stools): USD 200-300 per set.',
-          'Minimum order: 50-100 pieces or 1 container. Lead time: 4-6 weeks production. Volume discounts available.',
-          'Contact us for weather-resistant outdoor furniture: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'furniture-factory-bekasi-indonesia-export-international-buyers',
-    sections: [
-      {
-        paragraphs: [
-          'Our modern furniture factory in Bekasi, Indonesia, serves international buyers seeking reliable manufacturing partnership for commercial furniture export. With 10,000+ sqm production facility and 25 years of experience, we deliver quality furniture with competitive pricing and on-time delivery.',
-          'Bekasi is Indonesia\'s industrial center, strategically located 30 minutes from Jakarta port and international airport. This location advantage means efficient logistics, lower operational costs, and faster export processing for our international clients.'
-        ]
-      },
-      {
-        heading: 'Factory Capabilities',
-        list: [
-          '<strong>Production Facility:</strong> 10,000+ sqm manufacturing space. Metal fabrication workshop. Woodworking section. In-house powder coating line. Assembly and QC area.',
-          '<strong>Production Capacity:</strong> 5,000-8,000 furniture pieces monthly. Multiple product lines. Scalable for large projects. Rush production available.',
-          '<strong>Equipment:</strong> CNC cutting machines. MIG/TIG welding stations. Powder coating booth (outdoor-grade). Woodworking machinery. Modern tools and equipment.',
-          '<strong>Workforce:</strong> 50+ skilled workers. Experienced supervisors. English-speaking export team. Quality control specialists.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Factory in Bekasi Indonesia'
-      },
-      {
-        heading: 'Why Choose Our Factory?',
-        paragraphs: [
-          'Direct manufacturer—no trading company markup. Factory-direct pricing. Transparent production process. Quality control at source. Custom design capability. Flexible MOQ. English communication. Reliable delivery schedule.'
-        ]
-      },
-      {
-        heading: 'Factory Visit Welcome',
-        paragraphs: [
-          'We welcome factory visits from international buyers: See production process firsthand. Meet our team. Inspect quality control systems. Review samples and materials. Discuss your project requirements.',
-          'Location: Jl. Raya Setu Cibitung, Bekasi, West Java, Indonesia. 30 minutes from Jakarta port. 45 minutes from airport. Easy access by car or taxi.',
-          'Schedule your visit: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'indonesian-furniture-exporter-fob-cif-pricing-international',
-    sections: [
-      {
-        paragraphs: [
-          'Understanding FOB and CIF pricing is essential for international furniture buyers. As an Indonesian furniture exporter, Mangala Living provides clear pricing structures for both FOB (Free on Board) and CIF (Cost, Insurance, Freight) terms, helping you calculate accurate landed costs.',
-          'We work transparently with international buyers, providing detailed cost breakdowns and helping you choose the most cost-effective shipping terms for your destination.'
-        ]
-      },
-      {
-        heading: 'FOB vs CIF: What\'s the Difference?',
-        paragraphs: [
-          '<strong>FOB (Free on Board) Indonesia:</strong> Our responsibility: Manufacturing, Quality control, Professional packing, Delivery to Indonesian port, Export documentation, Container loading. Your responsibility: Ocean freight from Indonesia, Marine insurance, Destination port charges, Import customs, Inland transport.',
-          '<strong>CIF (Cost, Insurance, Freight) Destination Port:</strong> Our responsibility: All FOB services PLUS, Ocean freight to your destination port, Marine insurance. Your responsibility: Destination port charges, Import customs and duties, Inland transport from port to your location.',
-          '<strong>Which to Choose?</strong> FOB: Choose if you have preferred freight forwarder or can get better shipping rates. More control over shipping arrangements. Suitable for experienced importers. CIF: Choose for convenience and predictable costs. We handle shipping arrangements. Good for first-time importers.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
-        imageAlt: 'FOB CIF Pricing for Furniture Export'
-      },
-      {
-        heading: 'Sample Pricing Calculation',
-        paragraphs: [
-          '<strong>Example: 500 Metal Dining Chairs</strong> FOB Bekasi/Jakarta: Unit price: USD 38. Total FOB: USD 19,000. Add: Ocean freight to USA West Coast: USD 2,500-3,500. Marine insurance (1%): USD 215. Total CIF price: USD 21,715-22,715. Landed cost per chair: USD 43-45.',
-          '<strong>Additional Costs at Destination:</strong> Port charges: USD 200-500. Customs clearance: USD 150-300. Import duties (varies by country): 0-15%. Inland transport: Varies by distance. Total landed cost typically 15-25% above CIF price.'
-        ]
-      },
-      {
-        heading: 'Shipping Destinations and Rates',
-        paragraphs: [
-          '<strong>Typical Ocean Freight Rates (40ft Container from Indonesia):</strong> USA West Coast: USD 2,500-3,500 (18-25 days). USA East Coast: USD 3,500-4,500 (30-35 days). Europe (Rotterdam, Hamburg): USD 2,800-3,800 (25-30 days). Australia: USD 1,800-2,500 (12-15 days). Middle East: USD 2,000-3,000 (15-20 days). Singapore/Malaysia: USD 800-1,200 (3-5 days).',
-          'Note: Shipping rates fluctuate based on season, fuel prices, and market conditions. Request current rates for accurate quotation.'
-        ]
-      },
-      {
-        heading: 'Payment Terms',
-        paragraphs: [
-          'Standard terms: 30% deposit upon order confirmation. 70% balance before shipment. Payment methods: Wire transfer (T/T). Letter of Credit (LC) for established clients. All banking fees borne by respective parties.',
-          'For FOB and CIF quotations: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com. Provide: Product details, Quantity, Destination port, Preferred pricing term (FOB or CIF)'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'commercial-furniture-supplier-indonesia-export-documentation',
-    sections: [
-      {
-        paragraphs: [
-          'Proper export documentation is critical for smooth customs clearance and successful international furniture shipments. As an experienced commercial furniture supplier in Indonesia, Mangala Living handles complete export documentation, ensuring your furniture order clears customs efficiently.',
-          'We understand that documentation errors can cause delays, additional costs, and frustration. Our export team is experienced in preparing accurate, complete documentation for destinations worldwide.'
-        ]
-      },
-      {
-        heading: 'Required Export Documents',
-        list: [
-          '<strong>Commercial Invoice:</strong> Detailed description of goods. Unit prices and total value. Currency and payment terms. Shipping information. Exporter and importer details.',
-          '<strong>Packing List:</strong> Item-by-item breakdown. Quantities and dimensions. Weight (gross and net). Packing method. Marks and numbers.',
-          '<strong>Certificate of Origin (CO):</strong> Form E for ASEAN countries (preferential tariff). Standard CO for other countries. Issued by Indonesian Trade Ministry. Original copy for customs.',
-          '<strong>Bill of Lading (B/L):</strong> Issued by shipping line. Proof of shipment. Required for cargo release. Original for consignee.',
-          '<strong>Additional Documents (if required):</strong> Phytosanitary certificate (for wood components). Fumigation certificate. Test reports. Insurance certificate (for CIF). Other destination-specific documents.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=1200&auto=format&fit=crop',
-        imageAlt: 'Export Documentation for Commercial Furniture'
-      },
-      {
-        heading: 'Documentation Process',
-        paragraphs: [
-          '<strong>Before Production:</strong> Confirm importer details for documents. Verify destination country requirements. Agree on product descriptions and HS codes.',
-          '<strong>After Production:</strong> Prepare commercial invoice and packing list. Apply for Certificate of Origin (2-3 days). Coordinate with shipping line for B/L. Arrange additional certificates if needed.',
-          '<strong>Shipment:</strong> Provide all documents to freight forwarder. Send scanned copies to buyer immediately. Express original documents to consignee. Track shipment and update buyer.'
-        ]
-      },
-      {
-        heading: 'Common Documentation Issues and Solutions',
-        paragraphs: [
-          '<strong>Issue: Incorrect HS codes.</strong> Solution: We verify correct codes for your destination country. Consult with customs broker if needed.',
-          '<strong>Issue: Missing or incomplete packing list.</strong> Solution: Our detailed packing list includes all required information. Photos of packed goods provided.',
-          '<strong>Issue: Certificate of Origin delays.</strong> Solution: We apply for CO immediately after production. Rush processing available if needed.',
-          '<strong>Issue: Description mismatch.</strong> Solution: Product descriptions consistent across all documents. Match your purchase order exactly.'
-        ]
-      },
-      {
-        heading: 'Customs Clearance Support',
-        paragraphs: [
-          'While we cannot handle import customs in your country, we provide: Accurate documentation for smooth clearance. Product information for your customs broker. Support via email/WhatsApp during clearance. Past export experience to your country.',
-          'Tips for smooth customs clearance: Work with experienced customs broker. Provide all documents promptly. Declare correct product value. Check import regulations for your country. Factor customs time into delivery planning.'
-        ]
-      },
-      {
-        heading: 'Contact for Export Documentation',
-        paragraphs: [
-          'Questions about export documentation? Our export team is ready to help: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com. We ensure complete, accurate documentation for every export order.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'indonesia-metal-furniture-factory-custom-design-export',
-    sections: [
-      {
-        paragraphs: [
-          'Our metal furniture factory in Indonesia specializes in custom design manufacturing for export. Whether you have detailed technical drawings or just a concept sketch, we bring your furniture designs to life with precision manufacturing and quality materials.',
-          'Custom design furniture allows you to differentiate your brand, optimize for your specific space requirements, and create unique pieces that perfectly match your vision. Our experienced design and production team makes custom manufacturing accessible and affordable.'
-        ]
-      },
-      {
-        heading: 'Custom Design Services',
-        list: [
-          '<strong>Design Consultation:</strong> Understand your requirements and concept. Review reference images and inspiration. Discuss materials, finishes, and budget. Provide expert recommendations.',
-          '<strong>Technical Design:</strong> CAD drawings and 3D models. Engineering for structural integrity. Material specifications. Manufacturing method planning.',
-          '<strong>Prototyping:</strong> Sample production based on approved design. Quality and functionality testing. Design refinement if needed. Photo documentation.',
-          '<strong>Production:</strong> Bulk manufacturing to approved specifications. Quality control throughout production. Consistent quality across all units. Professional packing for export.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Custom Metal Furniture Design and Manufacturing'
-      },
-      {
-        heading: 'Custom Design Capabilities',
-        paragraphs: [
-          'Material options: MS (Mild Steel), Stainless steel (SS304, SS316), Aluminum, Galvanized steel. Fabrication techniques: Laser/plasma cutting, CNC bending, MIG/TIG welding, Metal forming, Assembly. Finishing options: Powder coating (all RAL colors), Electroplating (chrome, brass, copper), Brushed or polished finish, Industrial raw steel with clear coat.'
-        ]
-      },
-      {
-        heading: 'Custom Design Process',
-        paragraphs: [
-          '<strong>Step 1 - Inquiry & Consultation (Week 1):</strong> Submit your design concept or drawings. Initial consultation to clarify requirements. Discuss materials, finishes, and budget. Receive preliminary feedback and recommendations.',
-          '<strong>Step 2 - Design Development (Week 2-3):</strong> Our team creates CAD drawings and 3D renderings. Engineering review for manufacturability. Material and cost optimization. Submit for your approval.',
-          '<strong>Step 3 - Sampling (Week 4-6):</strong> Sample production based on approved design. Quality inspection and testing. Photos sent for approval. Physical sample shipped if required. Design modifications if needed.',
-          '<strong>Step 4 - Bulk Production (Week 7-12):</strong> Production begins upon sample approval and deposit. Weekly progress updates. Quality control checkpoints. Pre-shipment inspection.',
-          '<strong>Step 5 - Export (Week 13):</strong> Professional packing. Container loading. Complete documentation. Shipment to your destination.'
-        ]
-      },
-      {
-        heading: 'Custom Design Pricing',
-        paragraphs: [
-          'Custom design factors: Design complexity and engineering requirements. Material type and quantity. Finishing requirements. Order volume (MOQ typically 50-100 units). Timeline (rush orders incur premium).',
-          'Design fees: Simple customization (size, color changes): No design fee. Moderate customization (design modifications): USD 200-500 (refundable upon order). Complex custom design (new product development): USD 500-1,500 (partially refundable).',
-          'Contact our design team: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'wholesale-restaurant-furniture-indonesia-bulk-order-export',
-    sections: [
-      {
-        paragraphs: [
-          'Mangala Living offers wholesale restaurant furniture from Indonesia with special bulk order pricing for international buyers. Perfect for restaurant chains, franchises, hospitality groups, and furniture distributors seeking cost-effective solutions without compromising quality.',
-          'Bulk orders benefit from economies of scale: lower per-unit manufacturing costs, optimized shipping, streamlined production scheduling, and dedicated project management. We handle large orders efficiently with consistent quality across all pieces.'
-        ]
-      },
-      {
-        heading: 'Wholesale Pricing Tiers',
-        list: [
-          '<strong>Small Wholesale (100-300 units):</strong> 15-20% discount from retail pricing. 1-2 containers. Good for growing chains. Flexible product mix.',
-          '<strong>Medium Wholesale (300-1,000 units):</strong> 25-30% discount from retail pricing. 3-8 containers. Multiple locations or complete restaurant packages. Priority production scheduling.',
-          '<strong>Large Wholesale (1,000+ units):</strong> 35-45% discount from retail pricing. 10+ containers. Restaurant chains and franchises. Custom design and private label available. Dedicated account manager.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
-        imageAlt: 'Wholesale Restaurant Furniture Bulk Orders'
-      },
-      {
-        heading: 'Bulk Order Advantages',
-        paragraphs: [
-          'Lower per-unit cost through volume discount. Consistent quality across all locations. Single source for entire furniture package. Streamlined logistics and shipping. Flexible payment terms for large orders. Priority customer service. Stock planning for future locations.'
-        ]
-      },
-      {
-        heading: 'Product Range',
-        paragraphs: [
-          'Complete restaurant furniture packages: Dining tables (all sizes). Dining chairs. Bar stools and bar tables. Booth seating systems. Outdoor furniture. Storage and display. Custom pieces.',
-          'Also available: Hotel furniture. Cafe furniture. Retail furniture. Office furniture. Outdoor commercial furniture.'
-        ]
-      },
-      {
-        heading: 'Bulk Order Process',
-        paragraphs: [
-          '<strong>Step 1 - Requirement Analysis:</strong> Discuss your complete furniture needs. Floor plans and quantity requirements. Budget and timeline. Delivery schedule (if phased).',
-          '<strong>Step 2 - Wholesale Quotation:</strong> Detailed pricing for bulk order. Volume discount applied. Payment terms proposal. Production and delivery timeline.',
-          '<strong>Step 3 - Sample Approval:</strong> Sample production of key items. Quality verification. Design approval.',
-          '<strong>Step 4 - Bulk Production:</strong> Phased production for large orders. Regular progress updates. Quality control throughout. Flexible delivery schedule.',
-          '<strong>Step 5 - Delivery:</strong> Container optimization for cost efficiency. Complete export documentation. Coordination for multiple deliveries.'
-        ]
-      },
-      {
-        heading: 'For Restaurant Chains',
-        paragraphs: [
-          'Special services for chains: Standardized furniture for brand consistency. Stock program for expansion. Rush production for new openings. Private label and branding. Design consultation for new concepts.',
-          'Contact wholesale team: WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com. Provide: Number of locations, Furniture quantities, Target delivery dates, Budget range'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'indonesian-furniture-manufacturer-sustainable-export-quality',
-    sections: [
-      {
-        paragraphs: [
-          'Mangala Living is committed to sustainable furniture manufacturing practices while maintaining export quality standards. As environmental responsibility becomes increasingly important to international buyers, we integrate eco-friendly practices throughout our production process.',
-          'Sustainable manufacturing doesn\'t mean compromising on quality or cost-effectiveness. Our approach combines environmental responsibility with the durability, aesthetics, and competitive pricing that international buyers expect from Indonesian manufacturers.'
-        ]
-      },
-      {
-        heading: 'Sustainable Manufacturing Practices',
-        list: [
-          '<strong>Material Sourcing:</strong> FSC-certified wood from sustainable forests. Recycled steel content in metal components. Water-based finishes and low-VOC options. Recyclable packaging materials. Responsible supplier selection.',
-          '<strong>Production Efficiency:</strong> Optimized cutting to minimize material waste. Scrap metal recycling program. Energy-efficient equipment. Water recycling in production processes. Waste reduction initiatives.',
-          '<strong>Finishing:</strong> Powder coating (no VOC emissions). Water-based wood finishes available. Non-toxic materials. Safe for indoor use. Environmentally friendly packaging.',
-          '<strong>Durability Focus:</strong> Long-lasting furniture reduces replacement needs. Quality construction for extended lifespan. Repair-friendly designs. Timeless aesthetics (not fast furniture).'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Sustainable Furniture Manufacturing Indonesia'
-      },
-      {
-        heading: 'Environmental Certifications',
-        paragraphs: [
-          'Available certifications for export: FSC Chain of Custody (for wood products). ISO 14001 Environmental Management (in progress). SVLK (Indonesian legal wood certification). Low-VOC finish certification. Third-party sustainability audits available.'
-        ]
-      },
-      {
-        heading: 'Sustainable Product Range',
-        paragraphs: [
-          'All our products can be manufactured with sustainable options: Restaurant and cafe furniture. Hotel furniture packages. Office furniture. Residential furniture. Outdoor furniture.',
-          'Eco-friendly features available: FSC-certified wood components. Recycled steel frames. Water-based finishes. Recyclable packaging. Carbon footprint documentation.'
-        ]
-      },
-      {
-        heading: 'Corporate Responsibility',
-        paragraphs: [
-          'Beyond materials and processes: Fair labor practices and safe working conditions. Local community engagement. Continuous improvement in sustainability. Transparent supply chain. Employee training on environmental practices.'
-        ]
-      },
-      {
-        heading: 'Sustainability and Export',
-        paragraphs: [
-          'Meeting international requirements: EU timber regulations compliance. US Lacey Act compliance. CARB (California Air Resources Board) compliant finishes. Documentation for green building certifications. Sustainability reporting for corporate buyers.',
-          'Pricing: Sustainable options typically add 5-15% to standard pricing. Long-term cost savings through durability. Enhanced brand value for eco-conscious buyers. Attractive to environmentally responsible end-users.'
-        ]
-      },
-      {
-        heading: 'Contact for Sustainable Furniture',
-        paragraphs: [
-          'Interested in sustainable furniture export? WhatsApp: +62 888-0114-6881 | Email: export@mangala-living.com. Request: Product details with sustainability requirements, Required certifications, Quantity and timeline'
-        ]
-      }
-    ]
-  },
-  // 30 NEW SEO ARTICLES CONTENT - PATIO & OUTDOOR FURNITURE
-  // INDONESIAN ARTICLES CONTENT (15)
-  {
-    slug: 'furniture-outdoor-industrial-beli-bekasi-jakarta',
-    sections: [
-      {
-        paragraphs: [
-          'Furniture outdoor industrial menjadi pilihan utama untuk cafe, restoran, dan area patio yang membutuhkan furniture tahan cuaca dengan estetika modern. Di Bekasi, Mangala Living menyediakan furniture outdoor industrial berkualitas tinggi dengan harga kompetitif.',
-          'Workshop kami di Bekasi melayani area Jakarta dan sekitarnya dengan layanan lengkap mulai dari konsultasi desain, produksi custom, hingga instalasi di lokasi. Dengan pengalaman 25 tahun sejak 1999, kami telah menyelesaikan 1000+ project furniture industrial untuk berbagai bisnis F&B.'
-        ]
-      },
-      {
-        heading: 'Mengapa Pilih Furniture Outdoor Industrial?',
-        list: [
-          '<strong>Tahan Cuaca:</strong> Finishing powder coating premium anti-karat, tahan hujan, panas matahari, dan kelembaban tinggi. Cocok untuk cuaca tropis Indonesia.',
-          '<strong>Konstruksi Kuat:</strong> Material besi hollow grade A dengan ketebalan optimal untuk menahan beban berat dan penggunaan intensif di area commercial.',
-          '<strong>Desain Modern:</strong> Gaya industrial minimalis yang timeless, mudah dipadukan dengan berbagai konsep interior cafe dan restoran.',
-          '<strong>Durable:</strong> Umur pakai panjang hingga 5-10 tahun dengan perawatan minimal, lebih hemat dibanding furniture kayu outdoor.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Outdoor Industrial Bekasi Jakarta'
-      },
-      {
-        heading: 'Produk Furniture Outdoor Industrial Kami',
-        paragraphs: [
-          'Set Meja Patio: Meja outdoor dengan frame besi dan top kayu solid atau HPL tahan cuaca. Ukuran custom sesuai kebutuhan.',
-          'Kursi Outdoor: Kursi industrial dengan konstruksi kuat, nyaman untuk duduk lama, dan mudah ditumpuk untuk penyimpanan.',
-          'Bar Set Outdoor: Meja bar dan barstool untuk area outdoor cafe dengan tinggi standar bar (110cm) atau counter (90cm).',
-          'Lounge Set: Sofa outdoor dan coffee table untuk area santai dengan bantal tahan air dan rangka besi powder coating.'
-        ]
-      },
-      {
-        heading: 'Layanan untuk Jakarta dan Sekitarnya',
-        paragraphs: [
-          'Workshop kami di Bekasi strategis untuk melayani area Jakarta Timur, Jakarta Selatan, Jakarta Pusat, dan sekitarnya. Layanan yang kami sediakan:',
-          '• Survey gratis untuk area Jakarta (dengan appointment)',
-          '• Konsultasi desain custom sesuai konsep cafe/restoran Anda',
-          '• Produksi di workshop Bekasi dengan kualitas export',
-          '• Delivery dan instalasi untuk area Jakarta dan Bekasi',
-          '• After-sales service dan garansi konstruksi 2 tahun'
-        ]
-      },
-      {
-        heading: 'Harga Furniture Outdoor Industrial',
-        paragraphs: [
-          'Harga furniture outdoor industrial mulai dari:',
-          '• Set meja + 2 kursi: Rp 2.5-4 juta (tergantung ukuran dan material)',
-          '• Bar set (meja + 2 barstool): Rp 3-5 juta',
-          '• Lounge set (sofa + coffee table): Rp 5-8 juta',
-          'Volume discount tersedia untuk order 10 set atau lebih. Harga dapat berubah sesuai kompleksitas desain dan material yang dipilih.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'patio-furniture-industrial-custom-bekasi',
-    sections: [
-      {
-        paragraphs: [
-          'Patio furniture industrial custom di Bekasi menjadi solusi tepat untuk area outdoor cafe dan restoran yang membutuhkan furniture unik sesuai konsep bisnis. Workshop Bekasi Mangala Living menyediakan layanan custom desain dan produksi patio furniture dengan kualitas premium.',
-          'Custom patio furniture memungkinkan Anda menciptakan furniture yang sesuai dengan brand identity, ukuran area, dan kebutuhan fungsional cafe atau restoran Anda. Kami bekerja sama dengan Anda dari konsep hingga instalasi.'
-        ]
-      },
-      {
-        heading: 'Keunggulan Custom Patio Furniture',
-        list: [
-          '<strong>Desain Khusus:</strong> Furniture dibuat sesuai konsep dan kebutuhan spesifik cafe/restoran Anda, tidak ada yang sama.',
-          '<strong>Ukuran Optimal:</strong> Disesuaikan dengan luas area patio dan kapasitas yang diinginkan untuk maximize revenue.',
-          '<strong>Material Pilihan:</strong> Pilih kombinasi material sesuai budget dan estetika: besi + kayu, besi + HPL, atau full besi.',
-          '<strong>Brand Identity:</strong> Furniture dapat disesuaikan dengan warna brand, logo, atau elemen desain khusus untuk brand reinforcement.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Custom Patio Furniture Industrial Bekasi'
-      },
-      {
-        heading: 'Proses Custom Patio Furniture',
-        paragraphs: [
-          '1. Konsultasi: Diskusi kebutuhan, konsep, budget, dan timeline. Survey lokasi untuk ukuran dan kondisi area.',
-          '2. Design: Tim kami membuat desain 3D dan quotation detail dengan spesifikasi material, ukuran, dan harga.',
-          '3. Approval: Review desain dan quotation, revisi jika diperlukan hingga sesuai dengan ekspektasi.',
-          '4. Produksi: Setelah DP 50%, produksi dimulai di workshop Bekasi dengan quality control di setiap tahap.',
-          '5. Delivery & Instalasi: Furniture siap di-deliver dan di-install di lokasi dengan tim profesional kami.'
-        ]
-      },
-      {
-        heading: 'Harga Custom Patio Furniture Bekasi',
-        paragraphs: [
-          'Harga custom patio furniture bervariasi tergantung:',
-          '• Kompleksitas desain dan ukuran',
-          '• Material yang dipilih (besi hollow, kayu solid, HPL, dll)',
-          '• Finishing (powder coating standard vs premium, warna custom)',
-          '• Volume order (semakin banyak semakin ekonomis)',
-          'Range harga: Rp 2.5-8 juta per set (meja + 2 kursi). Konsultasi gratis untuk mendapatkan quotation detail sesuai kebutuhan Anda.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'beli-heavy-duty-commercial-outdoor-furniture-bekasi',
-    sections: [
-      {
-        paragraphs: [
-          'Heavy duty commercial outdoor furniture adalah investasi jangka panjang untuk cafe, restoran, dan hotel yang membutuhkan furniture tahan lama untuk penggunaan intensif. Di Bekasi, Mangala Living memproduksi heavy duty outdoor furniture dengan standar kualitas export.',
-          'Furniture heavy duty dirancang khusus untuk penggunaan commercial dengan konstruksi ekstra kuat, material premium, dan finishing yang tahan terhadap cuaca ekstrem dan penggunaan berat.'
-        ]
-      },
-      {
-        heading: 'Karakteristik Heavy Duty Commercial Outdoor Furniture',
-        list: [
-          '<strong>Konstruksi Ekstra Kuat:</strong> Besi hollow dengan ketebalan lebih besar (2-3mm), sambungan welding yang solid, dan reinforcement di titik-titik beban.',
-          '<strong>Material Premium:</strong> Besi hollow grade A dengan anti-rust treatment, kayu solid tebal untuk top table, dan hardware berkualitas.',
-          '<strong>Finishing Premium:</strong> Powder coating 2-3 layer dengan priming anti-karat, UV protection, dan weather-proof coating.',
-          '<strong>Durability:</strong> Umur pakai 7-10 tahun bahkan lebih dengan perawatan minimal, jauh lebih tahan lama dibanding furniture standard.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Heavy Duty Commercial Outdoor Furniture Bekasi'
-      },
-      {
-        heading: 'Produk Heavy Duty Outdoor Furniture',
-        paragraphs: [
-          'Dining Set Heavy Duty: Meja dan kursi outdoor dengan konstruksi ekstra kuat untuk restaurant dan cafe dengan traffic tinggi.',
-          'Bar Set Commercial: Bar table dan barstool heavy duty untuk bar outdoor yang tahan terhadap penggunaan intensif.',
-          'Lounge Furniture: Sofa dan coffee table outdoor dengan frame besi tebal dan bantal commercial grade tahan air.',
-          'Bench & Table Set: Bench panjang dan table set untuk area outdoor yang membutuhkan kapasitas besar.'
-        ]
-      },
-      {
-        heading: 'Mengapa Beli di Bekasi?',
-        paragraphs: [
-          'Workshop Lokal: Produksi langsung di Bekasi, Anda bisa visit workshop untuk melihat proses produksi dan quality control.',
-          'Harga Kompetitif: Factory direct pricing tanpa middleman, harga lebih ekonomis dengan kualitas premium.',
-          'Custom Service: Bisa custom desain, ukuran, dan finishing sesuai kebutuhan spesifik bisnis Anda.',
-          'Quick Response: Lokasi dekat memudahkan komunikasi, survey, dan instalasi lebih cepat dan efisien.',
-          'Garansi & Support: Garansi konstruksi 2 tahun dan after-sales service responsif untuk maintenance dan repair.'
-        ]
-      },
-      {
-        heading: 'Harga Heavy Duty Outdoor Furniture',
-        paragraphs: [
-          'Harga heavy duty commercial outdoor furniture mulai dari:',
-          '• Set meja + 2 kursi heavy duty: Rp 3.5-6 juta',
-          '• Bar set heavy duty: Rp 4-7 juta',
-          '• Lounge set heavy duty: Rp 6-10 juta',
-          'Harga lebih tinggi dibanding standard karena material dan konstruksi premium, namun memberikan ROI yang lebih baik dalam jangka panjang.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'custom-patio-furniture-besi-industrial-jakarta',
-    sections: [
-      {
-        paragraphs: [
-          'Jasa custom patio furniture besi industrial untuk Jakarta dari workshop Bekasi Mangala Living. Kami membantu mewujudkan konsep patio cafe atau restoran Anda dengan furniture custom yang unik dan fungsional.',
-          'Custom patio furniture memungkinkan Anda memiliki furniture yang sesuai dengan brand identity, ukuran area, dan kebutuhan operasional. Kami melayani area Jakarta dengan layanan survey, desain, produksi, dan instalasi.'
-        ]
-      },
-      {
-        heading: 'Layanan Custom Patio Furniture Jakarta',
-        list: [
-          '<strong>Design Consultation:</strong> Konsultasi gratis untuk memahami konsep, kebutuhan, dan budget. Tim kami akan memberikan rekomendasi desain yang optimal.',
-          '<strong>3D Visualization:</strong> Desain 3D untuk preview sebelum produksi, memastikan furniture sesuai dengan ekspektasi dan konsep.',
-          '<strong>Material Selection:</strong> Bimbingan memilih material yang tepat: besi hollow, kayu solid, HPL, atau kombinasi sesuai budget dan estetika.',
-          '<strong>Production:</strong> Produksi di workshop Bekasi dengan quality control ketat di setiap tahap untuk memastikan kualitas export.',
-          '<strong>Installation:</strong> Tim instalasi profesional untuk memastikan furniture terpasang dengan benar dan aman di lokasi Jakarta Anda.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Custom Patio Furniture Besi Industrial Jakarta'
-      },
-      {
-        heading: 'Konsep Patio Furniture yang Populer',
-        paragraphs: [
-          'Industrial Modern: Kombinasi besi hitam matte dengan kayu natural atau dark wood, minimalis dan timeless.',
-          'Rustic Industrial: Besi dengan tekstur kasar, kayu reclaimed, dan finishing yang memberikan kesan vintage namun tetap modern.',
-          'Minimalist Industrial: Desain clean dengan garis lurus, warna monochrome (black, white, grey), dan detail minimal.',
-          'Tropical Industrial: Kombinasi besi dengan kayu teak atau rattan untuk memberikan kesan tropis namun tetap industrial.'
-        ]
-      },
-      {
-        heading: 'Area Coverage Jakarta',
-        paragraphs: [
-          'Kami melayani seluruh area Jakarta:',
-          '• Jakarta Pusat, Jakarta Selatan, Jakarta Utara, Jakarta Barat, Jakarta Timur',
-          '• Area sekitarnya: Tangerang, Depok, Bekasi, Cikarang',
-          'Survey gratis untuk area Jakarta dengan appointment. Delivery dan instalasi termasuk dalam paket service kami.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'cafe-patio-outdoor-furniture-industrial-bekasi',
-    sections: [
-      {
-        paragraphs: [
-          'Inspirasi desain cafe patio dengan outdoor furniture industrial dari workshop Bekasi. Patio area menjadi extension penting untuk cafe modern yang ingin maximize seating capacity dan memberikan pengalaman outdoor dining yang menyenangkan.',
-          'Furniture outdoor industrial untuk cafe patio harus memenuhi beberapa kriteria: tahan cuaca, nyaman untuk duduk lama, mudah dibersihkan, dan estetika yang menarik untuk Instagram.'
-        ]
-      },
-      {
-        heading: 'Tips Memilih Furniture Tahan Cuaca untuk Patio',
-        list: [
-          '<strong>Material Frame:</strong> Pilih besi hollow dengan finishing powder coating premium yang anti-karat dan tahan UV.',
-          '<strong>Top Table:</strong> Kayu solid dengan treatment water-resistant atau HPL outdoor grade yang tidak mudah lapuk.',
-          '<strong>Kursi:</strong> Frame besi dengan bantal tahan air atau tanpa bantal untuk kemudahan maintenance.',
-          '<strong>Finishing:</strong> Powder coating 2-3 layer dengan primer anti-karat untuk proteksi maksimal terhadap hujan dan panas.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
-        imageAlt: 'Cafe Patio Outdoor Furniture Industrial Bekasi'
-      },
-      {
-        heading: 'Gaya Industrial Modern untuk Cafe Patio',
-        paragraphs: [
-          'Gaya industrial modern sangat cocok untuk cafe patio karena memberikan kesan modern, clean, dan Instagram-worthy. Karakteristik gaya ini:',
-          '• Warna dominan: Black, grey, white dengan accent natural wood',
-          '• Bentuk: Geometris, minimalis, dengan garis lurus yang clean',
-          '• Material: Besi hitam matte + kayu natural atau dark wood',
-          '• Detail: Minimal, fokus pada bentuk dan proporsi yang baik',
-          '• Lighting: Kombinasi dengan industrial lighting untuk menciptakan ambiance yang cozy di malam hari'
-        ]
-      },
-      {
-        heading: 'Layout Optimal untuk Cafe Patio',
-        paragraphs: [
-          'Maximize Space: Gunakan meja berbentuk square atau rectangle yang lebih efisien dibanding round table.',
-          'Flexible Seating: Kombinasi meja 2-seater dan 4-seater untuk fleksibilitas mengakomodasi berbagai ukuran grup.',
-          'Bar Area: Pertimbangkan bar table di area tertentu untuk single diners dan memberikan variasi seating.',
-          'Walkway: Pastikan ada space cukup untuk waiters dan customer movement (minimal 90cm clearance).',
-          'Shade: Pertimbangkan pergola atau canopy untuk memberikan shade tanpa mengurangi estetika industrial.'
-        ]
-      },
-      {
-        heading: 'Produk Cafe Patio Furniture dari Bekasi',
-        paragraphs: [
-          'Workshop Bekasi kami memproduksi berbagai furniture cafe patio:',
-          '• Set meja + kursi outdoor (2-seater, 4-seater)',
-          '• Bar set outdoor (bar table + barstool)',
-          '• Bench dan table set untuk kapasitas besar',
-          '• Lounge set untuk area santai',
-          'Semua produk bisa custom ukuran, warna, dan finishing sesuai konsep cafe Anda.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'gaya-patio-industrial-furniture-outdoor-inspirasi',
-    sections: [
-      {
-        paragraphs: [
-          'Gaya patio industrial dengan furniture outdoor modern menjadi tren yang terus berkembang untuk cafe, restoran, dan area outdoor. Kombinasi material besi dan kayu menciptakan estetika yang kuat namun tetap hangat dan welcoming.',
-          'Gaya industrial untuk patio outdoor memungkinkan Anda menciptakan space yang modern, fungsional, dan Instagram-worthy. Furniture industrial outdoor cocok untuk berbagai konsep: dari modern minimalist hingga rustic industrial.'
-        ]
-      },
-      {
-        heading: 'Karakteristik Gaya Patio Industrial',
-        list: [
-          '<strong>Material Kombinasi:</strong> Besi (frame) + kayu (top table) adalah kombinasi klasik yang timeless dan tahan lama.',
-          '<strong>Warna Palette:</strong> Dominan dark (black, dark grey, charcoal) dengan accent natural wood atau warm tones.',
-          '<strong>Bentuk:</strong> Clean lines, geometric shapes, minimal ornamentation. Fokus pada proporsi dan fungsi.',
-          '<strong>Texture:</strong> Kontras antara smooth metal finish dan natural wood grain menciptakan visual interest.',
-          '<strong>Details:</strong> Exposed hardware, visible welding (pada rustic style), dan industrial lighting untuk complete the look.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Gaya Patio Industrial Furniture Outdoor'
-      },
-      {
-        heading: 'Inspirasi Desain Patio Industrial 2025',
-        paragraphs: [
-          'Modern Industrial Minimalist:',
-          '• Warna: Black frame + white atau light wood top',
-          '• Bentuk: Square tables, straight lines, minimal details',
-          '• Fitur: Stackable chairs, modular design',
-          '',
-          'Rustic Industrial:',
-          '• Warna: Dark grey frame + reclaimed wood atau dark wood',
-          '• Bentuk: Slightly organic shapes, mixed materials',
-          '• Fitur: Visible texture, industrial lighting, vintage accents',
-          '',
-          'Tropical Industrial:',
-          '• Warna: Black frame + teak wood atau rattan accents',
-          '• Bentuk: Combination of modern and organic',
-          '• Fitur: Plants integration, natural materials'
-        ]
-      },
-      {
-        heading: 'Kombinasi Material untuk Estetika Industrial',
-        paragraphs: [
-          'Besi + Kayu Natural: Kombinasi klasik yang timeless. Besi memberikan struktur kuat, kayu memberikan warmth.',
-          'Besi + Dark Wood: Lebih sophisticated dan modern. Cocok untuk upscale cafe dan restaurant.',
-          'Besi + HPL: Lebih ekonomis dan praktis untuk maintenance. HPL outdoor grade tahan cuaca.',
-          'Full Metal: Untuk ultra-modern look. Powder coating dengan warna matte atau glossy sesuai konsep.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'patio-jakarta-furniture-industrial-custom-area-outdoor',
-    sections: [
-      {
-        paragraphs: [
-          'Furniture industrial custom untuk patio Jakarta dari workshop Bekasi. Area outdoor cafe dan restoran di Jakarta membutuhkan furniture yang tidak hanya tahan cuaca tropis, tetapi juga sesuai dengan karakter urban dan estetika modern.',
-          'Workshop Bekasi kami melayani seluruh area Jakarta dengan layanan lengkap: survey lokasi, custom desain, produksi, delivery, dan instalasi. Dengan pengalaman 25 tahun, kami memahami kebutuhan furniture outdoor untuk bisnis F&B di Jakarta.'
-        ]
-      },
-      {
-        heading: 'Layanan untuk Area Jakarta',
-        list: [
-          '<strong>Survey Lokasi:</strong> Tim kami dapat visit lokasi di Jakarta untuk survey area, ukuran, dan kondisi untuk memberikan rekomendasi furniture yang optimal.',
-          '<strong>Custom Design:</strong> Desain furniture sesuai konsep cafe/restoran, ukuran area, dan kapasitas yang diinginkan.',
-          '<strong>Production:</strong> Produksi di workshop Bekasi dengan quality control ketat untuk memastikan kualitas export.',
-          '<strong>Delivery:</strong> Delivery ke lokasi Jakarta dengan packaging yang aman untuk melindungi furniture selama transport.',
-          '<strong>Installation:</strong> Instalasi profesional di lokasi untuk memastikan furniture terpasang dengan benar dan aman.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Patio Jakarta Furniture Industrial Custom'
-      },
-      {
-        heading: 'Kebutuhan Furniture Outdoor untuk Jakarta',
-        paragraphs: [
-          'Jakarta memiliki karakteristik cuaca tropis dengan hujan deras, panas terik, dan kelembaban tinggi. Furniture outdoor untuk Jakarta harus:',
-          '• Tahan hujan: Finishing powder coating premium anti-karat dan waterproof',
-          '• Tahan UV: Proteksi terhadap sinar matahari yang kuat untuk mencegah fading dan degradation',
-          '• Mudah maintenance: Design yang mudah dibersihkan dari debu dan polusi urban',
-          '• Strong construction: Tahan terhadap penggunaan intensif di area commercial yang ramai'
-        ]
-      },
-      {
-        heading: 'Area Coverage Jakarta',
-        paragraphs: [
-          'Kami melayani seluruh area Jakarta:',
-          '• Jakarta Pusat: Menteng, Thamrin, Sudirman, dll',
-          '• Jakarta Selatan: Kebayoran, Cilandak, Pondok Indah, dll',
-          '• Jakarta Utara: Kelapa Gading, Pluit, Ancol, dll',
-          '• Jakarta Barat: Kebon Jeruk, Puri, Grogol, dll',
-          '• Jakarta Timur: Cakung, Cibubur, Duren Sawit, dll',
-          'Survey gratis untuk area Jakarta dengan appointment. Delivery dan instalasi termasuk dalam paket layanan.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'patio-bekasi-furniture-outdoor-industrial-workshop-lokal',
-    sections: [
-      {
-        paragraphs: [
-          'Furniture outdoor industrial untuk patio Bekasi dari workshop lokal dengan pengalaman 25 tahun. Sebagai workshop lokal Bekasi, kami memahami kebutuhan furniture outdoor untuk cafe, restoran, dan area patio di area Bekasi dan sekitarnya.',
-          'Workshop lokal memiliki keunggulan dalam hal aksesibilitas, komunikasi yang lebih mudah, dan layanan yang lebih personal. Kami melayani custom desain dan produksi furniture outdoor industrial dengan kualitas premium.'
-        ]
-      },
-      {
-        heading: 'Keunggulan Workshop Lokal Bekasi',
-        list: [
-          '<strong>Lokasi Strategis:</strong> Workshop di Bekasi mudah diakses untuk survey, konsultasi, dan visit selama proses produksi.',
-          '<strong>Komunikasi Mudah:</strong> Komunikasi langsung tanpa barrier bahasa dan timezone, response lebih cepat.',
-          '<strong>Personal Service:</strong> Layanan lebih personal dengan attention to detail yang lebih baik.',
-          '<strong>Quick Response:</strong> Survey, revisi, dan instalasi bisa dilakukan lebih cepat karena lokasi dekat.',
-          '<strong>Local Support:</strong> After-sales service dan maintenance lebih mudah karena lokasi yang sama.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Patio Bekasi Furniture Outdoor Industrial Workshop Lokal'
-      },
-      {
-        heading: 'Layanan Workshop Lokal Bekasi',
-        paragraphs: [
-          'Custom Design: Desain furniture sesuai kebutuhan spesifik cafe/restoran di Bekasi dengan konsultasi langsung.',
-          'Production: Produksi di workshop Bekasi dengan quality control ketat dan bisa di-visit untuk melihat proses.',
-          'Material Selection: Bimbingan memilih material yang tepat sesuai budget dan kebutuhan, dengan akses langsung ke supplier lokal.',
-          'Installation: Tim instalasi lokal yang familiar dengan area Bekasi, memudahkan koordinasi dan eksekusi.',
-          'Maintenance: Layanan maintenance dan repair lebih mudah karena lokasi workshop yang sama.'
-        ]
-      },
-      {
-        heading: 'Area Bekasi yang Kami Layani',
-        paragraphs: [
-          'Workshop kami melayani seluruh area Bekasi:',
-          '• Bekasi Kota, Bekasi Selatan, Bekasi Utara, Bekasi Timur, Bekasi Barat',
-          '• Cikarang, Cibitung, Tambun, Karawang',
-          '• Area sekitarnya: Jakarta Timur, Depok',
-          'Survey gratis untuk area Bekasi. Delivery lokal lebih cepat dan efisien.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'inspirasi-furniture-outdoor-industrial-untuk-patio-cafe',
-    sections: [
-      {
-        paragraphs: [
-          'Inspirasi furniture outdoor industrial untuk patio cafe yang modern dan fungsional. Patio cafe membutuhkan furniture yang tidak hanya estetis, tetapi juga tahan cuaca, nyaman, dan mudah di-maintain.',
-          'Furniture outdoor industrial sangat cocok untuk patio cafe karena memberikan kesan modern, clean, dan Instagram-worthy. Kombinasi material besi dan kayu menciptakan estetika yang kuat namun tetap welcoming.'
-        ]
-      },
-      {
-        heading: 'Tips Memilih Furniture untuk Patio Cafe',
-        list: [
-          '<strong>Meja Patio:</strong> Pilih meja dengan frame besi kuat dan top kayu atau HPL tahan cuaca. Ukuran disesuaikan dengan space dan kapasitas.',
-          '<strong>Kursi Outdoor:</strong> Kursi dengan frame besi dan bantal tahan air atau tanpa bantal untuk kemudahan cleaning. Pilih yang nyaman untuk duduk lama.',
-          '<strong>Bar Set:</strong> Bar table dan barstool untuk variasi seating dan maximize space. Height standar 110cm untuk bar atau 90cm untuk counter.',
-          '<strong>Dekorasi:</strong> Tambahkan elemen industrial seperti metal shelving, industrial lighting, atau planters untuk complete the look.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
-        imageAlt: 'Inspirasi Furniture Outdoor Industrial Patio Cafe'
-      },
-      {
-        heading: 'Konsep Desain Patio Cafe Industrial',
-        paragraphs: [
-          'Modern Minimalist Industrial:',
-          '• Warna: Black, white, grey dengan accent natural wood',
-          '• Furniture: Clean lines, geometric shapes, minimal details',
-          '• Mood: Modern, clean, Instagram-worthy',
-          '',
-          'Rustic Industrial:',
-          '• Warna: Dark grey, brown dengan reclaimed wood',
-          '• Furniture: Mixed materials, visible texture, vintage accents',
-          '• Mood: Cozy, warm, authentic',
-          '',
-          'Tropical Industrial:',
-          '• Warna: Black frame dengan teak atau natural wood',
-          '• Furniture: Combination modern + natural elements',
-          '• Mood: Fresh, relaxed, tropical'
-        ]
-      },
-      {
-        heading: 'Layout Ideas untuk Patio Cafe',
-        paragraphs: [
-          'Zoning: Bagi area menjadi beberapa zone: dining area, bar area, lounge area untuk memberikan variasi experience.',
-          'Flexible Seating: Kombinasi 2-seater dan 4-seater tables untuk fleksibilitas mengakomodasi berbagai ukuran grup.',
-          'Bar Counter: Pertimbangkan bar counter untuk single diners dan memberikan focal point.',
-          'Walkway: Pastikan ada space cukup untuk waiters dan customer flow (minimal 90cm).',
-          'Shade Elements: Pergola, canopy, atau umbrellas untuk memberikan shade tanpa mengurangi estetika.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'cafe-patio-furniture-besi-industrial-murah-jakarta',
-    sections: [
-      {
-        paragraphs: [
-          'Cafe patio furniture besi industrial murah untuk Jakarta dari workshop Bekasi. Harga kompetitif tidak berarti mengorbankan kualitas - kami menawarkan furniture outdoor industrial berkualitas dengan harga yang terjangkau.',
-          'Workshop Bekasi kami memproduksi cafe patio furniture dengan sistem produksi efisien yang memungkinkan kami menawarkan harga lebih ekonomis tanpa mengurangi kualitas material dan finishing.'
-        ]
-      },
-      {
-        heading: 'Mengapa Harga Lebih Murah?',
-        list: [
-          '<strong>Factory Direct:</strong> Produksi langsung di workshop tanpa middleman, harga lebih kompetitif.',
-          '<strong>Efficient Production:</strong> Sistem produksi yang efisien dan terstandar untuk menekan cost tanpa mengurangi kualitas.',
-          '<strong>Local Material:</strong> Sourcing material lokal yang lebih ekonomis dengan kualitas yang sama.',
-          '<strong>Volume Production:</strong> Produksi dalam volume untuk standard items memberikan harga lebih baik.',
-          '<strong>No Showroom Cost:</strong> Workshop langsung tanpa showroom overhead, cost saving diteruskan ke customer.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Cafe Patio Furniture Besi Industrial Murah Jakarta'
-      },
-      {
-        heading: 'Produk Cafe Patio Furniture dengan Harga Kompetitif',
-        paragraphs: [
-          'Set Meja + 2 Kursi Standard: Rp 2.5-3.5 juta',
-          'Bar Set (Meja + 2 Barstool): Rp 3-4.5 juta',
-          'Lounge Set (Sofa + Coffee Table): Rp 5-7 juta',
-          'Bench + Table Set: Rp 4-6 juta',
-          'Harga dapat berubah sesuai material, ukuran, dan finishing yang dipilih. Volume discount untuk order 10 set atau lebih.'
-        ]
-      },
-      {
-        heading: 'Kualitas Tetap Premium',
-        paragraphs: [
-          'Meskipun harga lebih murah, kualitas tetap premium:',
-          '• Material: Besi hollow grade A dengan ketebalan optimal',
-          '• Finishing: Powder coating 2 layer dengan primer anti-karat',
-          '• Construction: Welding yang solid dan reinforcement di titik beban',
-          '• Garansi: Konstruksi 2 tahun dan finishing 1 tahun',
-          'Kami tidak mengorbankan kualitas untuk harga murah - kami efisien dalam proses, bukan dalam material.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'furniture-outdoor-tahan-hujan-industrial-bekasi',
-    sections: [
-      {
-        paragraphs: [
-          'Furniture outdoor tahan hujan industrial untuk area patio dari workshop Bekasi. Cuaca tropis Indonesia dengan hujan deras dan kelembaban tinggi membutuhkan furniture outdoor yang benar-benar tahan terhadap kondisi cuaca ekstrem.',
-          'Furniture outdoor industrial dengan finishing powder coating premium dirancang khusus untuk tahan terhadap hujan, panas matahari, dan kelembaban tinggi. Workshop Bekasi kami memproduksi furniture outdoor yang teruji untuk kondisi cuaca Indonesia.'
-        ]
-      },
-      {
-        heading: 'Teknologi Finishing Tahan Hujan',
-        list: [
-          '<strong>Powder Coating Premium:</strong> Finishing 2-3 layer dengan primer anti-karat, base coat, dan top coat untuk proteksi maksimal.',
-          '<strong>Anti-Rust Treatment:</strong> Pre-treatment sebelum powder coating untuk mencegah karat di level material.',
-          '<strong>UV Protection:</strong> Top coat dengan UV inhibitors untuk mencegah fading dan degradation akibat sinar matahari.',
-          '<strong>Weather-Proof Coating:</strong> Finishing yang waterproof dan tidak mudah terkelupas meskipun terpapar hujan terus-menerus.',
-          '<strong>Quality Control:</strong> Testing terhadap cuaca dan kelembaban untuk memastikan durability sebelum delivery.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Outdoor Tahan Hujan Industrial Bekasi'
-      },
-      {
-        heading: 'Material Tahan Hujan untuk Outdoor Furniture',
-        paragraphs: [
-          'Frame Besi: Besi hollow dengan anti-rust treatment dan powder coating premium. Tidak akan berkarat meskipun terpapar hujan.',
-          'Top Table: Kayu solid dengan treatment water-resistant atau HPL outdoor grade yang tidak mudah lapuk dan tahan air.',
-          'Hardware: Hardware stainless steel atau galvanized untuk mencegah karat pada baut dan sambungan.',
-          'Cushion (jika ada): Bantal dengan fabric outdoor grade yang tahan air dan cepat kering, atau pilih tanpa bantal untuk kemudahan maintenance.'
-        ]
-      },
-      {
-        heading: 'Garansi Kualitas untuk Furniture Tahan Hujan',
-        paragraphs: [
-          'Workshop Bekasi kami memberikan garansi:',
-          '• Konstruksi: 2 tahun garansi untuk frame dan struktur',
-          '• Finishing: 1 tahun garansi untuk powder coating (tidak mengelupas, tidak berkarat)',
-          '• Material: Garansi material untuk manufacturing defect',
-          'Dengan perawatan minimal (cleaning rutin), furniture outdoor kami dapat bertahan 5-10 tahun bahkan lebih di kondisi cuaca tropis Indonesia.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'custom-patio-set-besi-industrial-jakarta-bekasi',
-    sections: [
-      {
-        paragraphs: [
-          'Jasa custom patio set besi industrial untuk Jakarta dan Bekasi dari workshop lokal. Patio set custom memungkinkan Anda memiliki furniture yang sesuai dengan konsep, ukuran area, dan kebutuhan spesifik cafe atau restoran Anda.',
-          'Custom patio set biasanya terdiri dari meja, kursi, dan terkadang bar set atau lounge furniture yang dirancang sebagai satu set yang cohesive. Kami membantu mewujudkan konsep patio Anda dengan furniture custom berkualitas export.'
-        ]
-      },
-      {
-        heading: 'Komponen Patio Set Custom',
-        list: [
-          '<strong>Dining Set:</strong> Meja dining dengan berbagai ukuran (2-seater, 4-seater, 6-seater) dan kursi matching dengan jumlah yang disesuaikan.',
-          '<strong>Bar Set:</strong> Bar table dengan tinggi standar (110cm) atau counter height (90cm) dan barstool matching.',
-          '<strong>Lounge Set:</strong> Sofa outdoor, coffee table, dan side table untuk area santai.',
-          '<strong>Accessories:</strong> Planters, shelving, atau decorative elements untuk complete the set.',
-          '<strong>Lighting:</strong> Industrial lighting yang integrated dengan furniture untuk ambiance di malam hari.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Custom Patio Set Besi Industrial Jakarta Bekasi'
-      },
-      {
-        heading: 'Proses Custom Patio Set',
-        paragraphs: [
-          '1. Consultation: Diskusi kebutuhan, konsep, ukuran area, dan budget. Survey lokasi untuk measurement dan assessment.',
-          '2. Design: Desain 3D untuk preview patio set lengkap dengan semua komponen. Revisi hingga sesuai ekspektasi.',
-          '3. Quotation: Detail quotation dengan breakdown harga per komponen dan total package.',
-          '4. Production: Setelah DP 50%, produksi dimulai dengan quality control di setiap tahap.',
-          '5. Delivery & Installation: Delivery ke lokasi dan instalasi profesional untuk memastikan semua komponen terpasang dengan benar.'
-        ]
-      },
-      {
-        heading: 'Keunggulan Custom Patio Set',
-        paragraphs: [
-          'Cohesive Design: Semua komponen dirancang sebagai satu set yang cohesive dengan estetika yang konsisten.',
-          'Optimal Space Usage: Ukuran dan layout disesuaikan dengan area patio untuk maximize space efficiency.',
-          'Brand Consistency: Furniture dapat disesuaikan dengan brand identity, warna, atau elemen desain khusus.',
-          'Quality Control: Produksi di workshop dengan quality control ketat untuk memastikan semua komponen berkualitas sama.',
-          'One-Stop Solution: Semua furniture patio dari satu workshop, memudahkan koordinasi dan maintenance.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'gaya-industrial-modern-furniture-outdoor-patio',
-    sections: [
-      {
-        paragraphs: [
-          'Gaya industrial modern untuk furniture outdoor patio yang timeless dan Instagram-worthy. Gaya ini menggabungkan elemen industrial (besi, metal) dengan estetika modern minimalis yang clean dan sophisticated.',
-          'Furniture outdoor dengan gaya industrial modern sangat cocok untuk cafe, restoran, dan area outdoor modern. Kombinasi material besi dan kayu dengan warna palette yang netral menciptakan estetika yang kuat namun tetap welcoming.'
-        ]
-      },
-      {
-        heading: 'Karakteristik Gaya Industrial Modern',
-        list: [
-          '<strong>Clean Lines:</strong> Garis lurus yang clean, geometric shapes, minimal ornamentation. Fokus pada proporsi dan fungsi.',
-          '<strong>Color Palette:</strong> Dominan neutral: black, white, grey dengan accent natural wood atau warm tones.',
-          '<strong>Material Combination:</strong> Besi (frame) + kayu (top table) atau full metal dengan powder coating matte.',
-          '<strong>Minimal Details:</strong> Tidak ada detail yang berlebihan, fokus pada bentuk dan fungsi furniture.',
-          '<strong>Modern Aesthetic:</strong> Timeless design yang tidak cepat outdated, cocok untuk berbagai konsep modern.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Gaya Industrial Modern Furniture Outdoor Patio'
-      },
-      {
-        heading: 'Inspirasi Warna untuk Industrial Modern',
-        paragraphs: [
-          'Monochrome: Black frame + white top atau vice versa untuk ultra-modern look yang clean dan minimalis.',
-          'Natural: Black atau grey frame + natural wood top untuk memberikan warmth dan natural touch.',
-          'Dark Sophisticated: Charcoal atau dark grey frame + dark wood top untuk look yang lebih sophisticated.',
-          'Accent Colors: Frame hitam dengan accent color pada detail tertentu (misalnya kaki meja atau backrest kursi) untuk pop of color.'
-        ]
-      },
-      {
-        heading: 'Layout Ideas untuk Industrial Modern Patio',
-        paragraphs: [
-          'Grid Layout: Meja disusun dalam grid pattern untuk clean, organized look yang maximize space.',
-          'Mixed Seating: Kombinasi dining set dan bar set untuk variasi dan fleksibilitas.',
-          'Modular Design: Furniture modular yang bisa diatur ulang sesuai kebutuhan dan event.',
-          'Focal Point: Bar counter atau feature wall sebagai focal point dengan furniture surrounding.',
-          'Zoning: Bagi area menjadi beberapa zone dengan furniture yang berbeda untuk variasi experience.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'furniture-outdoor-commercial-heavy-duty-bekasi',
-    sections: [
-      {
-        paragraphs: [
-          'Furniture outdoor commercial heavy duty untuk cafe dan restoran dari workshop Bekasi. Heavy duty furniture dirancang khusus untuk penggunaan commercial yang intensif dengan konstruksi ekstra kuat dan material premium.',
-          'Furniture heavy duty berbeda dengan furniture standard karena dirancang untuk menahan beban berat, penggunaan intensif, dan kondisi cuaca ekstrem. Investasi yang lebih besar di awal memberikan ROI yang lebih baik dalam jangka panjang karena durability yang jauh lebih baik.'
-        ]
-      },
-      {
-        heading: 'Karakteristik Heavy Duty Commercial Furniture',
-        list: [
-          '<strong>Konstruksi Ekstra Kuat:</strong> Besi hollow dengan ketebalan lebih besar (2-3mm), sambungan welding yang solid, dan reinforcement di titik-titik beban kritis.',
-          '<strong>Material Premium:</strong> Besi hollow grade A dengan anti-rust treatment, kayu solid tebal untuk top table, dan hardware berkualitas tinggi.',
-          '<strong>Finishing Premium:</strong> Powder coating 2-3 layer dengan primer anti-karat, base coat, dan top coat dengan UV protection.',
-          '<strong>Durability:</strong> Umur pakai 7-10 tahun bahkan lebih dengan perawatan minimal, jauh lebih tahan lama dibanding furniture standard.',
-          '<strong>Weight Capacity:</strong> Designed untuk menahan beban lebih berat dan penggunaan yang lebih intensif.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Furniture Outdoor Commercial Heavy Duty Bekasi'
-      },
-      {
-        heading: 'Produk Heavy Duty Outdoor Furniture',
-        paragraphs: [
-          'Dining Set Heavy Duty: Meja dan kursi dengan konstruksi ekstra kuat untuk restaurant dan cafe dengan traffic tinggi. Frame besi tebal dengan reinforcement.',
-          'Bar Set Commercial: Bar table dan barstool heavy duty untuk bar outdoor yang tahan terhadap penggunaan intensif. Height standar untuk commercial use.',
-          'Bench & Table Set: Bench panjang dan table set untuk area outdoor yang membutuhkan kapasitas besar dengan konstruksi yang sangat kuat.',
-          'Lounge Furniture: Sofa dan coffee table dengan frame besi tebal dan bantal commercial grade yang tahan air dan mudah dibersihkan.'
-        ]
-      },
-      {
-        heading: 'Mengapa Investasi Heavy Duty?',
-        paragraphs: [
-          'Long-term ROI: Meskipun harga lebih tinggi, furniture heavy duty bertahan lebih lama sehingga cost per tahun lebih rendah.',
-          'Less Maintenance: Konstruksi kuat berarti less frequent repairs dan maintenance, saving time dan cost.',
-          'Professional Image: Furniture yang solid memberikan kesan professional dan premium untuk brand Anda.',
-          'Customer Comfort: Furniture yang kuat dan stabil memberikan comfort yang lebih baik untuk customers.',
-          'Warranty: Garansi konstruksi 2 tahun dan finishing 1 tahun untuk peace of mind.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'tips-memilih-patio-furniture-industrial-outdoor',
-    sections: [
-      {
-        paragraphs: [
-          'Tips memilih patio furniture industrial outdoor yang tepat untuk cafe, restoran, atau area outdoor. Memilih furniture outdoor yang tepat adalah investasi penting yang mempengaruhi estetika, functionality, dan long-term cost.',
-          'Panduan lengkap ini membantu Anda memilih patio furniture industrial yang sesuai dengan kebutuhan, budget, dan konsep bisnis Anda. Dari material hingga layout, semua aspek penting dipertimbangkan.'
-        ]
-      },
-      {
-        heading: 'Pertimbangan Material',
-        list: [
-          '<strong>Frame Material:</strong> Pilih besi hollow grade A dengan ketebalan minimal 1.5mm untuk durability. Ketebalan lebih besar untuk heavy duty use.',
-          '<strong>Top Table:</strong> Kayu solid dengan treatment water-resistant atau HPL outdoor grade. Pilih berdasarkan budget dan estetika.',
-          '<strong>Finishing:</strong> Powder coating premium 2-3 layer dengan primer anti-karat untuk proteksi maksimal. Matte finish lebih modern, glossy lebih mudah dibersihkan.',
-          '<strong>Hardware:</strong> Stainless steel atau galvanized hardware untuk mencegah karat pada sambungan dan baut.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Tips Memilih Patio Furniture Industrial Outdoor'
-      },
-      {
-        heading: 'Pertimbangan Ukuran dan Layout',
-        paragraphs: [
-          'Measure Area: Ukur area patio dengan teliti untuk menentukan ukuran dan jumlah furniture yang optimal.',
-          'Space Planning: Alokasikan space untuk walkway (minimal 90cm), customer movement, dan waiters path.',
-          'Seating Capacity: Tentukan target kapasitas dan pilih kombinasi 2-seater dan 4-seater tables untuk fleksibilitas.',
-          'Clearance: Pastikan ada clearance cukup untuk kursi (minimal 60cm dari meja) dan space untuk duduk/berdiri.',
-          'Flexibility: Pertimbangkan furniture yang bisa diatur ulang untuk event atau kebutuhan khusus.'
-        ]
-      },
-      {
-        heading: 'Pertimbangan Budget dan Kualitas',
-        paragraphs: [
-          'Budget Allocation: Alokasikan budget untuk furniture yang berkualitas - investasi di furniture yang tahan lama lebih hemat jangka panjang.',
-          'Quality vs Price: Harga murah tidak selalu berarti lebih baik. Investasi di furniture berkualitas memberikan ROI lebih baik.',
-          'Maintenance Cost: Pertimbangkan maintenance cost - furniture yang lebih mahal tapi mudah di-maintain bisa lebih hemat total cost.',
-          'Warranty: Pilih furniture dengan garansi yang jelas untuk konstruksi dan finishing.',
-          'Volume Discount: Untuk order besar, negosiasi volume discount untuk mendapatkan harga lebih baik.'
-        ]
-      },
-      {
-        heading: 'Tips Maintenance',
-        paragraphs: [
-          'Regular Cleaning: Bersihkan furniture secara rutin dengan air dan sabun lembut untuk menghilangkan debu dan kotoran.',
-          'Inspection: Lakukan inspection rutin untuk mendeteksi masalah early (karat, loose hardware, dll).',
-          'Protection: Pertimbangkan cover atau storage untuk furniture saat tidak digunakan dalam waktu lama.',
-          'Touch-up: Lakukan touch-up powder coating jika diperlukan untuk maintain appearance.',
-          'Professional Service: Untuk masalah besar, gunakan professional service untuk repair atau refinishing.'
-        ]
-      }
-    ]
-  },
-  // ENGLISH ARTICLES CONTENT (15)
-  {
-    slug: 'industrial-outdoor-furniture-indonesia-export-quality',
-    sections: [
-      {
-        paragraphs: [
-          'Premium industrial outdoor furniture from Indonesia with export quality standards. Indonesian manufacturers are becoming the preferred choice for international buyers seeking high-quality, weather-resistant outdoor furniture at competitive prices.',
-          'Our industrial outdoor furniture is designed for commercial use in cafes, restaurants, hotels, and resorts worldwide. With weather-resistant powder coating, heavy-duty construction, and international quality standards, our furniture is ready for export to global markets.'
-        ]
-      },
-      {
-        heading: 'Export Quality Standards',
-        list: [
-          '<strong>Material Quality:</strong> Grade A steel hollow with anti-rust treatment. Premium solid wood or outdoor-grade HPL for table tops. High-quality hardware for durability.',
-          '<strong>Finishing:</strong> Premium powder coating 2-3 layers with anti-rust primer, base coat, and UV-protected top coat. Weather-proof and fade-resistant.',
-          '<strong>Construction:</strong> Solid welding at all joints. Reinforcement at load-bearing points. Professional quality control at every production stage.',
-          '<strong>Durability:</strong> Designed to last 7-10 years or more with minimal maintenance. Suitable for tropical and humid climates worldwide.',
-          '<strong>Certification:</strong> Export-ready with necessary documentation. Quality assurance meets international standards.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Outdoor Furniture Indonesia Export Quality'
-      },
-      {
-        heading: 'Product Range',
-        paragraphs: [
-          'Dining Sets: Outdoor dining tables and chairs in various sizes (2-seater, 4-seater, 6-seater). Custom sizes available.',
-          'Bar Sets: Bar tables and barstools for outdoor bar areas. Standard bar height (110cm) or counter height (90cm) available.',
-          'Lounge Sets: Outdoor sofas, coffee tables, and side tables for relaxation areas.',
-          'Commercial Furniture: Heavy-duty furniture for high-traffic commercial spaces. Extra-strong construction for intensive use.'
-        ]
-      },
-      {
-        heading: 'Export Services',
-        paragraphs: [
-          'FOB Pricing: Competitive FOB prices from Indonesian port. We work with freight forwarders worldwide for competitive shipping rates.',
-          'Documentation: Complete export documentation including Certificate of Origin, Packing List, Commercial Invoice, and custom clearance assistance.',
-          'Quality Control: Pre-shipment inspection and quality assurance. Photos and documentation provided before shipping.',
-          'Packaging: Professional packaging to protect furniture during shipping. Suitable for container loading (20ft/40ft).',
-          'MOQ: Minimum order quantity typically 1 container (20ft or 40ft). Smaller orders available with additional handling fee.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'patio-furniture-manufacturer-indonesia-custom-export',
-    sections: [
-      {
-        paragraphs: [
-          'Custom patio furniture manufacturer in Indonesia specializing in export. We design and manufacture industrial-style outdoor furniture for cafes, restaurants, and hotels worldwide. Our custom service allows you to create unique furniture that matches your brand identity and specific requirements.',
-          'As an export manufacturer, we understand the importance of quality, timely delivery, and excellent communication. We work closely with international buyers to ensure their vision is realized with furniture that meets export quality standards.'
-        ]
-      },
-      {
-        heading: 'Custom Design Service',
-        list: [
-          '<strong>Design Consultation:</strong> Free consultation to understand your needs, concept, and requirements. Our design team works with you to create the perfect furniture.',
-          '<strong>3D Visualization:</strong> 3D design renderings for preview before production. Revisions until the design matches your expectations.',
-          '<strong>Material Selection:</strong> Guidance on selecting the right materials based on your budget, aesthetic preferences, and functional requirements.',
-          '<strong>Prototype:</strong> Prototype available for approval before mass production (for large orders).',
-          '<strong>Brand Integration:</strong> Furniture can be customized with your brand colors, logos, or design elements for brand consistency.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Custom Patio Furniture Manufacturer Indonesia Export'
-      },
-      {
-        heading: 'Manufacturing Capabilities',
-        paragraphs: [
-          'Production Facility: 10,000+ sqm production facility in Bekasi, Indonesia with modern equipment and experienced craftsmen.',
-          'Capacity: Large production capacity to handle bulk orders and meet tight deadlines. Flexible production scheduling.',
-          'Quality Control: Strict quality control at every stage of production. Quality inspection before shipment.',
-          'Experience: 25 years of experience since 1999. 1000+ completed projects for international and local clients.',
-          'Certifications: Export-ready with necessary certifications. Quality standards meet international requirements.'
-        ]
-      },
-      {
-        heading: 'Export Process',
-        paragraphs: [
-          '1. Inquiry: Send us your requirements, design, quantity, and timeline. We provide quotation within 24-48 hours.',
-          '2. Design & Approval: Design development and 3D visualization. Revisions until approval.',
-          '3. Production: After deposit (typically 30-50%), production begins with regular progress updates.',
-          '4. Quality Inspection: Pre-shipment inspection with photos and documentation provided for approval.',
-          '5. Shipping: Arrangement of shipping and export documentation. Delivery to your designated port.',
-          '6. Support: After-sales support and communication for any questions or concerns.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'buy-heavy-duty-commercial-outdoor-furniture-indonesia',
-    sections: [
-      {
-        paragraphs: [
-          'Buy heavy duty commercial outdoor furniture from Indonesian manufacturer. Perfect for cafes, restaurants, hotels, and resorts that require furniture built to withstand intensive commercial use and harsh weather conditions.',
-          'Heavy duty furniture is designed for high-traffic commercial spaces with extra-strong construction, premium materials, and weather-resistant finish. While the initial investment is higher, the long-term ROI is better due to superior durability and reduced maintenance costs.'
-        ]
-      },
-      {
-        heading: 'Why Heavy Duty Commercial Furniture?',
-        list: [
-          '<strong>Durability:</strong> Built to last 7-10 years or more with minimal maintenance. Superior construction withstands intensive use.',
-          '<strong>Cost Efficiency:</strong> Lower cost per year despite higher initial investment. Less frequent replacement and repairs.',
-          '<strong>Professional Image:</strong> Solid, well-built furniture projects a professional and premium brand image.',
-          '<strong>Customer Comfort:</strong> Strong and stable furniture provides better comfort and safety for customers.',
-          '<strong>Weather Resistance:</strong> Designed to withstand harsh weather conditions including rain, sun, and humidity.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Heavy Duty Commercial Outdoor Furniture Indonesia'
-      },
-      {
-        heading: 'Heavy Duty Construction Features',
-        paragraphs: [
-          'Frame: Thicker steel hollow (2-3mm) with reinforcement at load-bearing points. Solid welding at all joints for maximum strength.',
-          'Material: Grade A steel with anti-rust treatment. Premium solid wood or outdoor-grade HPL for table tops.',
-          'Finishing: Premium powder coating 2-3 layers with anti-rust primer, base coat, and UV-protected top coat.',
-          'Hardware: High-quality stainless steel or galvanized hardware to prevent rust and ensure longevity.',
-          'Weight Capacity: Designed to handle heavier loads and more intensive use than standard furniture.'
-        ]
-      },
-      {
-        heading: 'Product Range',
-        paragraphs: [
-          'Heavy Duty Dining Sets: Tables and chairs with extra-strong construction for high-traffic restaurants and cafes.',
-          'Commercial Bar Sets: Bar tables and barstools built for intensive use in outdoor bar areas.',
-          'Bench & Table Sets: Long benches and tables for large capacity outdoor areas with very strong construction.',
-          'Commercial Lounge Furniture: Sofas and coffee tables with thick frames and commercial-grade cushions that are water-resistant and easy to clean.'
-        ]
-      },
-      {
-        heading: 'Buying Guide',
-        paragraphs: [
-          'MOQ: Minimum order typically 1 container (20ft or 40ft) for best pricing. Smaller orders available with additional handling fee.',
-          'Pricing: FOB pricing from Indonesian port. Competitive pricing for bulk orders. Volume discounts available.',
-          'Timeline: Production time typically 20-30 working days depending on order size and complexity. Rush orders available with additional fee.',
-          'Quality Assurance: Pre-shipment inspection with photos and documentation. Quality guarantee for manufacturing defects.',
-          'Warranty: 2-year warranty for construction, 1-year warranty for finishing. After-sales support available.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'custom-patio-furniture-indonesia-export-manufacturer',
-    sections: [
-      {
-        paragraphs: [
-          'Custom patio furniture manufacturer in Indonesia specializing in export. We work with international buyers to create unique outdoor furniture that matches their brand identity and specific requirements. Our custom service covers everything from design to production to export.',
-          'Custom patio furniture allows you to create furniture that is perfectly suited to your space, concept, and brand. We work closely with you throughout the process to ensure your vision is realized with export-quality furniture.'
-        ]
-      },
-      {
-        heading: 'Custom Design Capabilities',
-        list: [
-          '<strong>Unique Design:</strong> Furniture designed specifically for your brand and space. No two designs are the same.',
-          '<strong>Size Customization:</strong> Dimensions tailored to your patio area and seating capacity requirements.',
-          '<strong>Material Selection:</strong> Choose from various materials and combinations based on your budget and aesthetic preferences.',
-          '<strong>Color & Finishing:</strong> Custom colors and finishing options to match your brand identity.',
-          '<strong>Brand Integration:</strong> Logo, brand colors, or design elements can be incorporated into the furniture design.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Custom Patio Furniture Indonesia Export Manufacturer'
-      },
-      {
-        heading: 'OEM & ODM Services',
-        paragraphs: [
-          'OEM (Original Equipment Manufacturing): We manufacture furniture according to your exact specifications and design. Your design, our production.',
-          'ODM (Original Design Manufacturing): We design and manufacture furniture for you. Our design team creates furniture based on your requirements and brand identity.',
-          'Private Label: Furniture can be branded with your logo and brand elements. Perfect for furniture importers and retailers.',
-          'Flexibility: Flexible MOQ depending on design complexity. Prototype available for approval before mass production.'
-        ]
-      },
-      {
-        heading: 'Export Service',
-        paragraphs: [
-          'FOB Pricing: Competitive FOB prices from Indonesian port. We work with freight forwarders worldwide.',
-          'Documentation: Complete export documentation including Certificate of Origin, Packing List, Commercial Invoice.',
-          'Quality Control: Pre-shipment inspection with photos and documentation. Quality assurance before shipping.',
-          'Packaging: Professional packaging suitable for container shipping. Protection during transit.',
-          'Communication: Regular updates throughout production. Responsive communication for any questions or concerns.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'cafe-patio-outdoor-furniture-industrial-style-indonesia',
-    sections: [
-      {
-        paragraphs: [
-          'Industrial-style cafe patio outdoor furniture from Indonesia. Metal tables, chairs, and bar sets with powder coating finish perfect for modern cafes and restaurants worldwide. Industrial style combines functionality with aesthetic appeal, creating outdoor spaces that are both practical and Instagram-worthy.',
-          'Our industrial-style outdoor furniture is designed for cafes and restaurants that want to create a modern, urban atmosphere. The combination of metal frames and natural wood or HPL tops creates a timeless aesthetic that appeals to contemporary diners.'
-        ]
-      },
-      {
-        heading: 'Industrial Style Characteristics',
-        list: [
-          '<strong>Metal Frames:</strong> Steel frames with matte black or dark grey powder coating for that industrial look.',
-          '<strong>Natural Materials:</strong> Combination with natural wood tops or outdoor-grade HPL for warmth and texture.',
-          '<strong>Clean Lines:</strong> Geometric shapes, straight lines, minimal ornamentation. Focus on function and proportion.',
-          '<strong>Color Palette:</strong> Dominant dark colors (black, grey) with natural wood accents. Monochrome or with warm tones.',
-          '<strong>Modern Aesthetic:</strong> Timeless design that doesn\'t go out of style. Suitable for various modern concepts.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
-        imageAlt: 'Cafe Patio Outdoor Furniture Industrial Style Indonesia'
-      },
-      {
-        heading: 'Product Range',
-        paragraphs: [
-          'Dining Sets: Industrial-style dining tables and chairs in various sizes. Metal frames with wood or HPL tops.',
-          'Bar Sets: Bar tables and barstools with industrial design. Perfect for outdoor bar areas in cafes.',
-          'Lounge Sets: Outdoor sofas and coffee tables with industrial frames. Comfortable seating for relaxation areas.',
-          'Accessories: Metal shelving, planters, and decorative elements to complete the industrial look.'
-        ]
-      },
-      {
-        heading: 'Why Industrial Style for Cafe Patio?',
-        paragraphs: [
-          'Modern Appeal: Industrial style is very popular among modern cafe-goers and creates an Instagram-worthy atmosphere.',
-          'Durability: Metal frames are extremely durable and weather-resistant, perfect for outdoor use.',
-          'Easy Maintenance: Metal and outdoor-grade materials are easy to clean and maintain.',
-          'Versatility: Industrial style works well with various design concepts and can be easily accessorized.',
-          'Timeless: Industrial design is timeless and won\'t go out of style quickly, making it a good long-term investment.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'industrial-patio-furniture-style-inspiration-design',
-    sections: [
-      {
-        paragraphs: [
-          'Industrial patio furniture style inspiration for modern outdoor spaces. Design ideas combining metal and wood, color schemes, and layout tips for cafes and restaurants. Industrial style is perfect for creating outdoor spaces that are both functional and aesthetically appealing.',
-          'Whether you\'re designing a new patio space or updating an existing one, industrial style offers endless possibilities. From minimalist modern to rustic industrial, there\'s a style that fits every concept and brand identity.'
-        ]
-      },
-      {
-        heading: 'Industrial Style Variations',
-        list: [
-          '<strong>Modern Minimalist Industrial:</strong> Clean lines, geometric shapes, monochrome color palette (black, white, grey). Minimal details, focus on function.',
-          '<strong>Rustic Industrial:</strong> Mixed materials, visible texture, vintage accents. Dark colors with reclaimed wood or rough finishes.',
-          '<strong>Tropical Industrial:</strong> Combination of industrial elements with tropical materials (teak, rattan). Natural wood with metal frames.',
-          '<strong>Contemporary Industrial:</strong> Modern industrial with contemporary touches. Mix of materials and colors for a fresh look.',
-          '<strong>Urban Industrial:</strong> Strong industrial aesthetic with urban elements. Perfect for city cafes and restaurants.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Patio Furniture Style Inspiration Design'
-      },
-      {
-        heading: 'Color Scheme Ideas',
-        paragraphs: [
-          'Monochrome: Black, white, and grey for a clean, modern look. Timeless and versatile.',
-          'Natural: Black or grey frames with natural wood for warmth and natural touch.',
-          'Dark Sophisticated: Charcoal or dark grey with dark wood for a more sophisticated look.',
-          'Accent Colors: Black frames with accent colors (red, blue, green) for a pop of color and brand identity.',
-          'Earth Tones: Brown, copper, bronze accents for a warmer, more natural industrial look.'
-        ]
-      },
-      {
-        heading: 'Layout Inspiration',
-        paragraphs: [
-          'Grid Layout: Tables arranged in a grid pattern for clean, organized look that maximizes space.',
-          'Mixed Seating: Combination of dining sets and bar sets for variety and flexibility.',
-          'Zoning: Divide area into different zones (dining, bar, lounge) with different furniture for varied experiences.',
-          'Focal Point: Bar counter or feature wall as focal point with furniture surrounding it.',
-          'Flexible Modular: Modular furniture that can be rearranged for different events or needs.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'outdoor-furniture-indonesia-weather-resistant-tropical',
-    sections: [
-      {
-        paragraphs: [
-          'Weather-resistant outdoor furniture from Indonesia designed for tropical climates. Powder coating finish withstands rain, sun, and humidity. Perfect for resorts and hotels in tropical regions worldwide.',
-          'Tropical climates present unique challenges for outdoor furniture: heavy rainfall, intense sunlight, high humidity, and temperature variations. Our furniture is specifically designed and finished to withstand these conditions while maintaining aesthetic appeal and functionality.'
-        ]
-      },
-      {
-        heading: 'Tropical Climate Challenges',
-        list: [
-          '<strong>Heavy Rainfall:</strong> Furniture must be waterproof and rust-resistant. Powder coating prevents water penetration and rust formation.',
-          '<strong>Intense Sunlight:</strong> UV protection prevents fading and material degradation. Top coat with UV inhibitors maintains color and finish.',
-          '<strong>High Humidity:</strong> Anti-rust treatment and moisture-resistant materials prevent corrosion and mold growth.',
-          '<strong>Temperature Variations:</strong> Materials and finishes must withstand expansion and contraction without cracking or peeling.',
-          '<strong>Salt Air:</strong> For coastal areas, additional protection against salt corrosion is available.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Outdoor Furniture Indonesia Weather Resistant Tropical'
-      },
-      {
-        heading: 'Weather-Resistant Features',
-        paragraphs: [
-          'Powder Coating: Premium 2-3 layer powder coating with anti-rust primer, base coat, and UV-protected top coat. Waterproof and fade-resistant.',
-          'Anti-Rust Treatment: Pre-treatment before powder coating to prevent rust at material level. Galvanized or treated steel.',
-          'Material Selection: Outdoor-grade materials that withstand tropical conditions. HPL outdoor grade, treated wood, or metal tops.',
-          'Construction: Solid construction with proper drainage to prevent water accumulation. Reinforced joints for durability.',
-          'Hardware: Stainless steel or galvanized hardware to prevent rust and ensure longevity.'
-        ]
-      },
-      {
-        heading: 'Perfect for Tropical Resorts & Hotels',
-        paragraphs: [
-          'Resorts: Weather-resistant furniture for pool areas, beach bars, and outdoor dining areas in tropical resorts.',
-          'Hotels: Durable outdoor furniture for hotel patios, restaurants, and public areas that can withstand tropical weather.',
-          'Restaurants: Commercial outdoor furniture for restaurants in tropical climates that need to function year-round.',
-          'Cafes: Cafe patio furniture that maintains its appearance despite exposure to tropical weather conditions.',
-          'Longevity: Furniture designed to last 5-10 years in tropical conditions with minimal maintenance, providing excellent ROI.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'commercial-outdoor-furniture-indonesia-bulk-order-export',
-    sections: [
-      {
-        paragraphs: [
-          'Bulk order commercial outdoor furniture from Indonesia. Competitive pricing for restaurant chains, hotel groups, and hospitality businesses. Minimum order: 1 container (20ft/40ft). We specialize in bulk orders for international buyers who need consistent quality and competitive pricing.',
-          'Bulk orders allow us to offer better pricing while maintaining quality standards. Our production facility can handle large orders efficiently, ensuring timely delivery and consistent quality across all items.'
-        ]
-      },
-      {
-        heading: 'Benefits of Bulk Orders',
-        list: [
-          '<strong>Competitive Pricing:</strong> Better unit prices for bulk orders. Volume discounts make large orders more cost-effective.',
-          '<strong>Consistent Quality:</strong> Production in one batch ensures consistency in quality, color, and finish across all items.',
-          '<strong>Efficient Production:</strong> Streamlined production process for bulk orders reduces costs and improves efficiency.',
-          '<strong>Container Shipping:</strong> Full container loads (FCL) are more cost-effective than less-than-container loads (LCL).',
-          '<strong>Lower Shipping Cost:</strong> Per-unit shipping cost is lower for full container loads compared to partial loads.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Commercial Outdoor Furniture Indonesia Bulk Order Export'
-      },
-      {
-        heading: 'Bulk Order Options',
-        paragraphs: [
-          '20ft Container: Approximately 15-20 sets of dining furniture (depending on size and design). Suitable for smaller orders.',
-          '40ft Container: Approximately 35-45 sets of dining furniture (depending on size and design). More cost-effective per unit.',
-          'Mixed Products: Combine different products (dining sets, bar sets, lounge sets) in one container for variety.',
-          'Custom Mix: Work with us to create the optimal mix of products for your container to maximize space and value.'
-        ]
-      },
-      {
-        heading: 'Bulk Order Process',
-        paragraphs: [
-          '1. Inquiry: Send us your requirements, quantity, and timeline. We provide detailed quotation.',
-          '2. Design & Approval: Design development if custom, or selection from standard catalog. Approval before production.',
-          '3. Production: After deposit, production begins with regular progress updates and quality control.',
-          '4. Inspection: Pre-shipment inspection with photos and documentation for approval.',
-          '5. Shipping: Container loading and shipping arrangement. Export documentation provided.',
-          '6. Delivery: Delivery to your designated port. Support throughout the process.'
-        ]
-      },
-      {
-        heading: 'Ideal for',
-        paragraphs: [
-          'Restaurant Chains: Consistent furniture across multiple locations. Brand consistency and cost efficiency.',
-          'Hotel Groups: Furniture for hotel outdoor areas, restaurants, and public spaces. Bulk pricing for multiple properties.',
-          'Hospitality Businesses: Cafes, restaurants, and resorts expanding or renovating. Cost-effective furniture solution.',
-          'Furniture Importers: Importers buying for distribution. Competitive pricing and export-ready quality.',
-          'Property Developers: Furniture for commercial properties, mixed-use developments, and hospitality projects.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'patio-furniture-set-indonesia-custom-manufacturer',
-    sections: [
-      {
-        paragraphs: [
-          'Custom patio furniture sets from Indonesian manufacturer. Tables, chairs, and bar sets designed for outdoor cafes and restaurants. OEM/ODM services with competitive MOQ. A complete patio set creates a cohesive outdoor space with furniture designed to work together.',
-          'Our custom patio sets are designed as complete solutions, with all components working together to create a cohesive aesthetic and functional outdoor space. Each set is tailored to your specific needs, space, and brand identity.'
-        ]
-      },
-      {
-        heading: 'Complete Patio Set Components',
-        list: [
-          '<strong>Dining Sets:</strong> Tables in various sizes (2-seater, 4-seater, 6-seater) with matching chairs. Designed as a cohesive set.',
-          '<strong>Bar Sets:</strong> Bar tables with standard bar height (110cm) or counter height (90cm) with matching barstools.',
-          '<strong>Lounge Sets:</strong> Outdoor sofas, coffee tables, and side tables designed as a complete lounge area.',
-          '<strong>Accessories:</strong> Planters, shelving, lighting, or decorative elements to complete the set.',
-          '<strong>Consistent Design:</strong> All components share the same design language, colors, and materials for cohesive look.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Patio Furniture Set Indonesia Custom Manufacturer'
-      },
-      {
-        heading: 'Custom Design Benefits',
-        paragraphs: [
-          'Cohesive Aesthetic: All furniture designed as one set creates a cohesive, professional look.',
-          'Space Optimization: Dimensions tailored to your patio area for maximum space efficiency.',
-          'Brand Consistency: Furniture can incorporate brand colors, logos, or design elements.',
-          'Functional Design: Layout and design optimized for your specific functional requirements.',
-          'Quality Consistency: All components produced together ensure consistent quality and finish.'
-        ]
-      },
-      {
-        heading: 'OEM & ODM Services',
-        paragraphs: [
-          'OEM: We manufacture according to your exact specifications. Your design, our production expertise.',
-          'ODM: We design and manufacture for you. Our design team creates based on your requirements.',
-          'Private Label: Furniture can be branded with your logo and brand elements.',
-          'Flexible MOQ: Minimum order quantity depends on design complexity. Prototype available for approval.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'industrial-metal-outdoor-furniture-indonesia-powder-coating',
-    sections: [
-      {
-        paragraphs: [
-          'Industrial metal outdoor furniture from Indonesia with premium powder coating finish. Rust-resistant, UV-protected, and weather-proof. Export quality with international standards. Powder coating is the preferred finish for outdoor metal furniture due to its durability, weather resistance, and aesthetic appeal.',
-          'Our powder coating process ensures that your outdoor furniture maintains its appearance and functionality even after years of exposure to harsh weather conditions. The finish is not just about aesthetics - it\'s about protection and longevity.'
-        ]
-      },
-      {
-        heading: 'Powder Coating Process',
-        list: [
-          '<strong>Pre-Treatment:</strong> Surface cleaning and anti-rust treatment to prepare the metal for coating.',
-          '<strong>Primer:</strong> Anti-rust primer layer for maximum protection against corrosion.',
-          '<strong>Base Coat:</strong> Powder coating base layer applied evenly for color and coverage.',
-          '<strong>Top Coat:</strong> Protective top coat with UV inhibitors to prevent fading and degradation.',
-          '<strong>Curing:</strong> High-temperature curing process ensures proper adhesion and durability.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Metal Outdoor Furniture Indonesia Powder Coating'
-      },
-      {
-        heading: 'Powder Coating Benefits',
-        paragraphs: [
-          'Durability: Powder coating is more durable than paint, lasting 5-10 years or more with minimal maintenance.',
-          'Weather Resistance: Waterproof and rust-resistant, perfect for outdoor use in various climates.',
-          'UV Protection: UV inhibitors in the top coat prevent fading and color degradation from sunlight.',
-          'Easy Maintenance: Smooth surface is easy to clean. Resistant to stains and easy to maintain.',
-          'Aesthetic Options: Wide range of colors and finishes (matte, glossy, textured) for different looks.',
-          'Environmental: Powder coating is more environmentally friendly than liquid paint, with no VOCs.'
-        ]
-      },
-      {
-        heading: 'Color & Finish Options',
-        paragraphs: [
-          'Standard Colors: Black, white, grey, brown, and other standard colors available.',
-          'Custom Colors: Custom colors can be matched to your brand or design requirements.',
-          'Matte Finish: Modern, non-reflective finish popular for industrial style.',
-          'Glossy Finish: Easy to clean, more reflective finish for different aesthetic.',
-          'Textured Finish: Textured powder coating for additional visual interest and grip.',
-          'Two-Tone: Combination of colors for frames and accents for design flexibility.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'cafe-outdoor-furniture-indonesia-export-manufacturer',
-    sections: [
-      {
-        paragraphs: [
-          'Cafe outdoor furniture manufacturer in Indonesia. Industrial-style tables, chairs, and bar sets for outdoor dining areas. Export to cafes worldwide with competitive pricing. Our cafe furniture is designed specifically for the needs of modern cafes: durability, aesthetics, and functionality.',
-          'We understand that cafe furniture needs to be both functional and Instagram-worthy. Our industrial-style outdoor furniture creates the perfect atmosphere for modern cafes while withstanding the demands of commercial use and outdoor weather conditions.'
-        ]
-      },
-      {
-        heading: 'Cafe Furniture Solutions',
-        list: [
-          '<strong>Dining Sets:</strong> Tables and chairs in various sizes for different cafe layouts. 2-seater, 4-seater, and larger options.',
-          '<strong>Bar Sets:</strong> Bar tables and barstools for cafe bar areas. Perfect for single diners and maximizing space.',
-          '<strong>Lounge Sets:</strong> Outdoor sofas and coffee tables for relaxed seating areas in cafes.',
-          '<strong>Flexible Layout:</strong> Furniture designed for flexible arrangements to accommodate different group sizes and events.',
-          '<strong>Instagram-Worthy:</strong> Modern industrial design that creates attractive spaces for social media.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200&auto=format&fit=crop',
-        imageAlt: 'Cafe Outdoor Furniture Indonesia Export Manufacturer'
-      },
-      {
-        heading: 'Why Choose Indonesian Cafe Furniture?',
-        paragraphs: [
-          'Quality: Export-quality furniture with international standards. Durable construction for commercial use.',
-          'Competitive Pricing: Factory-direct pricing makes Indonesian furniture very competitive compared to other sources.',
-          'Customization: Custom design and sizing available to match your cafe concept and brand identity.',
-          'Weather Resistance: Designed for outdoor use with weather-resistant finish suitable for various climates.',
-          'Quick Response: Responsive communication and efficient production process for timely delivery.',
-          'Experience: 25 years of experience manufacturing furniture for cafes, restaurants, and hospitality businesses.'
-        ]
-      },
-      {
-        heading: 'Export Service for Cafes',
-        paragraphs: [
-          'FOB Pricing: Competitive FOB prices from Indonesian port. We work with freight forwarders worldwide.',
-          'Documentation: Complete export documentation for smooth customs clearance.',
-          'Quality Assurance: Pre-shipment inspection with photos and documentation.',
-          'Packaging: Professional packaging to protect furniture during shipping.',
-          'Support: Communication and support throughout the process and after delivery.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'patio-furniture-inspiration-industrial-design-trends',
-    sections: [
-      {
-        paragraphs: [
-          'Patio furniture inspiration with industrial design trends for 2025. Color schemes, material combinations, and layout ideas for modern outdoor spaces in cafes and restaurants. Industrial design continues to evolve, and staying updated with trends helps create spaces that are both current and timeless.',
-          'The best industrial design for patio furniture balances current trends with timeless elements. This ensures your outdoor space remains attractive and functional for years to come, maximizing your investment.'
-        ]
-      },
-      {
-        heading: 'Industrial Design Trends 2025',
-        list: [
-          '<strong>Earth Tones:</strong> Movement towards brown, copper, bronze, and other earth tones alongside traditional black and grey.',
-          '<strong>Natural Materials:</strong> Increased use of natural wood, stone, and other organic materials with metal frames.',
-          '<strong>Minimalist Lines:</strong> Clean, geometric shapes with minimal details. Focus on function and proportion.',
-          '<strong>Sustainable Design:</strong> Emphasis on durable, long-lasting furniture over fast furniture. Quality over quantity.',
-          '<strong>Mixed Materials:</strong> Creative combinations of metal, wood, stone, and other materials for visual interest.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Patio Furniture Inspiration Industrial Design Trends'
-      },
-      {
-        heading: 'Color Trends',
-        paragraphs: [
-          'Matte Black: Still popular, matte black remains timeless for industrial furniture frames.',
-          'Earth Tones: Brown oxide, copper, bronze are trending as accent colors or main finishes.',
-          'Natural Wood: Light and natural wood tones are popular for table tops and accents.',
-          'Two-Tone: Combination of dark frames with light or colored accents for visual interest.',
-          'Monochrome: Black, white, and grey combinations remain popular for minimalist industrial look.'
-        ]
-      },
-      {
-        heading: 'Layout Trends',
-        paragraphs: [
-          'Flexible Modular: Modular furniture that can be rearranged for different events and needs.',
-          'Zoning: Dividing outdoor space into different zones (dining, bar, lounge) with different furniture.',
-          'Mixed Heights: Combining different table heights (standard, counter, bar) for visual interest.',
-          'Green Integration: Incorporating plants and green elements into industrial patio design.',
-          'Lighting Integration: Industrial lighting integrated with furniture for ambiance and functionality.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'outdoor-furniture-manufacturer-indonesia-factory-direct',
-    sections: [
-      {
-        paragraphs: [
-          'Factory-direct outdoor furniture manufacturer in Indonesia. Eliminate middlemen and get best FOB prices. We handle custom design, production, and export documentation. Buying factory-direct means better prices, better communication, and better control over the production process.',
-          'As a factory-direct manufacturer, we work directly with international buyers, eliminating the markup from middlemen and traders. This allows us to offer competitive pricing while maintaining quality standards and providing excellent service.'
-        ]
-      },
-      {
-        heading: 'Benefits of Factory-Direct',
-        list: [
-          '<strong>Best Pricing:</strong> No middleman markup means better prices for you. Factory-direct pricing is typically 20-30% lower.',
-          '<strong>Direct Communication:</strong> Communicate directly with the production team. Faster response and better understanding of requirements.',
-          '<strong>Quality Control:</strong> Direct oversight of production process. Quality control at every stage.',
-          '<strong>Customization:</strong> Easier to customize and make changes during production with direct factory access.',
-          '<strong>Transparency:</strong> Clear understanding of production process, materials, and costs. No hidden fees.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Outdoor Furniture Manufacturer Indonesia Factory Direct'
-      },
-      {
-        heading: 'Factory Capabilities',
-        paragraphs: [
-          'Production Facility: 10,000+ sqm production facility with modern equipment and experienced craftsmen.',
-          'Capacity: Large production capacity to handle bulk orders and meet deadlines. Flexible scheduling.',
-          'Quality Control: Strict QC at every stage. Quality inspection before shipment.',
-          'Experience: 25 years since 1999. 1000+ completed projects for international and local clients.',
-          'Certifications: Export-ready with necessary certifications. Quality standards meet international requirements.'
-        ]
-      },
-      {
-        heading: 'Factory-Direct Process',
-        paragraphs: [
-          '1. Inquiry: Direct communication with factory. Get quotation directly from source.',
-          '2. Design & Production: Work directly with production team. Customization and changes easily accommodated.',
-          '3. Quality Control: Direct oversight of QC process. Photos and updates during production.',
-          '4. Shipping: Direct arrangement of shipping and documentation. No extra layers.',
-          '5. Support: Direct after-sales support. Easy communication for any questions or concerns.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'heavy-duty-outdoor-furniture-indonesia-export-quality',
-    sections: [
-      {
-        paragraphs: [
-          'Heavy duty outdoor furniture from Indonesia built for commercial use. Strong construction, durable materials, and weather-resistant finish. Export quality with competitive pricing. Heavy duty furniture is designed to withstand intensive commercial use and harsh weather conditions, making it ideal for cafes, restaurants, hotels, and resorts.',
-          'While heavy duty furniture requires a higher initial investment, it provides better long-term ROI due to superior durability, reduced maintenance costs, and less frequent replacement needs.'
-        ]
-      },
-      {
-        heading: 'Heavy Duty Construction',
-        list: [
-          '<strong>Thicker Materials:</strong> Steel hollow with 2-3mm thickness (vs 1.5mm for standard). Extra strength for commercial use.',
-          '<strong>Reinforcement:</strong> Additional reinforcement at load-bearing points. Solid welding at all joints.',
-          '<strong>Premium Materials:</strong> Grade A steel with anti-rust treatment. Premium solid wood or outdoor-grade HPL.',
-          '<strong>Premium Finishing:</strong> 2-3 layer powder coating with anti-rust primer, base coat, and UV-protected top coat.',
-          '<strong>Quality Hardware:</strong> High-quality stainless steel or galvanized hardware for longevity.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Heavy Duty Outdoor Furniture Indonesia Export Quality'
-      },
-      {
-        heading: 'Why Heavy Duty for Commercial Use?',
-        paragraphs: [
-          'Durability: Built to last 7-10 years or more with minimal maintenance. Superior construction withstands intensive use.',
-          'Cost Efficiency: Lower cost per year despite higher initial investment. Less frequent replacement and repairs.',
-          'Professional Image: Solid, well-built furniture projects a professional and premium brand image.',
-          'Customer Safety: Strong and stable furniture provides better safety and comfort for customers.',
-          'Weather Resistance: Designed to withstand harsh weather conditions including rain, sun, and humidity.',
-          'Warranty: 2-year warranty for construction, 1-year warranty for finishing for peace of mind.'
-        ]
-      },
-      {
-        heading: 'Export Quality Standards',
-        paragraphs: [
-          'International Standards: Quality meets international standards for commercial outdoor furniture.',
-          'Quality Assurance: Pre-shipment inspection with photos and documentation. Quality guarantee.',
-          'Durability Testing: Furniture tested for durability and weather resistance before shipment.',
-          'Documentation: Complete export documentation including quality certificates and specifications.',
-          'Support: After-sales support and communication for any questions or concerns.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'custom-outdoor-furniture-indonesia-design-manufacturing',
-    sections: [
-      {
-        paragraphs: [
-          'Custom outdoor furniture design and manufacturing in Indonesia. From concept to production, we create unique outdoor furniture for your brand. Export services with quality assurance. Custom furniture allows you to create outdoor spaces that are perfectly tailored to your brand, space, and functional requirements.',
-          'Our design and manufacturing process ensures that your vision is realized with furniture that meets export quality standards. We work closely with you throughout the process to ensure every detail is perfect.'
-        ]
-      },
-      {
-        heading: 'Design Process',
-        list: [
-          '<strong>Consultation:</strong> Free consultation to understand your needs, concept, space, and requirements.',
-          '<strong>Concept Development:</strong> Our design team develops concepts based on your requirements and brand identity.',
-          '<strong>3D Visualization:</strong> 3D renderings for preview before production. Revisions until perfect.',
-          '<strong>Material Selection:</strong> Guidance on selecting materials based on budget, aesthetics, and functionality.',
-          '<strong>Prototype:</strong> Prototype available for approval before mass production (for large orders).'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Custom Outdoor Furniture Indonesia Design Manufacturing'
-      },
-      {
-        heading: 'Manufacturing Process',
-        paragraphs: [
-          'Production Planning: Detailed production plan based on approved design. Timeline and milestones established.',
-          'Material Preparation: Sourcing and preparation of materials according to specifications. Quality check of materials.',
-          'Production: Manufacturing process with quality control at every stage. Regular progress updates provided.',
-          'Quality Control: Strict QC during production. Inspection before final assembly and finishing.',
-          'Finishing: Powder coating or other finishing according to specifications. Quality check of finish.',
-          'Final Inspection: Complete inspection before packaging. Photos and documentation provided.'
-        ]
-      },
-      {
-        heading: 'Export Services',
-        paragraphs: [
-          'FOB Pricing: Competitive FOB prices from Indonesian port. We work with freight forwarders worldwide.',
-          'Documentation: Complete export documentation including Certificate of Origin, Packing List, Commercial Invoice.',
-          'Quality Assurance: Pre-shipment inspection with photos and documentation. Quality guarantee.',
-          'Packaging: Professional packaging suitable for container shipping. Protection during transit.',
-          'Support: Communication and support throughout the process and after delivery.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'industrial-dining-tables-export-quality-indonesia',
-    sections: [
-      {
-        heading: 'Premium Industrial Dining Tables from Indonesia',
-        paragraphs: [
-          'Indonesia has emerged as a leading manufacturer of high-quality industrial furniture, particularly dining tables that combine robust steel frames with beautiful wood tops. Our industrial dining tables are designed specifically for export markets, meeting international quality standards while offering competitive pricing.',
-          'Each dining table we manufacture features precision-welded steel frames using premium hollow section steel, paired with solid wood or engineered wood tops. The combination creates furniture pieces that are not only aesthetically pleasing but also incredibly durable for commercial environments.'
-        ]
-      },
-      {
-        heading: 'Materials and Construction',
-        paragraphs: [
-          'Our industrial dining tables use only high-quality materials selected for durability and appearance:'
-        ],
-        list: [
-          '<strong>Steel Frame:</strong> Premium hollow section steel (40x40mm to 60x60mm) with 2-3mm wall thickness for exceptional strength and stability.',
-          '<strong>Wood Top Options:</strong> Solid teak, mango wood, or engineered wood with various finishes including natural, stained, or distressed looks.',
-          '<strong>Welding:</strong> Professional MIG welding with ground and polished joints for a clean, seamless appearance.',
-          '<strong>Finishing:</strong> Industrial-grade powder coating in various colors including matte black, bronze, grey, and custom RAL colors.',
-          '<strong>Protection:</strong> Anti-rust primer treatment before powder coating ensures long-lasting durability even in humid climates.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Dining Tables Export Quality Indonesia'
-      },
-      {
-        heading: 'Standard and Custom Sizes',
-        paragraphs: [
-          'We offer both standard sizes and fully customizable dimensions to meet your specific requirements:',
-          '<strong>Standard Dining Table Sizes:</strong>'
-        ],
-        list: [
-          '120cm x 70cm - Perfect for 2-4 people, ideal for small cafes',
-          '150cm x 80cm - Comfortable for 4-6 people, most popular size',
-          '180cm x 90cm - Spacious for 6-8 people, restaurant standard',
-          '200cm x 100cm - Large gathering table for 8-10 people',
-          'Bar height tables: 110cm height for standing or bar stool use'
-        ],
-        paragraphs: [
-          '<strong>Custom Dimensions:</strong> Any size can be manufactured according to your specifications. We can create extra-long communal tables, narrow tables for compact spaces, or unique shapes to fit your layout perfectly.'
-        ]
-      },
-      {
-        heading: 'Applications and Markets',
-        paragraphs: [
-          'Our industrial dining tables are perfect for various commercial applications:'
-        ],
-        list: [
-          '<strong>Restaurants:</strong> Durable dining tables that withstand heavy daily use while maintaining their appearance.',
-          '<strong>Cafes and Coffee Shops:</strong> Modern industrial aesthetic that appeals to contemporary customers.',
-          '<strong>Hotels and Resorts:</strong> Reliable furniture for dining areas and breakfast rooms.',
-          '<strong>Co-working Spaces:</strong> Multi-functional tables for working and dining.',
-          '<strong>Residential Projects:</strong> High-quality dining tables for modern homes and apartments.',
-          '<strong>Contract Furniture:</strong> Bulk orders for hospitality chains and commercial projects.'
-        ]
-      },
-      {
-        heading: 'Quality Control and Export Standards',
-        paragraphs: [
-          'Every dining table undergoes rigorous quality control before export:',
-          'Structure Testing: Each table is load-tested to ensure it can handle commercial use. We test up to 200kg static load to guarantee stability.',
-          'Finish Inspection: Powder coating is checked for consistency, adhesion, and coverage. No runs, sags, or thin spots are acceptable.',
-          'Wood Quality: All wood tops are checked for defects, proper sealing, and finish quality. Moisture content is controlled to prevent warping.',
-          'Packaging: Professional packaging with corner protection, bubble wrap, and cardboard to ensure safe arrival at destination.',
-          'Documentation: Complete export documentation including material specifications, care instructions, and warranty information.'
-        ]
-      },
-      {
-        heading: 'Minimum Order and Pricing',
-        paragraphs: [
-          'We welcome both small and large orders from international buyers:',
-          '<strong>Minimum Order Quantity:</strong> Flexible MOQ starting from 10 pieces for standard designs. Custom designs may require higher MOQ.',
-          '<strong>Pricing Structure:</strong> Factory-direct pricing with volume discounts. Typical range: $150-$400 per table depending on size, materials, and finishing.',
-          '<strong>Volume Discounts:</strong> 5% off for 50+ pieces, 10% off for 100+ pieces, custom pricing for container loads.',
-          '<strong>Payment Terms:</strong> 50% deposit to start production, 50% balance before shipping. LC available for established buyers.',
-          '<strong>Lead Time:</strong> 30-45 days for production depending on order quantity, plus shipping time.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Dining Table Manufacturing Process'
-      },
-      {
-        heading: 'Why Choose Indonesian Industrial Furniture',
-        paragraphs: [
-          'Indonesia offers unique advantages for industrial furniture manufacturing:',
-          '<strong>Skilled Craftsmanship:</strong> Over 25 years of experience in metal and wood working. Our welders and craftsmen are highly skilled in industrial furniture production.',
-          '<strong>Quality Materials:</strong> Access to premium steel and beautiful tropical hardwoods like teak and mango.',
-          '<strong>Competitive Pricing:</strong> Lower labor costs compared to developed countries without compromising quality.',
-          '<strong>Export Infrastructure:</strong> Well-established export procedures and proximity to major shipping ports.',
-          '<strong>Flexibility:</strong> Ability to customize designs and adapt to specific market requirements.',
-          '<strong>Sustainability:</strong> Use of sustainably sourced wood and eco-friendly finishing processes.'
-        ]
-      },
-      {
-        heading: 'Shipping and Logistics',
-        paragraphs: [
-          'We provide comprehensive export services to make your buying experience smooth:',
-          '<strong>FOB Terms:</strong> Competitive FOB pricing from Jakarta or Surabaya port. We handle all local logistics.',
-          '<strong>Container Loading:</strong> Efficient packing to maximize container capacity. Typical 40ft container holds 150-200 dining tables.',
-          '<strong>Freight Forwarding:</strong> We work with reliable freight forwarders worldwide for competitive shipping rates.',
-          '<strong>Tracking:</strong> Full tracking information provided from production through delivery.',
-          '<strong>Insurance:</strong> Marine insurance available to protect your investment during transit.'
-        ]
-      },
-      {
-        heading: 'Getting Started with Your Order',
-        paragraphs: [
-          'Ordering industrial dining tables from Indonesia is straightforward:',
-          '1. <strong>Inquiry:</strong> Contact us with your requirements - size, quantity, finish preferences.',
-          '2. <strong>Quotation:</strong> We provide detailed quotation including product specifications, pricing, and timeline.',
-          '3. <strong>Samples:</strong> We can provide photos, videos, or physical samples for evaluation.',
-          '4. <strong>Confirmation:</strong> Approve designs and specifications. We provide production drawings if needed.',
-          '5. <strong>Production:</strong> 50% deposit starts production. Regular progress updates with photos.',
-          '6. <strong>Quality Check:</strong> Pre-shipment inspection with detailed photos and documentation.',
-          '7. <strong>Shipping:</strong> Final payment and shipping arranged. Full documentation provided.',
-          '<strong>Contact us today to discuss your project requirements and receive a customized quotation.</strong> We serve buyers worldwide including USA, Europe, Australia, Middle East, and Asia Pacific regions.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'metal-bar-stools-indonesia-manufacturer-exporter',
-    sections: [
-      {
-        heading: 'Professional Metal Bar Stool Manufacturing in Indonesia',
-        paragraphs: [
-          'As a leading metal bar stool manufacturer in Indonesia, we specialize in producing high-quality industrial-style bar chairs for export to international markets. Our bar stools combine robust steel construction with thoughtful design, creating seating solutions that are both durable and visually appealing.',
-          'With over 25 years of experience in metal furniture fabrication, we understand the specific requirements of commercial bar seating. Our products are designed to withstand heavy daily use in busy bars, restaurants, and cafes while maintaining their appearance for years.'
-        ]
-      },
-      {
-        heading: 'Bar Stool Design Options',
-        paragraphs: [
-          'We offer a comprehensive range of bar stool designs suitable for various commercial environments:'
-        ],
-        list: [
-          '<strong>Backless Bar Stools:</strong> Compact and space-efficient, perfect for bar counters. Heights from 65cm to 75cm.',
-          '<strong>Low Back Bar Stools:</strong> Added comfort with short backrest while maintaining compact profile.',
-          '<strong>High Back Bar Stools:</strong> Maximum comfort for extended seating, ideal for restaurants.',
-          '<strong>Swivel Bar Stools:</strong> 360-degree swivel mechanism with smooth rotation.',
-          '<strong>Adjustable Height Bar Stools:</strong> Gas lift mechanism for height adjustment (60-80cm range).',
-          '<strong>Fixed Height Bar Stools:</strong> More robust construction for heavy commercial use.',
-          '<strong>Footrest Designs:</strong> Single ring, double ring, or flat footrest options.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?w=1200&auto=format&fit=crop',
-        imageAlt: 'Metal Bar Stools Indonesia Manufacturer'
-      },
-      {
-        heading: 'Materials and Construction Quality',
-        paragraphs: [
-          'Quality materials ensure long-lasting performance in commercial environments:',
-          '<strong>Frame Materials:</strong>'
-        ],
-        list: [
-          'Hollow section steel: 25x25mm to 40x40mm with 2mm wall thickness',
-          'Round tube steel: 32mm diameter for curved designs',
-          'Flat bar steel: 30x6mm for industrial aesthetic',
-          'Premium grade mild steel for consistent quality'
-        ],
-        paragraphs: [
-          '<strong>Seat Options:</strong>'
-        ],
-        list: [
-          'Solid wood seat: Teak, mango wood, or rubber wood',
-          'Plywood with veneer or laminate',
-          'Metal seat with embossed pattern',
-          'Upholstered seat with high-density foam (PU leather or fabric)',
-          'Vintage metal seat with distressed finish'
-        ],
-        paragraphs: [
-          '<strong>Construction Features:</strong> Professional MIG welding with ground joints. Reinforced connection points at seat and footrest. Protective rubber or nylon floor protectors. Weight capacity: 150kg minimum for commercial use.'
-        ]
-      },
-      {
-        heading: 'Finishing Options',
-        paragraphs: [
-          'We offer multiple finishing options to match your design requirements:',
-          '<strong>Powder Coating:</strong> Most popular choice for commercial furniture. Available in any RAL color. Most common: Matte black, glossy black, grey, white, bronze. Durable finish resistant to scratches and chipping.',
-          '<strong>Electroplating:</strong> Chrome finish for modern look. Available in chrome, brass, or copper. Requires more maintenance but provides premium appearance.',
-          '<strong>Raw/Clear Coat:</strong> Natural steel look with clear protective coating. Industrial aesthetic popular in modern venues.',
-          '<strong>Distressed Finish:</strong> Vintage or antique appearance. Combines colored base with manual distressing. Popular for rustic or vintage-themed venues.'
-        ]
-      },
-      {
-        heading: 'Standard Heights and Dimensions',
-        paragraphs: [
-          'Bar stools are available in standard heights to match different counter heights:',
-          '<strong>Counter Height (65cm seat height):</strong> For standard kitchen counters at 90-95cm height. Total height approximately 85-90cm.',
-          '<strong>Bar Height (75cm seat height):</strong> For bar counters at 105-110cm height. Total height approximately 95-105cm.',
-          '<strong>Extra Tall (80-85cm seat height):</strong> For extra high bars or standing tables. Custom height available.',
-          '<strong>Seat Dimensions:</strong> Typical 35cm x 35cm for comfort. Round seats: 35cm diameter. Can be customized to 30cm or 40cm.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=1200&auto=format&fit=crop',
-        imageAlt: 'Bar Stool Design and Manufacturing'
-      },
-      {
-        heading: 'Commercial Applications',
-        paragraphs: [
-          'Our bar stools are designed for various commercial settings:'
-        ],
-        list: [
-          '<strong>Bars and Pubs:</strong> Heavy-duty construction for high-traffic environments',
-          '<strong>Restaurants:</strong> Comfortable seating for counter dining',
-          '<strong>Cafes and Coffee Shops:</strong> Modern designs that enhance ambiance',
-          '<strong>Hotels:</strong> Consistent quality for lobby bars and breakfast areas',
-          '<strong>Food Courts:</strong> Durable and easy-to-clean options',
-          '<strong>Offices:</strong> Breakroom and pantry seating',
-          '<strong>Home Use:</strong> Premium quality for residential kitchen islands'
-        ]
-      },
-      {
-        heading: 'Customization Services',
-        paragraphs: [
-          'We offer comprehensive customization to match your brand identity:',
-          '<strong>Design Customization:</strong> Modify existing designs or create entirely new ones. Adjust dimensions, proportions, or features. Add logo embossing or cutouts in metal seats.',
-          '<strong>Color Matching:</strong> Match any color sample or RAL code. Create two-tone combinations. Special finishes like metallic or textured powder coating.',
-          '<strong>Material Combinations:</strong> Mix metal frame with wood, leather, or fabric seats. Combine different metals (steel + brass accents). Add decorative elements or patterns.',
-          '<strong>Branding Options:</strong> Embossed or engraved logos. Custom seat shapes or cutouts. Branded metal tags or nameplates.'
-        ]
-      },
-      {
-        heading: 'Quality Assurance for Export',
-        paragraphs: [
-          'Every bar stool undergoes strict quality control:',
-          '<strong>Structural Testing:</strong> Load test to 150kg minimum. Stability test on uneven surfaces. Durability test for moving parts (swivel, gas lift).',
-          '<strong>Finish Quality:</strong> Powder coating adhesion test. Thickness measurement (minimum 60 microns). Visual inspection for consistency.',
-          '<strong>Assembly Check:</strong> All connection points checked for tightness. Welding inspected for strength and appearance. Floor protectors properly installed.',
-          '<strong>Packaging:</strong> Individual wrapping for each stool. Corner protection for vulnerable points. Stackable packaging to optimize container space.'
-        ]
-      },
-      {
-        heading: 'Pricing and Minimum Order',
-        paragraphs: [
-          '<strong>Price Range:</strong> $30-$80 per stool depending on design complexity, materials, and finish. Backless stools: $30-$45. With backrest: $40-$60. Upholstered options: $50-$80.',
-          '<strong>Minimum Order Quantity:</strong> 50 pieces for standard designs (can be mixed styles). 100 pieces for custom designs. Sample orders: 5-10 pieces available for evaluation.',
-          '<strong>Volume Discounts:</strong> 100-500 pieces: 5% discount. 500-1000 pieces: 10% discount. 1000+ pieces: Custom pricing available.',
-          '<strong>Lead Time:</strong> Samples: 15-20 days. Standard production: 35-45 days. Rush orders: Possible with 15% surcharge.',
-          '<strong>Container Capacity:</strong> 20ft container: 400-500 stools (backless). 40ft container: 800-1000 stools. Depends on design and packaging.'
-        ]
-      },
-      {
-        heading: 'Export Services and Support',
-        paragraphs: [
-          'We provide complete export support for international buyers:',
-          '<strong>Documentation:</strong> Commercial invoice and packing list. Certificate of Origin (Form E for ASEAN, etc.). Material safety data sheets. Assembly instructions if needed.',
-          '<strong>Shipping Options:</strong> FOB Jakarta/Surabaya port. CIF to your destination port available. Works with your freight forwarder or ours.',
-          '<strong>Quality Guarantee:</strong> 2-year warranty on structural integrity. 1-year warranty on powder coating and moving parts. Replacement parts available.',
-          '<strong>After-Sales Support:</strong> Technical support and documentation. Spare parts supply. Assistance with future orders and designs.',
-          '<strong>Contact us for detailed specifications, quotations, and samples. We serve importers, distributors, and project buyers worldwide.</strong>'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'industrial-lounge-furniture-indonesia-export',
-    sections: [
-      {
-        heading: 'Premium Industrial Lounge Furniture from Indonesia',
-        paragraphs: [
-          'Indonesian manufacturers have established a strong reputation for producing high-quality industrial lounge furniture that combines modern design with exceptional durability. Our lounge furniture collection features robust steel frames paired with comfortable cushioning, creating pieces that are perfect for commercial hospitality environments.',
-          'Industrial lounge furniture has become increasingly popular in hotels, cafes, airports, and commercial spaces worldwide due to its contemporary aesthetic and long-lasting construction. Made in Indonesia with expert craftsmanship and quality materials, our lounge sets offer international buyers excellent value without compromising on quality.'
-        ]
-      },
-      {
-        heading: 'Lounge Furniture Collection',
-        paragraphs: [
-          'Our industrial lounge furniture range includes various pieces to create complete seating areas:'
-        ],
-        list: [
-          '<strong>Lounge Chairs:</strong> Single seater chairs with steel frames and comfortable cushions. Available with or without armrests.',
-          '<strong>Two-Seater Sofas:</strong> Compact sofas perfect for intimate seating areas. Dimensions typically 120-140cm width.',
-          '<strong>Three-Seater Sofas:</strong> Standard size sofas for lobby or lounge areas. Width 180-200cm.',
-          '<strong>Corner Lounges:</strong> L-shaped configurations for maximizing seating in corners. Modular options available.',
-          '<strong>Benches:</strong> Backless or low-back benches for flexible seating arrangements. Various lengths from 120-200cm.',
-          '<strong>Coffee Tables:</strong> Matching tables with steel frames and wood or glass tops. Heights from 40-45cm.',
-          '<strong>Side Tables:</strong> Smaller accent tables for placing drinks or décor. 40-50cm diameter or square.',
-          '<strong>Daybeds:</strong> Extended lounge seating for relaxation areas. 180-200cm length with cushioning.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Lounge Furniture Indonesia'
-      },
-      {
-        heading: 'Frame Construction and Materials',
-        paragraphs: [
-          'The foundation of durable lounge furniture is a properly constructed steel frame:',
-          '<strong>Frame Materials:</strong> Hollow section steel 40x40mm to 60x40mm with 2-3mm wall thickness. Flat bar steel 40x8mm for modern minimalist designs. Round tube steel 32mm for curved elements and armrests.',
-          '<strong>Welding Quality:</strong> Professional MIG welding with full penetration welds. All joints ground smooth for clean appearance. Reinforced corners and stress points.',
-          '<strong>Frame Treatment:</strong> Sandblasting or chemical treatment before coating. Anti-rust primer as base protection. Powder coating as final finish.',
-          '<strong>Engineering:</strong> Designed for weight distribution and stability. Support structure for cushion placement. Reinforced frame for commercial use (200kg+ capacity per seat).'
-        ]
-      },
-      {
-        heading: 'Cushioning and Upholstery Options',
-        paragraphs: [
-          'Comfortable and durable cushioning is essential for lounge furniture:',
-          '<strong>Cushion Construction:</strong> High-density foam (density 28-35 kg/m³) for seat cushions. Medium-density foam for back cushions (25-30 kg/m³). Multi-layer construction with different densities for optimal comfort.',
-          '<strong>Upholstery Materials:</strong>'
-        ],
-        list: [
-          'PU Leather: Easy to clean, durable, available in many colors',
-          'Genuine Leather: Premium option, naturally ages beautifully',
-          'Commercial-grade Fabric: Breathable, comfortable, various textures and patterns',
-          'Outdoor Fabric: UV and water-resistant for outdoor use',
-          'Vinyl: Most durable and easiest to maintain for high-traffic areas'
-        ],
-        paragraphs: [
-          '<strong>Cushion Attachment:</strong> Velcro straps to secure cushions to frame. Zippered covers for easy removal and cleaning. Removable cushions for flexibility in maintenance.'
-        ]
-      },
-      {
-        heading: 'Design Styles and Aesthetics',
-        paragraphs: [
-          'We offer various industrial design styles to suit different commercial environments:',
-          '<strong>Classic Industrial:</strong> Exposed steel frame with visible welds and bolts. Matte black or raw steel finish. Leather or dark fabric upholstery. Straight lines and minimal ornamentation.',
-          '<strong>Modern Industrial:</strong> Sleeker steel profiles with hidden joints. Powder coated in various colors. Mix of materials (steel, wood, fabric). Clean lines with some curves for comfort.',
-          '<strong>Rustic Industrial:</strong> Combination of steel and reclaimed wood elements. Distressed or antique finishes. Natural or earth-toned upholstery. Vintage-inspired details.',
-          '<strong>Minimalist Industrial:</strong> Simple geometric forms. Thin steel profiles. Neutral color palettes. Focus on functionality and clean design.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Lounge Set Design'
-      },
-      {
-        heading: 'Applications and Target Markets',
-        paragraphs: [
-          'Industrial lounge furniture is versatile and suitable for many commercial applications:'
-        ],
-        list: [
-          '<strong>Hotels and Resorts:</strong> Lobby lounge areas, outdoor terraces, pool side seating. Durable furniture that maintains appearance with heavy use.',
-          '<strong>Cafes and Restaurants:</strong> Comfortable seating that encourages customers to linger. Instagram-worthy designs that attract social media attention.',
-          '<strong>Airports and Terminals:</strong> Comfortable waiting areas with durable, easy-to-clean furniture. Modern aesthetic appropriate for public spaces.',
-          '<strong>Corporate Offices:</strong> Break rooms, reception areas, informal meeting spaces. Professional appearance with comfortable functionality.',
-          '<strong>Co-working Spaces:</strong> Flexible lounge areas for relaxation and informal work. Modern design appealing to young professionals.',
-          '<strong>Shopping Malls:</strong> Rest areas and food court seating. High-durability furniture for public use.',
-          '<strong>Healthcare Facilities:</strong> Waiting rooms requiring comfortable, cleanable furniture. Calm, professional aesthetic.'
-        ]
-      },
-      {
-        heading: 'Customization Capabilities',
-        paragraphs: [
-          'We offer extensive customization options to meet specific project requirements:',
-          '<strong>Dimensional Customization:</strong> Any size lounge furniture can be manufactured. Adjust proportions for different space constraints. Create oversized pieces for large lobbies or compact versions for small spaces.',
-          '<strong>Configuration Options:</strong> Modular designs that can be arranged in various configurations. Left or right-facing corner units. Straight, L-shaped, or U-shaped arrangements.',
-          '<strong>Material Combinations:</strong> Mix steel frames with wood armrests or details. Combine different upholstery materials. Add decorative elements like brass accents or leather straps.',
-          '<strong>Color and Finish:</strong> Any powder coating color available (RAL color system). Two-tone frames (black legs with bronze frame, etc.). Matching or contrasting upholstery colors.',
-          '<strong>Brand Integration:</strong> Embossed logos on steel frames. Custom cushion patterns or embroidery. Branded metal tags or nameplates.'
-        ]
-      },
-      {
-        heading: 'Quality Standards for Export',
-        paragraphs: [
-          'Strict quality control ensures furniture meets international standards:',
-          '<strong>Frame Testing:</strong> Load testing to exceed expected use (200kg+ per seat). Welding inspection using visual and strength tests. Coating thickness measurement and adhesion testing.',
-          '<strong>Cushion Quality:</strong> Foam density verification. Compression set testing (foam recovery). Upholstery seam strength testing.',
-          '<strong>Stability and Safety:</strong> Tip-over testing for freestanding pieces. Sharp edge elimination for safety. Floor protector installation to prevent damage.',
-          '<strong>Durability Testing:</strong> Cyclic loading tests simulating years of use. Abrasion resistance testing on upholstery. Color fastness testing for fabrics.',
-          '<strong>Documentation:</strong> Material specifications and certificates. Fire retardancy certificates if required. Assembly instructions and care guides.'
-        ]
-      },
-      {
-        heading: 'Pricing and Order Information',
-        paragraphs: [
-          '<strong>Price Ranges:</strong> Single lounge chair: $200-$400. Two-seater sofa: $400-$700. Three-seater sofa: $600-$1,000. Coffee table: $150-$300. Complete lounge set: $1,500-$3,000. Prices vary based on size, materials, and customization.',
-          '<strong>Minimum Order Quantity:</strong> Standard designs: 10 sets minimum. Custom designs: 20 sets minimum. Sample production: 2-5 pieces available for approval.',
-          '<strong>Production Timeline:</strong> Sample development: 20-30 days. Standard production: 45-60 days after approval. Rush production: Available with surcharge (30-40 days).',
-          '<strong>Payment Terms:</strong> 50% deposit upon order confirmation. 50% balance before shipment. LC accepted for qualified buyers. Flexible terms for established relationships.',
-          '<strong>Shipping:</strong> FOB from Jakarta or Surabaya port. One 40ft container typically holds 8-12 complete lounge sets. Professional packing to prevent damage during transit.'
-        ]
-      },
-      {
-        heading: 'Why Choose Indonesian Lounge Furniture',
-        paragraphs: [
-          '<strong>Skilled Craftsmanship:</strong> Decades of experience in furniture manufacturing. Skilled welders, upholsterers, and finishers. Attention to detail in every piece.',
-          '<strong>Quality Materials:</strong> Access to premium steel and upholstery materials. Sustainable wood options from certified sources. High-quality foam and fabrics.',
-          '<strong>Competitive Pricing:</strong> Factory-direct pricing without middlemen. Lower labor costs than developed countries. Excellent quality-to-price ratio.',
-          '<strong>Customization Flexibility:</strong> Ability to adapt designs to specific requirements. No rigid MOQ for customization. Responsive to design feedback.',
-          '<strong>Export Experience:</strong> Proven track record shipping worldwide. Understanding of international quality standards. Professional export documentation and support.',
-          '<strong>Contact us to discuss your lounge furniture requirements and receive a detailed quotation. We work with hospitality groups, interior designers, and furniture importers globally.</strong>'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'industrial-storage-solutions-metal-shelving-export',
-    sections: [
-      {
-        heading: 'Industrial Storage Solutions Export from Indonesia',
-        paragraphs: [
-          'Indonesia has become a leading source for industrial storage solutions, offering metal shelving, display racks, and storage cabinets that combine robust construction with modern industrial aesthetics. Our storage furniture is designed for commercial applications worldwide, providing reliable organization solutions for retail, hospitality, and industrial environments.',
-          'With skilled metal fabrication capabilities and competitive pricing, Indonesian manufacturers deliver storage solutions that meet international quality standards while remaining cost-effective for bulk orders and custom projects.'
-        ]
-      },
-      {
-        heading: 'Product Range',
-        paragraphs: [
-          'Our industrial storage collection includes:'
-        ],
-        list: [
-          '<strong>Open Shelving Units:</strong> Multi-tier metal shelves with adjustable heights. Steel frame construction with wood or metal shelves. Heights from 180cm to 250cm.',
-          '<strong>Display Racks:</strong> Retail display solutions for showrooms and stores. Freestanding or wall-mounted options. Custom configurations for specific products.',
-          '<strong>Storage Cabinets:</strong> Enclosed storage with metal doors. Industrial kitchen cabinets for commercial use. Tool storage and workshop cabinets.',
-          '<strong>Hanging Shelves:</strong> Wall-mounted shelving systems. Steel rod or chain suspension. Adjustable height configurations.',
-          '<strong>Partition Racks:</strong> Room dividers with storage functionality. Open design for visual flow. Custom heights and widths.',
-          '<strong>Wine Racks:</strong> Industrial-style bottle storage. Wall-mounted or freestanding. Custom capacity designs.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Storage Solutions Metal Shelving'
-      },
-      {
-        heading: 'Materials and Construction',
-        paragraphs: [
-          '<strong>Frame Materials:</strong> Hollow section steel 40x40mm to 50x50mm for vertical supports. Flat bar steel 40x5mm for horizontal supports. Round tube 25-32mm for hanging shelves. All steel sandblasted and powder coated.',
-          '<strong>Shelf Materials:</strong> Solid wood shelves (teak, mango, or pine). Plywood with laminate or veneer finish. Metal mesh shelves for industrial look. Tempered glass shelves for premium units.',
-          '<strong>Load Capacity:</strong> Standard shelf load: 30-50kg per shelf. Heavy-duty option: up to 100kg per shelf. Proper engineering for weight distribution. Reinforced for commercial use.',
-          '<strong>Finishing:</strong> Industrial-grade powder coating. Colors: Matte black, white, grey, bronze, or custom RAL. Wood shelves sealed with clear coat or stain. Durable finish resistant to daily wear.'
-        ]
-      },
-      {
-        heading: 'Customization Options',
-        paragraphs: [
-          'Full customization available for commercial projects:',
-          '<strong>Dimensional Customization:</strong> Any height, width, and depth can be manufactured. Extra tall units for high ceilings. Narrow units for tight spaces. Extra deep shelves for large items.',
-          '<strong>Configuration:</strong> Number of shelves adjustable. Shelf spacing customized for your products. Add drawers, doors, or dividers. Combine open and closed storage.',
-          '<strong>Design Elements:</strong> Industrial pipe shelving aesthetic. Minimalist modern frames. Vintage distressed finish. Ladder-style leaning shelves. Modular systems that expand.',
-          '<strong>Branding:</strong> Custom metal tags or nameplates. Logo cutouts in steel frames. Branded color schemes. Custom packaging for retail.'
-        ]
-      },
-      {
-        heading: 'Applications',
-        paragraphs: [
-          'Our storage solutions serve various industries:'
-        ],
-        list: [
-          '<strong>Retail Stores:</strong> Product display and merchandising. Backroom storage organization. Point-of-sale display fixtures.',
-          '<strong>Restaurants and Cafes:</strong> Kitchen storage and organization. Display for retail products. Bar back shelving.',
-          '<strong>Hotels:</strong> Storage rooms and housekeeping. Display in public areas. Minibar and pantry organization.',
-          '<strong>Offices:</strong> Document and supply storage. Display for products or awards. Breakroom organization.',
-          '<strong>Warehouses:</strong> Heavy-duty industrial shelving. Tool and equipment storage. Inventory organization.',
-          '<strong>Residential:</strong> Home office organization. Kitchen pantry systems. Garage and workshop storage.'
-        ]
-      },
-      {
-        heading: 'Quality and Export Standards',
-        paragraphs: [
-          '<strong>Structural Testing:</strong> Load testing on each shelf level. Stability testing when fully loaded. Tipping test for freestanding units. Weld strength verification.',
-          '<strong>Finish Quality:</strong> Powder coating adhesion testing. Color consistency across batches. Wood finish quality inspection. Protection during shipping.',
-          '<strong>Packaging:</strong> Flat-pack design for efficient shipping. All hardware included with instructions. Corner protection on finished pieces. Moisture protection for ocean freight.',
-          '<strong>Documentation:</strong> Assembly instructions with diagrams. Load capacity specifications. Material certificates. Care and maintenance guide.'
-        ]
-      },
-      {
-        heading: 'Pricing and MOQ',
-        paragraphs: [
-          '<strong>Price Range:</strong> Simple shelving units: $150-$300. Display racks: $200-$500. Storage cabinets: $300-$800. Custom designs: Quote based on specifications.',
-          '<strong>Minimum Order:</strong> Standard designs: 20 pieces. Custom designs: 30-50 pieces depending on complexity. Sample orders available.',
-          '<strong>Production Time:</strong> Samples: 20-25 days. Standard production: 40-50 days. Container capacity: 40ft holds 100-150 units depending on size.',
-          '<strong>Payment Terms:</strong> 50% deposit, 50% before shipment. LC accepted for qualified buyers. FOB Jakarta/Surabaya port.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'custom-metal-furniture-manufacturing-indonesia',
-    sections: [
-      {
-        heading: 'Professional Custom Metal Furniture Manufacturing in Indonesia',
-        paragraphs: [
-          'Indonesia offers world-class custom metal furniture manufacturing services, combining skilled craftsmanship with competitive pricing. Our facility specializes in creating bespoke industrial furniture for international clients, from initial design concepts through final delivery.',
-          'With over 25 years of metal fabrication experience, we provide comprehensive manufacturing services including design development, prototyping, mass production, and export logistics. Our team works collaboratively with clients worldwide to bring their furniture visions to life.'
-        ]
-      },
-      {
-        heading: 'Manufacturing Capabilities',
-        paragraphs: [
-          'Our facility offers complete metal furniture manufacturing:'
-        ],
-        list: [
-          '<strong>Design Services:</strong> In-house designers for concept development. 3D rendering and technical drawings. Material and finish recommendations. Engineering for structural integrity.',
-          '<strong>Prototyping:</strong> Sample production for approval. Modifications based on feedback. Testing for quality and functionality. Photo and video documentation.',
-          '<strong>Metal Fabrication:</strong> Laser cutting for precision parts. CNC bending for complex curves. Professional MIG/TIG welding. In-house tooling and jigs.',
-          '<strong>Surface Finishing:</strong> Sandblasting and chemical treatment. Industrial powder coating line. Electroplating capabilities. Custom finishes and effects.',
-          '<strong>Assembly:</strong> Component assembly and integration. Wood working for mixed-material pieces. Upholstery for cushioned furniture. Quality control at each stage.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&auto=format&fit=crop',
-        imageAlt: 'Custom Metal Furniture Manufacturing'
-      },
-      {
-        heading: 'Materials We Work With',
-        paragraphs: [
-          '<strong>Metals:</strong> Mild steel (most common for industrial furniture). Stainless steel for corrosion resistance. Aluminum for lightweight applications. Brass and copper for accents and details.',
-          '<strong>Steel Profiles:</strong> Hollow section (square and rectangular). Round tube in various diameters. Flat bar and angle iron. Custom bent sections.',
-          '<strong>Complementary Materials:</strong> Solid wood (teak, mango, pine, oak). Engineered wood (plywood, MDF). Leather and fabric upholstery. Glass and acrylic. Rope, chain, and other accents.',
-          '<strong>Hardware:</strong> Commercial-grade hinges and slides. Industrial casters and levelers. Locks and latches. Specialty hardware sourced globally.'
-        ]
-      },
-      {
-        heading: 'Custom Design Process',
-        paragraphs: [
-          '<strong>Step 1 - Consultation:</strong> Discuss your vision and requirements. Review reference images and sketches. Understand target market and price point. Clarify quantities and timeline.',
-          '<strong>Step 2 - Design Development:</strong> Create initial design concepts. Provide 3D renderings for visualization. Develop technical drawings with dimensions. Suggest materials and finishes.',
-          '<strong>Step 3 - Quotation:</strong> Detailed pricing based on specifications. Volume pricing for different quantities. Timeline estimate for production. Terms and conditions.',
-          '<strong>Step 4 - Sample Production:</strong> Manufacture sample for approval. Ship sample for evaluation. Collect feedback and make revisions. Final approval before mass production.',
-          '<strong>Step 5 - Production:</strong> Order confirmation and deposit. Mass production with quality control. Regular progress updates. Pre-shipment inspection and approval.',
-          '<strong>Step 6 - Delivery:</strong> Professional packaging. Export documentation. Shipping arrangement. Ongoing support.'
-        ]
-      },
-      {
-        heading: 'Quality Assurance',
-        paragraphs: [
-          'Strict quality control throughout manufacturing:',
-          '<strong>Material Inspection:</strong> Verification of steel grades and dimensions. Wood moisture content and quality check. Surface preparation standards. Component dimensional accuracy.',
-          '<strong>Process Control:</strong> Welding inspection (visual and destructive testing). Coating thickness measurement. Assembly tolerances. Functionality testing.',
-          '<strong>Final Inspection:</strong> Complete dimensional check. Finish quality assessment. Stability and load testing. Packaging inspection.',
-          '<strong>Certifications:</strong> Material certificates available. Third-party inspection services. Export quality documentation. Warranty coverage.'
-        ]
-      },
-      {
-        heading: 'Industries We Serve',
-        paragraphs: [
-          'We manufacture custom furniture for diverse sectors:'
-        ],
-        list: [
-          '<strong>Hospitality:</strong> Hotels, resorts, restaurants, cafes. Complete furniture packages. Brand-specific custom designs.',
-          '<strong>Retail:</strong> Store fixtures and displays. Checkout counters. Shelving systems. Branded furniture.',
-          '<strong>Commercial:</strong> Office furniture. Corporate spaces. Co-working furniture. Reception areas.',
-          '<strong>Residential:</strong> High-end custom furniture. Interior designer projects. Unique statement pieces.',
-          '<strong>Industrial:</strong> Workshop furniture. Factory storage. Heavy-duty applications.',
-          '<strong>Institutional:</strong> Schools and universities. Healthcare facilities. Government projects.'
-        ]
-      },
-      {
-        heading: 'Why Choose Our Manufacturing Services',
-        paragraphs: [
-          '<strong>Experience:</strong> 25+ years in metal furniture manufacturing. 1000+ custom projects completed. International export experience. Understanding of diverse market requirements.',
-          '<strong>Capabilities:</strong> Complete in-house manufacturing. Design to delivery under one roof. Flexible production capacity. Short lead times for samples.',
-          '<strong>Quality:</strong> Skilled craftsmen and modern equipment. Strict quality control processes. International quality standards. Consistent results across production runs.',
-          '<strong>Service:</strong> Responsive communication. Transparent process with regular updates. Problem-solving approach. Long-term partnership focus.',
-          '<strong>Pricing:</strong> Direct factory pricing. No middlemen markups. Competitive labor costs. Volume discounts available.',
-          '<strong>Logistics:</strong> Complete export services. FOB or CIF terms. Reliable shipping partners. Professional packaging.'
-        ]
-      },
-      {
-        heading: 'Getting Started',
-        paragraphs: [
-          'Ready to manufacture your custom furniture design?',
-          '<strong>Contact us with:</strong> Design sketches or reference images. Specifications and dimensions. Target quantity and timeline. Budget range. Destination country.',
-          '<strong>We will provide:</strong> Design feedback and recommendations. Detailed quotation. Timeline for sample and production. Material and finish options. Terms and conditions.',
-          '<strong>Next steps:</strong> Sample production for approval. Order confirmation and deposit. Production with regular updates. Quality inspection. Shipping and delivery.',
-          '<strong>Contact our team today to discuss your custom metal furniture project. We work with international clients worldwide and are ready to help bring your designs to life with Indonesian quality and competitive pricing.</strong>'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'industrial-kitchen-cabinets-commercial-export',
-    sections: [
-      {
-        heading: 'Industrial Kitchen Cabinets for Commercial Export',
-        paragraphs: [
-          'Industrial-style kitchen cabinets manufactured in Indonesia combine robust steel construction with functional design, perfect for commercial kitchens, restaurants, cafes, and modern residential spaces. Our commercial-grade cabinets are built to withstand the demands of professional environments while offering contemporary industrial aesthetics.',
-          'With export-quality manufacturing standards and competitive pricing, Indonesian industrial kitchen cabinets provide international buyers with durable storage solutions that enhance both functionality and visual appeal.'
-        ]
-      },
-      {
-        heading: 'Product Features',
-        list: [
-          '<strong>Steel Frame Construction:</strong> Heavy-duty hollow section steel for robust structural integrity',
-          '<strong>Door Options:</strong> Metal doors, glass doors, or open shelving configurations',
-          '<strong>Commercial Grade:</strong> Designed for heavy daily use in professional kitchens',
-          '<strong>Modular Design:</strong> Multiple units can be combined for custom layouts',
-          '<strong>Adjustable Shelving:</strong> Interior shelves adjustable for various storage needs',
-          '<strong>Powder Coated Finish:</strong> Durable, easy-to-clean surfaces in various colors',
-          '<strong>Stainless Steel Option:</strong> Available for environments requiring maximum hygiene',
-          '<strong>Custom Dimensions:</strong> Any size configuration to fit your kitchen layout'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Kitchen Cabinets Commercial'
-      },
-      {
-        heading: 'Applications',
-        paragraphs: [
-          '<strong>Restaurant Kitchens:</strong> Professional storage for commercial cooking environments. Heavy-duty construction for daily professional use.',
-          '<strong>Cafe and Coffee Shops:</strong> Storage for equipment, supplies, and ingredients. Modern industrial aesthetic visible to customers.',
-          '<strong>Hotels:</strong> Commercial kitchen storage for large-scale food service. Consistent quality across multiple locations.',
-          '<strong>Catering Businesses:</strong> Organized storage for mobile food operations. Durable construction for frequent access.',
-          '<strong>Residential:</strong> Industrial-style kitchens in modern homes. High-quality cabinets with professional appearance.',
-          '<strong>Price Range:</strong> $300-$800 per unit depending on size and specifications. MOQ: 10 units for standard designs. Production: 40-50 days. FOB Jakarta/Surabaya.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'outdoor-bar-sets-weather-resistant-indonesia',
-    sections: [
-      {
-        heading: 'Weather-Resistant Outdoor Bar Sets from Indonesia',
-        paragraphs: [
-          'Indonesian-manufactured outdoor bar sets feature weather-resistant construction perfect for outdoor hospitality spaces, rooftop bars, patios, and balconies. Our sets combine galvanized steel frames with outdoor-grade powder coating to withstand harsh weather conditions while maintaining their appearance.',
-          'Designed specifically for commercial outdoor applications, these bar sets offer durability, style, and functionality for venues worldwide.'
-        ]
-      },
-      {
-        heading: 'Product Specifications',
-        list: [
-          '<strong>Weather-Resistant Construction:</strong> Galvanized steel with outdoor powder coating',
-          '<strong>Complete Sets:</strong> Bar table with 2-4 matching bar stools',
-          '<strong>Standard Heights:</strong> Bar height (110cm) or counter height (95cm) tables',
-          '<strong>Materials:</strong> Steel frame with teak, synthetic rattan, or metal tops',
-          '<strong>Finish Options:</strong> Outdoor-grade powder coating in various colors',
-          '<strong>UV Protection:</strong> Coating resistant to sun damage and fading',
-          '<strong>Rain Resistant:</strong> Proper drainage and rust-proof construction',
-          '<strong>Easy Maintenance:</strong> Simple cleaning with water and mild soap'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
-        imageAlt: 'Weather-Resistant Outdoor Bar Sets'
-      },
-      {
-        heading: 'Ideal For',
-        paragraphs: [
-          '<strong>Rooftop Bars:</strong> Stylish furniture for elevated outdoor venues. Weather-resistant for exposed locations.',
-          '<strong>Beachside Restaurants:</strong> Corrosion-resistant for coastal environments. Salt air and humidity tolerant.',
-          '<strong>Hotel Patios:</strong> Durable furniture for guest outdoor areas. Professional appearance with reliability.',
-          '<strong>Garden Cafes:</strong> Weather-proof seating for year-round outdoor dining. Modern industrial aesthetic.',
-          '<strong>Price Range:</strong> Complete bar set (table + 2 stools): $400-$700. Table + 4 stools: $650-$1,000. MOQ: 10 sets. Production: 35-45 days.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'industrial-daybed-frames-metal-furniture-export',
-    sections: [
-      {
-        heading: 'Industrial Daybed Frames - Export Quality Metal Furniture',
-        paragraphs: [
-          'Industrial daybed frames from Indonesia offer minimalist design with robust steel construction, perfect for hotels, lounges, spas, and modern residential spaces. Our daybed frames provide the foundation for comfortable lounge seating with contemporary industrial aesthetics.',
-          'Manufactured with precision welding and professional finishing, these frames are designed for commercial durability while maintaining sleek visual appeal.'
-        ]
-      },
-      {
-        heading: 'Frame Specifications',
-        list: [
-          '<strong>Dimensions:</strong> Standard 180cm x 80cm or custom sizes available',
-          '<strong>Frame Material:</strong> Hollow section steel 40x40mm with reinforcement',
-          '<strong>Weight Capacity:</strong> 250kg+ for commercial use',
-          '<strong>Finish:</strong> Powder coating in matte black, bronze, or custom colors',
-          '<strong>Design:</strong> Minimalist industrial with clean lines',
-          '<strong>Cushion Support:</strong> Slat or mesh base for cushion placement',
-          '<strong>Variations:</strong> With or without backrest, armrests optional',
-          '<strong>Mobility:</strong> Optional casters for easy movement'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Daybed Frames Metal Furniture'
-      },
-      {
-        heading: 'Applications and Pricing',
-        paragraphs: [
-          '<strong>Hotels and Resorts:</strong> Pool side lounge areas. Lobby seating. Spa waiting rooms.',
-          '<strong>Cafes and Lounges:</strong> Comfortable seating for extended stays. Instagram-worthy furniture. Modern aesthetic.',
-          '<strong>Offices:</strong> Break room lounge areas. Reception waiting areas. Creative workspace seating.',
-          '<strong>Price Range:</strong> Basic frame: $200-$350. With cushions: $350-$600. Custom designs: Quote based on specifications. MOQ: 15 pieces. Production: 30-40 days.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'metal-display-racks-retail-furniture-indonesia',
-    sections: [
-      {
-        heading: 'Metal Display Racks - Retail Furniture from Indonesia',
-        paragraphs: [
-          'Industrial metal display racks manufactured in Indonesia provide versatile retail merchandising solutions for stores, showrooms, and commercial spaces worldwide. Our display racks combine functional design with modern industrial aesthetics, creating effective product presentation systems.',
-          'Custom-designed for specific retail needs or available in standard configurations, our display racks help maximize sales through attractive product visibility.'
-        ]
-      },
-      {
-        heading: 'Display Rack Types',
-        list: [
-          '<strong>Clothing Racks:</strong> Garment display with hanging rails. Height-adjustable options. Mobile or stationary configurations.',
-          '<strong>Shoe Displays:</strong> Angled shelves for footwear presentation. Multi-tier designs. Custom branding options.',
-          '<strong>Product Shelving:</strong> Adjustable shelves for various merchandise. Open or enclosed designs. Modular systems.',
-          '<strong>Wall-Mounted Displays:</strong> Space-saving retail solutions. Various shelf depths. Easy installation systems.',
-          '<strong>Freestanding Units:</strong> Double-sided access for floor displays. Custom heights and configurations. Stable base design.',
-          '<strong>Counter Displays:</strong> Point-of-sale merchandising. Compact designs. Eye-catching presentation.',
-          '<strong>Specialty Racks:</strong> Wine bottle displays. Book displays. Electronics displays. Custom for specific products.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=1200&auto=format&fit=crop',
-        imageAlt: 'Metal Display Racks Retail Furniture'
-      },
-      {
-        heading: 'Customization and Pricing',
-        paragraphs: [
-          '<strong>Branding Options:</strong> Custom colors matching your brand. Logo plates or decals. Branded signage holders. Custom dimensions.',
-          '<strong>Materials:</strong> Steel frame powder coated. Wood shelves or metal mesh. Glass shelves for premium display. Combination designs.',
-          '<strong>Applications:</strong> Fashion boutiques. Shoe stores. Gift shops. Bookstores. Electronics stores. Wholesale showrooms.',
-          '<strong>Pricing:</strong> Simple racks: $100-$250. Complex displays: $250-$600. Custom designs: Based on specifications. MOQ: 20 pieces. Production: 35-45 days.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'industrial-work-tables-office-furniture-export',
-    sections: [
-      {
-        heading: 'Industrial Work Tables - Office Furniture Export',
-        paragraphs: [
-          'Industrial work tables from Indonesia combine sturdy steel frames with functional work surfaces, ideal for modern offices, co-working spaces, studios, and workshops. Our tables are designed for professional environments requiring durable, reliable work surfaces with contemporary industrial styling.',
-          'Manufactured to commercial standards with customizable dimensions and finishes, these work tables serve international markets across various professional sectors.'
-        ]
-      },
-      {
-        heading: 'Table Specifications',
-        list: [
-          '<strong>Frame Construction:</strong> Hollow section steel 40x40mm to 60x40mm',
-          '<strong>Top Materials:</strong> Solid wood, plywood, or metal tops. Thickness 25-40mm for stability',
-          '<strong>Standard Sizes:</strong> 120x60cm (individual desks) to 200x80cm (large work tables)',
-          '<strong>Height Options:</strong> Standard 75cm or standing desk height 105cm',
-          '<strong>Load Capacity:</strong> 100-150kg evenly distributed weight',
-          '<strong>Cable Management:</strong> Optional wire management solutions',
-          '<strong>Mobility:</strong> Fixed legs or caster wheels available',
-          '<strong>Finish:</strong> Powder-coated steel, sealed wood surfaces'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1595428773629-6e5cf2e1d8f1?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Work Tables Office Furniture'
-      },
-      {
-        heading: 'Applications and Pricing',
-        paragraphs: [
-          '<strong>Modern Offices:</strong> Individual workstations. Collaborative work tables. Meeting room tables.',
-          '<strong>Co-working Spaces:</strong> Hot-desking tables. Communal work surfaces. Private office desks.',
-          '<strong>Studios:</strong> Design studios. Art studios. Photography studios. Architecture firms.',
-          '<strong>Workshops:</strong> Assembly tables. Tool benches. Project tables.',
-          '<strong>Pricing:</strong> Single desk 120cm: $180-$300. Large table 200cm: $350-$550. Custom sizes: Based on specifications. MOQ: 15 pieces. Production: 30-40 days. FOB Jakarta/Surabaya port.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'metal-coat-racks-commercial-furniture-indonesia',
-    sections: [
-      {
-        heading: 'Metal Coat Racks - Commercial Furniture from Indonesia',
-        paragraphs: [
-          'Industrial metal coat racks from Indonesia provide functional storage solutions for commercial spaces including offices, hotels, restaurants, and retail environments. Our coat racks feature robust steel construction with modern industrial design, offering reliable garment storage with visual appeal.',
-          'Available in freestanding and wall-mounted configurations, our coat racks are designed for heavy commercial use while maintaining clean, contemporary aesthetics.'
-        ]
-      },
-      {
-        heading: 'Product Range',
-        list: [
-          '<strong>Freestanding Coat Racks:</strong> Floor-standing units with multiple hooks. Height 170-200cm. Stable weighted base.',
-          '<strong>Wall-Mounted Hooks:</strong> Space-saving wall installations. Various hook quantities. Industrial pipe designs.',
-          '<strong>Coat Trees:</strong> Central pole with radiating hooks. Modern minimalist styling. Heavy-duty construction.',
-          '<strong>Hall Trees:</strong> Combined seating and coat storage. Bench with overhead hooks. Shoe storage options.',
-          '<strong>Commercial Wardrobes:</strong> Open wardrobe systems. Hanging rail with shelf. Mobile or fixed versions.',
-          '<strong>Hotel Valets:</strong> Garment hanging with trouser bar. Compact footprint. Professional appearance.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=1200&auto=format&fit=crop',
-        imageAlt: 'Metal Coat Racks Commercial Furniture'
-      },
-      {
-        heading: 'Specifications and Pricing',
-        paragraphs: [
-          '<strong>Materials:</strong> Steel tube 25-40mm diameter. Powder-coated finish. Quality hooks and hardware.',
-          '<strong>Capacity:</strong> Freestanding: 15-25 coats. Wall-mounted: 5-10 coats per meter. Heavy-duty options available.',
-          '<strong>Finish Options:</strong> Matte black most popular. Bronze, grey, white available. Custom RAL colors.',
-          '<strong>Applications:</strong> Office reception areas. Hotel room furniture. Restaurant entryways. Retail fitting rooms. Gym and spa facilities.',
-          '<strong>Pricing:</strong> Wall hooks: $40-$80. Freestanding racks: $100-$250. Hall trees: $200-$400. MOQ: 30 pieces. Production: 25-35 days.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'industrial-bookshelf-metal-frame-export-indonesia',
-    sections: [
-      {
-        heading: 'Industrial Bookshelves - Metal Frame Export from Indonesia',
-        paragraphs: [
-          'Industrial-style bookshelves with metal frames manufactured in Indonesia offer modern storage solutions for offices, libraries, residential spaces, and commercial environments. Our bookshelves combine steel structural frames with wood or metal shelves, creating durable and attractive storage systems.',
-          'Designed for both functionality and aesthetic appeal, these bookshelves serve international markets requiring quality furniture with contemporary industrial character.'
-        ]
-      },
-      {
-        heading: 'Bookshelf Designs',
-        list: [
-          '<strong>Ladder Bookshelves:</strong> Leaning design against wall. Progressive shelf depths. Modern minimalist aesthetic.',
-          '<strong>Cube Storage Systems:</strong> Modular cube configurations. Mix of open and closed cubes. Customizable arrangements.',
-          '<strong>Industrial Shelving Units:</strong> Traditional rectangular shelving. Adjustable shelf heights. Various widths and heights.',
-          '<strong>Wall-Mounted Shelves:</strong> Floating shelf appearance. Steel brackets or frames. Various lengths available.',
-          '<strong>Room Divider Shelves:</strong> Double-sided access. Open design for light flow. Partition functionality.',
-          '<strong>Corner Bookshelves:</strong> Space-efficient corner units. Triangular or L-shaped. Maximizes unused space.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1595428773629-6e5cf2e1d8f1?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Bookshelf Metal Frame'
-      },
-      {
-        heading: 'Specifications and Applications',
-        paragraphs: [
-          '<strong>Materials:</strong> Steel frame 30x30mm to 40x40mm. Wood shelves in teak, mango, or pine. Metal mesh shelf options. Powder-coated finishes.',
-          '<strong>Dimensions:</strong> Heights 180cm to 240cm. Widths 80cm to 200cm. Depths 30cm to 45cm. Custom sizes available.',
-          '<strong>Load Capacity:</strong> 25-40kg per shelf depending on design. Reinforced for heavy book collections. Proper weight distribution.',
-          '<strong>Applications:</strong> Home libraries. Office spaces. Bookstores. Educational institutions. Hotels and lobbies. Cafes with book displays.',
-          '<strong>Pricing:</strong> Small units (80cm wide): $180-$300. Large units (150cm+ wide): $350-$600. Custom designs: Quote based on specs. MOQ: 15 pieces. Production: 35-45 days.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'balcony-furniture-space-saving-designs-indonesia',
-    sections: [
-      {
-        heading: 'Balcony Furniture - Space-Saving Designs from Indonesia',
-        paragraphs: [
-          'Space-efficient balcony furniture manufactured in Indonesia provides compact solutions for small outdoor spaces. Our designs maximize functionality in limited areas while offering weather-resistant construction and modern industrial styling perfect for urban balconies, small patios, and compact outdoor areas.',
-          'Specially designed for small-space living, these furniture pieces help create comfortable outdoor environments without overcrowding limited square footage.'
-        ]
-      },
-      {
-        heading: 'Space-Saving Furniture Range',
-        list: [
-          '<strong>Folding Bar Tables:</strong> Wall-mounted fold-down tables. Compact when not in use. Various sizes 60-100cm width.',
-          '<strong>Stackable Chairs:</strong> Space-efficient storage. Comfortable seating. Industrial metal or mixed materials.',
-          '<strong>Corner Benches:</strong> L-shaped seating utilizing corners. Maximizes seating in small areas. Storage underneath options.',
-          '<strong>Compact Bar Sets:</strong> Small bistro tables 60-70cm diameter. Matching compact stools. Perfect for 2-person setups.',
-          '<strong>Hanging Planters:</strong> Vertical garden solutions. Save floor space. Industrial metal designs.',
-          '<strong>Rail-Mounted Tables:</strong> Attach to balcony railings. Folds flat when not needed. Smart space utilization.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Balcony Furniture Space-Saving Designs'
-      },
-      {
-        heading: 'Features and Pricing',
-        paragraphs: [
-          '<strong>Weather Resistance:</strong> Galvanized steel with outdoor coating. Rust-proof construction. UV-resistant finishes. Easy maintenance.',
-          '<strong>Compact Dimensions:</strong> Tables 60-80cm for tight spaces. Chairs designed for small footprint. Vertical storage solutions.',
-          '<strong>Multi-Functional:</strong> Furniture with dual purposes. Seating with storage. Tables with planters.',
-          '<strong>Target Markets:</strong> Apartment balconies. Small urban patios. Compact roof terraces. Hotel room balconies. Airbnb properties.',
-          '<strong>Pricing:</strong> Compact bistro set: $200-$350. Folding table: $80-$150. Stackable chairs (per pair): $100-$180. MOQ: 20 pieces. Production: 30-40 days.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'steel-frame-furniture-manufacturer-indonesia',
-    sections: [
-      {
-        heading: 'Leading Steel Frame Furniture Manufacturer in Indonesia',
-        paragraphs: [
-          'As a premier steel frame furniture manufacturer in Indonesia, we specialize in producing high-quality industrial furniture for export to global markets. Our facility combines modern fabrication equipment with skilled craftsmanship to deliver consistent quality across large production runs.',
-          'With comprehensive manufacturing capabilities from raw steel to finished furniture, we serve international buyers, distributors, and project contractors worldwide.'
-        ]
-      },
-      {
-        heading: 'Manufacturing Capabilities',
-        list: [
-          '<strong>Steel Processing:</strong> In-house steel cutting and preparation. Laser cutting for precision. CNC bending capabilities. Tube and profile processing.',
-          '<strong>Welding:</strong> Skilled MIG/TIG welders. Robotic welding for consistency. Quality weld inspection. Clean joint finishing.',
-          '<strong>Surface Treatment:</strong> Sandblasting facilities. Chemical pre-treatment. Powder coating line. Electroplating options.',
-          '<strong>Assembly:</strong> Complete furniture assembly. Multi-material integration. Quality control checkpoints. Efficient production flow.',
-          '<strong>Packaging:</strong> Professional export packaging. Flat-pack or assembled options. Container optimization. Protection during transit.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&auto=format&fit=crop',
-        imageAlt: 'Steel Frame Furniture Manufacturing'
-      },
-      {
-        heading: 'Product Range',
-        paragraphs: [
-          '<strong>Furniture Categories:</strong> Dining tables and chairs. Bar furniture. Lounge seating. Office furniture. Storage solutions. Outdoor furniture. Custom designs.',
-          '<strong>Quality Standards:</strong> ISO-compliant processes. Material traceability. Load testing protocols. Finish quality standards. Export documentation.',
-          '<strong>Production Capacity:</strong> Large-scale production runs. Container-load quantities. Consistent quality across batches. Flexible scheduling.',
-          '<strong>Export Services:</strong> FOB/CIF terms available. Complete export documentation. Freight forwarding partnerships. Quality guarantees. After-sales support.',
-          '<strong>Why Choose Us:</strong> 25+ years manufacturing experience. 1000+ successful export projects. Competitive factory-direct pricing. Reliable delivery timelines. Quality consistency. Responsive communication.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'industrial-bench-seating-commercial-furniture',
-    sections: [
-      {
-        heading: 'Industrial Bench Seating - Commercial Furniture',
-        paragraphs: [
-          'Industrial bench seating from Indonesia provides versatile seating solutions for commercial environments including cafes, restaurants, waiting areas, and public spaces. Our benches feature robust steel frames with various back and cushioning options, designed for heavy commercial use.',
-          'Manufactured to withstand constant use while maintaining visual appeal, our bench seating serves markets worldwide requiring durable, attractive commercial furniture.'
-        ]
-      },
-      {
-        heading: 'Bench Seating Types',
-        list: [
-          '<strong>Backless Benches:</strong> Simple design for flexible use. Easy to slide under tables. Modern minimalist aesthetic.',
-          '<strong>Low-Back Benches:</strong> Comfortable support without bulk. Suitable for dining areas. Clean industrial lines.',
-          '<strong>High-Back Banquettes:</strong> Maximum comfort for extended seating. Restaurant booth seating. Upholstered options.',
-          '<strong>Corner Benches:</strong> L-shaped for corner placement. Maximizes seating capacity. Space-efficient design.',
-          '<strong>Modular Benches:</strong> Units that connect together. Flexible configurations. Scalable seating systems.',
-          '<strong>Outdoor Benches:</strong> Weather-resistant construction. Parks and public spaces. Durable finishes.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Bench Seating Commercial'
-      },
-      {
-        heading: 'Applications and Pricing',
-        paragraphs: [
-          '<strong>Restaurants and Cafes:</strong> Booth seating for dining. Communal table benches. Outdoor patio seating.',
-          '<strong>Waiting Areas:</strong> Airports and terminals. Hospital waiting rooms. Office reception areas.',
-          '<strong>Public Spaces:</strong> Shopping malls. Parks and plazas. Educational institutions.',
-          '<strong>Specifications:</strong> Lengths from 120cm to 300cm. Seat height 45cm standard. Steel frame with wood or upholstered seats. Load capacity 400kg+.',
-          '<strong>Pricing:</strong> Backless bench 150cm: $180-$300. With backrest 150cm: $280-$450. Upholstered banquette: $400-$700. MOQ: 15 pieces. Production: 35-45 days.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'hospitality-furniture-supplier-indonesia-export',
-    sections: [
-      {
-        heading: 'Hospitality Furniture Supplier - Indonesia Export',
-        paragraphs: [
-          'As a comprehensive hospitality furniture supplier in Indonesia, we provide complete furniture solutions for hotels, resorts, restaurants, and commercial hospitality projects worldwide. Our extensive range covers all furniture needs from guest rooms to public spaces, manufactured to commercial hospitality standards.',
-          'With experience supplying major hospitality projects across multiple countries, we understand the unique requirements of the hospitality industry including durability, aesthetics, budget management, and timeline adherence.'
-        ]
-      },
-      {
-        heading: 'Complete Furniture Solutions',
-        list: [
-          '<strong>Guest Room Furniture:</strong> Bed frames and headboards. Nightstands and dressers. Desks and chairs. Luggage racks. Wardrobes.',
-          '<strong>Lobby and Public Areas:</strong> Lounge seating. Coffee tables. Reception desks. Display shelving. Decorative pieces.',
-          '<strong>Dining Furniture:</strong> Restaurant tables and chairs. Bar stools and counters. Buffet stations. Service carts.',
-          '<strong>Outdoor Furniture:</strong> Pool side loungers. Patio dining sets. Garden benches. Cabanas and daybeds.',
-          '<strong>Back-of-House:</strong> Staff areas. Storage solutions. Utility furniture. Kitchen equipment.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&auto=format&fit=crop',
-        imageAlt: 'Hospitality Furniture Supplier Indonesia'
-      },
-      {
-        heading: 'Project Services',
-        paragraphs: [
-          '<strong>Design Consultation:</strong> Understanding project requirements. Style development. Space planning. Material recommendations.',
-          '<strong>Customization:</strong> Brand-specific designs. Custom dimensions. Unique finishes. Logo integration.',
-          '<strong>Project Management:</strong> Timeline coordination. Phased delivery. Quality consistency. On-time completion.',
-          '<strong>Large-Scale Production:</strong> Multiple container capacity. Consistent quality across quantities. Bulk pricing. Staged delivery options.',
-          '<strong>Case Studies:</strong> 50+ room boutique hotels. 200+ room resort projects. Restaurant chains. Spa and wellness centers.',
-          '<strong>Advantages:</strong> One-stop furniture sourcing. Consistent quality and style. Competitive project pricing. Reliable timelines. Full export support. Post-delivery service.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'restaurant-furniture-indonesia-wholesale-export',
-    sections: [
-      {
-        heading: 'Restaurant Furniture Indonesia - Wholesale Export',
-        paragraphs: [
-          'Wholesale restaurant furniture manufacturer in Indonesia offering complete dining furniture solutions for export to international markets. Our product range includes dining tables, chairs, bar furniture, and storage specifically designed for commercial restaurant use.',
-          'With competitive wholesale pricing and consistent quality for bulk orders, we serve restaurant chains, hospitality groups, furniture distributors, and project contractors worldwide.'
-        ]
-      },
-      {
-        heading: 'Restaurant Furniture Range',
-        list: [
-          '<strong>Dining Tables:</strong> Various sizes and configurations. 2-seater to 10-seater options. Round, square, rectangular. Indoor and outdoor versions.',
-          '<strong>Dining Chairs:</strong> Side chairs and armchairs. Stackable options. Metal, wood, or upholstered. Commercial-grade construction.',
-          '<strong>Booth Seating:</strong> Banquette benches. Corner booths. Custom configurations. Upholstery options.',
-          '<strong>Bar Furniture:</strong> Bar height tables. Bar stools and chairs. Bar counters. Back bar storage.',
-          '<strong>Outdoor Dining:</strong> Weather-resistant tables and chairs. Patio furniture. Rooftop dining sets. Folding options.',
-          '<strong>Auxiliary Furniture:</strong> Hostess stations. Server stations. Wine racks. Display shelving.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&auto=format&fit=crop',
-        imageAlt: 'Restaurant Furniture Wholesale Indonesia'
-      },
-      {
-        heading: 'Wholesale Advantages',
-        paragraphs: [
-          '<strong>Volume Pricing:</strong> Competitive rates for bulk orders. Tiered pricing discounts. Container-load pricing. Long-term partnership rates.',
-          '<strong>Consistent Quality:</strong> Standardized production processes. Quality control for large batches. Material consistency. Repeat order reliability.',
-          '<strong>Flexible MOQ:</strong> Mixed container loads. Combine different items. Start with smaller test orders. Scale up for full projects.',
-          '<strong>Production Capacity:</strong> Large-scale manufacturing. Multiple containers monthly. Fast turnaround on repeat orders. Reliable scheduling.',
-          '<strong>Target Buyers:</strong> Restaurant chains. Furniture distributors. Hospitality groups. Interior design firms. Project contractors.',
-          '<strong>Pricing Examples:</strong> Dining set (table + 2 chairs): $180-$350. Bar stool: $35-$65. Booth seating per meter: $350-$600. 40ft container value: $15,000-$30,000 typical.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'cafe-furniture-wholesale-indonesia-manufacturer',
-    sections: [
-      {
-        heading: 'Cafe Furniture Wholesale - Indonesia Manufacturer',
-        paragraphs: [
-          'Wholesale cafe furniture manufacturer in Indonesia specializing in modern industrial-style furniture perfect for coffee shops and cafes worldwide. Our comprehensive range includes dining tables, chairs, bar stools, and lounge seating designed specifically for cafe environments.',
-          'With Instagram-worthy designs and commercial-grade construction, our cafe furniture helps create inviting spaces that attract customers while withstanding heavy daily use.'
-        ]
-      },
-      {
-        heading: 'Cafe Furniture Collection',
-        list: [
-          '<strong>Cafe Tables:</strong> Small 2-person tables 60-70cm. Medium 4-person tables 80-100cm. Communal tables 200cm+. Various heights including bar height.',
-          '<strong>Cafe Chairs:</strong> Lightweight yet durable. Stackable options. Industrial metal chairs. Mixed material designs. Cushioned seats available.',
-          '<strong>Lounge Seating:</strong> Sofas and benches. Comfortable for extended stays. Modern industrial styling. Various upholstery options.',
-          '<strong>Bar Furniture:</strong> Bar counters. Bar stools. High tables. Standing height options.',
-          '<strong>Outdoor Options:</strong> Sidewalk cafe furniture. Patio tables and chairs. Weather-resistant finishes. Foldable for storage.',
-          '<strong>Display and Storage:</strong> Retail product shelving. Pastry display cases. Coffee equipment stations. Menu boards.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop',
-        imageAlt: 'Cafe Furniture Wholesale Indonesia'
-      },
-      {
-        heading: 'Wholesale for Cafe Businesses',
-        paragraphs: [
-          '<strong>Design Trends:</strong> Industrial modern style. Minimalist Scandinavian. Vintage rustic. Contemporary urban. Mix-and-match capability.',
-          '<strong>Space Optimization:</strong> Furniture for small cafes. Maximize seating capacity. Flexible arrangements. Multi-functional pieces.',
-          '<strong>Budget-Friendly:</strong> Startup cafe packages. Wholesale pricing. Volume discounts. Mixed containers. Payment terms for businesses.',
-          '<strong>Fast Turnaround:</strong> Stock designs: 30-40 days. Popular color options. Standard sizes. Container optimization.',
-          '<strong>Target Markets:</strong> Coffee shop chains. Independent cafes. Franchise operators. Interior designers. Hospitality groups. Furniture importers.',
-          '<strong>Package Examples:</strong> Starter package (10 tables + 20 chairs): $2,500-$4,000. Medium cafe (20 tables + 40 chairs + lounge): $6,000-$10,000. Large cafe complete setup: $12,000-$20,000.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'industrial-furniture-hotels-contract-furniture',
-    sections: [
-      {
-        heading: 'Industrial Furniture for Hotels - Contract Furniture',
-        paragraphs: [
-          'Specialized contract furniture manufacturing for hotel projects, providing industrial-style furniture solutions for guest rooms, lobbies, restaurants, and all hotel public spaces. Our contract furniture division handles large-scale hotel projects with experience in multi-phase delivery and maintaining quality consistency across hundreds of rooms.',
-          'We understand the unique requirements of hotel furniture including durability for commercial use, aesthetic appeal, budget management, and strict timeline adherence critical to hotel opening schedules.'
-        ]
-      },
-      {
-        heading: 'Hotel Furniture Solutions',
-        list: [
-          '<strong>Guest Room Furniture:</strong> Platform beds and headboards. Nightstands and lighting. Work desks and chairs. Wardrobes and luggage racks. TV units. Mini bar cabinets.',
-          '<strong>Lobby Furniture:</strong> Reception desks. Lounge seating arrangements. Coffee tables. Decorative shelving. Accent pieces.',
-          '<strong>Restaurant and Bar:</strong> Dining furniture. Bar counters and stools. Buffet stations. Banquette seating. Outdoor dining.',
-          '<strong>Public Spaces:</strong> Conference room furniture. Gym equipment frames. Spa furniture. Laundry room solutions.',
-          '<strong>Suite Furniture:</strong> Living room sets. Dining areas. Kitchen furniture. Luxury finishes.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1596436889106-be35e843f974?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Hotel Contract Furniture'
-      },
-      {
-        heading: 'Contract Services',
-        paragraphs: [
-          '<strong>Project Management:</strong> Dedicated project manager. Timeline coordination. Phased delivery scheduling. Quality consistency. Communication protocols.',
-          '<strong>Customization:</strong> Brand-specific designs. Custom dimensions for spaces. Unique finishes and materials. Logo integration. Color matching.',
-          '<strong>Large-Scale Production:</strong> 50-500+ room capacity. Consistent quality across batches. Multiple container coordination. Warehousing and staging. Installation support.',
-          '<strong>Budget Management:</strong> Competitive contract pricing. Value engineering. Payment schedules. Cost control. Transparent quotations.',
-          '<strong>Quality Assurance:</strong> Pre-production samples. In-process inspections. Final inspections. Third-party QC available. Warranty coverage. Spare parts provision.',
-          '<strong>Experience:</strong> Boutique hotels 20-50 rooms. Mid-scale hotels 100-200 rooms. Large hotels 200+ rooms. Resort projects. Hotel chain projects.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'powder-coating-metal-furniture-finishing-indonesia',
-    sections: [
-      {
-        heading: 'Powder Coating Metal Furniture - Professional Finishing in Indonesia',
-        paragraphs: [
-          'Professional powder coating services for metal furniture in Indonesia, providing durable, high-quality finishes for export-quality furniture. Our industrial powder coating line ensures consistent color application, excellent durability, and superior finish quality for all types of metal furniture.',
-          'Powder coating is the preferred finishing method for commercial metal furniture due to its exceptional durability, environmental benefits, and wide range of color and texture options.'
-        ]
-      },
-      {
-        heading: 'Powder Coating Process',
-        list: [
-          '<strong>Surface Preparation:</strong> Chemical degreasing to remove oils. Phosphate treatment for adhesion. Rinsing and drying. Clean room environment.',
-          '<strong>Priming:</strong> Anti-rust primer application. Special primers for different environments. Enhanced corrosion protection. Foundation for topcoat.',
-          '<strong>Powder Application:</strong> Electrostatic spray application. Even powder distribution. Full coverage including corners. Efficient material use.',
-          '<strong>Curing:</strong> Industrial curing oven. Controlled temperature 180-200°C. Proper cure time 10-20 minutes. Consistent heat distribution.',
-          '<strong>Quality Control:</strong> Thickness measurement (60-100 microns). Adhesion testing. Color matching. Surface inspection. Gloss level verification.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&auto=format&fit=crop',
-        imageAlt: 'Powder Coating Metal Furniture Professional Finishing'
-      },
-      {
-        heading: 'Finish Options and Benefits',
-        paragraphs: [
-          '<strong>Color Options:</strong> Any RAL color available. Custom color matching. Metallic finishes. Textured finishes. Two-tone combinations.',
-          '<strong>Gloss Levels:</strong> Matte finish (most popular for industrial furniture). Semi-gloss. High gloss. Satin finish.',
-          '<strong>Special Finishes:</strong> Hammertone texture. Wrinkle finish. Antique/distressed effects. Metallic sparkle. Candy colors.',
-          '<strong>Durability Benefits:</strong> Scratch and chip resistant. UV resistant for outdoor use. Corrosion protection. Chemical resistant. Easy to clean and maintain. 5-10 year outdoor durability.',
-          '<strong>Environmental Benefits:</strong> No VOC emissions. No solvents or toxins. Recyclable overspray. Energy efficient process. Eco-friendly choice.',
-          '<strong>Quality Standards:</strong> ISO coating processes. Thickness standards. Adhesion requirements. Color tolerance. Outdoor durability testing. Export quality assurance.',
-          '<strong>Applications:</strong> All metal furniture types. Indoor and outdoor furniture. Commercial and residential. Architecture and construction. Automotive and industrial.'
-        ]
-      }
-    ]
-  },
-  {
-    slug: 'custom-order-process-international-buyers-indonesia',
-    sections: [
-      {
-        heading: 'Complete Guide to Custom Ordering Industrial Furniture from Indonesia',
-        paragraphs: [
-          'Ordering custom industrial furniture from Indonesia offers international buyers access to high-quality products at competitive prices. However, working with overseas manufacturers can seem daunting if you are unfamiliar with the process. This comprehensive guide walks you through every step of custom ordering furniture from Indonesia, from initial inquiry to final delivery.',
-          'With over 25 years of experience working with international clients, we have streamlined our process to make custom ordering as smooth and transparent as possible. Our goal is to deliver exactly what you envision, on time and within budget.'
-        ]
-      },
-      {
-        heading: 'Step 1: Initial Inquiry and Requirements',
-        paragraphs: [
-          'The first step is reaching out with your project requirements. The more information you provide initially, the more accurate our response will be:',
-          '<strong>What to Include in Your Inquiry:</strong>'
-        ],
-        list: [
-          '<strong>Product Type:</strong> Specify what furniture you need (dining tables, bar stools, lounge furniture, etc.)',
-          '<strong>Quantity:</strong> Approximate quantity helps us quote accurately and plan production',
-          '<strong>Dimensions:</strong> If you have specific sizes in mind, include measurements',
-          '<strong>Materials:</strong> Preferences for steel types, wood species, upholstery, etc.',
-          '<strong>Finish:</strong> Color preferences, powder coating vs. other finishes',
-          '<strong>Budget Range:</strong> Helps us recommend appropriate options',
-          '<strong>Timeline:</strong> When do you need the furniture delivered?',
-          '<strong>Destination:</strong> Shipping destination affects logistics and pricing',
-          '<strong>Reference Images:</strong> Photos of styles you like are extremely helpful'
-        ],
-        paragraphs: [
-          '<strong>How to Contact Us:</strong> Email is best for detailed inquiries with attachments. WhatsApp for quick questions and discussions. Video calls can be arranged for complex projects.',
-          '<strong>Response Time:</strong> We typically respond to inquiries within 24 hours with initial feedback. Detailed quotations follow within 2-3 business days after clarifying requirements.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop',
-        imageAlt: 'Custom Order Process Industrial Furniture'
-      },
-      {
-        heading: 'Step 2: Design Development and Quotation',
-        paragraphs: [
-          'Once we understand your requirements, we develop design concepts and provide a detailed quotation:',
-          '<strong>Design Development:</strong>'
-        ],
-        list: [
-          'Review your reference images and requirements',
-          'Create initial sketches or 3D renderings if needed',
-          'Suggest materials and construction methods',
-          'Propose modifications based on our expertise',
-          'Provide technical drawings with dimensions'
-        ],
-        paragraphs: [
-          '<strong>Quotation Details:</strong> Our quotation includes:'
-        ],
-        list: [
-          'Detailed product specifications',
-          'Materials to be used (steel type, wood species, finish)',
-          'Dimensions and any variations if needed',
-          'Unit price and total price based on quantity',
-          'Production timeline estimate',
-          'Payment terms',
-          'Shipping terms (FOB, CIF, etc.)',
-          'Warranty information',
-          'Validity period of quotation'
-        ],
-        paragraphs: [
-          '<strong>Revisions:</strong> We welcome feedback on designs and quotations. Reasonable revisions are provided at no charge. We work collaboratively to arrive at the perfect solution.'
-        ]
-      },
-      {
-        heading: 'Step 3: Sample Production (If Required)',
-        paragraphs: [
-          'For custom designs or large orders, we strongly recommend sample production:',
-          '<strong>Benefits of Samples:</strong> Verify design, dimensions, and proportions. Assess material quality and finish. Test functionality and comfort. Make adjustments before full production. Reduce risk of miscommunication.',
-          '<strong>Sample Process:</strong> Sample quotation provided (typically at premium pricing). 50-100% payment upfront for samples. Production time: 15-25 days depending on complexity. Shipping arranged to your location. Feedback collected for any modifications.',
-          '<strong>Sample Costs:</strong> Samples typically cost 1.5-2x the production unit price (due to setup costs). Sample costs are often credited if full production order is placed. Shipping costs are additional and borne by buyer.',
-          '<strong>Modifications:</strong> Based on sample evaluation, we can make adjustments. One round of modifications is typically included. Additional rounds may incur fees depending on extent of changes.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&auto=format&fit=crop',
-        imageAlt: 'Industrial Furniture Manufacturing Process'
-      },
-      {
-        heading: 'Step 4: Production Order Confirmation',
-        paragraphs: [
-          'Once designs are approved, we proceed with production order confirmation:',
-          '<strong>Order Confirmation Includes:</strong>'
-        ],
-        list: [
-          'Final specifications document with all details',
-          'Approved drawings or renderings',
-          'Material specifications',
-          'Quantity and any variations',
-          'Final pricing and payment schedule',
-          'Production timeline with milestones',
-          'Shipping and delivery terms',
-          'Quality standards and inspection protocol'
-        ],
-        paragraphs: [
-          '<strong>Proforma Invoice:</strong> We issue a proforma invoice that serves as the contract. Review carefully before signing. Any special requirements should be noted. Keep copy for your records and customs.',
-          '<strong>Production Timeline:</strong> Standard production: 35-50 days depending on quantity and complexity. Rush orders: May be possible with surcharge (consult us). Timeline starts after deposit payment received. We provide production schedule with key milestones.'
-        ]
-      },
-      {
-        heading: 'Step 5: Deposit Payment and Production Start',
-        paragraphs: [
-          'Production begins upon receipt of deposit payment:',
-          '<strong>Standard Payment Terms:</strong> 50% deposit to start production. 50% balance before shipment. LC (Letter of Credit) accepted for qualified buyers. Flexible terms possible for established customers.',
-          '<strong>Payment Methods:</strong> Bank wire transfer (T/T) - most common. Letter of Credit (LC) - for large orders. PayPal or Western Union - possible for smaller amounts (fees apply).',
-          '<strong>Production Commencement:</strong> Material procurement begins immediately after deposit. We provide regular updates on production progress. Photos/videos shared at key milestones. Open communication throughout production.'
-        ]
-      },
-      {
-        heading: 'Step 6: Production and Quality Control',
-        paragraphs: [
-          'During production, we maintain strict quality control and keep you informed:',
-          '<strong>Production Stages:</strong>'
-        ],
-        list: [
-          '<strong>Material Preparation:</strong> Steel cutting and preparation. Wood processing and drying if applicable. Material inspection.',
-          '<strong>Frame Fabrication:</strong> Steel cutting and bending. Welding and assembly. Joint grinding and smoothing.',
-          '<strong>Surface Treatment:</strong> Sandblasting or chemical cleaning. Primer application. Powder coating or other finishing.',
-          '<strong>Assembly:</strong> Final assembly of components. Addition of wood tops, cushions, or other elements. Hardware installation.',
-          '<strong>Quality Inspection:</strong> Structural integrity check. Finish quality assessment. Dimension verification. Functionality testing.'
-        ],
-        paragraphs: [
-          '<strong>Progress Updates:</strong> Weekly progress reports via email. Photos at key stages. Video updates for complex projects. Immediate notification of any issues.',
-          '<strong>Quality Control:</strong> In-process inspection at each stage. Final inspection before packaging. Third-party inspection available upon request. Detailed QC report provided.'
-        ]
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&auto=format&fit=crop',
-        imageAlt: 'Quality Control Process'
-      },
-      {
-        heading: 'Step 7: Pre-Shipment Inspection and Balance Payment',
-        paragraphs: [
-          'Before shipping, final inspection ensures everything meets requirements:',
-          '<strong>Pre-Shipment Inspection:</strong> Complete inspection of all items. Detailed photos of finished products. Photos of packaging process. Verification against order specifications. Measurement checks. Functionality testing.',
-          '<strong>Inspection Report:</strong> Comprehensive photo documentation. Any minor variations noted and explained. Confirmation of quantity and packaging. Ready-to-ship certification.',
-          '<strong>Customer Approval:</strong> We send inspection report for your approval. You have opportunity to raise concerns. Minor adjustments can be made if needed. Approval required before proceeding to shipping.',
-          '<strong>Balance Payment:</strong> 50% balance payment due upon approval of inspection. We provide invoice and payment instructions. Payment must clear before goods depart factory. Commercial invoice and packing list provided.'
-        ]
-      },
-      {
-        heading: 'Step 8: Shipping and Export Documentation',
-        paragraphs: [
-          'We handle all export formalities and arrange shipping:',
-          '<strong>Packaging:</strong> Professional packaging suitable for ocean freight. Corner protection for vulnerable points. Bubble wrap, foam, or cardboard as needed. Moisture protection for ocean shipping. Proper labeling with your marks if required.',
-          '<strong>Export Documentation:</strong>'
-        ],
-        list: [
-          'Commercial Invoice - details of goods and value',
-          'Packing List - itemized list of contents',
-          'Certificate of Origin - preferential tariffs if applicable',
-          'Bill of Lading or Airway Bill - shipping document',
-          'Insurance Certificate - if insurance arranged',
-          'Other documents as required by destination country'
-        ],
-        paragraphs: [
-          '<strong>Shipping Options:</strong>'
-        ],
-        list: [
-          '<strong>FOB (Free on Board):</strong> Most common. We deliver to port and handle export clearance. You arrange ocean freight and insurance.',
-          '<strong>CIF (Cost, Insurance, Freight):</strong> We arrange shipping to your destination port. Includes ocean freight and insurance. You handle import clearance.',
-          '<strong>Door-to-Door:</strong> We arrange everything including delivery to your door. Most convenient but higher cost. You pay all import duties and taxes.'
-        ],
-        paragraphs: [
-          '<strong>Transit Time:</strong> Ocean freight to USA: 25-35 days. To Europe: 30-40 days. To Australia: 15-25 days. To Middle East: 20-30 days. Air freight available for urgent orders (5-10 days).'
-        ]
-      },
-      {
-        heading: 'Step 9: Tracking and Delivery',
-        paragraphs: [
-          'We provide full tracking information and support during transit:',
-          '<strong>Tracking Information:</strong> Bill of Lading number provided. Container number for ocean freight. Tracking number for air freight. Estimated arrival date at destination. Updates on any delays.',
-          '<strong>Import Clearance Assistance:</strong> We provide all necessary documents promptly. Assistance with any customs queries. Guidance on import duties and procedures. Recommend customs brokers if needed.',
-          '<strong>Delivery Coordination:</strong> For door-to-door: we coordinate with local delivery. For FOB/CIF: we support with any documentation issues. Inspection recommended upon receipt. Report any damage immediately for insurance claims.'
-        ]
-      },
-      {
-        heading: 'Step 10: After-Sales Support',
-        paragraphs: [
-          'Our relationship does not end with delivery:',
-          '<strong>Quality Guarantee:</strong> 2-year warranty on structural integrity. 1-year warranty on powder coating and finishes. Warranty covers manufacturing defects, not normal wear or misuse.',
-          '<strong>Ongoing Support:</strong> Technical support for assembly if needed. Care and maintenance instructions provided. Spare parts available if required. Support for future orders and projects.',
-          '<strong>Feedback:</strong> We welcome feedback on products and service. Use feedback to continuously improve. Build long-term relationships with satisfied customers.',
-          '<strong>Repeat Orders:</strong> Easier process for repeat customers. Specifications on file for consistency. Potential for improved pricing and terms. Priority production scheduling.'
-        ]
-      },
-      {
-        heading: 'Important Considerations for International Buyers',
-        paragraphs: [
-          '<strong>Communication:</strong> Clear communication is key to successful custom orders. Do not hesitate to ask questions at any stage. Use drawings, photos, and samples to clarify requirements. Different time zones - we accommodate your schedule.',
-          '<strong>Realistic Timelines:</strong> Custom manufacturing takes time - plan ahead. Rush orders possible but may cost more. Build in buffer for potential delays. Ocean freight adds significant transit time.',
-          '<strong>Budget Planning:</strong> Product cost is just part of total landed cost. Consider: shipping, insurance, import duties, taxes, customs clearance, local delivery. Import duties vary by country and product classification. Plan for 25-50% above FOB cost for total landed cost.',
-          '<strong>Import Regulations:</strong> Check your country import requirements. Some materials may require certificates. Wood products may need fumigation or treatment certificates. Understand duty rates and any quotas.',
-          '<strong>Currency Exchange:</strong> Prices quoted in USD typically. Monitor exchange rates when timing payments. Consider hedging for large orders.',
-          '<strong>Building Relationships:</strong> First order is about establishing trust. Be clear about expectations and requirements. We value long-term partnerships. Many customers order repeatedly for years.',
-          '<strong>Ready to Start Your Custom Furniture Project?</strong> Contact us today to discuss your requirements and receive a customized quotation. We work with international buyers worldwide and are experienced in making the custom ordering process smooth and transparent. Our team is ready to help bring your furniture vision to life with Indonesian quality and competitive pricing.'
-        ]
-      }
-    ]
-  }
 ]
 
 export const getBlogPostContent = (slug: string): BlogContent | undefined => {
