@@ -761,7 +761,7 @@ I'm interested in the product:
 *${translatedProductName}*
 
 Category: ${product.categories.join(', ')}
-Price: ${product.price}
+Price: ${usdPrice}
 
 Product Link: ${window.location.href}
 
