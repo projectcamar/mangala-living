@@ -14,6 +14,7 @@ import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/se
 import BlogProductShowcase from '../components/BlogProductShowcase'
 import { getRelevantProductsForBlog, getProductShowcaseHeading } from '../utils/blogProductMapping'
 import './Blog.css'
+import './BlogPost.css'
 import '../components/DualLanguage.css'
 
 const BlogPost: React.FC = () => {
@@ -80,20 +81,24 @@ const BlogPost: React.FC = () => {
 
   if (!post || !content) {
     return (
-      <div className="blog-page">
+      <div className="blog-page blog-post-page">
         <AnnouncementBar isIndonesian={isIndonesian} />
         <Header isIndonesian={isIndonesian} />
-        <section className="blog-content-section" aria-labelledby="blog-post-not-found-heading">
-          <div className="blog-container">
-            <div className="section-header">
-              <h1 id="blog-post-not-found-heading">Article Not Found</h1>
-              <p className="section-subtitle">The article you are looking for is unavailable.</p>
+        <main className="blog-post-main" aria-labelledby="blog-post-not-found-heading">
+          <section className="blog-content-section">
+            <div className="blog-post-container">
+              <div className="blog-post-empty card">
+                <div className="section-header">
+                  <h1 id="blog-post-not-found-heading">Article Not Found</h1>
+                  <p className="section-subtitle">The article you are looking for is unavailable.</p>
+                </div>
+                <Link to="/blog" className="btn-primary">
+                  Back to Blog
+                </Link>
+              </div>
             </div>
-            <Link to="/blog" className="btn-primary">
-              Back to Blog
-            </Link>
-          </div>
-        </section>
+          </section>
+        </main>
         <Footer isIndonesian={isIndonesian} />
       </div>
     )
@@ -174,9 +179,9 @@ const BlogPost: React.FC = () => {
 
   const formattedDate = new Date(post.date).toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })
 
-  return (
-    <div className="blog-page">
-      <AnnouncementBar isIndonesian={isIndonesian} />
+    return (
+      <div className="blog-page blog-post-page">
+        <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{post.title} - Mangala Living</title>
         <meta name="description" content={post.excerpt} />
@@ -229,176 +234,212 @@ const BlogPost: React.FC = () => {
           </script>
         )}
       </Helmet>
-      <Header isIndonesian={isIndonesian} />
+        <Header isIndonesian={isIndonesian} />
 
-      <main>
-        <section className="blog-content-section">
-          <div className="blog-container">
-            <Breadcrumb items={breadcrumbItems} />
+        <section className="blog-post-hero" aria-labelledby="blog-post-title">
+          <div className="blog-post-hero-image">
+            <img
+              src={post.image}
+              alt={`${post.title} - ${post.category} Industrial Furniture Article by Mangala Living`}
+              title={`${post.title} | Mangala Living`}
+              loading="eager"
+              fetchPriority="high"
+              width="1920"
+              height="1080"
+            />
+            <div className="blog-post-hero-overlay" />
+          </div>
+          <div className="blog-post-hero-content">
+            <div className="blog-post-hero-inner">
+              <span className="blog-post-category-tag">{post.category}</span>
+              <h1 id="blog-post-title" className="blog-post-title">
+                {post.title}
+              </h1>
+              <p className="blog-post-meta">
+                {post.author || 'Mangala Living'} · {formattedDate}
+              </p>
+            </div>
+          </div>
+        </section>
 
-            <article>
-              <header>
-                <h1>{post.title}</h1>
-                <p>{post.author || 'Mangala Living'} · {formattedDate}</p>
-              </header>
+        <main className="blog-post-main" aria-labelledby="blog-post-title">
+          <section className="blog-content-section">
+            <div className="blog-post-container">
+              <Breadcrumb items={breadcrumbItems} />
 
-              {content.sections.map((section, index) => (
-                <React.Fragment key={index}>
-                  <section>
-                    {section.heading && <h2>{section.heading}</h2>}
+              <div className="blog-post-layout">
+                <article className="blog-post-article" aria-labelledby="blog-post-title">
+                  {content.sections.map((section, index) => (
+                    <React.Fragment key={index}>
+                      <section className="blog-post-section">
+                        {section.heading && <h2 className="blog-post-section-heading">{section.heading}</h2>}
 
-                    {section.paragraphs?.map((para, pIndex) => (
-                      <p key={pIndex} dangerouslySetInnerHTML={{ __html: para }} />
-                    ))}
-
-                    {section.image && (
-                      <figure>
-                        <img
-                          src={section.image}
-                          alt={section.imageAlt || `${post.title} - ${section.heading || 'Industrial Furniture Article'} - Mangala Living`}
-                          title={section.imageAlt || `${post.title} - ${section.heading || 'Furniture Industrial Guide'} by Mangala Living`}
-                          loading="lazy"
-                          width="800"
-                          height="500"
-                          itemProp="image"
-                          data-image-type="blog-content"
-                          data-post-slug={post.slug}
-                          data-section-heading={section.heading || ''}
-                        />
-                        {section.imageAlt && <figcaption>{section.imageAlt}</figcaption>}
-                      </figure>
-                    )}
-
-                    {section.list && (
-                      <ul>
-                        {section.list.map((item, lIndex) => (
-                          <li key={lIndex} dangerouslySetInnerHTML={{ __html: item }} />
+                        {section.paragraphs?.map((para, pIndex) => (
+                          <p
+                            key={pIndex}
+                            className="blog-post-paragraph"
+                            dangerouslySetInnerHTML={{ __html: para }}
+                          />
                         ))}
-                      </ul>
-                    )}
-                  </section>
 
-                  {index === 2 && (() => {
-                    const relevantProducts = getRelevantProductsForBlog(post.slug, post.title, post.excerpt)
-                    const hasProductKeywords = /meja|kursi|rak|display|bar|dining|kitchen|furniture|cabinet|shelf|chair|table/i.test(post.slug + post.title)
+                        {section.image && (
+                          <figure className="blog-post-figure">
+                            <img
+                              src={section.image}
+                              alt={section.imageAlt || `${post.title} - ${section.heading || 'Industrial Furniture Article'} - Mangala Living`}
+                              title={section.imageAlt || `${post.title} - ${section.heading || 'Furniture Industrial Guide'} by Mangala Living`}
+                              loading="lazy"
+                              width="800"
+                              height="500"
+                              itemProp="image"
+                              data-image-type="blog-content"
+                              data-post-slug={post.slug}
+                              data-section-heading={section.heading || ''}
+                            />
+                            {section.imageAlt && <figcaption className="blog-post-figcaption">{section.imageAlt}</figcaption>}
+                          </figure>
+                        )}
 
-                    if (relevantProducts.length > 0 && hasProductKeywords) {
-                      const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
-                      const showcaseDescription = post.category === 'Export & International'
-                        ? `Discover our premium industrial furniture collection, manufactured in our Bekasi workshop with high-quality materials and powder coating finish.`
-                        : `Berikut adalah produk industrial pilihan kami yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium dan material industrial grade di workshop kami di Bekasi.`
+                        {section.list && (
+                          <ul className="blog-post-list">
+                            {section.list.map((item, lIndex) => (
+                              <li key={lIndex} dangerouslySetInnerHTML={{ __html: item }} />
+                            ))}
+                          </ul>
+                        )}
+                      </section>
 
-                      return (
-                        <BlogProductShowcase
-                          products={relevantProducts}
-                          heading={showcaseHeading}
-                          description={showcaseDescription}
-                          isIndonesian={post.category !== 'Export & International'}
-                        />
-                      )
+                      {index === 2 && (() => {
+                        const relevantProducts = getRelevantProductsForBlog(post.slug, post.title, post.excerpt)
+                        const hasProductKeywords = /meja|kursi|rak|display|bar|dining|kitchen|furniture|cabinet|shelf|chair|table/i.test(post.slug + post.title)
+
+                        if (relevantProducts.length > 0 && hasProductKeywords) {
+                          const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
+                          const showcaseDescription = post.category === 'Export & International'
+                            ? `Discover our premium industrial furniture collection, manufactured in our Bekasi workshop with high-quality materials and powder coating finish.`
+                            : `Berikut adalah produk industrial pilihan kami yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium dan material industrial grade di workshop kami di Bekasi.`
+
+                          return (
+                            <div className="blog-post-product-showcase">
+                              <BlogProductShowcase
+                                products={relevantProducts}
+                                heading={showcaseHeading}
+                                description={showcaseDescription}
+                                isIndonesian={post.category !== 'Export & International'}
+                              />
+                            </div>
+                          )
+                        }
+                        return null
+                      })()}
+                    </React.Fragment>
+                  ))}
+
+                  {post.author === 'Helmi Ramdan' && (
+                    <div className="blog-post-author-card">
+                      <AuthorCard
+                        name="Helmi Ramdan"
+                        title={post.category === 'Export & International'
+                          ? "Associate at Housing and Settlement Department, DKI Jakarta Province"
+                          : "Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta"}
+                        experience={post.category === 'Export & International'
+                          ? [
+                              'Infrastructure Engineer at Damai Putra Group (3+ years)',
+                              'Design Engineer & Architectural Drafter (5+ years)',
+                              'Alumni of Diponegoro University',
+                              'Commercial Space Design & Construction Specialist'
+                            ]
+                          : [
+                              'Infrastructure Engineer at Damai Putra Group (3+ tahun)',
+                              'Design Engineer & Architectural Drafter (5+ tahun)',
+                              'Alumni Universitas Diponegoro',
+                              'Spesialis Commercial Space Design & Construction'
+                            ]}
+                        linkedIn="https://www.linkedin.com/in/helmi-ramdan-067912118/"
+                        isIndonesian={post.category !== 'Export & International'}
+                      />
+                    </div>
+                  )}
+
+                  {(() => {
+                    const showcaseAlreadyShown = content.sections.length > 3
+
+                    if (!showcaseAlreadyShown) {
+                      const relevantProducts = getRelevantProductsForBlog(post.slug, post.title, post.excerpt)
+                      const hasProductKeywords = /meja|kursi|rak|display|bar|dining|kitchen|furniture|cabinet|shelf|chair|table/i.test(post.slug + post.title)
+
+                      if (relevantProducts.length > 0 && hasProductKeywords) {
+                        const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
+                        const showcaseDescription = post.category === 'Export & International'
+                          ? `Discover high-quality industrial furniture collection related to this article. All products are manufactured with premium materials, industrial-grade quality, and durable powder coating finish in our Bekasi workshop. Factory-direct pricing with no intermediaries!`
+                          : `Temukan produk industrial berkualitas tinggi yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium, material industrial grade, dan finishing powder coating tahan lama di workshop kami di Bekasi. Harga pabrik langsung, tidak ada perantara!`
+
+                        return (
+                          <div className="blog-post-product-showcase">
+                            <BlogProductShowcase
+                              products={relevantProducts}
+                              heading={showcaseHeading}
+                              description={showcaseDescription}
+                              isIndonesian={post.category !== 'Export & International'}
+                            />
+                          </div>
+                        )
+                      }
                     }
                     return null
                   })()}
-                </React.Fragment>
-              ))}
 
-              {post.author === 'Helmi Ramdan' && (
-                <AuthorCard
-                  name="Helmi Ramdan"
-                  title={post.category === 'Export & International'
-                    ? "Associate at Housing and Settlement Department, DKI Jakarta Province"
-                    : "Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta"}
-                  experience={post.category === 'Export & International'
-                    ? [
-                        'Infrastructure Engineer at Damai Putra Group (3+ years)',
-                        'Design Engineer & Architectural Drafter (5+ years)',
-                        'Alumni of Diponegoro University',
-                        'Commercial Space Design & Construction Specialist'
-                      ]
-                    : [
-                        'Infrastructure Engineer at Damai Putra Group (3+ tahun)',
-                        'Design Engineer & Architectural Drafter (5+ tahun)',
-                        'Alumni Universitas Diponegoro',
-                        'Spesialis Commercial Space Design & Construction'
-                      ]}
-                  linkedIn="https://www.linkedin.com/in/helmi-ramdan-067912118/"
-                  isIndonesian={post.category !== 'Export & International'}
-                />
-              )}
-
-              {(() => {
-                const showcaseAlreadyShown = content.sections.length > 3
-
-                if (!showcaseAlreadyShown) {
-                  const relevantProducts = getRelevantProductsForBlog(post.slug, post.title, post.excerpt)
-                  const hasProductKeywords = /meja|kursi|rak|display|bar|dining|kitchen|furniture|cabinet|shelf|chair|table/i.test(post.slug + post.title)
-
-                  if (relevantProducts.length > 0 && hasProductKeywords) {
-                    const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
-                    const showcaseDescription = post.category === 'Export & International'
-                      ? `Discover high-quality industrial furniture collection related to this article. All products are manufactured with premium materials, industrial-grade quality, and durable powder coating finish in our Bekasi workshop. Factory-direct pricing with no intermediaries!`
-                      : `Temukan produk industrial berkualitas tinggi yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium, material industrial grade, dan finishing powder coating tahan lama di workshop kami di Bekasi. Harga pabrik langsung, tidak ada perantara!`
-
-                    return (
-                      <BlogProductShowcase
-                        products={relevantProducts}
-                        heading={showcaseHeading}
-                        description={showcaseDescription}
-                        isIndonesian={post.category !== 'Export & International'}
-                      />
-                    )
-                  }
-                }
-                return null
-              })()}
-
-              <section>
-                <div className="section-header">
-                  <h2>
-                    {post.category === 'Export & International'
-                      ? 'Interested in Our Industrial Furniture?'
-                      : 'Tertarik dengan Furniture Industrial Kami?'}
-                  </h2>
-                  <p className="section-subtitle">
-                    {post.category === 'Export & International'
-                      ? 'Visit our complete collection of high-quality custom industrial furniture from Mangala Living.'
-                      : 'Kunjungi koleksi lengkap furniture industrial custom berkualitas tinggi dari Mangala Living.'}
-                  </p>
-                </div>
-                <Link to="/shop" className="btn-primary">
-                  {post.category === 'Export & International' ? 'View All Products' : 'Lihat Semua Produk'}
-                </Link>
-                {' '}
-                <Link to="/contact-us" className="btn-secondary">
-                  {post.category === 'Export & International' ? 'Contact Us' : 'Hubungi Kami'}
-                </Link>
-              </section>
-            </article>
-
-            {otherArticles.length > 0 && (
-              <aside>
-                <h2>Other Articles</h2>
-                <ul>
-                  {otherArticles.map((article) => (
-                    <li key={article.id}>
-                      <Link to={`/blog/${article.slug}`}>
-                        <strong>{article.title}</strong>
-                        <div>{article.category}</div>
+                  <div className="blog-post-cta card">
+                    <div className="section-header">
+                      <h2>
+                        {post.category === 'Export & International'
+                          ? 'Interested in Our Industrial Furniture?'
+                          : 'Tertarik dengan Furniture Industrial Kami?'}
+                      </h2>
+                      <p className="section-subtitle">
+                        {post.category === 'Export & International'
+                          ? 'Visit our complete collection of high-quality custom industrial furniture from Mangala Living.'
+                          : 'Kunjungi koleksi lengkap furniture industrial custom berkualitas tinggi dari Mangala Living.'}
+                      </p>
+                    </div>
+                    <div className="blog-post-cta-actions">
+                      <Link to="/shop" className="btn-primary">
+                        {post.category === 'Export & International' ? 'View All Products' : 'Lihat Semua Produk'}
                       </Link>
-                    </li>
-                  ))}
-                </ul>
-              </aside>
-            )}
-          </div>
-        </section>
-      </main>
+                      <Link to="/contact-us" className="btn-secondary">
+                        {post.category === 'Export & International' ? 'Contact Us' : 'Hubungi Kami'}
+                      </Link>
+                    </div>
+                  </div>
+                </article>
 
-      {shouldShowServiceAreas && <ServiceAreasSection isIndonesian={isIndonesian} />}
+                {otherArticles.length > 0 && (
+                  <aside className="blog-post-sidebar" aria-labelledby="blog-post-sidebar-title">
+                    <div className="blog-post-sidebar-card card">
+                      <h2 id="blog-post-sidebar-title" className="blog-post-sidebar-title">Other Articles</h2>
+                      <ul className="blog-post-sidebar-list">
+                        {otherArticles.map((article) => (
+                          <li key={article.id}>
+                            <Link to={`/blog/${article.slug}`} className="blog-post-sidebar-link">
+                              <span className="blog-post-sidebar-link-title">{article.title}</span>
+                              <span className="blog-post-sidebar-link-category">{article.category}</span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </aside>
+                )}
+              </div>
+            </div>
+          </section>
+        </main>
 
-      <Footer isIndonesian={isIndonesian} />
-    </div>
-  )
+        {shouldShowServiceAreas && <ServiceAreasSection isIndonesian={isIndonesian} />}
+
+        <Footer isIndonesian={isIndonesian} />
+      </div>
+    )
 }
 
 export default BlogPost
