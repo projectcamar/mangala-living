@@ -69,9 +69,9 @@ export const generateAIContentSummary = (isIndonesian: boolean) => {
       isIndonesian ? "Garansi 1 Tahun" : "1 Year Warranty"
     ],
     contactInfo: {
-      phone: "+62 888-0114-6881",
+      phone: "+6288801146881",
       email: "info@mangala-living.com",
-      whatsapp: "https://wa.me/6288801146881"
+      whatsapp: "https://wa.me/+6288801146881"
     }
   }
 }

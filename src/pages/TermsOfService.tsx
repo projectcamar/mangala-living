@@ -417,8 +417,8 @@ const TermsOfService: React.FC = () => {
                   </p>
                 </div>
                 <p className="workshop-phone">
-                  <a href="https://wa.me/6288801146881" style={{ color: '#8B7355', textDecoration: 'underline' }}>
-                    +62 888-0114-6881
+                  <a href="https://wa.me/+6288801146881" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                    +6288801146881
                   </a>
                 </p>
                 <p className="workshop-email">

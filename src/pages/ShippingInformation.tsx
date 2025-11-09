@@ -324,8 +324,8 @@ const ShippingInformation: React.FC = () => {
               <div className="shipping-contact-details">
                 <h3 className="shipping-contact-label">{isIndonesian ? 'Telepon' : 'Phone'}</h3>
                 <p className="shipping-contact-value">
-                  <a href="https://wa.me/6288801146881" style={{ color: '#8B7355', textDecoration: 'underline' }}>
-                    +62 888-0114-6881
+                  <a href="https://wa.me/+6288801146881" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                    +6288801146881
                   </a>
                 </p>
               </div>

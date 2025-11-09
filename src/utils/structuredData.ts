@@ -285,7 +285,7 @@ export const generateMerchantStructuredData = () => {
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+62-888-0114-6881",
+        "telephone": "+6288801146881",
         "contactType": "customer service",
         "email": "info@mangala-living.com",
         "availableLanguage": ["Indonesian", "English"],
@@ -293,7 +293,7 @@ export const generateMerchantStructuredData = () => {
       },
       {
         "@type": "ContactPoint",
-        "telephone": "+62-888-0114-6881",
+        "telephone": "+6288801146881",
         "contactType": "sales",
         "email": "sales@mangala-living.com",
         "availableLanguage": ["Indonesian", "English"],
@@ -303,7 +303,7 @@ export const generateMerchantStructuredData = () => {
     "sameAs": [
       "https://www.instagram.com/mangalaliving",
       "https://www.facebook.com/mangalaliving",
-      "https://wa.me/6288801146881"
+      "https://wa.me/+6288801146881"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -386,7 +386,7 @@ export const generateLocalBusinessStructuredData = () => {
     "image": "https://mangala-living.com/og-image.jpg",
     "description": "Workshop Furniture Besi Custom Bekasi sejak 1999. Spesialis Industrial Furniture untuk Cafe, Restoran, Hotel, Kantor. Produksi langsung harga pabrik, material berkualitas, finishing powder coating. Melayani Jakarta, Bekasi, Jabodetabek.",
     "url": "https://mangala-living.com",
-    "telephone": "+62-888-0114-6881",
+    "telephone": "+6288801146881",
     "email": "info@mangala-living.com",
     "address": {
       "@type": "PostalAddress",

@@ -80,8 +80,8 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
                 </a>
               </p>
               <p>
-                <a href="https://wa.me/6288801146881" style={{ color: 'inherit', textDecoration: 'underline' }}>
-                  +62 888 0114 6881
+                <a href="https://wa.me/+6288801146881" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                  +6288801146881
                 </a>
               </p>
               <div className="footer-social-icons">
@@ -111,8 +111,8 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
                 </a>
               </p>
               <p className="footer-phone">
-                <a href="https://wa.me/6288801146881" style={{ color: 'inherit', textDecoration: 'underline' }}>
-                  +62 888-0114-6881
+                <a href="https://wa.me/+6288801146881" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                  +6288801146881
                 </a>
               </p>
             </div>

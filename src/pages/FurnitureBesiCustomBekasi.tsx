@@ -33,7 +33,7 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
     <div className="landing-page furniture-besi-custom-bekasi">
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>Furniture Besi Custom Bekasi - Workshop Terpercaya Harga Pabrik | Mangala Living</title>
-        <meta name="description" content="Furniture Besi Custom Bekasi - Workshop Langsung Harga Pabrik - Material Premium - Finishing Powder Coating - Free Konsultasi - Garansi 1 Tahun - Melayani Jabodetabek (Hubungi 0888-0114-6881)" />
+        <meta name="description" content="Furniture Besi Custom Bekasi - Workshop Langsung Harga Pabrik - Material Premium - Finishing Powder Coating - Free Konsultasi - Garansi 1 Tahun - Melayani Jabodetabek (Hubungi +6288801146881)" />
         <meta name="keywords" content="furniture besi custom bekasi, custom furniture besi bekasi, jasa furniture besi bekasi, workshop furniture bekasi, furniture custom bekasi, meja besi custom bekasi, kursi besi custom bekasi, furniture industrial bekasi, tukang furniture besi bekasi, bikin furniture besi bekasi" />
         <meta httpEquiv="content-language" content={localeMeta.lang} />
         <link rel="canonical" href={localizedUrls.canonical} />
@@ -97,7 +97,7 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
           </div>
 
           <div className="landing-hero-cta">
-            <a href="https://wa.me/6288801146881?text=Halo%20Mangala%20Living%2C%20saya%20mau%20konsultasi%20furniture%20besi%20custom%20Bekasi" 
+            <a href="https://wa.me/+6288801146881?text=Halo%20Mangala%20Living%2C%20saya%20mau%20konsultasi%20furniture%20besi%20custom%20Bekasi" 
                className="cta-button primary" 
                target="_blank" 
                rel="noopener noreferrer">
@@ -339,7 +339,7 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
           <div className="catalog-cta">
             <p><strong>Catatan: Semua harga sudah termasuk finishing powder coating & garansi kualitas</strong></p>
             <p>Volume discount hingga 15% untuk order 20+ pieces | 25% untuk 50+ pieces</p>
-            <a href="https://wa.me/6288801146881?text=Halo%2C%20saya%20mau%20tanya%20harga%20detail%20furniture%20besi%20custom%20Bekasi" 
+            <a href="https://wa.me/+6288801146881?text=Halo%2C%20saya%20mau%20tanya%20harga%20detail%20furniture%20besi%20custom%20Bekasi" 
                className="cta-button primary" 
                target="_blank" 
                rel="noopener noreferrer">
@@ -424,13 +424,13 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
           <p>Dapatkan <strong>FREE konsultasi design</strong> + <strong>discount 10% untuk order pertama</strong></p>
           
           <div className="contact-methods">
-            <a href="https://wa.me/6288801146881?text=Halo%20Mangala%20Living%2C%20saya%20dari%20website%20mau%20konsultasi%20furniture%20besi%20custom" 
+            <a href="https://wa.me/+6288801146881?text=Halo%20Mangala%20Living%2C%20saya%20dari%20website%20mau%20konsultasi%20furniture%20besi%20custom" 
                className="contact-card whatsapp"
                target="_blank"
                rel="noopener noreferrer">
               <Phone size={32} />
               <strong>WhatsApp (Fast Response)</strong>
-              <span>+62 888-0114-6881</span>
+              <span>+6288801146881</span>
             </a>
 
             <a href="mailto:info@mangalaliving.com" className="contact-card email">
@@ -453,7 +453,7 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
           </div>
 
           <div className="final-cta-button">
-            <a href="https://wa.me/6288801146881?text=PROMO2025%20-%20Saya%20mau%20konsultasi%20furniture%20besi%20custom%20Bekasi" 
+            <a href="https://wa.me/+6288801146881?text=PROMO2025%20-%20Saya%20mau%20konsultasi%20furniture%20besi%20custom%20Bekasi" 
                className="cta-button primary large"
                target="_blank"
                rel="noopener noreferrer">
