@@ -24,6 +24,8 @@ import kursiBarStallVideo from '../assets/kursi-bar-stall-chair.mp4'
 import kursiBarstoolVideo from '../assets/kursi-barstool.mp4'
 import mejaMakanVideo from '../assets/meja-makan-industrial.mp4'
 import hollowlineDisplayRackVideo from '../assets/hollowline-display-rack.mp4'
+import benchCornerLoungeVideo from '../assets/Bench-corner-kursi-sudut-kursi-santai.mp4'
+import industrialDaybedVideo from '../assets/industrial-daybed.mp4'
 import rakDisplayPartisiVideo from '../assets/rak-display-partisi-industrial-besi.mp4'
 
 export interface Product {
@@ -43,10 +45,10 @@ export const ALL_PRODUCTS: Product[] = [
   
   // Lounge Set
   { id: 3, slug: 'lounge-set-coffee-table', name: 'Lounge Set Coffee Table', categories: ['Lounge Set', 'Tables'], price: 'Rp2.000.000', image: loungeSetCoffeeTableImage },
-  { id: 17, slug: 'bench-corner-lounge', name: 'Bench Corner Lounge', categories: ['Lounge Set', 'Sofa Bench'], price: 'Rp3.800.000', image: benchCornerImage },
+  { id: 17, slug: 'bench-corner-lounge', name: 'Bench Corner Lounge', categories: ['Lounge Set', 'Sofa Bench'], price: 'Rp3.800.000', image: benchCornerImage, video: benchCornerLoungeVideo },
   
   // Daybed
-  { id: 16, slug: 'industrial-daybed-frame', name: 'Industrial Daybed Frame', categories: ['Daybed'], price: 'Rp3.200.000', image: daybedBoneOnlyImage },
+  { id: 16, slug: 'industrial-daybed-frame', name: 'Industrial Daybed Frame', categories: ['Daybed'], price: 'Rp3.200.000', image: daybedBoneOnlyImage, video: industrialDaybedVideo },
   
   // Dining Set
   { id: 4, slug: 'bandung-pipe-dining-table', name: 'Bandung Pipe Dining Table', categories: ['Dining Set', 'Dine Table'], price: 'Rp2.800.000', image: mejaMakanImage },
