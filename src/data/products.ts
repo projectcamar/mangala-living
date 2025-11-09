@@ -23,6 +23,7 @@ import kabinetLemariVideo from '../assets/kabinet-lemari-industrial.mp4'
 import kursiBarStallVideo from '../assets/kursi-bar-stall-chair.mp4'
 import kursiBarstoolVideo from '../assets/kursi-barstool.mp4'
 import mejaMakanVideo from '../assets/meja-makan-industrial.mp4'
+import hollowlineDisplayRackVideo from '../assets/hollowline-display-rack.mp4'
 import rakDisplayPartisiVideo from '../assets/rak-display-partisi-industrial-besi.mp4'
 
 export interface Product {
@@ -59,8 +60,8 @@ export const ALL_PRODUCTS: Product[] = [
   // Storage
   { id: 9, slug: 'industrial-kitchen-cabinet', name: 'Industrial Kitchen Cabinet', categories: ['Storage'], price: 'Rp4.500.000', image: kabinetDapurImage, video: kabinetDapurVideo },
   { id: 10, slug: 'kabinet-lemari-industrial', name: 'Kabinet Lemari Industrial', categories: ['Storage'], price: 'Rp4.500.000', image: kabinetLemariImage, video: kabinetLemariVideo },
-  { id: 11, slug: 'hollowline-display-rack', name: 'Hollowline Display Rack', categories: ['Storage'], price: 'Rp4.500.000', image: hollowlineDisplayRackImage, video: rakDisplayPartisiVideo },
-  { id: 12, slug: 'ladder-frame-display-stand', name: 'Ladder Frame Display Stand', categories: ['Storage'], price: 'Rp3.700.000', image: rakDisplayPartisiImage },
+  { id: 11, slug: 'hollowline-display-rack', name: 'Hollowline Display Rack', categories: ['Storage'], price: 'Rp4.500.000', image: hollowlineDisplayRackImage, video: hollowlineDisplayRackVideo },
+  { id: 12, slug: 'ladder-frame-display-stand', name: 'Ladder Frame Display Stand', categories: ['Storage'], price: 'Rp3.700.000', image: rakDisplayPartisiImage, video: rakDisplayPartisiVideo },
   { id: 13, slug: 'industrial-hanging-shelf', name: 'Industrial Hanging Shelf', categories: ['Storage'], price: 'Rp1.200.000', image: rakGantungIndustrialImage },
   { id: 14, slug: 'industrial-coat-rack', name: 'Industrial Coat Rack', categories: ['Storage'], price: 'Rp2.500.000', image: gantunganBajuImage },
   
