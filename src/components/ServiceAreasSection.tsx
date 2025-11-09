@@ -156,7 +156,7 @@ const ServiceAreasSection: React.FC<ServiceAreasSectionProps> = ({ isIndonesian 
                 : "Contact us to discuss our service coverage. We serve entire Jabodetabek and surrounding areas."}
             </p>
             <a 
-              href="https://wa.me/6288801146881?text=Halo%20Mangala%20Living%2C%20saya%20tertarik%20dengan%20furniture%20industrial%20untuk%20area%20saya" 
+              href="https://wa.me/+6288801146881?text=Halo%20Mangala%20Living%2C%20saya%20tertarik%20dengan%20furniture%20industrial%20untuk%20area%20saya" 
               className="cta-button"
               target="_blank"
               rel="noopener noreferrer"

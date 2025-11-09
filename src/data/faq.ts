@@ -46,7 +46,7 @@ export const FAQ_DATA: FAQCategory[] = [
       },
       {
         question: 'Apakah bisa visit workshop sebelum order?',
-        answer: 'Tentu saja! Mangala Living welcome clients untuk visit workshop di Bekasi. Anda bisa melihat langsung proses produksi, quality control, sample furniture, dan diskusi dengan tim produksi. Workshop visit by appointment - hubungi kami di +62-888-0114-6881 untuk schedule kunjungan. Kami buka Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00.'
+        answer: 'Tentu saja! Mangala Living welcome clients untuk visit workshop di Bekasi. Anda bisa melihat langsung proses produksi, quality control, sample furniture, dan diskusi dengan tim produksi. Workshop visit by appointment - hubungi kami di +6288801146881 untuk schedule kunjungan. Kami buka Senin-Jumat 08:00-17:00, Sabtu 08:00-15:00.'
       }
     ]
   },
@@ -118,7 +118,7 @@ export const FAQ_DATA: FAQCategory[] = [
       },
       {
         question: 'Dimana bisa beli furniture industrial berkualitas di Bekasi/Jakarta?',
-        answer: 'Untuk furniture industrial berkualitas dengan harga terjangkau, recommend langsung ke workshop/manufaktur dibanding retailer. Mangala Living di Bekasi adalah workshop furniture industrial terpercaya sejak 1999 dengan 1000+ satisfied clients. Keunggulan: (1) Harga pabrik 30-40% lebih murah, (2) Full customization tanpa extra cost, (3) Quality control langsung dari sumber, (4) Free design consultation dan 3D mockup, (5) Warranty 1 tahun struktur dan finishing, (6) Free delivery untuk Jabodetabek (min. order). Workshop di Jl. Raya Setu Cikarang Bar, Bekasi. Contact: +62-888-0114-6881 (WhatsApp) untuk konsultasi gratis.'
+        answer: 'Untuk furniture industrial berkualitas dengan harga terjangkau, recommend langsung ke workshop/manufaktur dibanding retailer. Mangala Living di Bekasi adalah workshop furniture industrial terpercaya sejak 1999 dengan 1000+ satisfied clients. Keunggulan: (1) Harga pabrik 30-40% lebih murah, (2) Full customization tanpa extra cost, (3) Quality control langsung dari sumber, (4) Free design consultation dan 3D mockup, (5) Warranty 1 tahun struktur dan finishing, (6) Free delivery untuk Jabodetabek (min. order). Workshop di Jl. Raya Setu Cikarang Bar, Bekasi. Contact: +6288801146881 (WhatsApp) untuk konsultasi gratis.'
       },
       {
         question: 'Apakah furniture industrial ramah lingkungan (eco-friendly)?',

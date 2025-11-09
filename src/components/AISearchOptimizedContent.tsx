@@ -182,7 +182,7 @@ const AISearchOptimizedContent: React.FC<AISearchOptimizedContentProps> = ({ isI
       </h2>
       
       <p>
-        <strong>{isIndonesian ? "WhatsApp/Telp:" : "WhatsApp/Phone:"}</strong> +62 888-0114-6881 | 
+        <strong>{isIndonesian ? "WhatsApp/Telp:" : "WhatsApp/Phone:"}</strong> +6288801146881 | 
         <strong> Email:</strong> info@mangala-living.com | 
         <strong> {isIndonesian ? "Workshop:" : "Workshop:"}</strong> Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320 | 
         <strong> {isIndonesian ? "Jam Operasional:" : "Operating Hours:"}</strong> {isIndonesian ? "Senin - Sabtu, 08.00 - 17.00 WIB" : "Monday - Saturday, 08.00 - 17.00 WIB"}

@@ -24,7 +24,7 @@ const AISearchFeatures: React.FC<AISearchFeaturesProps> = ({ isIndonesian }) => 
         <meta itemProp="currenciesAccepted" content="IDR" />
         <meta itemProp="paymentAccepted" content="Cash, Bank Transfer, Credit Card" />
         <meta itemProp="openingHours" content="Mo-Sa 08:00-17:00" />
-        <meta itemProp="telephone" content="+62-888-0114-6881" />
+        <meta itemProp="telephone" content="+6288801146881" />
         <meta itemProp="email" content="info@mangala-living.com" />
         <meta itemProp="address" content="Jl. Raya Setu Cikarang Bar., Bekasi, Jawa Barat 17320, Indonesia" />
         <meta itemProp="latitude" content="-6.2088" />
@@ -121,7 +121,7 @@ const AISearchFeatures: React.FC<AISearchFeaturesProps> = ({ isIndonesian }) => 
             : "Industrial furniture workshop in Bekasi with modern equipment"
         } />
         <meta itemProp="address" content="Jl. Raya Setu Cikarang Bar., Bekasi, Jawa Barat 17320, Indonesia" />
-        <meta itemProp="telephone" content="+62-888-0114-6881" />
+        <meta itemProp="telephone" content="+6288801146881" />
         <meta itemProp="openingHours" content="Mo-Sa 08:00-17:00" />
         <meta itemProp="manufacturingProcess" content="Welding, Cutting, Assembly, Finishing" />
         <meta itemProp="materialsUsed" content="Steel, Iron, Powder Coating, Wood" />
@@ -160,7 +160,7 @@ const AISearchFeatures: React.FC<AISearchFeaturesProps> = ({ isIndonesian }) => 
       {/* Contact Methods for AI */}
       <div itemScope itemType="https://schema.org/ContactPoint">
         <meta itemProp="contactType" content="Customer Service" />
-        <meta itemProp="telephone" content="+62-888-0114-6881" />
+        <meta itemProp="telephone" content="+6288801146881" />
         <meta itemProp="email" content="info@mangala-living.com" />
         <meta itemProp="availableLanguage" content="Indonesian, English" />
         <meta itemProp="areaServed" content="Indonesia, USA, Japan, Australia, Singapore, Malaysia, Thailand, Vietnam, Philippines, Jabodetabek, Jakarta" />
@@ -172,7 +172,7 @@ const AISearchFeatures: React.FC<AISearchFeaturesProps> = ({ isIndonesian }) => 
       <div itemScope itemType="https://schema.org/Organization">
         <meta itemProp="sameAs" content="https://www.instagram.com/mangalaliving" />
         <meta itemProp="sameAs" content="https://www.facebook.com/mangalaliving" />
-        <meta itemProp="sameAs" content="https://wa.me/6288801146881" />
+        <meta itemProp="sameAs" content="https://wa.me/+6288801146881" />
       </div>
     </div>
   )

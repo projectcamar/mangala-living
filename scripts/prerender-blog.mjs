@@ -874,7 +874,7 @@ const generateServiceAreasHTML = (isIndonesian) => `
         <div class="cta-content">
           <h3>${isIndonesian ? 'Area Anda Tidak Tercantum?' : 'Your Area Not Listed?'}</h3>
           <p>${isIndonesian ? 'Hubungi kami untuk diskusi cakupan layanan kami. Kami melayani seluruh Jabodetabek dan sekitarnya.' : 'Contact us to discuss our service coverage. We serve entire Jabodetabek and surrounding areas.'}</p>
-          <a class="cta-button" href="https://wa.me/6288801146881?text=Halo%20Mangala%20Living%2C%20saya%20tertarik%20dengan%20furniture%20industrial%20untuk%20area%20saya" target="_blank" rel="noopener noreferrer">
+          <a class="cta-button" href="https://wa.me/+6288801146881?text=Halo%20Mangala%20Living%2C%20saya%20tertarik%20dengan%20furniture%20industrial%20untuk%20area%20saya" target="_blank" rel="noopener noreferrer">
             <span class="whatsapp-icon">WA</span>
             ${isIndonesian ? 'Konsultasi Gratis' : 'Free Consultation'}
           </a>
@@ -897,7 +897,7 @@ const generateFooterHTML = (isIndonesian) => `
           <div class="footer-contact-info">
             <h4>${isIndonesian ? 'Hubungi Kami' : 'Contact Us'}</h4>
             <p><a href="mailto:info@mangala-living.com">info@mangala-living.com</a></p>
-            <p><a href="https://wa.me/6288801146881" target="_blank" rel="noopener noreferrer">+62 888 0114 6881</a></p>
+            <p><a href="https://wa.me/+6288801146881" target="_blank" rel="noopener noreferrer">+6288801146881</a></p>
         </div>
         </div>
         <div class="footer-column">
@@ -1024,7 +1024,7 @@ const createFallbackContent = (post) => {
         heading: 'Hubungi Tim Mangala Living',
         paragraphs: [
           'Hubungi kami untuk konsultasi gratis dan mendapatkan katalog terbaru:',
-          '<strong>WhatsApp:</strong> +62 888-0114-6881 (Fast Response)',
+          '<strong>WhatsApp:</strong> +6288801146881 (Fast Response)',
           '<strong>Email:</strong> info@mangala-living.com',
           '<strong>Workshop:</strong> Jl. Raya Setu Cibitung - Bekasi, Jawa Barat 17320',
           'Kami siap membantu Anda mewujudkan furniture industrial yang estetik, fungsional, dan tahan lama untuk bisnis Anda.'

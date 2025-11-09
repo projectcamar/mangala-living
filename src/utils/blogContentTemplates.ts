@@ -266,7 +266,7 @@ export function generateCafeLocationContent(config: CafeLocationTemplate) {
         `<strong>3. ${lang.matQuality}:</strong> ${lang.inspect}.`,
         `<strong>4. ${lang.afterSales}:</strong> ${lang.workshop}.`,
         `${lang.workshopLoc}: <strong>${lang.street}</strong>. ${lang.free} ${locationName}.`,
-        `<strong>${lang.contact}:</strong><br/>&bull; <a href="https://wa.me/6288801146881" target="_blank">${lang.whatsapp}: +62-888-0114-6881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">${lang.email}: info@mangalaliving.com</a><br/>&bull; ${lang.mention} "${contactCode}" ${lang.special}.`
+        `<strong>${lang.contact}:</strong><br/>&bull; <a href="https://wa.me/+6288801146881" target="_blank">${lang.whatsapp}: +6288801146881</a><br/>&bull; <a href="mailto:info@mangalaliving.com">${lang.email}: info@mangalaliving.com</a><br/>&bull; ${lang.mention} "${contactCode}" ${lang.special}.`
       ]
     },
     {
