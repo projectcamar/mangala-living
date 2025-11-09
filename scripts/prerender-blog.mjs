@@ -1,15 +1,3 @@
-#!/usr/bin/env node
-
-/**
- * Pre-render Blog Posts to Static HTML
- * 
- * This script generates static HTML files for all blog posts so that:
- * 1. AI crawlers can read blog content without executing JavaScript
- * 2. Search engines can properly index blog content
- * 3. Social media can scrape proper meta tags
- * 
- * Solution to the issue where AI could only crawl main page but not blog content.
- */
 
 import { promises as fs } from 'fs'
 import path from 'path'
@@ -25,6 +13,21 @@ const BLOG_CONTENT_FILE = path.join(ROOT_DIR, 'src', 'data', 'blogContent.ts')
 const PRODUCT_FILE = path.join(ROOT_DIR, 'src', 'data', 'products.ts')
 const OUTPUT_DIR = path.join(ROOT_DIR, 'dist', 'blog')
 const OUTPUT_ASSETS_DIR = path.join(OUTPUT_DIR, 'assets')
+
+const CSS_FILES = [
+  path.join(ROOT_DIR, 'src', 'index.css'),
+  path.join(ROOT_DIR, 'src', 'App.css'),
+  path.join(ROOT_DIR, 'src', 'pages', 'Blog.css'),
+  path.join(ROOT_DIR, 'src', 'pages', 'BlogPost.css'),
+  path.join(ROOT_DIR, 'src', 'components', 'Breadcrumb.css'),
+  path.join(ROOT_DIR, 'src', 'components', 'BlogProductShowcase.css'),
+  path.join(ROOT_DIR, 'src', 'components', 'AuthorCard.css'),
+  path.join(ROOT_DIR, 'src', 'components', 'ServiceAreasSection.css'),
+  path.join(ROOT_DIR, 'src', 'components', 'Header.css'),
+  path.join(ROOT_DIR, 'src', 'components', 'Footer.css'),
+  path.join(ROOT_DIR, 'src', 'components', 'DualLanguage.css'),
+  path.join(ROOT_DIR, 'src', 'components', 'AnnouncementBar.css')
+]
 
 const escapeHtml = (str) => {
   if (!str) return ''
@@ -42,6 +45,59 @@ const readFileSafe = async (filePath) => {
   } catch (error) {
     console.warn(`[prerender] Unable to read ${filePath}:`, error.message)
     return ''
+  }
+}
+
+const loadCombinedCss = async () => {
+  const cssChunks = []
+
+  for (const cssFile of CSS_FILES) {
+    const css = await readFileSafe(cssFile)
+    if (css && css.trim().length > 0) {
+      cssChunks.push(`/* Source: ${path.relative(ROOT_DIR, cssFile)} */\n${css}`)
+    }
+  }
+
+  cssChunks.push(`
+/* Prerender fallback helpers */
+#prerender-fallback {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+#prerender-fallback.prerender-fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.prerender-header-placeholder {
+  height: 120px;
+}
+`)
+
+  return cssChunks.join('\n\n')
+}
+
+const loadAppAssets = async () => {
+  const indexFile = path.join(ROOT_DIR, 'dist', 'index.html')
+  const html = await readFileSafe(indexFile)
+  if (!html) {
+    console.warn('[prerender] dist/index.html not found or empty. Falling back to inline assets only.')
+    return { links: '', scripts: '' }
+  }
+
+  const linkMatches = html.match(/<link[^>]+>/g) || []
+  const scriptMatches = html.match(/<script[^>]*src="[^"]+"[^>]*><\/script>/g) || []
+
+  const allowedLinkRel = /rel="(?:stylesheet|modulepreload|preload|icon|apple-touch-icon|manifest)"/i
+  const assetHrefRegex = /href="\/?assets\//i
+  const assetSrcRegex = /src="\/?assets\//i
+  const filteredLinks = linkMatches.filter(tag => allowedLinkRel.test(tag) || assetHrefRegex.test(tag))
+  const filteredScripts = scriptMatches.filter(tag => assetSrcRegex.test(tag))
+
+  return {
+    links: filteredLinks.join('\n  '),
+    scripts: filteredScripts.join('\n  ')
   }
 }
 
@@ -429,106 +485,159 @@ const makeAbsoluteAssetUrl = (baseUrl, relativePath) => {
   return `${trimmedBase}/blog/assets/${encodeURIComponent(fileName)}`
 }
 
-const generateAnnouncementBarHTML = (isIndonesian) => `
-  <div class="static-announcement-bar" role="region" aria-label="Announcement">
-    <div class="static-container static-announcement-content">
-      <span>${isIndonesian ? 'Workshop Furniture Industrial Mangala Living' : 'Mangala Living Industrial Furniture Workshop'}</span>
-      <span class="static-announcement-highlight">${isIndonesian ? 'Produksi langsung · Custom sesuai project bisnis Anda' : 'Direct production · Custom builds for your business needs'}</span>
-      <a class="static-announcement-cta" href="https://wa.me/6288801146881" target="_blank" rel="noopener noreferrer">
-        ${isIndonesian ? 'Konsultasi Gratis' : 'Free Consultation'}
+const generateAnnouncementBarHTML = (isIndonesian) => {
+  const content = isIndonesian
+    ? {
+        text: 'Wujudkan Furniture Impian Anda!',
+        highlight: 'Gratis Konsultasi Desain',
+        cta: 'Pesan Custom Order Sekarang'
+      }
+    : {
+        text: 'Bring Your Dream Furniture to Life!',
+        highlight: 'Free Design Consultation',
+        cta: 'Order Custom Furniture Now'
+      }
+
+  return `
+    <div class="announcement-bar" role="banner" aria-label="${isIndonesian ? 'Pengumuman' : 'Announcement'}">
+      <div class="announcement-content">
+        <span class="announcement-text">
+          ${content.text} <span class="announcement-highlight">${content.highlight}</span>
+        </span>
+        <a class="announcement-cta" href="${BASE_URL}/custom-order">
+          ${content.cta} &gt;
       </a>
     </div>
   </div>
 `
+}
 
 const generateHeaderHTML = (isIndonesian) => `
-  <header class="static-header">
-    <div class="static-header-top">
-      <div class="static-container static-header-top-inner">
-        <div class="static-header-brand">Mangala Living</div>
-        <nav class="static-header-nav" aria-label="Primary navigation">
-          <a class="static-header-link" href="${BASE_URL}/">${isIndonesian ? 'Beranda' : 'Home'}</a>
-          <a class="static-header-link" href="${BASE_URL}/shop">${isIndonesian ? 'Produk' : 'Products'}</a>
-          <a class="static-header-link" href="${BASE_URL}/blog">Blog</a>
-          <a class="static-header-link" href="${BASE_URL}/contact-us">${isIndonesian ? 'Kontak' : 'Contact'}</a>
+  <header class="header" role="banner">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-content">
+          <nav class="header-top-nav" aria-label="${isIndonesian ? 'Navigasi utama' : 'Primary navigation'}">
+            <a class="header-top-link" href="${BASE_URL}/about">About</a>
+            <a class="header-top-link" href="${BASE_URL}/blog">Blog</a>
+            <a class="header-top-link" href="${BASE_URL}/contact-us">${isIndonesian ? 'Contact Us' : 'Contact Us'}</a>
         </nav>
-        <div class="static-header-actions">
-          <span class="static-language-pill">${isIndonesian ? 'ID' : 'EN'}</span>
-          <a class="static-header-action" href="mailto:info@mangala-living.com">info@mangala-living.com</a>
-          <a class="static-header-button" href="https://wa.me/6288801146881" target="_blank" rel="noopener noreferrer">
-            ${isIndonesian ? 'Hubungi Kami' : 'Contact Us'}
+          <a class="logo" href="${BASE_URL}/">
+            <span class="logo-text">MANGALA</span>
           </a>
+          <div class="header-top-actions">
+            <div class="language-switcher">
+              <button class="language-btn" type="button" aria-label="${isIndonesian ? 'Bahasa utama' : 'Current language'}" disabled>
+                <span class="flag ${isIndonesian ? 'flag-id' : 'flag-us'}"></span>
+                <span class="language-text">${isIndonesian ? 'ID' : 'EN'}</span>
+              </button>
         </div>
+            <button class="search-btn" type="button" aria-label="${isIndonesian ? 'Cari' : 'Search'}">
+              <span>${isIndonesian ? 'Cari' : 'Search'}</span>
+            </button>
+            <a class="catalog-btn" href="${BASE_URL}/assets/Mangala-Living-Catalog-2025.pdf" target="_blank" rel="noopener noreferrer">
+              ${isIndonesian ? 'Unduh Katalog Kami' : 'Download Our Catalog'}
+            </a>
       </div>
     </div>
-    <div class="static-header-bottom">
-      <div class="static-container static-header-bottom-inner">
-        <nav class="static-category-nav" aria-label="Secondary navigation">
-          <a class="static-category-link" href="${BASE_URL}/product-category/meja-industrial">${isIndonesian ? 'Meja Industrial' : 'Industrial Tables'}</a>
-          <a class="static-category-link" href="${BASE_URL}/product-category/kursi-industrial">${isIndonesian ? 'Kursi Bar & Cafe' : 'Chairs & Stools'}</a>
-          <a class="static-category-link" href="${BASE_URL}/product-category/rak-industrial">${isIndonesian ? 'Rak Display' : 'Display Racks'}</a>
-          <a class="static-category-link" href="${BASE_URL}/product-category/kabinet-industrial">${isIndonesian ? 'Kabinet & Storage' : 'Cabinets & Storage'}</a>
-          <a class="static-category-link" href="${BASE_URL}/custom-order">${isIndonesian ? 'Custom Order' : 'Custom Order'}</a>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="category-nav" aria-label="${isIndonesian ? 'Navigasi kategori produk' : 'Product category navigation'}">
+          <a class="category-link" href="${BASE_URL}/product-category/new-arrivals">New Arrivals</a>
+          <a class="category-link" href="${BASE_URL}/product-category/lounge-seating-set">Lounge Set</a>
+          <a class="category-link" href="${BASE_URL}/product-category/industrial-sofa-bench">Sofa Bench</a>
+          <a class="category-link" href="${BASE_URL}/product-category/dining-set-collection">Dining Set</a>
+          <a class="category-link" href="${BASE_URL}/product-category/bar-furniture-collection">Bar Set</a>
+          <a class="category-link" href="${BASE_URL}/product-category/balcony-outdoor-collection">Outdoor</a>
+          <a class="category-link" href="${BASE_URL}/product-category/daybed-lounge-frame">Daybed</a>
+          <a class="category-link" href="${BASE_URL}/product-category/accessories-storage">Storage</a>
+          <a class="category-link" href="${BASE_URL}/product-category/table-collection">Tables</a>
+          <a class="category-link" href="${BASE_URL}/product-category/dining-table-collection">Dine Table</a>
         </nav>
       </div>
     </div>
   </header>
 `
 
-const generateBreadcrumbHTML = (post, isIndonesian) => `
-  <nav class="static-breadcrumb" aria-label="${isIndonesian ? 'Jalur navigasi' : 'Breadcrumb'}">
-    <ol>
-      <li><a href="${BASE_URL}/">${isIndonesian ? 'Beranda' : 'Home'}</a></li>
-      <li><a href="${BASE_URL}/blog">Blog</a></li>
-      <li aria-current="page">${escapeHtml(post.title)}</li>
+const generateBreadcrumbHTML = (post) => {
+  const items = [
+    { label: 'Home', url: `${BASE_URL}/` },
+    { label: post.category || 'Blog', url: `${BASE_URL}/blog` },
+    { label: post.title, url: `${BASE_URL}/blog/${post.slug}` }
+  ]
+
+  const listItems = items.map((item, index) => {
+    const position = index + 1
+    const isLast = position === items.length
+    const separator = isLast ? '' : '<span class="breadcrumb-separator" aria-hidden="true">›</span>'
+
+    return `
+      <li class="breadcrumb-item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+        ${isLast
+          ? `<span itemProp="name" aria-current="page">${escapeHtml(item.label)}</span>`
+          : `<a href="${item.url}" itemProp="item"><span itemProp="name">${escapeHtml(item.label)}</span></a>`}
+        <meta itemProp="position" content="${position}">
+        ${separator}
+      </li>
+    `
+  }).join('\n')
+
+  return `
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        ${listItems}
     </ol>
   </nav>
 `
+}
 
-const generateArticleMetaHTML = (post, formattedDate, isIndonesian) => `
-  <div class="static-article-meta">
-    <span class="static-article-meta-item">${escapeHtml(post.category || (isIndonesian ? 'Blog' : 'Blog'))}</span>
-    <span class="static-article-meta-item">${escapeHtml(post.author || 'Mangala Living')}</span>
-    <span class="static-article-meta-item">${formattedDate}</span>
-  </div>
+const generateArticleMetaHTML = (post, formattedDate) => `
+  <p class="blog-post-meta">
+    ${escapeHtml(post.author || 'Mangala Living')} · ${formattedDate}
+  </p>
 `
 
 const generateSectionHTML = (section, post, index) => {
   const parts = []
+
   if (section.heading) {
-    parts.push(`<h2>${escapeHtml(section.heading)}</h2>`)
+    parts.push(`<h2 class="blog-post-section-heading">${escapeHtml(section.heading)}</h2>`)
   }
 
   if (section.paragraphs?.length) {
     section.paragraphs.forEach(paragraph => {
       if (!paragraph) return
-      parts.push(`<p>${paragraph}</p>`)
+      parts.push(`<p class="blog-post-paragraph">${paragraph}</p>`)
     })
   }
 
   if (section.image) {
     parts.push(`
-      <figure class="static-article-image">
+      <figure class="blog-post-figure">
         <img
           src="${section.image}"
           alt="${escapeHtml(section.imageAlt || `${post.title} - ${section.heading || 'Industrial Furniture Article'} - Mangala Living`)}"
           loading="${index <= 1 ? 'eager' : 'lazy'}"
+          width="800"
+          height="500"
         />
-        ${section.imageAlt ? `<figcaption>${escapeHtml(section.imageAlt)}</figcaption>` : ''}
+        ${section.imageAlt ? `<figcaption class="blog-post-figcaption">${escapeHtml(section.imageAlt)}</figcaption>` : ''}
       </figure>
     `)
   }
 
   if (section.list?.length) {
     const listItems = section.list.map(item => `<li>${item}</li>`).join('')
-    parts.push(`<ul>${listItems}</ul>`)
+    parts.push(`<ul class="blog-post-list">${listItems}</ul>`)
   }
 
   if (!parts.length) {
     return ''
   }
 
-  return `<section class="static-article-section">${parts.join('\n')}</section>`
+  return `<section class="blog-post-section">${parts.join('\n')}</section>`
 }
 
 const generateArticleSectionsHTML = (content, post) => {
@@ -541,81 +650,85 @@ const generateArticleSectionsHTML = (content, post) => {
     .join('\n')
 }
 
-const generateProductShowcaseHTML = (products, heading, isIndonesian, baseUrl) => {
+const generateProductShowcaseHTML = (products, heading, isIndonesian) => {
   if (!products || products.length === 0) {
     return ''
   }
 
+  const displayProducts = products.slice(0, 3)
   const description = isIndonesian
     ? 'Berikut adalah produk industrial pilihan kami yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium dan material industrial grade di workshop kami di Bekasi.'
-    : 'Discover our premium industrial furniture collection manufactured in our Bekasi workshop with high-quality materials and powder coating finish.'
-
-  const displayProducts = products.slice(0, 3)
+    : 'Discover our premium industrial furniture collection, manufactured in our Bekasi workshop with high-quality materials and powder coating finish.'
 
   const cards = displayProducts.map((product, index) => {
-    const usdPrice = convertIDRToUSDStatic(product.price)
-    const absoluteImage = makeAbsoluteAssetUrl(baseUrl, product.image)
     const categories = Array.isArray(product.categories) ? product.categories : []
-
+    const usdPrice = convertIDRToUSDStatic(product.price)
     return `
-      <article class="static-product-card">
-        <a class="static-product-card-link" href="${BASE_URL}/product/${product.slug}">
-          <div class="static-product-image-wrapper">
-            ${product.image ? `<img src="${product.image}" alt="${escapeHtml(product.name)}" loading="${index === 0 ? 'eager' : 'lazy'}" width="360" height="260" />` : ''}
+      <article class="blog-product-showcase-item">
+        <a class="blog-product-showcase-card" href="${BASE_URL}/product/${product.slug}">
+          <div class="blog-product-showcase-image-wrapper">
+            ${product.image ? `<img class="blog-product-showcase-image" src="${product.image}" alt="${escapeHtml(product.name)}" loading="${index === 0 ? 'eager' : 'lazy'}" width="350" height="250" />` : ''}
+            <div class="blog-product-showcase-badge">
+              <span class="blog-product-badge-text">${isIndonesian ? 'Produk Kami' : 'Our Product'}</span>
           </div>
-          <div class="static-product-info">
-            <h3>${escapeHtml(product.name)}</h3>
-            ${categories.length ? `<div class="static-product-categories">${categories.map(category => `<span>${escapeHtml(category)}</span>`).join('')}</div>` : ''}
-            <div class="static-product-prices">
-              <span class="static-price-primary">${escapeHtml(product.price || '')}</span>
-              ${usdPrice ? `<span class="static-price-secondary">${usdPrice}</span>` : ''}
             </div>
-            <span class="static-product-cta">${isIndonesian ? 'Lihat Detail Produk' : 'View Product Detail'}</span>
+          <div class="blog-product-showcase-info">
+            <h3 class="blog-product-showcase-name">${escapeHtml(product.name)}</h3>
+            ${categories.length ? `<div class="blog-product-showcase-categories">${categories.map(cat => `<span class="blog-product-category-tag">${escapeHtml(cat)}</span>`).join('')}</div>` : ''}
+            <div class="blog-product-showcase-price-container">
+              <p class="blog-product-showcase-price-primary">${escapeHtml(product.price || '')}</p>
+              ${usdPrice ? `<p class="blog-product-showcase-price-secondary">${usdPrice}</p>` : ''}
+            </div>
+            <div class="blog-product-showcase-cta">
+              <span class="blog-product-showcase-link">${isIndonesian ? 'Lihat Detail Produk' : 'View Product Details'}</span>
+            </div>
           </div>
         </a>
-        ${absoluteImage ? `<link itemprop="image" content="${absoluteImage}" />` : ''}
       </article>
     `
   }).join('\n')
 
   return `
-    <section class="static-product-showcase">
-      <div class="static-product-header">
-        <h3>${escapeHtml(heading || (isIndonesian ? 'Produk Industrial Terkait' : 'Related Industrial Furniture'))}</h3>
-        <p>${description}</p>
+    <section class="blog-product-showcase">
+      <div class="blog-product-showcase-container">
+        <div class="blog-product-showcase-header">
+          <h2 class="blog-product-showcase-heading">${escapeHtml(heading || (isIndonesian ? 'Produk Industrial Terkait' : 'Related Industrial Products'))}</h2>
+          <p class="blog-product-showcase-description">${description}</p>
       </div>
-      <div class="static-product-grid">
+        <div class="blog-product-showcase-grid">
         ${cards}
       </div>
-      <div class="static-product-footer">
-        <a class="static-product-button" href="${BASE_URL}/shop">${isIndonesian ? 'Lihat Semua Produk' : 'Browse All Products'}</a>
+        <div class="blog-product-showcase-footer">
+          <a class="blog-product-showcase-all-products-btn" href="${BASE_URL}/shop">${isIndonesian ? 'Lihat Semua Produk' : 'View All Products'}</a>
+        </div>
       </div>
     </section>
   `
 }
 
-const generateSidebarHTML = (otherArticles, isIndonesian) => {
+const generateSidebarHTML = (otherArticles) => {
   if (!otherArticles?.length) {
     return ''
   }
 
+  const items = otherArticles.map(article => `
+    <li>
+      <a class="blog-post-sidebar-link" href="${BASE_URL}/blog/${article.slug}">
+        <span class="blog-post-sidebar-link-title">${escapeHtml(article.title)}</span>
+        <span class="blog-post-sidebar-link-category">${escapeHtml(article.category || '')}</span>
+      </a>
+    </li>
+  `).join('\n')
+
   return `
-    <div>
-      <h3 id="static-sidebar-title">${isIndonesian ? 'Artikel Lainnya' : 'Other Articles'}</h3>
-      <div class="static-sidebar-grid">
-        ${otherArticles.map(article => `
-          <a class="static-sidebar-card" href="${BASE_URL}/blog/${article.slug}">
-            <div class="static-sidebar-image">
-              ${article.image ? `<img src="${article.image}" alt="${escapeHtml(article.title)}" loading="lazy" width="320" height="220" />` : ''}
+    <aside class="blog-post-sidebar" aria-labelledby="blog-post-sidebar-title">
+      <div class="blog-post-sidebar-card card">
+        <h2 id="blog-post-sidebar-title" class="blog-post-sidebar-title">Other Articles</h2>
+        <ul class="blog-post-sidebar-list">
+          ${items}
+        </ul>
             </div>
-            <div class="static-sidebar-info">
-              <span class="static-sidebar-category">${escapeHtml(article.category || '')}</span>
-              <h4>${escapeHtml(article.title)}</h4>
-            </div>
-          </a>
-        `).join('\n')}
-      </div>
-    </div>
+    </aside>
   `
 }
 
@@ -643,112 +756,180 @@ const generateAuthorCardHTML = (post, isIndonesian) => {
       ]
 
   return `
-    <section class="static-author-card">
-      <div class="static-author-card-inner">
-        <div class="static-author-avatar">HR</div>
-        <div>
-          <h3>${isIndonesian ? 'Tentang Penulis' : 'About the Author'}</h3>
-          <p class="static-author-title">${escapeHtml(title)}</p>
-          <ul>
-            ${experiences.map(item => `<li>${escapeHtml(item)}</li>`).join('')}
-          </ul>
-          <p><a href="https://www.linkedin.com/in/helmi-ramdan-067912118/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    <div class="blog-post-author-card">
+      <div class="author-card">
+        <div class="author-card-header">
+          <div class="author-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
         </div>
+          <div class="author-info">
+            <h4 class="author-name">${isIndonesian ? 'Oleh:' : 'By:'} Helmi Ramdan</h4>
+            <p class="author-title">${escapeHtml(title)}</p>
       </div>
-    </section>
+        </div>
+        <div class="author-experience">
+          ${experiences.map(item => `<span class="experience-item">${escapeHtml(item)}</span>`).join('')}
+        </div>
+        <a class="author-linkedin" href="https://www.linkedin.com/in/helmi-ramdan-067912118/" target="_blank" rel="noopener noreferrer">
+          LinkedIn Profile
+        </a>
+      </div>
+    </div>
   `
 }
 
 const generateCTAHTML = (post, isIndonesian) => {
   const isExport = post.category === 'Export & International'
   return `
-    <section class="static-cta">
-      <h3>${isExport ? 'Interested in Our Industrial Furniture?' : 'Tertarik dengan Furniture Industrial Kami?'}</h3>
-      <p>${isExport
+    <div class="blog-post-cta card">
+      <div class="section-header">
+        <h2>${isExport ? 'Interested in Our Industrial Furniture?' : 'Tertarik dengan Furniture Industrial Kami?'}</h2>
+        <p class="section-subtitle">
+          ${isExport
         ? 'Visit our complete collection of high-quality custom industrial furniture from Mangala Living.'
-        : 'Kunjungi koleksi lengkap furniture industrial custom berkualitas tinggi dari Mangala Living.'}</p>
-      <div class="static-cta-buttons">
-        <a class="static-cta-button primary" href="${BASE_URL}/shop">${isExport ? 'View All Products' : 'Lihat Semua Produk'}</a>
-        <a class="static-cta-button secondary" href="https://wa.me/6288801146881" target="_blank" rel="noopener noreferrer">${isExport ? 'Chat with Us' : 'Chat via WhatsApp'}</a>
+            : 'Kunjungi koleksi lengkap furniture industrial custom berkualitas tinggi dari Mangala Living.'}
+        </p>
       </div>
-    </section>
+      <div class="blog-post-cta-actions">
+        <a class="btn-primary" href="${BASE_URL}/shop">${isExport ? 'View All Products' : 'Lihat Semua Produk'}</a>
+        <a class="btn-secondary" href="${BASE_URL}/contact-us">${isExport ? 'Contact Us' : 'Hubungi Kami'}</a>
+      </div>
+    </div>
   `
 }
 
 const generateServiceAreasHTML = (isIndonesian) => `
-  <section class="static-service-areas">
-    <div class="static-container">
-      <h2>${isIndonesian ? 'Wilayah Layanan Kami' : 'Our Service Areas'}</h2>
-      <p>${isIndonesian
-        ? 'Melayani Bekasi, Jakarta, Cikarang, Depok, Bogor, Tangerang, Karawang, dan seluruh Jabodetabek dengan pengalaman 25+ tahun.'
-        : 'Serving Bekasi, Jakarta, Cikarang, Depok, Bogor, Tangerang, Karawang, and greater Jabodetabek with 25+ years of experience.'}</p>
-      <div class="static-service-grid">
-        <div>
-          <h3>${isIndonesian ? 'Bekasi & Cikarang' : 'Bekasi & Cikarang'}</h3>
-          <p>${isIndonesian
-            ? 'Workshop langsung di Setu, Bekasi. Melayani Summarecon Bekasi, Harapan Indah, Grand Galaxy City, Lippo Cikarang, Jababeka, dan kawasan industri MM2100.'
-            : 'Workshop located in Setu, Bekasi. Serving Summarecon Bekasi, Harapan Indah, Grand Galaxy City, Lippo Cikarang, Jababeka, and MM2100 industrial area.'}</p>
+  <section class="service-areas-section">
+    <div class="service-areas-container">
+      <div class="service-areas-header">
+        <h2 class="section-title">${isIndonesian ? 'Wilayah Layanan Kami' : 'Our Service Areas'}</h2>
+        <p class="section-subtitle">${isIndonesian ? 'Melayani Bekasi, Jakarta, dan seluruh Jabodetabek dengan pengalaman 25+ tahun' : 'Serving Bekasi, Jakarta, and entire Jabodetabek with 25+ years of experience'}</p>
         </div>
-        <div>
-          <h3>${isIndonesian ? 'Jakarta & Jabodetabek' : 'Jakarta & Jabodetabek'}</h3>
-          <p>${isIndonesian
-            ? 'Pengalaman proyek di Kemang, SCBD, Senopati, Sudirman, Thamrin, Margonda Depok, Bogor Kota, hingga BSD Tangerang.'
-            : 'Project experience in Kemang, SCBD, Senopati, Sudirman, Thamrin, Margonda Depok, Bogor, and BSD Tangerang.'}</p>
+      <div class="service-area-group">
+        <h3 class="area-group-title"><span class="area-icon">*</span>BEKASI KOTA</h3>
+        <div class="areas-grid">
+          <div class="area-card"><h4 class="area-name">Bekasi Barat</h4><p class="area-kelurahan">Bintara, Kranji, Kota Baru, Jakasampurna</p></div>
+          <div class="area-card"><h4 class="area-name">Bekasi Timur</h4><p class="area-kelurahan">Jatiasih, Pekayon, Margahayu, Aren Jaya</p></div>
+          <div class="area-card"><h4 class="area-name">Bekasi Selatan</h4><p class="area-kelurahan">Kayuringin Jaya, Pekayon Jaya, Jakasetia</p></div>
+          <div class="area-card"><h4 class="area-name">Bekasi Utara</h4><p class="area-kelurahan">Harapan Indah, Pejuang, Kaliabang, Medan Satria</p></div>
+          <div class="area-card"><h4 class="area-name">Rawalumbu</h4><p class="area-kelurahan">Bojong Rawalumbu, Sepanjang Jaya, Pengasinan</p></div>
+          <div class="area-card"><h4 class="area-name">Pondok Gede</h4><p class="area-kelurahan">Jatiwaringin, Jatibening, Jatiraden</p></div>
+          <div class="area-card"><h4 class="area-name">Mustika Jaya</h4><p class="area-kelurahan">Mustikasari, Pedurenan, Cimuning</p></div>
         </div>
-        <div>
-          <h3>${isIndonesian ? 'Konsultasi Khusus' : 'Tailored Consultation'}</h3>
-          <p>${isIndonesian
-            ? 'Hubungi kami untuk konsultasi layout, material, dan estimasi budget furniture industrial sesuai kebutuhan bisnis Anda.'
-            : 'Contact us for layout, material, and budget consultation tailored to your commercial furniture project.'}</p>
         </div>
+      <div class="service-area-group">
+        <h3 class="area-group-title"><span class="area-icon">*</span>CIKARANG & SEKITARNYA</h3>
+        <div class="areas-grid">
+          <div class="area-card"><h4 class="area-name">Cikarang Barat</h4><p class="area-kelurahan">Lippo Cikarang, Cibatu, Telaga Murni</p></div>
+          <div class="area-card"><h4 class="area-name">Cikarang Utara</h4><p class="area-kelurahan">Karang Asih, Simpangan, Sukamaju</p></div>
+          <div class="area-card"><h4 class="area-name">Cikarang Selatan</h4><p class="area-kelurahan">Jababeka, Greenland, Pasirsari</p></div>
+          <div class="area-card"><h4 class="area-name">Cikarang Timur</h4><p class="area-kelurahan">Serang Baru, Karangreja, Jayamukti</p></div>
+          <div class="area-card"><h4 class="area-name">Cikarang Pusat</h4><p class="area-kelurahan">Taman Galaxy, Lemahabang, Hegarmukti</p></div>
+          <div class="area-card"><h4 class="area-name">Tambun Selatan</h4><p class="area-kelurahan">Sertajaya, Mangunjaya, Setiadarma</p></div>
+          <div class="area-card"><h4 class="area-name">Tambun Utara</h4><p class="area-kelurahan">Satria Jaya, Karang Satria, Wanasari</p></div>
+          <div class="area-card"><h4 class="area-name">Cibitung</h4><p class="area-kelurahan">Wanajaya, Mekarjaya, Lambang Jaya</p></div>
+          <div class="area-card"><h4 class="area-name">Setu</h4><p class="area-kelurahan">Telajung (Workshop Location)</p></div>
+        </div>
+      </div>
+      <div class="service-area-group commercial">
+        <h3 class="area-group-title"><span class="area-icon">*</span>KAWASAN KOMERSIAL & INDUSTRIAL</h3>
+        <div class="commercial-grid">
+          ${[
+            { icon: 'MB', name: 'Summarecon Bekasi', desc: 'Mall & Boulevard Area' },
+            { icon: 'RC', name: 'Harapan Indah', desc: 'Residential & Commercial' },
+            { icon: 'GG', name: 'Grand Galaxy City', desc: 'Superblock F&B District' },
+            { icon: 'ME', name: 'Galaxy Bekasi', desc: 'Mall & Entertainment' },
+            { icon: 'PR', name: 'Kemang Pratama', desc: 'Premium Residential' },
+            { icon: 'LC', name: 'Lippo Cikarang', desc: 'Mall & Commercial Hub' },
+            { icon: 'IN', name: 'Jababeka', desc: 'Industrial Estate' },
+            { icon: 'MU', name: 'Deltamas', desc: 'Mixed-Use Development' },
+            { icon: 'EI', name: 'EJIP Cikarang', desc: 'East Jakarta Industrial Park' },
+            { icon: 'CR', name: 'Greenland International', desc: 'Commercial & Residential' },
+            { icon: 'IT', name: 'MM2100', desc: 'Industrial Town' }
+          ].map(area => `
+            <div class="commercial-card">
+              <span class="commercial-icon">${area.icon}</span>
+              <h4 class="commercial-name">${area.name}</h4>
+              <p class="commercial-desc">${area.desc}</p>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+      <div class="service-area-group">
+        <h3 class="area-group-title"><span class="area-icon">*</span>JAKARTA & JABODETABEK</h3>
+        <div class="areas-grid">
+          <div class="area-card jakarta"><h4 class="area-name">Jakarta Timur</h4><p class="area-kelurahan">Cakung, Kramat Jati, Makasar, Cipayung</p></div>
+          <div class="area-card jakarta"><h4 class="area-name">Jakarta Pusat</h4><p class="area-kelurahan">Sudirman, Thamrin, Kuningan (CBD)</p></div>
+          <div class="area-card jakarta"><h4 class="area-name">Jakarta Selatan</h4><p class="area-kelurahan">Kemang, SCBD, Senopati, Kebayoran</p></div>
+          <div class="area-card jakarta"><h4 class="area-name">Depok</h4><p class="area-kelurahan">Margonda, UI, Sawangan</p></div>
+          <div class="area-card jakarta"><h4 class="area-name">Bogor</h4><p class="area-kelurahan">Bogor Kota, Cibinong, Sentul</p></div>
+          <div class="area-card jakarta"><h4 class="area-name">Karawang</h4><p class="area-kelurahan">Karawang Barat, Karawang Timur</p></div>
+          <div class="area-card jakarta"><h4 class="area-name">Cileungsi</h4><p class="area-kelurahan">Metland Transyogi</p></div>
+        </div>
+      </div>
+      <div class="service-areas-cta">
+        <div class="cta-content">
+          <h3>${isIndonesian ? 'Area Anda Tidak Tercantum?' : 'Your Area Not Listed?'}</h3>
+          <p>${isIndonesian ? 'Hubungi kami untuk diskusi cakupan layanan kami. Kami melayani seluruh Jabodetabek dan sekitarnya.' : 'Contact us to discuss our service coverage. We serve entire Jabodetabek and surrounding areas.'}</p>
+          <a class="cta-button" href="https://wa.me/6288801146881?text=Halo%20Mangala%20Living%2C%20saya%20tertarik%20dengan%20furniture%20industrial%20untuk%20area%20saya" target="_blank" rel="noopener noreferrer">
+            <span class="whatsapp-icon">WA</span>
+            ${isIndonesian ? 'Konsultasi Gratis' : 'Free Consultation'}
+          </a>
+        </div>
+      </div>
+      <div class="service-areas-seo-text">
+        <p><strong>Mangala Living</strong> adalah workshop furniture industrial terpercaya yang melayani seluruh wilayah Bekasi, Jakarta, dan Jabodetabek. Kami menyediakan solusi custom furniture besi industrial untuk cafe, restoran, hotel, kantor, dan proyek komersial lainnya.</p>
       </div>
     </div>
   </section>
 `
 
 const generateFooterHTML = (isIndonesian) => `
-  <footer class="static-footer">
-    <div class="static-container">
-      <div class="static-footer-grid">
-        <div>
-          <h3>Mangala Living</h3>
-          <p>${isIndonesian
-            ? 'Workshop furniture industrial premium dengan pengalaman 25+ tahun melayani project cafe, restoran, hotel, kantor, dan residensial.'
-            : 'Premium industrial furniture workshop with 25+ years of experience serving cafe, restaurant, hotel, office, and residential projects.'}</p>
-          <p>Jl. Raya Setu Cibitung - Bekasi, Jawa Barat 17320</p>
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2 class="footer-logo">MANGALA</h2>
+          <p class="footer-description">${isIndonesian ? 'Pilihan terbaik untuk furniture industrial scandinavian premium sejak 1999. Melayani coffee shop, restoran, dan bisnis di seluruh Indonesia. Pesanan custom diterima.' : 'Your best choice for premium industrial Scandinavian furniture since 1999. Serving coffee shops, restaurants, and businesses across Indonesia. Custom orders welcome.'}</p>
+          <div class="footer-contact-info">
+            <h4>${isIndonesian ? 'Hubungi Kami' : 'Contact Us'}</h4>
+            <p><a href="mailto:info@mangala-living.com">info@mangala-living.com</a></p>
+            <p><a href="https://wa.me/6288801146881" target="_blank" rel="noopener noreferrer">+62 888 0114 6881</a></p>
         </div>
-        <div>
-          <h4>${isIndonesian ? 'Navigasi' : 'Navigation'}</h4>
-          <ul>
-            <li><a href="${BASE_URL}/">${isIndonesian ? 'Beranda' : 'Home'}</a></li>
-            <li><a href="${BASE_URL}/shop">${isIndonesian ? 'Produk' : 'Products'}</a></li>
+        </div>
+        <div class="footer-column">
+          <h4>${isIndonesian ? 'Temukan Kami' : 'Find Us'}</h4>
+          <div class="footer-location">
+            <h5>Workshop Bekasi :</h5>
+            <p><a class="footer-address-link" href="https://maps.app.goo.gl/5Bc5ymfVtAYRPtpK7" target="_blank" rel="noopener noreferrer">Jl. Raya Setu Cibitung - Bekasi, Jawa Barat 17320</a></p>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>${isIndonesian ? 'Tautan Cepat' : 'Quick Links'}</h4>
+          <ul class="footer-links">
+            <li><a href="${BASE_URL}/about">About</a></li>
             <li><a href="${BASE_URL}/blog">Blog</a></li>
+            <li><a href="${BASE_URL}/shipping-information">${isIndonesian ? 'Pengiriman' : 'Shipping'}</a></li>
+            <li><a href="${BASE_URL}/contact-us">Contact Us</a></li>
             <li><a href="${BASE_URL}/custom-order">${isIndonesian ? 'Custom Order' : 'Custom Order'}</a></li>
-            <li><a href="${BASE_URL}/contact-us">${isIndonesian ? 'Kontak' : 'Contact'}</a></li>
           </ul>
         </div>
-        <div>
-          <h4>${isIndonesian ? 'Hubungi Kami' : 'Contact'}</h4>
-          <ul>
-            <li><a href="mailto:info@mangala-living.com">info@mangala-living.com</a></li>
-            <li><a href="https://wa.me/6288801146881" target="_blank" rel="noopener noreferrer">+62 888-0114-6881</a></li>
-            <li><a href="https://www.instagram.com/mangalaliving/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/company/mangala-living/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <div class="footer-column">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="${BASE_URL}/product-category/new-arrivals">New Arrivals</a></li>
+            <li><a href="${BASE_URL}/product-category/lounge-seating-set">Lounge Set</a></li>
+            <li><a href="${BASE_URL}/product-category/dining-set-collection">Dining Set</a></li>
+            <li><a href="${BASE_URL}/product-category/bar-furniture-collection">Bar Set</a></li>
+            <li><a href="${BASE_URL}/product-category/accessories-storage">Storage</a></li>
           </ul>
         </div>
-        <div>
-          <h4>${isIndonesian ? 'Dapatkan Katalog' : 'Request Catalogue'}</h4>
-          <p>${isIndonesian
-            ? 'Masukkan email Anda untuk menerima katalog terbaru dan penawaran eksklusif.'
-            : 'Leave your email to receive our latest catalogue and exclusive offers.'}</p>
-          <form class="static-footer-form" action="https://mangala-living.com/api/subscribe" method="post">
-            <input type="email" name="email" placeholder="${isIndonesian ? 'Email Anda' : 'Your Email'}" required />
-            <button type="submit">${isIndonesian ? 'Kirim' : 'Submit'}</button>
-          </form>
         </div>
-      </div>
-      <div class="static-footer-bottom">
-        &copy; ${new Date().getFullYear()} Mangala Living. ${isIndonesian ? 'Seluruh hak cipta dilindungi undang-undang.' : 'All rights reserved.'}
+      <div class="footer-bottom">
+        <p>Copyright ${new Date().getFullYear()} Mangala Living. ${isIndonesian ? 'Seluruh hak cipta dilindungi.' : 'All rights reserved.'}</p>
       </div>
     </div>
   </footer>
@@ -858,19 +1039,21 @@ const generateBlogPostHTML = (post, content, {
   relevantProducts = [],
   showcaseHeading,
   baseUrl,
-  showServiceAreas = false
+  showServiceAreas = false,
+  inlineStyles = '',
+  assetTags = { links: '', scripts: '' }
 }) => {
   const isIndonesian = post.category !== 'Export & International'
   const metaDescription = post.excerpt || (content?.sections?.[0]?.paragraphs?.[0] || '')
-  const articleSectionsHTML = generateArticleSectionsHTML(content, post)
-  const sidebarHTML = generateSidebarHTML(otherArticles, isIndonesian)
+
   const shouldDisplayProducts = hasProductRelatedKeywords(post) && relevantProducts.length > 0
   const productShowcaseHTML = shouldDisplayProducts
-    ? generateProductShowcaseHTML(relevantProducts, showcaseHeading, isIndonesian, baseUrl)
+    ? generateProductShowcaseHTML(relevantProducts, showcaseHeading, isIndonesian)
     : ''
   const authorCardHTML = generateAuthorCardHTML(post, isIndonesian)
   const ctaHTML = generateCTAHTML(post, isIndonesian)
   const serviceAreasHTML = showServiceAreas ? generateServiceAreasHTML(isIndonesian) : ''
+  const sidebarHTML = generateSidebarHTML(otherArticles)
   const productSchemas = shouldDisplayProducts ? generateProductSchemas(relevantProducts, post, baseUrl) : []
 
   const trimmedBaseUrl = normalizeBaseUrl(baseUrl)
@@ -888,203 +1071,26 @@ const generateBlogPostHTML = (post, content, {
     }
   })()
 
-  const heroImageHTML = post.image
-    ? `
-      <figure class="static-hero-image">
-        <img src="${post.image}" alt="${escapeHtml(post.title)}" loading="eager" />
-      </figure>
-    `
-    : ''
+  const sections = Array.isArray(content?.sections) ? content.sections : []
+  const sectionParts = []
+  let showcaseInserted = false
 
-  const styles = `
-      *, *::before, *::after { box-sizing: border-box; }
-      :root {
-        color-scheme: light;
-        --brand-bg: #ffffff;
-        --brand-dark: #2c3e50;
-        --brand-muted: #7f8c8d;
-        --brand-border: #e0e0e0;
-        --brand-accent: #8B7355;
-        --brand-accent-dark: #6f5b42;
-        --brand-black: #2c2c2c;
-      }
-      body {
-        margin: 0;
-        font-family: 'Plus Jakarta Sans', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        background: var(--brand-bg);
-        color: var(--brand-dark);
-        line-height: 1.6;
-        -webkit-font-smoothing: antialiased;
-      }
-      a {
-        color: var(--brand-accent);
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-      a:hover {
-        color: var(--brand-accent-dark);
-      }
-      img { display: block; max-width: 100%; height: auto; }
-      .static-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-      .static-announcement-bar { background: var(--brand-black); color: #fff; padding: 8px 0; font-size: 0.85rem; letter-spacing: 0.02em; }
-      .static-announcement-content { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; text-align: center; }
-      .static-announcement-highlight { color: var(--brand-accent); font-weight: 600; margin-left: 8px; }
-      .static-announcement-cta { background: var(--brand-accent); color: #fff; padding: 6px 18px; border-radius: 4px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; }
-      .static-announcement-cta:hover { background: var(--brand-accent-dark); color: #fff; }
-      .static-header { background: #fff; box-shadow: 0 12px 32px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 20; }
-      .static-header-top { border-bottom: 1px solid rgba(0,0,0,0.05); }
-      .static-header-top-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 14px 0; }
-      .static-header-nav { display: flex; gap: 24px; font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; }
-      .static-header-link { color: var(--brand-dark); font-weight: 500; }
-      .static-header-link:hover { color: var(--brand-accent); }
-      .static-header-brand { font-weight: 300; font-size: 1.6rem; letter-spacing: 0.3em; color: #000; }
-      .static-header-actions { display: flex; align-items: center; gap: 16px; }
-      .static-language-pill { background: rgba(0,0,0,0.05); color: var(--brand-dark); padding: 6px 12px; border-radius: 999px; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; }
-      .static-header-action { color: var(--brand-dark); font-weight: 500; }
-      .static-header-action:hover { color: var(--brand-accent); }
-      .static-header-button { border: 1.5px solid var(--brand-black); color: var(--brand-black); padding: 10px 20px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; transition: all 0.3s ease; background: transparent; }
-      .static-header-button:hover { background: var(--brand-black); color: #fff; }
-      .static-header-bottom { background: #fff; }
-      .static-header-bottom-inner { display: flex; overflow-x: auto; padding: 12px 0; }
-      .static-category-nav { display: flex; gap: 20px; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; }
-      .static-category-link { color: var(--brand-muted); position: relative; }
-      .static-category-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -8px; height: 1px; background: transparent; transition: background 0.3s ease; }
-      .static-category-link:hover { color: var(--brand-dark); }
-      .static-category-link:hover::after { background: var(--brand-dark); }
-      .static-main { padding: 120px 0 80px; background: #fff; }
-      .static-breadcrumb { font-size: 0.85rem; color: var(--brand-muted); margin-bottom: 28px; }
-      .static-breadcrumb ol { list-style: none; display: flex; gap: 8px; margin: 0; padding: 0; flex-wrap: wrap; }
-      .static-breadcrumb li::after { content: '/'; margin-left: 8px; color: #bdc3c7; }
-      .static-breadcrumb li:last-child::after { display: none; }
-      .static-breadcrumb a { color: var(--brand-accent); font-weight: 500; }
-      .static-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 60px; align-items: flex-start; }
-      .static-article { background: #fff; padding: 48px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 24px 60px rgba(0,0,0,0.08); }
-      .static-back-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--brand-dark); text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.75rem; margin-bottom: 24px; }
-      .static-back-link:hover { color: var(--brand-accent); }
-      .static-article h1 { font-size: 2.6rem; font-weight: 400; color: var(--brand-dark); margin: 0 0 18px; letter-spacing: -0.02em; }
-      .static-article-meta { display: flex; flex-wrap: wrap; gap: 20px; font-size: 0.9rem; color: var(--brand-muted); margin-bottom: 36px; padding-bottom: 20px; border-bottom: 1px solid var(--brand-border); }
-      .static-article-meta-item { display: inline-flex; align-items: center; gap: 8px; }
-      .static-hero-image { margin: 32px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 14px 40px rgba(0,0,0,0.12); }
-      .static-article-section { margin: 40px 0; }
-      .static-article-section h2 { font-size: 1.8rem; font-weight: 500; color: var(--brand-dark); margin: 32px 0 16px; letter-spacing: -0.01em; }
-      .static-article-section p { margin-bottom: 18px; color: #34495e; text-align: justify; }
-      .static-article-section p a { color: var(--brand-accent); font-weight: 500; }
-      .static-article-section p a:hover { color: var(--brand-accent-dark); text-decoration: underline; }
-      .static-article-section ul { margin: 20px 0; padding-left: 0; list-style: none; }
-      .static-article-section li { position: relative; padding-left: 28px; margin-bottom: 14px; color: #34495e; }
-      .static-article-section li::before { content: '-'; position: absolute; left: 10px; color: var(--brand-accent); font-weight: 700; }
-      .static-article-section li strong { color: var(--brand-dark); }
-      .static-article-image { margin: 36px 0; border-radius: 10px; overflow: hidden; background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); }
-      .static-article-image img { width: 100%; height: auto; }
-      .static-article-image figcaption { padding: 10px 18px; font-size: 0.75rem; letter-spacing: 0.18em; color: var(--brand-muted); font-weight: 600; }
-      .static-product-showcase { margin: 56px 0; padding: 40px; border-radius: 16px; border-left: 4px solid var(--brand-accent); background: linear-gradient(135deg, rgba(139,115,85,0.12), rgba(44,44,44,0)); }
-      .static-product-header h3 { font-size: 2rem; font-weight: 500; color: var(--brand-dark); margin: 0 0 12px; }
-      .static-product-header p { margin: 0 0 24px; color: var(--brand-muted); font-size: 1rem; max-width: 720px; }
-      .static-product-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-      .static-product-card { background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 18px 45px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; color: inherit; }
-      .static-product-card:hover { transform: translateY(-6px); box-shadow: 0 22px 60px rgba(0,0,0,0.12); }
-      .static-product-card-link { display: block; color: inherit; }
-      .static-product-image-wrapper { position: relative; overflow: hidden; height: 220px; }
-      .static-product-image-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
-      .static-product-card:hover .static-product-image-wrapper img { transform: scale(1.05); }
-      .static-product-info { padding: 22px 24px 28px; }
-      .static-product-info h3 { margin: 0 0 10px; font-size: 1.1rem; font-weight: 500; color: var(--brand-dark); }
-      .static-product-categories { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
-      .static-product-categories span { background: rgba(139,115,85,0.12); color: var(--brand-accent); padding: 4px 12px; border-radius: 999px; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; }
-      .static-product-prices { display: flex; flex-direction: column; gap: 4px; margin-bottom: 18px; }
-      .static-price-primary { font-weight: 600; color: var(--brand-dark); }
-      .static-price-secondary { color: var(--brand-muted); font-size: 0.9rem; }
-      .static-product-cta { font-weight: 600; color: var(--brand-accent); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; }
-      .static-product-footer { margin-top: 32px; text-align: center; }
-      .static-product-button { display: inline-block; padding: 12px 28px; border-radius: 30px; border: 2px solid var(--brand-black); color: var(--brand-black); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; transition: all 0.3s ease; }
-      .static-product-button:hover { background: var(--brand-black); color: #fff; }
-      .static-sidebar { position: sticky; top: 120px; }
-      .static-sidebar h3 { font-size: 1.5rem; font-weight: 500; color: var(--brand-dark); margin: 0 0 24px; }
-      .static-sidebar-grid { display: grid; gap: 24px; }
-      .static-sidebar-card { display: block; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 16px 40px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; color: inherit; }
-      .static-sidebar-card:hover { transform: translateY(-4px); box-shadow: 0 22px 55px rgba(0,0,0,0.12); }
-      .static-sidebar-image { position: relative; height: 200px; overflow: hidden; }
-      .static-sidebar-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
-      .static-sidebar-card:hover .static-sidebar-image img { transform: scale(1.08); }
-      .static-sidebar-info { padding: 18px 20px 24px; }
-      .static-sidebar-category { display: block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; color: var(--brand-muted); margin-bottom: 8px; text-transform: uppercase; }
-      .static-sidebar-info h4 { margin: 0; font-size: 1.05rem; font-weight: 500; color: var(--brand-dark); line-height: 1.4; }
-      .static-sidebar-card:hover .static-sidebar-info h4 { color: var(--brand-accent); }
-      .static-author-card { background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-left: 4px solid var(--brand-accent); border-radius: 14px; padding: 32px; margin: 48px 0; }
-      .static-author-card-inner { display: flex; gap: 20px; align-items: flex-start; }
-      .static-author-avatar { width: 60px; height: 60px; border-radius: 50%; background: var(--brand-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1.2rem; letter-spacing: 0.08em; }
-      .static-author-card h3 { margin: 0 0 6px; font-weight: 500; }
-      .static-author-title { margin: 0 0 16px; color: var(--brand-muted); font-size: 0.95rem; }
-      .static-author-card ul { margin: 0 0 18px; padding-left: 20px; color: #34495e; }
-      .static-author-card li { margin-bottom: 10px; }
-      .static-author-card a { color: var(--brand-accent); font-weight: 600; }
-      .static-author-card a:hover { color: var(--brand-accent-dark); }
-      .static-cta { background: var(--brand-black); color: #fff; padding: 48px; border-left: 4px solid var(--brand-accent); border-radius: 16px; margin: 64px 0 36px; text-align: center; position: relative; overflow: hidden; }
-      .static-cta::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(139,115,85,0.18), rgba(0,0,0,0)); }
-      .static-cta > * { position: relative; z-index: 1; }
-      .static-cta h3 { margin: 0 0 12px; font-size: 1.9rem; font-weight: 400; letter-spacing: 0.04em; }
-      .static-cta p { margin: 0 0 28px; font-size: 1.05rem; opacity: 0.92; }
-      .static-cta-buttons { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
-      .static-cta-button { display: inline-flex; align-items: center; justify-content: center; padding: 12px 28px; border-radius: 28px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
-      .static-cta-button.primary { background: var(--brand-accent); color: #fff; border: 2px solid var(--brand-accent); }
-      .static-cta-button.primary:hover { background: var(--brand-accent-dark); border-color: var(--brand-accent-dark); }
-      .static-cta-button.secondary { border: 2px solid rgba(255,255,255,0.7); color: #fff; background: transparent; }
-      .static-cta-button.secondary:hover { background: #fff; color: var(--brand-dark); }
-      .static-service-areas { background: linear-gradient(180deg, rgba(139,115,85,0.1), rgba(255,255,255,0)); padding: 80px 0; }
-      .static-service-areas h2 { text-align: center; font-size: 2rem; font-weight: 500; color: var(--brand-dark); margin: 0 0 12px; }
-      .static-service-areas p { text-align: center; margin: 0 auto 32px; max-width: 720px; color: var(--brand-muted); }
-      .static-service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
-      .static-service-grid div { background: #fff; border-radius: 14px; padding: 24px; box-shadow: 0 18px 45px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.06); }
-      .static-service-grid h3 { margin: 0 0 12px; color: var(--brand-dark); font-weight: 500; }
-      .static-footer { background: #101418; color: #eceff1; padding: 70px 0 40px; margin-top: 70px; }
-      .static-footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; }
-      .static-footer h3 { margin-top: 0; font-size: 1.5rem; font-weight: 500; color: #fff; letter-spacing: 0.08em; }
-      .static-footer h4 { margin-top: 0; color: #fff; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.9rem; }
-      .static-footer p { margin: 0 0 12px; color: rgba(236,239,241,0.85); font-size: 0.95rem; }
-      .static-footer a { color: rgba(236,239,241,0.95); font-weight: 500; }
-      .static-footer a:hover { color: var(--brand-accent); }
-      .static-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-      .static-footer-form { display: flex; flex-direction: column; gap: 10px; }
-      .static-footer-form input { padding: 10px 14px; border-radius: 8px; border: 1px solid rgba(236,239,241,0.3); background: rgba(255,255,255,0.08); color: #fff; }
-      .static-footer-form button { padding: 10px 14px; border-radius: 8px; border: none; background: var(--brand-accent); color: #fff; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background 0.3s ease; }
-      .static-footer-form button:hover { background: var(--brand-accent-dark); }
-      .static-footer-bottom { border-top: 1px solid rgba(236,239,241,0.12); margin-top: 40px; padding-top: 18px; font-size: 0.85rem; color: rgba(236,239,241,0.7); text-align: center; }
-      @media (max-width: 1024px) {
-        .static-header-top-inner { flex-wrap: wrap; justify-content: center; text-align: center; }
-        .static-header-nav { justify-content: center; flex-wrap: wrap; }
-        .static-header-actions { justify-content: center; }
-        .static-layout { grid-template-columns: 1fr; }
-        .static-sidebar { position: static; }
-        .static-sidebar-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-      }
-      @media (max-width: 768px) {
-        .static-container { padding: 0 18px; }
-        .static-main { padding: 100px 0 60px; }
-        .static-article { padding: 32px 24px; }
-        .static-article h1 { font-size: 2rem; }
-        .static-article-meta { flex-direction: column; gap: 10px; }
-        .static-article-section h2 { font-size: 1.5rem; }
-        .static-product-showcase { padding: 28px 24px; }
-        .static-product-image-wrapper { height: 200px; }
-        .static-author-card-inner { flex-direction: column; align-items: center; text-align: center; }
-        .static-cta { padding: 36px 24px; }
-        .static-cta h3 { font-size: 1.6rem; }
-        .static-cta-buttons { flex-direction: column; }
-        .static-cta-button { width: 100%; }
-      }
-      @media (max-width: 520px) {
-        .static-header-top-inner { gap: 12px; }
-        .static-header-brand { font-size: 1.3rem; letter-spacing: 0.2em; }
-        .static-header-button { display: none; }
-        .static-main { padding: 90px 0 50px; }
-        .static-article { padding: 28px 20px; }
-        .static-article h1 { font-size: 1.7rem; }
-        .static-article-section h2 { font-size: 1.3rem; }
-        .static-product-showcase { padding: 24px 18px; }
-        .static-sidebar-grid { grid-template-columns: 1fr; }
-        .static-service-areas { padding: 60px 0; }
-      }
-  `
+  sections.forEach((section, index) => {
+    sectionParts.push(generateSectionHTML(section, post, index))
+    if (!showcaseInserted && productShowcaseHTML && index === 2) {
+      sectionParts.push(productShowcaseHTML)
+      showcaseInserted = true
+    }
+  })
+
+  if (productShowcaseHTML && !showcaseInserted) {
+    sectionParts.push(productShowcaseHTML)
+  }
+
+  const articleBodyHTML = sectionParts.join('\n')
+  const announcementBarHTML = generateAnnouncementBarHTML(isIndonesian)
+  const headerHTML = generateHeaderHTML(isIndonesian)
+  const breadcrumbHTML = generateBreadcrumbHTML(post)
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
@@ -1171,45 +1177,91 @@ const generateBlogPostHTML = (post, content, {
   <meta name="ai-topic" content="${escapeHtml(post.category || 'Blog')}">
   <meta name="ai-article-type" content="furniture-guide">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <style>${styles}</style>
+  ${assetTags.links || ''}
+  <style>${inlineStyles}</style>
   ${structuredDataScripts}
 </head>
   <body>
-    <div class="static-page">
-      ${generateAnnouncementBarHTML(isIndonesian)}
-      ${generateHeaderHTML(isIndonesian)}
-      <main class="static-main">
-        <div class="static-container">
-          ${generateBreadcrumbHTML(post, isIndonesian)}
-          <div class="static-layout">
-            <article class="static-article">
-              <a class="static-back-link" href="${BASE_URL}/blog">${isIndonesian ? '← Kembali ke Blog' : '← Back to Blog'}</a>
-              <h1>${escapeHtml(post.title)}</h1>
-              ${generateArticleMetaHTML(post, formattedDate, isIndonesian)}
-              ${heroImageHTML}
-              ${articleSectionsHTML}
-              ${productShowcaseHTML}
+  <div id="prerender-fallback" class="blog-page blog-post-page">
+    ${announcementBarHTML}
+    ${headerHTML}
+    <section class="blog-post-hero" aria-labelledby="blog-post-title">
+      <div class="blog-post-hero-image">
+        ${post.image ? `<img src="${post.image}" alt="${escapeHtml(post.title)}" loading="eager" width="1920" height="1080" />` : ''}
+        <div class="blog-post-hero-overlay"></div>
+      </div>
+      <div class="blog-post-hero-content">
+        <div class="blog-post-hero-inner">
+          <span class="blog-post-category-tag">${escapeHtml(post.category || 'Blog')}</span>
+          <h1 id="blog-post-title" class="blog-post-title">${escapeHtml(post.title)}</h1>
+          ${generateArticleMetaHTML(post, formattedDate)}
+        </div>
+      </div>
+    </section>
+    <main class="blog-post-main" aria-labelledby="blog-post-title">
+      <section class="blog-content-section">
+        <div class="blog-post-container">
+          ${breadcrumbHTML}
+          <div class="blog-post-layout">
+            <article class="blog-post-article" aria-labelledby="blog-post-title">
+              ${articleBodyHTML}
               ${authorCardHTML}
               ${ctaHTML}
             </article>
-            ${sidebarHTML ? `<aside class="static-sidebar" aria-labelledby="static-sidebar-title">${sidebarHTML}</aside>` : ''}
+            ${sidebarHTML}
           </div>
         </div>
+      </section>
       </main>
       ${serviceAreasHTML}
       ${generateFooterHTML(isIndonesian)}
     </div>
+  <div id="root"></div>
+  ${assetTags.scripts || ''}
   <script>
-    if (window.location.hash !== '#static') {
-      window.addEventListener('load', function () {
-        setTimeout(function () {
-          const targetUrl = '${trimmedBaseUrl}/blog/${post.slug}'
-          if (window.location.href !== targetUrl) {
-            window.location.href = targetUrl
+    (function () {
+      const removeFallback = () => {
+        const fallback = document.getElementById('prerender-fallback')
+        if (fallback) {
+          fallback.classList.add('prerender-fade-out')
+          setTimeout(() => fallback.remove(), 400)
+        }
+      }
+
+      const monitorReactHydration = () => {
+        const root = document.getElementById('root')
+        if (!root) {
+          return
+        }
+
+        if (root.childElementCount > 0) {
+          removeFallback()
+          return
+        }
+
+        const observer = new MutationObserver(() => {
+          if (root.childElementCount > 0) {
+            removeFallback()
+            observer.disconnect()
           }
-        }, 200)
-      })
-    }
+        })
+
+        observer.observe(root, { childList: true })
+
+        setTimeout(() => {
+          if (root.childElementCount > 0) {
+            removeFallback()
+            observer.disconnect()
+          }
+        }, 5000)
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', monitorReactHydration)
+      } else {
+        monitorReactHydration()
+      }
+    })();
   </script>
 </body>
 </html>`
@@ -1235,6 +1287,11 @@ const main = async () => {
 
   const { products: allProducts, assetMap } = parseProductFile(productSource)
   console.log(`[prerender] Loaded ${allProducts.length} products for showcase mapping`)
+
+  const [inlineStyles, assetTags] = await Promise.all([
+    loadCombinedCss(),
+    loadAppAssets()
+  ])
   
   // Create output directory
   try {
@@ -1277,7 +1334,9 @@ const main = async () => {
         relevantProducts,
         showcaseHeading,
         baseUrl: BASE_URL,
-        showServiceAreas: shouldShowServiceAreas
+        showServiceAreas: shouldShowServiceAreas,
+        inlineStyles,
+        assetTags
       })
       
       // Create directory for this post
