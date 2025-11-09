@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useParams, Link, useLocation } from 'react-router-dom'
 import AnnouncementBar from '../components/AnnouncementBar'
@@ -104,8 +104,18 @@ const BlogPost: React.FC = () => {
     )
   }
 
-  // Get other articles (exclude current)
-  const otherArticles = BLOG_POSTS.filter(p => p.slug !== slug).slice(0, 3)
+  // Get randomized other articles (exclude current)
+  const otherArticles = useMemo(() => {
+    const candidates = BLOG_POSTS.filter(p => p.slug !== slug)
+    const shuffled = [...candidates]
+
+    for (let i = shuffled.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+    }
+
+    return shuffled.slice(0, 7)
+  }, [slug])
 
   const breadcrumbItems = [
     { label: 'Home', path: '/' },
