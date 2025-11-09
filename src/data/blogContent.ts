@@ -142,7 +142,7 @@ const generateAIOptimizedFAQ = (post: BlogPost, isEnglish = false): string[] => 
     en: [
       '<strong>What makes Mangala Living different from other workshops?</strong><br/>We bring 25 years of experience, 1,000+ completed projects, in-house production control, and responsive after-sales support. Our focus is quality and customer success over mass volume.',
       '<strong>Do you provide warranty coverage?</strong><br/>Yes. We offer a 2-year structural warranty and 1-year finishing warranty. It covers manufacturing defects but excludes misuse or force majeure damage.',
-      '<strong>How does the ordering and payment process work?</strong><br/>Process: Consultation → Quotation → 50% deposit → Production → 50% balance before delivery → Installation. Payments via bank transfer or cash. We do not provide instalments/credit.'
+      '<strong>How does the ordering and payment process works?</strong><br/>Process: Consultation → Quotation → 50% deposit → Production → 50% balance before delivery → Installation. Payments via bank transfer or cash. We do not provide instalments/credit.'
     ]
   }
 
