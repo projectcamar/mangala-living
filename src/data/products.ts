@@ -27,6 +27,7 @@ import hollowlineDisplayRackVideo from '../assets/hollowline-display-rack.mp4'
 import benchCornerLoungeVideo from '../assets/Bench-corner-kursi-sudut-kursi-santai.mp4'
 import industrialDaybedVideo from '../assets/industrial-daybed.mp4'
 import loungeSetCoffeeTableVideo from '../assets/longue-set-coffee-table.mp4'
+import industrialHangingShelfVideo from '../assets/rak-gantung-industrial.mp4'
 import rakDisplayPartisiVideo from '../assets/rak-display-partisi-industrial-besi.mp4'
 
 export interface Product {
@@ -65,7 +66,7 @@ export const ALL_PRODUCTS: Product[] = [
   { id: 10, slug: 'kabinet-lemari-industrial', name: 'Kabinet Lemari Industrial', categories: ['Storage'], price: 'Rp4.500.000', image: kabinetLemariImage, video: kabinetLemariVideo },
   { id: 11, slug: 'hollowline-display-rack', name: 'Hollowline Display Rack', categories: ['Storage'], price: 'Rp4.500.000', image: hollowlineDisplayRackImage, video: hollowlineDisplayRackVideo },
   { id: 12, slug: 'ladder-frame-display-stand', name: 'Ladder Frame Display Stand', categories: ['Storage'], price: 'Rp3.700.000', image: rakDisplayPartisiImage, video: rakDisplayPartisiVideo },
-  { id: 13, slug: 'industrial-hanging-shelf', name: 'Industrial Hanging Shelf', categories: ['Storage'], price: 'Rp1.200.000', image: rakGantungIndustrialImage },
+  { id: 13, slug: 'industrial-hanging-shelf', name: 'Industrial Hanging Shelf', categories: ['Storage'], price: 'Rp1.200.000', image: rakGantungIndustrialImage, video: industrialHangingShelfVideo },
   { id: 14, slug: 'industrial-coat-rack', name: 'Industrial Coat Rack', categories: ['Storage'], price: 'Rp2.500.000', image: gantunganBajuImage },
   
   // Tables
