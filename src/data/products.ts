@@ -26,6 +26,7 @@ import mejaMakanVideo from '../assets/meja-makan-industrial.mp4'
 import hollowlineDisplayRackVideo from '../assets/hollowline-display-rack.mp4'
 import benchCornerLoungeVideo from '../assets/Bench-corner-kursi-sudut-kursi-santai.mp4'
 import industrialDaybedVideo from '../assets/industrial-daybed.mp4'
+import loungeSetCoffeeTableVideo from '../assets/longue-set-coffee-table.mp4'
 import rakDisplayPartisiVideo from '../assets/rak-display-partisi-industrial-besi.mp4'
 
 export interface Product {
@@ -44,7 +45,7 @@ export const ALL_PRODUCTS: Product[] = [
   { id: 2, slug: 'balcony-bar-table', name: 'Balcony Bar Table', categories: ['New Arrivals', 'Bar Set', 'Outdoor'], price: 'Rp350.000', image: balconyBarTableImage },
   
   // Lounge Set
-  { id: 3, slug: 'lounge-set-coffee-table', name: 'Lounge Set Coffee Table', categories: ['Lounge Set', 'Tables'], price: 'Rp2.000.000', image: loungeSetCoffeeTableImage },
+  { id: 3, slug: 'lounge-set-coffee-table', name: 'Lounge Set Coffee Table', categories: ['Lounge Set', 'Tables'], price: 'Rp2.000.000', image: loungeSetCoffeeTableImage, video: loungeSetCoffeeTableVideo },
   { id: 17, slug: 'bench-corner-lounge', name: 'Bench Corner Lounge', categories: ['Lounge Set', 'Sofa Bench'], price: 'Rp3.800.000', image: benchCornerImage, video: benchCornerLoungeVideo },
   
   // Daybed
