@@ -429,45 +429,74 @@ const makeAbsoluteAssetUrl = (baseUrl, relativePath) => {
   return `${trimmedBase}/blog/assets/${encodeURIComponent(fileName)}`
 }
 
-const generateAnnouncementBarHTML = () => ''
+const generateAnnouncementBarHTML = (isIndonesian) => `
+  <div class="static-announcement-bar" role="region" aria-label="Announcement">
+    <div class="static-container static-announcement-content">
+      <span>${isIndonesian ? 'Workshop Furniture Industrial Mangala Living' : 'Mangala Living Industrial Furniture Workshop'}</span>
+      <span class="static-announcement-highlight">${isIndonesian ? 'Produksi langsung · Custom sesuai project bisnis Anda' : 'Direct production · Custom builds for your business needs'}</span>
+      <a class="static-announcement-cta" href="https://wa.me/6288801146881" target="_blank" rel="noopener noreferrer">
+        ${isIndonesian ? 'Konsultasi Gratis' : 'Free Consultation'}
+      </a>
+    </div>
+  </div>
+`
 
-const generateHeaderHTML = () => ''
+const generateHeaderHTML = (isIndonesian) => `
+  <header class="static-header">
+    <div class="static-header-top">
+      <div class="static-container static-header-top-inner">
+        <div class="static-header-brand">Mangala Living</div>
+        <nav class="static-header-nav" aria-label="Primary navigation">
+          <a class="static-header-link" href="${BASE_URL}/">${isIndonesian ? 'Beranda' : 'Home'}</a>
+          <a class="static-header-link" href="${BASE_URL}/shop">${isIndonesian ? 'Produk' : 'Products'}</a>
+          <a class="static-header-link" href="${BASE_URL}/blog">Blog</a>
+          <a class="static-header-link" href="${BASE_URL}/contact-us">${isIndonesian ? 'Kontak' : 'Contact'}</a>
+        </nav>
+        <div class="static-header-actions">
+          <span class="static-language-pill">${isIndonesian ? 'ID' : 'EN'}</span>
+          <a class="static-header-action" href="mailto:info@mangala-living.com">info@mangala-living.com</a>
+          <a class="static-header-button" href="https://wa.me/6288801146881" target="_blank" rel="noopener noreferrer">
+            ${isIndonesian ? 'Hubungi Kami' : 'Contact Us'}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="static-header-bottom">
+      <div class="static-container static-header-bottom-inner">
+        <nav class="static-category-nav" aria-label="Secondary navigation">
+          <a class="static-category-link" href="${BASE_URL}/product-category/meja-industrial">${isIndonesian ? 'Meja Industrial' : 'Industrial Tables'}</a>
+          <a class="static-category-link" href="${BASE_URL}/product-category/kursi-industrial">${isIndonesian ? 'Kursi Bar & Cafe' : 'Chairs & Stools'}</a>
+          <a class="static-category-link" href="${BASE_URL}/product-category/rak-industrial">${isIndonesian ? 'Rak Display' : 'Display Racks'}</a>
+          <a class="static-category-link" href="${BASE_URL}/product-category/kabinet-industrial">${isIndonesian ? 'Kabinet & Storage' : 'Cabinets & Storage'}</a>
+          <a class="static-category-link" href="${BASE_URL}/custom-order">${isIndonesian ? 'Custom Order' : 'Custom Order'}</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+`
 
-const generateBreadcrumbHTML = (post) => `
-  <nav aria-label="Breadcrumb">
+const generateBreadcrumbHTML = (post, isIndonesian) => `
+  <nav class="static-breadcrumb" aria-label="${isIndonesian ? 'Jalur navigasi' : 'Breadcrumb'}">
     <ol>
-      <li><a href="${BASE_URL}/">Home</a></li>
+      <li><a href="${BASE_URL}/">${isIndonesian ? 'Beranda' : 'Home'}</a></li>
       <li><a href="${BASE_URL}/blog">Blog</a></li>
       <li aria-current="page">${escapeHtml(post.title)}</li>
     </ol>
   </nav>
 `
 
-const generateArticleMetaHTML = (post) => `
-  <p><strong>Category:</strong> ${escapeHtml(post.category || 'Blog')}</p>
-  <p><strong>Author:</strong> ${escapeHtml(post.author || 'Mangala Living')}</p>
-  <p><strong>Published:</strong> ${formatDate(post.date)}</p>
+const generateArticleMetaHTML = (post, formattedDate, isIndonesian) => `
+  <div class="static-article-meta">
+    <span class="static-article-meta-item">${escapeHtml(post.category || (isIndonesian ? 'Blog' : 'Blog'))}</span>
+    <span class="static-article-meta-item">${escapeHtml(post.author || 'Mangala Living')}</span>
+    <span class="static-article-meta-item">${formattedDate}</span>
+  </div>
 `
 
 const generateSectionHTML = (section, post, index) => {
   const parts = []
   if (section.heading) {
-    parts.push(`
-      <h2>${escapeHtml(section.heading)}</h2>
-    `)
-  }
-
-  if (section.image) {
-    parts.push(`
-      <figure>
-        <img 
-          src="${section.image}" 
-          alt="${escapeHtml(section.imageAlt || `${post.title} - ${section.heading || 'Industrial Furniture Article'} - Mangala Living`)}"
-          loading="${index <= 1 ? 'eager' : 'lazy'}"
-        />
-        ${section.imageAlt ? `<figcaption>${escapeHtml(section.imageAlt)}</figcaption>` : ''}
-      </figure>
-    `)
+    parts.push(`<h2>${escapeHtml(section.heading)}</h2>`)
   }
 
   if (section.paragraphs?.length) {
@@ -477,20 +506,29 @@ const generateSectionHTML = (section, post, index) => {
     })
   }
 
+  if (section.image) {
+    parts.push(`
+      <figure class="static-article-image">
+        <img
+          src="${section.image}"
+          alt="${escapeHtml(section.imageAlt || `${post.title} - ${section.heading || 'Industrial Furniture Article'} - Mangala Living`)}"
+          loading="${index <= 1 ? 'eager' : 'lazy'}"
+        />
+        ${section.imageAlt ? `<figcaption>${escapeHtml(section.imageAlt)}</figcaption>` : ''}
+      </figure>
+    `)
+  }
+
   if (section.list?.length) {
     const listItems = section.list.map(item => `<li>${item}</li>`).join('')
-    parts.push(`
-      <ul>
-        ${listItems}
-      </ul>
-    `)
+    parts.push(`<ul>${listItems}</ul>`)
   }
 
   if (!parts.length) {
     return ''
   }
 
-  return `<section>${parts.join('\n')}</section>`
+  return `<section class="static-article-section">${parts.join('\n')}</section>`
 }
 
 const generateArticleSectionsHTML = (content, post) => {
@@ -514,55 +552,74 @@ const generateProductShowcaseHTML = (products, heading, isIndonesian, baseUrl) =
 
   const displayProducts = products.slice(0, 3)
 
-    const cards = displayProducts.map((product, index) => {
-      const usdPrice = convertIDRToUSDStatic(product.price)
-      const absoluteImage = makeAbsoluteAssetUrl(baseUrl, product.image)
-      return `
-        <article>
-          <h4>${escapeHtml(product.name)}</h4>
-          ${product.image ? `<img src="${product.image}" alt="${escapeHtml(product.name)}" loading="${index === 0 ? 'eager' : 'lazy'}" width="360" height="260" />` : ''}
-          <p>${escapeHtml((product.categories || []).join(', '))}</p>
-          <p>${escapeHtml(product.price || '')}${usdPrice ? ` (${usdPrice})` : ''}</p>
-          <p><a href="${BASE_URL}/product/${product.slug}">${isIndonesian ? 'Lihat Produk' : 'View Product'}</a></p>
-          ${absoluteImage ? `<link itemprop="image" content="${absoluteImage}" />` : ''}
-        </article>
-      `
-    }).join('\n')
+  const cards = displayProducts.map((product, index) => {
+    const usdPrice = convertIDRToUSDStatic(product.price)
+    const absoluteImage = makeAbsoluteAssetUrl(baseUrl, product.image)
+    const categories = Array.isArray(product.categories) ? product.categories : []
+
+    return `
+      <article class="static-product-card">
+        <a class="static-product-card-link" href="${BASE_URL}/product/${product.slug}">
+          <div class="static-product-image-wrapper">
+            ${product.image ? `<img src="${product.image}" alt="${escapeHtml(product.name)}" loading="${index === 0 ? 'eager' : 'lazy'}" width="360" height="260" />` : ''}
+          </div>
+          <div class="static-product-info">
+            <h3>${escapeHtml(product.name)}</h3>
+            ${categories.length ? `<div class="static-product-categories">${categories.map(category => `<span>${escapeHtml(category)}</span>`).join('')}</div>` : ''}
+            <div class="static-product-prices">
+              <span class="static-price-primary">${escapeHtml(product.price || '')}</span>
+              ${usdPrice ? `<span class="static-price-secondary">${usdPrice}</span>` : ''}
+            </div>
+            <span class="static-product-cta">${isIndonesian ? 'Lihat Detail Produk' : 'View Product Detail'}</span>
+          </div>
+        </a>
+        ${absoluteImage ? `<link itemprop="image" content="${absoluteImage}" />` : ''}
+      </article>
+    `
+  }).join('\n')
 
   return `
-    <section>
-      <h3>${escapeHtml(heading || 'Produk Industrial Terkait')}</h3>
-      <p>${description}</p>
-      ${cards}
-      <p><a href="${BASE_URL}/shop">${isIndonesian ? 'Lihat Semua Produk' : 'View All Products'}</a></p>
+    <section class="static-product-showcase">
+      <div class="static-product-header">
+        <h3>${escapeHtml(heading || (isIndonesian ? 'Produk Industrial Terkait' : 'Related Industrial Furniture'))}</h3>
+        <p>${description}</p>
+      </div>
+      <div class="static-product-grid">
+        ${cards}
+      </div>
+      <div class="static-product-footer">
+        <a class="static-product-button" href="${BASE_URL}/shop">${isIndonesian ? 'Lihat Semua Produk' : 'Browse All Products'}</a>
+      </div>
     </section>
   `
 }
 
-const generateSidebarHTML = (otherArticles) => {
+const generateSidebarHTML = (otherArticles, isIndonesian) => {
   if (!otherArticles?.length) {
     return ''
   }
 
   return `
-    <aside>
-      <h3>Other Articles</h3>
-      <ul>
+    <div>
+      <h3 id="static-sidebar-title">${isIndonesian ? 'Artikel Lainnya' : 'Other Articles'}</h3>
+      <div class="static-sidebar-grid">
         ${otherArticles.map(article => `
-          <li>
-            <a href="${BASE_URL}/blog/${article.slug}">
+          <a class="static-sidebar-card" href="${BASE_URL}/blog/${article.slug}">
+            <div class="static-sidebar-image">
               ${article.image ? `<img src="${article.image}" alt="${escapeHtml(article.title)}" loading="lazy" width="320" height="220" />` : ''}
-              <div>${escapeHtml(article.category || '')}</div>
-              <strong>${escapeHtml(article.title)}</strong>
-            </a>
-          </li>
+            </div>
+            <div class="static-sidebar-info">
+              <span class="static-sidebar-category">${escapeHtml(article.category || '')}</span>
+              <h4>${escapeHtml(article.title)}</h4>
+            </div>
+          </a>
         `).join('\n')}
-      </ul>
-    </aside>
+      </div>
+    </div>
   `
 }
 
-const generateAuthorCardHTML = (post) => {
+const generateAuthorCardHTML = (post, isIndonesian) => {
   if (post.author !== 'Helmi Ramdan') {
     return ''
   }
@@ -586,57 +643,116 @@ const generateAuthorCardHTML = (post) => {
       ]
 
   return `
-    <section>
-      <h3>About the Author</h3>
-      <p><strong>Helmi Ramdan</strong></p>
-      <p>${escapeHtml(title)}</p>
-      <ul>
-        ${experiences.map(item => `<li>${escapeHtml(item)}</li>`).join('')}
-      </ul>
-      <p><a href="https://www.linkedin.com/in/helmi-ramdan-067912118/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+    <section class="static-author-card">
+      <div class="static-author-card-inner">
+        <div class="static-author-avatar">HR</div>
+        <div>
+          <h3>${isIndonesian ? 'Tentang Penulis' : 'About the Author'}</h3>
+          <p class="static-author-title">${escapeHtml(title)}</p>
+          <ul>
+            ${experiences.map(item => `<li>${escapeHtml(item)}</li>`).join('')}
+          </ul>
+          <p><a href="https://www.linkedin.com/in/helmi-ramdan-067912118/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </div>
+      </div>
     </section>
   `
 }
 
-const generateCTAHTML = (post) => {
+const generateCTAHTML = (post, isIndonesian) => {
   const isExport = post.category === 'Export & International'
   return `
-    <section>
+    <section class="static-cta">
       <h3>${isExport ? 'Interested in Our Industrial Furniture?' : 'Tertarik dengan Furniture Industrial Kami?'}</h3>
       <p>${isExport
         ? 'Visit our complete collection of high-quality custom industrial furniture from Mangala Living.'
         : 'Kunjungi koleksi lengkap furniture industrial custom berkualitas tinggi dari Mangala Living.'}</p>
-      <p>
-        <a href="${BASE_URL}/shop">${isExport ? 'View All Products' : 'Lihat Semua Produk'}</a>
-        |
-        <a href="${BASE_URL}/contact-us">${isExport ? 'Contact Us' : 'Hubungi Kami'}</a>
-      </p>
+      <div class="static-cta-buttons">
+        <a class="static-cta-button primary" href="${BASE_URL}/shop">${isExport ? 'View All Products' : 'Lihat Semua Produk'}</a>
+        <a class="static-cta-button secondary" href="https://wa.me/6288801146881" target="_blank" rel="noopener noreferrer">${isExport ? 'Chat with Us' : 'Chat via WhatsApp'}</a>
+      </div>
     </section>
   `
 }
 
-const generateServiceAreasHTML = () => `
-  <section>
-    <h2>Wilayah Layanan Kami</h2>
-    <p>Melayani Bekasi, Jakarta, Cikarang, Depok, Bogor, Tangerang, Karawang, dan seluruh Jabodetabek dengan pengalaman 25+ tahun.</p>
-    <ul>
-      <li>
-        <strong>Bekasi & Cikarang:</strong>
-        Workshop langsung di Setu, Bekasi. Melayani Summarecon Bekasi, Harapan Indah, Grand Galaxy City, Lippo Cikarang, Jababeka, dan kawasan industri MM2100.
-      </li>
-      <li>
-        <strong>Jakarta & Jabodetabek:</strong>
-        Pengalaman proyek di Kemang, SCBD, Senopati, Sudirman, Thamrin, Margonda Depok, Bogor Kota, hingga BSD Tangerang.
-      </li>
-      <li>
-        <strong>Konsultasi Khusus:</strong>
-        Hubungi kami untuk konsultasi layout, material, dan estimasi budget furniture industrial sesuai kebutuhan bisnis Anda.
-      </li>
-    </ul>
+const generateServiceAreasHTML = (isIndonesian) => `
+  <section class="static-service-areas">
+    <div class="static-container">
+      <h2>${isIndonesian ? 'Wilayah Layanan Kami' : 'Our Service Areas'}</h2>
+      <p>${isIndonesian
+        ? 'Melayani Bekasi, Jakarta, Cikarang, Depok, Bogor, Tangerang, Karawang, dan seluruh Jabodetabek dengan pengalaman 25+ tahun.'
+        : 'Serving Bekasi, Jakarta, Cikarang, Depok, Bogor, Tangerang, Karawang, and greater Jabodetabek with 25+ years of experience.'}</p>
+      <div class="static-service-grid">
+        <div>
+          <h3>${isIndonesian ? 'Bekasi & Cikarang' : 'Bekasi & Cikarang'}</h3>
+          <p>${isIndonesian
+            ? 'Workshop langsung di Setu, Bekasi. Melayani Summarecon Bekasi, Harapan Indah, Grand Galaxy City, Lippo Cikarang, Jababeka, dan kawasan industri MM2100.'
+            : 'Workshop located in Setu, Bekasi. Serving Summarecon Bekasi, Harapan Indah, Grand Galaxy City, Lippo Cikarang, Jababeka, and MM2100 industrial area.'}</p>
+        </div>
+        <div>
+          <h3>${isIndonesian ? 'Jakarta & Jabodetabek' : 'Jakarta & Jabodetabek'}</h3>
+          <p>${isIndonesian
+            ? 'Pengalaman proyek di Kemang, SCBD, Senopati, Sudirman, Thamrin, Margonda Depok, Bogor Kota, hingga BSD Tangerang.'
+            : 'Project experience in Kemang, SCBD, Senopati, Sudirman, Thamrin, Margonda Depok, Bogor, and BSD Tangerang.'}</p>
+        </div>
+        <div>
+          <h3>${isIndonesian ? 'Konsultasi Khusus' : 'Tailored Consultation'}</h3>
+          <p>${isIndonesian
+            ? 'Hubungi kami untuk konsultasi layout, material, dan estimasi budget furniture industrial sesuai kebutuhan bisnis Anda.'
+            : 'Contact us for layout, material, and budget consultation tailored to your commercial furniture project.'}</p>
+        </div>
+      </div>
+    </div>
   </section>
 `
 
-const generateFooterHTML = () => ''
+const generateFooterHTML = (isIndonesian) => `
+  <footer class="static-footer">
+    <div class="static-container">
+      <div class="static-footer-grid">
+        <div>
+          <h3>Mangala Living</h3>
+          <p>${isIndonesian
+            ? 'Workshop furniture industrial premium dengan pengalaman 25+ tahun melayani project cafe, restoran, hotel, kantor, dan residensial.'
+            : 'Premium industrial furniture workshop with 25+ years of experience serving cafe, restaurant, hotel, office, and residential projects.'}</p>
+          <p>Jl. Raya Setu Cibitung - Bekasi, Jawa Barat 17320</p>
+        </div>
+        <div>
+          <h4>${isIndonesian ? 'Navigasi' : 'Navigation'}</h4>
+          <ul>
+            <li><a href="${BASE_URL}/">${isIndonesian ? 'Beranda' : 'Home'}</a></li>
+            <li><a href="${BASE_URL}/shop">${isIndonesian ? 'Produk' : 'Products'}</a></li>
+            <li><a href="${BASE_URL}/blog">Blog</a></li>
+            <li><a href="${BASE_URL}/custom-order">${isIndonesian ? 'Custom Order' : 'Custom Order'}</a></li>
+            <li><a href="${BASE_URL}/contact-us">${isIndonesian ? 'Kontak' : 'Contact'}</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>${isIndonesian ? 'Hubungi Kami' : 'Contact'}</h4>
+          <ul>
+            <li><a href="mailto:info@mangala-living.com">info@mangala-living.com</a></li>
+            <li><a href="https://wa.me/6288801146881" target="_blank" rel="noopener noreferrer">+62 888-0114-6881</a></li>
+            <li><a href="https://www.instagram.com/mangalaliving/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/mangala-living/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>${isIndonesian ? 'Dapatkan Katalog' : 'Request Catalogue'}</h4>
+          <p>${isIndonesian
+            ? 'Masukkan email Anda untuk menerima katalog terbaru dan penawaran eksklusif.'
+            : 'Leave your email to receive our latest catalogue and exclusive offers.'}</p>
+          <form class="static-footer-form" action="https://mangala-living.com/api/subscribe" method="post">
+            <input type="email" name="email" placeholder="${isIndonesian ? 'Email Anda' : 'Your Email'}" required />
+            <button type="submit">${isIndonesian ? 'Kirim' : 'Submit'}</button>
+          </form>
+        </div>
+      </div>
+      <div class="static-footer-bottom">
+        &copy; ${new Date().getFullYear()} Mangala Living. ${isIndonesian ? 'Seluruh hak cipta dilindungi undang-undang.' : 'All rights reserved.'}
+      </div>
+    </div>
+  </footer>
+`
 
 const generateProductSchemas = (products, post, baseUrl) => {
   if (!products || !products.length) {
@@ -744,28 +860,43 @@ const generateBlogPostHTML = (post, content, {
   baseUrl,
   showServiceAreas = false
 }) => {
+  const isIndonesian = post.category !== 'Export & International'
   const metaDescription = post.excerpt || (content?.sections?.[0]?.paragraphs?.[0] || '')
   const articleSectionsHTML = generateArticleSectionsHTML(content, post)
-  const sidebarHTML = generateSidebarHTML(otherArticles)
+  const sidebarHTML = generateSidebarHTML(otherArticles, isIndonesian)
   const shouldDisplayProducts = hasProductRelatedKeywords(post) && relevantProducts.length > 0
   const productShowcaseHTML = shouldDisplayProducts
-    ? generateProductShowcaseHTML(relevantProducts, showcaseHeading, post.category !== 'Export & International', baseUrl)
+    ? generateProductShowcaseHTML(relevantProducts, showcaseHeading, isIndonesian, baseUrl)
     : ''
-  const authorCardHTML = generateAuthorCardHTML(post)
-  const ctaHTML = generateCTAHTML(post)
-  const serviceAreasHTML = showServiceAreas ? generateServiceAreasHTML() : ''
+  const authorCardHTML = generateAuthorCardHTML(post, isIndonesian)
+  const ctaHTML = generateCTAHTML(post, isIndonesian)
+  const serviceAreasHTML = showServiceAreas ? generateServiceAreasHTML(isIndonesian) : ''
   const productSchemas = shouldDisplayProducts ? generateProductSchemas(relevantProducts, post, baseUrl) : []
 
   const trimmedBaseUrl = normalizeBaseUrl(baseUrl)
   const canonicalUrl = `${trimmedBaseUrl}/blog/${post.slug}`
 
+  const formattedDate = (() => {
+    try {
+      return new Date(post.date).toLocaleDateString(isIndonesian ? 'id-ID' : 'en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      })
+    } catch {
+      return post.date
+    }
+  })()
+
   const heroImageHTML = post.image
-    ? `<figure><img src="${post.image}" alt="${escapeHtml(post.title)}" loading="eager" /></figure>`
+    ? `
+      <figure class="static-hero-image">
+        <img src="${post.image}" alt="${escapeHtml(post.title)}" loading="eager" />
+      </figure>
+    `
     : ''
 
-    const styles = ''
-    /*
-    const legacyStyles = `
+  const styles = `
       *, *::before, *::after { box-sizing: border-box; }
       :root {
         color-scheme: light;
@@ -796,7 +927,7 @@ const generateBlogPostHTML = (post, content, {
       img { display: block; max-width: 100%; height: auto; }
       .static-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
       .static-announcement-bar { background: var(--brand-black); color: #fff; padding: 8px 0; font-size: 0.85rem; letter-spacing: 0.02em; }
-      .static-announcement-content { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; }
+      .static-announcement-content { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; text-align: center; }
       .static-announcement-highlight { color: var(--brand-accent); font-weight: 600; margin-left: 8px; }
       .static-announcement-cta { background: var(--brand-accent); color: #fff; padding: 6px 18px; border-radius: 4px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; }
       .static-announcement-cta:hover { background: var(--brand-accent-dark); color: #fff; }
@@ -847,16 +978,15 @@ const generateBlogPostHTML = (post, content, {
       .static-article-image img { width: 100%; height: auto; }
       .static-article-image figcaption { padding: 10px 18px; font-size: 0.75rem; letter-spacing: 0.18em; color: var(--brand-muted); font-weight: 600; }
       .static-product-showcase { margin: 56px 0; padding: 40px; border-radius: 16px; border-left: 4px solid var(--brand-accent); background: linear-gradient(135deg, rgba(139,115,85,0.12), rgba(44,44,44,0)); }
-      .static-product-header h2 { font-size: 2rem; font-weight: 500; color: var(--brand-dark); margin: 0 0 12px; }
+      .static-product-header h3 { font-size: 2rem; font-weight: 500; color: var(--brand-dark); margin: 0 0 12px; }
       .static-product-header p { margin: 0 0 24px; color: var(--brand-muted); font-size: 1rem; max-width: 720px; }
       .static-product-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-      .static-product-card { background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 18px 45px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+      .static-product-card { background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 18px 45px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; color: inherit; }
       .static-product-card:hover { transform: translateY(-6px); box-shadow: 0 22px 60px rgba(0,0,0,0.12); }
       .static-product-card-link { display: block; color: inherit; }
       .static-product-image-wrapper { position: relative; overflow: hidden; height: 220px; }
       .static-product-image-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
       .static-product-card:hover .static-product-image-wrapper img { transform: scale(1.05); }
-      .static-product-badge { position: absolute; top: 16px; left: 16px; background: rgba(255,255,255,0.95); color: var(--brand-dark); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.16em; padding: 6px 14px; }
       .static-product-info { padding: 22px 24px 28px; }
       .static-product-info h3 { margin: 0 0 10px; font-size: 1.1rem; font-weight: 500; color: var(--brand-dark); }
       .static-product-categories { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
@@ -876,9 +1006,8 @@ const generateBlogPostHTML = (post, content, {
       .static-sidebar-image { position: relative; height: 200px; overflow: hidden; }
       .static-sidebar-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
       .static-sidebar-card:hover .static-sidebar-image img { transform: scale(1.08); }
-      .static-sidebar-badge { position: absolute; top: 12px; left: 12px; background: rgba(255,255,255,0.95); color: var(--brand-dark); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.16em; padding: 6px 14px; }
       .static-sidebar-info { padding: 18px 20px 24px; }
-      .static-sidebar-category { display: block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; color: var(--brand-muted); margin-bottom: 8px; }
+      .static-sidebar-category { display: block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; color: var(--brand-muted); margin-bottom: 8px; text-transform: uppercase; }
       .static-sidebar-info h4 { margin: 0; font-size: 1.05rem; font-weight: 500; color: var(--brand-dark); line-height: 1.4; }
       .static-sidebar-card:hover .static-sidebar-info h4 { color: var(--brand-accent); }
       .static-author-card { background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-left: 4px solid var(--brand-accent); border-radius: 14px; padding: 32px; margin: 48px 0; }
@@ -955,8 +1084,7 @@ const generateBlogPostHTML = (post, content, {
         .static-sidebar-grid { grid-template-columns: 1fr; }
         .static-service-areas { padding: 60px 0; }
       }
-    `
-    */
+  `
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
@@ -1016,7 +1144,7 @@ const generateBlogPostHTML = (post, content, {
   ].map(schema => `<script type="application/ld+json">${JSON.stringify(schema)}</script>`).join('\n')
 
   return `<!DOCTYPE html>
-<html lang="id">
+<html lang="${isIndonesian ? 'id' : 'en'}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1047,21 +1175,30 @@ const generateBlogPostHTML = (post, content, {
   ${structuredDataScripts}
 </head>
   <body>
-    <main>
-      ${generateBreadcrumbHTML(post)}
-      <article>
-        <p><a href="${trimmedBaseUrl}/blog">← Kembali ke Blog</a></p>
-        <h1>${escapeHtml(post.title)}</h1>
-        ${generateArticleMetaHTML(post)}
-        ${heroImageHTML}
-        ${articleSectionsHTML}
-        ${productShowcaseHTML}
-        ${authorCardHTML}
-        ${ctaHTML}
-      </article>
-      ${sidebarHTML}
-    </main>
-    ${serviceAreasHTML}
+    <div class="static-page">
+      ${generateAnnouncementBarHTML(isIndonesian)}
+      ${generateHeaderHTML(isIndonesian)}
+      <main class="static-main">
+        <div class="static-container">
+          ${generateBreadcrumbHTML(post, isIndonesian)}
+          <div class="static-layout">
+            <article class="static-article">
+              <a class="static-back-link" href="${BASE_URL}/blog">${isIndonesian ? '← Kembali ke Blog' : '← Back to Blog'}</a>
+              <h1>${escapeHtml(post.title)}</h1>
+              ${generateArticleMetaHTML(post, formattedDate, isIndonesian)}
+              ${heroImageHTML}
+              ${articleSectionsHTML}
+              ${productShowcaseHTML}
+              ${authorCardHTML}
+              ${ctaHTML}
+            </article>
+            ${sidebarHTML ? `<aside class="static-sidebar" aria-labelledby="static-sidebar-title">${sidebarHTML}</aside>` : ''}
+          </div>
+        </div>
+      </main>
+      ${serviceAreasHTML}
+      ${generateFooterHTML(isIndonesian)}
+    </div>
   <script>
     if (window.location.hash !== '#static') {
       window.addEventListener('load', function () {
