@@ -5,11 +5,15 @@ import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { ALL_PRODUCTS } from '../data/products'
+import { convertIDRToUSD } from '../utils/currencyConverter'
 import './NotFound.css'
+
+const FEATURED_PRODUCTS = ALL_PRODUCTS.slice(0, 4)
 
 const NotFound: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
+  const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
   const location = useLocation()
 
   useEffect(() => {
@@ -65,8 +69,26 @@ const NotFound: React.FC = () => {
     detectLocation()
   }, [location.pathname, location.search])
 
-  // Get 4 featured products (mix of different categories)
-  const featuredProducts = ALL_PRODUCTS.slice(0, 4)
+  useEffect(() => {
+    let isMounted = true
+
+    const convertPrices = async () => {
+      const prices: { [key: number]: string } = {}
+      for (const product of FEATURED_PRODUCTS) {
+        const usdPrice = await convertIDRToUSD(product.price)
+        prices[product.id] = usdPrice
+      }
+      if (isMounted) {
+        setUsdPrices(prices)
+      }
+    }
+
+    convertPrices()
+
+    return () => {
+      isMounted = false
+    }
+  }, [])
 
   // Translations
   const translations = {
@@ -162,15 +184,15 @@ const NotFound: React.FC = () => {
                 {translations.featuredProductsTitle}
               </h3>
               <div className="products-grid">
-                {featuredProducts.map((product) => (
-                  <Link 
+                {FEATURED_PRODUCTS.map((product) => (
+                  <Link
                     key={product.id}
                     to={`/product/${product.slug}`}
                     className="product-card"
                   >
                     <div className="product-image-wrapper">
-                      <img 
-                        src={product.image} 
+                      <img
+                        src={product.image}
                         alt={product.name}
                         className="product-image"
                         loading="lazy"
@@ -183,7 +205,33 @@ const NotFound: React.FC = () => {
                       <p className="product-category">
                         {product.categories.join(', ')}
                       </p>
-                      <p className="product-price">{product.price}</p>
+                      {usdPrices[product.id] ? (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                          <p
+                            className="product-price"
+                            style={{
+                              margin: 0,
+                              fontSize: '0.875rem',
+                              fontWeight: 600,
+                              color: '#333'
+                            }}
+                          >
+                            {isIndonesian ? product.price : usdPrices[product.id]}
+                          </p>
+                          <p
+                            style={{
+                              margin: 0,
+                              fontSize: '0.75rem',
+                              fontWeight: 400,
+                              color: '#999'
+                            }}
+                          >
+                            {isIndonesian ? usdPrices[product.id] : product.price}
+                          </p>
+                        </div>
+                      ) : (
+                        <p className="product-price">{product.price}</p>
+                      )}
                     </div>
                   </Link>
                 ))}
