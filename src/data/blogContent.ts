@@ -41,10 +41,10 @@ const buildKeywordHighlights = (post: BlogPost, isEnglish = false) => {
           '<strong>Production Timeline</strong>: Share your go-live target so we can schedule manufacturing and installation accurately.'
         ]
       : [
-          '<strong>Brief & Budget</strong>: Klarifikasi kebutuhan utama, jumlah unit, dan target investasi supaya kami dapat menyusun penawaran yang relevan.',
-          '<strong>Material & Finishing</strong>: Tentukan preferensi material (besi hollow, kayu solid, powder coating) untuk memastikan durability dan konsistensi estetika.',
-          '<strong>Timeline Produksi</strong>: Sampaikan target go-live agar jadwal produksi dan instalasi dapat kami atur dengan tepat.'
-        ]
+      '<strong>Brief & Budget</strong>: Klarifikasi kebutuhan utama, jumlah unit, dan target investasi supaya kami dapat menyusun penawaran yang relevan.',
+      '<strong>Material & Finishing</strong>: Tentukan preferensi material (besi hollow, kayu solid, powder coating) untuk memastikan durability dan konsistensi estetika.',
+      '<strong>Timeline Produksi</strong>: Sampaikan target go-live agar jadwal produksi dan instalasi dapat kami atur dengan tepat.'
+    ]
   }
 
   return uniqueKeywords.slice(0, 5).map(keyword => {
@@ -73,10 +73,10 @@ const generateAIOptimizedFAQ = (post: BlogPost, isEnglish = false): string[] => 
   const categoryFAQs: { [key: string]: { id: string[]; en: string[] } } = {
     'Workshop & Production': {
       id: [
-        '<strong>Berapa lama waktu produksi furniture besi custom?</strong><br/>Waktu produksi standar kami adalah 15-25 hari kerja tergantung kompleksitas desain dan volume order. Untuk project mendesak, kami menyediakan fast-track production dengan additional fee.',
-        '<strong>Apakah bisa melihat proses produksi di workshop?</strong><br/>Ya, kami sangat terbuka! Klien dapat mengunjungi workshop kami di Bekasi untuk melihat langsung proses welding, finishing, dan quality control. Jadwalkan kunjungan H-1 melalui WhatsApp.',
-        '<strong>Material apa yang digunakan untuk furniture industrial?</strong><br/>Kami menggunakan besi hollow galvanis grade A, plate besi MS (Mild Steel), dan solid wood untuk top table. Semua material dipilih berdasarkan standar kekuatan dan durability untuk commercial use.'
-      ],
+      '<strong>Berapa lama waktu produksi furniture besi custom?</strong><br/>Waktu produksi standar kami adalah 15-25 hari kerja tergantung kompleksitas desain dan volume order. Untuk project mendesak, kami menyediakan fast-track production dengan additional fee.',
+      '<strong>Apakah bisa melihat proses produksi di workshop?</strong><br/>Ya, kami sangat terbuka! Klien dapat mengunjungi workshop kami di Bekasi untuk melihat langsung proses welding, finishing, dan quality control. Jadwalkan kunjungan H-1 melalui WhatsApp.',
+      '<strong>Material apa yang digunakan untuk furniture industrial?</strong><br/>Kami menggunakan besi hollow galvanis grade A, plate besi MS (Mild Steel), dan solid wood untuk top table. Semua material dipilih berdasarkan standar kekuatan dan durability untuk commercial use.'
+    ],
       en: [
         '<strong>How long does custom metal furniture production take?</strong><br/>Standard lead time is 15-25 working days depending on design complexity and order volume. For urgent projects we offer fast-track production with an additional fee.',
         '<strong>Can we see the production process at your workshop?</strong><br/>Absolutely. Clients can visit our Bekasi workshop to observe welding, finishing, and QC firsthand. Schedule the visit at least one day in advance via WhatsApp.',
@@ -85,10 +85,10 @@ const generateAIOptimizedFAQ = (post: BlogPost, isEnglish = false): string[] => 
     },
     'Commercial Furniture': {
       id: [
-        '<strong>Berapa harga furniture cafe industrial per set?</strong><br/>Harga set meja + 2 kursi cafe industrial mulai dari Rp 2.5-4 juta tergantung ukuran, material, dan finishing. Kami memberikan volume discount untuk order 10 set atau lebih.',
-        '<strong>Apakah furniture besi cocok untuk outdoor?</strong><br/>Sangat cocok! Dengan finishing powder coating outdoor-grade dan priming anti-karat, furniture besi kami tahan hujan, panas, dan kondisi tropis Indonesia hingga 5+ tahun dengan perawatan minimal.',
-        '<strong>Bisa custom desain sesuai konsep cafe saya?</strong><br/>Tentu! Kami menyediakan jasa design consultation gratis. Tim kami akan membantu menterjemahkan konsep brand Anda menjadi furniture yang functional dan Instagram-worthy.'
-      ],
+      '<strong>Berapa harga furniture cafe industrial per set?</strong><br/>Harga set meja + 2 kursi cafe industrial mulai dari Rp 2.5-4 juta tergantung ukuran, material, dan finishing. Kami memberikan volume discount untuk order 10 set atau lebih.',
+      '<strong>Apakah furniture besi cocok untuk outdoor?</strong><br/>Sangat cocok! Dengan finishing powder coating outdoor-grade dan priming anti-karat, furniture besi kami tahan hujan, panas, dan kondisi tropis Indonesia hingga 5+ tahun dengan perawatan minimal.',
+      '<strong>Bisa custom desain sesuai konsep cafe saya?</strong><br/>Tentu! Kami menyediakan jasa design consultation gratis. Tim kami akan membantu menterjemahkan konsep brand Anda menjadi furniture yang functional dan Instagram-worthy.'
+    ],
       en: [
         '<strong>What is the price range for industrial cafe furniture sets?</strong><br/>A table + 2 chair set starts from USD 175-260 depending on size, materials, and finishing. Volume discounts apply for 10 sets or more.',
         '<strong>Is metal furniture suitable for outdoor areas?</strong><br/>Yes. With outdoor-grade powder coating and anti-rust priming, our metal furniture withstands tropical weather conditions for 5+ years with minimal maintenance.',
@@ -97,10 +97,10 @@ const generateAIOptimizedFAQ = (post: BlogPost, isEnglish = false): string[] => 
     },
     'Tips and Trick': {
       id: [
-        '<strong>Bagaimana cara memilih furniture yang tepat untuk cafe kecil?</strong><br/>Prioritaskan space-efficient design seperti bar table dan stackable chairs. Pilih warna netral (black, grey) yang mudah dipadukan, dan hindari furniture oversized yang membuat ruangan sempit.',
-        '<strong>Budget terbatas, sebaiknya prioritas furniture apa dulu?</strong><br/>Fokus pada dining set (meja + kursi) karena ini core furniture cafe. Display rack dan dekorasi bisa ditambahkan bertahap. Pilih design timeless yang tidak cepat outdated.',
-        '<strong>Furniture besi atau kayu, mana yang lebih hemat jangka panjang?</strong><br/>Furniture besi lebih hemat long-term. Biaya awal sedikit lebih tinggi, tapi durability 2-3x lipat dari kayu. Tidak ada rayap, tidak perlu re-finishing, dan lebih mudah maintenance.'
-      ],
+      '<strong>Bagaimana cara memilih furniture yang tepat untuk cafe kecil?</strong><br/>Prioritaskan space-efficient design seperti bar table dan stackable chairs. Pilih warna netral (black, grey) yang mudah dipadukan, dan hindari furniture oversized yang membuat ruangan sempit.',
+      '<strong>Budget terbatas, sebaiknya prioritas furniture apa dulu?</strong><br/>Fokus pada dining set (meja + kursi) karena ini core furniture cafe. Display rack dan dekorasi bisa ditambahkan bertahap. Pilih design timeless yang tidak cepat outdated.',
+      '<strong>Furniture besi atau kayu, mana yang lebih hemat jangka panjang?</strong><br/>Furniture besi lebih hemat long-term. Biaya awal sedikit lebih tinggi, tapi durability 2-3x lipat dari kayu. Tidak ada rayap, tidak perlu re-finishing, dan lebih mudah maintenance.'
+    ],
       en: [
         '<strong>How do I choose furniture for a compact cafe?</strong><br/>Focus on space-efficient designs like bar tables and stackable chairs. Stick to neutral colours (black, charcoal) and avoid oversized furniture that makes the room feel cramped.',
         '<strong>With a limited budget, which furniture pieces should I prioritize?</strong><br/>Invest in the dining sets first because they support core revenue. Display racks and decor can follow later. Pick timeless designs that will not look dated in a year.',
@@ -109,10 +109,10 @@ const generateAIOptimizedFAQ = (post: BlogPost, isEnglish = false): string[] => 
     },
     'Design Inspiration': {
       id: [
-        '<strong>Bagaimana menggabungkan industrial style dengan interior yang sudah ada?</strong><br/>Gunakan accent pieces seperti metal shelving atau industrial lighting sebagai focal point. Kombinasikan dengan elemen warm seperti kayu dan tanaman untuk balance. Industrial cocok dengan hampir semua style.',
-        '<strong>Warna apa yang trending untuk furniture industrial 2025?</strong><br/>Matte black tetap timeless, tapi ada trend ke arah earth tones (brown oxide, copper, bronze). Untuk cafe modern, kombinasi black frame + natural wood top paling populer dan Instagram-friendly.',
-        '<strong>Apakah furniture industrial cocok untuk rumah tinggal?</strong><br/>Sangat cocok! Terutama untuk home office, dining room, dan open kitchen. Industrial style memberikan kesan spacious dan modern. Pilih yang lebih minimalist untuk residential agar tidak terlalu keras.'
-      ],
+      '<strong>Bagaimana menggabungkan industrial style dengan interior yang sudah ada?</strong><br/>Gunakan accent pieces seperti metal shelving atau industrial lighting sebagai focal point. Kombinasikan dengan elemen warm seperti kayu dan tanaman untuk balance. Industrial cocok dengan hampir semua style.',
+      '<strong>Warna apa yang trending untuk furniture industrial 2025?</strong><br/>Matte black tetap timeless, tapi ada trend ke arah earth tones (brown oxide, copper, bronze). Untuk cafe modern, kombinasi black frame + natural wood top paling populer dan Instagram-friendly.',
+      '<strong>Apakah furniture industrial cocok untuk rumah tinggal?</strong><br/>Sangat cocok! Terutama untuk home office, dining room, dan open kitchen. Industrial style memberikan kesan spacious dan modern. Pilih yang lebih minimalist untuk residential agar tidak terlalu keras.'
+    ],
       en: [
         '<strong>How do we incorporate industrial style into an existing interior?</strong><br/>Add statement pieces like metal shelving or industrial lighting as focal points. Balance them with warm elements such as wood accents and greenery. Industrial pairs well with most styles.',
         '<strong>Which colours are trending for industrial furniture in 2025?</strong><br/>Matte black remains timeless, while earth tones (brown oxide, copper, bronze) are on the rise. For cafes, black frames with natural wood tops stay the most versatile and Instagram-friendly.',
@@ -121,23 +121,23 @@ const generateAIOptimizedFAQ = (post: BlogPost, isEnglish = false): string[] => 
     },
     'Local Area Guide': {
       id: [
-        '<strong>Apakah Mangala Living melayani area saya?</strong><br/>Kami melayani seluruh Jabodetabek, Bekasi, Cikarang, Karawang, dan sekitarnya. Untuk area luar Jabodetabek, kami tetap bisa melayani dengan koordinasi logistik khusus.',
-        '<strong>Berapa biaya delivery untuk area Bekasi?</strong><br/>FREE delivery untuk area Bekasi, Jakarta Timur, dan Cikarang. Untuk area lain di Jabodetabek, biaya delivery disesuaikan dengan jarak (mulai dari Rp 200-500rb).',
-        '<strong>Apakah ada showroom untuk melihat produk langsung?</strong><br/>Workshop kami di Bekasi berfungsi sebagai showroom. Anda bisa melihat sample produk, material, dan finishing secara langsung. Buat appointment via WhatsApp untuk kunjungan guided tour.'
+      '<strong>Apakah Mangala Living melayani area saya?</strong><br/>Kami melayani seluruh Jabodetabek, Bekasi, Cikarang, Karawang, dan sekitarnya. Untuk area luar Jabodetabek, kami tetap bisa melayani dengan koordinasi logistik khusus.',
+      '<strong>Berapa biaya delivery untuk area Bekasi?</strong><br/>FREE delivery untuk area Bekasi, Jakarta Timur, dan Cikarang. Untuk area lain di Jabodetabek, biaya delivery disesuaikan dengan jarak (mulai dari Rp 200-500rb).',
+      '<strong>Apakah ada showroom untuk melihat produk langsung?</strong><br/>Workshop kami di Bekasi berfungsi sebagai showroom. Anda bisa melihat sample produk, material, dan finishing secara langsung. Buat appointment via WhatsApp untuk kunjungan guided tour.'
       ],
       en: [
         '<strong>Does Mangala Living serve my area?</strong><br/>We cover Greater Jakarta (Jabodetabek), Bekasi, Cikarang, Karawang, and other major Indonesian cities. For locations outside Jabodetabek we coordinate dedicated logistics arrangements.',
         '<strong>How much is delivery for the Bekasi area?</strong><br/>Delivery is FREE for Bekasi, East Jakarta, and Cikarang. For other Jabodetabek areas the delivery fee depends on distance (typically starting at IDR 200-500k).',
         '<strong>Do you have a showroom to view the products?</strong><br/>Our Bekasi workshop also functions as a showroom. You can review samples, materials, and finishes in person. Book an appointment via WhatsApp for a guided visit.'
-      ]
+    ]
     }
   }
 
   const defaultFAQ = {
     id: [
-      '<strong>Apa yang membedakan Mangala Living dengan workshop furniture lain?</strong><br/>Pengalaman 25 tahun sejak 1999, 1000+ project completed, in-house production control, dan after-sales service yang responsif. Kami fokus pada quality dan customer satisfaction, bukan quantity.',
-      '<strong>Apakah ada garansi untuk furniture yang dibeli?</strong><br/>Ya, kami memberikan garansi konstruksi 2 tahun dan garansi finishing 1 tahun. Garansi cover manufacturing defect, tidak cover kerusakan akibat pemakaian tidak wajar atau force majeure.',
-      '<strong>Bagaimana cara order dan sistem pembayaran?</strong><br/>Proses: Konsultasi &rarr; Quotation &rarr; DP 50% &rarr; Produksi &rarr; Pelunasan 50% sebelum delivery &rarr; Instalasi. Payment via transfer bank atau cash. Kami tidak menerima cicilan/credit.'
+    '<strong>Apa yang membedakan Mangala Living dengan workshop furniture lain?</strong><br/>Pengalaman 25 tahun sejak 1999, 1000+ project completed, in-house production control, dan after-sales service yang responsif. Kami fokus pada quality dan customer satisfaction, bukan quantity.',
+    '<strong>Apakah ada garansi untuk furniture yang dibeli?</strong><br/>Ya, kami memberikan garansi konstruksi 2 tahun dan garansi finishing 1 tahun. Garansi cover manufacturing defect, tidak cover kerusakan akibat pemakaian tidak wajar atau force majeure.',
+    '<strong>Bagaimana cara order dan sistem pembayaran?</strong><br/>Proses: Konsultasi &rarr; Quotation &rarr; DP 50% &rarr; Produksi &rarr; Pelunasan 50% sebelum delivery &rarr; Instalasi. Payment via transfer bank atau cash. Kami tidak menerima cicilan/credit.'
     ],
     en: [
       '<strong>What makes Mangala Living different from other workshops?</strong><br/>We bring 25 years of experience, 1,000+ completed projects, in-house production control, and responsive after-sales support. Our focus is quality and customer success over mass volume.',
@@ -163,8 +163,8 @@ const generateDataDrivenSection = (isEnglish = false): BlogSection => {
           `Based on data from <strong>1,000+ projects</strong> handled between 1999 and ${year}, here are the key insights we consistently observe:`
         ]
       : [
-          `Berdasarkan data dari <strong>1000+ project</strong> yang kami tangani sejak 1999 hingga ${year}, berikut insight yang kami kumpulkan:`
-        ],
+      `Berdasarkan data dari <strong>1000+ project</strong> yang kami tangani sejak 1999 hingga ${year}, berikut insight yang kami kumpulkan:`
+    ],
     list: isEnglish
       ? [
           '<strong>Industrial Furniture ROI:</strong> Cafes and restaurants using industrial metal furniture report 35-40% lower replacement costs over five years compared to regular wood furniture (source: Mangala Living internal project data).',
@@ -174,12 +174,12 @@ const generateDataDrivenSection = (isEnglish = false): BlogSection => {
           '<strong>Custom vs Ready-Stock:</strong> 70% of clients prefer custom furniture to maximize space efficiency by 15-20% compared to standard ready-stock sizes.'
         ]
       : [
-          '<strong>ROI Furniture Industrial:</strong> Cafe dan restoran yang menggunakan furniture besi industrial melaporkan 35-40% lebih hemat biaya replacement dalam 5 tahun dibanding furniture kayu reguler (sumber: internal project data Mangala Living).',
-          '<strong>Durability Test:</strong> Furniture besi dengan powder coating outdoor-grade mampu bertahan 5-8 tahun di area outdoor tanpa perawatan intensif, vs 2-3 tahun untuk kayu dengan cat biasa (comparative testing 2020-2024).',
-          '<strong>Customer Preference:</strong> 78% pelanggan cafe kami memilih kombinasi black steel frame + natural wood top sebagai design paling versatile dan timeless (survey 2024).',
-          '<strong>Lead Time Average:</strong> 85% order kami completed dalam 20 hari kerja atau kurang. Fast-track production (10-15 hari) tersedia dengan planning yang baik.',
-          '<strong>Custom vs Ready:</strong> 70% klien kami memilih custom design karena dapat menyesuaikan ukuran dengan space mereka, menghemat hingga 15-20% area dibanding menggunakan furniture ready-stock standard size.'
-        ]
+      '<strong>ROI Furniture Industrial:</strong> Cafe dan restoran yang menggunakan furniture besi industrial melaporkan 35-40% lebih hemat biaya replacement dalam 5 tahun dibanding furniture kayu reguler (sumber: internal project data Mangala Living).',
+      '<strong>Durability Test:</strong> Furniture besi dengan powder coating outdoor-grade mampu bertahan 5-8 tahun di area outdoor tanpa perawatan intensif, vs 2-3 tahun untuk kayu dengan cat biasa (comparative testing 2020-2024).',
+      '<strong>Customer Preference:</strong> 78% pelanggan cafe kami memilih kombinasi black steel frame + natural wood top sebagai design paling versatile dan timeless (survey 2024).',
+      '<strong>Lead Time Average:</strong> 85% order kami completed dalam 20 hari kerja atau kurang. Fast-track production (10-15 hari) tersedia dengan planning yang baik.',
+      '<strong>Custom vs Ready:</strong> 70% klien kami memilih custom design karena dapat menyesuaikan ukuran dengan space mereka, menghemat hingga 15-20% area dibanding menggunakan furniture ready-stock standard size.'
+    ]
   }
 }
 
@@ -209,11 +209,11 @@ const generateBalancedComparison = (post: BlogPost, isEnglish = false): BlogSect
       },
       pros: {
         id: [
-          '<strong>Perfect Fit:</strong> Furniture dibuat sesuai exact measurement ruangan Anda, tidak ada space terbuang.',
-          '<strong>Brand Identity:</strong> Design bisa disesuaikan dengan konsep dan color scheme brand Anda.',
-          '<strong>Kualitas Terkontrol:</strong> Material dan finishing dipilih sendiri, tidak harus kompromi dengan ready stock.',
-          '<strong>Unique Selling Point:</strong> Furniture exclusive yang tidak ditemukan di cafe competitor.'
-        ],
+        '<strong>Perfect Fit:</strong> Furniture dibuat sesuai exact measurement ruangan Anda, tidak ada space terbuang.',
+        '<strong>Brand Identity:</strong> Design bisa disesuaikan dengan konsep dan color scheme brand Anda.',
+        '<strong>Kualitas Terkontrol:</strong> Material dan finishing dipilih sendiri, tidak harus kompromi dengan ready stock.',
+        '<strong>Unique Selling Point:</strong> Furniture exclusive yang tidak ditemukan di cafe competitor.'
+      ],
         en: [
           '<strong>Perfect Fit:</strong> Furniture is manufactured to your exact measurements so every inch of space is optimized.',
           '<strong>Brand Identity:</strong> Designs follow your brand concept and colour scheme without compromise.',
@@ -223,10 +223,10 @@ const generateBalancedComparison = (post: BlogPost, isEnglish = false): BlogSect
       },
       cons: {
         id: [
-          '<strong>Lead Time:</strong> Perlu waktu produksi 15-25 hari, tidak bisa instant seperti ready stock.',
-          '<strong>Minimum Order:</strong> Beberapa workshop ada minimum order value untuk custom design.',
-          '<strong>Down Payment:</strong> Butuh DP 50% di awal, sedangkan ready stock bisa cash-and-carry.',
-          '<strong>Design Risk:</strong> Butuh konsultasi yang baik untuk menghindari hasil yang tidak sesuai ekspektasi.'
+        '<strong>Lead Time:</strong> Perlu waktu produksi 15-25 hari, tidak bisa instant seperti ready stock.',
+        '<strong>Minimum Order:</strong> Beberapa workshop ada minimum order value untuk custom design.',
+        '<strong>Down Payment:</strong> Butuh DP 50% di awal, sedangkan ready stock bisa cash-and-carry.',
+        '<strong>Design Risk:</strong> Butuh konsultasi yang baik untuk menghindari hasil yang tidak sesuai ekspektasi.'
         ],
         en: [
           '<strong>Lead Time:</strong> Production requires 15-25 working days—no instant takeaway like ready-stock.',
@@ -251,11 +251,11 @@ const generateBalancedComparison = (post: BlogPost, isEnglish = false): BlogSect
       },
       pros: {
         id: [
-          '<strong>Durability Superior:</strong> Tahan 5-8 tahun untuk commercial use vs 2-4 tahun untuk kayu.',
-          '<strong>Low Maintenance:</strong> Cukup lap basah, tidak perlu re-varnish atau anti-rayap treatment.',
-          '<strong>Load Capacity:</strong> Bisa menahan beban 2-3x lipat dibanding kayu dengan dimensi yang sama.',
-          '<strong>Modern Aesthetic:</strong> Memberikan kesan industrial-modern yang sedang trending.'
-        ],
+        '<strong>Durability Superior:</strong> Tahan 5-8 tahun untuk commercial use vs 2-4 tahun untuk kayu.',
+        '<strong>Low Maintenance:</strong> Cukup lap basah, tidak perlu re-varnish atau anti-rayap treatment.',
+        '<strong>Load Capacity:</strong> Bisa menahan beban 2-3x lipat dibanding kayu dengan dimensi yang sama.',
+        '<strong>Modern Aesthetic:</strong> Memberikan kesan industrial-modern yang sedang trending.'
+      ],
         en: [
           '<strong>Superior Durability:</strong> Lasts 5-8 years in commercial settings compared to 2-4 years for typical wood.',
           '<strong>Low Maintenance:</strong> Wipe-clean surfaces; no re-varnishing or anti-termite treatments needed.',
@@ -265,10 +265,10 @@ const generateBalancedComparison = (post: BlogPost, isEnglish = false): BlogSect
       },
       cons: {
         id: [
-          '<strong>Harga Awal:</strong> 20-30% lebih mahal di initial purchase dibanding kayu lokal.',
-          '<strong>Berat:</strong> Lebih berat, butuh planning untuk delivery dan moving furniture.',
-          '<strong>Cold to Touch:</strong> Tidak sehanqat kayu secara sensory, tapi bisa di-balance dengan cushion.',
-          '<strong>Skill Requirement:</strong> Butuh workshop dengan welding expertise, tidak bisa custom di tukang kayu biasa.'
+        '<strong>Harga Awal:</strong> 20-30% lebih mahal di initial purchase dibanding kayu lokal.',
+        '<strong>Berat:</strong> Lebih berat, butuh planning untuk delivery dan moving furniture.',
+        '<strong>Cold to Touch:</strong> Tidak sehanqat kayu secara sensory, tapi bisa di-balance dengan cushion.',
+        '<strong>Skill Requirement:</strong> Butuh workshop dengan welding expertise, tidak bisa custom di tukang kayu biasa.'
         ],
         en: [
           '<strong>Initial Cost:</strong> 20-30% higher upfront compared to locally sourced wood.',
@@ -296,7 +296,7 @@ const generateBalancedComparison = (post: BlogPost, isEnglish = false): BlogSect
           `<strong>${comparisonData.prosTitle.en}:</strong>`
         ]
       : [
-          'Agar Anda dapat membuat keputusan yang informed, berikut kami sajikan perbandingan objektif berdasarkan pengalaman 25 tahun kami menangani berbagai project:',
+      'Agar Anda dapat membuat keputusan yang informed, berikut kami sajikan perbandingan objektif berdasarkan pengalaman 25 tahun kami menangani berbagai project:',
           `<strong>${comparisonData.prosTitle.id}:</strong>`
         ],
     list: isEnglish
@@ -310,8 +310,8 @@ const generateBalancedComparison = (post: BlogPost, isEnglish = false): BlogSect
           ...comparisonData.pros.id,
           `<strong>${comparisonData.consTitle.id}:</strong>`,
           ...comparisonData.cons.id,
-          '<strong>Rekomendasi Kami:</strong> Pilih custom furniture besi industrial jika Anda mengutamakan durability, low maintenance, dan brand identity yang kuat. Pilih ready stock kayu jika Anda butuh instant solution dengan budget sangat terbatas dan untuk temporary use.'
-        ]
+      '<strong>Rekomendasi Kami:</strong> Pilih custom furniture besi industrial jika Anda mengutamakan durability, low maintenance, dan brand identity yang kuat. Pilih ready stock kayu jika Anda butuh instant solution dengan budget sangat terbatas dan untuk temporary use.'
+    ]
   }
 }
 
@@ -341,10 +341,10 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
               detectLocationSentence(post, true)
             ]
           : [
-              post.excerpt,
-              `<strong>Ringkasan Singkat:</strong> Artikel ini membahas ${normalizedFocus.toLowerCase()} secara komprehensif berdasarkan pengalaman 25 tahun Mangala Living menangani 1000+ project furniture industrial di Jabodetabek. Anda akan mendapatkan insight praktis, data comparison, FAQ lengkap, dan action steps yang bisa langsung diimplementasikan.`,
-              detectLocationSentence(post)
-            ]
+          post.excerpt,
+          `<strong>Ringkasan Singkat:</strong> Artikel ini membahas ${normalizedFocus.toLowerCase()} secara komprehensif berdasarkan pengalaman 25 tahun Mangala Living menangani 1000+ project furniture industrial di Jabodetabek. Anda akan mendapatkan insight praktis, data comparison, FAQ lengkap, dan action steps yang bisa langsung diimplementasikan.`,
+          detectLocationSentence(post)
+        ]
       },
 
       // SECTION 2: Main content with semantic structure (Strategy 2: Content clarity)
@@ -356,9 +356,9 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
               'Furniture goes beyond aesthetics; it is a long-term investment that affects operating costs, customer experience, and brand perception. Poor choices can trigger:'
             ]
           : [
-              `Topik ${normalizedFocus.toLowerCase()} sering menjadi pertanyaan utama dari klien kami yang membuka cafe, restoran, hotel, atau office space. Berdasarkan data internal, <strong>65% kesuksesan grand opening</strong> dipengaruhi oleh pemilihan furniture yang tepat sejak awal.`,
-              'Furniture bukan hanya soal estetika, tapi juga investment jangka panjang yang impact pada operational cost, customer experience, dan brand perception. Kesalahan pemilihan bisa berakibat pada:'
-            ],
+          `Topik ${normalizedFocus.toLowerCase()} sering menjadi pertanyaan utama dari klien kami yang membuka cafe, restoran, hotel, atau office space. Berdasarkan data internal, <strong>65% kesuksesan grand opening</strong> dipengaruhi oleh pemilihan furniture yang tepat sejak awal.`,
+          'Furniture bukan hanya soal estetika, tapi juga investment jangka panjang yang impact pada operational cost, customer experience, dan brand perception. Kesalahan pemilihan bisa berakibat pada:'
+        ],
         list: isEnglishPost
           ? [
               '<strong>Frequent Replacement Costs:</strong> Low-quality furniture needs to be replaced 2-3x within five years, increasing total cost by 40-50%.',
@@ -367,11 +367,11 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
               '<strong>Opportunity Cost:</strong> Time spent on maintenance and replacements could be allocated to growing the business.'
             ]
           : [
-              '<strong>Biaya Replacement Berulang:</strong> Furniture murah berkualitas rendah perlu diganti 2-3x dalam 5 tahun, total cost lebih mahal 40-50%.',
-              '<strong>Negative Customer Experience:</strong> Kursi tidak nyaman, meja goyang, atau furniture cepat kusam membuat customer tidak betah.',
-              '<strong>Brand Image Damage:</strong> Furniture yang tidak match dengan konsep brand membuat bisnis terlihat tidak profesional.',
-              '<strong>Opportunity Cost:</strong> Waktu terbuang untuk maintenance dan koordinasi replacement bisa dialokasikan untuk grow business.'
-            ]
+          '<strong>Biaya Replacement Berulang:</strong> Furniture murah berkualitas rendah perlu diganti 2-3x dalam 5 tahun, total cost lebih mahal 40-50%.',
+          '<strong>Negative Customer Experience:</strong> Kursi tidak nyaman, meja goyang, atau furniture cepat kusam membuat customer tidak betah.',
+          '<strong>Brand Image Damage:</strong> Furniture yang tidak match dengan konsep brand membuat bisnis terlihat tidak profesional.',
+          '<strong>Opportunity Cost:</strong> Waktu terbuang untuk maintenance dan koordinasi replacement bisa dialokasikan untuk grow business.'
+        ]
       },
 
       // SECTION 3: Data-driven section (Strategy 5: Data-driven information)
@@ -385,8 +385,8 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
               `When we handle ${normalizedFocus.toLowerCase()} projects, we always start with a <strong>design consultation session</strong> covering three essentials: brand concept, target customer demographics, and the physical space. Our framework includes:`
             ]
           : [
-              `Saat mengerjakan project ${normalizedFocus.toLowerCase()}, kami selalu memulai dengan <strong>design consultation session</strong> untuk memahami 3 hal krusial: konsep brand, target customer demographic, dan lokasi physical space. Berikut framework yang kami gunakan:`
-            ],
+          `Saat mengerjakan project ${normalizedFocus.toLowerCase()}, kami selalu memulai dengan <strong>design consultation session</strong> untuk memahami 3 hal krusial: konsep brand, target customer demographic, dan lokasi physical space. Berikut framework yang kami gunakan:`
+        ],
         list: isEnglishPost
           ? [
               '<strong>Brief & Budget Clarity:</strong> Define core needs (seat count, style preferences, durability expectations) along with a realistic budget. For a 30-50 seat cafe, invest IDR 25-45 million for a complete furniture set.',
@@ -396,12 +396,12 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
               '<strong>Timeline Planning:</strong> Set aside at least a month before opening: 20 days for production, 3-5 days for delivery & installation, plus a 5-7 day buffer.'
             ]
           : [
-              '<strong>Brief & Budget Clarity:</strong> Definisikan kebutuhan utama (jumlah seat, style preference, durability requirement) dan budget range realistis. Budget realistis untuk cafe 30-50 seat: Rp 25-45 juta untuk complete furniture set.',
-              '<strong>Space Planning:</strong> Ukur space secara akurat dan buat layout plan. Rule of thumb: alokasikan 1.2-1.5 m&sup2; per seat untuk dining area, 0.8-1m&sup2; untuk bar seating.',
-              '<strong>Material Selection:</strong> Pilih material berdasarkan use case: besi hollow untuk high-traffic area, solid wood untuk premium segment, kombinasi besi-kayu untuk balance cost-quality.',
-              '<strong>Finishing & Color:</strong> Powder coating untuk durability (outdoor & high-traffic), cat duco untuk budget-conscious project. Color: matte black dan natural wood paling versatile.',
-              '<strong>Timeline Planning:</strong> Alokasikan minimal 1 bulan sebelum grand opening untuk produksi (20 hari) + delivery & instalasi (3-5 hari) + buffer (5-7 hari).'
-            ]
+          '<strong>Brief & Budget Clarity:</strong> Definisikan kebutuhan utama (jumlah seat, style preference, durability requirement) dan budget range realistis. Budget realistis untuk cafe 30-50 seat: Rp 25-45 juta untuk complete furniture set.',
+          '<strong>Space Planning:</strong> Ukur space secara akurat dan buat layout plan. Rule of thumb: alokasikan 1.2-1.5 m&sup2; per seat untuk dining area, 0.8-1m&sup2; untuk bar seating.',
+          '<strong>Material Selection:</strong> Pilih material berdasarkan use case: besi hollow untuk high-traffic area, solid wood untuk premium segment, kombinasi besi-kayu untuk balance cost-quality.',
+          '<strong>Finishing & Color:</strong> Powder coating untuk durability (outdoor & high-traffic), cat duco untuk budget-conscious project. Color: matte black dan natural wood paling versatile.',
+          '<strong>Timeline Planning:</strong> Alokasikan minimal 1 bulan sebelum grand opening untuk produksi (20 hari) + delivery & instalasi (3-5 hari) + buffer (5-7 hari).'
+        ]
       },
 
       // SECTION 5: Balanced comparison (Strategy 3: Balanced perspectives)
@@ -419,12 +419,12 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
               'Explore our portfolio and pricing references by visiting the <a href="/shop">product page</a> or downloading the <a href="/assets/Mangala-Living-Catalog-2025.pdf">digital product catalog</a>.'
             ]
           : [
-              '<strong>Workshop Modern di Bekasi:</strong> Fasilitas produksi seluas 800m&sup2; dengan welding station, powder coating booth, dan finishing room memastikan quality control optimal dari raw material hingga final product.',
-              '<strong>Design Consultation Gratis:</strong> Tim kami (interior consultant + drafter + production supervisor) akan membantu menterjemahkan konsep Anda menjadi technical drawing dan 3D rendering sebelum produksi.',
-              '<strong>Material Grade A:</strong> Kami menggunakan besi hollow galvanis (bukan besi hitam yang mudah karat), solid wood grade A/B (bukan MDF/particle board), dan powder coating imported dari Taiwan.',
-              '<strong>Transparent Process:</strong> Klien dapat visit workshop any time untuk melihat progress produksi. Kami kirim photo update via WhatsApp di setiap milestone.',
-              'Untuk eksplor portofolio dan price reference, kunjungi <a href="/shop">halaman produk kami</a> atau download <a href="/assets/Mangala-Living-Catalog-2025.pdf">catalog digital PDF</a>.'
-            ]
+          '<strong>Workshop Modern di Bekasi:</strong> Fasilitas produksi seluas 800m&sup2; dengan welding station, powder coating booth, dan finishing room memastikan quality control optimal dari raw material hingga final product.',
+          '<strong>Design Consultation Gratis:</strong> Tim kami (interior consultant + drafter + production supervisor) akan membantu menterjemahkan konsep Anda menjadi technical drawing dan 3D rendering sebelum produksi.',
+          '<strong>Material Grade A:</strong> Kami menggunakan besi hollow galvanis (bukan besi hitam yang mudah karat), solid wood grade A/B (bukan MDF/particle board), dan powder coating imported dari Taiwan.',
+          '<strong>Transparent Process:</strong> Klien dapat visit workshop any time untuk melihat progress produksi. Kami kirim photo update via WhatsApp di setiap milestone.',
+          'Untuk eksplor portofolio dan price reference, kunjungi <a href="/shop">halaman produk kami</a> atau download <a href="/assets/Mangala-Living-Catalog-2025.pdf">catalog digital PDF</a>.'
+        ]
       },
 
       // SECTION 7: FAQ with long-tail keywords (Strategy 1: Long-tail keywords)
@@ -435,8 +435,8 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
               'Here are detailed answers to the questions we receive most frequently from clients:'
             ]
           : [
-              'Berikut jawaban lengkap untuk pertanyaan paling umum dari klien kami:'
-            ],
+          'Berikut jawaban lengkap untuk pertanyaan paling umum dari klien kami:'
+        ],
         list: faqItems
       },
 
@@ -448,8 +448,8 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
               'Ready to transform your space with premium industrial furniture? Follow these steps:'
             ]
           : [
-              'Ready untuk transform space Anda dengan furniture industrial berkualitas? Ikuti langkah-langkah berikut:'
-            ],
+          'Ready untuk transform space Anda dengan furniture industrial berkualitas? Ikuti langkah-langkah berikut:'
+        ],
         list: isEnglishPost
           ? [
               '<strong>Step 1 – Free Consultation (15-30 minutes):</strong> Send your project brief via <a href="https://wa.me/6285212078467">WhatsApp +62 852-1207-8467</a>. Include business type, required seat count, budget range, and target timeline. We respond within 1-3 working hours.',
@@ -460,13 +460,13 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
               '<strong>Step 6 – After-Sales Support:</strong> Enjoy a 2-year structural warranty and 1-year finishing warranty. Contact us anytime via WhatsApp or email for assistance.'
             ]
           : [
-              '<strong>Step 1 - Konsultasi Gratis (15-30 menit):</strong> Kirim brief project Anda via <a href="https://wa.me/6285212078467">WhatsApp +62 852-1207-8467</a>. Include: jenis bisnis, jumlah seat yang dibutuhkan, budget range, dan timeline target. Kami response dalam 1-3 jam (working hours).',
-              '<strong>Step 2 - Site Survey & Measurement:</strong> Tim kami visit lokasi Anda (FREE untuk area Bekasi-Jakarta Timur-Cikarang) untuk measurement akurat dan assess kondisi space. Durasi: 30-60 menit.',
-              '<strong>Step 3 - Quotation & Design Mockup:</strong> Dalam 2-3 hari, kami kirim quotation detail + 3D rendering + technical drawing untuk approval. Revision unlimited sampai design approved.',
-              '<strong>Step 4 - Production & Quality Control:</strong> Setelah DP 50% confirmed, produksi dimulai. Lead time standard: 15-25 hari kerja dengan photo update berkala.',
-              '<strong>Step 5 - Delivery & Installation:</strong> Setelah pelunasan, kami schedule delivery dan instalasi on-site. Tim instalasi kami profesional dan berpengalaman handle commercial project.',
-              '<strong>Step 6 - After Sales Support:</strong> Garansi 2 tahun konstruksi, 1 tahun finishing. Any issue, hubungi kami langsung via WhatsApp atau email.'
-            ]
+          '<strong>Step 1 - Konsultasi Gratis (15-30 menit):</strong> Kirim brief project Anda via <a href="https://wa.me/6285212078467">WhatsApp +62 852-1207-8467</a>. Include: jenis bisnis, jumlah seat yang dibutuhkan, budget range, dan timeline target. Kami response dalam 1-3 jam (working hours).',
+          '<strong>Step 2 - Site Survey & Measurement:</strong> Tim kami visit lokasi Anda (FREE untuk area Bekasi-Jakarta Timur-Cikarang) untuk measurement akurat dan assess kondisi space. Durasi: 30-60 menit.',
+          '<strong>Step 3 - Quotation & Design Mockup:</strong> Dalam 2-3 hari, kami kirim quotation detail + 3D rendering + technical drawing untuk approval. Revision unlimited sampai design approved.',
+          '<strong>Step 4 - Production & Quality Control:</strong> Setelah DP 50% confirmed, produksi dimulai. Lead time standard: 15-25 hari kerja dengan photo update berkala.',
+          '<strong>Step 5 - Delivery & Installation:</strong> Setelah pelunasan, kami schedule delivery dan instalasi on-site. Tim instalasi kami profesional dan berpengalaman handle commercial project.',
+          '<strong>Step 6 - After Sales Support:</strong> Garansi 2 tahun konstruksi, 1 tahun finishing. Any issue, hubungi kami langsung via WhatsApp atau email.'
+        ]
       },
 
       // SECTION 9: Contact & location info
@@ -482,13 +482,13 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
               'We are committed to delivering <strong>premium industrial furniture at factory-direct pricing</strong> with responsive customer service. More than 1,000 clients have trusted us since 1999—let’s build your success story next!'
             ]
           : [
-              '<strong>WhatsApp (Fastest Response):</strong> <a href="https://wa.me/6285212078467">+62 852-1207-8467</a> - Chat langsung dengan tim project manager kami.',
-              '<strong>Email:</strong> <a href="mailto:info@mangala-living.com">info@mangala-living.com</a> - Untuk inquiry formal atau kirim attachment design reference.',
-              '<strong>Workshop Address:</strong> Jl. Raya Setu Cibitung, Bekasi Timur, Jawa Barat (10 menit dari pintu tol Cibitung, 25 menit dari Jakarta Timur).',
-              '<strong>Operating Hours:</strong> Senin-Sabtu: 08.00-17.00 WIB | Minggu & tanggal merah: By appointment only.',
-              '<strong>Coverage Area:</strong> Jabodetabek (Jakarta, Bogor, Depok, Tangerang, Bekasi), Cikarang, Karawang, dan seluruh Indonesia (dengan koordinasi logistik).',
-              'Kami berkomitmen memberikan <strong>furniture industrial berkualitas premium dengan harga pabrik langsung</strong> dan customer service yang responsif. 1000+ klien telah mempercayai kami sejak 1999. Jadilah bagian dari success story kami!'
-            ]
+          '<strong>WhatsApp (Fastest Response):</strong> <a href="https://wa.me/6285212078467">+62 852-1207-8467</a> - Chat langsung dengan tim project manager kami.',
+          '<strong>Email:</strong> <a href="mailto:info@mangala-living.com">info@mangala-living.com</a> - Untuk inquiry formal atau kirim attachment design reference.',
+          '<strong>Workshop Address:</strong> Jl. Raya Setu Cibitung, Bekasi Timur, Jawa Barat (10 menit dari pintu tol Cibitung, 25 menit dari Jakarta Timur).',
+          '<strong>Operating Hours:</strong> Senin-Sabtu: 08.00-17.00 WIB | Minggu & tanggal merah: By appointment only.',
+          '<strong>Coverage Area:</strong> Jabodetabek (Jakarta, Bogor, Depok, Tangerang, Bekasi), Cikarang, Karawang, dan seluruh Indonesia (dengan koordinasi logistik).',
+          'Kami berkomitmen memberikan <strong>furniture industrial berkualitas premium dengan harga pabrik langsung</strong> dan customer service yang responsif. 1000+ klien telah mempercayai kami sejak 1999. Jadilah bagian dari success story kami!'
+        ]
       }
     ]
   }

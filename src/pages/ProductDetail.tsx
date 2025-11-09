@@ -205,13 +205,17 @@ const generateProductDetails = (categories: string[]) => {
 // Create product details from ALL_PRODUCTS
 const products: { [key: string]: ProductDetail } = {}
 ALL_PRODUCTS.forEach(p => {
+  const baseImage = p.image
+  const secondaryImage = p.image
+  const videoOrFallback = p.video || p.image
+
   products[p.slug] = {
     id: p.id,
     slug: p.slug,
     name: p.name,
     categories: p.categories,
     price: p.price,
-    images: [p.image, p.image, p.video || p.image, p.image],
+    images: [baseImage, secondaryImage, videoOrFallback],
     details: generateProductDetails(p.categories),
     description: generateProductDescription(p.name),
     video: p.video
@@ -222,6 +226,7 @@ ALL_PRODUCTS.forEach(p => {
 const getRelatedProducts = (currentSlug: string) => {
   return ALL_PRODUCTS
     .filter(p => p.slug !== currentSlug)
+    .sort(() => Math.random() - 0.5)
     .slice(0, 4)
     .map(p => ({
       slug: p.slug,
@@ -709,7 +714,7 @@ const ProductDetail: React.FC = () => {
                     src={product.images[selectedImage]} 
                     alt={getProductImageAlt(product.slug, isIndonesian)}
                     title={getProductImageCaption(product.slug, isIndonesian)}
-                    className={selectedImage === 1 || selectedImage === 3 ? 'flipped' : ''}
+                    className={selectedImage === 1 ? 'flipped' : ''}
                     loading="eager"
                     fetchPriority="high"
                     width="800"
@@ -901,7 +906,7 @@ Thank you!`
               src={product.images[selectedImage]} 
               alt={getProductImageAlt(product.slug, isIndonesian)}
               title={getProductImageCaption(product.slug, isIndonesian)}
-              className={selectedImage === 1 || selectedImage === 3 ? 'flipped' : ''}
+              className={selectedImage === 1 ? 'flipped' : ''}
             />
             <div className="image-modal-title">{translatedProductName}</div>
           </div>
