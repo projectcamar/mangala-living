@@ -138,6 +138,7 @@ const parseProducts = (source, imageMap) => {
       id: parseInt(id),
       slug,
       name: escapeXml(name),
+      rawName: name,
       loc: `${BASE_URL}/product/${slug}`,
       changefreq: 'monthly',
       priority: 0.6,
@@ -145,6 +146,102 @@ const parseProducts = (source, imageMap) => {
     })
   }
   return products
+}
+
+const curatedSearchKeywords = [
+  'industrial furniture',
+  'industrial furniture indonesia',
+  'industrial furniture bekasi',
+  'industrial furniture jakarta',
+  'industrial furniture custom',
+  'custom furniture cafe',
+  'custom furniture restoran',
+  'custom furniture hotel',
+  'custom furniture kantor',
+  'industrial dining table',
+  'industrial dining set',
+  'industrial lounge set',
+  'industrial bar set',
+  'industrial bar table',
+  'industrial sofa bench',
+  'industrial coffee table',
+  'industrial outdoor furniture',
+  'industrial daybed',
+  'industrial storage rack',
+  'industrial kitchen cabinet',
+  'industrial bookshelf',
+  'industrial display rack',
+  'industrial coat rack',
+  'industrial hanging shelf',
+  'industrial workstation desk',
+  'industrial conference table',
+  'industrial office furniture',
+  'furniture cafe industrial',
+  'furniture restoran industrial',
+  'furniture hotel industrial',
+  'furniture kantor industrial',
+  'furniture minimalis industrial',
+  'furniture scandinavian industrial',
+  'furniture custom bekasi',
+  'furniture custom jabodetabek',
+  'industrial bench corner',
+  'industrial barstool',
+  'industrial bar chair',
+  'industrial pipe furniture',
+  'custom dining table steel',
+  'custom dining set steel',
+  'metal frame furniture',
+  'welding furniture bekasi',
+  'furniture besi industrial',
+  'furniture besi custom',
+  'furniture mangala living',
+  'mangala living catalog',
+  'mangala living dining set',
+  'mangala living lounge set',
+  'mangala living bar set',
+  'mangala living outdoor furniture',
+  'mangala living daybed'
+]
+
+const toTitleCase = (str) => str.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase())
+
+const buildSearchQueryEntries = (products, lastModified) => {
+  const map = new Map()
+
+  const addQuery = (query) => {
+    if (!query) return
+    const trimmed = query.trim()
+    if (!trimmed) return
+    const key = trimmed.toLowerCase()
+    if (!map.has(key)) {
+      map.set(key, trimmed)
+    }
+  }
+
+  curatedSearchKeywords.forEach(addQuery)
+
+  products.forEach((product) => {
+    const unescapedName = product.rawName || product.name.replace(/&amp;/g, '&').replace(/&apos;/g, "'")
+    const slugWords = product.slug.replace(/-/g, ' ')
+    const titleSlug = toTitleCase(slugWords)
+
+    addQuery(unescapedName)
+    addQuery(`${unescapedName} price`)
+    addQuery(`${unescapedName} Mangala Living`)
+    addQuery(`${titleSlug} furniture`)
+    addQuery(`industrial ${slugWords}`)
+    addQuery(`${slugWords} custom furniture`)
+  })
+
+  const queries = Array.from(map.values()).slice(0, 60)
+
+  return queries.map((query, index) => ({
+    query,
+    loc: `${BASE_URL}/search?q=${encodeURIComponent(query)}`,
+    changefreq: index < 20 ? 'weekly' : 'monthly',
+    priority: index < 10 ? 0.50 : 0.40,
+    lastmod: lastModified
+  }))
 }
 
 const parseCategorySlugs = (source) => {
@@ -361,6 +458,35 @@ const generateCategorySitemap = (categories) => {
   return [header, stylesheet, openTag, ...entries, closeTag, ''].join('\n')
 }
 
+const generateSearchSitemap = (entries) => {
+  const header = '<?xml version="1.0" encoding="UTF-8"?>'
+  const stylesheet = '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>'
+  const openTag = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
+  const closeTag = '</urlset>'
+
+  const urls = entries.map((entry) => {
+    const parts = [
+      '  <url>',
+      `    <loc>${escapeXml(entry.loc)}</loc>`,
+      `    <lastmod>${formatDate(entry.lastmod)}</lastmod>`,
+      `    <changefreq>${entry.changefreq}</changefreq>`,
+      `    <priority>${entry.priority.toFixed(2)}</priority>`
+    ]
+
+    const alternates = buildLanguageAlternates(entry.loc, entry.alternates)
+    alternates.forEach((alternate) => {
+      if (alternate?.href && alternate?.hrefLang) {
+        parts.push(`    <xhtml:link rel="alternate" hreflang="${escapeXml(alternate.hrefLang)}" href="${escapeXml(alternate.href)}" />`)
+      }
+    })
+
+    parts.push('  </url>')
+    return parts.join('\n')
+  })
+
+  return [header, stylesheet, openTag, ...urls, closeTag, ''].join('\n')
+}
+
 // Generate attachment sitemap (images from products and blog)
 const generateAttachmentSitemap = (products, posts) => {
   const header = '<?xml version="1.0" encoding="UTF-8"?>'
@@ -469,6 +595,7 @@ const main = async () => {
       ...product,
       lastmod: productsLastModified
     }))
+    const searchEntries = buildSearchQueryEntries(rawProducts, productsLastModified)
 
   // Get latest dates for each sitemap
   const latestBlogDate = blogPosts.reduce((latest, entry) => {
@@ -503,51 +630,60 @@ const main = async () => {
   const pageSitemapXml = generatePageSitemap(staticPages.sort((a, b) => a.loc.localeCompare(b.loc)))
   await fs.writeFile(path.join(OUTPUT_DIR, 'page-sitemap.xml'), pageSitemapXml, 'utf8')
 
-  console.log('[sitemap] Generating category-sitemap.xml...')
-  const categorySitemapXml = generateCategorySitemap(categoryPages.sort((a, b) => a.loc.localeCompare(b.loc)))
-  await fs.writeFile(path.join(OUTPUT_DIR, 'category-sitemap.xml'), categorySitemapXml, 'utf8')
+    console.log('[sitemap] Generating category-sitemap.xml...')
+    const categorySitemapXml = generateCategorySitemap(categoryPages.sort((a, b) => a.loc.localeCompare(b.loc)))
+    await fs.writeFile(path.join(OUTPUT_DIR, 'category-sitemap.xml'), categorySitemapXml, 'utf8')
 
     console.log('[sitemap] Generating product-sitemap.xml...')
     const productSitemapXml = generateProductSitemap(products)
     await fs.writeFile(path.join(OUTPUT_DIR, 'product-sitemap.xml'), productSitemapXml, 'utf8')
 
+    console.log('[sitemap] Generating search-sitemap.xml...')
+    const searchSitemapXml = generateSearchSitemap(searchEntries)
+    await fs.writeFile(path.join(OUTPUT_DIR, 'search-sitemap.xml'), searchSitemapXml, 'utf8')
+
     console.log('[sitemap] Generating attachment-sitemap.xml...')
-  const attachmentSitemapXml = generateAttachmentSitemap(products, blogPosts)
-  await fs.writeFile(path.join(OUTPUT_DIR, 'attachment-sitemap.xml'), attachmentSitemapXml, 'utf8')
+    const attachmentSitemapXml = generateAttachmentSitemap(products, blogPosts)
+    await fs.writeFile(path.join(OUTPUT_DIR, 'attachment-sitemap.xml'), attachmentSitemapXml, 'utf8')
 
   // Generate sitemap index
   console.log('[sitemap] Generating sitemap.xml (index)...')
-  const sitemapIndex = [
-    {
-      loc: `${BASE_URL}/post-sitemap.xml`,
-      lastmod: new Date(latestBlogDate || now)
-    },
+    const sitemapIndex = [
       {
-      loc: `${BASE_URL}/page-sitemap.xml`,
-      lastmod: new Date(latestPageDate || now)
-    },
-    {
-      loc: `${BASE_URL}/category-sitemap.xml`,
-      lastmod: new Date(latestCategoryDate || now)
-    },
+        loc: `${BASE_URL}/post-sitemap.xml`,
+        lastmod: new Date(latestBlogDate || now)
+      },
+      {
+        loc: `${BASE_URL}/page-sitemap.xml`,
+        lastmod: new Date(latestPageDate || now)
+      },
+      {
+        loc: `${BASE_URL}/category-sitemap.xml`,
+        lastmod: new Date(latestCategoryDate || now)
+      },
       {
         loc: `${BASE_URL}/product-sitemap.xml`,
         lastmod: productsLastModified
       },
-    {
-      loc: `${BASE_URL}/attachment-sitemap.xml`,
-      lastmod: now
-    }
-  ]
+      {
+        loc: `${BASE_URL}/search-sitemap.xml`,
+        lastmod: productsLastModified
+      },
+      {
+        loc: `${BASE_URL}/attachment-sitemap.xml`,
+        lastmod: now
+      }
+    ]
 
   const indexXml = generateSitemapIndex(sitemapIndex)
   await fs.writeFile(path.join(OUTPUT_DIR, 'sitemap.xml'), indexXml, 'utf8')
 
-    console.log('[sitemap] ? Generated sitemap index with 5 sitemaps')
+    console.log('[sitemap] ? Generated sitemap index with 6 sitemaps')
   console.log(`[sitemap] ? post-sitemap.xml: ${blogPosts.length} blog posts`)
   console.log(`[sitemap] ? page-sitemap.xml: ${staticPages.length} pages`)
   console.log(`[sitemap] ? category-sitemap.xml: ${categoryPages.length} categories`)
     console.log(`[sitemap] ? product-sitemap.xml: ${products.length} products`)
+    console.log(`[sitemap] ? search-sitemap.xml: ${searchEntries.length} search queries`)
     console.log(`[sitemap] ? attachment-sitemap.xml: ${products.length + blogPosts.length} images`)
   console.log('[sitemap] ? All sitemaps generated successfully!')
 }
