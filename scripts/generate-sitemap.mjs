@@ -12,6 +12,7 @@ const BASE_URL = process.env.SITEMAP_BASE_URL || 'https://mangala-living.com'
 const BLOG_FILE = path.join(ROOT_DIR, 'src', 'data', 'blog.ts')
 const PRODUCTS_FILE = path.join(ROOT_DIR, 'src', 'data', 'products.ts')
 const CATEGORY_FILE = path.join(ROOT_DIR, 'src', 'data', 'categories.ts')
+const SEO_FILE = path.join(ROOT_DIR, 'src', 'utils', 'seo.ts')
 const OUTPUT_DIR = path.join(ROOT_DIR, 'public')
 
 const formatDate = (date) => {
@@ -76,22 +77,71 @@ const parseBlogPosts = (source) => {
   return posts
 }
 
-const parseProducts = (source) => {
+const extractObjectLiteral = (source, identifier) => {
+  const startIndex = source.indexOf(identifier)
+  if (startIndex === -1) {
+    return ''
+  }
+
+  const equalsIndex = source.indexOf('=', startIndex)
+  if (equalsIndex === -1) {
+    return ''
+  }
+
+  const braceStart = source.indexOf('{', equalsIndex)
+  if (braceStart === -1) {
+    return ''
+  }
+
+  let depth = 0
+  for (let i = braceStart; i < source.length; i++) {
+    const char = source[i]
+    if (char === '{') depth++
+    if (char === '}') {
+      depth--
+      if (depth === 0) {
+        return source.slice(braceStart + 1, i)
+      }
+    }
+  }
+
+  return ''
+}
+
+const parseProductImageMap = (source) => {
+  const map = {}
+  const objectLiteral = extractObjectLiteral(source, 'const PRODUCT_IMAGE_MAP')
+  if (!objectLiteral) {
+    return map
+  }
+
+  const regex = /'([^']+)'\s*:\s*'([^']+)'/g
+  let match
+  while ((match = regex.exec(objectLiteral))) {
+    const [, slug, filename] = match
+    map[slug] = filename
+  }
+
+  return map
+}
+
+const parseProducts = (source, imageMap) => {
   const products = []
   const regex = /{[^}]*?id:\s*(\d+)[^}]*?slug:\s*'([^']+)'[^}]*?name:\s*'([^']+)'[^}]*?image:\s*([a-zA-Z0-9_]+)[^}]*?}/g
   let match
   while ((match = regex.exec(source))) {
-    const [, id, slug, name, imageVar] = match
-    // Extract image filename from variable name
-    const imageFilename = imageVar.replace(/Image$/, '') + '.webp'
+    const [, id, slug, name] = match
+    const filename = imageMap[slug]
+    const imageUrl = filename ? `${BASE_URL}/assets/${filename}` : ''
+
     products.push({
       id: parseInt(id),
       slug,
       name: escapeXml(name),
-      image: escapeXml(`${BASE_URL}/src/assets/${imageFilename}`),
       loc: `${BASE_URL}/product/${slug}`,
       changefreq: 'monthly',
-      priority: 0.6
+      priority: 0.6,
+      image: imageUrl ? escapeXml(imageUrl) : ''
     })
   }
   return products
@@ -362,25 +412,63 @@ const generateAttachmentSitemap = (products, posts) => {
   return [header, stylesheet, openTag, ...entries, closeTag, ''].join('\n')
 }
 
+// Generate product sitemap (individual product detail pages)
+const generateProductSitemap = (products) => {
+  const header = '<?xml version="1.0" encoding="UTF-8"?>'
+  const stylesheet = '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>'
+  const openTag = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
+  const closeTag = '</urlset>'
+
+  const entries = products.map((product) => {
+    const parts = [
+      '  <url>',
+      `    <loc>${escapeXml(product.loc)}</loc>`,
+      `    <lastmod>${formatDate(product.lastmod)}</lastmod>`,
+      `    <changefreq>${product.changefreq}</changefreq>`,
+      `    <priority>${product.priority.toFixed(2)}</priority>`
+    ]
+
+    const alternates = buildLanguageAlternates(product.loc, product.alternates)
+    alternates.forEach((alternate) => {
+      if (alternate?.href && alternate?.hrefLang) {
+        parts.push(`    <xhtml:link rel="alternate" hreflang="${escapeXml(alternate.hrefLang)}" href="${escapeXml(alternate.href)}" />`)
+      }
+    })
+
+    parts.push('  </url>')
+    return parts.join('\n')
+  })
+
+  return [header, stylesheet, openTag, ...entries, closeTag, ''].join('\n')
+}
+
 const main = async () => {
   console.log('[sitemap] Starting sitemap generation...')
 
   // Read source files
-  const [blogSource, productSource, categorySource] = await Promise.all([
+    const [blogSource, productSource, categorySource, seoSource] = await Promise.all([
     readFileSafe(BLOG_FILE),
     readFileSafe(PRODUCTS_FILE),
-    readFileSafe(CATEGORY_FILE)
+      readFileSafe(CATEGORY_FILE),
+      readFileSafe(SEO_FILE)
   ])
 
+    const productImageMap = parseProductImageMap(seoSource)
+
   // Parse data
-  const [staticPages, blogPosts, products, categorySlugs] = await Promise.all([
+    const [staticPages, blogPosts, rawProducts, categorySlugs] = await Promise.all([
     buildStaticPages(),
     Promise.resolve(parseBlogPosts(blogSource)),
-    Promise.resolve(parseProducts(productSource)),
+      Promise.resolve(parseProducts(productSource, productImageMap)),
     Promise.resolve(parseCategorySlugs(categorySource))
   ])
 
-  const categoryPages = await buildCategoryPages(categorySlugs)
+    const categoryPages = await buildCategoryPages(categorySlugs)
+    const productsLastModified = await getFileLastModified('src/data/products.ts')
+    const products = rawProducts.map((product) => ({
+      ...product,
+      lastmod: productsLastModified
+    }))
 
   // Get latest dates for each sitemap
   const latestBlogDate = blogPosts.reduce((latest, entry) => {
@@ -419,7 +507,11 @@ const main = async () => {
   const categorySitemapXml = generateCategorySitemap(categoryPages.sort((a, b) => a.loc.localeCompare(b.loc)))
   await fs.writeFile(path.join(OUTPUT_DIR, 'category-sitemap.xml'), categorySitemapXml, 'utf8')
 
-  console.log('[sitemap] Generating attachment-sitemap.xml...')
+    console.log('[sitemap] Generating product-sitemap.xml...')
+    const productSitemapXml = generateProductSitemap(products)
+    await fs.writeFile(path.join(OUTPUT_DIR, 'product-sitemap.xml'), productSitemapXml, 'utf8')
+
+    console.log('[sitemap] Generating attachment-sitemap.xml...')
   const attachmentSitemapXml = generateAttachmentSitemap(products, blogPosts)
   await fs.writeFile(path.join(OUTPUT_DIR, 'attachment-sitemap.xml'), attachmentSitemapXml, 'utf8')
 
@@ -430,7 +522,7 @@ const main = async () => {
       loc: `${BASE_URL}/post-sitemap.xml`,
       lastmod: new Date(latestBlogDate || now)
     },
-    {
+      {
       loc: `${BASE_URL}/page-sitemap.xml`,
       lastmod: new Date(latestPageDate || now)
     },
@@ -438,6 +530,10 @@ const main = async () => {
       loc: `${BASE_URL}/category-sitemap.xml`,
       lastmod: new Date(latestCategoryDate || now)
     },
+      {
+        loc: `${BASE_URL}/product-sitemap.xml`,
+        lastmod: productsLastModified
+      },
     {
       loc: `${BASE_URL}/attachment-sitemap.xml`,
       lastmod: now
@@ -447,11 +543,12 @@ const main = async () => {
   const indexXml = generateSitemapIndex(sitemapIndex)
   await fs.writeFile(path.join(OUTPUT_DIR, 'sitemap.xml'), indexXml, 'utf8')
 
-  console.log('[sitemap] ? Generated sitemap index with 4 sitemaps')
+    console.log('[sitemap] ? Generated sitemap index with 5 sitemaps')
   console.log(`[sitemap] ? post-sitemap.xml: ${blogPosts.length} blog posts`)
   console.log(`[sitemap] ? page-sitemap.xml: ${staticPages.length} pages`)
   console.log(`[sitemap] ? category-sitemap.xml: ${categoryPages.length} categories`)
-  console.log(`[sitemap] ? attachment-sitemap.xml: ${products.length + blogPosts.length} images`)
+    console.log(`[sitemap] ? product-sitemap.xml: ${products.length} products`)
+    console.log(`[sitemap] ? attachment-sitemap.xml: ${products.length + blogPosts.length} images`)
   console.log('[sitemap] ? All sitemaps generated successfully!')
 }
 

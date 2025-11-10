@@ -4,18 +4,22 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://mangala-living.com/post-sitemap.xml</loc>
-    <lastmod>2025-11-07T20:27:16.427Z</lastmod>
+    <lastmod>2025-11-10T10:43:18.956Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://mangala-living.com/page-sitemap.xml</loc>
-    <lastmod>2025-11-07T20:17:35.827Z</lastmod>
+    <lastmod>2025-11-10T10:39:14.162Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://mangala-living.com/category-sitemap.xml</loc>
-    <lastmod>2025-11-07T20:17:35.823Z</lastmod>
+    <lastmod>2025-11-10T10:39:14.162Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://mangala-living.com/product-sitemap.xml</loc>
+    <lastmod>2025-11-10T10:39:14.162Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://mangala-living.com/attachment-sitemap.xml</loc>
-    <lastmod>2025-11-07T20:27:16.430Z</lastmod>
+    <lastmod>2025-11-10T10:43:18.958Z</lastmod>
   </sitemap>
 </sitemapindex>
