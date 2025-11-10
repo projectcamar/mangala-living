@@ -315,8 +315,8 @@ const Partnership: React.FC = () => {
               </a>
             </p>
             <p className="partnership-contact-email">
-              <a href="mailto:info@mangala-living.com" style={{ color: '#8B7355', textDecoration: 'underline' }}>
-                info@mangala-living.com
+              <a href="mailto:lifewithmangala@gmail.com" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                lifewithmangala@gmail.com
               </a>
             </p>
           </div>

@@ -460,7 +460,7 @@ const ProductDetailAIContent: React.FC<ProductDetailAIContentProps> = ({ product
         
         <p>
           <strong>WhatsApp/Telp:</strong> +6288801146881 <br/>
-          <strong>Email:</strong> info@mangala-living.com <br/>
+          <strong>Email:</strong> lifewithmangala@gmail.com <br/>
           <strong>{isIndonesian ? 'Alamat Workshop:' : 'Workshop Address:'}</strong> Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320 <br/>
           <strong>{isIndonesian ? 'Jam Operasional:' : 'Operating Hours:'}</strong> {isIndonesian ? 'Senin - Sabtu, 08.00 - 17.00 WIB' : 'Monday - Saturday, 08.00 - 17.00 WIB'}
         </p>

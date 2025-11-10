@@ -258,7 +258,7 @@ const Home: React.FC = () => {
               "@id": "https://mangala-living.com",
               "url": "https://mangala-living.com",
               "telephone": "+6288801146881",
-              "email": "info@mangala-living.com",
+              "email": "lifewithmangala@gmail.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Jl. Raya Setu Cibitung - Bekasi, Telajung",

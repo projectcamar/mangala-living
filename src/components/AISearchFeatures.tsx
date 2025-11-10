@@ -25,7 +25,7 @@ const AISearchFeatures: React.FC<AISearchFeaturesProps> = ({ isIndonesian }) => 
         <meta itemProp="paymentAccepted" content="Cash, Bank Transfer, Credit Card" />
         <meta itemProp="openingHours" content="Mo-Sa 08:00-17:00" />
         <meta itemProp="telephone" content="+6288801146881" />
-        <meta itemProp="email" content="info@mangala-living.com" />
+        <meta itemProp="email" content="lifewithmangala@gmail.com" />
         <meta itemProp="address" content="Jl. Raya Setu Cikarang Bar., Bekasi, Jawa Barat 17320, Indonesia" />
         <meta itemProp="latitude" content="-6.2088" />
         <meta itemProp="longitude" content="107.1602" />
@@ -161,7 +161,7 @@ const AISearchFeatures: React.FC<AISearchFeaturesProps> = ({ isIndonesian }) => 
       <div itemScope itemType="https://schema.org/ContactPoint">
         <meta itemProp="contactType" content="Customer Service" />
         <meta itemProp="telephone" content="+6288801146881" />
-        <meta itemProp="email" content="info@mangala-living.com" />
+        <meta itemProp="email" content="lifewithmangala@gmail.com" />
         <meta itemProp="availableLanguage" content="Indonesian, English" />
         <meta itemProp="areaServed" content="Indonesia, USA, Japan, Australia, Singapore, Malaysia, Thailand, Vietnam, Philippines, Jabodetabek, Jakarta" />
         <meta itemProp="hoursAvailable" content="Mo-Sa 08:00-17:00" />

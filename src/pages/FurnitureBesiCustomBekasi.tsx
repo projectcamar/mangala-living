@@ -433,10 +433,10 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
               <span>+6288801146881</span>
             </a>
 
-            <a href="mailto:info@mangalaliving.com" className="contact-card email">
+            <a href="mailto:lifewithmangala@gmail.com" className="contact-card email">
               <Mail size={32} />
               <strong>Email</strong>
-              <span>info@mangalaliving.com</span>
+              <span>lifewithmangala@gmail.com</span>
             </a>
 
             <div className="contact-card location">

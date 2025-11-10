@@ -338,8 +338,8 @@ const ShippingInformation: React.FC = () => {
               <div className="shipping-contact-details">
                 <h3 className="shipping-contact-label">Email</h3>
                 <p className="shipping-contact-value">
-                  <a href="mailto:info@mangala-living.com" style={{ color: '#8B7355', textDecoration: 'underline' }}>
-                    info@mangala-living.com
+                  <a href="mailto:lifewithmangala@gmail.com" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                    lifewithmangala@gmail.com
                   </a>
                 </p>
               </div>
