@@ -3,6 +3,7 @@ import { useLocation, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
+import CurrencyHighlight from '../components/CurrencyHighlight'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
@@ -84,6 +85,7 @@ function SearchResults() {
       </Helmet>
 
       <Header isIndonesian={isIndonesian} />
+      <CurrencyHighlight isIndonesian={isIndonesian} />
 
       <div className="container">
         <Breadcrumb items={breadcrumbItems} />
