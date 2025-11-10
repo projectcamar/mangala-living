@@ -896,7 +896,7 @@ const generateFooterHTML = (isIndonesian) => `
           <p class="footer-description">${isIndonesian ? 'Pilihan terbaik untuk furniture industrial scandinavian premium sejak 1999. Melayani coffee shop, restoran, dan bisnis di seluruh Indonesia. Pesanan custom diterima.' : 'Your best choice for premium industrial Scandinavian furniture since 1999. Serving coffee shops, restaurants, and businesses across Indonesia. Custom orders welcome.'}</p>
           <div class="footer-contact-info">
             <h4>${isIndonesian ? 'Hubungi Kami' : 'Contact Us'}</h4>
-            <p><a href="mailto:info@mangala-living.com">info@mangala-living.com</a></p>
+            <p><a href="mailto:lifewithmangala@gmail.com">lifewithmangala@gmail.com</a></p>
             <p><a href="https://wa.me/+6288801146881" target="_blank" rel="noopener noreferrer">+6288801146881</a></p>
         </div>
         </div>
@@ -1025,7 +1025,7 @@ const createFallbackContent = (post) => {
         paragraphs: [
           'Hubungi kami untuk konsultasi gratis dan mendapatkan katalog terbaru:',
           '<strong>WhatsApp:</strong> +6288801146881 (Fast Response)',
-          '<strong>Email:</strong> info@mangala-living.com',
+          '<strong>Email:</strong> lifewithmangala@gmail.com',
           '<strong>Workshop:</strong> Jl. Raya Setu Cibitung - Bekasi, Jawa Barat 17320',
           'Kami siap membantu Anda mewujudkan furniture industrial yang estetik, fungsional, dan tahan lama untuk bisnis Anda.'
         ]

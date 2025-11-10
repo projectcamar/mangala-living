@@ -241,7 +241,7 @@ const CategoryAIContent: React.FC<CategoryAIContentProps> = ({ category, product
         </h3>
         <p>
           <strong>WhatsApp/Telp:</strong> +6288801146881<br/>
-          <strong>Email:</strong> info@mangala-living.com<br/>
+          <strong>Email:</strong> lifewithmangala@gmail.com<br/>
           <strong>{isIndonesian ? 'Workshop:' : 'Workshop:'}</strong> Jl. Raya Setu Cibitung - Bekasi, Jawa Barat<br/>
           <strong>{isIndonesian ? 'Jam Operasional:' : 'Operating Hours:'}</strong> {isIndonesian ? 'Senin - Sabtu, 08.00 - 17.00 WIB' : 'Monday - Saturday, 08.00 - 17.00 WIB'}
         </p>

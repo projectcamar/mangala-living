@@ -136,8 +136,8 @@ const content = {
     whatsappResponse: 'Response time: 1-3 jam (jam kerja)',
     
     emailTitle: 'Email Resmi',
-    emailGeneral: 'info@mangala-living.com',
-    emailSales: 'sales@mangala-living.com',
+    emailGeneral: 'lifewithmangala@gmail.com',
+    emailSales: 'lifewithmangala@gmail.com',
     emailNote: 'Untuk quotation, partnership, atau inquiry',
     
     addressTitle: 'Workshop & Showroom',
@@ -268,8 +268,8 @@ const content = {
     whatsappResponse: 'Response time: 1-3 hours (working hours)',
     
     emailTitle: 'Official Email',
-    emailGeneral: 'info@mangala-living.com',
-    emailSales: 'sales@mangala-living.com',
+    emailGeneral: 'lifewithmangala@gmail.com',
+    emailSales: 'lifewithmangala@gmail.com',
     emailNote: 'For quotation, partnership, or inquiry',
     
     addressTitle: 'Workshop & Showroom',
@@ -456,9 +456,9 @@ export const generateCatalog = async () => {
       align: 'center',
       url: 'https://wa.me/+6288801146881'
     })
-    doc.textWithLink('info@mangala-living.com', pageWidth / 2, 220, { 
+    doc.textWithLink('lifewithmangala@gmail.com', pageWidth / 2, 220, { 
       align: 'center',
-      url: 'mailto:info@mangala-living.com'
+      url: 'mailto:lifewithmangala@gmail.com'
     })
     
     doc.setTextColor(...colors.textLight)
@@ -980,12 +980,12 @@ export const generateCatalog = async () => {
     doc.setTextColor(...colors.textLight)
     doc.textWithLink(t.emailGeneral, pageWidth / 2, yPos, { 
       align: 'center',
-      url: 'mailto:info@mangala-living.com'
+      url: 'mailto:lifewithmangala@gmail.com'
     })
     yPos += 7
     doc.textWithLink(t.emailSales, pageWidth / 2, yPos, { 
       align: 'center',
-      url: 'mailto:sales@mangala-living.com'
+      url: 'mailto:lifewithmangala@gmail.com'
     })
     yPos += 8
     

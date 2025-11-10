@@ -64,13 +64,13 @@ export const generateEnhancedOrganizationSchema = () => {
       "longitude": 107.1602
     },
     "telephone": "+6288801146881",
-    "email": "info@mangala-living.com",
+    "email": "lifewithmangala@gmail.com",
     "contactPoint": [
       {
         "@type": "ContactPoint",
         "telephone": "+6288801146881",
         "contactType": "customer service",
-        "email": "info@mangala-living.com",
+        "email": "lifewithmangala@gmail.com",
         "availableLanguage": ["Indonesian", "English"],
         "areaServed": ["ID"],
         "hoursAvailable": {
@@ -84,7 +84,7 @@ export const generateEnhancedOrganizationSchema = () => {
         "@type": "ContactPoint",
         "telephone": "+6288801146881",
         "contactType": "sales",
-        "email": "sales@mangala-living.com",
+        "email": "lifewithmangala@gmail.com",
         "availableLanguage": ["Indonesian", "English"],
         "areaServed": ["ID"]
       }

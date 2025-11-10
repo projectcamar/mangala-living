@@ -489,7 +489,7 @@ const ProductDetail: React.FC = () => {
             "@type": "ContactPoint",
             "telephone": "+6288801146881",
             "contactType": "customer service",
-            "email": "info@mangala-living.com",
+            "email": "lifewithmangala@gmail.com",
             "availableLanguage": ["Indonesian", "English"]
           }
         },

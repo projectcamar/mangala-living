@@ -75,8 +75,8 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
             <div className="footer-contact-info">
               <h4>{isIndonesian ? "Hubungi Kami" : "Contact Us"}</h4>
               <p>
-                <a href="mailto:info@mangala-living.com" style={{ color: 'inherit', textDecoration: 'underline' }}>
-                  info@mangala-living.com
+                <a href="mailto:lifewithmangala@gmail.com" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                  lifewithmangala@gmail.com
                 </a>
               </p>
               <p>

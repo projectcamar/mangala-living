@@ -70,7 +70,7 @@ export const generateAIContentSummary = (isIndonesian: boolean) => {
     ],
     contactInfo: {
       phone: "+6288801146881",
-      email: "info@mangala-living.com",
+      email: "lifewithmangala@gmail.com",
       whatsapp: "https://wa.me/+6288801146881"
     }
   }

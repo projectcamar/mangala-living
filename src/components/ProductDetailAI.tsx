@@ -80,8 +80,8 @@ const ProductDetailAI: React.FC<ProductDetailAIProps> = ({ product, isIndonesian
         
         <p>
           {isIndonesian 
-            ? "Untuk memesan produk ini, silakan hubungi kami melalui WhatsApp di +6288801146881 atau email info@mangala-living.com. Tim kami akan membantu Anda dengan konsultasi desain dan estimasi harga yang sesuai dengan kebutuhan Anda."
-            : "To order this product, please contact us via WhatsApp at +6288801146881 or email info@mangala-living.com. Our team will help you with design consultation and price estimation according to your needs."
+            ? "Untuk memesan produk ini, silakan hubungi kami melalui WhatsApp di +6288801146881 atau email lifewithmangala@gmail.com. Tim kami akan membantu Anda dengan konsultasi desain dan estimasi harga yang sesuai dengan kebutuhan Anda."
+            : "To order this product, please contact us via WhatsApp at +6288801146881 or email lifewithmangala@gmail.com. Our team will help you with design consultation and price estimation according to your needs."
           }
         </p>
         

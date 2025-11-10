@@ -287,7 +287,7 @@ export const generateMerchantStructuredData = () => {
         "@type": "ContactPoint",
         "telephone": "+6288801146881",
         "contactType": "customer service",
-        "email": "info@mangala-living.com",
+        "email": "lifewithmangala@gmail.com",
         "availableLanguage": ["Indonesian", "English"],
         "areaServed": "ID"
       },
@@ -295,7 +295,7 @@ export const generateMerchantStructuredData = () => {
         "@type": "ContactPoint",
         "telephone": "+6288801146881",
         "contactType": "sales",
-        "email": "sales@mangala-living.com",
+        "email": "lifewithmangala@gmail.com",
         "availableLanguage": ["Indonesian", "English"],
         "areaServed": "ID"
       }
@@ -387,7 +387,7 @@ export const generateLocalBusinessStructuredData = () => {
     "description": "Workshop Furniture Besi Custom Bekasi sejak 1999. Spesialis Industrial Furniture untuk Cafe, Restoran, Hotel, Kantor. Produksi langsung harga pabrik, material berkualitas, finishing powder coating. Melayani Jakarta, Bekasi, Jabodetabek.",
     "url": "https://mangala-living.com",
     "telephone": "+6288801146881",
-    "email": "info@mangala-living.com",
+    "email": "lifewithmangala@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Jl. Raya Setu Cikarang Bar.",
