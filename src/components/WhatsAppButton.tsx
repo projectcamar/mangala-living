@@ -5,6 +5,7 @@ import './WhatsAppButton.css'
 import { trackEvent } from '../utils/analytics'
 import MessageRenderer from './MessageRenderer'
 import { detectLanguage } from '../utils/languageManager'
+import { trackWhatsAppClick } from '../utils/whatsappTracking'
 
 interface Message {
   id: string
@@ -89,6 +90,9 @@ const WhatsAppButton: React.FC = () => {
 
   const handleWhatsAppRedirect = () => {
     trackEvent.whatsappClick('redirect_to_whatsapp')
+    trackWhatsAppClick('chatbot_continue_to_whatsapp', {
+      userInfo: userInfo.isCompleted ? { name: userInfo.name, email: userInfo.email } : null
+    })
     const whatsappMessage = isIndonesian 
       ? `Halo, saya tertarik dengan furniture Mangala Living. Bisakah saya mendapatkan informasi lebih lanjut?`
       : `Hello, I'm interested in Mangala Living furniture. Can I get more information?`

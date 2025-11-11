@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 import ServiceAreasSection from '../components/ServiceAreasSection'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
+import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import './ShippingInformation.css'
 
 const ShippingInformation: React.FC = () => {
@@ -324,7 +325,13 @@ const ShippingInformation: React.FC = () => {
               <div className="shipping-contact-details">
                 <h3 className="shipping-contact-label">{isIndonesian ? 'Telepon' : 'Phone'}</h3>
                 <p className="shipping-contact-value">
-                  <a href="https://wa.me/+6288801146881" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                  <a 
+                    href="https://wa.me/+6288801146881" 
+                    style={{ color: '#8B7355', textDecoration: 'underline' }}
+                    onClick={() => trackWhatsAppClick('shipping_info_contact')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     +6288801146881
                   </a>
                 </p>

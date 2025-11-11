@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
+import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import './Contact.css'
 
 const Contact: React.FC = () => {
@@ -72,6 +73,12 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    
+    // Track WhatsApp click from contact form
+    trackWhatsAppClick('contact_form_submit', {
+      name: formData.name,
+      subject: formData.subject
+    })
     
     // Format WhatsApp message
     const whatsappMessage = isIndonesian 
@@ -276,6 +283,9 @@ Thank you!`
               <a 
                 href="https://wa.me/+6288801146881" 
                 style={{ color: '#8B7355', textDecoration: 'underline', fontWeight: '500' }}
+                onClick={() => trackWhatsAppClick('contact_page_workshop_address')}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 +6288801146881
               </a>

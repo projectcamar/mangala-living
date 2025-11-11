@@ -14,6 +14,7 @@ import { DEFAULT_IMAGE_RIGHTS_METADATA } from '../utils/structuredData'
 import { sendBackgroundEmail } from '../utils/emailHelpers'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getCategorySlug } from '../utils/categoryHelpers'
+import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import './ProductDetail.css'
 
 interface ProductDetail {
@@ -790,6 +791,14 @@ const ProductDetail: React.FC = () => {
                     productPrice: product.price,
                     productCategory: product.categories.join(', '),
                     productUrl: window.location.href,
+                  })
+
+                  // Track WhatsApp click
+                  trackWhatsAppClick('product_order_now', {
+                    productName: translatedProductName,
+                    productSlug: product.slug,
+                    productPrice: product.price,
+                    productCategory: product.categories.join(', ')
                   })
 
                   const whatsappMessage = isIndonesian 
