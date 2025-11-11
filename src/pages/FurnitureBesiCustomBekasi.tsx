@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 import { generateLocalBusinessStructuredData, generateFAQSchema } from '../utils/structuredData'
 import { getFAQBySlug } from '../data/faq'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
+import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import './LandingPage.css'
 
 // LANDING PAGE KHUSUS: Furniture Besi Custom Bekasi
@@ -100,7 +101,8 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
             <a href="https://wa.me/+6288801146881?text=Halo%20Mangala%20Living%2C%20saya%20mau%20konsultasi%20furniture%20besi%20custom%20Bekasi" 
                className="cta-button primary" 
                target="_blank" 
-               rel="noopener noreferrer">
+               rel="noopener noreferrer"
+               onClick={() => trackWhatsAppClick('furniture_besi_custom_hero_cta')}>
               <Phone size={20} />
               Konsultasi Gratis via WhatsApp
             </a>
@@ -342,7 +344,8 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
             <a href="https://wa.me/+6288801146881?text=Halo%2C%20saya%20mau%20tanya%20harga%20detail%20furniture%20besi%20custom%20Bekasi" 
                className="cta-button primary" 
                target="_blank" 
-               rel="noopener noreferrer">
+               rel="noopener noreferrer"
+               onClick={() => trackWhatsAppClick('furniture_besi_custom_quotation')}>
               <Phone size={20} />
               Minta Quotation Lengkap
             </a>
@@ -427,7 +430,8 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
             <a href="https://wa.me/+6288801146881?text=Halo%20Mangala%20Living%2C%20saya%20dari%20website%20mau%20konsultasi%20furniture%20besi%20custom" 
                className="contact-card whatsapp"
                target="_blank"
-               rel="noopener noreferrer">
+               rel="noopener noreferrer"
+               onClick={() => trackWhatsAppClick('furniture_besi_custom_contact_card')}>
               <Phone size={32} />
               <strong>WhatsApp (Fast Response)</strong>
               <span>+6288801146881</span>
@@ -456,7 +460,8 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
             <a href="https://wa.me/+6288801146881?text=PROMO2025%20-%20Saya%20mau%20konsultasi%20furniture%20besi%20custom%20Bekasi" 
                className="cta-button primary large"
                target="_blank"
-               rel="noopener noreferrer">
+               rel="noopener noreferrer"
+               onClick={() => trackWhatsAppClick('furniture_besi_custom_promo_cta')}>
               <Phone size={24} />
               Konsultasi Gratis Sekarang - Dapatkan Promo!
             </a>

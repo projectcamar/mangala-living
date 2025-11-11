@@ -9,14 +9,15 @@ export default async function handler(
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { firstName, email, whatsapp, notificationType, productName, productSlug, productPrice, productCategory, productUrl, firstMessage, chatMessage, language } = req.body;
+  const { firstName, email, whatsapp, notificationType, productName, productSlug, productPrice, productCategory, productUrl, firstMessage, chatMessage, language, whatsappClickData } = req.body;
 
-  // For order_now notifications, firstName and email are optional (can be 'Visitor' and 'unknown@email.com')
+  // For order_now and whatsapp_click notifications, firstName and email are optional (can be 'Visitor' and 'unknown@email.com')
   // For catalog_download, chatbot_lead, and chatbot_message, they are required
   const isOrderNow = notificationType === 'order_now';
   const isCatalogDownload = notificationType === 'catalog_download';
   const isChatbotLead = notificationType === 'chatbot_lead';
   const isChatbotMessage = notificationType === 'chatbot_message';
+  const isWhatsAppClick = notificationType === 'whatsapp_click';
 
   // Validate input based on notification type
   if ((isCatalogDownload || isChatbotLead || isChatbotMessage) && (!firstName || !email)) {
@@ -325,6 +326,114 @@ export default async function handler(
         Language: ${language === 'id' ? 'Indonesian' : 'English'}
         Message: ${chatMessage}
         Sent at: ${new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' })}
+      `;
+    } else if (isWhatsAppClick) {
+      // WhatsApp Click Notification
+      const clickSource = whatsappClickData?.source || 'Unknown';
+      const clickPage = whatsappClickData?.page || 'Unknown';
+      const clickTime = whatsappClickData?.timestamp ? new Date(whatsappClickData.timestamp).toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' }) : new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' });
+      
+      subject = `WhatsApp Link Clicked: ${clickSource}`;
+      htmlContent = `
+        <!DOCTYPE html>
+        <html lang="id">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        </head>
+        <body style="margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f8f9fa; line-height: 1.6;">
+          <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f8f9fa; padding: 40px 20px;">
+            <tr>
+              <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0" style="max-width: 600px; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                  <!-- Header -->
+                  <tr>
+                    <td style="background: linear-gradient(135deg, #25D366, #128C7E); padding: 30px; text-align: center;">
+                      <h1 style="margin: 0; color: #ffffff; font-size: 24px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">Mangala Living</h1>
+                      <p style="margin: 8px 0 0; color: #ffffff; font-size: 14px; font-weight: 500;">WhatsApp Link Clicked 📱</p>
+                    </td>
+                  </tr>
+                  
+                  <!-- Content Card -->
+                  <tr>
+                    <td style="padding: 40px 30px;">
+                      <div style="background-color: #ffffff; border: 2px solid #e8e8e8; border-radius: 8px; padding: 30px;">
+                        <h2 style="margin: 0 0 25px; color: #2c2c2c; font-size: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 3px solid #25D366; padding-bottom: 12px;">Click Information</h2>
+                        
+                        <table width="100%" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td style="padding: 12px 0; border-bottom: 1px solid #f0f0f0;">
+                              <div style="display: inline-block; width: 140px; color: #666; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.3px;">Source:</div>
+                              <div style="display: inline-block; color: #2c2c2c; font-weight: 500; font-size: 15px;">${clickSource}</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 12px 0; border-bottom: 1px solid #f0f0f0;">
+                              <div style="display: inline-block; width: 140px; color: #666; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.3px;">Page URL:</div>
+                              <div style="display: inline-block;">
+                                <a href="${clickPage}" style="color: #25D366; text-decoration: none; font-weight: 600; font-size: 14px; border-bottom: 2px solid #25D366; padding-bottom: 2px; word-break: break-all;">${clickPage}</a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 12px 0; border-bottom: 1px solid #f0f0f0;">
+                              <div style="display: inline-block; width: 140px; color: #666; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.3px;">Language:</div>
+                              <div style="display: inline-block; color: #2c2c2c; font-weight: 500; font-size: 15px;">${whatsappClickData?.language || 'Unknown'}</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 12px 0;">
+                              <div style="display: inline-block; width: 140px; color: #666; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.3px;">WhatsApp Number:</div>
+                              <div style="display: inline-block;">
+                                <a href="https://wa.me/+6288801146881" style="color: #25D366; text-decoration: none; font-weight: 700; font-size: 16px; border-bottom: 2px solid #25D366; padding-bottom: 2px;">+6288801146881</a>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      
+                      <!-- Timestamp Card -->
+                      <div style="background-color: #f0f7f4; border-left: 4px solid #25D366; border-radius: 6px; padding: 20px; margin-top: 25px;">
+                        <div style="color: #666; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Clicked At</div>
+                        <div style="color: #2c2c2c; font-size: 15px; font-weight: 500;">${clickTime}</div>
+                      </div>
+                      
+                      <!-- Additional Info if available -->
+                      ${whatsappClickData?.productName ? `
+                      <div style="background-color: #fff8e1; border-left: 4px solid #FFC107; border-radius: 6px; padding: 20px; margin-top: 15px;">
+                        <div style="color: #666; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Related Product</div>
+                        <div style="color: #2c2c2c; font-size: 15px; font-weight: 500;">${whatsappClickData.productName}</div>
+                      </div>
+                      ` : ''}
+                    </td>
+                  </tr>
+                  
+                  <!-- Footer -->
+                  <tr>
+                    <td style="background-color: #f8f9fa; padding: 25px 30px; text-align: center; border-top: 1px solid #e8e8e8;">
+                      <p style="margin: 0; color: #666; font-size: 12px;">© ${new Date().getFullYear()} Mangala Living. All rights reserved.</p>
+                      <p style="margin: 8px 0 0; color: #999; font-size: 11px;">Industrial Furniture | Custom Made | Jakarta & Bekasi</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </body>
+        </html>
+      `;
+      textContent = `
+        WhatsApp Link Clicked
+        
+        Source: ${clickSource}
+        Page URL: ${clickPage}
+        Language: ${whatsappClickData?.language || 'Unknown'}
+        WhatsApp Number: +6288801146881
+        ${whatsappClickData?.productName ? `Related Product: ${whatsappClickData.productName}` : ''}
+        Clicked at: ${clickTime}
       `;
     } else {
       // Catalog download (default)

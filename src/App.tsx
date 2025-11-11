@@ -5,6 +5,7 @@ import { Suspense, lazy } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/react'
 import { enableImageProtection, addImageProtectionStyles } from './utils/imageProtection'
+import { initializeGlobalWhatsAppTracking } from './utils/globalWhatsAppTracking'
 import './App.css'
 
 // Critical components loaded immediately - NO LAZY LOADING for Home
@@ -72,6 +73,11 @@ function App() {
     const cleanup = enableImageProtection()
     
     return cleanup
+  }, [])
+
+  // Initialize global WhatsApp click tracking
+  useEffect(() => {
+    initializeGlobalWhatsAppTracking()
   }, [])
 
   // Smart batch preloading with user interaction detection

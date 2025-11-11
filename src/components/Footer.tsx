@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Instagram, Facebook } from 'lucide-react'
 import './Footer.css'
+import { trackWhatsAppClick } from '../utils/whatsappTracking'
 
 interface FooterProps {
   isIndonesian?: boolean
@@ -80,7 +81,13 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
                 </a>
               </p>
               <p>
-                <a href="https://wa.me/+6288801146881" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                <a 
+                  href="https://wa.me/+6288801146881" 
+                  style={{ color: 'inherit', textDecoration: 'underline' }}
+                  onClick={() => trackWhatsAppClick('footer_contact_info')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   +6288801146881
                 </a>
               </p>
@@ -111,7 +118,13 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false }) => {
                 </a>
               </p>
               <p className="footer-phone">
-                <a href="https://wa.me/+6288801146881" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                <a 
+                  href="https://wa.me/+6288801146881" 
+                  style={{ color: 'inherit', textDecoration: 'underline' }}
+                  onClick={() => trackWhatsAppClick('footer_workshop_address')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   +6288801146881
                 </a>
               </p>

@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
+import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import './TermsOfService.css'
 
 const TermsOfService: React.FC = () => {
@@ -417,7 +418,13 @@ const TermsOfService: React.FC = () => {
                   </p>
                 </div>
                 <p className="workshop-phone">
-                  <a href="https://wa.me/+6288801146881" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+                  <a 
+                    href="https://wa.me/+6288801146881" 
+                    style={{ color: '#8B7355', textDecoration: 'underline' }}
+                    onClick={() => trackWhatsAppClick('terms_of_service_contact')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     +6288801146881
                   </a>
                 </p>

@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import showroomImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
+import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import './Partnership.css'
 
 const Partnership: React.FC = () => {
@@ -282,6 +283,7 @@ const Partnership: React.FC = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="partnership-cta-button"
+              onClick={() => trackWhatsAppClick('partnership_page_cta')}
             >
               {isIndonesian ? 'Hubungi kami sekarang' : 'Contact us now'}
             </a>
@@ -310,7 +312,13 @@ const Partnership: React.FC = () => {
               </p>
             </div>
             <p className="partnership-contact-phone">
-              <a href="https://wa.me/+6288801146881" style={{ color: '#8B7355', textDecoration: 'underline' }}>
+              <a 
+                href="https://wa.me/+6288801146881" 
+                style={{ color: '#8B7355', textDecoration: 'underline' }}
+                onClick={() => trackWhatsAppClick('partnership_page_contact_info')}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 +6288801146881
               </a>
             </p>

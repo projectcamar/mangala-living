@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import showroomImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
+import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import './CustomOrder.css'
 
 const CustomOrder: React.FC = () => {
@@ -269,6 +270,7 @@ const CustomOrder: React.FC = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="custom-order-btn"
+              onClick={() => trackWhatsAppClick('custom_order_page_cta')}
             >
               {isIndonesian ? 'Hubungi Kami' : 'Contact Us'}
             </a>
