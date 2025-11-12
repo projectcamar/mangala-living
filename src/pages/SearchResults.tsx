@@ -256,10 +256,8 @@ function SearchResults() {
         <div className="search-results-header">
           <div className="search-results-heading">
             <h1 className="search-results-title">{headingText}</h1>
-            <p className="search-results-subtitle dual-lang-text">
-              <span className="lang-id">{translations.bilingualSubtitleID}</span>
-              <span className="lang-divider">|</span>
-              <span className="lang-en">{translations.bilingualSubtitleEN}</span>
+            <p className="search-results-subtitle">
+              {isIndonesian ? translations.bilingualSubtitleID : translations.bilingualSubtitleEN}
             </p>
             {isDetectingLanguage && (
               <span className="search-language-indicator">{translations.languageAdjusting}</span>
