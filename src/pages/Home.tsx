@@ -373,7 +373,7 @@ const Home: React.FC = () => {
           {JSON.stringify(generateWebSiteStructuredData())}
         </script>
       </Helmet>
-      <AnnouncementBar isIndonesian={isIndonesian} language={language} />
+      <AnnouncementBar isIndonesian={isIndonesian} />
       <Header isIndonesian={isIndonesian} language={language} />
       <Hero isIndonesian={isIndonesian} language={language} />
       

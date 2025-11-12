@@ -212,20 +212,20 @@ const CategoriesSection: React.FC<CategoriesSectionProps> = ({ isIndonesian = fa
               key={category.id} 
               to={category.link} 
               className="category-card"
-              onClick={() => trackEvent.categoryClick(category.name)}
+              onClick={() => trackEvent.categoryClick(t[category.nameKey as keyof typeof t] as string)}
             >
               <div className="category-image-wrapper">
                 <img 
                   src={category.image} 
-                  alt={`${category.name} Industrial Furniture Collection - Mangala Living Bekasi`}
-                  title={`${category.name} Industrial Furniture - Premium Quality from Mangala Living`}
+                  alt={`${t[category.nameKey as keyof typeof t]} Industrial Furniture Collection - Mangala Living Bekasi`}
+                  title={`${t[category.nameKey as keyof typeof t]} Industrial Furniture - Premium Quality from Mangala Living`}
                   className="category-image"
                   loading="lazy"
                   width="300"
                   height="200"
                   itemProp="image"
                   data-image-type="category"
-                  data-category={category.name.toLowerCase().replace(/\s+/g, '-')}
+                  data-category={(t[category.nameKey as keyof typeof t] as string).toLowerCase().replace(/\s+/g, '-')}
                 />
               </div>
               <h3 className="category-name">{t[category.nameKey as keyof typeof t]}</h3>
