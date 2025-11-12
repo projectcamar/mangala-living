@@ -5,7 +5,7 @@ import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-
 
 interface HeroProps {
   isIndonesian?: boolean
-  language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es'
+  language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr'
 }
 
 const Hero: React.FC<HeroProps> = ({ isIndonesian = false, language = 'en' }) => {
@@ -19,9 +19,11 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false, language = 'en' }) =>
     ? "1999年以来、ブカシ工房からカフェ、ホテル、レストラン向けに高品質な屋外バーセット、ラウンジセット、ソファベンチ、収納ラック、インダストリアル家具を提供しています"
     : language === 'es'
     ? "Desde 1999, entregamos sets de bar exterior premium, sets de sala, sofás banco, estanterías de almacenamiento y muebles industriales para cafés, hoteles y restaurantes desde nuestro taller en Bekasi"
+    : language === 'fr'
+    ? "Depuis 1999, nous livrons des sets de bar extérieur premium, sets de salon, bancs canapés, étagères de rangement et meubles industriels pour cafés, hôtels et restaurants depuis notre atelier à Bekasi"
     : "Since 1999, we deliver premium bar set outdoor, lounge set, sofa bench, storage rack and industrial furniture for cafes, hotels and restaurants from our Bekasi workshop"
   
-  const buttonText = language === 'id' ? "BELANJA SEKARANG" : language === 'ar' ? "تسوق الآن" : language === 'zh' ? "立即购买" : language === 'ja' ? "今すぐ購入" : language === 'es' ? "COMPRAR AHORA" : "SHOP NOW"
+  const buttonText = language === 'id' ? "BELANJA SEKARANG" : language === 'ar' ? "تسوق الآن" : language === 'zh' ? "立即购买" : language === 'ja' ? "今すぐ購入" : language === 'es' ? "COMPRAR AHORA" : language === 'fr' ? "ACHETER MAINTENANT" : "SHOP NOW"
 
   return (
     <section className="hero" role="banner" aria-labelledby="hero-title">

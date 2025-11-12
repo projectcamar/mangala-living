@@ -10,7 +10,7 @@ import { storeLanguage } from '../utils/languageManager'
 
 interface HeaderProps {
   isIndonesian?: boolean
-  language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es'
+  language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr'
 }
 
 const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     }
   }
 
-  const handleLanguageChange = (lang: 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es') => {
+  const handleLanguageChange = (lang: 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr') => {
     setIsLanguageOpen(false)
     const currentPath = location.pathname
     
@@ -62,22 +62,22 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     // Remove existing language prefix if any
     let cleanPath = currentPath
     
-    // Handle /id/, /eng/, /ar/, /zh/, /ja/, /es/ (with trailing slash)
-    if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/') || currentPath.startsWith('/ar/') || currentPath.startsWith('/zh/') || currentPath.startsWith('/ja/') || currentPath.startsWith('/es/')) {
+    // Handle /id/, /eng/, /ar/, /zh/, /ja/, /es/, /fr/ (with trailing slash)
+    if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/') || currentPath.startsWith('/ar/') || currentPath.startsWith('/zh/') || currentPath.startsWith('/ja/') || currentPath.startsWith('/es/') || currentPath.startsWith('/fr/')) {
       cleanPath = currentPath.substring(4) // Remove language prefix
     } 
-    // Handle /id, /eng, /ar, /zh, /ja, /es (without trailing slash)
-    else if (currentPath === '/id' || currentPath === '/eng' || currentPath === '/ar' || currentPath === '/zh' || currentPath === '/ja' || currentPath === '/es') {
+    // Handle /id, /eng, /ar, /zh, /ja, /es, /fr (without trailing slash)
+    else if (currentPath === '/id' || currentPath === '/eng' || currentPath === '/ar' || currentPath === '/zh' || currentPath === '/ja' || currentPath === '/es' || currentPath === '/fr') {
       cleanPath = '/' // Go to home
     }
     // Handle language prefix followed by more path
-    else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng') || currentPath.startsWith('/ar') || currentPath.startsWith('/zh') || currentPath.startsWith('/ja') || currentPath.startsWith('/es')) {
+    else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng') || currentPath.startsWith('/ar') || currentPath.startsWith('/zh') || currentPath.startsWith('/ja') || currentPath.startsWith('/es') || currentPath.startsWith('/fr')) {
       cleanPath = currentPath.substring(3) // Remove language prefix
     }
     
     // If cleanPath is empty or just '/', go to home with language prefix for SEO
     if (!cleanPath || cleanPath === '/') {
-      const newPath = lang === 'id' ? '/id' : (lang === 'ar' ? '/ar' : (lang === 'zh' ? '/zh' : (lang === 'ja' ? '/ja' : (lang === 'es' ? '/es' : '/eng'))))
+      const newPath = lang === 'id' ? '/id' : (lang === 'ar' ? '/ar' : (lang === 'zh' ? '/zh' : (lang === 'ja' ? '/ja' : (lang === 'es' ? '/es' : (lang === 'fr' ? '/fr' : '/eng')))))
       navigate(newPath)
       return
     }
@@ -97,9 +97,10 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     if (path.startsWith('/zh')) return 'zh'
     if (path.startsWith('/ja')) return 'ja'
     if (path.startsWith('/es')) return 'es'
+    if (path.startsWith('/fr')) return 'fr'
     const params = new URLSearchParams(location.search)
     const qLang = params.get('lang')
-    if (qLang === 'id' || qLang === 'en' || qLang === 'ar' || qLang === 'zh' || qLang === 'ja' || qLang === 'es') return qLang
+    if (qLang === 'id' || qLang === 'en' || qLang === 'ar' || qLang === 'zh' || qLang === 'ja' || qLang === 'es' || qLang === 'fr') return qLang
     return null
   }
 
@@ -116,6 +117,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     if (urlLang === 'zh') return 'flag-zh'
     if (urlLang === 'ja') return 'flag-ja'
     if (urlLang === 'es') return 'flag-es'
+    if (urlLang === 'fr') return 'flag-fr'
     return 'flag-us'
   }
 
@@ -326,6 +328,21 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                     >
                       <span className="flag flag-es"></span>
                       <span>Español</span>
+                    </button>
+                    <button 
+                      className="language-option"
+                      role="menuitem"
+                      tabIndex={0}
+                      onClick={() => handleLanguageChange('fr')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault()
+                          handleLanguageChange('fr')
+                        }
+                      }}
+                    >
+                      <span className="flag flag-fr"></span>
+                      <span>Français</span>
                     </button>
                   </div>
                 )}
