@@ -1,4 +1,22 @@
+import { type LanguageCode } from './languageManager'
+
 const BASE_URL = 'https://mangala-living.com'
+
+const LANGUAGE_METADATA: Record<
+  LanguageCode,
+  { lang: string; locale: string; direction: 'ltr' | 'rtl'; hrefLang: string }
+> = {
+  id: { lang: 'id', locale: 'id_ID', direction: 'ltr', hrefLang: 'id-ID' },
+  en: { lang: 'en', locale: 'en_US', direction: 'ltr', hrefLang: 'en' },
+  ar: { lang: 'ar', locale: 'ar_SA', direction: 'rtl', hrefLang: 'ar' },
+  zh: { lang: 'zh', locale: 'zh_CN', direction: 'ltr', hrefLang: 'zh-CN' },
+  ja: { lang: 'ja', locale: 'ja_JP', direction: 'ltr', hrefLang: 'ja-JP' },
+  es: { lang: 'es', locale: 'es_ES', direction: 'ltr', hrefLang: 'es-ES' },
+  fr: { lang: 'fr', locale: 'fr_FR', direction: 'ltr', hrefLang: 'fr-FR' },
+  ko: { lang: 'ko', locale: 'ko_KR', direction: 'ltr', hrefLang: 'ko-KR' }
+}
+
+const SUPPORTED_LANGUAGES = Object.keys(LANGUAGE_METADATA) as LanguageCode[]
 
 const normalizePath = (path: string): string => {
   if (!path) return '/'
@@ -33,7 +51,7 @@ export const generateLocalizedUrls = (pathname: string, search: string = '') => 
   defaultParams.delete('lang')
   const xDefault = buildUrlFromParams(pathname, defaultParams)
 
-  const buildLangUrl = (lang: 'id' | 'en') => {
+  const buildLangUrl = (lang: LanguageCode) => {
     const params = new URLSearchParams(defaultParams)
     params.set('lang', lang)
     return buildUrlFromParams(pathname, params)
@@ -42,8 +60,10 @@ export const generateLocalizedUrls = (pathname: string, search: string = '') => 
   return {
     canonical,
     alternates: [
-      { hrefLang: 'id-ID', href: buildLangUrl('id') },
-      { hrefLang: 'en', href: buildLangUrl('en') },
+      ...SUPPORTED_LANGUAGES.map((code) => ({
+        hrefLang: LANGUAGE_METADATA[code].hrefLang,
+        href: buildLangUrl(code)
+      })),
       { hrefLang: 'x-default', href: xDefault }
     ]
   }
@@ -53,24 +73,35 @@ export const generateHreflangTags = (path: string, search: string = '') => {
   const defaultParams = new URLSearchParams(search)
   defaultParams.delete('lang')
 
-  const buildLangUrl = (lang: 'id' | 'en') => {
+  const buildLangUrl = (lang: LanguageCode) => {
     const params = new URLSearchParams(defaultParams)
     params.set('lang', lang)
     return buildUrlFromParams(path, params)
   }
 
-  return {
-    id: buildLangUrl('id'),
-    en: buildLangUrl('en'),
-    default: buildUrlFromParams(path, defaultParams)
-  }
+  const entries = SUPPORTED_LANGUAGES.reduce<Record<string, string>>((acc, code) => {
+    acc[LANGUAGE_METADATA[code].hrefLang] = buildLangUrl(code)
+    return acc
+  }, {})
+
+  entries.default = buildUrlFromParams(path, defaultParams)
+  return entries
 }
 
-export const generateLanguageSpecificMeta = (isIndonesian: boolean) => {
+export const generateLanguageSpecificMeta = (
+  languageOrIndonesian: boolean | LanguageCode
+) => {
+  const language: LanguageCode =
+    typeof languageOrIndonesian === 'boolean'
+      ? (languageOrIndonesian ? 'id' : 'en')
+      : languageOrIndonesian
+
+  const metadata = LANGUAGE_METADATA[language] ?? LANGUAGE_METADATA.en
+
   return {
-    locale: isIndonesian ? 'id_ID' : 'en_US',
-    lang: isIndonesian ? 'id' : 'en',
-    direction: 'ltr' // Both Indonesian and English are LTR
+    locale: metadata.locale,
+    lang: metadata.lang,
+    direction: metadata.direction
   }
 }
 
