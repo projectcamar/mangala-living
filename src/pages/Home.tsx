@@ -89,7 +89,6 @@ const Home: React.FC = () => {
           'MA', 'DZ', 'TN', 'LY', 'SD', 'PS'  // North Africa
         ]
         
-        // Only update if different from current (prevents unnecessary re-renders)
         let detectedLang: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' = 'en'
         
         if (countryCode === 'ID') {
@@ -108,7 +107,7 @@ const Home: React.FC = () => {
           detectedLang = 'ar'
         }
         
-        setLanguage(prevLang => detectedLang !== prevLang ? detectedLang : prevLang)
+        setLanguage(detectedLang)
       } catch (error) {
         // Silently fail - we already have a default language set
         console.log('IP detection skipped or failed, using browser/default language')
