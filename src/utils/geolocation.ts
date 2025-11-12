@@ -100,11 +100,20 @@ export const detectVisitorLocation = async (): Promise<GeolocationData> => {
 
 /**
  * Set language preference based on detected location
- * Indonesian visitors get 'id', Arabic-speaking countries get 'ar', others get 'en'
+ * Indonesian visitors get 'id', Arabic-speaking countries get 'ar', Chinese-speaking get 'zh', others get 'en'
  */
-export const setLanguagePreferenceByLocation = async (): Promise<'id' | 'en' | 'ar'> => {
+export const setLanguagePreferenceByLocation = async (): Promise<'id' | 'en' | 'ar' | 'zh'> => {
   try {
     const locationData = await detectVisitorLocation()
+    
+    // Chinese-speaking countries/regions
+    const chineseCountries = [
+      'CN', // China
+      'TW', // Taiwan
+      'HK', // Hong Kong
+      'SG', // Singapore
+      'MO'  // Macau
+    ]
     
     // Arabic-speaking countries
     const arabicCountries = [
@@ -114,10 +123,12 @@ export const setLanguagePreferenceByLocation = async (): Promise<'id' | 'en' | '
     ]
     
     // Set language preference based on location
-    let langPreference: 'id' | 'en' | 'ar' = 'en'
+    let langPreference: 'id' | 'en' | 'ar' | 'zh' = 'en'
     
     if (locationData.isIndonesia) {
       langPreference = 'id'
+    } else if (chineseCountries.includes(locationData.countryCode)) {
+      langPreference = 'zh'
     } else if (arabicCountries.includes(locationData.countryCode)) {
       langPreference = 'ar'
     }

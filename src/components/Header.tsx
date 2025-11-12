@@ -10,7 +10,7 @@ import { storeLanguage } from '../utils/languageManager'
 
 interface HeaderProps {
   isIndonesian?: boolean
-  language?: 'en' | 'id' | 'ar'
+  language?: 'en' | 'id' | 'ar' | 'zh'
 }
 
 const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     }
   }
 
-  const handleLanguageChange = (lang: 'id' | 'en' | 'ar') => {
+  const handleLanguageChange = (lang: 'id' | 'en' | 'ar' | 'zh') => {
     setIsLanguageOpen(false)
     const currentPath = location.pathname
     
@@ -62,22 +62,22 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     // Remove existing language prefix if any
     let cleanPath = currentPath
     
-    // Handle /id/, /eng/, /ar/ (with trailing slash)
-    if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/') || currentPath.startsWith('/ar/')) {
-      cleanPath = currentPath.substring(4) // Remove /id/ or /eng/ or /ar/
+    // Handle /id/, /eng/, /ar/, /zh/ (with trailing slash)
+    if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/') || currentPath.startsWith('/ar/') || currentPath.startsWith('/zh/')) {
+      cleanPath = currentPath.substring(4) // Remove language prefix
     } 
-    // Handle /id, /eng, /ar (without trailing slash)
-    else if (currentPath === '/id' || currentPath === '/eng' || currentPath === '/ar') {
+    // Handle /id, /eng, /ar, /zh (without trailing slash)
+    else if (currentPath === '/id' || currentPath === '/eng' || currentPath === '/ar' || currentPath === '/zh') {
       cleanPath = '/' // Go to home
     }
-    // Handle /id or /eng or /ar followed by more path
-    else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng') || currentPath.startsWith('/ar')) {
-      cleanPath = currentPath.substring(3) // Remove /id or /eng or /ar
+    // Handle language prefix followed by more path
+    else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng') || currentPath.startsWith('/ar') || currentPath.startsWith('/zh')) {
+      cleanPath = currentPath.substring(3) // Remove language prefix
     }
     
     // If cleanPath is empty or just '/', go to home with language prefix for SEO
     if (!cleanPath || cleanPath === '/') {
-      const newPath = lang === 'id' ? '/id' : (lang === 'ar' ? '/ar' : '/eng')
+      const newPath = lang === 'id' ? '/id' : (lang === 'ar' ? '/ar' : (lang === 'zh' ? '/zh' : '/eng'))
       navigate(newPath)
       return
     }
@@ -94,9 +94,10 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     if (path.startsWith('/id')) return 'id'
     if (path.startsWith('/eng')) return 'en'
     if (path.startsWith('/ar')) return 'ar'
+    if (path.startsWith('/zh')) return 'zh'
     const params = new URLSearchParams(location.search)
     const qLang = params.get('lang')
-    if (qLang === 'id' || qLang === 'en' || qLang === 'ar') return qLang
+    if (qLang === 'id' || qLang === 'en' || qLang === 'ar' || qLang === 'zh') return qLang
     return null
   }
 
@@ -110,6 +111,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     const urlLang = getCurrentLanguageFromUrl()
     if (urlLang === 'id') return 'flag-id'
     if (urlLang === 'ar') return 'flag-ar'
+    if (urlLang === 'zh') return 'flag-zh'
     return 'flag-us'
   }
 
@@ -275,6 +277,21 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                     >
                       <span className="flag flag-ar"></span>
                       <span>العربية</span>
+                    </button>
+                    <button 
+                      className="language-option"
+                      role="menuitem"
+                      tabIndex={0}
+                      onClick={() => handleLanguageChange('zh')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault()
+                          handleLanguageChange('zh')
+                        }
+                      }}
+                    >
+                      <span className="flag flag-zh"></span>
+                      <span>中文</span>
                     </button>
                   </div>
                 )}

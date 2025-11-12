@@ -21,7 +21,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
 
 const Home: React.FC = () => {
-  const [language, setLanguage] = useState<'en' | 'id' | 'ar'>('en')
+  const [language, setLanguage] = useState<'en' | 'id' | 'ar' | 'zh'>('en')
   const [isLoading, setIsLoading] = useState(true)
   const location = useLocation()
 
@@ -43,6 +43,11 @@ const Home: React.FC = () => {
       setIsLoading(false)
       return
     }
+    if (path.startsWith('/zh')) {
+      setLanguage('zh')
+      setIsLoading(false)
+      return
+    }
 
     // If no language prefix, detect from IP
     const detectLocation = async () => {
@@ -51,6 +56,9 @@ const Home: React.FC = () => {
         const response = await fetch('https://ipapi.co/json/')
         const data = await response.json()
         const countryCode = data.country_code
+        
+        // Chinese-speaking countries/regions
+        const chineseCountries = ['CN', 'TW', 'HK', 'SG', 'MO']
         
         // Arabic-speaking countries
         const arabicCountries = [
@@ -61,6 +69,8 @@ const Home: React.FC = () => {
         
         if (countryCode === 'ID') {
           setLanguage('id')
+        } else if (chineseCountries.includes(countryCode)) {
+          setLanguage('zh')
         } else if (arabicCountries.includes(countryCode)) {
           setLanguage('ar')
         } else {
@@ -72,6 +82,8 @@ const Home: React.FC = () => {
         const browserLang = navigator.language || navigator.languages?.[0]
         if (browserLang?.startsWith('id')) {
           setLanguage('id')
+        } else if (browserLang?.startsWith('zh')) {
+          setLanguage('zh')
         } else if (browserLang?.startsWith('ar')) {
           setLanguage('ar')
         } else {
@@ -87,10 +99,11 @@ const Home: React.FC = () => {
 
   const isIndonesian = language === 'id'
   const isArabic = language === 'ar'
+  const isChinese = language === 'zh'
   
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
-  // For /id, /eng, and /ar routes, canonical should point to /
-  const canonicalPath = (location.pathname === '/id' || location.pathname === '/eng' || location.pathname === '/ar') ? '/' : location.pathname
+  // For /id, /eng, /ar, and /zh routes, canonical should point to /
+  const canonicalPath = (location.pathname === '/id' || location.pathname === '/eng' || location.pathname === '/ar' || location.pathname === '/zh') ? '/' : location.pathname
   const localizedUrls = generateLocalizedUrls(canonicalPath, location.search)
 
   // Multi-language translations
@@ -99,23 +112,31 @@ const Home: React.FC = () => {
       ? "Furniture Industrial Besi Bar Set Lounge Set Storage New Arrivals | Mangala Living"
       : language === 'ar'
       ? "أثاث صناعي من الحديد - طقم بار وطقم صالة ورفوف تخزين | مانجالا ليفينج"
+      : language === 'zh'
+      ? "工业家具吧台套装休息区套装储物架新品 | 曼加拉生活"
       : "Industrial Furniture Bar Set Lounge Set Storage New Arrivals | Mangala Living",
     description: language === 'id'
       ? "Sejak 1999, Mangala Living menghadirkan furniture industrial terbaik: bar set outdoor, lounge set sofa bench, storage rak display, new arrivals untuk cafe hotel restoran. Workshop Bekasi 25+ tahun pengalaman"
       : language === 'ar'
       ? "منذ عام 1999، تقدم مانجالا ليفينج أفضل الأثاث الصناعي: طقم بار خارجي، طقم صالة، أريكة، رفوف تخزين ومستجدات للمقاهي والفنادق والمطاعم. ورشة بيكاسي 25+ سنة خبرة"
+      : language === 'zh'
+      ? "自1999年以来，曼加拉生活提供优质工业家具：户外吧台套装、休息区套装、沙发长椅、储物架和新品，适用于咖啡馆、酒店和餐厅。勿加泗工作坊25年以上经验"
       : "Since 1999, Mangala Living delivers premium industrial furniture: bar set outdoor, lounge set sofa bench, storage display rack, new arrivals for cafes hotels restaurants. Bekasi workshop 25+ years experience",
     ogTitle: language === 'id'
       ? "Furniture Industrial Besi Custom Bekasi | Cafe & Restoran"
       : language === 'ar'
       ? "أثاث صناعي من الحديد مخصص بيكاسي | للمقاهي والمطاعم"
+      : language === 'zh'
+      ? "勿加泗定制工业铁艺家具 | 咖啡馆和餐厅"
       : "Industrial Furniture Besi Custom Bekasi | Cafe & Restoran",
     ogDescription: language === 'id'
       ? "Manufacturer furniture industrial: bar set outdoor, lounge set, sofa bench, storage rack, new arrivals untuk cafe restoran hotel. Workshop Bekasi 25+ tahun. Harga pabrik."
       : language === 'ar'
       ? "مصنع الأثاث الصناعي: طقم بار خارجي، طقم صالة، أريكة، رفوف تخزين للمقاهي والمطاعم والفنادق. ورشة بيكاسي 25+ عام. أسعار المصنع."
+      : language === 'zh'
+      ? "工业家具制造商：户外吧台套装、休息区套装、沙发长椅、储物架，适用于咖啡馆、餐厅、酒店。勿加泗工作坊25年以上。工厂价格。"
       : "Manufacturer industrial furniture: bar set outdoor, lounge set, sofa bench, storage rack, new arrivals for cafes restaurants hotels. Bekasi workshop 25+ years. Factory prices.",
-    loading: language === 'id' ? "Memuat..." : language === 'ar' ? "جاري التحميل..." : "Loading..."
+    loading: language === 'id' ? "Memuat..." : language === 'ar' ? "جاري التحميل..." : language === 'zh' ? "加载中..." : "Loading..."
   }
 
   if (isLoading) {
@@ -150,7 +171,7 @@ const Home: React.FC = () => {
   return (
     <div className="home">
       <CatalogModal />
-      <Helmet htmlAttributes={{ lang: language === 'ar' ? 'ar' : localeMeta.lang, dir: language === 'ar' ? 'rtl' : localeMeta.direction, 'data-language': language }}>
+      <Helmet htmlAttributes={{ lang: language === 'ar' ? 'ar' : (language === 'zh' ? 'zh' : localeMeta.lang), dir: language === 'ar' ? 'rtl' : 'ltr', 'data-language': language }}>
         <title>{translations.title}</title>
         <meta name="description" content={translations.description} />
         <meta name="keywords" content="bar set outdoor, lounge set, sofa bench, storage rack, new arrivals, furniture industrial set, display rack, bar furniture, outdoor furniture set, lounge furniture, mangala living, furniture bekasi, industrial furniture, meja kursi cafe" />
