@@ -15,7 +15,7 @@ import { sendBackgroundEmail } from '../utils/emailHelpers'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getCategorySlug } from '../utils/categoryHelpers'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
-import { getLanguageFromLocation } from '../utils/languageManager'
+import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
 import './ProductDetail.css'
 
 interface ProductDetail {
@@ -204,6 +204,462 @@ const generateProductDetails = (categories: string[]) => {
   return details.join(', ')
 }
 
+const DETAIL_FEATURE_TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
+  'Industrial Steel Frame': {
+    id: 'Rangka Baja Industrial',
+    en: 'Industrial Steel Frame',
+    ar: 'هيكل فولاذي صناعي',
+    zh: '工业钢结构框架',
+    ja: '工業用スチールフレーム',
+    es: 'Estructura de acero industrial',
+    fr: 'Cadre en acier industriel',
+    ko: '산업용 강철 프레임'
+  },
+  'Powder Coated Finish': {
+    id: 'Finishing Powder Coating',
+    en: 'Powder Coated Finish',
+    ar: 'تشطيب بطلاء بودرة',
+    zh: '粉末喷涂表面',
+    ja: '粉体塗装仕上げ',
+    es: 'Acabado con pintura en polvo',
+    fr: 'Finition thermolaquée',
+    ko: '분체 도장 마감'
+  },
+  'Solid Wood/Metal Top': {
+    id: 'Top Kayu Solid/Metal',
+    en: 'Solid Wood/Metal Top',
+    ar: 'سطح من الخشب الصلب / المعدن',
+    zh: '实木/金属台面',
+    ja: '無垢材／金属天板',
+    es: 'Cubierta de madera maciza/metal',
+    fr: 'Plateau en bois massif/métal',
+    ko: '원목/금속 상판'
+  },
+  'Welded Steel Construction': {
+    id: 'Konstruksi Baja Las',
+    en: 'Welded Steel Construction',
+    ar: 'هيكل فولاذي ملحوم',
+    zh: '焊接钢结构',
+    ja: '溶接スチール構造',
+    es: 'Construcción de acero soldado',
+    fr: 'Structure en acier soudé',
+    ko: '용접 강철 구조'
+  },
+  'Ergonomic Design': {
+    id: 'Desain Ergonomis',
+    en: 'Ergonomic Design',
+    ar: 'تصميم مريح',
+    zh: '人体工学设计',
+    ja: '人間工学デザイン',
+    es: 'Diseño ergonómico',
+    fr: 'Design ergonomique',
+    ko: '인체공학적 디자인'
+  },
+  'Weather Resistant Finish': {
+    id: 'Finishing Tahan Cuaca',
+    en: 'Weather Resistant Finish',
+    ar: 'تشطيب مقاوم للعوامل الجوية',
+    zh: '耐候性表面处理',
+    ja: '耐候仕上げ',
+    es: 'Acabado resistente a la intemperie',
+    fr: 'Finition résistante aux intempéries',
+    ko: '기후에 강한 마감'
+  },
+  'High-Grade Steel Pipe': {
+    id: 'Pipa Baja Kualitas Tinggi',
+    en: 'High-Grade Steel Pipe',
+    ar: 'أنبوب فولاذي عالي الجودة',
+    zh: '高等级钢管',
+    ja: '高品質スチールパイプ',
+    es: 'Tubo de acero de alta calidad',
+    fr: 'Tube en acier de haute qualité',
+    ko: '고급 강철 파이프'
+  },
+  'Footrest Support': {
+    id: 'Penopang Sandaran Kaki',
+    en: 'Footrest Support',
+    ar: 'مسند القدم',
+    zh: '脚踏支撑',
+    ja: 'フットレストサポート',
+    es: 'Apoyo para los pies',
+    fr: 'Support repose-pieds',
+    ko: '발걸이 지지대'
+  },
+  'Commercial Grade': {
+    id: 'Kualitas Komersial',
+    en: 'Commercial Grade',
+    ar: 'جودة تجارية',
+    zh: '商用级',
+    ja: 'コマーシャルグレード',
+    es: 'Grado comercial',
+    fr: 'Qualité commerciale',
+    ko: '상업용 등급'
+  },
+  'Heavy Duty Construction': {
+    id: 'Konstruksi Heavy Duty',
+    en: 'Heavy Duty Construction',
+    ar: 'هيكل قوي التحمل',
+    zh: '重型结构',
+    ja: 'ヘビーデューティ構造',
+    es: 'Construcción de alta resistencia',
+    fr: 'Construction robuste',
+    ko: '헤비 듀티 구조'
+  },
+  'Multiple Shelves/Compartments': {
+    id: 'Beberapa Rak/Kompartemen',
+    en: 'Multiple Shelves/Compartments',
+    ar: 'عدة رفوف / حجرات',
+    zh: '多层架/分隔',
+    ja: '複数の棚／仕切り',
+    es: 'Múltiples estantes/compartimentos',
+    fr: 'Plusieurs étagères/compartiments',
+    ko: '여러 개의 선반/구획'
+  },
+  'Easy Assembly': {
+    id: 'Mudah Dipasang',
+    en: 'Easy Assembly',
+    ar: 'سهل التركيب',
+    zh: '易于安装',
+    ja: '組み立て簡単',
+    es: 'Fácil de ensamblar',
+    fr: 'Assemblage facile',
+    ko: '간편한 조립'
+  },
+  'Premium Steel Construction': {
+    id: 'Konstruksi Baja Premium',
+    en: 'Premium Steel Construction',
+    ar: 'هيكل فولاذي فاخر',
+    zh: '高级钢结构',
+    ja: 'プレミアムスチール構造',
+    es: 'Construcción de acero premium',
+    fr: 'Structure en acier premium',
+    ko: '프리미엄 강철 구조'
+  },
+  'Powder Coated Black Finish': {
+    id: 'Finishing Powder Coating Hitam',
+    en: 'Powder Coated Black Finish',
+    ar: 'تشطيب أسود بطلاء بودرة',
+    zh: '黑色粉末喷涂表面',
+    ja: 'ブラック粉体塗装仕上げ',
+    es: 'Acabado negro con pintura en polvo',
+    fr: 'Finition noire thermolaquée',
+    ko: '블랙 분체 도장 마감'
+  },
+  'Industrial Design': {
+    id: 'Desain Industrial',
+    en: 'Industrial Design',
+    ar: 'تصميم صناعي',
+    zh: '工业设计',
+    ja: 'インダストリアルデザイン',
+    es: 'Diseño industrial',
+    fr: 'Design industriel',
+    ko: '인더스트리얼 디자인'
+  },
+  'Built to Last': {
+    id: 'Dibuat untuk Tahan Lama',
+    en: 'Built to Last',
+    ar: 'مصمم ليدوم طويلاً',
+    zh: '经久耐用',
+    ja: '長く使えるよう設計',
+    es: 'Construido para durar',
+    fr: 'Conçu pour durer',
+    ko: '오래도록 사용 가능'
+  }
+}
+
+const UI_TRANSLATIONS: Record<
+  LanguageCode,
+  {
+    priceNote: string
+    orderNow: string
+    productDetails: string
+    about: string
+    youMightBeInterested: string
+    clickToConvertUsd: string
+    clickToConvertIdr: string
+    loading: string
+    productNotFound: string
+    browseAllProducts: string
+    home: string
+    priceLabel: string
+    priceLabelUsd: string
+    priceLabelIdr: string
+  }
+> = {
+  id: {
+    priceNote: '*Harga dapat bervariasi berdasarkan kustomisasi',
+    orderNow: 'PESAN SEKARANG',
+    productDetails: 'Detail Produk',
+    about: 'Tentang',
+    youMightBeInterested: 'Anda Mungkin Tertarik',
+    clickToConvertUsd: 'Klik untuk konversi ke USD',
+    clickToConvertIdr: 'Klik untuk kembali ke IDR',
+    loading: 'Memuat...',
+    productNotFound: 'Produk tidak ditemukan',
+    browseAllProducts: 'Lihat semua produk',
+    home: 'Beranda',
+    priceLabel: 'Harga',
+    priceLabelUsd: 'Harga USD',
+    priceLabelIdr: 'Harga IDR'
+  },
+  en: {
+    priceNote: '*Price may vary based on customization',
+    orderNow: 'ORDER NOW',
+    productDetails: 'Product Details',
+    about: 'About',
+    youMightBeInterested: 'You Might be Interested',
+    clickToConvertUsd: 'Click to convert to USD',
+    clickToConvertIdr: 'Click to convert back to IDR',
+    loading: 'Loading...',
+    productNotFound: 'Product not found',
+    browseAllProducts: 'Browse all products',
+    home: 'Home',
+    priceLabel: 'Price',
+    priceLabelUsd: 'Price (USD)',
+    priceLabelIdr: 'Price (IDR)'
+  },
+  ar: {
+    priceNote: '*قد يختلف السعر بناءً على التخصيص',
+    orderNow: 'اطلب الآن',
+    productDetails: 'مواصفات المنتج',
+    about: 'نبذة عن',
+    youMightBeInterested: 'قد يهمك أيضًا',
+    clickToConvertUsd: 'اضغط للتحويل إلى الدولار الأمريكي',
+    clickToConvertIdr: 'اضغط للعودة إلى الروبية الإندونيسية',
+    loading: 'جارٍ التحميل...',
+    productNotFound: 'المنتج غير موجود',
+    browseAllProducts: 'تصفح جميع المنتجات',
+    home: 'الصفحة الرئيسية',
+    priceLabel: 'السعر',
+    priceLabelUsd: 'السعر (دولار أمريكي)',
+    priceLabelIdr: 'السعر (روبية إندونيسية)'
+  },
+  zh: {
+    priceNote: '*价格可能会因定制而有所变化',
+    orderNow: '立即下单',
+    productDetails: '产品详情',
+    about: '关于',
+    youMightBeInterested: '您可能感兴趣',
+    clickToConvertUsd: '点击转换为美元',
+    clickToConvertIdr: '点击切换回印尼盾',
+    loading: '加载中...',
+    productNotFound: '未找到产品',
+    browseAllProducts: '查看所有产品',
+    home: '首页',
+    priceLabel: '价格',
+    priceLabelUsd: '价格 (美元)',
+    priceLabelIdr: '价格 (印尼盾)'
+  },
+  ja: {
+    priceNote: '※カスタマイズ内容により価格が変動します',
+    orderNow: '今すぐ注文',
+    productDetails: '商品詳細',
+    about: 'について',
+    youMightBeInterested: 'こちらもおすすめ',
+    clickToConvertUsd: 'クリックしてUSDに変換',
+    clickToConvertIdr: 'クリックしてIDRに戻す',
+    loading: '読み込み中...',
+    productNotFound: '商品が見つかりません',
+    browseAllProducts: 'すべての商品を見る',
+    home: 'ホーム',
+    priceLabel: '価格',
+    priceLabelUsd: '価格（USD）',
+    priceLabelIdr: '価格（IDR）'
+  },
+  es: {
+    priceNote: '*El precio puede variar según la personalización',
+    orderNow: 'ORDENAR AHORA',
+    productDetails: 'Detalles del Producto',
+    about: 'Acerca de',
+    youMightBeInterested: 'También te puede interesar',
+    clickToConvertUsd: 'Haz clic para convertir a USD',
+    clickToConvertIdr: 'Haz clic para volver a IDR',
+    loading: 'Cargando...',
+    productNotFound: 'Producto no encontrado',
+    browseAllProducts: 'Ver todos los productos',
+    home: 'Inicio',
+    priceLabel: 'Precio',
+    priceLabelUsd: 'Precio (USD)',
+    priceLabelIdr: 'Precio (IDR)'
+  },
+  fr: {
+    priceNote: '*Le prix peut varier en fonction de la personnalisation',
+    orderNow: 'COMMANDER',
+    productDetails: 'Détails du produit',
+    about: 'À propos de',
+    youMightBeInterested: 'Vous pourriez être intéressé',
+    clickToConvertUsd: 'Cliquez pour convertir en USD',
+    clickToConvertIdr: 'Cliquez pour revenir en IDR',
+    loading: 'Chargement...',
+    productNotFound: 'Produit introuvable',
+    browseAllProducts: 'Voir tous les produits',
+    home: 'Accueil',
+    priceLabel: 'Prix',
+    priceLabelUsd: 'Prix (USD)',
+    priceLabelIdr: 'Prix (IDR)'
+  },
+  ko: {
+    priceNote: '*맞춤 제작에 따라 가격이 달라질 수 있습니다',
+    orderNow: '지금 주문하기',
+    productDetails: '제품 상세정보',
+    about: '소개',
+    youMightBeInterested: '이 제품도 추천합니다',
+    clickToConvertUsd: '클릭하여 USD로 변환',
+    clickToConvertIdr: '클릭하여 IDR로 전환',
+    loading: '로딩 중...',
+    productNotFound: '상품을 찾을 수 없습니다',
+    browseAllProducts: '전체 상품 보기',
+    home: '홈',
+    priceLabel: '가격',
+    priceLabelUsd: '가격 (USD)',
+    priceLabelIdr: '가격 (IDR)'
+  }
+}
+
+const OG_LOCALES = ['id_ID', 'en_US', 'ar_SA', 'zh_CN', 'ja_JP', 'es_ES', 'fr_FR', 'ko_KR'] as const
+
+const formatPriceBlock = (language: LanguageCode, priceIDR: string, priceUSD?: string | null) => {
+  const t = UI_TRANSLATIONS[language] ?? UI_TRANSLATIONS.en
+  if (priceUSD) {
+    if (language === 'id') {
+      return `${t.priceLabel}: ${priceIDR}\n${t.priceLabelUsd}: ${priceUSD}`
+    }
+    return `${t.priceLabelUsd}: ${priceUSD}\n${t.priceLabelIdr}: ${priceIDR}`
+  }
+  const label = language === 'id' ? t.priceLabel : t.priceLabelIdr
+  return `${label}: ${priceIDR}`
+}
+
+const getWhatsappMessage = (
+  language: LanguageCode,
+  params: {
+    productName: string
+    categories: string
+    priceIDR: string
+    priceUSD?: string | null
+    url: string
+  }
+) => {
+  const { productName, categories, priceIDR, priceUSD, url } = params
+  const priceBlock = formatPriceBlock(language, priceIDR, priceUSD)
+
+  switch (language) {
+    case 'id':
+      return `Halo Mangala Living,
+
+Saya tertarik dengan produk:
+*${productName}*
+
+Kategori: ${categories}
+${priceBlock}
+
+Link Produk: ${url}
+
+Mohon informasi lebih lanjut dan cara pemesanannya.
+
+Terima kasih!`
+    case 'ar':
+      return `مرحباً Mangala Living،
+
+أنا مهتم بالمنتج:
+*${productName}*
+
+الفئة: ${categories}
+${priceBlock}
+
+رابط المنتج: ${url}
+
+يرجى تزويدي بمزيد من المعلومات وطريقة الطلب.
+
+شكراً لكم!`
+    case 'zh':
+      return `您好 Mangala Living，
+
+我对以下产品感兴趣：
+*${productName}*
+
+类别：${categories}
+${priceBlock}
+
+产品链接：${url}
+
+请提供更多信息和订购方式。
+
+谢谢！`
+    case 'ja':
+      return `Mangala Living 様
+
+こちらの製品に興味があります：
+*${productName}*
+
+カテゴリー：${categories}
+${priceBlock}
+
+製品リンク：${url}
+
+詳細情報と注文方法を教えてください。
+
+よろしくお願いいたします。`
+    case 'es':
+      return `Hola Mangala Living,
+
+Estoy interesado en el producto:
+*${productName}*
+
+Categoría: ${categories}
+${priceBlock}
+
+Enlace del producto: ${url}
+
+Por favor envíenme más información y cómo realizar el pedido.
+
+¡Gracias!`
+    case 'fr':
+      return `Bonjour Mangala Living,
+
+Je suis intéressé par le produit :
+*${productName}*
+
+Catégorie : ${categories}
+${priceBlock}
+
+Lien du produit : ${url}
+
+Merci de me communiquer plus d'informations et la procédure de commande.
+
+Merci !`
+    case 'ko':
+      return `안녕하세요 Mangala Living,
+
+다음 제품에 관심이 있습니다:
+*${productName}*
+
+카테고리: ${categories}
+${priceBlock}
+
+제품 링크: ${url}
+
+자세한 정보와 주문 방법을 알려주세요.
+
+감사합니다!`
+    case 'en':
+    default:
+      return `Hello Mangala Living,
+
+I'm interested in the product:
+*${productName}*
+
+Category: ${categories}
+${priceBlock}
+
+Product Link: ${url}
+
+Please provide more information and how to order.
+
+Thank you!`
+  }
+}
+
 // Create product details from ALL_PRODUCTS
 const products: { [key: string]: ProductDetail } = {}
 ALL_PRODUCTS.forEach(p => {
@@ -245,18 +701,19 @@ const ProductDetail: React.FC = () => {
   const product = products[slug || '']
   
   const [selectedImage, setSelectedImage] = useState(0)
-  const [isIndonesian, setIsIndonesian] = useState(true)
+  const [language, setLanguage] = useState<LanguageCode>('id')
   const [isLoading, setIsLoading] = useState(true)
   const [usdPrice, setUsdPrice] = useState<string | null>(null)
   const [isImageModalOpen, setIsImageModalOpen] = useState(false)
 
-  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const isIndonesian = language === 'id'
+  const localeMeta = generateLanguageSpecificMeta(language)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
 
   // Language detection - instant, no async needed!
   useEffect(() => {
-    const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    setIsIndonesian(urlLang === 'id')
+    const detectedLanguage = getLanguageFromLocation(location.pathname, location.search) ?? 'id'
+    setLanguage(prev => (prev === detectedLanguage ? prev : detectedLanguage))
     setIsLoading(false)
   }, [location.pathname, location.search])
 
@@ -277,60 +734,28 @@ const ProductDetail: React.FC = () => {
   }, [slug])
 
   // Translations
-  const translations = {
-    priceNote: isIndonesian 
-      ? '*Harga dapat bervariasi berdasarkan kustomisasi'
-      : '*Price may vary based on customization',
-    orderNow: isIndonesian 
-      ? 'PESAN SEKARANG'
-      : 'ORDER NOW',
-    productDetails: isIndonesian 
-      ? 'Detail Produk'
-      : 'Product Details',
-    about: isIndonesian 
-      ? 'Tentang'
-      : 'About',
-    youMightBeInterested: isIndonesian 
-      ? 'Anda Mungkin Tertarik'
-      : 'You Might be Interested',
-    clickToConvertUsd: isIndonesian
-      ? 'Klik untuk konversi ke USD'
-      : 'Click to convert to USD',
-    clickToConvertIdr: isIndonesian
-      ? 'Klik untuk kembali ke IDR'
-      : 'Click to convert back to IDR'
-  }
+  const uiTranslations = UI_TRANSLATIONS[language] ?? UI_TRANSLATIONS.en
 
   // Translate product details based on language
   const translateProductDetails = (details: string): string => {
-    if (isIndonesian) {
-      return details
-        .replace(/Welded Steel Construction/g, 'Konstruksi Baja Las')
-        .replace(/Ergonomic Design/g, 'Desain Ergonomis')
-        .replace(/Weather Resistant Finish/g, 'Finishing Tahan Cuaca')
-        .replace(/Industrial Steel Frame/g, 'Rangka Baja Industrial')
-        .replace(/Powder Coated Finish/g, 'Finishing Powder Coating')
-        .replace(/Solid Wood\/Metal Top/g, 'Top Kayu Solid\/Metal')
-        .replace(/High-Grade Steel Pipe/g, 'Pipa Baja Kualitas Tinggi')
-        .replace(/Footrest Support/g, 'Penopang Sandaran Kaki')
-        .replace(/Commercial Grade/g, 'Kualitas Komersial')
-        .replace(/Heavy Duty Construction/g, 'Konstruksi Heavy Duty')
-        .replace(/Multiple Shelves\/Compartments/g, 'Beberapa Rak\/Kompartemen')
-        .replace(/Easy Assembly/g, 'Mudah Dipasang')
-        .replace(/Premium Steel Construction/g, 'Konstruksi Baja Premium')
-        .replace(/Powder Coated Black Finish/g, 'Finishing Powder Coating Hitam')
-        .replace(/Industrial Design/g, 'Desain Industrial')
-        .replace(/Built to Last/g, 'Dibuat untuk Tahan Lama')
-    }
-    return details
+    if (!details) return details
+    const tokens = details.split(',').map(item => item.trim()).filter(Boolean)
+    const localizedTokens = tokens.map(token => {
+      const translationMap = DETAIL_FEATURE_TRANSLATIONS[token]
+      if (translationMap) {
+        return translationMap[language] ?? translationMap.en ?? token
+      }
+      return token
+    })
+    return localizedTokens.join(', ')
   }
 
   // Loading state
   if (isLoading) {
     return (
-      <div className="product-detail-page">
-        <AnnouncementBar />
-        <Header isIndonesian={isIndonesian} />
+        <div className="product-detail-page">
+          <AnnouncementBar isIndonesian={isIndonesian} />
+          <Header isIndonesian={isIndonesian} language={language} />
         <div style={{ 
           display: 'flex', 
           justifyContent: 'center', 
@@ -348,12 +773,12 @@ const ProductDetail: React.FC = () => {
               animation: 'spin 1s linear infinite',
               margin: '0 auto 20px'
             }}></div>
-            <p style={{ color: '#666', margin: 0 }}>
-              {isIndonesian ? "Memuat..." : "Loading..."}
-            </p>
+              <p style={{ color: '#666', margin: 0 }}>
+                {uiTranslations.loading}
+              </p>
           </div>
         </div>
-        <Footer />
+          <Footer isIndonesian={isIndonesian} language={language} />
       </div>
     )
   }
@@ -361,15 +786,15 @@ const ProductDetail: React.FC = () => {
   if (!product) {
     return (
       <div>
-        <AnnouncementBar />
-        <Header isIndonesian={isIndonesian} />
+        <AnnouncementBar isIndonesian={isIndonesian} />
+        <Header isIndonesian={isIndonesian} language={language} />
         <div className="container" style={{ padding: '100px 20px', textAlign: 'center' }}>
-          <h1>Product not found</h1>
+          <h1>{uiTranslations.productNotFound}</h1>
           <Link to="/shop" style={{ color: '#333', textDecoration: 'underline' }}>
-            Browse all products
+            {uiTranslations.browseAllProducts}
           </Link>
         </div>
-        <Footer />
+        <Footer isIndonesian={isIndonesian} language={language} />
       </div>
     )
   }
@@ -388,9 +813,8 @@ const ProductDetail: React.FC = () => {
   // Build breadcrumb with proper category slug mapping
   const primaryCategory = product.categories[0]
   const categorySlug = getCategorySlug(primaryCategory)
-  
   const breadcrumbItems = [
-    { label: 'Home', path: '/' },
+    { label: uiTranslations.home, path: '/' },
     { label: primaryCategory, path: `/product-category/${categorySlug}` },
     { label: translatedProductName, path: `/product/${product.slug}` }
   ]
@@ -548,8 +972,8 @@ const ProductDetail: React.FC = () => {
   }
 
   return (
-    <div className="product-detail-page">
-      <AnnouncementBar />
+      <div className="product-detail-page">
+        <AnnouncementBar isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{product.slug === 'hollowline-display-rack' 
           ? (isIndonesian ? 'Hollowline Display Rack - Harga Murah Rp4.5 Juta - Call Mangala +6288801146881' : 'Hollowline Display Rack - Affordable Price Rp4.5 Million - Call Mangala +6288801146881')
@@ -585,8 +1009,9 @@ const ProductDetail: React.FC = () => {
         <meta property="og:url" content={localizedUrls.canonical} />
         <meta property="og:type" content="product" />
         <meta property="og:locale" content={localeMeta.locale} />
-        <meta property="og:locale:alternate" content="id_ID" />
-        <meta property="og:locale:alternate" content="en_US" />
+          {OG_LOCALES.filter(altLocale => altLocale !== localeMeta.locale).map((altLocale) => (
+            <meta key={`product-detail-og-${altLocale}`} property="og:locale:alternate" content={altLocale} />
+          ))}
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -631,7 +1056,7 @@ const ProductDetail: React.FC = () => {
         ))}
       </Helmet>
 
-      <Header isIndonesian={isIndonesian} />
+        <Header isIndonesian={isIndonesian} language={language} />
 
       <main className="product-detail-main">
         <div className="container">
@@ -774,74 +1199,54 @@ const ProductDetail: React.FC = () => {
                   </p>
                 )}
               </div>
-              
-              <p className="product-price-note">{translations.priceNote}</p>
+                
+                <p className="product-price-note">{uiTranslations.priceNote}</p>
 
-              <button 
-                className="order-now-btn"
-                onClick={() => {
-                  // Send background email notification
-                  sendBackgroundEmail('order_now', {
-                    productName: translatedProductName,
-                    productSlug: product.slug,
-                    productPrice: product.price,
-                    productCategory: product.categories.join(', '),
-                    productUrl: window.location.href,
-                  })
+                <button 
+                  className="order-now-btn"
+                  onClick={() => {
+                    // Send background email notification
+                    sendBackgroundEmail('order_now', {
+                      productName: translatedProductName,
+                      productSlug: product.slug,
+                      productPrice: product.price,
+                      productCategory: product.categories.join(', '),
+                      productUrl: window.location.href,
+                    })
 
-                  // Track WhatsApp click
-                  trackWhatsAppClick('product_order_now', {
-                    productName: translatedProductName,
-                    productSlug: product.slug,
-                    productPrice: product.price,
-                    productCategory: product.categories.join(', ')
-                  })
+                    // Track WhatsApp click
+                    trackWhatsAppClick('product_order_now', {
+                      productName: translatedProductName,
+                      productSlug: product.slug,
+                      productPrice: product.price,
+                      productCategory: product.categories.join(', ')
+                    })
 
-                  const whatsappMessage = isIndonesian 
-                    ? `Halo Mangala Living,
+                    const whatsappMessage = getWhatsappMessage(language, {
+                      productName: translatedProductName,
+                      categories: product.categories.join(', '),
+                      priceIDR: product.price,
+                      priceUSD: usdPrice,
+                      url: window.location.href
+                    })
+                    
+                    const whatsappUrl = `https://wa.me/+6288801146881?text=${encodeURIComponent(whatsappMessage)}`
+                    window.location.href = whatsappUrl
+                  }}
+                >
+                  {uiTranslations.orderNow}
+                </button>
 
-Saya tertarik dengan produk:
-*${translatedProductName}*
-
-Kategori: ${product.categories.join(', ')}
-Harga: ${product.price}
-
-Link Produk: ${window.location.href}
-
-Mohon informasi lebih lanjut dan cara pemesanannya.
-
-Terima kasih!`
-                    : `Hello Mangala Living,
-
-I'm interested in the product:
-*${translatedProductName}*
-
-Category: ${product.categories.join(', ')}
-Price: ${usdPrice}
-
-Product Link: ${window.location.href}
-
-Please provide more information and how to order.
-
-Thank you!`
-                  
-                  const whatsappUrl = `https://wa.me/+6288801146881?text=${encodeURIComponent(whatsappMessage)}`
-                  window.location.href = whatsappUrl
-                }}
-              >
-                {translations.orderNow}
-              </button>
-
-              <div className="product-details-box">
-                <h3>{translations.productDetails}</h3>
-                <p>{translateProductDetails(product.details)}</p>
-              </div>
+                <div className="product-details-box">
+                  <h3>{uiTranslations.productDetails}</h3>
+                  <p>{translateProductDetails(product.details)}</p>
+                </div>
             </div>
           </div>
 
           {/* About Product */}
           <div className="about-product-section">
-            <h2>{translations.about} {translatedProductName}</h2>
+              <h2>{uiTranslations.about} {translatedProductName}</h2>
             <div className="about-product-content">
               {translatedDescription.split('\n\n').map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
@@ -851,7 +1256,7 @@ Thank you!`
 
           {/* Related Products */}
           <div className="related-products-section">
-            <h2>{translations.youMightBeInterested}</h2>
+              <h2>{uiTranslations.youMightBeInterested}</h2>
             <div className="related-products-grid">
               {relatedProducts.map((relatedProduct) => (
                 <Link
@@ -918,7 +1323,7 @@ Thank you!`
         </div>
       )}
 
-      <Footer />
+        <Footer isIndonesian={isIndonesian} language={language} />
     </div>
   )
 }
