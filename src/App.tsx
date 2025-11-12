@@ -144,6 +144,7 @@ function App() {
           <Route path="/ja" element={<Home />} />
           <Route path="/es" element={<Home />} />
           <Route path="/fr" element={<Home />} />
+          <Route path="/ko" element={<Home />} />
           
           {/* Other pages with minimal loading */}
           <Route path="/search" element={
@@ -246,6 +247,11 @@ function App() {
               <TermsOfService />
             </Suspense>
           } />
+          <Route path="/ko/terms-of-service" element={
+            <Suspense fallback={<Loading />}>
+              <TermsOfService />
+            </Suspense>
+          } />
           <Route path="/shipping-information" element={
             <Suspense fallback={<Loading />}>
               <ShippingInformation />
@@ -286,6 +292,11 @@ function App() {
               <ShippingInformation />
             </Suspense>
           } />
+          <Route path="/ko/shipping-information" element={
+            <Suspense fallback={<Loading />}>
+              <ShippingInformation />
+            </Suspense>
+          } />
           <Route path="/image-license" element={
             <Suspense fallback={<Loading />}>
               <ImageLicense />
@@ -322,6 +333,11 @@ function App() {
             </Suspense>
           } />
           <Route path="/fr/image-license" element={
+            <Suspense fallback={<Loading />}>
+              <ImageLicense />
+            </Suspense>
+          } />
+          <Route path="/ko/image-license" element={
             <Suspense fallback={<Loading />}>
               <ImageLicense />
             </Suspense>

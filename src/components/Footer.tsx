@@ -6,7 +6,7 @@ import { trackWhatsAppClick } from '../utils/whatsappTracking'
 
 interface FooterProps {
   isIndonesian?: boolean
-  language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr'
+  language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'
 }
 
 const Footer: React.FC<FooterProps> = ({ isIndonesian = false, language = 'en' }) => {
@@ -44,6 +44,8 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false, language = 'en' }
             ? '¡Gracias por suscribirte!'
             : language === 'fr'
             ? 'Merci de vous être abonné !'
+            : language === 'ko'
+            ? '구독해 주셔서 감사합니다!'
             : 'Thank you for subscribing!' 
         })
         setFirstName('')
@@ -63,6 +65,8 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false, language = 'en' }
             ? 'Suscripción fallida. Por favor, inténtalo de nuevo.'
             : language === 'fr'
             ? 'Échec de l'abonnement. Veuillez réessayer.'
+            : language === 'ko'
+            ? '구독에 실패했습니다. 다시 시도해주세요.'
             : 'Subscription failed. Please try again.' 
         })
       }
@@ -82,6 +86,8 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false, language = 'en' }
           ? 'Ocurrió un error. Por favor, inténtalo de nuevo.'
           : language === 'fr'
           ? 'Une erreur s'est produite. Veuillez réessayer.'
+          : language === 'ko'
+          ? '오류가 발생했습니다. 다시 시도해주세요.'
           : 'An error occurred. Please try again.' 
       })
     } finally {
@@ -111,11 +117,13 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false, language = 'en' }
                 ? "Su mejor opción para muebles industriales escandinavos premium desde 1999. Sirviendo a cafeterías, restaurantes y negocios en Indonesia, Yakarta y principales mercados internacionales. Pedidos personalizados bienvenidos."
                 : language === 'fr'
                 ? "Votre meilleur choix pour des meubles industriels scandinaves premium depuis 1999. Au service des cafés, restaurants et entreprises à travers l'Indonésie, Jakarta et les principaux marchés internationaux. Commandes personnalisées bienvenues."
+                : language === 'ko'
+                ? "1999년부터 프리미엄 산업용 스칸디나비아 가구의 최고 선택. 인도네시아, 자카르타 및 주요 국제 시장의 카페, 레스토랑, 비즈니스에 서비스 제공. 맞춤 주문 환영."
                 : "Your best choice for premium industrial scandinavian furniture since 1999. Serving coffee shops, restaurants, and businesses across Indonesia, Jabodetabek, Jakarta, and major international markets. Custom orders welcome."
               }
             </p>
             <div className="footer-contact-info">
-              <h4>{language === 'id' ? "Hubungi Kami" : language === 'ar' ? "اتصل بنا" : language === 'zh' ? "联系我们" : language === 'ja' ? "お問い合わせ" : language === 'es' ? "Contáctenos" : language === 'fr' ? "Contactez-nous" : "Contact Us"}</h4>
+              <h4>{language === 'id' ? "Hubungi Kami" : language === 'ar' ? "اتصل بنا" : language === 'zh' ? "联系我们" : language === 'ja' ? "お問い合わせ" : language === 'es' ? "Contáctenos" : language === 'fr' ? "Contactez-nous" : language === 'ko' ? "연락처" : "Contact Us"}</h4>
               <p>
                 <a href="mailto:lifewithmangala@gmail.com" style={{ color: 'inherit', textDecoration: 'underline' }}>
                   lifewithmangala@gmail.com
@@ -145,7 +153,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false, language = 'en' }
 
           {/* Find Us */}
           <div className="footer-column">
-            <h4>{language === 'id' ? "Temukan Kami" : language === 'ar' ? "موقعنا" : language === 'zh' ? "找到我们" : language === 'ja' ? "アクセス" : language === 'es' ? "Encuéntranos" : language === 'fr' ? "Nous Trouver" : "Find Us"}</h4>
+            <h4>{language === 'id' ? "Temukan Kami" : language === 'ar' ? "موقعنا" : language === 'zh' ? "找到我们" : language === 'ja' ? "アクセス" : language === 'es' ? "Encuéntranos" : language === 'fr' ? "Nous Trouver" : language === 'ko' ? "찾아오시는 길" : "Find Us"}</h4>
             <div className="footer-location">
               <h5>Workshop Bekasi :</h5>
               <p>
@@ -174,7 +182,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false, language = 'en' }
           
           {/* Quick Links */}
           <div className="footer-column">
-                      <h4>{language === 'id' ? "Tautan Cepat" : language === 'ar' ? "روابط سريعة" : language === 'zh' ? "快速链接" : language === 'ja' ? "クイックリンク" : language === 'es' ? "Enlaces Rápidos" : language === 'fr' ? "Liens Rapides" : "Quick Links"}</h4>
+                      <h4>{language === 'id' ? "Tautan Cepat" : language === 'ar' ? "روابط سريعة" : language === 'zh' ? "快速链接" : language === 'ja' ? "クイックリンク" : language === 'es' ? "Enlaces Rápidos" : language === 'fr' ? "Liens Rapides" : language === 'ko' ? "빠른 링크" : "Quick Links"}</h4>
                       <ul className="footer-links">
                         <li><Link to="/about" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'ar' ? 'حول' : 'About'}</Link></li>
               <li><Link to="/blog" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'ar' ? 'مدونة' : 'Blog'}</Link></li>
@@ -189,7 +197,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false, language = 'en' }
           
           {/* Categories */}
           <div className="footer-column">
-            <h4>{language === 'id' ? 'Kategori' : language === 'ar' ? 'الفئات' : language === 'zh' ? '类别' : language === 'ja' ? 'カテゴリー' : language === 'es' ? 'Categorías' : language === 'fr' ? 'Catégories' : 'Categories'}</h4>
+            <h4>{language === 'id' ? 'Kategori' : language === 'ar' ? 'الفئات' : language === 'zh' ? '类别' : language === 'ja' ? 'カテゴリー' : language === 'es' ? 'Categorías' : language === 'fr' ? 'Catégories' : language === 'ko' ? '카테고리' : 'Categories'}</h4>
             <ul className="footer-links">
               <li><Link to="/product-category/new-arrivals" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>New Arrivals</Link></li>
               <li><Link to="/product-category/lounge-seating-set" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Lounge Set</Link></li>
@@ -206,11 +214,11 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false, language = 'en' }
           
           {/* Subscribe */}
           <div className="footer-column">
-            <h4>{language === 'id' ? "Berlangganan" : language === 'ar' ? "اشترك" : language === 'zh' ? "订阅" : language === 'ja' ? "登録" : language === 'es' ? "Suscríbete" : language === 'fr' ? "S'abonner" : "Subscribe"}</h4>
+            <h4>{language === 'id' ? "Berlangganan" : language === 'ar' ? "اشترك" : language === 'zh' ? "订阅" : language === 'ja' ? "登録" : language === 'es' ? "Suscríbete" : language === 'fr' ? "S'abonner" : language === 'ko' ? "구독" : "Subscribe"}</h4>
             <form onSubmit={handleSubscribe} className="footer-subscribe-form">
               <input
                 type="text"
-                placeholder={language === 'id' ? "Nama depan" : language === 'ar' ? "الاسم الأول" : language === 'zh' ? "名字" : language === 'ja' ? "名前" : language === 'es' ? "Nombre" : language === 'fr' ? "Prénom" : "First name"}
+                placeholder={language === 'id' ? "Nama depan" : language === 'ar' ? "الاسم الأول" : language === 'zh' ? "名字" : language === 'ja' ? "名前" : language === 'es' ? "Nombre" : language === 'fr' ? "Prénom" : language === 'ko' ? "이름" : "First name"}
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 required
@@ -218,7 +226,7 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false, language = 'en' }
               />
               <input
                 type="email"
-                placeholder={language === 'ar' ? "البريد الإلكتروني" : language === 'zh' ? "电子邮件" : language === 'ja' ? "メールアドレス" : language === 'es' ? "Correo electrónico" : language === 'fr' ? "Email" : "Email"}
+                placeholder={language === 'ar' ? "البريد الإلكتروني" : language === 'zh' ? "电子邮件" : language === 'ja' ? "メールアドレス" : language === 'es' ? "Correo electrónico" : language === 'fr' ? "Email" : language === 'ko' ? "이메일" : "Email"}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -226,8 +234,8 @@ const Footer: React.FC<FooterProps> = ({ isIndonesian = false, language = 'en' }
               />
               <button type="submit" disabled={isSubmitting}>
                 {isSubmitting 
-                  ? (language === 'id' ? "Mengirim..." : language === 'ar' ? "جاري الإرسال..." : language === 'zh' ? "发送中..." : language === 'ja' ? "送信中..." : language === 'es' ? "Enviando..." : language === 'fr' ? "Envoi..." : "Sending...") 
-                  : (language === 'id' ? "BERLANGGANAN" : language === 'ar' ? "اشترك" : language === 'zh' ? "订阅" : language === 'ja' ? "登録" : language === 'es' ? "SUSCRIBIRSE" : language === 'fr' ? "S'ABONNER" : "SUBSCRIBE")
+                  ? (language === 'id' ? "Mengirim..." : language === 'ar' ? "جاري الإرسال..." : language === 'zh' ? "发送中..." : language === 'ja' ? "送信中..." : language === 'es' ? "Enviando..." : language === 'fr' ? "Envoi..." : language === 'ko' ? "보내는 중..." : "Sending...") 
+                  : (language === 'id' ? "BERLANGGANAN" : language === 'ar' ? "اشترك" : language === 'zh' ? "订阅" : language === 'ja' ? "登録" : language === 'es' ? "SUSCRIBIRSE" : language === 'fr' ? "S'ABONNER" : language === 'ko' ? "구독하기" : "SUBSCRIBE")
                 }
               </button>
               {message && (

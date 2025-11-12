@@ -21,7 +21,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
 
 const Home: React.FC = () => {
-  const [language, setLanguage] = useState<'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr'>('en')
+  const [language, setLanguage] = useState<'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'>('en')
   const [isLoading, setIsLoading] = useState(true)
   const location = useLocation()
 
@@ -63,6 +63,11 @@ const Home: React.FC = () => {
       setIsLoading(false)
       return
     }
+    if (path.startsWith('/ko')) {
+      setLanguage('ko')
+      setIsLoading(false)
+      return
+    }
 
     // If no language prefix, detect from IP
     const detectLocation = async () => {
@@ -90,6 +95,8 @@ const Home: React.FC = () => {
         
         if (countryCode === 'ID') {
           setLanguage('id')
+        } else if (countryCode === 'KR') {
+          setLanguage('ko')
         } else if (countryCode === 'JP') {
           setLanguage('ja')
         } else if (frenchCountries.includes(countryCode)) {
@@ -109,6 +116,8 @@ const Home: React.FC = () => {
         const browserLang = navigator.language || navigator.languages?.[0]
         if (browserLang?.startsWith('id')) {
           setLanguage('id')
+        } else if (browserLang?.startsWith('ko')) {
+          setLanguage('ko')
         } else if (browserLang?.startsWith('fr')) {
           setLanguage('fr')
         } else if (browserLang?.startsWith('es')) {
@@ -136,10 +145,11 @@ const Home: React.FC = () => {
   const isJapanese = language === 'ja'
   const isSpanish = language === 'es'
   const isFrench = language === 'fr'
+  const isKorean = language === 'ko'
   
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
-  // For /id, /eng, /ar, /zh, /ja, /es, and /fr routes, canonical should point to /
-  const canonicalPath = (location.pathname === '/id' || location.pathname === '/eng' || location.pathname === '/ar' || location.pathname === '/zh' || location.pathname === '/ja' || location.pathname === '/es' || location.pathname === '/fr') ? '/' : location.pathname
+  // For /id, /eng, /ar, /zh, /ja, /es, /fr, and /ko routes, canonical should point to /
+  const canonicalPath = (location.pathname === '/id' || location.pathname === '/eng' || location.pathname === '/ar' || location.pathname === '/zh' || location.pathname === '/ja' || location.pathname === '/es' || location.pathname === '/fr' || location.pathname === '/ko') ? '/' : location.pathname
   const localizedUrls = generateLocalizedUrls(canonicalPath, location.search)
 
   // Multi-language translations
@@ -231,7 +241,7 @@ const Home: React.FC = () => {
   return (
     <div className="home">
       <CatalogModal />
-      <Helmet htmlAttributes={{ lang: language === 'ar' ? 'ar' : (language === 'zh' ? 'zh' : (language === 'ja' ? 'ja' : (language === 'es' ? 'es' : (language === 'fr' ? 'fr' : localeMeta.lang)))), dir: language === 'ar' ? 'rtl' : 'ltr', 'data-language': language }}>
+      <Helmet htmlAttributes={{ lang: language === 'ar' ? 'ar' : (language === 'zh' ? 'zh' : (language === 'ja' ? 'ja' : (language === 'es' ? 'es' : (language === 'fr' ? 'fr' : (language === 'ko' ? 'ko' : localeMeta.lang))))), dir: language === 'ar' ? 'rtl' : 'ltr', 'data-language': language }}>
         <title>{translations.title}</title>
         <meta name="description" content={translations.description} />
         <meta name="keywords" content="bar set outdoor, lounge set, sofa bench, storage rack, new arrivals, furniture industrial set, display rack, bar furniture, outdoor furniture set, lounge furniture, mangala living, furniture bekasi, industrial furniture, meja kursi cafe" />
