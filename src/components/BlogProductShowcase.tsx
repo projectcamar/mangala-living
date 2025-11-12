@@ -209,7 +209,7 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
                     <meta itemProp="description" content={`Produk ${product.name} dengan kualitas premium dari Mangala Living Workshop Bekasi`} />
                     <meta itemProp="url" content={product.image} />
                     <div className="blog-product-showcase-badge">
-                      <span className="blog-product-badge-text">PRODUK KAMI</span>
+                      <span className="blog-product-badge-text">{isIndonesian ? 'PRODUK KAMI' : 'OUR PRODUCT'}</span>
                     </div>
                   </div>
                   
