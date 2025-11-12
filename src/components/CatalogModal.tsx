@@ -16,7 +16,7 @@ interface CatalogModalProps {
 
 const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
   const [isVisible, setIsVisible] = useState(false)
-  const [language, setLanguage] = useState<'id' | 'en'>('id')
+  const [language, setLanguage] = useState<'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'>('id')
   const [formData, setFormData] = useState({
     firstName: '',
     email: '',
@@ -38,6 +38,48 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
       email: 'Email',
       whatsapp: 'WhatsApp Number',
       download: 'DOWNLOAD'
+    },
+    ar: {
+      title: 'تحميل كتالوج مجانًا\nمانجالا ليفينج 2025',
+      firstName: 'الاسم الأول',
+      email: 'البريد الإلكتروني',
+      whatsapp: 'رقم واتساب',
+      download: 'تحميل'
+    },
+    zh: {
+      title: '免费获取2025\n曼加拉生活目录',
+      firstName: '名字',
+      email: '电子邮件',
+      whatsapp: 'WhatsApp号码',
+      download: '下载'
+    },
+    ja: {
+      title: '無料カタログダウンロード\nマンガラリビング2025',
+      firstName: '名前',
+      email: 'メールアドレス',
+      whatsapp: 'WhatsApp番号',
+      download: 'ダウンロード'
+    },
+    es: {
+      title: 'DESCARGA GRATUITA DEL CATÁLOGO\nMANGALA LIVING 2025',
+      firstName: 'Nombre',
+      email: 'Correo electrónico',
+      whatsapp: 'Número de WhatsApp',
+      download: 'DESCARGAR'
+    },
+    fr: {
+      title: 'TÉLÉCHARGEMENT GRATUIT DU CATALOGUE\nMANGALA LIVING 2025',
+      firstName: 'Prénom',
+      email: 'E-mail',
+      whatsapp: 'Numéro WhatsApp',
+      download: 'TÉLÉCHARGER'
+    },
+    ko: {
+      title: '무료 카탈로그 다운로드\n망갈라 리빙 2025',
+      firstName: '이름',
+      email: '이메일',
+      whatsapp: 'WhatsApp 번호',
+      download: '다운로드'
     }
   }
 

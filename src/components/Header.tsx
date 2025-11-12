@@ -13,7 +13,179 @@ interface HeaderProps {
   language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'
 }
 
-const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
+const translations = {
+  en: {
+    about: 'About',
+    blog: 'Blog',
+    contactUs: 'Contact Us',
+    search: 'Search',
+    downloadCatalog: 'DOWNLOAD OUR CATALOG',
+    generating: 'GENERATING...',
+    categories: {
+      newArrivals: 'New Arrivals',
+      loungeSet: 'Lounge Set',
+      sofaBench: 'Sofa Bench',
+      diningSet: 'Dining Set',
+      barSet: 'Bar Set',
+      outdoor: 'Outdoor',
+      daybed: 'Daybed',
+      storage: 'Storage',
+      tables: 'Tables',
+      dineTable: 'Dine Table',
+      more: 'More'
+    }
+  },
+  id: {
+    about: 'Tentang',
+    blog: 'Blog',
+    contactUs: 'Hubungi Kami',
+    search: 'Cari',
+    downloadCatalog: 'UNDUH KATALOG KAMI',
+    generating: 'MEMBUAT...',
+    categories: {
+      newArrivals: 'Produk Baru',
+      loungeSet: 'Set Lounge',
+      sofaBench: 'Sofa Bench',
+      diningSet: 'Set Makan',
+      barSet: 'Set Bar',
+      outdoor: 'Outdoor',
+      daybed: 'Daybed',
+      storage: 'Penyimpanan',
+      tables: 'Meja',
+      dineTable: 'Meja Makan',
+      more: 'Lainnya'
+    }
+  },
+  ar: {
+    about: 'حول',
+    blog: 'مدونة',
+    contactUs: 'اتصل بنا',
+    search: 'بحث',
+    downloadCatalog: 'تحميل الكتالوج',
+    generating: 'جاري الإنشاء...',
+    categories: {
+      newArrivals: 'وصل حديثاً',
+      loungeSet: 'طقم صالة',
+      sofaBench: 'أريكة',
+      diningSet: 'طقم طعام',
+      barSet: 'طقم بار',
+      outdoor: 'خارجي',
+      daybed: 'سرير نهاري',
+      storage: 'تخزين',
+      tables: 'طاولات',
+      dineTable: 'طاولة طعام',
+      more: 'المزيد'
+    }
+  },
+  zh: {
+    about: '关于',
+    blog: '博客',
+    contactUs: '联系我们',
+    search: '搜索',
+    downloadCatalog: '下载目录',
+    generating: '生成中...',
+    categories: {
+      newArrivals: '新品',
+      loungeSet: '休息区套装',
+      sofaBench: '沙发长椅',
+      diningSet: '餐桌套装',
+      barSet: '吧台套装',
+      outdoor: '户外',
+      daybed: '躺椅',
+      storage: '储物',
+      tables: '桌子',
+      dineTable: '餐桌',
+      more: '更多'
+    }
+  },
+  ja: {
+    about: '会社概要',
+    blog: 'ブログ',
+    contactUs: 'お問い合わせ',
+    search: '検索',
+    downloadCatalog: 'カタログをダウンロード',
+    generating: '生成中...',
+    categories: {
+      newArrivals: '新着',
+      loungeSet: 'ラウンジセット',
+      sofaBench: 'ソファベンチ',
+      diningSet: 'ダイニングセット',
+      barSet: 'バーセット',
+      outdoor: 'アウトドア',
+      daybed: 'デイベッド',
+      storage: '収納',
+      tables: 'テーブル',
+      dineTable: 'ダイニングテーブル',
+      more: 'もっと見る'
+    }
+  },
+  es: {
+    about: 'Acerca de',
+    blog: 'Blog',
+    contactUs: 'Contáctenos',
+    search: 'Buscar',
+    downloadCatalog: 'DESCARGAR CATÁLOGO',
+    generating: 'GENERANDO...',
+    categories: {
+      newArrivals: 'Novedades',
+      loungeSet: 'Set de Sala',
+      sofaBench: 'Sofá Banco',
+      diningSet: 'Set de Comedor',
+      barSet: 'Set de Bar',
+      outdoor: 'Exterior',
+      daybed: 'Cama de Día',
+      storage: 'Almacenamiento',
+      tables: 'Mesas',
+      dineTable: 'Mesa de Comedor',
+      more: 'Más'
+    }
+  },
+  fr: {
+    about: 'À propos',
+    blog: 'Blog',
+    contactUs: 'Contactez-nous',
+    search: 'Rechercher',
+    downloadCatalog: 'TÉLÉCHARGER LE CATALOGUE',
+    generating: 'GÉNÉRATION...',
+    categories: {
+      newArrivals: 'Nouveautés',
+      loungeSet: 'Set de Salon',
+      sofaBench: 'Banc Canapé',
+      diningSet: 'Set de Salle à Manger',
+      barSet: 'Set de Bar',
+      outdoor: 'Extérieur',
+      daybed: 'Lit de Jour',
+      storage: 'Rangement',
+      tables: 'Tables',
+      dineTable: 'Table à Manger',
+      more: 'Plus'
+    }
+  },
+  ko: {
+    about: '회사 소개',
+    blog: '블로그',
+    contactUs: '문의하기',
+    search: '검색',
+    downloadCatalog: '카탈로그 다운로드',
+    generating: '생성 중...',
+    categories: {
+      newArrivals: '신제품',
+      loungeSet: '라운지 세트',
+      sofaBench: '소파 벤치',
+      diningSet: '다이닝 세트',
+      barSet: '바 세트',
+      outdoor: '야외용',
+      daybed: '데이베드',
+      storage: '수납',
+      tables: '테이블',
+      dineTable: '식탁',
+      more: '더보기'
+    }
+  }
+}
+
+const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }) => {
+  const t = translations[language]
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
@@ -214,9 +386,9 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
       <div className="container">
           <div className="header-top-content">
             <nav className="header-top-nav">
-              <Link to="/about" className="header-top-link">About</Link>
-              <Link to="/blog" className="header-top-link">Blog</Link>
-              <Link to="/contact-us" className="header-top-link">Contact Us</Link>
+              <Link to="/about" className="header-top-link">{t.about}</Link>
+              <Link to="/blog" className="header-top-link">{t.blog}</Link>
+              <Link to="/contact-us" className="header-top-link">{t.contactUs}</Link>
             </nav>
             
             <Link to="/" className="logo">
@@ -365,9 +537,9 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                 )}
               </div>
               
-              <button className="search-btn" aria-label={isIndonesian ? "Cari" : "Search"} onClick={toggleSearch}>
+              <button className="search-btn" aria-label={t.search} onClick={toggleSearch}>
                 <Search size={20} />
-                <span>{isIndonesian ? "Cari" : "Search"}</span>
+                <span>{t.search}</span>
               </button>
         <button 
           className="catalog-btn" 
@@ -375,7 +547,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
             try {
               // Show loading state
               const button = event.target as HTMLButtonElement
-              button.textContent = isIndonesian ? 'MEMBUAT...' : 'GENERATING...'
+              button.textContent = t.generating
               button.disabled = true
               
               // Generate catalog in new tab
@@ -422,8 +594,8 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                     <body>
                       <div class="loading">
                         <div class="spinner"></div>
-                        <h2>${isIndonesian ? "Membuat Katalog..." : "Generating Catalog..."}</h2>
-                        <p>${isIndonesian ? "Mohon tunggu sementara kami menyiapkan katalog furniture Anda" : "Please wait while we prepare your furniture catalog"}</p>
+                        <h2>${t.generating.replace('...', ' Katalog...')}</h2>
+                        <p>${language === 'id' ? 'Mohon tunggu sementara kami menyiapkan katalog furniture Anda' : language === 'ar' ? 'يرجى الانتظار بينما نقوم بإعداد كتالوج الأثاث الخاص بك' : language === 'zh' ? '请稍候，我们正在准备您的家具目录' : language === 'ja' ? '家具カタログを準備していますのでお待ちください' : language === 'es' ? 'Por favor espere mientras preparamos su catálogo de muebles' : language === 'fr' ? 'Veuillez patienter pendant que nous préparons votre catalogue de meubles' : language === 'ko' ? '가구 카탈로그를 준비하는 동안 잠시 기다려 주세요' : 'Please wait while we prepare your furniture catalog'}</p>
                       </div>
                     </body>
                   </html>
@@ -444,21 +616,22 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
               }
               
               // Reset button
-              button.textContent = isIndonesian ? 'UNDUH KATALOG KAMI' : 'DOWNLOAD OUR CATALOG'
+              button.textContent = t.downloadCatalog
               button.disabled = false
               
             } catch (error) {
               console.error('Error generating catalog:', error)
-              alert(isIndonesian ? 'Gagal mengunduh katalog. Silakan coba lagi.' : 'Failed to download catalog. Please try again.')
+              const errorMsg = language === 'id' ? 'Gagal mengunduh katalog. Silakan coba lagi.' : language === 'ar' ? 'فشل تحميل الكتالوج. يرجى المحاولة مرة أخرى.' : language === 'zh' ? '下载目录失败。请重试。' : language === 'ja' ? 'カタログのダウンロードに失敗しました。もう一度お試しください。' : language === 'es' ? 'Error al descargar el catálogo. Por favor, inténtalo de nuevo.' : language === 'fr' ? 'Échec du téléchargement du catalogue. Veuillez réessayer.' : language === 'ko' ? '카탈로그 다운로드에 실패했습니다. 다시 시도해주세요.' : 'Failed to download catalog. Please try again.'
+              alert(errorMsg)
               
               // Reset button on error
               const button = event.target as HTMLButtonElement
-              button.textContent = isIndonesian ? 'UNDUH KATALOG KAMI' : 'DOWNLOAD OUR CATALOG'
+              button.textContent = t.downloadCatalog
               button.disabled = false
             }
           }}
         >
-          {isIndonesian ? "UNDUH KATALOG KAMI" : "DOWNLOAD OUR CATALOG"}
+          {t.downloadCatalog}
               </button>
             </div>
           </div>
@@ -470,31 +643,31 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
         <div className="container">
           {/* Desktop Navigation */}
           <nav className="category-nav">
-            <Link to="/product-category/new-arrivals" className="category-link">New Arrivals</Link>
-            <Link to="/product-category/lounge-seating-set" className="category-link">Lounge Set</Link>
-            <Link to="/product-category/industrial-sofa-bench" className="category-link">Sofa Bench</Link>
-            <Link to="/product-category/dining-set-collection" className="category-link">Dining Set</Link>
-            <Link to="/product-category/bar-furniture-collection" className="category-link">Bar Set</Link>
-            <Link to="/product-category/balcony-outdoor-collection" className="category-link">Outdoor</Link>
-            <Link to="/product-category/daybed-lounge-frame" className="category-link">Daybed</Link>
-            <Link to="/product-category/accessories-storage" className="category-link">Storage</Link>
-            <Link to="/product-category/table-collection" className="category-link">Tables</Link>
-            <Link to="/product-category/dining-table-collection" className="category-link">Dine Table</Link>
+            <Link to="/product-category/new-arrivals" className="category-link">{t.categories.newArrivals}</Link>
+            <Link to="/product-category/lounge-seating-set" className="category-link">{t.categories.loungeSet}</Link>
+            <Link to="/product-category/industrial-sofa-bench" className="category-link">{t.categories.sofaBench}</Link>
+            <Link to="/product-category/dining-set-collection" className="category-link">{t.categories.diningSet}</Link>
+            <Link to="/product-category/bar-furniture-collection" className="category-link">{t.categories.barSet}</Link>
+            <Link to="/product-category/balcony-outdoor-collection" className="category-link">{t.categories.outdoor}</Link>
+            <Link to="/product-category/daybed-lounge-frame" className="category-link">{t.categories.daybed}</Link>
+            <Link to="/product-category/accessories-storage" className="category-link">{t.categories.storage}</Link>
+            <Link to="/product-category/table-collection" className="category-link">{t.categories.tables}</Link>
+            <Link to="/product-category/dining-table-collection" className="category-link">{t.categories.dineTable}</Link>
           </nav>
 
           {/* Mobile Compact Category Navigation */}
           <nav className="mobile-category-nav">
             {[
-              { to: "/product-category/new-arrivals", label: "New Arrivals" },
-              { to: "/product-category/lounge-seating-set", label: "Lounge Set" },
-              { to: "/product-category/industrial-sofa-bench", label: "Sofa Bench" },
-              { to: "/product-category/dining-set-collection", label: "Dining Set" },
-              { to: "/product-category/bar-furniture-collection", label: "Bar Set" },
-              { to: "/product-category/balcony-outdoor-collection", label: "Outdoor" },
-              { to: "/product-category/daybed-lounge-frame", label: "Daybed" },
-              { to: "/product-category/accessories-storage", label: "Storage" },
-              { to: "/product-category/table-collection", label: "Tables" },
-              { to: "/product-category/dining-table-collection", label: "Dine Table" }
+              { to: "/product-category/new-arrivals", label: t.categories.newArrivals },
+              { to: "/product-category/lounge-seating-set", label: t.categories.loungeSet },
+              { to: "/product-category/industrial-sofa-bench", label: t.categories.sofaBench },
+              { to: "/product-category/dining-set-collection", label: t.categories.diningSet },
+              { to: "/product-category/bar-furniture-collection", label: t.categories.barSet },
+              { to: "/product-category/balcony-outdoor-collection", label: t.categories.outdoor },
+              { to: "/product-category/daybed-lounge-frame", label: t.categories.daybed },
+              { to: "/product-category/accessories-storage", label: t.categories.storage },
+              { to: "/product-category/table-collection", label: t.categories.tables },
+              { to: "/product-category/dining-table-collection", label: t.categories.dineTable }
             ].slice(0, showAllCategories ? 10 : 5).map((category) => (
               <Link 
                 key={category.to}
@@ -508,9 +681,9 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
               <button 
                 className="mobile-category-more"
                 onClick={() => setShowAllCategories(true)}
-                aria-label={isIndonesian ? "Tampilkan lebih banyak" : "Show more"}
+                aria-label={t.categories.more}
               >
-                More
+                {t.categories.more}
               </button>
             )}
           </nav>
@@ -585,21 +758,21 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                 {/* Suggestions - only show when no search query */}
                 {!searchQuery && (
                   <div className="search-suggestions">
-                    <span className="suggestions-label">Suggested:</span>
+                    <span className="suggestions-label">{language === 'id' ? 'Disarankan:' : language === 'ar' ? 'مقترح:' : language === 'zh' ? '建议：' : language === 'ja' ? 'おすすめ：' : language === 'es' ? 'Sugerido:' : language === 'fr' ? 'Suggéré :' : language === 'ko' ? '추천:' : 'Suggested:'}</span>
                     <Link to="/product-category/lounge-seating-set" className="suggestion-tag" onClick={closeSearch}>
-                      Lounge Set
+                      {t.categories.loungeSet}
                     </Link>
                     <Link to="/product-category/industrial-sofa-bench" className="suggestion-tag" onClick={closeSearch}>
-                      Sofa Bench
+                      {t.categories.sofaBench}
                     </Link>
                     <Link to="/product-category/dining-set-collection" className="suggestion-tag" onClick={closeSearch}>
-                      Dining Set
+                      {t.categories.diningSet}
                     </Link>
                     <Link to="/product-category/bar-furniture-collection" className="suggestion-tag" onClick={closeSearch}>
-                      Bar Set
+                      {t.categories.barSet}
                     </Link>
                     <Link to="/product-category/accessories-storage" className="suggestion-tag" onClick={closeSearch}>
-                      Storage
+                      {t.categories.storage}
                     </Link>
                   </div>
                 )}

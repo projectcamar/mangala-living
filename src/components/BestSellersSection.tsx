@@ -7,6 +7,7 @@ import './BestSellersSection.css'
 
 interface BestSellersSectionProps {
   isIndonesian?: boolean
+  language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'
 }
 
 // Best Sellers - first 8 products
@@ -19,7 +20,32 @@ const products = ALL_PRODUCTS.slice(0, 8).map(p => ({
   link: `/product/${p.slug}`
 }))
 
-const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = false }) => {
+const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = false, language = 'en' }) => {
+  const getTitle = () => {
+    switch (language) {
+      case 'id': return 'Produk Terlaris'
+      case 'ar': return 'الأكثر مبيعاً'
+      case 'zh': return '畅销品'
+      case 'ja': return 'ベストセラー'
+      case 'es': return 'Más Vendidos'
+      case 'fr': return 'Meilleures Ventes'
+      case 'ko': return '베스트셀러'
+      default: return 'Best Sellers'
+    }
+  }
+  
+  const getViewAllText = () => {
+    switch (language) {
+      case 'id': return 'LIHAT SEMUA'
+      case 'ar': return 'عرض الكل'
+      case 'zh': return '查看全部'
+      case 'ja': return 'すべて見る'
+      case 'es': return 'VER TODO'
+      case 'fr': return 'VOIR TOUT'
+      case 'ko': return '전체보기'
+      default: return 'VIEW ALL'
+    }
+  }
   const [currentIndex, setCurrentIndex] = useState(0)
   const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
 
@@ -56,10 +82,10 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
       <div className="container">
         <div className="section-header-row">
           <h2 className="bestsellers-title">
-            {isIndonesian ? "Produk Terlaris" : "Best Sellers"}
+            {getTitle()}
           </h2>
           <Link to="/product-tag/best-seller" className="view-all-link">
-            {isIndonesian ? "LIHAT SEMUA" : "VIEW ALL"}
+            {getViewAllText()}
           </Link>
         </div>
 
