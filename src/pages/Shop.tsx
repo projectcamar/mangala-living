@@ -14,7 +14,8 @@ import { generateMerchantStructuredData } from '../utils/structuredData'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getProductName } from '../data/productDescriptions'
-import { getLanguageFromLocation } from '../utils/languageManager'
+import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { translateCategories } from '../utils/categoryTranslations'
 import './ProductCategory.css'
 import './Shop.css'
 
@@ -28,6 +29,7 @@ const Shop: React.FC = () => {
   const [priceRange, setPriceRange] = useState([0, 60000000])
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const [isIndonesian, setIsIndonesian] = useState(false)
+  const [language, setLanguage] = useState<LanguageCode>('en')
   const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
   const location = useLocation()
 
@@ -38,6 +40,7 @@ const Shop: React.FC = () => {
   // Language detection - instant, no async needed!
   useEffect(() => {
     const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    setLanguage(urlLang ?? 'en')
     setIsIndonesian(urlLang === 'id')
   }, [location.pathname, location.search])
 
@@ -420,7 +423,7 @@ const Shop: React.FC = () => {
                       </div>
                       <div className="category-product-info">
                         <h3 className="category-product-name">{translatedName}</h3>
-                      <p className="category-product-cats">{product.categories.join(', ')}</p>
+                      <p className="category-product-cats">{translateCategories(product.categories, language)}</p>
                       {usdPrices[product.id] ? (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
                           <p

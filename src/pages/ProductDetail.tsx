@@ -16,6 +16,7 @@ import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getCategorySlug } from '../utils/categoryHelpers'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { translateCategory } from '../utils/categoryTranslations'
 import './ProductDetail.css'
 
 interface ProductDetail {
@@ -1280,7 +1281,7 @@ const ProductDetail: React.FC = () => {
                   </div>
                   <div className="related-product-info">
                     <h3>{relatedProduct.name}</h3>
-                    <p className="related-product-category">{relatedProduct.category}</p>
+                    <p className="related-product-category">{translateCategory(relatedProduct.category, language)}</p>
                     <p className="related-product-price">{relatedProduct.price}</p>
                   </div>
                 </Link>

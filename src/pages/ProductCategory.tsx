@@ -13,6 +13,7 @@ import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/se
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getProductName } from '../data/productDescriptions'
 import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { translateCategories } from '../utils/categoryTranslations'
 import './ProductCategory.css'
 
 const CATEGORY_NAME_TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
@@ -611,7 +612,7 @@ const ProductCategory: React.FC = () => {
                   </div>
                   <div className="category-product-info">
                     <h3 className="category-product-name">{translatedName}</h3>
-                  <p className="category-product-cats">{product.categories.join(', ')}</p>
+                  <p className="category-product-cats">{translateCategories(product.categories, language)}</p>
                   {usdPrices[product.id] ? (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
                       <p

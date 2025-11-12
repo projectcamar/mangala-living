@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { X } from 'lucide-react'
 import './CatalogModal.css'
 import { generateCatalog } from '../utils/catalogGenerator'
 import { trackEvent } from '../utils/analytics'
-import { setLanguagePreferenceByLocation } from '../utils/geolocation'
+import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
 
 // Import multiple product images for collage
 import catalogPreview1 from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
@@ -15,8 +16,9 @@ interface CatalogModalProps {
 }
 
 const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
+  const location = useLocation()
   const [isVisible, setIsVisible] = useState(false)
-  const [language, setLanguage] = useState<'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'>('id')
+  const [language, setLanguage] = useState<LanguageCode>('id')
   const [formData, setFormData] = useState({
     firstName: '',
     email: '',
@@ -86,11 +88,24 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
   const t = translations[language]
 
   useEffect(() => {
-    // Detect visitor location and set language preference
-    const initializeModal = async () => {
-      // Detect location and set language
-      const detectedLang = await setLanguagePreferenceByLocation()
-      setLanguage(detectedLang)
+    // Initialize modal with current page language
+    const initializeModal = () => {
+      // Get language from current page URL (instant, no async needed)
+      const urlLang = getLanguageFromLocation(location.pathname, location.search)
+      if (urlLang) {
+        setLanguage(urlLang)
+      } else {
+        // Fallback to browser language
+        const browserLang = navigator.language || navigator.languages?.[0]
+        if (browserLang?.startsWith('id')) setLanguage('id')
+        else if (browserLang?.startsWith('ar')) setLanguage('ar')
+        else if (browserLang?.startsWith('zh')) setLanguage('zh')
+        else if (browserLang?.startsWith('ja')) setLanguage('ja')
+        else if (browserLang?.startsWith('es')) setLanguage('es')
+        else if (browserLang?.startsWith('fr')) setLanguage('fr')
+        else if (browserLang?.startsWith('ko')) setLanguage('ko')
+        else setLanguage('en')
+      }
 
       // Check if user clicked X (close button) recently (within 12 hours)
       const lastClosedTime = localStorage.getItem('catalogLastClosed')
@@ -141,7 +156,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
     }
 
     initializeModal()
-  }, [])
+  }, [location.pathname, location.search])
 
   const handleClose = () => {
     setIsVisible(false)
