@@ -69,12 +69,19 @@ const Home: React.FC = () => {
       return
     }
 
-    // If no language prefix, detect from IP
+    // If no language prefix, detect from IP with timeout protection
     const detectLocation = async () => {
       try {
-        // Try to get location from IP
-        const response = await fetch('https://ipapi.co/json/')
-        const data = await response.json()
+        // Create a timeout promise (3 seconds max)
+        const timeoutPromise = new Promise((_, reject) => {
+          setTimeout(() => reject(new Error('Timeout')), 3000)
+        })
+        
+        // Race between fetch and timeout
+        const fetchPromise = fetch('https://ipapi.co/json/')
+          .then(response => response.json())
+        
+        const data = await Promise.race([fetchPromise, timeoutPromise]) as any
         const countryCode = data.country_code
         
         // French-speaking countries
@@ -111,7 +118,7 @@ const Home: React.FC = () => {
           setLanguage('en')
         }
       } catch (error) {
-        console.log('IP detection failed, checking browser language')
+        console.log('IP detection failed or timed out, checking browser language')
         // Fallback: check browser language
         const browserLang = navigator.language || navigator.languages?.[0]
         if (browserLang?.startsWith('id')) {
