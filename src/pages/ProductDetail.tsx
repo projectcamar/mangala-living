@@ -804,10 +804,10 @@ const ProductDetail: React.FC = () => {
   // Get translated product name and description
   const productDesc = getProductDescription(product.slug)
   const translatedProductName = productDesc 
-    ? getProductName(product.slug, isIndonesian)
+    ? getProductName(product.slug, isIndonesian, language)
     : product.name
   const translatedDescription = productDesc
-    ? (isIndonesian ? productDesc.id.description : productDesc.en.description)
+    ? (productDesc[language]?.description || productDesc.en.description)
     : product.description
 
   // Build breadcrumb with proper category slug mapping
@@ -982,7 +982,7 @@ const ProductDetail: React.FC = () => {
           ? 'Hollowline Display Rack Industrial - Display Shelf Rack Modern - Harga Rp4.500.000 - Workshop Bekasi - Garansi Kualitas - Call Mangala +6288801146881'
           : (() => {
               const desc = getProductDescription(product.slug)
-              return desc ? (isIndonesian ? desc.id.metaDescription : desc.en.metaDescription) : `${product.name} - ${product.details}`
+              return desc ? (desc[language]?.metaDescription || desc.en.metaDescription) : `${product.name} - ${product.details}`
             })()} />
         <meta name="keywords" content={
           product.name === 'Hollowline Display Rack'
@@ -1104,8 +1104,8 @@ const ProductDetail: React.FC = () => {
                       ) : (
                         <img 
                           src={image} 
-                          alt={getProductImageAlt(product.slug, isIndonesian) + (index > 0 ? ` - Image ${index + 1}` : '')}
-                          title={getProductImageCaption(product.slug, isIndonesian) + (index > 0 ? ` - View ${index + 1}` : '')}
+                          alt={getProductImageAlt(product.slug, isIndonesian, language) + (index > 0 ? ` - Image ${index + 1}` : '')}
+                          title={getProductImageCaption(product.slug, isIndonesian, language) + (index > 0 ? ` - View ${index + 1}` : '')}
                           loading={index === 0 ? "eager" : "lazy"}
                           width="100"
                           height="100"
@@ -1134,8 +1134,8 @@ const ProductDetail: React.FC = () => {
                 ) : (
                   <img 
                     src={product.images[selectedImage]} 
-                    alt={getProductImageAlt(product.slug, isIndonesian)}
-                    title={getProductImageCaption(product.slug, isIndonesian)}
+                    alt={getProductImageAlt(product.slug, isIndonesian, language)}
+                    title={getProductImageCaption(product.slug, isIndonesian, language)}
                     className={selectedImage === 1 ? 'flipped' : ''}
                     loading="eager"
                     fetchPriority="high"
@@ -1314,8 +1314,8 @@ const ProductDetail: React.FC = () => {
             </button>
             <img 
               src={product.images[selectedImage]} 
-              alt={getProductImageAlt(product.slug, isIndonesian)}
-              title={getProductImageCaption(product.slug, isIndonesian)}
+              alt={getProductImageAlt(product.slug, isIndonesian, language)}
+              title={getProductImageCaption(product.slug, isIndonesian, language)}
               className={selectedImage === 1 ? 'flipped' : ''}
             />
             <div className="image-modal-title">{translatedProductName}</div>

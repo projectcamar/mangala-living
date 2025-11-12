@@ -1,9 +1,9 @@
 /**
- * Dual Language Product Descriptions and Captions
- * SEO-friendly descriptions in both English and Indonesian
+ * Multi-Language Product Descriptions and Captions
+ * SEO-friendly descriptions in 8 languages
  */
 
-export interface DualLanguageDescription {
+export interface MultiLanguageDescription {
   en: {
     name: string
     caption: string
@@ -20,9 +20,60 @@ export interface DualLanguageDescription {
     metaDescription: string
     imageAlt: string
   }
+  ar: {
+    name: string
+    caption: string
+    shortCaption: string
+    description: string
+    metaDescription: string
+    imageAlt: string
+  }
+  zh: {
+    name: string
+    caption: string
+    shortCaption: string
+    description: string
+    metaDescription: string
+    imageAlt: string
+  }
+  ja: {
+    name: string
+    caption: string
+    shortCaption: string
+    description: string
+    metaDescription: string
+    imageAlt: string
+  }
+  es: {
+    name: string
+    caption: string
+    shortCaption: string
+    description: string
+    metaDescription: string
+    imageAlt: string
+  }
+  fr: {
+    name: string
+    caption: string
+    shortCaption: string
+    description: string
+    metaDescription: string
+    imageAlt: string
+  }
+  ko: {
+    name: string
+    caption: string
+    shortCaption: string
+    description: string
+    metaDescription: string
+    imageAlt: string
+  }
 }
 
-export const PRODUCT_DESCRIPTIONS: Record<string, DualLanguageDescription> = {
+// Keep backward compatibility
+export type DualLanguageDescription = MultiLanguageDescription
+
+export const PRODUCT_DESCRIPTIONS: Record<string, MultiLanguageDescription> = {
   'industrial-hanging-shelf': {
     en: {
       name: 'Industrial Hanging Shelf',
@@ -271,6 +322,78 @@ Dibuat di workshop Bekasi kami sejak 1999, kursi bar industrial ini menampilkan 
 Sempurna untuk bar, kafe, restoran, dan ruang komersial, kursi bar industrial ini menyediakan kapasitas tempat duduk yang serbaguna. Desain tinggi bar menawarkan tempat duduk yang nyaman untuk area counter dan ruang bar.`,
       metaDescription: 'Beam Industrial Bar Chair - Kursi Bar Industrial | Furniture Kafe | Mangala Living',
       imageAlt: 'Beam Industrial Bar Chair - Kursi Bar Industrial - Tempat Duduk Premium dari Mangala Living'
+    },
+    ar: {
+      name: 'كرسي بار بيم الصناعي',
+      caption: 'كرسي بار بيم الصناعي - كرسي بار صناعي للكاونتر والبار | Mangala Living',
+      shortCaption: 'كرسي بار بيم الصناعي - كرسي بار صناعي',
+      description: `كرسي البار الصناعي Beam من Mangala Living هو الحل المثالي لمقاعد البار الصناعي للمقاهي والمطاعم والمساحات التجارية الحديثة. يتميز كرسي البار الصناعي المميز هذا بتصميم صناعي أنيق مع هيكل فولاذي يوفر أقصى قدر من الراحة والجاذبية البصرية.
+
+صُنع في ورشة عملنا في بيكاسي منذ عام 1999، يعرض كرسي البار الصناعي هذا تقنيات لحام متفوقة والاهتمام بالتفاصيل. يوفر هيكل الإطار الفولاذي الصناعي متانة ممتازة مع الحفاظ على جمالية بسيطة ونظيفة تكمل أي تصميم داخلي صناعي أو حديث.
+
+مثالي للبارات والمقاهي والمطاعم والمساحات التجارية، يوفر كرسي البار الصناعي هذا قدرات جلوس متعددة الاستخدامات. يوفر تصميم ارتفاع البار جلوسًا مريحًا لمناطق الكاونتر ومساحات البار.`,
+      metaDescription: 'كرسي بار بيم الصناعي - كرسي بار صناعي | أثاث المقاهي | Mangala Living',
+      imageAlt: 'كرسي بار بيم الصناعي - كرسي بار صناعي - مقاعد مميزة من Mangala Living'
+    },
+    zh: {
+      name: 'Beam工业吧椅',
+      caption: 'Beam工业吧椅 - 工业吧椅用于柜台和酒吧 | Mangala Living',
+      shortCaption: 'Beam工业吧椅 - 工业吧椅',
+      description: `Mangala Living的Beam工业吧椅是现代咖啡馆、餐厅和商业空间的完美工业座椅解决方案。这款优质工业吧椅采用时尚的工业设计和钢结构，提供最大的舒适性和视觉吸引力。
+
+自1999年以来在我们位于勿加泗的车间制作，这款工业吧椅展示了卓越的焊接技术和对细节的关注。工业钢框架结构提供出色的耐用性，同时保持干净、简约的美学，可以补充任何工业或现代室内设计。
+
+非常适合酒吧、咖啡馆、餐厅和商业空间，这款工业吧椅提供多功能座椅能力。酒吧高度设计为柜台区和酒吧空间提供舒适的座椅。`,
+      metaDescription: 'Beam工业吧椅 - 工业吧椅 | 咖啡馆家具 | Mangala Living',
+      imageAlt: 'Beam工业吧椅 - 工业吧椅 - Mangala Living的优质座椅'
+    },
+    ja: {
+      name: 'Beam Industrial Bar Chair',
+      caption: 'Beam Industrial Bar Chair - カウンターとバー用の工業用バーチェア | Mangala Living',
+      shortCaption: 'Beam Industrial Bar Chair - 工業用バーチェア',
+      description: `Mangala LivingのBeam Industrial Bar Chairは、モダンなカフェ、レストラン、商業空間に最適な工業用バーシーティングソリューションです。このプレミアム工業用バーチェアは、最大限の快適性と視覚的な魅力を提供するスチール構造を備えた洗練された工業デザインが特徴です。
+
+1999年以来、ブカシのワークショップで製作されたこの工業用バーチェアは、優れた溶接技術と細部へのこだわりを示しています。工業用スチールフレーム構造は、優れた耐久性を提供しながら、あらゆる工業的またはモダンなインテリアデザインを補完するクリーンでミニマリストな美学を維持しています。
+
+バー、カフェ、レストラン、商業空間に最適で、この工業用バーチェアは多目的な座席機能を提供します。バーの高さのデザインは、カウンターエリアとバースペースに快適な座席を提供します。`,
+      metaDescription: 'Beam Industrial Bar Chair - 工業用バーチェア | カフェ家具 | Mangala Living',
+      imageAlt: 'Beam Industrial Bar Chair - 工業用バーチェア - Mangala Livingのプレミアムシーティング'
+    },
+    es: {
+      name: 'Silla de Bar Industrial Beam',
+      caption: 'Silla de Bar Industrial Beam - Taburete de Bar Industrial para Mostrador y Bar | Mangala Living',
+      shortCaption: 'Silla de Bar Industrial Beam - Taburete de Bar Industrial',
+      description: `La Silla de Bar Industrial Beam de Mangala Living es la solución perfecta de asientos de bar industriales para cafeterías modernas, restaurantes y espacios comerciales. Esta silla de bar industrial premium presenta un diseño industrial elegante con construcción de acero que proporciona la máxima comodidad y atractivo visual.
+
+Elaborada en nuestro taller de Bekasi desde 1999, esta silla de bar industrial muestra técnicas de soldadura superiores y atención al detalle. La construcción del marco de acero industrial ofrece una excelente durabilidad mientras mantiene una estética minimalista y limpia que complementa cualquier diseño de interiores industrial o moderno.
+
+Perfecta para bares, cafeterías, restaurantes y espacios comerciales, esta silla de bar industrial proporciona capacidades de asientos versátiles. El diseño de altura de bar ofrece asientos cómodos para áreas de mostrador y espacios de bar.`,
+      metaDescription: 'Silla de Bar Industrial Beam - Taburete de Bar Industrial | Mobiliario de Cafetería | Mangala Living',
+      imageAlt: 'Silla de Bar Industrial Beam - Taburete de Bar Industrial - Asientos Premium de Mangala Living'
+    },
+    fr: {
+      name: 'Chaise de Bar Industrielle Beam',
+      caption: 'Chaise de Bar Industrielle Beam - Tabouret de Bar Industriel pour Comptoir et Bar | Mangala Living',
+      shortCaption: 'Chaise de Bar Industrielle Beam - Tabouret de Bar Industriel',
+      description: `La Chaise de Bar Industrielle Beam de Mangala Living est la solution parfaite de sièges de bar industriels pour les cafés modernes, les restaurants et les espaces commerciaux. Cette chaise de bar industrielle premium présente un design industriel élégant avec une construction en acier qui offre un confort maximal et un attrait visuel.
+
+Fabriquée dans notre atelier de Bekasi depuis 1999, cette chaise de bar industrielle présente des techniques de soudage supérieures et une attention aux détails. La construction du cadre en acier industriel offre une excellente durabilité tout en maintenant une esthétique minimaliste et épurée qui complète tout design d'intérieur industriel ou moderne.
+
+Parfaite pour les bars, les cafés, les restaurants et les espaces commerciaux, cette chaise de bar industrielle offre des capacités d'assise polyvalentes. Le design de hauteur de bar offre des sièges confortables pour les zones de comptoir et les espaces de bar.`,
+      metaDescription: 'Chaise de Bar Industrielle Beam - Tabouret de Bar Industriel | Mobilier de Café | Mangala Living',
+      imageAlt: 'Chaise de Bar Industrielle Beam - Tabouret de Bar Industriel - Sièges Premium de Mangala Living'
+    },
+    ko: {
+      name: 'Beam 인더스트리얼 바 체어',
+      caption: 'Beam 인더스트리얼 바 체어 - 카운터와 바를 위한 인더스트리얼 바 의자 | Mangala Living',
+      shortCaption: 'Beam 인더스트리얼 바 체어 - 인더스트리얼 바 의자',
+      description: `Mangala Living의 Beam 인더스트리얼 바 체어는 현대적인 카페, 레스토랑 및 상업 공간을 위한 완벽한 인더스트리얼 바 좌석 솔루션입니다. 이 프리미엄 인더스트리얼 바 체어는 최대의 편안함과 시각적 매력을 제공하는 강철 구조를 갖춘 세련된 인더스트리얼 디자인이 특징입니다.
+
+1999년부터 브카시 워크숍에서 제작된 이 인더스트리얼 바 체어는 뛰어난 용접 기술과 세부 사항에 대한 관심을 보여줍니다. 인더스트리얼 강철 프레임 구조는 뛰어난 내구성을 제공하면서 모든 인더스트리얼 또는 현대적인 인테리어 디자인을 보완하는 깔끔하고 미니멀한 미학을 유지합니다.
+
+바, 카페, 레스토랑 및 상업 공간에 완벽한 이 인더스트리얼 바 체어는 다목적 좌석 기능을 제공합니다. 바 높이 디자인은 카운터 영역과 바 공간을 위한 편안한 좌석을 제공합니다.`,
+      metaDescription: 'Beam 인더스트리얼 바 체어 - 인더스트리얼 바 의자 | 카페 가구 | Mangala Living',
+      imageAlt: 'Beam 인더스트리얼 바 체어 - 인더스트리얼 바 의자 - Mangala Living의 프리미엄 좌석'
     }
   },
   'bar-stall-chair': {
@@ -297,6 +420,78 @@ Dibuat di workshop Bekasi kami sejak 1999, kursi bar industrial ini menampilkan 
 Sempurna untuk bar, kafe, restoran, dan ruang komersial, kursi bar industrial ini menyediakan kapasitas tempat duduk yang serbaguna. Desain tinggi bar menawarkan tempat duduk yang nyaman untuk area counter dan ruang bar.`,
       metaDescription: 'Bar Stall Chair - Kursi Stall Industrial | Furniture Kafe | Mangala Living',
       imageAlt: 'Bar Stall Chair - Kursi Stall Industrial - Tempat Duduk Premium dari Mangala Living'
+    },
+    ar: {
+      name: 'كرسي بار ستول',
+      caption: 'كرسي بار ستول - كرسي ستول صناعي للبار والكاونتر | Mangala Living',
+      shortCaption: 'كرسي بار ستول - كرسي ستول صناعي',
+      description: `كرسي البار ستول من Mangala Living هو الحل المثالي لمقاعد البار الصناعي للمقاهي والمطاعم والمساحات التجارية الحديثة. يتميز كرسي البار الصناعي المميز هذا بتصميم صناعي أنيق مع هيكل فولاذي يوفر أقصى قدر من الراحة والجاذبية البصرية.
+
+صُنع في ورشة عملنا في بيكاسي منذ عام 1999، يعرض كرسي البار الصناعي هذا تقنيات لحام متفوقة والاهتمام بالتفاصيل. يوفر هيكل الإطار الفولاذي الصناعي متانة ممتازة مع الحفاظ على جمالية بسيطة ونظيفة تكمل أي تصميم داخلي صناعي أو حديث.
+
+مثالي للبارات والمقاهي والمطاعم والمساحات التجارية، يوفر كرسي البار الصناعي هذا قدرات جلوس متعددة الاستخدامات. يوفر تصميم ارتفاع البار جلوسًا مريحًا لمناطق الكاونتر ومساحات البار.`,
+      metaDescription: 'كرسي بار ستول - كرسي ستول صناعي | أثاث المقاهي | Mangala Living',
+      imageAlt: 'كرسي بار ستول - كرسي ستول صناعي - مقاعد مميزة من Mangala Living'
+    },
+    zh: {
+      name: '吧台高脚椅',
+      caption: '吧台高脚椅 - 工业吧台椅用于酒吧和柜台 | Mangala Living',
+      shortCaption: '吧台高脚椅 - 工业吧台椅',
+      description: `Mangala Living的吧台高脚椅是现代咖啡馆、餐厅和商业空间的完美工业座椅解决方案。这款优质工业吧椅采用时尚的工业设计和钢结构，提供最大的舒适性和视觉吸引力。
+
+自1999年以来在我们位于勿加泗的车间制作，这款工业吧椅展示了卓越的焊接技术和对细节的关注。工业钢框架结构提供出色的耐用性，同时保持干净、简约的美学，可以补充任何工业或现代室内设计。
+
+非常适合酒吧、咖啡馆、餐厅和商业空间，这款工业吧椅提供多功能座椅能力。酒吧高度设计为柜台区和酒吧空间提供舒适的座椅。`,
+      metaDescription: '吧台高脚椅 - 工业吧台椅 | 咖啡馆家具 | Mangala Living',
+      imageAlt: '吧台高脚椅 - 工业吧台椅 - Mangala Living的优质座椅'
+    },
+    ja: {
+      name: 'バースツールチェア',
+      caption: 'バースツールチェア - バーとカウンター用の工業用スツールチェア | Mangala Living',
+      shortCaption: 'バースツールチェア - 工業用スツールチェア',
+      description: `Mangala Livingのバースツールチェアは、モダンなカフェ、レストラン、商業空間に最適な工業用バーシーティングソリューションです。このプレミアム工業用バーチェアは、最大限の快適性と視覚的な魅力を提供するスチール構造を備えた洗練された工業デザインが特徴です。
+
+1999年以来、ブカシのワークショップで製作されたこの工業用バーチェアは、優れた溶接技術と細部へのこだわりを示しています。工業用スチールフレーム構造は、優れた耐久性を提供しながら、あらゆる工業的またはモダンなインテリアデザインを補完するクリーンでミニマリストな美学を維持しています。
+
+バー、カフェ、レストラン、商業空間に最適で、この工業用バーチェアは多目的な座席機能を提供します。バーの高さのデザインは、カウンターエリアとバースペースに快適な座席を提供します。`,
+      metaDescription: 'バースツールチェア - 工業用スツールチェア | カフェ家具 | Mangala Living',
+      imageAlt: 'バースツールチェア - 工業用スツールチェア - Mangala Livingのプレミアムシーティング'
+    },
+    es: {
+      name: 'Silla de Bar Stall',
+      caption: 'Silla de Bar Stall - Silla Stall Industrial para Bar y Mostrador | Mangala Living',
+      shortCaption: 'Silla de Bar Stall - Silla Stall Industrial',
+      description: `La Silla de Bar Stall de Mangala Living es la solución perfecta de asientos de bar industriales para cafeterías modernas, restaurantes y espacios comerciales. Esta silla de bar industrial premium presenta un diseño industrial elegante con construcción de acero que proporciona la máxima comodidad y atractivo visual.
+
+Elaborada en nuestro taller de Bekasi desde 1999, esta silla de bar industrial muestra técnicas de soldadura superiores y atención al detalle. La construcción del marco de acero industrial ofrece una excelente durabilidad mientras mantiene una estética minimalista y limpia que complementa cualquier diseño de interiores industrial o moderno.
+
+Perfecta para bares, cafeterías, restaurantes y espacios comerciales, esta silla de bar industrial proporciona capacidades de asientos versátiles. El diseño de altura de bar ofrece asientos cómodos para áreas de mostrador y espacios de bar.`,
+      metaDescription: 'Silla de Bar Stall - Silla Stall Industrial | Mobiliario de Cafetería | Mangala Living',
+      imageAlt: 'Silla de Bar Stall - Silla Stall Industrial - Asientos Premium de Mangala Living'
+    },
+    fr: {
+      name: 'Chaise de Bar Stall',
+      caption: 'Chaise de Bar Stall - Chaise Stall Industrielle pour Bar et Comptoir | Mangala Living',
+      shortCaption: 'Chaise de Bar Stall - Chaise Stall Industrielle',
+      description: `La Chaise de Bar Stall de Mangala Living est la solution parfaite de sièges de bar industriels pour les cafés modernes, les restaurants et les espaces commerciaux. Cette chaise de bar industrielle premium présente un design industriel élégant avec une construction en acier qui offre un confort maximal et un attrait visuel.
+
+Fabriquée dans notre atelier de Bekasi depuis 1999, cette chaise de bar industrielle présente des techniques de soudage supérieures et une attention aux détails. La construction du cadre en acier industriel offre une excellente durabilité tout en maintenant une esthétique minimaliste et épurée qui complète tout design d'intérieur industriel ou moderne.
+
+Parfaite pour les bars, les cafés, les restaurants et les espaces commerciaux, cette chaise de bar industrielle offre des capacités d'assise polyvalentes. Le design de hauteur de bar offre des sièges confortables pour les zones de comptoir et les espaces de bar.`,
+      metaDescription: 'Chaise de Bar Stall - Chaise Stall Industrielle | Mobilier de Café | Mangala Living',
+      imageAlt: 'Chaise de Bar Stall - Chaise Stall Industrielle - Sièges Premium de Mangala Living'
+    },
+    ko: {
+      name: '바 스톨 체어',
+      caption: '바 스톨 체어 - 바와 카운터를 위한 인더스트리얼 스톨 체어 | Mangala Living',
+      shortCaption: '바 스톨 체어 - 인더스트리얼 스톨 체어',
+      description: `Mangala Living의 바 스톨 체어는 현대적인 카페, 레스토랑 및 상업 공간을 위한 완벽한 인더스트리얼 바 좌석 솔루션입니다. 이 프리미엄 인더스트리얼 바 체어는 최대의 편안함과 시각적 매력을 제공하는 강철 구조를 갖춘 세련된 인더스트리얼 디자인이 특징입니다.
+
+1999년부터 브카시 워크숍에서 제작된 이 인더스트리얼 바 체어는 뛰어난 용접 기술과 세부 사항에 대한 관심을 보여줍니다. 인더스트리얼 강철 프레임 구조는 뛰어난 내구성을 제공하면서 모든 인더스트리얼 또는 현대적인 인테리어 디자인을 보완하는 깔끔하고 미니멀한 미학을 유지합니다.
+
+바, 카페, 레스토랑 및 상업 공간에 완벽한 이 인더스트리얼 바 체어는 다목적 좌석 기능을 제공합니다. 바 높이 디자인은 카운터 영역과 바 공간을 위한 편안한 좌석을 제공합니다.`,
+      metaDescription: '바 스톨 체어 - 인더스트리얼 스톨 체어 | 카페 가구 | Mangala Living',
+      imageAlt: '바 스톨 체어 - 인더스트리얼 스톨 체어 - Mangala Living의 프리미엄 좌석'
     }
   },
   'steelframe-outdoor-bar-set': {
@@ -484,50 +679,72 @@ Sempurna untuk kantor, workshop, studio, dan ruang komersial, meja kerja industr
 }
 
 /**
- * Get dual language description for a product by slug
+ * Get multi-language description for a product by slug
  */
-export const getProductDescription = (slug: string): DualLanguageDescription | null => {
+export const getProductDescription = (slug: string): MultiLanguageDescription | null => {
   const desc = PRODUCT_DESCRIPTIONS[slug]
   if (!desc) return null
   return desc
 }
 
 /**
- * Get caption for product image (SEO-friendly dual language)
+ * Get caption for product image (SEO-friendly multi-language)
  */
-export const getProductImageCaption = (slug: string, isIndonesian: boolean): string => {
+export const getProductImageCaption = (slug: string, isIndonesian: boolean, language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'): string => {
   const desc = getProductDescription(slug)
+  const lang = language || (isIndonesian ? 'id' : 'en')
+  
   if (!desc) {
     // Fallback to generic caption
-    return isIndonesian 
-      ? 'Furniture Industrial Premium dari Mangala Living Workshop Bekasi'
-      : 'Premium Industrial Furniture from Mangala Living Workshop Bekasi'
+    const fallbacks: Record<string, string> = {
+      en: 'Premium Industrial Furniture from Mangala Living Workshop Bekasi',
+      id: 'Furniture Industrial Premium dari Mangala Living Workshop Bekasi',
+      ar: 'أثاث صناعي مميز من ورشة Mangala Living بيكاسي',
+      zh: 'Mangala Living勿加泗车间的优质工业家具',
+      ja: 'Mangala Livingブカシワークショップのプレミアム工業用家具',
+      es: 'Mobiliario Industrial Premium del Taller Mangala Living Bekasi',
+      fr: 'Mobilier Industriel Premium de l\'Atelier Mangala Living Bekasi',
+      ko: 'Mangala Living 브카시 워크숍의 프리미엄 인더스트리얼 가구'
+    }
+    return fallbacks[lang] || fallbacks.en
   }
-  return isIndonesian ? desc.id.caption : desc.en.caption
+  return desc[lang]?.caption || desc.en.caption
 }
 
 /**
  * Get short caption for product image (for alt text)
  */
-export const getProductImageAlt = (slug: string, isIndonesian: boolean): string => {
+export const getProductImageAlt = (slug: string, isIndonesian: boolean, language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'): string => {
   const desc = getProductDescription(slug)
+  const lang = language || (isIndonesian ? 'id' : 'en')
+  
   if (!desc) {
     // Fallback to generic alt
-    return isIndonesian 
-      ? 'Furniture Industrial Premium dari Mangala Living'
-      : 'Premium Industrial Furniture from Mangala Living'
+    const fallbacks: Record<string, string> = {
+      en: 'Premium Industrial Furniture from Mangala Living',
+      id: 'Furniture Industrial Premium dari Mangala Living',
+      ar: 'أثاث صناعي مميز من Mangala Living',
+      zh: 'Mangala Living的优质工业家具',
+      ja: 'Mangala Livingのプレミアム工業用家具',
+      es: 'Mobiliario Industrial Premium de Mangala Living',
+      fr: 'Mobilier Industriel Premium de Mangala Living',
+      ko: 'Mangala Living의 프리미엄 인더스트리얼 가구'
+    }
+    return fallbacks[lang] || fallbacks.en
   }
-  return isIndonesian ? desc.id.imageAlt : desc.en.imageAlt
+  return desc[lang]?.imageAlt || desc.en.imageAlt
 }
 
 /**
  * Get translated product name
  */
-export const getProductName = (slug: string, isIndonesian: boolean): string => {
+export const getProductName = (slug: string, isIndonesian: boolean, language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'): string => {
   const desc = getProductDescription(slug)
+  const lang = language || (isIndonesian ? 'id' : 'en')
+  
   if (!desc) {
     // Fallback - get name from products.ts
     return ''
   }
-  return isIndonesian ? desc.id.name : desc.en.name
+  return desc[lang]?.name || desc.en.name
 }
