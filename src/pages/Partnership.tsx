@@ -5,7 +5,11 @@ import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
-import showroomImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
+import projectVideo from '../assets/meja-makan-industrial.mp4'
+import experienceImage from '../assets/Hollowline-Display-Rack.webp'
+import collaborationImage from '../assets/Meja-Kerja-Rak-Meja-Belajar-custom.webp'
+import flexibilityImage from '../assets/Kabinet-Industrial-Dapur.webp'
+import scaleImage from '../assets/Meja-makan-industrial-150x60x90-2 kursi.webp'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import './Partnership.css'
@@ -137,44 +141,61 @@ const Partnership: React.FC = () => {
                     </p>
                   </>
                 )}
-              </div>
-            </div>
-            <div className="partnership-main-image-wrapper">
-              <img 
-                src={showroomImage} 
-                alt="Partnership Collaboration" 
-                className="partnership-main-image"
-              />
             </div>
           </div>
+          <div className="partnership-main-media-wrapper">
+            <video 
+              src={projectVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="partnership-main-video"
+              aria-label={isIndonesian ? 'Video produk furniture industrial Mangala Living' : 'Mangala Living industrial furniture product video'}
+            >
+              <source src={projectVideo} type="video/mp4" />
+              {isIndonesian ? 'Browser Anda tidak mendukung video.' : 'Your browser does not support the video tag.'}
+            </video>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Experience Section */}
       <section className="partnership-experience-section">
         <div className="partnership-experience-container">
           <h2 className="partnership-experience-title">{isIndonesian ? 'Pengalaman Jadi Nilai Tambah' : 'Experience Becomes Added Value'}</h2>
           
-          <div className="partnership-experience-content">
-            {isIndonesian ? (
-              <>
-                <p className="partnership-experience-description">
-                  Kami sudah terbiasa ikut dalam banyak skema proyek - dari apartemen di tengah kota, resor di pinggir pantai, hingga pengadaan ruang publik. Setiap klien membawa tantangan berbeda. Justru itu yang membuat kami terlatih, bukan sekadar ahli membuat furnitur, tapi juga memahami dinamika proyeknya.
-                </p>
-                <p className="partnership-experience-description">
-                  Mulai dari proses penyesuaian desain, pemilihan material, hingga skema pengiriman bertahap, semuanya bisa dikomunikasikan. Anda tidak perlu menjelaskan dua kali. Kami tahu bagaimana menyusun alur kerja yang efisien.
-                </p>
-              </>
-            ) : (
-              <>
-                <p className="partnership-experience-description">
-                  We're already accustomed to participating in many project schemes - from apartments in the city center, resorts on the beach, to public space procurement. Each client brings different challenges. That's exactly what makes us trained, not just experts at making furniture, but also understanding project dynamics.
-                </p>
-                <p className="partnership-experience-description">
-                  From the design adjustment process, material selection, to phased delivery schemes, everything can be communicated. You don't need to explain twice. We know how to organize efficient workflows.
-                </p>
-              </>
-            )}
+          <div className="partnership-experience-layout">
+            <div className="partnership-experience-image-wrapper">
+              <img 
+                src={experienceImage}
+                alt={isIndonesian ? 'Pengalaman Produksi Furniture Industrial - Hollowline Display Rack' : 'Industrial Furniture Production Experience - Hollowline Display Rack'}
+                className="partnership-experience-image"
+                loading="lazy"
+              />
+            </div>
+            <div className="partnership-experience-content">
+              {isIndonesian ? (
+                <>
+                  <p className="partnership-experience-description">
+                    Kami sudah terbiasa ikut dalam banyak skema proyek - dari apartemen di tengah kota, resor di pinggir pantai, hingga pengadaan ruang publik. Setiap klien membawa tantangan berbeda. Justru itu yang membuat kami terlatih, bukan sekadar ahli membuat furnitur, tapi juga memahami dinamika proyeknya.
+                  </p>
+                  <p className="partnership-experience-description">
+                    Mulai dari proses penyesuaian desain, pemilihan material, hingga skema pengiriman bertahap, semuanya bisa dikomunikasikan. Anda tidak perlu menjelaskan dua kali. Kami tahu bagaimana menyusun alur kerja yang efisien.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p className="partnership-experience-description">
+                    We're already accustomed to participating in many project schemes - from apartments in the city center, resorts on the beach, to public space procurement. Each client brings different challenges. That's exactly what makes us trained, not just experts at making furniture, but also understanding project dynamics.
+                  </p>
+                  <p className="partnership-experience-description">
+                    From the design adjustment process, material selection, to phased delivery schemes, everything can be communicated. You don't need to explain twice. We know how to organize efficient workflows.
+                  </p>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </section>
@@ -185,32 +206,42 @@ const Partnership: React.FC = () => {
           <h2 className="partnership-collaboration-title">{isIndonesian ? 'Bukan Sekadar Produksi, Tapi Kolaborasi' : 'Not Just Production, But Collaboration'}</h2>
           <p className="partnership-collaboration-subtitle">{isIndonesian ? 'Kontraktor Mebel' : 'Furniture Contractor'}</p>
           
-          <div className="partnership-collaboration-content">
-            {isIndonesian ? (
-              <>
-                <p className="partnership-collaboration-description">
-                  Kami percaya, keberhasilan proyek bukan dari banyaknya item yang diproduksi, tapi dari seberapa tepat kami mengeksekusi ide Anda. Ada klien yang datang dengan moodboard, ada yang cuma kirim foto, bahkan ada yang hanya bilang: "Saya butuh nuansa tropis, hangat, tapi tetap elegan."
-                </p>
-                <p className="partnership-collaboration-description">
-                  Semua bisa dibicarakan. Tim kami terbuka untuk berdiskusi dari awal. Anda bisa menyampaikan keperluan khusus: ukuran ruang, batasan anggaran, gaya desain interior, atau detail konstruksi.
-                </p>
-                <p className="partnership-collaboration-description">
-                  Kami akan bantu merumuskan solusi. Bukan dengan kata-kata manis, tapi dengan sketsa, perhitungan material dan prototipe bila dibutuhkan. Semuanya jelas dan terukur.
-                </p>
-              </>
-            ) : (
-              <>
-                <p className="partnership-collaboration-description">
-                  We believe project success is not from the number of items produced, but from how precisely we execute your ideas. Some clients come with moodboards, some just send photos, even some just say: "I need a tropical, warm, yet elegant atmosphere."
-                </p>
-                <p className="partnership-collaboration-description">
-                  Everything can be discussed. Our team is open to discussion from the start. You can convey special needs: room dimensions, budget constraints, interior design style, or construction details.
-                </p>
-                <p className="partnership-collaboration-description">
-                  We'll help formulate solutions. Not with sweet words, but with sketches, material calculations and prototypes when needed. Everything is clear and measurable.
-                </p>
-              </>
-            )}
+          <div className="partnership-collaboration-layout">
+            <div className="partnership-collaboration-content">
+              {isIndonesian ? (
+                <>
+                  <p className="partnership-collaboration-description">
+                    Kami percaya, keberhasilan proyek bukan dari banyaknya item yang diproduksi, tapi dari seberapa tepat kami mengeksekusi ide Anda. Ada klien yang datang dengan moodboard, ada yang cuma kirim foto, bahkan ada yang hanya bilang: "Saya butuh nuansa tropis, hangat, tapi tetap elegan."
+                  </p>
+                  <p className="partnership-collaboration-description">
+                    Semua bisa dibicarakan. Tim kami terbuka untuk berdiskusi dari awal. Anda bisa menyampaikan keperluan khusus: ukuran ruang, batasan anggaran, gaya desain interior, atau detail konstruksi.
+                  </p>
+                  <p className="partnership-collaboration-description">
+                    Kami akan bantu merumuskan solusi. Bukan dengan kata-kata manis, tapi dengan sketsa, perhitungan material dan prototipe bila dibutuhkan. Semuanya jelas dan terukur.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p className="partnership-collaboration-description">
+                    We believe project success is not from the number of items produced, but from how precisely we execute your ideas. Some clients come with moodboards, some just send photos, even some just say: "I need a tropical, warm, yet elegant atmosphere."
+                  </p>
+                  <p className="partnership-collaboration-description">
+                    Everything can be discussed. Our team is open to discussion from the start. You can convey special needs: room dimensions, budget constraints, interior design style, or construction details.
+                  </p>
+                  <p className="partnership-collaboration-description">
+                    We'll help formulate solutions. Not with sweet words, but with sketches, material calculations and prototypes when needed. Everything is clear and measurable.
+                  </p>
+                </>
+              )}
+            </div>
+            <div className="partnership-collaboration-image-wrapper">
+              <img 
+                src={collaborationImage}
+                alt={isIndonesian ? 'Kolaborasi Custom Design - Meja Kerja Industrial' : 'Custom Design Collaboration - Industrial Work Desk'}
+                className="partnership-collaboration-image"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -220,26 +251,36 @@ const Partnership: React.FC = () => {
         <div className="partnership-flexibility-container">
           <h2 className="partnership-flexibility-title">{isIndonesian ? 'Tahu Kapan Harus Cepat, Tahu Kapan Harus Teliti' : 'Know When to Be Fast, Know When to Be Careful'}</h2>
           
-          <div className="partnership-flexibility-content">
-            {isIndonesian ? (
-              <>
-                <p className="partnership-flexibility-description">
-                  Beberapa klien butuh cepat. Ada yang menginginkan tahap pengiriman per zona. Ada pula yang meminta penyesuaian produksi berdasarkan hasil site inspection. Semua itu masuk akal dan bisa dibicarakan.
-                </p>
-                <p className="partnership-flexibility-description">
-                  Kami tidak menawarkan paket seragam untuk semua proyek. Anda bisa memilih. Mau fokus pada kayu solid dengan sentuhan handmade? Atau kombinasi antara efisiensi produksi dan detail artistik? Kami bantu wujudkan.
-                </p>
-              </>
-            ) : (
-              <>
-                <p className="partnership-flexibility-description">
-                  Some clients need speed. Some want phased delivery per zone. Others request production adjustments based on site inspection results. All of that makes sense and can be discussed.
-                </p>
-                <p className="partnership-flexibility-description">
-                  We don't offer uniform packages for all projects. You can choose. Want to focus on solid wood with handmade touches? Or a combination of production efficiency and artistic details? We'll help make it happen.
-                </p>
-              </>
-            )}
+          <div className="partnership-flexibility-layout">
+            <div className="partnership-flexibility-image-wrapper">
+              <img 
+                src={flexibilityImage}
+                alt={isIndonesian ? 'Fleksibilitas Produksi - Kabinet Industrial Dapur' : 'Production Flexibility - Industrial Kitchen Cabinet'}
+                className="partnership-flexibility-image"
+                loading="lazy"
+              />
+            </div>
+            <div className="partnership-flexibility-content">
+              {isIndonesian ? (
+                <>
+                  <p className="partnership-flexibility-description">
+                    Beberapa klien butuh cepat. Ada yang menginginkan tahap pengiriman per zona. Ada pula yang meminta penyesuaian produksi berdasarkan hasil site inspection. Semua itu masuk akal dan bisa dibicarakan.
+                  </p>
+                  <p className="partnership-flexibility-description">
+                    Kami tidak menawarkan paket seragam untuk semua proyek. Anda bisa memilih. Mau fokus pada kayu solid dengan sentuhan handmade? Atau kombinasi antara efisiensi produksi dan detail artistik? Kami bantu wujudkan.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p className="partnership-flexibility-description">
+                    Some clients need speed. Some want phased delivery per zone. Others request production adjustments based on site inspection results. All of that makes sense and can be discussed.
+                  </p>
+                  <p className="partnership-flexibility-description">
+                    We don't offer uniform packages for all projects. You can choose. Want to focus on solid wood with handmade touches? Or a combination of production efficiency and artistic details? We'll help make it happen.
+                  </p>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </section>
@@ -248,6 +289,15 @@ const Partnership: React.FC = () => {
       <section className="partnership-scale-section">
         <div className="partnership-scale-container">
           <h2 className="partnership-scale-title">{isIndonesian ? 'Proyek Besar atau Kecil, Sama-Sama Serius' : 'Large or Small Projects, Both Taken Seriously'}</h2>
+          
+          <div className="partnership-scale-image-wrapper">
+            <img 
+              src={scaleImage}
+              alt={isIndonesian ? 'Berbagai Skala Proyek - Dining Set Industrial' : 'Various Project Scales - Industrial Dining Set'}
+              className="partnership-scale-image"
+              loading="lazy"
+            />
+          </div>
           
           <div className="partnership-scale-content">
             {isIndonesian ? (
