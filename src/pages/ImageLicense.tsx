@@ -7,59 +7,33 @@ import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { DEFAULT_IMAGE_RIGHTS_METADATA } from '../utils/structuredData'
+import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
 import './ImageLicense.css'
 
 const HERO_IMAGE_URL = 'https://mangala-living.com/assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 
 const ImageLicense: React.FC = () => {
-  const [isIndonesian, setIsIndonesian] = useState(false)
-  const [isLoading, setIsLoading] = useState(true)
   const location = useLocation()
-
-  useEffect(() => {
-    const path = location.pathname
-    if (path.startsWith('/id')) {
-      setIsIndonesian(true)
-      setIsLoading(false)
-      return
-    }
-    if (path.startsWith('/eng')) {
-      setIsIndonesian(false)
-      setIsLoading(false)
-      return
-    }
-
-    const params = new URLSearchParams(location.search)
-    const lang = params.get('lang')
-    if (lang === 'id' || lang === 'en') {
-      setIsIndonesian(lang === 'id')
-      setIsLoading(false)
-      return
-    }
-
-    const detectLocation = async () => {
-      try {
-        const response = await fetch('https://ipapi.co/json/')
-        const data = await response.json()
-        if (data.country_code === 'ID') {
-          setIsIndonesian(true)
-        }
-      } catch (error) {
-        const browserLang = navigator.language || navigator.languages?.[0]
-        if (browserLang?.startsWith('id')) {
-          setIsIndonesian(true)
-        }
-      } finally {
-        setIsLoading(false)
-      }
-    }
-
-    detectLocation()
-  }, [location.pathname, location.search])
-
-  if (isLoading) {
-    return null
+  const getInitialLanguage = (): LanguageCode => {
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    if (urlLang) return urlLang
+    const browserLang = navigator.language || navigator.languages?.[0]
+    if (browserLang?.startsWith('id')) return 'id'
+    if (browserLang?.startsWith('ar')) return 'ar'
+    if (browserLang?.startsWith('zh')) return 'zh'
+    if (browserLang?.startsWith('ja')) return 'ja'
+    if (browserLang?.startsWith('es')) return 'es'
+    if (browserLang?.startsWith('fr')) return 'fr'
+    if (browserLang?.startsWith('ko')) return 'ko'
+    return 'en'
   }
+  const [language, setLanguage] = useState<LanguageCode>(getInitialLanguage)
+  useEffect(() => {
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    if (urlLang && urlLang !== language) setLanguage(urlLang)
+  }, [location.pathname, location.search])
+  const isIndonesian = language === 'id'
+
 
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
@@ -177,7 +151,7 @@ const ImageLicense: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(imageObjectSchema)}</script>
       </Helmet>
 
-      <Header isIndonesian={isIndonesian} />
+      <Header isIndonesian={isIndonesian} language={language} />
 
       <section className="image-license-hero">
         <div className="image-license-hero-media">
@@ -273,7 +247,7 @@ const ImageLicense: React.FC = () => {
         </section>
       </main>
 
-      <Footer />
+      <Footer isIndonesian={isIndonesian} language={language} />
     </div>
   )
 }

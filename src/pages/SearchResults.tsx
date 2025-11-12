@@ -10,6 +10,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getProductName } from '../data/productDescriptions'
+import { getLanguageFromLocation } from '../utils/languageManager'
 import './SearchResults.css'
 import '../components/DualLanguage.css'
 
@@ -46,22 +47,12 @@ function SearchResults() {
   const [usdPrices, setUsdPrices] = useState<Record<number, string>>({})
   const [isDetectingLanguage, setIsDetectingLanguage] = useState(true)
 
+  // Language detection - instant, no async needed!
   useEffect(() => {
-    const detectLanguage = async () => {
-      try {
-        const { detectLanguage: detectLang } = await import('../utils/languageManager')
-        const lang = await detectLang(location.pathname, location.search)
-        setIsIndonesian(lang === 'id')
-      } catch (error) {
-        console.error('Failed to detect language for search page:', error)
-        setIsIndonesian(langParam === 'id')
-      } finally {
-        setIsDetectingLanguage(false)
-      }
-    }
-
-    detectLanguage()
-  }, [location.pathname, location.search, langParam])
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    setIsIndonesian(urlLang === 'id')
+    setIsDetectingLanguage(false)
+  }, [location.pathname, location.search])
 
   useEffect(() => {
     let isMounted = true

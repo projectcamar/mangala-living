@@ -14,6 +14,7 @@ import { generateMerchantStructuredData } from '../utils/structuredData'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getProductName } from '../data/productDescriptions'
+import { getLanguageFromLocation } from '../utils/languageManager'
 import './ProductCategory.css'
 import './Shop.css'
 
@@ -34,15 +35,10 @@ const Shop: React.FC = () => {
     window.scrollTo(0, 0)
   }, [currentPage])
 
-  // Language detection
+  // Language detection - instant, no async needed!
   useEffect(() => {
-    const detectLanguage = async () => {
-      const { detectLanguage: detectLang } = await import('../utils/languageManager')
-      const lang = await detectLang(location.pathname, location.search)
-      setIsIndonesian(lang === 'id')
-    }
-
-    detectLanguage()
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    setIsIndonesian(urlLang === 'id')
   }, [location.pathname, location.search])
 
   useEffect(() => {

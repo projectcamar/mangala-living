@@ -15,6 +15,7 @@ import { sendBackgroundEmail } from '../utils/emailHelpers'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getCategorySlug } from '../utils/categoryHelpers'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
+import { getLanguageFromLocation } from '../utils/languageManager'
 import './ProductDetail.css'
 
 interface ProductDetail {
@@ -252,16 +253,11 @@ const ProductDetail: React.FC = () => {
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
 
-  // Language and country detection
+  // Language detection - instant, no async needed!
   useEffect(() => {
-    const detectLanguage = async () => {
-      const { detectLanguage: detectLang } = await import('../utils/languageManager')
-      const lang = await detectLang(location.pathname, location.search)
-      setIsIndonesian(lang === 'id')
-      setIsLoading(false)
-    }
-
-    detectLanguage()
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    setIsIndonesian(urlLang === 'id')
+    setIsLoading(false)
   }, [location.pathname, location.search])
 
   // Convert price to USD - always available for all users

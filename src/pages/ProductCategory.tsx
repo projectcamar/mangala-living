@@ -12,6 +12,7 @@ import { CATEGORY_MAP } from '../data/categories'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getProductName } from '../data/productDescriptions'
+import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
 import './ProductCategory.css'
 
 const ProductCategory: React.FC = () => {
@@ -19,23 +20,36 @@ const ProductCategory: React.FC = () => {
   const location = useLocation()
   const [sortBy, setSortBy] = useState('default')
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-  const [isIndonesian, setIsIndonesian] = useState(true)
-  const [isLoading, setIsLoading] = useState(true)
+  
+  const getInitialLanguage = (): LanguageCode => {
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    if (urlLang) return urlLang
+    const browserLang = navigator.language || navigator.languages?.[0]
+    if (browserLang?.startsWith('id')) return 'id'
+    if (browserLang?.startsWith('ar')) return 'ar'
+    if (browserLang?.startsWith('zh')) return 'zh'
+    if (browserLang?.startsWith('ja')) return 'ja'
+    if (browserLang?.startsWith('es')) return 'es'
+    if (browserLang?.startsWith('fr')) return 'fr'
+    if (browserLang?.startsWith('ko')) return 'ko'
+    return 'en'
+  }
+  
+  const [language, setLanguage] = useState<LanguageCode>(getInitialLanguage)
   const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
 
   const categoryName = CATEGORY_MAP[category || ''] || 'Products'
 
-  // Language detection
+  // Language detection - instant, no async needed!
   useEffect(() => {
-    const detectLanguage = async () => {
-      const { detectLanguage: detectLang } = await import('../utils/languageManager')
-      const lang = await detectLang(location.pathname, location.search)
-      setIsIndonesian(lang === 'id')
-      setIsLoading(false)
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    if (urlLang && urlLang !== language) {
+      setLanguage(urlLang)
     }
-
-    detectLanguage()
   }, [location.pathname, location.search])
+  
+  const isIndonesian = language === 'id'
+  const isLoading = false
 
   // Scroll to top when category changes
   useEffect(() => {
@@ -102,7 +116,7 @@ const ProductCategory: React.FC = () => {
     return (
       <div className="product-category-page">
         <AnnouncementBar />
-        <Header isIndonesian={isIndonesian} />
+        <Header isIndonesian={isIndonesian} language={language} />
         <div style={{ 
           display: 'flex', 
           justifyContent: 'center', 
@@ -125,7 +139,7 @@ const ProductCategory: React.FC = () => {
             </p>
           </div>
         </div>
-        <Footer />
+        <Footer isIndonesian={isIndonesian} language={language} />
       </div>
     )
   }

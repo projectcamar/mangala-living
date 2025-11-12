@@ -7,13 +7,37 @@ import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import { getPostsByPage, getTotalPages } from '../data/blog'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
+import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
 import './Blog.css'
 
 const Blog: React.FC = () => {
   const location = useLocation()
   const [searchParams] = useSearchParams()
-  const [isIndonesian, setIsIndonesian] = useState(false)
-  const [isLanguageLoading, setIsLanguageLoading] = useState(true)
+  
+  const getInitialLanguage = (): LanguageCode => {
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    if (urlLang) return urlLang
+    const browserLang = navigator.language || navigator.languages?.[0]
+    if (browserLang?.startsWith('id')) return 'id'
+    if (browserLang?.startsWith('ar')) return 'ar'
+    if (browserLang?.startsWith('zh')) return 'zh'
+    if (browserLang?.startsWith('ja')) return 'ja'
+    if (browserLang?.startsWith('es')) return 'es'
+    if (browserLang?.startsWith('fr')) return 'fr'
+    if (browserLang?.startsWith('ko')) return 'ko'
+    return 'en'
+  }
+  
+  const [language, setLanguage] = useState<LanguageCode>(getInitialLanguage)
+  
+  useEffect(() => {
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    if (urlLang && urlLang !== language) {
+      setLanguage(urlLang)
+    }
+  }, [location.pathname, location.search])
+  
+  const isIndonesian = language === 'id'
   const postsPerPage = 8
   const rawPage = Number.parseInt(searchParams.get('page') || '1', 10)
   const totalPages = getTotalPages(postsPerPage)
@@ -27,56 +51,6 @@ const Blog: React.FC = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [currentPage])
-
-  useEffect(() => {
-    const path = location.pathname
-
-    if (path.startsWith('/id')) {
-      setIsIndonesian(true)
-      setIsLanguageLoading(false)
-      return
-    }
-
-    if (path.startsWith('/eng')) {
-      setIsIndonesian(false)
-      setIsLanguageLoading(false)
-      return
-    }
-
-    const params = new URLSearchParams(location.search)
-    const lang = params.get('lang')
-
-    if (lang === 'id' || lang === 'en') {
-      setIsIndonesian(lang === 'id')
-      setIsLanguageLoading(false)
-      return
-    }
-
-    const detectLocation = async () => {
-      try {
-        const response = await fetch('https://ipapi.co/json/')
-        const data = await response.json()
-
-        if (data.country_code === 'ID') {
-          setIsIndonesian(true)
-        } else {
-          const browserLang = navigator.language || navigator.languages?.[0]
-          setIsIndonesian(Boolean(browserLang?.startsWith('id')))
-        }
-      } catch (error) {
-        const browserLang = navigator.language || navigator.languages?.[0]
-        setIsIndonesian(Boolean(browserLang?.startsWith('id')))
-      } finally {
-        setIsLanguageLoading(false)
-      }
-    }
-
-    detectLocation()
-  }, [location.pathname, location.search])
-
-  if (isLanguageLoading) {
-    return null
-  }
 
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
@@ -106,7 +80,7 @@ const Blog: React.FC = () => {
         <meta property="og:locale:alternate" content="en_US" />
       </Helmet>
       
-        <Header isIndonesian={isIndonesian} />
+        <Header isIndonesian={isIndonesian} language={language} />
       
       {/* Hero Section */}
       <section className="blog-hero">
@@ -260,7 +234,7 @@ const Blog: React.FC = () => {
       </section>
       
 
-        <Footer isIndonesian={isIndonesian} />
+        <Footer isIndonesian={isIndonesian} language={language} />
     </div>
   )
 }
