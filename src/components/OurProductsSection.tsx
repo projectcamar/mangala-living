@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ALL_PRODUCTS } from '../data/products'
 import { trackEvent } from '../utils/analytics'
 import { convertIDRToUSD } from '../utils/currencyConverter'
+import { translateCategory } from '../utils/categoryTranslations'
 import './OurProductsSection.css'
 
 interface OurProductsSectionProps {
@@ -99,7 +100,7 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
               </div>
               <div className="product-info-full">
                 <h3 className="product-name-full">{product.name}</h3>
-                <p className="product-category-full">{product.category}</p>
+                <p className="product-category-full">{translateCategory(product.category, language)}</p>
                 {usdPrices[product.id] ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
                     <p

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { ALL_PRODUCTS } from '../data/products'
 import { convertIDRToUSD } from '../utils/currencyConverter'
+import { translateCategories } from '../utils/categoryTranslations'
 import './BestSellersSection.css'
 
 interface BestSellersSectionProps {
@@ -124,7 +125,7 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
                 </div>
                 <div className="product-info">
                   <h3 className="product-name">{product.name}</h3>
-                  <p className="product-categories">{product.categories.join(', ')}</p>
+                  <p className="product-categories">{translateCategories(product.categories, language)}</p>
                   {usdPrices[product.id] ? (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
                       <p

@@ -9,6 +9,8 @@ import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { getProductName } from '../data/productDescriptions'
+import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { translateCategories } from '../utils/categoryTranslations'
 import './ProductCategory.css'
 
 // Best sellers - first 10 products from ALL_PRODUCTS
@@ -16,10 +18,9 @@ const bestSellersProducts = ALL_PRODUCTS.slice(0, 10)
 
 const BestSellers: React.FC = () => {
   const location = useLocation()
-  const searchParams = new URLSearchParams(location.search)
-  const langParam = searchParams.get('lang')
-  const isIndonesian = langParam === 'id'
-  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+  const language = getLanguageFromLocation(location.pathname, location.search) ?? 'en'
+  const isIndonesian = language === 'id'
+  const localeMeta = generateLanguageSpecificMeta(language)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
 
   const [sortBy, setSortBy] = useState('default')
@@ -71,7 +72,7 @@ const BestSellers: React.FC = () => {
         <meta property="og:locale:alternate" content="en_US" />
       </Helmet>
       
-      <Header isIndonesian={isIndonesian} />
+      <Header isIndonesian={isIndonesian} language={language} />
       
       <main className="category-main">
         <div className="container">
@@ -105,7 +106,7 @@ const BestSellers: React.FC = () => {
           
           <div className="category-products-grid">
             {sortedProducts.map((product) => {
-              const translatedName = getProductName(product.slug, isIndonesian) || product.name
+              const translatedName = getProductName(product.slug, isIndonesian, language) || product.name
               return (
                 <Link 
                   key={product.id}
@@ -128,7 +129,7 @@ const BestSellers: React.FC = () => {
                   </div>
                   <div className="category-product-info">
                     <h3 className="category-product-name">{translatedName}</h3>
-                  <p className="category-product-cats">{product.categories.join(', ')}</p>
+                  <p className="category-product-cats">{translateCategories(product.categories, language)}</p>
                     <p className="category-product-price">{product.price}</p>
                   </div>
                 </Link>
@@ -138,7 +139,7 @@ const BestSellers: React.FC = () => {
         </div>
       </main>
       
-      <Footer />
+      <Footer isIndonesian={isIndonesian} language={language} />
     </div>
   )
 }
