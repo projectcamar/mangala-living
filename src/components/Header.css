@@ -77,6 +77,10 @@ body:has(.announcement-bar) .header {
   background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyMCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjE1IiBmaWxsPSIjREUyOTEwIi8+Cjxwb2x5Z29uIHBvaW50cz0iMyw0IDMuNSwyIDQuNSwzIDUuNSwyIDYsNCIgZmlsbD0iI0ZGREUwMCIvPgo8L3N2Zz4K');
 }
 
+.flag-ja {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyMCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjE1IiBmaWxsPSIjRkZGRkZGIi8+CjxjaXJjbGUgY3g9IjEwIiBjeT0iNy41IiByPSIzLjUiIGZpbGw9IiNCQzAwMkQiLz4KPC9zdmc+');
+}
+
 .language-text {
   font-weight: 500;
   color: #333;

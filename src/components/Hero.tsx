@@ -5,7 +5,7 @@ import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-
 
 interface HeroProps {
   isIndonesian?: boolean
-  language?: 'en' | 'id' | 'ar' | 'zh'
+  language?: 'en' | 'id' | 'ar' | 'zh' | 'ja'
 }
 
 const Hero: React.FC<HeroProps> = ({ isIndonesian = false, language = 'en' }) => {
@@ -15,9 +15,11 @@ const Hero: React.FC<HeroProps> = ({ isIndonesian = false, language = 'en' }) =>
     ? "منذ عام 1999، نقدم أطقم بار خارجية فاخرة، أطقم صالة، أرائك، رفوف تخزين وأثاث صناعي للمقاهي والفنادق والمطاعم من ورشتنا في بيكاسي"
     : language === 'zh'
     ? "自1999年以来，我们从勿加泗工作坊为咖啡馆、酒店和餐厅提供优质户外吧台套装、休息区套装、沙发长椅、储物架和工业家具"
+    : language === 'ja'
+    ? "1999年以来、ブカシ工房からカフェ、ホテル、レストラン向けに高品質な屋外バーセット、ラウンジセット、ソファベンチ、収納ラック、インダストリアル家具を提供しています"
     : "Since 1999, we deliver premium bar set outdoor, lounge set, sofa bench, storage rack and industrial furniture for cafes, hotels and restaurants from our Bekasi workshop"
   
-  const buttonText = language === 'id' ? "BELANJA SEKARANG" : language === 'ar' ? "تسوق الآن" : language === 'zh' ? "立即购买" : "SHOP NOW"
+  const buttonText = language === 'id' ? "BELANJA SEKARANG" : language === 'ar' ? "تسوق الآن" : language === 'zh' ? "立即购买" : language === 'ja' ? "今すぐ購入" : "SHOP NOW"
 
   return (
     <section className="hero" role="banner" aria-labelledby="hero-title">

@@ -21,7 +21,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
 
 const Home: React.FC = () => {
-  const [language, setLanguage] = useState<'en' | 'id' | 'ar' | 'zh'>('en')
+  const [language, setLanguage] = useState<'en' | 'id' | 'ar' | 'zh' | 'ja'>('en')
   const [isLoading, setIsLoading] = useState(true)
   const location = useLocation()
 
@@ -48,6 +48,11 @@ const Home: React.FC = () => {
       setIsLoading(false)
       return
     }
+    if (path.startsWith('/ja')) {
+      setLanguage('ja')
+      setIsLoading(false)
+      return
+    }
 
     // If no language prefix, detect from IP
     const detectLocation = async () => {
@@ -69,6 +74,8 @@ const Home: React.FC = () => {
         
         if (countryCode === 'ID') {
           setLanguage('id')
+        } else if (countryCode === 'JP') {
+          setLanguage('ja')
         } else if (chineseCountries.includes(countryCode)) {
           setLanguage('zh')
         } else if (arabicCountries.includes(countryCode)) {
@@ -82,6 +89,8 @@ const Home: React.FC = () => {
         const browserLang = navigator.language || navigator.languages?.[0]
         if (browserLang?.startsWith('id')) {
           setLanguage('id')
+        } else if (browserLang?.startsWith('ja')) {
+          setLanguage('ja')
         } else if (browserLang?.startsWith('zh')) {
           setLanguage('zh')
         } else if (browserLang?.startsWith('ar')) {
@@ -100,10 +109,11 @@ const Home: React.FC = () => {
   const isIndonesian = language === 'id'
   const isArabic = language === 'ar'
   const isChinese = language === 'zh'
+  const isJapanese = language === 'ja'
   
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
-  // For /id, /eng, /ar, and /zh routes, canonical should point to /
-  const canonicalPath = (location.pathname === '/id' || location.pathname === '/eng' || location.pathname === '/ar' || location.pathname === '/zh') ? '/' : location.pathname
+  // For /id, /eng, /ar, /zh, and /ja routes, canonical should point to /
+  const canonicalPath = (location.pathname === '/id' || location.pathname === '/eng' || location.pathname === '/ar' || location.pathname === '/zh' || location.pathname === '/ja') ? '/' : location.pathname
   const localizedUrls = generateLocalizedUrls(canonicalPath, location.search)
 
   // Multi-language translations
@@ -114,6 +124,8 @@ const Home: React.FC = () => {
       ? "أثاث صناعي من الحديد - طقم بار وطقم صالة ورفوف تخزين | مانجالا ليفينج"
       : language === 'zh'
       ? "工业家具吧台套装休息区套装储物架新品 | 曼加拉生活"
+      : language === 'ja'
+      ? "インダストリアル家具バーセットラウンジセット収納新着 | マンガラリビング"
       : "Industrial Furniture Bar Set Lounge Set Storage New Arrivals | Mangala Living",
     description: language === 'id'
       ? "Sejak 1999, Mangala Living menghadirkan furniture industrial terbaik: bar set outdoor, lounge set sofa bench, storage rak display, new arrivals untuk cafe hotel restoran. Workshop Bekasi 25+ tahun pengalaman"
@@ -121,6 +133,8 @@ const Home: React.FC = () => {
       ? "منذ عام 1999، تقدم مانجالا ليفينج أفضل الأثاث الصناعي: طقم بار خارجي، طقم صالة، أريكة، رفوف تخزين ومستجدات للمقاهي والفنادق والمطاعم. ورشة بيكاسي 25+ سنة خبرة"
       : language === 'zh'
       ? "自1999年以来，曼加拉生活提供优质工业家具：户外吧台套装、休息区套装、沙发长椅、储物架和新品，适用于咖啡馆、酒店和餐厅。勿加泗工作坊25年以上经验"
+      : language === 'ja'
+      ? "1999年以来、マンガラリビングは最高品質のインダストリアル家具を提供：屋外バーセット、ラウンジセット、ソファベンチ、収納ラック、カフェ・ホテル・レストラン向けの新着商品。ブカシ工房25年以上の経験"
       : "Since 1999, Mangala Living delivers premium industrial furniture: bar set outdoor, lounge set sofa bench, storage display rack, new arrivals for cafes hotels restaurants. Bekasi workshop 25+ years experience",
     ogTitle: language === 'id'
       ? "Furniture Industrial Besi Custom Bekasi | Cafe & Restoran"
@@ -128,6 +142,8 @@ const Home: React.FC = () => {
       ? "أثاث صناعي من الحديد مخصص بيكاسي | للمقاهي والمطاعم"
       : language === 'zh'
       ? "勿加泗定制工业铁艺家具 | 咖啡馆和餐厅"
+      : language === 'ja'
+      ? "ブカシ カスタムインダストリアル鉄家具 | カフェ＆レストラン"
       : "Industrial Furniture Besi Custom Bekasi | Cafe & Restoran",
     ogDescription: language === 'id'
       ? "Manufacturer furniture industrial: bar set outdoor, lounge set, sofa bench, storage rack, new arrivals untuk cafe restoran hotel. Workshop Bekasi 25+ tahun. Harga pabrik."
@@ -135,8 +151,10 @@ const Home: React.FC = () => {
       ? "مصنع الأثاث الصناعي: طقم بار خارجي، طقم صالة، أريكة، رفوف تخزين للمقاهي والمطاعم والفنادق. ورشة بيكاسي 25+ عام. أسعار المصنع."
       : language === 'zh'
       ? "工业家具制造商：户外吧台套装、休息区套装、沙发长椅、储物架，适用于咖啡馆、餐厅、酒店。勿加泗工作坊25年以上。工厂价格。"
+      : language === 'ja'
+      ? "インダストリアル家具メーカー：屋外バーセット、ラウンジセット、ソファベンチ、収納ラック、カフェ・レストラン・ホテル向け。ブカシ工房25年以上。工場価格。"
       : "Manufacturer industrial furniture: bar set outdoor, lounge set, sofa bench, storage rack, new arrivals for cafes restaurants hotels. Bekasi workshop 25+ years. Factory prices.",
-    loading: language === 'id' ? "Memuat..." : language === 'ar' ? "جاري التحميل..." : language === 'zh' ? "加载中..." : "Loading..."
+    loading: language === 'id' ? "Memuat..." : language === 'ar' ? "جاري التحميل..." : language === 'zh' ? "加载中..." : language === 'ja' ? "読み込み中..." : "Loading..."
   }
 
   if (isLoading) {
@@ -171,7 +189,7 @@ const Home: React.FC = () => {
   return (
     <div className="home">
       <CatalogModal />
-      <Helmet htmlAttributes={{ lang: language === 'ar' ? 'ar' : (language === 'zh' ? 'zh' : localeMeta.lang), dir: language === 'ar' ? 'rtl' : 'ltr', 'data-language': language }}>
+      <Helmet htmlAttributes={{ lang: language === 'ar' ? 'ar' : (language === 'zh' ? 'zh' : (language === 'ja' ? 'ja' : localeMeta.lang)), dir: language === 'ar' ? 'rtl' : 'ltr', 'data-language': language }}>
         <title>{translations.title}</title>
         <meta name="description" content={translations.description} />
         <meta name="keywords" content="bar set outdoor, lounge set, sofa bench, storage rack, new arrivals, furniture industrial set, display rack, bar furniture, outdoor furniture set, lounge furniture, mangala living, furniture bekasi, industrial furniture, meja kursi cafe" />
