@@ -37,6 +37,35 @@ export const storeLanguage = (lang: LanguageCode): void => {
 }
 
 /**
+ * Get language from URL location (synchronous)
+ * Checks URL path and query parameters only
+ * Returns null if no language is found in URL
+ */
+export const getLanguageFromLocation = (
+  pathname: string,
+  search: string
+): LanguageCode | null => {
+  // 1) Check query parameter ?lang=
+  const searchParams = new URLSearchParams(search)
+  const langParam = searchParams.get('lang')
+  if (langParam === 'id' || langParam === 'en' || langParam === 'ar' || langParam === 'zh' || langParam === 'ja' || langParam === 'es' || langParam === 'fr' || langParam === 'ko') {
+    return langParam as LanguageCode
+  }
+
+  // 2) Check URL for language prefix
+  if (pathname.startsWith('/id') || pathname.startsWith('/id/')) return 'id'
+  if (pathname.startsWith('/eng') || pathname.startsWith('/eng/')) return 'en'
+  if (pathname.startsWith('/ar') || pathname.startsWith('/ar/')) return 'ar'
+  if (pathname.startsWith('/zh') || pathname.startsWith('/zh/')) return 'zh'
+  if (pathname.startsWith('/ja') || pathname.startsWith('/ja/')) return 'ja'
+  if (pathname.startsWith('/es') || pathname.startsWith('/es/')) return 'es'
+  if (pathname.startsWith('/fr') || pathname.startsWith('/fr/')) return 'fr'
+  if (pathname.startsWith('/ko') || pathname.startsWith('/ko/')) return 'ko'
+
+  return null
+}
+
+/**
  * Detect language from various sources in priority order:
  * 1. URL query parameter (?lang=)
  * 2. URL path prefix (/id/, /eng/, /ar/, /zh/, /ja/, /es/, /fr/, /ko/)

@@ -19,6 +19,7 @@ import AISearchFeatures from '../components/AISearchFeatures'
 import { generateAIOptimizedStructuredData, generateFAQStructuredData, generateWebSiteStructuredData } from '../utils/aiSearchOptimization'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
+import { getLanguageFromLocation } from '../utils/languageManager'
 
 const Home: React.FC = () => {
   const location = useLocation()
@@ -48,6 +49,14 @@ const Home: React.FC = () => {
   }
   
   const [language, setLanguage] = useState<'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'>(getInitialLanguage)
+
+  // Update language when URL changes (makes language switcher work without refresh!)
+  useEffect(() => {
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    if (urlLang && urlLang !== language) {
+      setLanguage(urlLang)
+    }
+  }, [location.pathname, location.search])
 
   useEffect(() => {
     // If language is already set from URL prefix, don't do IP detection

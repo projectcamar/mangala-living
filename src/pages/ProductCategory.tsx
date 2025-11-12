@@ -12,6 +12,7 @@ import { CATEGORY_MAP } from '../data/categories'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { convertIDRToUSD } from '../utils/currencyConverter'
 import { getProductName } from '../data/productDescriptions'
+import { getLanguageFromLocation } from '../utils/languageManager'
 import './ProductCategory.css'
 
 const ProductCategory: React.FC = () => {
@@ -25,16 +26,11 @@ const ProductCategory: React.FC = () => {
 
   const categoryName = CATEGORY_MAP[category || ''] || 'Products'
 
-  // Language detection
+  // Language detection - instant, no async needed!
   useEffect(() => {
-    const detectLanguage = async () => {
-      const { detectLanguage: detectLang } = await import('../utils/languageManager')
-      const lang = await detectLang(location.pathname, location.search)
-      setIsIndonesian(lang === 'id')
-      setIsLoading(false)
-    }
-
-    detectLanguage()
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    setIsIndonesian(urlLang === 'id')
+    setIsLoading(false)
   }, [location.pathname, location.search])
 
   // Scroll to top when category changes
