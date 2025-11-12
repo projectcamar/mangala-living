@@ -1,12 +1,12 @@
 /**
  * Language management utility
  * Persists language preference across pages to maintain consistency
- * Supports: English (en), Indonesian (id), Arabic (ar), Mandarin (zh), Japanese (ja)
+ * Supports: English (en), Indonesian (id), Arabic (ar), Mandarin (zh), Japanese (ja), Spanish (es)
  */
 
 const LANGUAGE_STORAGE_KEY = 'mangala_lang_preference'
 
-export type LanguageCode = 'id' | 'en' | 'ar' | 'zh' | 'ja'
+export type LanguageCode = 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es'
 
 /**
  * Get stored language preference from localStorage
@@ -15,7 +15,7 @@ export const getStoredLanguage = (): LanguageCode | null => {
   if (typeof window === 'undefined') return null
   try {
     const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY)
-    if (stored === 'id' || stored === 'en' || stored === 'ar' || stored === 'zh' || stored === 'ja') {
+    if (stored === 'id' || stored === 'en' || stored === 'ar' || stored === 'zh' || stored === 'ja' || stored === 'es') {
       return stored as LanguageCode
     }
   } catch (error) {
@@ -39,9 +39,9 @@ export const storeLanguage = (lang: LanguageCode): void => {
 /**
  * Detect language from various sources in priority order:
  * 1. URL query parameter (?lang=)
- * 2. URL path prefix (/id/, /eng/, /ar/, /zh/, /ja/)
+ * 2. URL path prefix (/id/, /eng/, /ar/, /zh/, /ja/, /es/)
  * 3. Stored preference in localStorage
- * 4. IP detection (Arabic-speaking, Chinese-speaking, Japanese countries)
+ * 4. IP detection (Arabic-speaking, Chinese-speaking, Japanese, Spanish-speaking countries)
  * 5. Browser language fallback
  */
 export const detectLanguage = async (
@@ -51,7 +51,7 @@ export const detectLanguage = async (
   // 1) Check query parameter ?lang=
   const searchParams = new URLSearchParams(search)
   const langParam = searchParams.get('lang')
-  if (langParam === 'id' || langParam === 'en' || langParam === 'ar' || langParam === 'zh' || langParam === 'ja') {
+  if (langParam === 'id' || langParam === 'en' || langParam === 'ar' || langParam === 'zh' || langParam === 'ja' || langParam === 'es') {
     storeLanguage(langParam as LanguageCode)
     return langParam as LanguageCode
   }
@@ -77,6 +77,10 @@ export const detectLanguage = async (
     storeLanguage('ja')
     return 'ja'
   }
+  if (pathname.startsWith('/es') || pathname.startsWith('/es/')) {
+    storeLanguage('es')
+    return 'es'
+  }
 
   // 3) Check stored preference
   const stored = getStoredLanguage()
@@ -89,6 +93,14 @@ export const detectLanguage = async (
     const response = await fetch('https://ipapi.co/json/')
     const data = await response.json()
     const countryCode = data.country_code
+    
+    // Spanish-speaking countries
+    const spanishCountries = [
+      'ES', // Spain
+      'MX', 'AR', 'CO', 'VE', 'PE', 'CL', 'EC', // Latin America major
+      'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', // Central America & Caribbean
+      'NI', 'CR', 'PA', 'UY' // More Latin America
+    ]
     
     // Japanese
     if (countryCode === 'JP') {
@@ -111,6 +123,11 @@ export const detectLanguage = async (
       'EG', 'JO', 'LB', 'SY', 'IQ', 'YE', // Levant & others
       'MA', 'DZ', 'TN', 'LY', 'SD', 'PS'  // North Africa
     ]
+    
+    if (spanishCountries.includes(countryCode)) {
+      storeLanguage('es')
+      return 'es'
+    }
     
     if (chineseCountries.includes(countryCode)) {
       storeLanguage('zh')
@@ -135,6 +152,10 @@ export const detectLanguage = async (
   if (browserLang?.startsWith('id')) {
     storeLanguage('id')
     return 'id'
+  }
+  if (browserLang?.startsWith('es')) {
+    storeLanguage('es')
+    return 'es'
   }
   if (browserLang?.startsWith('ja')) {
     storeLanguage('ja')

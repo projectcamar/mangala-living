@@ -81,6 +81,10 @@ body:has(.announcement-bar) .header {
   background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyMCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjE1IiBmaWxsPSIjRkZGRkZGIi8+CjxjaXJjbGUgY3g9IjEwIiBjeT0iNy41IiByPSIzLjUiIGZpbGw9IiNCQzAwMkQiLz4KPC9zdmc+');
 }
 
+.flag-es {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyMCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjE1IiBmaWxsPSIjRkZDNDAwIi8+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIzLjc1IiBmaWxsPSIjQUEwMDFEIi8+CjxyZWN0IHk9IjExLjI1IiB3aWR0aD0iMjAiIGhlaWdodD0iMy43NSIgZmlsbD0iI0FBMDAxRCIvPgo8L3N2Zz4=');
+}
+
 .language-text {
   font-weight: 500;
   color: #333;
