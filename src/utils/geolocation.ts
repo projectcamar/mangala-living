@@ -100,14 +100,65 @@ export const detectVisitorLocation = async (): Promise<GeolocationData> => {
 
 /**
  * Set language preference based on detected location
- * Indonesian visitors get 'id', others get 'en'
+ * Indonesian visitors get 'id', Arabic-speaking countries get 'ar', Chinese-speaking get 'zh', Japanese get 'ja', Spanish-speaking get 'es', French-speaking get 'fr', Korean get 'ko', others get 'en'
  */
-export const setLanguagePreferenceByLocation = async (): Promise<'id' | 'en'> => {
+export const setLanguagePreferenceByLocation = async (): Promise<'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'> => {
   try {
     const locationData = await detectVisitorLocation()
     
+    // French-speaking countries
+    const frenchCountries = [
+      'FR', // France
+      'BE', 'CH', 'LU', 'MC', // Europe
+      'CA', // Canada (Quebec)
+      'HT', // Haiti
+      'CI', 'SN', 'ML', 'NE', 'BF', 'TG', 'BJ', // West Africa
+      'CD', 'CG', 'GA', 'CM', 'CF', 'TD', // Central Africa
+      'MG', 'RE', 'MU', 'SC', 'KM', 'YT', 'DJ' // Indian Ocean
+    ]
+    
+    // Spanish-speaking countries
+    const spanishCountries = [
+      'ES', // Spain
+      'MX', 'AR', 'CO', 'VE', 'PE', 'CL', 'EC', // Latin America major
+      'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', // Central America & Caribbean
+      'NI', 'CR', 'PA', 'UY' // More Latin America
+    ]
+    
+    // Chinese-speaking countries/regions
+    const chineseCountries = [
+      'CN', // China
+      'TW', // Taiwan
+      'HK', // Hong Kong
+      'SG', // Singapore
+      'MO'  // Macau
+    ]
+    
+    // Arabic-speaking countries
+    const arabicCountries = [
+      'SA', 'AE', 'KW', 'QA', 'OM', 'BH', // Gulf countries
+      'EG', 'JO', 'LB', 'SY', 'IQ', 'YE', // Levant & others
+      'MA', 'DZ', 'TN', 'LY', 'SD', 'PS'  // North Africa
+    ]
+    
     // Set language preference based on location
-    const langPreference = locationData.isIndonesia ? 'id' : 'en'
+    let langPreference: 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' = 'en'
+    
+    if (locationData.isIndonesia) {
+      langPreference = 'id'
+    } else if (locationData.countryCode === 'KR') {
+      langPreference = 'ko'
+    } else if (locationData.countryCode === 'JP') {
+      langPreference = 'ja'
+    } else if (frenchCountries.includes(locationData.countryCode)) {
+      langPreference = 'fr'
+    } else if (spanishCountries.includes(locationData.countryCode)) {
+      langPreference = 'es'
+    } else if (chineseCountries.includes(locationData.countryCode)) {
+      langPreference = 'zh'
+    } else if (arabicCountries.includes(locationData.countryCode)) {
+      langPreference = 'ar'
+    }
     
     // Store in localStorage for catalog generator
     localStorage.setItem('mangala_lang_preference', langPreference)
@@ -116,8 +167,8 @@ export const setLanguagePreferenceByLocation = async (): Promise<'id' | 'en'> =>
   } catch (error) {
     console.error('Error setting language preference:', error)
     
-    // Default to Indonesian
-    localStorage.setItem('mangala_lang_preference', 'id')
-    return 'id'
+    // Default to English
+    localStorage.setItem('mangala_lang_preference', 'en')
+    return 'en'
   }
 }

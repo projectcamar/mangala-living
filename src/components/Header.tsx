@@ -10,6 +10,7 @@ import { storeLanguage } from '../utils/languageManager'
 
 interface HeaderProps {
   isIndonesian?: boolean
+  language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'
 }
 
 const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
@@ -47,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     }
   }
 
-  const handleLanguageChange = (lang: 'id' | 'en') => {
+  const handleLanguageChange = (lang: 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko') => {
     setIsLanguageOpen(false)
     const currentPath = location.pathname
     
@@ -61,22 +62,22 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     // Remove existing language prefix if any
     let cleanPath = currentPath
     
-    // Handle /id/ and /eng/ (with trailing slash)
-    if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/')) {
-      cleanPath = currentPath.substring(4) // Remove /id/ or /eng/
+    // Handle /id/, /eng/, /ar/, /zh/, /ja/, /es/, /fr/, /ko/ (with trailing slash)
+    if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/') || currentPath.startsWith('/ar/') || currentPath.startsWith('/zh/') || currentPath.startsWith('/ja/') || currentPath.startsWith('/es/') || currentPath.startsWith('/fr/') || currentPath.startsWith('/ko/')) {
+      cleanPath = currentPath.substring(4) // Remove language prefix
     } 
-    // Handle /id and /eng (without trailing slash) - but not /id/ or /eng/
-    else if (currentPath === '/id' || currentPath === '/eng') {
+    // Handle /id, /eng, /ar, /zh, /ja, /es, /fr, /ko (without trailing slash)
+    else if (currentPath === '/id' || currentPath === '/eng' || currentPath === '/ar' || currentPath === '/zh' || currentPath === '/ja' || currentPath === '/es' || currentPath === '/fr' || currentPath === '/ko') {
       cleanPath = '/' // Go to home
     }
-    // Handle /id or /eng followed by more path (like /id/product-category/...)
-    else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng')) {
-      cleanPath = currentPath.substring(3) // Remove /id or /eng
+    // Handle language prefix followed by more path
+    else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng') || currentPath.startsWith('/ar') || currentPath.startsWith('/zh') || currentPath.startsWith('/ja') || currentPath.startsWith('/es') || currentPath.startsWith('/fr') || currentPath.startsWith('/ko')) {
+      cleanPath = currentPath.substring(3) // Remove language prefix
     }
     
     // If cleanPath is empty or just '/', go to home with language prefix for SEO
     if (!cleanPath || cleanPath === '/') {
-      const newPath = lang === 'id' ? '/id' : '/eng'
+      const newPath = lang === 'id' ? '/id' : (lang === 'ar' ? '/ar' : (lang === 'zh' ? '/zh' : (lang === 'ja' ? '/ja' : (lang === 'es' ? '/es' : (lang === 'fr' ? '/fr' : (lang === 'ko' ? '/ko' : '/eng'))))))
       navigate(newPath)
       return
     }
@@ -92,16 +93,34 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     const path = location.pathname
     if (path.startsWith('/id')) return 'id'
     if (path.startsWith('/eng')) return 'en'
+    if (path.startsWith('/ar')) return 'ar'
+    if (path.startsWith('/zh')) return 'zh'
+    if (path.startsWith('/ja')) return 'ja'
+    if (path.startsWith('/es')) return 'es'
+    if (path.startsWith('/fr')) return 'fr'
+    if (path.startsWith('/ko')) return 'ko'
     const params = new URLSearchParams(location.search)
     const qLang = params.get('lang')
-    if (qLang === 'id' || qLang === 'en') return qLang
+    if (qLang === 'id' || qLang === 'en' || qLang === 'ar' || qLang === 'zh' || qLang === 'ja' || qLang === 'es' || qLang === 'fr' || qLang === 'ko') return qLang
     return null
   }
 
   const getCurrentLanguageDisplay = () => {
     const urlLang = getCurrentLanguageFromUrl()
-    if (urlLang) return urlLang
-    return isIndonesian ? 'id' : 'en'
+    if (urlLang) return urlLang.toUpperCase()
+    return isIndonesian ? 'ID' : 'EN'
+  }
+
+  const getCurrentFlag = () => {
+    const urlLang = getCurrentLanguageFromUrl()
+    if (urlLang === 'id') return 'flag-id'
+    if (urlLang === 'ar') return 'flag-ar'
+    if (urlLang === 'zh') return 'flag-zh'
+    if (urlLang === 'ja') return 'flag-ja'
+    if (urlLang === 'es') return 'flag-es'
+    if (urlLang === 'fr') return 'flag-fr'
+    if (urlLang === 'ko') return 'flag-ko'
+    return 'flag-us'
   }
 
   const closeSearch = () => {
@@ -216,8 +235,8 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                   aria-haspopup="true"
                   tabIndex={0}
                 >
-                  <span className={`flag ${getCurrentLanguageDisplay() === 'id' ? 'flag-id' : 'flag-us'}`}></span>
-                  <span className="language-text">{getCurrentLanguageDisplay() === 'id' ? "ID" : "EN"}</span>
+                  <span className={`flag ${getCurrentFlag()}`}></span>
+                  <span className="language-text">{getCurrentLanguageDisplay()}</span>
                   <ChevronDown size={16} />
                 </button>
                 {isLanguageOpen && (
@@ -251,6 +270,96 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                     >
                       <span className="flag flag-us"></span>
                       <span>English</span>
+                    </button>
+                    <button 
+                      className="language-option"
+                      role="menuitem"
+                      tabIndex={0}
+                      onClick={() => handleLanguageChange('ar')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault()
+                          handleLanguageChange('ar')
+                        }
+                      }}
+                    >
+                      <span className="flag flag-ar"></span>
+                      <span>العربية</span>
+                    </button>
+                    <button 
+                      className="language-option"
+                      role="menuitem"
+                      tabIndex={0}
+                      onClick={() => handleLanguageChange('zh')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault()
+                          handleLanguageChange('zh')
+                        }
+                      }}
+                    >
+                      <span className="flag flag-zh"></span>
+                      <span>中文</span>
+                    </button>
+                    <button 
+                      className="language-option"
+                      role="menuitem"
+                      tabIndex={0}
+                      onClick={() => handleLanguageChange('ja')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault()
+                          handleLanguageChange('ja')
+                        }
+                      }}
+                    >
+                      <span className="flag flag-ja"></span>
+                      <span>日本語</span>
+                    </button>
+                    <button 
+                      className="language-option"
+                      role="menuitem"
+                      tabIndex={0}
+                      onClick={() => handleLanguageChange('es')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault()
+                          handleLanguageChange('es')
+                        }
+                      }}
+                    >
+                      <span className="flag flag-es"></span>
+                      <span>Español</span>
+                    </button>
+                    <button 
+                      className="language-option"
+                      role="menuitem"
+                      tabIndex={0}
+                      onClick={() => handleLanguageChange('fr')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault()
+                          handleLanguageChange('fr')
+                        }
+                      }}
+                    >
+                      <span className="flag flag-fr"></span>
+                      <span>Français</span>
+                    </button>
+                    <button 
+                      className="language-option"
+                      role="menuitem"
+                      tabIndex={0}
+                      onClick={() => handleLanguageChange('ko')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault()
+                          handleLanguageChange('ko')
+                        }
+                      }}
+                    >
+                      <span className="flag flag-ko"></span>
+                      <span>한국어</span>
                     </button>
                   </div>
                 )}
