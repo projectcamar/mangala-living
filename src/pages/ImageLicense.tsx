@@ -501,7 +501,7 @@ const ImageLicense: React.FC = () => {
 
   return (
     <div className="image-license-page">
-      <AnnouncementBar isIndonesian={isIndonesian} />
+      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet
         htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': language }}
       >

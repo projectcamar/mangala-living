@@ -150,7 +150,7 @@ const NotFound: React.FC = () => {
 
   return (
     <div className="not-found-page">
-      <AnnouncementBar isIndonesian={isIndonesian} />
+      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet>
         <title>{translations.title}</title>
         <meta name="description" content={translations.description} />

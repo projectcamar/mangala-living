@@ -2,12 +2,93 @@ import React, { useState, useEffect } from 'react'
 import { X } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import './AnnouncementBar.css'
+import type { LanguageCode } from '../utils/languageManager'
 
 interface AnnouncementBarProps {
+  /**
+   * @deprecated Use `language` prop instead. Retained for backward compatibility.
+   */
   isIndonesian?: boolean
+  language?: LanguageCode
 }
 
-const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false }) => {
+type AnnouncementContent = {
+  text: string
+  cta: string
+  highlight: string
+  ariaLabel: string
+  closeLabel: string
+  closeTitle: string
+}
+
+const ANNOUNCEMENT_COPY: Record<LanguageCode, AnnouncementContent> = {
+  id: {
+    text: 'Wujudkan Furniture Impian Anda!',
+    cta: 'Pesan Custom Order Sekarang',
+    highlight: 'Gratis Konsultasi Desain',
+    ariaLabel: 'Pengumuman',
+    closeLabel: 'Tutup pengumuman',
+    closeTitle: 'Tutup'
+  },
+  en: {
+    text: 'Bring Your Dream Furniture to Life!',
+    cta: 'Order Custom Order Now',
+    highlight: 'Free Design Consultation',
+    ariaLabel: 'Announcement',
+    closeLabel: 'Close announcement',
+    closeTitle: 'Close'
+  },
+  ar: {
+    text: 'حقق حلمك بامتلاك الأثاث المثالي!',
+    cta: 'اطلب تفصيل الأثاث الآن',
+    highlight: 'استشارة تصميم مجانية',
+    ariaLabel: 'إعلان',
+    closeLabel: 'إغلاق الإعلان',
+    closeTitle: 'إغلاق'
+  },
+  zh: {
+    text: '打造理想中的工业风家具！',
+    cta: '立即订购定制家具',
+    highlight: '免费设计咨询',
+    ariaLabel: '公告',
+    closeLabel: '关闭公告栏',
+    closeTitle: '关闭'
+  },
+  ja: {
+    text: '理想の家具をオーダーメイドで実現！',
+    cta: 'カスタムオーダーを今すぐ相談',
+    highlight: 'デザイン無料相談',
+    ariaLabel: 'お知らせ',
+    closeLabel: 'お知らせを閉じる',
+    closeTitle: '閉じる'
+  },
+  es: {
+    text: '¡Haz realidad tus muebles soñados!',
+    cta: 'Solicita tu pedido personalizado ahora',
+    highlight: 'Asesoría de diseño gratuita',
+    ariaLabel: 'Aviso',
+    closeLabel: 'Cerrar aviso',
+    closeTitle: 'Cerrar'
+  },
+  fr: {
+    text: 'Donnez vie à vos meubles sur mesure !',
+    cta: 'Commandez votre mobilier sur mesure',
+    highlight: 'Consultation design offerte',
+    ariaLabel: 'Annonce',
+    closeLabel: 'Fermer l’annonce',
+    closeTitle: 'Fermer'
+  },
+  ko: {
+    text: '꿈꾸던 맞춤 가구를 현실로!',
+    cta: '지금 맞춤 주문 상담하기',
+    highlight: '무료 디자인 상담',
+    ariaLabel: '공지',
+    closeLabel: '공지를 닫기',
+    closeTitle: '닫기'
+  }
+}
+
+const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false, language }) => {
   const [isVisible, setIsVisible] = useState(false)
   const COOKIE_NAME = 'mangala_announcement_dismissed'
   const COOKIE_EXPIRY_HOURS = 24
@@ -67,18 +148,13 @@ const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false 
   // Don't render if not visible
   if (!isVisible) return null
 
-  const content = isIndonesian ? {
-    text: 'Wujudkan Furniture Impian Anda!',
-    cta: 'Pesan Custom Order Sekarang',
-    highlight: 'Gratis Konsultasi Desain'
-  } : {
-    text: 'Bring Your Dream Furniture to Life!',
-    cta: 'Order Custom Order Now',
-    highlight: 'Free Design Consultation'
-  }
+  const resolvedLanguage: LanguageCode = language
+    ? language
+    : (isIndonesian ? 'id' : 'en')
+  const content = ANNOUNCEMENT_COPY[resolvedLanguage] ?? ANNOUNCEMENT_COPY.en
 
   return (
-    <div className="announcement-bar" role="banner" aria-label={isIndonesian ? "Pengumuman" : "Announcement"}>
+    <div className="announcement-bar" role="banner" aria-label={content.ariaLabel}>
       <div className="announcement-content">
         <span className="announcement-text">
           {content.text} <span className="announcement-highlight">{content.highlight}</span>
@@ -90,8 +166,8 @@ const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false 
       <button 
         className="announcement-close" 
         onClick={handleClose}
-        aria-label={isIndonesian ? "Tutup pengumuman" : "Close announcement"}
-        title={isIndonesian ? "Tutup" : "Close"}
+        aria-label={content.closeLabel}
+        title={content.closeTitle}
       >
         <X size={18} />
       </button>

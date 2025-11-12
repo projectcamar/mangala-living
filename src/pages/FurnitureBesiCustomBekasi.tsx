@@ -18,8 +18,9 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
   const location = useLocation()
   const searchParams = new URLSearchParams(location.search)
   const langParam = searchParams.get('lang')
-  const isIndonesian = langParam !== 'en'
-  const localeMeta = generateLanguageSpecificMeta(isIndonesian)
+    const isIndonesian = langParam !== 'en'
+    const language = isIndonesian ? 'id' : 'en'
+    const localeMeta = generateLanguageSpecificMeta(isIndonesian)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
 
   useEffect(() => {
@@ -62,8 +63,8 @@ const FurnitureBesiCustomBekasi: React.FC = () => {
         )}
       </Helmet>
 
-      <AnnouncementBar isIndonesian={isIndonesian} />
-      <Header isIndonesian={isIndonesian} />
+        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
+        <Header isIndonesian={isIndonesian} language={language} />
 
       {/* Hero Section - Above the Fold Optimization */}
       <section className="landing-hero">

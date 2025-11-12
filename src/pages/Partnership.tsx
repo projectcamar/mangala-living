@@ -352,7 +352,7 @@ const Partnership: React.FC = () => {
 
   return (
     <div className="partnership-page">
-      <AnnouncementBar isIndonesian={isIndonesian} />
+      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
         <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
           <title>{translations.pageTitle}</title>
           <meta name="description" content={translations.metaDescription} />

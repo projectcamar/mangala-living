@@ -359,7 +359,7 @@ function SearchResults() {
 
   return (
       <div className="search-results-page">
-        <AnnouncementBar isIndonesian={isIndonesian} />
+        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
         <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
           <title>{uiTranslations.pageTitle(hasQuery ? query : undefined)}</title>
           <meta

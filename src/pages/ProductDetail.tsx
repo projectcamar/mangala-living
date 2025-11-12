@@ -754,7 +754,7 @@ const ProductDetail: React.FC = () => {
   if (isLoading) {
     return (
         <div className="product-detail-page">
-          <AnnouncementBar isIndonesian={isIndonesian} />
+            <AnnouncementBar language={language} isIndonesian={isIndonesian} />
           <Header isIndonesian={isIndonesian} language={language} />
         <div style={{ 
           display: 'flex', 
@@ -786,7 +786,7 @@ const ProductDetail: React.FC = () => {
   if (!product) {
     return (
       <div>
-        <AnnouncementBar isIndonesian={isIndonesian} />
+      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
         <Header isIndonesian={isIndonesian} language={language} />
         <div className="container" style={{ padding: '100px 20px', textAlign: 'center' }}>
           <h1>{uiTranslations.productNotFound}</h1>
@@ -973,7 +973,7 @@ const ProductDetail: React.FC = () => {
 
   return (
       <div className="product-detail-page">
-        <AnnouncementBar isIndonesian={isIndonesian} />
+        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{product.slug === 'hollowline-display-rack' 
           ? (isIndonesian ? 'Hollowline Display Rack - Harga Murah Rp4.5 Juta - Call Mangala +6288801146881' : 'Hollowline Display Rack - Affordable Price Rp4.5 Million - Call Mangala +6288801146881')

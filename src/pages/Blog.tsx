@@ -57,7 +57,7 @@ const Blog: React.FC = () => {
 
   return (
       <div className="blog-page">
-        <AnnouncementBar isIndonesian={isIndonesian} />
+        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>Blog Furniture Industrial & Tips Desain Cafe Restoran - Mangala Living</title>
         <meta name="description" content="Panduan lengkap furniture industrial untuk cafe, restoran, hotel. Tips memilih furniture besi custom, cara merawat, tren desain 2025, perbandingan material, harga, dan area workshop Bekasi Jakarta. 135+ artikel berbasis pengalaman 25 tahun Mangala Living." />

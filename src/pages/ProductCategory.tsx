@@ -435,7 +435,7 @@ const ProductCategory: React.FC = () => {
   if (isLoading) {
     return (
       <div className="product-category-page">
-        <AnnouncementBar isIndonesian={isIndonesian} />
+        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
         <Header isIndonesian={isIndonesian} language={language} />
         <div style={{ 
           display: 'flex', 
@@ -466,7 +466,7 @@ const ProductCategory: React.FC = () => {
 
   return (
     <div className="product-category-page">
-      <AnnouncementBar isIndonesian={isIndonesian} />
+      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{uiTranslations.pageTitle(localizedCategoryName)}</title>
         <meta name="description" content={uiTranslations.metaDescription(localizedCategoryName, filteredProducts.length)} />
