@@ -13,6 +13,7 @@ import { CATEGORIES } from '../data/categories'
 import { generateMerchantStructuredData } from '../utils/structuredData'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
 import { convertIDRToUSD } from '../utils/currencyConverter'
+import { getProductName } from '../data/productDescriptions'
 import './ProductCategory.css'
 import './Shop.css'
 
@@ -398,29 +399,31 @@ const Shop: React.FC = () => {
               </div>
               
               <div className="category-products-grid">
-                {currentProducts.map((product) => (
-                  <Link 
-                    key={product.id}
-                    to={`/product/${product.slug}`}
-                    className="category-product-card"
-                  >
-                    <div className="category-product-image">
-                      <img 
-                        src={product.image} 
-                        alt={`${product.name} - Industrial Furniture ${product.categories.join(' ')} Mangala Living Shop`}
-                        title={`${product.name} - Premium Industrial Furniture ${product.categories.join(' ')} - Shop Now`}
-                        loading="lazy"
-                        width="300"
-                        height="200"
-                        itemProp="image"
-                        data-image-type="shop-product"
-                        data-product-name={product.name}
-                        data-product-slug={product.slug}
-                        data-category={product.categories.join(',')}
-                      />
-                    </div>
-                    <div className="category-product-info">
-                      <h3 className="category-product-name">{product.name}</h3>
+                {currentProducts.map((product) => {
+                  const translatedName = getProductName(product.slug, isIndonesian) || product.name
+                  return (
+                    <Link 
+                      key={product.id}
+                      to={`/product/${product.slug}`}
+                      className="category-product-card"
+                    >
+                      <div className="category-product-image">
+                        <img 
+                          src={product.image} 
+                          alt={`${translatedName} - Industrial Furniture ${product.categories.join(' ')} Mangala Living Shop`}
+                          title={`${translatedName} - Premium Industrial Furniture ${product.categories.join(' ')} - Shop Now`}
+                          loading="lazy"
+                          width="300"
+                          height="200"
+                          itemProp="image"
+                          data-image-type="shop-product"
+                          data-product-name={translatedName}
+                          data-product-slug={product.slug}
+                          data-category={product.categories.join(',')}
+                        />
+                      </div>
+                      <div className="category-product-info">
+                        <h3 className="category-product-name">{translatedName}</h3>
                       <p className="category-product-cats">{product.categories.join(', ')}</p>
                       {usdPrices[product.id] ? (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
@@ -451,7 +454,8 @@ const Shop: React.FC = () => {
                       )}
                     </div>
                   </Link>
-                ))}
+                  )
+                })}
               </div>
 
               {/* Pagination */}

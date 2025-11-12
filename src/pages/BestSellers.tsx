@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
+import { getProductName } from '../data/productDescriptions'
 import './ProductCategory.css'
 
 // Best sellers - first 10 products from ALL_PRODUCTS
@@ -103,34 +104,37 @@ const BestSellers: React.FC = () => {
           </div>
           
           <div className="category-products-grid">
-            {sortedProducts.map((product) => (
-              <Link 
-                key={product.id}
-                to={`/product/${product.slug}`}
-                className="category-product-card"
-              >
-                <div className="category-product-image">
-                  <img 
-                    src={product.image} 
-                    alt={`${product.name} - Best Seller Industrial Furniture ${product.categories.join(' ')} Mangala Living`}
-                    title={`${product.name} - Best Seller ${product.categories.join(' ')} Premium Furniture`}
-                    loading="lazy"
-                    width="300"
-                    height="200"
-                    itemProp="image"
-                    data-image-type="best-seller"
-                    data-product-name={product.name}
-                    data-category={product.categories.join(',')}
-                  />
-                </div>
-                <div className="category-product-info">
-                  <h3 className="category-product-name">{product.name}</h3>
+            {sortedProducts.map((product) => {
+              const translatedName = getProductName(product.slug, isIndonesian) || product.name
+              return (
+                <Link 
+                  key={product.id}
+                  to={`/product/${product.slug}`}
+                  className="category-product-card"
+                >
+                  <div className="category-product-image">
+                    <img 
+                      src={product.image} 
+                      alt={`${translatedName} - Best Seller Industrial Furniture ${product.categories.join(' ')} Mangala Living`}
+                      title={`${translatedName} - Best Seller ${product.categories.join(' ')} Premium Furniture`}
+                      loading="lazy"
+                      width="300"
+                      height="200"
+                      itemProp="image"
+                      data-image-type="best-seller"
+                      data-product-name={translatedName}
+                      data-category={product.categories.join(',')}
+                    />
+                  </div>
+                  <div className="category-product-info">
+                    <h3 className="category-product-name">{translatedName}</h3>
                   <p className="category-product-cats">{product.categories.join(', ')}</p>
-                  <p className="category-product-price">{product.price}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
+                    <p className="category-product-price">{product.price}</p>
+                  </div>
+                </Link>
+                )
+              })}
+            </div>
         </div>
       </main>
       

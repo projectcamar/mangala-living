@@ -9,6 +9,7 @@ import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { convertIDRToUSD } from '../utils/currencyConverter'
+import { getProductName } from '../data/productDescriptions'
 import './SearchResults.css'
 import '../components/DualLanguage.css'
 
@@ -280,29 +281,31 @@ function SearchResults() {
 
         {sortedProducts.length > 0 ? (
           <div className="products-grid">
-            {sortedProducts.map((product) => (
-              <Link
-                key={product.id}
-                to={`/product/${product.slug}`}
-                className="product-card"
-              >
-                <div className="product-image">
-                  <img
-                    src={product.image}
-                    alt={`${product.name} - Industrial Furniture ${product.category} Search Results Mangala Living`}
-                    title={`${product.name} - ${product.category} Industrial Furniture - Mangala Living`}
-                    loading="lazy"
-                    width="300"
-                    height="200"
-                    itemProp="image"
-                    data-image-type="search-result"
-                    data-product-name={product.name}
-                    data-category={product.category}
-                  />
-                </div>
-                <div className="product-info">
-                  <h3 className="product-name">{product.name}</h3>
-                  <p className="product-category">{product.category}</p>
+            {sortedProducts.map((product) => {
+              const translatedName = getProductName(product.slug, isIndonesian) || product.name
+              return (
+                <Link
+                  key={product.id}
+                  to={`/product/${product.slug}`}
+                  className="product-card"
+                >
+                  <div className="product-image">
+                    <img
+                      src={product.image}
+                      alt={`${translatedName} - Industrial Furniture ${product.category} Search Results Mangala Living`}
+                      title={`${translatedName} - ${product.category} Industrial Furniture - Mangala Living`}
+                      loading="lazy"
+                      width="300"
+                      height="200"
+                      itemProp="image"
+                      data-image-type="search-result"
+                      data-product-name={translatedName}
+                      data-category={product.category}
+                    />
+                  </div>
+                  <div className="product-info">
+                    <h3 className="product-name">{translatedName}</h3>
+                    <p className="product-category">{product.category}</p>
                   {usdPrices[product.id] && usdPrices[product.id] !== 'N/A' ? (
                     <div className="product-price-stack">
                       <span className="product-price-primary">
@@ -317,7 +320,8 @@ function SearchResults() {
                   )}
                 </div>
               </Link>
-            ))}
+              )
+            })}
           </div>
         ) : (
           <div className="no-results">
