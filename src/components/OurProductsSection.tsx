@@ -7,6 +7,7 @@ import './OurProductsSection.css'
 
 interface OurProductsSectionProps {
   isIndonesian?: boolean
+  language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'
 }
 
 // Our Products - products 9-28 (20 products), excluding Meja Kerja Industrial
@@ -21,7 +22,32 @@ const products = ALL_PRODUCTS.slice(8, 28)
     link: `/product/${p.slug}`
   }))
 
-const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = false }) => {
+const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = false, language = 'en' }) => {
+  const getTitle = () => {
+    switch (language) {
+      case 'id': return 'Koleksi Produk: Bar Set, Lounge Set, Storage & Furniture Industrial'
+      case 'ar': return 'مجموعتنا: طقم بار، طقم صالة، تخزين وأثاث صناعي'
+      case 'zh': return '我们的系列：吧台套装、休息区套装、储物和工业家具'
+      case 'ja': return 'コレクション：バーセット、ラウンジセット、収納、インダストリアル家具'
+      case 'es': return 'Nuestra Colección: Set de Bar, Set de Sala, Almacenamiento y Muebles Industriales'
+      case 'fr': return 'Notre Collection: Set de Bar, Set de Salon, Rangement et Mobilier Industriel'
+      case 'ko': return '우리의 컨렉션: 바 세트, 라운지 세트, 수납 및 산업용 가구'
+      default: return 'Our Collection: Bar Set, Lounge Set, Storage & Industrial Furniture'
+    }
+  }
+  
+  const getViewAllText = () => {
+    switch (language) {
+      case 'id': return 'LIHAT SEMUA'
+      case 'ar': return 'عرض الكل'
+      case 'zh': return '查看全部'
+      case 'ja': return 'すべて見る'
+      case 'es': return 'VER TODO'
+      case 'fr': return 'VOIR TOUT'
+      case 'ko': return '전체보기'
+      default: return 'VIEW ALL'
+    }
+  }
   const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
 
   useEffect(() => {
@@ -41,10 +67,10 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
       <div className="container">
         <div className="section-header-row">
           <h2 className="our-products-title">
-            {isIndonesian ? "Koleksi Produk: Bar Set, Lounge Set, Storage & Furniture Industrial" : "Our Collection: Bar Set, Lounge Set, Storage & Industrial Furniture"}
+            {getTitle()}
           </h2>
           <Link to="/shop" className="view-all-link">
-            {isIndonesian ? "LIHAT SEMUA" : "VIEW ALL"}
+            {getViewAllText()}
           </Link>
         </div>
 
