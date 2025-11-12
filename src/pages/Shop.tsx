@@ -162,7 +162,7 @@ const Shop: React.FC = () => {
 
   return (
     <div className="product-category-page shop-page-layout">
-      <AnnouncementBar isIndonesian={isIndonesian} />
+      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>All Products - Bar Set Lounge Set Storage Furniture Industrial | Mangala Living</title>
         <meta name="description" content="Browse all industrial furniture: bar set outdoor, lounge set sofa bench, storage rack display, new arrivals untuk cafe restoran hotel. Kualitas terbaik, harga terjangkau." />

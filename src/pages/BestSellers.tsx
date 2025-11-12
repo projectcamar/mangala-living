@@ -56,7 +56,7 @@ const BestSellers: React.FC = () => {
 
   return (
     <div className="product-category-page">
-      <AnnouncementBar isIndonesian={isIndonesian} />
+      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>Best Sellers - Mangala Living</title>
         <meta name="description" content="Browse our best-selling industrial furniture collection at Mangala Living" />

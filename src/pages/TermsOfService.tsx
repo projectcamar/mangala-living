@@ -38,7 +38,7 @@ const TermsOfService: React.FC = () => {
 
   return (
     <div className="terms-page">
-      <AnnouncementBar isIndonesian={isIndonesian} />
+        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{isIndonesian ? 'Syarat dan Ketentuan - Mangala Living' : 'Terms of Service - Mangala Living'}</title>
         <meta name="description" content={isIndonesian 

@@ -508,7 +508,7 @@ const ShippingInformation: React.FC = () => {
 
   return (
     <div className="shipping-information-page">
-      <AnnouncementBar isIndonesian={isIndonesian} />
+      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet
         htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': language }}
       >

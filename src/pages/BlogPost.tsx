@@ -82,7 +82,7 @@ const BlogPost: React.FC = () => {
   if (!post || !content) {
     return (
       <div className="blog-page blog-post-page">
-        <AnnouncementBar isIndonesian={isIndonesian} />
+        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
         <Header isIndonesian={isIndonesian} />
         <main className="blog-post-main" aria-labelledby="blog-post-not-found-heading">
           <section className="blog-content-section">
@@ -184,7 +184,7 @@ const BlogPost: React.FC = () => {
 
     return (
       <div className="blog-page blog-post-page">
-        <AnnouncementBar isIndonesian={isIndonesian} />
+        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{post.title} - Mangala Living</title>
         <meta name="description" content={post.excerpt} />
