@@ -21,60 +21,49 @@ import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
 
 const Home: React.FC = () => {
-  const [language, setLanguage] = useState<'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'>('en')
-  const [isLoading, setIsLoading] = useState(true)
   const location = useLocation()
+  
+  // Initialize language immediately from browser or default to avoid loading state
+  const getInitialLanguage = (): 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' => {
+    const path = location.pathname
+    if (path.startsWith('/id')) return 'id'
+    if (path.startsWith('/eng')) return 'en'
+    if (path.startsWith('/ar')) return 'ar'
+    if (path.startsWith('/zh')) return 'zh'
+    if (path.startsWith('/ja')) return 'ja'
+    if (path.startsWith('/es')) return 'es'
+    if (path.startsWith('/fr')) return 'fr'
+    if (path.startsWith('/ko')) return 'ko'
+    
+    // Default to browser language immediately (no loading)
+    const browserLang = navigator.language || navigator.languages?.[0]
+    if (browserLang?.startsWith('id')) return 'id'
+    if (browserLang?.startsWith('ko')) return 'ko'
+    if (browserLang?.startsWith('fr')) return 'fr'
+    if (browserLang?.startsWith('es')) return 'es'
+    if (browserLang?.startsWith('ja')) return 'ja'
+    if (browserLang?.startsWith('zh')) return 'zh'
+    if (browserLang?.startsWith('ar')) return 'ar'
+    return 'en'
+  }
+  
+  const [language, setLanguage] = useState<'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'>(getInitialLanguage)
 
   useEffect(() => {
-    // Check URL for language prefix first
+    // If language is already set from URL prefix, don't do IP detection
     const path = location.pathname
-    if (path.startsWith('/id')) {
-      setLanguage('id')
-      setIsLoading(false)
-      return
-    }
-    if (path.startsWith('/eng')) {
-      setLanguage('en')
-      setIsLoading(false)
-      return
-    }
-    if (path.startsWith('/ar')) {
-      setLanguage('ar')
-      setIsLoading(false)
-      return
-    }
-    if (path.startsWith('/zh')) {
-      setLanguage('zh')
-      setIsLoading(false)
-      return
-    }
-    if (path.startsWith('/ja')) {
-      setLanguage('ja')
-      setIsLoading(false)
-      return
-    }
-    if (path.startsWith('/es')) {
-      setLanguage('es')
-      setIsLoading(false)
-      return
-    }
-    if (path.startsWith('/fr')) {
-      setLanguage('fr')
-      setIsLoading(false)
-      return
-    }
-    if (path.startsWith('/ko')) {
-      setLanguage('ko')
-      setIsLoading(false)
+    if (path.startsWith('/id') || path.startsWith('/eng') || path.startsWith('/ar') || 
+        path.startsWith('/zh') || path.startsWith('/ja') || path.startsWith('/es') || 
+        path.startsWith('/fr') || path.startsWith('/ko')) {
       return
     }
 
-    // If no language prefix, detect from IP with timeout protection
+    // Optional: Update language based on IP in background (non-blocking)
     const detectLocation = async () => {
       try {
-        // Create a timeout promise (3 seconds max)
+        // Create a timeout promise (2 seconds max for background detection)
         const timeoutPromise = new Promise((_, reject) => {
-          setTimeout(() => reject(new Error('Timeout')), 3000)
+          setTimeout(() => reject(new Error('Timeout')), 2000)
         })
         
         // Race between fetch and timeout
@@ -100,49 +89,33 @@ const Home: React.FC = () => {
           'MA', 'DZ', 'TN', 'LY', 'SD', 'PS'  // North Africa
         ]
         
+        // Only update if different from current (prevents unnecessary re-renders)
+        let detectedLang: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' = 'en'
+        
         if (countryCode === 'ID') {
-          setLanguage('id')
+          detectedLang = 'id'
         } else if (countryCode === 'KR') {
-          setLanguage('ko')
+          detectedLang = 'ko'
         } else if (countryCode === 'JP') {
-          setLanguage('ja')
+          detectedLang = 'ja'
         } else if (frenchCountries.includes(countryCode)) {
-          setLanguage('fr')
+          detectedLang = 'fr'
         } else if (spanishCountries.includes(countryCode)) {
-          setLanguage('es')
+          detectedLang = 'es'
         } else if (chineseCountries.includes(countryCode)) {
-          setLanguage('zh')
+          detectedLang = 'zh'
         } else if (arabicCountries.includes(countryCode)) {
-          setLanguage('ar')
-        } else {
-          setLanguage('en')
+          detectedLang = 'ar'
         }
+        
+        setLanguage(prevLang => detectedLang !== prevLang ? detectedLang : prevLang)
       } catch (error) {
-        console.log('IP detection failed or timed out, checking browser language')
-        // Fallback: check browser language
-        const browserLang = navigator.language || navigator.languages?.[0]
-        if (browserLang?.startsWith('id')) {
-          setLanguage('id')
-        } else if (browserLang?.startsWith('ko')) {
-          setLanguage('ko')
-        } else if (browserLang?.startsWith('fr')) {
-          setLanguage('fr')
-        } else if (browserLang?.startsWith('es')) {
-          setLanguage('es')
-        } else if (browserLang?.startsWith('ja')) {
-          setLanguage('ja')
-        } else if (browserLang?.startsWith('zh')) {
-          setLanguage('zh')
-        } else if (browserLang?.startsWith('ar')) {
-          setLanguage('ar')
-        } else {
-          setLanguage('en')
-        }
-      } finally {
-        setIsLoading(false)
+        // Silently fail - we already have a default language set
+        console.log('IP detection skipped or failed, using browser/default language')
       }
     }
 
+    // Run detection in background without blocking render
     detectLocation()
   }, [location.pathname])
 
@@ -212,37 +185,7 @@ const Home: React.FC = () => {
       ? "Fabricante de muebles industriales: set de bar exterior, set de sala, sofá banco, estantería de almacenamiento para cafés, restaurantes, hoteles. Taller Bekasi 25+ años. Precios de fábrica."
       : language === 'fr'
       ? "Fabricant de meubles industriels : set de bar extérieur, set de salon, banc canapé, étagère de rangement pour cafés, restaurants, hôtels. Atelier Bekasi 25+ ans. Prix d'usine."
-      : "Manufacturer industrial furniture: bar set outdoor, lounge set, sofa bench, storage rack, new arrivals for cafes restaurants hotels. Bekasi workshop 25+ years. Factory prices.",
-    loading: language === 'id' ? "Memuat..." : language === 'ar' ? "جاري التحميل..." : language === 'zh' ? "加载中..." : language === 'ja' ? "読み込み中..." : language === 'es' ? "Cargando..." : language === 'fr' ? "Chargement..." : "Loading..."
-  }
-
-  if (isLoading) {
-    return (
-      <div className="home">
-        <div style={{ 
-          display: 'flex', 
-          justifyContent: 'center', 
-          alignItems: 'center', 
-          height: '100vh',
-          background: '#f8f9fa'
-        }}>
-          <div style={{ textAlign: 'center' }}>
-            <div style={{
-              border: '4px solid #f3f3f3',
-              borderTop: '4px solid #8B7355',
-              borderRadius: '50%',
-              width: '40px',
-              height: '40px',
-              animation: 'spin 1s linear infinite',
-              margin: '0 auto 20px'
-            }}></div>
-            <p style={{ color: '#666', margin: 0 }}>
-              {translations.loading}
-            </p>
-          </div>
-        </div>
-      </div>
-    )
+      : "Manufacturer industrial furniture: bar set outdoor, lounge set, sofa bench, storage rack, new arrivals for cafes restaurants hotels. Bekasi workshop 25+ years. Factory prices."
   }
 
   return (
