@@ -69,6 +69,10 @@ body:has(.announcement-bar) .header {
   background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyMCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjE1IiBmaWxsPSIjRkZGRkZGIi8+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIxLjE1IiBmaWxsPSIjRkYwMDAwIi8+CjxyZWN0IHk9IjIuMyIgd2lkdGg9IjIwIiBoZWlnaHQ9IjEuMTUiIGZpbGw9IiNGRjAwMDAiLz4KPHJlY3QgeT0iNC42IiB3aWR0aD0iMjAiIGhlaWdodD0iMS4xNSIgZmlsbD0iI0ZGMDAwMCIvPgo8cmVjdCB5PSI2LjkiIHdpZHRoPSIyMCIgaGVpZ2h0PSIxLjE1IiBmaWxsPSIjRkYwMDAwIi8+CjxyZWN0IHk9IjkuMiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjEuMTUiIGZpbGw9IiNGRjAwMDAiLz4KPHJlY3QgeT0iMTEuNSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjEuMTUiIGZpbGw9IiNGRjAwMDAiLz4KPHJlY3QgeT0iMTMuOCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjEuMTUiIGZpbGw9IiNGRjAwMDAiLz4KPHJlY3Qgd2lkdGg9IjgiIGhlaWdodD0iOCIgZmlsbD0iIzAwMDBGRiIvPgo8L3N2Zz4K');
 }
 
+.flag-ar {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyMCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjUiIGZpbGw9IiMwMDAwMDAiLz4KPHJlY3QgeT0iNSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjUiIGZpbGw9IiNGRkZGRkYiLz4KPHJlY3QgeT0iMTAiIHdpZHRoPSIyMCIgaGVpZ2h0PSI1IiBmaWxsPSIjMDA3QTNEIi8+Cjwvc3ZnPg==');
+}
+
 .language-text {
   font-weight: 500;
   color: #333;
@@ -988,6 +992,44 @@ body:has(.announcement-bar) .header {
   body:has(.announcement-bar) .header {
     top: 28px;
   }
+}
+
+/* RTL Support for Arabic */
+html[lang="ar"] .header-top-content,
+html[lang="ar"] .header-top-nav,
+html[lang="ar"] .header-top-actions,
+html[lang="ar"] .category-nav,
+html[lang="ar"] .mobile-category-nav {
+  direction: rtl;
+}
+
+html[lang="ar"] .logo {
+  right: 50%;
+  left: auto;
+  transform: translateX(50%);
+}
+
+html[lang="ar"] .language-switcher {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+html[lang="ar"] .language-dropdown {
+  right: auto;
+  left: 0;
+}
+
+html[lang="ar"] .search-input-icon {
+  margin-right: 0;
+  margin-left: 12px;
+}
+
+html[lang="ar"] .search-result-item:hover {
+  transform: translateX(-4px);
+}
+
+html[lang="ar"] .suggestion-tag {
+  direction: rtl;
 }
 
 /* Accessibility: Reduce motion for users who prefer it */

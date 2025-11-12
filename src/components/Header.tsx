@@ -10,6 +10,7 @@ import { storeLanguage } from '../utils/languageManager'
 
 interface HeaderProps {
   isIndonesian?: boolean
+  language?: 'en' | 'id' | 'ar'
 }
 
 const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
@@ -47,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     }
   }
 
-  const handleLanguageChange = (lang: 'id' | 'en') => {
+  const handleLanguageChange = (lang: 'id' | 'en' | 'ar') => {
     setIsLanguageOpen(false)
     const currentPath = location.pathname
     
@@ -61,22 +62,22 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     // Remove existing language prefix if any
     let cleanPath = currentPath
     
-    // Handle /id/ and /eng/ (with trailing slash)
-    if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/')) {
-      cleanPath = currentPath.substring(4) // Remove /id/ or /eng/
+    // Handle /id/, /eng/, /ar/ (with trailing slash)
+    if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/') || currentPath.startsWith('/ar/')) {
+      cleanPath = currentPath.substring(4) // Remove /id/ or /eng/ or /ar/
     } 
-    // Handle /id and /eng (without trailing slash) - but not /id/ or /eng/
-    else if (currentPath === '/id' || currentPath === '/eng') {
+    // Handle /id, /eng, /ar (without trailing slash)
+    else if (currentPath === '/id' || currentPath === '/eng' || currentPath === '/ar') {
       cleanPath = '/' // Go to home
     }
-    // Handle /id or /eng followed by more path (like /id/product-category/...)
-    else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng')) {
-      cleanPath = currentPath.substring(3) // Remove /id or /eng
+    // Handle /id or /eng or /ar followed by more path
+    else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng') || currentPath.startsWith('/ar')) {
+      cleanPath = currentPath.substring(3) // Remove /id or /eng or /ar
     }
     
     // If cleanPath is empty or just '/', go to home with language prefix for SEO
     if (!cleanPath || cleanPath === '/') {
-      const newPath = lang === 'id' ? '/id' : '/eng'
+      const newPath = lang === 'id' ? '/id' : (lang === 'ar' ? '/ar' : '/eng')
       navigate(newPath)
       return
     }
@@ -92,16 +93,24 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
     const path = location.pathname
     if (path.startsWith('/id')) return 'id'
     if (path.startsWith('/eng')) return 'en'
+    if (path.startsWith('/ar')) return 'ar'
     const params = new URLSearchParams(location.search)
     const qLang = params.get('lang')
-    if (qLang === 'id' || qLang === 'en') return qLang
+    if (qLang === 'id' || qLang === 'en' || qLang === 'ar') return qLang
     return null
   }
 
   const getCurrentLanguageDisplay = () => {
     const urlLang = getCurrentLanguageFromUrl()
-    if (urlLang) return urlLang
-    return isIndonesian ? 'id' : 'en'
+    if (urlLang) return urlLang.toUpperCase()
+    return isIndonesian ? 'ID' : 'EN'
+  }
+
+  const getCurrentFlag = () => {
+    const urlLang = getCurrentLanguageFromUrl()
+    if (urlLang === 'id') return 'flag-id'
+    if (urlLang === 'ar') return 'flag-ar'
+    return 'flag-us'
   }
 
   const closeSearch = () => {
@@ -216,8 +225,8 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                   aria-haspopup="true"
                   tabIndex={0}
                 >
-                  <span className={`flag ${getCurrentLanguageDisplay() === 'id' ? 'flag-id' : 'flag-us'}`}></span>
-                  <span className="language-text">{getCurrentLanguageDisplay() === 'id' ? "ID" : "EN"}</span>
+                  <span className={`flag ${getCurrentFlag()}`}></span>
+                  <span className="language-text">{getCurrentLanguageDisplay()}</span>
                   <ChevronDown size={16} />
                 </button>
                 {isLanguageOpen && (
@@ -251,6 +260,21 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false }) => {
                     >
                       <span className="flag flag-us"></span>
                       <span>English</span>
+                    </button>
+                    <button 
+                      className="language-option"
+                      role="menuitem"
+                      tabIndex={0}
+                      onClick={() => handleLanguageChange('ar')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault()
+                          handleLanguageChange('ar')
+                        }
+                      }}
+                    >
+                      <span className="flag flag-ar"></span>
+                      <span>العربية</span>
                     </button>
                   </div>
                 )}

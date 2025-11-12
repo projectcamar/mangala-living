@@ -1,19 +1,22 @@
 /**
  * Language management utility
  * Persists language preference across pages to maintain consistency
+ * Supports: English (en), Indonesian (id), Arabic (ar)
  */
 
 const LANGUAGE_STORAGE_KEY = 'mangala_lang_preference'
 
+export type LanguageCode = 'id' | 'en' | 'ar'
+
 /**
  * Get stored language preference from localStorage
  */
-export const getStoredLanguage = (): 'id' | 'en' | null => {
+export const getStoredLanguage = (): LanguageCode | null => {
   if (typeof window === 'undefined') return null
   try {
     const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY)
-    if (stored === 'id' || stored === 'en') {
-      return stored
+    if (stored === 'id' || stored === 'en' || stored === 'ar') {
+      return stored as LanguageCode
     }
   } catch (error) {
     console.log('Failed to read language from localStorage')
@@ -24,7 +27,7 @@ export const getStoredLanguage = (): 'id' | 'en' | null => {
 /**
  * Store language preference to localStorage
  */
-export const storeLanguage = (lang: 'id' | 'en'): void => {
+export const storeLanguage = (lang: LanguageCode): void => {
   if (typeof window === 'undefined') return
   try {
     localStorage.setItem(LANGUAGE_STORAGE_KEY, lang)
@@ -36,21 +39,21 @@ export const storeLanguage = (lang: 'id' | 'en'): void => {
 /**
  * Detect language from various sources in priority order:
  * 1. URL query parameter (?lang=)
- * 2. URL path prefix (/id/, /eng/)
+ * 2. URL path prefix (/id/, /eng/, /ar/)
  * 3. Stored preference in localStorage
- * 4. IP detection
+ * 4. IP detection (Arabic-speaking countries)
  * 5. Browser language fallback
  */
 export const detectLanguage = async (
   pathname: string,
   search: string
-): Promise<'id' | 'en'> => {
+): Promise<LanguageCode> => {
   // 1) Check query parameter ?lang=
   const searchParams = new URLSearchParams(search)
   const langParam = searchParams.get('lang')
-  if (langParam === 'id' || langParam === 'en') {
-    storeLanguage(langParam)
-    return langParam
+  if (langParam === 'id' || langParam === 'en' || langParam === 'ar') {
+    storeLanguage(langParam as LanguageCode)
+    return langParam as LanguageCode
   }
 
   // 2) Check URL for language prefix
@@ -62,6 +65,10 @@ export const detectLanguage = async (
     storeLanguage('en')
     return 'en'
   }
+  if (pathname.startsWith('/ar') || pathname.startsWith('/ar/')) {
+    storeLanguage('ar')
+    return 'ar'
+  }
 
   // 3) Check stored preference
   const stored = getStoredLanguage()
@@ -69,10 +76,23 @@ export const detectLanguage = async (
     return stored
   }
 
-  // 4) Detect from IP
+  // 4) Detect from IP - Check for Arabic-speaking countries
   try {
-    const { detectUserCountry } = await import('./currencyConverter')
-    const countryCode = await detectUserCountry()
+    const response = await fetch('https://ipapi.co/json/')
+    const data = await response.json()
+    const countryCode = data.country_code
+    
+    // Arabic-speaking countries
+    const arabicCountries = [
+      'SA', 'AE', 'KW', 'QA', 'OM', 'BH', // Gulf countries
+      'EG', 'JO', 'LB', 'SY', 'IQ', 'YE', // Levant & others
+      'MA', 'DZ', 'TN', 'LY', 'SD', 'PS'  // North Africa
+    ]
+    
+    if (arabicCountries.includes(countryCode)) {
+      storeLanguage('ar')
+      return 'ar'
+    }
     
     if (countryCode === 'ID') {
       storeLanguage('id')
@@ -87,6 +107,10 @@ export const detectLanguage = async (
   if (browserLang?.startsWith('id')) {
     storeLanguage('id')
     return 'id'
+  }
+  if (browserLang?.startsWith('ar')) {
+    storeLanguage('ar')
+    return 'ar'
   }
 
   // Default to English

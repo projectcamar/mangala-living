@@ -100,14 +100,27 @@ export const detectVisitorLocation = async (): Promise<GeolocationData> => {
 
 /**
  * Set language preference based on detected location
- * Indonesian visitors get 'id', others get 'en'
+ * Indonesian visitors get 'id', Arabic-speaking countries get 'ar', others get 'en'
  */
-export const setLanguagePreferenceByLocation = async (): Promise<'id' | 'en'> => {
+export const setLanguagePreferenceByLocation = async (): Promise<'id' | 'en' | 'ar'> => {
   try {
     const locationData = await detectVisitorLocation()
     
+    // Arabic-speaking countries
+    const arabicCountries = [
+      'SA', 'AE', 'KW', 'QA', 'OM', 'BH', // Gulf countries
+      'EG', 'JO', 'LB', 'SY', 'IQ', 'YE', // Levant & others
+      'MA', 'DZ', 'TN', 'LY', 'SD', 'PS'  // North Africa
+    ]
+    
     // Set language preference based on location
-    const langPreference = locationData.isIndonesia ? 'id' : 'en'
+    let langPreference: 'id' | 'en' | 'ar' = 'en'
+    
+    if (locationData.isIndonesia) {
+      langPreference = 'id'
+    } else if (arabicCountries.includes(locationData.countryCode)) {
+      langPreference = 'ar'
+    }
     
     // Store in localStorage for catalog generator
     localStorage.setItem('mangala_lang_preference', langPreference)
@@ -116,8 +129,8 @@ export const setLanguagePreferenceByLocation = async (): Promise<'id' | 'en'> =>
   } catch (error) {
     console.error('Error setting language preference:', error)
     
-    // Default to Indonesian
-    localStorage.setItem('mangala_lang_preference', 'id')
-    return 'id'
+    // Default to English
+    localStorage.setItem('mangala_lang_preference', 'en')
+    return 'en'
   }
 }
