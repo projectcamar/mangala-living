@@ -456,6 +456,78 @@ Dibuat di workshop Bekasi kami sejak 1999, meja kopi lounge set ini menampilkan 
 Sempurna untuk ruang tamu, lounge, area tunggu, dan ruang komersial, meja kopi lounge set ini menyediakan fungsionalitas yang serbaguna. Desain industrial menciptakan titik fokus untuk ruang hidup sambil menawarkan fungsionalitas praktis untuk penggunaan harian.`,
       metaDescription: 'Lounge Set Coffee Table - Meja Kopi Industrial | Furniture Custom | Mangala Living',
       imageAlt: 'Lounge Set Coffee Table - Meja Kopi Industrial - Furniture Premium dari Mangala Living'
+    },
+    ar: {
+      name: 'طاولة قهوة لاونج سيت',
+      caption: 'طاولة قهوة لاونج سيت - طاولة قهوة صناعية لغرفة المعيشة | Mangala Living',
+      shortCaption: 'طاولة قهوة لاونج سيت - طاولة قهوة صناعية',
+      description: `طاولة القهوة لاونج سيت من Mangala Living هي أثاث صناعي مصنوع بخبرة ومصمم لمساحات المعيشة الحديثة. تتميز طاولة القهوة المميزة هذه بتصميم صناعي قوي مع هيكل فولاذي يوفر أقصى قدر من المتانة والجاذبية البصرية.
+
+صُنعت في ورشة بيكاسي لدينا منذ عام 1999، تعرض طاولة القهوة هذه تقنيات لحام متفوقة والاهتمام بالتفاصيل. يوفر هيكل الإطار الفولاذي الصناعي استقرارًا ممتازًا مع الحفاظ على جمالية حديثة أنيقة تكمل أي تصميم داخلي صناعي أو معاصر.
+
+مثالية لغرف المعيشة والصالات ومناطق الانتظار والمساحات التجارية، توفر طاولة القهوة هذه وظائف متعددة الاستخدامات. يخلق التصميم الصناعي نقطة محورية لمناطق المعيشة مع توفير وظائف عملية للاستخدام اليومي.`,
+      metaDescription: 'طاولة قهوة لاونج سيت - طاولة قهوة صناعية | أثاث مخصص | Mangala Living',
+      imageAlt: 'طاولة قهوة لاونج سيت - طاولة قهوة صناعية - أثاث مميز من Mangala Living'
+    },
+    zh: {
+      name: '休息区咖啡桌',
+      caption: '休息区咖啡桌 - 客厅工业咖啡桌 | Mangala Living',
+      shortCaption: '休息区咖啡桌 - 工业咖啡桌',
+      description: `Mangala Living的休息区咖啡桌是为现代生活空间精心制作的工业家具。这款优质咖啡桌采用坚固的工业设计和钢结构，提供最大的耐用性和视觉吸引力。
+
+自1999年以来在我们位于勿加泗的车间制作，这款休息区咖啡桌展示了卓越的焊接技术和对细节的关注。工业钢框架结构提供出色的稳定性，同时保持时尚现代的美学，可以补充任何工业或现代室内设计。
+
+非常适合客厅、休息室、等候区和商业空间，这款休息区咖啡桌提供多功能性。工业设计为生活区域创造了一个焦点，同时为日常使用提供实用功能。`,
+      metaDescription: '休息区咖啡桌 - 工业咖啡桌 | 定制家具 | Mangala Living',
+      imageAlt: '休息区咖啡桌 - 工业咖啡桌 - Mangala Living的优质家具'
+    },
+    ja: {
+      name: 'ラウンジセットコーヒーテーブル',
+      caption: 'ラウンジセットコーヒーテーブル - リビングルーム用工業用コーヒーテーブル | Mangala Living',
+      shortCaption: 'ラウンジセットコーヒーテーブル - 工業用コーヒーテーブル',
+      description: `Mangala Livingのラウンジセットコーヒーテーブルは、モダンなリビングスペースのために expertly crafted された工業用家具です。このプレミアムコーヒーテーブルは、最大限の耐久性と視覚的な魅力を提供する頑丈な工業デザインとスチール構造が特徴です。
+
+1999年以来、ブカシのワークショップで製作されたこのラウンジセットコーヒーテーブルは、優れた溶接技術と細部へのこだわりを示しています。工業用スチールフレーム構造は、あらゆる工業的または現代的なインテリアデザインを補完する洗練された現代的な美学を維持しながら、優れた安定性を提供します。
+
+リビングルーム、ラウンジ、待合エリア、商業空間に最適で、このラウンジセットコーヒーテーブルは多目的な機能を提供します。工業デザインは、日常使用のための実用的な機能を提供しながら、リビングエリアの焦点を作り出します。`,
+      metaDescription: 'ラウンジセットコーヒーテーブル - 工業用コーヒーテーブル | カスタム家具 | Mangala Living',
+      imageAlt: 'ラウンジセットコーヒーテーブル - 工業用コーヒーテーブル - Mangala Livingのプレミアム家具'
+    },
+    es: {
+      name: 'Mesa de Centro Lounge Set',
+      caption: 'Mesa de Centro Lounge Set - Mesa de Centro Industrial para Sala de Estar | Mangala Living',
+      shortCaption: 'Mesa de Centro Lounge Set - Mesa de Centro Industrial',
+      description: `La Mesa de Centro Lounge Set de Mangala Living es un mueble industrial expertamente elaborado diseñado para espacios de vida modernos. Esta mesa de centro premium presenta un diseño industrial robusto con construcción de acero que proporciona la máxima durabilidad y atractivo visual.
+
+Elaborada en nuestro taller de Bekasi desde 1999, esta mesa de centro lounge set muestra técnicas de soldadura superiores y atención al detalle. La construcción del marco de acero industrial ofrece una excelente estabilidad mientras mantiene una estética moderna elegante que complementa cualquier diseño de interiores industrial o contemporáneo.
+
+Perfecta para salas de estar, lounges, áreas de espera y espacios comerciales, esta mesa de centro lounge set proporciona funcionalidad versátil. El diseño industrial crea un punto focal para las áreas de estar mientras ofrece funcionalidad práctica para el uso diario.`,
+      metaDescription: 'Mesa de Centro Lounge Set - Mesa de Centro Industrial | Mobiliario Personalizado | Mangala Living',
+      imageAlt: 'Mesa de Centro Lounge Set - Mesa de Centro Industrial - Mobiliario Premium de Mangala Living'
+    },
+    fr: {
+      name: 'Table Basse Lounge Set',
+      caption: 'Table Basse Lounge Set - Table Basse Industrielle pour Salon | Mangala Living',
+      shortCaption: 'Table Basse Lounge Set - Table Basse Industrielle',
+      description: `La Table Basse Lounge Set de Mangala Living est un meuble industriel expertement conçu pour les espaces de vie modernes. Cette table basse premium présente un design industriel robuste avec une construction en acier qui offre une durabilité maximale et un attrait visuel.
+
+Fabriquée dans notre atelier de Bekasi depuis 1999, cette table basse lounge set présente des techniques de soudage supérieures et une attention aux détails. La construction du cadre en acier industriel offre une excellente stabilité tout en maintenant une esthétique moderne élégante qui complète tout design d'intérieur industriel ou contemporain.
+
+Parfaite pour les salons, les lounges, les zones d'attente et les espaces commerciaux, cette table basse lounge set offre une fonctionnalité polyvalente. Le design industriel crée un point focal pour les espaces de vie tout en offrant une fonctionnalité pratique pour une utilisation quotidienne.`,
+      metaDescription: 'Table Basse Lounge Set - Table Basse Industrielle | Mobilier Personnalisé | Mangala Living',
+      imageAlt: 'Table Basse Lounge Set - Table Basse Industrielle - Mobilier Premium de Mangala Living'
+    },
+    ko: {
+      name: '라운지 세트 커피 테이블',
+      caption: '라운지 세트 커피 테이블 - 거실용 인더스트리얼 커피 테이블 | Mangala Living',
+      shortCaption: '라운지 세트 커피 테이블 - 인더스트리얼 커피 테이블',
+      description: `Mangala Living의 라운지 세트 커피 테이블은 현대 생활 공간을 위해 전문적으로 제작된 인더스트리얼 가구입니다. 이 프리미엄 커피 테이블은 최대 내구성과 시각적 매력을 제공하는 견고한 인더스트리얼 디자인과 강철 구조가 특징입니다.
+
+1999년부터 브카시 워크숍에서 제작된 이 라운지 세트 커피 테이블은 뛰어난 용접 기술과 세부 사항에 대한 관심을 보여줍니다. 인더스트리얼 강철 프레임 구조는 모든 인더스트리얼 또는 현대적인 인테리어 디자인을 보완하는 세련되고 현대적인 미학을 유지하면서 뛰어난 안정성을 제공합니다.
+
+거실, 라운지, 대기 공간 및 상업 공간에 완벽한 이 라운지 세트 커피 테이블은 다목적 기능을 제공합니다. 인더스트리얼 디자인은 일상 사용을 위한 실용적인 기능을 제공하면서 생활 공간의 초점을 만듭니다.`,
+      metaDescription: '라운지 세트 커피 테이블 - 인더스트리얼 커피 테이블 | 맞춤형 가구 | Mangala Living',
+      imageAlt: '라운지 세트 커피 테이블 - 인더스트리얼 커피 테이블 - Mangala Living의 프리미엄 가구'
     }
   },
   'bench-corner-lounge': {
@@ -482,6 +554,78 @@ Dibuat di workshop Bekasi kami sejak 1999, kursi sudut ini menampilkan teknik pe
 Sempurna untuk kafe, restoran, area tunggu, dan ruang komersial, kursi sudut ini menyediakan kapasitas tempat duduk yang serbaguna. Desain sudut memaksimalkan efisiensi ruang sambil menciptakan area tempat duduk yang intim untuk tamu dan pelanggan.`,
       metaDescription: 'Bench Corner Lounge - Kursi Sudut Industrial | Furniture Kafe | Mangala Living',
       imageAlt: 'Bench Corner Lounge - Kursi Sudut Industrial - Tempat Duduk Premium dari Mangala Living'
+    },
+    ar: {
+      name: 'مقعد زاوية لاونج',
+      caption: 'مقعد زاوية لاونج - مقعد زاوية صناعي للمقاهي والمطاعم | Mangala Living',
+      shortCaption: 'مقعد زاوية لاونج - مقعد زاوية صناعي',
+      description: `مقعد الزاوية لاونج من Mangala Living هو الحل الأمثل للجلوس الصناعي للمقاهي والمطاعم والمساحات التجارية الحديثة. يتميز مقعد الزاوية المميز هذا بتصميم صناعي أنيق مع مقاعد مريحة توفر أقصى قدر من الراحة والجاذبية البصرية.
+
+صُنع في ورشة بيكاسي لدينا منذ عام 1999، يعرض مقعد الزاوية هذا تقنيات لحام متفوقة والاهتمام بالتفاصيل. يوفر هيكل الإطار الفولاذي الصناعي متانة ممتازة مع الحفاظ على جمالية بسيطة ونظيفة تكمل أي تصميم داخلي صناعي أو حديث.
+
+مثالي للمقاهي والمطاعم ومناطق الانتظار والمساحات التجارية، يوفر مقعد الزاوية هذا قدرات جلوس متعددة الاستخدامات. يعظم تصميم الزاوية كفاءة المساحة مع إنشاء مناطق جلوس حميمة للضيوف والعملاء.`,
+      metaDescription: 'مقعد زاوية لاونج - مقعد زاوية صناعي | أثاث المقاهي | Mangala Living',
+      imageAlt: 'مقعد زاوية لاونج - مقعد زاوية صناعي - مقاعد مميزة من Mangala Living'
+    },
+    zh: {
+      name: '角落休息长椅',
+      caption: '角落休息长椅 - 咖啡馆和餐厅用工业角落长椅 | Mangala Living',
+      shortCaption: '角落休息长椅 - 工业角落长椅',
+      description: `Mangala Living的角落休息长椅是现代咖啡馆、餐厅和商业空间的完美工业座椅解决方案。这款优质角落休息长椅采用时尚的工业设计和舒适的座椅，提供最大的舒适性和视觉吸引力。
+
+自1999年以来在我们位于勿加泗的车间制作，这款角落休息长椅展示了卓越的焊接技术和对细节的关注。工业钢框架结构提供出色的耐用性，同时保持干净、简约的美学，可以补充任何工业或现代室内设计。
+
+非常适合咖啡馆、餐厅、等候区和商业空间，这款角落休息长椅提供多功能座椅能力。角落设计在为客人和顾客创造亲密座位区域的同时最大化空间效率。`,
+      metaDescription: '角落休息长椅 - 工业角落长椅 | 咖啡馆家具 | Mangala Living',
+      imageAlt: '角落休息长椅 - 工业角落长椅 - Mangala Living的优质座椅'
+    },
+    ja: {
+      name: 'ベンチコーナーラウンジ',
+      caption: 'ベンチコーナーラウンジ - カフェとレストラン用工業用コーナーベンチ | Mangala Living',
+      shortCaption: 'ベンチコーナーラウンジ - 工業用コーナーベンチ',
+      description: `Mangala Livingのベンチコーナーラウンジは、モダンなカフェ、レストラン、商業空間のための完璧な工業用シーティングソリューションです。このプレミアムベンチコーナーラウンジは、最大限の快適性と視覚的な魅力を提供する快適な座席を備えた洗練された工業デザインが特徴です。
+
+1999年以来、ブカシのワークショップで製作されたこのベンチコーナーラウンジは、優れた溶接技術と細部へのこだわりを示しています。工業用スチールフレーム構造は、あらゆる工業的またはモダンなインテリアデザインを補完するクリーンでミニマリストな美学を維持しながら、優れた耐久性を提供します。
+
+カフェ、レストラン、待合エリア、商業空間に最適で、このベンチコーナーラウンジは多目的な座席機能を提供します。コーナーデザインは、ゲストや顧客のための親密な座席エリアを作り出しながら、スペース効率を最大化します。`,
+      metaDescription: 'ベンチコーナーラウンジ - 工業用コーナーベンチ | カフェ家具 | Mangala Living',
+      imageAlt: 'ベンチコーナーラウンジ - 工業用コーナーベンチ - Mangala Livingのプレミアムシーティング'
+    },
+    es: {
+      name: 'Banco de Esquina Lounge',
+      caption: 'Banco de Esquina Lounge - Banco de Esquina Industrial para Cafés y Restaurantes | Mangala Living',
+      shortCaption: 'Banco de Esquina Lounge - Banco de Esquina Industrial',
+      description: `El Banco de Esquina Lounge de Mangala Living es la solución perfecta de asientos industriales para cafeterías modernas, restaurantes y espacios comerciales. Este banco de esquina premium presenta un diseño industrial elegante con asientos cómodos que proporcionan la máxima comodidad y atractivo visual.
+
+Elaborado en nuestro taller de Bekasi desde 1999, este banco de esquina lounge muestra técnicas de soldadura superiores y atención al detalle. La construcción del marco de acero industrial ofrece una excelente durabilidad mientras mantiene una estética minimalista y limpia que complementa cualquier diseño de interiores industrial o moderno.
+
+Perfecto para cafés, restaurantes, áreas de espera y espacios comerciales, este banco de esquina lounge proporciona capacidades de asientos versátiles. El diseño de esquina maximiza la eficiencia del espacio mientras crea áreas de asientos íntimas para invitados y clientes.`,
+      metaDescription: 'Banco de Esquina Lounge - Banco de Esquina Industrial | Mobiliario de Cafetería | Mangala Living',
+      imageAlt: 'Banco de Esquina Lounge - Banco de Esquina Industrial - Asientos Premium de Mangala Living'
+    },
+    fr: {
+      name: 'Banquette d\'Angle Lounge',
+      caption: 'Banquette d\'Angle Lounge - Banquette d\'Angle Industrielle pour Cafés et Restaurants | Mangala Living',
+      shortCaption: 'Banquette d\'Angle Lounge - Banquette d\'Angle Industrielle',
+      description: `La Banquette d'Angle Lounge de Mangala Living est la solution parfaite de sièges industriels pour les cafés modernes, les restaurants et les espaces commerciaux. Cette banquette d'angle premium présente un design industriel élégant avec des sièges confortables qui offrent un confort maximal et un attrait visuel.
+
+Fabriquée dans notre atelier de Bekasi depuis 1999, cette banquette d'angle lounge présente des techniques de soudage supérieures et une attention aux détails. La construction du cadre en acier industriel offre une excellente durabilité tout en maintenant une esthétique minimaliste et épurée qui complète tout design d'intérieur industriel ou moderne.
+
+Parfaite pour les cafés, les restaurants, les zones d'attente et les espaces commerciaux, cette banquette d'angle lounge offre des capacités d'assise polyvalentes. Le design d'angle maximise l'efficacité de l'espace tout en créant des zones d'assise intimes pour les invités et les clients.`,
+      metaDescription: 'Banquette d\'Angle Lounge - Banquette d\'Angle Industrielle | Mobilier de Café | Mangala Living',
+      imageAlt: 'Banquette d\'Angle Lounge - Banquette d\'Angle Industrielle - Sièges Premium de Mangala Living'
+    },
+    ko: {
+      name: '벤치 코너 라운지',
+      caption: '벤치 코너 라운지 - 카페와 레스토랑용 인더스트리얼 코너 벤치 | Mangala Living',
+      shortCaption: '벤치 코너 라운지 - 인더스트리얼 코너 벤치',
+      description: `Mangala Living의 벤치 코너 라운지는 현대적인 카페, 레스토랑 및 상업 공간을 위한 완벽한 인더스트리얼 좌석 솔루션입니다. 이 프리미엄 벤치 코너 라운지는 최대의 편안함과 시각적 매력을 제공하는 편안한 좌석을 갖춘 세련된 인더스트리얼 디자인이 특징입니다.
+
+1999년부터 브카시 워크숍에서 제작된 이 벤치 코너 라운지는 뛰어난 용접 기술과 세부 사항에 대한 관심을 보여줍니다. 인더스트리얼 강철 프레임 구조는 모든 인더스트리얼 또는 현대적인 인테리어 디자인을 보완하는 깔끔하고 미니멀한 미학을 유지하면서 뛰어난 내구성을 제공합니다.
+
+카페, 레스토랑, 대기 공간 및 상업 공간에 완벽한 이 벤치 코너 라운지는 다목적 좌석 기능을 제공합니다. 코너 디자인은 손님과 고객을 위한 친밀한 좌석 공간을 만들면서 공간 효율성을 최대화합니다.`,
+      metaDescription: '벤치 코너 라운지 - 인더스트리얼 코너 벤치 | 카페 가구 | Mangala Living',
+      imageAlt: '벤치 코너 라운지 - 인더스트리얼 코너 벤치 - Mangala Living의 프리미엄 좌석'
     }
   },
   'industrial-daybed-frame': {
@@ -860,6 +1004,78 @@ Dibuat di workshop Bekasi kami sejak 1999, rak display hollowline ini menampilka
 Sempurna untuk toko ritel, kafe, restoran, dan kantor, rak display hollowline ini menyediakan kapasitas penyimpanan dan tampilan yang serbaguna. Desain modular memungkinkan kustomisasi dan ekspansi yang mudah, menjadikannya ideal untuk bisnis yang berkembang yang membutuhkan solusi penyimpanan yang fleksibel.`,
       metaDescription: 'Hollowline Display Rack - Rak Display Industrial | Furniture Custom | Mangala Living',
       imageAlt: 'Hollowline Display Rack - Rak Display Industrial - Penyimpanan Premium dari Mangala Living'
+    },
+    ar: {
+      name: 'رف عرض هولولاين',
+      caption: 'رف عرض هولولاين - رف عرض صناعي | Mangala Living',
+      shortCaption: 'رف عرض هولولاين - رف عرض',
+      description: `رف العرض هولولاين من Mangala Living هو الحل الأمثل للتخزين الصناعي لمساحات التجزئة والتجارية الحديثة. يتميز رف العرض المميز هذا بتصميم صناعي أنيق مع هيكل فولاذي مجوف يوفر أقصى قدر من المتانة والجاذبية البصرية.
+
+صُنع في ورشة بيكاسي لدينا منذ عام 1999، يعرض رف العرض هذا تقنيات لحام متفوقة والاهتمام بالتفاصيل. يوفر هيكل الإطار الفولاذي المجوف نسبة قوة إلى وزن ممتازة مع الحفاظ على جمالية بسيطة ونظيفة تكمل أي تصميم داخلي صناعي أو حديث.
+
+مثالي لمتاجر التجزئة والمقاهي والمطاعم والمكاتب، يوفر رف العرض هذا قدرات تخزين وعرض متعددة الاستخدامات. يسمح التصميم المعياري بالتخصيص والتوسع السهل، مما يجعله مثاليًا للشركات المتنامية التي تحتاج إلى حلول تخزين مرنة.`,
+      metaDescription: 'رف عرض هولولاين - رف عرض صناعي | أثاث مخصص | Mangala Living',
+      imageAlt: 'رف عرض هولولاين - رف عرض صناعي - تخزين مميز من Mangala Living'
+    },
+    zh: {
+      name: 'Hollowline展示架',
+      caption: 'Hollowline展示架 - 工业展示货架 | Mangala Living',
+      shortCaption: 'Hollowline展示架 - 展示架',
+      description: `Mangala Living的Hollowline展示架是现代零售和商业空间的完美工业储物解决方案。这款优质hollowline展示架采用时尚的工业设计和中空钢结构，提供最大的耐用性和视觉吸引力。
+
+自1999年以来在我们位于勿加泗的车间制作，这款hollowline展示架展示了卓越的焊接技术和对细节的关注。中空钢框架结构提供出色的强度重量比，同时保持干净、简约的美学，可以补充任何工业或现代室内设计。
+
+非常适合零售店、咖啡馆、餐厅和办公室，这款hollowline展示架提供多功能存储和展示能力。模块化设计允许轻松定制和扩展，使其成为需要灵活存储解决方案的成长型企业的理想选择。`,
+      metaDescription: 'Hollowline展示架 - 工业展示货架 | 定制家具 | Mangala Living',
+      imageAlt: 'Hollowline展示架 - 工业展示架 - Mangala Living的优质存储'
+    },
+    ja: {
+      name: 'Hollowlineディスプレイラック',
+      caption: 'Hollowlineディスプレイラック - 工業用ディスプレイ棚ラック | Mangala Living',
+      shortCaption: 'Hollowlineディスプレイラック - ディスプレイラック',
+      description: `Mangala LivingのHollowlineディスプレイラックは、モダンな小売および商業空間のための完璧な工業用収納ソリューションです。このプレミアムhollowlineディスプレイラックは、最大限の耐久性と視覚的な魅力を提供する中空鋼構造を備えた洗練された工業デザインが特徴です。
+
+1999年以来、ブカシのワークショップで製作されたこのhollowlineディスプレイラックは、優れた溶接技術と細部へのこだわりを示しています。中空鋼フレーム構造は、あらゆる工業的またはモダンなインテリアデザインを補完するクリーンでミニマリストな美学を維持しながら、優れた強度対重量比を提供します。
+
+小売店、カフェ、レストラン、オフィスに最適で、このhollowlineディスプレイラックは多目的な収納とディスプレイ機能を提供します。モジュラーデザインにより、簡単にカスタマイズと拡張が可能で、柔軟な収納ソリューションを必要とする成長中のビジネスに理想的です。`,
+      metaDescription: 'Hollowlineディスプレイラック - 工業用ディスプレイ棚ラック | カスタム家具 | Mangala Living',
+      imageAlt: 'Hollowlineディスプレイラック - 工業用ディスプレイラック - Mangala Livingのプレミアム収納'
+    },
+    es: {
+      name: 'Estantería de Exhibición Hollowline',
+      caption: 'Estantería de Exhibición Hollowline - Estantería de Exhibición Industrial | Mangala Living',
+      shortCaption: 'Estantería de Exhibición Hollowline - Estantería de Exhibición',
+      description: `La Estantería de Exhibición Hollowline de Mangala Living es la solución perfecta de almacenamiento industrial para espacios minoristas y comerciales modernos. Esta estantería de exhibición hollowline premium presenta un diseño industrial elegante con construcción de acero hueco que proporciona la máxima durabilidad y atractivo visual.
+
+Elaborada en nuestro taller de Bekasi desde 1999, esta estantería de exhibición hollowline muestra técnicas de soldadura superiores y atención al detalle. La construcción del marco de acero hueco ofrece una excelente relación resistencia-peso mientras mantiene una estética minimalista y limpia que complementa cualquier diseño de interiores industrial o moderno.
+
+Perfecta para tiendas minoristas, cafeterías, restaurantes y oficinas, esta estantería de exhibición hollowline proporciona capacidades de almacenamiento y exhibición versátiles. El diseño modular permite una fácil personalización y expansión, lo que la hace ideal para empresas en crecimiento que necesitan soluciones de almacenamiento flexibles.`,
+      metaDescription: 'Estantería de Exhibición Hollowline - Estantería de Exhibición Industrial | Mobiliario Personalizado | Mangala Living',
+      imageAlt: 'Estantería de Exhibición Hollowline - Estantería de Exhibición Industrial - Almacenamiento Premium de Mangala Living'
+    },
+    fr: {
+      name: 'Étagère d\'Exposition Hollowline',
+      caption: 'Étagère d\'Exposition Hollowline - Étagère d\'Exposition Industrielle | Mangala Living',
+      shortCaption: 'Étagère d\'Exposition Hollowline - Étagère d\'Exposition',
+      description: `L'Étagère d'Exposition Hollowline de Mangala Living est la solution parfaite de rangement industriel pour les espaces de vente au détail et commerciaux modernes. Cette étagère d'exposition hollowline premium présente un design industriel élégant avec une construction en acier creux qui offre une durabilité maximale et un attrait visuel.
+
+Fabriquée dans notre atelier de Bekasi depuis 1999, cette étagère d'exposition hollowline présente des techniques de soudage supérieures et une attention aux détails. La construction du cadre en acier creux offre un excellent rapport résistance-poids tout en maintenant une esthétique minimaliste et épurée qui complète tout design d'intérieur industriel ou moderne.
+
+Parfaite pour les magasins de détail, les cafés, les restaurants et les bureaux, cette étagère d'exposition hollowline offre des capacités de rangement et d'affichage polyvalentes. La conception modulaire permet une personnalisation et une expansion faciles, ce qui la rend idéale pour les entreprises en croissance qui ont besoin de solutions de rangement flexibles.`,
+      metaDescription: 'Étagère d\'Exposition Hollowline - Étagère d\'Exposition Industrielle | Mobilier Personnalisé | Mangala Living',
+      imageAlt: 'Étagère d\'Exposition Hollowline - Étagère d\'Exposition Industrielle - Rangement Premium de Mangala Living'
+    },
+    ko: {
+      name: 'Hollowline 디스플레이 랙',
+      caption: 'Hollowline 디스플레이 랙 - 인더스트리얼 디스플레이 선반 랙 | Mangala Living',
+      shortCaption: 'Hollowline 디스플레이 랙 - 디스플레이 랙',
+      description: `Mangala Living의 Hollowline 디스플레이 랙은 현대 소매 및 상업 공간을 위한 완벽한 인더스트리얼 수납 솔루션입니다. 이 프리미엄 hollowline 디스플레이 랙은 최대 내구성과 시각적 매력을 제공하는 중공 강철 구조를 갖춘 세련된 인더스트리얼 디자인이 특징입니다.
+
+1999년부터 브카시 워크숍에서 제작된 이 hollowline 디스플레이 랙은 뛰어난 용접 기술과 세부 사항에 대한 관심을 보여줍니다. 중공 강철 프레임 구조는 모든 인더스트리얼 또는 현대적인 인테리어 디자인을 보완하는 깔끔하고 미니멀한 미학을 유지하면서 우수한 강도 대 중량 비율을 제공합니다.
+
+소매점, 카페, 레스토랑 및 사무실에 완벽한 이 hollowline 디스플레이 랙은 다목적 수납 및 디스플레이 기능을 제공합니다. 모듈식 디자인은 손쉬운 맞춤화 및 확장을 가능하게 하여 유연한 수납 솔루션이 필요한 성장하는 기업에 이상적입니다.`,
+      metaDescription: 'Hollowline 디스플레이 랙 - 인더스트리얼 디스플레이 선반 랙 | 맞춤형 가구 | Mangala Living',
+      imageAlt: 'Hollowline 디스플레이 랙 - 인더스트리얼 디스플레이 랙 - Mangala Living의 프리미엄 수납'
     }
   },
   'ladder-frame-display-stand': {
