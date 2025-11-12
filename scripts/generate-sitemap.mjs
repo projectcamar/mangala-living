@@ -235,13 +235,43 @@ const buildSearchQueryEntries = (products, lastModified) => {
 
   const queries = Array.from(map.values()).slice(0, 60)
 
-  return queries.map((query, index) => ({
-    query,
-    loc: `${BASE_URL}/search?q=${encodeURIComponent(query)}`,
-    changefreq: index < 20 ? 'weekly' : 'monthly',
-    priority: index < 10 ? 0.50 : 0.40,
-    lastmod: lastModified
-  }))
+  // Create entries for both Indonesian and English versions
+  const entries = []
+  queries.forEach((query, index) => {
+    const baseParams = new URLSearchParams({ q: query })
+    
+    // Indonesian version
+    entries.push({
+      query,
+      lang: 'id',
+      loc: `${BASE_URL}/search?${baseParams.toString()}&lang=id`,
+      changefreq: index < 20 ? 'weekly' : 'monthly',
+      priority: index < 10 ? 0.50 : 0.40,
+      lastmod: lastModified,
+      explicitAlternates: [
+        { hrefLang: 'id-ID', href: `${BASE_URL}/search?${baseParams.toString()}&lang=id` },
+        { hrefLang: 'en', href: `${BASE_URL}/search?${baseParams.toString()}&lang=en` },
+        { hrefLang: 'x-default', href: `${BASE_URL}/search?${baseParams.toString()}` }
+      ]
+    })
+    
+    // English version
+    entries.push({
+      query,
+      lang: 'en',
+      loc: `${BASE_URL}/search?${baseParams.toString()}&lang=en`,
+      changefreq: index < 20 ? 'weekly' : 'monthly',
+      priority: index < 10 ? 0.50 : 0.40,
+      lastmod: lastModified,
+      explicitAlternates: [
+        { hrefLang: 'id-ID', href: `${BASE_URL}/search?${baseParams.toString()}&lang=id` },
+        { hrefLang: 'en', href: `${BASE_URL}/search?${baseParams.toString()}&lang=en` },
+        { hrefLang: 'x-default', href: `${BASE_URL}/search?${baseParams.toString()}` }
+      ]
+    })
+  })
+
+  return entries
 }
 
 const parseCategorySlugs = (source) => {
@@ -473,7 +503,8 @@ const generateSearchSitemap = (entries) => {
       `    <priority>${entry.priority.toFixed(2)}</priority>`
     ]
 
-    const alternates = buildLanguageAlternates(entry.loc, entry.alternates)
+    // Use explicit alternates if provided, otherwise build them
+    const alternates = entry.explicitAlternates || buildLanguageAlternates(entry.loc, entry.alternates)
     alternates.forEach((alternate) => {
       if (alternate?.href && alternate?.hrefLang) {
         parts.push(`    <xhtml:link rel="alternate" hreflang="${escapeXml(alternate.hrefLang)}" href="${escapeXml(alternate.href)}" />`)

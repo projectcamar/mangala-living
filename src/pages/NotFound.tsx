@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { ALL_PRODUCTS } from '../data/products'
 import { convertIDRToUSD } from '../utils/currencyConverter'
+import { getProductName } from '../data/productDescriptions'
 import './NotFound.css'
 
 const FEATURED_PRODUCTS = ALL_PRODUCTS.slice(0, 4)
@@ -184,24 +185,26 @@ const NotFound: React.FC = () => {
                 {translations.featuredProductsTitle}
               </h3>
               <div className="products-grid">
-                {FEATURED_PRODUCTS.map((product) => (
-                  <Link
-                    key={product.id}
-                    to={`/product/${product.slug}`}
-                    className="product-card"
-                  >
-                    <div className="product-image-wrapper">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="product-image"
-                        loading="lazy"
-                        width="300"
-                        height="200"
-                      />
-                    </div>
-                    <div className="product-info">
-                      <h4 className="product-name">{product.name}</h4>
+                {FEATURED_PRODUCTS.map((product) => {
+                  const translatedName = getProductName(product.slug, isIndonesian) || product.name
+                  return (
+                    <Link
+                      key={product.id}
+                      to={`/product/${product.slug}`}
+                      className="product-card"
+                    >
+                      <div className="product-image-wrapper">
+                        <img
+                          src={product.image}
+                          alt={translatedName}
+                          className="product-image"
+                          loading="lazy"
+                          width="300"
+                          height="200"
+                        />
+                      </div>
+                      <div className="product-info">
+                        <h4 className="product-name">{translatedName}</h4>
                       <p className="product-category">
                         {product.categories.join(', ')}
                       </p>
@@ -234,7 +237,8 @@ const NotFound: React.FC = () => {
                       )}
                     </div>
                   </Link>
-                ))}
+                  )
+                })}
               </div>
               <div className="products-cta">
                 <Link to="/shop" className="btn-view-all">

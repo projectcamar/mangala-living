@@ -353,16 +353,16 @@ Sempurna untuk kantor, kafe, restoran, dan ruang komersial, furniture penyimpana
   },
   'kabinet-lemari-industrial': {
     en: {
-      name: 'Kabinet Lemari Industrial',
-      caption: 'Kabinet Lemari Industrial - Industrial Storage Cabinet | Mangala Living',
-      shortCaption: 'Kabinet Lemari Industrial - Industrial Cabinet',
+      name: 'Industrial Storage Cabinet',
+      caption: 'Industrial Storage Cabinet - Industrial Wardrobe Cabinet | Mangala Living',
+      shortCaption: 'Industrial Storage Cabinet - Wardrobe Cabinet',
       description: `The Kabinet Lemari Industrial from Mangala Living is the perfect industrial storage solution for modern spaces. This premium industrial storage furniture features a robust industrial design with steel construction that provides maximum storage capacity and visual appeal.
 
 Crafted in our Bekasi workshop since 1999, this industrial storage furniture showcases superior welding techniques and attention to detail. The industrial steel frame construction offers excellent durability while maintaining a sleek, modern aesthetic that complements any industrial or contemporary interior design.
 
 Perfect for offices, cafes, restaurants, and commercial spaces, this industrial storage furniture provides versatile storage capabilities. The industrial design creates functional storage solutions while adding visual interest to any space.`,
-      metaDescription: 'Kabinet Lemari Industrial - Industrial Storage Cabinet | Custom Furniture | Mangala Living',
-      imageAlt: 'Kabinet Lemari Industrial - Industrial Cabinet - Premium Storage from Mangala Living'
+      metaDescription: 'Industrial Storage Cabinet - Industrial Wardrobe Cabinet | Custom Furniture | Mangala Living',
+      imageAlt: 'Industrial Storage Cabinet - Industrial Wardrobe Cabinet - Premium Storage from Mangala Living'
     },
     id: {
       name: 'Kabinet Lemari Industrial',
@@ -457,16 +457,16 @@ Sempurna untuk kantor, kafe, restoran, dan ruang komersial, furniture penyimpana
   },
   'meja-kerja-industrial': {
     en: {
-      name: 'Meja Kerja Industrial',
-      caption: 'Meja Kerja Industrial - Industrial Work Table Desk | Mangala Living',
-      shortCaption: 'Meja Kerja Industrial - Work Table',
+      name: 'Industrial Work Table',
+      caption: 'Industrial Work Table - Industrial Work Desk | Mangala Living',
+      shortCaption: 'Industrial Work Table - Work Desk',
       description: `The Meja Kerja Industrial from Mangala Living is the perfect industrial work table solution for modern offices and commercial spaces. This premium industrial work table features a robust industrial design with steel construction that provides maximum durability and functionality.
 
 Crafted in our Bekasi workshop since 1999, this industrial work table showcases superior welding techniques and attention to detail. The industrial steel frame construction offers excellent stability while maintaining a sleek, modern aesthetic that complements any industrial or contemporary office design.
 
 Perfect for offices, workshops, studios, and commercial spaces, this industrial work table provides versatile work capabilities. The industrial design creates a professional work environment while offering practical functionality for daily tasks.`,
-      metaDescription: 'Meja Kerja Industrial - Industrial Work Table Desk | Office Furniture | Mangala Living',
-      imageAlt: 'Meja Kerja Industrial - Industrial Work Table - Premium Office Furniture from Mangala Living'
+      metaDescription: 'Industrial Work Table - Industrial Work Desk | Office Furniture | Mangala Living',
+      imageAlt: 'Industrial Work Table - Industrial Work Desk - Premium Office Furniture from Mangala Living'
     },
     id: {
       name: 'Meja Kerja Industrial',

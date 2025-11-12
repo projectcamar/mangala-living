@@ -11,6 +11,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORY_MAP } from '../data/categories'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { convertIDRToUSD } from '../utils/currencyConverter'
+import { getProductName } from '../data/productDescriptions'
 import './ProductCategory.css'
 
 const ProductCategory: React.FC = () => {
@@ -250,29 +251,31 @@ const ProductCategory: React.FC = () => {
           </div>
           
           <div className="category-products-grid">
-            {filteredProducts.map((product) => (
-              <Link 
-                key={product.id}
-                to={`/product/${product.slug}`}
-                className="category-product-card"
-              >
-                <div className="category-product-image">
-                  <img 
-                    src={product.image} 
-                    alt={`${product.name} - ${categoryName} Industrial Furniture Collection Mangala Living`}
-                    title={`${product.name} - ${categoryName} Premium Furniture from Mangala Living Workshop Bekasi`}
-                    loading="lazy"
-                    width="300"
-                    height="200"
-                    itemProp="image"
-                    data-image-type="category-product"
-                    data-product-name={product.name}
-                    data-product-slug={product.slug}
-                    data-category={categoryName}
-                  />
-                </div>
-                <div className="category-product-info">
-                  <h3 className="category-product-name">{product.name}</h3>
+            {filteredProducts.map((product) => {
+              const translatedName = getProductName(product.slug, isIndonesian) || product.name
+              return (
+                <Link 
+                  key={product.id}
+                  to={`/product/${product.slug}`}
+                  className="category-product-card"
+                >
+                  <div className="category-product-image">
+                    <img 
+                      src={product.image} 
+                      alt={`${translatedName} - ${categoryName} Industrial Furniture Collection Mangala Living`}
+                      title={`${translatedName} - ${categoryName} Premium Furniture from Mangala Living Workshop Bekasi`}
+                      loading="lazy"
+                      width="300"
+                      height="200"
+                      itemProp="image"
+                      data-image-type="category-product"
+                      data-product-name={translatedName}
+                      data-product-slug={product.slug}
+                      data-category={categoryName}
+                    />
+                  </div>
+                  <div className="category-product-info">
+                    <h3 className="category-product-name">{translatedName}</h3>
                   <p className="category-product-cats">{product.categories.join(', ')}</p>
                   {usdPrices[product.id] ? (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
@@ -303,7 +306,8 @@ const ProductCategory: React.FC = () => {
                   )}
                 </div>
               </Link>
-            ))}
+              )
+            })}
           </div>
           
           {/* AI-Optimized Category Content */}

@@ -2,8 +2,8 @@
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20furniture</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+furniture&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.50</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+furniture&amp;lang=id" />
@@ -11,8 +11,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+furniture" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20furniture%20indonesia</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+furniture&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+furniture&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+furniture&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+furniture" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+furniture+indonesia&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.50</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+furniture+indonesia&amp;lang=id" />
@@ -20,8 +29,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+furniture+indonesia" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20furniture%20bekasi</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+furniture+indonesia&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+furniture+indonesia&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+furniture+indonesia&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+furniture+indonesia" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+furniture+bekasi&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.50</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+furniture+bekasi&amp;lang=id" />
@@ -29,8 +47,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+furniture+bekasi" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20furniture%20jakarta</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+furniture+bekasi&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+furniture+bekasi&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+furniture+bekasi&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+furniture+bekasi" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+furniture+jakarta&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.50</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+furniture+jakarta&amp;lang=id" />
@@ -38,8 +65,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+furniture+jakarta" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20furniture%20custom</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+furniture+jakarta&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+furniture+jakarta&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+furniture+jakarta&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+furniture+jakarta" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+furniture+custom&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.50</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+furniture+custom&amp;lang=id" />
@@ -47,8 +83,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+furniture+custom" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=custom%20furniture%20cafe</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+furniture+custom&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+furniture+custom&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+furniture+custom&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+furniture+custom" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=custom+furniture+cafe&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.50</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=custom+furniture+cafe&amp;lang=id" />
@@ -56,8 +101,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=custom+furniture+cafe" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=custom%20furniture%20restoran</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=custom+furniture+cafe&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=custom+furniture+cafe&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=custom+furniture+cafe&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=custom+furniture+cafe" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=custom+furniture+restoran&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.50</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=custom+furniture+restoran&amp;lang=id" />
@@ -65,8 +119,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=custom+furniture+restoran" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=custom%20furniture%20hotel</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=custom+furniture+restoran&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=custom+furniture+restoran&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=custom+furniture+restoran&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=custom+furniture+restoran" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=custom+furniture+hotel&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.50</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=custom+furniture+hotel&amp;lang=id" />
@@ -74,8 +137,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=custom+furniture+hotel" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=custom%20furniture%20kantor</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=custom+furniture+hotel&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=custom+furniture+hotel&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=custom+furniture+hotel&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=custom+furniture+hotel" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=custom+furniture+kantor&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.50</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=custom+furniture+kantor&amp;lang=id" />
@@ -83,8 +155,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=custom+furniture+kantor" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20dining%20table</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=custom+furniture+kantor&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=custom+furniture+kantor&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=custom+furniture+kantor&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=custom+furniture+kantor" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+dining+table&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.50</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+dining+table&amp;lang=id" />
@@ -92,8 +173,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+dining+table" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20dining%20set</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+dining+table&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+dining+table&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+dining+table&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+dining+table" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+dining+set&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+dining+set&amp;lang=id" />
@@ -101,8 +191,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+dining+set" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20lounge%20set</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+dining+set&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+dining+set&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+dining+set&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+dining+set" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+lounge+set&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+lounge+set&amp;lang=id" />
@@ -110,8 +209,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+lounge+set" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20bar%20set</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+lounge+set&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+lounge+set&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+lounge+set&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+lounge+set" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+bar+set&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+bar+set&amp;lang=id" />
@@ -119,8 +227,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+bar+set" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20bar%20table</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+bar+set&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+bar+set&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+bar+set&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+bar+set" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+bar+table&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+bar+table&amp;lang=id" />
@@ -128,8 +245,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+bar+table" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20sofa%20bench</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+bar+table&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+bar+table&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+bar+table&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+bar+table" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+sofa+bench&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+sofa+bench&amp;lang=id" />
@@ -137,8 +263,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+sofa+bench" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20coffee%20table</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+sofa+bench&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+sofa+bench&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+sofa+bench&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+sofa+bench" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+coffee+table&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+coffee+table&amp;lang=id" />
@@ -146,8 +281,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+coffee+table" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20outdoor%20furniture</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+coffee+table&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+coffee+table&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+coffee+table&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+coffee+table" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+outdoor+furniture&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+outdoor+furniture&amp;lang=id" />
@@ -155,8 +299,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+outdoor+furniture" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20daybed</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+outdoor+furniture&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+outdoor+furniture&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+outdoor+furniture&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+outdoor+furniture" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+daybed&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+daybed&amp;lang=id" />
@@ -164,8 +317,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+daybed" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20storage%20rack</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+daybed&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+daybed&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+daybed&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+daybed" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+storage+rack&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+storage+rack&amp;lang=id" />
@@ -173,8 +335,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+storage+rack" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20kitchen%20cabinet</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+storage+rack&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+storage+rack&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+storage+rack&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+storage+rack" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+kitchen+cabinet&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+kitchen+cabinet&amp;lang=id" />
@@ -182,8 +353,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+kitchen+cabinet" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20bookshelf</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+kitchen+cabinet&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+kitchen+cabinet&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+kitchen+cabinet&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+kitchen+cabinet" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+bookshelf&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+bookshelf&amp;lang=id" />
@@ -191,8 +371,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+bookshelf" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20display%20rack</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+bookshelf&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+bookshelf&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+bookshelf&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+bookshelf" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+display+rack&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+display+rack&amp;lang=id" />
@@ -200,8 +389,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+display+rack" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20coat%20rack</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+display+rack&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+display+rack&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+display+rack&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+display+rack" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+coat+rack&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+coat+rack&amp;lang=id" />
@@ -209,8 +407,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+coat+rack" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20hanging%20shelf</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+coat+rack&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+coat+rack&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+coat+rack&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+coat+rack" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+hanging+shelf&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+hanging+shelf&amp;lang=id" />
@@ -218,8 +425,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+hanging+shelf" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20workstation%20desk</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+hanging+shelf&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+hanging+shelf&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+hanging+shelf&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+hanging+shelf" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+workstation+desk&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+workstation+desk&amp;lang=id" />
@@ -227,8 +443,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+workstation+desk" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20conference%20table</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+workstation+desk&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+workstation+desk&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+workstation+desk&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+workstation+desk" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+conference+table&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+conference+table&amp;lang=id" />
@@ -236,8 +461,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+conference+table" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20office%20furniture</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+conference+table&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+conference+table&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+conference+table&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+conference+table" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+office+furniture&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+office+furniture&amp;lang=id" />
@@ -245,8 +479,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+office+furniture" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=furniture%20cafe%20industrial</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+office+furniture&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+office+furniture&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+office+furniture&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+office+furniture" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=furniture+cafe+industrial&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+cafe+industrial&amp;lang=id" />
@@ -254,8 +497,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+cafe+industrial" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=furniture%20restoran%20industrial</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=furniture+cafe+industrial&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+cafe+industrial&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=furniture+cafe+industrial&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+cafe+industrial" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=furniture+restoran+industrial&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+restoran+industrial&amp;lang=id" />
@@ -263,8 +515,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+restoran+industrial" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=furniture%20hotel%20industrial</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=furniture+restoran+industrial&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+restoran+industrial&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=furniture+restoran+industrial&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+restoran+industrial" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=furniture+hotel+industrial&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+hotel+industrial&amp;lang=id" />
@@ -272,8 +533,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+hotel+industrial" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=furniture%20kantor%20industrial</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=furniture+hotel+industrial&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+hotel+industrial&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=furniture+hotel+industrial&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+hotel+industrial" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=furniture+kantor+industrial&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+kantor+industrial&amp;lang=id" />
@@ -281,8 +551,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+kantor+industrial" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=furniture%20minimalis%20industrial</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=furniture+kantor+industrial&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+kantor+industrial&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=furniture+kantor+industrial&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+kantor+industrial" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=furniture+minimalis+industrial&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+minimalis+industrial&amp;lang=id" />
@@ -290,8 +569,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+minimalis+industrial" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=furniture%20scandinavian%20industrial</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=furniture+minimalis+industrial&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+minimalis+industrial&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=furniture+minimalis+industrial&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+minimalis+industrial" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=furniture+scandinavian+industrial&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+scandinavian+industrial&amp;lang=id" />
@@ -299,8 +587,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+scandinavian+industrial" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=furniture%20custom%20bekasi</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=furniture+scandinavian+industrial&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+scandinavian+industrial&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=furniture+scandinavian+industrial&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+scandinavian+industrial" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=furniture+custom+bekasi&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+custom+bekasi&amp;lang=id" />
@@ -308,8 +605,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+custom+bekasi" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=furniture%20custom%20jabodetabek</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=furniture+custom+bekasi&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+custom+bekasi&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=furniture+custom+bekasi&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+custom+bekasi" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=furniture+custom+jabodetabek&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+custom+jabodetabek&amp;lang=id" />
@@ -317,8 +623,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+custom+jabodetabek" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20bench%20corner</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=furniture+custom+jabodetabek&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+custom+jabodetabek&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=furniture+custom+jabodetabek&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+custom+jabodetabek" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+bench+corner&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+bench+corner&amp;lang=id" />
@@ -326,8 +641,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+bench+corner" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20barstool</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+bench+corner&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+bench+corner&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+bench+corner&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+bench+corner" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+barstool&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+barstool&amp;lang=id" />
@@ -335,8 +659,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+barstool" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20bar%20chair</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+barstool&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+barstool&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+barstool&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+barstool" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+bar+chair&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+bar+chair&amp;lang=id" />
@@ -344,8 +677,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+bar+chair" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20pipe%20furniture</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+bar+chair&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+bar+chair&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+bar+chair&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+bar+chair" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+pipe+furniture&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+pipe+furniture&amp;lang=id" />
@@ -353,8 +695,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+pipe+furniture" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=custom%20dining%20table%20steel</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+pipe+furniture&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+pipe+furniture&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+pipe+furniture&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+pipe+furniture" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=custom+dining+table+steel&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=custom+dining+table+steel&amp;lang=id" />
@@ -362,8 +713,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=custom+dining+table+steel" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=custom%20dining%20set%20steel</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=custom+dining+table+steel&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=custom+dining+table+steel&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=custom+dining+table+steel&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=custom+dining+table+steel" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=custom+dining+set+steel&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=custom+dining+set+steel&amp;lang=id" />
@@ -371,8 +731,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=custom+dining+set+steel" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=metal%20frame%20furniture</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=custom+dining+set+steel&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=custom+dining+set+steel&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=custom+dining+set+steel&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=custom+dining+set+steel" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=metal+frame+furniture&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=metal+frame+furniture&amp;lang=id" />
@@ -380,8 +749,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=metal+frame+furniture" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=welding%20furniture%20bekasi</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=metal+frame+furniture&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=metal+frame+furniture&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=metal+frame+furniture&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=metal+frame+furniture" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=welding+furniture+bekasi&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=welding+furniture+bekasi&amp;lang=id" />
@@ -389,8 +767,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=welding+furniture+bekasi" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=furniture%20besi%20industrial</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=welding+furniture+bekasi&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=welding+furniture+bekasi&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=welding+furniture+bekasi&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=welding+furniture+bekasi" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=furniture+besi+industrial&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+besi+industrial&amp;lang=id" />
@@ -398,8 +785,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+besi+industrial" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=furniture%20besi%20custom</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=furniture+besi+industrial&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+besi+industrial&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=furniture+besi+industrial&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+besi+industrial" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=furniture+besi+custom&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+besi+custom&amp;lang=id" />
@@ -407,8 +803,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+besi+custom" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=furniture%20mangala%20living</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=furniture+besi+custom&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+besi+custom&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=furniture+besi+custom&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+besi+custom" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=furniture+mangala+living&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+mangala+living&amp;lang=id" />
@@ -416,8 +821,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+mangala+living" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=mangala%20living%20catalog</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=furniture+mangala+living&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=furniture+mangala+living&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=furniture+mangala+living&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=furniture+mangala+living" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=mangala+living+catalog&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=mangala+living+catalog&amp;lang=id" />
@@ -425,8 +839,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=mangala+living+catalog" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=mangala%20living%20dining%20set</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=mangala+living+catalog&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=mangala+living+catalog&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=mangala+living+catalog&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=mangala+living+catalog" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=mangala+living+dining+set&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=mangala+living+dining+set&amp;lang=id" />
@@ -434,8 +857,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=mangala+living+dining+set" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=mangala%20living%20lounge%20set</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=mangala+living+dining+set&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=mangala+living+dining+set&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=mangala+living+dining+set&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=mangala+living+dining+set" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=mangala+living+lounge+set&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=mangala+living+lounge+set&amp;lang=id" />
@@ -443,8 +875,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=mangala+living+lounge+set" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=mangala%20living%20bar%20set</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=mangala+living+lounge+set&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=mangala+living+lounge+set&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=mangala+living+lounge+set&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=mangala+living+lounge+set" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=mangala+living+bar+set&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=mangala+living+bar+set&amp;lang=id" />
@@ -452,8 +893,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=mangala+living+bar+set" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=mangala%20living%20outdoor%20furniture</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=mangala+living+bar+set&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=mangala+living+bar+set&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=mangala+living+bar+set&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=mangala+living+bar+set" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=mangala+living+outdoor+furniture&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=mangala+living+outdoor+furniture&amp;lang=id" />
@@ -461,8 +911,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=mangala+living+outdoor+furniture" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=mangala%20living%20daybed</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=mangala+living+outdoor+furniture&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=mangala+living+outdoor+furniture&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=mangala+living+outdoor+furniture&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=mangala+living+outdoor+furniture" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=mangala+living+daybed&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=mangala+living+daybed&amp;lang=id" />
@@ -470,8 +929,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=mangala+living+daybed" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=Frame%20Loft%20Bookshelf</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=mangala+living+daybed&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=mangala+living+daybed&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=mangala+living+daybed&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=mangala+living+daybed" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=Frame+Loft+Bookshelf&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf&amp;lang=id" />
@@ -479,8 +947,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=Frame%20Loft%20Bookshelf%20price</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=Frame+Loft+Bookshelf&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=Frame+Loft+Bookshelf+price&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+price&amp;lang=id" />
@@ -488,8 +965,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+price" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=Frame%20Loft%20Bookshelf%20Mangala%20Living</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=Frame+Loft+Bookshelf+price&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+price&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+price&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+price" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=Frame+Loft+Bookshelf+Mangala+Living&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+Mangala+Living&amp;lang=id" />
@@ -497,8 +983,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+Mangala+Living" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=Frame%20Loft%20Bookshelf%20furniture</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=Frame+Loft+Bookshelf+Mangala+Living&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+Mangala+Living&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+Mangala+Living&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+Mangala+Living" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=Frame+Loft+Bookshelf+furniture&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+furniture&amp;lang=id" />
@@ -506,8 +1001,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+furniture" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=industrial%20frame%20loft%20bookshelf</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=Frame+Loft+Bookshelf+furniture&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+furniture&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+furniture&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=Frame+Loft+Bookshelf+furniture" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=industrial+frame+loft+bookshelf&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+frame+loft+bookshelf&amp;lang=id" />
@@ -515,8 +1019,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+frame+loft+bookshelf" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=frame%20loft%20bookshelf%20custom%20furniture</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=industrial+frame+loft+bookshelf&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=industrial+frame+loft+bookshelf&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=industrial+frame+loft+bookshelf&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=industrial+frame+loft+bookshelf" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=frame+loft+bookshelf+custom+furniture&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=frame+loft+bookshelf+custom+furniture&amp;lang=id" />
@@ -524,8 +1037,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=frame+loft+bookshelf+custom+furniture" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=Balcony%20Bar%20Table</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=frame+loft+bookshelf+custom+furniture&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=frame+loft+bookshelf+custom+furniture&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=frame+loft+bookshelf+custom+furniture&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=frame+loft+bookshelf+custom+furniture" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=Balcony+Bar+Table&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=Balcony+Bar+Table&amp;lang=id" />
@@ -533,8 +1055,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=Balcony+Bar+Table" />
   </url>
   <url>
-    <loc>https://mangala-living.com/search?q=Balcony%20Bar%20Table%20price</loc>
-    <lastmod>2025-11-11</lastmod>
+    <loc>https://mangala-living.com/search?q=Balcony+Bar+Table&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=Balcony+Bar+Table&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=Balcony+Bar+Table&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=Balcony+Bar+Table" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=Balcony+Bar+Table+price&amp;lang=id</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=Balcony+Bar+Table+price&amp;lang=id" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mangala-living.com/search?q=Balcony+Bar+Table+price&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mangala-living.com/search?q=Balcony+Bar+Table+price" />
+  </url>
+  <url>
+    <loc>https://mangala-living.com/search?q=Balcony+Bar+Table+price&amp;lang=en</loc>
+    <lastmod>2025-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.40</priority>
     <xhtml:link rel="alternate" hreflang="id-ID" href="https://mangala-living.com/search?q=Balcony+Bar+Table+price&amp;lang=id" />
