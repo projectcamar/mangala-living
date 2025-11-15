@@ -26,6 +26,16 @@ const Home: React.FC = () => {
   
   // Initialize language immediately from browser or default to avoid loading state
   const getInitialLanguage = (): 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' => {
+    // Check query parameter first
+    const searchParams = new URLSearchParams(location.search)
+    const langParam = searchParams.get('lang')
+    if (langParam === 'id' || langParam === 'en' || langParam === 'ar' || 
+        langParam === 'zh' || langParam === 'ja' || langParam === 'es' || 
+        langParam === 'fr' || langParam === 'ko') {
+      return langParam as 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'
+    }
+    
+    // Check path prefix
     const path = location.pathname
     if (path.startsWith('/id')) return 'id'
     if (path.startsWith('/eng')) return 'en'
@@ -59,75 +69,122 @@ const Home: React.FC = () => {
   }, [location.pathname, location.search])
 
   useEffect(() => {
-    // If language is already set from URL prefix, don't do IP detection
-    const path = location.pathname
-    if (path.startsWith('/id') || path.startsWith('/eng') || path.startsWith('/ar') || 
-        path.startsWith('/zh') || path.startsWith('/ja') || path.startsWith('/es') || 
-        path.startsWith('/fr') || path.startsWith('/ko')) {
-      return
-    }
-
-    // Optional: Update language based on IP in background (non-blocking)
-    const detectLocation = async () => {
-      try {
-        // Create a timeout promise (2 seconds max for background detection)
-        const timeoutPromise = new Promise((_, reject) => {
-          setTimeout(() => reject(new Error('Timeout')), 2000)
-        })
-        
-        // Race between fetch and timeout
-        const fetchPromise = fetch('https://ipapi.co/json/')
-          .then(response => response.json())
-        
-        const data = await Promise.race([fetchPromise, timeoutPromise]) as any
-        const countryCode = data.country_code
-        
-        // French-speaking countries
-        const frenchCountries = ['FR', 'BE', 'CH', 'LU', 'MC', 'CA', 'HT', 'CI', 'SN', 'ML', 'NE', 'BF', 'TG', 'BJ', 'CD', 'CG', 'GA', 'CM', 'CF', 'TD', 'MG', 'RE', 'MU', 'SC', 'KM', 'YT', 'DJ']
-        
-        // Spanish-speaking countries
-        const spanishCountries = ['ES', 'MX', 'AR', 'CO', 'VE', 'PE', 'CL', 'EC', 'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', 'NI', 'CR', 'PA', 'UY']
-        
-        // Chinese-speaking countries/regions
-        const chineseCountries = ['CN', 'TW', 'HK', 'SG', 'MO']
-        
-        // Arabic-speaking countries
-        const arabicCountries = [
-          'SA', 'AE', 'KW', 'QA', 'OM', 'BH', // Gulf countries
-          'EG', 'JO', 'LB', 'SY', 'IQ', 'YE', // Levant & others
-          'MA', 'DZ', 'TN', 'LY', 'SD', 'PS'  // North Africa
-        ]
-        
-        // Detect language based on IP
-        let detectedLang: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' = 'en'
-        
-        if (countryCode === 'ID') {
-          detectedLang = 'id'
-        } else if (countryCode === 'KR') {
-          detectedLang = 'ko'
-        } else if (countryCode === 'JP') {
-          detectedLang = 'ja'
-        } else if (frenchCountries.includes(countryCode)) {
-          detectedLang = 'fr'
-        } else if (spanishCountries.includes(countryCode)) {
-          detectedLang = 'es'
-        } else if (chineseCountries.includes(countryCode)) {
-          detectedLang = 'zh'
-        } else if (arabicCountries.includes(countryCode)) {
-          detectedLang = 'ar'
-        }
-        
-        // Update language directly without prevention logic
-        setLanguage(detectedLang)
-      } catch (error) {
-        // Silently fail - we already have a default language set
-        console.log('IP detection skipped or failed, using browser/default language')
+    // Update language when URL changes (either pathname or search params)
+    const detectLanguageFromUrl = () => {
+      // Check query parameter first
+      const searchParams = new URLSearchParams(location.search)
+      const langParam = searchParams.get('lang')
+      if (langParam === 'id' || langParam === 'en' || langParam === 'ar' || 
+          langParam === 'zh' || langParam === 'ja' || langParam === 'es' || 
+          langParam === 'fr' || langParam === 'ko') {
+        setLanguage(langParam as 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko')
+        return true
       }
+      
+      // Check path prefix
+      const path = location.pathname
+      if (path.startsWith('/id')) {
+        setLanguage('id')
+        return true
+      }
+      if (path.startsWith('/eng')) {
+        setLanguage('en')
+        return true
+      }
+      if (path.startsWith('/ar')) {
+        setLanguage('ar')
+        return true
+      }
+      if (path.startsWith('/zh')) {
+        setLanguage('zh')
+        return true
+      }
+      if (path.startsWith('/ja')) {
+        setLanguage('ja')
+        return true
+      }
+      if (path.startsWith('/es')) {
+        setLanguage('es')
+        return true
+      }
+      if (path.startsWith('/fr')) {
+        setLanguage('fr')
+        return true
+      }
+      if (path.startsWith('/ko')) {
+        setLanguage('ko')
+        return true
+      }
+      
+      return false
     }
+    
+    // Detect language from URL first
+    const urlHasLanguage = detectLanguageFromUrl()
+    
+    // If no language in URL, do IP detection
+    if (!urlHasLanguage) {
+      const detectLocation = async () => {
+        try {
+          // Create a timeout promise (2 seconds max for background detection)
+          const timeoutPromise = new Promise((_, reject) => {
+            setTimeout(() => reject(new Error('Timeout')), 2000)
+          })
+          
+          // Race between fetch and timeout
+          const fetchPromise = fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+          
+          const data = await Promise.race([fetchPromise, timeoutPromise]) as any
+          const countryCode = data.country_code
+          
+          // French-speaking countries
+          const frenchCountries = ['FR', 'BE', 'CH', 'LU', 'MC', 'CA', 'HT', 'CI', 'SN', 'ML', 'NE', 'BF', 'TG', 'BJ', 'CD', 'CG', 'GA', 'CM', 'CF', 'TD', 'MG', 'RE', 'MU', 'SC', 'KM', 'YT', 'DJ']
+          
+          // Spanish-speaking countries
+          const spanishCountries = ['ES', 'MX', 'AR', 'CO', 'VE', 'PE', 'CL', 'EC', 'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', 'NI', 'CR', 'PA', 'UY']
+          
+          // Chinese-speaking countries/regions
+          const chineseCountries = ['CN', 'TW', 'HK', 'SG', 'MO']
+          
+          // Arabic-speaking countries
+          const arabicCountries = [
+            'SA', 'AE', 'KW', 'QA', 'OM', 'BH', // Gulf countries
+            'EG', 'JO', 'LB', 'SY', 'IQ', 'YE', // Levant & others
+            'MA', 'DZ', 'TN', 'LY', 'SD', 'PS'  // North Africa
+          ]
+          
+          // Detect language based on IP
+          let detectedLang: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' = 'en'
+          
+          if (countryCode === 'ID') {
+            detectedLang = 'id'
+          } else if (countryCode === 'KR') {
+            detectedLang = 'ko'
+          } else if (countryCode === 'JP') {
+            detectedLang = 'ja'
+          } else if (frenchCountries.includes(countryCode)) {
+            detectedLang = 'fr'
+          } else if (spanishCountries.includes(countryCode)) {
+            detectedLang = 'es'
+          } else if (chineseCountries.includes(countryCode)) {
+            detectedLang = 'zh'
+          } else if (arabicCountries.includes(countryCode)) {
+            detectedLang = 'ar'
+          }
+          
+          // Update language directly without prevention logic
+          setLanguage(detectedLang)
+        } catch (error) {
+          // Silently fail - we already have a default language set
+          console.log('IP detection skipped or failed, using browser/default language')
+        }
+      }
 
-    // Run detection in background without blocking render
-    detectLocation()
-  }, [location.pathname])
+      // Run detection in background without blocking render
+      detectLocation()
+    }
+  }, [location.pathname, location.search])
 
   const isIndonesian = language === 'id'
   const isArabic = language === 'ar'
