@@ -198,12 +198,13 @@
 .collage-image-3 {
   top: 130px;
   left: 20px;
-  z-index: 2;
+  z-index: 6; /* Ensure Bar Stall Chair sits on top by default */
   transform: rotate(-3deg);
 }
 
 .collage-image-3:hover {
   transform: rotate(-3deg) scale(1.05);
+  z-index: 7; /* Keep it above others on hover as well */
 }
 
 /* Legacy support for old catalog-preview-image class */

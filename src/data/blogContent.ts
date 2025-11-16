@@ -328,6 +328,12 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
   const normalizedFocus = focusPhrase.replace(/<[^>]*>?/gm, '').replace(/\s+/g, ' ').trim()
   const faqItems = generateAIOptimizedFAQ(post, isEnglishPost)
 
+  const introExcerpt = (post.excerpt && post.excerpt.trim().length > 0)
+    ? post.excerpt
+    : (isEnglishPost
+        ? `This article covers ${normalizedFocus.toLowerCase()} with practical guidance for cafes, restaurants, offices, and hotels.`
+        : `Artikel ini membahas ${normalizedFocus.toLowerCase()} dengan panduan praktis untuk cafe, restoran, kantor, dan hotel.`)
+
   return {
     slug: post.slug,
     sections: [
@@ -336,12 +342,12 @@ const createFallbackContent = (post: BlogPost): BlogContent => {
         heading: undefined, // No heading for intro, goes directly under title
         paragraphs: isEnglishPost
           ? [
-              post.excerpt,
+              introExcerpt,
               `<strong>Quick Summary:</strong> This article explores ${normalizedFocus.toLowerCase()} in depth, backed by Mangala Living’s 25+ years of experience delivering 1,000+ industrial furniture projects across Greater Jakarta. Expect practical insights, comparative data, a complete FAQ, and actionable next steps.`,
               detectLocationSentence(post, true)
             ]
           : [
-          post.excerpt,
+          introExcerpt,
           `<strong>Ringkasan Singkat:</strong> Artikel ini membahas ${normalizedFocus.toLowerCase()} secara komprehensif berdasarkan pengalaman 25 tahun Mangala Living menangani 1000+ project furniture industrial di Jabodetabek. Anda akan mendapatkan insight praktis, data comparison, FAQ lengkap, dan action steps yang bisa langsung diimplementasikan.`,
           detectLocationSentence(post)
         ]
@@ -6817,6 +6823,597 @@ const BLOG_CONTENTS: BlogContent[] = [
   },
 ]
 
+// Optional localized manual contents (non-ID/EN). Each entry is fully written, not generated.
+type SupportedLocale = 'es' | 'fr' | 'ko' | 'ja' | 'zh' | 'ar'
+interface BlogContentLocalized extends BlogContent { language: SupportedLocale }
+
+const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
+  {
+    slug: 'furniture-industrial-custom-design-terpercaya',
+    language: 'es',
+    sections: [
+      {
+        paragraphs: [
+          'El diseño de muebles industriales a medida es la mejor opción cuando tu negocio necesita identidad visual, durabilidad real y medidas exactas para maximizar el espacio. En Mangala Living, fabricamos en nuestro taller de Bekasi con acero hueco galvanizado, soldadura profesional y acabados powder coating de larga duración.',
+          '<strong>Resumen rápido:</strong> En este artículo verás cuándo conviene el custom design, recomendaciones de materiales, tiempos de producción, y una guía práctica para planificar tu proyecto sin sorpresas.'
+        ]
+      },
+      {
+        heading: '¿Cuándo elegir muebles industriales a medida?',
+        list: [
+          '<strong>Optimización del espacio:</strong> Locales compactos, esquinas irregulares o barras largas donde el estándar no encaja.',
+          '<strong>Concepto de marca:</strong> Necesitas una estética consistente y piezas que comuniquen tu identidad.',
+          '<strong>Uso comercial intenso:</strong> Cafeterías, restaurantes y hoteles requieren estructura sólida y fácil mantenimiento.'
+        ]
+      },
+      {
+        heading: 'Materiales recomendados y acabados',
+        paragraphs: [
+          'Usamos acero hueco galvanizado (más resistente que acero negro) para evitar corrosión, top de madera sólida o engineered wood según el presupuesto, y acabados powder coating para resistencia a rayones y clima. Para zonas costeras, recomendamos capas extras y sellado de uniones.'
+        ]
+      },
+      {
+        heading: 'Proceso y tiempos de producción',
+        list: [
+          '<strong>Brief & medición:</strong> Definir necesidades, cantidad de asientos y circulación.',
+          '<strong>Diseño técnico:</strong> Dibujo + 3D para confirmar medidas y estética.',
+          '<strong>Producción:</strong> 15–25 días hábiles según volumen. Reportes con fotos por WhatsApp.',
+          '<strong>Entrega & instalación:</strong> Programación coordinada, instalación en sitio.'
+        ]
+      },
+      {
+        heading: 'Consejos prácticos para tu proyecto',
+        list: [
+          'Empieza con piezas clave (barra, mesas 2–4 pax, zona lounge).',
+          'Mantén una paleta de color coherente (negro mate + madera natural funciona en casi todos los conceptos).',
+          'Planifica el cableado/enchufes antes de fabricar para integrar en estructura.'
+        ]
+      },
+      {
+        heading: 'Contacto y consulta',
+        paragraphs: [
+          '¿Listo para el siguiente paso? Escríbenos a <a href="https://wa.me/+6288801146881">WhatsApp +6288801146881</a> o email <a href="mailto:lifewithmangala@gmail.com">lifewithmangala@gmail.com</a>. Atendemos Yakarta, Bekasi, Cikarang y proyectos nacionales con logística coordinada.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-industrial-1000-klien-puas',
+    language: 'fr',
+    sections: [
+      {
+        paragraphs: [
+          'Plus de 1 000 clients nous font confiance depuis 1999 pour la fabrication de mobilier industriel premium. Notre atelier à Bekasi réunit soudure professionnelle, contrôle qualité rigoureux et finitions powder coating durables.',
+          '<strong>En bref :</strong> Ce billet présente pourquoi les entreprises choisissent Mangala Living, comment nous garantissons la qualité et ce que vous pouvez attendre du processus—de la conception à l’installation.'
+        ]
+      },
+      {
+        heading: 'Pourquoi tant de clients satisfaits ?',
+        list: [
+          '<strong>Qualité export:</strong> Acier galvanisé, structures robustes, finitions résistantes.',
+          '<strong>Conception sur mesure:</strong> Meubles adaptés à votre concept et à vos dimensions réelles.',
+          '<strong>Transparence:</strong> Suivi photo, délais clairs, prix “sortie atelier”.'
+        ]
+      },
+      {
+        heading: 'Applications typiques',
+        list: [
+          'Cafés & restaurants: tables compactes, bars, chaises hautes ergonomiques.',
+          'Hôtellerie: bancs lounge, consoles, rayonnages industriels.',
+          'Bureaux: bureaux robustes, étagères modulaires, rangements en acier.'
+        ]
+      },
+      {
+        heading: 'Notre méthode de travail',
+        paragraphs: [
+          'Brief → relevés → dessin technique/3D → production → livraison & installation. Notre équipe communique à chaque étape et optimise les détails techniques (passage de câbles, protections, stabilité).'
+        ]
+      },
+      {
+        heading: 'Contact',
+        paragraphs: [
+          'Parlez-nous de votre projet sur <a href="https://wa.me/+6288801146881">WhatsApp +6288801146881</a> ou par email <a href="mailto:lifewithmangala@gmail.com">lifewithmangala@gmail.com</a>. Intervention Grand Jakarta et projets nationaux.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-industrial-pengalaman-25-tahun',
+    language: 'ko',
+    sections: [
+      {
+        paragraphs: [
+          '망갈라 리빙은 1999년부터 인더스트리얼 가구를 제작해 온 워크샵으로, 25년 이상의 현장 경험과 누적 1,000+ 프로젝트로 검증된 품질을 제공합니다. 용접 퀄리티, 구조 강성, 파우더 코팅 내구성까지—상업 공간 운영에 필요한 본질을 정확히 맞춥니다.',
+          '<strong>요약:</strong> 본 글에서는 왜 장기 경험이 실제 품질과 운영 안정성으로 이어지는지, 어떤 공정·소재·관리 체계를 갖추고 있는지 구체적으로 안내합니다.'
+        ]
+      },
+      {
+        heading: '25년 경험이 주는 차이',
+        list: [
+          '<strong>일관된 내구성:</strong> 고정밀 용접, 보강 구조, 균일한 코팅 두께로 하중과 마모에 강합니다.',
+          '<strong>상업 운영 최적화:</strong> 카페/레스토랑/호텔의 회전율·청결·동선 고려, 유지보수 용이성까지 반영.',
+          '<strong>프로세스 투명성:</strong> 단계별 사진 공유, 납기 준수, 워크샵 방문 환영.'
+        ]
+      },
+      {
+        heading: '핵심 소재와 마감',
+        paragraphs: [
+          '프레임은 아연도금 강관(흑강 대비 내식성 우수)을 사용하고, 탑은 솔리드 우드 또는 엔지니어드 우드를 프로젝트 성격에 맞춰 선택합니다. 마감은 파우더 코팅을 표준으로 적용하여 긁힘·습기·자외선에 강합니다.'
+        ]
+      },
+      {
+        heading: '제작 절차',
+        list: [
+          '브리프/실측 → 기술도·3D → 생산(15–25 영업일) → 배송·설치.',
+          '케이블 동선, 보호 모서리, 바닥 수평 등 운영 관점 디테일을 사전에 반영합니다.'
+        ]
+      },
+      {
+        heading: '상담 및 문의',
+        paragraphs: [
+          '프로젝트 개요를 <a href="https://wa.me/+6288801146881">WhatsApp</a>으로 보내 주세요. 자카르타·브카시·치카라ง 및 국내 프로젝트를 지원합니다. 이메일: <a href="mailto:lifewithmangala@gmail.com">lifewithmangala@gmail.com</a>'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-industrial-layanan-profesional',
+    language: 'ja',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living は、設計から施工、アフターサポートまで一貫した「プロフェッショナル対応」を提供する工房です。商業空間の現場要件（耐久性・清掃性・安全性）を反映し、実運用で使いやすいインダストリアル家具を製作します。',
+          '<strong>概要:</strong> 本記事では、私たちの対応方針、品質保証、進行フローをわかりやすくご説明します。'
+        ]
+      },
+      {
+        heading: 'プロフェッショナル対応の要点',
+        list: [
+          '<strong>要件整理と設計精度:</strong> 席数・動線・清掃頻度などを踏まえ、図面/3Dで事前確認。',
+          '<strong>堅牢な構造と仕上げ:</strong> 溶接品質管理、パウダーコーティングによる長期耐久。',
+          '<strong>透明な進行管理:</strong> 写真共有・納期明示・価格は工房直販ベース。'
+        ]
+      },
+      {
+        heading: 'よくある導入シーン',
+        list: [
+          'カフェ/レストラン：コンパクトなテーブル、ハイチェア、バーカウンター。',
+          'ホテル/ラウンジ：ベンチ、ディスプレイラック、什器。',
+          'オフィス：ワークデスク、シェルフ、スチール収納。'
+        ]
+      },
+      {
+        heading: '進行フロー',
+        paragraphs: [
+          'ブリーフ → 実測 → 技術図/3D → 製作 → 納品・設置。細部（ケーブル配線、角部保護、床レベル調整）まで配慮します。'
+        ]
+      },
+      {
+        heading: 'お問い合わせ',
+        paragraphs: [
+          'ご相談は <a href="https://wa.me/+6288801146881">WhatsApp</a> または <a href="mailto:lifewithmangala@gmail.com">メール</a> で。グレーター・ジャカルタおよび国内案件に対応しています。'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-industrial-garansi-kualitas',
+    language: 'zh',
+    sections: [
+      {
+        paragraphs: [
+          '选择工业风家具，真正重要的不只是外观，而是长期稳定的<strong>质量保障</strong>。Mangala Living 自1999年成立以来，坚持使用镀锌方管、专业焊接与粉末烤漆工艺，建立了可追溯的品质体系与售后机制。',
+          '<strong>要点概览：</strong>本文介绍我们的质保范围、材料与工艺标准、常见使用场景，以及如何在商用环境中延长家具寿命。'
+        ]
+      },
+      {
+        heading: '我们如何保障质量',
+        list: [
+          '<strong>结构可靠：</strong>关键受力点加固焊接，框架强度通过长期商用验证。',
+          '<strong>耐候表面：</strong>粉末烤漆（Powder Coating）抗刮耐潮，适合室内高频使用与部分半室外区域。',
+          '<strong>标准透明：</strong>明示材料规格、工艺流程与质保条款，支持现场查看与生产进度照片。'
+        ]
+      },
+      {
+        heading: '质保条款（示例）',
+        paragraphs: [
+          '结构质保2年、涂层1年（以实际合同为准）。正常商用条件下，如出现焊点断裂、结构变形或涂层大面积脱落，我们提供维修或更换方案。人为损坏、化学腐蚀或非常规使用不在保修范围之内。'
+        ]
+      },
+      {
+        heading: '使用与保养建议',
+        list: [
+          '定期擦拭与检查紧固件，避免强酸强碱接触。',
+          '户外或海边项目建议加厚镀层与额外封边处理。',
+          '布置时预留清洁与动线空间，减少碰撞磨损。'
+        ]
+      },
+      {
+        heading: '联系与咨询',
+        paragraphs: [
+          '欢迎通过 <a href="https://wa.me/+6288801146881">WhatsApp</a> 或邮箱 <a href="mailto:lifewithmangala@gmail.com">lifewithmangala@gmail.com</a> 与我们联系。我们在大雅加达地区（雅加达、茂物、德波、丹格朗、勿加泗）与全国项目提供支持。'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'furniture-industrial-workshop-bekasi',
+    language: 'ar',
+    sections: [
+      {
+        paragraphs: [
+          'ورشة Mangala Living في بَكَاسِي هي القلب النابض لخط إنتاج الأثاث الصناعي لدينا منذ عام 1999. نعتمد على لحام احترافي، هيكل فولاذي مُجلفن، وتشطيب طلاء بودرة مقاوم للخدش والرطوبة—مع معايير جودة واضحة وشفافة.',
+          '<strong>ملخص سريع:</strong> ستتعرف هنا على قدرات الورشة، سير العمل من الفكرة إلى التركيب، وكيف نضمن الجودة والتسليم في الوقت المحدد لمشاريع المقاهي والمطاعم والفنادق والمكاتب.'
+        ]
+      },
+      {
+        heading: 'ماذا يميز ورشتنا؟',
+        list: [
+          '<strong>مواد مختارة:</strong> فولاذ مُجلفن أفضل مقاومة من الفولاذ الأسود ضد التآكل.',
+          '<strong>تشطيب متين:</strong> طلاء بودرة Powder Coating مناسب للاستخدام التجاري الكثيف.',
+          '<strong>تحكم بالجودة:</strong> فحص عند كل مرحلة، صور تقدم العمل عبر واتساب، وإمكانية زيارة الورشة.'
+        ]
+      },
+      {
+        heading: 'سير العمل',
+        paragraphs: [
+          'ملخص المتطلبات وقياس الموقع → رسومات فنية/ثري دي → تصنيع (15–25 يوم عمل حسب الحجم) → تسليم وتركيب. نأخذ في الاعتبار تفاصيل التشغيل مثل مسارات الكابلات وحماية الحواف واستواء الأرضية.'
+        ]
+      },
+      {
+        heading: 'مجالات التطبيق الشائعة',
+        list: [
+          'مقاهٍ ومطاعم: طاولات مدمجة، كراسي عالية، بار.',
+          'فنادق ومساحات استقبال: مقاعد طويلة، رفوف عرض صناعية.',
+          'مكاتب: مكاتب عمل فولاذية، أرفف تخزين متينة.'
+        ]
+      },
+      {
+        heading: 'تواصل معنا',
+        paragraphs: [
+          'للاستفسار السريع: <a href="https://wa.me/+6288801146881">WhatsApp +6288801146881</a> أو البريد: <a href="mailto:lifewithmangala@gmail.com">lifewithmangala@gmail.com</a>. نخدم جاكرتا الكبرى ومشاريع في أنحاء إندونيسيا.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'manufacturer-furniture-custom-order-indonesia-arabic',
+    language: 'ar',
+    sections: [
+      {
+        paragraphs: [
+          'إذا كنت تبحث عن مصنع أثاث معدني صناعي يستطيع تنفيذ طلبات حسب الطلب مباشرة من إندونيسيا، فإن Mangala Living هو شريك الإنتاج المناسب لك. نحن نصنع في ورشتنا في بَكَاسِي دون وسطاء، مع تحكم كامل في التصميم، المواد، والجودة.',
+          '<strong>ملخص:</strong> في هذا المقال نشرح كيف نستقبل طلبات التخصيص، ما هي مواصفات المواد التي نستخدمها، وكيف ندعم الشحن والتصدير لأسواق مختلفة.'
+        ]
+      },
+      {
+        heading: 'ما الذي نقدمه للمستوردين؟',
+        list: [
+          'تصميمات مخصصة وفقاً للمقاسات والمخططات الخاصة بك.',
+          'إنتاج داخلي كامل مع تقارير وصور تقدم العمل.',
+          'سعر مباشر من المصنع بدون عمولات وسطاء.'
+        ]
+      },
+      {
+        heading: 'المواد والتشطيب',
+        paragraphs: [
+          'نستخدم أنابيب فولاذية مُجلفنة، ألواح فولاذية سميكة عند نقاط التحميل، وتشطيب طلاء بودرة مقاوم للخدش والرطوبة. يمكن تعديل اللون والتفاصيل وفقاً لهوية علامتك التجارية.'
+        ]
+      },
+      {
+        heading: 'خطوات العمل',
+        list: [
+          'استلام الرسومات أو فكرة التصميم من العميل.',
+          'تأكيد المواصفات والكمية والجدول الزمني.',
+          'بدء الإنتاج مع إرسال صور دورية، ثم التعبئة والشحن من إندونيسيا إلى بلدك.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-furniture-exporter-china-manufacturer',
+    language: 'zh',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living 是来自印尼的工业风家具制造商和出口商，为中国及全球客户提供定制化解决方案。我们在万隆附近的工厂内部完成焊接、打磨、喷涂等全流程，确保稳定品质和准时交付。',
+          '<strong>概要：</strong>本文将介绍我们的生产能力、典型产品线以及与中国买家合作的方式。'
+        ]
+      },
+      {
+        heading: '适合哪些项目？',
+        list: [
+          '咖啡馆与餐厅：工业风桌椅、吧台、高脚凳。',
+          '商业空间：展示架、货架、收银台。',
+          '办公与联合办公空间：工作台、书架、储物柜。'
+        ]
+      },
+      {
+        heading: '与我们合作的优势',
+        list: [
+          '工厂直供，无中间商加价。',
+          '支持小批量试单与系列化长期合作。',
+          '25年以上经验，熟悉出口流程与包装标准。'
+        ]
+      },
+      {
+        heading: '沟通与下单流程',
+        paragraphs: [
+          '您可以通过 <a href="https://wa.me/+6288801146881">WhatsApp</a> 或邮件与我们分享项目需求（平面图、风格参考、预算范围）。我们将提供规格建议、报价与预估交期，并在生产过程中定期发送照片更新。'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'patio-furniture-manufacturer-japan-export',
+    language: 'ja',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living は、インドネシア発のパティオ・アウトドア家具メーカーとして、海外向け輸出にも対応しています。強度の高いスチールフレームと耐候性パウダーコーティング仕上げにより、テラスや屋外ラウンジでも長期使用が可能です。',
+          '<strong>本記事の内容:</strong> 代表的な製品ラインアップ、素材・仕上げの仕様、日本向け案件でよくいただくご相談についてご紹介します。'
+        ]
+      },
+      {
+        heading: '主な活用シーン',
+        list: [
+          'カフェやレストランのテラス席。',
+          'ホテルのプールサイドや屋外ラウンジ。',
+          '住宅・集合住宅の共用テラススペース。'
+        ]
+      },
+      {
+        heading: '素材と仕上げ',
+        paragraphs: [
+          'フレームには防錆性に優れたスチールを使用し、屋外向けパウダーコーティングを標準採用。座面・テーブルトップはソリッドウッドまたは耐候性素材から選択できます。塩害エリア向けには追加コーティングや仕様調整も可能です。'
+        ]
+      },
+      {
+        heading: '輸出・ロジスティクス',
+        paragraphs: [
+          '日本向け案件では、梱包仕様・コンテナ積載効率・書類（インボイス・パッキングリスト等）も含めてサポートします。詳細はプロジェクト単位でご相談ください。'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'rack-furniture-in-house-production-spain',
+    language: 'es',
+    sections: [
+      {
+        paragraphs: [
+          'Como fabricante indonesio especializado en estanterías y racks industriales, Mangala Living produce todo dentro de su propio taller: corte, soldadura, lijado y acabado final. Esto nos permite controlar calidad, plazos y costes para proyectos comerciales exigentes.',
+          '<strong>En este artículo</strong> te explicamos cómo trabajamos, qué tipos de racks fabricamos y por qué la producción interna es clave para un resultado consistente.'
+        ]
+      },
+      {
+        heading: 'Tipos de racks que fabricamos',
+        list: [
+          'Estanterías para retail y showrooms.',
+          'Racks industriales para almacenamiento pesado.',
+          'Soluciones híbridas decorativas–funcionales para cafés y restaurantes.'
+        ]
+      },
+      {
+        heading: 'Ventajas de la producción interna',
+        list: [
+          'Mejor control de calidad en cada fase.',
+          'Flexibilidad para ajustar medidas, niveles y accesorios.',
+          'Comunicación directa con el equipo de diseño y producción.'
+        ]
+      },
+      {
+        heading: 'Cómo empezar tu proyecto',
+        paragraphs: [
+          'Comparte el plano de tu espacio, fotos de referencia y lista de productos a exponer. Nuestro equipo propondrá configuraciones de racks, materiales y acabados, junto con un presupuesto y tiempo estimado de producción.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'custom-furniture-exporter-france-manufacturer',
+    language: 'fr',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living accompagne les architectes, décorateurs et enseignes françaises en tant que fabricant-exportateur de mobilier industriel sur mesure basé en Indonésie. Nous produisons en interne, du châssis acier au finishing, avec un suivi transparent.',
+          '<strong>Objectif de cet article :</strong> expliquer comment se déroule une collaboration internationale, de la prise de brief à la livraison en France.'
+        ]
+      },
+      {
+        heading: 'Profil des projets que nous gérons',
+        list: [
+          'Cafés, restaurants et bars à thème industriel.',
+          'Boutiques et concept stores avec rayonnages métalliques.',
+          'Espaces de coworking et bureaux créatifs.'
+        ]
+      },
+      {
+        heading: 'Atouts pour les clients en France',
+        list: [
+          'Production sur mesure avec prix compétitifs “sortie atelier”.',
+          'Expérience export (documents, emballage, optimisation de chargement).',
+          'Équipe habituée à travailler à partir de plans et moodboards fournis par des designers.'
+        ]
+      },
+      {
+        heading: 'Étapes de collaboration',
+        paragraphs: [
+          'Brief détaillé → esquisses / validation technique → devis & planning → production → emballage & expédition. Nous restons disponibles pour adapter les détails (dimensions, couleurs, accessoires) en cours de préparation si nécessaire.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'industrial-rack-manufacturer-korea-export',
+    language: 'ko',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living 는 인도네시아에서 산업용 랙과 디스플레이 선반을 전문적으로 제작하는 제조사로, 해외 수출 프로젝트도 다수 수행해 왔습니다. 카페·리테일·창고용 랙을 모두 인하우스에서 생산하여 품질과 납기를 관리합니다.',
+          '<strong>이 글에서는</strong> 제작 가능한 랙 종류, 소재/마감 옵션, 그리고 한국 바이어와의 협업 방식에 대해 설명합니다.'
+        ]
+      },
+      {
+        heading: '제작 가능한 랙 유형',
+        list: [
+          '리테일/카페용 디스플레이 선반.',
+          '창고 및 백오피스용 헤비 듀티 랙.',
+          '인테리어 포인트를 겸하는 하이브리드 선반 시스템.'
+        ]
+      },
+      {
+        heading: '왜 인니 제작 랙인가?',
+        list: [
+          '공장 직거래로 경쟁력 있는 단가 제공.',
+          '프로젝트별 맞춤 사이즈/층수/액세서리 구성 가능.',
+          '25년 이상 상업공간 가구 제작 경험으로 안정적인 품질.'
+        ]
+      },
+      {
+        heading: '협업 및 수출 프로세스',
+        paragraphs: [
+          '도면·컨셉 공유 → 사양 및 수량 확정 → 견적/납기 제안 → 생산 → 포장 및 선적. 진행 중에는 사진과 영상으로 공정 상황을 공유해 드립니다.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'patio-furniture-exporter-arabic-custom',
+    language: 'ar',
+    sections: [
+      {
+        paragraphs: [
+          'كمُصدِّر لأثاث الباحات من إندونيسيا، تقدم Mangala Living حلولاً مخصصة لمشاريع الضيافة والسكن الفاخر. نعتمد هياكل معدنية قوية وتشطيبات مقاومة للعوامل الجوية تناسب المناخات الحارة والرطبة.',
+          '<strong>في هذا المقال</strong> نستعرض أنواع الأثاث الخارجي التي نصنعها، مواصفات المواد، وكيفية التعامل مع الطلبات الخاصة من العملاء العرب.'
+        ]
+      },
+      {
+        heading: 'أمثلة على الاستخدامات',
+        list: [
+          'مناطق الجلوس الخارجية في المقاهي والمطاعم.',
+          'تراسات وفناءات الفنادق والمنتجعات.',
+          'مساحات الجلوس في الفلل والمجمعات السكنية.'
+        ]
+      },
+      {
+        heading: 'المواد والطلاء',
+        paragraphs: [
+          'نستخدم هياكل فولاذية مع طلاء بودرة مقاوم للشمس والرطوبة، مع إمكانية اختيار أسطح من الخشب الصلب أو مواد أخرى مقاومة للطقس. للمناطق الساحلية نقترح حماية إضافية ضد الملح والصدأ.'
+        ]
+      },
+      {
+        heading: 'من الفكرة إلى الشحن',
+        paragraphs: [
+          'نستلم فكرة التصميم أو المخطط، نحدد المواصفات النهائية، ثم نبدأ الإنتاج والتعبئة للشحن الدولي. فريقنا يدعمك في المستندات والشحن من إندونيسيا إلى بلدك.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'in-house-custom-furniture-china-manufacturer',
+    language: 'zh',
+    sections: [
+      {
+        paragraphs: [
+          '作为一家“一站式内部生产”的定制家具制造商，Mangala Living 在印尼自有工厂内完成从切割、焊接到表面喷涂的全部工序。这样可以为海外客户提供更好的交期控制和品质一致性。',
+          '<strong>本文重点:</strong> 介绍我们的内部生产优势、典型定制项目以及与中国客户合作的流程。'
+        ]
+      },
+      {
+        heading: '内部生产的优势',
+        list: [
+          '减少外协环节，降低出错与延误风险。',
+          '可以快速试样和调整细节。',
+          '更易于执行严格的质量检验流程。'
+        ]
+      },
+      {
+        heading: '典型定制项目',
+        list: [
+          '咖啡馆与餐厅整体家具。',
+          '办公空间工业风桌椅与储物柜。',
+          '零售店展示系统与收银台。'
+        ]
+      },
+      {
+        heading: '合作与沟通',
+        paragraphs: [
+          '欢迎通过 WhatsApp 或邮箱与我们分享 CAD 图纸、效果图或参考照片。我们会根据项目需求提供结构建议、材料搭配以及预估成本与生产周期。'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'display-rack-manufacturer-japan-export',
+    language: 'ja',
+    sections: [
+      {
+        paragraphs: [
+          'Mangala Living は、ディスプレイラック・展示棚を専門とするインドネシアのメーカーとして、ショップやショールーム向けのカスタム什器を製作しています。インダストリアルテイストのスチールフレームと実用性の高い棚構成で、商品が映える売り場づくりをサポートします。',
+          '<strong>この記事では</strong> 製作できるラックのタイプ、構造・素材の考え方、日本向け輸出で意識しているポイントをご紹介します。'
+        ]
+      },
+      {
+        heading: '主なラックタイプ',
+        list: [
+          '壁面ディスプレイラック。',
+          'アイランド什器・ゴンドラ。',
+          'カウンター一体型の展示棚。'
+        ]
+      },
+      {
+        heading: '設計上のポイント',
+        list: [
+          '耐荷重と揺れに強いフレーム設計。',
+          '組立・分解しやすい構造で、レイアウト変更にも対応。',
+          'ブランドイメージに合わせたカラー・テクスチャ提案。'
+        ]
+      },
+      {
+        heading: '輸出対応',
+        paragraphs: [
+          '日本向けには、梱包サイズ・耐久試験・塗装仕様など、必要に応じて追加情報をご提供します。ご希望の仕様があれば、お気軽にご相談ください。'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'complete-furniture-solutions-exporter-spain',
+    language: 'es',
+    sections: [
+      {
+        paragraphs: [
+          'Como exportador indonesio de soluciones completas de mobiliario industrial, Mangala Living puede cubrir desde mesas y sillas hasta racks, mostradores y muebles de patio en un solo proyecto. Esto simplifica la coordinación para arquitectos, operadores de F&B y cadenas de retail.',
+          '<strong>En este artículo</strong> explicamos cómo trabajar con un solo proveedor para todo tu mobiliario y qué beneficios obtienes a nivel de coherencia estética, logística y presupuesto.'
+        ]
+      },
+      {
+        heading: 'Ventajas de una solución integral',
+        list: [
+          'Un solo punto de contacto para diseño, producción y exportación.',
+          'Coherencia de materiales, colores y detalles en todo el proyecto.',
+          'Mejor optimización de carga en contenedores y embalaje coordinado.'
+        ]
+      },
+      {
+        heading: 'Qué tipos de muebles podemos integrar',
+        list: [
+          'Mobiliario interior para cafés, restaurantes y oficinas.',
+          'Muebles de patio y terrazas para hoteles y F&B.',
+          'Estanterías, racks y soluciones de display para retail.'
+        ]
+      },
+      {
+        heading: 'Próximos pasos',
+        paragraphs: [
+          'Si quieres evaluar un proyecto integral, comparte el plano general de tu espacio, concepto de marca y prioridades de presupuesto. Nuestro equipo preparará una propuesta de mobiliario completo con referencias de productos, materiales y tiempos de producción.'
+        ]
+      }
+    ]
+  }
+]
+
 export const getBlogPostContent = (slug: string): BlogContent | undefined => {
   const manualContent = BLOG_CONTENTS.find(content => content.slug === slug)
   if (manualContent) {
@@ -6829,5 +7426,15 @@ export const getBlogPostContent = (slug: string): BlogContent | undefined => {
   }
 
   return createFallbackContent(associatedPost)
+}
+
+export const getBlogPostContentLocalized = (slug: string, language?: string): BlogContent | undefined => {
+  // Return manual localized content first if available
+  const lang = (language || '').toLowerCase() as SupportedLocale
+  const manualLocalized = BLOG_CONTENTS_LOCALIZED.find(c => c.slug === slug && c.language === lang)
+  if (manualLocalized) return manualLocalized
+
+  // Fallback to existing behavior
+  return getBlogPostContent(slug)
 }
 

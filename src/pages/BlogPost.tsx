@@ -8,7 +8,7 @@ import Breadcrumb from '../components/Breadcrumb'
 import ServiceAreasSection from '../components/ServiceAreasSection'
 import AuthorCard from '../components/AuthorCard'
 import { getPostBySlug, BLOG_POSTS } from '../data/blog'
-import { getBlogPostContent } from '../data/blogContent'
+import { getBlogPostContentLocalized } from '../data/blogContent'
 import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structuredData'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import BlogProductShowcase from '../components/BlogProductShowcase'
@@ -25,7 +25,7 @@ const BlogPost: React.FC = () => {
   const [isLanguageLoading, setIsLanguageLoading] = useState(true)
   const [language, setLanguage] = useState<LanguageCode>('en')
   const post = slug ? getPostBySlug(slug) : undefined
-  const content = slug ? getBlogPostContent(slug) : undefined
+  const content = slug ? getBlogPostContentLocalized(slug, language) : undefined
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -130,6 +130,11 @@ const BlogPost: React.FC = () => {
 
   // Generate BlogPosting Schema
   const blogSchema = generateBlogPostingSchema(post)
+  const metaDescription = (post.excerpt && post.excerpt.trim().length > 0)
+    ? post.excerpt
+    : (post.category === 'Export & International'
+        ? `Read: ${post.title} — Practical guide, FAQs, and product references from Mangala Living.`
+        : `Baca: ${post.title} — Panduan praktis, FAQ, dan referensi produk dari Mangala Living.`)
 
   // Extract FAQ from content for AI Search Optimization (Strategy 1 & 5)
   const extractFAQFromContent = () => {
@@ -177,7 +182,7 @@ const BlogPost: React.FC = () => {
         <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{post.title} - Mangala Living</title>
-        <meta name="description" content={post.excerpt} />
+        <meta name="description" content={metaDescription} />
         <meta name="keywords" content={generateKeywords(post.slug, post.title)} />
         <meta httpEquiv="content-language" content={localeMeta.lang} />
         <link rel="canonical" href={localizedUrls.canonical} />
@@ -187,7 +192,7 @@ const BlogPost: React.FC = () => {
         
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:description" content={metaDescription} />
         <meta property="og:image" content={post.image} />
         <meta property="og:url" content={localizedUrls.canonical} />
         <meta property="og:type" content="article" />
@@ -212,7 +217,7 @@ const BlogPost: React.FC = () => {
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
-        <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content={post.image} />
         
         {/* BlogPosting Structured Data */}
