@@ -7428,10 +7428,10 @@ export const getBlogPostContent = (slug: string): BlogContent | undefined => {
   return createFallbackContent(associatedPost)
 }
 
-export const getBlogPostContentLocalized = (slug: string, language?: string): BlogContent | undefined => {
-  // Return manual localized content first if available
-  const lang = (language || '').toLowerCase() as SupportedLocale
-  const manualLocalized = BLOG_CONTENTS_LOCALIZED.find(c => c.slug === slug && c.language === lang)
+export const getBlogPostContentLocalized = (slug: string, _language?: string): BlogContent | undefined => {
+  // Always prefer manual localized content if it exists for this slug,
+  // regardless of current UI language (article language is fixed per slug)
+  const manualLocalized = BLOG_CONTENTS_LOCALIZED.find(c => c.slug === slug)
   if (manualLocalized) return manualLocalized
 
   // Fallback to existing behavior
