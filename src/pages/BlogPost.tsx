@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useParams, Link, useLocation } from 'react-router-dom'
+import { Mail, MessageCircle, Share2, Facebook, Twitter, Linkedin, Copy, Check } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -14,9 +15,193 @@ import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/se
 import BlogProductShowcase from '../components/BlogProductShowcase'
 import { getRelevantProductsForBlog, getProductShowcaseHeading } from '../utils/blogProductMapping'
 import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import './Blog.css'
 import './BlogPost.css'
 import '../components/DualLanguage.css'
+
+// Translations for sidebar features
+const SIDEBAR_FEATURES_TRANSLATIONS: Record<LanguageCode, {
+  newsletter: {
+    title: string
+    description: string
+    placeholder: string
+    button: string
+    success: string
+  }
+  share: {
+    title: string
+    description: string
+    copied: string
+    shareOn: string
+  }
+  consultation: {
+    title: string
+    description: string
+    button: string
+  }
+}> = {
+  id: {
+    newsletter: {
+      title: 'Dapatkan Update Artikel',
+      description: 'Subscribe untuk menerima artikel terbaru tentang furniture industrial langsung ke email Anda.',
+      placeholder: 'Masukkan email Anda',
+      button: 'Subscribe',
+      success: 'Terima kasih! Silakan cek email Anda untuk konfirmasi.'
+    },
+    share: {
+      title: 'Bagikan Artikel',
+      description: 'Bagikan artikel ini ke teman atau kolega Anda',
+      copied: 'Link berhasil disalin!',
+      shareOn: 'Bagikan di'
+    },
+    consultation: {
+      title: 'Konsultasi Gratis',
+      description: 'Butuh saran untuk project furniture Anda? Chat langsung dengan tim kami.',
+      button: 'Chat via WhatsApp'
+    }
+  },
+  en: {
+    newsletter: {
+      title: 'Get Article Updates',
+      description: 'Subscribe to receive the latest industrial furniture articles directly to your email.',
+      placeholder: 'Enter your email',
+      button: 'Subscribe',
+      success: 'Thank you! Please check your email for confirmation.'
+    },
+    share: {
+      title: 'Share Article',
+      description: 'Share this article with your friends or colleagues',
+      copied: 'Link copied successfully!',
+      shareOn: 'Share on'
+    },
+    consultation: {
+      title: 'Free Consultation',
+      description: 'Need advice for your furniture project? Chat directly with our team.',
+      button: 'Chat via WhatsApp'
+    }
+  },
+  ar: {
+    newsletter: {
+      title: 'احصل على تحديثات المقالات',
+      description: 'اشترك لتلقي أحدث مقالات الأثاث الصناعي مباشرة إلى بريدك الإلكتروني.',
+      placeholder: 'أدخل بريدك الإلكتروني',
+      button: 'اشترك',
+      success: 'شكراً لك! يرجى التحقق من بريدك الإلكتروني للتأكيد.'
+    },
+    share: {
+      title: 'شارك المقال',
+      description: 'شارك هذه المقالة مع أصدقائك أو زملائك',
+      copied: 'تم نسخ الرابط بنجاح!',
+      shareOn: 'شارك على'
+    },
+    consultation: {
+      title: 'استشارة مجانية',
+      description: 'تحتاج إلى نصيحة لمشروع الأثاث الخاص بك؟ تواصل مباشرة مع فريقنا.',
+      button: 'الدردشة عبر واتساب'
+    }
+  },
+  zh: {
+    newsletter: {
+      title: '获取文章更新',
+      description: '订阅以直接通过电子邮件接收最新的工业风家具文章。',
+      placeholder: '输入您的邮箱',
+      button: '订阅',
+      success: '谢谢！请查看您的邮箱进行确认。'
+    },
+    share: {
+      title: '分享文章',
+      description: '与您的朋友或同事分享这篇文章',
+      copied: '链接已成功复制！',
+      shareOn: '分享到'
+    },
+    consultation: {
+      title: '免费咨询',
+      description: '需要家具项目建议？直接与我们团队聊天。',
+      button: '通过 WhatsApp 聊天'
+    }
+  },
+  ja: {
+    newsletter: {
+      title: '記事の更新を受け取る',
+      description: '最新のインダストリアル家具記事をメールで直接受け取るために購読してください。',
+      placeholder: 'メールアドレスを入力',
+      button: '購読',
+      success: 'ありがとうございます！メールで確認してください。'
+    },
+    share: {
+      title: '記事を共有',
+      description: 'この記事を友達や同僚と共有してください',
+      copied: 'リンクが正常にコピーされました！',
+      shareOn: 'で共有'
+    },
+    consultation: {
+      title: '無料相談',
+      description: '家具プロジェクトのアドバイスが必要ですか？チームに直接チャットできます。',
+      button: 'WhatsApp でチャット'
+    }
+  },
+  es: {
+    newsletter: {
+      title: 'Recibe Actualizaciones',
+      description: 'Suscríbete para recibir los últimos artículos sobre muebles industriales directamente en tu correo.',
+      placeholder: 'Ingresa tu correo',
+      button: 'Suscribirse',
+      success: '¡Gracias! Por favor revisa tu correo para confirmar.'
+    },
+    share: {
+      title: 'Compartir Artículo',
+      description: 'Comparte este artículo con tus amigos o colegas',
+      copied: '¡Enlace copiado con éxito!',
+      shareOn: 'Compartir en'
+    },
+    consultation: {
+      title: 'Consulta Gratuita',
+      description: '¿Necesitas asesoramiento para tu proyecto de muebles? Chatea directamente con nuestro equipo.',
+      button: 'Chatear por WhatsApp'
+    }
+  },
+  fr: {
+    newsletter: {
+      title: 'Recevoir les Mises à Jour',
+      description: 'Abonnez-vous pour recevoir les derniers articles sur le mobilier industriel directement par e-mail.',
+      placeholder: 'Entrez votre e-mail',
+      button: "S'abonner",
+      success: 'Merci ! Veuillez vérifier votre e-mail pour confirmation.'
+    },
+    share: {
+      title: 'Partager l\'Article',
+      description: 'Partagez cet article avec vos amis ou collègues',
+      copied: 'Lien copié avec succès !',
+      shareOn: 'Partager sur'
+    },
+    consultation: {
+      title: 'Consultation Gratuite',
+      description: 'Besoin de conseils pour votre projet de mobilier ? Discutez directement avec notre équipe.',
+      button: 'Discuter via WhatsApp'
+    }
+  },
+  ko: {
+    newsletter: {
+      title: '기사 업데이트 받기',
+      description: '최신 산업용 가구 기사를 이메일로 직접 받으려면 구독하세요.',
+      placeholder: '이메일 주소 입력',
+      button: '구독',
+      success: '감사합니다! 이메일에서 확인해 주세요.'
+    },
+    share: {
+      title: '기사 공유',
+      description: '이 기사를 친구나 동료와 공유하세요',
+      copied: '링크가 성공적으로 복사되었습니다!',
+      shareOn: '에서 공유'
+    },
+    consultation: {
+      title: '무료 상담',
+      description: '가구 프로젝트에 대한 조언이 필요하신가요? 저희 팀과 직접 채팅하세요.',
+      button: 'WhatsApp으로 채팅'
+    }
+  }
+}
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
@@ -24,6 +209,10 @@ const BlogPost: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(false)
   const [isLanguageLoading, setIsLanguageLoading] = useState(true)
   const [language, setLanguage] = useState<LanguageCode>('en')
+  const [newsletterEmail, setNewsletterEmail] = useState('')
+  const [newsletterSubmitted, setNewsletterSubmitted] = useState(false)
+  const [newsletterLoading, setNewsletterLoading] = useState(false)
+  const [linkCopied, setLinkCopied] = useState(false)
   const post = slug ? getPostBySlug(slug) : undefined
   const content = slug ? getBlogPostContentLocalized(slug, language) : undefined
 
@@ -99,6 +288,61 @@ const BlogPost: React.FC = () => {
     .filter(p => p.slug !== slug)
     .sort(() => Math.random() - 0.5)
     .slice(0, 7)
+
+  // Share article functions
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : ''
+  const articleTitle = post?.title || ''
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(currentUrl)
+      setLinkCopied(true)
+      setTimeout(() => setLinkCopied(false), 3000)
+    } catch (err) {
+      console.error('Failed to copy link:', err)
+    }
+  }
+
+  const shareUrls = {
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`,
+    twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(articleTitle)}`,
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`,
+    whatsapp: `https://wa.me/?text=${encodeURIComponent(`${articleTitle} ${currentUrl}`)}`
+  }
+
+  // Newsletter subscription handler
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!newsletterEmail.trim() || newsletterLoading) return
+
+    setNewsletterLoading(true)
+    try {
+      await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName: 'Blog Visitor',
+          email: newsletterEmail,
+          notificationType: 'newsletter_subscription',
+          blogPost: post?.title || '',
+          blogPostUrl: window.location.href,
+          language: language
+        }),
+      })
+      setNewsletterSubmitted(true)
+      setNewsletterEmail('')
+      setTimeout(() => setNewsletterSubmitted(false), 5000)
+    } catch (error) {
+      console.error('Newsletter subscription error:', error)
+    } finally {
+      setNewsletterLoading(false)
+    }
+  }
+
+  // Get translations for sidebar features
+  const sidebarFeatures = SIDEBAR_FEATURES_TRANSLATIONS[language] ?? SIDEBAR_FEATURES_TRANSLATIONS.en
 
   const breadcrumbItems = [
     { label: 'Home', path: '/' },
@@ -425,6 +669,136 @@ const BlogPost: React.FC = () => {
                           </li>
                         ))}
                       </ul>
+                    </div>
+
+                    {/* Feature 1: Newsletter Subscription */}
+                    <div className="blog-post-sidebar-feature card">
+                      <div className="sidebar-feature-icon">
+                        <Mail size={20} />
+                      </div>
+                      <h3 className="sidebar-feature-title">{sidebarFeatures.newsletter.title}</h3>
+                      <p className="sidebar-feature-description">{sidebarFeatures.newsletter.description}</p>
+                      {!newsletterSubmitted ? (
+                        <form onSubmit={handleNewsletterSubmit} className="sidebar-newsletter-form">
+                          <input
+                            type="email"
+                            value={newsletterEmail}
+                            onChange={(e) => setNewsletterEmail(e.target.value)}
+                            placeholder={sidebarFeatures.newsletter.placeholder}
+                            required
+                            className="sidebar-newsletter-input"
+                            disabled={newsletterLoading}
+                          />
+                          <button
+                            type="submit"
+                            className="sidebar-newsletter-btn"
+                            disabled={newsletterLoading || !newsletterEmail.trim()}
+                          >
+                            {newsletterLoading ? '...' : sidebarFeatures.newsletter.button}
+                          </button>
+                        </form>
+                      ) : (
+                        <div className="sidebar-newsletter-success">
+                          <p>{sidebarFeatures.newsletter.success}</p>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Feature 2: Share Article */}
+                    <div className="blog-post-sidebar-feature card">
+                      <div className="sidebar-feature-icon">
+                        <Share2 size={20} />
+                      </div>
+                      <h3 className="sidebar-feature-title">{sidebarFeatures.share.title}</h3>
+                      <p className="sidebar-feature-description">{sidebarFeatures.share.description}</p>
+                      <div className="share-buttons-grid">
+                        <a
+                          href={shareUrls.facebook}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="share-button share-facebook"
+                          onClick={() => trackWhatsAppClick('blog_post_share_facebook', {
+                            blogPost: post?.title || '',
+                            blogPostSlug: slug || ''
+                          })}
+                        >
+                          <Facebook size={18} />
+                          <span>Facebook</span>
+                        </a>
+                        <a
+                          href={shareUrls.twitter}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="share-button share-twitter"
+                          onClick={() => trackWhatsAppClick('blog_post_share_twitter', {
+                            blogPost: post?.title || '',
+                            blogPostSlug: slug || ''
+                          })}
+                        >
+                          <Twitter size={18} />
+                          <span>Twitter</span>
+                        </a>
+                        <a
+                          href={shareUrls.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="share-button share-linkedin"
+                          onClick={() => trackWhatsAppClick('blog_post_share_linkedin', {
+                            blogPost: post?.title || '',
+                            blogPostSlug: slug || ''
+                          })}
+                        >
+                          <Linkedin size={18} />
+                          <span>LinkedIn</span>
+                        </a>
+                        <a
+                          href={shareUrls.whatsapp}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="share-button share-whatsapp"
+                          onClick={() => trackWhatsAppClick('blog_post_share_whatsapp', {
+                            blogPost: post?.title || '',
+                            blogPostSlug: slug || ''
+                          })}
+                        >
+                          <MessageCircle size={18} />
+                          <span>WhatsApp</span>
+                        </a>
+                        <button
+                          onClick={handleCopyLink}
+                          className={`share-button share-copy ${linkCopied ? 'copied' : ''}`}
+                        >
+                          {linkCopied ? <Check size={18} /> : <Copy size={18} />}
+                          <span>{linkCopied ? sidebarFeatures.share.copied : 'Copy Link'}</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Feature 3: Free Consultation CTA */}
+                    <div className="blog-post-sidebar-feature card sidebar-consultation">
+                      <div className="sidebar-feature-icon">
+                        <MessageCircle size={20} />
+                      </div>
+                      <h3 className="sidebar-feature-title">{sidebarFeatures.consultation.title}</h3>
+                      <p className="sidebar-feature-description">{sidebarFeatures.consultation.description}</p>
+                      <a
+                        href={`https://wa.me/+6288801146881?text=${encodeURIComponent(
+                          post?.category === 'Export & International'
+                            ? `Hello Mangala Living,\n\nI just read your article: "${post?.title}". I'm interested in industrial furniture for my project. Can I get more information and consultation?\n\nArticle: ${window.location.href}\n\nThank you!`
+                            : `Halo Mangala Living,\n\nSaya baru membaca artikel Anda: "${post?.title}". Saya tertarik dengan furniture industrial untuk project saya. Bisakah saya mendapatkan informasi lebih lanjut dan konsultasi?\n\nArtikel: ${window.location.href}\n\nTerima kasih!`
+                        )}`}
+                        className="sidebar-consultation-btn"
+                        onClick={() => trackWhatsAppClick('blog_post_consultation_sidebar', {
+                          blogPost: post?.title || '',
+                          blogPostSlug: slug || '',
+                          blogPostCategory: post?.category || ''
+                        })}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <MessageCircle size={16} />
+                        {sidebarFeatures.consultation.button}
+                      </a>
                     </div>
                   </aside>
                 )}

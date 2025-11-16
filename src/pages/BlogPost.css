@@ -11,7 +11,7 @@
 .blog-post-hero-image {
   position: relative;
   width: 100%;
-  height: clamp(200px, 38vh, 280px);
+  height: clamp(320px, 48vh, 400px); /* Increased height to accommodate tag, title, and author */
 }
 
 .blog-post-hero-image img {
@@ -32,9 +32,9 @@
   position: absolute;
   inset: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Changed from center to flex-start to align content to top */
   justify-content: center;
-  padding: 28px 18px 0;
+  padding: 120px 18px 40px; /* Increased top padding to avoid header overlap, added bottom padding */
 }
 
 .blog-post-hero-inner {
@@ -270,6 +270,234 @@
   text-align: center;
 }
 
+/* Sidebar Features Styles */
+.blog-post-sidebar-feature {
+  margin-top: 18px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, rgba(139, 115, 85, 0.1) 0%, rgba(139, 115, 85, 0.2) 100%);
+  border-radius: 10px;
+  color: #8B7355;
+  margin-bottom: 4px;
+}
+
+.sidebar-feature-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2a37;
+  margin: 0;
+}
+
+.sidebar-feature-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Newsletter Form */
+.sidebar-newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.sidebar-newsletter-input {
+  padding: 12px 14px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #1f2a37;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.sidebar-newsletter-input:focus {
+  outline: none;
+  border-color: #8B7355;
+  box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.1);
+}
+
+.sidebar-newsletter-input::placeholder {
+  color: #94a3b8;
+}
+
+.sidebar-newsletter-btn {
+  padding: 12px 18px;
+  background: #8B7355;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar-newsletter-btn:hover:not(:disabled) {
+  background: #7a6348;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.3);
+}
+
+.sidebar-newsletter-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sidebar-newsletter-success {
+  padding: 12px;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.sidebar-newsletter-success p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #16a34a;
+  text-align: center;
+}
+
+/* Sidebar Feature Link */
+.sidebar-feature-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  color: #8B7355;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar-feature-link:hover {
+  color: #7a6348;
+  gap: 8px;
+}
+
+/* Consultation CTA */
+.sidebar-consultation {
+  background: linear-gradient(135deg, rgba(139, 115, 85, 0.08) 0%, rgba(252, 236, 217, 0.3) 100%);
+  border: 1px solid rgba(139, 115, 85, 0.2);
+}
+
+.sidebar-consultation-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 18px;
+  background: #25D366;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.sidebar-consultation-btn:hover {
+  background: #20ba5a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.sidebar-consultation-btn:active {
+  transform: translateY(0);
+}
+
+/* Share Buttons Grid */
+.share-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.share-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 14px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1f2a37;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.share-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.share-button span {
+  font-size: 0.85rem;
+}
+
+.share-facebook:hover {
+  background: #1877F2;
+  color: #ffffff;
+  border-color: #1877F2;
+}
+
+.share-twitter:hover {
+  background: #1DA1F2;
+  color: #ffffff;
+  border-color: #1DA1F2;
+}
+
+.share-linkedin:hover {
+  background: #0077B5;
+  color: #ffffff;
+  border-color: #0077B5;
+}
+
+.share-whatsapp:hover {
+  background: #25D366;
+  color: #ffffff;
+  border-color: #25D366;
+}
+
+.share-copy:hover {
+  background: #8B7355;
+  color: #ffffff;
+  border-color: #8B7355;
+}
+
+.share-copy.copied {
+  background: #16a34a;
+  color: #ffffff;
+  border-color: #16a34a;
+}
+
+.share-copy.copied:hover {
+  background: #15803d;
+  border-color: #15803d;
+}
+
 @media (max-width: 1200px) {
   .blog-post-container {
     margin: -98px auto 0;
@@ -304,11 +532,11 @@
     margin: -80px auto 0;
   }
   .blog-post-hero-image {
-    height: clamp(180px, 42vh, 240px);
+    height: clamp(280px, 50vh, 340px); /* Increased height on mobile to accommodate all content */
   }
 
   .blog-post-hero-content {
-    padding: 24px 14px 0;
+    padding: 100px 14px 30px; /* Increased top padding to avoid header overlap, added bottom padding on mobile */
   }
 
   .blog-post-title {
@@ -340,11 +568,11 @@
   }
 
   .blog-post-hero-image {
-    height: clamp(170px, 46vh, 220px);
+    height: clamp(260px, 52vh, 320px); /* Increased height on small mobile to accommodate all content */
   }
 
   .blog-post-hero-content {
-    padding: 18px 10px 0;
+    padding: 90px 10px 24px; /* Increased top padding to avoid header overlap, added bottom padding on small mobile */
   }
 
   .blog-post-hero-inner {
@@ -371,5 +599,53 @@
 
   .blog-post-cta-actions {
     flex-direction: column;
+  }
+
+  /* Sidebar Features Mobile */
+  .blog-post-sidebar-feature {
+    margin-top: 14px;
+    padding: 16px 14px;
+  }
+
+  .sidebar-feature-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sidebar-feature-title {
+    font-size: 1rem;
+  }
+
+  .sidebar-feature-description {
+    font-size: 0.85rem;
+  }
+
+  .sidebar-newsletter-input {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .sidebar-newsletter-btn {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+
+  .sidebar-consultation-btn {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+
+  .share-buttons-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .share-button {
+    padding: 10px 12px;
+    font-size: 0.8rem;
+  }
+
+  .share-button span {
+    font-size: 0.8rem;
   }
 }

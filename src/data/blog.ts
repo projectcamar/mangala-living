@@ -1049,7 +1049,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'furniture-industrial-tambun-selatan-sertajaya-mangunjaya',
     title: 'Furniture Industrial Tambun Selatan: Sertajaya, Mangunjaya, Lambangjaya',
     category: 'Local Area Guide',
-    excerpt: 'Workshop furniture industrial Tambun Selatan. Melayani Sertajaya, Mangunjaya, Lambangjaya, Setiadarma. Produksi furniture cafe, restoran, kantor. Material berkualitas, harga terjangkau.',
+    excerpt: 'Industrial furniture besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: +6288801146881.',
     image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
     date: '2025-01-06',
     author: 'Helmi Ramdan'
@@ -2729,6 +2729,56 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Exportador indonesio de soluciones completas de mobiliario industrial. Desde diseño personalizado hasta producción interna y exportación internacional. Fabricamos todo: muebles de interior, patio, estanterías, y más. Un solo proveedor para todas sus necesidades de mobiliario comercial.',
     image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
     date: '2025-11-07',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 268,
+    slug: 'pengadaan-furniture-industrial-untuk-proyek-pemerintah-dan-fasilitas-publik',
+    title: 'Panduan Pengadaan Furniture Industrial untuk Proyek Pemerintah & Fasilitas Publik',
+    category: 'Furniture Information',
+    excerpt: 'Panduan lengkap pengadaan furniture industrial untuk kantor dinas, balai kota, fasilitas publik, hingga ruang tunggu pelayanan masyarakat di Jakarta, Bekasi, Depok, Tangerang, Bogor dan Bandung.',
+    image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=800&auto=format&fit=crop',
+    date: '2025-11-16',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 269,
+    slug: 'strategi-pengadaan-furniture-cafe-dan-restoran-di-jabodetabek',
+    title: 'Strategi Pengadaan Furniture Cafe & Restoran di Jabodetabek',
+    category: 'Tips and Trick',
+    excerpt: 'Cara merencanakan pengadaan furniture untuk cafe dan restoran di Jakarta, Bekasi, Depok, Tangerang, dan Bogor agar hemat budget tapi tetap terlihat premium dan fungsional.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-11-16',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 270,
+    slug: 'custom-order-furniture-kolam-renang-dan-fasilitas-hotel',
+    title: 'Custom Order Furniture Kolam Renang & Fasilitas Hotel',
+    category: 'About Furniture',
+    excerpt: 'Penjelasan lengkap tentang custom order furniture untuk area kolam renang, rooftop, dan fasilitas pendukung hotel/resort agar tahan cuaca dan tetap aman untuk tamu.',
+    image: 'https://images.unsplash.com/photo-1501117716987-c8e1ecb2108a?w=800&auto=format&fit=crop',
+    date: '2025-11-16',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 271,
+    slug: 'pengadaan-furniture-kantor-modern-di-jakarta-bekasi-dan-bandung',
+    title: 'Pengadaan Furniture Kantor Modern di Jakarta, Bekasi, dan Bandung',
+    category: 'Furniture Information',
+    excerpt: 'Checklist pengadaan furniture kantor modern untuk perusahaan di Jakarta, Bekasi, dan Bandung: mulai dari meja kerja, ruang meeting, hingga area kolaborasi dan pantry.',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop',
+    date: '2025-11-16',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 272,
+    slug: 'panduan-lengkap-custom-order-furniture-industrial-untuk-proyek-jabodetabek',
+    title: 'Panduan Lengkap Custom Order Furniture Industrial untuk Proyek Jabodetabek',
+    category: 'Tips and Trick',
+    excerpt: 'Langkah demi langkah proses custom order furniture industrial di Mangala Living untuk proyek cafe, kantor, restoran, dan fasilitas publik di seluruh Jabodetabek.',
+    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&auto=format&fit=crop',
+    date: '2025-11-16',
     author: 'Helmi Ramdan'
   }
 ]

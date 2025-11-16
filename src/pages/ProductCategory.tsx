@@ -411,18 +411,29 @@ const ProductCategory: React.FC = () => {
       const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
       
       for (const product of ALL_PRODUCTS) {
-        // Always convert to USD (non-highlighted)
+        // Always convert to USD
         const usdPrice = await convertIDRToUSD(product.price)
-        usdPriceMap[product.id] = usdPrice
-        
-        // Convert to highlighted currency based on language
-        if (targetCurrency && targetCurrency !== 'USD') {
+
+        let primaryPrice = usdPrice
+        let secondaryUsdLabel = usdPrice
+
+        if (language === 'id') {
+          // Indonesian: highlight IDR, show USD as secondary
+          primaryPrice = product.price
+          secondaryUsdLabel = usdPrice
+        } else if (language === 'en') {
+          // English: highlight USD, show IDR as secondary
+          primaryPrice = usdPrice
+          secondaryUsdLabel = product.price
+        } else if (targetCurrency && targetCurrency !== 'USD') {
+          // Other languages with local highlight currency
           const highlightedPrice = await convertIDRToCurrency(product.price, targetCurrency)
-          highlightedPriceMap[product.id] = highlightedPrice
-        } else {
-          // For USD (en/id), use USD as highlighted
-          highlightedPriceMap[product.id] = usdPrice
+          primaryPrice = highlightedPrice
+          secondaryUsdLabel = usdPrice
         }
+
+        usdPriceMap[product.id] = secondaryUsdLabel
+        highlightedPriceMap[product.id] = primaryPrice
       }
       
       setUsdPrices(usdPriceMap)

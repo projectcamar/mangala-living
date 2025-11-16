@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { X, Play } from 'lucide-react'
@@ -708,7 +708,7 @@ const ProductDetail: React.FC = () => {
   const [highlightedPrice, setHighlightedPrice] = useState<string | null>(null)
   const [isImageModalOpen, setIsImageModalOpen] = useState(false)
 
-  // Language to currency mapping
+  // Language to currency mapping (only non-IDR highlight currencies)
   const LANGUAGE_CURRENCY_MAP: { [key in LanguageCode]: 'KRW' | 'JPY' | 'CNY' | 'SAR' | 'EUR' | 'USD' | null } = {
     'ko': 'KRW',
     'ja': 'JPY',
@@ -716,8 +716,8 @@ const ProductDetail: React.FC = () => {
     'ar': 'SAR',
     'es': 'EUR',
     'fr': 'EUR',
-    'en': 'USD', // English uses USD as highlighted
-    'id': 'USD'  // Indonesian uses USD as highlighted (IDR not used as reference)
+    'en': 'USD', // English highlights USD
+    'id': null   // Indonesian highlights IDR (original price)
   }
 
   const isIndonesian = language === 'id'
@@ -735,17 +735,21 @@ const ProductDetail: React.FC = () => {
   useEffect(() => {
     const convertPrice = async () => {
       if (product) {
-        // Always convert to USD (non-highlighted)
+        // Always convert to USD
         const usdConverted = await convertIDRToUSD(product.price)
         setUsdPrice(usdConverted)
         
-        // Convert to highlighted currency based on language
         const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
-        if (targetCurrency && targetCurrency !== 'USD') {
+
+        if (language === 'id') {
+          // Indonesian: highlight IDR, show USD as secondary
+          setHighlightedPrice(product.price)
+        } else if (targetCurrency && targetCurrency !== 'USD') {
+          // Other languages with specific local currency highlight
           const highlightedConverted = await convertIDRToCurrency(product.price, targetCurrency)
           setHighlightedPrice(highlightedConverted)
         } else {
-          // For USD (en/id), use USD as highlighted
+          // Fallback: highlight USD
           setHighlightedPrice(usdConverted)
         }
       }
@@ -757,6 +761,65 @@ const ProductDetail: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [slug])
+
+  // Localized related products (name + prices aligned with language)
+  // MUST be declared BEFORE early returns to follow Rules of Hooks
+  const [localizedRelated, setLocalizedRelated] = useState<Array<{
+    slug: string
+    image: string
+    name: string
+    category: string
+    pricePrimary: string
+    priceSecondary?: string | null
+  }>>([])
+
+  // Memoize related products to prevent infinite loop - only recalculate when slug changes
+  const relatedProducts = useMemo(() => {
+    if (!slug) return []
+    return getRelatedProducts(slug)
+  }, [slug])
+
+  useEffect(() => {
+    if (!product || !slug || relatedProducts.length === 0) return
+    
+    const buildLocalizedRelated = async () => {
+      const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
+
+      const items = await Promise.all(relatedProducts.map(async (relatedProduct) => {
+        // Localized name from descriptions if available
+        const desc = getProductDescription(relatedProduct.slug)
+        const nameLocalized = desc ? (getProductName(relatedProduct.slug, language === 'id', language) || relatedProduct.name) : relatedProduct.name
+
+        // Currency conversion aligned with main product rules
+        const usdConverted = await convertIDRToUSD(relatedProduct.price)
+        let primary = usdConverted
+        let secondary: string | null = null
+
+        if (targetCurrency && targetCurrency !== 'USD') {
+          const highlightedConverted = await convertIDRToCurrency(relatedProduct.price, targetCurrency)
+          primary = highlightedConverted
+          secondary = usdConverted
+        } else {
+          // For en/id, USD is primary; keep IDR as secondary for extra context
+          secondary = relatedProduct.price
+        }
+
+        return {
+          slug: relatedProduct.slug,
+          image: relatedProduct.image,
+          name: nameLocalized,
+          category: relatedProduct.category,
+          pricePrimary: primary,
+          priceSecondary: secondary
+        }
+      }))
+
+      setLocalizedRelated(items)
+    }
+
+    buildLocalizedRelated()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [language, slug])
 
   // Translations
   const uiTranslations = UI_TRANSLATIONS[language] ?? UI_TRANSLATIONS.en
@@ -823,57 +886,6 @@ const ProductDetail: React.FC = () => {
       </div>
     )
   }
-
-  const relatedProducts = getRelatedProducts(slug || '')
-
-  // Localized related products (name + prices aligned with language)
-  const [localizedRelated, setLocalizedRelated] = useState<Array<{
-    slug: string
-    image: string
-    name: string
-    category: string
-    pricePrimary: string
-    priceSecondary?: string | null
-  }>>([])
-
-  useEffect(() => {
-    const buildLocalizedRelated = async () => {
-      const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
-
-      const items = await Promise.all(relatedProducts.map(async (rp) => {
-        // Localized name from descriptions if available
-        const desc = getProductDescription(rp.slug)
-        const nameLocalized = desc ? (getProductName(rp.slug, language === 'id', language) || rp.name) : rp.name
-
-        // Currency conversion aligned with main product rules
-        const usdConverted = await convertIDRToUSD(rp.price)
-        let primary = usdConverted
-        let secondary: string | null = null
-
-        if (targetCurrency && targetCurrency !== 'USD') {
-          const highlightedConverted = await convertIDRToCurrency(rp.price, targetCurrency)
-          primary = highlightedConverted
-          secondary = usdConverted
-        } else {
-          // For en/id, USD is primary; keep IDR as secondary for extra context
-          secondary = rp.price
-        }
-
-        return {
-          slug: rp.slug,
-          image: rp.image,
-          name: nameLocalized,
-          category: rp.category,
-          pricePrimary: primary,
-          priceSecondary: secondary
-        }
-      }))
-
-      setLocalizedRelated(items)
-    }
-
-    buildLocalizedRelated()
-  }, [language, slug])
 
   // Get translated product name and description
   const productDesc = getProductDescription(product.slug)
@@ -1246,7 +1258,7 @@ const ProductDetail: React.FC = () => {
                     >
                       {highlightedPrice}
                     </p>
-                    {/* Secondary price - USD always non-highlighted */}
+                    {/* Secondary price - contextual: ID shows USD; EN shows IDR; others show USD */}
                     <p 
                       style={{ 
                         margin: 0,
@@ -1256,7 +1268,7 @@ const ProductDetail: React.FC = () => {
                         lineHeight: 1.2
                       }}
                     >
-                      {usdPrice}
+                      {language === 'id' ? usdPrice : language === 'en' ? product.price : usdPrice}
                     </p>
                   </div>
                 ) : (

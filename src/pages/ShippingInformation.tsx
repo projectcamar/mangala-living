@@ -622,7 +622,7 @@ const ShippingInformation: React.FC = () => {
         </div>
       </section>
 
-      <ServiceAreasSection isIndonesian={isIndonesian} />
+      <ServiceAreasSection language={language} isIndonesian={isIndonesian} />
 
       <section className="shipping-contact-section">
         <div className="shipping-contact-container">

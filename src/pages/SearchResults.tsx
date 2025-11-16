@@ -212,7 +212,7 @@ function SearchResults() {
   const [highlightedPrices, setHighlightedPrices] = useState<Record<number, string>>({})
   const [isDetectingLanguage, setIsDetectingLanguage] = useState(true)
 
-  // Language to currency mapping
+  // Language to currency mapping (only non-IDR highlight currencies)
   const LANGUAGE_CURRENCY_MAP: { [key in LanguageCode]: 'KRW' | 'JPY' | 'CNY' | 'SAR' | 'EUR' | 'USD' | null } = {
     'ko': 'KRW',
     'ja': 'JPY',
@@ -220,8 +220,8 @@ function SearchResults() {
     'ar': 'SAR',
     'es': 'EUR',
     'fr': 'EUR',
-    'en': 'USD',
-    'id': 'USD'
+    'en': 'USD', // English highlights USD
+    'id': null   // Indonesian highlights IDR (original price)
   }
 
   // Language detection - instant, no async needed!
@@ -247,18 +247,29 @@ function SearchResults() {
 
       for (const product of allProducts) {
         try {
-          // Always convert to USD (non-highlighted)
+          // Always convert to USD
           const usdPrice = await convertIDRToUSD(product.price)
-          usdPriceMap[product.id] = usdPrice
-          
-          // Convert to highlighted currency based on language
-          if (targetCurrency && targetCurrency !== 'USD') {
+
+          let primaryPrice = usdPrice
+          let secondaryUsdLabel = usdPrice
+
+          if (language === 'id') {
+            // Indonesian: highlight IDR, show USD as secondary
+            primaryPrice = product.price
+            secondaryUsdLabel = usdPrice
+          } else if (language === 'en') {
+            // English: highlight USD, show IDR as secondary
+            primaryPrice = usdPrice
+            secondaryUsdLabel = product.price
+          } else if (targetCurrency && targetCurrency !== 'USD') {
+            // Other languages with local highlight currency
             const highlightedPrice = await convertIDRToCurrency(product.price, targetCurrency)
-            highlightedPriceMap[product.id] = highlightedPrice
-          } else {
-            // For USD (en/id), use USD as highlighted
-            highlightedPriceMap[product.id] = usdPrice
+            primaryPrice = highlightedPrice
+            secondaryUsdLabel = usdPrice
           }
+
+          usdPriceMap[product.id] = secondaryUsdLabel
+          highlightedPriceMap[product.id] = primaryPrice
         } catch (error) {
           console.error(`Failed to convert price for product ${product.slug}:`, error)
         }

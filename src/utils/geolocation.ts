@@ -6,6 +6,41 @@ export interface GeolocationData {
   isIndonesia: boolean
 }
 
+// Shared country/region groups for language targeting
+// Re-exported so other utilities (e.g. languageManager) can stay in sync
+export const FRENCH_SPEAKING_COUNTRIES: string[] = [
+  'FR', // France
+  'BE', 'CH', 'LU', 'MC', // Europe
+  'CA', // Canada (Quebec)
+  'HT', // Haiti
+  'CI', 'SN', 'ML', 'NE', 'BF', 'TG', 'BJ', // West Africa
+  'CD', 'CG', 'GA', 'CM', 'CF', 'TD', // Central Africa
+  'MG', 'RE', 'MU', 'SC', 'KM', 'YT', 'DJ' // Indian Ocean
+]
+
+export const SPANISH_SPEAKING_COUNTRIES: string[] = [
+  'ES', // Spain
+  // Latin America – make sure Colombia and other major markets are covered
+  'MX', 'AR', 'CO', 'VE', 'PE', 'CL', 'EC', // Major
+  'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', // Central America & Caribbean
+  'NI', 'CR', 'PA', 'UY' // More Latin America
+  // Note: US / PR intentionally not forced to Spanish – they are mixed-language markets
+]
+
+export const CHINESE_SPEAKING_REGIONS: string[] = [
+  'CN', // China (Mainland)
+  'TW', // Taiwan
+  'HK', // Hong Kong
+  'SG', // Singapore
+  'MO'  // Macau
+]
+
+export const ARABIC_SPEAKING_COUNTRIES: string[] = [
+  'SA', 'AE', 'KW', 'QA', 'OM', 'BH', // Gulf countries
+  'EG', 'JO', 'LB', 'SY', 'IQ', 'YE', // Levant & others
+  'MA', 'DZ', 'TN', 'LY', 'SD', 'PS'  // North Africa
+]
+
 /**
  * Detect visitor's location using IP-based geolocation
  * Returns Indonesia as default if detection fails
@@ -106,41 +141,6 @@ export const setLanguagePreferenceByLocation = async (): Promise<'id' | 'en' | '
   try {
     const locationData = await detectVisitorLocation()
     
-    // French-speaking countries
-    const frenchCountries = [
-      'FR', // France
-      'BE', 'CH', 'LU', 'MC', // Europe
-      'CA', // Canada (Quebec)
-      'HT', // Haiti
-      'CI', 'SN', 'ML', 'NE', 'BF', 'TG', 'BJ', // West Africa
-      'CD', 'CG', 'GA', 'CM', 'CF', 'TD', // Central Africa
-      'MG', 'RE', 'MU', 'SC', 'KM', 'YT', 'DJ' // Indian Ocean
-    ]
-    
-    // Spanish-speaking countries
-    const spanishCountries = [
-      'ES', // Spain
-      'MX', 'AR', 'CO', 'VE', 'PE', 'CL', 'EC', // Latin America major
-      'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', // Central America & Caribbean
-      'NI', 'CR', 'PA', 'UY' // More Latin America
-    ]
-    
-    // Chinese-speaking countries/regions
-    const chineseCountries = [
-      'CN', // China
-      'TW', // Taiwan
-      'HK', // Hong Kong
-      'SG', // Singapore
-      'MO'  // Macau
-    ]
-    
-    // Arabic-speaking countries
-    const arabicCountries = [
-      'SA', 'AE', 'KW', 'QA', 'OM', 'BH', // Gulf countries
-      'EG', 'JO', 'LB', 'SY', 'IQ', 'YE', // Levant & others
-      'MA', 'DZ', 'TN', 'LY', 'SD', 'PS'  // North Africa
-    ]
-    
     // Set language preference based on location
     let langPreference: 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' = 'en'
     
@@ -150,13 +150,13 @@ export const setLanguagePreferenceByLocation = async (): Promise<'id' | 'en' | '
       langPreference = 'ko'
     } else if (locationData.countryCode === 'JP') {
       langPreference = 'ja'
-    } else if (frenchCountries.includes(locationData.countryCode)) {
+    } else if (FRENCH_SPEAKING_COUNTRIES.includes(locationData.countryCode)) {
       langPreference = 'fr'
-    } else if (spanishCountries.includes(locationData.countryCode)) {
+    } else if (SPANISH_SPEAKING_COUNTRIES.includes(locationData.countryCode)) {
       langPreference = 'es'
-    } else if (chineseCountries.includes(locationData.countryCode)) {
+    } else if (CHINESE_SPEAKING_REGIONS.includes(locationData.countryCode)) {
       langPreference = 'zh'
-    } else if (arabicCountries.includes(locationData.countryCode)) {
+    } else if (ARABIC_SPEAKING_COUNTRIES.includes(locationData.countryCode)) {
       langPreference = 'ar'
     }
     

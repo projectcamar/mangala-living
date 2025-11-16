@@ -34,7 +34,7 @@ const Shop: React.FC = () => {
   const [highlightedPrices, setHighlightedPrices] = useState<{ [key: number]: string }>({})
   const location = useLocation()
 
-  // Language to currency mapping
+  // Language to currency mapping (only non-IDR highlight currencies)
   const LANGUAGE_CURRENCY_MAP: { [key in LanguageCode]: 'KRW' | 'JPY' | 'CNY' | 'SAR' | 'EUR' | 'USD' | null } = {
     'ko': 'KRW',
     'ja': 'JPY',
@@ -42,8 +42,8 @@ const Shop: React.FC = () => {
     'ar': 'SAR',
     'es': 'EUR',
     'fr': 'EUR',
-    'en': 'USD', // English uses USD as highlighted
-    'id': 'USD'  // Indonesian uses USD as highlighted (IDR not used as reference)
+    'en': 'USD', // English highlights USD
+    'id': null   // Indonesian highlights IDR (original price)
   }
 
   useEffect(() => {
@@ -65,18 +65,29 @@ const Shop: React.FC = () => {
       const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
       
       for (const product of ALL_PRODUCTS) {
-        // Always convert to USD (non-highlighted)
+        // Always convert to USD
         const usdPrice = await convertIDRToUSD(product.price)
-        usdPriceMap[product.id] = usdPrice
-        
-        // Convert to highlighted currency based on language
-        if (targetCurrency && targetCurrency !== 'USD') {
+
+        let primaryPrice = usdPrice
+        let secondaryUsdLabel = usdPrice
+
+        if (language === 'id') {
+          // Indonesian: highlight IDR, show USD as secondary
+          primaryPrice = product.price
+          secondaryUsdLabel = usdPrice
+        } else if (language === 'en') {
+          // English: highlight USD, show IDR as secondary
+          primaryPrice = usdPrice
+          secondaryUsdLabel = product.price
+        } else if (targetCurrency && targetCurrency !== 'USD') {
+          // Other languages with local highlight currency
           const highlightedPrice = await convertIDRToCurrency(product.price, targetCurrency)
-          highlightedPriceMap[product.id] = highlightedPrice
-        } else {
-          // For USD (en/id), use USD as highlighted
-          highlightedPriceMap[product.id] = usdPrice
+          primaryPrice = highlightedPrice
+          secondaryUsdLabel = usdPrice
         }
+
+        usdPriceMap[product.id] = secondaryUsdLabel
+        highlightedPriceMap[product.id] = primaryPrice
       }
       
       setUsdPrices(usdPriceMap)

@@ -8,6 +8,7 @@ import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { TERMS_TRANSLATIONS } from './TermsOfServiceTranslations'
 import './TermsOfService.css'
 
 const TermsOfService: React.FC = () => {
@@ -32,7 +33,7 @@ const TermsOfService: React.FC = () => {
   }, [location.pathname, location.search])
   const isIndonesian = language === 'id'
 
-
+  const t = TERMS_TRANSLATIONS[language] ?? TERMS_TRANSLATIONS.en
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
 
@@ -40,11 +41,8 @@ const TermsOfService: React.FC = () => {
     <div className="terms-page">
         <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
-        <title>{isIndonesian ? 'Syarat dan Ketentuan - Mangala Living' : 'Terms of Service - Mangala Living'}</title>
-        <meta name="description" content={isIndonesian 
-          ? 'Syarat dan ketentuan layanan Mangala Living untuk pemesanan furniture industrial scandinavian premium' 
-          : 'Terms of service for Mangala Living premium industrial scandinavian furniture orders'
-        } />
+        <title>{t.meta.title}</title>
+        <meta name="description" content={t.meta.description} />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="content-language" content={localeMeta.lang} />
         <link rel="canonical" href={localizedUrls.canonical} />
@@ -77,7 +75,7 @@ const TermsOfService: React.FC = () => {
           <div className="terms-hero-overlay"></div>
         </div>
         <div className="terms-hero-content">
-          <h1 className="terms-hero-title">{isIndonesian ? 'Syarat dan Ketentuan' : 'Terms of Service'}</h1>
+          <h1 className="terms-hero-title">{t.hero.title}</h1>
         </div>
       </section>
 
@@ -85,10 +83,7 @@ const TermsOfService: React.FC = () => {
         <div className="terms-container">
           <div className="terms-intro-section">
             <p className="terms-intro">
-              {isIndonesian 
-                ? 'Syarat dan ketentuan layanan Mangala Living untuk pemesanan furniture industrial scandinavian premium'
-                : 'Terms of service for Mangala Living premium industrial scandinavian furniture orders'
-              }
+              {t.intro}
             </p>
           </div>
 
@@ -103,7 +98,7 @@ const TermsOfService: React.FC = () => {
                     <path d="M9 14l2 2 4-4"/>
                   </svg>
                 </div>
-                <h2>{isIndonesian ? 'Cara Pemesanan' : 'How to Order'}</h2>
+                <h2>{t.sections.howToOrder.title}</h2>
               </div>
               
               <div className="key-points-grid">
@@ -113,13 +108,8 @@ const TermsOfService: React.FC = () => {
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                     </svg>
                   </div>
-                  <h3>{isIndonesian ? 'Pemesanan' : 'Ordering'}</h3>
-                  <p>
-                    {isIndonesian 
-                      ? 'Pemesanan bisa langsung datang ke workshop kami di Bekasi atau melalui online dengan komunikasi via chat WhatsApp atau telepon ke nomor yang kami sediakan.'
-                      : 'Orders can be placed by visiting our workshop in Bekasi or online through WhatsApp chat or phone calls to our provided number.'
-                    }
-                  </p>
+                  <h3>{t.sections.howToOrder.ordering.title}</h3>
+                  <p>{t.sections.howToOrder.ordering.description}</p>
                 </div>
 
                 <div className="key-point-card">
@@ -128,13 +118,8 @@ const TermsOfService: React.FC = () => {
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                   </div>
-                  <h3>{isIndonesian ? 'Layanan' : 'Service'}</h3>
-                  <p>
-                    {isIndonesian 
-                      ? 'Jika produk yang diorder custom design, silahkan ajukan design kepada kami untuk kami pelajari. Akan lebih baik disertai gambar kerja.'
-                      : 'If the ordered product is custom design, please submit the design to us for our review. It would be better accompanied by working drawings.'
-                    }
-                  </p>
+                  <h3>{t.sections.howToOrder.service.title}</h3>
+                  <p>{t.sections.howToOrder.service.description}</p>
                 </div>
 
                 <div className="key-point-card">
@@ -147,13 +132,8 @@ const TermsOfService: React.FC = () => {
                       <polyline points="10,9 9,9 8,9"/>
                     </svg>
                   </div>
-                  <h3>{isIndonesian ? 'Produksi' : 'Production'}</h3>
-                  <p>
-                    {isIndonesian 
-                      ? 'Setelah negosiasi dan sudah deal kesepakatan harga akan kami buatkan PO Invoice detail order anda.'
-                      : 'After negotiation and price agreement, we will create a PO Invoice with your order details.'
-                    }
-                  </p>
+                  <h3>{t.sections.howToOrder.production.title}</h3>
+                  <p>{t.sections.howToOrder.production.description}</p>
                 </div>
 
                 <div className="key-point-card">
@@ -166,13 +146,8 @@ const TermsOfService: React.FC = () => {
                       <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"/>
                     </svg>
                   </div>
-                  <h3>{isIndonesian ? 'Support' : 'Support'}</h3>
-                  <p>
-                    {isIndonesian 
-                      ? 'Proses pengerjaan barang pre order kurang lebih 2-4 minggu tergantung design dan jumlah barang, akan kami update melalui Chat WhatsApp atau Email.'
-                      : 'Pre-order production process takes approximately 2-4 weeks depending on design and quantity, we will update via WhatsApp Chat or Email.'
-                    }
-                  </p>
+                  <h3>{t.sections.howToOrder.support.title}</h3>
+                  <p>{t.sections.howToOrder.support.description}</p>
                 </div>
               </div>
             </section>
@@ -186,7 +161,7 @@ const TermsOfService: React.FC = () => {
                     <line x1="1" y1="10" x2="23" y2="10"/>
                   </svg>
                 </div>
-                <h2>{isIndonesian ? 'Pembayaran' : 'Payment'}</h2>
+                <h2>{t.sections.payment.title}</h2>
               </div>
               
               <div className="key-points-grid">
@@ -199,13 +174,8 @@ const TermsOfService: React.FC = () => {
                       <line x1="15" y1="9" x2="15.01" y2="9"/>
                     </svg>
                   </div>
-                  <h3>{isIndonesian ? 'Deposit' : 'Deposit'}</h3>
-                  <p>
-                    {isIndonesian 
-                      ? 'Pengerjaan barang akan kami mulai setelah kami menerima deposit minimal 40% dari jumlah belanja atau atas kesepakatan bersama'
-                      : 'Production will begin after we receive a minimum deposit of 40% of the total purchase amount or by mutual agreement'
-                    }
-                  </p>
+                  <h3>{t.sections.payment.deposit.title}</h3>
+                  <p>{t.sections.payment.deposit.description}</p>
                 </div>
 
                 <div className="key-point-card">
@@ -217,13 +187,8 @@ const TermsOfService: React.FC = () => {
                       <path d="M12 17l3-3-3-3"/>
                     </svg>
                   </div>
-                  <h3>{isIndonesian ? 'Pelunasan' : 'Balance Payment'}</h3>
-                  <p>
-                    {isIndonesian 
-                      ? 'Untuk provinsi pulau Jawa dan DKI Jakarta, pelunasan dengan jumlah tertentu dapat dibayar pada saat barang sudah sampai dengan menunjukkan bukti transfer kepada sopir yang mengantarkan barang. Untuk wilayah luar pulau Jawa, pelunasan dibayarkan pada saat barang sudah dipacking dan siap dikirimkan melalui jasa ekspedisi.'
-                      : 'For Java Island provinces and DKI Jakarta, balance payment of certain amounts can be paid when the goods arrive by showing transfer proof to the delivery driver. For areas outside Java Island, balance payment is made when goods are packed and ready for shipment via expedition service.'
-                    }
-                  </p>
+                  <h3>{t.sections.payment.balancePayment.title}</h3>
+                  <p>{t.sections.payment.balancePayment.description}</p>
                 </div>
               </div>
             </section>
@@ -239,7 +204,7 @@ const TermsOfService: React.FC = () => {
                     <circle cx="18.5" cy="18.5" r="2.5"/>
                   </svg>
                 </div>
-                <h2>{isIndonesian ? 'Pengiriman Barang' : 'Product Shipping'}</h2>
+                <h2>{t.sections.shipping.title}</h2>
               </div>
               
               <div className="shipping-timeline">
@@ -252,8 +217,8 @@ const TermsOfService: React.FC = () => {
                     </svg>
                   </div>
                   <div className="timeline-content">
-                    <h4>{isIndonesian ? 'Jabodetabek' : 'Jabodetabek'}</h4>
-                    <p>{isIndonesian ? '1-2 hari' : '1-2 days'}</p>
+                    <h4>{t.sections.shipping.jabodetabek.title}</h4>
+                    <p>{t.sections.shipping.jabodetabek.days}</p>
                   </div>
                 </div>
 
@@ -265,8 +230,8 @@ const TermsOfService: React.FC = () => {
                     </svg>
                   </div>
                   <div className="timeline-content">
-                    <h4>{isIndonesian ? 'Luar Pulau Jawa' : 'Outside Java Island'}</h4>
-                    <p>{isIndonesian ? '5-7 hari' : '5-7 days'}</p>
+                    <h4>{t.sections.shipping.outsideJava.title}</h4>
+                    <p>{t.sections.shipping.outsideJava.days}</p>
                   </div>
                 </div>
 
@@ -277,8 +242,8 @@ const TermsOfService: React.FC = () => {
                     </svg>
                   </div>
                   <div className="timeline-content">
-                    <h4>{isIndonesian ? 'Internasional' : 'International'}</h4>
-                    <p>{isIndonesian ? 'LCL/FCL' : 'LCL/FCL'}</p>
+                    <h4>{t.sections.shipping.international.title}</h4>
+                    <p>{t.sections.shipping.international.days}</p>
                   </div>
                 </div>
               </div>
@@ -290,7 +255,7 @@ const TermsOfService: React.FC = () => {
                     <line x1="12" y1="8" x2="12" y2="12"/>
                     <line x1="12" y1="16" x2="12.01" y2="16"/>
                   </svg>
-                  <p>{isIndonesian ? 'Harga belum termasuk ongkos pengiriman kecuali kesepakatan' : 'Prices exclude shipping costs unless agreed upon'}</p>
+                  <p>{t.sections.shipping.note1}</p>
                 </div>
                 <div className="note-item">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -298,7 +263,7 @@ const TermsOfService: React.FC = () => {
                     <line x1="12" y1="8" x2="12" y2="12"/>
                     <line x1="12" y1="16" x2="12.01" y2="16"/>
                   </svg>
-                  <p>{isIndonesian ? 'Pembatalan tidak dapat dilakukan setelah produksi dimulai' : 'Cancellation not allowed after production begins'}</p>
+                  <p>{t.sections.shipping.note2}</p>
                 </div>
               </div>
             </section>
@@ -315,7 +280,7 @@ const TermsOfService: React.FC = () => {
                     <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"/>
                   </svg>
                 </div>
-                <h2>{isIndonesian ? 'Garansi Produk' : 'Product Warranty'}</h2>
+                <h2>{t.sections.warranty.title}</h2>
               </div>
               
               <div className="warranty-highlight">
@@ -323,7 +288,7 @@ const TermsOfService: React.FC = () => {
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                   </svg>
-                  <span>{isIndonesian ? '30 Hari Garansi' : '30 Days Warranty'}</span>
+                  <span>{t.sections.warranty.badge}</span>
                 </div>
               </div>
 
@@ -335,8 +300,8 @@ const TermsOfService: React.FC = () => {
                     </svg>
                   </div>
                   <div className="warranty-content">
-                    <h4>{isIndonesian ? 'Yang Dijamin' : 'What\'s Covered'}</h4>
-                    <p>{isIndonesian ? 'Kerusakan konstruksi akibat kesalahan pertukangan' : 'Construction damage due to workmanship errors'}</p>
+                    <h4>{t.sections.warranty.whatsCovered.title}</h4>
+                    <p>{t.sections.warranty.whatsCovered.description}</p>
                   </div>
                 </div>
 
@@ -348,8 +313,8 @@ const TermsOfService: React.FC = () => {
                     </svg>
                   </div>
                   <div className="warranty-content">
-                    <h4>{isIndonesian ? 'Tidak Dijamin' : 'Not Covered'}</h4>
-                    <p>{isIndonesian ? 'Rayap, perubahan warna, kain luntur, pemuaian kayu alami' : 'Termites, color changes, fabric fading, natural wood expansion'}</p>
+                    <h4>{t.sections.warranty.notCovered.title}</h4>
+                    <p>{t.sections.warranty.notCovered.description}</p>
                   </div>
                 </div>
 
@@ -362,8 +327,8 @@ const TermsOfService: React.FC = () => {
                     </svg>
                   </div>
                   <div className="warranty-content">
-                    <h4>{isIndonesian ? 'Catatan' : 'Note'}</h4>
-                    <p>{isIndonesian ? 'Biaya pengambilan dan pengiriman tidak termasuk' : 'Pickup and shipping costs not included'}</p>
+                    <h4>{t.sections.warranty.note.title}</h4>
+                    <p>{t.sections.warranty.note.description}</p>
                   </div>
                 </div>
               </div>
@@ -371,12 +336,12 @@ const TermsOfService: React.FC = () => {
 
             {/* Workshop Info Section */}
             <section className="terms-section">
-              <h2>{isIndonesian ? 'Find Us' : 'Find Us'}</h2>
+              <h2>{t.sections.findUs.title}</h2>
               <div className="workshop-info">
                 <h3>Mangala Living</h3>
                 <div style={{ marginBottom: '16px' }}>
                   <strong style={{ color: '#8B7355', display: 'block', marginBottom: '8px' }}>
-                    Workshop Bekasi:
+                    {t.sections.findUs.workshopLabel}
                   </strong>
                   <p>
                     <a
@@ -406,16 +371,10 @@ const TermsOfService: React.FC = () => {
                   </a>
                 </p>
                 <p className="workshop-hours">
-                  {isIndonesian 
-                    ? 'Jam Kerja: 08.00 - 22.00 GMT +7'
-                    : 'Work Hours: 08.00 am - 22.00 GMT +7'
-                  }
+                  {t.sections.findUs.workHours}
                 </p>
                 <p className="workshop-languages">
-                  {isIndonesian 
-                    ? 'Tersedia dalam Bahasa Indonesia atau English'
-                    : 'Available in Bahasa Indonesia or English'
-                  }
+                  {t.sections.findUs.languages}
                 </p>
               </div>
             </section>

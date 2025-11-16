@@ -12,6 +12,7 @@ import './App.css'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import WhatsAppButton from './components/WhatsAppButton'
+import SingaporeLanguageModal from './components/SingaporeLanguageModal'
 import ScrollToTop from './components/ScrollToTop'
 
 // Preload critical pages for better performance
@@ -134,6 +135,7 @@ function App() {
     <HelmetProvider>
       <Router>
         <ScrollToTop />
+        <SingaporeLanguageModal />
         <Routes>
           {/* Home - Load immediately (no suspense) */}
           <Route path="/" element={<Home />} />

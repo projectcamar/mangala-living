@@ -10,6 +10,253 @@ import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/se
 import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
 import './Blog.css'
 
+const BLOG_INTRO_TRANSLATIONS: Record<
+  LanguageCode,
+  {
+    mainTitle: string
+    introParagraph: string
+    bullets: {
+      title: string
+      description: string
+    }[]
+  }
+> = {
+  id: {
+    mainTitle: '135+ Artikel Furniture Industrial: Panduan Lengkap dari Workshop Bekasi',
+    introParagraph:
+      'Temukan jawaban lengkap untuk pertanyaan Anda tentang furniture industrial. Artikel kami ditulis berdasarkan pengalaman nyata menangani 1000+ project sejak 1999 di Jabodetabek.',
+    bullets: [
+      {
+        title: 'Tips & Panduan Praktis',
+        description:
+          'Cara memilih, merawat, dan mengoptimalkan furniture industrial untuk bisnis Anda'
+      },
+      {
+        title: 'Perbandingan Material & Harga',
+        description:
+          'Data objektif furniture besi vs kayu, custom vs ready, powder coating vs cat'
+      },
+      {
+        title: 'Local Area Guide',
+        description:
+          'Coverage area lengkap Bekasi, Cikarang, Jakarta dengan workshop terdekat'
+      },
+      {
+        title: 'Design Inspiration',
+        description:
+          'Tren 2025, kombinasi material, layout optimization untuk cafe dan restoran'
+      }
+    ]
+  },
+  en: {
+    mainTitle: '135+ Industrial Furniture Articles: Complete Guide from Our Bekasi Workshop',
+    introParagraph:
+      'Find clear, practical answers to all your questions about industrial furniture. Every article is written based on real projects – 1,000+ jobs handled since 1999 across Greater Jakarta (Jabodetabek).',
+    bullets: [
+      {
+        title: 'Practical Tips & Guides',
+        description:
+          'How to choose, maintain, and optimize industrial furniture for your café, restaurant, office, or hotel'
+      },
+      {
+        title: 'Material & Price Comparisons',
+        description:
+          'Objective data on steel vs wood, custom vs ready-made, powder coating vs standard paint'
+      },
+      {
+        title: 'Local Area Guides',
+        description:
+          'Coverage for Bekasi, Cikarang, Jakarta and nearby areas with the nearest workshop support'
+      },
+      {
+        title: 'Design Inspiration',
+        description:
+          '2025 trends, material combinations, and layout optimization ideas for hospitality and commercial spaces'
+      }
+    ]
+  },
+  ar: {
+    mainTitle: 'أكثر من 135 مقالاً عن الأثاث الصناعي: دليل متكامل من ورشة بيكاسي',
+    introParagraph:
+      'اكتشف إجابات عملية وواضحة عن جميع أسئلتك حول الأثاث الصناعي. كل مقال مبني على خبرة حقيقية من أكثر من 1000 مشروع منذ عام 1999 في منطقة جاكرتا الكبرى.',
+    bullets: [
+      {
+        title: 'نصائح وإرشادات عملية',
+        description:
+          'كيفية اختيار الأثاث الصناعي المناسب، المحافظة عليه، والاستفادة القصوى منه في مشروعك التجاري'
+      },
+      {
+        title: 'مقارنات المواد والأسعار',
+        description:
+          'بيانات موضوعية حول الأثاث المعدني مقابل الخشبي، المخصص مقابل الجاهز، بودرة كوتينغ مقابل الدهان العادي'
+      },
+      {
+        title: 'دليل المناطق المحلية',
+        description:
+          'تغطية كاملة لمناطق بيكاسي، تشيكارانغ، جاكرتا مع أقرب ورشة دعم'
+      },
+      {
+        title: 'إلهام للتصميم',
+        description:
+          'اتجاهات 2025، دمج المواد، وأفكار لتخطيط المساحات للمقاهي والمطاعم'
+      }
+    ]
+  },
+  zh: {
+    mainTitle: '135+ 篇工业风家具文章：来自勿加泗工坊的完整指南',
+    introParagraph:
+      '在这里，你可以找到关于工业风家具的大部分问题的系统答案。所有文章都基于真实项目经验——自 1999 年以来完成 1000+ 个雅加达都会区项目。',
+    bullets: [
+      {
+        title: '实用技巧与操作指南',
+        description:
+          '如何为咖啡馆、餐厅、办公室、酒店选择、保养并高效利用工业风家具'
+      },
+      {
+        title: '材质与价格对比',
+        description:
+          '客观对比钢材 vs 木材、定制 vs 成品、粉末喷涂 vs 普通油漆'
+      },
+      {
+        title: '本地区域指南',
+        description:
+          '覆盖勿加泗、芝卡朗、雅加达等区域，并说明就近工坊支持情况'
+      },
+      {
+        title: '设计灵感',
+        description:
+          '2025 年趋势、材质搭配，以及适用于咖啡馆和餐厅的平面布局优化'
+      }
+    ]
+  },
+  ja: {
+    mainTitle: '135本以上の工業系家具記事：ベカシ工房からの完全ガイド',
+    introParagraph:
+      '工業系家具についての疑問に、実務に基づいた答えをご用意しました。1999年以降、ジャボデタベックで1,000件以上のプロジェクトを手掛けてきた経験を記事化しています。',
+    bullets: [
+      {
+        title: '実践的なヒントとガイド',
+        description:
+          'カフェ・レストラン・オフィス・ホテル向けの工業系家具の選び方、メンテナンス方法、活用ノウハウ'
+      },
+      {
+        title: '素材・価格比較',
+        description:
+          'スチール vs 木材、オーダーメイド vs 既製品、パウダーコーティング vs 通常塗装の客観的な比較'
+      },
+      {
+        title: 'ローカルエリアガイド',
+        description:
+          'ベカシ・チカラン・ジャカルタ周辺エリアの対応範囲と最寄り工房のご案内'
+      },
+      {
+        title: 'デザインインスピレーション',
+        description:
+          '2025年トレンド、素材ミックス、カフェ／レストランのレイアウト最適化アイデア'
+      }
+    ]
+  },
+  es: {
+    mainTitle: '135+ Artículos sobre Muebles Industriales: Guía Completa desde nuestro Taller en Bekasi',
+    introParagraph:
+      'Encuentra respuestas claras y prácticas a tus dudas sobre muebles industriales. Cada artículo está basado en proyectos reales: más de 1.000 trabajos realizados desde 1999 en el área de Yakarta (Jabodetabek).',
+    bullets: [
+      {
+        title: 'Consejos y Guías Prácticas',
+        description:
+          'Cómo elegir, mantener y sacar el máximo provecho a los muebles industriales en tu negocio'
+      },
+      {
+        title: 'Comparación de Materiales y Precios',
+        description:
+          'Datos objetivos sobre acero vs madera, muebles a medida vs estándar, powder coating vs pintura convencional'
+      },
+      {
+        title: 'Guías por Zonas',
+        description:
+          'Cobertura detallada para Bekasi, Cikarang y Yakarta con apoyo de taller cercano'
+      },
+      {
+        title: 'Inspiración de Diseño',
+        description:
+          'Tendencias 2025, combinaciones de materiales y optimización de distribución para cafés y restaurantes'
+      }
+    ]
+  },
+  fr: {
+    mainTitle: '135+ Articles sur le mobilier industriel : guide complet depuis notre atelier de Bekasi',
+    introParagraph:
+      'Trouvez des réponses précises et concrètes à toutes vos questions sur le mobilier industriel. Chaque article s’appuie sur des projets réels : plus de 1 000 réalisations depuis 1999 dans la région de Jakarta (Jabodetabek).',
+    bullets: [
+      {
+        title: 'Conseils & Guides Pratiques',
+        description:
+          'Comment choisir, entretenir et optimiser le mobilier industriel pour votre café, restaurant, bureau ou hôtel'
+      },
+      {
+        title: 'Comparatifs Matériaux & Prix',
+        description:
+          'Analyse objective acier vs bois, sur‑mesure vs prêt‑à‑l’emploi, powder coating vs peinture classique'
+      },
+      {
+        title: 'Guides Locaux',
+        description:
+          'Couverture détaillée de Bekasi, Cikarang et Jakarta avec indication de l’atelier le plus proche'
+      },
+      {
+        title: 'Inspiration Design',
+        description:
+          'Tendances 2025, associations de matériaux et optimisation des plans pour cafés et restaurants'
+      }
+    ]
+  },
+  ko: {
+    mainTitle: '135편 이상의 산업용 가구 블로그: 베카시 공방에서 전하는 완전 가이드',
+    introParagraph:
+      '산업용 가구에 대한 궁금증을 실제 현장 경험을 바탕으로 정리했습니다. 1999년 이후 자보데타벡 전역에서 1,000개 이상의 프로젝트를 수행한 노하우를 글로 담았습니다.',
+    bullets: [
+      {
+        title: '실전 팁 & 가이드',
+        description:
+          '카페·레스토랑·오피스·호텔에 맞는 산업용 가구 선택, 관리, 활용 방법'
+      },
+      {
+        title: '자재 & 가격 비교',
+        description:
+          '철제 vs 원목, 맞춤 제작 vs 기성품, 파우더 코팅 vs 일반 도장에 대한 객관적인 비교'
+      },
+      {
+        title: '로컬 서비스 지역 안내',
+        description:
+          '베카시, 치카랑, 자카르타 등 서비스 가능 지역과 인근 공방 정보'
+      },
+      {
+        title: '디자인 인스피레이션',
+        description:
+          '2025년 트렌드, 소재 조합, 카페·레스토랑 공간 레이아웃 최적화 아이디어'
+      }
+    ]
+  }
+}
+
+const BLOG_PAGINATION_TRANSLATIONS: Record<
+  LanguageCode,
+  {
+    prev: string
+    next: string
+    numberLocale: string
+  }
+> = {
+  id: { prev: 'Sebelumnya', next: 'Selanjutnya', numberLocale: 'id-ID' },
+  en: { prev: 'Prev', next: 'Next', numberLocale: 'en-US' },
+  ar: { prev: 'السابق', next: 'التالي', numberLocale: 'ar-EG' },
+  zh: { prev: '上一页', next: '下一页', numberLocale: 'zh-CN' },
+  ja: { prev: '前へ', next: '次へ', numberLocale: 'ja-JP' },
+  es: { prev: 'Anterior', next: 'Siguiente', numberLocale: 'es-ES' },
+  fr: { prev: 'Précédent', next: 'Suivant', numberLocale: 'fr-FR' },
+  ko: { prev: '이전', next: '다음', numberLocale: 'ko-KR' }
+}
+
 const Blog: React.FC = () => {
   const location = useLocation()
   const [searchParams] = useSearchParams()
@@ -54,6 +301,10 @@ const Blog: React.FC = () => {
 
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
+  const intro = BLOG_INTRO_TRANSLATIONS[language] ?? BLOG_INTRO_TRANSLATIONS.en
+  const paginationTexts = BLOG_PAGINATION_TRANSLATIONS[language] ?? BLOG_PAGINATION_TRANSLATIONS.en
+  const formatPageNumber = (value: number) =>
+    new Intl.NumberFormat(paginationTexts.numberLocale).format(value)
 
   return (
       <div className="blog-page">
@@ -108,7 +359,7 @@ const Blog: React.FC = () => {
       <section className="blog-content-section">
         <div className="blog-container">
           {/* AI Search Optimized: Clear intent and value proposition */}
-          <h2 className="blog-main-title">135+ Artikel Furniture Industrial: Panduan Lengkap dari Workshop Bekasi</h2>
+          <h2 className="blog-main-title">{intro.mainTitle}</h2>
           <div style={{ 
             maxWidth: '900px', 
             margin: '0 auto 3rem', 
@@ -118,13 +369,14 @@ const Blog: React.FC = () => {
             borderLeft: '4px solid #2C3E50'
           }}>
             <p style={{ margin: '0 0 1rem', fontSize: '1rem', lineHeight: '1.6', color: '#2C3E50' }}>
-              <strong>Temukan jawaban lengkap untuk pertanyaan Anda tentang furniture industrial.</strong> Artikel kami ditulis berdasarkan pengalaman nyata menangani 1000+ project sejak 1999 di Jabodetabek.
+              {intro.introParagraph}
             </p>
             <ul style={{ margin: 0, paddingLeft: '1.5rem', fontSize: '0.95rem', lineHeight: '1.7', color: '#555' }}>
-              <li><strong>Tips & Panduan Praktis:</strong> Cara memilih, merawat, dan mengoptimalkan furniture industrial untuk bisnis Anda</li>
-              <li><strong>Perbandingan Material & Harga:</strong> Data objektif furniture besi vs kayu, custom vs ready, powder coating vs cat</li>
-              <li><strong>Local Area Guide:</strong> Coverage area lengkap Bekasi, Cikarang, Jakarta dengan workshop terdekat</li>
-              <li><strong>Design Inspiration:</strong> Tren 2025, kombinasi material, layout optimization untuk cafe dan restoran</li>
+              {intro.bullets.map((item, index) => (
+                <li key={index}>
+                  <strong>{item.title}:</strong> {item.description}
+                </li>
+              ))}
             </ul>
           </div>
           
@@ -166,7 +418,7 @@ const Blog: React.FC = () => {
                   className="pagination-btn pagination-prev"
                   aria-label="Previous page"
                 >
-                  Prev
+                  {paginationTexts.prev}
                 </Link>
               )}
 
@@ -213,7 +465,7 @@ const Blog: React.FC = () => {
                       className={`pagination-btn pagination-number ${currentPage === pageNumber ? 'active' : ''}`}
                       aria-current={currentPage === pageNumber ? 'page' : undefined}
                     >
-                      {pageNumber}
+                      {formatPageNumber(pageNumber)}
                     </Link>
                   )
                 })
@@ -225,7 +477,7 @@ const Blog: React.FC = () => {
                   className="pagination-btn pagination-next"
                   aria-label="Next page"
                 >
-                  Next
+                  {paginationTexts.next}
                 </Link>
               )}
             </nav>
