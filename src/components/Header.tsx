@@ -292,6 +292,15 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
     if (urlLang === 'es') return 'flag-es'
     if (urlLang === 'fr') return 'flag-fr'
     if (urlLang === 'ko') return 'flag-ko'
+    // Use language prop as fallback, then isIndonesian, then default to English
+    if (language === 'id') return 'flag-id'
+    if (language === 'ar') return 'flag-ar'
+    if (language === 'zh') return 'flag-zh'
+    if (language === 'ja') return 'flag-ja'
+    if (language === 'es') return 'flag-es'
+    if (language === 'fr') return 'flag-fr'
+    if (language === 'ko') return 'flag-ko'
+    if (isIndonesian) return 'flag-id'
     return 'flag-us'
   }
 

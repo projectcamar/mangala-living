@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
-import { convertIDRToUSD } from '../utils/currencyConverter'
+import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { getProductName } from '../data/productDescriptions'
 import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
 import './SearchResults.css'
@@ -209,7 +209,20 @@ function SearchResults() {
   const [language, setLanguage] = useState<LanguageCode>(resolveLanguage(langParam))
   const [sortBy, setSortBy] = useState('default')
   const [usdPrices, setUsdPrices] = useState<Record<number, string>>({})
+  const [highlightedPrices, setHighlightedPrices] = useState<Record<number, string>>({})
   const [isDetectingLanguage, setIsDetectingLanguage] = useState(true)
+
+  // Language to currency mapping
+  const LANGUAGE_CURRENCY_MAP: { [key in LanguageCode]: 'KRW' | 'JPY' | 'CNY' | 'SAR' | 'EUR' | 'USD' | null } = {
+    'ko': 'KRW',
+    'ja': 'JPY',
+    'zh': 'CNY',
+    'ar': 'SAR',
+    'es': 'EUR',
+    'fr': 'EUR',
+    'en': 'USD',
+    'id': 'USD'
+  }
 
   // Language detection - instant, no async needed!
   useEffect(() => {
@@ -227,19 +240,33 @@ function SearchResults() {
     let isMounted = true
 
     const convertPrices = async () => {
-      const prices: Record<number, string> = {}
+      const usdPriceMap: Record<number, string> = {}
+      const highlightedPriceMap: Record<number, string> = {}
+      
+      const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
 
       for (const product of allProducts) {
         try {
+          // Always convert to USD (non-highlighted)
           const usdPrice = await convertIDRToUSD(product.price)
-          prices[product.id] = usdPrice
+          usdPriceMap[product.id] = usdPrice
+          
+          // Convert to highlighted currency based on language
+          if (targetCurrency && targetCurrency !== 'USD') {
+            const highlightedPrice = await convertIDRToCurrency(product.price, targetCurrency)
+            highlightedPriceMap[product.id] = highlightedPrice
+          } else {
+            // For USD (en/id), use USD as highlighted
+            highlightedPriceMap[product.id] = usdPrice
+          }
         } catch (error) {
           console.error(`Failed to convert price for product ${product.slug}:`, error)
         }
       }
 
       if (isMounted) {
-        setUsdPrices(prices)
+        setUsdPrices(usdPriceMap)
+        setHighlightedPrices(highlightedPriceMap)
       }
     }
 
@@ -248,7 +275,7 @@ function SearchResults() {
     return () => {
       isMounted = false
     }
-  }, [])
+  }, [language])
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -379,7 +406,7 @@ function SearchResults() {
         </Helmet>
 
         <Header isIndonesian={isIndonesian} language={language} />
-      <CurrencyHighlight isIndonesian={isIndonesian} />
+      <CurrencyHighlight isIndonesian={isIndonesian} language={language} />
 
       <div className="container">
         <Breadcrumb items={breadcrumbItems} />
@@ -436,13 +463,13 @@ function SearchResults() {
                   <div className="product-info">
                     <h3 className="product-name">{translatedName}</h3>
                     <p className="product-category">{product.category}</p>
-                  {usdPrices[product.id] && usdPrices[product.id] !== 'N/A' ? (
+                  {usdPrices[product.id] && highlightedPrices[product.id] && usdPrices[product.id] !== 'N/A' ? (
                     <div className="product-price-stack">
                       <span className="product-price-primary">
-                        {isIndonesian ? product.price : usdPrices[product.id]}
+                        {highlightedPrices[product.id]}
                       </span>
                       <span className="product-price-secondary">
-                        {isIndonesian ? usdPrices[product.id] : product.price}
+                        {usdPrices[product.id]}
                       </span>
                     </div>
                   ) : (

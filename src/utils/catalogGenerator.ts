@@ -21,6 +21,58 @@ const loadPDFDependencies = async () => {
   }
 }
 
+// Load a TTF font from a URL and register it in jsPDF VFS
+const loadAndRegisterFont = async (doc: any, url: string, vfsFileName: string, jsPdfFontName: string, style: 'normal' | 'bold' | 'italic' | 'bolditalic' = 'normal') => {
+  try {
+    const response = await fetch(url, { credentials: 'omit' })
+    if (!response.ok) return false
+    const blob = await response.blob()
+    const toBase64 = (b: Blob) =>
+      new Promise<string>((resolve, reject) => {
+        const reader = new FileReader()
+        reader.onload = () => resolve((reader.result as string).split(',')[1] || '')
+        reader.onerror = reject
+        reader.readAsDataURL(b)
+      })
+    const base64 = await toBase64(blob)
+    if (!base64) return false
+    doc.addFileToVFS(vfsFileName, base64)
+    doc.addFont(vfsFileName, jsPdfFontName, style)
+    return true
+  } catch {
+    return false
+  }
+}
+
+// Decide which Unicode font set to use for a given language and try to load it from /public/fonts
+const prepareLanguageFont = async (doc: any, lang: 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko') => {
+  // Default: built-in helvetica works for Latin scripts
+  const latin = { family: 'helvetica', hasStyles: true }
+
+  // Map language to expected font files in public/fonts (user should provide these files)
+  const fontMap: Record<string, { family: string, files: { normal: string, bold?: string, italic?: string, bolditalic?: string } }> = {
+    ar: { family: 'NotoNaskhArabic', files: { normal: '/fonts/NotoNaskhArabic-Regular.ttf', bold: '/fonts/NotoNaskhArabic-Bold.ttf' } },
+    zh: { family: 'NotoSansSC', files: { normal: '/fonts/NotoSansSC-Regular.ttf', bold: '/fonts/NotoSansSC-Bold.ttf' } },
+    ja: { family: 'NotoSansJP', files: { normal: '/fonts/NotoSansJP-Regular.ttf', bold: '/fonts/NotoSansJP-Bold.ttf' } },
+    ko: { family: 'NotoSansKR', files: { normal: '/fonts/NotoSansKR-Regular.ttf', bold: '/fonts/NotoSansKR-Bold.ttf' } },
+  }
+
+  const mapping = fontMap[lang]
+  if (!mapping) return latin
+
+  const loadedNormal = await loadAndRegisterFont(doc, mapping.files.normal, `${mapping.family}-Regular.ttf`, mapping.family, 'normal')
+  let loadedBold = false
+  if (mapping.files.bold) {
+    loadedBold = await loadAndRegisterFont(doc, mapping.files.bold, `${mapping.family}-Bold.ttf`, mapping.family, 'bold')
+  }
+  // Italic variants are optional; most CJK/Arabic families don't include italics
+
+  if (loadedNormal) {
+    return { family: mapping.family, hasStyles: !!loadedBold }
+  }
+  return latin
+}
+
 // Get language preference from localStorage
 const getLanguagePreference = (): 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' => {
   try {
@@ -902,7 +954,7 @@ const loadImageAsBase64 = async (imagePath: string): Promise<string> => {
 }
 
 // Format price with proper currency
-const formatPrice = (price: string, currency: 'IDR' | 'USD', lang: 'id' | 'en'): string => {
+const formatPrice = (price: string, currency: 'IDR' | 'USD'): string => {
   // Extract numeric value from price string
   const numericMatch = price.match(/[\d.,]+/)
   if (!numericMatch) return price
@@ -931,9 +983,17 @@ export const generateCatalog = async () => {
     
     // Get language preference
     const lang = getLanguagePreference()
-    const t = content[lang]
+    const t = (content as any)[lang]
     
     const doc = new jsPDF('p', 'mm', 'a4')
+
+    // Prepare Unicode-capable font for non-Latin languages (loads from /public/fonts if available)
+    const { family: baseFontFamily, hasStyles } = await prepareLanguageFont(doc, lang)
+    const setF = (style: 'normal' | 'bold' | 'italic' | 'bolditalic' = 'normal') => {
+      const resolvedStyle = hasStyles ? style : 'normal'
+      doc.setFont(baseFontFamily, resolvedStyle)
+    }
+
     const pageWidth = doc.internal.pageSize.getWidth()
     const pageHeight = doc.internal.pageSize.getHeight()
     
@@ -975,12 +1035,12 @@ export const generateCatalog = async () => {
     // Brand name - MANGALA
     doc.setTextColor(...colors.textLight)
     doc.setFontSize(60)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.text(t.title1, pageWidth / 2, 75, { align: 'center' })
     
     // Brand name - LIVING with letter spacing
     doc.setFontSize(28)
-    doc.setFont('helvetica', 'normal')
+    setF('normal')
     doc.text(t.title2.split('').join('  '), pageWidth / 2, 92, { align: 'center' })
     
     // Decorative separator
@@ -991,7 +1051,7 @@ export const generateCatalog = async () => {
     // Subtitle
     doc.setFontSize(14)
     doc.setTextColor(...colors.secondaryAccent)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.text(t.subtitle, pageWidth / 2, 115, { align: 'center' })
     
     // Since year badge
@@ -999,29 +1059,29 @@ export const generateCatalog = async () => {
     doc.circle(pageWidth / 2, 135, 12, 'F')
     doc.setTextColor(...colors.primaryDark)
     doc.setFontSize(10)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.text(t.since, pageWidth / 2, 137, { align: 'center' })
     
     // Tagline
     doc.setFontSize(11)
-    doc.setFont('helvetica', 'normal')
+    setF('normal')
     doc.setTextColor(...colors.textLight)
     const taglineLines = doc.splitTextToSize(t.tagline, pageWidth - 60)
     doc.text(taglineLines, pageWidth / 2, 155, { align: 'center' })
     
     // Workshop location
     doc.setFontSize(11)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.setTextColor(...colors.secondaryAccent)
     doc.text(t.workshop, pageWidth / 2, 185, { align: 'center' })
     
     doc.setFontSize(9)
-    doc.setFont('helvetica', 'normal')
+    setF('normal')
     doc.text(t.address, pageWidth / 2, 193, { align: 'center' })
     
     // Contact information - clickable
     doc.setFontSize(11)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.setTextColor(...colors.goldAccent)
     doc.textWithLink('+6288801146881', pageWidth / 2, 210, { 
       align: 'center',
@@ -1033,7 +1093,7 @@ export const generateCatalog = async () => {
     })
     
     doc.setTextColor(...colors.textLight)
-    doc.setFont('helvetica', 'normal')
+    setF('normal')
     doc.setFontSize(10)
     doc.textWithLink('www.mangala-living.com', pageWidth / 2, 232, { 
       align: 'center',
@@ -1071,11 +1131,11 @@ export const generateCatalog = async () => {
     
     doc.setTextColor(...colors.textLight)
     doc.setFontSize(28)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.text(t.welcomeTitle, pageWidth / 2, 30, { align: 'center' })
     
     doc.setFontSize(11)
-    doc.setFont('helvetica', 'italic')
+    setF('italic')
     doc.setTextColor(...colors.secondaryAccent)
     doc.text(t.welcomeSubtitle, pageWidth / 2, 42, { align: 'center' })
     
@@ -1086,7 +1146,7 @@ export const generateCatalog = async () => {
     
     doc.setTextColor(...colors.textDark)
     doc.setFontSize(10)
-    doc.setFont('helvetica', 'normal')
+    setF('normal')
     
     // Introduction paragraph
     const introLines = doc.splitTextToSize(t.welcomeIntro, pageWidth - (margin * 2))
@@ -1111,7 +1171,7 @@ export const generateCatalog = async () => {
     // CTA section
     yPos += 3
     doc.setFontSize(11)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.setTextColor(...colors.goldAccent)
     const ctaLines = doc.splitTextToSize(t.welcomeCTA, pageWidth - (margin * 2))
     doc.text(ctaLines, margin, yPos)
@@ -1119,11 +1179,11 @@ export const generateCatalog = async () => {
     
     // Signature
     doc.setFontSize(10)
-    doc.setFont('helvetica', 'italic')
+    setF('italic')
     doc.setTextColor(...colors.textDark)
     doc.text(t.welcomeSignature, margin, yPos)
     yPos += 5
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.text(t.welcomeTeam, margin, yPos)
     
     // Page number footer
@@ -1146,11 +1206,11 @@ export const generateCatalog = async () => {
     
     doc.setTextColor(...colors.textLight)
     doc.setFontSize(24)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.text(t.whyChooseTitle, pageWidth / 2, 23, { align: 'center' })
     
     doc.setFontSize(10)
-    doc.setFont('helvetica', 'italic')
+    setF('italic')
     doc.setTextColor(...colors.secondaryAccent)
     doc.text(t.whyChooseSubtitle, pageWidth / 2, 35, { align: 'center' })
     
@@ -1168,14 +1228,14 @@ export const generateCatalog = async () => {
     allReasons.forEach((reason, index) => {
       // Reason title with number - more compact
       doc.setFontSize(11)
-      doc.setFont('helvetica', 'bold')
+      setF('bold')
       doc.setTextColor(...colors.goldAccent)
       doc.text(reason.title, margin, yPos)
       yPos += 6
       
       // Reason description - smaller font and spacing
       doc.setFontSize(9)
-      doc.setFont('helvetica', 'normal')
+      setF('normal')
       doc.setTextColor(...colors.textDark)
       const descLines = doc.splitTextToSize(reason.desc, pageWidth - (margin * 2))
       doc.text(descLines, margin, yPos)
@@ -1209,11 +1269,11 @@ export const generateCatalog = async () => {
     
     doc.setTextColor(...colors.textLight)
     doc.setFontSize(24)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.text(t.materialTitle, pageWidth / 2, 22, { align: 'center' })
     
     doc.setFontSize(10)
-    doc.setFont('helvetica', 'italic')
+    setF('italic')
     doc.setTextColor(...colors.secondaryAccent)
     doc.text(t.materialSubtitle, pageWidth / 2, 34, { align: 'center' })
     
@@ -1240,20 +1300,20 @@ export const generateCatalog = async () => {
       doc.setFillColor(...colors.goldAccent)
       doc.circle(margin + 5, yPos - 2, 5, 'F')
       doc.setFontSize(10)
-      doc.setFont('helvetica', 'bold')
+      setF('bold')
       doc.setTextColor(...colors.primaryDark)
       doc.text(`${index + 1}`, margin + 5, yPos, { align: 'center' })
       
       // Material title
       doc.setFontSize(12)
-      doc.setFont('helvetica', 'bold')
+      setF('bold')
       doc.setTextColor(...colors.goldAccent)
       doc.text(material.title, margin + 13, yPos)
       yPos += 8
       
       // Material description
       doc.setFontSize(9.5)
-      doc.setFont('helvetica', 'normal')
+      setF('normal')
       doc.setTextColor(...colors.textDark)
       const descLines = doc.splitTextToSize(material.desc, pageWidth - (margin * 2))
       doc.text(descLines, margin, yPos)
@@ -1305,17 +1365,17 @@ export const generateCatalog = async () => {
       doc.setFillColor(...colors.goldAccent)
       doc.circle(30, 25, 8, 'F')
       doc.setFontSize(12)
-      doc.setFont('helvetica', 'bold')
+      setF('bold')
       doc.setTextColor(...colors.primaryDark)
       doc.text(`${categoryIndex}`, 30, 27, { align: 'center' })
       
       doc.setTextColor(...colors.textLight)
       doc.setFontSize(24)
-      doc.setFont('helvetica', 'bold')
+      setF('bold')
       doc.text(category, 45, 28)
       
       doc.setFontSize(9)
-      doc.setFont('helvetica', 'normal')
+      setF('normal')
       doc.setTextColor(...colors.secondaryAccent)
       doc.text(`${products.length} ${lang === 'id' ? 'produk tersedia' : 'products available'}`, 45, 38)
       
@@ -1349,7 +1409,7 @@ export const generateCatalog = async () => {
           
           // Product name - clickable
           doc.setFontSize(10)
-          doc.setFont('helvetica', 'bold')
+          setF('bold')
           doc.setTextColor(...colors.textDark)
           
           const productName = product.name.length > 28 ? product.name.substring(0, 25) + '...' : product.name
@@ -1363,21 +1423,21 @@ export const generateCatalog = async () => {
           }
           
           // Price with proper currency
-          const formattedPrice = formatPrice(product.price, t.currency as 'IDR' | 'USD', lang)
+          const formattedPrice = formatPrice(product.price, t.currency as 'IDR' | 'USD')
           doc.setFontSize(13)
-          doc.setFont('helvetica', 'bold')
+          setF('bold')
           doc.setTextColor(...colors.goldAccent)
           doc.text(formattedPrice, xPos + 2, yPos + imgHeight + 22)
           
           // "View online" link
           doc.setFontSize(7)
-          doc.setFont('helvetica', 'normal')
+          setF('normal')
           doc.setTextColor(...colors.primaryAccent)
           doc.textWithLink(lang === 'id' ? 'Lihat online →' : 'View online →', xPos + 2, yPos + imgHeight + 28, { url: productUrl })
           
           // Categories tags
           doc.setFontSize(8)
-          doc.setFont('helvetica', 'normal')
+          setF('normal')
           doc.setTextColor(...colors.textMuted)
           const cats = product.categories.slice(0, 2).join(' • ')
           const catsText = cats.length > 30 ? cats.substring(0, 27) + '...' : cats
@@ -1410,7 +1470,7 @@ export const generateCatalog = async () => {
               doc.rect(0, 0, pageWidth, 35, 'F')
               doc.setTextColor(...colors.textLight)
               doc.setFontSize(18)
-              doc.setFont('helvetica', 'bold')
+              setF('bold')
               doc.text(category + ' ' + t.continued, pageWidth / 2, 22, { align: 'center' })
               
               yPos = 50
@@ -1444,11 +1504,11 @@ export const generateCatalog = async () => {
     
     doc.setTextColor(...colors.textLight)
     doc.setFontSize(24)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.text(t.pricingTitle, pageWidth / 2, 22, { align: 'center' })
     
     doc.setFontSize(10)
-    doc.setFont('helvetica', 'italic')
+    setF('italic')
     doc.setTextColor(...colors.secondaryAccent)
     doc.text(t.pricingSubtitle, pageWidth / 2, 34, { align: 'center' })
     
@@ -1465,7 +1525,7 @@ export const generateCatalog = async () => {
     
     pricingNotes.forEach((note) => {
       doc.setFontSize(9.5)
-      doc.setFont('helvetica', 'normal')
+      setF('normal')
       doc.setTextColor(...colors.textDark)
       const noteLines = doc.splitTextToSize(note, pageWidth - (margin * 2))
       doc.text(noteLines, margin, yPos)
@@ -1500,7 +1560,7 @@ export const generateCatalog = async () => {
     
     doc.setTextColor(...colors.textLight)
     doc.setFontSize(32)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.text(t.contactTitle, pageWidth / 2, 55, { align: 'center' })
     
     // Decorative separator
@@ -1509,7 +1569,7 @@ export const generateCatalog = async () => {
     doc.line(pageWidth / 2 - 35, 63, pageWidth / 2 + 35, 63)
     
     doc.setFontSize(11)
-    doc.setFont('helvetica', 'italic')
+    setF('italic')
     doc.setTextColor(...colors.secondaryAccent)
     doc.text(t.contactSubtitle, pageWidth / 2, 73, { align: 'center' })
     
@@ -1517,13 +1577,13 @@ export const generateCatalog = async () => {
     
     // WhatsApp
     doc.setFontSize(13)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.setTextColor(...colors.goldAccent)
     doc.text(t.whatsappTitle, pageWidth / 2, yPos, { align: 'center' })
     yPos += 10
     
     doc.setFontSize(16)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.setTextColor(...colors.textLight)
     doc.textWithLink(t.whatsappNumber, pageWidth / 2, yPos, { 
       align: 'center',
@@ -1532,7 +1592,7 @@ export const generateCatalog = async () => {
     yPos += 8
     
     doc.setFontSize(9)
-    doc.setFont('helvetica', 'normal')
+    setF('normal')
     doc.setTextColor(...colors.secondaryAccent)
     doc.text(t.whatsappHours, pageWidth / 2, yPos, { align: 'center' })
     yPos += 5
@@ -1541,13 +1601,13 @@ export const generateCatalog = async () => {
     
     // Email
     doc.setFontSize(13)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.setTextColor(...colors.goldAccent)
     doc.text(t.emailTitle, pageWidth / 2, yPos, { align: 'center' })
     yPos += 10
     
     doc.setFontSize(13)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.setTextColor(...colors.textLight)
     doc.textWithLink(t.emailGeneral, pageWidth / 2, yPos, { 
       align: 'center',
@@ -1561,20 +1621,20 @@ export const generateCatalog = async () => {
     yPos += 8
     
     doc.setFontSize(9)
-    doc.setFont('helvetica', 'normal')
+    setF('normal')
     doc.setTextColor(...colors.secondaryAccent)
     doc.text(t.emailNote, pageWidth / 2, yPos, { align: 'center' })
     yPos += 15
     
     // Address - clickable
     doc.setFontSize(13)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.setTextColor(...colors.goldAccent)
     doc.text(t.addressTitle, pageWidth / 2, yPos, { align: 'center' })
     yPos += 10
     
     doc.setFontSize(11)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.setTextColor(...colors.textLight)
     doc.textWithLink(t.addressFull1, pageWidth / 2, yPos, { 
       align: 'center',
@@ -1582,7 +1642,7 @@ export const generateCatalog = async () => {
     })
     yPos += 6
     
-    doc.setFont('helvetica', 'normal')
+    setF('normal')
     doc.textWithLink(t.addressFull2, pageWidth / 2, yPos, { 
       align: 'center',
       url: 'https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9'
@@ -1600,14 +1660,14 @@ export const generateCatalog = async () => {
     yPos += 8
     
     doc.setFontSize(9)
-    doc.setFont('helvetica', 'italic')
+    setF('italic')
     doc.setTextColor(...colors.secondaryAccent)
     doc.text(t.addressNote, pageWidth / 2, yPos, { align: 'center' })
     yPos += 15
     
     // Website
     doc.setFontSize(15)
-    doc.setFont('helvetica', 'bold')
+    setF('bold')
     doc.setTextColor(...colors.goldAccent)
     doc.textWithLink(t.website, pageWidth / 2, yPos, { 
       align: 'center',
@@ -1623,7 +1683,7 @@ export const generateCatalog = async () => {
     
     // Workshop info
     doc.setFontSize(9)
-    doc.setFont('helvetica', 'normal')
+    setF('normal')
     doc.setTextColor(...colors.textLight)
     doc.text(t.workshopSize, pageWidth / 2, yPos, { align: 'center' })
     yPos += 5

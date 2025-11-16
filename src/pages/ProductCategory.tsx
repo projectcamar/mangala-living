@@ -10,7 +10,7 @@ import CategoryAIContent from '../components/CategoryAIContent'
 import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORY_MAP } from '../data/categories'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
-import { convertIDRToUSD } from '../utils/currencyConverter'
+import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { getProductName } from '../data/productDescriptions'
 import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
 import { translateCategories } from '../utils/categoryTranslations'
@@ -368,6 +368,19 @@ const ProductCategory: React.FC = () => {
   
   const [language, setLanguage] = useState<LanguageCode>(getInitialLanguage)
   const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
+  const [highlightedPrices, setHighlightedPrices] = useState<{ [key: number]: string }>({})
+
+  // Language to currency mapping
+  const LANGUAGE_CURRENCY_MAP: { [key in LanguageCode]: 'KRW' | 'JPY' | 'CNY' | 'SAR' | 'EUR' | 'USD' | null } = {
+    'ko': 'KRW',
+    'ja': 'JPY',
+    'zh': 'CNY',
+    'ar': 'SAR',
+    'es': 'EUR',
+    'fr': 'EUR',
+    'en': 'USD',
+    'id': 'USD'
+  }
 
   const categoryName = CATEGORY_MAP[category || ''] || 'Products'
   const localizedCategoryName = getLocalizedCategoryName(categoryName, language)
@@ -389,18 +402,34 @@ const ProductCategory: React.FC = () => {
     window.scrollTo(0, 0)
   }, [category])
 
-  // Convert prices to USD
+  // Convert prices to USD and highlighted currency based on language
   useEffect(() => {
     const convertPrices = async () => {
-      const prices: { [key: number]: string } = {}
+      const usdPriceMap: { [key: number]: string } = {}
+      const highlightedPriceMap: { [key: number]: string } = {}
+      
+      const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
+      
       for (const product of ALL_PRODUCTS) {
+        // Always convert to USD (non-highlighted)
         const usdPrice = await convertIDRToUSD(product.price)
-        prices[product.id] = usdPrice
+        usdPriceMap[product.id] = usdPrice
+        
+        // Convert to highlighted currency based on language
+        if (targetCurrency && targetCurrency !== 'USD') {
+          const highlightedPrice = await convertIDRToCurrency(product.price, targetCurrency)
+          highlightedPriceMap[product.id] = highlightedPrice
+        } else {
+          // For USD (en/id), use USD as highlighted
+          highlightedPriceMap[product.id] = usdPrice
+        }
       }
-      setUsdPrices(prices)
+      
+      setUsdPrices(usdPriceMap)
+      setHighlightedPrices(highlightedPriceMap)
     }
     convertPrices()
-  }, [])
+  }, [language])
 
   const filteredProducts = useMemo(() => {
     let products = ALL_PRODUCTS.filter(product => 
@@ -613,8 +642,9 @@ const ProductCategory: React.FC = () => {
                   <div className="category-product-info">
                     <h3 className="category-product-name">{translatedName}</h3>
                   <p className="category-product-cats">{translateCategories(product.categories, language)}</p>
-                  {usdPrices[product.id] ? (
+                  {usdPrices[product.id] && highlightedPrices[product.id] ? (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                      {/* Highlighted currency based on language */}
                       <p
                         className="category-product-price"
                         style={{
@@ -624,8 +654,9 @@ const ProductCategory: React.FC = () => {
                           color: '#333'
                         }}
                       >
-                        {isIndonesian ? product.price : usdPrices[product.id]}
+                        {highlightedPrices[product.id]}
                       </p>
+                      {/* USD always non-highlighted */}
                       <p
                         style={{
                           margin: 0,
@@ -634,7 +665,7 @@ const ProductCategory: React.FC = () => {
                           color: '#999'
                         }}
                       >
-                        {isIndonesian ? usdPrices[product.id] : product.price}
+                        {usdPrices[product.id]}
                       </p>
                     </div>
                   ) : (

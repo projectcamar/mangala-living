@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import type { Product } from '../data/products'
-import { convertIDRToUSD } from '../utils/currencyConverter'
+import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { generateImageObjectSchema } from '../utils/structuredData'
+import { getProductName } from '../data/productDescriptions'
+import type { LanguageCode } from '../utils/languageManager'
 import './BlogProductShowcase.css'
 import './DualLanguage.css'
 
@@ -12,6 +14,7 @@ interface BlogProductShowcaseProps {
   heading?: string
   description?: string
   isIndonesian?: boolean
+  language?: LanguageCode
 }
 
 /**
@@ -23,21 +26,51 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
   products,
   heading = 'Produk Industrial Terkait',
   description,
-  isIndonesian = true
+  isIndonesian = true,
+  language = 'id'
 }) => {
   const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
+  const [highlightedPrices, setHighlightedPrices] = useState<{ [key: number]: string }>({})
+
+  // Language to currency mapping
+  const LANGUAGE_CURRENCY_MAP: { [key: string]: 'KRW' | 'JPY' | 'CNY' | 'SAR' | 'EUR' | 'USD' | null } = {
+    'ko': 'KRW',
+    'ja': 'JPY',
+    'zh': 'CNY',
+    'ar': 'SAR',
+    'es': 'EUR',
+    'fr': 'EUR',
+    'en': 'USD',
+    'id': 'USD'
+  }
 
   useEffect(() => {
     const convertPrices = async () => {
-      const prices: { [key: number]: string } = {}
+      const usdPriceMap: { [key: number]: string } = {}
+      const highlightedPriceMap: { [key: number]: string } = {}
+      
+      const targetCurrency = LANGUAGE_CURRENCY_MAP[language] || 'USD'
+      
       for (const product of products) {
+        // Always convert to USD (non-highlighted)
         const usdPrice = await convertIDRToUSD(product.price)
-        prices[product.id] = usdPrice
+        usdPriceMap[product.id] = usdPrice
+        
+        // Convert to highlighted currency based on language
+        if (targetCurrency && targetCurrency !== 'USD') {
+          const highlightedPrice = await convertIDRToCurrency(product.price, targetCurrency)
+          highlightedPriceMap[product.id] = highlightedPrice
+        } else {
+          // For USD (en/id), use USD as highlighted
+          highlightedPriceMap[product.id] = usdPrice
+        }
       }
-      setUsdPrices(prices)
+      
+      setUsdPrices(usdPriceMap)
+      setHighlightedPrices(highlightedPriceMap)
     }
     convertPrices()
-  }, [products])
+  }, [products, language])
 
   if (!products || products.length === 0) {
     return null

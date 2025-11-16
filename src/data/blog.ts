@@ -2630,6 +2630,106 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
     date: '2025-11-06',
     author: 'Helmi Ramdan'
+  },
+  {
+    id: 258,
+    slug: 'manufacturer-furniture-custom-order-indonesia-arabic',
+    title: 'مصنع الأثاث المعدني المخصص - طلبات حسب الطلب من إندونيسيا',
+    category: 'Export & International',
+    excerpt: 'مصنع إندونيسي متخصص في الأثاث المعدني الصناعي المخصص. نقدم خدمات التصميم حسب الطلب، التصنيع الداخلي، والتصدير العالمي. جودة التصدير مع ضمان الجودة في كل خطوة.',
+    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop',
+    date: '2025-11-07',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 259,
+    slug: 'industrial-furniture-exporter-china-manufacturer',
+    title: '印尼工业家具出口商 - 定制制造商直销',
+    category: 'Export & International',
+    excerpt: '印尼领先的工业家具制造商和出口商。我们提供定制设计、内部生产控制和全球出口服务。25年经验，1000+项目完成，工厂直供价格，专业品质保证。',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-11-07',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 260,
+    slug: 'patio-furniture-manufacturer-japan-export',
+    title: 'パティオ家具メーカー - インドネシアからの輸出',
+    category: 'Export & International',
+    excerpt: 'インドネシアのパティオ家具専門メーカー。カスタムオーダー、屋内生産、国際輸出に対応。屋外対応の高品質パウダーコーティング仕上げで、長期的な耐久性を保証。25年の経験と1000以上のプロジェクト実績。',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-07',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 261,
+    slug: 'rack-furniture-in-house-production-spain',
+    title: 'Fabricante de Muebles de Estantería - Producción Interna en Indonesia',
+    category: 'Export & International',
+    excerpt: 'Fabricante indonesio especializado en estanterías y racks industriales. Producción interna completa desde diseño hasta acabado. Pedidos personalizados, exportación internacional y precios de fábrica directa. Calidad de exportación garantizada.',
+    image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&auto=format&fit=crop',
+    date: '2025-11-07',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 262,
+    slug: 'custom-furniture-exporter-france-manufacturer',
+    title: 'Exportateur de Mobilier Sur Mesure - Fabricant Indonésien',
+    category: 'Export & International',
+    excerpt: 'Fabricant et exportateur indonésien de mobilier industriel sur mesure. Production interne complète, commandes personnalisées, et exportation mondiale. 25 ans d\'expérience, plus de 1000 projets réalisés. Qualité export garantie avec prix direct usine.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-11-07',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 263,
+    slug: 'industrial-rack-manufacturer-korea-export',
+    title: '산업용 랙 제조업체 - 인도네시아 수출 전문',
+    category: 'Export & International',
+    excerpt: '인도네시아의 산업용 랙 및 디스플레이 선반 전문 제조업체. 맞춤 주문, 내부 생산, 국제 수출 서비스 제공. 25년 경험, 1000개 이상 프로젝트 완료. 공장 직접 가격과 수출 품질 보장.',
+    image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&auto=format&fit=crop',
+    date: '2025-11-07',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 264,
+    slug: 'patio-furniture-exporter-arabic-custom',
+    title: 'مصدر أثاث الباحات - طلبات مخصصة من إندونيسيا',
+    category: 'Export & International',
+    excerpt: 'مصدر إندونيسي متخصص في أثاث الباحات والتراسات. نقدم تصميمات مخصصة، تصنيع داخلي كامل، وتصدير عالمي. أثاث مقاوم للطقس مع طلاء بودرة عالي الجودة. 25 عاماً من الخبرة وأكثر من 1000 مشروع مكتمل.',
+    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop',
+    date: '2025-11-07',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 265,
+    slug: 'in-house-custom-furniture-china-manufacturer',
+    title: '内部定制家具制造商 - 印尼一站式生产',
+    category: 'Export & International',
+    excerpt: '印尼内部定制家具制造商，提供从设计到生产的完整内部服务。无中间商，工厂直供价格。定制设计、内部生产控制、质量保证。25年经验，1000+项目，专业出口品质。',
+    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop',
+    date: '2025-11-07',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 266,
+    slug: 'display-rack-manufacturer-japan-export',
+    title: 'ディスプレイラックメーカー - インドネシア輸出専門',
+    category: 'Export & International',
+    excerpt: 'インドネシアのディスプレイラック・展示棚専門メーカー。小売店、ショールーム、商業スペース向けのカスタムデザイン。内部生産による品質管理、国際輸出対応。競争力のある価格と一貫した品質。',
+    image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&auto=format&fit=crop',
+    date: '2025-11-07',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 267,
+    slug: 'complete-furniture-solutions-exporter-spain',
+    title: 'Soluciones Completas de Mobiliario - Exportador de Indonesia',
+    category: 'Export & International',
+    excerpt: 'Exportador indonesio de soluciones completas de mobiliario industrial. Desde diseño personalizado hasta producción interna y exportación internacional. Fabricamos todo: muebles de interior, patio, estanterías, y más. Un solo proveedor para todas sus necesidades de mobiliario comercial.',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-11-07',
+    author: 'Helmi Ramdan'
   }
 ]
 

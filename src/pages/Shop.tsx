@@ -12,7 +12,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import { CATEGORIES } from '../data/categories'
 import { generateMerchantStructuredData } from '../utils/structuredData'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
-import { convertIDRToUSD } from '../utils/currencyConverter'
+import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { getProductName } from '../data/productDescriptions'
 import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
 import { translateCategories } from '../utils/categoryTranslations'
@@ -31,7 +31,20 @@ const Shop: React.FC = () => {
   const [isIndonesian, setIsIndonesian] = useState(false)
   const [language, setLanguage] = useState<LanguageCode>('en')
   const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
+  const [highlightedPrices, setHighlightedPrices] = useState<{ [key: number]: string }>({})
   const location = useLocation()
+
+  // Language to currency mapping
+  const LANGUAGE_CURRENCY_MAP: { [key in LanguageCode]: 'KRW' | 'JPY' | 'CNY' | 'SAR' | 'EUR' | 'USD' | null } = {
+    'ko': 'KRW',
+    'ja': 'JPY',
+    'zh': 'CNY',
+    'ar': 'SAR',
+    'es': 'EUR',
+    'fr': 'EUR',
+    'en': 'USD', // English uses USD as highlighted
+    'id': 'USD'  // Indonesian uses USD as highlighted (IDR not used as reference)
+  }
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -46,15 +59,31 @@ const Shop: React.FC = () => {
 
   useEffect(() => {
     const convertPrices = async () => {
-      const prices: { [key: number]: string } = {}
+      const usdPriceMap: { [key: number]: string } = {}
+      const highlightedPriceMap: { [key: number]: string } = {}
+      
+      const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
+      
       for (const product of ALL_PRODUCTS) {
+        // Always convert to USD (non-highlighted)
         const usdPrice = await convertIDRToUSD(product.price)
-        prices[product.id] = usdPrice
+        usdPriceMap[product.id] = usdPrice
+        
+        // Convert to highlighted currency based on language
+        if (targetCurrency && targetCurrency !== 'USD') {
+          const highlightedPrice = await convertIDRToCurrency(product.price, targetCurrency)
+          highlightedPriceMap[product.id] = highlightedPrice
+        } else {
+          // For USD (en/id), use USD as highlighted
+          highlightedPriceMap[product.id] = usdPrice
+        }
       }
-      setUsdPrices(prices)
+      
+      setUsdPrices(usdPriceMap)
+      setHighlightedPrices(highlightedPriceMap)
     }
     convertPrices()
-  }, [])
+  }, [language])
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategories(prev =>
@@ -155,9 +184,167 @@ const Shop: React.FC = () => {
     return range
   }
 
+  // Translations for Shop page
+  const shopTranslations = {
+    id: {
+      home: 'Beranda',
+      shop: 'Toko',
+      allProduct: 'Semua Produk',
+      categories: 'Kategori',
+      price: 'Harga',
+      clearAll: 'Hapus Semua',
+      filters: 'Filter',
+      sortBy: 'Urutkan',
+      default: 'Default',
+      priceLow: 'Harga: Rendah ke Tinggi',
+      priceHigh: 'Harga: Tinggi ke Rendah',
+      showing: 'Menampilkan',
+      of: 'dari',
+      results: 'hasil',
+      prev: 'Sebelumnya',
+      next: 'Selanjutnya',
+      page: 'Halaman'
+    },
+    en: {
+      home: 'Home',
+      shop: 'Shop',
+      allProduct: 'All Product',
+      categories: 'Categories',
+      price: 'Price',
+      clearAll: 'Clear All',
+      filters: 'Filters',
+      sortBy: 'Sort by',
+      default: 'Default',
+      priceLow: 'Price: Low to High',
+      priceHigh: 'Price: High to Low',
+      showing: 'Showing',
+      of: 'of',
+      results: 'results',
+      prev: 'Prev',
+      next: 'Next',
+      page: 'Page'
+    },
+    ar: {
+      home: 'الرئيسية',
+      shop: 'المتجر',
+      allProduct: 'جميع المنتجات',
+      categories: 'الفئات',
+      price: 'السعر',
+      clearAll: 'مسح الكل',
+      filters: 'المرشحات',
+      sortBy: 'ترتيب حسب',
+      default: 'افتراضي',
+      priceLow: 'السعر: من الأقل إلى الأعلى',
+      priceHigh: 'السعر: من الأعلى إلى الأقل',
+      showing: 'عرض',
+      of: 'من',
+      results: 'نتيجة',
+      prev: 'السابق',
+      next: 'التالي',
+      page: 'صفحة'
+    },
+    zh: {
+      home: '首页',
+      shop: '商店',
+      allProduct: '所有产品',
+      categories: '类别',
+      price: '价格',
+      clearAll: '清除全部',
+      filters: '筛选',
+      sortBy: '排序',
+      default: '默认',
+      priceLow: '价格：从低到高',
+      priceHigh: '价格：从高到低',
+      showing: '显示',
+      of: '共',
+      results: '个结果',
+      prev: '上一页',
+      next: '下一页',
+      page: '页'
+    },
+    ja: {
+      home: 'ホーム',
+      shop: 'ショップ',
+      allProduct: 'すべての商品',
+      categories: 'カテゴリー',
+      price: '価格',
+      clearAll: 'すべてクリア',
+      filters: 'フィルター',
+      sortBy: '並び替え',
+      default: 'デフォルト',
+      priceLow: '価格：安い順',
+      priceHigh: '価格：高い順',
+      showing: '表示中',
+      of: '/',
+      results: '件',
+      prev: '前へ',
+      next: '次へ',
+      page: 'ページ'
+    },
+    es: {
+      home: 'Inicio',
+      shop: 'Tienda',
+      allProduct: 'Todos los Productos',
+      categories: 'Categorías',
+      price: 'Precio',
+      clearAll: 'Limpiar Todo',
+      filters: 'Filtros',
+      sortBy: 'Ordenar por',
+      default: 'Predeterminado',
+      priceLow: 'Precio: Menor a Mayor',
+      priceHigh: 'Precio: Mayor a Menor',
+      showing: 'Mostrando',
+      of: 'de',
+      results: 'resultados',
+      prev: 'Anterior',
+      next: 'Siguiente',
+      page: 'Página'
+    },
+    fr: {
+      home: 'Accueil',
+      shop: 'Boutique',
+      allProduct: 'Tous les Produits',
+      categories: 'Catégories',
+      price: 'Prix',
+      clearAll: 'Tout Effacer',
+      filters: 'Filtres',
+      sortBy: 'Trier par',
+      default: 'Par Défaut',
+      priceLow: 'Prix: Croissant',
+      priceHigh: 'Prix: Décroissant',
+      showing: 'Affichage',
+      of: 'sur',
+      results: 'résultats',
+      prev: 'Précédent',
+      next: 'Suivant',
+      page: 'Page'
+    },
+    ko: {
+      home: '홈',
+      shop: '쇼핑',
+      allProduct: '모든 제품',
+      categories: '카테고리',
+      price: '가격',
+      clearAll: '모두 지우기',
+      filters: '필터',
+      sortBy: '정렬',
+      default: '기본',
+      priceLow: '가격: 낮은순',
+      priceHigh: '가격: 높은순',
+      showing: '표시 중',
+      of: '/',
+      results: '개',
+      prev: '이전',
+      next: '다음',
+      page: '페이지'
+    }
+  }
+
+  const t = shopTranslations[language] || shopTranslations.en
+
   const breadcrumbItems = [
-    { label: 'Home', path: '/' },
-    { label: 'Shop', path: '/shop' }
+    { label: t.home, path: '/' },
+    { label: t.shop, path: '/shop' }
   ]
 
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
@@ -297,14 +484,14 @@ const Shop: React.FC = () => {
         </script>
       </Helmet>
       
-      <Header isIndonesian={isIndonesian} />
-      <CurrencyHighlight isIndonesian={isIndonesian} />
+      <Header isIndonesian={isIndonesian} language={language} />
+      <CurrencyHighlight isIndonesian={isIndonesian} language={language} />
       
       <main className="category-main">
         <div className="container">
           <Breadcrumb items={breadcrumbItems} />
           
-          <h1 className="category-page-title">All Product</h1>
+          <h1 className="category-page-title">{t.allProduct}</h1>
           
           {/* Mobile Filter Toggle */}
           <div className="mobile-filter-toggle">
@@ -312,7 +499,7 @@ const Shop: React.FC = () => {
               className="filter-toggle-btn"
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             >
-              <span>Filters</span>
+              <span>{t.filters}</span>
               <ChevronDown size={16} />
             </button>
           </div>
@@ -321,7 +508,7 @@ const Shop: React.FC = () => {
             {/* Sidebar */}
             <aside className={`shop-sidebar ${isSidebarOpen ? 'sidebar-open' : ''}`}>
               <div className="filter-section">
-                <h3 className="filter-title">Categories</h3>
+                <h3 className="filter-title">{t.categories}</h3>
                 <div className="filter-options">
                   {CATEGORIES.map(category => (
                     <label key={category} className="filter-checkbox">
@@ -330,14 +517,14 @@ const Shop: React.FC = () => {
                         checked={selectedCategories.includes(category)}
                         onChange={() => handleCategoryChange(category)}
                       />
-                      <span>{category}</span>
+                      <span>{translateCategories([category], language)}</span>
                     </label>
                   ))}
                 </div>
               </div>
 
               <div className="filter-section">
-                <h3 className="filter-title">Price</h3>
+                <h3 className="filter-title">{t.price}</h3>
                 <div className="price-range">
                   <div className="dual-range-slider">
                     <input
@@ -367,7 +554,7 @@ const Shop: React.FC = () => {
               </div>
 
               <button className="clear-filters-btn" onClick={clearFilters}>
-                Clear All
+                {t.clearAll}
               </button>
             </aside>
 
@@ -375,7 +562,7 @@ const Shop: React.FC = () => {
             <div className="shop-content">
               <div className="category-controls">
                 <p className="showing-results">
-                  Showing {startIndex + 1}-{Math.min(endIndex, filteredAndSortedProducts.length)} of {filteredAndSortedProducts.length} results
+                  {t.showing} {startIndex + 1}-{Math.min(endIndex, filteredAndSortedProducts.length)} {t.of} {filteredAndSortedProducts.length} {t.results}
                 </p>
                 
                 <div className="sort-dropdown">
@@ -383,15 +570,15 @@ const Shop: React.FC = () => {
                     className="sort-button"
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                   >
-                    Sort by: {sortBy === 'default' ? 'Default' : sortBy === 'price-low' ? 'Price: Low to High' : 'Price: High to Low'}
+                    {t.sortBy}: {sortBy === 'default' ? t.default : sortBy === 'price-low' ? t.priceLow : t.priceHigh}
                     <ChevronDown size={16} />
                   </button>
                   
                   {isDropdownOpen && (
                     <div className="sort-options">
-                      <button onClick={() => { setSortBy('default'); setIsDropdownOpen(false); }}>Default</button>
-                      <button onClick={() => { setSortBy('price-low'); setIsDropdownOpen(false); }}>Price: Low to High</button>
-                      <button onClick={() => { setSortBy('price-high'); setIsDropdownOpen(false); }}>Price: High to Low</button>
+                      <button onClick={() => { setSortBy('default'); setIsDropdownOpen(false); }}>{t.default}</button>
+                      <button onClick={() => { setSortBy('price-low'); setIsDropdownOpen(false); }}>{t.priceLow}</button>
+                      <button onClick={() => { setSortBy('price-high'); setIsDropdownOpen(false); }}>{t.priceHigh}</button>
                     </div>
                   )}
                 </div>
@@ -399,7 +586,7 @@ const Shop: React.FC = () => {
               
               <div className="category-products-grid">
                 {currentProducts.map((product) => {
-                  const translatedName = getProductName(product.slug, isIndonesian) || product.name
+                  const translatedName = getProductName(product.slug, isIndonesian, language) || product.name
                   return (
                     <Link 
                       key={product.id}
@@ -424,8 +611,9 @@ const Shop: React.FC = () => {
                       <div className="category-product-info">
                         <h3 className="category-product-name">{translatedName}</h3>
                       <p className="category-product-cats">{translateCategories(product.categories, language)}</p>
-                      {usdPrices[product.id] ? (
+                      {usdPrices[product.id] && highlightedPrices[product.id] ? (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                          {/* Highlighted currency based on language */}
                           <p
                             className="category-product-price"
                             style={{
@@ -435,8 +623,9 @@ const Shop: React.FC = () => {
                               color: '#333'
                             }}
                           >
-                            {isIndonesian ? product.price : usdPrices[product.id]}
+                            {highlightedPrices[product.id]}
                           </p>
+                          {/* USD always non-highlighted */}
                           <p
                             style={{
                               margin: 0,
@@ -445,7 +634,7 @@ const Shop: React.FC = () => {
                               color: '#999'
                             }}
                           >
-                            {isIndonesian ? usdPrices[product.id] : product.price}
+                            {usdPrices[product.id]}
                           </p>
                         </div>
                       ) : (
@@ -465,7 +654,7 @@ const Shop: React.FC = () => {
                     onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
                     disabled={currentPage === 1}
                   >
-                    Prev
+                    {t.prev}
                   </button>
 
                   {getPaginationRange().map((page, index) => (
@@ -477,7 +666,7 @@ const Shop: React.FC = () => {
                         className={`pagination-btn pagination-number ${currentPage === page ? 'active' : ''}`}
                         onClick={() => setCurrentPage(page as number)}
                       >
-                        Page {page}
+                        {t.page} {page}
                       </button>
                     )
                   ))}
@@ -487,7 +676,7 @@ const Shop: React.FC = () => {
                     onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
                     disabled={currentPage === totalPages}
                   >
-                    Next
+                    {t.next}
                   </button>
                 </div>
               )}
@@ -503,7 +692,7 @@ const Shop: React.FC = () => {
         </div>
       </main>
       
-      <Footer isIndonesian={isIndonesian} />
+      <Footer isIndonesian={isIndonesian} language={language} />
     </div>
   )
 }

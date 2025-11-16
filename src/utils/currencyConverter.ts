@@ -26,6 +26,7 @@ export const isEnglishSpeakingCountry = (countryCode: string | undefined | null)
  * Current approximate rate: ~15,000 IDR = 1 USD
  */
 let cachedExchangeRate: number | null = null
+let cachedRates: { [key: string]: number } | null = null
 
 export const getExchangeRate = async (): Promise<number> => {
   if (cachedExchangeRate !== null) {
@@ -49,6 +50,89 @@ export const getExchangeRate = async (): Promise<number> => {
   const defaultRate = 15000
   cachedExchangeRate = defaultRate
   return defaultRate
+}
+
+/**
+ * Get exchange rates for all currencies
+ */
+export const getAllExchangeRates = async (): Promise<{ [key: string]: number }> => {
+  if (cachedRates !== null) {
+    return cachedRates
+  }
+
+  try {
+    const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD')
+    const data = await response.json()
+    if (data.rates) {
+      cachedRates = {
+        IDR: data.rates.IDR || 15000,
+        SAR: data.rates.SAR || 3.75,
+        CNY: data.rates.CNY || 7.2,
+        JPY: data.rates.JPY || 150,
+        EUR: data.rates.EUR || 0.92,
+        KRW: data.rates.KRW || 1300
+      }
+      return cachedRates
+    }
+  } catch (error) {
+    console.log('Failed to fetch exchange rates, using defaults')
+  }
+
+  // Fallback to default rates
+  cachedRates = {
+    IDR: 15000,
+    SAR: 3.75,
+    CNY: 7.2,
+    JPY: 150,
+    EUR: 0.92,
+    KRW: 1300
+  }
+  return cachedRates
+}
+
+/**
+ * Convert IDR to target currency
+ */
+export const convertIDRToCurrency = async (idrPrice: string, targetCurrency: 'USD' | 'SAR' | 'CNY' | 'JPY' | 'EUR' | 'KRW'): Promise<string> => {
+  const numericValue = parseFloat(
+    idrPrice
+      .replace(/[^\d.,]/g, '')
+      .replace(/\./g, '')
+      .replace(',', '.')
+  )
+
+  if (isNaN(numericValue) || numericValue === 0) {
+    return 'N/A'
+  }
+
+  const rates = await getAllExchangeRates()
+  const usdPrice = numericValue / rates.IDR
+  const targetPrice = targetCurrency === 'USD' ? usdPrice : usdPrice * rates[targetCurrency]
+
+  const currencyCodes: { [key: string]: string } = {
+    USD: 'USD',
+    SAR: 'SAR',
+    CNY: 'CNY',
+    JPY: 'JPY',
+    EUR: 'EUR',
+    KRW: 'KRW'
+  }
+
+  const locales: { [key: string]: string } = {
+    USD: 'en-US',
+    SAR: 'ar-SA',
+    CNY: 'zh-CN',
+    JPY: 'ja-JP',
+    EUR: 'de-DE',
+    KRW: 'ko-KR'
+  }
+
+  return new Intl.NumberFormat(locales[targetCurrency] || 'en-US', {
+    style: 'currency',
+    currency: currencyCodes[targetCurrency],
+    minimumFractionDigits: 0,
+    maximumFractionDigits: targetCurrency === 'JPY' || targetCurrency === 'KRW' ? 0 : 2
+  }).format(targetPrice)
 }
 
 /**

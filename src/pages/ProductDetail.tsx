@@ -12,7 +12,7 @@ import { getProductDescription, getProductImageAlt, getProductImageCaption, getP
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
 import { DEFAULT_IMAGE_RIGHTS_METADATA } from '../utils/structuredData'
 import { sendBackgroundEmail } from '../utils/emailHelpers'
-import { convertIDRToUSD } from '../utils/currencyConverter'
+import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { getCategorySlug } from '../utils/categoryHelpers'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
@@ -705,7 +705,20 @@ const ProductDetail: React.FC = () => {
   const [language, setLanguage] = useState<LanguageCode>('id')
   const [isLoading, setIsLoading] = useState(true)
   const [usdPrice, setUsdPrice] = useState<string | null>(null)
+  const [highlightedPrice, setHighlightedPrice] = useState<string | null>(null)
   const [isImageModalOpen, setIsImageModalOpen] = useState(false)
+
+  // Language to currency mapping
+  const LANGUAGE_CURRENCY_MAP: { [key in LanguageCode]: 'KRW' | 'JPY' | 'CNY' | 'SAR' | 'EUR' | 'USD' | null } = {
+    'ko': 'KRW',
+    'ja': 'JPY',
+    'zh': 'CNY',
+    'ar': 'SAR',
+    'es': 'EUR',
+    'fr': 'EUR',
+    'en': 'USD', // English uses USD as highlighted
+    'id': 'USD'  // Indonesian uses USD as highlighted (IDR not used as reference)
+  }
 
   const isIndonesian = language === 'id'
   const localeMeta = generateLanguageSpecificMeta(language)
@@ -718,16 +731,27 @@ const ProductDetail: React.FC = () => {
     setIsLoading(false)
   }, [location.pathname, location.search])
 
-  // Convert price to USD - always available for all users
+  // Convert price to USD and highlighted currency based on language
   useEffect(() => {
     const convertPrice = async () => {
       if (product) {
-        const converted = await convertIDRToUSD(product.price)
-        setUsdPrice(converted)
+        // Always convert to USD (non-highlighted)
+        const usdConverted = await convertIDRToUSD(product.price)
+        setUsdPrice(usdConverted)
+        
+        // Convert to highlighted currency based on language
+        const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
+        if (targetCurrency && targetCurrency !== 'USD') {
+          const highlightedConverted = await convertIDRToCurrency(product.price, targetCurrency)
+          setHighlightedPrice(highlightedConverted)
+        } else {
+          // For USD (en/id), use USD as highlighted
+          setHighlightedPrice(usdConverted)
+        }
       }
     }
     convertPrice()
-  }, [product])
+  }, [product, language])
 
   // Scroll to top when product changes
   useEffect(() => {
@@ -801,6 +825,55 @@ const ProductDetail: React.FC = () => {
   }
 
   const relatedProducts = getRelatedProducts(slug || '')
+
+  // Localized related products (name + prices aligned with language)
+  const [localizedRelated, setLocalizedRelated] = useState<Array<{
+    slug: string
+    image: string
+    name: string
+    category: string
+    pricePrimary: string
+    priceSecondary?: string | null
+  }>>([])
+
+  useEffect(() => {
+    const buildLocalizedRelated = async () => {
+      const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
+
+      const items = await Promise.all(relatedProducts.map(async (rp) => {
+        // Localized name from descriptions if available
+        const desc = getProductDescription(rp.slug)
+        const nameLocalized = desc ? (getProductName(rp.slug, language === 'id', language) || rp.name) : rp.name
+
+        // Currency conversion aligned with main product rules
+        const usdConverted = await convertIDRToUSD(rp.price)
+        let primary = usdConverted
+        let secondary: string | null = null
+
+        if (targetCurrency && targetCurrency !== 'USD') {
+          const highlightedConverted = await convertIDRToCurrency(rp.price, targetCurrency)
+          primary = highlightedConverted
+          secondary = usdConverted
+        } else {
+          // For en/id, USD is primary; keep IDR as secondary for extra context
+          secondary = rp.price
+        }
+
+        return {
+          slug: rp.slug,
+          image: rp.image,
+          name: nameLocalized,
+          category: rp.category,
+          pricePrimary: primary,
+          priceSecondary: secondary
+        }
+      }))
+
+      setLocalizedRelated(items)
+    }
+
+    buildLocalizedRelated()
+  }, [language, slug])
 
   // Get translated product name and description
   const productDesc = getProductDescription(product.slug)
@@ -1157,11 +1230,11 @@ const ProductDetail: React.FC = () => {
               <h1 className="product-detail-title">{translatedProductName}</h1>
               <p className="product-detail-categories">{product.categories.join(' & ')}</p>
               
-              {/* Price with dual display - primary price highlighted, secondary in gray */}
+              {/* Price with dual display - highlighted currency based on language, USD always non-highlighted */}
               <div className="product-price-wrapper">
-                {usdPrice ? (
+                {usdPrice && highlightedPrice ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                    {/* Primary price - highlighted based on language */}
+                    {/* Primary price - highlighted currency based on language */}
                     <p 
                       className="product-detail-price"
                       style={{ 
@@ -1171,9 +1244,9 @@ const ProductDetail: React.FC = () => {
                         color: '#333'
                       }}
                     >
-                      {isIndonesian ? product.price : usdPrice}
+                      {highlightedPrice}
                     </p>
-                    {/* Secondary price - gray, smaller */}
+                    {/* Secondary price - USD always non-highlighted */}
                     <p 
                       style={{ 
                         margin: 0,
@@ -1183,7 +1256,7 @@ const ProductDetail: React.FC = () => {
                         lineHeight: 1.2
                       }}
                     >
-                      {isIndonesian ? usdPrice : product.price}
+                      {usdPrice}
                     </p>
                   </div>
                 ) : (
@@ -1259,7 +1332,7 @@ const ProductDetail: React.FC = () => {
           <div className="related-products-section">
               <h2>{uiTranslations.youMightBeInterested}</h2>
             <div className="related-products-grid">
-              {relatedProducts.map((relatedProduct) => (
+              {localizedRelated.map((relatedProduct) => (
                 <Link
                   key={relatedProduct.slug}
                   to={`/product/${relatedProduct.slug}`}
@@ -1268,21 +1341,28 @@ const ProductDetail: React.FC = () => {
                   <div className="related-product-image">
                     <img 
                       src={relatedProduct.image} 
-                      alt={`${relatedProduct.name} - Related Industrial Furniture ${relatedProduct.category} Mangala Living`}
-                      title={`${relatedProduct.name} - Premium Industrial Furniture ${relatedProduct.category} by Mangala Living`}
+                      alt={`${relatedProduct.name} - Related Industrial Furniture ${translateCategory(relatedProduct.category, language)} Mangala Living`}
+                      title={`${relatedProduct.name} - Premium Industrial Furniture ${translateCategory(relatedProduct.category, language)} by Mangala Living`}
                       loading="lazy"
                       width="300"
                       height="200"
                       itemProp="image"
                       data-image-type="related-product"
                       data-product-name={relatedProduct.name}
-                      data-category={relatedProduct.category}
+                      data-category={translateCategory(relatedProduct.category, language)}
                     />
                   </div>
                   <div className="related-product-info">
                     <h3>{relatedProduct.name}</h3>
                     <p className="related-product-category">{translateCategory(relatedProduct.category, language)}</p>
-                    <p className="related-product-price">{relatedProduct.price}</p>
+                    <p className="related-product-price" style={{ marginBottom: relatedProduct.priceSecondary ? 2 : 0 }}>
+                      {relatedProduct.pricePrimary}
+                    </p>
+                    {relatedProduct.priceSecondary ? (
+                      <p className="related-product-price" style={{ color: '#888', fontSize: '0.85rem', marginTop: 0 }}>
+                        {relatedProduct.priceSecondary}
+                      </p>
+                    ) : null}
                   </div>
                 </Link>
               ))}

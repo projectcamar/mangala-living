@@ -13,6 +13,7 @@ import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structure
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import BlogProductShowcase from '../components/BlogProductShowcase'
 import { getRelevantProductsForBlog, getProductShowcaseHeading } from '../utils/blogProductMapping'
+import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
 import './Blog.css'
 import './BlogPost.css'
 import '../components/DualLanguage.css'
@@ -22,6 +23,7 @@ const BlogPost: React.FC = () => {
   const location = useLocation()
   const [isIndonesian, setIsIndonesian] = useState(false)
   const [isLanguageLoading, setIsLanguageLoading] = useState(true)
+  const [language, setLanguage] = useState<LanguageCode>('en')
   const post = slug ? getPostBySlug(slug) : undefined
   const content = slug ? getBlogPostContent(slug) : undefined
 
@@ -30,60 +32,48 @@ const BlogPost: React.FC = () => {
   }, [slug])
 
   useEffect(() => {
-    const path = location.pathname
-
-    if (path.startsWith('/id')) {
-      setIsIndonesian(true)
-      setIsLanguageLoading(false)
-      return
-    }
-
-    if (path.startsWith('/eng')) {
-      setIsIndonesian(false)
-      setIsLanguageLoading(false)
-      return
-    }
-
-    const params = new URLSearchParams(location.search)
-    const lang = params.get('lang')
-
-    if (lang === 'id' || lang === 'en') {
-      setIsIndonesian(lang === 'id')
-      setIsLanguageLoading(false)
-      return
-    }
-
-    const detectLocation = async () => {
-      try {
-        const response = await fetch('https://ipapi.co/json/')
-        const data = await response.json()
-
-        if (data.country_code === 'ID') {
-          setIsIndonesian(true)
-        } else {
-          const browserLang = navigator.language || navigator.languages?.[0]
-          setIsIndonesian(Boolean(browserLang?.startsWith('id')))
-        }
-      } catch (error) {
-        const browserLang = navigator.language || navigator.languages?.[0]
-        setIsIndonesian(Boolean(browserLang?.startsWith('id')))
-      } finally {
-        setIsLanguageLoading(false)
-      }
-    }
-
-    detectLocation()
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    const detectedLang = urlLang || 'en'
+    setLanguage(detectedLang)
+    setIsIndonesian(detectedLang === 'id')
+    setIsLanguageLoading(false)
   }, [location.pathname, location.search])
 
   if (isLanguageLoading) {
-    return null
+    return (
+      <div className="blog-page blog-post-page">
+        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
+        <Header isIndonesian={isIndonesian} language={language} />
+        <main className="blog-post-main" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              width: '40px',
+              height: '40px',
+              border: '3px solid #f3f3f3',
+              borderTop: '3px solid #333',
+              borderRadius: '50%',
+              animation: 'spin 1s linear infinite',
+              margin: '0 auto 1rem'
+            }} />
+            <style>{`
+              @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+              }
+            `}</style>
+            <p>Loading...</p>
+          </div>
+        </main>
+        <Footer isIndonesian={isIndonesian} language={language} />
+      </div>
+    )
   }
 
   if (!post || !content) {
     return (
       <div className="blog-page blog-post-page">
         <AnnouncementBar language={language} isIndonesian={isIndonesian} />
-        <Header isIndonesian={isIndonesian} />
+        <Header isIndonesian={isIndonesian} language={language} />
         <main className="blog-post-main" aria-labelledby="blog-post-not-found-heading">
           <section className="blog-content-section">
             <div className="blog-post-container">
@@ -99,7 +89,7 @@ const BlogPost: React.FC = () => {
             </div>
           </section>
         </main>
-        <Footer isIndonesian={isIndonesian} />
+        <Footer isIndonesian={isIndonesian} language={language} />
       </div>
     )
   }
@@ -237,7 +227,7 @@ const BlogPost: React.FC = () => {
           </script>
         )}
       </Helmet>
-        <Header isIndonesian={isIndonesian} />
+        <Header isIndonesian={isIndonesian} language={language} />
 
         <section className="blog-post-hero" aria-labelledby="blog-post-title">
           <div className="blog-post-hero-image">
@@ -440,9 +430,9 @@ const BlogPost: React.FC = () => {
 
         {shouldShowServiceAreas && <ServiceAreasSection isIndonesian={isIndonesian} />}
 
-        <Footer isIndonesian={isIndonesian} />
+        <Footer isIndonesian={isIndonesian} language={language} />
       </div>
     )
-}
+  }
 
 export default BlogPost

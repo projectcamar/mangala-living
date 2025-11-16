@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { ALL_PRODUCTS } from '../data/products'
-import { convertIDRToUSD } from '../utils/currencyConverter'
+import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { translateCategories } from '../utils/categoryTranslations'
+import { getProductName } from '../data/productDescriptions'
 import './BestSellersSection.css'
 
 interface BestSellersSectionProps {
@@ -15,6 +16,7 @@ interface BestSellersSectionProps {
 const products = ALL_PRODUCTS.slice(0, 8).map(p => ({
   id: p.id,
   name: p.name,
+  slug: p.slug,
   categories: p.categories,
   price: p.price,
   image: p.image,
@@ -49,18 +51,47 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
   }
   const [currentIndex, setCurrentIndex] = useState(0)
   const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
+  const [highlightedPrices, setHighlightedPrices] = useState<{ [key: number]: string }>({})
+
+  // Language to currency mapping
+  const LANGUAGE_CURRENCY_MAP: { [key: string]: 'KRW' | 'JPY' | 'CNY' | 'SAR' | 'EUR' | 'USD' | null } = {
+    'ko': 'KRW',
+    'ja': 'JPY',
+    'zh': 'CNY',
+    'ar': 'SAR',
+    'es': 'EUR',
+    'fr': 'EUR',
+    'en': 'USD',
+    'id': 'USD'
+  }
 
   useEffect(() => {
     const convertPrices = async () => {
-      const prices: { [key: number]: string } = {}
+      const usdPriceMap: { [key: number]: string } = {}
+      const highlightedPriceMap: { [key: number]: string } = {}
+      
+      const targetCurrency = LANGUAGE_CURRENCY_MAP[language] || 'USD'
+      
       for (const product of products) {
+        // Always convert to USD (non-highlighted)
         const usdPrice = await convertIDRToUSD(product.price)
-        prices[product.id] = usdPrice
+        usdPriceMap[product.id] = usdPrice
+        
+        // Convert to highlighted currency based on language
+        if (targetCurrency && targetCurrency !== 'USD') {
+          const highlightedPrice = await convertIDRToCurrency(product.price, targetCurrency)
+          highlightedPriceMap[product.id] = highlightedPrice
+        } else {
+          // For USD (en/id), use USD as highlighted
+          highlightedPriceMap[product.id] = usdPrice
+        }
       }
-      setUsdPrices(prices)
+      
+      setUsdPrices(usdPriceMap)
+      setHighlightedPrices(highlightedPriceMap)
     }
     convertPrices()
-  }, [])
+  }, [language])
   const itemsPerPage = 4
 
   const nextSlide = () => {
@@ -102,60 +133,65 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
           )}
 
           <div className="products-grid">
-            {visibleProducts.map((product) => (
-              <Link 
-                key={product.id}
-                to={product.link}
-                className="product-card"
-              >
-                <div className="product-image-wrapper">
-                  <img 
-                    src={product.image} 
-                    alt={`${product.name} - Industrial Furniture ${product.categories.join(' ')} Mangala Living Bekasi`}
-                    title={`${product.name} - Premium Industrial Furniture by Mangala Living`}
-                    className="product-image"
-                    loading="lazy"
-                    width="300"
-                    height="200"
-                    itemProp="image"
-                    data-image-type="product"
-                    data-product-name={product.name}
-                    data-category={product.categories.join(',')}
-                  />
-                </div>
-                <div className="product-info">
-                  <h3 className="product-name">{product.name}</h3>
-                  <p className="product-categories">{translateCategories(product.categories, language)}</p>
-                  {usdPrices[product.id] ? (
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                      <p
-                        className="product-price"
-                        style={{
-                          margin: 0,
-                          fontSize: '0.875rem',
-                          fontWeight: 600,
-                          color: '#333'
-                        }}
-                      >
-                        {isIndonesian ? product.price : usdPrices[product.id]}
-                      </p>
-                      <p
-                        style={{
-                          margin: 0,
-                          fontSize: '0.75rem',
-                          fontWeight: 400,
-                          color: '#999'
-                        }}
-                      >
-                        {isIndonesian ? usdPrices[product.id] : product.price}
-                      </p>
-                    </div>
-                  ) : (
-                    <p className="product-price">{product.price}</p>
-                  )}
-                </div>
-              </Link>
-            ))}
+            {visibleProducts.map((product) => {
+              const translatedName = getProductName(product.slug, isIndonesian, language) || product.name
+              return (
+                <Link 
+                  key={product.id}
+                  to={product.link}
+                  className="product-card"
+                >
+                  <div className="product-image-wrapper">
+                    <img 
+                      src={product.image} 
+                      alt={`${translatedName} - Industrial Furniture ${product.categories.join(' ')} Mangala Living Bekasi`}
+                      title={`${translatedName} - Premium Industrial Furniture by Mangala Living`}
+                      className="product-image"
+                      loading="lazy"
+                      width="300"
+                      height="200"
+                      itemProp="image"
+                      data-image-type="product"
+                      data-product-name={translatedName}
+                      data-category={product.categories.join(',')}
+                    />
+                  </div>
+                  <div className="product-info">
+                    <h3 className="product-name">{translatedName}</h3>
+                    <p className="product-categories">{translateCategories(product.categories, language)}</p>
+                    {usdPrices[product.id] && highlightedPrices[product.id] ? (
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                        {/* Highlighted currency based on language */}
+                        <p
+                          className="product-price"
+                          style={{
+                            margin: 0,
+                            fontSize: '0.875rem',
+                            fontWeight: 600,
+                            color: '#333'
+                          }}
+                        >
+                          {highlightedPrices[product.id]}
+                        </p>
+                        {/* USD always non-highlighted */}
+                        <p
+                          style={{
+                            margin: 0,
+                            fontSize: '0.75rem',
+                            fontWeight: 400,
+                            color: '#999'
+                          }}
+                        >
+                          {usdPrices[product.id]}
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="product-price">{product.price}</p>
+                    )}
+                  </div>
+                </Link>
+              )
+            })}
           </div>
 
           {currentIndex < products.length - itemsPerPage && (
