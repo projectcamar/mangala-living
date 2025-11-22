@@ -10,6 +10,86 @@
       ],
       "destination": "https://mangalaliving.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/id/:path*",
+      "destination": "/:path*?lang=id",
+      "permanent": true
+    },
+    {
+      "source": "/eng/:path*",
+      "destination": "/:path*?lang=en",
+      "permanent": true
+    },
+    {
+      "source": "/ar/:path*",
+      "destination": "/:path*?lang=ar",
+      "permanent": true
+    },
+    {
+      "source": "/zh/:path*",
+      "destination": "/:path*?lang=zh",
+      "permanent": true
+    },
+    {
+      "source": "/ja/:path*",
+      "destination": "/:path*?lang=ja",
+      "permanent": true
+    },
+    {
+      "source": "/es/:path*",
+      "destination": "/:path*?lang=es",
+      "permanent": true
+    },
+    {
+      "source": "/fr/:path*",
+      "destination": "/:path*?lang=fr",
+      "permanent": true
+    },
+    {
+      "source": "/ko/:path*",
+      "destination": "/:path*?lang=ko",
+      "permanent": true
+    },
+    {
+      "source": "/id",
+      "destination": "/?lang=id",
+      "permanent": true
+    },
+    {
+      "source": "/eng",
+      "destination": "/?lang=en",
+      "permanent": true
+    },
+    {
+      "source": "/ar",
+      "destination": "/?lang=ar",
+      "permanent": true
+    },
+    {
+      "source": "/zh",
+      "destination": "/?lang=zh",
+      "permanent": true
+    },
+    {
+      "source": "/ja",
+      "destination": "/?lang=ja",
+      "permanent": true
+    },
+    {
+      "source": "/es",
+      "destination": "/?lang=es",
+      "permanent": true
+    },
+    {
+      "source": "/fr",
+      "destination": "/?lang=fr",
+      "permanent": true
+    },
+    {
+      "source": "/ko",
+      "destination": "/?lang=ko",
+      "permanent": true
     }
   ],
   "rewrites": [

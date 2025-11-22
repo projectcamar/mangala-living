@@ -1070,7 +1070,8 @@ const ProductDetail: React.FC = () => {
             ? 'set furniture industrial, meja kursi cafe lengkap, furniture cafe murah'
             : `${product.name}, industrial furniture, furniture besi, ${product.categories.join(', ')}, mangala living`
         } />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta httpEquiv="content-language" content={localeMeta.lang} />
         <link rel="canonical" href={localizedUrls.canonical} />
         {localizedUrls.alternates.map((alternate) => (

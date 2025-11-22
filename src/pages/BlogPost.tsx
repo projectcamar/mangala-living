@@ -409,6 +409,9 @@ const BlogPost: React.FC = () => {
         <meta name="description" content={metaDescription} />
         <meta name="keywords" content={generateKeywords(post.slug, post.title)} />
         <meta httpEquiv="content-language" content={localeMeta.lang} />
+        {/* Robots meta - allow indexing, follow links, point to canonical */}
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href={localizedUrls.canonical} />
         {localizedUrls.alternates.map((alternate) => (
           <link key={`blog-post-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />

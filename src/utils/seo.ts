@@ -31,6 +31,24 @@ const normalizePath = (path: string): string => {
   return normalized || '/'
 }
 
+// Remove language path prefixes from paths (e.g., /id/blog/post -> /blog/post)
+const removeLanguagePrefix = (path: string): string => {
+  const languagePrefixes = ['/id', '/eng', '/ar', '/zh', '/ja', '/es', '/fr', '/ko']
+  
+  for (const prefix of languagePrefixes) {
+    // Handle /id/, /eng/, etc. (with trailing slash)
+    if (path.startsWith(`${prefix}/`)) {
+      return path.substring(prefix.length)
+    }
+    // Handle /id, /eng, etc. (without trailing slash, only if it's the full path)
+    if (path === prefix) {
+      return '/'
+    }
+  }
+  
+  return path
+}
+
 const buildUrlFromParams = (path: string, params: URLSearchParams): string => {
   const normalizedPath = normalizePath(path)
   const query = params.toString()
@@ -39,23 +57,31 @@ const buildUrlFromParams = (path: string, params: URLSearchParams): string => {
 
 // SEO utility functions for canonical URLs and hreflang
 export const generateCanonicalUrl = (path: string, search: string = ''): string => {
+  // Remove language prefix and parameters for canonical
+  const cleanPath = removeLanguagePrefix(path)
   const params = new URLSearchParams(search)
-  return buildUrlFromParams(path, params)
+  params.delete('lang') // Remove lang parameter from canonical
+  return buildUrlFromParams(cleanPath, params)
 }
 
 export const generateLocalizedUrls = (pathname: string, search: string = '') => {
-  const baseParams = new URLSearchParams(search)
-  const canonical = buildUrlFromParams(pathname, baseParams)
+  // Remove language prefix from pathname for canonical URL
+  const cleanPath = removeLanguagePrefix(pathname)
+  
+  // Canonical URL should always be without lang parameter and without language prefix
+  const canonicalParams = new URLSearchParams(search)
+  canonicalParams.delete('lang') // Remove lang parameter
+  const canonical = buildUrlFromParams(cleanPath, canonicalParams)
 
-  const defaultParams = new URLSearchParams(baseParams)
-  defaultParams.delete('lang')
-  const xDefault = buildUrlFromParams(pathname, defaultParams)
-
+  // For hreflang alternates, use clean path with lang parameter
   const buildLangUrl = (lang: LanguageCode) => {
-    const params = new URLSearchParams(defaultParams)
+    const params = new URLSearchParams()
     params.set('lang', lang)
-    return buildUrlFromParams(pathname, params)
+    return buildUrlFromParams(cleanPath, params)
   }
+
+  // x-default should point to clean path without lang parameter
+  const xDefault = buildUrlFromParams(cleanPath, new URLSearchParams())
 
   return {
     canonical,
