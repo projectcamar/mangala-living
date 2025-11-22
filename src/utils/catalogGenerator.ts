@@ -22,55 +22,191 @@ const loadPDFDependencies = async () => {
 }
 
 // Load a TTF font from a URL and register it in jsPDF VFS
+// Added timeout to prevent infinite loading
 const loadAndRegisterFont = async (doc: any, url: string, vfsFileName: string, jsPdfFontName: string, style: 'normal' | 'bold' | 'italic' | 'bolditalic' = 'normal') => {
+  const TIMEOUT_MS = 15000 // 15 seconds timeout
+  
   try {
-    const response = await fetch(url, { credentials: 'omit' })
-    if (!response.ok) return false
+    console.log(`[PDF] Fetching font from: ${url}`)
+    
+    // Create timeout promise
+    const timeoutPromise = new Promise<never>((_, reject) => {
+      setTimeout(() => reject(new Error('Font loading timeout')), TIMEOUT_MS)
+    })
+    
+    // Fetch with timeout
+    const fetchPromise = fetch(url, { 
+      credentials: 'omit',
+      mode: 'cors',
+      cache: 'default'
+    })
+    
+    const response = await Promise.race([fetchPromise, timeoutPromise])
+    
+    if (!response.ok) {
+      console.warn(`[PDF] Font fetch failed: ${response.status} ${response.statusText}`)
+      return false
+    }
+    
     const blob = await response.blob()
+    if (blob.size === 0) {
+      console.warn(`[PDF] Font blob is empty`)
+      return false
+    }
+    
+    // Check if blob is too large (might cause issues)
+    if (blob.size > 10 * 1024 * 1024) { // 10MB limit
+      console.warn(`[PDF] Font file too large: ${(blob.size / 1024 / 1024).toFixed(2)}MB`)
+      return false
+    }
+    
     const toBase64 = (b: Blob) =>
       new Promise<string>((resolve, reject) => {
         const reader = new FileReader()
-        reader.onload = () => resolve((reader.result as string).split(',')[1] || '')
-        reader.onerror = reject
+        const timeout = setTimeout(() => {
+          reader.abort()
+          reject(new Error('Base64 conversion timeout'))
+        }, 10000) // 10 seconds for conversion
+        
+        reader.onload = () => {
+          clearTimeout(timeout)
+          resolve((reader.result as string).split(',')[1] || '')
+        }
+        reader.onerror = (err) => {
+          clearTimeout(timeout)
+          console.warn(`[PDF] Font base64 conversion failed:`, err)
+          reject(err)
+        }
         reader.readAsDataURL(b)
       })
+    
     const base64 = await toBase64(blob)
-    if (!base64) return false
+    if (!base64 || base64.length === 0) {
+      console.warn(`[PDF] Font base64 is empty`)
+      return false
+    }
+    
     doc.addFileToVFS(vfsFileName, base64)
     doc.addFont(vfsFileName, jsPdfFontName, style)
+    console.log(`[PDF] Successfully registered font: ${jsPdfFontName} (${style})`)
     return true
-  } catch {
+  } catch (error) {
+    console.warn(`[PDF] Font loading error:`, error)
     return false
   }
 }
 
-// Decide which Unicode font set to use for a given language and try to load it from /public/fonts
+// Decide which Unicode font set to use for a given language
+// Uses Google Fonts CDN for reliable font loading
 const prepareLanguageFont = async (doc: any, lang: 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko') => {
-  // Default: built-in helvetica works for Latin scripts
+  // Default: built-in helvetica works for Latin scripts (ID, EN, ES, FR)
   const latin = { family: 'helvetica', hasStyles: true }
 
-  // Map language to expected font files in public/fonts (user should provide these files)
-  const fontMap: Record<string, { family: string, files: { normal: string, bold?: string, italic?: string, bolditalic?: string } }> = {
-    ar: { family: 'NotoNaskhArabic', files: { normal: '/fonts/NotoNaskhArabic-Regular.ttf', bold: '/fonts/NotoNaskhArabic-Bold.ttf' } },
-    zh: { family: 'NotoSansSC', files: { normal: '/fonts/NotoSansSC-Regular.ttf', bold: '/fonts/NotoSansSC-Bold.ttf' } },
-    ja: { family: 'NotoSansJP', files: { normal: '/fonts/NotoSansJP-Regular.ttf', bold: '/fonts/NotoSansJP-Bold.ttf' } },
-    ko: { family: 'NotoSansKR', files: { normal: '/fonts/NotoSansKR-Regular.ttf', bold: '/fonts/NotoSansKR-Bold.ttf' } },
+  // Latin scripts don't need custom fonts - return immediately
+  if (lang === 'id' || lang === 'en' || lang === 'es' || lang === 'fr') {
+    console.log(`[PDF] Language ${lang} uses Latin script, using built-in helvetica`)
+    return latin
+  }
+
+  // Map language to font URLs
+  // Using static TTF files (not variable fonts) for better jsPDF compatibility
+  // jsPDF requires TTF format, not WOFF2, and works better with static fonts
+  const fontMap: Record<string, { family: string, files: { normal: string, bold?: string } }> = {
+    ar: { 
+      family: 'NotoNaskhArabic', 
+      files: { 
+        // Static TTF from Google Fonts (Regular weight)
+        normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/NotoNaskhArabic-Regular.ttf',
+        bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/NotoNaskhArabic-Bold.ttf'
+      } 
+    },
+    zh: { 
+      family: 'NotoSansSC', 
+      files: { 
+        normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC-Regular.ttf',
+        bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC-Bold.ttf'
+      } 
+    },
+    ja: { 
+      family: 'NotoSansJP', 
+      files: { 
+        normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosansjp/NotoSansJP-Regular.ttf',
+        bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosansjp/NotoSansJP-Bold.ttf'
+      } 
+    },
+    ko: { 
+      family: 'NotoSansKR', 
+      files: { 
+        normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosanskr/NotoSansKR-Regular.ttf',
+        bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosanskr/NotoSansKR-Bold.ttf'
+      } 
+    },
   }
 
   const mapping = fontMap[lang]
-  if (!mapping) return latin
+  if (!mapping) {
+    console.log(`[PDF] No font mapping for ${lang}, using helvetica`)
+    return latin
+  }
 
-  const loadedNormal = await loadAndRegisterFont(doc, mapping.files.normal, `${mapping.family}-Regular.ttf`, mapping.family, 'normal')
+  console.log(`[PDF] Loading font for language: ${lang}`)
+  
+  // Wrap font loading in timeout to prevent infinite loading
+  const fontLoadingTimeout = 20000 // 20 seconds max for font loading
+  const fontLoadingPromise = (async () => {
+    // Try to load font from primary CDN
+    let loadedNormal = await loadAndRegisterFont(doc, mapping.files.normal, `${mapping.family}-Regular.ttf`, mapping.family, 'normal')
+    
+    // If primary URL fails, try alternative CDN (jsdelivr)
+    if (!loadedNormal) {
+      console.warn(`[PDF] Primary font URL failed, trying alternative...`)
+      const alternativeUrls: Record<string, string> = {
+        ar: 'https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/notonaskharabic/NotoNaskhArabic-Regular.ttf',
+        zh: 'https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/notosanssc/NotoSansSC-Regular.ttf',
+        ja: 'https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/notosansjp/NotoSansJP-Regular.ttf',
+        ko: 'https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/notosanskr/NotoSansKR-Regular.ttf',
+      }
+      const altUrl = alternativeUrls[lang]
+      if (altUrl) {
+        loadedNormal = await loadAndRegisterFont(doc, altUrl, `${mapping.family}-Regular.ttf`, mapping.family, 'normal')
+      }
+    }
+    
+    if (!loadedNormal) {
+      console.error(`[PDF] Failed to load font for ${lang} from all sources, falling back to helvetica`)
+      console.error(`[PDF] WARNING: Non-Latin text may appear as scrambled characters!`)
+      return latin
+    }
+
+    // For variable fonts, bold uses the same file with different weight
+    // But jsPDF needs separate registration, so we'll use normal for both
   let loadedBold = false
   if (mapping.files.bold) {
     loadedBold = await loadAndRegisterFont(doc, mapping.files.bold, `${mapping.family}-Bold.ttf`, mapping.family, 'bold')
-  }
-  // Italic variants are optional; most CJK/Arabic families don't include italics
+      // If bold fails, that's okay - we can still use normal
+      if (!loadedBold) {
+        console.warn(`[PDF] Bold variant failed, using normal for bold text`)
+      }
+    }
 
-  if (loadedNormal) {
-    return { family: mapping.family, hasStyles: !!loadedBold }
-  }
+    console.log(`[PDF] Successfully loaded font: ${mapping.family}`)
+    return { family: mapping.family, hasStyles: loadedBold }
+  })()
+
+  // Race between font loading and timeout
+  const timeoutPromise = new Promise<typeof latin>((_, reject) => {
+    setTimeout(() => {
+      reject(new Error(`Font loading timeout for ${lang} after ${fontLoadingTimeout}ms`))
+    }, fontLoadingTimeout)
+  })
+
+  try {
+    return await Promise.race([fontLoadingPromise, timeoutPromise])
+  } catch (error) {
+    console.error(`[PDF] Font loading failed or timed out for ${lang}:`, error)
+    console.warn(`[PDF] Falling back to helvetica for ${lang}`)
   return latin
+  }
 }
 
 // Get language preference from localStorage
@@ -977,21 +1113,65 @@ const formatPrice = (price: string, currency: 'IDR' | 'USD'): string => {
 // ══════════════════════════════════════════════════════════════════════════════
 
 export const generateCatalog = async () => {
-  try {
-    // Load PDF dependencies only when needed
-    await loadPDFDependencies()
-    
-    // Get language preference
-    const lang = getLanguagePreference()
-    const t = (content as any)[lang]
-    
-    const doc = new jsPDF('p', 'mm', 'a4')
+  const MAX_GENERATION_TIME = 120000 // 2 minutes max for entire generation
+  
+  // Wrap entire generation in timeout to prevent infinite loading
+  const generationPromise = (async () => {
+    try {
+      console.log('[PDF] Starting catalog generation...')
+      
+      // Load PDF dependencies only when needed
+      try {
+        await loadPDFDependencies()
+        console.log('[PDF] Dependencies loaded')
+      } catch (depError) {
+        console.error('[PDF] Failed to load dependencies:', depError)
+        throw new Error(`Failed to load PDF dependencies: ${depError instanceof Error ? depError.message : String(depError)}`)
+      }
+      
+      // Get language preference
+      const lang = getLanguagePreference()
+      console.log(`[PDF] Language detected: ${lang}`)
+      
+      const t = (content as any)[lang]
+      if (!t) {
+        console.error(`[PDF] Content object for language ${lang}:`, Object.keys(content))
+        throw new Error(`No content found for language: ${lang}. Available languages: ${Object.keys(content).join(', ')}`)
+      }
+      
+      console.log(`[PDF] Content loaded for ${lang}, checking required fields...`)
+      const requiredFields = ['title1', 'title2', 'subtitle', 'tagline', 'since', 'workshop', 'address', 'copyright']
+      const missingFields = requiredFields.filter(field => !t[field])
+      if (missingFields.length > 0) {
+        console.warn(`[PDF] Missing content fields for ${lang}:`, missingFields)
+      }
+      
+      const doc = new jsPDF('p', 'mm', 'a4')
+      console.log('[PDF] PDF document created')
 
-    // Prepare Unicode-capable font for non-Latin languages (loads from /public/fonts if available)
-    const { family: baseFontFamily, hasStyles } = await prepareLanguageFont(doc, lang)
+      // Prepare Unicode-capable font for non-Latin languages (loads from /public/fonts if available)
+      console.log(`[PDF] Preparing font for language: ${lang}`)
+      let baseFontFamily: string
+      let hasStyles: boolean
+      try {
+        const fontResult = await prepareLanguageFont(doc, lang)
+        baseFontFamily = fontResult.family
+        hasStyles = fontResult.hasStyles
+        console.log(`[PDF] Font prepared: ${baseFontFamily}`)
+      } catch (fontError) {
+        console.error(`[PDF] Font preparation failed for ${lang}, using helvetica:`, fontError)
+        baseFontFamily = 'helvetica'
+        hasStyles = true
+      }
+      
     const setF = (style: 'normal' | 'bold' | 'italic' | 'bolditalic' = 'normal') => {
+        try {
       const resolvedStyle = hasStyles ? style : 'normal'
       doc.setFont(baseFontFamily, resolvedStyle)
+        } catch (fontError) {
+          console.warn(`[PDF] Failed to set font ${baseFontFamily} with style ${style}, using helvetica:`, fontError)
+          doc.setFont('helvetica', 'normal')
+        }
     }
 
     const pageWidth = doc.internal.pageSize.getWidth()
@@ -1036,12 +1216,23 @@ export const generateCatalog = async () => {
     doc.setTextColor(...colors.textLight)
     doc.setFontSize(60)
     setF('bold')
-    doc.text(t.title1, pageWidth / 2, 75, { align: 'center' })
+    try {
+      doc.text(t.title1 || 'MANGALA', pageWidth / 2, 75, { align: 'center' })
+    } catch (e) {
+      console.error('[PDF] Error rendering title1:', e)
+      doc.text('MANGALA', pageWidth / 2, 75, { align: 'center' })
+    }
     
     // Brand name - LIVING with letter spacing
     doc.setFontSize(28)
     setF('normal')
-    doc.text(t.title2.split('').join('  '), pageWidth / 2, 92, { align: 'center' })
+    try {
+      const title2Text = t.title2 || 'LIVING'
+      doc.text(title2Text.split('').join('  '), pageWidth / 2, 92, { align: 'center' })
+    } catch (e) {
+      console.error('[PDF] Error rendering title2:', e)
+      doc.text('LIVING', pageWidth / 2, 92, { align: 'center' })
+    }
     
     // Decorative separator
     doc.setDrawColor(...colors.goldAccent)
@@ -1052,7 +1243,11 @@ export const generateCatalog = async () => {
     doc.setFontSize(14)
     doc.setTextColor(...colors.secondaryAccent)
     setF('bold')
-    doc.text(t.subtitle, pageWidth / 2, 115, { align: 'center' })
+    try {
+      doc.text(t.subtitle || '', pageWidth / 2, 115, { align: 'center' })
+    } catch (e) {
+      console.error('[PDF] Error rendering subtitle:', e)
+    }
     
     // Since year badge
     doc.setFillColor(...colors.goldAccent)
@@ -1060,24 +1255,42 @@ export const generateCatalog = async () => {
     doc.setTextColor(...colors.primaryDark)
     doc.setFontSize(10)
     setF('bold')
-    doc.text(t.since, pageWidth / 2, 137, { align: 'center' })
+    try {
+      doc.text(t.since || 'Since 1999', pageWidth / 2, 137, { align: 'center' })
+    } catch (e) {
+      console.error('[PDF] Error rendering since:', e)
+      doc.text('Since 1999', pageWidth / 2, 137, { align: 'center' })
+    }
     
     // Tagline
     doc.setFontSize(11)
     setF('normal')
     doc.setTextColor(...colors.textLight)
-    const taglineLines = doc.splitTextToSize(t.tagline, pageWidth - 60)
+    try {
+      const taglineText = t.tagline || ''
+      const taglineLines = doc.splitTextToSize(taglineText, pageWidth - 60)
     doc.text(taglineLines, pageWidth / 2, 155, { align: 'center' })
+    } catch (e) {
+      console.error('[PDF] Error rendering tagline:', e)
+    }
     
     // Workshop location
     doc.setFontSize(11)
     setF('bold')
     doc.setTextColor(...colors.secondaryAccent)
-    doc.text(t.workshop, pageWidth / 2, 185, { align: 'center' })
+    try {
+      doc.text(t.workshop || '', pageWidth / 2, 185, { align: 'center' })
+    } catch (e) {
+      console.error('[PDF] Error rendering workshop:', e)
+    }
     
     doc.setFontSize(9)
     setF('normal')
-    doc.text(t.address, pageWidth / 2, 193, { align: 'center' })
+    try {
+      doc.text(t.address || '', pageWidth / 2, 193, { align: 'center' })
+    } catch (e) {
+      console.error('[PDF] Error rendering address:', e)
+    }
     
     // Contact information - clickable
     doc.setFontSize(11)
@@ -1707,11 +1920,51 @@ export const generateCatalog = async () => {
       fr: 'Mangala-Living-Catalog-2025-FR.pdf',
       ko: 'Mangala-Living-Catalog-2025-KO.pdf'
     }
-    const fileName = fileNames[lang] || 'Mangala-Living-Catalog-2025.pdf'
-    doc.save(fileName)
+      const fileName = fileNames[lang] || 'Mangala-Living-Catalog-2025.pdf'
+      console.log(`[PDF] Saving PDF as: ${fileName}`)
+      console.log(`[PDF] Total pages: ${doc.getNumberOfPages()}`)
+      
+      try {
+        doc.save(fileName)
+        console.log('[PDF] Catalog generation completed successfully!')
+      } catch (saveError) {
+        console.error('[PDF] Error saving PDF:', saveError)
+        throw new Error(`Failed to save PDF: ${saveError instanceof Error ? saveError.message : String(saveError)}`)
+      }
     
+    } catch (error) {
+      console.error('[PDF] Error generating catalog:', error)
+      console.error('[PDF] Error details:', {
+        message: error instanceof Error ? error.message : String(error),
+        stack: error instanceof Error ? error.stack : undefined,
+        name: error instanceof Error ? error.name : undefined
+      })
+      
+      // Re-throw error so UI can handle it
+      throw error
+    }
+  })()
+
+  // Timeout wrapper to prevent infinite loading
+  const timeoutPromise = new Promise<never>((_, reject) => {
+    setTimeout(() => {
+      console.error(`[PDF] Generation timeout after ${MAX_GENERATION_TIME / 1000} seconds`)
+      reject(new Error(`Catalog generation timeout after ${MAX_GENERATION_TIME / 1000} seconds. Please try again or check your internet connection.`))
+    }, MAX_GENERATION_TIME)
+  })
+
+  try {
+    console.log('[PDF] Starting generation with timeout protection...')
+    const result = await Promise.race([generationPromise, timeoutPromise])
+    console.log('[PDF] Generation completed successfully')
+    return result
   } catch (error) {
-    console.error('Error generating catalog:', error)
+    console.error('[PDF] Catalog generation failed or timed out:', error)
+    console.error('[PDF] Final error details:', {
+      message: error instanceof Error ? error.message : String(error),
+      stack: error instanceof Error ? error.stack : undefined,
+      name: error instanceof Error ? error.name : undefined
+    })
     throw error
   }
 }
