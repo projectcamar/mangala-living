@@ -12,7 +12,7 @@ import { CATEGORY_MAP } from '../data/categories'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { getProductName } from '../data/productDescriptions'
-import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { getCurrentLanguage, type LanguageCode } from '../utils/languageManager'
 import { translateCategories } from '../utils/categoryTranslations'
 import './ProductCategory.css'
 
@@ -352,21 +352,9 @@ const ProductCategory: React.FC = () => {
   const [sortBy, setSortBy] = useState('default')
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   
-  const getInitialLanguage = (): LanguageCode => {
-    const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    if (urlLang) return urlLang
-    const browserLang = navigator.language || navigator.languages?.[0]
-    if (browserLang?.startsWith('id')) return 'id'
-    if (browserLang?.startsWith('ar')) return 'ar'
-    if (browserLang?.startsWith('zh')) return 'zh'
-    if (browserLang?.startsWith('ja')) return 'ja'
-    if (browserLang?.startsWith('es')) return 'es'
-    if (browserLang?.startsWith('fr')) return 'fr'
-    if (browserLang?.startsWith('ko')) return 'ko'
-    return 'en'
-  }
-  
-  const [language, setLanguage] = useState<LanguageCode>(getInitialLanguage)
+  const [language, setLanguage] = useState<LanguageCode>(() => {
+    return getCurrentLanguage(location.pathname, location.search)
+  })
   const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
   const [highlightedPrices, setHighlightedPrices] = useState<{ [key: number]: string }>({})
 
@@ -391,11 +379,11 @@ const ProductCategory: React.FC = () => {
 
   // Language detection - instant, no async needed!
   useEffect(() => {
-    const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    if (urlLang && urlLang !== language) {
-      setLanguage(urlLang)
+    const currentLang = getCurrentLanguage(location.pathname, location.search)
+    if (currentLang !== language) {
+      setLanguage(currentLang)
     }
-  }, [location.pathname, location.search])
+  }, [location.pathname, location.search, language])
   
   const isIndonesian = language === 'id'
   const isLoading = false

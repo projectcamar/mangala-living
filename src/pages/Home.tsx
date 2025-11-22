@@ -19,86 +19,54 @@ import AISearchFeatures from '../components/AISearchFeatures'
 import { generateAIOptimizedStructuredData, generateFAQStructuredData, generateWebSiteStructuredData } from '../utils/aiSearchOptimization'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
-import { getLanguageFromLocation } from '../utils/languageManager'
+import { getCurrentLanguage, getStoredLanguage, getLanguageFromLocation } from '../utils/languageManager'
 
 const Home: React.FC = () => {
   const location = useLocation()
   
-  // Initialize language immediately from browser or default to avoid loading state
-  const getInitialLanguage = (): 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' => {
-    const path = location.pathname
-    if (path.startsWith('/id')) return 'id'
-    if (path.startsWith('/eng')) return 'en'
-    if (path.startsWith('/ar')) return 'ar'
-    if (path.startsWith('/zh')) return 'zh'
-    if (path.startsWith('/ja')) return 'ja'
-    if (path.startsWith('/es')) return 'es'
-    if (path.startsWith('/fr')) return 'fr'
-    if (path.startsWith('/ko')) return 'ko'
-    
-    // Default to browser language immediately (no loading)
-    const browserLang = navigator.language || navigator.languages?.[0]
-    if (browserLang?.startsWith('id')) return 'id'
-    if (browserLang?.startsWith('ko')) return 'ko'
-    if (browserLang?.startsWith('fr')) return 'fr'
-    if (browserLang?.startsWith('es')) return 'es'
-    if (browserLang?.startsWith('ja')) return 'ja'
-    if (browserLang?.startsWith('zh')) return 'zh'
-    if (browserLang?.startsWith('ar')) return 'ar'
-    return 'en'
-  }
-  
-  const [language, setLanguage] = useState<'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'>(getInitialLanguage)
+  // Initialize language with consistent priority: URL > Stored > Browser
+  const [language, setLanguage] = useState<'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'>(() => {
+    return getCurrentLanguage(location.pathname, location.search)
+  })
 
   // Update language when URL changes (makes language switcher work without refresh!)
   useEffect(() => {
-    const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    if (urlLang && urlLang !== language) {
-      setLanguage(urlLang)
+    const currentLang = getCurrentLanguage(location.pathname, location.search)
+    if (currentLang !== language) {
+      setLanguage(currentLang)
     }
-  }, [location.pathname, location.search])
+  }, [location.pathname, location.search, language])
 
+  // Only do IP detection on first visit (no stored preference) and no URL language
   useEffect(() => {
-    // If language is already set from URL prefix, don't do IP detection
-    const path = location.pathname
-    if (path.startsWith('/id') || path.startsWith('/eng') || path.startsWith('/ar') || 
-        path.startsWith('/zh') || path.startsWith('/ja') || path.startsWith('/es') || 
-        path.startsWith('/fr') || path.startsWith('/ko')) {
-      return
+    // Skip IP detection if:
+    // 1. User already has stored preference (they've chosen before)
+    // 2. Language is set from URL (query param or path prefix)
+    const stored = getStoredLanguage()
+    const urlLang = getLanguageFromLocation(location.pathname, location.search)
+    
+    if (stored || urlLang) {
+      return // User has chosen language, don't override
     }
 
-    // Optional: Update language based on IP in background (non-blocking)
+    // Only detect from IP on first visit (no stored preference)
     const detectLocation = async () => {
       try {
-        // Create a timeout promise (2 seconds max for background detection)
         const timeoutPromise = new Promise((_, reject) => {
           setTimeout(() => reject(new Error('Timeout')), 2000)
         })
         
-        // Race between fetch and timeout
         const fetchPromise = fetch('https://ipapi.co/json/')
           .then(response => response.json())
         
         const data = await Promise.race([fetchPromise, timeoutPromise]) as any
         const countryCode = data.country_code
         
-        // French-speaking countries
         const frenchCountries = ['FR', 'BE', 'CH', 'LU', 'MC', 'CA', 'HT', 'CI', 'SN', 'ML', 'NE', 'BF', 'TG', 'BJ', 'CD', 'CG', 'GA', 'CM', 'CF', 'TD', 'MG', 'RE', 'MU', 'SC', 'KM', 'YT', 'DJ']
-        
-        // Spanish-speaking countries
         const spanishCountries = ['ES', 'MX', 'AR', 'CO', 'VE', 'PE', 'CL', 'EC', 'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', 'NI', 'CR', 'PA', 'UY']
-        
-        // Chinese-speaking countries/regions
         const chineseCountries = ['CN', 'TW', 'HK', 'SG', 'MO']
+        const arabicCountries = ['SA', 'AE', 'KW', 'QA', 'OM', 'BH', 'EG', 'JO', 'LB', 'SY', 'IQ', 'YE', 'MA', 'DZ', 'TN', 'LY', 'SD', 'PS']
         
-        // Arabic-speaking countries
-        const arabicCountries = [
-          'SA', 'AE', 'KW', 'QA', 'OM', 'BH', // Gulf countries
-          'EG', 'JO', 'LB', 'SY', 'IQ', 'YE', // Levant & others
-          'MA', 'DZ', 'TN', 'LY', 'SD', 'PS'  // North Africa
-        ]
-        
-        // Detect language based on IP
         let detectedLang: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' = 'en'
         
         if (countryCode === 'ID') {
@@ -117,25 +85,20 @@ const Home: React.FC = () => {
           detectedLang = 'ar'
         }
         
-        // Update language directly without prevention logic
+        // Only update if no stored preference exists
+        if (!stored) {
         setLanguage(detectedLang)
+        }
       } catch (error) {
-        // Silently fail - we already have a default language set
-        console.log('IP detection skipped or failed, using browser/default language')
+        // Silently fail
+        console.log('IP detection skipped or failed')
       }
     }
 
-    // Run detection in background without blocking render
     detectLocation()
-  }, [location.pathname])
+  }, []) // Only run once on mount
 
   const isIndonesian = language === 'id'
-  const isArabic = language === 'ar'
-  const isChinese = language === 'zh'
-  const isJapanese = language === 'ja'
-  const isSpanish = language === 'es'
-  const isFrench = language === 'fr'
-  const isKorean = language === 'ko'
   
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
   // For /id, /eng, /ar, /zh, /ja, /es, /fr, and /ko routes, canonical should point to /
@@ -394,10 +357,10 @@ const Home: React.FC = () => {
       <Footer isIndonesian={isIndonesian} language={language} />
       
       {/* AI Search Optimized Content */}
-      <AISearchOptimizedContent isIndonesian={isIndonesian} language={language} />
+      <AISearchOptimizedContent isIndonesian={isIndonesian} />
       
       {/* AI Search Features */}
-      <AISearchFeatures isIndonesian={isIndonesian} language={language} />
+      <AISearchFeatures isIndonesian={isIndonesian} />
     </div>
   )
 }

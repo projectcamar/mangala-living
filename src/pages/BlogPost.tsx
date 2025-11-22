@@ -14,7 +14,7 @@ import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structure
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import BlogProductShowcase from '../components/BlogProductShowcase'
 import { getRelevantProductsForBlog, getProductShowcaseHeading } from '../utils/blogProductMapping'
-import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { getCurrentLanguage, type LanguageCode } from '../utils/languageManager'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import './Blog.css'
 import './BlogPost.css'
@@ -221,8 +221,7 @@ const BlogPost: React.FC = () => {
   }, [slug])
 
   useEffect(() => {
-    const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    const detectedLang = urlLang || 'en'
+    const detectedLang = getCurrentLanguage(location.pathname, location.search)
     setLanguage(detectedLang)
     setIsIndonesian(detectedLang === 'id')
     setIsLanguageLoading(false)

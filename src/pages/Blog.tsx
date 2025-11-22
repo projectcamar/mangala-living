@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import { getPostsByPage, getTotalPages } from '../data/blog'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
-import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { getCurrentLanguage, type LanguageCode } from '../utils/languageManager'
 import './Blog.css'
 
 const BLOG_INTRO_TRANSLATIONS: Record<
@@ -261,28 +261,16 @@ const Blog: React.FC = () => {
   const location = useLocation()
   const [searchParams] = useSearchParams()
   
-  const getInitialLanguage = (): LanguageCode => {
-    const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    if (urlLang) return urlLang
-    const browserLang = navigator.language || navigator.languages?.[0]
-    if (browserLang?.startsWith('id')) return 'id'
-    if (browserLang?.startsWith('ar')) return 'ar'
-    if (browserLang?.startsWith('zh')) return 'zh'
-    if (browserLang?.startsWith('ja')) return 'ja'
-    if (browserLang?.startsWith('es')) return 'es'
-    if (browserLang?.startsWith('fr')) return 'fr'
-    if (browserLang?.startsWith('ko')) return 'ko'
-    return 'en'
-  }
-  
-  const [language, setLanguage] = useState<LanguageCode>(getInitialLanguage)
+  const [language, setLanguage] = useState<LanguageCode>(() => {
+    return getCurrentLanguage(location.pathname, location.search)
+  })
   
   useEffect(() => {
-    const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    if (urlLang && urlLang !== language) {
-      setLanguage(urlLang)
+    const currentLang = getCurrentLanguage(location.pathname, location.search)
+    if (currentLang !== language) {
+      setLanguage(currentLang)
     }
-  }, [location.pathname, location.search])
+  }, [location.pathname, location.search, language])
   
   const isIndonesian = language === 'id'
   const postsPerPage = 8

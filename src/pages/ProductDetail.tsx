@@ -15,7 +15,7 @@ import { sendBackgroundEmail } from '../utils/emailHelpers'
 import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { getCategorySlug } from '../utils/categoryHelpers'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
-import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { getCurrentLanguage, type LanguageCode } from '../utils/languageManager'
 import { translateCategory } from '../utils/categoryTranslations'
 import './ProductDetail.css'
 
@@ -726,7 +726,7 @@ const ProductDetail: React.FC = () => {
 
   // Language detection - instant, no async needed!
   useEffect(() => {
-    const detectedLanguage = getLanguageFromLocation(location.pathname, location.search) ?? 'id'
+    const detectedLanguage = getCurrentLanguage(location.pathname, location.search)
     setLanguage(prev => (prev === detectedLanguage ? prev : detectedLanguage))
     setIsLoading(false)
   }, [location.pathname, location.search])

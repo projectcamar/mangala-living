@@ -66,6 +66,68 @@ export const getLanguageFromLocation = (
 }
 
 /**
+ * Get current language with consistent priority:
+ * 1. URL (query param or path prefix)
+ * 2. Stored preference (localStorage)
+ * 3. Browser language (fallback)
+ * 
+ * This ensures language consistency across pages
+ */
+export const getCurrentLanguage = (
+  pathname: string,
+  search: string
+): LanguageCode => {
+  // 1) Check URL first (highest priority)
+  const urlLang = getLanguageFromLocation(pathname, search)
+  if (urlLang) {
+    // Store it if found in URL
+    storeLanguage(urlLang)
+    return urlLang
+  }
+
+  // 2) Check stored preference (user's previous choice)
+  const stored = getStoredLanguage()
+  if (stored) {
+    return stored
+  }
+
+  // 3) Fallback to browser language
+  const browserLang = navigator.language || navigator.languages?.[0]
+  if (browserLang?.startsWith('id')) {
+    storeLanguage('id')
+    return 'id'
+  }
+  if (browserLang?.startsWith('ko')) {
+    storeLanguage('ko')
+    return 'ko'
+  }
+  if (browserLang?.startsWith('fr')) {
+    storeLanguage('fr')
+    return 'fr'
+  }
+  if (browserLang?.startsWith('es')) {
+    storeLanguage('es')
+    return 'es'
+  }
+  if (browserLang?.startsWith('ja')) {
+    storeLanguage('ja')
+    return 'ja'
+  }
+  if (browserLang?.startsWith('ar')) {
+    storeLanguage('ar')
+    return 'ar'
+  }
+  if (browserLang?.startsWith('zh')) {
+    storeLanguage('zh')
+    return 'zh'
+  }
+
+  // Default to English
+  storeLanguage('en')
+  return 'en'
+}
+
+/**
  * Detect language from various sources in priority order:
  * 1. URL query parameter (?lang=)
  * 2. URL path prefix (/id/, /eng/, /ar/, /zh/, /ja/, /es/, /fr/, /ko/)
