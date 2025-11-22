@@ -10,7 +10,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { getProductName } from '../data/productDescriptions'
-import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { getCurrentLanguage, getStoredLanguage, detectLanguageFromIP, type LanguageCode } from '../utils/languageManager'
 import './SearchResults.css'
 import '../components/DualLanguage.css'
 
@@ -226,12 +226,29 @@ function SearchResults() {
 
   // Language detection - instant, no async needed!
   useEffect(() => {
-    const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    if (urlLang) {
-      setLanguage(urlLang)
-    }
+    const currentLang = getCurrentLanguage(location.pathname, location.search)
+    setLanguage(currentLang)
     setIsDetectingLanguage(false)
   }, [location.pathname, location.search])
+
+  // IP detection for first visit (only if no stored preference)
+  useEffect(() => {
+    const stored = getStoredLanguage()
+    const urlLang = getCurrentLanguage(location.pathname, location.search)
+    
+    if (stored || urlLang !== 'en') {
+      return
+    }
+
+    const detectIP = async () => {
+      const ipLang = await detectLanguageFromIP()
+      if (ipLang && !stored) {
+        setLanguage(ipLang)
+      }
+    }
+
+    detectIP()
+  }, [])
 
   const isIndonesian = language === 'id'
   const uiTranslations = SEARCH_TRANSLATIONS[language] ?? SEARCH_TRANSLATIONS.en

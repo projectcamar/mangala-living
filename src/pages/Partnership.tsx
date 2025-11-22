@@ -12,7 +12,7 @@ import flexibilityImage from '../assets/Kabinet-Industrial-Dapur.webp'
 import scaleImage from '../assets/Meja-makan-industrial-150x60x90-2 kursi.webp'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
-import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { getCurrentLanguage, getStoredLanguage, detectLanguageFromIP, type LanguageCode } from '../utils/languageManager'
 import './Partnership.css'
 
 const PARTNERSHIP_TRANSLATIONS: Record<
@@ -326,24 +326,35 @@ const OG_LOCALES = ['id_ID', 'en_US', 'ar_SA', 'zh_CN', 'ja_JP', 'es_ES', 'fr_FR
 
 const Partnership: React.FC = () => {
   const location = useLocation()
-  const getInitialLanguage = (): LanguageCode => {
-    const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    if (urlLang) return urlLang
-    const browserLang = navigator.language || navigator.languages?.[0]
-    if (browserLang?.startsWith('id')) return 'id'
-    if (browserLang?.startsWith('ar')) return 'ar'
-    if (browserLang?.startsWith('zh')) return 'zh'
-    if (browserLang?.startsWith('ja')) return 'ja'
-    if (browserLang?.startsWith('es')) return 'es'
-    if (browserLang?.startsWith('fr')) return 'fr'
-    if (browserLang?.startsWith('ko')) return 'ko'
-    return 'en'
-  }
-  const [language, setLanguage] = useState<LanguageCode>(getInitialLanguage)
+  const [language, setLanguage] = useState<LanguageCode>(() => {
+    return getCurrentLanguage(location.pathname, location.search)
+  })
+  
   useEffect(() => {
-    const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    if (urlLang && urlLang !== language) setLanguage(urlLang)
-  }, [location.pathname, location.search])
+    const currentLang = getCurrentLanguage(location.pathname, location.search)
+    if (currentLang !== language) {
+      setLanguage(currentLang)
+    }
+  }, [location.pathname, location.search, language])
+
+  // IP detection for first visit (only if no stored preference)
+  useEffect(() => {
+    const stored = getStoredLanguage()
+    const urlLang = getCurrentLanguage(location.pathname, location.search)
+    
+    if (stored || urlLang !== 'en') {
+      return
+    }
+
+    const detectIP = async () => {
+      const ipLang = await detectLanguageFromIP()
+      if (ipLang && !stored) {
+        setLanguage(ipLang)
+      }
+    }
+
+    detectIP()
+  }, [])
   const isIndonesian = language === 'id'
   const translations = PARTNERSHIP_TRANSLATIONS[language] ?? PARTNERSHIP_TRANSLATIONS.en
 

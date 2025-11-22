@@ -59,8 +59,10 @@ const readFileSafe = async (filePath) => {
 
 const parseBlogPosts = (source) => {
   const posts = []
-  const regex = /{[^}]*?id:\s*(\d+)[^}]*?slug:\s*'([^']+)'[^}]*?title:\s*'([^']+)'[^}]*?image:\s*'([^']+)'[^}]*?date:\s*'([^']+)'[^}]*?}/gs
+  // More robust regex that handles multiline and various spacing
+  const regex = /{\s*id:\s*(\d+)[^}]*?slug:\s*['"]([^'"]+)['"][^}]*?title:\s*['"]([^'"]+)['"][^}]*?image:\s*['"]([^'"]+)['"][^}]*?date:\s*['"]([^'"]+)['"][^}]*?}/gs
   let match
+  let count = 0
   while ((match = regex.exec(source))) {
     const [, id, slug, title, image, dateString] = match
     posts.push({
@@ -73,7 +75,9 @@ const parseBlogPosts = (source) => {
       changefreq: 'monthly',
       priority: 0.62
     })
+    count++
   }
+  console.log(`[sitemap] Parsed ${count} blog posts`)
   return posts
 }
 
@@ -355,9 +359,16 @@ const buildLanguageAlternates = (loc, explicitAlternates) => {
     }
 
     const defaultUrl = buildUrl(null)
+    // Include all 8 supported languages
     return [
       { hrefLang: 'id-ID', href: buildUrl('id') },
       { hrefLang: 'en', href: buildUrl('en') },
+      { hrefLang: 'ar', href: buildUrl('ar') },
+      { hrefLang: 'zh-CN', href: buildUrl('zh') },
+      { hrefLang: 'ja-JP', href: buildUrl('ja') },
+      { hrefLang: 'es-ES', href: buildUrl('es') },
+      { hrefLang: 'fr-FR', href: buildUrl('fr') },
+      { hrefLang: 'ko-KR', href: buildUrl('ko') },
       { hrefLang: 'x-default', href: defaultUrl }
     ]
   } catch (error) {

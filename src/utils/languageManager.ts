@@ -128,6 +128,65 @@ export const getCurrentLanguage = (
 }
 
 /**
+ * Generate URL with language parameter
+ * Used for navigation links to preserve language
+ */
+export const getLinkWithLanguage = (path: string, currentLanguage: LanguageCode): string => {
+  // Remove leading slash if present for consistency
+  const cleanPath = path.startsWith('/') ? path : `/${path}`
+  
+  // If path already has query params, append lang, otherwise add it
+  const hasQuery = cleanPath.includes('?')
+  const separator = hasQuery ? '&' : '?'
+  
+  return `${cleanPath}${separator}lang=${currentLanguage}`
+}
+
+/**
+ * Detect language from IP (for first visit only)
+ * Should only be called if no stored preference exists
+ */
+export const detectLanguageFromIP = async (): Promise<LanguageCode | null> => {
+  try {
+    const timeoutPromise = new Promise((_, reject) => {
+      setTimeout(() => reject(new Error('Timeout')), 2000)
+    })
+    
+    const fetchPromise = fetch('https://ipapi.co/json/')
+      .then(response => response.json())
+    
+    const data = await Promise.race([fetchPromise, timeoutPromise]) as any
+    const countryCode = data.country_code
+    
+    const frenchCountries = ['FR', 'BE', 'CH', 'LU', 'MC', 'CA', 'HT', 'CI', 'SN', 'ML', 'NE', 'BF', 'TG', 'BJ', 'CD', 'CG', 'GA', 'CM', 'CF', 'TD', 'MG', 'RE', 'MU', 'SC', 'KM', 'YT', 'DJ']
+    const spanishCountries = ['ES', 'MX', 'AR', 'CO', 'VE', 'PE', 'CL', 'EC', 'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', 'NI', 'CR', 'PA', 'UY']
+    const chineseCountries = ['CN', 'TW', 'HK', 'SG', 'MO']
+    const arabicCountries = ['SA', 'AE', 'KW', 'QA', 'OM', 'BH', 'EG', 'JO', 'LB', 'SY', 'IQ', 'YE', 'MA', 'DZ', 'TN', 'LY', 'SD', 'PS']
+    
+    if (countryCode === 'ID') {
+      return 'id'
+    } else if (countryCode === 'KR') {
+      return 'ko'
+    } else if (countryCode === 'JP') {
+      return 'ja'
+    } else if (frenchCountries.includes(countryCode)) {
+      return 'fr'
+    } else if (spanishCountries.includes(countryCode)) {
+      return 'es'
+    } else if (chineseCountries.includes(countryCode)) {
+      return 'zh'
+    } else if (arabicCountries.includes(countryCode)) {
+      return 'ar'
+    }
+    
+    return null
+  } catch (error) {
+    console.log('IP detection failed')
+    return null
+  }
+}
+
+/**
  * Detect language from various sources in priority order:
  * 1. URL query parameter (?lang=)
  * 2. URL path prefix (/id/, /eng/, /ar/, /zh/, /ja/, /es/, /fr/, /ko/)

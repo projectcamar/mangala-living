@@ -9,7 +9,7 @@ import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { getProductName } from '../data/productDescriptions'
-import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { getCurrentLanguage, getStoredLanguage, detectLanguageFromIP, type LanguageCode } from '../utils/languageManager'
 import { translateCategories } from '../utils/categoryTranslations'
 import './ProductCategory.css'
 
@@ -18,7 +18,36 @@ const bestSellersProducts = ALL_PRODUCTS.slice(0, 10)
 
 const BestSellers: React.FC = () => {
   const location = useLocation()
-  const language = getLanguageFromLocation(location.pathname, location.search) ?? 'en'
+  const [language, setLanguage] = useState<LanguageCode>(() => {
+    return getCurrentLanguage(location.pathname, location.search)
+  })
+  
+  useEffect(() => {
+    const currentLang = getCurrentLanguage(location.pathname, location.search)
+    if (currentLang !== language) {
+      setLanguage(currentLang)
+    }
+  }, [location.pathname, location.search, language])
+
+  // IP detection for first visit (only if no stored preference)
+  useEffect(() => {
+    const stored = getStoredLanguage()
+    const urlLang = getCurrentLanguage(location.pathname, location.search)
+    
+    if (stored || urlLang !== 'en') {
+      return
+    }
+
+    const detectIP = async () => {
+      const ipLang = await detectLanguageFromIP()
+      if (ipLang && !stored) {
+        setLanguage(ipLang)
+      }
+    }
+
+    detectIP()
+  }, [])
+
   const isIndonesian = language === 'id'
   const localeMeta = generateLanguageSpecificMeta(language)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)

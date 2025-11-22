@@ -9,7 +9,7 @@ import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-
 import showroomImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
-import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
+import { getCurrentLanguage, getStoredLanguage, detectLanguageFromIP, type LanguageCode } from '../utils/languageManager'
 import './CustomOrder.css'
 
 type CustomOrderTranslation = {
@@ -515,24 +515,35 @@ const CUSTOM_ORDER_TRANSLATIONS: Record<LanguageCode, CustomOrderTranslation> = 
 
 const CustomOrder: React.FC = () => {
   const location = useLocation()
-  const getInitialLanguage = (): LanguageCode => {
-    const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    if (urlLang) return urlLang
-    const browserLang = navigator.language || navigator.languages?.[0]
-    if (browserLang?.startsWith('id')) return 'id'
-    if (browserLang?.startsWith('ar')) return 'ar'
-    if (browserLang?.startsWith('zh')) return 'zh'
-    if (browserLang?.startsWith('ja')) return 'ja'
-    if (browserLang?.startsWith('es')) return 'es'
-    if (browserLang?.startsWith('fr')) return 'fr'
-    if (browserLang?.startsWith('ko')) return 'ko'
-    return 'en'
-  }
-  const [language, setLanguage] = useState<LanguageCode>(getInitialLanguage)
+  const [language, setLanguage] = useState<LanguageCode>(() => {
+    return getCurrentLanguage(location.pathname, location.search)
+  })
+  
   useEffect(() => {
-    const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    if (urlLang && urlLang !== language) setLanguage(urlLang)
+    const currentLang = getCurrentLanguage(location.pathname, location.search)
+    if (currentLang !== language) {
+      setLanguage(currentLang)
+    }
   }, [location.pathname, location.search, language])
+
+  // IP detection for first visit (only if no stored preference)
+  useEffect(() => {
+    const stored = getStoredLanguage()
+    const urlLang = getCurrentLanguage(location.pathname, location.search)
+    
+    if (stored || urlLang !== 'en') {
+      return
+    }
+
+    const detectIP = async () => {
+      const ipLang = await detectLanguageFromIP()
+      if (ipLang && !stored) {
+        setLanguage(ipLang)
+      }
+    }
+
+    detectIP()
+  }, [])
   const isIndonesian = language === 'id'
   const t = CUSTOM_ORDER_TRANSLATIONS[language] ?? CUSTOM_ORDER_TRANSLATIONS.en
 
