@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import './SingaporeLanguageModal.css'
 import { detectVisitorLocation } from '../utils/geolocation'
 import { storeLanguage, type LanguageCode } from '../utils/languageManager'
@@ -7,6 +8,8 @@ const SG_LANG_CHOICE_KEY = 'mangala_sg_lang_choice'
 
 const SingaporeLanguageModal: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
   useEffect(() => {
     let isMounted = true
@@ -15,7 +18,7 @@ const SingaporeLanguageModal: React.FC = () => {
       if (typeof window === 'undefined') return
 
       try {
-        // If user already chose, don't show again
+        // If user already chose, don't show again (unless triggered by Alt+F)
         const existingChoice = localStorage.getItem(SG_LANG_CHOICE_KEY)
         if (existingChoice) return
 
@@ -39,6 +42,23 @@ const SingaporeLanguageModal: React.FC = () => {
     }
   }, [])
 
+  // Keyboard shortcut: Alt + F to show modal (always active, for testing)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Alt + F to show modal (for testing - always works)
+      if (e.altKey && (e.key === 'f' || e.key === 'F')) {
+        e.preventDefault()
+        setIsVisible(true)
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [])
+
   if (!isVisible) return null
 
   const handleChoice = (lang: LanguageCode) => {
@@ -51,8 +71,16 @@ const SingaporeLanguageModal: React.FC = () => {
 
     setIsVisible(false)
 
-    // Reload once so the whole app picks up the new language preference
-    window.location.reload()
+    // Update URL with ?lang= parameter to trigger language change without reload
+    const currentPath = location.pathname
+    const searchParams = new URLSearchParams(location.search)
+    searchParams.set('lang', lang)
+    
+    // Navigate to same path with lang parameter - this will trigger language change
+    navigate(`${currentPath}?${searchParams.toString()}`, { replace: true })
+    
+    // Trigger a custom event to notify components about language change
+    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { language: lang } }))
   }
 
   const handleClose = () => {
@@ -80,19 +108,29 @@ const SingaporeLanguageModal: React.FC = () => {
           <button
             className="sg-lang-button sg-lang-button-en"
             onClick={() => handleChoice('en')}
+            type="button"
           >
-            <span className="sg-lang-flag sg-flag-en" />
-            <span className="sg-lang-label-main">English</span>
-            <span className="sg-lang-label-sub">Recommended if you prefer English</span>
+            <div className="sg-lang-button-content">
+              <span className="sg-lang-flag sg-flag-en" />
+              <div className="sg-lang-text">
+                <span className="sg-lang-label-main">English</span>
+                <span className="sg-lang-label-sub">Click to translate page to English</span>
+              </div>
+            </div>
           </button>
 
           <button
             className="sg-lang-button sg-lang-button-zh"
             onClick={() => handleChoice('zh')}
+            type="button"
           >
-            <span className="sg-lang-flag sg-flag-zh" />
-            <span className="sg-lang-label-main">中文 (Chinese)</span>
-            <span className="sg-lang-label-sub">推荐：如果你更习惯中文</span>
+            <div className="sg-lang-button-content">
+              <span className="sg-lang-flag sg-flag-zh" />
+              <div className="sg-lang-text">
+                <span className="sg-lang-label-main">中文 (Chinese)</span>
+                <span className="sg-lang-label-sub">点击将页面翻译为中文</span>
+              </div>
+            </div>
           </button>
         </div>
 
