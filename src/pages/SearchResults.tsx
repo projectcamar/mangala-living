@@ -404,6 +404,8 @@ function SearchResults() {
             name="description"
             content={uiTranslations.metaDescription(query, hasQuery)}
           />
+          {/* Add noindex for empty search results to prevent Soft 404 */}
+          <meta name="robots" content={hasQuery && resultsCount === 0 ? "noindex, follow" : "index, follow"} />
           <meta httpEquiv="content-language" content={localeMeta.lang} />
           <link rel="canonical" href={localizedUrls.canonical} />
           {localizedUrls.alternates.map((alternate) => (

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import { useParams, Link, useLocation } from 'react-router-dom'
+import { useParams, Link, useLocation, Navigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { X, Play } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
@@ -871,20 +871,9 @@ const ProductDetail: React.FC = () => {
     )
   }
 
+  // Redirect to NotFound page if product doesn't exist to prevent Soft 404
   if (!product) {
-    return (
-      <div>
-      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
-        <Header isIndonesian={isIndonesian} language={language} />
-        <div className="container" style={{ padding: '100px 20px', textAlign: 'center' }}>
-          <h1>{uiTranslations.productNotFound}</h1>
-          <Link to="/shop" style={{ color: '#333', textDecoration: 'underline' }}>
-            {uiTranslations.browseAllProducts}
-          </Link>
-        </div>
-        <Footer isIndonesian={isIndonesian} language={language} />
-      </div>
-    )
+    return <Navigate to="/404-not-found" replace />
   }
 
   // Get translated product name and description

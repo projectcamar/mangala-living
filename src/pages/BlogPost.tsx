@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { useParams, Link, useLocation } from 'react-router-dom'
+import { useParams, Link, useLocation, Navigate } from 'react-router-dom'
 import { Mail, MessageCircle, Share2, Facebook, Twitter, Linkedin, Copy, Check } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
@@ -258,29 +258,9 @@ const BlogPost: React.FC = () => {
     )
   }
 
+  // Redirect to NotFound page if blog post doesn't exist to prevent Soft 404
   if (!post || !content) {
-    return (
-      <div className="blog-page blog-post-page">
-        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
-        <Header isIndonesian={isIndonesian} language={language} />
-        <main className="blog-post-main" aria-labelledby="blog-post-not-found-heading">
-          <section className="blog-content-section">
-            <div className="blog-post-container">
-              <div className="blog-post-empty card">
-                <div className="section-header">
-                  <h1 id="blog-post-not-found-heading">Article Not Found</h1>
-                  <p className="section-subtitle">The article you are looking for is unavailable.</p>
-                </div>
-                <Link to="/blog" className="btn-primary">
-                  Back to Blog
-                </Link>
-              </div>
-            </div>
-          </section>
-        </main>
-        <Footer isIndonesian={isIndonesian} language={language} />
-      </div>
-    )
+    return <Navigate to="/404-not-found" replace />
   }
 
   // Get other articles (exclude current)

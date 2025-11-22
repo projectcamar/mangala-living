@@ -364,6 +364,8 @@ function App() {
           } />
           */}
           
+          {/* 404 - Explicit 404 route for redirects */}
+          <Route path="/404-not-found" element={<NotFound />} />
           {/* 404 - Catch all unmatched routes */}
           <Route path="*" element={<NotFound />} />
         </Routes>

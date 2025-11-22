@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react'
-import { useParams, Link, useLocation } from 'react-router-dom'
+import { useParams, Link, useLocation, Navigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { ChevronDown } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
@@ -382,7 +382,11 @@ const ProductCategory: React.FC = () => {
     'id': 'USD'
   }
 
-  const categoryName = CATEGORY_MAP[category || ''] || 'Products'
+  // Check if category exists in CATEGORY_MAP - if not, redirect to 404 to prevent Soft 404
+  const categoryName = category ? CATEGORY_MAP[category] : null
+  if (!category || !categoryName) {
+    return <Navigate to="/404-not-found" replace />
+  }
   const localizedCategoryName = getLocalizedCategoryName(categoryName, language)
 
   // Language detection - instant, no async needed!
@@ -512,7 +516,8 @@ const ProductCategory: React.FC = () => {
         <title>{uiTranslations.pageTitle(localizedCategoryName)}</title>
         <meta name="description" content={uiTranslations.metaDescription(localizedCategoryName, filteredProducts.length)} />
         <meta name="keywords" content={uiTranslations.metaKeywords(localizedCategoryName)} />
-        <meta name="robots" content="index, follow" />
+        {/* Add noindex if category has no products to prevent Soft 404 */}
+        <meta name="robots" content={filteredProducts.length > 0 ? "index, follow" : "noindex, follow"} />
         <meta httpEquiv="content-language" content={localeMeta.lang} />
         <link rel="canonical" href={localizedUrls.canonical} />
         {localizedUrls.alternates.map((alternate) => (

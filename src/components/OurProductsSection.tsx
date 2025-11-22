@@ -54,7 +54,7 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
   const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
   const [highlightedPrices, setHighlightedPrices] = useState<{ [key: number]: string }>({})
 
-  // Language to currency mapping
+  // Language to currency mapping (only non-IDR highlight currencies)
   const LANGUAGE_CURRENCY_MAP: { [key: string]: 'KRW' | 'JPY' | 'CNY' | 'SAR' | 'EUR' | 'USD' | null } = {
     'ko': 'KRW',
     'ja': 'JPY',
@@ -62,8 +62,8 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
     'ar': 'SAR',
     'es': 'EUR',
     'fr': 'EUR',
-    'en': 'USD',
-    'id': 'USD'
+    'en': 'USD', // English highlights USD
+    'id': null   // Indonesian highlights IDR (original price)
   }
 
   useEffect(() => {
@@ -74,16 +74,23 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
       const targetCurrency = LANGUAGE_CURRENCY_MAP[language] || 'USD'
       
       for (const product of products) {
-        // Always convert to USD (non-highlighted)
+        // Always convert to USD
         const usdPrice = await convertIDRToUSD(product.price)
         usdPriceMap[product.id] = usdPrice
         
-        // Convert to highlighted currency based on language
-        if (targetCurrency && targetCurrency !== 'USD') {
+        // Determine highlighted price based on language
+        if (language === 'id') {
+          // Indonesian: highlight IDR (original price), show USD as secondary
+          highlightedPriceMap[product.id] = product.price
+        } else if (language === 'en') {
+          // English: highlight USD, show IDR as secondary
+          highlightedPriceMap[product.id] = usdPrice
+        } else if (targetCurrency && targetCurrency !== 'USD') {
+          // Other languages with local highlight currency
           const highlightedPrice = await convertIDRToCurrency(product.price, targetCurrency)
           highlightedPriceMap[product.id] = highlightedPrice
         } else {
-          // For USD (en/id), use USD as highlighted
+          // Fallback: use USD
           highlightedPriceMap[product.id] = usdPrice
         }
       }
@@ -148,7 +155,7 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
                       >
                         {highlightedPrices[product.id]}
                       </p>
-                      {/* USD always non-highlighted */}
+                      {/* Secondary currency (opposite of highlighted) */}
                       <p
                         style={{
                           margin: 0,
@@ -157,7 +164,7 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
                           color: '#999'
                         }}
                       >
-                        {usdPrices[product.id]}
+                        {language === 'id' ? usdPrices[product.id] : product.price}
                       </p>
                     </div>
                   ) : (
