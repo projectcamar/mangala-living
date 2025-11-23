@@ -4,12 +4,12 @@ import { FAQ_DATA, type FAQItem } from '../data/faq'
 import { generateFAQSchema } from '../utils/structuredData'
 import './HomepageFAQ.css'
 
-interface HomepageFAQProps {
+interface FAQSectionProps {
   isIndonesian: boolean
   language: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'
 }
 
-const HomepageFAQ: React.FC<HomepageFAQProps> = ({ isIndonesian, language }) => {
+const FAQSection: React.FC<FAQSectionProps> = ({ isIndonesian, language }) => {
   // Get top FAQs from multiple categories
   const topFAQs: FAQItem[] = [
     // From furniture-besi-custom-bekasi
@@ -83,7 +83,7 @@ const HomepageFAQ: React.FC<HomepageFAQProps> = ({ isIndonesian, language }) => 
         </script>
       </Helmet>
       
-      <section className="homepage-faq-section">
+      <section className="faq-section">
         <div className="container">
           <div className="faq-header">
             <h2 className="faq-title">{translations.title}</h2>
@@ -124,5 +124,5 @@ const HomepageFAQ: React.FC<HomepageFAQProps> = ({ isIndonesian, language }) => 
   )
 }
 
-export default HomepageFAQ
+export default FAQSection
 

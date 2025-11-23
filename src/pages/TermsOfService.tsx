@@ -9,6 +9,7 @@ import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/se
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import { getCurrentLanguage, getStoredLanguage, detectLanguageFromIP, type LanguageCode } from '../utils/languageManager'
 import { TERMS_TRANSLATIONS } from './TermsOfServiceTranslations'
+import FAQSection from '../components/HomepageFAQ'
 import './TermsOfService.css'
 
 const TermsOfService: React.FC = () => {
@@ -392,6 +393,9 @@ const TermsOfService: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* FAQ Section - SEO Optimized with Rich Snippets */}
+      <FAQSection isIndonesian={isIndonesian} language={language} />
 
       <Footer isIndonesian={isIndonesian} language={language} />
     </div>

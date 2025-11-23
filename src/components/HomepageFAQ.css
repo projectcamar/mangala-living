@@ -1,4 +1,4 @@
-.homepage-faq-section {
+  .faq-section {
   padding: 80px 20px;
   background: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%);
   position: relative;
@@ -150,7 +150,7 @@
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .homepage-faq-section {
+  .faq-section {
     padding: 60px 16px;
   }
   

@@ -14,7 +14,6 @@ import MessageSection from '../components/MessageSection'
 import Footer from '../components/Footer'
 import AISearchOptimizedContent from '../components/AISearchOptimizedContent'
 import AISearchFeatures from '../components/AISearchFeatures'
-import HomepageFAQ from '../components/HomepageFAQ'
 
 // Utils
 import { generateAIOptimizedStructuredData, generateFAQStructuredData, generateWebSiteStructuredData } from '../utils/aiSearchOptimization'
@@ -355,10 +354,6 @@ const Home: React.FC = () => {
       <BestSellersSection isIndonesian={isIndonesian} language={language} />
       <OurProductsSection isIndonesian={isIndonesian} language={language} />
       <MessageSection isIndonesian={isIndonesian} language={language} />
-      
-      {/* FAQ Section for Rich Snippets & SEO */}
-      <HomepageFAQ isIndonesian={isIndonesian} language={language} />
-      
       <Footer isIndonesian={isIndonesian} language={language} />
       
       {/* AI Search Optimized Content */}
