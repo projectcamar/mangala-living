@@ -2810,6 +2810,36 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop',
     date: '2025-11-19',
     author: 'Helmi Ramdan'
+  },
+  {
+    id: 276,
+    slug: 'naseehat-ikhtiyar-athath-sinaei-maqhaa-asri',
+    title: 'نصائح لاختيار أثاث صناعي لمقهى عصري',
+    category: 'Tips and Trick',
+    excerpt: 'اختيار أثاث صناعي لمقهى ليس مجرد مسألة جمالية، بل يتعلق أيضًا بخلق جو مريح وعملي للعملاء. سيقدم لك هذا الدليل الشامل نصائح عملية لاختيار أثاث صناعي مثالي لمقهى عصري.',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-11-20',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 277,
+    slug: 'ding-zhi-gong-ye-jia-ju-bi-cheng-pin-jia-ju-de-you-shi',
+    title: '定制工业家具相比成品家具的优势：为何选择定制',
+    category: 'About Furniture',
+    excerpt: '在决定购买工业家具时，您将面临两个选择：定制或成品。本文深入探讨定制工业家具相比成品家具的独特优势，帮助您做出明智的投资决策。',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-11-21',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 278,
+    slug: 'sangyo-fu-furniture-no-moderu-na-interior-design-inspire',
+    title: '産業風家具を使ったモダンなインテリアデザインのインスピレーション',
+    category: 'Furniture Information',
+    excerpt: '産業風ミニマリストのインテリアデザインは、2025年も引き続き人気のトレンドです。工業的な要素とミニマリストの美学を組み合わせることで、モダンで温かみのある、インスタ映えする空間を創り出せます。',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop',
+    date: '2025-11-22',
+    author: 'Helmi Ramdan'
   }
 ]
 
