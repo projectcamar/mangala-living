@@ -2840,6 +2840,36 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop',
     date: '2025-11-22',
     author: 'Helmi Ramdan'
+  },
+  {
+    id: 279,
+    slug: 'como-mantener-muebles-metalicos-industriales-duraderos',
+    title: 'Cómo Mantener Muebles Metálicos Industriales Duraderos y de Calidad',
+    category: 'Tips and Trick',
+    excerpt: 'Los muebles metálicos industriales son una inversión a largo plazo para su negocio o hogar. Con el cuidado adecuado, pueden durar décadas manteniendo su apariencia y funcionalidad. Esta guía completa le enseñará cómo mantener sus muebles metálicos en perfectas condiciones.',
+    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop',
+    date: '2025-11-23',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 280,
+    slug: 'tendances-mobilier-cafe-restaurant-2025',
+    title: 'Tendances du Mobilier pour Cafés et Restaurants en 2025',
+    category: 'Furniture Information',
+    excerpt: 'Découvrez les dernières tendances en matière de mobilier pour cafés et restaurants qui rendront votre établissement F&B encore plus attractif en 2025. Du design industriel minimaliste aux solutions durables, explorez les tendances qui façonnent l\'avenir de l\'industrie hôtelière.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop',
+    date: '2025-11-24',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 281,
+    slug: 'hyeondae-kafe-yeong-gong-yeong-gagu-ui-jangjeom',
+    title: '현대 카페용 공업용 가구의 장점: 왜 공업용 가구를 선택해야 하는가',
+    category: 'About Furniture',
+    excerpt: '많은 사업자들이 여전히 수입 가구가 국산 제품보다 품질이 더 좋다고 생각합니다. 그러나 실제로는 인도네시아에서 제조된 고품질 공업용 가구가 많은 장점을 제공합니다. 이 기사에서는 현대 카페를 위한 공업용 가구의 장점을 탐구합니다.',
+    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&auto=format&fit=crop',
+    date: '2025-11-25',
+    author: 'Helmi Ramdan'
   }
 ]
 

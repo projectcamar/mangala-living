@@ -7996,6 +7996,343 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         ]
       }
     ]
+  },
+  {
+    slug: 'como-mantener-muebles-metalicos-industriales-duraderos',
+    language: 'es',
+    sections: [
+      {
+        paragraphs: [
+          'Los muebles metálicos industriales son una inversión a largo plazo para su negocio o hogar. Con el cuidado adecuado, pueden durar décadas manteniendo su apariencia y funcionalidad. Aunque los muebles industriales son conocidos por su durabilidad, el mantenimiento regular sigue siendo esencial.',
+          '<strong>Resumen rápido:</strong> Esta guía completa cubrirá métodos de limpieza diaria, tratamiento antióxido, mantenimiento de superficies, inspecciones regulares y soluciones a problemas comunes, asegurando que sus muebles se mantengan como nuevos durante años.'
+        ]
+      },
+      {
+        heading: '¿Por qué es importante el mantenimiento?',
+        paragraphs: [
+          'El mantenimiento adecuado de los muebles metálicos industriales es crucial por varias razones:',
+          '<strong>1. Prolonga la vida útil:</strong> El mantenimiento regular puede extender significativamente la vida útil de sus muebles, ahorrando dinero a largo plazo.',
+          '<strong>2. Mantiene la apariencia:</strong> Los muebles bien mantenidos conservan su apariencia atractiva y profesional.',
+          '<strong>3. Previene el óxido:</strong> El tratamiento antióxido adecuado previene la corrosión que puede dañar la estructura.',
+          '<strong>4. Protege la inversión:</strong> Los muebles industriales son una inversión significativa, y el mantenimiento protege esa inversión.',
+          '<strong>5. Mejora la funcionalidad:</strong> Los muebles bien mantenidos funcionan mejor y son más seguros de usar.'
+        ]
+      },
+      {
+        heading: 'Limpieza diaria y rutinaria',
+        paragraphs: [
+          '<strong>Materiales necesarios:</strong>',
+          'Para la limpieza diaria, necesitará:',
+          '<strong>•</strong> Paño suave o microfibra',
+          '<strong>•</strong> Agua tibia',
+          '<strong>•</strong> Detergente suave (sin lejía)',
+          '<strong>•</strong> Secador de aire o paño seco',
+          '<strong>Proceso de limpieza:</strong>',
+          '<strong>1. Eliminar polvo:</strong> Use un paño seco o ligeramente húmedo para eliminar el polvo y la suciedad superficial.',
+          '<strong>2. Limpieza con detergente:</strong> Para manchas más persistentes, use una solución suave de agua tibia y detergente. Evite productos abrasivos que puedan dañar el acabado.',
+          '<strong>3. Secado:</strong> Seque inmediatamente con un paño suave para evitar manchas de agua.',
+          '<strong>4. Limpieza de juntas:</strong> Use un cepillo suave o hisopo para limpiar las juntas de soldadura y áreas difíciles de alcanzar.'
+        ],
+        image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&auto=format&fit=crop',
+        imageAlt: 'Limpieza de muebles metálicos industriales'
+      },
+      {
+        heading: 'Frecuencia de limpieza',
+        list: [
+          '<strong>Limpieza diaria:</strong> Elimine el polvo y las manchas superficiales todos los días, especialmente en áreas de alto tráfico como cafeterías y restaurantes.',
+          '<strong>Limpieza semanal:</strong> Realice una limpieza más profunda una vez por semana, prestando atención a las juntas y áreas de difícil acceso.',
+          '<strong>Limpieza mensual:</strong> Realice una inspección y limpieza completa mensualmente, verificando signos de desgaste o daño.',
+          '<strong>Limpieza estacional:</strong> Antes de cada cambio de temporada, realice una limpieza y mantenimiento más exhaustivo.'
+        ]
+      },
+      {
+        heading: 'Tratamiento antióxido y prevención',
+        paragraphs: [
+          '<strong>Medidas preventivas:</strong>',
+          'Aunque el acabado de polvo proporciona buena protección contra el óxido, es importante seguir estas medidas:',
+          '<strong>1. Mantener seco:</strong> Limpie inmediatamente cualquier derrame de agua, especialmente en ambientes húmedos. Evite el contacto prolongado con agua.',
+          '<strong>2. Verificar la integridad del acabado:</strong> Revise regularmente si hay arañazos, descamación o daños en el acabado de la superficie, y trate cualquier problema de inmediato.',
+          '<strong>3. Retoque de pintura:</strong> Para daños menores en el acabado, use pintura antióxido del color correspondiente para evitar que se extienda la corrosión.',
+          '<strong>4. Reparación profesional:</strong> Para daños graves, se recomienda contactar al fabricante para una reparación profesional que garantice la calidad.',
+          '<strong>Detección temprana:</strong>',
+          'Revise regularmente las áreas propensas al óxido, como juntas de soldadura, esquinas y áreas expuestas. Si detecta signos tempranos de óxido, trátelos inmediatamente.'
+        ]
+      },
+      {
+        heading: 'Mantenimiento según el entorno',
+        paragraphs: [
+          '<strong>Ambiente interior:</strong>',
+          'Los muebles en interiores son relativamente fáciles de mantener. Preste atención a:',
+          '<strong>• Control de humedad:</strong> Mantenga un nivel de humedad interior adecuado (40-60%) para evitar la corrosión.',
+          '<strong>• Evitar luz solar directa:</strong> La exposición prolongada a los rayos UV puede causar decoloración del acabado. Use cortinas o protección solar.',
+          '<strong>• Prevenir arañazos:</strong> Use protectores de mesa o alfombras para evitar colocar objetos afilados directamente.',
+          '<strong>Ambiente exterior/semi-exterior:</strong>',
+          'Los muebles en exteriores requieren un mantenimiento más estricto:',
+          '<strong>• Inspección regular:</strong> Revise al menos una vez al mes, prestando especial atención a las juntas de soldadura y costuras.',
+          '<strong>• Limpieza inmediata:</strong> Limpie excrementos de aves, hojas y otros residuos orgánicos que puedan acelerar la corrosión.',
+          '<strong>• Mantenimiento estacional:</strong> Antes de la temporada de lluvias, realice una limpieza profunda e inspección, y retoque si es necesario.',
+          '<strong>• Protección con cubierta:</strong> Durante períodos de no uso prolongado, use una lona impermeable para reducir la exposición.'
+        ],
+        image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop',
+        imageAlt: 'Mantenimiento de muebles exteriores'
+      },
+      {
+        heading: 'Plan de inspección y mantenimiento regular',
+        list: [
+          '<strong>Inspección semanal:</strong> Verifique si hay arañazos o daños visibles, verifique la solidez de las juntas de soldadura, verifique si los accesorios (tornillos, bisagras) están sueltos.',
+          '<strong>Inspección mensual:</strong> Limpieza profunda y pulido, verificación de la estabilidad estructural, verificación de la integridad del acabado y búsqueda de signos de óxido.',
+          '<strong>Inspección trimestral:</strong> Inspección y mantenimiento completo, retoque de pintura o reparación profesional si es necesario, evaluación de si se necesitan ajustes o reemplazo de accesorios.',
+          '<strong>Inspección anual:</strong> Evaluación completa del estado de los muebles, planificación de mantenimiento para el próximo año, consideración de actualizaciones o mejoras.'
+        ]
+      },
+      {
+        heading: 'Problemas comunes y soluciones',
+        list: [
+          '<strong>Óxido en las juntas de soldadura:</strong> Limpie el área afectada, aplique un removedor de óxido, lije suavemente y aplique pintura antióxido. Si el problema es grave, consulte a un profesional.',
+          '<strong>Descoloración del acabado:</strong> La decoloración leve puede tratarse con pulido suave. Para decoloración severa, considere un retoque profesional o reacabado.',
+          '<strong>Juntas sueltas:</strong> Apriete los tornillos y pernos. Si el problema persiste, puede ser necesario reforzar la estructura o reemplazar componentes.',
+          '<strong>Arañazos superficiales:</strong> Los arañazos menores pueden tratarse con un marcador de retoque del color correspondiente. Los arañazos profundos pueden requerir retoque profesional.',
+          '<strong>Inestabilidad:</strong> Verifique que todas las patas estén niveladas. Si el problema persiste, puede ser necesario ajustar o reemplazar las patas o la base.'
+        ]
+      },
+      {
+        heading: 'Mangala Living - Servicios de mantenimiento y soporte',
+        paragraphs: [
+          '<strong>Mangala Living</strong> ofrece servicios completos de mantenimiento y soporte para sus muebles industriales:',
+          '<strong>1. Garantía de calidad:</strong> Todos nuestros muebles vienen con garantía que cubre defectos de materiales y mano de obra.',
+          '<strong>2. Servicio de reparación:</strong> Ofrecemos servicios de reparación profesional para mantener sus muebles en perfectas condiciones.',
+          '<strong>3. Piezas de repuesto:</strong> Disponemos de piezas de repuesto para facilitar el mantenimiento y reparación.',
+          '<strong>4. Consultoría de mantenimiento:</strong> Nuestro equipo puede proporcionar asesoramiento personalizado sobre el mantenimiento de sus muebles.',
+          '<strong>5. Servicio de reacabado:</strong> Ofrecemos servicios de reacabado profesional para restaurar la apariencia original de sus muebles.',
+          'Dirección del taller: <strong>Jl. Raya Setu, Bekasi</strong>. Bienvenido a consultar nuestros servicios de mantenimiento.',
+          '<strong>Contacto:</strong><br/>&bull; <a href="https://wa.me/+6288801146881" target="_blank">WhatsApp: +6288801146881</a><br/>&bull; <a href="mailto:lifewithmangala@gmail.com">Email: lifewithmangala@gmail.com</a><br/>&bull; Mencione "MAINTENANCE279" para obtener consultoría de mantenimiento y servicios especiales.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'tendances-mobilier-cafe-restaurant-2025',
+    language: 'fr',
+    sections: [
+      {
+        paragraphs: [
+          'Découvrez les dernières tendances en matière de mobilier pour cafés et restaurants qui rendront votre établissement F&B encore plus attractif en 2025. Du design industriel minimaliste aux solutions durables, les tendances actuelles façonnent l\'avenir de l\'industrie hôtelière.',
+          '<strong>Vue d\'ensemble rapide:</strong> Cet article couvrira les tendances clés en matière de mobilier, les matériaux populaires, les styles de design, les considérations de durabilité et comment choisir le mobilier qui correspond à votre concept de marque.'
+        ]
+      },
+      {
+        heading: 'Tendances clés du mobilier 2025',
+        paragraphs: [
+          '<strong>1. Design industriel minimaliste:</strong>',
+          'Le design industriel minimaliste continue de dominer en 2025. Ce style combine des éléments industriels bruts (métal exposé, brique, béton) avec une esthétique minimaliste épurée, créant des espaces modernes et accueillants.',
+          '<strong>2. Durabilité et écologie:</strong>',
+          'Les consommateurs sont de plus en plus conscients de l\'environnement. Les meubles fabriqués à partir de matériaux recyclés, de bois certifié et de finitions écologiques sont de plus en plus populaires.',
+          '<strong>3. Polyvalence et modularité:</strong>',
+          'Les meubles modulaires qui peuvent être réorganisés selon les besoins gagnent en popularité. Cette flexibilité permet aux établissements de s\'adapter rapidement aux changements de capacité ou d\'événements.',
+          '<strong>4. Confort et ergonomie:</strong>',
+          'Le confort devient une priorité. Les sièges ergonomiques, les tables à hauteur ajustable et les meubles conçus pour de longues périodes d\'utilisation sont essentiels.',
+          '<strong>5. Esthétique Instagram-worthy:</strong>',
+          'Les espaces photogéniques qui encouragent les clients à partager sur les réseaux sociaux restent une tendance forte. Les meubles uniques et visuellement attrayants contribuent à cette tendance.'
+        ]
+      },
+      {
+        heading: 'Matériaux populaires en 2025',
+        list: [
+          '<strong>Acier galvanisé:</strong> L\'acier creux galvanisé de qualité A reste le matériau de choix pour les cadres de meubles industriels, offrant force, durabilité et résistance à la rouille.',
+          '<strong>Bois massif:</strong> Les plateaux en bois massif (chêne, noyer, teck) apportent chaleur et caractère naturel aux espaces industriels.',
+          '<strong>Finitions poudre:</strong> Les finitions poudre de haute qualité offrent une excellente protection contre les rayures et les intempéries, avec une large gamme de couleurs disponibles.',
+          '<strong>Métaux mixtes:</strong> La combinaison de différents métaux (acier noir, laiton, cuivre) crée un look sophistiqué et moderne.',
+          '<strong>Matériaux recyclés:</strong> L\'utilisation de matériaux recyclés et upcyclés gagne en popularité, répondant aux préoccupations environnementales.'
+        ]
+      },
+      {
+        heading: 'Styles de design en vogue',
+        paragraphs: [
+          '<strong>Industriel scandinave:</strong>',
+          'La fusion du design industriel avec l\'esthétique scandinave crée des espaces chaleureux et minimalistes. Pensez à des meubles en métal avec des accents en bois clair, des lignes épurées et une palette de couleurs neutres.',
+          '<strong>Industriel rustique:</strong>',
+          'Le style industriel rustique met l\'accent sur les matériaux bruts et non finis. Des meubles avec des finitions texturées, des surfaces patinées et des détails vintage créent une atmosphère authentique.',
+          '<strong>Industriel moderne:</strong>',
+          'L\'industriel moderne combine des éléments industriels avec des lignes contemporaines épurées. Des meubles aux formes géométriques simples et aux finitions lisses dominent ce style.',
+          '<strong>Industriel luxe:</strong>',
+          'L\'industriel luxe intègre des matériaux premium et des finitions raffinées. Des meubles avec des détails en laiton, des surfaces en marbre et des finitions haut de gamme créent un look sophistiqué.'
+        ],
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Tendances du mobilier pour cafés et restaurants 2025'
+      },
+      {
+        heading: 'Considérations pour différents types d\'établissements',
+        paragraphs: [
+          '<strong>Cafés:</strong>',
+          'Pour les cafés, privilégiez les tables de bar, les tabourets de bar confortables et les tables basses. L\'accent est mis sur la création d\'un espace accueillant où les clients peuvent travailler ou se détendre pendant de longues périodes.',
+          '<strong>Restaurants:</strong>',
+          'Les restaurants nécessitent des tables de salle à manger robustes, des chaises confortables et des meubles qui peuvent résister à un usage intensif. La durabilité et la facilité de maintenance sont cruciales.',
+          '<strong>Brasseries et bars:</strong>',
+          'Les bars nécessitent des tables de bar hautes, des tabourets de bar stables et des meubles qui créent une atmosphère sociale. L\'éclairage et l\'acoustique sont également importants.',
+          '<strong>Espaces extérieurs:</strong>',
+          'Pour les terrasses et les espaces extérieurs, choisissez des meubles résistants aux intempéries avec des finitions spéciales pour l\'extérieur. Les matériaux doivent résister au soleil, à la pluie et aux variations de température.'
+        ]
+      },
+      {
+        heading: 'Tendances de couleur 2025',
+        list: [
+          '<strong>Palette neutre:</strong> Noir, blanc et gris restent les couleurs de base dominantes, offrant polyvalence et intemporalité.',
+          '<strong>Accents terreux:</strong> Les tons terreux comme le beige, le taupe et le brun chaud gagnent en popularité, ajoutant chaleur aux espaces industriels.',
+          '<strong>Verts profonds:</strong> Le vert forêt et le vert émeraude sont utilisés comme couleurs d\'accent pour ajouter de la profondeur et de la sophistication.',
+          '<strong>Bleus navals:</strong> Le bleu marine et le bleu ardoise apportent une touche de calme et d\'élégance aux espaces commerciaux.',
+          '<strong>Métalliques:</strong> Les finitions métalliques (laiton, cuivre, bronze) ajoutent du luxe et de la chaleur aux meubles industriels.'
+        ]
+      },
+      {
+        heading: 'Fonctionnalités et innovations',
+        paragraphs: [
+          '<strong>Meubles modulaires:</strong>',
+          'Les systèmes de meubles modulaires permettent une réorganisation flexible de l\'espace. Les tables qui peuvent être combinées ou séparées, les sièges empilables et les meubles à usages multiples sont très demandés.',
+          '<strong>Intégration technologique:</strong>',
+          'Les meubles avec intégration technologique, comme les prises USB intégrées, les supports pour tablettes et les éclairages LED intégrés, deviennent de plus en plus courants.',
+          '<strong>Solutions de stockage:</strong>',
+          'Les meubles avec stockage intégré, comme les banquettes avec compartiments de rangement et les tables avec étagères, maximisent l\'utilisation de l\'espace.',
+          '<strong>Accessibilité:</strong>',
+          'La conception accessible devient une priorité. Les meubles conçus pour être accessibles aux personnes à mobilité réduite sont de plus en plus demandés.'
+        ],
+        image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop',
+        imageAlt: 'Innovations dans le mobilier de restaurant'
+      },
+      {
+        heading: 'Conseils pour choisir le mobilier adapté',
+        list: [
+          '<strong>Définir votre concept:</strong> Identifiez clairement le style et l\'ambiance que vous souhaitez créer avant de choisir le mobilier.',
+          '<strong>Considérer l\'espace:</strong> Mesurez soigneusement votre espace et planifiez la disposition pour maximiser la capacité tout en maintenant le confort.',
+          '<strong>Prioriser la durabilité:</strong> Investissez dans des meubles de qualité qui résisteront à l\'usage intensif et dureront des années.',
+          '<strong>Penser à la maintenance:</strong> Choisissez des meubles faciles à nettoyer et à entretenir, surtout pour les établissements à fort trafic.',
+          '<strong>Budget et ROI:</strong> Équilibrez votre budget initial avec la valeur à long terme. Les meubles de qualité peuvent être un investissement rentable.',
+          '<strong>Consultation professionnelle:</strong> Travaillez avec des fabricants expérimentés qui peuvent fournir des conseils et des solutions personnalisées.'
+        ]
+      },
+      {
+        heading: 'Mangala Living - Votre partenaire pour le mobilier tendance',
+        paragraphs: [
+          '<strong>Mangala Living</strong> est un fabricant de mobilier industriel de premier plan en Indonésie, offrant des solutions sur mesure pour les cafés et restaurants:',
+          '<strong>1. 25 ans d\'expérience:</strong> Depuis 1999, nous fabriquons des meubles industriels de haute qualité pour des centaines de projets commerciaux.',
+          '<strong>2. Atelier à Bekasi:</strong> Notre atelier interne nous permet de contrôler chaque étape de la production, garantissant qualité et délais.',
+          '<strong>3. Matériaux de qualité:</strong> Nous utilisons uniquement de l\'acier galvanisé de qualité A, du bois massif et des finitions poudre de haute qualité.',
+          '<strong>4. Design personnalisé:</strong> Notre équipe de design peut vous aider à créer des meubles qui correspondent parfaitement à votre concept de marque.',
+          '<strong>5. Service complet:</strong> De la consultation en design à la livraison et l\'installation, nous offrons un service complet.',
+          '<strong>6. Tendances actuelles:</strong> Nous restons à jour avec les dernières tendances et pouvons vous aider à créer des espaces modernes et attrayants.',
+          'Adresse de l\'atelier: <strong>Jl. Raya Setu, Bekasi</strong>. Visites de l\'atelier bienvenues.',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/+6288801146881" target="_blank">WhatsApp: +6288801146881</a><br/>&bull; <a href="mailto:lifewithmangala@gmail.com">Email: lifewithmangala@gmail.com</a><br/>&bull; Mentionnez "TREND280" pour obtenir une consultation sur les tendances et un devis spécial.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'hyeondae-kafe-yeong-gong-yeong-gagu-ui-jangjeom',
+    language: 'ko',
+    sections: [
+      {
+        paragraphs: [
+          '많은 사업자들이 여전히 수입 가구가 국산 제품보다 품질이 더 좋다고 생각합니다. 그러나 실제로는 인도네시아에서 제조된 고품질 공업용 가구가 많은 장점을 제공합니다. 현대 카페를 위한 공업용 가구의 장점을 탐구하고, 왜 현지 제조 가구가 최선의 선택일 수 있는지 알아보겠습니다.',
+          '<strong>빠른 개요:</strong> 이 기사에서는 현지 제조 공업용 가구의 장점, 품질 표준, 비용 효율성, 커스터마이징 옵션, 그리고 신뢰할 수 있는 제조업체를 선택하는 방법을 다룹니다.'
+        ]
+      },
+      {
+        heading: '현지 제조 공업용 가구의 주요 장점',
+        paragraphs: [
+          '<strong>1. 비용 효율성:</strong>',
+          '현지에서 제조된 가구는 수입 가구보다 일반적으로 더 저렴합니다. 운송비, 관세, 중간 유통업체 수수료가 없어 최종 가격이 낮습니다. 이는 특히 대량 주문 시 상당한 비용 절감을 의미합니다.',
+          '<strong>2. 커스터마이징 유연성:</strong>',
+          '현지 제조업체는 공간과 요구사항에 맞게 가구를 쉽게 커스터마이징할 수 있습니다. 수정, 조정, 특수 요구사항에 대한 대응이 빠르고 효율적입니다.',
+          '<strong>3. 빠른 납기:</strong>',
+          '현지 제조는 긴 해상 운송 시간이 필요 없어 더 빠른 납기를 보장합니다. 긴급 프로젝트나 빠른 오픈 일정에 이상적입니다.',
+          '<strong>4. 직접적인 의사소통:</strong>',
+          '같은 시간대와 언어로 직접 소통할 수 있어 오해를 줄이고 프로젝트 진행을 더 원활하게 만듭니다.',
+          '<strong>5. 현지 지원 및 서비스:</strong>',
+          '현지 제조업체는 설치, 수리, 유지보수에 대한 더 나은 지원을 제공할 수 있습니다. 장기적인 관계 구축이 용이합니다.'
+        ]
+      },
+      {
+        heading: '품질 표준 및 제조 공정',
+        paragraphs: [
+          '<strong>고품질 재료:</strong>',
+          '신뢰할 수 있는 현지 제조업체는 A급 아연 도금 강관, 고품질 목재, 전문적인 파우더 코팅과 같은 고품질 재료를 사용합니다. 이러한 재료는 국제 표준을 충족하거나 초과합니다.',
+          '<strong>전문 제조 공정:</strong>',
+          '현대적인 제조 시설과 숙련된 기술자들이 정밀한 용접, 표면 처리, 마감 작업을 수행합니다. 품질 관리 시스템이 모든 단계에서 엄격하게 적용됩니다.',
+          '<strong>내구성 테스트:</strong>',
+          '고품질 현지 제조업체는 제품의 내구성과 성능을 보장하기 위해 엄격한 테스트를 수행합니다.',
+          '<strong>환경 고려:</strong>',
+          '많은 현지 제조업체들이 환경 친화적인 제조 공정과 재료를 사용하여 지속 가능성을 우선시합니다.'
+        ],
+        image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1200&auto=format&fit=crop',
+        imageAlt: '고품질 공업용 가구 제조 공정'
+      },
+      {
+        heading: '비용 효율성 분석',
+        list: [
+          '<strong>초기 비용:</strong> 현지 제조 가구는 일반적으로 수입 가구보다 20-40% 저렴합니다.',
+          '<strong>운송비 절감:</strong> 해상 운송, 항공 화물, 관세 비용이 없어 전체 비용이 크게 절감됩니다.',
+          '<strong>유지보수 비용:</strong> 현지 지원으로 수리 및 유지보수 비용이 낮고 접근성이 좋습니다.',
+          '<strong>장기적 가치:</strong> 고품질 현지 제조 가구는 수년간 지속되어 장기적으로 우수한 투자 수익을 제공합니다.',
+          '<strong>대량 주문 할인:</strong> 현지 제조업체는 대량 주문에 대해 더 유연한 가격 협상이 가능합니다.'
+        ]
+      },
+      {
+        heading: '커스터마이징 옵션',
+        paragraphs: [
+          '<strong>크기 및 치수:</strong>',
+          '현지 제조업체는 정확한 공간 측정에 따라 가구를 맞춤 제작할 수 있습니다. 불규칙한 공간이나 특수한 레이아웃 요구사항에 완벽하게 대응할 수 있습니다.',
+          '<strong>디자인 및 스타일:</strong>',
+          '브랜드 아이덴티티와 디자인 컨셉에 맞게 가구를 디자인할 수 있습니다. 색상, 마감, 세부 사항을 완전히 제어할 수 있습니다.',
+          '<strong>기능적 요구사항:</strong>',
+          '특정 기능적 요구사항(예: 숨겨진 저장 공간, 조절 가능한 높이, 모듈식 구성)을 통합할 수 있습니다.',
+          '<strong>재료 선택:</strong>',
+          '예산과 선호도에 따라 재료를 선택할 수 있습니다. 다양한 옵션을 비교하고 최적의 조합을 찾을 수 있습니다.'
+        ]
+      },
+      {
+        heading: '신뢰할 수 있는 현지 제조업체 선택하기',
+        list: [
+          '<strong>경험과 실적:</strong> 수년간 운영되고 성공적인 프로젝트 이력을 가진 제조업체를 선택하세요.',
+          '<strong>제조 시설 방문:</strong> 가능하면 제조 시설을 방문하여 재료 품질과 제조 공정을 직접 확인하세요.',
+          '<strong>품질 보증:</strong> 명확한 품질 보증 정책과 고객 지원 서비스를 제공하는 제조업체를 선택하세요.',
+          '<strong>참고 자료:</strong> 이전 고객의 참고 자료를 요청하고 프로젝트 사례를 검토하세요.',
+          '<strong>투명한 가격 책정:</strong> 숨겨진 비용 없이 투명한 가격 책정을 제공하는 제조업체를 선택하세요.',
+          '<strong>의사소통:</strong> 응답이 빠르고 명확한 의사소통을 하는 제조업체와 협력하세요.',
+          '<strong>납기 준수:</strong> 일정을 엄수하는 신뢰할 수 있는 제조업체를 선택하세요.'
+        ]
+      },
+      {
+        heading: '수입 가구와의 비교',
+        paragraphs: [
+          '<strong>품질:</strong>',
+          '고품질 현지 제조 가구는 수입 가구와 동등하거나 더 나은 품질을 제공할 수 있습니다. 현대적인 제조 공정과 고품질 재료를 사용하는 제조업체는 국제 표준을 충족합니다.',
+          '<strong>비용:</strong>',
+          '현지 제조는 일반적으로 더 비용 효율적입니다. 운송비, 관세, 중간 유통업체 수수료가 없어 전체 비용이 낮습니다.',
+          '<strong>커스터마이징:</strong>',
+          '현지 제조업체는 더 유연한 커스터마이징 옵션을 제공합니다. 수정과 조정이 더 쉽고 빠릅니다.',
+          '<strong>납기:</strong>',
+          '현지 제조는 더 빠른 납기를 보장합니다. 긴 해상 운송 시간이 필요 없습니다.',
+          '<strong>지원:</strong>',
+          '현지 제조업체는 설치, 수리, 유지보수에 대한 더 나은 지원을 제공할 수 있습니다.'
+        ],
+        image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1200&auto=format&fit=crop',
+        imageAlt: '현지 제조 vs 수입 가구 비교'
+      },
+      {
+        heading: 'Mangala Living - 신뢰할 수 있는 현지 제조 파트너',
+        paragraphs: [
+          '<strong>Mangala Living</strong>은 인도네시아의 선도적인 공업용 가구 제조업체로, 현대적인 카페를 위한 고품질 솔루션을 제공합니다:',
+          '<strong>1. 25년의 경험:</strong> 1999년부터 수백 개의 상업 프로젝트를 위해 고품질 공업용 가구를 제조해 왔습니다.',
+          '<strong>2. Bekasi의 자체 제조 시설:</strong> 모든 제조 공정을 내부에서 완료하여 품질과 납기를 엄격하게 관리합니다.',
+          '<strong>3. 고품질 재료:</strong> A급 아연 도금 강관, 고품질 목재, 전문적인 파우더 코팅만을 사용합니다.',
+          '<strong>4. 전문 디자인 팀:</strong> 컨셉에서 실행까지 전체 프로세스를 지원하는 전문 디자인 팀이 있습니다.',
+          '<strong>5. 완전한 커스터마이징:</strong> 공간과 요구사항에 맞게 가구를 완전히 커스터마이징할 수 있습니다.',
+          '<strong>6. 포괄적인 서비스:</strong> 디자인 상담부터 제조, 설치까지 원스톱 서비스를 제공합니다.',
+          '<strong>7. 경쟁력 있는 가격:</strong> 현지 제조의 이점을 활용하여 경쟁력 있는 가격을 제공합니다.',
+          '제조 시설 주소: <strong>Jl. Raya Setu, Bekasi</strong>. 시설 방문을 환영합니다.',
+          '<strong>문의:</strong><br/>&bull; <a href="https://wa.me/+6288801146881" target="_blank">WhatsApp: +6288801146881</a><br/>&bull; <a href="mailto:lifewithmangala@gmail.com">Email: lifewithmangala@gmail.com</a><br/>&bull; "LOCAL281"을 언급하시면 현지 제조 상담 및 특별 견적을 받으실 수 있습니다.'
+        ]
+      }
+    ]
   }
 ]
 
