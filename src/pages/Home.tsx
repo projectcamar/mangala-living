@@ -14,6 +14,7 @@ import MessageSection from '../components/MessageSection'
 import Footer from '../components/Footer'
 import AISearchOptimizedContent from '../components/AISearchOptimizedContent'
 import AISearchFeatures from '../components/AISearchFeatures'
+import HomepageFAQ from '../components/HomepageFAQ'
 
 // Utils
 import { generateAIOptimizedStructuredData, generateFAQStructuredData, generateWebSiteStructuredData } from '../utils/aiSearchOptimization'
@@ -105,10 +106,10 @@ const Home: React.FC = () => {
   const canonicalPath = (location.pathname === '/id' || location.pathname === '/eng' || location.pathname === '/ar' || location.pathname === '/zh' || location.pathname === '/ja' || location.pathname === '/es' || location.pathname === '/fr' || location.pathname === '/ko') ? '/' : location.pathname
   const localizedUrls = generateLocalizedUrls(canonicalPath, location.search)
 
-  // Multi-language translations
+  // Multi-language translations - SEO Optimized with Priority Keywords
   const translations = {
     title: language === 'id' 
-      ? "Furniture Industrial Besi Bar Set Lounge Set Storage New Arrivals | Mangala Living"
+      ? "Furniture Industrial Indonesia | Manufacturer Besi Custom Bekasi Sejak 1999"
       : language === 'ar'
       ? "أثاث صناعي من الحديد - طقم بار وطقم صالة ورفوف تخزين | مانجالا ليفينج"
       : language === 'zh'
@@ -119,9 +120,9 @@ const Home: React.FC = () => {
       ? "Muebles Industriales Set de Bar Set de Sala Almacenamiento Novedades | Mangala Living"
       : language === 'fr'
       ? "Mobilier Industriel Set de Bar Set de Salon Rangement Nouveautés | Mangala Living"
-      : "Industrial Furniture Bar Set Lounge Set Storage New Arrivals | Mangala Living",
+      : "Industrial Furniture Indonesia | Custom Steel Furniture Manufacturer Bekasi Since 1999",
     description: language === 'id'
-      ? "Sejak 1999, Mangala Living menghadirkan furniture industrial terbaik: bar set outdoor, lounge set sofa bench, storage rak display, new arrivals untuk cafe hotel restoran. Workshop Bekasi 25+ tahun pengalaman"
+      ? "Furniture Industrial Indonesia terpercaya sejak 1999. Manufacturer furniture besi custom Bekasi untuk cafe, restoran, hotel Jakarta. Harga pabrik, custom design, garansi 1 tahun. Workshop Bekasi 25+ tahun, 1000+ klien puas. Bar set, lounge set, meja kursi cafe industrial berkualitas premium."
       : language === 'ar'
       ? "منذ عام 1999، تقدم مانجالا ليفينج أفضل الأثاث الصناعي: طقم بار خارجي، طقم صالة، أريكة، رفوف تخزين ومستجدات للمقاهي والفنادق والمطاعم. ورشة بيكاسي 25+ سنة خبرة"
       : language === 'zh'
@@ -132,7 +133,7 @@ const Home: React.FC = () => {
       ? "Desde 1999, Mangala Living ofrece muebles industriales premium: set de bar exterior, set de sala, sofá banco, estantería de almacenamiento, novedades para cafés, hoteles y restaurantes. Taller Bekasi 25+ años de experiencia"
       : language === 'fr'
       ? "Depuis 1999, Mangala Living propose des meubles industriels premium : set de bar extérieur, set de salon, banc canapé, étagère de rangement, nouveautés pour cafés, hôtels et restaurants. Atelier Bekasi 25+ ans d'expérience"
-      : "Since 1999, Mangala Living delivers premium industrial furniture: bar set outdoor, lounge set sofa bench, storage display rack, new arrivals for cafes hotels restaurants. Bekasi workshop 25+ years experience",
+      : "Trusted Industrial Furniture Indonesia since 1999. Custom steel furniture manufacturer Bekasi for cafes, restaurants, hotels Jakarta. Factory prices, custom design, 1-year warranty. Bekasi workshop 25+ years, 1000+ satisfied clients. Premium quality bar set, lounge set, industrial cafe furniture.",
     ogTitle: language === 'id'
       ? "Furniture Industrial Besi Custom Bekasi | Cafe & Restoran"
       : language === 'ar'
@@ -167,7 +168,7 @@ const Home: React.FC = () => {
       <Helmet htmlAttributes={{ lang: language === 'ar' ? 'ar' : (language === 'zh' ? 'zh' : (language === 'ja' ? 'ja' : (language === 'es' ? 'es' : (language === 'fr' ? 'fr' : (language === 'ko' ? 'ko' : localeMeta.lang))))), dir: language === 'ar' ? 'rtl' : 'ltr', 'data-language': language }}>
         <title>{translations.title}</title>
         <meta name="description" content={translations.description} />
-        <meta name="keywords" content="bar set outdoor, lounge set, sofa bench, storage rack, new arrivals, furniture industrial set, display rack, bar furniture, outdoor furniture set, lounge furniture, mangala living, furniture bekasi, industrial furniture, meja kursi cafe" />
+        <meta name="keywords" content="furniture industrial indonesia, furniture besi custom, furniture bekasi, furniture industrial jakarta, meja industrial, kursi bar industrial, furniture cafe, furniture restoran, manufacturer furniture industrial, furniture besi custom bekasi, workshop furniture bekasi, furniture industrial jabodetabek, bar set outdoor, lounge set, sofa bench, storage rack, display rack, meja kursi cafe, mangala living" />
         <meta httpEquiv="content-language" content={localeMeta.lang} />
         
         {/* Open Graph / Facebook */}
@@ -354,6 +355,10 @@ const Home: React.FC = () => {
       <BestSellersSection isIndonesian={isIndonesian} language={language} />
       <OurProductsSection isIndonesian={isIndonesian} language={language} />
       <MessageSection isIndonesian={isIndonesian} language={language} />
+      
+      {/* FAQ Section for Rich Snippets & SEO */}
+      <HomepageFAQ isIndonesian={isIndonesian} language={language} />
+      
       <Footer isIndonesian={isIndonesian} language={language} />
       
       {/* AI Search Optimized Content */}
