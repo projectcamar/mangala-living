@@ -97,10 +97,17 @@ const SingaporeLanguageModal: React.FC = () => {
         aria-labelledby="sg-lang-modal-title"
       >
         <div className="sg-lang-modal-header">
-          <div className="sg-lang-badge">MANGALA EXPORT &amp; INTERNATIONAL</div>
-          <h2 id="sg-lang-modal-title">Welcome Singapore buyer!</h2>
+          <div className="sg-lang-badge">
+            <div>MANGALA EXPORT &amp; INTERNATIONAL</div>
+            <div className="sg-lang-badge-zh">MANGALA出口与国际</div>
+          </div>
+          <h2 id="sg-lang-modal-title">
+            <div>Welcome Singapore buyer!</div>
+            <div className="sg-lang-title-zh">欢迎新加坡买家！</div>
+          </h2>
           <p className="sg-lang-subtitle">
-            Welcome to Mangala Living. Please choose your preferred language for this site.
+            <div>Welcome to Mangala Living. Please choose your preferred language for this site.</div>
+            <div className="sg-lang-subtitle-zh">欢迎来到Mangala Living。请选择您偏好的网站语言。</div>
           </p>
         </div>
 
@@ -135,7 +142,8 @@ const SingaporeLanguageModal: React.FC = () => {
         </div>
 
         <p className="sg-lang-note">
-          We&apos;ll remember your choice for your next visits from this device.
+          <div>We&apos;ll remember your choice for your next visits from this device.</div>
+          <div className="sg-lang-note-zh">我们会记住您的选择，以便您下次从此设备访问。</div>
         </p>
 
         <button
@@ -144,7 +152,8 @@ const SingaporeLanguageModal: React.FC = () => {
           onClick={handleClose}
           aria-label="Close language selection"
         >
-          Skip for now
+          <span>Skip for now</span>
+          <span className="sg-lang-close-zh">暂时跳过</span>
         </button>
       </div>
     </div>
