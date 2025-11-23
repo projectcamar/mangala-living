@@ -203,6 +203,73 @@ const SIDEBAR_FEATURES_TRANSLATIONS: Record<LanguageCode, {
   }
 }
 
+const BLOG_PRODUCT_SHOWCASE_DESCRIPTION: Record<LanguageCode, string> = {
+  id: 'Temukan produk industrial berkualitas tinggi yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium, material industrial grade, dan finishing powder coating tahan lama di workshop kami di Bekasi. Harga pabrik langsung, tidak ada perantara!',
+  en: 'Discover high-quality industrial furniture collection related to this article. All products are manufactured with premium materials, industrial-grade quality, and durable powder coating finish in our Bekasi workshop. Factory-direct pricing with no intermediaries!',
+  ar: 'اكتشف مجموعتنا من أثاث صناعي عالي الجودة المتعلق بهذه المقالة. يتم تصنيع جميع المنتجات بمواد عالية الجودة وجودة صناعية وتشطيب ببودرة متين في ورشتنا في بيكاسي. أسعار مباشرة من المصنع بدون وسطاء!',
+  zh: '探索与本文相关的高品质工业风家具系列。所有产品均在我们在Bekasi的工坊中使用优质材料、工业级质量和耐用粉末涂层精加工制造。工厂直销价格，无中间商！',
+  ja: 'この記事に関連する高品質な工業風家具コレクションをご覧ください。すべての製品は、Bekasiのワークショップでプレミアム素材、工業グレードの品質、耐久性のあるパウダーコーティング仕上げで製造されています。工場直販価格、仲介業者なし！',
+  es: 'Descubra nuestra colección de muebles industriales de alta calidad relacionada con este artículo. Todos los productos están fabricados con materiales premium, calidad de grado industrial y acabado de pintura en polvo duradero en nuestro taller de Bekasi. Precios directos de fábrica, sin intermediarios!',
+  fr: 'Découvrez notre collection de mobilier industriel de haute qualité liée à cet article. Tous les produits sont fabriqués avec des matériaux premium, une qualité de qualité industrielle et une finition en poudre durable dans notre atelier de Bekasi. Prix direct d\'usine, sans intermédiaires!',
+  ko: '이 기사와 관련된 고품질 산업용 가구 컬렉션을 발견하세요. 모든 제품은 Bekasi의 작업장에서 프리미엄 재료, 산업 등급 품질 및 내구성이 뛰어난 파우더 코팅 마감으로 제조됩니다. 공장 직접 가격, 중간 상인 없음!'
+}
+
+const CTA_TRANSLATIONS: Record<LanguageCode, {
+  title: string
+  subtitle: string
+  viewAllProducts: string
+  contactUs: string
+}> = {
+  id: {
+    title: 'Tertarik dengan Furniture Industrial Kami?',
+    subtitle: 'Kunjungi koleksi lengkap furniture industrial custom berkualitas tinggi dari Mangala Living.',
+    viewAllProducts: 'Lihat Semua Produk',
+    contactUs: 'Hubungi Kami'
+  },
+  en: {
+    title: 'Interested in Our Industrial Furniture?',
+    subtitle: 'Visit our complete collection of high-quality custom industrial furniture from Mangala Living.',
+    viewAllProducts: 'View All Products',
+    contactUs: 'Contact Us'
+  },
+  ar: {
+    title: 'هل أنت مهتم بأثاثنا الصناعي؟',
+    subtitle: 'زر مجموعتنا الكاملة من الأثاث الصناعي المخصص عالي الجودة من Mangala Living.',
+    viewAllProducts: 'عرض جميع المنتجات',
+    contactUs: 'اتصل بنا'
+  },
+  zh: {
+    title: '对我们的工业风家具感兴趣吗？',
+    subtitle: '访问我们完整的Mangala Living高品质定制工业风家具系列。',
+    viewAllProducts: '查看所有产品',
+    contactUs: '联系我们'
+  },
+  ja: {
+    title: '当社の工業風家具にご興味はありますか？',
+    subtitle: 'Mangala Livingの高品質なカスタム工業風家具の完全なコレクションをご覧ください。',
+    viewAllProducts: 'すべての製品を見る',
+    contactUs: 'お問い合わせ'
+  },
+  es: {
+    title: '¿Interesado en Nuestro Mobiliario Industrial?',
+    subtitle: 'Visite nuestra colección completa de muebles industriales personalizados de alta calidad de Mangala Living.',
+    viewAllProducts: 'Ver Todos los Productos',
+    contactUs: 'Contáctenos'
+  },
+  fr: {
+    title: 'Intéressé par Notre Mobilier Industriel ?',
+    subtitle: 'Visitez notre collection complète de mobilier industriel sur mesure de haute qualité de Mangala Living.',
+    viewAllProducts: 'Voir Tous les Produits',
+    contactUs: 'Nous Contacter'
+  },
+  ko: {
+    title: '저희 산업용 가구에 관심이 있으신가요?',
+    subtitle: 'Mangala Living의 고품질 맞춤형 산업용 가구 컬렉션 전체를 둘러보세요.',
+    viewAllProducts: '모든 제품 보기',
+    contactUs: '문의하기'
+  }
+}
+
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
   const location = useLocation()
@@ -539,9 +606,7 @@ const BlogPost: React.FC = () => {
 
                         if (relevantProducts.length > 0 && hasProductKeywords) {
                           const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
-                          const showcaseDescription = post.category === 'Export & International'
-                            ? `Discover our premium industrial furniture collection, manufactured in our Bekasi workshop with high-quality materials and powder coating finish.`
-                            : `Berikut adalah produk industrial pilihan kami yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium dan material industrial grade di workshop kami di Bekasi.`
+                          const showcaseDescription = BLOG_PRODUCT_SHOWCASE_DESCRIPTION[language] || BLOG_PRODUCT_SHOWCASE_DESCRIPTION.en
 
                           return (
                             <div className="blog-post-product-showcase">
@@ -549,7 +614,7 @@ const BlogPost: React.FC = () => {
                                 products={relevantProducts}
                                 heading={showcaseHeading}
                                 description={showcaseDescription}
-                                isIndonesian={post.category !== 'Export & International'}
+                                language={language}
                               />
                             </div>
                           )
@@ -580,7 +645,7 @@ const BlogPost: React.FC = () => {
                               'Spesialis Commercial Space Design & Construction'
                             ]}
                         linkedIn="https://www.linkedin.com/in/helmi-ramdan-067912118/"
-                        isIndonesian={post.category !== 'Export & International'}
+                        language={language}
                       />
                     </div>
                   )}
@@ -594,9 +659,7 @@ const BlogPost: React.FC = () => {
 
                       if (relevantProducts.length > 0 && hasProductKeywords) {
                         const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
-                        const showcaseDescription = post.category === 'Export & International'
-                          ? `Discover high-quality industrial furniture collection related to this article. All products are manufactured with premium materials, industrial-grade quality, and durable powder coating finish in our Bekasi workshop. Factory-direct pricing with no intermediaries!`
-                          : `Temukan produk industrial berkualitas tinggi yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium, material industrial grade, dan finishing powder coating tahan lama di workshop kami di Bekasi. Harga pabrik langsung, tidak ada perantara!`
+                        const showcaseDescription = BLOG_PRODUCT_SHOWCASE_DESCRIPTION[language] || BLOG_PRODUCT_SHOWCASE_DESCRIPTION.en
 
                         return (
                           <div className="blog-post-product-showcase">
@@ -604,7 +667,7 @@ const BlogPost: React.FC = () => {
                               products={relevantProducts}
                               heading={showcaseHeading}
                               description={showcaseDescription}
-                              isIndonesian={post.category !== 'Export & International'}
+                              language={language}
                             />
                           </div>
                         )
@@ -616,22 +679,18 @@ const BlogPost: React.FC = () => {
                   <div className="blog-post-cta card">
                     <div className="section-header">
                       <h2>
-                        {post.category === 'Export & International'
-                          ? 'Interested in Our Industrial Furniture?'
-                          : 'Tertarik dengan Furniture Industrial Kami?'}
+                        {CTA_TRANSLATIONS[language]?.title || CTA_TRANSLATIONS.en.title}
                       </h2>
                       <p className="section-subtitle">
-                        {post.category === 'Export & International'
-                          ? 'Visit our complete collection of high-quality custom industrial furniture from Mangala Living.'
-                          : 'Kunjungi koleksi lengkap furniture industrial custom berkualitas tinggi dari Mangala Living.'}
+                        {CTA_TRANSLATIONS[language]?.subtitle || CTA_TRANSLATIONS.en.subtitle}
                       </p>
                     </div>
                     <div className="blog-post-cta-actions">
                       <Link to="/shop" className="btn-primary">
-                        {post.category === 'Export & International' ? 'View All Products' : 'Lihat Semua Produk'}
+                        {CTA_TRANSLATIONS[language]?.viewAllProducts || CTA_TRANSLATIONS.en.viewAllProducts}
                       </Link>
                       <Link to="/contact-us" className="btn-secondary">
-                        {post.category === 'Export & International' ? 'Contact Us' : 'Hubungi Kami'}
+                        {CTA_TRANSLATIONS[language]?.contactUs || CTA_TRANSLATIONS.en.contactUs}
                       </Link>
                     </div>
                   </div>

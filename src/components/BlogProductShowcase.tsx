@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async'
 import type { Product } from '../data/products'
 import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { generateImageObjectSchema } from '../utils/structuredData'
-import { getProductName } from '../data/productDescriptions'
 import type { LanguageCode } from '../utils/languageManager'
 import './BlogProductShowcase.css'
 import './DualLanguage.css'
@@ -13,8 +12,90 @@ interface BlogProductShowcaseProps {
   products: Product[]
   heading?: string
   description?: string
-  isIndonesian?: boolean
   language?: LanguageCode
+}
+
+const BLOG_PRODUCT_SHOWCASE_TRANSLATIONS: Record<LanguageCode, {
+  defaultHeading: string
+  defaultDescription: string
+  ourProduct: string
+  viewProductDetails: string
+  viewAllProducts: string
+  viewAllProductsTitle: string
+  viewAllProductsAria: string
+}> = {
+  id: {
+    defaultHeading: 'Produk Industrial Terkait',
+    defaultDescription: 'Berikut adalah produk industrial pilihan kami yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium dan material industrial grade di workshop kami di Bekasi.',
+    ourProduct: 'PRODUK KAMI',
+    viewProductDetails: 'Lihat Detail Produk',
+    viewAllProducts: 'Lihat Semua Produk',
+    viewAllProductsTitle: 'Lihat Semua Produk Industrial Mangala Living',
+    viewAllProductsAria: 'Lihat semua produk furniture industrial'
+  },
+  en: {
+    defaultHeading: 'Related Industrial Products',
+    defaultDescription: 'Below are our selected industrial products relevant to this article topic. All products are made with premium quality and industrial-grade materials in our Bekasi workshop.',
+    ourProduct: 'OUR PRODUCT',
+    viewProductDetails: 'View Product Details',
+    viewAllProducts: 'View All Products',
+    viewAllProductsTitle: 'View All Industrial Products',
+    viewAllProductsAria: 'View all industrial furniture products'
+  },
+  ar: {
+    defaultHeading: 'منتجات صناعية ذات صلة',
+    defaultDescription: 'فيما يلي منتجاتنا الصناعية المختارة ذات الصلة بموضوع هذه المقالة. تم تصنيع جميع المنتجات بجودة عالية ومواد من الدرجة الصناعية في ورشتنا في بيكاسي.',
+    ourProduct: 'منتجنا',
+    viewProductDetails: 'عرض تفاصيل المنتج',
+    viewAllProducts: 'عرض جميع المنتجات',
+    viewAllProductsTitle: 'عرض جميع المنتجات الصناعية من Mangala Living',
+    viewAllProductsAria: 'عرض جميع منتجات الأثاث الصناعي'
+  },
+  zh: {
+    defaultHeading: '相关工业风产品',
+    defaultDescription: '以下是与本文主题相关的精选工业风产品。所有产品均在我们在Bekasi的工坊中使用优质材料和工业级工艺制造。',
+    ourProduct: '我们的产品',
+    viewProductDetails: '查看产品详情',
+    viewAllProducts: '查看所有产品',
+    viewAllProductsTitle: '查看Mangala Living所有工业风产品',
+    viewAllProductsAria: '查看所有工业风家具产品'
+  },
+  ja: {
+    defaultHeading: '関連する工業風製品',
+    defaultDescription: '以下は、この記事のトピックに関連する当社の工業風製品です。すべての製品は、Bekasiのワークショップでプレミアム品質と工業グレードの材料で作られています。',
+    ourProduct: '当社の製品',
+    viewProductDetails: '製品の詳細を見る',
+    viewAllProducts: 'すべての製品を見る',
+    viewAllProductsTitle: 'Mangala Livingのすべての工業風製品を見る',
+    viewAllProductsAria: 'すべての工業風家具製品を見る'
+  },
+  es: {
+    defaultHeading: 'Productos Industriales Relacionados',
+    defaultDescription: 'A continuación se muestran nuestros productos industriales seleccionados relevantes para el tema de este artículo. Todos los productos están hechos con calidad premium y materiales de grado industrial en nuestro taller de Bekasi.',
+    ourProduct: 'NUESTRO PRODUCTO',
+    viewProductDetails: 'Ver Detalles del Producto',
+    viewAllProducts: 'Ver Todos los Productos',
+    viewAllProductsTitle: 'Ver Todos los Productos Industriales',
+    viewAllProductsAria: 'Ver todos los productos de mobiliario industrial'
+  },
+  fr: {
+    defaultHeading: 'Produits Industriels Associés',
+    defaultDescription: 'Voici nos produits industriels sélectionnés pertinents pour le sujet de cet article. Tous les produits sont fabriqués avec une qualité premium et des matériaux de qualité industrielle dans notre atelier de Bekasi.',
+    ourProduct: 'NOTRE PRODUIT',
+    viewProductDetails: 'Voir les Détails du Produit',
+    viewAllProducts: 'Voir Tous les Produits',
+    viewAllProductsTitle: 'Voir Tous les Produits Industriels',
+    viewAllProductsAria: 'Voir tous les produits de mobilier industriel'
+  },
+  ko: {
+    defaultHeading: '관련 산업용 제품',
+    defaultDescription: '다음은 이 기사의 주제와 관련된 당사의 산업용 제품입니다. 모든 제품은 Bekasi의 작업장에서 프리미엄 품질과 산업 등급 재료로 제조됩니다.',
+    ourProduct: '우리의 제품',
+    viewProductDetails: '제품 상세 보기',
+    viewAllProducts: '모든 제품 보기',
+    viewAllProductsTitle: 'Mangala Living의 모든 산업용 제품 보기',
+    viewAllProductsAria: '모든 산업용 가구 제품 보기'
+  }
 }
 
 /**
@@ -24,15 +105,14 @@ interface BlogProductShowcaseProps {
  */
 const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
   products,
-  heading = 'Produk Industrial Terkait',
+  heading,
   description,
-  isIndonesian = true,
   language = 'id'
 }) => {
   const [usdPrices, setUsdPrices] = useState<{ [key: number]: string }>({})
   const [highlightedPrices, setHighlightedPrices] = useState<{ [key: number]: string }>({})
 
-  // Language to currency mapping
+  // Language to currency mapping (only non-IDR highlight currencies)
   const LANGUAGE_CURRENCY_MAP: { [key: string]: 'KRW' | 'JPY' | 'CNY' | 'SAR' | 'EUR' | 'USD' | null } = {
     'ko': 'KRW',
     'ja': 'JPY',
@@ -40,9 +120,11 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
     'ar': 'SAR',
     'es': 'EUR',
     'fr': 'EUR',
-    'en': 'USD',
-    'id': 'USD'
+    'en': 'USD', // English highlights USD
+    'id': null   // Indonesian highlights IDR (original price)
   }
+  
+  const translations = BLOG_PRODUCT_SHOWCASE_TRANSLATIONS[language] || BLOG_PRODUCT_SHOWCASE_TRANSLATIONS.en
 
   useEffect(() => {
     const convertPrices = async () => {
@@ -52,16 +134,23 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
       const targetCurrency = LANGUAGE_CURRENCY_MAP[language] || 'USD'
       
       for (const product of products) {
-        // Always convert to USD (non-highlighted)
+        // Always convert to USD
         const usdPrice = await convertIDRToUSD(product.price)
         usdPriceMap[product.id] = usdPrice
         
-        // Convert to highlighted currency based on language
-        if (targetCurrency && targetCurrency !== 'USD') {
+        // Determine highlighted price based on language
+        if (language === 'id') {
+          // Indonesian: highlight IDR (original price), show USD as secondary
+          highlightedPriceMap[product.id] = product.price
+        } else if (language === 'en') {
+          // English: highlight USD, show IDR as secondary
+          highlightedPriceMap[product.id] = usdPrice
+        } else if (targetCurrency && targetCurrency !== 'USD') {
+          // Other languages with local highlight currency
           const highlightedPrice = await convertIDRToCurrency(product.price, targetCurrency)
           highlightedPriceMap[product.id] = highlightedPrice
         } else {
-          // For USD (en/id), use USD as highlighted
+          // Fallback: use USD
           highlightedPriceMap[product.id] = usdPrice
         }
       }
@@ -187,13 +276,11 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
         <div className="blog-product-showcase-container">
           <div className="blog-product-showcase-header">
             <h2 className="blog-product-showcase-heading" itemProp="name">
-              {isIndonesian ? 'Produk Industrial Terkait' : 'Related Industrial Products'}
+              {heading || translations.defaultHeading}
             </h2>
             {description && (
               <p className="blog-product-showcase-description">
-                {isIndonesian 
-                  ? description 
-                  : 'Discover our premium industrial furniture collection, manufactured in our Bekasi workshop with high-quality materials and powder coating finish.'}
+                {description || translations.defaultDescription}
               </p>
             )}
           </div>
@@ -217,7 +304,7 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
                   title={fullTitle}
                   itemProp="url"
                   rel="nofollow sponsored"
-                  aria-label={`Lihat detail produk ${product.name}`}
+                  aria-label={`${translations.viewProductDetails}: ${product.name}`}
                 >
                   <div className="blog-product-showcase-image-wrapper" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
                     <img
@@ -242,7 +329,7 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
                     <meta itemProp="description" content={`Produk ${product.name} dengan kualitas premium dari Mangala Living Workshop Bekasi`} />
                     <meta itemProp="url" content={product.image} />
                     <div className="blog-product-showcase-badge">
-                      <span className="blog-product-badge-text">{isIndonesian ? 'PRODUK KAMI' : 'OUR PRODUCT'}</span>
+                      <span className="blog-product-badge-text">{translations.ourProduct}</span>
                     </div>
                   </div>
                   
@@ -264,13 +351,13 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
                       <meta itemProp="priceCurrency" content="IDR" />
                       <meta itemProp="availability" content="https://schema.org/InStock" />
                       <meta itemProp="price" content={product.price.replace(/[^0-9]/g, '')} />
-                      {usdPrices[product.id] ? (
+                      {usdPrices[product.id] && highlightedPrices[product.id] ? (
                         <>
                           <p className="blog-product-showcase-price-primary" itemProp="price">
-                            {isIndonesian ? product.price : usdPrices[product.id]}
+                            {highlightedPrices[product.id]}
                           </p>
                           <p className="blog-product-showcase-price-secondary">
-                            {isIndonesian ? usdPrices[product.id] : product.price}
+                            {language === 'id' ? usdPrices[product.id] : product.price}
                           </p>
                         </>
                       ) : (
@@ -282,7 +369,7 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
                     
                     <div className="blog-product-showcase-cta">
                       <span className="blog-product-showcase-link">
-                        {isIndonesian ? 'Lihat Detail Produk' : 'View Product Details'}
+                        {translations.viewProductDetails}
                       </span>
                     </div>
                   </div>
@@ -296,11 +383,11 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
           <Link 
             to="/shop" 
             className="blog-product-showcase-all-products-btn"
-            title={isIndonesian ? "Lihat Semua Produk Industrial Mangala Living" : "View All Industrial Products"}
+            title={translations.viewAllProductsTitle}
             rel="nofollow"
-            aria-label={isIndonesian ? "Lihat semua produk furniture industrial" : "View all industrial furniture products"}
+            aria-label={translations.viewAllProductsAria}
           >
-            {isIndonesian ? 'Lihat Semua Produk' : 'View All Products'}
+            {translations.viewAllProducts}
           </Link>
         </div>
       </div>

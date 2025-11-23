@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { DollarSign, TrendingUp } from 'lucide-react'
 import { useLocation } from 'react-router-dom'
-import { getAllExchangeRates, convertIDRToCurrency } from '../utils/currencyConverter'
+import { getAllExchangeRates } from '../utils/currencyConverter'
 import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
 import './CurrencyHighlight.css'
 
@@ -22,7 +22,7 @@ const LANGUAGE_CURRENCY_MAP: { [key in LanguageCode]: { code: string; symbol: st
   'id': null  // Indonesian shows USD only (non-highlighted), IDR not used as reference
 }
 
-const CurrencyHighlight: React.FC<CurrencyHighlightProps> = ({ isIndonesian = false, language }) => {
+const CurrencyHighlight: React.FC<CurrencyHighlightProps> = ({ language }) => {
   const [exchangeRates, setExchangeRates] = useState<{ [key: string]: number } | null>(null)
   const [highlightedCurrency, setHighlightedCurrency] = useState<string | null>(null)
   const [usdRate, setUsdRate] = useState<string>('')
@@ -148,7 +148,8 @@ const CurrencyHighlight: React.FC<CurrencyHighlightProps> = ({ isIndonesian = fa
         },
         usd: {
           text: label.usd || 'USD Rate:',
-          rate: `1 USD = ${usdRate} IDR`
+          // Only show IDR for Indonesian language, for others just show USD reference
+          rate: detectedLanguage === 'id' ? `1 USD = ${usdRate} IDR` : '1 USD = $1.00'
         }
       }
     } else {
@@ -158,7 +159,8 @@ const CurrencyHighlight: React.FC<CurrencyHighlightProps> = ({ isIndonesian = fa
         highlighted: null,
         usd: {
           text: isId ? 'Kurs USD:' : 'USD Rate:',
-          rate: `1 USD = ${usdRate} IDR`
+          // Only show IDR for Indonesian, for English just show USD reference
+          rate: isId ? `1 USD = ${usdRate} IDR` : '1 USD = $1.00'
         }
       }
     }

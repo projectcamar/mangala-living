@@ -2780,6 +2780,36 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&auto=format&fit=crop',
     date: '2025-11-16',
     author: 'Helmi Ramdan'
+  },
+  {
+    id: 273,
+    slug: 'ru-he-wei-ka-fei-ting-xuan-ze-gong-ye-feng-jia-ju',
+    title: '如何为咖啡厅选择工业风家具：完整选购指南2025',
+    category: 'Tips and Trick',
+    excerpt: '选择合适的工业风家具对咖啡厅的成功至关重要。本文将为您详细介绍如何为咖啡厅选择工业风家具，包括材质、尺寸、颜色搭配等关键因素，帮助您打造独特而实用的咖啡厅空间。',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop',
+    date: '2025-11-17',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 274,
+    slug: 'ding-zhi-gong-ye-jia-ju-de-you-shi-yu-xuan-ze-zhi-nan',
+    title: '定制工业家具的优势与选择指南：为什么选择定制家具',
+    category: 'About Furniture',
+    excerpt: '定制工业家具相比成品家具具有独特优势。本文将深入探讨定制工业家具的优势、适用场景、材质选择以及如何选择可靠的定制家具供应商，帮助您做出明智的投资决策。',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop',
+    date: '2025-11-18',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 275,
+    slug: 'gong-ye-feng-tie-yi-jia-ju-bao-yang-wan-zheng-zhi-nan',
+    title: '工业风铁艺家具保养完整指南：让您的家具历久如新',
+    category: 'Tips and Trick',
+    excerpt: '正确的保养方法可以延长工业风铁艺家具的使用寿命。本文提供详细的保养指南，包括日常清洁、防锈处理、定期维护等实用技巧，确保您的家具长期保持美观和功能性。',
+    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop',
+    date: '2025-11-19',
+    author: 'Helmi Ramdan'
   }
 ]
 
