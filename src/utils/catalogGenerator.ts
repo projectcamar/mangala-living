@@ -1923,9 +1923,11 @@ export const generateCatalog = async (preferredLanguage?: 'id' | 'en' | 'ar' | '
       const fileName = fileNames[lang] || 'Mangala-Living-Catalog-2025.pdf'
       console.log(`[PDF] Saving PDF as: ${fileName}`)
       console.log(`[PDF] Total pages: ${doc.getNumberOfPages()}`)
+      console.log(`[PDF] Language: ${lang}, Content keys count: ${Object.keys(t).length}`)
       
       try {
         doc.save(fileName)
+        console.log(`[PDF] Catalog saved successfully as ${fileName}`)
         console.log('[PDF] Catalog generation completed successfully!')
       } catch (saveError) {
         console.error('[PDF] Error saving PDF:', saveError)

@@ -238,11 +238,25 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
       
     } catch (error) {
       console.error('Error generating catalog:', error)
-      alert('Failed to download catalog. Please try again.')
+      const errorMessage = error instanceof Error ? error.message : String(error)
+      console.error('Error details:', { error, errorMessage, language })
+      
+      // Show more specific error message
+      const errorMsg = language === 'id' 
+        ? `Gagal mengunduh katalog. Error: ${errorMessage}. Silakan coba lagi.`
+        : language === 'es'
+        ? `Error al descargar el catálogo. Error: ${errorMessage}. Por favor, inténtalo de nuevo.`
+        : language === 'fr'
+        ? `Échec du téléchargement du catalogue. Erreur: ${errorMessage}. Veuillez réessayer.`
+        : language === 'ko'
+        ? `카탈로그 다운로드에 실패했습니다. 오류: ${errorMessage}. 다시 시도해주세요.`
+        : `Failed to download catalog. Error: ${errorMessage}. Please try again.`
+      
+      alert(errorMsg)
       
       // Reset button on error
       if (button) {
-        button.textContent = 'DOWNLOAD'
+        button.textContent = t.download
         button.disabled = false
       }
     }
