@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Instagram, Facebook } from 'lucide-react'
+import { Instagram, Facebook, ChevronDown, ChevronUp } from 'lucide-react'
 import './Footer.css'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import { getLinkWithLanguage } from '../utils/languageManager'
@@ -16,6 +16,7 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
   const [firstName, setFirstName] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null)
+  const [isBlogArchiveExpanded, setIsBlogArchiveExpanded] = useState(false)
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -249,18 +250,38 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
           </div>
         </div>
         
-        {/* Blog Posts Links Section - Hidden but crawlable for SEO */}
-        <nav className="footer-blog-links" aria-label="Blog posts" style={{ display: 'none' }}>
-          {getAllBlogPosts().map((post) => (
-            <Link
-              key={post.id}
-              to={getLinkWithLanguage(`/blog/${post.slug}`, language)}
-              aria-label={`${post.title} - ${post.category}`}
-            >
-              {post.title}
-            </Link>
-          ))}
-        </nav>
+        {/* Blog Posts Links Section - Collapsible but always in DOM for SEO crawlability */}
+        <div className="footer-blog-archive">
+          <button
+            className="footer-blog-archive-toggle"
+            onClick={() => setIsBlogArchiveExpanded(!isBlogArchiveExpanded)}
+            aria-expanded={isBlogArchiveExpanded}
+            aria-label={language === 'id' ? "Toggle arsip blog" : "Toggle blog archive"}
+          >
+            <h4>{language === 'id' ? "Arsip Blog" : language === 'ar' ? "أرشيف المدونة" : language === 'zh' ? "博客存档" : language === 'ja' ? "ブログアーカイブ" : language === 'es' ? "Archivo del Blog" : language === 'fr' ? "Archives du Blog" : language === 'ko' ? "블로그 아카이브" : "Blog Archive"}</h4>
+            {isBlogArchiveExpanded ? (
+              <ChevronUp size={20} className="footer-toggle-icon" />
+            ) : (
+              <ChevronDown size={20} className="footer-toggle-icon" />
+            )}
+          </button>
+          <nav 
+            className={`footer-blog-links ${isBlogArchiveExpanded ? 'expanded' : 'collapsed'}`}
+            aria-label="Blog posts"
+            aria-hidden={!isBlogArchiveExpanded}
+          >
+            {getAllBlogPosts().map((post) => (
+              <Link
+                key={post.id}
+                to={getLinkWithLanguage(`/blog/${post.slug}`, language)}
+                className="footer-blog-link"
+                aria-label={`${post.title} - ${post.category}`}
+              >
+                {post.title}
+              </Link>
+            ))}
+          </nav>
+        </div>
         
         <div className="footer-bottom">
           <p>Copyright 2025 Mangala Living. All rights reserved.</p>
