@@ -614,7 +614,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
               // Send background email notification
               sendBackgroundEmail('catalog_download', {})
 
-              await generateCatalog()
+              await generateCatalog(language)
               
               // Track catalog download
               trackEvent.catalogDownload()

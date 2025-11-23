@@ -148,26 +148,7 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
                   to={product.link}
                   className="product-card"
                 >
-                  <div 
-                    className="product-image-wrapper"
-                    onMouseMove={(e) => {
-                      const wrapper = e.currentTarget
-                      const img = wrapper.querySelector('.product-image') as HTMLImageElement
-                      if (img) {
-                        const rect = wrapper.getBoundingClientRect()
-                        const x = ((e.clientX - rect.left) / rect.width) * 100
-                        const y = ((e.clientY - rect.top) / rect.height) * 100
-                        img.style.transformOrigin = `${x}% ${y}%`
-                      }
-                    }}
-                    onMouseLeave={(e) => {
-                      const wrapper = e.currentTarget
-                      const img = wrapper.querySelector('.product-image') as HTMLImageElement
-                      if (img) {
-                        img.style.transformOrigin = 'center center'
-                      }
-                    }}
-                  >
+                  <div className="product-image-wrapper">
                     <img 
                       src={product.image} 
                       alt={`${translatedName} - Industrial Furniture ${product.categories.join(' ')} Mangala Living Bekasi`}

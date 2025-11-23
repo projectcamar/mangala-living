@@ -123,26 +123,7 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
                 className="product-card-full"
                 onClick={() => trackEvent.productClick(translatedName, product.category)}
               >
-                <div 
-                  className="product-image-wrapper-full"
-                  onMouseMove={(e) => {
-                    const wrapper = e.currentTarget
-                    const img = wrapper.querySelector('.product-image-full') as HTMLImageElement
-                    if (img) {
-                      const rect = wrapper.getBoundingClientRect()
-                      const x = ((e.clientX - rect.left) / rect.width) * 100
-                      const y = ((e.clientY - rect.top) / rect.height) * 100
-                      img.style.transformOrigin = `${x}% ${y}%`
-                    }
-                  }}
-                  onMouseLeave={(e) => {
-                    const wrapper = e.currentTarget
-                    const img = wrapper.querySelector('.product-image-full') as HTMLImageElement
-                    if (img) {
-                      img.style.transformOrigin = 'center center'
-                    }
-                  }}
-                >
+                <div className="product-image-wrapper-full">
                   <img 
                     src={product.image} 
                     alt={`${translatedName} - Industrial Furniture ${product.category} Mangala Living Workshop Bekasi`}

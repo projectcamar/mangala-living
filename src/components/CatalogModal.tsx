@@ -92,19 +92,31 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
     const initializeModal = () => {
       // Get language from current page URL (instant, no async needed)
       const urlLang = getLanguageFromLocation(location.pathname, location.search)
+      let detectedLang: LanguageCode = 'id' // default
+      
       if (urlLang) {
-        setLanguage(urlLang)
+        detectedLang = urlLang
       } else {
         // Fallback to browser language
         const browserLang = navigator.language || navigator.languages?.[0]
-        if (browserLang?.startsWith('id')) setLanguage('id')
-        else if (browserLang?.startsWith('ar')) setLanguage('ar')
-        else if (browserLang?.startsWith('zh')) setLanguage('zh')
-        else if (browserLang?.startsWith('ja')) setLanguage('ja')
-        else if (browserLang?.startsWith('es')) setLanguage('es')
-        else if (browserLang?.startsWith('fr')) setLanguage('fr')
-        else if (browserLang?.startsWith('ko')) setLanguage('ko')
-        else setLanguage('en')
+        if (browserLang?.startsWith('id')) detectedLang = 'id'
+        else if (browserLang?.startsWith('ar')) detectedLang = 'ar'
+        else if (browserLang?.startsWith('zh')) detectedLang = 'zh'
+        else if (browserLang?.startsWith('ja')) detectedLang = 'ja'
+        else if (browserLang?.startsWith('es')) detectedLang = 'es'
+        else if (browserLang?.startsWith('fr')) detectedLang = 'fr'
+        else if (browserLang?.startsWith('ko')) detectedLang = 'ko'
+        else detectedLang = 'en'
+      }
+      
+      // Set language state
+      setLanguage(detectedLang)
+      
+      // Store in localStorage to match getLanguagePreference() method (same as English/Indonesian)
+      try {
+        localStorage.setItem('mangala_lang_preference', detectedLang)
+      } catch (error) {
+        console.warn('Failed to store language preference in localStorage:', error)
       }
 
       // Check if user clicked X (close button) recently (within 12 hours)
@@ -212,8 +224,8 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
         console.error('Error sending email:', emailError)
       }
       
-      // Generate the catalog
-      await generateCatalog()
+      // Generate the catalog with current language
+      await generateCatalog(language)
       
       // Track catalog download
       trackEvent.catalogDownload()

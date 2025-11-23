@@ -1112,7 +1112,7 @@ const formatPrice = (price: string, currency: 'IDR' | 'USD'): string => {
 // MAIN PDF GENERATION FUNCTION
 // ══════════════════════════════════════════════════════════════════════════════
 
-export const generateCatalog = async () => {
+export const generateCatalog = async (preferredLanguage?: 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko') => {
   const MAX_GENERATION_TIME = 120000 // 2 minutes max for entire generation
   
   // Wrap entire generation in timeout to prevent infinite loading
@@ -1129,9 +1129,9 @@ export const generateCatalog = async () => {
         throw new Error(`Failed to load PDF dependencies: ${depError instanceof Error ? depError.message : String(depError)}`)
       }
       
-      // Get language preference
-      const lang = getLanguagePreference()
-      console.log(`[PDF] Language detected: ${lang}`)
+      // Get language preference - use parameter if provided, otherwise fallback to stored preference
+      const lang = preferredLanguage || getLanguagePreference()
+      console.log(`[PDF] Language detected: ${lang}${preferredLanguage ? ' (from parameter)' : ' (from localStorage)'}`)
       
       const t = (content as any)[lang]
       if (!t) {
