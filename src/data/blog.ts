@@ -2890,3 +2890,20 @@ export const getPostBySlug = (slug: string): BlogPost | undefined => {
   return BLOG_POSTS.find(post => post.slug === slug)
 }
 
+// Get recent blog posts (sorted by date, newest first)
+export const getRecentBlogPosts = (limit: number = 20): BlogPost[] => {
+  return [...BLOG_POSTS]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, limit)
+}
+
+// Get all blog posts (for sitemap/internal linking)
+export const getAllBlogPosts = (): BlogPost[] => {
+  return BLOG_POSTS
+}
+
+// Get blog posts by category
+export const getBlogPostsByCategory = (category: string): BlogPost[] => {
+  return BLOG_POSTS.filter(post => post.category === category)
+}
+

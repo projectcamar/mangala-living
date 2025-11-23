@@ -9,7 +9,7 @@ import Breadcrumb from '../components/Breadcrumb'
 import ProductDetailAIContent from '../components/ProductDetailAIContent'
 import { ALL_PRODUCTS } from '../data/products'
 import { getProductDescription, getProductImageAlt, getProductImageCaption, getProductName } from '../data/productDescriptions'
-import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
+import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl, truncateTitle, truncateMetaDescription } from '../utils/seo'
 import { DEFAULT_IMAGE_RIGHTS_METADATA } from '../utils/structuredData'
 import { sendBackgroundEmail } from '../utils/emailHelpers'
 import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
@@ -1050,15 +1050,15 @@ const ProductDetail: React.FC = () => {
       <div className="product-detail-page">
         <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
-        <title>{product.slug === 'hollowline-display-rack' 
-          ? (isIndonesian ? 'Hollowline Display Rack - Harga Murah Rp4.5 Juta - Call Mangala +6288801146881' : 'Hollowline Display Rack - Affordable Price Rp4.5 Million - Call Mangala +6288801146881')
-          : `${translatedProductName} - Mangala Living`}</title>
-        <meta name="description" content={product.name === 'Hollowline Display Rack'
-          ? 'Hollowline Display Rack Industrial - Display Shelf Rack Modern - Harga Rp4.500.000 - Workshop Bekasi - Garansi Kualitas - Call Mangala +6288801146881'
+        <title>{truncateTitle(product.slug === 'hollowline-display-rack' 
+          ? (isIndonesian ? 'Hollowline Display Rack - Harga Rp4.5 Juta - Mangala' : 'Hollowline Display Rack - Rp4.5M - Mangala Living')
+          : `${translatedProductName} - Mangala Living`)}</title>
+        <meta name="description" content={truncateMetaDescription(product.name === 'Hollowline Display Rack'
+          ? (isIndonesian ? 'Hollowline Display Rack Industrial - Display Shelf Rack Modern - Harga Rp4.500.000 - Workshop Bekasi - Garansi Kualitas - Call Mangala +6288801146881' : 'Hollowline Display Rack Industrial - Modern Display Shelf Rack - Price Rp4.500.000 - Bekasi Workshop - Quality Guarantee - Call Mangala +6288801146881')
           : (() => {
               const desc = getProductDescription(product.slug)
               return desc ? (desc[language]?.metaDescription || desc.en.metaDescription) : `${product.name} - ${product.details}`
-            })()} />
+            })())} />
         <meta name="keywords" content={
           product.name === 'Hollowline Display Rack'
             ? 'hollowline display rack, display shelf rack, rak display industrial, hollowline storage, call mangala furniture, furniture bekasi murah'

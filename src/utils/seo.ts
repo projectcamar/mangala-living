@@ -68,27 +68,53 @@ export const generateLocalizedUrls = (pathname: string, search: string = '') => 
   // Remove language prefix from pathname for canonical URL
   const cleanPath = removeLanguagePrefix(pathname)
   
-  // Canonical URL should always be without lang parameter and without language prefix
-  const canonicalParams = new URLSearchParams(search)
-  canonicalParams.delete('lang') // Remove lang parameter
-  const canonical = buildUrlFromParams(cleanPath, canonicalParams)
+  // Ensure cleanPath is not empty - if it is, default to the pathname
+  const finalPath = cleanPath || pathname || '/'
+  
+  // Get current language from search params
+  const params = new URLSearchParams(search)
+  
+  // Canonical URL strategy:
+  // Canonical should ALWAYS point to the page itself WITHOUT lang parameter
+  // This ensures each page has its own canonical URL (not pointing to homepage)
+  const canonicalParams = new URLSearchParams()
+  // Preserve all query params EXCEPT lang
+  params.forEach((value, key) => {
+    if (key !== 'lang') {
+      canonicalParams.set(key, value)
+    }
+  })
+  const canonical = buildUrlFromParams(finalPath, canonicalParams)
 
-  // For hreflang alternates, use clean path with lang parameter
+  // For hreflang alternates, each language version should have its own URL with lang parameter
+  // This ensures hreflang points to canonical URLs (each language version is its own canonical)
   const buildLangUrl = (lang: LanguageCode) => {
-    const params = new URLSearchParams()
-    params.set('lang', lang)
-    return buildUrlFromParams(cleanPath, params)
+    const langParams = new URLSearchParams()
+    // Preserve other query params but replace lang
+    params.forEach((value, key) => {
+      if (key !== 'lang') {
+        langParams.set(key, value)
+      }
+    })
+    langParams.set('lang', lang) // Set specific lang
+    return buildUrlFromParams(finalPath, langParams)
   }
 
-  // x-default should point to clean path without lang parameter
-  const xDefault = buildUrlFromParams(cleanPath, new URLSearchParams())
+  // x-default should point to URL without lang parameter (default version)
+  const xDefaultParams = new URLSearchParams()
+  params.forEach((value, key) => {
+    if (key !== 'lang') {
+      xDefaultParams.set(key, value)
+    }
+  })
+  const xDefault = buildUrlFromParams(finalPath, xDefaultParams)
 
   return {
     canonical,
     alternates: [
       ...SUPPORTED_LANGUAGES.map((code) => ({
         hrefLang: LANGUAGE_METADATA[code].hrefLang,
-        href: buildLangUrl(code)
+        href: buildLangUrl(code) // Each hreflang points to its language-specific URL with lang parameter
       })),
       { hrefLang: 'x-default', href: xDefault }
     ]
@@ -96,13 +122,15 @@ export const generateLocalizedUrls = (pathname: string, search: string = '') => 
 }
 
 export const generateHreflangTags = (path: string, search: string = '') => {
-  const defaultParams = new URLSearchParams(search)
-  defaultParams.delete('lang')
-
+  const cleanPath = removeLanguagePrefix(path)
+  const params = new URLSearchParams(search)
+  
+  // Build URL for each language version with lang parameter
   const buildLangUrl = (lang: LanguageCode) => {
-    const params = new URLSearchParams(defaultParams)
-    params.set('lang', lang)
-    return buildUrlFromParams(path, params)
+    const langParams = new URLSearchParams(params)
+    langParams.delete('lang')
+    langParams.set('lang', lang)
+    return buildUrlFromParams(cleanPath, langParams)
   }
 
   const entries = SUPPORTED_LANGUAGES.reduce<Record<string, string>>((acc, code) => {
@@ -110,7 +138,10 @@ export const generateHreflangTags = (path: string, search: string = '') => {
     return acc
   }, {})
 
-  entries.default = buildUrlFromParams(path, defaultParams)
+  // x-default points to URL without lang parameter
+  const defaultParams = new URLSearchParams(params)
+  defaultParams.delete('lang')
+  entries.default = buildUrlFromParams(cleanPath, defaultParams)
   return entries
 }
 
@@ -163,6 +194,41 @@ const PRODUCT_IMAGE_MAP: { [key: string]: string } = {
   'industrial-hanging-shelf': 'rak-gantung-industrial.webp',
   'industrial-coat-rack': 'gantungan-baju-industrial.webp',
   'meja-kerja-industrial': 'Meja-Kerja-Rak-Meja-Belajar-custom.webp'
+}
+
+/**
+ * Truncate title to optimal SEO length (50-60 characters)
+ * Google typically displays 50-60 characters in search results
+ */
+export const truncateTitle = (title: string, maxLength: number = 60): string => {
+  if (!title) return ''
+  if (title.length <= maxLength) return title
+  // Truncate at word boundary to avoid cutting words
+  const truncated = title.substring(0, maxLength - 3).trim()
+  const lastSpace = truncated.lastIndexOf(' ')
+  if (lastSpace > 0 && lastSpace > maxLength - 20) {
+    return truncated.substring(0, lastSpace) + '...'
+  }
+  return truncated + '...'
+}
+
+/**
+ * Truncate meta description to optimal SEO length (120-160 characters)
+ * Google typically displays 120-160 characters in search results
+ */
+export const truncateMetaDescription = (description: string, minLength: number = 120, maxLength: number = 160): string => {
+  if (!description) return ''
+  // If description is too short, pad it (if possible) or return as is
+  if (description.length < minLength) return description
+  // If description is within range, return as is
+  if (description.length <= maxLength) return description
+  // Truncate at word boundary
+  const truncated = description.substring(0, maxLength - 3).trim()
+  const lastSpace = truncated.lastIndexOf(' ')
+  if (lastSpace > 0 && lastSpace > minLength) {
+    return truncated.substring(0, lastSpace) + '...'
+  }
+  return truncated + '...'
 }
 
 // Convert product image path to full URL

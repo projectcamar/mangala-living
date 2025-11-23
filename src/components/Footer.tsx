@@ -4,6 +4,7 @@ import { Instagram, Facebook } from 'lucide-react'
 import './Footer.css'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import { getLinkWithLanguage } from '../utils/languageManager'
+import { getAllBlogPosts } from '../data/blog'
 
 interface FooterProps {
   isIndonesian?: boolean
@@ -247,6 +248,19 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
             </form>
           </div>
         </div>
+        
+        {/* Blog Posts Links Section - Hidden but crawlable for SEO */}
+        <nav className="footer-blog-links" aria-label="Blog posts" style={{ display: 'none' }}>
+          {getAllBlogPosts().map((post) => (
+            <Link
+              key={post.id}
+              to={getLinkWithLanguage(`/blog/${post.slug}`, language)}
+              aria-label={`${post.title} - ${post.category}`}
+            >
+              {post.title}
+            </Link>
+          ))}
+        </nav>
         
         <div className="footer-bottom">
           <p>Copyright 2025 Mangala Living. All rights reserved.</p>

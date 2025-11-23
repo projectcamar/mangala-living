@@ -239,37 +239,28 @@ const buildSearchQueryEntries = (products, lastModified) => {
 
   const queries = Array.from(map.values()).slice(0, 60)
 
-  // Create entries for both Indonesian and English versions
+  // Only include canonical URLs (without lang parameter) in sitemap
+  // This ensures sitemap only contains canonical URLs
   const entries = []
   queries.forEach((query, index) => {
     const baseParams = new URLSearchParams({ q: query })
     
-    // Indonesian version
+    // Only include canonical version (without lang parameter)
     entries.push({
       query,
-      lang: 'id',
-      loc: `${BASE_URL}/search?${baseParams.toString()}&lang=id`,
+      loc: `${BASE_URL}/search?${baseParams.toString()}`,
       changefreq: index < 20 ? 'weekly' : 'monthly',
       priority: index < 10 ? 0.50 : 0.40,
       lastmod: lastModified,
       explicitAlternates: [
         { hrefLang: 'id-ID', href: `${BASE_URL}/search?${baseParams.toString()}&lang=id` },
         { hrefLang: 'en', href: `${BASE_URL}/search?${baseParams.toString()}&lang=en` },
-        { hrefLang: 'x-default', href: `${BASE_URL}/search?${baseParams.toString()}` }
-      ]
-    })
-    
-    // English version
-    entries.push({
-      query,
-      lang: 'en',
-      loc: `${BASE_URL}/search?${baseParams.toString()}&lang=en`,
-      changefreq: index < 20 ? 'weekly' : 'monthly',
-      priority: index < 10 ? 0.50 : 0.40,
-      lastmod: lastModified,
-      explicitAlternates: [
-        { hrefLang: 'id-ID', href: `${BASE_URL}/search?${baseParams.toString()}&lang=id` },
-        { hrefLang: 'en', href: `${BASE_URL}/search?${baseParams.toString()}&lang=en` },
+        { hrefLang: 'ar', href: `${BASE_URL}/search?${baseParams.toString()}&lang=ar` },
+        { hrefLang: 'zh-CN', href: `${BASE_URL}/search?${baseParams.toString()}&lang=zh` },
+        { hrefLang: 'ja-JP', href: `${BASE_URL}/search?${baseParams.toString()}&lang=ja` },
+        { hrefLang: 'es-ES', href: `${BASE_URL}/search?${baseParams.toString()}&lang=es` },
+        { hrefLang: 'fr-FR', href: `${BASE_URL}/search?${baseParams.toString()}&lang=fr` },
+        { hrefLang: 'ko-KR', href: `${BASE_URL}/search?${baseParams.toString()}&lang=ko` },
         { hrefLang: 'x-default', href: `${BASE_URL}/search?${baseParams.toString()}` }
       ]
     })
@@ -315,7 +306,8 @@ const buildStaticPages = async () => {
     { loc: `${BASE_URL}/shipping-information`, file: 'src/pages/ShippingInformation.tsx', changefreq: 'yearly', priority: 0.4 },
     { loc: `${BASE_URL}/search`, file: 'src/pages/SearchResults.tsx', changefreq: 'monthly', priority: 0.4 },
     { loc: `${BASE_URL}/product-tag/best-seller`, file: 'src/pages/BestSellers.tsx', changefreq: 'weekly', priority: 0.6 },
-    { loc: `${BASE_URL}/furniture-besi-custom-bekasi`, file: 'src/pages/FurnitureBesiCustomBekasi.tsx', changefreq: 'monthly', priority: 0.75 }
+    { loc: `${BASE_URL}/furniture-besi-custom-bekasi`, file: 'src/pages/FurnitureBesiCustomBekasi.tsx', changefreq: 'monthly', priority: 0.75 },
+    { loc: `${BASE_URL}/image-license`, file: 'src/pages/ImageLicense.tsx', changefreq: 'yearly', priority: 0.3 }
   ]
 
   return Promise.all(staticPages.map(async (page) => ({

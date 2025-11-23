@@ -11,7 +11,7 @@ import AuthorCard from '../components/AuthorCard'
 import { getPostBySlug, BLOG_POSTS } from '../data/blog'
 import { getBlogPostContentLocalized } from '../data/blogContent'
 import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structuredData'
-import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
+import { generateLanguageSpecificMeta, generateLocalizedUrls, truncateTitle, truncateMetaDescription } from '../utils/seo'
 import BlogProductShowcase from '../components/BlogProductShowcase'
 import { getRelevantProductsForBlog, getProductShowcaseHeading } from '../utils/blogProductMapping'
 import { getCurrentLanguage, type LanguageCode } from '../utils/languageManager'
@@ -471,8 +471,8 @@ const BlogPost: React.FC = () => {
       <div className="blog-page blog-post-page">
         <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
-        <title>{post.title} - Mangala Living</title>
-        <meta name="description" content={metaDescription} />
+        <title>{truncateTitle(`${post.title} - Mangala Living`)}</title>
+        <meta name="description" content={truncateMetaDescription(metaDescription)} />
         <meta name="keywords" content={generateKeywords(post.slug, post.title)} />
         <meta httpEquiv="content-language" content={localeMeta.lang} />
         {/* Robots meta - allow indexing, follow links, point to canonical */}
