@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link, useLocation, useSearchParams } from 'react-router-dom'
+import { ChevronDown, ChevronUp } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
-import { getPostsByPage, getTotalPages } from '../data/blog'
+import { getPostsByPage, getTotalPages, getAllBlogPosts } from '../data/blog'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, truncateTitle, truncateMetaDescription } from '../utils/seo'
-import { getCurrentLanguage, type LanguageCode } from '../utils/languageManager'
+import { getCurrentLanguage, getLinkWithLanguage, type LanguageCode } from '../utils/languageManager'
 import './Blog.css'
 
 const BLOG_INTRO_TRANSLATIONS: Record<
@@ -265,6 +266,8 @@ const Blog: React.FC = () => {
     return getCurrentLanguage(location.pathname, location.search)
   })
   
+  const [isArchiveExpanded, setIsArchiveExpanded] = useState(false)
+  
   useEffect(() => {
     const currentLang = getCurrentLanguage(location.pathname, location.search)
     if (currentLang !== language) {
@@ -278,6 +281,7 @@ const Blog: React.FC = () => {
   const totalPages = getTotalPages(postsPerPage)
   const currentPage = Number.isNaN(rawPage) ? 1 : Math.min(Math.max(rawPage, 1), totalPages || 1)
   const posts = getPostsByPage(currentPage, postsPerPage)
+  const allBlogPosts = getAllBlogPosts()
 
   const buildPageUrl = (page: number) => (page <= 1 ? '/blog' : `/blog?page=${page}`)
   const prevUrl = currentPage > 1 ? buildPageUrl(currentPage - 1) : null
@@ -472,6 +476,79 @@ const Blog: React.FC = () => {
               )}
             </nav>
           )}
+
+          {/* Complete Blog Archive - Collapsible for SEO */}
+          <div className="blog-archive-section" style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid #e0e0e0' }}>
+            <button
+              className="blog-archive-toggle"
+              onClick={() => setIsArchiveExpanded(!isArchiveExpanded)}
+              aria-expanded={isArchiveExpanded}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                width: '100%',
+                background: 'none',
+                border: 'none',
+                padding: '1rem 0',
+                cursor: 'pointer',
+                color: '#2C3E50',
+                fontSize: '1.1rem',
+                fontWeight: 600
+              }}
+            >
+              <span>
+                {language === 'id' ? "Arsip Blog Lengkap (Semua Artikel)" : 
+                 language === 'ar' ? "أرشيف المدونة الكامل (جميع المقالات)" :
+                 language === 'zh' ? "完整博客存档（所有文章）" :
+                 language === 'ja' ? "完全なブログアーカイブ（全記事）" :
+                 language === 'es' ? "Archivo Completo del Blog (Todos los Artículos)" :
+                 language === 'fr' ? "Archives Complètes du Blog (Tous les Articles)" :
+                 language === 'ko' ? "완전한 블로그 아카이브 (모든 기사)" :
+                 "Complete Blog Archive (All Articles)"}
+              </span>
+              {isArchiveExpanded ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
+            </button>
+            <nav 
+              className={`blog-archive-links ${isArchiveExpanded ? 'expanded' : 'collapsed'}`}
+              aria-label="All blog posts"
+              aria-hidden={!isArchiveExpanded}
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+                gap: '10px 20px',
+                overflow: 'hidden',
+                transition: 'max-height 0.4s ease, opacity 0.3s ease',
+                maxHeight: isArchiveExpanded ? '800px' : '0',
+                opacity: isArchiveExpanded ? 1 : 0,
+                paddingTop: isArchiveExpanded ? '1rem' : '0',
+                paddingBottom: isArchiveExpanded ? '1rem' : '0'
+              }}
+            >
+              {allBlogPosts.map((post) => (
+                <Link
+                  key={post.id}
+                  to={getLinkWithLanguage(`/blog/${post.slug}`, language)}
+                  style={{
+                    color: '#555',
+                    textDecoration: 'none',
+                    fontSize: '0.9rem',
+                    lineHeight: 1.5,
+                    padding: '0.5rem 0',
+                    borderBottom: '1px solid #f0f0f0',
+                    transition: 'color 0.3s ease',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap'
+                  }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#8B7355'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#555'}
+                >
+                  {post.title}
+                </Link>
+              ))}
+            </nav>
+          </div>
         </div>
       </section>
       
