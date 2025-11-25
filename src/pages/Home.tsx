@@ -101,9 +101,7 @@ const Home: React.FC = () => {
   const isIndonesian = language === 'id'
   
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
-  // For /id, /eng, /ar, /zh, /ja, /es, /fr, and /ko routes, canonical should point to /
-  const canonicalPath = (location.pathname === '/id' || location.pathname === '/eng' || location.pathname === '/ar' || location.pathname === '/zh' || location.pathname === '/ja' || location.pathname === '/es' || location.pathname === '/fr' || location.pathname === '/ko') ? '/' : location.pathname
-  const localizedUrls = generateLocalizedUrls(canonicalPath, location.search)
+  const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
 
   // Multi-language translations - SEO Optimized with Priority Keywords
   const translations = {

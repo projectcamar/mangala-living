@@ -2,6 +2,36 @@ import { type LanguageCode } from './languageManager'
 
 const BASE_URL = 'https://mangala-living.com'
 
+const LANGUAGE_PATH_PREFIXES: Record<LanguageCode, string> = {
+  id: '/id',
+  en: '/eng',
+  ar: '/ar',
+  zh: '/zh',
+  ja: '/ja',
+  es: '/es',
+  fr: '/fr',
+  ko: '/ko'
+}
+
+const TRACKING_PARAM_BLOCKLIST = new Set([
+  'utm_source',
+  'utm_medium',
+  'utm_campaign',
+  'utm_term',
+  'utm_content',
+  'utm_id',
+  'gclid',
+  'fbclid',
+  'igshid',
+  'mc_eid',
+  'mc_cid',
+  'ref',
+  'referrer',
+  'mkt_tok',
+  'vero_conv',
+  'vero_id'
+])
+
 const LANGUAGE_METADATA: Record<
   LanguageCode,
   { lang: string; locale: string; direction: 'ltr' | 'rtl'; hrefLang: string }
@@ -33,20 +63,57 @@ const normalizePath = (path: string): string => {
 
 // Remove language path prefixes from paths (e.g., /id/blog/post -> /blog/post)
 const removeLanguagePrefix = (path: string): string => {
-  const languagePrefixes = ['/id', '/eng', '/ar', '/zh', '/ja', '/es', '/fr', '/ko']
-  
-  for (const prefix of languagePrefixes) {
-    // Handle /id/, /eng/, etc. (with trailing slash)
+  for (const prefix of Object.values(LANGUAGE_PATH_PREFIXES)) {
+    if (!prefix) continue
     if (path.startsWith(`${prefix}/`)) {
-      return path.substring(prefix.length)
+      return path.substring(prefix.length) || '/'
     }
-    // Handle /id, /eng, etc. (without trailing slash, only if it's the full path)
     if (path === prefix) {
       return '/'
     }
   }
-  
   return path
+}
+
+const getLanguageFromPath = (path: string): LanguageCode | null => {
+  for (const [lang, prefix] of Object.entries(LANGUAGE_PATH_PREFIXES)) {
+    if (!prefix) continue
+    if (path === prefix || path.startsWith(`${prefix}/`)) {
+      return lang as LanguageCode
+    }
+  }
+  return null
+}
+
+const stripLanguageFromPath = (path: string): { normalizedPath: string; detectedLang: LanguageCode | null } => {
+  const normalized = normalizePath(path || '/')
+  const detectedLang = getLanguageFromPath(normalized)
+  if (!detectedLang) {
+    return { normalizedPath: normalized, detectedLang: null }
+  }
+  return {
+    normalizedPath: removeLanguagePrefix(normalized) || '/',
+    detectedLang
+  }
+}
+
+const sanitizeSearchParams = (
+  params: URLSearchParams,
+  { includeLang }: { includeLang: boolean }
+): URLSearchParams => {
+  const sanitized = new URLSearchParams()
+  params.forEach((value, key) => {
+    if (!value) return
+    if (TRACKING_PARAM_BLOCKLIST.has(key) || key.startsWith('utm_')) {
+      return
+    }
+    if (key === 'lang') {
+      if (!includeLang) return
+      if (value === 'en') return // English is the default language
+    }
+    sanitized.set(key, value)
+  })
+  return sanitized
 }
 
 const buildUrlFromParams = (path: string, params: URLSearchParams): string => {
@@ -57,91 +124,75 @@ const buildUrlFromParams = (path: string, params: URLSearchParams): string => {
 
 // SEO utility functions for canonical URLs and hreflang
 export const generateCanonicalUrl = (path: string, search: string = ''): string => {
-  // Remove language prefix and parameters for canonical
-  const cleanPath = removeLanguagePrefix(path)
+  const { normalizedPath, detectedLang } = stripLanguageFromPath(path)
   const params = new URLSearchParams(search)
-  params.delete('lang') // Remove lang parameter from canonical
-  return buildUrlFromParams(cleanPath, params)
+
+  if (detectedLang && !params.has('lang')) {
+    params.set('lang', detectedLang)
+  }
+
+  const canonicalParams = sanitizeSearchParams(params, { includeLang: true })
+  return buildUrlFromParams(normalizedPath, canonicalParams)
 }
 
 export const generateLocalizedUrls = (pathname: string, search: string = '') => {
-  // Remove language prefix from pathname for canonical URL
-  const cleanPath = removeLanguagePrefix(pathname)
-  
-  // Ensure cleanPath is not empty - if it is, default to the pathname
-  const finalPath = cleanPath || pathname || '/'
-  
-  // Get current language from search params
+  const { normalizedPath, detectedLang } = stripLanguageFromPath(pathname)
   const params = new URLSearchParams(search)
-  
-  // Canonical URL strategy:
-  // Canonical should ALWAYS point to the page itself WITHOUT lang parameter
-  // This ensures each page has its own canonical URL (not pointing to homepage)
-  const canonicalParams = new URLSearchParams()
-  // Preserve all query params EXCEPT lang
-  params.forEach((value, key) => {
-    if (key !== 'lang') {
-      canonicalParams.set(key, value)
-    }
-  })
-  const canonical = buildUrlFromParams(finalPath, canonicalParams)
 
-  // For hreflang alternates, each language version should have its own URL with lang parameter
-  // This ensures hreflang points to canonical URLs (each language version is its own canonical)
-  const buildLangUrl = (lang: LanguageCode) => {
-    const langParams = new URLSearchParams()
-    // Preserve other query params but replace lang
-    params.forEach((value, key) => {
-      if (key !== 'lang') {
-        langParams.set(key, value)
-      }
-    })
-    langParams.set('lang', lang) // Set specific lang
-    return buildUrlFromParams(finalPath, langParams)
+  if (detectedLang && !params.has('lang')) {
+    params.set('lang', detectedLang)
   }
 
-  // x-default should point to URL without lang parameter (default version)
-  const xDefaultParams = new URLSearchParams()
-  params.forEach((value, key) => {
-    if (key !== 'lang') {
-      xDefaultParams.set(key, value)
-    }
-  })
-  const xDefault = buildUrlFromParams(finalPath, xDefaultParams)
+  const canonicalParams = sanitizeSearchParams(params, { includeLang: true })
+  const canonical = buildUrlFromParams(normalizedPath, canonicalParams)
 
-  return {
-    canonical,
-    alternates: [
-      ...SUPPORTED_LANGUAGES.map((code) => ({
-        hrefLang: LANGUAGE_METADATA[code].hrefLang,
-        href: buildLangUrl(code) // Each hreflang points to its language-specific URL with lang parameter
-      })),
-      { hrefLang: 'x-default', href: xDefault }
-    ]
+  const baseParams = sanitizeSearchParams(params, { includeLang: false })
+  const baseParamsString = baseParams.toString()
+
+  const buildLangHref = (lang: LanguageCode) => {
+    if (lang === 'en') {
+      return buildUrlFromParams(normalizedPath, new URLSearchParams(baseParamsString))
+    }
+    const langParams = new URLSearchParams(baseParamsString)
+    langParams.set('lang', lang)
+    return buildUrlFromParams(normalizedPath, langParams)
   }
+
+  const alternates = [
+    ...SUPPORTED_LANGUAGES.map((code) => ({
+      hrefLang: LANGUAGE_METADATA[code].hrefLang,
+      href: buildLangHref(code)
+    })),
+    {
+      hrefLang: 'x-default',
+      href: buildUrlFromParams(normalizedPath, new URLSearchParams(baseParamsString))
+    }
+  ]
+
+  return { canonical, alternates }
 }
 
 export const generateHreflangTags = (path: string, search: string = '') => {
-  const cleanPath = removeLanguagePrefix(path)
+  const { normalizedPath, detectedLang } = stripLanguageFromPath(path)
   const params = new URLSearchParams(search)
-  
-  // Build URL for each language version with lang parameter
-  const buildLangUrl = (lang: LanguageCode) => {
-    const langParams = new URLSearchParams(params)
-    langParams.delete('lang')
-    langParams.set('lang', lang)
-    return buildUrlFromParams(cleanPath, langParams)
+
+  if (detectedLang && !params.has('lang')) {
+    params.set('lang', detectedLang)
   }
 
+  const baseParams = sanitizeSearchParams(params, { includeLang: false })
+  const baseParamsString = baseParams.toString()
+
   const entries = SUPPORTED_LANGUAGES.reduce<Record<string, string>>((acc, code) => {
-    acc[LANGUAGE_METADATA[code].hrefLang] = buildLangUrl(code)
+    const langParams = new URLSearchParams(baseParamsString)
+    if (code !== 'en') {
+      langParams.set('lang', code)
+    }
+    acc[LANGUAGE_METADATA[code].hrefLang] = buildUrlFromParams(normalizedPath, langParams)
     return acc
   }, {})
 
-  // x-default points to URL without lang parameter
-  const defaultParams = new URLSearchParams(params)
-  defaultParams.delete('lang')
-  entries.default = buildUrlFromParams(cleanPath, defaultParams)
+  entries['x-default'] = buildUrlFromParams(normalizedPath, new URLSearchParams(baseParamsString))
   return entries
 }
 

@@ -254,7 +254,7 @@ const buildSearchQueryEntries = (products, lastModified) => {
       lastmod: lastModified,
       explicitAlternates: [
         { hrefLang: 'id-ID', href: `${BASE_URL}/search?${baseParams.toString()}&lang=id` },
-        { hrefLang: 'en', href: `${BASE_URL}/search?${baseParams.toString()}&lang=en` },
+        { hrefLang: 'en', href: `${BASE_URL}/search?${baseParams.toString()}` },
         { hrefLang: 'ar', href: `${BASE_URL}/search?${baseParams.toString()}&lang=ar` },
         { hrefLang: 'zh-CN', href: `${BASE_URL}/search?${baseParams.toString()}&lang=zh` },
         { hrefLang: 'ja-JP', href: `${BASE_URL}/search?${baseParams.toString()}&lang=ja` },
@@ -337,14 +337,10 @@ const buildLanguageAlternates = (loc, explicitAlternates) => {
   }
 
   try {
-    const url = new URL(loc)
-    const params = url.searchParams
-    params.delete('lang')
-
     const buildUrl = (lang) => {
       const cloned = new URL(loc)
       cloned.searchParams.delete('lang')
-      if (lang) {
+      if (lang && lang !== 'en') {
         cloned.searchParams.set('lang', lang)
       }
       return cloned.toString()
