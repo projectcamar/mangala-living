@@ -5,6 +5,8 @@ import './Footer.css'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import { getLinkWithLanguage } from '../utils/languageManager'
 import { getAllBlogPosts } from '../data/blog'
+import logoILW from '../assets/LOGO-ILW-800.png'
+import logoSVLK from '../assets/SVLK-LOGO-INDONESIA.png'
 
 interface FooterProps {
   isIndonesian?: boolean
@@ -180,6 +182,10 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
                   +6288801146881
                 </a>
               </p>
+              <div className="footer-certification-logos">
+                <img src={logoILW} alt="ILW Certification" className="footer-cert-logo" />
+                <img src={logoSVLK} alt="SVLK Certification" className="footer-cert-logo" />
+              </div>
             </div>
           </div>
           

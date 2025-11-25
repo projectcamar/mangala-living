@@ -116,6 +116,20 @@
   margin-top: 6px;
 }
 
+.footer-certification-logos {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-cert-logo {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Footer Links */
 .footer-links {
   list-style: none;
