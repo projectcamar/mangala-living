@@ -6824,7 +6824,7 @@ const BLOG_CONTENTS: BlogContent[] = [
 ]
 
 // Optional localized manual contents (non-ID/EN). Each entry is fully written, not generated.
-type SupportedLocale = 'es' | 'fr' | 'ko' | 'ja' | 'zh' | 'ar'
+type SupportedLocale = 'en' | 'es' | 'fr' | 'ko' | 'ja' | 'zh' | 'ar'
 interface BlogContentLocalized extends BlogContent { language: SupportedLocale }
 
 const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
@@ -8330,6 +8330,306 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
           '<strong>7. 경쟁력 있는 가격:</strong> 현지 제조의 이점을 활용하여 경쟁력 있는 가격을 제공합니다.',
           '제조 시설 주소: <strong>Jl. Raya Setu, Bekasi</strong>. 시설 방문을 환영합니다.',
           '<strong>문의:</strong><br/>&bull; <a href="https://wa.me/+6288801146881" target="_blank">WhatsApp: +6288801146881</a><br/>&bull; <a href="mailto:lifewithmangala@gmail.com">Email: lifewithmangala@gmail.com</a><br/>&bull; "LOCAL281"을 언급하시면 현지 제조 상담 및 특별 견적을 받으실 수 있습니다.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'indonesian-industrial-furniture-exporter-manufacturer-svlk-certified',
+    language: 'en',
+    sections: [
+      {
+        paragraphs: [
+          'Indonesia has emerged as a leading global supplier of industrial furniture, with manufacturers like Mangala Living setting the standard for quality, sustainability, and ethical sourcing. As international buyers increasingly prioritize environmental responsibility and legal compliance, <strong>SVLK (Sistem Verifikasi Legalitas Kayu) certification</strong> has become a crucial differentiator for Indonesian furniture exporters.',
+          'This comprehensive guide explores why SVLK-certified Indonesian industrial furniture manufacturers are the trusted choice for international buyers, highlighting our commitment to <strong>non-illegal logging practices</strong> and sustainable wood sourcing.'
+        ]
+      },
+      {
+        heading: 'What is SVLK Certification?',
+        paragraphs: [
+          '<strong>SVLK (Sistem Verifikasi Legalitas Kayu)</strong> is Indonesia\'s official timber legality verification system, established to ensure that all wood products exported from Indonesia come from legal and sustainable sources. This certification is mandatory for Indonesian furniture exporters and serves as proof of compliance with international regulations against illegal logging.',
+          'SVLK certification guarantees that:',
+          '• All wood materials are sourced from legally managed forests',
+          '• The supply chain is fully traceable and documented',
+          '• No illegal logging practices are involved in production',
+          '• Environmental and social standards are maintained throughout the manufacturing process'
+        ]
+      },
+      {
+        heading: 'Why Choose SVLK-Certified Indonesian Industrial Furniture Manufacturers?',
+        list: [
+          '<strong>Legal Compliance & Market Access:</strong> SVLK certification ensures your furniture imports comply with international regulations, including the EU Timber Regulation (EUTR) and the US Lacey Act. This eliminates legal risks and facilitates smooth customs clearance in major international markets.',
+          '<strong>Environmental Responsibility:</strong> By choosing SVLK-certified manufacturers, you support sustainable forest management and contribute to global efforts to combat illegal logging and deforestation. This aligns with corporate sustainability goals and enhances your brand\'s environmental credentials.',
+          '<strong>Supply Chain Transparency:</strong> SVLK certification provides complete traceability from forest to finished product. You can verify the origin of every piece of wood used in your furniture, ensuring ethical sourcing throughout the supply chain.',
+          '<strong>Quality Assurance:</strong> SVLK-certified manufacturers like Mangala Living maintain strict quality control standards. Our commitment to legal sourcing goes hand-in-hand with superior craftsmanship, precision welding, and professional finishing.',
+          '<strong>Competitive Pricing:</strong> Indonesian manufacturers offer excellent value without compromising on quality or legality. Factory-direct pricing combined with SVLK certification provides the best balance of cost, quality, and compliance.',
+          '<strong>International Trust:</strong> SVLK certification is recognized globally as a mark of responsible manufacturing. This builds trust with international buyers, hospitality chains, and commercial furniture importers worldwide.'
+        ]
+      },
+      {
+        heading: 'Mangala Living: Your SVLK-Certified Industrial Furniture Partner',
+        paragraphs: [
+          'Since 1999, Mangala Living has been a leading Indonesian industrial furniture manufacturer and exporter, specializing in custom metal furniture for cafes, restaurants, hotels, and commercial spaces. Our <strong>SVLK certification</strong> demonstrates our unwavering commitment to legal, sustainable wood sourcing and non-illegal logging practices.',
+          'Our workshop in Bekasi, Indonesia, produces high-quality industrial furniture using:',
+          '• <strong>Legally sourced wood materials</strong> verified through SVLK certification',
+          '• <strong>Galvanized hollow steel</strong> for superior durability and rust resistance',
+          '• <strong>Professional welding techniques</strong> ensuring structural integrity',
+          '• <strong>Powder coating finishes</strong> for long-lasting protection and aesthetic appeal',
+          'We serve international clients across Asia, Europe, the Middle East, and beyond, providing complete export services including documentation, shipping coordination, and quality assurance.'
+        ]
+      },
+      {
+        heading: 'Our Commitment to Non-Illegal Logging',
+        paragraphs: [
+          'At Mangala Living, we take our environmental responsibility seriously. Our <strong>SVLK certification</strong> is not just a compliance requirement—it\'s a core value that guides every aspect of our operations:',
+          '• <strong>Verified Wood Sources:</strong> We only work with suppliers who can provide SVLK documentation, ensuring every piece of wood in our furniture comes from legal, sustainably managed forests.',
+          '• <strong>Complete Documentation:</strong> Every export shipment includes full SVLK documentation, allowing our international clients to verify the legality and sustainability of their furniture purchases.',
+          '• <strong>Regular Audits:</strong> We maintain our SVLK certification through regular audits and compliance checks, ensuring continuous adherence to legal and environmental standards.',
+          '• <strong>Transparent Supply Chain:</strong> We provide complete transparency about our wood sourcing, manufacturing processes, and export documentation to build trust with international buyers.'
+        ]
+      },
+      {
+        heading: 'Export Services & International Shipping',
+        list: [
+          '<strong>Custom Design & Manufacturing:</strong> Work with our design team to create unique industrial furniture tailored to your brand and space requirements. All custom pieces are manufactured using SVLK-certified materials.',
+          '<strong>OEM & ODM Services:</strong> We offer private label manufacturing for international brands, furniture importers, and hospitality chains. Your brand, our SVLK-certified quality.',
+          '<strong>Export Documentation:</strong> Complete SVLK certification documents, commercial invoices, packing lists, and all required export paperwork handled by our experienced team.',
+          '<strong>Container Shipping:</strong> We coordinate FOB and CIF shipping arrangements, handling everything from factory to port to ensure smooth international delivery.',
+          '<strong>Quality Control:</strong> Every piece undergoes rigorous quality inspection before export, ensuring it meets international standards for durability, finish, and structural integrity.'
+        ]
+      },
+      {
+        heading: 'Contact Mangala Living for SVLK-Certified Industrial Furniture',
+        paragraphs: [
+          'Ready to source high-quality, SVLK-certified industrial furniture from Indonesia? Contact Mangala Living today:',
+          '<strong>Workshop Address:</strong> Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320, Indonesia',
+          '<strong>Contact:</strong><br/>&bull; <a href="https://wa.me/+6288801146881" target="_blank">WhatsApp: +6288801146881</a><br/>&bull; <a href="mailto:lifewithmangala@gmail.com">Email: lifewithmangala@gmail.com</a><br/>&bull; Mention "SVLK282" for SVLK-certified furniture consultation and export pricing.',
+          'We welcome factory visits and are happy to discuss your custom furniture requirements, export volumes, and sustainability goals. Experience the quality and compliance that comes with SVLK-certified Indonesian industrial furniture manufacturing.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'yin-ni-gong-ye-jia-ju-chu-kou-sheng-chan-shang-svlk-ren-zheng',
+    language: 'zh',
+    sections: [
+      {
+        paragraphs: [
+          '印度尼西亚已成为全球工业家具的主要供应商，像Mangala Living这样的制造商在质量、可持续性和道德采购方面树立了标准。随着国际买家越来越重视环境责任和合法合规，<strong>SVLK（木材合法性验证系统）认证</strong>已成为印度尼西亚家具出口商的关键差异化因素。',
+          '本综合指南探讨了为什么获得SVLK认证的印度尼西亚工业家具制造商是国际买家的可靠选择，重点介绍我们对<strong>非非法采伐实践</strong>和可持续木材采购的承诺。'
+        ]
+      },
+      {
+        heading: '什么是SVLK认证？',
+        paragraphs: [
+          '<strong>SVLK（木材合法性验证系统）</strong>是印度尼西亚官方的木材合法性验证系统，旨在确保从印度尼西亚出口的所有木制品都来自合法和可持续的来源。此认证对印度尼西亚家具出口商是强制性的，并作为符合国际反非法采伐法规的证明。',
+          'SVLK认证保证：',
+          '• 所有木材材料均来自合法管理的森林',
+          '• 供应链完全可追溯且有文件记录',
+          '• 生产过程中不涉及非法采伐实践',
+          '• 在整个制造过程中保持环境和社会标准'
+        ]
+      },
+      {
+        heading: '为什么选择获得SVLK认证的印度尼西亚工业家具制造商？',
+        list: [
+          '<strong>合法合规和市场准入：</strong> SVLK认证确保您的家具进口符合国际法规，包括欧盟木材法规（EUTR）和美国莱西法案。这消除了法律风险，并促进在主要国际市场的顺利清关。',
+          '<strong>环境责任：</strong> 通过选择获得SVLK认证的制造商，您支持可持续森林管理，并为全球打击非法采伐和森林砍伐的努力做出贡献。这与企业可持续发展目标一致，并增强您品牌的环境信誉。',
+          '<strong>供应链透明度：</strong> SVLK认证提供从森林到成品的完全可追溯性。您可以验证家具中使用的每一块木材的来源，确保整个供应链的道德采购。',
+          '<strong>质量保证：</strong> 像Mangala Living这样获得SVLK认证的制造商保持严格的质量控制标准。我们对合法采购的承诺与卓越的工艺、精密焊接和专业饰面齐头并进。',
+          '<strong>有竞争力的价格：</strong> 印度尼西亚制造商在不影响质量或合法性的情况下提供卓越的价值。工厂直接定价与SVLK认证相结合，提供了成本、质量和合规性的最佳平衡。',
+          '<strong>国际信任：</strong> SVLK认证在全球范围内被公认为负责任的制造标志。这建立了与国际买家、酒店连锁店和全球商业家具进口商的信任。'
+        ]
+      },
+      {
+        heading: 'Mangala Living：您获得SVLK认证的工业家具合作伙伴',
+        paragraphs: [
+          '自1999年以来，Mangala Living一直是领先的印度尼西亚工业家具制造商和出口商，专门为咖啡馆、餐厅、酒店和商业空间定制金属家具。我们的<strong>SVLK认证</strong>证明了我们对合法、可持续木材采购和非非法采伐实践的不懈承诺。',
+          '我们在印度尼西亚Bekasi的工厂使用以下材料生产高质量的工业家具：',
+          '• 通过SVLK认证验证的<strong>合法采购的木材材料</strong>',
+          '• <strong>镀锌空心钢</strong>，具有卓越的耐用性和防锈性',
+          '• <strong>专业焊接技术</strong>，确保结构完整性',
+          '• <strong>粉末涂层饰面</strong>，提供持久的保护和美观',
+          '我们为亚洲、欧洲、中东及其他地区的国际客户提供服务，提供完整的出口服务，包括文件处理、运输协调和质量保证。'
+        ]
+      },
+      {
+        heading: '我们对非非法采伐的承诺',
+        paragraphs: [
+          '在Mangala Living，我们认真对待我们的环境责任。我们的<strong>SVLK认证</strong>不仅仅是合规要求——它是指导我们运营各个方面的核心价值观：',
+          '• <strong>经过验证的木材来源：</strong> 我们只与能够提供SVLK文件的供应商合作，确保我们家具中的每一块木材都来自合法、可持续管理的森林。',
+          '• <strong>完整的文件记录：</strong> 每次出口装运都包括完整的SVLK文件，允许我们的国际客户验证其家具购买的合法性和可持续性。',
+          '• <strong>定期审计：</strong> 我们通过定期审计和合规检查维护我们的SVLK认证，确保持续遵守法律和环境标准。',
+          '• <strong>透明的供应链：</strong> 我们提供关于木材采购、制造过程和出口文件的完全透明度，以建立与国际买家的信任。'
+        ]
+      },
+      {
+        heading: '出口服务和国际运输',
+        list: [
+          '<strong>定制设计和制造：</strong> 与我们的设计团队合作，创建适合您品牌和空间要求的独特工业家具。所有定制件均使用获得SVLK认证的材料制造。',
+          '<strong>OEM和ODM服务：</strong> 我们为国际品牌、家具进口商和酒店连锁店提供自有品牌制造。您的品牌，我们获得SVLK认证的质量。',
+          '<strong>出口文件：</strong> 完整的SVLK认证文件、商业发票、装箱单以及我们经验丰富的团队处理的所有所需出口文件。',
+          '<strong>集装箱运输：</strong> 我们协调FOB和CIF运输安排，处理从工厂到港口的一切事务，确保顺利的国际交付。',
+          '<strong>质量控制：</strong> 每件产品在出口前都经过严格的质量检查，确保符合耐用性、饰面和结构完整性的国际标准。'
+        ]
+      },
+      {
+        heading: '联系Mangala Living获取获得SVLK认证的工业家具',
+        paragraphs: [
+          '准备从印度尼西亚采购高质量、获得SVLK认证的工业家具吗？立即联系Mangala Living：',
+          '<strong>工厂地址：</strong> Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320, 印度尼西亚',
+          '<strong>联系方式：</strong><br/>&bull; <a href="https://wa.me/+6288801146881" target="_blank">WhatsApp: +6288801146881</a><br/>&bull; <a href="mailto:lifewithmangala@gmail.com">电子邮件: lifewithmangala@gmail.com</a><br/>&bull; 提及"SVLK283"以获取获得SVLK认证的家具咨询和出口定价。',
+          '我们欢迎工厂参观，并很乐意讨论您的定制家具要求、出口量和可持续发展目标。体验获得SVLK认证的印度尼西亚工业家具制造带来的质量和合规性。'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'indonesia-sangyo-furniture-yushutsu-seizo-sha-svlk-ninsho',
+    language: 'ja',
+    sections: [
+      {
+        paragraphs: [
+          'インドネシアは、Mangala Livingのようなメーカーが品質、持続可能性、倫理的調達の基準を設定し、世界有数の産業家具供給国として台頭しています。国際的なバイヤーが環境責任と法的コンプライアンスをますます重視する中、<strong>SVLK（木材合法性検証システム）認証</strong>は、インドネシアの家具輸出業者にとって重要な差別化要因となっています。',
+          'この包括的なガイドでは、SVLK認証を取得したインドネシアの産業家具メーカーが、国際的なバイヤーにとって信頼できる選択肢である理由を探り、<strong>非違法伐採の実践</strong>と持続可能な木材調達への取り組みを強調します。'
+        ]
+      },
+      {
+        heading: 'SVLK認証とは？',
+        paragraphs: [
+          '<strong>SVLK（木材合法性検証システム）</strong>は、インドネシアの公式木材合法性検証システムで、インドネシアから輸出されるすべての木製品が合法で持続可能な源から来ることを確保するために設立されました。この認証は、インドネシアの家具輸出業者にとって必須であり、違法伐採に対する国際規制への準拠の証明として機能します。',
+          'SVLK認証は以下を保証します：',
+          '• すべての木材材料は合法に管理された森林から調達される',
+          '• サプライチェーンは完全に追跡可能で文書化されている',
+          '• 生産プロセスに違法伐採の実践が関与していない',
+          '• 製造プロセス全体を通じて環境および社会的基準が維持される'
+        ]
+      },
+      {
+        heading: 'SVLK認証を取得したインドネシアの産業家具メーカーを選ぶ理由',
+        list: [
+          '<strong>法的コンプライアンスと市場アクセス：</strong> SVLK認証により、家具輸入がEU木材規則（EUTR）や米国レイシー法を含む国際規制に準拠していることが保証されます。これにより法的リスクが排除され、主要な国際市場でのスムーズな通関が促進されます。',
+          '<strong>環境責任：</strong> SVLK認証を取得したメーカーを選択することで、持続可能な森林管理を支援し、違法伐採と森林破壊と闘う世界的な取り組みに貢献します。これは企業の持続可能性目標と一致し、ブランドの環境的信頼性を高めます。',
+          '<strong>サプライチェーンの透明性：</strong> SVLK認証は、森林から完成品までの完全な追跡可能性を提供します。家具に使用されるすべての木材の原産地を確認でき、サプライチェーン全体を通じて倫理的調達が確保されます。',
+          '<strong>品質保証：</strong> Mangala LivingのようなSVLK認証を取得したメーカーは、厳格な品質管理基準を維持しています。合法調達への取り組みは、優れた職人技、精密な溶接、プロフェッショナルな仕上げと並行しています。',
+          '<strong>競争力のある価格：</strong> インドネシアのメーカーは、品質や合法性を損なうことなく、優れた価値を提供します。工場直販価格とSVLK認証の組み合わせにより、コスト、品質、コンプライアンスの最適なバランスが提供されます。',
+          '<strong>国際的信頼：</strong> SVLK認証は、責任ある製造のマークとして世界的に認識されています。これにより、国際的なバイヤー、ホスピタリティチェーン、世界中の商業家具輸入業者との信頼が構築されます。'
+        ]
+      },
+      {
+        heading: 'Mangala Living：SVLK認証を取得した産業家具パートナー',
+        paragraphs: [
+          '1999年以来、Mangala Livingは、カフェ、レストラン、ホテル、商業スペース向けのカスタムメタル家具を専門とする、インドネシアの主要な産業家具メーカーおよび輸出業者です。私たちの<strong>SVLK認証</strong>は、合法で持続可能な木材調達と非違法伐採の実践への揺るぎない取り組みを示しています。',
+          'インドネシアのBekasiにある私たちの工場では、以下を使用して高品質の産業家具を製造しています：',
+          '• SVLK認証を通じて検証された<strong>合法に調達された木材材料</strong>',
+          '• 優れた耐久性と防錆性を備えた<strong>亜鉛メッキ中空鋼</strong>',
+          '• 構造的完全性を確保する<strong>プロフェッショナルな溶接技術</strong>',
+          '• 長期的な保護と美的魅力を提供する<strong>パウダーコーティング仕上げ</strong>',
+          '私たちは、アジア、ヨーロッパ、中東、その他の地域の国際的なクライアントにサービスを提供し、文書処理、輸送調整、品質保証を含む完全な輸出サービスを提供しています。'
+        ]
+      },
+      {
+        heading: '非違法伐採への取り組み',
+        paragraphs: [
+          'Mangala Livingでは、環境責任を真剣に受け止めています。私たちの<strong>SVLK認証</strong>は、単なるコンプライアンス要件ではありません。それは、私たちの運営のあらゆる側面を導く核心的な価値です：',
+          '• <strong>検証された木材源：</strong> SVLK文書を提供できるサプライヤーとのみ協力し、私たちの家具のすべての木材が合法で持続可能に管理された森林から来ることを確保します。',
+          '• <strong>完全な文書化：</strong> すべての輸出出荷には完全なSVLK文書が含まれており、国際的なクライアントが家具購入の合法性と持続可能性を確認できます。',
+          '• <strong>定期的な監査：</strong> 定期的な監査とコンプライアンスチェックを通じてSVLK認証を維持し、法的および環境基準への継続的な遵守を確保します。',
+          '• <strong>透明なサプライチェーン：</strong> 木材調達、製造プロセス、輸出文書に関する完全な透明性を提供し、国際的なバイヤーとの信頼を構築します。'
+        ]
+      },
+      {
+        heading: '輸出サービスと国際輸送',
+        list: [
+          '<strong>カスタムデザインと製造：</strong> デザインチームと協力して、ブランドとスペースの要件に合わせた独自の産業家具を作成します。すべてのカスタムピースは、SVLK認証を取得した材料を使用して製造されます。',
+          '<strong>OEMおよびODMサービス：</strong> 国際ブランド、家具輸入業者、ホスピタリティチェーン向けにプライベートラベル製造を提供します。あなたのブランド、私たちのSVLK認証品質。',
+          '<strong>輸出文書：</strong> 完全なSVLK認証文書、商業インボイス、パッキングリスト、および経験豊富なチームが処理するすべての必要な輸出書類。',
+          '<strong>コンテナ輸送：</strong> FOBおよびCIF輸送手配を調整し、工場から港まで、スムーズな国際配送を確保するためにすべてを処理します。',
+          '<strong>品質管理：</strong> すべてのピースは輸出前に厳格な品質検査を受け、耐久性、仕上げ、構造的完全性の国際基準を満たしていることを確認します。'
+        ]
+      },
+      {
+        heading: 'SVLK認証を取得した産業家具についてMangala Livingに連絡',
+        paragraphs: [
+          'インドネシアから高品質でSVLK認証を取得した産業家具を調達する準備はできていますか？今すぐMangala Livingに連絡してください：',
+          '<strong>工場住所：</strong> Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320, インドネシア',
+          '<strong>連絡先：</strong><br/>&bull; <a href="https://wa.me/+6288801146881" target="_blank">WhatsApp: +6288801146881</a><br/>&bull; <a href="mailto:lifewithmangala@gmail.com">メール: lifewithmangala@gmail.com</a><br/>&bull; "SVLK284"とお伝えいただければ、SVLK認証を取得した家具の相談と輸出価格をご提供いたします。',
+          '工場見学を歓迎し、カスタム家具の要件、輸出量、持続可能性目標について喜んでご相談いたします。SVLK認証を取得したインドネシアの産業家具製造がもたらす品質とコンプライアンスを体験してください。'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'exportateur-fabricant-mobilier-industriel-indonesien-svlk-certifie',
+    language: 'fr',
+    sections: [
+      {
+        paragraphs: [
+          'L\'Indonésie est devenue un fournisseur mondial de premier plan de mobilier industriel, avec des fabricants comme Mangala Living qui établissent la norme en matière de qualité, de durabilité et d\'approvisionnement éthique. Alors que les acheteurs internationaux accordent une priorité croissante à la responsabilité environnementale et à la conformité légale, la <strong>certification SVLK (Sistem Verifikasi Legalitas Kayu)</strong> est devenue un facteur de différenciation crucial pour les exportateurs de mobilier indonésiens.',
+          'Ce guide complet explore pourquoi les fabricants de mobilier industriel indonésiens certifiés SVLK sont le choix de confiance pour les acheteurs internationaux, en mettant en évidence notre engagement en faveur des <strong>pratiques non-illégales d\'exploitation forestière</strong> et de l\'approvisionnement en bois durable.'
+        ]
+      },
+      {
+        heading: 'Qu\'est-ce que la certification SVLK ?',
+        paragraphs: [
+          'Le <strong>SVLK (Sistem Verifikasi Legalitas Kayu)</strong> est le système officiel indonésien de vérification de la légalité du bois, établi pour garantir que tous les produits en bois exportés d\'Indonésie proviennent de sources légales et durables. Cette certification est obligatoire pour les exportateurs de mobilier indonésiens et sert de preuve de conformité aux réglementations internationales contre l\'exploitation forestière illégale.',
+          'La certification SVLK garantit que :',
+          '• Tous les matériaux en bois sont issus de forêts gérées légalement',
+          '• La chaîne d\'approvisionnement est entièrement traçable et documentée',
+          '• Aucune pratique d\'exploitation forestière illégale n\'est impliquée dans la production',
+          '• Les normes environnementales et sociales sont maintenues tout au long du processus de fabrication'
+        ]
+      },
+      {
+        heading: 'Pourquoi choisir des fabricants de mobilier industriel indonésiens certifiés SVLK ?',
+        list: [
+          '<strong>Conformité légale et accès au marché :</strong> La certification SVLK garantit que vos importations de mobilier sont conformes aux réglementations internationales, y compris le Règlement sur le bois de l\'UE (EUTR) et la Loi Lacey des États-Unis. Cela élimine les risques juridiques et facilite le dédouanement en douceur sur les principaux marchés internationaux.',
+          '<strong>Responsabilité environnementale :</strong> En choisissant des fabricants certifiés SVLK, vous soutenez la gestion durable des forêts et contribuez aux efforts mondiaux pour lutter contre l\'exploitation forestière illégale et la déforestation. Cela s\'aligne sur les objectifs de durabilité des entreprises et améliore les références environnementales de votre marque.',
+          '<strong>Transparence de la chaîne d\'approvisionnement :</strong> La certification SVLK offre une traçabilité complète de la forêt au produit fini. Vous pouvez vérifier l\'origine de chaque morceau de bois utilisé dans votre mobilier, garantissant un approvisionnement éthique tout au long de la chaîne d\'approvisionnement.',
+          '<strong>Assurance qualité :</strong> Les fabricants certifiés SVLK comme Mangala Living maintiennent des normes strictes de contrôle qualité. Notre engagement en faveur de l\'approvisionnement légal va de pair avec un savoir-faire supérieur, une soudure de précision et une finition professionnelle.',
+          '<strong>Prix compétitifs :</strong> Les fabricants indonésiens offrent une excellente valeur sans compromettre la qualité ou la légalité. Les prix directs d\'usine combinés à la certification SVLK offrent le meilleur équilibre entre coût, qualité et conformité.',
+          '<strong>Confiance internationale :</strong> La certification SVLK est reconnue mondialement comme une marque de fabrication responsable. Cela renforce la confiance avec les acheteurs internationaux, les chaînes hôtelières et les importateurs de mobilier commercial dans le monde entier.'
+        ]
+      },
+      {
+        heading: 'Mangala Living : Votre partenaire en mobilier industriel certifié SVLK',
+        paragraphs: [
+          'Depuis 1999, Mangala Living est un fabricant et exportateur de mobilier industriel indonésien de premier plan, spécialisé dans le mobilier métallique sur mesure pour cafés, restaurants, hôtels et espaces commerciaux. Notre <strong>certification SVLK</strong> démontre notre engagement inébranlable en faveur de l\'approvisionnement en bois légal et durable et des pratiques non-illégales d\'exploitation forestière.',
+          'Notre atelier à Bekasi, en Indonésie, produit du mobilier industriel de haute qualité en utilisant :',
+          '• <strong>Matériaux en bois d\'origine légale</strong> vérifiés par la certification SVLK',
+          '• <strong>Acier creux galvanisé</strong> pour une durabilité et une résistance à la rouille supérieures',
+          '• <strong>Techniques de soudure professionnelles</strong> garantissant l\'intégrité structurelle',
+          '• <strong>Finition en poudre</strong> pour une protection durable et un attrait esthétique',
+          'Nous servons des clients internationaux en Asie, en Europe, au Moyen-Orient et au-delà, fournissant des services d\'exportation complets, y compris la documentation, la coordination de l\'expédition et l\'assurance qualité.'
+        ]
+      },
+      {
+        heading: 'Notre engagement en faveur de l\'exploitation forestière non-illégale',
+        paragraphs: [
+          'Chez Mangala Living, nous prenons notre responsabilité environnementale au sérieux. Notre <strong>certification SVLK</strong> n\'est pas seulement une exigence de conformité—c\'est une valeur fondamentale qui guide chaque aspect de nos opérations :',
+          '• <strong>Sources de bois vérifiées :</strong> Nous ne travaillons qu\'avec des fournisseurs qui peuvent fournir une documentation SVLK, garantissant que chaque morceau de bois dans notre mobilier provient de forêts gérées légalement et durablement.',
+          '• <strong>Documentation complète :</strong> Chaque expédition d\'exportation comprend une documentation SVLK complète, permettant à nos clients internationaux de vérifier la légalité et la durabilité de leurs achats de mobilier.',
+          '• <strong>Audits réguliers :</strong> Nous maintenons notre certification SVLK grâce à des audits et des contrôles de conformité réguliers, garantissant une adhésion continue aux normes légales et environnementales.',
+          '• <strong>Chaîne d\'approvisionnement transparente :</strong> Nous offrons une transparence complète sur notre approvisionnement en bois, nos processus de fabrication et notre documentation d\'exportation pour renforcer la confiance avec les acheteurs internationaux.'
+        ]
+      },
+      {
+        heading: 'Services d\'exportation et expédition internationale',
+        list: [
+          '<strong>Conception et fabrication sur mesure :</strong> Travaillez avec notre équipe de conception pour créer du mobilier industriel unique adapté à votre marque et à vos exigences d\'espace. Toutes les pièces sur mesure sont fabriquées en utilisant des matériaux certifiés SVLK.',
+          '<strong>Services OEM et ODM :</strong> Nous offrons une fabrication de marque privée pour les marques internationales, les importateurs de mobilier et les chaînes hôtelières. Votre marque, notre qualité certifiée SVLK.',
+          '<strong>Documentation d\'exportation :</strong> Documents de certification SVLK complets, factures commerciales, listes de colisage et tous les documents d\'exportation requis gérés par notre équipe expérimentée.',
+          '<strong>Expédition en conteneur :</strong> Nous coordonnons les arrangements d\'expédition FOB et CIF, gérant tout de l\'usine au port pour assurer une livraison internationale en douceur.',
+          '<strong>Contrôle qualité :</strong> Chaque pièce subit une inspection de qualité rigoureuse avant l\'exportation, garantissant qu\'elle répond aux normes internationales de durabilité, de finition et d\'intégrité structurelle.'
+        ]
+      },
+      {
+        heading: 'Contactez Mangala Living pour du mobilier industriel certifié SVLK',
+        paragraphs: [
+          'Prêt à vous approvisionner en mobilier industriel de haute qualité certifié SVLK depuis l\'Indonésie ? Contactez Mangala Living dès aujourd\'hui :',
+          '<strong>Adresse de l\'atelier :</strong> Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320, Indonésie',
+          '<strong>Contact :</strong><br/>&bull; <a href="https://wa.me/+6288801146881" target="_blank">WhatsApp : +6288801146881</a><br/>&bull; <a href="mailto:lifewithmangala@gmail.com">Email : lifewithmangala@gmail.com</a><br/>&bull; Mentionnez "SVLK285" pour une consultation de mobilier certifié SVLK et des prix d\'exportation.',
+          'Nous accueillons les visites d\'usine et sommes heureux de discuter de vos exigences de mobilier sur mesure, des volumes d\'exportation et des objectifs de durabilité. Découvrez la qualité et la conformité qui accompagnent la fabrication de mobilier industriel indonésien certifié SVLK.'
         ]
       }
     ]

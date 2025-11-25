@@ -2870,6 +2870,46 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&auto=format&fit=crop',
     date: '2025-11-25',
     author: 'Helmi Ramdan'
+  },
+  {
+    id: 282,
+    slug: 'indonesian-industrial-furniture-exporter-manufacturer-svlk-certified',
+    title: 'Indonesian Industrial Furniture Exporter Manufacturer - SVLK Certified Non-Illegal Logging',
+    category: 'About Furniture',
+    excerpt: 'Discover why Indonesian industrial furniture manufacturers with SVLK certification are the trusted choice for international buyers. Learn about our commitment to legal, sustainable wood sourcing and non-illegal logging practices.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-01-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 283,
+    slug: 'yin-ni-gong-ye-jia-ju-chu-kou-sheng-chan-shang-svlk-ren-zheng',
+    title: '印尼工业家具出口制造商 - SVLK认证非非法采伐',
+    category: 'About Furniture',
+    excerpt: '了解为什么拥有SVLK认证的印尼工业家具制造商是国际买家的可靠选择。了解我们对合法、可持续木材采购和非非法采伐实践的承诺。',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-01-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 284,
+    slug: 'indonesia-sangyo-furniture-yushutsu-seizo-sha-svlk-ninsho',
+    title: 'インドネシア産業家具輸出メーカー - SVLK認証非違法伐採',
+    category: 'About Furniture',
+    excerpt: 'SVLK認証を取得したインドネシアの産業家具メーカーが、国際的なバイヤーにとって信頼できる選択肢である理由を発見してください。合法的で持続可能な木材調達と非違法伐採の実践への取り組みについて学びます。',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-01-15',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 285,
+    slug: 'exportateur-fabricant-mobilier-industriel-indonesien-svlk-certifie',
+    title: 'Exportateur Fabricant de Mobilier Industriel Indonésien - Certifié SVLK Non-Exploitation Forestière Illégale',
+    category: 'About Furniture',
+    excerpt: 'Découvrez pourquoi les fabricants de mobilier industriel indonésiens certifiés SVLK sont le choix de confiance pour les acheteurs internationaux. Apprenez-en plus sur notre engagement en faveur de l\'approvisionnement en bois légal et durable et des pratiques non-illégales d\'exploitation forestière.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    date: '2025-01-15',
+    author: 'Helmi Ramdan'
   }
 ]
 
