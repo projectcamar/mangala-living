@@ -182,9 +182,58 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
                   +6288801146881
                 </a>
               </p>
+              <h5 className="footer-certifications-title">
+                {language === 'id' ? "Sertifikasi :" : language === 'ar' ? "الشهادات :" : language === 'zh' ? "认证 :" : language === 'ja' ? "認証 :" : language === 'es' ? "Certificaciones :" : language === 'fr' ? "Certifications :" : language === 'ko' ? "인증 :" : "Certifications :"}
+              </h5>
               <div className="footer-certification-logos">
-                <img src={logoILW} alt="ILW Certification" className="footer-cert-logo" />
-                <img src={logoSVLK} alt="SVLK Certification" className="footer-cert-logo" />
+                <div className="footer-cert-logo-wrapper">
+                  <img 
+                    src={logoILW} 
+                    alt="ILW Certification" 
+                    className="footer-cert-logo" 
+                  />
+                  <div className="footer-cert-tooltip">
+                    {language === 'id' 
+                      ? 'Indonesian Legal Wood (ILW) - Bersertifikat kayu legal dan non-illegal logging. Kami hanya menggunakan kayu yang bersumber dari hutan yang dikelola secara berkelanjutan dan legal.'
+                      : language === 'ar'
+                      ? 'Indonesian Legal Wood (ILW) - معتمد للأخشاب القانونية وغير القانونية. نستخدم فقط الأخشاب من الغابات المدارة بشكل مستدام وقانوني.'
+                      : language === 'zh'
+                      ? 'Indonesian Legal Wood (ILW) - 认证合法木材和非非法采伐。我们只使用来自可持续和合法管理的森林的木材。'
+                      : language === 'ja'
+                      ? 'Indonesian Legal Wood (ILW) - 合法的な木材および非違法伐採の認定。持続可能かつ合法的に管理された森林からのみ木材を使用しています。'
+                      : language === 'es'
+                      ? 'Indonesian Legal Wood (ILW) - Certificado de madera legal y no tala ilegal. Solo usamos madera de bosques gestionados de forma sostenible y legal.'
+                      : language === 'fr'
+                      ? 'Indonesian Legal Wood (ILW) - Certifié bois légal et non-exploitation forestière illégale. Nous n\'utilisons que du bois provenant de forêts gérées de manière durable et légale.'
+                      : language === 'ko'
+                      ? 'Indonesian Legal Wood (ILW) - 합법 목재 및 불법 벌채 인증. 지속 가능하고 합법적으로 관리되는 숲에서만 목재를 사용합니다.'
+                      : 'Indonesian Legal Wood (ILW) - Certified legal wood and non-illegal logging. We only source wood from sustainably and legally managed forests.'}
+                  </div>
+                </div>
+                <div className="footer-cert-logo-wrapper">
+                  <img 
+                    src={logoSVLK} 
+                    alt="SVLK Certification" 
+                    className="footer-cert-logo" 
+                  />
+                  <div className="footer-cert-tooltip">
+                    {language === 'id' 
+                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - Sertifikasi resmi Indonesia untuk memastikan kayu berasal dari sumber legal dan berkelanjutan. Kami berkomitmen pada praktik logging yang bertanggung jawab dan ramah lingkungan.'
+                      : language === 'ar'
+                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - شهادة إندونيسية رسمية لضمان أن الخشب يأتي من مصادر قانونية ومستدامة. نحن ملتزمون بممارسات قطع الأشجار المسؤولة والصديقة للبيئة.'
+                      : language === 'zh'
+                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - 印度尼西亚官方认证，确保木材来自合法和可持续的来源。我们致力于负责任的环保采伐实践。'
+                      : language === 'ja'
+                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - 木材が合法的で持続可能な源から来ることを保証するインドネシアの公式認証。責任ある環境に配慮した伐採慣行に取り組んでいます。'
+                      : language === 'es'
+                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - Certificación oficial de Indonesia para garantizar que la madera proviene de fuentes legales y sostenibles. Estamos comprometidos con prácticas de tala responsables y respetuosas con el medio ambiente.'
+                      : language === 'fr'
+                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - Certification officielle indonésienne garantissant que le bois provient de sources légales et durables. Nous nous engageons à des pratiques d\'exploitation forestière responsables et respectueuses de l\'environnement.'
+                      : language === 'ko'
+                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - 목재가 합법적이고 지속 가능한 원천에서 나온다는 것을 보장하는 인도네시아 공식 인증. 책임감 있고 환경 친화적인 벌채 관행에 전념하고 있습니다.'
+                      : 'Sistem Verifikasi Legalitas Kayu (SVLK) - Official Indonesian certification ensuring wood comes from legal and sustainable sources. We are committed to responsible and environmentally-friendly logging practices.'}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

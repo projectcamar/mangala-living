@@ -93,6 +93,14 @@
   margin-bottom: 8px;
 }
 
+.footer-certifications-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
 .footer-location p {
   color: #b8b8b8;
   font-size: 0.8rem;
@@ -124,10 +132,69 @@
   flex-wrap: wrap;
 }
 
+.footer-cert-logo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
 .footer-cert-logo {
   max-width: 120px;
   height: auto;
   object-fit: contain;
+  cursor: help;
+  transition: opacity 0.3s ease;
+}
+
+.footer-cert-logo:hover {
+  opacity: 0.9;
+}
+
+.footer-cert-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: left;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  width: 280px;
+  max-width: 90vw;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+  border: 1px solid #3d3d3d;
+}
+
+.footer-cert-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #1a1a1a;
+}
+
+.footer-cert-logo-wrapper:hover .footer-cert-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .footer-cert-tooltip {
+    width: 250px;
+    font-size: 0.7rem;
+    padding: 10px 14px;
+  }
 }
 
 /* Footer Links */
