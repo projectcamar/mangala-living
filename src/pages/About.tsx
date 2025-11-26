@@ -9,6 +9,8 @@ import { generateFAQSchema, generateLocalBusinessStructuredData } from '../utils
 import { getFAQBySlug } from '../data/faq'
 import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
 import showroomImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
+import logoILW from '../assets/LOGO-ILW-800.png'
+import logoSVLK from '../assets/SVLK-LOGO-INDONESIA.png'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { getCurrentLanguage, getStoredLanguage, detectLanguageFromIP, type LanguageCode } from '../utils/languageManager'
 import './About.css'
@@ -28,6 +30,11 @@ type AboutTranslation = {
   whyChoose: {
     title: string
     items: Array<{ title: string; description: string }>
+  }
+  certifications: {
+    title: string
+    subtitle: string
+    items: Array<{ name: string; description: string; imageAlt: string }>
   }
 }
 
@@ -87,6 +94,25 @@ const ABOUT_TRANSLATIONS: Record<LanguageCode, AboutTranslation> = {
             'Serving 1000+ businesses across Indonesia, Greater Jakarta, and key international markets including cafés, restaurants, hotels, and offices.'
         }
       ]
+    },
+    certifications: {
+      title: 'Certified Sustainable Wood',
+      subtitle:
+        'Every Mangala Living project uses timber from audited partners that meet Indonesian forestry regulations and export documentation standards.',
+      items: [
+        {
+          name: 'Legal Wood Sourcing (ILW)',
+          description:
+            'Verified suppliers provide complete legality documents and sustainable harvesting proof for every shipment we accept.',
+          imageAlt: 'Legal Wood sourcing badge'
+        },
+        {
+          name: 'SVLK Verified Supply Chain',
+          description:
+            'Official Sistem Verifikasi Legalitas Kayu certification that guarantees traceability, responsible logging, and export-ready compliance.',
+          imageAlt: 'SVLK certification badge'
+        }
+      ]
     }
   },
   id: {
@@ -140,6 +166,25 @@ const ABOUT_TRANSLATIONS: Record<LanguageCode, AboutTranslation> = {
         {
           title: 'Jaringan Nasional',
           description: 'Melayani 1000+ bisnis di seluruh Indonesia hingga pasar internasional: cafe, restoran, hotel, kantor.'
+        }
+      ]
+    },
+    certifications: {
+      title: 'Sertifikasi Kayu Legal',
+      subtitle:
+        'Setiap proyek Mangala Living menggunakan kayu dari mitra yang diaudit dan memenuhi regulasi kehutanan Indonesia beserta kelengkapan dokumen ekspor.',
+      items: [
+        {
+          name: 'Legal Wood Sourcing (ILW)',
+          description:
+            'Pemasok terverifikasi memberikan dokumen legalitas lengkap dan bukti penebangan berkelanjutan untuk setiap pengiriman.',
+          imageAlt: 'Logo Legal Wood'
+        },
+        {
+          name: 'Rantai Pasok Tersertifikasi SVLK',
+          description:
+            'Sertifikasi Sistem Verifikasi Legalitas Kayu resmi yang menjamin keterlacakan, praktik logging bertanggung jawab, dan kesiapan dokumen ekspor.',
+          imageAlt: 'Logo Sertifikasi SVLK'
         }
       ]
     }
@@ -196,6 +241,25 @@ const ABOUT_TRANSLATIONS: Record<LanguageCode, AboutTranslation> = {
           description: 'خدمة لأكثر من 1000 نشاط داخل إندونيسيا والأسواق الدولية، من المقاهي والمطاعم إلى الفنادق والمكاتب.'
         }
       ]
+    },
+    certifications: {
+      title: 'اعتماد الأخشاب المستدامة',
+      subtitle:
+        'يستخدم كل مشروع من Mangala Living خشبًا من شركاء مدققين يلتزمون بلوائح الغابات الإندونيسية ومتطلبات التصدير.',
+      items: [
+        {
+          name: 'توريد Legal Wood (ILW)',
+          description:
+            'يقدم المورّدون المعتمدون مستندات قانونية كاملة وإثبات حصاد مستدام لكل شحنة نستلمها.',
+          imageAlt: 'شارة توريد Legal Wood'
+        },
+        {
+          name: 'سلسلة توريد معتمدة SVLK',
+          description:
+            'شهادة نظام التحقق من شرعية الأخشاب (SVLK) الرسمية التي تضمن إمكانية التتبع، وممارسات قطع مسؤولة، واستعدادًا كاملاً للتصدير.',
+          imageAlt: 'شارة اعتماد SVLK'
+        }
+      ]
     }
   },
   zh: {
@@ -248,6 +312,22 @@ const ABOUT_TRANSLATIONS: Record<LanguageCode, AboutTranslation> = {
         {
           title: '覆盖全国的服务网络',
           description: '服务印尼各地及主要国际市场的1000+企业：咖啡馆、餐厅、酒店、办公空间等。'
+        }
+      ]
+    },
+    certifications: {
+      title: '认证可持续木材',
+      subtitle: '每一个 Mangala Living 项目都使用经过审计的合作伙伴所提供的木材，符合印尼林业法规和出口文件标准。',
+      items: [
+        {
+          name: 'Legal Wood 合法木材体系 (ILW)',
+          description: '经认证的供应商为每一批木材提供完整合法文件与可持续采伐证明，确保原料可追溯。',
+          imageAlt: 'Legal Wood 认证徽章'
+        },
+        {
+          name: 'SVLK 验证供应链',
+          description: '官方木材合法性验证体系，保障可追溯性、负责采伐以及满足出口要求。',
+          imageAlt: 'SVLK 认证徽章'
         }
       ]
     }
@@ -303,6 +383,25 @@ const ABOUT_TRANSLATIONS: Record<LanguageCode, AboutTranslation> = {
         {
           title: '全国へ広がるサービス',
           description: 'インドネシア全国および主要国際市場で1000件以上の案件を手掛け、カフェ・レストラン・ホテル・オフィスをサポートしています。'
+        }
+      ]
+    },
+    certifications: {
+      title: '認証済みサステナブルウッド',
+      subtitle:
+        'Mangala Living の家具はすべて、インドネシアの森林規制と輸出書類基準を満たす監査済みパートナーから仕入れた木材を使用しています。',
+      items: [
+        {
+          name: 'Legal Wood ソーシング (ILW)',
+          description:
+            '認定サプライヤーが各ロットに対し、完全な合法性書類と持続可能な伐採証明を提供し、素材の追跡性を確保します。',
+          imageAlt: 'Legal Wood 認証バッジ'
+        },
+        {
+          name: 'SVLK 承認サプライチェーン',
+          description:
+            'インドネシア公式の木材合法性検証制度で、トレーサビリティと責任ある伐採、輸出要件への準拠を保証します。',
+          imageAlt: 'SVLK 認証バッジ'
         }
       ]
     }
@@ -361,6 +460,25 @@ const ABOUT_TRANSLATIONS: Record<LanguageCode, AboutTranslation> = {
           title: 'Red nacional e internacional',
           description:
             'Atendemos a más de 1000 negocios en toda Indonesia y en mercados internacionales clave: cafés, restaurantes, hoteles y oficinas.'
+        }
+      ]
+    },
+    certifications: {
+      title: 'Madera sostenible certificada',
+      subtitle:
+        'Cada proyecto de Mangala Living utiliza madera proveniente de socios auditados que cumplen la normativa forestal de Indonesia y los requisitos documentales de exportación.',
+      items: [
+        {
+          name: 'Legal Wood Sourcing (ILW)',
+          description:
+            'Los proveedores verificados entregan documentación legal completa y evidencia de tala sostenible para cada lote que recibimos.',
+          imageAlt: 'Insignia de Legal Wood'
+        },
+        {
+          name: 'Cadena de suministro verificada SVLK',
+          description:
+            'Certificación oficial del Sistema de Verificación de Legalidad de la Madera que garantiza trazabilidad, tala responsable y cumplimiento para exportación.',
+          imageAlt: 'Insignia de certificación SVLK'
         }
       ]
     }
@@ -423,6 +541,25 @@ const ABOUT_TRANSLATIONS: Record<LanguageCode, AboutTranslation> = {
             'Plus de 1000 entreprises accompagnées en Indonésie et sur les principaux marchés internationaux : cafés, restaurants, hôtels, bureaux.'
         }
       ]
+    },
+    certifications: {
+      title: 'Bois durable certifié',
+      subtitle:
+        'Chaque projet Mangala Living utilise du bois issu de partenaires audités respectant la réglementation forestière indonésienne et les exigences documentaires d’exportation.',
+      items: [
+        {
+          name: 'Approvisionnement Legal Wood (ILW)',
+          description:
+            'Nos fournisseurs vérifiés fournissent des dossiers de légalité complets et des preuves de coupe durable pour chaque lot livré.',
+          imageAlt: 'Badge Legal Wood'
+        },
+        {
+          name: 'Chaîne d’approvisionnement certifiée SVLK',
+          description:
+            'Certification officielle du Sistem Verifikasi Legalitas Kayu garantissant la traçabilité, l’exploitation responsable et la conformité pour l’export.',
+          imageAlt: 'Badge de certification SVLK'
+        }
+      ]
     }
   },
   ko: {
@@ -477,6 +614,25 @@ const ABOUT_TRANSLATIONS: Record<LanguageCode, AboutTranslation> = {
           title: '전국적 네트워크',
           description:
             '인도네시아 및 주요 국제 시장에서 1000건 이상의 프로젝트를 수행하며, 카페·레스토랑·호텔·오피스를 지원합니다.'
+        }
+      ]
+    },
+    certifications: {
+      title: '인증된 지속가능 목재',
+      subtitle:
+        'Mangala Living의 모든 제품은 인도네시아 산림 규정과 수출 서류 요건을 충족하는 감사 완료 파트너로부터 공급된 목재를 사용합니다.',
+      items: [
+        {
+          name: 'Legal Wood 소싱 (ILW)',
+          description:
+            '검증된 공급업체가 각 선적마다 완전한 합법성 서류와 지속 가능한 벌채 증빙을 제공하여 원자재 추적성을 보장합니다.',
+          imageAlt: 'Legal Wood 인증 배지'
+        },
+        {
+          name: 'SVLK 인증 공급망',
+          description:
+            'Sistem Verifikasi Legalitas Kayu 공식 인증으로, 책임 있는 벌채와 추적 가능성, 수출 규정 준수를 보증합니다.',
+          imageAlt: 'SVLK 인증 배지'
         }
       ]
     }
@@ -650,6 +806,34 @@ const About: React.FC = () => {
               >
                 {translations.showrooms.button}
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="certifications-section">
+          <div className="certifications-container">
+            <h2 className="certifications-title">{translations.certifications.title}</h2>
+            <p className="certifications-subtitle">{translations.certifications.subtitle}</p>
+
+            <div className="certifications-grid">
+              {translations.certifications.items.map((item, index) => (
+                <div className="certification-card" key={item.name}>
+                  <div className="certification-logo">
+                    <img
+                      src={index === 0 ? logoILW : logoSVLK}
+                      alt={item.imageAlt}
+                      loading="lazy"
+                      decoding="async"
+                      width="180"
+                      height="180"
+                    />
+                  </div>
+                  <div className="certification-content">
+                    <h3>{item.name}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
