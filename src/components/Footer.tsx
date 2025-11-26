@@ -189,25 +189,25 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
                 <div className="footer-cert-logo-wrapper">
                   <img 
                     src={logoILW} 
-                    alt="ILW Certification" 
+                    alt="Legal Wood Sourcing" 
                     className="footer-cert-logo" 
                   />
                   <div className="footer-cert-tooltip">
                     {language === 'id' 
-                      ? 'Indonesian Legal Wood (ILW) - Bersertifikat kayu legal dan non-illegal logging. Kami hanya menggunakan kayu yang bersumber dari hutan yang dikelola secara berkelanjutan dan legal.'
+                      ? 'Legal Wood Sourcing - Semua kayu kami berasal dari pemasok yang memiliki dokumen legalitas lengkap dan mematuhi regulasi kehutanan Indonesia.'
                       : language === 'ar'
-                      ? 'Indonesian Legal Wood (ILW) - معتمد للأخشاب القانونية وغير القانونية. نستخدم فقط الأخشاب من الغابات المدارة بشكل مستدام وقانوني.'
+                      ? 'توريد أخشاب قانوني - جميع أخشابنا تأتي من موردين موثقين يقدمون مستندات قانونية كاملة ويلتزمون بلوائح الغابات الإندونيسية.'
                       : language === 'zh'
-                      ? 'Indonesian Legal Wood (ILW) - 认证合法木材和非非法采伐。我们只使用来自可持续和合法管理的森林的木材。'
+                      ? '合法木材采购——我们的木材全部来自提供完整合法文件并遵守印度尼西亚林业法规的供应商。'
                       : language === 'ja'
-                      ? 'Indonesian Legal Wood (ILW) - 合法的な木材および非違法伐採の認定。持続可能かつ合法的に管理された森林からのみ木材を使用しています。'
+                      ? '合法木材調達 - すべての木材は完全な法的書類を備え、インドネシアの森林規制を遵守するサプライヤーから仕入れています。'
                       : language === 'es'
-                      ? 'Indonesian Legal Wood (ILW) - Certificado de madera legal y no tala ilegal. Solo usamos madera de bosques gestionados de forma sostenible y legal.'
+                      ? 'Abastecimiento Legal de Madera: toda nuestra madera proviene de proveedores verificados que entregan documentación completa y cumplen la normativa forestal de Indonesia.'
                       : language === 'fr'
-                      ? 'Indonesian Legal Wood (ILW) - Certifié bois légal et non-exploitation forestière illégale. Nous n\'utilisons que du bois provenant de forêts gérées de manière durable et légale.'
+                      ? 'Approvisionnement légal en bois - Tout notre bois provient de fournisseurs vérifiés qui fournissent une documentation complète et respectent la réglementation forestière indonésienne.'
                       : language === 'ko'
-                      ? 'Indonesian Legal Wood (ILW) - 합법 목재 및 불법 벌채 인증. 지속 가능하고 합법적으로 관리되는 숲에서만 목재를 사용합니다.'
-                      : 'Indonesian Legal Wood (ILW) - Certified legal wood and non-illegal logging. We only source wood from sustainably and legally managed forests.'}
+                      ? '합법 목재 조달 - 모든 목재는 완전한 법적 서류를 갖추고 인도네시아 산림 규정을 준수하는 공급업체에서만 공급받습니다.'
+                      : 'Legal Wood Sourcing - We partner only with verified suppliers who provide complete legal documentation and comply with Indonesian forestry regulations.'}
                   </div>
                 </div>
                 <div className="footer-cert-logo-wrapper">

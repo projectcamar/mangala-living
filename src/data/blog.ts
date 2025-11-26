@@ -2910,6 +2910,46 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
     date: '2025-01-15',
     author: 'Helmi Ramdan'
+  },
+  {
+    id: 286,
+    slug: 'indonesian-furniture-manufacturer-export-sustainable-wood-svlk',
+    title: 'Indonesian Furniture Manufacturer Export - Sustainable Wood Sourcing with SVLK Certification',
+    category: 'About Furniture',
+    excerpt: 'Learn how Indonesian furniture manufacturers with SVLK certification ensure sustainable wood sourcing and environmental responsibility. Discover the benefits of working with certified exporters for your commercial furniture needs.',
+    image: 'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&auto=format&fit=crop',
+    date: '2025-01-16',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 287,
+    slug: 'yin-ni-jia-ju-sheng-chan-shang-chu-kou-chi-xu-mu-cai-svlk',
+    title: '印尼家具制造商出口 - SVLK认证的可持续木材采购',
+    category: 'About Furniture',
+    excerpt: '了解拥有SVLK认证的印尼家具制造商如何确保可持续木材采购和环境责任。了解与认证出口商合作满足商业家具需求的好处。',
+    image: 'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&auto=format&fit=crop',
+    date: '2025-01-16',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 288,
+    slug: 'indonesia-furniture-seizo-sha-yushutsu-jizoku-mokuzai-svlk',
+    title: 'インドネシア家具メーカー輸出 - SVLK認証による持続可能な木材調達',
+    category: 'About Furniture',
+    excerpt: 'SVLK認証を取得したインドネシアの家具メーカーが、持続可能な木材調達と環境責任をどのように確保しているかを学びます。商業家具のニーズに対応する認証輸出業者との協力の利点を発見してください。',
+    image: 'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&auto=format&fit=crop',
+    date: '2025-01-16',
+    author: 'Helmi Ramdan'
+  },
+  {
+    id: 289,
+    slug: 'fabricant-mobilier-indonesien-export-bois-durable-svlk',
+    title: 'Fabricant de Mobilier Indonésien Export - Approvisionnement en Bois Durable avec Certification SVLK',
+    category: 'About Furniture',
+    excerpt: 'Découvrez comment les fabricants de mobilier indonésiens certifiés SVLK garantissent un approvisionnement en bois durable et une responsabilité environnementale. Découvrez les avantages de travailler avec des exportateurs certifiés pour vos besoins en mobilier commercial.',
+    image: 'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&auto=format&fit=crop',
+    date: '2025-01-16',
+    author: 'Helmi Ramdan'
   }
 ]
 
