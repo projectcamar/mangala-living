@@ -7,7 +7,7 @@
  * This function does not block the main action and silently handles errors
  */
 export const sendBackgroundEmail = async (
-  type: 'order_now' | 'catalog_download',
+  type: 'order_now' | 'catalog_download' | 'page_visit',
   data: {
     productName?: string
     productSlug?: string
@@ -17,6 +17,8 @@ export const sendBackgroundEmail = async (
     firstName?: string
     email?: string
     whatsapp?: string
+    pageName?: string
+    pageUrl?: string
   }
 ) => {
   // Don't await - fire and forget
@@ -30,6 +32,8 @@ export const sendBackgroundEmail = async (
       email: data.email || 'unknown@email.com',
       whatsapp: data.whatsapp || '',
       notificationType: type,
+      pageName: data.pageName,
+      pageUrl: data.pageUrl,
       ...(type === 'order_now' && {
         productName: data.productName,
         productSlug: data.productSlug,

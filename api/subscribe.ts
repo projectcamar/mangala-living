@@ -16,7 +16,7 @@ async function getGeolocation(ip: string) {
     const response = await fetch(`http://ip-api.com/json/${ip}?fields=status,message,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,org,as,query`, {
       signal: controller.signal
     });
-    
+
     clearTimeout(timeoutId);
     const data = await response.json();
     return data.status === 'success' ? {
@@ -44,15 +44,19 @@ function getPageInfo(pageName: string) {
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
-  const { 
-    firstName, email, whatsapp, notificationType, 
-    productName, productPrice, productCategory, productUrl, 
-    chatMessage, language, whatsappClickData, pageName, pageUrl 
+  const {
+    firstName, email, whatsapp, notificationType,
+    productName, productPrice, productCategory, productUrl,
+    chatMessage, language, whatsappClickData, pageName, pageUrl
   } = req.body;
+
+  console.log(`[SUBSCRIPTION] Type: ${notificationType}, Email: ${email}, Name: ${firstName}`);
 
   const forwarded = req.headers['x-forwarded-for'];
   const clientIP = (typeof forwarded === 'string' ? forwarded.split(',')[0] : 'unknown').trim();
   const geolocation = await getGeolocation(clientIP);
+
+  console.log(`[SUBSCRIPTION] IP: ${clientIP}, Geolocation: ${geolocation ? 'Found' : 'Not Found'}`);
 
   // Track visits
   const visitKey = `${clientIP}-${pageName || 'unknown'}`;
@@ -66,8 +70,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const isCatalog = notificationType === 'catalog_download';
 
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY);
-    
+    const RESEND_API_KEY = process.env.RESEND_API_KEY;
+    if (!RESEND_API_KEY) {
+      console.error('[SUBSCRIPTION] RESEND_API_KEY is missing!');
+      return res.status(500).json({ error: 'Email configuration missing' });
+    }
+
+    const resend = new Resend(RESEND_API_KEY);
+
     let subject = '';
     let html = '';
 
@@ -106,15 +116,16 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       `;
     }
 
-    if (!subject) return res.status(400).json({ error: 'Invalid notification type' });
+    if (!subject) {
+      console.warn(`[SUBSCRIPTION] Invalid notification type: ${notificationType}`);
+      return res.status(400).json({ error: 'Invalid notification type' });
+    }
 
-    // Try sending to recipients
-    // NOTE: Using a single string or array. If one fails, it might fail the whole thing.
-    // I'll try sending separately to ensure at least one arrives if there are restriction issues.
     const recipients = ['rioanggaraclub@gmail.com', 'lifewithmangala@gmail.com'];
     const results = [];
 
     for (const recipient of recipients) {
+      console.log(`[SUBSCRIPTION] Attempting to send email to: ${recipient}`);
       try {
         const { data, error } = await resend.emails.send({
           from: 'Mangala Living <onboarding@resend.dev>',
@@ -122,22 +133,26 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           subject: subject,
           html: html,
         });
-        results.push({ recipient, success: !error, error });
+
+        if (error) {
+          console.error(`[SUBSCRIPTION] Resend error for ${recipient}:`, error);
+          results.push({ recipient, success: false, error });
+        } else {
+          console.log(`[SUBSCRIPTION] Email sent to ${recipient} successfully:`, data?.id);
+          results.push({ recipient, success: true, id: data?.id });
+        }
       } catch (err) {
-        results.push({ recipient, success: false, error: err instanceof Error ? err.message : 'Failed' });
+        const errorMsg = err instanceof Error ? err.message : 'Unknown error';
+        console.error(`[SUBSCRIPTION] Catch error for ${recipient}:`, errorMsg);
+        results.push({ recipient, success: false, error: errorMsg });
       }
     }
 
     const success = results.some(r => r.success);
-    if (!success) {
-      console.error('All email sends failed:', results);
-      return res.status(500).json({ error: 'Failed to send emails', details: results });
-    }
-
-    return res.status(200).json({ success: true, results });
+    return res.status(success ? 200 : 500).json({ success, results });
 
   } catch (error) {
-    console.error('Handler error:', error);
-    return res.status(500).json({ error: 'Internal error' });
+    console.error('[SUBSCRIPTION] Handler crash:', error);
+    return res.status(500).json({ error: 'Internal server error' });
   }
 }
