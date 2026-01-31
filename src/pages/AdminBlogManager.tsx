@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import {
     Plus, Edit, Trash2, Search, ArrowLeft, Save,
     FileText, AlertCircle, Loader2, Check, X,
-    Type, Sparkles
+    Type, Sparkles, Eye
 } from 'lucide-react'
 import { BLOG_POSTS, type BlogPost } from '../data/blog'
 import type { LanguageCode } from '../utils/languageManager'
@@ -37,11 +37,42 @@ const AdminBlogManager: React.FC = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        // Simply load from imported BLOG_POSTS
-        // No need to fetch from API since we'll use GitHub API directly for deploy
-        setPosts([...BLOG_POSTS])
+        // 1. Load from imported BLOG_POSTS (base)
+        const basePosts: BlogPost[] = BLOG_POSTS.map(p => ({ ...p, status: 'synced' as const }))
+
+        // 2. Load from localStorage (overrides/new drafts)
+        const savedPosts = localStorage.getItem('mangala_blog_drafts')
+        if (savedPosts) {
+            try {
+                const parsedDrafts = JSON.parse(savedPosts) as BlogPost[]
+                // Merge logic: drafts with same ID as basePosts override them
+                const mergedPosts = [...basePosts]
+                parsedDrafts.forEach(draft => {
+                    const index = mergedPosts.findIndex(p => p.id === draft.id)
+                    if (index !== -1) {
+                        mergedPosts[index] = draft
+                    } else {
+                        mergedPosts.push(draft)
+                    }
+                })
+                setPosts(mergedPosts)
+            } catch (e) {
+                console.error('Error loading drafts:', e)
+                setPosts(basePosts)
+            }
+        } else {
+            setPosts(basePosts)
+        }
         setIsLoading(false)
     }, [])
+
+    // Save to localStorage whenever posts change
+    useEffect(() => {
+        if (!isLoading) {
+            const drafts = posts.filter(p => p.status === 'draft')
+            localStorage.setItem('mangala_blog_drafts', JSON.stringify(drafts))
+        }
+    }, [posts, isLoading])
 
     const handleEdit = (post: BlogPost) => {
         setEditingPost({
@@ -72,6 +103,7 @@ const AdminBlogManager: React.FC = () => {
             image: '',
             date: dateString,
             author: 'Helmi Ramdan',
+            status: 'draft',
             customContent: {
                 introduction: '',
                 keyPoints: [],
@@ -89,18 +121,21 @@ const AdminBlogManager: React.FC = () => {
             return
         }
 
+        // New or edited posts get 'draft' status
+        const postToSave = { ...editingPost, status: 'draft' as const }
+
         // Update posts list
-        const exists = posts.find(p => p.id === editingPost.id)
+        const exists = posts.find(p => p.id === postToSave.id)
         let updatedPosts: BlogPost[]
         if (exists) {
-            updatedPosts = posts.map(p => p.id === editingPost.id ? editingPost : p)
+            updatedPosts = posts.map(p => p.id === postToSave.id ? postToSave : p)
         } else {
-            updatedPosts = [...posts, editingPost]
+            updatedPosts = [...posts, postToSave]
         }
 
         setPosts(updatedPosts)
         setView('list')
-        setMessage({ type: 'success', text: 'Post updated in local state. Click "Sync to Files" to persist change to disk.' })
+        setMessage({ type: 'success', text: 'Post saved locally as draft. Click "Deploy Changes" to make it live.' })
     }
 
     const handleSyncToFiles = async () => {
@@ -122,6 +157,11 @@ const AdminBlogManager: React.FC = () => {
             const deployResult = await deployResponse.json()
 
             if (deployResponse.ok && deployResult.deployed) {
+                // Mark all as synced and clear local drafts
+                const syncedPosts = posts.map(p => ({ ...p, status: 'synced' as const }))
+                setPosts(syncedPosts)
+                localStorage.removeItem('mangala_blog_drafts')
+
                 setMessage({
                     type: 'success',
                     text: '✅ Changes deployed! Vercel is rebuilding your site (1-2 minutes). Refresh to see updates.'
@@ -418,6 +458,7 @@ const AdminBlogManager: React.FC = () => {
                                         <th>Title & Thumbnail</th>
                                         <th>Category</th>
                                         <th>Lang</th>
+                                        <th>Status</th>
                                         <th>Date & Time</th>
                                         <th>Actions</th>
                                     </tr>
@@ -447,11 +488,27 @@ const AdminBlogManager: React.FC = () => {
                                                 </span>
                                             </td>
                                             <td>
+                                                <span className={`status-badge ${post.status || 'synced'}`}>
+                                                    {post.status === 'draft' ? 'Draft' : 'Live'}
+                                                </span>
+                                            </td>
+                                            <td>
                                                 <div className="post-date-cell">
                                                     {post.date}
                                                 </div>
                                             </td>
                                             <td className="actions-cell">
+                                                {post.status !== 'draft' && (
+                                                    <a
+                                                        href={`https://mangala-living.com/blog/${post.slug}`}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="action-btn preview"
+                                                        title="View Live Site"
+                                                    >
+                                                        <Eye size={16} />
+                                                    </a>
+                                                )}
                                                 <button className="action-btn edit" onClick={() => handleEdit(post)} title="Edit Content">
                                                     <Edit size={16} />
                                                 </button>
@@ -947,6 +1004,20 @@ const AdminBlogManager: React.FC = () => {
                 .lang-badge.es { background: #e67e22; } /* Orange */
                 .lang-badge.fr { background: #34495e; } /* Navy */
                 .lang-badge.ko { background: #16a085; } /* Teal */
+                
+                .status-badge {
+                    padding: 4px 10px;
+                    border-radius: 20px;
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: white;
+                }
+                .status-badge.draft { background: #e67e22; } /* Orange */
+                .status-badge.synced { background: #27ae60; } /* Green */
+                
+                .action-btn.preview { color: #8B7355; margin-right: 8px; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 6px; border: 1.5px solid #eee; transition: 0.2s; }
+                .action-btn.preview:hover { background: #fdfaf7; border-color: #8B7355; }
 
                 /* Pagination Styles */
                 .pagination-wrapper { 

@@ -7,6 +7,7 @@ export interface BlogPost {
   image: string
   date: string
   author?: string
+  status?: 'draft' | 'synced'
 
   // Custom content (optional) - takes priority over AI-generated content
   customContent?: {
