@@ -36,7 +36,7 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
       default: return 'Best Sellers'
     }
   }
-  
+
   const getViewAllText = () => {
     switch (language) {
       case 'id': return 'LIHAT SEMUA'
@@ -69,14 +69,14 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
     const convertPrices = async () => {
       const usdPriceMap: { [key: number]: string } = {}
       const highlightedPriceMap: { [key: number]: string } = {}
-      
+
       const targetCurrency = LANGUAGE_CURRENCY_MAP[language] || 'USD'
-      
+
       for (const product of products) {
         // Always convert to USD
         const usdPrice = await convertIDRToUSD(product.price)
         usdPriceMap[product.id] = usdPrice
-        
+
         // Determine highlighted price based on language
         if (language === 'id') {
           // Indonesian: highlight IDR (original price), show USD as secondary
@@ -93,7 +93,7 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
           highlightedPriceMap[product.id] = usdPrice
         }
       }
-      
+
       setUsdPrices(usdPriceMap)
       setHighlightedPrices(highlightedPriceMap)
     }
@@ -130,8 +130,8 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
 
         <div className="bestsellers-carousel">
           {currentIndex > 0 && (
-            <button 
-              className="carousel-btn carousel-btn-prev" 
+            <button
+              className="carousel-btn carousel-btn-prev"
               onClick={prevSlide}
               aria-label="Previous products"
             >
@@ -143,14 +143,14 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
             {visibleProducts.map((product) => {
               const translatedName = getProductName(product.slug, isIndonesian, language) || product.name
               return (
-                <Link 
+                <Link
                   key={product.id}
                   to={product.link}
                   className="product-card"
                 >
                   <div className="product-image-wrapper">
-                    <img 
-                      src={product.image} 
+                    <img
+                      src={product.image}
                       alt={`${translatedName} - Industrial Furniture ${product.categories.join(' ')} Mangala Living Bekasi`}
                       title={`${translatedName} - Premium Industrial Furniture by Mangala Living`}
                       className="product-image"
@@ -189,7 +189,7 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
                             color: '#999'
                           }}
                         >
-                          {language === 'id' ? usdPrices[product.id] : product.price}
+                          {language === 'en' ? product.price : usdPrices[product.id]}
                         </p>
                       </div>
                     ) : (
@@ -202,8 +202,8 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
           </div>
 
           {currentIndex < products.length - itemsPerPage && (
-            <button 
-              className="carousel-btn carousel-btn-next" 
+            <button
+              className="carousel-btn carousel-btn-next"
               onClick={nextSlide}
               aria-label="Next products"
             >

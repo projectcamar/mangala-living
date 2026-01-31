@@ -38,7 +38,7 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
       default: return 'Our Collection: Bar Set, Lounge Set, Storage & Industrial Furniture'
     }
   }
-  
+
   const getViewAllText = () => {
     switch (language) {
       case 'id': return 'LIHAT SEMUA'
@@ -70,14 +70,14 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
     const convertPrices = async () => {
       const usdPriceMap: { [key: number]: string } = {}
       const highlightedPriceMap: { [key: number]: string } = {}
-      
+
       const targetCurrency = LANGUAGE_CURRENCY_MAP[language] || 'USD'
-      
+
       for (const product of products) {
         // Always convert to USD
         const usdPrice = await convertIDRToUSD(product.price)
         usdPriceMap[product.id] = usdPrice
-        
+
         // Determine highlighted price based on language
         if (language === 'id') {
           // Indonesian: highlight IDR (original price), show USD as secondary
@@ -94,7 +94,7 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
           highlightedPriceMap[product.id] = usdPrice
         }
       }
-      
+
       setUsdPrices(usdPriceMap)
       setHighlightedPrices(highlightedPriceMap)
     }
@@ -117,15 +117,15 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
           {products.map((product) => {
             const translatedName = getProductName(product.slug, isIndonesian, language) || product.name
             return (
-              <Link 
+              <Link
                 key={product.id}
                 to={product.link}
                 className="product-card-full"
                 onClick={() => trackEvent.productClick(translatedName, product.category)}
               >
                 <div className="product-image-wrapper-full">
-                  <img 
-                    src={product.image} 
+                  <img
+                    src={product.image}
                     alt={`${translatedName} - Industrial Furniture ${product.category} Mangala Living Workshop Bekasi`}
                     title={`${translatedName} - Custom Industrial Furniture from Mangala Living`}
                     className="product-image-full"
@@ -164,7 +164,7 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
                           color: '#999'
                         }}
                       >
-                        {language === 'id' ? usdPrices[product.id] : product.price}
+                        {language === 'en' ? product.price : usdPrices[product.id]}
                       </p>
                     </div>
                   ) : (

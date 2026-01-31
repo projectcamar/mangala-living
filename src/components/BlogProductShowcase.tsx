@@ -123,21 +123,21 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
     'en': 'USD', // English highlights USD
     'id': null   // Indonesian highlights IDR (original price)
   }
-  
+
   const translations = BLOG_PRODUCT_SHOWCASE_TRANSLATIONS[language] || BLOG_PRODUCT_SHOWCASE_TRANSLATIONS.en
 
   useEffect(() => {
     const convertPrices = async () => {
       const usdPriceMap: { [key: number]: string } = {}
       const highlightedPriceMap: { [key: number]: string } = {}
-      
+
       const targetCurrency = LANGUAGE_CURRENCY_MAP[language] || 'USD'
-      
+
       for (const product of products) {
         // Always convert to USD
         const usdPrice = await convertIDRToUSD(product.price)
         usdPriceMap[product.id] = usdPrice
-        
+
         // Determine highlighted price based on language
         if (language === 'id') {
           // Indonesian: highlight IDR (original price), show USD as secondary
@@ -154,7 +154,7 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
           highlightedPriceMap[product.id] = usdPrice
         }
       }
-      
+
       setUsdPrices(usdPriceMap)
       setHighlightedPrices(highlightedPriceMap)
     }
@@ -256,14 +256,14 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
         <script type="application/ld+json">
           {JSON.stringify(itemListSchema)}
         </script>
-        
+
         {/* Product Schemas */}
         {displayProducts.map((product) => (
           <script key={`product-schema-${product.id}`} type="application/ld+json">
             {JSON.stringify(generateProductSchema(product))}
           </script>
         ))}
-        
+
         {/* Image Schemas */}
         {productImageSchemas.map((imgSchema, imgIndex) => (
           <script key={`image-schema-${imgIndex}`} type="application/ld+json">
@@ -285,113 +285,113 @@ const BlogProductShowcase: React.FC<BlogProductShowcaseProps> = ({
             )}
           </div>
 
-        <div className="blog-product-showcase-grid" itemProp="itemListElement" itemScope itemType="https://schema.org/ItemList">
-          {displayProducts.map((product, index) => {
-            const fullAlt = `${product.name} - ${product.categories.join(' ')} Industrial Furniture Mangala Living Bekasi. Material berkualitas, finishing powder coating, harga ${product.price}.`
-            const fullTitle = `${product.name} - Premium Quality Industrial Furniture dari Mangala Living Workshop Bekasi. ${product.categories.join(', ')} dengan desain modern dan durable.`
-            
-            return (
-              <article
-                key={product.id}
-                itemScope
-                itemType="https://schema.org/Product"
-                className="blog-product-showcase-item"
-                data-item-position={index + 1}
-              >
-                <Link
-                  to={`/product/${product.slug}`}
-                  className="blog-product-showcase-card"
-                  title={fullTitle}
-                  itemProp="url"
-                  rel="nofollow sponsored"
-                  aria-label={`${translations.viewProductDetails}: ${product.name}`}
-                >
-                  <div className="blog-product-showcase-image-wrapper" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-                    <img
-                      src={product.image}
-                      alt={fullAlt}
-                      title={fullTitle}
-                      className="blog-product-showcase-image"
-                      loading="lazy"
-                      width="350"
-                      height="250"
-                      itemProp="contentUrl"
-                      data-image-type="blog-product-showcase"
-                      data-product-name={product.name}
-                      data-product-id={product.id}
-                      data-product-slug={product.slug}
-                      data-category={product.categories.join(',')}
-                      data-image-index={index + 1}
-                      decoding="async"
-                      fetchPriority={index < 2 ? "high" : "low"}
-                    />
-                    <meta itemProp="caption" content={`${product.name} - ${product.categories.join(', ')} Industrial Furniture`} />
-                    <meta itemProp="description" content={`Produk ${product.name} dengan kualitas premium dari Mangala Living Workshop Bekasi`} />
-                    <meta itemProp="url" content={product.image} />
-                    <div className="blog-product-showcase-badge">
-                      <span className="blog-product-badge-text">{translations.ourProduct}</span>
-                    </div>
-                  </div>
-                  
-                  <div className="blog-product-showcase-info">
-                    <h3 className="blog-product-showcase-name" itemProp="name">
-                      {product.name}
-                    </h3>
-                    <meta itemProp="description" content={`${product.name} - ${product.categories.join(', ')} Industrial Furniture berkualitas premium. Material industrial grade, finishing powder coating tahan lama. Harga ${product.price}.`} />
-                    
-                    <div className="blog-product-showcase-categories">
-                      {product.categories.map((cat, idx) => (
-                        <span key={idx} className="blog-product-category-tag" itemProp="category">
-                          {cat}
-                        </span>
-                      ))}
-                    </div>
-                    
-                    <div className="blog-product-showcase-price-container" itemScope itemType="https://schema.org/Offer">
-                      <meta itemProp="priceCurrency" content="IDR" />
-                      <meta itemProp="availability" content="https://schema.org/InStock" />
-                      <meta itemProp="price" content={product.price.replace(/[^0-9]/g, '')} />
-                      {usdPrices[product.id] && highlightedPrices[product.id] ? (
-                        <>
-                          <p className="blog-product-showcase-price-primary" itemProp="price">
-                            {highlightedPrices[product.id]}
-                          </p>
-                          <p className="blog-product-showcase-price-secondary">
-                            {language === 'id' ? usdPrices[product.id] : product.price}
-                          </p>
-                        </>
-                      ) : (
-                        <p className="blog-product-showcase-price-primary" itemProp="price">
-                          {product.price}
-                        </p>
-                      )}
-                    </div>
-                    
-                    <div className="blog-product-showcase-cta">
-                      <span className="blog-product-showcase-link">
-                        {translations.viewProductDetails}
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              </article>
-            )
-          })}
-        </div>
+          <div className="blog-product-showcase-grid" itemProp="itemListElement" itemScope itemType="https://schema.org/ItemList">
+            {displayProducts.map((product, index) => {
+              const fullAlt = `${product.name} - ${product.categories.join(' ')} Industrial Furniture Mangala Living Bekasi. Material berkualitas, finishing powder coating, harga ${product.price}.`
+              const fullTitle = `${product.name} - Premium Quality Industrial Furniture dari Mangala Living Workshop Bekasi. ${product.categories.join(', ')} dengan desain modern dan durable.`
 
-        <div className="blog-product-showcase-footer">
-          <Link 
-            to="/shop" 
-            className="blog-product-showcase-all-products-btn"
-            title={translations.viewAllProductsTitle}
-            rel="nofollow"
-            aria-label={translations.viewAllProductsAria}
-          >
-            {translations.viewAllProducts}
-          </Link>
+              return (
+                <article
+                  key={product.id}
+                  itemScope
+                  itemType="https://schema.org/Product"
+                  className="blog-product-showcase-item"
+                  data-item-position={index + 1}
+                >
+                  <Link
+                    to={`/product/${product.slug}`}
+                    className="blog-product-showcase-card"
+                    title={fullTitle}
+                    itemProp="url"
+                    rel="nofollow sponsored"
+                    aria-label={`${translations.viewProductDetails}: ${product.name}`}
+                  >
+                    <div className="blog-product-showcase-image-wrapper" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+                      <img
+                        src={product.image}
+                        alt={fullAlt}
+                        title={fullTitle}
+                        className="blog-product-showcase-image"
+                        loading="lazy"
+                        width="350"
+                        height="250"
+                        itemProp="contentUrl"
+                        data-image-type="blog-product-showcase"
+                        data-product-name={product.name}
+                        data-product-id={product.id}
+                        data-product-slug={product.slug}
+                        data-category={product.categories.join(',')}
+                        data-image-index={index + 1}
+                        decoding="async"
+                        fetchPriority={index < 2 ? "high" : "low"}
+                      />
+                      <meta itemProp="caption" content={`${product.name} - ${product.categories.join(', ')} Industrial Furniture`} />
+                      <meta itemProp="description" content={`Produk ${product.name} dengan kualitas premium dari Mangala Living Workshop Bekasi`} />
+                      <meta itemProp="url" content={product.image} />
+                      <div className="blog-product-showcase-badge">
+                        <span className="blog-product-badge-text">{translations.ourProduct}</span>
+                      </div>
+                    </div>
+
+                    <div className="blog-product-showcase-info">
+                      <h3 className="blog-product-showcase-name" itemProp="name">
+                        {product.name}
+                      </h3>
+                      <meta itemProp="description" content={`${product.name} - ${product.categories.join(', ')} Industrial Furniture berkualitas premium. Material industrial grade, finishing powder coating tahan lama. Harga ${product.price}.`} />
+
+                      <div className="blog-product-showcase-categories">
+                        {product.categories.map((cat, idx) => (
+                          <span key={idx} className="blog-product-category-tag" itemProp="category">
+                            {cat}
+                          </span>
+                        ))}
+                      </div>
+
+                      <div className="blog-product-showcase-price-container" itemScope itemType="https://schema.org/Offer">
+                        <meta itemProp="priceCurrency" content="IDR" />
+                        <meta itemProp="availability" content="https://schema.org/InStock" />
+                        <meta itemProp="price" content={product.price.replace(/[^0-9]/g, '')} />
+                        {usdPrices[product.id] && highlightedPrices[product.id] ? (
+                          <>
+                            <p className="blog-product-showcase-price-primary" itemProp="price">
+                              {highlightedPrices[product.id]}
+                            </p>
+                            <p className="blog-product-showcase-price-secondary">
+                              {language === 'en' ? product.price : usdPrices[product.id]}
+                            </p>
+                          </>
+                        ) : (
+                          <p className="blog-product-showcase-price-primary" itemProp="price">
+                            {product.price}
+                          </p>
+                        )}
+                      </div>
+
+                      <div className="blog-product-showcase-cta">
+                        <span className="blog-product-showcase-link">
+                          {translations.viewProductDetails}
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                </article>
+              )
+            })}
+          </div>
+
+          <div className="blog-product-showcase-footer">
+            <Link
+              to="/shop"
+              className="blog-product-showcase-all-products-btn"
+              title={translations.viewAllProductsTitle}
+              rel="nofollow"
+              aria-label={translations.viewAllProductsAria}
+            >
+              {translations.viewAllProducts}
+            </Link>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   )
 }
