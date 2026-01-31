@@ -3029,7 +3029,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Mengapa Memilih Mangala Living untuk Furniture Komersial Anda?",
     "category": "Tips and Trick",
     "excerpt": "Temukan mengapa Mangala Living menjadi pilihan utama untuk furniture komersial berkualitas sejak 1999. Solusi custom untuk cafe, restoran, hotel, dan kantor.",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1653972233597-05822baa3c4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb21tZXJjaWFsJTIwaW50ZXJpb3IlMjBkZXNpZ24lMjB3aXRoJTIwYmVzcG9rZSUyMGZ1cm5pdHVyZXxlbnwwfDB8fHwxNzY5ODUyMDkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-01-31",
     "author": "Helmi Ramdan",
     "customContent": {
@@ -3111,7 +3111,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "مانجالا ليفينج هي الحل الأفضل",
     "category": "Tips and Trick",
     "excerpt": "مانجالا ليفينج توفر أفضل حلول الأثاث للقهاوي والمطاعم والفنادق والمكاتب",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1759038086995-fb21d7c4dc56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMGxvYmJ5JTIwZnVybml0dXJlJTIwZGVzaWdufGVufDB8MHx8fDE3Njk4NTIxMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-01-31",
     "author": "Helmi Ramdan",
     "customContent": {
