@@ -3142,6 +3142,40 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       "conclusion": "إذا كنت تبحث عن حلول أثاث متقدمة وذات جودة عالية، ف曼جála ليفينج هي الخيار الأمثل. <strong>توفر مانجála ليفينج حلول أثاث مخصصة</strong> وذات جودة عالية، وتتميز بمتانتها وثباتها. <em>لا تتردد في الاتصال بنا</em> للاستفادة من خبرتنا وخدماتنا في مجال الأثاث الصناعي."
     }
+  },
+  {
+    "id": 296,
+    "slug": "tips-memilih-furniture-teak",
+    "title": "Tips Memilih Furniture Teak",
+    "category": "Tips and Trick",
+    "excerpt": "Panduan memilih furniture teak yang tahan lama dan berkualitas",
+    "image": "https://images.unsplash.com/photo-1730773066960-21c0bfb3a103?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwdGVhayUyMHdvb2QlMjBmdXJuaXR1cmV8ZW58MHwwfHx8MTc2OTg0ODQzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-01-31",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "Furniture teak menjadi pilihan populer untuk dekorasi interior karena kekuatan dan keindahannya. Namun, memilih furniture teak yang tepat bisa menjadi tantangan. Dalam artikel ini, kita akan membahas tips dan trik memilih furniture teak yang tahan lama dan berkualitas.",
+      "keyPoints": [
+        "Pilihlah furniture teak yang terbuat dari bahan baku yang berkualitas",
+        "Perhatikan finishing dan desain furniture teak",
+        "Pastikan furniture teak memiliki ketahanan yang baik terhadap rayap dan kelembaban"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Furniture Teak Begitu Populer?",
+          "content": "Furniture teak menjadi pilihan populer karena kekuatan dan keindahannya. <strong>Teak</strong> adalah jenis kayu yang sangat tahan lama dan memiliki ketahanan yang baik terhadap rayap dan kelembaban. Selain itu, furniture teak juga memiliki desain yang elegan dan mewah, sehingga sangat cocok untuk dekorasi interior rumah, kafe, restoran, dan hotel. <br> Mangala Living, sebagai produsen furniture industri yang telah berpengalaman lebih dari 25 tahun, telah memproduksi lebih dari 1000 proyek furniture teak yang berkualitas dan tahan lama."
+        },
+        {
+          "heading": "Tips Memilih Furniture Teak yang Tepat",
+          "content": "Dalam memilih furniture teak, ada beberapa hal yang perlu diperhatikan. <em>Pertama</em>, pilihlah furniture teak yang terbuat dari bahan baku yang berkualitas. <em>Kedua</em>, perhatikan finishing dan desain furniture teak. <em>Ketiga</em>, pastikan furniture teak memiliki ketahanan yang baik terhadap rayap dan kelembaban. <br> Dengan memperhatikan hal-hal tersebut, Anda dapat memilih furniture teak yang tepat dan tahan lama."
+        },
+        {
+          "heading": "Mangala Living Solusi Furniture Teak Anda",
+          "content": "Mangala Living adalah produsen furniture industri yang telah berpengalaman lebih dari 25 tahun. Kami memiliki workshop di Bekasi dan telah memproduksi lebih dari 1000 proyek furniture teak yang berkualitas dan tahan lama. <br> Kami menawarkan solusi furniture teak yang sesuai dengan kebutuhan Anda, mulai dari desain yang elegan dan mewah hingga ketahanan yang baik terhadap rayap dan kelembaban. <br> Dengan Mangala Living, Anda dapat memiliki furniture teak yang berkualitas dan tahan lama, serta mendapatkan layanan yang memuaskan."
+        }
+      ],
+      "conclusion": "Dengan memperhatikan tips dan trik memilih furniture teak yang tepat, Anda dapat memiliki furniture teak yang berkualitas dan tahan lama. Mangala Living adalah solusi furniture teak Anda, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek yang telah diselesaikan. <br> Jangan ragu untuk menghubungi kami untuk mendapatkan informasi lebih lanjut tentang furniture teak yang sesuai dengan kebutuhan Anda."
+    }
   }
 ]
 
