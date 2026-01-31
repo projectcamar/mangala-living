@@ -11,6 +11,7 @@ export interface MultiLanguageDescription {
     description: string
     metaDescription: string
     imageAlt: string
+    dimensions?: string
   }
   id: {
     name: string
@@ -19,6 +20,7 @@ export interface MultiLanguageDescription {
     description: string
     metaDescription: string
     imageAlt: string
+    dimensions?: string
   }
   ar: {
     name: string
@@ -27,6 +29,7 @@ export interface MultiLanguageDescription {
     description: string
     metaDescription: string
     imageAlt: string
+    dimensions?: string
   }
   zh: {
     name: string
@@ -35,6 +38,7 @@ export interface MultiLanguageDescription {
     description: string
     metaDescription: string
     imageAlt: string
+    dimensions?: string
   }
   ja: {
     name: string
@@ -43,6 +47,7 @@ export interface MultiLanguageDescription {
     description: string
     metaDescription: string
     imageAlt: string
+    dimensions?: string
   }
   es: {
     name: string
@@ -51,6 +56,7 @@ export interface MultiLanguageDescription {
     description: string
     metaDescription: string
     imageAlt: string
+    dimensions?: string
   }
   fr: {
     name: string
@@ -59,6 +65,7 @@ export interface MultiLanguageDescription {
     description: string
     metaDescription: string
     imageAlt: string
+    dimensions?: string
   }
   ko: {
     name: string
@@ -67,6 +74,7 @@ export interface MultiLanguageDescription {
     description: string
     metaDescription: string
     imageAlt: string
+    dimensions?: string
   }
 }
 
@@ -1227,7 +1235,7 @@ export const getProductDescription = (slug: string): MultiLanguageDescription | 
 export const getProductImageCaption = (slug: string, isIndonesian: boolean, language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'): string => {
   const desc = getProductDescription(slug)
   const lang = language || (isIndonesian ? 'id' : 'en')
-  
+
   if (!desc) {
     // Fallback to generic caption
     const fallbacks: Record<string, string> = {
@@ -1251,7 +1259,7 @@ export const getProductImageCaption = (slug: string, isIndonesian: boolean, lang
 export const getProductImageAlt = (slug: string, isIndonesian: boolean, language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'): string => {
   const desc = getProductDescription(slug)
   const lang = language || (isIndonesian ? 'id' : 'en')
-  
+
   if (!desc) {
     // Fallback to generic alt
     const fallbacks: Record<string, string> = {
@@ -1275,7 +1283,7 @@ export const getProductImageAlt = (slug: string, isIndonesian: boolean, language
 export const getProductName = (slug: string, isIndonesian: boolean, language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'): string => {
   const desc = getProductDescription(slug)
   const lang = language || (isIndonesian ? 'id' : 'en')
-  
+
   if (!desc) {
     // Fallback - get name from products.ts
     return ''

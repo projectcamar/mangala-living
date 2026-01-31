@@ -29,12 +29,13 @@ interface ProductDetail {
   details: string
   description: string
   video?: string
+  variants?: { name: string, price: string, dimensions?: string }[]
 }
 
 // Generate product description
 const generateProductDescription = (name: string) => {
   // Special descriptions for each product to target specific keywords and queries
-  
+
   if (name.toLowerCase().includes('hollowline')) {
     return `The Hollowline Display Rack from Mangala Living is the perfect industrial storage solution for modern retail and commercial spaces. This premium hollowline display rack features a sleek industrial design with hollow steel construction that provides maximum durability and visual appeal.
 
@@ -46,7 +47,7 @@ Built to commercial-grade standards, this hollowline display rack is designed to
 
 Whether you need to display merchandise, organize documents, or create an industrial focal point, the Hollowline Display Rack delivers both functionality and style. Contact Mangala Living today to learn more about our hollowline display rack solutions and custom industrial furniture options.`
   }
-  
+
   if (name.toLowerCase().includes('balcony bar table')) {
     return `The Balcony Bar Table from Mangala Living is the ultimate outdoor dining and entertainment solution for modern spaces. This premium balcony bar table features a robust industrial design with weather-resistant construction that provides maximum durability for outdoor use.
 
@@ -58,7 +59,7 @@ Built to commercial-grade standards, this balcony bar table is designed to withs
 
 Whether you need outdoor dining furniture, balcony seating, or industrial outdoor tables, the Balcony Bar Table delivers both functionality and style. Contact Mangala Living today to learn more about our balcony bar table solutions and custom outdoor furniture options.`
   }
-  
+
   if (name.toLowerCase().includes('frame loft bookshelf')) {
     return `The Frame Loft Bookshelf from Mangala Living is the perfect industrial storage solution for modern homes, offices, and commercial spaces. This premium frame loft bookshelf features a sleek industrial design with modular construction that provides maximum storage flexibility and visual appeal.
 
@@ -70,7 +71,7 @@ Built to commercial-grade standards, this frame loft bookshelf is designed to wi
 
 Whether you need book storage, display shelving, or industrial storage solutions, the Frame Loft Bookshelf delivers both functionality and style. Contact Mangala Living today to learn more about our frame loft bookshelf solutions and custom industrial furniture options.`
   }
-  
+
   if (name.toLowerCase().includes('bench corner lounge')) {
     return `The Bench Corner Lounge from Mangala Living is the perfect industrial seating solution for modern cafes, restaurants, and commercial spaces. This premium bench corner lounge features a sleek industrial design with comfortable seating that provides maximum comfort and visual appeal.
 
@@ -82,7 +83,7 @@ Built to commercial-grade standards, this bench corner lounge is designed to wit
 
 Whether you need cafe seating, restaurant furniture, or industrial lounge solutions, the Bench Corner Lounge delivers both functionality and style. Contact Mangala Living today to learn more about our bench corner lounge solutions and custom industrial furniture options.`
   }
-  
+
   if (name.toLowerCase().includes('industrial daybed frame')) {
     return `The Industrial Daybed Frame from Mangala Living is the perfect industrial furniture solution for modern spaces. This premium industrial daybed frame features a robust industrial design with steel construction that provides maximum durability and visual appeal.
 
@@ -94,7 +95,7 @@ Built to commercial-grade standards, this industrial daybed frame is designed to
 
 Whether you need lounge furniture, daybed solutions, or industrial seating, the Industrial Daybed Frame delivers both functionality and style. Contact Mangala Living today to learn more about our industrial daybed frame solutions and custom industrial furniture options.`
   }
-  
+
   if (name.toLowerCase().includes('dining table') || name.toLowerCase().includes('dining set')) {
     return `The ${name} from Mangala Living is the perfect industrial dining solution for modern homes, cafes, and restaurants. This premium industrial dining table features a robust industrial design with steel construction that provides maximum durability and visual appeal.
 
@@ -106,7 +107,7 @@ Built to commercial-grade standards, this industrial dining table is designed to
 
 Whether you need dining furniture, restaurant tables, or industrial dining solutions, the ${name} delivers both functionality and style. Contact Mangala Living today to learn more about our industrial dining table solutions and custom industrial furniture options.`
   }
-  
+
   if (name.toLowerCase().includes('bar chair') || name.toLowerCase().includes('bar stool') || name.toLowerCase().includes('stall chair')) {
     return `The ${name} from Mangala Living is the perfect industrial bar seating solution for modern cafes, restaurants, and commercial spaces. This premium industrial bar chair features a sleek industrial design with steel construction that provides maximum comfort and visual appeal.
 
@@ -118,7 +119,7 @@ Built to commercial-grade standards, this industrial bar chair is designed to wi
 
 Whether you need bar seating, restaurant chairs, or industrial bar furniture, the ${name} delivers both functionality and style. Contact Mangala Living today to learn more about our industrial bar chair solutions and custom industrial furniture options.`
   }
-  
+
   if (name.toLowerCase().includes('outdoor bar set') || name.toLowerCase().includes('steelframe outdoor')) {
     return `The ${name} from Mangala Living is the perfect industrial outdoor furniture solution for modern spaces. This premium industrial outdoor bar set features a robust industrial design with weather-resistant construction that provides maximum durability for outdoor use.
 
@@ -130,7 +131,7 @@ Built to commercial-grade standards, this industrial outdoor bar set is designed
 
 Whether you need outdoor furniture, patio dining, or industrial outdoor solutions, the ${name} delivers both functionality and style. Contact Mangala Living today to learn more about our industrial outdoor bar set solutions and custom outdoor furniture options.`
   }
-  
+
   if (name.toLowerCase().includes('cabinet') || name.toLowerCase().includes('storage') || name.toLowerCase().includes('display rack')) {
     return `The ${name} from Mangala Living is the perfect industrial storage solution for modern spaces. This premium industrial storage furniture features a robust industrial design with steel construction that provides maximum storage capacity and visual appeal.
 
@@ -142,7 +143,7 @@ Built to commercial-grade standards, this industrial storage furniture is design
 
 Whether you need storage solutions, display furniture, or industrial storage, the ${name} delivers both functionality and style. Contact Mangala Living today to learn more about our industrial storage solutions and custom industrial furniture options.`
   }
-  
+
   if (name.toLowerCase().includes('meja kerja') || name.toLowerCase().includes('work table')) {
     return `The ${name} from Mangala Living is the perfect industrial work table solution for modern offices and commercial spaces. This premium industrial work table features a robust industrial design with steel construction that provides maximum durability and functionality.
 
@@ -154,7 +155,7 @@ Built to commercial-grade standards, this industrial work table is designed to w
 
 Whether you need office furniture, work tables, or industrial workspace solutions, the ${name} delivers both functionality and style. Contact Mangala Living today to learn more about our industrial work table solutions and custom industrial furniture options.`
   }
-  
+
   // Default description for other products
   return `The ${name} from Mangala Living is expertly crafted industrial furniture designed for modern spaces. Built in our workshop in Bekasi, Indonesia, each piece showcases superior welding techniques and attention to detail.
 
@@ -170,38 +171,38 @@ Mangala Living is committed to quality and precision, ensuring that every weld a
 // Generate product details based on categories
 const generateProductDetails = (categories: string[]) => {
   const details: string[] = []
-  
+
   if (categories.some(c => c.includes('Table') || c.includes('Dining'))) {
     details.push('Industrial Steel Frame')
     details.push('Powder Coated Finish')
     details.push('Solid Wood/Metal Top')
   }
-  
+
   if (categories.some(c => c.includes('Chair') || c.includes('Bench') || c.includes('Sofa'))) {
     details.push('Welded Steel Construction')
     details.push('Ergonomic Design')
     details.push('Weather Resistant Finish')
   }
-  
+
   if (categories.some(c => c.includes('Bar'))) {
     details.push('High-Grade Steel Pipe')
     details.push('Footrest Support')
     details.push('Commercial Grade')
   }
-  
+
   if (categories.some(c => c.includes('Storage') || c.includes('Accessories'))) {
     details.push('Heavy Duty Construction')
     details.push('Multiple Shelves/Compartments')
     details.push('Easy Assembly')
   }
-  
+
   if (details.length === 0) {
     details.push('Premium Steel Construction')
     details.push('Powder Coated Black Finish')
     details.push('Industrial Design')
     details.push('Built to Last')
   }
-  
+
   return details.join(', ')
 }
 
@@ -677,7 +678,8 @@ ALL_PRODUCTS.forEach(p => {
     images: [baseImage, secondaryImage, videoOrFallback],
     details: generateProductDetails(p.categories),
     description: generateProductDescription(p.name),
-    video: p.video
+    video: p.video,
+    variants: p.variants
   } as ProductDetail
 })
 
@@ -700,13 +702,22 @@ const ProductDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
   const location = useLocation()
   const product = products[slug || '']
-  
+
   const [selectedImage, setSelectedImage] = useState(0)
   const [language, setLanguage] = useState<LanguageCode>('id')
   const [isLoading, setIsLoading] = useState(true)
   const [usdPrice, setUsdPrice] = useState<string | null>(null)
   const [highlightedPrice, setHighlightedPrice] = useState<string | null>(null)
   const [isImageModalOpen, setIsImageModalOpen] = useState(false)
+  const [selectedVariantIndex, setSelectedVariantIndex] = useState<number>(0)
+
+  const currentPrice = product?.variants && product.variants[selectedVariantIndex]
+    ? product.variants[selectedVariantIndex].price
+    : product?.price || ''
+
+  const currentDimensions = product?.variants && product.variants[selectedVariantIndex]
+    ? product.variants[selectedVariantIndex].dimensions
+    : null
 
   // Language to currency mapping (only non-IDR highlight currencies)
   const LANGUAGE_CURRENCY_MAP: { [key in LanguageCode]: 'KRW' | 'JPY' | 'CNY' | 'SAR' | 'EUR' | 'USD' | null } = {
@@ -736,17 +747,17 @@ const ProductDetail: React.FC = () => {
     const convertPrice = async () => {
       if (product) {
         // Always convert to USD
-        const usdConverted = await convertIDRToUSD(product.price)
+        const usdConverted = await convertIDRToUSD(currentPrice)
         setUsdPrice(usdConverted)
-        
+
         const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
 
         if (language === 'id') {
           // Indonesian: highlight IDR, show USD as secondary
-          setHighlightedPrice(product.price)
+          setHighlightedPrice(currentPrice)
         } else if (targetCurrency && targetCurrency !== 'USD') {
           // Other languages with specific local currency highlight
-          const highlightedConverted = await convertIDRToCurrency(product.price, targetCurrency)
+          const highlightedConverted = await convertIDRToCurrency(currentPrice, targetCurrency)
           setHighlightedPrice(highlightedConverted)
         } else {
           // Fallback: highlight USD
@@ -781,7 +792,7 @@ const ProductDetail: React.FC = () => {
 
   useEffect(() => {
     if (!product || !slug || relatedProducts.length === 0) return
-    
+
     const buildLocalizedRelated = async () => {
       const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
 
@@ -841,13 +852,13 @@ const ProductDetail: React.FC = () => {
   // Loading state
   if (isLoading) {
     return (
-        <div className="product-detail-page">
-            <AnnouncementBar language={language} isIndonesian={isIndonesian} />
-          <Header isIndonesian={isIndonesian} language={language} />
-        <div style={{ 
-          display: 'flex', 
-          justifyContent: 'center', 
-          alignItems: 'center', 
+      <div className="product-detail-page">
+        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
+        <Header isIndonesian={isIndonesian} language={language} />
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
           height: '50vh',
           background: '#f8f9fa'
         }}>
@@ -861,12 +872,12 @@ const ProductDetail: React.FC = () => {
               animation: 'spin 1s linear infinite',
               margin: '0 auto 20px'
             }}></div>
-              <p style={{ color: '#666', margin: 0 }}>
-                {uiTranslations.loading}
-              </p>
+            <p style={{ color: '#666', margin: 0 }}>
+              {uiTranslations.loading}
+            </p>
           </div>
         </div>
-          <Footer isIndonesian={isIndonesian} language={language} />
+        <Footer isIndonesian={isIndonesian} language={language} />
       </div>
     )
   }
@@ -878,7 +889,7 @@ const ProductDetail: React.FC = () => {
 
   // Get translated product name and description
   const productDesc = getProductDescription(product.slug)
-  const translatedProductName = productDesc 
+  const translatedProductName = productDesc
     ? getProductName(product.slug, isIndonesian, language)
     : product.name
   const translatedDescription = productDesc
@@ -900,7 +911,7 @@ const ProductDetail: React.FC = () => {
     const numericPrice = parseInt(price) || 0
     // Convert all images to full URLs
     const imageUrls = product.images.map((img: string) => getProductImageUrl(img, product.slug))
-    
+
     return {
       "@context": "https://schema.org",
       "@type": "Product",
@@ -1047,28 +1058,28 @@ const ProductDetail: React.FC = () => {
   }
 
   return (
-      <div className="product-detail-page">
-        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
+    <div className="product-detail-page">
+      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
-        <title>{truncateTitle(product.slug === 'hollowline-display-rack' 
+        <title>{truncateTitle(product.slug === 'hollowline-display-rack'
           ? (isIndonesian ? 'Hollowline Display Rack - Harga Rp4.5 Juta - Mangala' : 'Hollowline Display Rack - Rp4.5M - Mangala Living')
           : `${translatedProductName} - Mangala Living`)}</title>
         <meta name="description" content={truncateMetaDescription(product.name === 'Hollowline Display Rack'
           ? (isIndonesian ? 'Hollowline Display Rack Industrial - Display Shelf Rack Modern - Harga Rp4.500.000 - Workshop Bekasi - Garansi Kualitas - Call Mangala +6288801146881' : 'Hollowline Display Rack Industrial - Modern Display Shelf Rack - Price Rp4.500.000 - Bekasi Workshop - Quality Guarantee - Call Mangala +6288801146881')
           : (() => {
-              const desc = getProductDescription(product.slug)
-              return desc ? (desc[language]?.metaDescription || desc.en.metaDescription) : `${product.name} - ${product.details}`
-            })())} />
+            const desc = getProductDescription(product.slug)
+            return desc ? (desc[language]?.metaDescription || desc.en.metaDescription) : `${product.name} - ${product.details}`
+          })())} />
         <meta name="keywords" content={
           product.name === 'Hollowline Display Rack'
             ? 'hollowline display rack, display shelf rack, rak display industrial, hollowline storage, call mangala furniture, furniture bekasi murah'
             : product.name === 'Industrial Kitchen Cabinet'
-            ? 'mangala kitchen cabinet, kitchen cabinet industrial, kabinet dapur cafe, furniture kitchen bekasi'
-            : product.name === 'Bar Stall Chair'
-            ? 'stall chair design, bar stall chair, kursi bar industrial, meja kursi cafe'
-            : product.name === 'Set Furniture'
-            ? 'set furniture industrial, meja kursi cafe lengkap, furniture cafe murah'
-            : `${product.name}, industrial furniture, furniture besi, ${product.categories.join(', ')}, mangala living`
+              ? 'mangala kitchen cabinet, kitchen cabinet industrial, kabinet dapur cafe, furniture kitchen bekasi'
+              : product.name === 'Bar Stall Chair'
+                ? 'stall chair design, bar stall chair, kursi bar industrial, meja kursi cafe'
+                : product.name === 'Set Furniture'
+                  ? 'set furniture industrial, meja kursi cafe lengkap, furniture cafe murah'
+                  : `${product.name}, industrial furniture, furniture besi, ${product.categories.join(', ')}, mangala living`
         } />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -1077,7 +1088,7 @@ const ProductDetail: React.FC = () => {
         {localizedUrls.alternates.map((alternate) => (
           <link key={`product-detail-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
         ))}
-        
+
         {/* Open Graph */}
         <meta property="og:title" content={`${translatedProductName} - Mangala Living`} />
         <meta property="og:description" content={`${translatedProductName} - ${translateProductDetails(product.details)}`} />
@@ -1085,21 +1096,21 @@ const ProductDetail: React.FC = () => {
         <meta property="og:url" content={localizedUrls.canonical} />
         <meta property="og:type" content="product" />
         <meta property="og:locale" content={localeMeta.locale} />
-          {OG_LOCALES.filter(altLocale => altLocale !== localeMeta.locale).map((altLocale) => (
-            <meta key={`product-detail-og-${altLocale}`} property="og:locale:alternate" content={altLocale} />
-          ))}
-        
+        {OG_LOCALES.filter(altLocale => altLocale !== localeMeta.locale).map((altLocale) => (
+          <meta key={`product-detail-og-${altLocale}`} property="og:locale:alternate" content={altLocale} />
+        ))}
+
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${translatedProductName} - Mangala Living`} />
         <meta name="twitter:description" content={`${translatedProductName} - ${translateProductDetails(product.details)}`} />
         <meta name="twitter:image" content={product.images[0]} />
-        
+
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify(generateStructuredData())}
         </script>
-        
+
         {/* ImageObject Structured Data for Image SEO */}
         {product.images.map((img, index) => (
           <script key={index} type="application/ld+json">
@@ -1132,7 +1143,7 @@ const ProductDetail: React.FC = () => {
         ))}
       </Helmet>
 
-        <Header isIndonesian={isIndonesian} language={language} />
+      <Header isIndonesian={isIndonesian} language={language} />
 
       <main className="product-detail-main">
         <div className="container">
@@ -1154,7 +1165,7 @@ const ProductDetail: React.FC = () => {
                     >
                       {isVideo ? (
                         <>
-                          <video 
+                          <video
                             src={image}
                             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             muted
@@ -1178,8 +1189,8 @@ const ProductDetail: React.FC = () => {
                           </div>
                         </>
                       ) : (
-                        <img 
-                          src={image} 
+                        <img
+                          src={image}
                           alt={getProductImageAlt(product.slug, isIndonesian, language) + (index > 0 ? ` - Image ${index + 1}` : '')}
                           title={getProductImageCaption(product.slug, isIndonesian, language) + (index > 0 ? ` - View ${index + 1}` : '')}
                           loading={index === 0 ? "eager" : "lazy"}
@@ -1197,7 +1208,7 @@ const ProductDetail: React.FC = () => {
               </div>
               <div className="gallery-main" onClick={() => selectedImage === 2 && product.video ? null : setIsImageModalOpen(true)} style={{ cursor: 'pointer' }}>
                 {selectedImage === 2 && product.video ? (
-                  <video 
+                  <video
                     src={product.images[selectedImage]}
                     autoPlay
                     loop
@@ -1208,8 +1219,8 @@ const ProductDetail: React.FC = () => {
                     style={{ width: '100%', height: '100%', objectFit: 'cover', pointerEvents: 'none' }}
                   />
                 ) : (
-                  <img 
-                    src={product.images[selectedImage]} 
+                  <img
+                    src={product.images[selectedImage]}
                     alt={getProductImageAlt(product.slug, isIndonesian, language)}
                     title={getProductImageCaption(product.slug, isIndonesian, language)}
                     className={selectedImage === 1 ? 'flipped' : ''}
@@ -1231,15 +1242,15 @@ const ProductDetail: React.FC = () => {
             <div className="product-info-section">
               <h1 className="product-detail-title">{translatedProductName}</h1>
               <p className="product-detail-categories">{product.categories.join(' & ')}</p>
-              
+
               {/* Price with dual display - highlighted currency based on language, USD always non-highlighted */}
               <div className="product-price-wrapper">
                 {usdPrice && highlightedPrice ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
                     {/* Primary price - highlighted currency based on language */}
-                    <p 
+                    <p
                       className="product-detail-price"
-                      style={{ 
+                      style={{
                         margin: 0,
                         fontSize: '1.5rem',
                         fontWeight: 600,
@@ -1249,8 +1260,8 @@ const ProductDetail: React.FC = () => {
                       {highlightedPrice}
                     </p>
                     {/* Secondary price - contextual: ID shows USD; EN shows IDR; others show USD */}
-                    <p 
-                      style={{ 
+                    <p
+                      style={{
                         margin: 0,
                         fontSize: '0.875rem',
                         fontWeight: 400,
@@ -1262,9 +1273,9 @@ const ProductDetail: React.FC = () => {
                     </p>
                   </div>
                 ) : (
-                  <p 
+                  <p
                     className="product-detail-price"
-                    style={{ 
+                    style={{
                       margin: 0,
                       fontSize: '1.5rem',
                       fontWeight: 600,
@@ -1275,54 +1286,93 @@ const ProductDetail: React.FC = () => {
                   </p>
                 )}
               </div>
-                
-                <p className="product-price-note">{uiTranslations.priceNote}</p>
 
-                <button 
-                  className="order-now-btn"
-                  onClick={() => {
-                    // Send background email notification
-                    sendBackgroundEmail('order_now', {
-                      productName: translatedProductName,
-                      productSlug: product.slug,
-                      productPrice: product.price,
-                      productCategory: product.categories.join(', '),
-                      productUrl: window.location.href,
-                    })
+              <p className="product-price-note">{uiTranslations.priceNote}</p>
 
-                    // Track WhatsApp click
-                    trackWhatsAppClick('product_order_now', {
-                      productName: translatedProductName,
-                      productSlug: product.slug,
-                      productPrice: product.price,
-                      productCategory: product.categories.join(', ')
-                    })
+              {/* Variant Selection */}
+              {product.variants && product.variants.length > 0 && (
+                <div className="variant-selection" style={{ marginBottom: '24px' }}>
+                  <p style={{ fontWeight: 600, marginBottom: '12px', fontSize: '14px' }}>
+                    {language === 'id' ? 'Pilih Ukuran / Harga:' : 'Select Size / Price:'}
+                  </p>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    {product.variants.map((variant: { name: string, price: string }, index: number) => (
+                      <button
+                        key={index}
+                        onClick={() => setSelectedVariantIndex(index)}
+                        style={{
+                          padding: '10px 16px',
+                          border: `1.5px solid ${selectedVariantIndex === index ? '#8B7355' : '#ddd'}`,
+                          borderRadius: '6px',
+                          background: selectedVariantIndex === index ? '#F9F7F4' : '#fff',
+                          color: selectedVariantIndex === index ? '#8B7355' : '#666',
+                          fontSize: '13px',
+                          fontWeight: selectedVariantIndex === index ? 600 : 400,
+                          cursor: 'pointer',
+                          transition: 'all 0.2s ease'
+                        }}
+                      >
+                        {variant.name}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
 
-                    const whatsappMessage = getWhatsappMessage(language, {
-                      productName: translatedProductName,
-                      categories: product.categories.join(', '),
-                      priceIDR: product.price,
-                      priceUSD: usdPrice,
-                      url: window.location.href
-                    })
-                    
-                    const whatsappUrl = `https://wa.me/+6288801146881?text=${encodeURIComponent(whatsappMessage)}`
-                    window.location.href = whatsappUrl
-                  }}
-                >
-                  {uiTranslations.orderNow}
-                </button>
+              <button
+                className="order-now-btn"
+                onClick={() => {
+                  // Send background email notification
+                  sendBackgroundEmail('order_now', {
+                    productName: translatedProductName,
+                    productSlug: product.slug,
+                    productPrice: product.price,
+                    productCategory: product.categories.join(', '),
+                    productUrl: window.location.href,
+                  })
 
-                <div className="product-details-box">
-                  <h3>{uiTranslations.productDetails}</h3>
+                  // Track WhatsApp click
+                  trackWhatsAppClick('product_order_now', {
+                    productName: translatedProductName,
+                    productSlug: product.slug,
+                    productPrice: currentPrice,
+                    productCategory: product.categories.join(', '),
+                    variant: currentDimensions || 'Standard'
+                  })
+
+                  const whatsappMessage = getWhatsappMessage(language, {
+                    productName: `${translatedProductName}${currentDimensions ? ` (${currentDimensions})` : ''}`,
+                    categories: product.categories.join(', '),
+                    priceIDR: currentPrice,
+                    priceUSD: usdPrice,
+                    url: window.location.href
+                  })
+
+                  const whatsappUrl = `https://wa.me/+6288801146881?text=${encodeURIComponent(whatsappMessage)}`
+                  window.location.href = whatsappUrl
+                }}
+              >
+                {uiTranslations.orderNow}
+              </button>
+
+              <div className="product-details-box">
+                <h3>{uiTranslations.productDetails}</h3>
+                <div style={{ fontSize: '14px', color: '#555' }}>
+                  {currentDimensions && (
+                    <p style={{ marginBottom: '8px' }}>
+                      <strong>{language === 'id' ? 'Dimensi: ' : 'Dimensions: '}</strong>
+                      {currentDimensions}
+                    </p>
+                  )}
                   <p>{translateProductDetails(product.details)}</p>
                 </div>
+              </div>
             </div>
           </div>
 
           {/* About Product */}
           <div className="about-product-section">
-              <h2>{uiTranslations.about} {translatedProductName}</h2>
+            <h2>{uiTranslations.about} {translatedProductName}</h2>
             <div className="about-product-content">
               {translatedDescription.split('\n\n').map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
@@ -1332,7 +1382,7 @@ const ProductDetail: React.FC = () => {
 
           {/* Related Products */}
           <div className="related-products-section">
-              <h2>{uiTranslations.youMightBeInterested}</h2>
+            <h2>{uiTranslations.youMightBeInterested}</h2>
             <div className="related-products-grid">
               {localizedRelated.map((relatedProduct) => (
                 <Link
@@ -1341,8 +1391,8 @@ const ProductDetail: React.FC = () => {
                   className="related-product-card"
                 >
                   <div className="related-product-image">
-                    <img 
-                      src={relatedProduct.image} 
+                    <img
+                      src={relatedProduct.image}
                       alt={`${relatedProduct.name} - Related Industrial Furniture ${translateCategory(relatedProduct.category, language)} Mangala Living`}
                       title={`${relatedProduct.name} - Premium Industrial Furniture ${translateCategory(relatedProduct.category, language)} by Mangala Living`}
                       loading="lazy"
@@ -1372,7 +1422,7 @@ const ProductDetail: React.FC = () => {
           </div>
 
           {/* AI-Optimized Content for Search Engines */}
-          <ProductDetailAIContent 
+          <ProductDetailAIContent
             product={{
               name: translatedProductName,
               price: product.price,
@@ -1388,15 +1438,15 @@ const ProductDetail: React.FC = () => {
       {isImageModalOpen && (
         <div className="image-modal-overlay" onClick={() => setIsImageModalOpen(false)}>
           <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
-            <button 
-              className="image-modal-close" 
+            <button
+              className="image-modal-close"
               onClick={() => setIsImageModalOpen(false)}
               aria-label="Close image"
             >
               <X size={24} />
             </button>
-            <img 
-              src={product.images[selectedImage]} 
+            <img
+              src={product.images[selectedImage]}
               alt={getProductImageAlt(product.slug, isIndonesian, language)}
               title={getProductImageCaption(product.slug, isIndonesian, language)}
               className={selectedImage === 1 ? 'flipped' : ''}
@@ -1406,7 +1456,7 @@ const ProductDetail: React.FC = () => {
         </div>
       )}
 
-        <Footer isIndonesian={isIndonesian} language={language} />
+      <Footer isIndonesian={isIndonesian} language={language} />
     </div>
   )
 }
