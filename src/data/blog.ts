@@ -2927,22 +2927,22 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     "id": 291,
-    "slug": "ughhughhh",
-    "title": "ughh",
+    "slug": "cqwecqweqcw",
+    "title": "qwecqwecqwe",
     "category": "Tips and Trick",
-    "excerpt": "",
+    "excerpt": "qwecqwecqwe",
     "image": "",
     "date": "2026-01-31",
     "author": "Helmi Ramdan",
     "customContent": {
-      "introduction": "anjay",
+      "introduction": "cqwecqwecqwecqwec",
       "sections": [
         {
-          "heading": "anjay",
-          "content": "anjayyyy"
+          "heading": "qwecqwec",
+          "content": "qwecqwecq"
         }
       ],
-      "conclusion": "tess"
+      "conclusion": "qwecqwecqewc"
     }
   }
 ]
