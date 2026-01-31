@@ -23,7 +23,13 @@ async function getGeolocation(ip: string) {
       country: data.country,
       city: data.city,
       region: data.regionName,
-      isp: data.isp
+      isp: data.isp,
+      zip: data.zip,
+      timezone: data.timezone,
+      lat: data.lat,
+      lon: data.lon,
+      org: data.org,
+      countryCode: data.countryCode
     } : null;
   } catch (error) {
     console.error('Geolocation error:', error instanceof Error ? error.message : 'Unknown');
@@ -81,23 +87,90 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     let subject = '';
     let html = '';
 
-    const loc = geolocation ? `${geolocation.city}, ${geolocation.region}, ${geolocation.country}` : 'Unknown';
-    const time = new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' });
+    const loc = geolocation ? `${geolocation.city}, ${geolocation.region}, ${geolocation.country} (${geolocation.countryCode})` : 'Unknown';
+    const time = new Date().toLocaleString('id-ID', {
+      timeZone: 'Asia/Jakarta',
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    }) + ' WIB';
 
-    if (isCatalog || notificationType === 'order_now' || notificationType === 'whatsapp_click' || notificationType === 'chatbot_lead' || notificationType === 'chatbot_message' || notificationType === 'subscription') {
+    const renderCommonDetails = () => `
+      <div style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">
+        <h3 style="color: #8B7355; margin-bottom: 10px;">📍 Visitor IP Address</h3>
+        <p style="margin: 5px 0;"><strong>Client IP:</strong> ${clientIP}</p>
+        <p style="margin: 5px 0; color: #666; font-size: 13px;"><strong>Full Chain:</strong> ${req.headers['x-forwarded-for'] || clientIP}</p>
+        
+        <h3 style="color: #8B7355; margin-bottom: 10px; margin-top: 20px;">🌍 Visitor Geolocation</h3>
+        <p style="margin: 5px 0;"><strong>📍 Location:</strong> ${loc}</p>
+        <p style="margin: 5px 0;"><strong>📮 ZIP:</strong> ${geolocation?.zip || 'N/A'}</p>
+        <p style="margin: 5px 0;"><strong>🕐 Timezone:</strong> ${geolocation?.timezone || 'N/A'}</p>
+        <p style="margin: 5px 0;"><strong>📌 Coordinates:</strong> ${geolocation?.lat}, ${geolocation?.lon}</p>
+        <p style="margin: 5px 0;"><strong>🌐 ISP:</strong> ${geolocation?.isp || 'Unknown'}</p>
+        <p style="margin: 5px 0;"><strong>🏢 Organization:</strong> ${geolocation?.org || 'N/A'}</p>
+        
+        <h3 style="color: #8B7355; margin-bottom: 10px; margin-top: 20px;">🕐 Timestamp</h3>
+        <p style="margin: 5px 0;">${time}</p>
+        
+        <h3 style="color: #8B7355; margin-bottom: 10px; margin-top: 20px;">🖥️ User Agent</h3>
+        <p style="margin: 5px 0; font-size: 13px; color: #666;">${req.headers['user-agent']}</p>
+        
+        <h3 style="color: #8B7355; margin-bottom: 10px; margin-top: 20px;">📱 Device Information</h3>
+        <p style="margin: 5px 0;"><strong>Referrer:</strong> ${req.headers['referer'] || pageUrl || 'Direct'}</p>
+        <p style="margin: 5px 0;"><strong>Accept Language:</strong> ${req.headers['accept-language'] || 'Unknown'}</p>
+      </div>
+      <div style="margin-top: 30px; border-top: 2px solid #8B7355; padding-top: 15px; font-size: 12px; color: #777;">
+        <p>This is an automated notification from lifewithmangala.com</p>
+        <p>You're receiving this because a visitor interacted with your website.</p>
+      </div>
+    `;
+
+    if (isPageVisit) {
+      const info = getPageInfo(pageName);
+      subject = `🏠 New Visitor Detected!`;
+      html = `
+        <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 25px; color: #333; line-height: 1.6; max-width: 600px; border: 1px solid #ddd; border-radius: 8px;">
+          <h2 style="color: #8B7355; text-align: center; margin-bottom: 5px;">🏠</h2>
+          <h2 style="color: #8B7355; text-align: center; margin-top: 0;">📊 Page Visit Notification</h2>
+          <p style="text-align: center; margin-bottom: 25px;">A visitor accessed <strong>${info.title}</strong> on your website lifewithmangala.com</p>
+          
+          <div style="display: flex; justify-content: space-around; background: #f9f6f2; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+            <div style="flex: 1;">
+              <span style="display: block; font-size: 24px; font-weight: bold; color: #8B7355;">#${visitNumber}</span>
+              <span style="font-size: 12px; color: #666;">Visit to This Page</span>
+            </div>
+            <div style="flex: 1; border-left: 1px solid #e0d5c5;">
+              <span style="display: block; font-size: 24px; font-weight: bold; color: #8B7355;">${totalVisits}</span>
+              <span style="font-size: 12px; color: #666;">Total Visits (All Pages)</span>
+            </div>
+          </div>
+
+          <h3 style="color: #8B7355; margin-bottom: 10px;">🌐 Page Information</h3>
+          <p style="margin: 5px 0;"><strong>Page Name:</strong> ${info.title}</p>
+          <p style="margin: 5px 0;"><strong>Description:</strong> Visitor tracked on this page</p>
+          <p style="margin: 5px 0;"><strong>URL:</strong> ${pageUrl || 'N/A'}</p>
+
+          ${renderCommonDetails()}
+        </div>
+      `;
+    } else if (isCatalog || notificationType === 'order_now' || notificationType === 'whatsapp_click' || notificationType === 'chatbot_lead' || notificationType === 'chatbot_message' || notificationType === 'subscription') {
       subject = `Mangala Notification: ${notificationType.replace('_', ' ').toUpperCase()}`;
       html = `
-        <div style="font-family: sans-serif; padding: 20px;">
-          <h2 style="color: #8B7355;">New ${notificationType.replace('_', ' ')}</h2>
-          <p><strong>Name:</strong> ${firstName || 'Visitor'}</p>
-          <p><strong>Email:</strong> ${email || 'N/A'}</p>
-          ${whatsapp ? `<p><strong>WhatsApp:</strong> ${whatsapp}</p>` : ''}
-          ${productName ? `<p><strong>Product:</strong> ${productName}</p>` : ''}
-          ${chatMessage ? `<p><strong>Message:</strong> ${chatMessage}</p>` : ''}
-          <hr />
-          <p><strong>Location:</strong> ${loc}</p>
-          <p><strong>IP:</strong> ${clientIP}</p>
-          <p><strong>Time:</strong> ${time}</p>
+        <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 25px; color: #333; line-height: 1.6; max-width: 600px; border: 1px solid #ddd; border-radius: 8px;">
+          <h2 style="color: #8B7355; border-bottom: 2px solid #8B7355; padding-bottom: 10px;">🔔 New ${notificationType.replace('_', ' ').toUpperCase()}</h2>
+          <div style="margin-top: 20px;">
+            <p style="font-size: 16px;"><strong>Name:</strong> ${firstName || 'Visitor'}</p>
+            <p style="font-size: 16px;"><strong>Email:</strong> ${email || 'N/A'}</p>
+            ${whatsapp ? `<p style="font-size: 16px;"><strong>WhatsApp:</strong> ${whatsapp}</p>` : ''}
+            ${productName ? `<p style="font-size: 16px;"><strong>Product:</strong> ${productName}</p>` : ''}
+            ${chatMessage ? `<p style="font-size: 16px; background: #f9f9f9; padding: 10px; border-radius: 4px; border-left: 4px solid #8B7355;"><strong>Message:</strong><br/>${chatMessage}</p>` : ''}
+          </div>
+          
+          ${renderCommonDetails()}
         </div>
       `;
     }
