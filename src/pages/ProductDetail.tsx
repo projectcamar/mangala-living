@@ -386,6 +386,8 @@ const UI_TRANSLATIONS: Record<
     priceLabel: string
     priceLabelUsd: string
     priceLabelIdr: string
+    selectSize: string
+    dimensions: string
   }
 > = {
   id: {
@@ -402,7 +404,9 @@ const UI_TRANSLATIONS: Record<
     home: 'Beranda',
     priceLabel: 'Harga',
     priceLabelUsd: 'Harga USD',
-    priceLabelIdr: 'Harga IDR'
+    priceLabelIdr: 'Harga IDR',
+    selectSize: 'Pilih Ukuran / Harga:',
+    dimensions: 'Dimensi:'
   },
   en: {
     priceNote: '*Price may vary based on customization',
@@ -418,7 +422,9 @@ const UI_TRANSLATIONS: Record<
     home: 'Home',
     priceLabel: 'Price',
     priceLabelUsd: 'Price (USD)',
-    priceLabelIdr: 'Price (IDR)'
+    priceLabelIdr: 'Price (IDR)',
+    selectSize: 'Select Size / Price:',
+    dimensions: 'Dimensions:'
   },
   ar: {
     priceNote: '*قد يختلف السعر بناءً على التخصيص',
@@ -434,7 +440,9 @@ const UI_TRANSLATIONS: Record<
     home: 'الصفحة الرئيسية',
     priceLabel: 'السعر',
     priceLabelUsd: 'السعر (دولار أمريكي)',
-    priceLabelIdr: 'السعر (روبية إندونيسية)'
+    priceLabelIdr: 'السعر (روبية إندونيسية)',
+    selectSize: 'اختر المقاس / السعر:',
+    dimensions: 'الأبعاد:'
   },
   zh: {
     priceNote: '*价格可能会因定制而有所变化',
@@ -450,7 +458,9 @@ const UI_TRANSLATIONS: Record<
     home: '首页',
     priceLabel: '价格',
     priceLabelUsd: '价格 (美元)',
-    priceLabelIdr: '价格 (印尼盾)'
+    priceLabelIdr: '价格 (印尼盾)',
+    selectSize: '选择尺寸 / 价格:',
+    dimensions: '尺寸:'
   },
   ja: {
     priceNote: '※カスタマイズ内容により価格が変動します',
@@ -466,7 +476,9 @@ const UI_TRANSLATIONS: Record<
     home: 'ホーム',
     priceLabel: '価格',
     priceLabelUsd: '価格（USD）',
-    priceLabelIdr: '価格（IDR）'
+    priceLabelIdr: '価格（IDR）',
+    selectSize: 'サイズ / 価格を選択:',
+    dimensions: 'サイズ:'
   },
   es: {
     priceNote: '*El precio puede variar según la personalización',
@@ -482,7 +494,9 @@ const UI_TRANSLATIONS: Record<
     home: 'Inicio',
     priceLabel: 'Precio',
     priceLabelUsd: 'Precio (USD)',
-    priceLabelIdr: 'Precio (IDR)'
+    priceLabelIdr: 'Precio (IDR)',
+    selectSize: 'Seleccionar tamaño / precio:',
+    dimensions: 'Dimensiones:'
   },
   fr: {
     priceNote: '*Le prix peut varier en fonction de la personnalisation',
@@ -498,7 +512,9 @@ const UI_TRANSLATIONS: Record<
     home: 'Accueil',
     priceLabel: 'Prix',
     priceLabelUsd: 'Prix (USD)',
-    priceLabelIdr: 'Prix (IDR)'
+    priceLabelIdr: 'Prix (IDR)',
+    selectSize: 'Choisir la taille / le prix :',
+    dimensions: 'Dimensions :'
   },
   ko: {
     priceNote: '*맞춤 제작에 따라 가격이 달라질 수 있습니다',
@@ -514,7 +530,9 @@ const UI_TRANSLATIONS: Record<
     home: '홈',
     priceLabel: '가격',
     priceLabelUsd: '가격 (USD)',
-    priceLabelIdr: '가격 (IDR)'
+    priceLabelIdr: '가격 (IDR)',
+    selectSize: '크기 / 가격 선택:',
+    dimensions: '치수:'
   }
 }
 
@@ -766,7 +784,7 @@ const ProductDetail: React.FC = () => {
       }
     }
     convertPrice()
-  }, [product, language])
+  }, [product, language, currentPrice])
 
   // Scroll to top when product changes
   useEffect(() => {
@@ -1293,7 +1311,7 @@ const ProductDetail: React.FC = () => {
               {product.variants && product.variants.length > 0 && (
                 <div className="variant-selection" style={{ marginBottom: '24px' }}>
                   <p style={{ fontWeight: 600, marginBottom: '12px', fontSize: '14px' }}>
-                    {language === 'id' ? 'Pilih Ukuran / Harga:' : 'Select Size / Price:'}
+                    {uiTranslations.selectSize}
                   </p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                     {product.variants.map((variant: { name: string, price: string }, index: number) => (
@@ -1360,7 +1378,7 @@ const ProductDetail: React.FC = () => {
                 <div style={{ fontSize: '14px', color: '#555' }}>
                   {currentDimensions && (
                     <p style={{ marginBottom: '8px' }}>
-                      <strong>{language === 'id' ? 'Dimensi: ' : 'Dimensions: '}</strong>
+                      <strong>{uiTranslations.dimensions} </strong>
                       {currentDimensions}
                     </p>
                   )}
