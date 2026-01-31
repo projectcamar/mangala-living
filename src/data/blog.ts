@@ -2898,9 +2898,16 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "インドネシア家具メーカー輸出 - SVLK認証による持続可能な木材調達",
     "category": "About Furniture",
     "excerpt": "SVLK認証を取得したインドネシアの家具メーカーが、持続可能な木材調達と環境責任をどのように確保しているかを学びます。商業家具のニーズに対応する認証輸出業者との協力の利点を発見してください。",
-    "image": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1671351967814-834d376fcd1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMHRlYWslMjB3b29kJTIwZnVybml0dXJlJTIwZmFjdG9yeSUyMGludGVyaW9yfGVufDB8MHx8fDE3Njk4NTAxNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2025-01-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "",
+      "keyPoints": [],
+      "language": "id",
+      "sections": [],
+      "conclusion": ""
+    }
   },
   {
     "id": 289,
@@ -2918,7 +2925,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Panduan Memilih Furnitur Komersial di Seluruh Jabodetabek",
     "category": "Tips and Trick",
     "excerpt": "Temukan solusi furnitur industri premium untuk cafe, restoran, hotel, & kantor di seluruh Jabodetabek dengan pengalaman 25+ tahun Mangala Living.",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1719150016704-270c5a0deee4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb21tZXJjaWFsJTIwZnVybml0dXJlJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc2OTg1MDA5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-01-31",
     "author": "Helmi Ramdan",
     "customContent": {
@@ -2957,7 +2964,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Mangala Living: Your SVLK-Certified Furniture Solution",
     "category": "Tips and Trick",
     "excerpt": "Discover how Mangala Living's SVLK certification ensures legal, sustainable furniture for cafes, restaurants, hotels & offices. 25+ years expertise.",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1764001597000-4576f423d6fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMHdvb2QlMjBmdXJuaXR1cmUlMjBpbiUyMG1vZGVybiUyMGNhZmUlMjBpbnRlcmlvcnxlbnwwfDB8fHwxNzY5ODUwMTA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-01-31",
     "author": "Helmi Ramdan",
     "customContent": {
@@ -2996,7 +3003,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Furniture Cafe Berkualitas",
     "category": "Tips and Trick",
     "excerpt": "Mencari furniture cafe dengan kualitas high industrial grade? Berikut beberapa tips!",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1728399195184-3a44c89b9947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxoaWdoJTIwZW5kJTIwaW5kdXN0cmlhbCUyMGNhZmUlMjBmdXJuaXR1cmV8ZW58MHwwfHx8MTc2OTg1MDExNnww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-01-31",
     "author": "Helmi Ramdan",
     "customContent": {
@@ -3029,7 +3036,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Mengapa Memilih Mangala Living untuk Furniture Komersial Anda?",
     "category": "Tips and Trick",
     "excerpt": "Temukan mengapa Mangala Living menjadi pilihan utama untuk furniture komersial berkualitas sejak 1999. Solusi custom untuk cafe, restoran, hotel, dan kantor.",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1621293954908-907159247fc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb21tZXJjaWFsJTIwaW50ZXJpb3IlMjBmdXJuaXR1cmUlMjBkZXNpZ258ZW58MHwwfHx8MTc2OTg1MDEyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-01-31",
     "author": "Helmi Ramdan",
     "customContent": {
@@ -3068,7 +3075,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Furniture Industri di Indonesia: Tren & Strategi Bisnis",
     "category": "Tips and Trick",
     "excerpt": "Pelajari tren furniture industri di Indonesia dan strategi bisnis untuk cafe, restoran, dan hotel. Mangala Living hadir dengan solusi premium sejak 1999.",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1616059214795-96778fb58dae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMGxvYmJ5JTIwZnVybml0dXJlJTIwaW5kb25lc2lhfGVufDB8MHx8fDE3Njk4NTAxMjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-01-31",
     "author": "Helmi Ramdan",
     "customContent": {
@@ -3111,7 +3118,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "مانجالا ليفينج هي الحل الأفضل",
     "category": "Tips and Trick",
     "excerpt": "مانجالا ليفينج توفر أفضل حلول الأثاث للقهاوي والمطاعم والفنادق والمكاتب",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1723465313715-586dd9689b8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMGxvYmJ5JTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc2OTg1MDEwOXww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-01-31",
     "author": "Helmi Ramdan",
     "customContent": {
