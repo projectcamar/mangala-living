@@ -11,6 +11,7 @@ export interface BlogPost {
   // Custom content (optional) - takes priority over AI-generated content
   customContent?: {
     introduction?: string // Rich HTML content
+    keyPoints?: string[] // Key takeaways/bullets
     sections?: Array<{
       heading: string
       content: string // Rich HTML content

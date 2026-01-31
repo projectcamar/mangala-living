@@ -166,6 +166,7 @@ const AdminBlogManager: React.FC = () => {
                 category: article.category || p.category,
                 customContent: {
                     introduction: article.introduction || '',
+                    keyPoints: article.keyPoints || [],
                     sections: article.sections || [],
                     conclusion: article.conclusion || ''
                 }
@@ -411,6 +412,7 @@ const AdminBlogManager: React.FC = () => {
                             {editingPost && (
                                 <BlogContentEditor
                                     introduction={editingPost.customContent?.introduction || ''}
+                                    keyPoints={editingPost.customContent?.keyPoints || []}
                                     sections={editingPost.customContent?.sections || []}
                                     conclusion={editingPost.customContent?.conclusion || ''}
                                     onIntroductionChange={(value) =>
@@ -424,13 +426,25 @@ const AdminBlogManager: React.FC = () => {
                                             }
                                         } : null)
                                     }
+                                    onKeyPointsChange={(points) =>
+                                        setEditingPost(p => p ? {
+                                            ...p,
+                                            customContent: {
+                                                ...p.customContent,
+                                                keyPoints: points,
+                                                introduction: p.customContent?.introduction || '',
+                                                sections: p.customContent?.sections || [],
+                                                conclusion: p.customContent?.conclusion || ''
+                                            }
+                                        } : null)
+                                    }
                                     onSectionsChange={(sections) =>
                                         setEditingPost(p => p ? {
                                             ...p,
                                             customContent: {
                                                 ...p.customContent,
+                                                sections: sections,
                                                 introduction: p.customContent?.introduction || '',
-                                                sections,
                                                 conclusion: p.customContent?.conclusion || ''
                                             }
                                         } : null)

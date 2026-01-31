@@ -7,18 +7,22 @@ interface ContentSection {
 
 interface BlogContentEditorProps {
     introduction: string;
+    keyPoints?: string[];
     sections: ContentSection[];
     conclusion: string;
     onIntroductionChange: (value: string) => void;
+    onKeyPointsChange: (points: string[]) => void;
     onSectionsChange: (sections: ContentSection[]) => void;
     onConclusionChange: (value: string) => void;
 }
 
 export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
     introduction,
+    keyPoints = [],
     sections,
     conclusion,
     onIntroductionChange,
+    onKeyPointsChange,
     onSectionsChange,
     onConclusionChange
 }) => {
@@ -51,14 +55,55 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
     return (
         <div className="content-editor">
             <div className="editor-section-block">
-                <h3 className="editor-section-title">📝 Introduction</h3>
-                <textarea
-                    value={introduction}
-                    onChange={(e) => onIntroductionChange(e.target.value)}
-                    placeholder="Write an engaging introduction..."
-                    rows={4}
-                    className="content-textarea"
-                />
+                <div className="editor-section">
+                    <label>📝 Introduction</label>
+                    <textarea
+                        value={introduction}
+                        onChange={(e) => onIntroductionChange(e.target.value)}
+                        className="content-textarea"
+                        rows={6}
+                        placeholder="Write an engaging introduction..."
+                    />
+                </div>
+
+                <div className="editor-section">
+                    <div className="section-header">
+                        <label>🔑 Key Takeaways (Optional)</label>
+                        <button
+                            className="add-section-btn small"
+                            onClick={() => onKeyPointsChange([...keyPoints, ''])}
+                        >
+                            + Add Point
+                        </button>
+                    </div>
+                    <div className="keypoints-list">
+                        {keyPoints.map((point, index) => (
+                            <div key={index} className="keypoint-item">
+                                <span className="keypoint-number">{index + 1}.</span>
+                                <input
+                                    type="text"
+                                    value={point}
+                                    onChange={(e) => {
+                                        const newPoints = [...keyPoints];
+                                        newPoints[index] = e.target.value;
+                                        onKeyPointsChange(newPoints);
+                                    }}
+                                    className="keypoint-input"
+                                    placeholder="Key takeaway point..."
+                                />
+                                <button
+                                    className="remove-btn"
+                                    onClick={() => onKeyPointsChange(keyPoints.filter((_, i) => i !== index))}
+                                >
+                                    ×
+                                </button>
+                            </div>
+                        ))}
+                        {keyPoints.length === 0 && (
+                            <p className="empty-state-text">No key points added yet. Add points to highlight main takeaways.</p>
+                        )}
+                    </div>
+                </div>
             </div>
 
             <div className="editor-section-block">

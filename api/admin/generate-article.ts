@@ -17,6 +17,7 @@ interface ArticleContent {
     excerpt: string;
     category: string;
     introduction: string;
+    keyPoints?: string[];
     sections: Array<{
         heading: string;
         content: string;
@@ -36,6 +37,11 @@ IMPORTANT: You MUST respond with ONLY a valid JSON object, no additional text be
   "excerpt": "Brief summary (max 160 characters for meta description)",
   "category": "One of: Tips and Trick, Workshop & Production, Commercial Furniture, About Furniture, Furniture Information, Furniture Guide, Design Inspiration",
   "introduction": "Engaging opening paragraph (2-3 sentences)",
+  "keyPoints": [
+    "Key takeaway 1",
+    "Key takeaway 2",
+    "Key takeaway 3 (max 5 points)"
+  ],
   "sections": [
     {
       "heading": "Section heading",

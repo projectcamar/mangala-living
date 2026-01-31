@@ -9,7 +9,7 @@ import Breadcrumb from '../components/Breadcrumb'
 import ServiceAreasSection from '../components/ServiceAreasSection'
 import AuthorCard from '../components/AuthorCard'
 import { getPostBySlug, BLOG_POSTS } from '../data/blog'
-import { getBlogPostContentLocalized } from '../data/blogContent'
+import { getBlogPostContentLocalized, type BlogSection } from '../data/blogContent'
 import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structuredData'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, truncateTitle, truncateMetaDescription } from '../utils/seo'
 import BlogProductShowcase from '../components/BlogProductShowcase'
@@ -300,7 +300,7 @@ const BlogPost: React.FC = () => {
       ...(post.customContent?.sections?.map(section => ({
         heading: section.heading,
         paragraphs: [section.content]
-      })) || []),
+      } as BlogSection)) || []),
       // Conclusion section
       ...(post.customContent?.conclusion ? [{
         heading: '',
@@ -586,6 +586,16 @@ const BlogPost: React.FC = () => {
 
             <div className="blog-post-layout">
               <article className="blog-post-article" aria-labelledby="blog-post-title">
+                {post.customContent?.keyPoints && post.customContent.keyPoints.length > 0 && (
+                  <div className="key-takeaways-box">
+                    <h3>🔑 Key Takeaways</h3>
+                    <ul>
+                      {post.customContent.keyPoints.map((point, idx) => (
+                        <li key={idx}>{point}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
                 {content.sections.map((section, index) => (
                   <React.Fragment key={index}>
                     <section className="blog-post-section">
