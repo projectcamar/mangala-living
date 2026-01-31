@@ -3254,6 +3254,135 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       "conclusion": "Dengan memilih hollowline Indonesia berkualitas dan menggunakan tips yang tepat, Anda dapat menciptakan ruangan yang cantik dan fungsional. Mangala Living siap membantu Anda dalam menciptakan ruangan yang sesuai dengan kebutuhan Anda. Kunjungi kami sekarang juga untuk mendapatkan informasi lebih lanjut tentang hollowline Indonesia berkualitas."
     }
+  },
+  {
+    "id": 299,
+    "slug": "pourquoi-acheter-des-meubles-en-indonesie",
+    "title": "Meubles Indonésiens",
+    "category": "Tips and Trick",
+    "excerpt": "Découvrez les avantages de l'achat de meubles en Indonésie, avec son héritage culturel riche et ses matières premières de qualité",
+    "image": "https://images.unsplash.com/photo-1709739320077-7fa1ab8bdef5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwdGVha3dvb2QlMjBmdXJuaXR1cmUlMjBjcmFmdHNtYW5zaGlwfGVufDB8MHx8fDE3Njk4NTkyMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-01-31 11:33",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "L'Indonésie est réputée pour son riche héritage culturel et ses matières premières de qualité, notamment le teck et le mahoni. Les meubles indonésiens sont connus pour leur beauté, leur durabilité et leur authenticité. Dans cet article, nous allons explorer les raisons pour lesquelles vous devriez considérer l'achat de meubles en Indonésie.",
+      "keyPoints": [
+        "Héritage culturel riche et authenticité",
+        "Matières premières de qualité, notamment le teck et le mahoni",
+        "Durabilité et longévité des meubles indonésiens",
+        "Designs uniques et personnalisables",
+        "Prix compétitifs et qualité supérieure"
+      ],
+      "language": "fr",
+      "sections": [
+        {
+          "heading": "L'héritage culturel indonésien",
+          "content": "L'Indonésie est un pays aux mille îles, avec une riche histoire et une culture diverse. Les meubles indonésiens reflètent cette diversité, avec des designs qui intègrent des éléments traditionnels et modernes. Le teck et le mahoni sont des matières premières de choix pour les meubles indonésiens, connus pour leur beauté et leur durabilité. <br> Les meubles indonésiens sont souvent ornés de motifs traditionnels, tels que les batiks et les ikats, qui ajoutent une touche d'authenticité et de culture à chaque pièce.",
+          "imageSearchQuery": "indonesian traditional furniture patterns",
+          "image": "https://images.unsplash.com/photo-1643760066062-b65effdd2e3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwdHJhZGl0aW9uYWwlMjBmdXJuaXR1cmUlMjBwYXR0ZXJuc3xlbnwwfDB8fHwxNzY5ODU5MjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "indonesian traditional furniture patterns"
+        },
+        {
+          "heading": "Les avantages des meubles indonésiens",
+          "content": "Les meubles indonésiens offrent de nombreux avantages, notamment leur durabilité et leur longévité. Les meubles en teck et en mahoni sont résistants aux insectes et aux champignons, et peuvent durer des décennies avec un minimum d'entretien. <br> De plus, les meubles indonésiens sont souvent personnalisables, ce qui permet aux clients de choisir les designs et les matières premières qui leur conviennent le mieux. Les prix des meubles indonésiens sont également compétitifs, ce qui les rend accessibles à un large public."
+        },
+        {
+          "heading": "Mangala Living, votre partenaire pour les meubles indonésiens",
+          "content": "Mangala Living est une entreprise indonésienne spécialisée dans la fabrication de meubles de haute qualité. Avec plus de 25 ans d'expérience et plus de 1000 projets réalisés, Mangala Living est votre partenaire idéal pour les meubles indonésiens. <br> Notre équipe de designers et d'artisans travaille en étroite collaboration pour créer des meubles uniques et personnalisés qui répondent aux besoins de chaque client. Nous utilisons uniquement des matières premières de qualité, notamment le teck et le mahoni, pour garantir la durabilité et la longévité de nos meubles."
+        },
+        {
+          "heading": "Conseils pour l'achat de meubles indonésiens",
+          "content": "Lorsque vous achetez des meubles indonésiens, il est important de considérer plusieurs facteurs, notamment la qualité des matières premières, la durabilité et le design. <br> Il est également important de choisir un fabricant réputé et expérimenté, tel que Mangala Living, pour garantir la qualité et la longévité de vos meubles. <br> Enfin, n'oubliez pas de vérifier les certificats de qualité et les garanties offertes par le fabricant, pour vous assurer que vos meubles sont conformes aux normes internationales.",
+          "productId": 12
+        }
+      ],
+      "conclusion": "En conclusion, les meubles indonésiens offrent une combinaison unique de beauté, de durabilité et d'authenticité. Avec leur riche héritage culturel et leurs matières premières de qualité, les meubles indonésiens sont le choix idéal pour ceux qui cherchent à ajouter une touche d'exotisme et de elegance à leur décoration intérieure. <br> Mangala Living est votre partenaire idéal pour les meubles indonésiens, avec notre expérience et notre expertise dans la fabrication de meubles de haute qualité. N'hésitez pas à nous contacter pour en savoir plus sur nos produits et nos services."
+    }
+  },
+  {
+    "id": 300,
+    "slug": "meubles-industriels-indonesie-retail-france",
+    "title": "Meubles Industriels",
+    "category": "Tips and Trick",
+    "excerpt": "Découvrez les meubles industriels indonésiens parfaits pour le retail en France",
+    "image": "https://images.unsplash.com/photo-1762087577636-9d3fb0ab50d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwZnJlbmNoJTIwcmV0YWlsJTIwc3RvcmUlMjBkZXNpZ258ZW58MHwwfHx8MTc2OTg1OTMxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-01-31 11:34",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "Les meubles industriels sont de plus en plus populaires dans le secteur du retail en France. Avec plus de 25 ans d'expérience et plus de 1000 projets réalisés, Mangala Living est l'un des principaux fabricants d'ameublement industriel en Indonésie. Nous proposons des solutions de meubles sur mesure pour les cafés, restaurants, hôtels et bureaux.",
+      "keyPoints": [
+        "Meubles industriels robustes et durables",
+        "Conception sur mesure pour répondre aux besoins spécifiques",
+        "Exportation vers la France et d'autres pays",
+        "Prix compétitifs et qualité exceptionnelle"
+      ],
+      "language": "fr",
+      "sections": [
+        {
+          "heading": " Pourquoi les meubles industriels sont-ils importants pour le retail ?",
+          "content": "Les meubles industriels offrent une esthétique unique et robuste qui peut renforcer l'identité de votre marque. Ils sont également très durables et peuvent résister aux intempéries, ce qui les rend parfaits pour les espaces de vente au détail. <br> Chez Mangala Living, nous proposons une gamme de meubles industriels qui peuvent être personnalisés pour répondre aux besoins spécifiques de votre entreprise.",
+          "imageSearchQuery": "industrial style french cafe interior",
+          "image": "https://images.unsplash.com/photo-1747928272448-49524fcb5cfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc3R5bGUlMjBmcmVuY2glMjBjYWZlJTIwaW50ZXJpb3J8ZW58MHwwfHx8MTc2OTg1OTMxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial style french cafe interior"
+        },
+        {
+          "heading": "Conseils pratiques pour choisir les meubles industriels parfaits",
+          "content": "Lorsque vous choisissez des meubles industriels pour votre espace de vente au détail, il est important de considérer plusieurs facteurs tels que la qualité, la durabilité et l'esthétique. Vous devez également prendre en compte les besoins spécifiques de votre entreprise et la manière dont les meubles seront utilisés. <br> Chez Mangala Living, nous proposons des conseils d'experts pour vous aider à choisir les meubles industriels parfaits pour votre entreprise."
+        },
+        {
+          "heading": "Les solutions de meubles industriels de Mangala Living",
+          "content": "Nous proposons une gamme de meubles industriels conçus pour répondre aux besoins spécifiques des entreprises de retail. Notre produit phare, le <strong>Frame Loft Bookshelf</strong> (référence produit 1), est idéal pour les espaces de vente au détail qui nécessitent un meuble de stockage robuste et durable. <br> Nous proposons également des solutions de meubles sur mesure pour les cafés, restaurants et hôtels."
+        },
+        {
+          "heading": "Exportation et livraison",
+          "content": "Nous proposons une livraison rapide et fiable pour nos clients en France et dans d'autres pays. Notre équipe d'experts s'assure que les meubles soient emballés et expédiés de manière sécurisée pour garantir leur arrivée en parfait état. <br> Nous proposons également des options de personnalisation pour les meubles, y compris les couleurs, les matériaux et les dimensions.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Les meubles industriels sont une excellente option pour les entreprises de retail en France qui cherchent à créer un espace unique et durable. Chez Mangala Living, nous proposons des solutions de meubles sur mesure pour répondre aux besoins spécifiques de votre entreprise. N'hésitez pas à nous contacter pour en savoir plus sur nos produits et nos services."
+    }
+  },
+  {
+    "id": 301,
+    "slug": "meubles-industriels-pour-cafes",
+    "title": "Meubles industriels pour cafés",
+    "category": "Tips and Trick",
+    "excerpt": "Créez une ambiance industrielle unique dans votre café ou restaurant avec Mangala Living",
+    "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3Njk4NDg1MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-01-31 11:35",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "Les cafés et les restaurants ont besoin d'une atmosphère unique pour attirer les clients. Mangala Living, fournisseur de meubles industriels depuis plus de 25 ans, vous aidera à créer une ambiance industrielle parfaite. Avec plus de 1000 projets réalisés, notre équipe de designers et d'artisans peut concevoir des meubles sur mesure pour répondre à vos besoins spécifiques.",
+      "keyPoints": [
+        "Meubles industriels robustes et durables",
+        "Conception sur mesure pour répondre à vos besoins",
+        "Expérience de plus de 25 ans dans la fabrication de meubles"
+      ],
+      "language": "fr",
+      "sections": [
+        {
+          "heading": "Pourquoi choisir des meubles industriels ?",
+          "content": "Les meubles industriels sont parfaits pour les cafés et les restaurants qui veulent créer une atmosphère unique et robuste. <strong>La durabilité</strong> est l'un des principaux avantages de ces meubles, car ils sont conçus pour résister aux intempéries et aux usures quotidiennes. De plus, les meubles industriels peuvent être personnalisés pour répondre à vos besoins spécifiques, ce qui vous permet de créer une ambiance qui reflète votre marque.",
+          "imageSearchQuery": "industrial cafe furniture",
+          "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGZ1cm5pdHVyZXxlbnwwfDB8fHwxNzY5ODU5MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial cafe furniture"
+        },
+        {
+          "heading": "Conseils pour choisir les bons meubles industriels",
+          "content": "Lorsque vous choisissez des meubles industriels pour votre café ou votre restaurant, il est important de considérer plusieurs facteurs. <em>La qualité des matériaux</em> est essentielle, car elle affecte la durabilité et la sécurité des meubles. Il est également important de prendre en compte <em>l'espace disponible</em> et de choisir des meubles qui sont proportionnés à votre espace. Enfin, <em>la personnalisation</em> est un élément clé pour créer une ambiance unique et refléter votre marque."
+        },
+        {
+          "heading": "Les solutions Mangala Living",
+          "content": "Mangala Living propose une large gamme de meubles industriels pour les cafés et les restaurants. Notre <strong>équipe de designers</strong> peut concevoir des meubles sur mesure pour répondre à vos besoins spécifiques. Nous utilisons des <strong>matériaux de haute qualité</strong> pour garantir la durabilité et la sécurité de nos meubles. Nous avons également une <strong>expérience de plus de 25 ans</strong> dans la fabrication de meubles, ce qui nous permet de vous offrir des produits de haute qualité et des services exceptionnels."
+        },
+        {
+          "heading": "Comment créer une ambiance industrielle unique",
+          "content": "Pour créer une ambiance industrielle unique dans votre café ou restaurant, il est important de considérer plusieurs éléments. <em>La lumière</em> est un élément clé, car elle peut affecter l'atmosphère et la ambiance de votre espace. Il est également important de prendre en compte <em>les couleurs</em> et de choisir des tons qui reflètent votre marque et créent une ambiance industrielle. Enfin, <em>les accessoires</em> tels que les plantes et les décorations peuvent ajouter une touche personnelle à votre espace.",
+          "productId": 12
+        }
+      ],
+      "conclusion": "En conclusion, les meubles industriels sont parfaits pour les cafés et les restaurants qui veulent créer une ambiance unique et robuste. Avec Mangala Living, vous pouvez concevoir des meubles sur mesure pour répondre à vos besoins spécifiques et créer une ambiance industrielle parfaite. N'hésitez pas à nous contacter pour en savoir plus sur nos solutions et nos produits."
+    }
   }
 ]
 
