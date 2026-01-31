@@ -51,7 +51,7 @@ const NotFound: React.FC = () => {
         // Try to get location from IP
         const response = await fetch('https://ipapi.co/json/')
         const data = await response.json()
-        
+
         if (data.country_code === 'ID') {
           setIsIndonesian(true)
         }
@@ -93,7 +93,7 @@ const NotFound: React.FC = () => {
 
   // Translations
   const translations = {
-    title: isIndonesian 
+    title: isIndonesian
       ? '404 - Halaman Tidak Ditemukan | Mangala Living'
       : '404 - Page Not Found | Mangala Living',
     description: isIndonesian
@@ -122,10 +122,10 @@ const NotFound: React.FC = () => {
   if (isLoading) {
     return (
       <div className="not-found-page">
-        <div style={{ 
-          display: 'flex', 
-          justifyContent: 'center', 
-          alignItems: 'center', 
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
           height: '100vh',
           background: '#f8f9fa'
         }}>
@@ -150,15 +150,15 @@ const NotFound: React.FC = () => {
 
   return (
     <div className="not-found-page">
-      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
+      <AnnouncementBar language={isIndonesian ? 'id' : 'en'} isIndonesian={isIndonesian} />
       <Helmet>
         <title>{translations.title}</title>
         <meta name="description" content={translations.description} />
         <meta name="robots" content="noindex, follow" />
       </Helmet>
-      
+
       <Header isIndonesian={isIndonesian} />
-      
+
       <main className="not-found-main">
         <div className="container">
           <div className="not-found-content">
@@ -205,38 +205,38 @@ const NotFound: React.FC = () => {
                       </div>
                       <div className="product-info">
                         <h4 className="product-name">{translatedName}</h4>
-                      <p className="product-category">
-                        {product.categories.join(', ')}
-                      </p>
-                      {usdPrices[product.id] ? (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                          <p
-                            className="product-price"
-                            style={{
-                              margin: 0,
-                              fontSize: '0.875rem',
-                              fontWeight: 600,
-                              color: '#333'
-                            }}
-                          >
-                            {isIndonesian ? product.price : usdPrices[product.id]}
-                          </p>
-                          <p
-                            style={{
-                              margin: 0,
-                              fontSize: '0.75rem',
-                              fontWeight: 400,
-                              color: '#999'
-                            }}
-                          >
-                            {isIndonesian ? usdPrices[product.id] : product.price}
-                          </p>
-                        </div>
-                      ) : (
-                        <p className="product-price">{product.price}</p>
-                      )}
-                    </div>
-                  </Link>
+                        <p className="product-category">
+                          {product.categories.join(', ')}
+                        </p>
+                        {usdPrices[product.id] ? (
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                            <p
+                              className="product-price"
+                              style={{
+                                margin: 0,
+                                fontSize: '0.875rem',
+                                fontWeight: 600,
+                                color: '#333'
+                              }}
+                            >
+                              {isIndonesian ? product.price : usdPrices[product.id]}
+                            </p>
+                            <p
+                              style={{
+                                margin: 0,
+                                fontSize: '0.75rem',
+                                fontWeight: 400,
+                                color: '#999'
+                              }}
+                            >
+                              {isIndonesian ? usdPrices[product.id] : product.price}
+                            </p>
+                          </div>
+                        ) : (
+                          <p className="product-price">{product.price}</p>
+                        )}
+                      </div>
+                    </Link>
                   )
                 })}
               </div>
@@ -249,7 +249,7 @@ const NotFound: React.FC = () => {
           </div>
         </div>
       </main>
-      
+
       <Footer isIndonesian={isIndonesian} />
     </div>
   )
