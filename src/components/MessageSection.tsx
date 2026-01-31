@@ -1,6 +1,6 @@
 import React from 'react'
 import '../pages/About.css'
-import showroomImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
+import showroomImage from '../assets/hero-messagefrommangala.webp'
 
 interface MessageSectionProps {
   isIndonesian?: boolean
@@ -92,7 +92,7 @@ const MessageSection: React.FC<MessageSectionProps> = ({ isIndonesian = false, l
         }
     }
   }
-  
+
   const t = getTranslations()
   return (
     <section className="about-message-section">
@@ -108,12 +108,12 @@ const MessageSection: React.FC<MessageSectionProps> = ({ isIndonesian = false, l
                 <p className="about-message-paragraph">
                   {t.paragraph1}
                 </p>
-                
+
                 <h3 className="about-message-subtitle">{t.subtitle2}</h3>
                 <p className="about-message-paragraph">
                   {t.paragraph2}
                 </p>
-                
+
                 <h3 className="about-message-subtitle">{t.subtitle3}</h3>
                 <p className="about-message-paragraph">
                   {t.paragraph3}
@@ -121,10 +121,10 @@ const MessageSection: React.FC<MessageSectionProps> = ({ isIndonesian = false, l
               </>
             </div>
           </div>
-          
+
           <div className="about-message-image-wrapper">
-            <img 
-              src={showroomImage} 
+            <img
+              src={showroomImage}
               alt={isIndonesian ? "Workshop Mangala Living Bekasi - Manufacturer Furniture Industrial Besi Custom dengan Peralatan Modern dan Pengrajin Berpengalaman" : "Mangala Living Bekasi Workshop - Industrial Steel Custom Furniture Manufacturer with Modern Equipment and Experienced Craftsmen"}
               title={isIndonesian ? "Workshop Mangala Living - Premium Industrial Furniture Manufacturing in Bekasi Since 1999" : "Mangala Living Workshop - Premium Industrial Furniture Manufacturing in Bekasi Since 1999"}
               className="about-message-image"

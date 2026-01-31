@@ -5,7 +5,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
+import heroImage from '../assets/main-hero-image.webp'
 import { getPostsByPage, getTotalPages, getAllBlogPosts } from '../data/blog'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, truncateTitle, truncateMetaDescription } from '../utils/seo'
 import { getCurrentLanguage, getLinkWithLanguage, type LanguageCode } from '../utils/languageManager'
@@ -261,20 +261,20 @@ const BLOG_PAGINATION_TRANSLATIONS: Record<
 const Blog: React.FC = () => {
   const location = useLocation()
   const [searchParams] = useSearchParams()
-  
+
   const [language, setLanguage] = useState<LanguageCode>(() => {
     return getCurrentLanguage(location.pathname, location.search)
   })
-  
+
   const [isArchiveExpanded, setIsArchiveExpanded] = useState(false)
-  
+
   useEffect(() => {
     const currentLang = getCurrentLanguage(location.pathname, location.search)
     if (currentLang !== language) {
       setLanguage(currentLang)
     }
   }, [location.pathname, location.search, language])
-  
+
   const isIndonesian = language === 'id'
   const postsPerPage = 8
   const rawPage = Number.parseInt(searchParams.get('page') || '1', 10)
@@ -299,8 +299,8 @@ const Blog: React.FC = () => {
     new Intl.NumberFormat(paginationTexts.numberLocale).format(value)
 
   return (
-      <div className="blog-page">
-        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
+    <div className="blog-page">
+      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{truncateTitle('Blog Furniture Industrial & Tips Desain - Mangala Living')}</title>
         <meta name="description" content={truncateMetaDescription('Panduan lengkap furniture industrial untuk cafe, restoran, hotel. Tips memilih furniture besi custom, cara merawat, tren desain 2025, perbandingan material, harga, dan area workshop Bekasi Jakarta. 135+ artikel berbasis pengalaman 25 tahun Mangala Living.')} />
@@ -314,7 +314,7 @@ const Blog: React.FC = () => {
         ))}
         {prevUrl && <link rel="prev" href={`https://mangala-living.com${prevUrl}`} />}
         {nextUrl && <link rel="next" href={`https://mangala-living.com${nextUrl}`} />}
-        
+
         {/* AI Search Optimization: Clear article purpose */}
         <meta property="og:title" content="Blog Furniture Industrial - 135+ Artikel Tips & Panduan Lengkap" />
         <meta property="og:description" content="Artikel komprehensif tentang furniture industrial: tips pemilihan, perbandingan material, panduan harga, area coverage Jabodetabek, dan best practices dari 1000+ project sejak 1999." />
@@ -324,14 +324,14 @@ const Blog: React.FC = () => {
         <meta property="og:locale:alternate" content="id_ID" />
         <meta property="og:locale:alternate" content="en_US" />
       </Helmet>
-      
-        <Header isIndonesian={isIndonesian} language={language} />
-      
+
+      <Header isIndonesian={isIndonesian} language={language} />
+
       {/* Hero Section */}
       <section className="blog-hero">
         <div className="blog-hero-image">
-          <img 
-            src={heroImage} 
+          <img
+            src={heroImage}
             alt="Blog Furniture Industrial & Tips Desain Cafe Restoran - 135+ Artikel Panduan Lengkap Mangala Living"
             title="Blog Furniture Industrial - Tips & Panduan Lengkap dari Workshop Bekasi Mangala Living"
             loading="eager"
@@ -354,11 +354,11 @@ const Blog: React.FC = () => {
         <div className="blog-container">
           {/* AI Search Optimized: Clear intent and value proposition */}
           <h2 className="blog-main-title">{intro.mainTitle}</h2>
-          <div style={{ 
-            maxWidth: '900px', 
-            margin: '0 auto 3rem', 
-            padding: '1.5rem', 
-            background: '#f8f9fa', 
+          <div style={{
+            maxWidth: '900px',
+            margin: '0 auto 3rem',
+            padding: '1.5rem',
+            background: '#f8f9fa',
             borderRadius: '8px',
             borderLeft: '4px solid #2C3E50'
           }}>
@@ -373,15 +373,15 @@ const Blog: React.FC = () => {
               ))}
             </ul>
           </div>
-          
+
           {/* Blog Grid */}
           <div className="blog-grid">
             {posts.map((post) => (
               <article key={post.id} className="blog-card">
                 <Link to={`/blog/${post.slug}`} className="blog-card-link">
                   <div className="blog-card-image">
-                    <img 
-                      src={post.image} 
+                    <img
+                      src={post.image}
                       alt={`${post.title} - ${post.category} Blog Furniture Industrial Mangala Living`}
                       title={`${post.title} - ${post.category} Artikel Furniture Industrial`}
                       loading="lazy"
@@ -498,18 +498,18 @@ const Blog: React.FC = () => {
               }}
             >
               <span>
-                {language === 'id' ? "Arsip Blog Lengkap (Semua Artikel)" : 
-                 language === 'ar' ? "أرشيف المدونة الكامل (جميع المقالات)" :
-                 language === 'zh' ? "完整博客存档（所有文章）" :
-                 language === 'ja' ? "完全なブログアーカイブ（全記事）" :
-                 language === 'es' ? "Archivo Completo del Blog (Todos los Artículos)" :
-                 language === 'fr' ? "Archives Complètes du Blog (Tous les Articles)" :
-                 language === 'ko' ? "완전한 블로그 아카이브 (모든 기사)" :
-                 "Complete Blog Archive (All Articles)"}
+                {language === 'id' ? "Arsip Blog Lengkap (Semua Artikel)" :
+                  language === 'ar' ? "أرشيف المدونة الكامل (جميع المقالات)" :
+                    language === 'zh' ? "完整博客存档（所有文章）" :
+                      language === 'ja' ? "完全なブログアーカイブ（全記事）" :
+                        language === 'es' ? "Archivo Completo del Blog (Todos los Artículos)" :
+                          language === 'fr' ? "Archives Complètes du Blog (Tous les Articles)" :
+                            language === 'ko' ? "완전한 블로그 아카이브 (모든 기사)" :
+                              "Complete Blog Archive (All Articles)"}
               </span>
               {isArchiveExpanded ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
             </button>
-            <nav 
+            <nav
               className={`blog-archive-links ${isArchiveExpanded ? 'expanded' : 'collapsed'}`}
               aria-label="All blog posts"
               aria-hidden={!isArchiveExpanded}
@@ -551,9 +551,9 @@ const Blog: React.FC = () => {
           </div>
         </div>
       </section>
-      
 
-        <Footer isIndonesian={isIndonesian} language={language} />
+
+      <Footer isIndonesian={isIndonesian} language={language} />
     </div>
   )
 }

@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import { generateFAQSchema, generateLocalBusinessStructuredData } from '../utils/structuredData'
 import { getFAQBySlug } from '../data/faq'
-import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
+import heroImage from '../assets/main-hero-image.webp'
 import showroomImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
 import logoILW from '../assets/LOGO-ILW-800.png'
 import logoSVLK from '../assets/SVLK-LOGO-INDONESIA.png'
@@ -657,7 +657,7 @@ const About: React.FC = () => {
   useEffect(() => {
     const stored = getStoredLanguage()
     const urlLang = getCurrentLanguage(location.pathname, location.search)
-    
+
     if (stored || urlLang !== 'en') {
       return
     }
@@ -754,89 +754,89 @@ const About: React.FC = () => {
         </div>
       </section>
 
-        <section className="showrooms-section">
-          <div className="showrooms-container">
-            <h2 className="showrooms-title">{translations.showrooms.title}</h2>
-            <p className="showrooms-intro">{translations.showrooms.intro}</p>
+      <section className="showrooms-section">
+        <div className="showrooms-container">
+          <h2 className="showrooms-title">{translations.showrooms.title}</h2>
+          <p className="showrooms-intro">{translations.showrooms.intro}</p>
 
-            <div className="showrooms-locations">
-              <div className="showroom-location">
-                <h3>{translations.showrooms.workshopHeading}</h3>
-                <p>
-                  <a href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9" target="_blank" rel="noopener noreferrer">
-                    Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
-                  </a>
-                </p>
-                <p className="footer-phone">+6288801146881</p>
-              </div>
-            </div>
-
-            <p className="showrooms-description">{translations.showrooms.description}</p>
-
-            <div style={{ margin: '30px auto', maxWidth: 900 }}>
-              <div
-                style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: 8 }}
-              >
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4698705313735!2d107.04449967316903!3d-6.3331217619628015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699155096769b1%3A0x32e8009b574bfb5e!2sMangala%20Living%20(Workshop)!5e0!3m2!1sen!2sid!4v1761932272164!5m2!1sen!2sid"
-                  width="600"
-                  height="450"
-                  style={{
-                    border: 0,
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%'
-                  }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Mangala Living Workshop Map"
-                ></iframe>
-              </div>
-            </div>
-
-            <div className="showrooms-buttons">
-              <a
-                href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="showroom-btn"
-              >
-                {translations.showrooms.button}
-              </a>
+          <div className="showrooms-locations">
+            <div className="showroom-location">
+              <h3>{translations.showrooms.workshopHeading}</h3>
+              <p>
+                <a href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9" target="_blank" rel="noopener noreferrer">
+                  Jl. Raya Setu Cibitung - Bekasi, Telajung, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17320
+                </a>
+              </p>
+              <p className="footer-phone">+6288801146881</p>
             </div>
           </div>
-        </section>
 
-        <section className="certifications-section">
-          <div className="certifications-container">
-            <h2 className="certifications-title">{translations.certifications.title}</h2>
-            <p className="certifications-subtitle">{translations.certifications.subtitle}</p>
+          <p className="showrooms-description">{translations.showrooms.description}</p>
 
-            <div className="certifications-grid">
-              {translations.certifications.items.map((item, index) => (
-                <div className="certification-card" key={item.name}>
-                  <div className="certification-logo">
-                    <img
-                      src={index === 0 ? logoILW : logoSVLK}
-                      alt={item.imageAlt}
-                      loading="lazy"
-                      decoding="async"
-                      width="180"
-                      height="180"
-                    />
-                  </div>
-                  <div className="certification-content">
-                    <h3>{item.name}</h3>
-                    <p>{item.description}</p>
-                  </div>
+          <div style={{ margin: '30px auto', maxWidth: 900 }}>
+            <div
+              style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: 8 }}
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4698705313735!2d107.04449967316903!3d-6.3331217619628015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699155096769b1%3A0x32e8009b574bfb5e!2sMangala%20Living%20(Workshop)!5e0!3m2!1sen!2sid!4v1761932272164!5m2!1sen!2sid"
+                width="600"
+                height="450"
+                style={{
+                  border: 0,
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%'
+                }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mangala Living Workshop Map"
+              ></iframe>
+            </div>
+          </div>
+
+          <div className="showrooms-buttons">
+            <a
+              href="https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="showroom-btn"
+            >
+              {translations.showrooms.button}
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="certifications-section">
+        <div className="certifications-container">
+          <h2 className="certifications-title">{translations.certifications.title}</h2>
+          <p className="certifications-subtitle">{translations.certifications.subtitle}</p>
+
+          <div className="certifications-grid">
+            {translations.certifications.items.map((item, index) => (
+              <div className="certification-card" key={item.name}>
+                <div className="certification-logo">
+                  <img
+                    src={index === 0 ? logoILW : logoSVLK}
+                    alt={item.imageAlt}
+                    loading="lazy"
+                    decoding="async"
+                    width="180"
+                    height="180"
+                  />
                 </div>
-              ))}
-            </div>
+                <div className="certification-content">
+                  <h3>{item.name}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
       <section className="why-choose-section">
         <div className="why-choose-container">

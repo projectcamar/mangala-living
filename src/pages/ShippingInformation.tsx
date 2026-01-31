@@ -6,7 +6,7 @@ import AnnouncementBar from '../components/AnnouncementBar'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import ServiceAreasSection from '../components/ServiceAreasSection'
-import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
+import heroImage from '../assets/main-hero-image.webp'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import { getCurrentLanguage, getStoredLanguage, detectLanguageFromIP, type LanguageCode } from '../utils/languageManager'
@@ -485,7 +485,7 @@ const ShippingInformation: React.FC = () => {
   const [language, setLanguage] = useState<LanguageCode>(() => {
     return getCurrentLanguage(location.pathname, location.search)
   })
-  
+
   useEffect(() => {
     const currentLang = getCurrentLanguage(location.pathname, location.search)
     if (currentLang !== language) {
@@ -497,7 +497,7 @@ const ShippingInformation: React.FC = () => {
   useEffect(() => {
     const stored = getStoredLanguage()
     const urlLang = getCurrentLanguage(location.pathname, location.search)
-    
+
     // Skip IP detection if user has stored preference or URL has language
     if (stored || urlLang !== 'en') {
       return

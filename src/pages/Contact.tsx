@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import heroImage from '../assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp'
+import heroImage from '../assets/main-hero-image.webp'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import { getCurrentLanguage, getStoredLanguage, detectLanguageFromIP, type LanguageCode } from '../utils/languageManager'
@@ -367,7 +367,7 @@ const Contact: React.FC = () => {
   useEffect(() => {
     const stored = getStoredLanguage()
     const urlLang = getCurrentLanguage(location.pathname, location.search)
-    
+
     if (stored || urlLang !== 'en') {
       return
     }

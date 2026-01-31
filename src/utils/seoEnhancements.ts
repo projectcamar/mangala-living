@@ -275,14 +275,14 @@ export const generateMetaDescription = (params: {
   cta?: string
 }) => {
   const { product, service, location, type, cta } = params
-  
+
   const descriptions = {
     product: `${product} dari Mangala Living - Furniture industrial berkualitas premium. Harga pabrik, custom design, garansi 1 tahun. ${location || 'Bekasi'}. ${cta || 'Pesan sekarang!'}`,
     service: `${service} oleh Mangala Living. Pengalaman 25+ tahun, 1000+ klien puas. Material premium, finishing powder coating. ${location || 'Melayani Jakarta, Bekasi, Jabodetabek'}. ${cta || 'Konsultasi gratis!'}`,
     blog: `Panduan lengkap ${product || service} untuk cafe & restoran. Tips dari expert furniture industrial dengan 25+ tahun pengalaman. ${cta || 'Baca selengkapnya!'}`,
     page: `${product || service} - Mangala Living workshop furniture industrial Bekasi sejak 1999. Harga terjangkau, kualitas terbaik. ${cta || 'Hubungi kami!'}`
   }
-  
+
   return descriptions[type].substring(0, 160) // Google truncates at ~160 chars
 }
 
@@ -296,7 +296,7 @@ export const generateKeywords = (primary: string[], secondary: string[], locatio
     'furniture bekasi',
     'mangala living'
   ]
-  
+
   return [...baseKeywords, ...primary, ...secondary, ...location].join(', ')
 }
 
@@ -350,7 +350,7 @@ export const generateImageAlt = (params: {
   location?: string
 }) => {
   const { productName, category, action, location } = params
-  
+
   const parts = [
     productName,
     category && `${category} industrial`,
@@ -358,7 +358,7 @@ export const generateImageAlt = (params: {
     'Mangala Living',
     location && `${location} Bekasi`
   ].filter(Boolean)
-  
+
   return parts.join(' - ')
 }
 
@@ -538,7 +538,7 @@ export const generateEnhancedLocalBusinessSchema = () => {
       },
       {
         "@type": "ImageObject",
-        "url": "https://mangala-living.com/assets/pngtree-a-welder-works-with-metal-in-a-factory-shop.webp",
+        "url": "https://mangala-living.com/assets/main-hero-image.webp",
         ...DEFAULT_IMAGE_RIGHTS_METADATA
       }
     ],
@@ -600,7 +600,7 @@ export const getImageLoadingStrategy = (position: 'hero' | 'above-fold' | 'below
       decoding: 'async' as const
     }
   }
-  
+
   return strategies[position]
 }
 
@@ -614,7 +614,7 @@ export const getImageDimensions = (context: 'hero' | 'product' | 'thumbnail' | '
     thumbnail: { width: 400, height: 300, aspectRatio: '4/3' },
     'og-image': { width: 1200, height: 630, aspectRatio: '1.91/1' }
   }
-  
+
   return dimensions[context]
 }
 
