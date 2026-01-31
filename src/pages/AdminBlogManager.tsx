@@ -172,6 +172,7 @@ const AdminBlogManager: React.FC = () => {
                 slug: article.slug || p.slug,
                 excerpt: article.excerpt || p.excerpt,
                 category: article.category || p.category,
+                image: article.image || p.image,
                 customContent: {
                     introduction: article.introduction || '',
                     keyPoints: article.keyPoints || [],
