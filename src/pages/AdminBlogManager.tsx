@@ -200,6 +200,46 @@ const AdminBlogManager: React.FC = () => {
         }
     }
 
+    const handleSuggestImage = async () => {
+        if (!editingPost?.title) {
+            setMessage({ type: 'error', text: 'Please enter a title first so AI can suggest a relevant image' })
+            return
+        }
+
+        setIsGenerating(true)
+        setMessage(null)
+
+        try {
+            const response = await fetch('/api/admin/suggest-image', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    title: editingPost.title,
+                    excerpt: editingPost.excerpt,
+                    model: selectedModel
+                })
+            })
+
+            const result = await response.json()
+
+            if (!response.ok || !result.success) {
+                throw new Error(result.error || 'Failed to suggest image')
+            }
+
+            if (result.image) {
+                setEditingPost(p => p ? { ...p, image: result.image } : null)
+                setMessage({ type: 'success', text: `✨ Found a perfect image for: "${result.searchQuery}"` })
+            } else {
+                setMessage({ type: 'error', text: 'No matching image found on Unsplash' })
+            }
+        } catch (error) {
+            console.error('Suggest image error:', error)
+            setMessage({ type: 'error', text: `Failed to suggest image: ${error instanceof Error ? error.message : 'Unknown error'}` })
+        } finally {
+            setIsGenerating(false)
+        }
+    }
+
     const deletePost = (id: number) => {
         if (window.confirm('Delete this post? (Permanent after Sync)')) {
             setPosts(posts.filter(p => p.id !== id))
@@ -418,10 +458,10 @@ const AdminBlogManager: React.FC = () => {
                             </button>
                         </div>
 
-                        <section className="editor-section card">
-                            <h2 className="editor-h2"><Type size={18} /> Metadata Editor</h2>
-                            <div className="editor-grid">
-                                <div className="input-group">
+                        <section className="editor-section card compact">
+                            <h2 className="editor-h2"><Type size={16} /> Metadata Editor</h2>
+                            <div className="editor-grid-compact">
+                                <div className="input-group-compact span-2">
                                     <label>Article Title</label>
                                     <input
                                         type="text"
@@ -430,7 +470,7 @@ const AdminBlogManager: React.FC = () => {
                                         placeholder="Headline of the article"
                                     />
                                 </div>
-                                <div className="input-group">
+                                <div className="input-group-compact">
                                     <label>URL Slug</label>
                                     <input
                                         type="text"
@@ -439,7 +479,8 @@ const AdminBlogManager: React.FC = () => {
                                         placeholder="e.g. tips-memilih-furniture"
                                     />
                                 </div>
-                                <div className="input-group">
+
+                                <div className="input-group-compact">
                                     <label>Category</label>
                                     <select
                                         value={editingPost?.category || 'Tips and Trick'}
@@ -454,7 +495,7 @@ const AdminBlogManager: React.FC = () => {
                                         <option>Design Inspiration</option>
                                     </select>
                                 </div>
-                                <div className="input-group">
+                                <div className="input-group-compact">
                                     <label>Language</label>
                                     <select
                                         value={editingPost?.customContent?.language || 'id'}
@@ -469,34 +510,46 @@ const AdminBlogManager: React.FC = () => {
                                             }
                                         } : null)}
                                     >
-                                        <option value="id">Indonesian (Bahasa)</option>
-                                        <option value="en">English (International)</option>
-                                        <option value="ar">Arabic (العربية)</option>
-                                        <option value="zh">Chinese (中文)</option>
-                                        <option value="ja">Japanese (日本語)</option>
-                                        <option value="es">Spanish (Español)</option>
-                                        <option value="fr">French (Français)</option>
-                                        <option value="ko">Korean (한국어)</option>
+                                        <option value="id">Indonesian</option>
+                                        <option value="en">English</option>
+                                        <option value="ar">Arabic</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="ja">Japanese</option>
+                                        <option value="es">Spanish</option>
+                                        <option value="fr">French</option>
+                                        <option value="ko">Korean</option>
                                     </select>
                                 </div>
-                                <div className="input-group">
-                                    <label>Date</label>
+                                <div className="input-group-compact">
+                                    <label>Publish Date</label>
                                     <input
-                                        type="date"
-                                        value={editingPost?.date || ''}
-                                        onChange={e => setEditingPost(p => p ? { ...p, date: e.target.value } : null)}
+                                        type="datetime-local"
+                                        value={editingPost?.date?.includes(' ') ? editingPost.date.replace(' ', 'T') : editingPost?.date}
+                                        onChange={e => setEditingPost(p => p ? { ...p, date: e.target.value.replace('T', ' ') } : null)}
                                     />
                                 </div>
-                                <div className="input-group">
+
+                                <div className="input-group-compact span-2">
                                     <label>Featured Image URL</label>
-                                    <input
-                                        type="text"
-                                        value={editingPost?.image || ''}
-                                        onChange={e => setEditingPost(p => p ? { ...p, image: e.target.value } : null)}
-                                        placeholder="https://..."
-                                    />
+                                    <div className="input-with-action">
+                                        <input
+                                            type="text"
+                                            value={editingPost?.image || ''}
+                                            onChange={e => setEditingPost(p => p ? { ...p, image: e.target.value } : null)}
+                                            placeholder="https://..."
+                                        />
+                                        <button
+                                            className="action-input-btn"
+                                            onClick={handleSuggestImage}
+                                            disabled={isGenerating}
+                                            title="Suggest image from Unsplash based on Title"
+                                        >
+                                            <Sparkles size={14} />
+                                            <span>AI Suggest</span>
+                                        </button>
+                                    </div>
                                 </div>
-                                <div className="input-group full">
+                                <div className="input-group-compact">
                                     <label>Author</label>
                                     <input
                                         type="text"
@@ -504,10 +557,11 @@ const AdminBlogManager: React.FC = () => {
                                         onChange={e => setEditingPost(p => p ? { ...p, author: e.target.value } : null)}
                                     />
                                 </div>
-                                <div className="input-group full">
-                                    <label>Meta Excerpt (Used for SEO and Card Preview)</label>
+
+                                <div className="input-group-compact span-3">
+                                    <label>Meta Excerpt (SEO Description)</label>
                                     <textarea
-                                        rows={3}
+                                        rows={2}
                                         value={editingPost?.excerpt || ''}
                                         onChange={e => setEditingPost(p => p ? { ...p, excerpt: e.target.value } : null)}
                                     />
@@ -874,6 +928,28 @@ const AdminBlogManager: React.FC = () => {
 
                 .back-link { background: #fff; border: 1px solid #ddd; color: #444; cursor: pointer; padding: 8px; border-radius: 8px; margin-right: 15px; transition: 0.2s; }
                 .back-link:hover { background: #f8f9fa; border-color: #8B7355; color: #8B7355; }
+
+                /* Compact Editor Styles */
+                .editor-grid-compact { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+                .input-group-compact { display: flex; flex-direction: column; gap: 5px; }
+                .input-group-compact label { font-size: 0.75rem; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.5px; }
+                .input-group-compact input, .input-group-compact select, .input-group-compact textarea { 
+                    padding: 8px 12px; border: 1.5px solid #eee; border-radius: 6px; font-size: 0.9rem; transition: 0.2s; background: #fff;
+                }
+                .input-group-compact input:focus, .input-group-compact select:focus, .input-group-compact textarea:focus { border-color: #8B7355; outline: none; box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.1); }
+                .span-2 { grid-column: span 2; }
+                .span-3 { grid-column: span 3; }
+                
+                .input-with-action { display: flex; gap: 8px; }
+                .input-with-action input { flex: 1; }
+                .action-input-btn { 
+                    display: flex; align-items: center; gap: 6px; padding: 0 15px; background: #8B7355; color: #fff; 
+                    border: none; border-radius: 6px; cursor: pointer; font-size: 0.8rem; font-weight: 600; white-space: nowrap; transition: 0.2s;
+                }
+                .action-input-btn:hover:not(:disabled) { background: #6F5C44; transform: translateY(-1px); }
+                .action-input-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+                
+                .editor-h2 { font-size: 1rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; color: #2C3E50; border-bottom: 1px solid #eee; padding-bottom: 10px; }
             `}</style>
         </div>
     )
