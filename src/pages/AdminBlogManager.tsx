@@ -127,7 +127,33 @@ const AdminBlogManager: React.FC = () => {
 
             if (response.ok) {
                 setBlogSource(newBlogSource)
-                setMessage({ type: 'success', text: 'Sync successful! Changes saved to src/data/blog.ts' })
+
+                // Step 2: Auto-commit and push to GitHub
+                setMessage({ type: 'success', text: 'File updated! Auto-deploying to production...' })
+
+                const deployResponse = await fetch('/api/admin/deploy', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        commitMessage: `Update blog posts via admin (${new Date().toISOString().split('T')[0]})`
+                    })
+                })
+
+                const deployResult = await deployResponse.json()
+
+                if (deployResponse.ok && deployResult.deployed) {
+                    setMessage({
+                        type: 'success',
+                        text: '✅ Changes deployed! Vercel is rebuilding your site (1-2 minutes). Refresh in a moment to see updates.'
+                    })
+                } else if (deployResponse.ok && !deployResult.deployed) {
+                    setMessage({
+                        type: 'success',
+                        text: 'File synced successfully, but no changes detected to deploy.'
+                    })
+                } else {
+                    throw new Error(deployResult.error || 'Auto-deploy failed')
+                }
             } else {
                 throw new Error('Failed to update source files on server')
             }
@@ -197,7 +223,7 @@ const AdminBlogManager: React.FC = () => {
                     {view === 'list' ? (
                         <button onClick={handleSyncToFiles} className="save-btn" disabled={isSaving}>
                             {isSaving ? <Loader2 className="animate-spin" size={16} /> : <Save size={16} />}
-                            <span>{isSaving ? 'Syncing...' : 'Sync to Files'}</span>
+                            <span>{isSaving ? 'Deploying...' : 'Deploy Changes'}</span>
                         </button>
                     ) : (
                         <button onClick={handleSavePost} className="save-btn">
@@ -222,7 +248,7 @@ const AdminBlogManager: React.FC = () => {
                         <AlertCircle size={18} />
                         <div>
                             <strong>Development Mode</strong>
-                            <p>File sync is disabled in dev mode. You can create/edit/delete posts here, but changes won't persist to disk. Deploy to Vercel to enable full sync functionality.</p>
+                            <p>Auto-deploy is disabled in dev mode. You can create/edit/delete posts here, but changes won't persist. Deploy to Vercel to enable one-click deployment.</p>
                         </div>
                     </div>
                 )}
