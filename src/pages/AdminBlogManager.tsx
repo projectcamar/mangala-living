@@ -26,28 +26,10 @@ const AdminBlogManager: React.FC = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        const fetchSources = async () => {
-            try {
-                const res = await fetch('/api/admin/blog')
-                if (!res.ok) {
-                    // API not available (dev mode) - use imported data directly
-                    console.warn('API not available, using imported BLOG_POSTS directly')
-                    setPosts([...BLOG_POSTS])
-                    setIsLoading(false)
-                    return
-                }
-                const data = await res.json()
-                setBlogSource(data.blogSource)
-                setPosts([...BLOG_POSTS])
-            } catch (err: any) {
-                // In dev mode, API routes don't exist - this is expected
-                console.warn('Blog API not available (dev mode), using imported data')
-                setPosts([...BLOG_POSTS])
-            } finally {
-                setIsLoading(false)
-            }
-        };
-        fetchSources()
+        // Simply load from imported BLOG_POSTS
+        // No need to fetch from API since we'll use GitHub API directly for deploy
+        setPosts([...BLOG_POSTS])
+        setIsLoading(false)
     }, [])
 
     const handleEdit = (post: BlogPost) => {
@@ -243,15 +225,7 @@ const AdminBlogManager: React.FC = () => {
                     </div>
                 )}
 
-                {!blogSource && view === 'list' && (
-                    <div className="dev-mode-notice">
-                        <AlertCircle size={18} />
-                        <div>
-                            <strong>Development Mode</strong>
-                            <p>Auto-deploy is disabled in dev mode. You can create/edit/delete posts here, but changes won't persist. Deploy to Vercel to enable one-click deployment.</p>
-                        </div>
-                    </div>
-                )}
+
 
                 {view === 'list' ? (
                     <>
