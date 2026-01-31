@@ -11,7 +11,6 @@ import AuthorCard from '../components/AuthorCard'
 import { getPostBySlug, BLOG_POSTS, type BlogPost } from '../data/blog'
 import { ALL_PRODUCTS } from '../data/products'
 import { getBlogPostContentLocalized, type BlogSection } from '../data/blogContent'
-import type { LanguageCode } from '../utils/languageManager'
 import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structuredData'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, truncateTitle, truncateMetaDescription } from '../utils/seo'
 import BlogProductShowcase from '../components/BlogProductShowcase'
@@ -804,7 +803,7 @@ const BlogPost: React.FC = () => {
                   <div className="blog-post-sidebar-card card">
                     <h2 id="blog-post-sidebar-title" className="blog-post-sidebar-title">Other Articles</h2>
                     <ul className="blog-post-sidebar-list">
-                      {otherArticles.map((article) => (
+                      {otherArticles.map((article: BlogPost) => (
                         <li key={article.id}>
                           <Link to={`/blog/${article.slug}`} className="blog-post-sidebar-link">
                             <span className="blog-post-sidebar-link-title">{article.title}</span>
