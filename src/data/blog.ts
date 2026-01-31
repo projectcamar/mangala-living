@@ -2988,6 +2988,39 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       "conclusion": "Choosing SVLK-certified furniture shouldn't mean compromising on design or budget. Mangala Living proves compliance enhances creativity—not restricts it. <em>Contact our team today</em> for a complimentary consultation and sample catalog featuring 200+ certified commercial designs."
     }
+  },
+  {
+    "id": 292,
+    "slug": "cara-memilih-furniture-cafe-berkualitas",
+    "title": "Furniture Cafe Berkualitas",
+    "category": "Tips and Trick",
+    "excerpt": "Mencari furniture cafe dengan kualitas high industrial grade? Berikut beberapa tips!",
+    "image": "",
+    "date": "2026-01-31",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "Membuka sebuah cafe membutuhkan banyak persiapan, salah satunya adalah memilih furniture yang tepat. Furniture dengan kualitas high industrial grade sangat penting untuk menjamin kenyamanan dan keamanan pelanggan. Mangala Living, dengan lebih dari 25 tahun pengalaman dan 1000+ proyek, hadir untuk membantu Anda memilih furniture cafe yang berkualitas.",
+      "keyPoints": [
+        "Pilih furniture dengan bahan yang kuat dan tahan lama",
+        "Perhatikan desain dan estetika furniture",
+        "Pastikan furniture sesuai dengan tema dan konsep cafe"
+      ],
+      "sections": [
+        {
+          "heading": "Mengapa Kualitas Furniture Penting?",
+          "content": "Furniture dengan kualitas high industrial grade sangat penting untuk menjamin kenyamanan dan keamanan pelanggan. <strong>Furniture yang kuat dan tahan lama</strong> dapat menahan beban berat dan tahan terhadap kerusakan. Selain itu, furniture yang berkualitas juga dapat meningkatkan estetika dan kesan mewah pada cafe Anda. <br> Mangala Living, dengan pengalaman lebih dari 25 tahun, telah membantu banyak cafe dan restoran di Indonesia untuk memilih furniture yang tepat."
+        },
+        {
+          "heading": "Tips Membeli Furniture Cafe",
+          "content": "Saat membeli furniture cafe, ada beberapa hal yang perlu diperhatikan. <em>Pertama</em>, pilih furniture dengan bahan yang kuat dan tahan lama, seperti kayu solid atau besi. <em>Kedua</em>, perhatikan desain dan estetika furniture, pastikan sesuai dengan tema dan konsep cafe Anda. <em>Ketiga</em>, pastikan furniture memiliki ukuran yang tepat untuk ruangan cafe Anda. <br> Dengan memperhatikan hal-hal tersebut, Anda dapat memilih furniture cafe yang berkualitas dan sesuai dengan kebutuhan Anda."
+        },
+        {
+          "heading": "Mangala Living Solusi Furniture Cafe",
+          "content": "Mangala Living hadir untuk membantu Anda memilih furniture cafe yang berkualitas. Dengan workshop di Bekasi, kami dapat memproduksi furniture dengan kualitas high industrial grade. <strong>Kami menawarkan desain yang fleksibel</strong> dan dapat disesuaikan dengan kebutuhan Anda. Selain itu, kami juga menawarkan harga yang kompetitif dan layanan purna jual yang baik. <br> Jadi, tunggu apa lagi? Hubungi Mangala Living sekarang juga untuk memilih furniture cafe yang berkualitas!"
+        }
+      ],
+      "conclusion": "Membeli furniture cafe dengan kualitas high industrial grade sangat penting untuk menjamin kenyamanan dan keamanan pelanggan. Dengan memperhatikan tips di atas dan memilih Mangala Living sebagai solusi furniture cafe, Anda dapat memiliki cafe yang nyaman dan sukses. <strong>Hubungi kami sekarang</strong> untuk memilih furniture cafe yang berkualitas dan sesuai dengan kebutuhan Anda!"
+    }
   }
 ]
 
