@@ -3383,6 +3383,50 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       "conclusion": "En conclusion, les meubles industriels sont parfaits pour les cafés et les restaurants qui veulent créer une ambiance unique et robuste. Avec Mangala Living, vous pouvez concevoir des meubles sur mesure pour répondre à vos besoins spécifiques et créer une ambiance industrielle parfaite. N'hésitez pas à nous contacter pour en savoir plus sur nos solutions et nos produits."
     }
+  },
+  {
+    "id": 302,
+    "slug": "jual-meja-cafe-industrial-coffee-shop-bekasi",
+    "title": "Jual Meja Cafe Industrial untuk Coffee Shop di Bekasi",
+    "category": "Tips and Trick",
+    "excerpt": "Temukan meja cafe industrial berkualitas untuk coffee shop Anda di Bekasi. Desain custom, tahan lama, dan harga kompetitif.",
+    "image": "https://images.unsplash.com/photo-1625744494690-7a14ae606b75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY29mZmVlJTIwc2hvcCUyMGZ1cm5pdHVyZSUyMGRlc2lnbnxlbnwwfDB8fHwxNzY5ODU5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-01-31 11:37",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "Mencari meja cafe industrial yang tepat untuk coffee shop Anda di Bekasi? Furniture yang tepat tidak hanya meningkatkan estetika tetapi juga kenyamanan pelanggan dan efisiensi operasional. Di Mangala Living, kami memahami kebutuhan unik coffee shop di Bekasi dengan pengalaman lebih dari 25 tahun dalam memproduksi furniture industri berkualitas.",
+      "keyPoints": [
+        "Pilih material tahan lama untuk meja cafe industrial",
+        "Desain custom sesuai konsep coffee shop Anda",
+        "Pertimbangkan ergonomi dan kenyamanan pelanggan",
+        "Faktor biaya dan investasi jangka panjang",
+        "Keunggulan furniture custom dari workshop Bekasi"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Memilih Meja Cafe Industrial untuk Coffee Shop?",
+          "content": "Meja cafe industrial menjadi pilihan populer untuk coffee shop modern karena kombinasi sempurna antara estetika dan fungsionalitas. Desainnya yang minimalis dengan sentuhan material seperti besi dan kayu solid menciptakan suasana yang hangat namun tetap profesional.<br><br>Di Bekasi yang merupakan pusat bisnis kuliner yang berkembang pesat, coffee shop membutuhkan furniture yang tidak hanya menarik secara visual tetapi juga tahan terhadap penggunaan sehari-hari. Meja industrial dari Mangala Living dirancang khusus untuk menahan beban berat, tahan gores, dan mudah dibersihkan - faktor penting untuk operasional coffee shop yang sibuk.<br><br>Kelebihan lainnya adalah fleksibilitas desain. Meja industrial dapat dengan mudah dipadukan dengan berbagai konsep interior, mulai dari rustic, modern, hingga vintage. Ini memberikan kebebasan bagi pemilik coffee shop untuk berkreasi dengan dekorasi tanpa perlu mengganti seluruh furniture.",
+          "imageSearchQuery": "industrial cafe interior design",
+          "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3Njk4NDg1MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial cafe interior design"
+        },
+        {
+          "heading": "Tips Memilih Meja Cafe Industrial yang Tepat",
+          "content": "Memilih meja cafe industrial yang tepat memerlukan pertimbangan beberapa faktor penting. Pertama, perhatikan ukuran dan tata letak coffee shop Anda. Meja yang terlalu besar akan membuat ruangan terasa sempit, sementara yang terlalu kecil mungkin tidak fungsional untuk kebutuhan pelanggan.<br><br>Kedua, pertimbangkan material yang digunakan. Kayu solid seperti jati atau pinus memberikan kesan hangat dan natural, sementara kombinasi dengan besi memberikan kesan kokoh dan industrial. Pastikan material tersebut tahan terhadap kelembaban dan noda kopi yang umum di coffee shop.<br><br>Ketiga, perhatikan ergonomi. Tinggi meja yang ideal untuk coffee shop adalah sekitar 75-80 cm, dengan kursi yang nyaman untuk duduk berlama-lama. Ini penting karena banyak pelanggan coffee shop yang menghabiskan waktu untuk bekerja atau bersosialisasi.<br><br>Terakhir, pertimbangkan mobilitas. Meja dengan roda atau desain yang ringan memudahkan Anda untuk mengatur ulang tata letak sesuai kebutuhan, terutama saat ada acara khusus atau perubahan konsep interior."
+        },
+        {
+          "heading": "Keunggulan Meja Cafe Custom dari Mangala Living",
+          "content": "Sebagai workshop furniture industrial di Bekasi dengan pengalaman lebih dari 25 tahun, Mangala Living menawarkan keunggulan yang tidak dimiliki produsen lain. Kami memahami bahwa setiap coffee shop memiliki karakteristik unik yang membutuhkan solusi furniture custom.<br><br>Proses produksi kami dimulai dari konsultasi desain, di mana tim ahli kami bekerja sama dengan Anda untuk menciptakan meja yang sesuai dengan konsep dan kebutuhan operasional coffee shop. Dengan workshop sendiri di Bekasi, kami menjamin kualitas kontrol yang ketat dan waktu produksi yang lebih cepat dibandingkan importir furniture.<br><br>Material yang kami gunakan adalah pilihan terbaik, mulai dari kayu solid berkualitas tinggi hingga besi dengan coating anti karat. Setiap meja melewati proses finishing yang teliti untuk memastikan daya tahan dan keindahan yang tahan lama. Kami juga menawarkan garansi produk untuk memberikan kepercayaan tambahan kepada pelanggan kami.<br><br>Keuntungan lainnya adalah harga yang kompetitif karena Anda membeli langsung dari produsen tanpa perantara. Ini membuat investasi furniture coffee shop Anda lebih efisien tanpa mengorbankan kualitas."
+        },
+        {
+          "heading": "Rekomendasi Meja Cafe Industrial untuk Coffee Shop",
+          "content": "Kami memiliki beberapa rekomendasi meja cafe industrial yang populer untuk coffee shop di Bekasi. Untuk area bar kopi, <strong>Bandung Pipe Dining Table</strong> (productId: 4) dengan desain pipa industrial dan top table kayu solid menjadi pilihan yang sangat baik. Meja ini tidak hanya kuat untuk menopang mesin kopi dan peralatan lainnya tetapi juga menambah kesan industrial yang elegan.<br><br>Untuk area duduk pelanggan, <strong>Dining Set with 2 Chairs</strong> (productId: 5) menawarkan kombinasi sempurna antara meja dan kursi dengan desain yang serasi. Set ini ideal untuk coffee shop dengan kapasitas sedang hingga besar.<br><br>Jika Anda memiliki area outdoor atau semi-outdoor, <strong>Balcony Bar Table</strong> (productId: 2) dengan material yang tahan cuaca menjadi pilihan yang tepat. Meja ini dirancang khusus untuk area terbuka tanpa mengorbankan estetika industrial.<br><br>Kami juga menyediakan opsi custom size untuk meja-meja tersebut agar sesuai dengan layout unik coffee shop Anda. Tim desain kami siap membantu Anda menentukan ukuran dan konfigurasi yang paling optimal.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Memilih meja cafe industrial yang tepat adalah investasi penting untuk kesuksesan coffee shop Anda di Bekasi. Dengan kombinasi antara desain yang menarik, material berkualitas, dan fungsionalitas yang optimal, furniture yang tepat dapat meningkatkan pengalaman pelanggan dan efisiensi operasional.<br><br>Di Mangala Living, kami berkomitmen untuk menjadi partner terpercaya Anda dalam menyediakan furniture industrial custom untuk coffee shop. Dengan pengalaman lebih dari 25 tahun, workshop sendiri di Bekasi, dan ribuan proyek yang telah kami selesaikan, kami siap membantu mewujudkan visi coffee shop Anda.<br><br>Jangan ragu untuk menghubungi tim kami untuk konsultasi gratis tentang kebutuhan furniture coffee shop Anda. Mari bersama-sama menciptakan ruang yang tidak hanya indah secara visual tetapi juga fungsional dan tahan lama untuk bisnis kuliner Anda di Bekasi."
+    }
   }
 ]
 
