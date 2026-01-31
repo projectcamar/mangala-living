@@ -30,6 +30,10 @@ const AdminBlogManager: React.FC = () => {
 
     const [selectedLanguage, setSelectedLanguage] = useState('id')
 
+    // Pagination state
+    const [itemsPerPage, setItemsPerPage] = useState<number | 'all'>(10)
+    const [currentPage, setCurrentPage] = useState(1)
+
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -55,7 +59,9 @@ const AdminBlogManager: React.FC = () => {
 
     const handleNew = () => {
         const newId = posts.length > 0 ? Math.max(...posts.map(p => p.id)) + 1 : 1
-        const today = new Date().toISOString().split('T')[0]
+        // Include full date and time
+        const now = new Date()
+        const dateString = now.toISOString().replace('T', ' ').substring(0, 16)
 
         setEditingPost({
             id: newId,
@@ -64,7 +70,7 @@ const AdminBlogManager: React.FC = () => {
             category: 'Tips and Trick',
             excerpt: '',
             image: '',
-            date: today,
+            date: dateString,
             author: 'Helmi Ramdan',
             customContent: {
                 introduction: '',
@@ -205,6 +211,20 @@ const AdminBlogManager: React.FC = () => {
         post.slug.toLowerCase().includes(searchTerm.toLowerCase())
     )
 
+    // Pagination Logic
+    const sortedPosts = [...filteredPosts].reverse()
+    const totalItems = sortedPosts.length
+    const totalPages = itemsPerPage === 'all' ? 1 : Math.ceil(totalItems / itemsPerPage)
+
+    // Reset to page 1 if search changes or items per page changes
+    useEffect(() => {
+        setCurrentPage(1)
+    }, [searchTerm, itemsPerPage])
+
+    const indexOfLastItem = currentPage * (itemsPerPage === 'all' ? totalItems : itemsPerPage)
+    const indexOfFirstItem = indexOfLastItem - (itemsPerPage === 'all' ? totalItems : itemsPerPage)
+    const currentItems = sortedPosts.slice(indexOfFirstItem, indexOfLastItem)
+
     if (isLoading) {
         return (
             <div className="admin-loading-screen-wrap">
@@ -297,23 +317,42 @@ const AdminBlogManager: React.FC = () => {
                             <table className="posts-table">
                                 <thead>
                                     <tr>
-                                        <th>Title</th>
+                                        <th>Title & Thumbnail</th>
                                         <th>Category</th>
-                                        <th>Date</th>
+                                        <th>Lang</th>
+                                        <th>Date & Time</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {[...filteredPosts].reverse().map(post => (
+                                    {currentItems.map(post => (
                                         <tr key={post.id}>
                                             <td>
                                                 <div className="post-title-cell">
-                                                    <FileText size={16} />
-                                                    <span>{post.title}</span>
+                                                    <div className="post-thumb">
+                                                        {post.image ? (
+                                                            <img src={post.image} alt="" />
+                                                        ) : (
+                                                            <div className="thumb-placeholder"><FileText size={14} /></div>
+                                                        )}
+                                                    </div>
+                                                    <div className="post-title-info">
+                                                        <span className="post-title-text">{post.title}</span>
+                                                        <span className="post-slug-text">{post.slug}</span>
+                                                    </div>
                                                 </div>
                                             </td>
                                             <td><span className="cat-badge">{post.category}</span></td>
-                                            <td>{post.date}</td>
+                                            <td>
+                                                <span className={`lang-badge ${post.customContent?.language || 'id'}`}>
+                                                    {post.customContent?.language?.toUpperCase() || 'ID'}
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div className="post-date-cell">
+                                                    {post.date}
+                                                </div>
+                                            </td>
                                             <td className="actions-cell">
                                                 <button className="action-btn edit" onClick={() => handleEdit(post)} title="Edit Content">
                                                     <Edit size={16} />
@@ -326,6 +365,44 @@ const AdminBlogManager: React.FC = () => {
                                     ))}
                                 </tbody>
                             </table>
+
+                            {/* Pagination Controls */}
+                            <div className="pagination-wrapper">
+                                <div className="pagination-info">
+                                    Showing {indexOfFirstItem + 1} to {Math.min(indexOfLastItem, totalItems)} of {totalItems} entries
+                                </div>
+                                <div className="pagination-controls">
+                                    <div className="items-per-page">
+                                        <span>Show:</span>
+                                        {[10, 20, 50, 80, 'all'].map(size => (
+                                            <button
+                                                key={size}
+                                                className={`size-btn ${itemsPerPage === size ? 'active' : ''}`}
+                                                onClick={() => setItemsPerPage(size as any)}
+                                            >
+                                                {size === 'all' ? 'All' : size}
+                                            </button>
+                                        ))}
+                                    </div>
+                                    <div className="page-btns">
+                                        <button
+                                            disabled={currentPage === 1}
+                                            onClick={() => setCurrentPage(p => p - 1)}
+                                            className="nav-btn"
+                                        >
+                                            Prev
+                                        </button>
+                                        <span className="page-num">Page {currentPage} of {totalPages}</span>
+                                        <button
+                                            disabled={currentPage === totalPages}
+                                            onClick={() => setCurrentPage(p => p + 1)}
+                                            className="nav-btn"
+                                        >
+                                            Next
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </>
                 ) : (
@@ -731,6 +808,70 @@ const AdminBlogManager: React.FC = () => {
                 .admin-msg.success { background: #e6f4ea; color: #1e7e34; border-left: 5px solid #1e7e34; }
                 .admin-msg.error { background: #fce8e8; color: #c53030; border-left: 5px solid #c53030; }
                 
+                /* Enhanced Table Styles */
+                .post-thumb { width: 45px; height: 45px; border-radius: 8px; overflow: hidden; background: #eee; flex-shrink: 0; }
+                .post-thumb img { width: 100%; height: 100%; object-fit: cover; }
+                .thumb-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #aaa; }
+                .post-title-info { display: flex; flex-direction: column; gap: 2px; }
+                .post-title-text { font-weight: 700; color: #2C3E50; line-height: 1.2; }
+                .post-slug-text { font-size: 0.75rem; color: #888; font-weight: 400; font-family: monospace; }
+                .post-date-cell { font-size: 0.85rem; color: #666; font-family: monospace; }
+                
+                .lang-badge { 
+                    padding: 3px 8px; 
+                    border-radius: 4px; 
+                    font-size: 0.7rem; 
+                    font-weight: 800; 
+                    color: #fff;
+                    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                }
+                .lang-badge.id { background: #e74c3c; } /* Red */
+                .lang-badge.en { background: #3498db; } /* Blue */
+                .lang-badge.ar { background: #27ae60; } /* Green */
+                .lang-badge.zh { background: #f1c40f; color: #333; } /* Yellow */
+                .lang-badge.ja { background: #9b59b6; } /* Purple */
+                .lang-badge.es { background: #e67e22; } /* Orange */
+                .lang-badge.fr { background: #34495e; } /* Navy */
+                .lang-badge.ko { background: #16a085; } /* Teal */
+
+                /* Pagination Styles */
+                .pagination-wrapper { 
+                    padding: 20px; 
+                    background: #fff; 
+                    display: flex; 
+                    justify-content: space-between; 
+                    align-items: center;
+                    border-top: 1px solid #f0f0f0;
+                }
+                .pagination-info { font-size: 0.85rem; color: #777; }
+                .pagination-controls { display: flex; align-items: center; gap: 25px; }
+                
+                .items-per-page { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #555; }
+                .size-btn { 
+                    background: #f8f9fa; 
+                    border: 1px solid #ddd; 
+                    padding: 4px 10px; 
+                    border-radius: 4px; 
+                    cursor: pointer; 
+                    font-size: 0.8rem;
+                    transition: 0.2s;
+                }
+                .size-btn.active { background: #8B7355; color: #fff; border-color: #8B7355; }
+                
+                .page-btns { display: flex; align-items: center; gap: 15px; }
+                .nav-btn {
+                    padding: 6px 15px;
+                    border-radius: 6px;
+                    border: 1px solid #ddd;
+                    background: #fff;
+                    cursor: pointer;
+                    font-size: 0.85rem;
+                    transition: 0.2s;
+                }
+                .nav-btn:hover:not(:disabled) { border-color: #8B7355; color: #8B7355; }
+                .nav-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+                .page-num { font-size: 0.9rem; font-weight: 600; color: #2C3E50; }
+
                 .back-link { background: #fff; border: 1px solid #ddd; color: #444; cursor: pointer; padding: 8px; border-radius: 8px; margin-right: 15px; transition: 0.2s; }
                 .back-link:hover { background: #f8f9fa; border-color: #8B7355; color: #8B7355; }
             `}</style>

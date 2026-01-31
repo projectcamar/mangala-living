@@ -3,10 +3,12 @@ import { Helmet } from 'react-helmet-async'
 import { LogOut, LayoutDashboard, Database, Settings, BarChart3, Users, FileText } from 'lucide-react'
 import { logoutAdmin } from '../utils/adminAuth'
 import { useNavigate } from 'react-router-dom'
+import { BLOG_POSTS } from '../data/blog'
 import './Admin.css'
 
 const AdminDashboard: React.FC = () => {
     const navigate = useNavigate()
+    const articleCount = BLOG_POSTS.length
 
     return (
         <div className="admin-dashboard">
@@ -45,7 +47,7 @@ const AdminDashboard: React.FC = () => {
                         </div>
                         <div className="stat-info">
                             <h3>Blog Manager</h3>
-                            <div className="stat-value">Articles</div>
+                            <div className="stat-value">{articleCount} Articles</div>
                         </div>
                     </div>
 
