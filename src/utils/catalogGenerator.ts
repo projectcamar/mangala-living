@@ -221,50 +221,41 @@ const prepareLanguageFont = async (doc: any, lang: 'id' | 'en' | 'ar' | 'zh' | '
   // Default: built-in helvetica works for Latin scripts (ID, EN, ES, FR)
   const latin = { family: 'helvetica', hasStyles: true }
 
-  // Latin scripts that work with built-in fonts (English, Indonesian, French)
-  if (lang === 'id' || lang === 'en' || lang === 'fr') {
+  // Latin scripts that work with built-in fonts (English, Indonesian, French, Spanish)
+  if (lang === 'id' || lang === 'en' || lang === 'fr' || lang === 'es') {
     console.log(`[PDF] Language ${lang} uses Latin script, using built-in helvetica`)
     return latin
   }
 
-  // Map language to font URLs
-  // Using static TTF files (not variable fonts) for better jsPDF compatibility
-  // jsPDF requires TTF format, not WOFF2, and works better with static fonts
+  // Map language to local font paths
+  // Using static TTF files for better jsPDF compatibility
   const fontMap: Record<string, { family: string, files: { normal: string, bold?: string } }> = {
     ar: {
       family: 'NotoNaskhArabic',
       files: {
-        // Static TTF from Google Fonts (Regular weight)
-        normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/NotoNaskhArabic-Regular.ttf',
-        bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/NotoNaskhArabic-Bold.ttf'
+        normal: '/fonts/NotoNaskhArabic-Regular.ttf',
+        bold: '/fonts/NotoNaskhArabic-Bold.ttf'
       }
     },
     zh: {
       family: 'NotoSansSC',
       files: {
-        normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC-Regular.ttf',
-        bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC-Bold.ttf'
+        normal: '/fonts/NotoSansSC-Regular.ttf',
+        bold: '/fonts/NotoSansSC-Bold.ttf'
       }
     },
     ja: {
       family: 'NotoSansJP',
       files: {
-        normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosansjp/NotoSansJP-Regular.ttf',
-        bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosansjp/NotoSansJP-Bold.ttf'
+        normal: '/fonts/NotoSansJP-Regular.ttf',
+        bold: '/fonts/NotoSansJP-Bold.ttf'
       }
     },
     ko: {
       family: 'NotoSansKR',
       files: {
-        normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosanskr/NotoSansKR-Regular.ttf',
-        bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosanskr/NotoSansKR-Bold.ttf'
-      }
-    },
-    es: {
-      family: 'NotoSans',
-      files: {
-        normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosans/NotoSans-Regular.ttf',
-        bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosans/NotoSans-Bold.ttf'
+        normal: '/fonts/NotoSansKR-Regular.ttf',
+        bold: '/fonts/NotoSansKR-Bold.ttf'
       }
     }
   }
@@ -275,43 +266,25 @@ const prepareLanguageFont = async (doc: any, lang: 'id' | 'en' | 'ar' | 'zh' | '
     return latin
   }
 
-  console.log(`[PDF] Loading font for language: ${lang}`)
+  console.log(`[PDF] Loading local font for language: ${lang}`)
 
-  // Wrap font loading in timeout to prevent infinite loading
-  const fontLoadingTimeout = 20000 // 20 seconds max for font loading
+  // Font loading with timeout
+  const fontLoadingTimeout = 15000 // 15 seconds max for local font loading
   const fontLoadingPromise = (async () => {
-    // Try to load font from primary CDN
-    let loadedNormal = await loadAndRegisterFont(doc, mapping.files.normal, `${mapping.family}-Regular.ttf`, mapping.family, 'normal')
-
-    // If primary URL fails, try alternative CDN (jsdelivr)
-    if (!loadedNormal) {
-      console.warn(`[PDF] Primary font URL failed, trying alternative...`)
-      const alternativeUrls: Record<string, string> = {
-        ar: 'https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/notonaskharabic/NotoNaskhArabic-Regular.ttf',
-        zh: 'https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/notosanssc/NotoSansSC-Regular.ttf',
-        ja: 'https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/notosansjp/NotoSansJP-Regular.ttf',
-        ko: 'https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/notosanskr/NotoSansKR-Regular.ttf',
-      }
-      const altUrl = alternativeUrls[lang]
-      if (altUrl) {
-        loadedNormal = await loadAndRegisterFont(doc, altUrl, `${mapping.family}-Regular.ttf`, mapping.family, 'normal')
-      }
-    }
+    // Load normal font
+    const loadedNormal = await loadAndRegisterFont(doc, mapping.files.normal, `${mapping.family}-Regular.ttf`, mapping.family, 'normal')
 
     if (!loadedNormal) {
-      console.error(`[PDF] Failed to load font for ${lang} from all sources, falling back to helvetica`)
-      console.error(`[PDF] WARNING: Non-Latin text may appear as scrambled characters!`)
+      console.error(`[PDF] Failed to load local font for ${lang}, falling back to helvetica`)
       return latin
     }
 
-    // For variable fonts, bold uses the same file with different weight
-    // But jsPDF needs separate registration, so we'll use normal for both
+    // Load bold variant if available
     let loadedBold = false
     if (mapping.files.bold) {
       loadedBold = await loadAndRegisterFont(doc, mapping.files.bold, `${mapping.family}-Bold.ttf`, mapping.family, 'bold')
-      // If bold fails, that's okay - we can still use normal
       if (!loadedBold) {
-        console.warn(`[PDF] Bold variant failed, using normal for bold text`)
+        console.warn(`[PDF] Bold variant failed to load, using normal for bold text`)
       }
     }
 

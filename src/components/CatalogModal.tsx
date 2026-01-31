@@ -93,7 +93,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
       // Get language from current page URL (instant, no async needed)
       const urlLang = getLanguageFromLocation(location.pathname, location.search)
       let detectedLang: LanguageCode = 'id' // default
-      
+
       if (urlLang) {
         detectedLang = urlLang
       } else {
@@ -108,10 +108,10 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
         else if (browserLang?.startsWith('ko')) detectedLang = 'ko'
         else detectedLang = 'en'
       }
-      
+
       // Set language state
       setLanguage(detectedLang)
-      
+
       // Store in localStorage to match getLanguagePreference() method (same as English/Indonesian)
       try {
         localStorage.setItem('mangala_lang_preference', detectedLang)
@@ -121,11 +121,11 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
 
       // Check if user clicked X (close button) recently (within 12 hours)
       const lastClosedTime = localStorage.getItem('catalogLastClosed')
-      
+
       if (lastClosedTime) {
         const twelveHoursInMs = 12 * 60 * 60 * 1000 // 12 hours in milliseconds
         const timeSinceClosed = Date.now() - parseInt(lastClosedTime)
-        
+
         // If less than 12 hours have passed since user closed, don't show the modal
         if (timeSinceClosed < twelveHoursInMs) {
           return
@@ -134,22 +134,22 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
 
       // Check if user has downloaded catalog recently (within 3 days)
       const lastDownloadTime = localStorage.getItem('catalogLastDownload')
-      
+
       if (lastDownloadTime) {
         const threeDaysInMs = 3 * 24 * 60 * 60 * 1000 // 3 days in milliseconds
         const timeSinceDownload = Date.now() - parseInt(lastDownloadTime)
-        
+
         // If less than 3 days have passed, don't show the modal
         if (timeSinceDownload < threeDaysInMs) {
           return
         }
       }
-      
+
       // Check if this is the first visit
       const hasVisitedBefore = localStorage.getItem('hasVisitedMangala')
-      
+
       let shouldShow = false
-      
+
       if (!hasVisitedBefore) {
         // First visit = 100% show
         shouldShow = true
@@ -158,7 +158,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
         // Return visits = 70% chance
         shouldShow = Math.random() < 0.7
       }
-      
+
       if (shouldShow) {
         // Show modal after 2 seconds
         setTimeout(() => {
@@ -172,11 +172,11 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
 
   const handleClose = () => {
     setIsVisible(false)
-    
+
     // Store the timestamp when user closes the modal
     // This prevents the popup from showing again for 12 hours
     localStorage.setItem('catalogLastClosed', Date.now().toString())
-    
+
     if (onClose) onClose()
   }
 
@@ -190,14 +190,14 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
 
   const handleDownload = async (e: React.FormEvent) => {
     e.preventDefault()
-    
+
     // Get the button element
     const button = e.currentTarget.querySelector('button[type="submit"]') as HTMLButtonElement
     if (button) {
       button.disabled = true
       button.textContent = 'GENERATING...'
     }
-    
+
     try {
       // Send form data to email API (dual functionality)
       try {
@@ -210,10 +210,11 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
             firstName: formData.firstName,
             email: formData.email,
             whatsapp: formData.whatsapp,
-            notificationType: 'catalog_download'
+            notificationType: 'catalog_download',
+            catalogLanguage: language
           }),
         })
-        
+
         if (response.ok) {
           console.log('Form data sent to email successfully')
         } else {
@@ -223,37 +224,37 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
         // Don't block download if email fails
         console.error('Error sending email:', emailError)
       }
-      
+
       // Generate the catalog with current language
       await generateCatalog(language)
-      
+
       // Track catalog download
       trackEvent.catalogDownload()
-      
+
       // Store the download timestamp to prevent popup for 3 days
       localStorage.setItem('catalogLastDownload', Date.now().toString())
-      
+
       // Close the modal after successful download
       handleClose()
-      
+
     } catch (error) {
       console.error('Error generating catalog:', error)
       const errorMessage = error instanceof Error ? error.message : String(error)
       console.error('Error details:', { error, errorMessage, language })
-      
+
       // Show more specific error message
-      const errorMsg = language === 'id' 
+      const errorMsg = language === 'id'
         ? `Gagal mengunduh katalog. Error: ${errorMessage}. Silakan coba lagi.`
         : language === 'es'
-        ? `Error al descargar el catálogo. Error: ${errorMessage}. Por favor, inténtalo de nuevo.`
-        : language === 'fr'
-        ? `Échec du téléchargement du catalogue. Erreur: ${errorMessage}. Veuillez réessayer.`
-        : language === 'ko'
-        ? `카탈로그 다운로드에 실패했습니다. 오류: ${errorMessage}. 다시 시도해주세요.`
-        : `Failed to download catalog. Error: ${errorMessage}. Please try again.`
-      
+          ? `Error al descargar el catálogo. Error: ${errorMessage}. Por favor, inténtalo de nuevo.`
+          : language === 'fr'
+            ? `Échec du téléchargement du catalogue. Erreur: ${errorMessage}. Veuillez réessayer.`
+            : language === 'ko'
+              ? `카탈로그 다운로드에 실패했습니다. 오류: ${errorMessage}. 다시 시도해주세요.`
+              : `Failed to download catalog. Error: ${errorMessage}. Please try again.`
+
       alert(errorMsg)
-      
+
       // Reset button on error
       if (button) {
         button.textContent = t.download
@@ -263,7 +264,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
   }
 
   return (
-    <div 
+    <div
       className={`catalog-modal-overlay ${isVisible ? 'catalog-modal-visible' : 'catalog-modal-hidden'}`}
       onClick={handleClose}
     >
@@ -278,35 +279,35 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
             <div className="catalog-preview-wrapper">
               <div className="pdf-icon">
                 <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" fill="#E74C3C" stroke="#E74C3C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M14 2V8H20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" fill="#E74C3C" stroke="#E74C3C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M14 2V8H20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   <text x="12" y="17" fontSize="6" fill="white" textAnchor="middle" fontWeight="bold">PDF</text>
                 </svg>
               </div>
-              
+
               {/* Collage of 3 overlapping product images */}
               <div className="catalog-collage">
                 <div className="catalog-year">2025</div>
-                
+
                 <div className="collage-image collage-image-1">
-                  <img 
-                    src={catalogPreview1} 
+                  <img
+                    src={catalogPreview1}
                     alt="Mangala Living Industrial Furniture - Corner Bench"
                     loading="lazy"
                   />
                 </div>
-                
+
                 <div className="collage-image collage-image-2">
-                  <img 
-                    src={catalogPreview2} 
+                  <img
+                    src={catalogPreview2}
                     alt="Mangala Living Industrial Furniture - Dining Table"
                     loading="lazy"
                   />
                 </div>
-                
+
                 <div className="collage-image collage-image-3">
-                  <img 
-                    src={catalogPreview3} 
+                  <img
+                    src={catalogPreview3}
                     alt="Mangala Living Industrial Furniture - Bar Chair"
                     loading="lazy"
                   />

@@ -42,10 +42,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const {
     firstName, email, whatsapp, notificationType,
     productName, productPrice, productCategory, productUrl,
-    chatMessage, language, whatsappClickData, pageName, pageUrl
+    chatMessage, language, whatsappClickData, pageName, pageUrl,
+    catalogLanguage
   } = req.body;
 
-  console.log(`[SUBSCRIPTION] Type: ${notificationType}, Email: ${email}, Name: ${firstName}`);
+  console.log(`[SUBSCRIPTION] Type: ${notificationType}, Email: ${email}, Name: ${firstName}, Lang: ${catalogLanguage || 'N/A'}`);
 
   const forwarded = req.headers['x-forwarded-for'];
   const clientIP = (typeof forwarded === 'string' ? forwarded.split(',')[0] : 'unknown').trim();
@@ -126,6 +127,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
             <p style="font-size: 16px;"><strong>Name:</strong> ${firstName || 'Visitor'}</p>
             <p style="font-size: 16px;"><strong>Email:</strong> ${email || 'N/A'}</p>
             ${whatsapp ? `<p style="font-size: 16px;"><strong>WhatsApp:</strong> ${whatsapp}</p>` : ''}
+            ${catalogLanguage ? `<p style="font-size: 16px; color: #8B7355;"><strong>Catalog Language:</strong> ${catalogLanguage.toUpperCase()}</p>` : ''}
             ${productName ? `<p style="font-size: 16px;"><strong>Product:</strong> ${productName}</p>` : ''}
             ${chatMessage ? `<p style="font-size: 16px; background: #f9f9f9; padding: 10px; border-radius: 4px; border-left: 4px solid #8B7355;"><strong>Message:</strong><br/>${chatMessage}</p>` : ''}
           </div>

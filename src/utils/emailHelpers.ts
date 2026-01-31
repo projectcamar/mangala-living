@@ -19,6 +19,7 @@ export const sendBackgroundEmail = async (
     whatsapp?: string
     pageName?: string
     pageUrl?: string
+    catalogLanguage?: string
   }
 ) => {
   // Don't await - fire and forget
@@ -34,6 +35,7 @@ export const sendBackgroundEmail = async (
       notificationType: type,
       pageName: data.pageName,
       pageUrl: data.pageUrl,
+      catalogLanguage: data.catalogLanguage,
       ...(type === 'order_now' && {
         productName: data.productName,
         productSlug: data.productSlug,

@@ -223,21 +223,21 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
   const handleLanguageChange = (lang: 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko') => {
     setIsLanguageOpen(false)
     const currentPath = location.pathname
-    
+
     // Store language preference
     storeLanguage(lang)
-    
+
     // Track language switch
     const currentLang = getCurrentLanguageFromUrl() || (isIndonesian ? 'id' : 'en')
     trackEvent.languageSwitch(currentLang, lang)
-    
+
     // Remove existing language prefix if any
     let cleanPath = currentPath
-    
+
     // Handle /id/, /eng/, /ar/, /zh/, /ja/, /es/, /fr/, /ko/ (with trailing slash)
     if (currentPath.startsWith('/id/') || currentPath.startsWith('/eng/') || currentPath.startsWith('/ar/') || currentPath.startsWith('/zh/') || currentPath.startsWith('/ja/') || currentPath.startsWith('/es/') || currentPath.startsWith('/fr/') || currentPath.startsWith('/ko/')) {
       cleanPath = currentPath.substring(4) // Remove language prefix
-    } 
+    }
     // Handle /id, /eng, /ar, /zh, /ja, /es, /fr, /ko (without trailing slash)
     else if (currentPath === '/id' || currentPath === '/eng' || currentPath === '/ar' || currentPath === '/zh' || currentPath === '/ja' || currentPath === '/es' || currentPath === '/fr' || currentPath === '/ko') {
       cleanPath = '/' // Go to home
@@ -246,7 +246,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
     else if (currentPath.startsWith('/id') || currentPath.startsWith('/eng') || currentPath.startsWith('/ar') || currentPath.startsWith('/zh') || currentPath.startsWith('/ja') || currentPath.startsWith('/es') || currentPath.startsWith('/fr') || currentPath.startsWith('/ko')) {
       cleanPath = currentPath.substring(3) // Remove language prefix
     }
-    
+
     // If cleanPath is empty or just '/', go to home with language prefix for SEO
     if (!cleanPath || cleanPath === '/') {
       const newPath = lang === 'id' ? '/id' : (lang === 'ar' ? '/ar' : (lang === 'zh' ? '/zh' : (lang === 'ja' ? '/ja' : (lang === 'es' ? '/es' : (lang === 'fr' ? '/fr' : (lang === 'ko' ? '/ko' : '/eng'))))))
@@ -334,10 +334,10 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
   }
 
   // All products for search - use centralized data
-  const filteredProducts = searchQuery.trim() 
-    ? ALL_PRODUCTS.filter(product => 
-        product.name.toLowerCase().includes(searchQuery.toLowerCase())
-      ).slice(0, 5)
+  const filteredProducts = searchQuery.trim()
+    ? ALL_PRODUCTS.filter(product =>
+      product.name.toLowerCase().includes(searchQuery.toLowerCase())
+    ).slice(0, 5)
       .map(p => ({
         name: p.name,
         category: p.categories.join(', '),
@@ -355,7 +355,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
       }
 
       const currentScrollY = window.scrollY
-      
+
       // Show header at top (first 100px)
       if (currentScrollY < 100) {
         setIsHeaderVisible(true)
@@ -366,7 +366,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
       } else {
         setIsHeaderVisible(true)
       }
-      
+
       setLastScrollY(currentScrollY)
     }
 
@@ -392,23 +392,23 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
     <header className={`header ${!isHeaderVisible ? 'header-hidden' : ''}`} role="banner" itemScope itemType="https://schema.org/WPHeader">
       {/* Top Header */}
       <div className="header-top">
-      <div className="container">
+        <div className="container">
           <div className="header-top-content">
             <nav className="header-top-nav">
               <Link to="/about" className="header-top-link">{t.about}</Link>
               <Link to="/blog" className="header-top-link">{t.blog}</Link>
               <Link to="/contact-us" className="header-top-link">{t.contactUs}</Link>
             </nav>
-            
+
             <Link to="/" className="logo">
               <span className="logo-text">MANGALA</span>
             </Link>
-            
+
             <div className="header-top-actions">
               {/* Language Switcher */}
               <div className="language-switcher">
-                <button 
-                  className="language-btn" 
+                <button
+                  className="language-btn"
                   onClick={toggleLanguage}
                   onKeyDown={handleLanguageKeyDown}
                   aria-label={isIndonesian ? "Pilih bahasa" : "Choose language"}
@@ -422,7 +422,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                 </button>
                 {isLanguageOpen && (
                   <div className="language-dropdown" onClick={(e) => e.stopPropagation()} role="menu" aria-label={isIndonesian ? "Pilih bahasa" : "Choose language"}>
-                    <button 
+                    <button
                       className="language-option"
                       role="menuitem"
                       tabIndex={0}
@@ -437,7 +437,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                       <span className="flag flag-id"></span>
                       <span>Indonesia</span>
                     </button>
-                    <button 
+                    <button
                       className="language-option"
                       role="menuitem"
                       tabIndex={0}
@@ -452,7 +452,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                       <span className="flag flag-us"></span>
                       <span>English</span>
                     </button>
-                    <button 
+                    <button
                       className="language-option"
                       role="menuitem"
                       tabIndex={0}
@@ -467,7 +467,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                       <span className="flag flag-ar"></span>
                       <span>العربية</span>
                     </button>
-                    <button 
+                    <button
                       className="language-option"
                       role="menuitem"
                       tabIndex={0}
@@ -482,7 +482,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                       <span className="flag flag-zh"></span>
                       <span>中文</span>
                     </button>
-                    <button 
+                    <button
                       className="language-option"
                       role="menuitem"
                       tabIndex={0}
@@ -497,7 +497,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                       <span className="flag flag-ja"></span>
                       <span>日本語</span>
                     </button>
-                    <button 
+                    <button
                       className="language-option"
                       role="menuitem"
                       tabIndex={0}
@@ -512,7 +512,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                       <span className="flag flag-es"></span>
                       <span>Español</span>
                     </button>
-                    <button 
+                    <button
                       className="language-option"
                       role="menuitem"
                       tabIndex={0}
@@ -527,7 +527,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                       <span className="flag flag-fr"></span>
                       <span>Français</span>
                     </button>
-                    <button 
+                    <button
                       className="language-option"
                       role="menuitem"
                       tabIndex={0}
@@ -545,24 +545,24 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                   </div>
                 )}
               </div>
-              
+
               <button className="search-btn" aria-label={t.search} onClick={toggleSearch}>
                 <Search size={20} />
                 <span>{t.search}</span>
               </button>
-        <button 
-          className="catalog-btn" 
-          onClick={async (event) => {
-            try {
-              // Show loading state
-              const button = event.target as HTMLButtonElement
-              button.textContent = t.generating
-              button.disabled = true
-              
-              // Generate catalog in new tab
-              const newWindow = window.open('', '_blank', 'width=800,height=600')
-              if (newWindow) {
-                newWindow.document.write(`
+              <button
+                className="catalog-btn"
+                onClick={async (event) => {
+                  try {
+                    // Show loading state
+                    const button = event.target as HTMLButtonElement
+                    button.textContent = t.generating
+                    button.disabled = true
+
+                    // Generate catalog in new tab
+                    const newWindow = window.open('', '_blank', 'width=800,height=600')
+                    if (newWindow) {
+                      newWindow.document.write(`
                   <html>
                     <head>
                       <title>Generating Catalog...</title>
@@ -609,44 +609,46 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                     </body>
                   </html>
                 `)
-              }
-              
-              // Send background email notification
-              sendBackgroundEmail('catalog_download', {})
+                    }
 
-              await generateCatalog(language)
-              
-              // Track catalog download
-              trackEvent.catalogDownload()
-              
-              // Close the loading window
-              if (newWindow) {
-                newWindow.close()
-              }
-              
-              // Reset button
-              button.textContent = t.downloadCatalog
-              button.disabled = false
-              
-            } catch (error) {
-              console.error('Error generating catalog:', error)
-              const errorMsg = language === 'id' ? 'Gagal mengunduh katalog. Silakan coba lagi.' : language === 'ar' ? 'فشل تحميل الكتالوج. يرجى المحاولة مرة أخرى.' : language === 'zh' ? '下载目录失败。请重试。' : language === 'ja' ? 'カタログのダウンロードに失敗しました。もう一度お試しください。' : language === 'es' ? 'Error al descargar el catálogo. Por favor, inténtalo de nuevo.' : language === 'fr' ? 'Échec du téléchargement du catalogue. Veuillez réessayer.' : language === 'ko' ? '카탈로그 다운로드에 실패했습니다. 다시 시도해주세요.' : 'Failed to download catalog. Please try again.'
-              alert(errorMsg)
-              
-              // Reset button on error
-              const button = event.target as HTMLButtonElement
-              button.textContent = t.downloadCatalog
-              button.disabled = false
-            }
-          }}
-        >
-          {t.downloadCatalog}
+                    // Send background email notification
+                    sendBackgroundEmail('catalog_download', {
+                      catalogLanguage: language
+                    })
+
+                    await generateCatalog(language)
+
+                    // Track catalog download
+                    trackEvent.catalogDownload()
+
+                    // Close the loading window
+                    if (newWindow) {
+                      newWindow.close()
+                    }
+
+                    // Reset button
+                    button.textContent = t.downloadCatalog
+                    button.disabled = false
+
+                  } catch (error) {
+                    console.error('Error generating catalog:', error)
+                    const errorMsg = language === 'id' ? 'Gagal mengunduh katalog. Silakan coba lagi.' : language === 'ar' ? 'فشل تحميل الكتالوج. يرجى المحاولة مرة أخرى.' : language === 'zh' ? '下载目录失败。请重试。' : language === 'ja' ? 'カタログのダウンロードに失敗しました。もう一度お試しください。' : language === 'es' ? 'Error al descargar el catálogo. Por favor, inténtalo de nuevo.' : language === 'fr' ? 'Échec du téléchargement du catalogue. Veuillez réessayer.' : language === 'ko' ? '카탈로그 다운로드에 실패했습니다. 다시 시도해주세요.' : 'Failed to download catalog. Please try again.'
+                    alert(errorMsg)
+
+                    // Reset button on error
+                    const button = event.target as HTMLButtonElement
+                    button.textContent = t.downloadCatalog
+                    button.disabled = false
+                  }
+                }}
+              >
+                {t.downloadCatalog}
               </button>
             </div>
           </div>
         </div>
-          </div>
-          
+      </div>
+
       {/* Bottom Header - Category Navigation */}
       <div className="header-bottom">
         <div className="container">
@@ -678,16 +680,16 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
               { to: "/product-category/table-collection", label: t.categories.tables },
               { to: "/product-category/dining-table-collection", label: t.categories.dineTable }
             ].slice(0, showAllCategories ? 10 : 5).map((category) => (
-              <Link 
+              <Link
                 key={category.to}
-                to={category.to} 
+                to={category.to}
                 className="mobile-category-link"
               >
                 {category.label}
               </Link>
             ))}
             {!showAllCategories && (
-              <button 
+              <button
                 className="mobile-category-more"
                 onClick={() => setShowAllCategories(true)}
                 aria-label={t.categories.more}
@@ -743,8 +745,8 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                         onClick={closeSearch}
                       >
                         <div className="search-result-image">
-                          <img 
-                            src={product.image} 
+                          <img
+                            src={product.image}
                             alt={`${product.name} - ${product.category} Industrial Furniture Mangala Living`}
                             title={`${product.name} - Quick Search Result`}
                             loading="lazy"
@@ -785,9 +787,9 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                     </Link>
                   </div>
                 )}
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
         </>
       )}
     </header>
