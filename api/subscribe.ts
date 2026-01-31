@@ -36,17 +36,6 @@ async function getGeolocation(ip: string) {
     return null;
   }
 }
-
-function getPageInfo(pageName: string) {
-  const pageMap: Record<string, { emoji: string; title: string }> = {
-    'index': { emoji: '🏠', title: 'Home Page' },
-    'about-me': { emoji: '👤', title: 'About Me Page' },
-    'contact': { emoji: '📧', title: 'Contact Page' },
-    'past-works': { emoji: '💼', title: 'Past Works Page' }
-  };
-  return pageMap[pageName] || { emoji: '📄', title: 'Unknown Page' };
-}
-
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
@@ -72,7 +61,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   let totalVisits = 0;
   ipPageVisits.forEach((count, key) => { if (key.startsWith(clientIP)) totalVisits += count; });
 
-  const isPageVisit = notificationType === 'page_visit';
   const isCatalog = notificationType === 'catalog_download';
 
   try {
@@ -129,35 +117,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       </div>
     `;
 
-    if (isPageVisit) {
-      const info = getPageInfo(pageName);
-      subject = `🏠 New Visitor Detected!`;
-      html = `
-        <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 25px; color: #333; line-height: 1.6; max-width: 600px; border: 1px solid #ddd; border-radius: 8px;">
-          <h2 style="color: #8B7355; text-align: center; margin-bottom: 5px;">🏠</h2>
-          <h2 style="color: #8B7355; text-align: center; margin-top: 0;">📊 Page Visit Notification</h2>
-          <p style="text-align: center; margin-bottom: 25px;">A visitor accessed <strong>${info.title}</strong> on your website lifewithmangala.com</p>
-          
-          <div style="display: flex; justify-content: space-around; background: #f9f6f2; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
-            <div style="flex: 1;">
-              <span style="display: block; font-size: 24px; font-weight: bold; color: #8B7355;">#${visitNumber}</span>
-              <span style="font-size: 12px; color: #666;">Visit to This Page</span>
-            </div>
-            <div style="flex: 1; border-left: 1px solid #e0d5c5;">
-              <span style="display: block; font-size: 24px; font-weight: bold; color: #8B7355;">${totalVisits}</span>
-              <span style="font-size: 12px; color: #666;">Total Visits (All Pages)</span>
-            </div>
-          </div>
-
-          <h3 style="color: #8B7355; margin-bottom: 10px;">🌐 Page Information</h3>
-          <p style="margin: 5px 0;"><strong>Page Name:</strong> ${info.title}</p>
-          <p style="margin: 5px 0;"><strong>Description:</strong> Visitor tracked on this page</p>
-          <p style="margin: 5px 0;"><strong>URL:</strong> ${pageUrl || 'N/A'}</p>
-
-          ${renderCommonDetails()}
-        </div>
-      `;
-    } else if (isCatalog || notificationType === 'order_now' || notificationType === 'whatsapp_click' || notificationType === 'chatbot_lead' || notificationType === 'chatbot_message' || notificationType === 'subscription') {
+    if (isCatalog || notificationType === 'order_now' || notificationType === 'whatsapp_click' || notificationType === 'chatbot_lead' || notificationType === 'chatbot_message' || notificationType === 'subscription') {
       subject = `Mangala Notification: ${notificationType.replace('_', ' ').toUpperCase()}`;
       html = `
         <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 25px; color: #333; line-height: 1.6; max-width: 600px; border: 1px solid #ddd; border-radius: 8px;">
