@@ -2890,7 +2890,14 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "了解拥有SVLK认证的印尼家具制造商如何确保可持续木材采购和环境责任。了解与认证出口商合作满足商业家具需求的好处。",
     "image": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&auto=format&fit=crop",
     "date": "2025-01-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "",
+      "keyPoints": [],
+      "language": "zh",
+      "sections": [],
+      "conclusion": ""
+    }
   },
   {
     "id": 288,
@@ -2904,7 +2911,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "customContent": {
       "introduction": "",
       "keyPoints": [],
-      "language": "id",
+      "language": "ja",
       "sections": [],
       "conclusion": ""
     }
