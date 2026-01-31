@@ -595,16 +595,6 @@ const BlogPost: React.FC = () => {
 
             <div className="blog-post-layout">
               <article className="blog-post-article" aria-labelledby="blog-post-title">
-                {post.customContent?.keyPoints && post.customContent.keyPoints.length > 0 && (
-                  <div className="key-takeaways-box">
-                    <h3>🔑 Key Takeaways</h3>
-                    <ul>
-                      {post.customContent.keyPoints.map((point, idx) => (
-                        <li key={idx}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
                 {content.sections.map((section, index) => (
                   <React.Fragment key={index}>
                     <section className="blog-post-section">
@@ -716,6 +706,25 @@ const BlogPost: React.FC = () => {
                   }
                   return null
                 })()}
+
+                {post.customContent?.keyPoints && post.customContent.keyPoints.length > 0 && (
+                  <div className="key-takeaways-box" style={{ marginTop: '2.5rem', marginBottom: '1.5rem' }}>
+                    <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', borderBottom: '2px solid #eee', paddingBottom: '0.5rem' }}>🔑 Key Takeaways</h3>
+                    <ul style={{ listStyle: 'none', padding: 0 }}>
+                      {post.customContent.keyPoints.map((point, idx) => (
+                        <li key={idx} style={{
+                          padding: '0.875rem',
+                          background: '#f9f9f9',
+                          borderRadius: '8px',
+                          marginBottom: '0.75rem',
+                          borderLeft: '4px solid #333'
+                        }}>
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
                 <div className="blog-post-cta card">
                   <div className="section-header">
