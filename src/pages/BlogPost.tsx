@@ -11,6 +11,7 @@ import AuthorCard from '../components/AuthorCard'
 import { getPostBySlug, BLOG_POSTS, type BlogPost } from '../data/blog'
 import { ALL_PRODUCTS } from '../data/products'
 import { getBlogPostContentLocalized, type BlogSection } from '../data/blogContent'
+import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structuredData'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, truncateTitle, truncateMetaDescription } from '../utils/seo'
 import BlogProductShowcase from '../components/BlogProductShowcase'
@@ -236,6 +237,61 @@ const VIEW_PRODUCT_LABEL: Record<LanguageCode, string> = {
   fr: "Voir le Produit",
   ko: "제품 보기"
 }
+
+/**
+ * Component to handle localized currency display for mentioned products
+ */
+const ProductMentionPrice: React.FC<{ price: string; language: LanguageCode }> = ({ price, language }) => {
+  const [highlightedPrice, setHighlightedPrice] = useState<string>(price)
+  const [secondaryPrice, setSecondaryPrice] = useState<string | null>(null)
+
+  useEffect(() => {
+    const convert = async () => {
+      if (language === 'id') {
+        const usdVal = await convertIDRToUSD(price);
+        setHighlightedPrice(price);
+        setSecondaryPrice(usdVal);
+        return;
+      }
+
+      const currencyMap: Record<string, 'USD' | 'SAR' | 'CNY' | 'JPY' | 'EUR' | 'KRW'> = {
+        'en': 'USD',
+        'ar': 'SAR',
+        'zh': 'CNY',
+        'ja': 'JPY',
+        'es': 'EUR',
+        'fr': 'EUR',
+        'ko': 'KRW'
+      };
+
+      const targetCurrency = currencyMap[language] || 'USD';
+
+      try {
+        const converted = await convertIDRToCurrency(price, targetCurrency);
+        setHighlightedPrice(converted);
+
+        if (targetCurrency !== 'USD') {
+          const usdVal = await convertIDRToUSD(price);
+          setSecondaryPrice(usdVal);
+        } else {
+          // For English/others where USD is primary, show IDR as secondary
+          setSecondaryPrice(price);
+        }
+      } catch (error) {
+        console.error('Price conversion error:', error);
+      }
+    };
+
+    convert();
+  }, [price, language]);
+
+  return (
+    <div className="mentioned-product-price-container">
+      <span className="mentioned-product-price-primary">{highlightedPrice}</span>
+      {secondaryPrice && <span className="mentioned-product-price-secondary">{secondaryPrice}</span>}
+    </div>
+  );
+};
 
 const CTA_TRANSLATIONS: Record<LanguageCode, {
   title: string
@@ -667,10 +723,10 @@ const BlogPost: React.FC = () => {
                                 {MENTIONED_PRODUCT_LABEL[language] || MENTIONED_PRODUCT_LABEL.en}
                               </span>
                               <h4 className="mentioned-product-name">{product.name}</h4>
-                              <span className="mentioned-product-price">{product.price}</span>
+                              <ProductMentionPrice price={product.price} language={language} />
                             </div>
                             <Link
-                              to={`/products/${product.slug}?ref=blog_mention&language=${language}`}
+                              to={`/product/${product.slug}?ref=blog_mention&language=${language}`}
                               className="mentioned-product-action"
                             >
                               {VIEW_PRODUCT_LABEL[language] || VIEW_PRODUCT_LABEL.en}

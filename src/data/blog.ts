@@ -3239,7 +3239,6 @@ export const BLOG_POSTS: BlogPost[] = [
         {
           "heading": "Mengapa Hollowline Penting?",
           "content": "Hollowline dapat mempercantik ruangan dan membuatnya terlihat lebih modern. Dengan menggunakan hollowline, Anda dapat menambahkan unsur estetika pada interior tanpa mengorbankan fungsionalitas. Mangala Living menyediakan berbagai jenis hollowline yang dapat disesuaikan dengan kebutuhan Anda.",
-          "imageSearchQuery": "hollowline interior design",
           "image": "https://images.unsplash.com/photo-1653022860307-0ccb6379f78b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxob2xsb3dsaW5lJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc2OTg1Nzg4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
           "imageAlt": "hollowline interior design"
         },

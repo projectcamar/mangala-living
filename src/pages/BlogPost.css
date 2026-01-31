@@ -715,10 +715,23 @@
   margin: 0;
 }
 
-.mentioned-product-price {
-  font-size: 0.9rem;
-  font-weight: 600;
+.mentioned-product-price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mentioned-product-price-primary {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #8B7355;
+}
+
+.mentioned-product-price-secondary {
+  font-size: 0.8rem;
+  font-weight: 500;
   color: #64748b;
+  opacity: 0.8;
 }
 
 .mentioned-product-action {
