@@ -2913,12 +2913,17 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     "id": 290,
     "slug": "wetwverwvervw",
-    "title": "tesdfdssd",
+    "title": "anjir",
     "category": "Tips and Trick",
     "excerpt": "wervwervw",
     "image": "",
     "date": "2026-01-31",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "",
+      "sections": [],
+      "conclusion": ""
+    }
   }
 ]
 
