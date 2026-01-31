@@ -84,21 +84,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const loc = geolocation ? `${geolocation.city}, ${geolocation.region}, ${geolocation.country}` : 'Unknown';
     const time = new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' });
 
-    if (isPageVisit) {
-      const info = getPageInfo(pageName);
-      subject = `${info.emoji} Visitor Report: ${info.title}`;
-      html = `
-        <div style="font-family: sans-serif; padding: 20px; color: #333;">
-          <h2 style="border-bottom: 2px solid #8B7355; padding-bottom: 10px;">Mangala Living Intelligence</h2>
-          <p><strong>Page:</strong> ${info.title} (${pageUrl || 'N/A'})</p>
-          <p><strong>Visits:</strong> ${visitNumber} (this page) | ${totalVisits} (total)</p>
-          <p><strong>Location:</strong> ${loc}</p>
-          <p><strong>IP:</strong> ${clientIP}</p>
-          <p><strong>Time:</strong> ${time}</p>
-          <p style="color: #666; font-size: 12px;">Device: ${req.headers['user-agent']}</p>
-        </div>
-      `;
-    } else if (isCatalog || notificationType === 'order_now' || notificationType === 'whatsapp_click' || notificationType === 'chatbot_lead' || notificationType === 'chatbot_message') {
+    if (isCatalog || notificationType === 'order_now' || notificationType === 'whatsapp_click' || notificationType === 'chatbot_lead' || notificationType === 'chatbot_message' || notificationType === 'subscription') {
       subject = `Mangala Notification: ${notificationType.replace('_', ' ').toUpperCase()}`;
       html = `
         <div style="font-family: sans-serif; padding: 20px;">
@@ -121,7 +107,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: 'Invalid notification type' });
     }
 
-    const recipients = ['rioanggaraclub@gmail.com', 'lifewithmangala@gmail.com'];
+    const recipients = ['lifewithmangala@gmail.com'];
     const results = [];
 
     for (const recipient of recipients) {
