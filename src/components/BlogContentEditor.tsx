@@ -175,9 +175,9 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
                             className="content-textarea"
                         />
 
-                        <div className="section-featured-fields" style={{ display: 'grid', gridTemplateColumns: index === 0 ? '1fr 1fr' : '1fr', gap: '15px', marginTop: '10px' }}>
-                            {/* Section 1 gets Image fields, others get Product Mention */}
-                            {index === 0 ? (
+                        <div className="section-featured-fields" style={{ display: 'grid', gridTemplateColumns: index < 2 ? '1fr 1fr' : '1fr', gap: '15px', marginTop: '10px' }}>
+                            {/* Section 1 & 2 get Image fields, others get Product Mention */}
+                            {index < 2 ? (
                                 <>
                                     <div className="input-group-compact">
                                         <label style={{ fontSize: '12px', color: '#666', marginBottom: '5px', display: 'block' }}>Section Image (Promo/Visual)</label>
