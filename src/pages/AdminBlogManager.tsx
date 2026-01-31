@@ -7,6 +7,7 @@ import {
     Type
 } from 'lucide-react'
 import { BLOG_POSTS, type BlogPost } from '../data/blog'
+import { BlogContentEditor } from '../components/BlogContentEditor'
 import './Admin.css'
 
 const AdminBlogManager: React.FC = () => {
@@ -46,7 +47,12 @@ const AdminBlogManager: React.FC = () => {
             excerpt: '',
             image: '',
             date: today,
-            author: 'Helmi Ramdan'
+            author: 'Helmi Ramdan',
+            customContent: {
+                introduction: '',
+                sections: [],
+                conclusion: ''
+            }
         })
         setView('editor')
     }
@@ -321,13 +327,53 @@ const AdminBlogManager: React.FC = () => {
                             </div>
                         </section>
 
-                        <div className="editor-notice">
-                            <AlertCircle size={20} />
-                            <div>
-                                <strong>SEO Mode Active</strong>
-                                <p>Content sections are automatically generated based on the Slug and Title using Mangala's AI-Optimized Fallback System. Custom section editing is currently disabled to prevent breaking fallback logic.</p>
-                            </div>
-                        </div>
+                        <section className="editor-section">
+                            <h2 className="section-title">
+                                <FileText size={20} />
+                                Blog Content Editor
+                            </h2>
+
+                            {editingPost && (
+                                <BlogContentEditor
+                                    introduction={editingPost.customContent?.introduction || ''}
+                                    sections={editingPost.customContent?.sections || []}
+                                    conclusion={editingPost.customContent?.conclusion || ''}
+                                    onIntroductionChange={(value) =>
+                                        setEditingPost(p => p ? {
+                                            ...p,
+                                            customContent: {
+                                                ...p.customContent,
+                                                introduction: value,
+                                                sections: p.customContent?.sections || [],
+                                                conclusion: p.customContent?.conclusion || ''
+                                            }
+                                        } : null)
+                                    }
+                                    onSectionsChange={(sections) =>
+                                        setEditingPost(p => p ? {
+                                            ...p,
+                                            customContent: {
+                                                ...p.customContent,
+                                                introduction: p.customContent?.introduction || '',
+                                                sections,
+                                                conclusion: p.customContent?.conclusion || ''
+                                            }
+                                        } : null)
+                                    }
+                                    onConclusionChange={(value) =>
+                                        setEditingPost(p => p ? {
+                                            ...p,
+                                            customContent: {
+                                                ...p.customContent,
+                                                introduction: p.customContent?.introduction || '',
+                                                sections: p.customContent?.sections || [],
+                                                conclusion: value
+                                            }
+                                        } : null)
+                                    }
+                                />
+                            )}
+                        </section>
                     </div>
                 )}
             </main>

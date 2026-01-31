@@ -316,3 +316,222 @@
   font-weight: 700;
   color: #2C3E50;
 }
+
+/* Blog Content Editor Styles */
+.content-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.editor-section-block {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.editor-section-title {
+  font-size: 1.1rem;
+  color: #2C3E50;
+  margin: 0 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-section-btn {
+  background: #8B7355;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.add-section-btn:hover {
+  background: #a68c6a;
+  transform: translateY(-1px);
+}
+
+.dynamic-section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.section-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.section-number {
+  font-weight: 600;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.section-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.move-btn,
+.remove-btn {
+  background: transparent;
+  border: 1px solid #ddd;
+  color: #666;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.move-btn:hover:not(:disabled) {
+  background: #f0f0f0;
+  border-color: #8B7355;
+  color: #8B7355;
+}
+
+.move-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.remove-btn {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.remove-btn:hover {
+  background: #dc3545;
+  color: #fff;
+}
+
+.section-heading-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.section-heading-input:focus {
+  outline: none;
+  border-color: #8B7355;
+  box-shadow: 0 0 0 2px rgba(139, 115, 85, 0.1);
+}
+
+.empty-state {
+  text-align: center;
+  color: #999;
+  padding: 30px;
+  font-style: italic;
+}
+
+.editor-info-box {
+  background: #e8f4f8;
+  border: 1px solid #b3d9e8;
+  border-radius: 6px;
+  padding: 15px;
+  color: #2C3E50;
+}
+
+.editor-info-box strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #1a5f7a;
+}
+
+.editor-info-box p {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+}
+
+.editor-info-box ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 0.9rem;
+}
+
+.editor-info-box li {
+  margin-bottom: 4px;
+}
+
+/* React Quill Overrides */
+.quill {
+  background: #fff;
+  border-radius: 4px;
+}
+
+.ql-toolbar {
+  border: 1px solid #ddd !important;
+  border-radius: 4px 4px 0 0 !important;
+  background: #f9f9f9 !important;
+}
+
+.ql-container {
+  border: 1px solid #ddd !important;
+  border-top: none !important;
+  border-radius: 0 0 4px 4px !important;
+  font-size: 1rem !important;
+  min-height: 150px;
+}
+
+.ql-editor {
+  min-height: 150px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.ql-editor.ql-blank::before {
+  color: #999;
+  font-style: italic;
+}
+
+.ql-snow .ql-stroke {
+  stroke: #666 !important;
+}
+
+.ql-snow .ql-fill {
+  fill: #666 !important;
+}
+
+.ql-snow .ql-picker-label {
+  color: #666 !important;
+}
+
+.ql-toolbar button:hover,
+.ql-toolbar button.ql-active {
+  color: #8B7355 !important;
+}
+
+.ql-toolbar button:hover .ql-stroke,
+.ql-toolbar button.ql-active .ql-stroke {
+  stroke: #8B7355 !important;
+}
+
+.ql-toolbar button:hover .ql-fill,
+.ql-toolbar button.ql-active .ql-fill {
+  fill: #8B7355 !important;
+}

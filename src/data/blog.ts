@@ -7,6 +7,16 @@ export interface BlogPost {
   image: string
   date: string
   author?: string
+
+  // Custom content (optional) - takes priority over AI-generated content
+  customContent?: {
+    introduction?: string // Rich HTML content
+    sections?: Array<{
+      heading: string
+      content: string // Rich HTML content
+    }>
+    conclusion?: string // Rich HTML content
+  }
 }
 
 export const BLOG_POSTS: BlogPost[] = [
