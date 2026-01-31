@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import {
     Plus, Edit, Trash2, Search, ArrowLeft, Save,
     FileText, AlertCircle, Loader2, Check, X,
-    Type
+    Type, Sparkles
 } from 'lucide-react'
 import { BLOG_POSTS, type BlogPost } from '../data/blog'
 import { BlogContentEditor } from '../components/BlogContentEditor'
@@ -20,6 +20,11 @@ const AdminBlogManager: React.FC = () => {
 
     // Editor state
     const [editingPost, setEditingPost] = useState<BlogPost | null>(null)
+
+    // AI Generator state
+    const [showAIModal, setShowAIModal] = useState(false)
+    const [aiPrompt, setAiPrompt] = useState('')
+    const [isGenerating, setIsGenerating] = useState(false)
 
     const navigate = useNavigate()
 
@@ -115,14 +120,64 @@ const AdminBlogManager: React.FC = () => {
             } else {
                 throw new Error(deployResult.error || deployResult.details || 'Auto-deploy failed')
             }
-        } catch (err: any) {
-            setMessage({
-                type: 'error',
-                text: err.message || 'Failed to deploy changes. Check console for details.'
-            })
-            console.error('Deploy error:', err)
+        } catch (error) {
+            console.error('Deploy error:', error)
+            setMessage({ type: 'error', text: `Auto-deploy failed: ${error instanceof Error ? error.message : 'Unknown error'}` })
         } finally {
             setIsSaving(false)
+        }
+    }
+
+    const handleGenerateWithAI = async () => {
+        if (!aiPrompt.trim()) {
+            setMessage({ type: 'error', text: 'Please enter a prompt for AI generation' })
+            return
+        }
+
+        setIsGenerating(true)
+        setMessage(null)
+
+        try {
+            const response = await fetch('/api/admin/generate-article', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    prompt: aiPrompt,
+                    category: editingPost?.category
+                })
+            })
+
+            const result = await response.json()
+
+            if (!response.ok || !result.success) {
+                throw new Error(result.error || 'AI generation failed')
+            }
+
+            const article = result.article
+
+            // Auto-fill form with AI-generated content
+            setEditingPost(p => p ? {
+                ...p,
+                title: article.title || p.title,
+                slug: article.slug || p.slug,
+                excerpt: article.excerpt || p.excerpt,
+                category: article.category || p.category,
+                customContent: {
+                    introduction: article.introduction || '',
+                    sections: article.sections || [],
+                    conclusion: article.conclusion || ''
+                }
+            } : null)
+
+            setShowAIModal(false)
+            setAiPrompt('')
+            setMessage({ type: 'success', text: '✨ Article generated successfully! Review and edit as needed.' })
+
+        } catch (error) {
+            console.error('AI generation error:', error)
+            setMessage({ type: 'error', text: `AI generation failed: ${error instanceof Error ? error.message : 'Unknown error'}` })
+        } finally {
+            setIsGenerating(false)
         }
     }
 
@@ -262,6 +317,17 @@ const AdminBlogManager: React.FC = () => {
                     </>
                 ) : (
                     <div className="post-editor-container">
+                        <div className="editor-header-actions">
+                            <button
+                                className="ai-generate-btn"
+                                onClick={() => setShowAIModal(true)}
+                                disabled={isGenerating}
+                            >
+                                <Sparkles size={18} />
+                                <span>{isGenerating ? 'Generating...' : 'Generate with AI'}</span>
+                            </button>
+                        </div>
+
                         <section className="editor-section card">
                             <h2 className="editor-h2"><Type size={18} /> Metadata Editor</h2>
                             <div className="editor-grid">
@@ -384,6 +450,65 @@ const AdminBlogManager: React.FC = () => {
                     </div>
                 )}
             </main>
+
+            {/* AI Generator Modal */}
+            {showAIModal && (
+                <div className="ai-modal-overlay" onClick={() => setShowAIModal(false)}>
+                    <div className="ai-modal-content" onClick={(e) => e.stopPropagation()}>
+                        <div className="ai-modal-header">
+                            <h2>
+                                <Sparkles size={24} />
+                                Generate Article with AI
+                            </h2>
+                            <button className="ai-modal-close" onClick={() => setShowAIModal(false)}>
+                                <X size={20} />
+                            </button>
+                        </div>
+
+                        <div className="ai-modal-body">
+                            <label>What would you like to write about?</label>
+                            <textarea
+                                value={aiPrompt}
+                                onChange={(e) => setAiPrompt(e.target.value)}
+                                placeholder="Example: Panduan memilih furniture cafe industrial yang tahan lama dan hemat budget untuk cafe kecil di Jakarta"
+                                rows={5}
+                                autoFocus
+                                disabled={isGenerating}
+                            />
+                            <p className="ai-modal-hint">
+                                💡 Tip: Be specific! Mention target audience, location, budget, or specific furniture types for better results.
+                            </p>
+                        </div>
+
+                        <div className="ai-modal-footer">
+                            <button
+                                className="ai-modal-cancel"
+                                onClick={() => setShowAIModal(false)}
+                                disabled={isGenerating}
+                            >
+                                Cancel
+                            </button>
+                            <button
+                                className="ai-modal-generate"
+                                onClick={handleGenerateWithAI}
+                                disabled={isGenerating || !aiPrompt.trim()}
+                            >
+                                {isGenerating ? (
+                                    <>
+                                        <Loader2 size={18} className="animate-spin" />
+                                        Generating...
+                                    </>
+                                ) : (
+                                    <>
+                                        <Sparkles size={18} />
+                                        Generate Article
+                                    </>
+                                )}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             <style>{`
                 .close-msg { cursor: pointer; margin-left: auto; opacity: 0.5; }
