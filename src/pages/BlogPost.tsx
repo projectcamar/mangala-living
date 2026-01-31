@@ -281,7 +281,33 @@ const BlogPost: React.FC = () => {
   const [newsletterLoading, setNewsletterLoading] = useState(false)
   const [linkCopied, setLinkCopied] = useState(false)
   const post = slug ? getPostBySlug(slug) : undefined
-  const content = slug ? getBlogPostContentLocalized(slug, language) : undefined
+
+  // Check if post has custom content, otherwise use AI-generated content
+  const hasCustomContent = post?.customContent && (
+    post.customContent.introduction ||
+    (post.customContent.sections && post.customContent.sections.length > 0) ||
+    post.customContent.conclusion
+  )
+
+  const content = slug ? (hasCustomContent ? {
+    sections: [
+      // Introduction section
+      ...(post.customContent?.introduction ? [{
+        heading: '',
+        paragraphs: [post.customContent.introduction]
+      }] : []),
+      // Custom sections
+      ...(post.customContent?.sections?.map(section => ({
+        heading: section.heading,
+        paragraphs: [section.content]
+      })) || []),
+      // Conclusion section
+      ...(post.customContent?.conclusion ? [{
+        heading: '',
+        paragraphs: [post.customContent.conclusion]
+      }] : [])
+    ]
+  } : getBlogPostContentLocalized(slug, language)) : undefined
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -423,25 +449,25 @@ const BlogPost: React.FC = () => {
   const metaDescription = (post.excerpt && post.excerpt.trim().length > 0)
     ? post.excerpt
     : (post.category === 'Export & International'
-        ? `Read: ${post.title} — Practical guide, FAQs, and product references from Mangala Living.`
-        : `Baca: ${post.title} — Panduan praktis, FAQ, dan referensi produk dari Mangala Living.`)
+      ? `Read: ${post.title} — Practical guide, FAQs, and product references from Mangala Living.`
+      : `Baca: ${post.title} — Panduan praktis, FAQ, dan referensi produk dari Mangala Living.`)
 
   // Extract FAQ from content for AI Search Optimization (Strategy 1 & 5)
   const extractFAQFromContent = () => {
     if (!content?.sections) return []
-    
-    const faqSection = content.sections.find(section => 
-      section.heading?.toLowerCase().includes('faq') || 
+
+    const faqSection = content.sections.find(section =>
+      section.heading?.toLowerCase().includes('faq') ||
       section.heading?.toLowerCase().includes('pertanyaan')
     )
-    
+
     if (!faqSection?.list) return []
-    
+
     // Parse FAQ list items (format: <strong>Question</strong><br/>Answer)
     return faqSection.list.map(item => {
       const cleanItem = item.replace(/<[^>]*>/g, ' ').trim()
       const parts = cleanItem.split(/\s+(?:br\/|:)\s*/)
-      
+
       if (parts.length >= 2) {
         return {
           question: parts[0].trim(),
@@ -457,8 +483,8 @@ const BlogPost: React.FC = () => {
 
   // Check if this blog post should show Service Areas Section
   // Show for "Local Area Guide" category (geo-targeted posts) or specific workshop-related posts
-  const shouldShowServiceAreas = 
-    post.category === 'Local Area Guide' || 
+  const shouldShowServiceAreas =
+    post.category === 'Local Area Guide' ||
     post.slug === 'furniture-besi-custom-bekasi-workshop-terpercaya' ||
     post.slug === 'bikin-furniture-besi-custom-jabodetabek-berkualitas'
 
@@ -467,9 +493,9 @@ const BlogPost: React.FC = () => {
 
   const formattedDate = new Date(post.date).toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })
 
-    return (
-      <div className="blog-page blog-post-page">
-        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
+  return (
+    <div className="blog-page blog-post-page">
+      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
         <title>{truncateTitle(`${post.title} - Mangala Living`)}</title>
         <meta name="description" content={truncateMetaDescription(metaDescription)} />
@@ -482,7 +508,7 @@ const BlogPost: React.FC = () => {
         {localizedUrls.alternates.map((alternate) => (
           <link key={`blog-post-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
         ))}
-        
+
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={metaDescription} />
@@ -506,18 +532,18 @@ const BlogPost: React.FC = () => {
             <link rel="author" href="https://www.linkedin.com/in/helmi-ramdan-067912118/" />
           </>
         )}
-        
+
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content={post.image} />
-        
+
         {/* BlogPosting Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify(blogSchema)}
         </script>
-        
+
         {/* FAQ Structured Data for AI Search Optimization */}
         {faqSchema && (
           <script type="application/ld+json">
@@ -525,135 +551,82 @@ const BlogPost: React.FC = () => {
           </script>
         )}
       </Helmet>
-        <Header isIndonesian={isIndonesian} language={language} />
+      <Header isIndonesian={isIndonesian} language={language} />
 
-        <section className="blog-post-hero" aria-labelledby="blog-post-title">
-          <div className="blog-post-hero-image">
-            <img
-              src={post.image}
-              alt={`${post.title} - ${post.category} Industrial Furniture Article by Mangala Living`}
-              title={`${post.title} | Mangala Living`}
-              loading="eager"
-              fetchPriority="high"
-              width="1920"
-              height="1080"
-            />
-            <div className="blog-post-hero-overlay" />
+      <section className="blog-post-hero" aria-labelledby="blog-post-title">
+        <div className="blog-post-hero-image">
+          <img
+            src={post.image}
+            alt={`${post.title} - ${post.category} Industrial Furniture Article by Mangala Living`}
+            title={`${post.title} | Mangala Living`}
+            loading="eager"
+            fetchPriority="high"
+            width="1920"
+            height="1080"
+          />
+          <div className="blog-post-hero-overlay" />
+        </div>
+        <div className="blog-post-hero-content">
+          <div className="blog-post-hero-inner">
+            <span className="blog-post-category-tag">{post.category}</span>
+            <h1 id="blog-post-title" className="blog-post-title">
+              {post.title}
+            </h1>
+            <p className="blog-post-meta">
+              {post.author || 'Mangala Living'} · {formattedDate}
+            </p>
           </div>
-          <div className="blog-post-hero-content">
-            <div className="blog-post-hero-inner">
-              <span className="blog-post-category-tag">{post.category}</span>
-              <h1 id="blog-post-title" className="blog-post-title">
-                {post.title}
-              </h1>
-              <p className="blog-post-meta">
-                {post.author || 'Mangala Living'} · {formattedDate}
-              </p>
-            </div>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <main className="blog-post-main" aria-labelledby="blog-post-title">
-          <section className="blog-content-section">
-            <div className="blog-post-container">
-              <Breadcrumb items={breadcrumbItems} />
+      <main className="blog-post-main" aria-labelledby="blog-post-title">
+        <section className="blog-content-section">
+          <div className="blog-post-container">
+            <Breadcrumb items={breadcrumbItems} />
 
-              <div className="blog-post-layout">
-                <article className="blog-post-article" aria-labelledby="blog-post-title">
-                  {content.sections.map((section, index) => (
-                    <React.Fragment key={index}>
-                      <section className="blog-post-section">
-                        {section.heading && <h2 className="blog-post-section-heading">{section.heading}</h2>}
+            <div className="blog-post-layout">
+              <article className="blog-post-article" aria-labelledby="blog-post-title">
+                {content.sections.map((section, index) => (
+                  <React.Fragment key={index}>
+                    <section className="blog-post-section">
+                      {section.heading && <h2 className="blog-post-section-heading">{section.heading}</h2>}
 
-                        {section.paragraphs?.map((para, pIndex) => (
-                          <p
-                            key={pIndex}
-                            className="blog-post-paragraph"
-                            dangerouslySetInnerHTML={{ __html: para }}
+                      {section.paragraphs?.map((para, pIndex) => (
+                        <p
+                          key={pIndex}
+                          className="blog-post-paragraph"
+                          dangerouslySetInnerHTML={{ __html: para }}
+                        />
+                      ))}
+
+                      {section.image && (
+                        <figure className="blog-post-figure">
+                          <img
+                            src={section.image}
+                            alt={section.imageAlt || `${post.title} - ${section.heading || 'Industrial Furniture Article'} - Mangala Living`}
+                            title={section.imageAlt || `${post.title} - ${section.heading || 'Furniture Industrial Guide'} by Mangala Living`}
+                            loading="lazy"
+                            width="800"
+                            height="500"
+                            itemProp="image"
+                            data-image-type="blog-content"
+                            data-post-slug={post.slug}
+                            data-section-heading={section.heading || ''}
                           />
-                        ))}
+                          {section.imageAlt && <figcaption className="blog-post-figcaption">{section.imageAlt}</figcaption>}
+                        </figure>
+                      )}
 
-                        {section.image && (
-                          <figure className="blog-post-figure">
-                            <img
-                              src={section.image}
-                              alt={section.imageAlt || `${post.title} - ${section.heading || 'Industrial Furniture Article'} - Mangala Living`}
-                              title={section.imageAlt || `${post.title} - ${section.heading || 'Furniture Industrial Guide'} by Mangala Living`}
-                              loading="lazy"
-                              width="800"
-                              height="500"
-                              itemProp="image"
-                              data-image-type="blog-content"
-                              data-post-slug={post.slug}
-                              data-section-heading={section.heading || ''}
-                            />
-                            {section.imageAlt && <figcaption className="blog-post-figcaption">{section.imageAlt}</figcaption>}
-                          </figure>
-                        )}
+                      {section.list && (
+                        <ul className="blog-post-list">
+                          {section.list.map((item, lIndex) => (
+                            <li key={lIndex} dangerouslySetInnerHTML={{ __html: item }} />
+                          ))}
+                        </ul>
+                      )}
+                    </section>
 
-                        {section.list && (
-                          <ul className="blog-post-list">
-                            {section.list.map((item, lIndex) => (
-                              <li key={lIndex} dangerouslySetInnerHTML={{ __html: item }} />
-                            ))}
-                          </ul>
-                        )}
-                      </section>
-
-                      {index === 2 && (() => {
-                        const relevantProducts = getRelevantProductsForBlog(post.slug, post.title, post.excerpt)
-                        const hasProductKeywords = /meja|kursi|rak|display|bar|dining|kitchen|furniture|cabinet|shelf|chair|table/i.test(post.slug + post.title)
-
-                        if (relevantProducts.length > 0 && hasProductKeywords) {
-                          const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
-                          const showcaseDescription = BLOG_PRODUCT_SHOWCASE_DESCRIPTION[language] || BLOG_PRODUCT_SHOWCASE_DESCRIPTION.en
-
-                          return (
-                            <div className="blog-post-product-showcase">
-                              <BlogProductShowcase
-                                products={relevantProducts}
-                                heading={showcaseHeading}
-                                description={showcaseDescription}
-                                language={language}
-                              />
-                            </div>
-                          )
-                        }
-                        return null
-                      })()}
-                    </React.Fragment>
-                  ))}
-
-                  {post.author === 'Helmi Ramdan' && (
-                    <div className="blog-post-author-card">
-                      <AuthorCard
-                        name="Helmi Ramdan"
-                        title={post.category === 'Export & International'
-                          ? "Associate at Housing and Settlement Department, DKI Jakarta Province"
-                          : "Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta"}
-                        experience={post.category === 'Export & International'
-                          ? [
-                              'Infrastructure Engineer at Damai Putra Group (3+ years)',
-                              'Design Engineer & Architectural Drafter (5+ years)',
-                              'Alumni of Diponegoro University',
-                              'Commercial Space Design & Construction Specialist'
-                            ]
-                          : [
-                              'Infrastructure Engineer at Damai Putra Group (3+ tahun)',
-                              'Design Engineer & Architectural Drafter (5+ tahun)',
-                              'Alumni Universitas Diponegoro',
-                              'Spesialis Commercial Space Design & Construction'
-                            ]}
-                        linkedIn="https://www.linkedin.com/in/helmi-ramdan-067912118/"
-                        language={language}
-                      />
-                    </div>
-                  )}
-
-                  {(() => {
-                    const showcaseAlreadyShown = content.sections.length > 3
-
-                    if (!showcaseAlreadyShown) {
+                    {index === 2 && (() => {
                       const relevantProducts = getRelevantProductsForBlog(post.slug, post.title, post.excerpt)
                       const hasProductKeywords = /meja|kursi|rak|display|bar|dining|kitchen|furniture|cabinet|shelf|chair|table/i.test(post.slug + post.title)
 
@@ -672,187 +645,240 @@ const BlogPost: React.FC = () => {
                           </div>
                         )
                       }
-                    }
-                    return null
-                  })()}
+                      return null
+                    })()}
+                  </React.Fragment>
+                ))}
 
-                  <div className="blog-post-cta card">
-                    <div className="section-header">
-                      <h2>
-                        {CTA_TRANSLATIONS[language]?.title || CTA_TRANSLATIONS.en.title}
-                      </h2>
-                      <p className="section-subtitle">
-                        {CTA_TRANSLATIONS[language]?.subtitle || CTA_TRANSLATIONS.en.subtitle}
-                      </p>
-                    </div>
-                    <div className="blog-post-cta-actions">
-                      <Link to="/shop" className="btn-primary">
-                        {CTA_TRANSLATIONS[language]?.viewAllProducts || CTA_TRANSLATIONS.en.viewAllProducts}
-                      </Link>
-                      <Link to="/contact-us" className="btn-secondary">
-                        {CTA_TRANSLATIONS[language]?.contactUs || CTA_TRANSLATIONS.en.contactUs}
-                      </Link>
-                    </div>
+                {post.author === 'Helmi Ramdan' && (
+                  <div className="blog-post-author-card">
+                    <AuthorCard
+                      name="Helmi Ramdan"
+                      title={post.category === 'Export & International'
+                        ? "Associate at Housing and Settlement Department, DKI Jakarta Province"
+                        : "Associate at Dinas Perumahan Rakyat dan Kawasan Permukiman Provinsi DKI Jakarta"}
+                      experience={post.category === 'Export & International'
+                        ? [
+                          'Infrastructure Engineer at Damai Putra Group (3+ years)',
+                          'Design Engineer & Architectural Drafter (5+ years)',
+                          'Alumni of Diponegoro University',
+                          'Commercial Space Design & Construction Specialist'
+                        ]
+                        : [
+                          'Infrastructure Engineer at Damai Putra Group (3+ tahun)',
+                          'Design Engineer & Architectural Drafter (5+ tahun)',
+                          'Alumni Universitas Diponegoro',
+                          'Spesialis Commercial Space Design & Construction'
+                        ]}
+                      linkedIn="https://www.linkedin.com/in/helmi-ramdan-067912118/"
+                      language={language}
+                    />
                   </div>
-                </article>
+                )}
 
-                {otherArticles.length > 0 && (
-                  <aside className="blog-post-sidebar" aria-labelledby="blog-post-sidebar-title">
-                    <div className="blog-post-sidebar-card card">
-                      <h2 id="blog-post-sidebar-title" className="blog-post-sidebar-title">Other Articles</h2>
-                      <ul className="blog-post-sidebar-list">
-                        {otherArticles.map((article) => (
-                          <li key={article.id}>
-                            <Link to={`/blog/${article.slug}`} className="blog-post-sidebar-link">
-                              <span className="blog-post-sidebar-link-title">{article.title}</span>
-                              <span className="blog-post-sidebar-link-category">{article.category}</span>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                {(() => {
+                  const showcaseAlreadyShown = content.sections.length > 3
 
-                    {/* Feature 1: Newsletter Subscription */}
-                    <div className="blog-post-sidebar-feature card">
-                      <div className="sidebar-feature-icon">
-                        <Mail size={20} />
-                      </div>
-                      <h3 className="sidebar-feature-title">{sidebarFeatures.newsletter.title}</h3>
-                      <p className="sidebar-feature-description">{sidebarFeatures.newsletter.description}</p>
-                      {!newsletterSubmitted ? (
-                        <form onSubmit={handleNewsletterSubmit} className="sidebar-newsletter-form">
-                          <input
-                            type="email"
-                            value={newsletterEmail}
-                            onChange={(e) => setNewsletterEmail(e.target.value)}
-                            placeholder={sidebarFeatures.newsletter.placeholder}
-                            required
-                            className="sidebar-newsletter-input"
-                            disabled={newsletterLoading}
+                  if (!showcaseAlreadyShown) {
+                    const relevantProducts = getRelevantProductsForBlog(post.slug, post.title, post.excerpt)
+                    const hasProductKeywords = /meja|kursi|rak|display|bar|dining|kitchen|furniture|cabinet|shelf|chair|table/i.test(post.slug + post.title)
+
+                    if (relevantProducts.length > 0 && hasProductKeywords) {
+                      const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
+                      const showcaseDescription = BLOG_PRODUCT_SHOWCASE_DESCRIPTION[language] || BLOG_PRODUCT_SHOWCASE_DESCRIPTION.en
+
+                      return (
+                        <div className="blog-post-product-showcase">
+                          <BlogProductShowcase
+                            products={relevantProducts}
+                            heading={showcaseHeading}
+                            description={showcaseDescription}
+                            language={language}
                           />
-                          <button
-                            type="submit"
-                            className="sidebar-newsletter-btn"
-                            disabled={newsletterLoading || !newsletterEmail.trim()}
-                          >
-                            {newsletterLoading ? '...' : sidebarFeatures.newsletter.button}
-                          </button>
-                        </form>
-                      ) : (
-                        <div className="sidebar-newsletter-success">
-                          <p>{sidebarFeatures.newsletter.success}</p>
                         </div>
-                      )}
-                    </div>
+                      )
+                    }
+                  }
+                  return null
+                })()}
 
-                    {/* Feature 2: Share Article */}
-                    <div className="blog-post-sidebar-feature card">
-                      <div className="sidebar-feature-icon">
-                        <Share2 size={20} />
-                      </div>
-                      <h3 className="sidebar-feature-title">{sidebarFeatures.share.title}</h3>
-                      <p className="sidebar-feature-description">{sidebarFeatures.share.description}</p>
-                      <div className="share-buttons-grid">
-                        <a
-                          href={shareUrls.facebook}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="share-button share-facebook"
-                          onClick={() => trackWhatsAppClick('blog_post_share_facebook', {
-                            blogPost: post?.title || '',
-                            blogPostSlug: slug || ''
-                          })}
-                        >
-                          <Facebook size={18} />
-                          <span>Facebook</span>
-                        </a>
-                        <a
-                          href={shareUrls.twitter}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="share-button share-twitter"
-                          onClick={() => trackWhatsAppClick('blog_post_share_twitter', {
-                            blogPost: post?.title || '',
-                            blogPostSlug: slug || ''
-                          })}
-                        >
-                          <Twitter size={18} />
-                          <span>Twitter</span>
-                        </a>
-                        <a
-                          href={shareUrls.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="share-button share-linkedin"
-                          onClick={() => trackWhatsAppClick('blog_post_share_linkedin', {
-                            blogPost: post?.title || '',
-                            blogPostSlug: slug || ''
-                          })}
-                        >
-                          <Linkedin size={18} />
-                          <span>LinkedIn</span>
-                        </a>
-                        <a
-                          href={shareUrls.whatsapp}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="share-button share-whatsapp"
-                          onClick={() => trackWhatsAppClick('blog_post_share_whatsapp', {
-                            blogPost: post?.title || '',
-                            blogPostSlug: slug || ''
-                          })}
-                        >
-                          <MessageCircle size={18} />
-                          <span>WhatsApp</span>
-                        </a>
+                <div className="blog-post-cta card">
+                  <div className="section-header">
+                    <h2>
+                      {CTA_TRANSLATIONS[language]?.title || CTA_TRANSLATIONS.en.title}
+                    </h2>
+                    <p className="section-subtitle">
+                      {CTA_TRANSLATIONS[language]?.subtitle || CTA_TRANSLATIONS.en.subtitle}
+                    </p>
+                  </div>
+                  <div className="blog-post-cta-actions">
+                    <Link to="/shop" className="btn-primary">
+                      {CTA_TRANSLATIONS[language]?.viewAllProducts || CTA_TRANSLATIONS.en.viewAllProducts}
+                    </Link>
+                    <Link to="/contact-us" className="btn-secondary">
+                      {CTA_TRANSLATIONS[language]?.contactUs || CTA_TRANSLATIONS.en.contactUs}
+                    </Link>
+                  </div>
+                </div>
+              </article>
+
+              {otherArticles.length > 0 && (
+                <aside className="blog-post-sidebar" aria-labelledby="blog-post-sidebar-title">
+                  <div className="blog-post-sidebar-card card">
+                    <h2 id="blog-post-sidebar-title" className="blog-post-sidebar-title">Other Articles</h2>
+                    <ul className="blog-post-sidebar-list">
+                      {otherArticles.map((article) => (
+                        <li key={article.id}>
+                          <Link to={`/blog/${article.slug}`} className="blog-post-sidebar-link">
+                            <span className="blog-post-sidebar-link-title">{article.title}</span>
+                            <span className="blog-post-sidebar-link-category">{article.category}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Feature 1: Newsletter Subscription */}
+                  <div className="blog-post-sidebar-feature card">
+                    <div className="sidebar-feature-icon">
+                      <Mail size={20} />
+                    </div>
+                    <h3 className="sidebar-feature-title">{sidebarFeatures.newsletter.title}</h3>
+                    <p className="sidebar-feature-description">{sidebarFeatures.newsletter.description}</p>
+                    {!newsletterSubmitted ? (
+                      <form onSubmit={handleNewsletterSubmit} className="sidebar-newsletter-form">
+                        <input
+                          type="email"
+                          value={newsletterEmail}
+                          onChange={(e) => setNewsletterEmail(e.target.value)}
+                          placeholder={sidebarFeatures.newsletter.placeholder}
+                          required
+                          className="sidebar-newsletter-input"
+                          disabled={newsletterLoading}
+                        />
                         <button
-                          onClick={handleCopyLink}
-                          className={`share-button share-copy ${linkCopied ? 'copied' : ''}`}
+                          type="submit"
+                          className="sidebar-newsletter-btn"
+                          disabled={newsletterLoading || !newsletterEmail.trim()}
                         >
-                          {linkCopied ? <Check size={18} /> : <Copy size={18} />}
-                          <span>{linkCopied ? sidebarFeatures.share.copied : 'Copy Link'}</span>
+                          {newsletterLoading ? '...' : sidebarFeatures.newsletter.button}
                         </button>
+                      </form>
+                    ) : (
+                      <div className="sidebar-newsletter-success">
+                        <p>{sidebarFeatures.newsletter.success}</p>
                       </div>
-                    </div>
+                    )}
+                  </div>
 
-                    {/* Feature 3: Free Consultation CTA */}
-                    <div className="blog-post-sidebar-feature card sidebar-consultation">
-                      <div className="sidebar-feature-icon">
-                        <MessageCircle size={20} />
-                      </div>
-                      <h3 className="sidebar-feature-title">{sidebarFeatures.consultation.title}</h3>
-                      <p className="sidebar-feature-description">{sidebarFeatures.consultation.description}</p>
+                  {/* Feature 2: Share Article */}
+                  <div className="blog-post-sidebar-feature card">
+                    <div className="sidebar-feature-icon">
+                      <Share2 size={20} />
+                    </div>
+                    <h3 className="sidebar-feature-title">{sidebarFeatures.share.title}</h3>
+                    <p className="sidebar-feature-description">{sidebarFeatures.share.description}</p>
+                    <div className="share-buttons-grid">
                       <a
-                        href={`https://wa.me/+6288801146881?text=${encodeURIComponent(
-                          post?.category === 'Export & International'
-                            ? `Hello Mangala Living,\n\nI just read your article: "${post?.title}". I'm interested in industrial furniture for my project. Can I get more information and consultation?\n\nArticle: ${window.location.href}\n\nThank you!`
-                            : `Halo Mangala Living,\n\nSaya baru membaca artikel Anda: "${post?.title}". Saya tertarik dengan furniture industrial untuk project saya. Bisakah saya mendapatkan informasi lebih lanjut dan konsultasi?\n\nArtikel: ${window.location.href}\n\nTerima kasih!`
-                        )}`}
-                        className="sidebar-consultation-btn"
-                        onClick={() => trackWhatsAppClick('blog_post_consultation_sidebar', {
-                          blogPost: post?.title || '',
-                          blogPostSlug: slug || '',
-                          blogPostCategory: post?.category || ''
-                        })}
+                        href={shareUrls.facebook}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="share-button share-facebook"
+                        onClick={() => trackWhatsAppClick('blog_post_share_facebook', {
+                          blogPost: post?.title || '',
+                          blogPostSlug: slug || ''
+                        })}
                       >
-                        <MessageCircle size={16} />
-                        {sidebarFeatures.consultation.button}
+                        <Facebook size={18} />
+                        <span>Facebook</span>
                       </a>
+                      <a
+                        href={shareUrls.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="share-button share-twitter"
+                        onClick={() => trackWhatsAppClick('blog_post_share_twitter', {
+                          blogPost: post?.title || '',
+                          blogPostSlug: slug || ''
+                        })}
+                      >
+                        <Twitter size={18} />
+                        <span>Twitter</span>
+                      </a>
+                      <a
+                        href={shareUrls.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="share-button share-linkedin"
+                        onClick={() => trackWhatsAppClick('blog_post_share_linkedin', {
+                          blogPost: post?.title || '',
+                          blogPostSlug: slug || ''
+                        })}
+                      >
+                        <Linkedin size={18} />
+                        <span>LinkedIn</span>
+                      </a>
+                      <a
+                        href={shareUrls.whatsapp}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="share-button share-whatsapp"
+                        onClick={() => trackWhatsAppClick('blog_post_share_whatsapp', {
+                          blogPost: post?.title || '',
+                          blogPostSlug: slug || ''
+                        })}
+                      >
+                        <MessageCircle size={18} />
+                        <span>WhatsApp</span>
+                      </a>
+                      <button
+                        onClick={handleCopyLink}
+                        className={`share-button share-copy ${linkCopied ? 'copied' : ''}`}
+                      >
+                        {linkCopied ? <Check size={18} /> : <Copy size={18} />}
+                        <span>{linkCopied ? sidebarFeatures.share.copied : 'Copy Link'}</span>
+                      </button>
                     </div>
-                  </aside>
-                )}
-              </div>
+                  </div>
+
+                  {/* Feature 3: Free Consultation CTA */}
+                  <div className="blog-post-sidebar-feature card sidebar-consultation">
+                    <div className="sidebar-feature-icon">
+                      <MessageCircle size={20} />
+                    </div>
+                    <h3 className="sidebar-feature-title">{sidebarFeatures.consultation.title}</h3>
+                    <p className="sidebar-feature-description">{sidebarFeatures.consultation.description}</p>
+                    <a
+                      href={`https://wa.me/+6288801146881?text=${encodeURIComponent(
+                        post?.category === 'Export & International'
+                          ? `Hello Mangala Living,\n\nI just read your article: "${post?.title}". I'm interested in industrial furniture for my project. Can I get more information and consultation?\n\nArticle: ${window.location.href}\n\nThank you!`
+                          : `Halo Mangala Living,\n\nSaya baru membaca artikel Anda: "${post?.title}". Saya tertarik dengan furniture industrial untuk project saya. Bisakah saya mendapatkan informasi lebih lanjut dan konsultasi?\n\nArtikel: ${window.location.href}\n\nTerima kasih!`
+                      )}`}
+                      className="sidebar-consultation-btn"
+                      onClick={() => trackWhatsAppClick('blog_post_consultation_sidebar', {
+                        blogPost: post?.title || '',
+                        blogPostSlug: slug || '',
+                        blogPostCategory: post?.category || ''
+                      })}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <MessageCircle size={16} />
+                      {sidebarFeatures.consultation.button}
+                    </a>
+                  </div>
+                </aside>
+              )}
             </div>
-          </section>
-        </main>
+          </div>
+        </section>
+      </main>
 
-        {shouldShowServiceAreas && <ServiceAreasSection isIndonesian={isIndonesian} />}
+      {shouldShowServiceAreas && <ServiceAreasSection isIndonesian={isIndonesian} />}
 
-        <Footer isIndonesian={isIndonesian} language={language} />
-      </div>
-    )
-  }
+      <Footer isIndonesian={isIndonesian} language={language} />
+    </div>
+  )
+}
 
 export default BlogPost
