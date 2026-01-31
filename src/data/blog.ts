@@ -3469,6 +3469,148 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       "conclusion": "Furniture custom besi dari Mangala Living bukan hanya sekedar produk, tetapi investasi jangka panjang untuk bisnis Anda. Dengan kombinasi desain industrial yang timeless, material berkualitas, dan layanan custom yang profesional, kami siap membantu Anda menciptakan ruang yang tidak hanya fungsional tetapi juga estetis. Hubungi kami hari ini dan wujudkan furniture impian Anda bersama tim ahli kami!"
     }
+  },
+  {
+    "id": 304,
+    "slug": "panduan-memilih-furniture-cafe-industrial-tahan-lama-hemat",
+    "title": "Panduan Memilih Furniture Cafe Industrial Tahan Lama & Hemat",
+    "category": "Tips and Trick",
+    "excerpt": "Tips memilih furniture industrial untuk cafe kecil di Jakarta yang awet dan hemat budget. Solusi tepat dari pengalaman 25+ tahun Mangala Living.",
+    "image": "https://images.unsplash.com/photo-1652180126149-594db303e643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxQYW5kdWFuJTIwTWVtaWxpaCUyMEZ1cm5pdHVyZSUyMENhZmUlMjBJbmR1c3RyaWFsJTIwVGFoYW4lMjBMYW1hJTIwJTI2JTIwSGVtYXR8ZW58MHwwfHx8MTc2OTg3NDY3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-01-31 15:49",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "Memilih furniture industrial untuk cafe kecil di Jakarta butuh strategi khusus. Selain harus tahan lama menghadapi intensitas penggunaan tinggi, juga perlu hemat budget tanpa mengorbankan estetika. Sebagai produsen furniture industrial berpengalaman 25+ tahun, Mangala Living akan membagikan panduan praktisnya.",
+      "keyPoints": [
+        "Material baja dan kayu reclaimed paling optimal",
+        "Furniture multifungsi hemat ruang & budget",
+        "Pilih produsen lokal untuk efisiensi biaya",
+        "Desain modular untuk perluasan masa depan",
+        "Perawatan rutin tingkatkan durability"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Kenali Material Industrial Terbaik",
+          "content": "<strong>Material adalah faktor kunci</strong> dalam memilih furniture cafe industrial yang tahan lama. Untuk furniture outdoor atau area basah, pilih baja powder-coated yang anti karat. Untuk indoor, kombinasi baja hollow pipe dengan kayu reclaimed memberikan kesan industrial otentik sekaligus kuat.<br><br>Hindari material MDF atau particle board karena mudah rusak di lingkungan cafe yang lembab. Mangala Living menggunakan material baja tebal 1.2-2mm dan kayu solid yang sudah melalui proses pengawetan khusus untuk proyek di Jakarta.",
+          "imageSearchQuery": "steel cafe tables industrial design",
+          "image": "https://images.unsplash.com/photo-1751197979977-0113ddba9823?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMGNhZmUlMjB0YWJsZXMlMjBpbmR1c3RyaWFsJTIwZGVzaWdufGVufDB8MHx8fDE3Njk4NzQ2NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "steel cafe tables industrial design"
+        },
+        {
+          "heading": "Strategi Hemat Budget untuk Cafe Kecil",
+          "content": "<strong>Fokus pada furniture multifungsi</strong> seperti meja dengan rak penyimpanan bawah atau bangku panjang yang bisa sekaligus jadi partisi. Pilih desain modular seperti <em>Dining Set with 2 Chairs</em> yang bisa ditambah unit sesuai perkembangan bisnis.<br><br>Manfaatkan produsen lokal seperti Mangala Living yang workshop-nya di Bekasi untuk hemat biaya transportasi dan bisa custom ukuran sesuai ruang terbatas. Kami sudah mengerjakan 1000+ proyek cafe kecil di Jakarta dengan konsep <em>cost-effective industrial design</em>."
+        },
+        {
+          "heading": "Solusi Meja & Kursi Industrial Awet",
+          "content": "Untuk furniture utama seperti meja dan kursi, pilih yang menggunakan frame baja hollow pipe dengan ketebalan minimal 1.5mm. <strong>Dining Set with 2 Chairs</strong> dari koleksi Mangala Living menggunakan konstruksi sambungan las kuat dengan finishing powder-coating tahan gores.<br><br>Kursi bar seperti <em>Beam Industrial Bar Chair</em> didesain khusus untuk penggunaan intensif di cafe dengan kapasitas beban hingga 150kg. Pilih varibel tanpa bantal untuk lebih mudah perawatan.",
+          "productId": 5
+        },
+        {
+          "heading": "Storage Industrial yang Fungsional",
+          "content": "Manfaatkan ruang vertikal dengan storage industrial seperti <strong>Ladder Frame Display Stand</strong> yang bisa jadi tempat display sekaligus penyimpanan. Untuk dapur cafe kecil, <em>Industrial Kitchen Cabinet</em> dengan frame baja dan rak adjustable menjadi solusi tahan beban berat.<br><br>Produk storage Mangala Living didesain modular sehingga bisa dikombinasikan sesuai perkembangan bisnis. Material baja tebal menjamin ketahanan meski di ruang dapur yang lembab.",
+          "productId": 12
+        },
+        {
+          "heading": "Tips Perawatan Harian",
+          "content": "<strong>1. Bersihkan frame baja</strong> seminggu sekali dengan lap microfiber basah<br><strong>2. Oleskan minyak kayu</strong> 3 bulan sekali untuk furniture kayu reclaimed<br><strong>3. Periksa sambungan baut</strong> tiap 6 bulan<br><strong>4. Hindari bahan kimia keras</strong> saat membersihkan<br><br>Dengan perawatan tepat, furniture industrial bisa bertahan 5-10 tahun bahkan di lingkungan cafe Jakarta yang sibuk."
+        }
+      ],
+      "conclusion": "Memilih furniture industrial untuk cafe kecil di Jakarta tak harus mahal asal pahami material dan pilih produsen berpengalaman seperti Mangala Living. Dengan workshop di Bekasi dan tim ahli custom desain, kami siap membantu menciptakan interior cafe industrial yang tahan lama sesuai budget. Kontak kami sekarang untuk konsultasi gratis dan penawaran spesial!"
+    }
+  },
+  {
+    "id": 305,
+    "slug": "mangala-living-indonesia-furniture-manufacturer-exporter",
+    "title": "Mangala Living: Indonesia's Leading Furniture Manufacturer & Exporter",
+    "category": "Tips and Trick",
+    "excerpt": "Discover Mangala Living, Indonesia's premier industrial furniture manufacturer with 25+ years experience, serving cafes, restaurants, hotels, and offices worldwide.",
+    "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwbWFudWZhY3R1cmluZyUyMHdvcmtzaG9wJTIwSW5kb25lc2lhfGVufDB8MHx8fDE3Njk4NzQ4MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-01-31 15:51",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "Mangala Living stands as a beacon of excellence in Indonesia's furniture manufacturing industry, combining decades of expertise with innovative design to create premium industrial furniture for commercial spaces. Since 1999, we've been crafting durable, stylish furniture that transforms cafes, restaurants, hotels, and offices across the globe.",
+      "keyPoints": [
+        "25+ years of furniture manufacturing expertise",
+        "Premium industrial furniture for commercial spaces",
+        "1000+ successful projects worldwide",
+        "Custom design solutions for unique requirements",
+        "Export-ready quality meeting international standards"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Our Manufacturing Excellence",
+          "content": "At Mangala Living, our manufacturing process combines traditional craftsmanship with modern technology to create furniture that stands the test of time. Our workshop in Bekasi, West Java, spans over 5,000 square meters and houses state-of-the-art machinery operated by skilled artisans with decades of experience. <br><br>We specialize in industrial-style furniture using premium materials like reclaimed wood, steel pipes, and powder-coated metal. Every piece undergoes rigorous quality control, from material selection to final assembly, ensuring durability and aesthetic appeal that meets international standards.",
+          "imageSearchQuery": "industrial furniture workshop manufacturing Indonesia",
+          "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBtYW51ZmFjdHVyaW5nJTIwSW5kb25lc2lhfGVufDB8MHx8fDE3Njk4NzQ4MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial furniture workshop manufacturing Indonesia"
+        },
+        {
+          "heading": "Why Choose Indonesian Furniture Manufacturers?",
+          "content": "Indonesia has emerged as a global leader in furniture manufacturing, offering unique advantages that set us apart. Our strategic location provides access to abundant raw materials, including high-quality teak, mahogany, and sustainable plantation wood. Labor costs remain competitive while maintaining exceptional craftsmanship standards, allowing us to offer premium products at reasonable prices. <br><br>Indonesian manufacturers like Mangala Living understand both local and international design trends, creating furniture that appeals to diverse markets. Our export experience spans over two decades, with products reaching customers in Asia, Europe, the Middle East, and North America. We navigate complex international shipping regulations and customs procedures, making the export process seamless for our clients."
+        },
+        {
+          "heading": "Custom Solutions for Every Space",
+          "content": "Every commercial space has unique requirements, and our team excels at creating custom furniture solutions that perfectly match your vision. Whether you're designing a cozy café, a bustling restaurant, a luxury hotel, or a modern office, we work closely with you to understand your needs, brand identity, and functional requirements. <br><br>Our design team uses advanced CAD software to create detailed 3D renderings, allowing you to visualize the final product before production begins. We offer flexibility in materials, finishes, dimensions, and design elements, ensuring your furniture not only looks stunning but also serves its intended purpose effectively.",
+          "productId": 4
+        },
+        {
+          "heading": "Quality Assurance and International Standards",
+          "content": "Quality is non-negotiable at Mangala Living. Our quality control process involves multiple inspection stages, from raw material testing to final product evaluation. We conduct stress tests, durability assessments, and finish quality checks to ensure every piece meets our stringent standards. <br><br>We understand that international clients require specific certifications and compliance with various regulations. Our products meet international standards for safety, durability, and environmental responsibility. We provide necessary documentation, including fumigation certificates, material safety data sheets, and compliance certificates for different markets, making the import process smooth and hassle-free for our clients.",
+          "productId": 9
+        }
+      ],
+      "conclusion": "As Indonesia's premier furniture manufacturer and exporter, Mangala Living combines decades of experience, manufacturing excellence, and customer-focused service to deliver exceptional furniture solutions. Whether you're a café owner in Singapore, a restaurant chain in Dubai, a hotel developer in Europe, or an office designer in the United States, we have the expertise and capacity to bring your vision to life. Contact us today to discuss your furniture needs and discover why businesses worldwide trust Mangala Living for their commercial furniture requirements."
+    }
+  },
+  {
+    "id": 306,
+    "slug": "choose-indonesian-furniture-manufacturer",
+    "title": "How to Choose the Best Indonesian Furniture Manufacturer",
+    "category": "Tips and Trick",
+    "excerpt": "Discover essential tips for selecting top Indonesian furniture manufacturers for your business, focusing on quality, reliability, and export capabilities.",
+    "image": "https://images.unsplash.com/photo-1769430838012-8e1270d41f46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwbWFudWZhY3R1cmVyJTIwd29ya3Nob3B8ZW58MHwwfHx8MTc2OTg0ODUwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-01-31 15:53",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "Selecting the right furniture manufacturer is crucial for your business success. Indonesia has emerged as a global furniture powerhouse, offering exceptional craftsmanship and competitive pricing. This guide will help you navigate the selection process and find the perfect manufacturing partner.",
+      "keyPoints": [
+        "Evaluate manufacturer credentials and certifications",
+        "Assess production capacity and quality control",
+        "Consider export experience and logistics capabilities",
+        "Review portfolio and customization options",
+        "Check customer reviews and industry reputation"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Understanding Indonesian Furniture Manufacturing Landscape",
+          "content": "Indonesia's furniture industry has evolved significantly over the past decades, becoming a global leader in both indoor and outdoor furniture production. The country's rich natural resources, particularly teak and other hardwoods, combined with skilled craftsmanship, create a unique competitive advantage. Major manufacturing hubs are concentrated in Java, with cities like Jepara, Surabaya, and Tangerang hosting numerous factories.<br><br>When evaluating Indonesian manufacturers, it's essential to understand the different types of operations available. Some specialize in traditional handcrafted pieces, while others focus on modern, machine-made furniture for commercial projects. The industry ranges from small family-owned workshops to large-scale factories capable of handling international orders. This diversity means you can find a manufacturer that perfectly matches your specific needs, whether you're looking for custom cafe furniture or bulk orders for hotel chains.",
+          "imageSearchQuery": "Indonesian furniture factory production line",
+          "image": "https://images.unsplash.com/photo-1606077089119-92075161bb60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWFuJTIwZnVybml0dXJlJTIwZmFjdG9yeSUyMHByb2R1Y3Rpb24lMjBsaW5lfGVufDB8MHx8fDE3Njk4NzQ4OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "Indonesian furniture factory production line"
+        },
+        {
+          "heading": "Key Selection Criteria for Furniture Manufacturers",
+          "content": "When choosing an Indonesian furniture manufacturer, several critical factors should guide your decision. First, verify their legal status and certifications. Reputable manufacturers should have proper business licenses, export permits, and quality certifications such as SVLK (Timber Legality Verification System) for sustainable wood sourcing. This ensures you're working with a legitimate operation that complies with international standards.<br><br>Production capacity is another crucial consideration. Assess whether the manufacturer can handle your order volume and meet your timeline requirements. Ask about their machinery, workforce size, and production processes. A manufacturer with modern equipment and efficient workflows can deliver consistent quality at competitive prices. Additionally, inquire about their quality control procedures and whether they offer warranties on their products. This demonstrates their commitment to customer satisfaction and product durability."
+        },
+        {
+          "heading": "Export Experience and Logistics Capabilities",
+          "content": "For international buyers, a manufacturer's export experience is paramount. Look for companies with proven track records in shipping to your target markets. Experienced exporters understand the complexities of international shipping, customs documentation, and compliance requirements. They should be able to provide references from previous international clients and demonstrate their ability to handle various shipping methods, from air freight for smaller orders to container shipping for bulk purchases.<br><br>Logistics capabilities extend beyond shipping. The best manufacturers offer comprehensive services including packaging design, consolidation of orders, and assistance with import documentation. They should have established relationships with freight forwarders and customs brokers to ensure smooth delivery. Some manufacturers even provide after-sales support and warranty services for international customers. When evaluating potential partners, ask about their typical lead times, packaging methods, and how they handle damaged goods during transit."
+        },
+        {
+          "heading": "Quality Assessment and Portfolio Review",
+          "content": "Quality assessment should be a top priority when selecting a furniture manufacturer. Request samples of their work to evaluate material quality, craftsmanship, and finishing. Pay attention to details like joint construction, hardware quality, and surface treatments. For wooden furniture, examine the wood grain consistency, moisture content, and finishing quality. A reputable manufacturer will be transparent about their materials and processes.<br><br>Reviewing their portfolio provides insights into their capabilities and style range. Look for diversity in their product line, which indicates versatility and experience. Check if they have experience producing furniture similar to what you need. For commercial projects, verify if they have worked with businesses in your industry. Many manufacturers showcase their work on their websites or social media platforms. Don't hesitate to ask for references from previous clients, particularly those in your region or industry."
+        },
+        {
+          "heading": "Communication and Customer Service",
+          "content": "Effective communication is essential for successful manufacturing partnerships. Evaluate the manufacturer's responsiveness, language capabilities, and willingness to understand your specific requirements. Clear communication channels help prevent misunderstandings and ensure your vision is accurately translated into the final product. Look for manufacturers who assign dedicated account managers to handle your project from start to finish.<br><br>Customer service extends beyond the initial sale. The best manufacturers offer ongoing support, including assistance with installation, maintenance advice, and warranty claims. They should be proactive in addressing any issues that arise and committed to building long-term relationships. Consider scheduling video calls or virtual factory tours to get a better sense of their operation and communication style. This personal interaction can reveal a lot about their professionalism and commitment to customer satisfaction.",
+          "productId": 6
+        }
+      ],
+      "conclusion": "Finding the right Indonesian furniture manufacturer requires careful research and due diligence, but the rewards are substantial. Indonesia's furniture industry offers exceptional value through quality craftsmanship, competitive pricing, and diverse product options. By focusing on key selection criteria, verifying credentials, and assessing communication capabilities, you can establish a successful partnership that benefits your business for years to come. Remember that the cheapest option isn't always the best value – prioritize quality, reliability, and service to ensure your furniture investments deliver lasting returns."
+    }
   }
 ]
 
