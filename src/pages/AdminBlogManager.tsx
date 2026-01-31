@@ -29,14 +29,20 @@ const AdminBlogManager: React.FC = () => {
         const fetchSources = async () => {
             try {
                 const res = await fetch('/api/admin/blog')
-                if (!res.ok) throw new Error('Failed to fetch blog sources')
+                if (!res.ok) {
+                    // API not available (dev mode) - use imported data directly
+                    console.warn('API not available, using imported BLOG_POSTS directly')
+                    setPosts([...BLOG_POSTS])
+                    setIsLoading(false)
+                    return
+                }
                 const data = await res.json()
                 setBlogSource(data.blogSource)
-
-                // We use the imported BLOG_POSTS as state initial value
                 setPosts([...BLOG_POSTS])
             } catch (err: any) {
-                setMessage({ type: 'error', text: err.name === 'Error' ? err.message : 'Failed to fetch sources' })
+                // In dev mode, API routes don't exist - this is expected
+                console.warn('Blog API not available (dev mode), using imported data')
+                setPosts([...BLOG_POSTS])
             } finally {
                 setIsLoading(false)
             }
@@ -91,6 +97,16 @@ const AdminBlogManager: React.FC = () => {
         setMessage(null)
 
         try {
+            // Check if we're in dev mode (no blogSource loaded)
+            if (!blogSource) {
+                setMessage({
+                    type: 'error',
+                    text: 'File sync only works in production. In dev mode, manually edit src/data/blog.ts or deploy to Vercel to use this feature.'
+                })
+                setIsSaving(false)
+                return
+            }
+
             const arrayStartTag = 'export const BLOG_POSTS: BlogPost[] = ['
             const startIdx = blogSource.indexOf(arrayStartTag)
             if (startIdx === -1) throw new Error('Could not find BLOG_POSTS array in source file')
@@ -198,6 +214,16 @@ const AdminBlogManager: React.FC = () => {
                         {message.type === 'success' ? <Check size={18} /> : <AlertCircle size={18} />}
                         <span>{message.text}</span>
                         <X size={14} className="close-msg" onClick={() => setMessage(null)} />
+                    </div>
+                )}
+
+                {!blogSource && view === 'list' && (
+                    <div className="dev-mode-notice">
+                        <AlertCircle size={18} />
+                        <div>
+                            <strong>Development Mode</strong>
+                            <p>File sync is disabled in dev mode. You can create/edit/delete posts here, but changes won't persist to disk. Deploy to Vercel to enable full sync functionality.</p>
+                        </div>
                     </div>
                 )}
 
@@ -380,6 +406,20 @@ const AdminBlogManager: React.FC = () => {
                 }
                 .editor-notice strong { display: block; margin-bottom: 5px; font-size: 1rem; }
                 .editor-notice p { margin: 0; font-size: 0.9rem; line-height: 1.5; opacity: 0.9; }
+
+                .dev-mode-notice {
+                    margin-bottom: 25px;
+                    background: rgba(41, 128, 185, 0.05);
+                    border: 1px solid rgba(41, 128, 185, 0.2);
+                    padding: 16px 20px;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 15px;
+                    color: #2980b9;
+                }
+                .dev-mode-notice strong { display: block; margin-bottom: 5px; font-size: 0.95rem; }
+                .dev-mode-notice p { margin: 0; font-size: 0.85rem; line-height: 1.5; opacity: 0.9; }
 
                 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
                 
