@@ -2924,6 +2924,26 @@ export const BLOG_POSTS: BlogPost[] = [
       "sections": [],
       "conclusion": ""
     }
+  },
+  {
+    "id": 291,
+    "slug": "ughhughhh",
+    "title": "ughh",
+    "category": "Tips and Trick",
+    "excerpt": "",
+    "image": "",
+    "date": "2026-01-31",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "anjay",
+      "sections": [
+        {
+          "heading": "anjay",
+          "content": "anjayyyy"
+        }
+      ],
+      "conclusion": "tess"
+    }
   }
 ]
 
