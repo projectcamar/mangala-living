@@ -2228,16 +2228,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Tips Memilih Patio Furniture Industrial Outdoor - Panduan Lengkap",
     "category": "Tips and Trick",
     "excerpt": "Tips memilih patio furniture industrial outdoor yang tepat. Panduan material, finishing, ukuran, dan layout untuk area outdoor cafe, restoran, atau rumah tinggal.",
-    "image": "https://images.unsplash.com/photo-1722227155799-cec5b9a946f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwb3V0ZG9vciUyMGZ1cm5pdHVyZSUyMGluJTIwbW9kZXJuJTIwY2FmZXxlbnwwfDB8fHwxNzY5ODUwMzAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan",
-    "customContent": {
-      "introduction": "",
-      "keyPoints": [],
-      "language": "id",
-      "sections": [],
-      "conclusion": ""
-    }
+    "author": "Helmi Ramdan"
   },
   {
     "id": 222,
@@ -2255,16 +2248,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Patio Furniture Manufacturer Indonesia - Custom Export",
     "category": "Export & International",
     "excerpt": "Custom patio furniture manufacturer in Indonesia. We design and manufacture industrial-style outdoor furniture for cafes, restaurants, and hotels worldwide. Export quality guaranteed.",
-    "image": "https://images.unsplash.com/photo-1722227155799-cec5b9a946f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwb3V0ZG9vciUyMGZ1cm5pdHVyZSUyMGluJTIwY2FmZSUyMHNldHRpbmd8ZW58MHwwfHx8MTc2OTg1MDI5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan",
-    "customContent": {
-      "introduction": "",
-      "keyPoints": [],
-      "language": "id",
-      "sections": [],
-      "conclusion": ""
-    }
+    "author": "Helmi Ramdan"
   },
   {
     "id": 224,
@@ -2282,16 +2268,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Custom Patio Furniture Indonesia - Export Manufacturer",
     "category": "Export & International",
     "excerpt": "Custom patio furniture manufacturer in Indonesia. Work with our design team to create unique outdoor furniture for your brand. Export-ready with OEM/ODM services available.",
-    "image": "https://images.unsplash.com/photo-1762608675427-09ac2dbd1540?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHx0ZWFrJTIwb3V0ZG9vciUyMGZ1cm5pdHVyZSUyMGluJTIwbW9kZXJuJTIwYmFja3lhcmR8ZW58MHwwfHx8MTc2OTg1MDI2NXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan",
-    "customContent": {
-      "introduction": "",
-      "keyPoints": [],
-      "language": "id",
-      "sections": [],
-      "conclusion": ""
-    }
+    "author": "Helmi Ramdan"
   },
   {
     "id": 226,
@@ -2339,16 +2318,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Patio Furniture Set Indonesia - Custom Manufacturer",
     "category": "Export & International",
     "excerpt": "Custom patio furniture sets from Indonesian manufacturer. Tables, chairs, and bar sets designed for outdoor cafes and restaurants. OEM/ODM services with competitive MOQ.",
-    "image": "https://images.unsplash.com/photo-1767429013026-fefb4bc82879?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxvdXRkb29yJTIwcmVzdGF1cmFudCUyMHNlYXRpbmclMjBhcmVhJTIwd2l0aCUyMHRlYWslMjBmdXJuaXR1cmV8ZW58MHwwfHx8MTc2OTg1MDMwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan",
-    "customContent": {
-      "introduction": "",
-      "keyPoints": [],
-      "language": "id",
-      "sections": [],
-      "conclusion": ""
-    }
+    "author": "Helmi Ramdan"
   },
   {
     "id": 231,
@@ -2376,16 +2348,9 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Patio Furniture Inspiration - Industrial Design Trends 2025",
     "category": "Design Inspiration",
     "excerpt": "Patio furniture inspiration with industrial design trends for 2025. Color schemes, material combinations, and layout ideas for modern outdoor spaces in cafes and restaurants.",
-    "image": "https://images.unsplash.com/photo-1763626343508-d7f9571e1d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBpbmR1c3RyaWFsJTIwb3V0ZG9vciUyMGNhZmUlMjBzZWF0aW5nJTIwYXJlYSUyMHdpdGglMjBtZXRhbCUyMGFuZCUyMHJlY2xhaW1lZCUyMHdvb2QlMjBmdXJuaXR1cmV8ZW58MHwwfHx8MTc2OTg1MDMyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan",
-    "customContent": {
-      "introduction": "",
-      "keyPoints": [],
-      "language": "id",
-      "sections": [],
-      "conclusion": ""
-    }
+    "author": "Helmi Ramdan"
   },
   {
     "id": 234,
@@ -3146,7 +3111,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "مانجالا ليفينج هي الحل الأفضل",
     "category": "Tips and Trick",
     "excerpt": "مانجالا ليفينج توفر أفضل حلول الأثاث للقهاوي والمطاعم والفنادق والمكاتب",
-    "image": "https://images.unsplash.com/photo-1723465313715-586dd9689b8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMGxvYmJ5JTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc2OTg1MDEwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "",
     "date": "2026-01-31",
     "author": "Helmi Ramdan",
     "customContent": {
@@ -3210,6 +3175,40 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Dengan memperhatikan tips dan trik memilih furniture teak yang tepat, Anda dapat memiliki furniture teak yang berkualitas dan tahan lama. Mangala Living adalah solusi furniture teak Anda, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek yang telah diselesaikan. <br> Jangan ragu untuk menghubungi kami untuk mendapatkan informasi lebih lanjut tentang furniture teak yang sesuai dengan kebutuhan Anda."
+    }
+  },
+  {
+    "id": 297,
+    "slug": "xin-jia-po-ka-fei-guan-lu-tai-jia-ju-jiao-yu",
+    "title": "新加坡咖啡馆露台家具教育",
+    "category": "Tips and Trick",
+    "excerpt": "了解新加坡咖啡馆露台家具的选择和设计",
+    "image": "https://images.unsplash.com/photo-1649301980208-86c868b4f30b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvdXRkb29yJTIwY2FmZSUyMGZ1cm5pdHVyZSUyMHNpbmdhcG9yZXxlbnwwfDB8fHwxNzY5ODUxOTc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-01-31 09:32",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "新加坡的咖啡馆业越来越蓬勃发展，许多咖啡馆老板都在寻找合适的露台家具来打造独特的氛围。然而，选择合适的露台家具并不是一件容易的事。本文将提供一些关于新加坡咖啡馆露台家具的教育和建议，帮助您做出更好的选择。",
+      "keyPoints": [
+        "了解新加坡咖啡馆露台家具的特点",
+        "选择耐用和易于维护的材料",
+        "设计要符合咖啡馆的整体风格"
+      ],
+      "language": "zh",
+      "sections": [
+        {
+          "heading": "新加坡咖啡馆露台家具的特点",
+          "content": "新加坡的咖啡馆通常都有一个小巧的露台区域，<strong>因此选择家具时需要考虑空间的限制</strong>。此外，新加坡的气候也比较热烈，<em>所以家具需要能够抵御阳光和雨水的影响</em>。综上所述，新加坡咖啡馆露台家具需要耐用、易于维护，并且能够适应不同的天气条件。<br><br> Mangala Living作为一家具有25年经验的工业家具制造商，我们已经完成了1000多个项目，包括许多新加坡的咖啡馆项目。我们的工作室位于Bekasi，我们的团队能够提供专业的设计和制造服务，帮助您创造独特的露台家具。"
+        },
+        {
+          "heading": "选择合适的材料",
+          "content": "选择合适的材料是设计露台家具的关键。新加坡的气候比较热烈，<strong>所以需要选择能够抵御阳光和雨水的材料</strong>。例如，<em>金属和合成材料</em>能够提供良好的耐用性和维护性。另外，<strong>木材</strong>也是一种不错的选择，特别是经过特殊处理的木材，可以提供更好的抗腐蚀性和耐用性。<br><br> 除了材料的选择，<em>颜色和设计</em>也是非常重要的。颜色需要能够与咖啡馆的整体风格相符，而设计需要能够提供舒适和美观的体验。"
+        },
+        {
+          "heading": "Mangala Living的解决方案",
+          "content": "Mangala Living提供了一系列的露台家具解决方案，包括自定义设计和制造服务。我们的团队能够提供专业的设计和制造服务，帮助您创造独特的露台家具。我们使用高质量的材料，确保家具能够提供良好的耐用性和维护性。<br><br> 此外，我们的工作室位于Bekasi，我们能够提供快速和效率的制造和交付服务。我们的目标是帮助您创造一个独特和舒适的露台区域，吸引更多的顾客和提高您的业务表现。"
+        }
+      ],
+      "conclusion": "选择合适的露台家具对于新加坡的咖啡馆来说是非常重要的。通过了解新加坡咖啡馆露台家具的特点，选择合适的材料和设计，您能够创造一个独特和舒适的露台区域。Mangala Living作为一家具有25年经验的工业家具制造商，我们能够提供专业的设计和制造服务，帮助您实现您的目标。请联系我们，获取更多信息和开始您的项目。"
     }
   }
 ]
