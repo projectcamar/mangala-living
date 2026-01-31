@@ -1,0 +1,137 @@
+import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
+import { LogIn, User, Lock, Loader2, AlertCircle } from 'lucide-react'
+import { setAdminSession, isAdminAuthenticated } from '../utils/adminAuth'
+import './Admin.css'
+
+const AdminLogin: React.FC = () => {
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
+    const [isLoading, setIsLoading] = useState(false)
+    const [error, setError] = useState<string | null>(null)
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        // If already logged in, skip login page
+        if (isAdminAuthenticated()) {
+            navigate('/admin/dashboard')
+        }
+    }, [navigate])
+
+    const handleLogin = async (e: React.FormEvent) => {
+        e.preventDefault()
+        setIsLoading(true)
+        setError(null)
+
+        try {
+            const response = await fetch('/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password }),
+            })
+
+            const data = await response.json()
+
+            if (response.ok && data.success) {
+                setAdminSession(data.token)
+                navigate('/admin/dashboard')
+            } else {
+                setError(data.error || 'Login failed. Please check your credentials.')
+            }
+        } catch (err) {
+            setError('An error occurred. Please try again later.')
+            console.error('Login error:', err)
+        } finally {
+            setIsLoading(false)
+        }
+    }
+
+    return (
+        <div className="admin-login-page">
+            <Helmet>
+                <title>Admin Login | Mangala Living</title>
+                <meta name="robots" content="noindex, nofollow" />
+            </Helmet>
+
+            <div className="admin-login-container">
+                <div className="admin-login-card">
+                    <div className="admin-login-header">
+                        <div className="admin-logo">
+                            <h1>MANGALA</h1>
+                            <p>ADMIN PANEL</p>
+                        </div>
+                        <h2>Welcome Back</h2>
+                    </div>
+
+                    <form className="admin-login-form" onSubmit={handleLogin}>
+                        {error && (
+                            <div className="admin-login-error">
+                                <AlertCircle size={18} />
+                                <span>{error}</span>
+                            </div>
+                        )}
+
+                        <div className="admin-input-group">
+                            <label htmlFor="username">Username</label>
+                            <div className="input-with-icon">
+                                <User className="input-icon" size={18} />
+                                <input
+                                    type="text"
+                                    id="username"
+                                    value={username}
+                                    onChange={(e) => setUsername(e.target.value)}
+                                    placeholder="rioanggara"
+                                    required
+                                    autoComplete="username"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="admin-input-group">
+                            <label htmlFor="password">Password</label>
+                            <div className="input-with-icon">
+                                <Lock className="input-icon" size={18} />
+                                <input
+                                    type="password"
+                                    id="password"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    placeholder="••••••••"
+                                    required
+                                    autoComplete="current-password"
+                                />
+                            </div>
+                        </div>
+
+                        <button
+                            type="submit"
+                            className="admin-login-btn"
+                            disabled={isLoading}
+                        >
+                            {isLoading ? (
+                                <>
+                                    <Loader2 className="animate-spin" size={20} />
+                                    <span>Logging in...</span>
+                                </>
+                            ) : (
+                                <>
+                                    <LogIn size={20} />
+                                    <span>Login to Dashboard</span>
+                                </>
+                            )}
+                        </button>
+                    </form>
+
+                    <div className="admin-login-footer">
+                        <p>&copy; {new Date().getFullYear()} Mangala Living. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default AdminLogin

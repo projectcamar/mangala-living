@@ -14,6 +14,7 @@ import NotFound from './pages/NotFound'
 import WhatsAppButton from './components/WhatsAppButton'
 import SingaporeLanguageModal from './components/SingaporeLanguageModal'
 import ScrollToTop from './components/ScrollToTop'
+import ProtectedRoute from './components/ProtectedRoute'
 
 // Preload critical pages for better performance
 const Shop = lazy(() => import('./pages/Shop'))
@@ -32,6 +33,10 @@ const BlogPost = lazy(() => import('./pages/BlogPost'))
 const TermsOfService = lazy(() => import('./pages/TermsOfService'))
 const ShippingInformation = lazy(() => import('./pages/ShippingInformation'))
 const ImageLicense = lazy(() => import('./pages/ImageLicense'))
+
+// Admin Pages
+const AdminLogin = lazy(() => import('./pages/AdminLogin'))
+const AdminDashboard = lazy(() => import('./pages/AdminDashboard'))
 
 // SEO Landing Pages - Keyword Celah (Anti-Marketplace Strategy)
 const FurnitureBesiCustomBekasi = lazy(() => import('./pages/FurnitureBesiCustomBekasi'))
@@ -69,10 +74,10 @@ function App() {
   useEffect(() => {
     // Tambahkan CSS protection styles
     addImageProtectionStyles()
-    
+
     // Enable JavaScript-based protection
     const cleanup = enableImageProtection()
-    
+
     return cleanup
   }, [])
 
@@ -90,16 +95,16 @@ function App() {
     const handleUserInteraction = () => {
       if (!hasUserInteracted) {
         hasUserInteracted = true
-        
+
         // Preload critical pages immediately after user interaction
         import('./pages/Shop')
         import('./pages/ProductDetail')
-        
+
         // Preload secondary pages after 2 seconds
         setTimeout(() => {
           import('./pages/ProductCategory')
         }, 2000)
-        
+
         // Preload tertiary pages after 5 seconds
         setTimeout(() => {
           import('./pages/About')
@@ -122,7 +127,7 @@ function App() {
         import('./pages/ProductDetail')
       }
     }, 10000) as unknown as number
-    
+
     return () => {
       events.forEach(event => {
         document.removeEventListener(event, handleUserInteraction)
@@ -147,7 +152,7 @@ function App() {
           <Route path="/es" element={<Home />} />
           <Route path="/fr" element={<Home />} />
           <Route path="/ko" element={<Home />} />
-          
+
           {/* Other pages with minimal loading */}
           <Route path="/search" element={
             <Suspense fallback={<Loading />}>
@@ -344,7 +349,28 @@ function App() {
               <ImageLicense />
             </Suspense>
           } />
-          
+
+          {/* Admin Routes */}
+          <Route path="/admin/login" element={
+            <Suspense fallback={<Loading />}>
+              <AdminLogin />
+            </Suspense>
+          } />
+          <Route path="/admin" element={
+            <ProtectedRoute>
+              <Suspense fallback={<Loading />}>
+                <AdminDashboard />
+              </Suspense>
+            </ProtectedRoute>
+          } />
+          <Route path="/admin/dashboard" element={
+            <ProtectedRoute>
+              <Suspense fallback={<Loading />}>
+                <AdminDashboard />
+              </Suspense>
+            </ProtectedRoute>
+          } />
+
           {/* SEO Landing Pages - Keyword Celah Strategy */}
           <Route path="/furniture-besi-custom-bekasi" element={
             <Suspense fallback={<Loading />}>
@@ -363,7 +389,7 @@ function App() {
             </Suspense>
           } />
           */}
-          
+
           {/* 404 - Explicit 404 route for redirects */}
           <Route path="/404-not-found" element={<NotFound />} />
           {/* 404 - Catch all unmatched routes */}
