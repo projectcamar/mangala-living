@@ -3427,6 +3427,53 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       "conclusion": "Memilih meja cafe industrial yang tepat adalah investasi penting untuk kesuksesan coffee shop Anda di Bekasi. Dengan kombinasi antara desain yang menarik, material berkualitas, dan fungsionalitas yang optimal, furniture yang tepat dapat meningkatkan pengalaman pelanggan dan efisiensi operasional.<br><br>Di Mangala Living, kami berkomitmen untuk menjadi partner terpercaya Anda dalam menyediakan furniture industrial custom untuk coffee shop. Dengan pengalaman lebih dari 25 tahun, workshop sendiri di Bekasi, dan ribuan proyek yang telah kami selesaikan, kami siap membantu mewujudkan visi coffee shop Anda.<br><br>Jangan ragu untuk menghubungi tim kami untuk konsultasi gratis tentang kebutuhan furniture coffee shop Anda. Mari bersama-sama menciptakan ruang yang tidak hanya indah secara visual tetapi juga fungsional dan tahan lama untuk bisnis kuliner Anda di Bekasi."
     }
+  },
+  {
+    "id": 303,
+    "slug": "jasa-custom-order-furniture-besi-bekasi-jakarta",
+    "title": "Jasa Custom Order Furniture Besi di Bekasi & Jakarta",
+    "category": "Tips and Trick",
+    "excerpt": "Butuh furniture custom besi untuk cafe, resto, atau kantor? Mangala Living hadir dengan solusi terbaik di Bekasi dan Jakarta.",
+    "image": "https://images.unsplash.com/photo-1671351967814-834d376fcd1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY3VzdG9tJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBiZWthc3xlbnwwfDB8fHwxNzY5ODU5ODcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-01-31 11:42",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "Mencari furniture custom besi berkualitas di Bekasi dan Jakarta? Mangala Living hadir sebagai solusi terbaik untuk kebutuhan furniture komersial Anda. Dengan pengalaman lebih dari 25 tahun dan workshop sendiri di Bekasi, kami siap mewujudkan desain furniture impian Anda.",
+      "keyPoints": [
+        "Solusi custom furniture besi profesional di Bekasi & Jakarta",
+        "Desain sesuai kebutuhan cafe, resto, hotel, dan kantor",
+        "Workshop sendiri menjamin kualitas dan harga kompetitif",
+        "Pengerjaan cepat dengan hasil tahan lama"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Memilih Furniture Custom Besi?",
+          "content": "Furniture custom besi menjadi pilihan utama untuk ruang komersial karena beberapa alasan kuat. Pertama, ketahanan material besi yang luar biasa membuat furniture ini mampu bertahan bertahun-tahun bahkan dalam penggunaan intensif. Kedua, desain industrial yang timeless memberikan kesan profesional dan modern pada ruangan. Ketiga, custom order memungkinkan Anda mendapatkan ukuran dan bentuk yang pas dengan kebutuhan spesifik ruangan Anda.<br><br>Di Mangala Living, kami memahami bahwa setiap ruang komersial memiliki karakteristik unik. Itulah mengapa kami menawarkan layanan custom order furniture besi yang sepenuhnya disesuaikan dengan kebutuhan Anda. Dari meja makan industrial hingga rak display yang kokoh, semua bisa kami wujudkan sesuai spesifikasi yang Anda inginkan.",
+          "imageSearchQuery": "custom industrial furniture design workshop",
+          "image": "https://images.unsplash.com/photo-1717500252709-05a73fc4f1da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxjdXN0b20lMjBpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwZGVzaWduJTIwd29ya3Nob3B8ZW58MHwwfHx8MTc2OTg1OTg3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "custom industrial furniture design workshop"
+        },
+        {
+          "heading": "Keunggulan Layanan Custom Order Kami",
+          "content": "Mangala Living menawarkan layanan custom order furniture besi dengan berbagai keunggulan yang tidak dimiliki oleh kompetitor lain. Workshop kami berlokasi strategis di Bekasi, memungkinkan kami untuk melayani klien di Jakarta dan sekitarnya dengan lebih efisien. Dengan fasilitas produksi sendiri, kami dapat memastikan setiap detail furniture dibuat dengan presisi tinggi dan kontrol kualitas yang ketat.<br><br>Kami juga menawarkan konsultasi desain gratis untuk membantu Anda menentukan konsep furniture yang paling sesuai dengan ruangan Anda. Tim ahli kami akan membantu dari proses desain hingga pemasangan, memastikan Anda mendapatkan hasil yang memuaskan. Selain itu, kami menggunakan material besi berkualitas tinggi yang telah teruji ketahanannya, sehingga furniture Anda tidak hanya tampil menarik tetapi juga awet dan kokoh."
+        },
+        {
+          "heading": "Proses Pemesanan Custom Furniture",
+          "content": "Proses pemesanan furniture custom di Mangala Living sangat mudah dan transparan. Pertama, hubungi kami melalui WhatsApp di 088801146881 untuk konsultasi awal. Tim kami akan mendiskusikan kebutuhan Anda, ukuran ruangan, dan konsep desain yang diinginkan. Kedua, kami akan membuat desain 3D dan estimasi biaya untuk persetujuan Anda. Ketiga, setelah desain disetujui, produksi akan dimulai di workshop kami dengan timeline yang jelas.<br><br>Kami memahami bahwa waktu adalah hal yang berharga, terutama untuk bisnis komersial. Oleh karena itu, kami berkomitmen untuk menyelesaikan setiap proyek custom order sesuai dengan deadline yang telah disepakati. Selama proses produksi, Anda juga dapat memantau progress pengerjaan furniture Anda melalui update foto yang kami kirimkan secara berkala."
+        },
+        {
+          "heading": "Portofolio dan Testimoni Klien",
+          "content": "Dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek yang telah diselesaikan, Mangala Living telah dipercaya oleh berbagai klien dari berbagai sektor. Mulai dari cafe-cafe kekinian di Jakarta, restoran mewah di Bekasi, hingga kantor-kantor modern di sekitarnya. Setiap proyek yang kami kerjakan selalu mendapatkan apresiasi positif dari klien kami karena kualitas dan ketepatan waktu pengerjaan.<br><br>Salah satu kebanggaan kami adalah kemampuan untuk mewujudkan desain yang unik dan sesuai karakter setiap klien. Kami percaya bahwa furniture bukan hanya sekedar fungsi, tetapi juga bagian dari identitas brand dan estetika ruangan. Itulah mengapa kami selalu memberikan sentuhan personal pada setiap custom order yang kami kerjakan.",
+          "productId": 5
+        },
+        {
+          "heading": "Hubungi Kami Sekarang!",
+          "content": "Jangan ragu untuk mewujudkan furniture impian Anda bersama Mangala Living. Hubungi kami sekarang juga melalui WhatsApp di 088801146881 untuk konsultasi gratis dan penawaran terbaik. Tim kami siap membantu Anda dari proses desain hingga pemasangan furniture custom besi yang Anda butuhkan.<br><br>Kami berlokasi di Bekasi dengan workshop sendiri, memungkinkan kami untuk memberikan harga yang kompetitif tanpa mengurangi kualitas. Jadikan Mangala Living sebagai mitra terpercaya Anda dalam menciptakan ruang komersial yang menarik dan fungsional dengan furniture custom besi berkualitas tinggi."
+        }
+      ],
+      "conclusion": "Furniture custom besi dari Mangala Living bukan hanya sekedar produk, tetapi investasi jangka panjang untuk bisnis Anda. Dengan kombinasi desain industrial yang timeless, material berkualitas, dan layanan custom yang profesional, kami siap membantu Anda menciptakan ruang yang tidak hanya fungsional tetapi juga estetis. Hubungi kami hari ini dan wujudkan furniture impian Anda bersama tim ahli kami!"
+    }
   }
 ]
 
