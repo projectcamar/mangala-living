@@ -39,7 +39,7 @@ IMPORTANT: You MUST respond with ONLY a valid JSON object, no additional text be
   "sections": [
     {
       "heading": "Section heading",
-      "content": "Section content (2-4 paragraphs, plain text only - NO HTML tags)"
+      "content": "Section content (2-4 paragraphs, use <strong> for bold, <em> for italic, <br> for line breaks)"
     }
   ],
   "conclusion": "Compelling closing paragraph with call-to-action"
@@ -63,9 +63,7 @@ CONTENT GUIDELINES:
 - Include specific details about Mangala Living: 25+ years experience, 1000+ projects, workshop in Bekasi
 - Mention target customers: cafe, restaurant, hotel, office
 - Include practical tips and actionable advice
-- **DO NOT use HTML tags** - write plain text only
-- For emphasis, use natural language (e.g., "sangat penting" instead of <strong>sangat penting</strong>)
-- For line breaks, use natural paragraph breaks
+- Use HTML tags for formatting: <strong>, <em>, <br>
 - Create 3-5 sections minimum (you can create more if needed)
 - Each section should be substantial (150-300 words)
 - Focus on industrial furniture, custom design, durability, and cost-effectiveness
@@ -80,7 +78,7 @@ You can create as many sections as needed to cover the topic comprehensively. Co
 - "FAQ" / "よくある質問"
 - "Next Steps" / "Langkah Selanjutnya"
 
-Remember: Output ONLY the JSON object with plain text content (no HTML tags), nothing else.`;
+Remember: Output ONLY the JSON object, nothing else.`;
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (req.method !== 'POST') {
