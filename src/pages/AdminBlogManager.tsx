@@ -7,7 +7,7 @@ import {
     Type
 } from 'lucide-react'
 import { BLOG_POSTS, type BlogPost } from '../data/blog'
-import { BlogContentEditor } from '../components/BlogContentEditor'
+// import { BlogContentEditor } from '../components/BlogContentEditor'
 import './Admin.css'
 
 const AdminBlogManager: React.FC = () => {
@@ -340,46 +340,13 @@ const AdminBlogManager: React.FC = () => {
                                 Blog Content Editor
                             </h2>
 
-                            {editingPost && (
-                                <BlogContentEditor
-                                    introduction={editingPost.customContent?.introduction || ''}
-                                    sections={editingPost.customContent?.sections || []}
-                                    conclusion={editingPost.customContent?.conclusion || ''}
-                                    onIntroductionChange={(value) =>
-                                        setEditingPost(p => p ? {
-                                            ...p,
-                                            customContent: {
-                                                ...p.customContent,
-                                                introduction: value,
-                                                sections: p.customContent?.sections || [],
-                                                conclusion: p.customContent?.conclusion || ''
-                                            }
-                                        } : null)
-                                    }
-                                    onSectionsChange={(sections) =>
-                                        setEditingPost(p => p ? {
-                                            ...p,
-                                            customContent: {
-                                                ...p.customContent,
-                                                introduction: p.customContent?.introduction || '',
-                                                sections,
-                                                conclusion: p.customContent?.conclusion || ''
-                                            }
-                                        } : null)
-                                    }
-                                    onConclusionChange={(value) =>
-                                        setEditingPost(p => p ? {
-                                            ...p,
-                                            customContent: {
-                                                ...p.customContent,
-                                                introduction: p.customContent?.introduction || '',
-                                                sections: p.customContent?.sections || [],
-                                                conclusion: value
-                                            }
-                                        } : null)
-                                    }
-                                />
-                            )}
+                            <div className="editor-notice">
+                                <AlertCircle size={20} />
+                                <div>
+                                    <strong>Content Editor Loading...</strong>
+                                    <p>Rich text editor is being optimized for better compatibility. Metadata editing is fully functional.</p>
+                                </div>
+                            </div>
                         </section>
                     </div>
                 )}
