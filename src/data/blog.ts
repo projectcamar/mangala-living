@@ -16,6 +16,8 @@ export interface BlogPost {
     sections?: Array<{
       heading: string
       content: string // Rich HTML content
+      image?: string
+      imageAlt?: string
     }>
     conclusion?: string // Rich HTML content
   }

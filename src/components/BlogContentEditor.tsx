@@ -1,9 +1,11 @@
 import React from 'react';
-import { Plus, Trash2 } from 'lucide-react';
+import { Plus, Trash2, Sparkles } from 'lucide-react';
 
 interface ContentSection {
     heading: string;
     content: string;
+    image?: string;
+    imageAlt?: string;
 }
 
 interface BlogContentEditorProps {
@@ -15,6 +17,8 @@ interface BlogContentEditorProps {
     onKeyPointsChange: (points: string[]) => void;
     onSectionsChange: (sections: ContentSection[]) => void;
     onConclusionChange: (value: string) => void;
+    onSuggestSectionImage?: (index: number) => void;
+    isGenerating?: boolean;
 }
 
 export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
@@ -25,15 +29,17 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
     onIntroductionChange,
     onKeyPointsChange,
     onSectionsChange,
-    onConclusionChange
+    onConclusionChange,
+    onSuggestSectionImage,
+    isGenerating = false
 }) => {
     const addSection = () => {
-        onSectionsChange([...sections, { heading: '', content: '' }]);
+        onSectionsChange([...sections, { heading: '', content: '', image: '', imageAlt: '' }]);
     };
 
-    const updateSection = (index: number, field: 'heading' | 'content', value: string) => {
+    const updateSection = (index: number, field: keyof ContentSection, value: string) => {
         const updated = [...sections];
-        updated[index][field] = value;
+        (updated[index] as any)[field] = value;
         onSectionsChange(updated);
     };
 
@@ -167,6 +173,52 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
                             rows={6}
                             className="content-textarea"
                         />
+
+                        <div className="section-image-fields" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '10px' }}>
+                            <div className="input-group-compact">
+                                <label style={{ fontSize: '12px', color: '#666', marginBottom: '5px', display: 'block' }}>Section Image URL</label>
+                                <div className="input-with-action">
+                                    <input
+                                        type="text"
+                                        value={section.image || ''}
+                                        onChange={(e) => updateSection(index, 'image', e.target.value)}
+                                        placeholder="https://images.unsplash.com/..."
+                                        style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '4px' }}
+                                    />
+                                    <button
+                                        type="button"
+                                        className="action-input-btn"
+                                        onClick={() => onSuggestSectionImage?.(index)}
+                                        disabled={isGenerating || !section.heading}
+                                        title="Suggest image from Unsplash based on Section Heading"
+                                        style={{
+                                            padding: '8px 12px',
+                                            background: '#8B7355',
+                                            color: 'white',
+                                            border: 'none',
+                                            borderRadius: '0 4px 4px 0',
+                                            cursor: 'pointer',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '5px'
+                                        }}
+                                    >
+                                        <Sparkles size={12} />
+                                        <span style={{ fontSize: '11px' }}>AI Suggest</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="input-group-compact">
+                                <label style={{ fontSize: '12px', color: '#666', marginBottom: '5px', display: 'block' }}>Image Alt Text (SEO)</label>
+                                <input
+                                    type="text"
+                                    value={section.imageAlt || ''}
+                                    onChange={(e) => updateSection(index, 'imageAlt', e.target.value)}
+                                    placeholder="e.g. industrial cafe table design"
+                                    style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '4px' }}
+                                />
+                            </div>
+                        </div>
                     </div>
                 ))}
 

@@ -240,6 +240,64 @@ const AdminBlogManager: React.FC = () => {
         }
     }
 
+    const handleSuggestSectionImage = async (index: number) => {
+        if (!editingPost || !editingPost.customContent?.sections?.[index]) return
+
+        const section = editingPost.customContent.sections[index]
+        if (!section.heading) {
+            setMessage({ type: 'error', text: 'Please enter a section heading first' })
+            return
+        }
+
+        setIsGenerating(true)
+        setMessage(null)
+
+        try {
+            const response = await fetch('/api/admin/suggest-image', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    title: section.heading,
+                    excerpt: section.content.replace(/<[^>]*>/g, '').substring(0, 200),
+                    model: selectedModel,
+                    context: 'blog section content'
+                })
+            })
+
+            const result = await response.json()
+
+            if (!response.ok || !result.success) {
+                throw new Error(result.error || 'Failed to suggest image')
+            }
+
+            if (result.image) {
+                const updatedSections = [...(editingPost.customContent?.sections || [])]
+                updatedSections[index] = {
+                    ...updatedSections[index],
+                    image: result.image,
+                    imageAlt: result.searchQuery || section.heading
+                }
+
+                setEditingPost(p => p ? {
+                    ...p,
+                    customContent: {
+                        ...p.customContent!,
+                        sections: updatedSections
+                    }
+                } : null)
+
+                setMessage({ type: 'success', text: `✨ Found section image for: "${result.searchQuery}"` })
+            } else {
+                setMessage({ type: 'error', text: 'No matching image found on Unsplash' })
+            }
+        } catch (error) {
+            console.error('Suggest section image error:', error)
+            setMessage({ type: 'error', text: `Failed to suggest image: ${error instanceof Error ? error.message : 'Unknown error'}` })
+        } finally {
+            setIsGenerating(false)
+        }
+    }
+
     const deletePost = (id: number) => {
         if (window.confirm('Delete this post? (Permanent after Sync)')) {
             setPosts(posts.filter(p => p.id !== id))
@@ -627,6 +685,8 @@ const AdminBlogManager: React.FC = () => {
                                             }
                                         } : null)
                                     }
+                                    onSuggestSectionImage={handleSuggestSectionImage}
+                                    isGenerating={isGenerating}
                                 />
                             )}
                         </section>

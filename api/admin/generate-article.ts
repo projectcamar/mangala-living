@@ -26,6 +26,8 @@ interface ArticleContent {
     sections: Array<{
         heading: string;
         content: string;
+        imageSearchQuery?: string; // Search query for Unsplash for this section
+        image?: string; // Final Unsplash image URL for this section
     }>;
     conclusion: string;
 }
@@ -52,7 +54,8 @@ IMPORTANT: You MUST respond with ONLY a valid JSON object, no additional text be
   "sections": [
     {
       "heading": "Section heading",
-      "content": "Section content (2-4 paragraphs, use <strong> for bold, <em> for italic, <br> for line breaks)"
+      "content": "Section content (2-4 paragraphs, use <strong> for bold, <em> for italic, <br> for line breaks)",
+      "imageSearchQuery": "A specific English search query for this section (MUST be different from the main cover image and other sections)"
     }
   ],
   "conclusion": "Compelling closing paragraph with call-to-action"
@@ -217,11 +220,25 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
             });
         }
 
-        // Fetch image from Unsplash if search query is provided
+        // Fetch image from Unsplash if search query is provided for cover
         if (articleContent.imageSearchQuery) {
             const imageUrl = await fetchUnsplashImage(articleContent.imageSearchQuery);
             if (imageUrl) {
                 articleContent.image = imageUrl;
+            }
+        }
+
+        // Fetch images for each section if search query is provided
+        if (articleContent.sections && articleContent.sections.length > 0) {
+            for (const section of articleContent.sections) {
+                if (section.imageSearchQuery) {
+                    const sectionImageUrl = await fetchUnsplashImage(section.imageSearchQuery);
+                    if (sectionImageUrl) {
+                        section.image = sectionImageUrl;
+                        // Use the search query as default alt text if not provided
+                        (section as any).imageAlt = section.imageSearchQuery;
+                    }
+                }
             }
         }
 

@@ -32,10 +32,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     try {
-        const { title, excerpt, model = 'llama-3.3-70b-versatile' } = req.body;
+        const { title, excerpt, model = 'llama-3.3-70b-versatile', context = 'main cover image' } = req.body;
 
         if (!title) {
-            return res.status(400).json({ error: 'Title is required' });
+            return res.status(400).json({ error: 'Title/Heading is required' });
         }
 
         // Determine which API to use based on model
@@ -65,7 +65,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                     },
                     {
                         role: 'user',
-                        content: `Article Title: ${title}\nArticle Excerpt: ${excerpt || ''}\n\nProvide a specific English search query for Unsplash (e.g. "industrial cafe interior", "reclaimed teak dining table").`
+                        content: `Context: ${context}\nArticle/Section Heading: ${title}\nContent Snippet: ${excerpt || ''}\n\nProvide a specific English search query for Unsplash (e.g. "industrial cafe interior", "reclaimed teak dining table", "factory workshop production"). Ensure the query is relevant to the specific context provided.`
                     }
                 ],
                 temperature: 0.5,

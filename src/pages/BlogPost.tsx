@@ -299,7 +299,9 @@ const BlogPost: React.FC = () => {
       // Custom sections
       ...(post.customContent?.sections?.map(section => ({
         heading: section.heading,
-        paragraphs: [section.content]
+        paragraphs: [section.content],
+        image: section.image,
+        imageAlt: section.imageAlt
       } as BlogSection)) || []),
       // Conclusion section
       ...(post.customContent?.conclusion ? [{
