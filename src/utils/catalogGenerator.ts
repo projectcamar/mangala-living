@@ -21,45 +21,164 @@ const loadPDFDependencies = async () => {
   }
 }
 
+// ══════════════════════════════════════════════════════════════════════════════
+// ARABIC TEXT SHAPING & BIDI SUPPORT
+// ══════════════════════════════════════════════════════════════════════════════
+
+/**
+ * Basic Arabic reshaper to join characters in their correct forms (isolated, initial, medial, final)
+ * This is a lightweight implementation for essential joining logic.
+ */
+const reshapeArabic = (text: string): string => {
+  if (!text || !/[\u0600-\u06FF]/.test(text)) return text
+
+  const ARABIC_FORMS: Record<number, number[]> = {
+    0x0621: [0xFE80, 0xFE80, 0xFE80, 0xFE80], // Hamza
+    0x0622: [0xFE81, 0xFE82, 0xFE81, 0xFE82], // Alef with madda
+    0x0623: [0xFE83, 0xFE84, 0xFE83, 0xFE84], // Alef with hamza above
+    0x0624: [0xFE85, 0xFE86, 0xFE85, 0xFE86], // Waw with hamza
+    0x0625: [0xFE87, 0xFE88, 0xFE87, 0xFE88], // Alef with hamza below
+    0x0626: [0xFE89, 0xFE8A, 0xFE8B, 0xFE8C], // Ya with hamza
+    0x0627: [0xFE8D, 0xFE8E, 0xFE8D, 0xFE8E], // Alef
+    0x0628: [0xFE8F, 0xFE90, 0xFE91, 0xFE92], // Ba
+    0x0629: [0xFE93, 0xFE94, 0xFE93, 0xFE94], // Ta Marbuta
+    0x062A: [0xFE95, 0xFE96, 0xFE97, 0xFE98], // Ta
+    0x062B: [0xFE99, 0xFE9A, 0xFE9B, 0xFE9C], // Tha
+    0x062C: [0xFE9D, 0xFE9E, 0xFE9F, 0xFEA0], // Jeem
+    0x062D: [0xFEA1, 0xFEA2, 0xFEA3, 0xFEA4], // Hah
+    0x062E: [0xFEA5, 0xFEA6, 0xFEA7, 0xFEA8], // Khah
+    0x062F: [0xFEA9, 0xFEAA, 0xFEA9, 0xFEAA], // Dal
+    0x0630: [0xFEAB, 0xFEAC, 0xFEAB, 0xFEAC], // Thal
+    0x0631: [0xFEAD, 0xFEAE, 0xFEAD, 0xFEAE], // Reh
+    0x0632: [0xFEAF, 0xFEB0, 0xFEAF, 0xFEB0], // Zain
+    0x0633: [0xFEB1, 0xFEB2, 0xFEB3, 0xFEB4], // Seen
+    0x0634: [0xFEB5, 0xFEB6, 0xFEB7, 0xFEB8], // Sheen
+    0x0635: [0xFEB9, 0xFEBA, 0xFEBB, 0xFEBC], // Sad
+    0x0636: [0xFEBD, 0xFEBE, 0xFEBF, 0xFEC0], // Dad
+    0x0637: [0xFEC1, 0xFEC2, 0xFEC3, 0xFEC4], // Tah
+    0x0638: [0xFEC5, 0xFEC6, 0xFEC7, 0xFEC8], // Zah
+    0x0639: [0xFEC9, 0xFECA, 0xFECB, 0xFECC], // Ain
+    0x063A: [0xFECD, 0xFECE, 0xFECF, 0xFED0], // Ghain
+    0x0641: [0xFED1, 0xFED2, 0xFED3, 0xFED4], // Feh
+    0x0642: [0xFED5, 0xFED6, 0xFED7, 0xFED8], // Qaf
+    0x0643: [0xFED9, 0xFEDA, 0xFEDB, 0xFEDC], // Kaf
+    0x0644: [0xFEDD, 0xFEDE, 0xFEDF, 0xFEE0], // Lam
+    0x0645: [0xFEE1, 0xFEE2, 0xFEE3, 0xFEE4], // Meem
+    0x0646: [0xFEE5, 0xFEE6, 0xFEE7, 0xFEE8], // Noon
+    0x0647: [0xFEE9, 0xFEEA, 0xFEEB, 0xFEEC], // Heh
+    0x0648: [0xFEED, 0xFEEE, 0xFEED, 0xFEEE], // Waw
+    0x0649: [0xFEEF, 0xFEF0, 0xFEEF, 0xFEF0], // Alef Maksura
+    0x064A: [0xFEF1, 0xFEF2, 0xFEF3, 0xFEF4], // Ya
+  }
+
+  const isLigature = (current: number, next: number): boolean => {
+    // Basic ligature check (mostly Lam + Alef family)
+    if (current === 0x0644) {
+      return [0x0622, 0x0623, 0x0625, 0x0627].includes(next)
+    }
+    return false
+  }
+
+  const getLigature = (current: number, next: number, connected: boolean): number => {
+    if (current === 0x0644) {
+      if (next === 0x0622) return connected ? 0xFEF6 : 0xFEF5
+      if (next === 0x0623) return connected ? 0xFEF8 : 0xFEF7
+      if (next === 0x0625) return connected ? 0xFEFA : 0xFEF9
+      if (next === 0x0627) return connected ? 0xFEFC : 0xFEFB
+    }
+    return 0
+  }
+
+  const connectsRight = (code: number): boolean => {
+    return !!ARABIC_FORMS[code] && ![0x0621, 0x0622, 0x0623, 0x0624, 0x0625, 0x0627, 0x062F, 0x0630, 0x0631, 0x0632, 0x0648, 0x0649].includes(code)
+  }
+
+  const connectsLeft = (code: number): boolean => {
+    return !!ARABIC_FORMS[code] && code !== 0x0621
+  }
+
+  let result = ""
+  for (let i = 0; i < text.length; i++) {
+    const code = text.charCodeAt(i)
+    if (ARABIC_FORMS[code]) {
+      const prev = i > 0 ? text.charCodeAt(i - 1) : 0
+      const next = i < text.length - 1 ? text.charCodeAt(i + 1) : 0
+
+      const connectedPrev = connectsRight(prev)
+      const connectedNext = connectsLeft(next)
+
+      if (isLigature(code, next)) {
+        result += String.fromCharCode(getLigature(code, next, connectedPrev))
+        i++ // Skip next char as it's part of the ligature
+        continue
+      }
+
+      let formIndex = 0 // Isolated
+      if (connectedPrev && connectedNext) formIndex = 3 // Medial
+      else if (connectedPrev) formIndex = 1 // Final
+      else if (connectedNext) formIndex = 2 // Initial
+
+      result += String.fromCharCode(ARABIC_FORMS[code][formIndex])
+    } else {
+      result += text[i]
+    }
+  }
+  return result
+}
+
+/**
+ * Handle bidirectional text and Right-To-Left reversal for PDF rendering.
+ */
+const processRTLText = (text: string, lang: string): string => {
+  if (lang !== 'ar' || !text || !/[\u0600-\u06FF]/.test(text)) return text
+
+  // 1. Reshape Arabic characters (isolated -> joined forms)
+  const reshaped = reshapeArabic(text)
+
+  // 2. Handle RTL reversal (simple version)
+  // We flip the string but preserve segments of Latin/Numbers if mixed (basic implementation)
+  return reshaped.split('').reverse().join('')
+}
+
 // Load a TTF font from a URL and register it in jsPDF VFS
 // Added timeout to prevent infinite loading
 const loadAndRegisterFont = async (doc: any, url: string, vfsFileName: string, jsPdfFontName: string, style: 'normal' | 'bold' | 'italic' | 'bolditalic' = 'normal') => {
   const TIMEOUT_MS = 15000 // 15 seconds timeout
-  
+
   try {
     console.log(`[PDF] Fetching font from: ${url}`)
-    
+
     // Create timeout promise
     const timeoutPromise = new Promise<never>((_, reject) => {
       setTimeout(() => reject(new Error('Font loading timeout')), TIMEOUT_MS)
     })
-    
+
     // Fetch with timeout
-    const fetchPromise = fetch(url, { 
+    const fetchPromise = fetch(url, {
       credentials: 'omit',
       mode: 'cors',
       cache: 'default'
     })
-    
+
     const response = await Promise.race([fetchPromise, timeoutPromise])
-    
+
     if (!response.ok) {
       console.warn(`[PDF] Font fetch failed: ${response.status} ${response.statusText}`)
       return false
     }
-    
+
     const blob = await response.blob()
     if (blob.size === 0) {
       console.warn(`[PDF] Font blob is empty`)
       return false
     }
-    
+
     // Check if blob is too large (might cause issues)
     if (blob.size > 10 * 1024 * 1024) { // 10MB limit
       console.warn(`[PDF] Font file too large: ${(blob.size / 1024 / 1024).toFixed(2)}MB`)
       return false
     }
-    
+
     const toBase64 = (b: Blob) =>
       new Promise<string>((resolve, reject) => {
         const reader = new FileReader()
@@ -67,7 +186,7 @@ const loadAndRegisterFont = async (doc: any, url: string, vfsFileName: string, j
           reader.abort()
           reject(new Error('Base64 conversion timeout'))
         }, 10000) // 10 seconds for conversion
-        
+
         reader.onload = () => {
           clearTimeout(timeout)
           resolve((reader.result as string).split(',')[1] || '')
@@ -79,13 +198,13 @@ const loadAndRegisterFont = async (doc: any, url: string, vfsFileName: string, j
         }
         reader.readAsDataURL(b)
       })
-    
+
     const base64 = await toBase64(blob)
     if (!base64 || base64.length === 0) {
       console.warn(`[PDF] Font base64 is empty`)
       return false
     }
-    
+
     doc.addFileToVFS(vfsFileName, base64)
     doc.addFont(vfsFileName, jsPdfFontName, style)
     console.log(`[PDF] Successfully registered font: ${jsPdfFontName} (${style})`)
@@ -102,8 +221,8 @@ const prepareLanguageFont = async (doc: any, lang: 'id' | 'en' | 'ar' | 'zh' | '
   // Default: built-in helvetica works for Latin scripts (ID, EN, ES, FR)
   const latin = { family: 'helvetica', hasStyles: true }
 
-  // Latin scripts don't need custom fonts - return immediately
-  if (lang === 'id' || lang === 'en' || lang === 'es' || lang === 'fr') {
+  // Latin scripts that work with built-in fonts (English, Indonesian, French)
+  if (lang === 'id' || lang === 'en' || lang === 'fr') {
     console.log(`[PDF] Language ${lang} uses Latin script, using built-in helvetica`)
     return latin
   }
@@ -112,35 +231,42 @@ const prepareLanguageFont = async (doc: any, lang: 'id' | 'en' | 'ar' | 'zh' | '
   // Using static TTF files (not variable fonts) for better jsPDF compatibility
   // jsPDF requires TTF format, not WOFF2, and works better with static fonts
   const fontMap: Record<string, { family: string, files: { normal: string, bold?: string } }> = {
-    ar: { 
-      family: 'NotoNaskhArabic', 
-      files: { 
+    ar: {
+      family: 'NotoNaskhArabic',
+      files: {
         // Static TTF from Google Fonts (Regular weight)
         normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/NotoNaskhArabic-Regular.ttf',
         bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/NotoNaskhArabic-Bold.ttf'
-      } 
+      }
     },
-    zh: { 
-      family: 'NotoSansSC', 
-      files: { 
+    zh: {
+      family: 'NotoSansSC',
+      files: {
         normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC-Regular.ttf',
         bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC-Bold.ttf'
-      } 
+      }
     },
-    ja: { 
-      family: 'NotoSansJP', 
-      files: { 
+    ja: {
+      family: 'NotoSansJP',
+      files: {
         normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosansjp/NotoSansJP-Regular.ttf',
         bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosansjp/NotoSansJP-Bold.ttf'
-      } 
+      }
     },
-    ko: { 
-      family: 'NotoSansKR', 
-      files: { 
+    ko: {
+      family: 'NotoSansKR',
+      files: {
         normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosanskr/NotoSansKR-Regular.ttf',
         bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosanskr/NotoSansKR-Bold.ttf'
-      } 
+      }
     },
+    es: {
+      family: 'NotoSans',
+      files: {
+        normal: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosans/NotoSans-Regular.ttf',
+        bold: 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosans/NotoSans-Bold.ttf'
+      }
+    }
   }
 
   const mapping = fontMap[lang]
@@ -150,13 +276,13 @@ const prepareLanguageFont = async (doc: any, lang: 'id' | 'en' | 'ar' | 'zh' | '
   }
 
   console.log(`[PDF] Loading font for language: ${lang}`)
-  
+
   // Wrap font loading in timeout to prevent infinite loading
   const fontLoadingTimeout = 20000 // 20 seconds max for font loading
   const fontLoadingPromise = (async () => {
     // Try to load font from primary CDN
     let loadedNormal = await loadAndRegisterFont(doc, mapping.files.normal, `${mapping.family}-Regular.ttf`, mapping.family, 'normal')
-    
+
     // If primary URL fails, try alternative CDN (jsdelivr)
     if (!loadedNormal) {
       console.warn(`[PDF] Primary font URL failed, trying alternative...`)
@@ -171,7 +297,7 @@ const prepareLanguageFont = async (doc: any, lang: 'id' | 'en' | 'ar' | 'zh' | '
         loadedNormal = await loadAndRegisterFont(doc, altUrl, `${mapping.family}-Regular.ttf`, mapping.family, 'normal')
       }
     }
-    
+
     if (!loadedNormal) {
       console.error(`[PDF] Failed to load font for ${lang} from all sources, falling back to helvetica`)
       console.error(`[PDF] WARNING: Non-Latin text may appear as scrambled characters!`)
@@ -180,9 +306,9 @@ const prepareLanguageFont = async (doc: any, lang: 'id' | 'en' | 'ar' | 'zh' | '
 
     // For variable fonts, bold uses the same file with different weight
     // But jsPDF needs separate registration, so we'll use normal for both
-  let loadedBold = false
-  if (mapping.files.bold) {
-    loadedBold = await loadAndRegisterFont(doc, mapping.files.bold, `${mapping.family}-Bold.ttf`, mapping.family, 'bold')
+    let loadedBold = false
+    if (mapping.files.bold) {
+      loadedBold = await loadAndRegisterFont(doc, mapping.files.bold, `${mapping.family}-Bold.ttf`, mapping.family, 'bold')
       // If bold fails, that's okay - we can still use normal
       if (!loadedBold) {
         console.warn(`[PDF] Bold variant failed, using normal for bold text`)
@@ -205,7 +331,7 @@ const prepareLanguageFont = async (doc: any, lang: 'id' | 'en' | 'ar' | 'zh' | '
   } catch (error) {
     console.error(`[PDF] Font loading failed or timed out for ${lang}:`, error)
     console.warn(`[PDF] Falling back to helvetica for ${lang}`)
-  return latin
+    return latin
   }
 }
 
@@ -237,128 +363,131 @@ const content = {
     workshop: 'Workshop & Showroom Bekasi',
     address: 'Jl. Raya Setu Cibitung, Bekasi, Jawa Barat 17320',
     copyright: '© 2025 Mangala Living. Hak Cipta Dilindungi.',
-    
+
     // ─────────────────────────── Welcome Page ───────────────────────────
     welcomeTitle: 'Selamat Datang di Mangala Living',
     welcomeSubtitle: 'Craftsmen Furniture Industrial Terpercaya Indonesia',
-    
+
     welcomeIntro: 'Terima kasih telah mengunduh katalog resmi Mangala Living 2025. Kami bangga mempersembahkan koleksi furniture industrial premium yang dirancang dengan dedikasi penuh untuk memenuhi kebutuhan bisnis dan hunian modern Anda.',
-    
+
     welcomePara1: 'Selama lebih dari 25 tahun, Mangala Living telah menjadi pilihan utama para arsitek, desainer interior, pemilik cafe, restoran, hotel, kantor, dan pemilik rumah yang menghargai kualitas sejati. Kami bukan sekadar pembuat furniture—kami adalah craftsmen yang memahami bahwa setiap sudut ruang memiliki cerita, setiap kursi harus nyaman, dan setiap meja harus kokoh bertahan puluhan tahun.',
-    
+
     welcomePara2: 'Di workshop seluas 500m² yang berlokasi strategis di Bekasi, tim produksi kami yang terdiri dari 10 tukang las berpengalaman, 5 tukang kayu ahli, dan 3 finishing specialist bekerja dengan standar kualitas ekspor. Setiap potongan besi hollow yang kami las, setiap kayu solid yang kami bentuk, dan setiap lapisan powder coating yang kami aplikasikan—semuanya melalui quality control ketat untuk memastikan produk yang sampai ke tangan Anda adalah yang terbaik.',
-    
+
     welcomePara3: 'Koleksi kami mencakup berbagai kategori: furniture cafe & restoran yang stylish dan tahan lama, patio & outdoor furniture yang weatherproof hingga 7 tahun, furniture kantor yang ergonomis dan produktif, furniture residential yang hangat dan nyaman, furniture hotel hospitality standar bintang lima, serta retail display solutions yang memaksimalkan visual merchandising Anda.',
-    
+
     welcomePara4: 'Kami memahami bahwa setiap project memiliki kebutuhan unik. Oleh karena itu, selain ready stock yang Anda lihat di katalog ini, kami juga melayani custom order dengan berbagai pilihan material premium: besi hollow 4x4cm hingga 6x6cm dari PT Krakatau Steel, kayu solid grade A (jati, mahoni, sungkai), powder coating Jotun/Nippon dengan 50+ pilihan warna, serta hardware import berkualitas tinggi.',
-    
+
     welcomePara5: 'Harga yang kami tawarkan adalah factory direct—tanpa markup middleman. Dengan sistem pembayaran DP 50% dan pelunasan 50% setelah instalasi, serta garansi struktur 2 tahun dan finishing 1 tahun, Anda mendapatkan nilai terbaik untuk investasi furniture Anda. Area Bekasi, Jakarta Timur, dan Cikarang bahkan mendapatkan FREE delivery dan survey!',
-    
+
     welcomeCTA: 'Hubungi kami hari ini untuk konsultasi gratis, diskusikan kebutuhan furniture Anda, atau kunjungi workshop kami untuk melihat langsung kualitas produk yang kami tawarkan.',
-    
+
     welcomeSignature: 'Hormat kami,',
     welcomeTeam: 'Tim Mangala Living',
-    
+
     // ─────────────────────────── Why Choose Us Page ───────────────────────────
     whyChooseTitle: 'Mengapa Memilih Mangala Living?',
     whyChooseSubtitle: '6 Keunggulan yang Membedakan Kami dari Kompetitor',
-    
+
     reason1Title: '1. Kualitas Ekspor Premium yang Terjamin',
     reason1Desc: 'Setiap produk kami dibuat dengan material pilihan terbaik: besi hollow dan solid bar dari PT Krakatau Steel yang anti karat, kayu solid grade A yang telah melalui proses kiln-dried untuk stabilitas dimensi, powder coating Jotun atau Nippon standar ekspor dengan ketebalan 60-80 micron yang tahan UV dan weatherproof. Kami menggunakan standar yang sama dengan furniture ekspor ke Malaysia, Singapura, dan Australia.',
-    
+
     reason2Title: '2. Craftsman Berpengalaman 25+ Tahun',
     reason2Desc: 'Workshop kami didukung oleh tim produksi yang telah berkecimpung di industri furniture besi dan kayu selama puluhan tahun. Tukang las kami ahli dalam teknik welding TIG dan MIG untuk hasil sambungan yang kuat dan rapi. Tukang kayu kami mahir dalam joinery tradisional dan modern. Finishing specialist kami menguasai teknik grinding, sanding, coating, dan polishing hingga hasil sempurna.',
-    
+
     reason3Title: '3. Custom Order Fleksibel & Design 3D',
     reason3Desc: 'Tidak menemukan ukuran atau desain yang pas? Tenang! Kami melayani custom order mulai dari 1 unit. Tim designer kami akan membuat 3D rendering menggunakan SketchUp atau 3ds Max sehingga Anda bisa visualisasi produk sebelum produksi. Revisi desain 1-2 kali tanpa biaya tambahan. Konsultasi dan survey GRATIS untuk area Bekasi, Jakarta, Cikarang.',
-    
+
     reason4Title: '4. Harga Factory Direct Tanpa Markup',
     reason4Desc: 'Karena Anda membeli langsung dari workshop, Anda tidak perlu membayar markup showroom atau toko furniture. Harga kami transparan dengan breakdown jelas: material, produksi, finishing, dan packing. Plus, kami memberikan diskon volume 5-15% untuk pembelian dalam jumlah banyak—ideal untuk project cafe, restoran, hotel, atau kantor.',
-    
+
     reason5Title: '5. Timeline Produksi yang Transparan',
     reason5Desc: 'Kami sangat menghargai waktu Anda. Timeline produksi reguler kami adalah 15-25 hari kerja untuk furniture standard dan 30-45 hari untuk bulk order atau custom kompleks. Selama proses produksi, Anda akan mendapat update berkala via WhatsApp lengkap dengan foto dan video progress, sehingga Anda bisa pantau perkembangan project Anda secara real-time.',
-    
+
     reason6Title: '6. Layanan Purna Jual & Garansi Komprehensif',
     reason6Desc: 'Kepuasan Anda adalah prioritas kami. Setiap pembelian dilengkapi dengan garansi struktur 2 tahun dan finishing 1 tahun. Kami juga memberikan bonus panduan perawatan furniture dan touch-up kit untuk perbaikan minor scratches. Tim after-sales kami siap membantu jika Anda memerlukan maintenance, refinishing, atau modifikasi di kemudian hari.',
-    
+
     // ─────────────────────────── Product Categories ───────────────────────────
     categories: 'Kategori Produk',
     categoriesDesc: 'Furniture Industrial Premium untuk Berbagai Kebutuhan',
-    
+
     // ─────────────────────────── Pricing Guide ───────────────────────────
     pricingTitle: 'Panduan Harga Estimasi',
     pricingSubtitle: 'Harga Transparan untuk Planning Budget Anda',
-    
+
     pricingNote1: '• Harga dalam katalog ini adalah estimasi harga starting point untuk desain standard dengan material grade reguler.',
     pricingNote2: '• Custom design dengan kompleksitas tinggi, material premium (besi 6x6cm, kayu jati, electroplating finish), atau dimensi extra large akan menyesuaikan harga.',
     pricingNote3: '• Harga sudah termasuk: Material, produksi, standard finishing (powder coating/painting), quality control, dan packing aman.',
     pricingNote4: '• Delivery: FREE untuk area Bekasi, Jakarta Timur, Cikarang. Luar area dikenakan biaya berdasarkan jarak (nego).',
     pricingNote5: '• Sistem Pembayaran: DP 50% setelah desain approved, Pelunasan 50% setelah instalasi selesai. Terima Rupiah (IDR) dan Dollar (USD).',
     pricingNote6: '• Diskon Volume: 5-10 unit (diskon 5%), 11-20 unit (diskon 10%), 21+ unit (negotiable hingga 15%).',
-    
+
     // ─────────────────────────── Material Excellence ───────────────────────────
     materialTitle: 'Material Premium yang Kami Gunakan',
     materialSubtitle: 'Hanya Material Terbaik untuk Furniture Berkualitas Ekspor',
-    
+
     material1Title: 'Besi Hollow & Solid Bar',
     material1Desc: 'Besi hollow kotak 4x4cm, 5x5cm, 6x6cm dengan ketebalan 1.2mm hingga 2mm dari PT Krakatau Steel atau setara. Untuk struktur yang memerlukan load-bearing tinggi, kami gunakan solid steel bar. Semua besi telah dilapisi galvanized coating untuk perlindungan anti karat. Proses welding menggunakan teknik TIG dan MIG untuk sambungan yang kuat dan estetis.',
-    
+
     material2Title: 'Kayu Solid Grade A Premium',
     material2Desc: 'Kayu jati (teak), mahoni (mahogany), dan sungkai grade A yang telah melalui proses kiln-dried untuk mengurangi kadar air hingga 12-15%, memastikan stabilitas dimensi dan mencegah cracking atau warping. Table top kami memiliki ketebalan 2-3cm dengan finishing natural oil, melamine coating, atau duco paint sesuai preferensi. Joinery menggunakan teknik dowel, mortise-tenon, atau pocket screw untuk kekuatan maksimal.',
-    
+
     material3Title: 'Powder Coating Export Quality',
     material3Desc: 'Kami menggunakan powder coating merek Jotun (Norway) atau Nippon (Japan) dengan standar ekspor. Proses coating dilakukan setelah permukaan besi di-grinding halus dan dibersihkan sempurna. Ketebalan coating 60-80 micron untuk ketahanan optimal. Tersedia 50+ pilihan warna: Black Matte, White Glossy, Grey, Bronze, Gold, Silver, Custom RAL colors. Powder coating kami UV resistant, weather resistant, dan tahan hingga 5-7 tahun untuk penggunaan outdoor.',
-    
+
     material4Title: 'Hardware & Accessories Import',
     material4Desc: 'Baut dan mur stainless steel 304 yang anti karat, bracket reinforcement untuk corner joints yang kuat, leveling feet adjustable untuk permukaan lantai yang tidak rata, soft-close hinges untuk kabinet, ball-bearing drawer slides untuk laci yang smooth, dan cable management solutions untuk furniture kantor. Semua hardware kami pilih dari supplier import terpercaya untuk memastikan durabilitas jangka panjang.',
-    
+
     // ─────────────────────────── Contact & Order ───────────────────────────
     contactTitle: 'Hubungi Kami & Mulai Project Anda',
     contactSubtitle: 'Tim Kami Siap Membantu Mewujudkan Furniture Impian Anda',
-    
+
     contactInfo: 'Untuk konsultasi gratis, quotation, atau kunjungan showroom:',
-    
+
     whatsappTitle: 'WhatsApp & Telepon',
     whatsappNumber: '+6288801146881',
     whatsappHours: 'Senin - Sabtu: 08.00 - 17.00 WIB',
     whatsappResponse: 'Response time: 1-3 jam (jam kerja)',
-    
+
     emailTitle: 'Email Resmi',
     emailGeneral: 'lifewithmangala@gmail.com',
     emailSales: 'lifewithmangala@gmail.com',
     emailNote: 'Untuk quotation, partnership, atau inquiry',
-    
+
     addressTitle: 'Workshop & Showroom',
     addressFull1: 'Mangala Living Workshop',
     addressFull2: 'Jl. Raya Setu Cibitung, Telajung',
     addressFull3: 'Kec. Cikarang Barat, Kabupaten Bekasi',
     addressFull4: 'Jawa Barat 17320, Indonesia',
     addressNote: '10 menit dari Tol Cibitung | 25 menit dari Jakarta Timur',
-    
+
     visitTitle: 'Kunjungi Kami',
     visitDesc: 'Workshop kami terbuka untuk kunjungan. Anda bisa melihat langsung proses produksi, sample material, dan portfolio project kami. Hubungi sebelumnya untuk membuat appointment.',
-    
+
     websiteTitle: 'Website & Online',
     website: 'www.mangala-living.com',
     websiteNote: 'Lihat portfolio lengkap, artikel furniture tips, dan update produk terbaru',
-    
+
     exportExp: '• Export Experience: Malaysia, Singapura, Australia',
     workshopSize: '• Workshop: 500m² dengan tim produksi 18 orang',
     projectDone: '• Project Completed: 1,200+ project sejak 1999',
-    
-    continued: '(lanjutan)',
-    
+
+    // ─────────────────────────── Status & Labels ───────────────────────────
+    viewOnline: 'Lihat online →',
+    productsAvailable: 'produk tersedia',
+    continued: '(bersambung)',
+
     // ─────────────────────────── Currency ───────────────────────────
     currency: 'IDR',
     currencySymbol: 'Rp',
     priceFormat: 'Mulai dari',
-    
+
     // ─────────────────────────── Call to Actions ───────────────────────────
     cta1: '• WhatsApp kami untuk konsultasi & quotation gratis',
     cta2: '• Kunjungi workshop kami di Bekasi untuk lihat produk langsung',
     cta3: '• Eksplor koleksi lengkap di www.mangala-living.com',
   },
-  
+
   en: {
     // ─────────────────────────── Cover Page ───────────────────────────
     title1: 'MANGALA',
@@ -369,128 +498,131 @@ const content = {
     workshop: 'Workshop & Showroom Bekasi',
     address: 'Jl. Raya Setu Cibitung, Bekasi, West Java 17320',
     copyright: '© 2025 Mangala Living. All Rights Reserved.',
-    
+
     // ─────────────────────────── Welcome Page ───────────────────────────
     welcomeTitle: 'Welcome to Mangala Living',
     welcomeSubtitle: 'Indonesia\'s Trusted Industrial Furniture Craftsmen',
-    
+
     welcomeIntro: 'Thank you for downloading the official Mangala Living 2025 catalog. We are proud to present our premium industrial furniture collection, designed with full dedication to meet the needs of your modern business and residence.',
-    
+
     welcomePara1: 'For over 25 years, Mangala Living has been the top choice for architects, interior designers, cafe owners, restaurants, hotels, offices, and homeowners who appreciate true quality. We are not just furniture makers—we are craftsmen who understand that every corner of space has a story, every chair must be comfortable, and every table must stand strong for decades.',
-    
+
     welcomePara2: 'In our 500m² workshop strategically located in Bekasi, our production team consisting of 10 experienced welders, 5 skilled carpenters, and 3 finishing specialists work with export quality standards. Every piece of hollow steel we weld, every solid wood we shape, and every layer of powder coating we apply—all go through strict quality control to ensure the product that reaches you is the best.',
-    
+
     welcomePara3: 'Our collection spans various categories: stylish and durable cafe & restaurant furniture, patio & outdoor furniture that\'s weatherproof for up to 7 years, ergonomic and productive office furniture, warm and comfortable residential furniture, five-star hotel hospitality furniture, and retail display solutions that maximize your visual merchandising.',
-    
+
     welcomePara4: 'We understand that every project has unique needs. Therefore, in addition to the ready stock you see in this catalog, we also serve custom orders with various premium material options: 4x4cm to 6x6cm hollow steel from PT Krakatau Steel, grade A solid wood (teak, mahogany, sungkai), Jotun/Nippon powder coating with 50+ color choices, and high-quality imported hardware.',
-    
+
     welcomePara5: 'Our prices are factory direct—no middleman markup. With a 50% down payment system and 50% settlement after installation, plus a 2-year structural warranty and 1-year finishing warranty, you get the best value for your furniture investment. The Bekasi, East Jakarta, and Cikarang areas even get FREE delivery and survey!',
-    
+
     welcomeCTA: 'Contact us today for a free consultation, discuss your furniture needs, or visit our workshop to see firsthand the quality of the products we offer.',
-    
+
     welcomeSignature: 'Best regards,',
     welcomeTeam: 'Mangala Living Team',
-    
+
     // ─────────────────────────── Why Choose Us Page ───────────────────────────
     whyChooseTitle: 'Why Choose Mangala Living?',
     whyChooseSubtitle: '6 Advantages That Set Us Apart from Competitors',
-    
+
     reason1Title: '1. Guaranteed Premium Export Quality',
     reason1Desc: 'Every product is made with the finest materials: hollow steel and solid bars from PT Krakatau Steel that are rust-resistant, grade A solid wood that has gone through a kiln-dried process for dimensional stability, Jotun or Nippon export-standard powder coating with 60-80 micron thickness that is UV and weatherproof resistant. We use the same standards as furniture exports to Malaysia, Singapore, and Australia.',
-    
+
     reason2Title: '2. Craftsmen with 25+ Years Experience',
     reason2Desc: 'Our workshop is supported by a production team that has been involved in the steel and wood furniture industry for decades. Our welders are experts in TIG and MIG welding techniques for strong and neat joint results. Our carpenters are skilled in traditional and modern joinery. Our finishing specialists master grinding, sanding, coating, and polishing techniques to perfection.',
-    
+
     reason3Title: '3. Flexible Custom Order & 3D Design',
     reason3Desc: 'Can\'t find the right size or design? No worries! We serve custom orders starting from 1 unit. Our designer team will create 3D renderings using SketchUp or 3ds Max so you can visualize the product before production. 1-2 design revisions at no extra cost. FREE consultation and survey for Bekasi, Jakarta, Cikarang areas.',
-    
+
     reason4Title: '4. Factory Direct Pricing Without Markup',
     reason4Desc: 'Because you buy directly from the workshop, you don\'t have to pay showroom or furniture store markup. Our prices are transparent with a clear breakdown: materials, production, finishing, and packing. Plus, we offer volume discounts of 5-15% for bulk purchases—ideal for cafe, restaurant, hotel, or office projects.',
-    
+
     reason5Title: '5. Transparent Production Timeline',
     reason5Desc: 'We highly value your time. Our regular production timeline is 15-25 working days for standard furniture and 30-45 days for bulk or complex custom orders. During the production process, you will receive regular updates via WhatsApp complete with photos and videos of progress, so you can monitor your project development in real-time.',
-    
+
     reason6Title: '6. After-Sales Service & Comprehensive Warranty',
     reason6Desc: 'Your satisfaction is our priority. Every purchase comes with a 2-year structural warranty and 1-year finishing warranty. We also provide a bonus furniture care guide and touch-up kit for minor scratch repairs. Our after-sales team is ready to assist if you need maintenance, refinishing, or modifications in the future.',
-    
+
     // ─────────────────────────── Product Categories ───────────────────────────
     categories: 'Product Categories',
     categoriesDesc: 'Premium Industrial Furniture for Various Needs',
-    
+
     // ─────────────────────────── Pricing Guide ───────────────────────────
     pricingTitle: 'Estimated Price Guide',
     pricingSubtitle: 'Transparent Pricing for Your Budget Planning',
-    
+
     pricingNote1: '• Prices in this catalog are estimated starting points for standard designs with regular grade materials.',
     pricingNote2: '• Custom designs with high complexity, premium materials (6x6cm steel, teak wood, electroplating finish), or extra-large dimensions will adjust pricing.',
     pricingNote3: '• Prices include: Materials, production, standard finishing (powder coating/painting), quality control, and safe packing.',
     pricingNote4: '• Delivery: FREE for Bekasi, East Jakarta, Cikarang areas. Outside areas charged based on distance (negotiable).',
     pricingNote5: '• Payment System: 50% DP after design approved, 50% settlement after installation complete. Accept Rupiah (IDR) and Dollar (USD).',
     pricingNote6: '• Volume Discount: 5-10 units (5% off), 11-20 units (10% off), 21+ units (negotiable up to 15%).',
-    
+
     // ─────────────────────────── Material Excellence ───────────────────────────
     materialTitle: 'Premium Materials We Use',
     materialSubtitle: 'Only the Best Materials for Export Quality Furniture',
-    
+
     material1Title: 'Hollow Steel & Solid Bar',
     material1Desc: 'Square hollow steel 4x4cm, 5x5cm, 6x6cm with thickness 1.2mm to 2mm from PT Krakatau Steel or equivalent. For structures requiring high load-bearing, we use solid steel bars. All steel is coated with galvanized coating for rust protection. Welding process uses TIG and MIG techniques for strong and aesthetic joints.',
-    
+
     material2Title: 'Grade A Premium Solid Wood',
     material2Desc: 'Teak, mahogany, and sungkai grade A wood that has undergone a kiln-dried process to reduce moisture content to 12-15%, ensuring dimensional stability and preventing cracking or warping. Our table tops have a thickness of 2-3cm with natural oil, melamine coating, or duco paint finishing as preferred. Joinery uses dowel, mortise-tenon, or pocket screw techniques for maximum strength.',
-    
+
     material3Title: 'Export Quality Powder Coating',
     material3Desc: 'We use Jotun (Norway) or Nippon (Japan) brand powder coating with export standards. The coating process is done after the steel surface is ground smooth and cleaned thoroughly. Coating thickness 60-80 microns for optimal durability. Available in 50+ color options: Black Matte, White Glossy, Grey, Bronze, Gold, Silver, Custom RAL colors. Our powder coating is UV resistant, weather resistant, and lasts up to 5-7 years for outdoor use.',
-    
+
     material4Title: 'Import Hardware & Accessories',
     material4Desc: 'Stainless steel 304 bolts and nuts that are rust-resistant, reinforcement brackets for strong corner joints, adjustable leveling feet for uneven floor surfaces, soft-close hinges for cabinets, ball-bearing drawer slides for smooth drawers, and cable management solutions for office furniture. All our hardware is selected from trusted import suppliers to ensure long-term durability.',
-    
+
     // ─────────────────────────── Contact & Order ───────────────────────────
     contactTitle: 'Contact Us & Start Your Project',
     contactSubtitle: 'Our Team is Ready to Help Realize Your Dream Furniture',
-    
+
     contactInfo: 'For free consultation, quotation, or showroom visit:',
-    
+
     whatsappTitle: 'WhatsApp & Phone',
     whatsappNumber: '+6288801146881',
     whatsappHours: 'Monday - Saturday: 08.00 - 17.00 WIB',
     whatsappResponse: 'Response time: 1-3 hours (working hours)',
-    
+
     emailTitle: 'Official Email',
     emailGeneral: 'lifewithmangala@gmail.com',
     emailSales: 'lifewithmangala@gmail.com',
     emailNote: 'For quotation, partnership, or inquiry',
-    
+
     addressTitle: 'Workshop & Showroom',
     addressFull1: 'Mangala Living Workshop',
     addressFull2: 'Jl. Raya Setu Cibitung, Telajung',
     addressFull3: 'Kec. Cikarang Barat, Kabupaten Bekasi',
     addressFull4: 'West Java 17320, Indonesia',
     addressNote: '10 mins from Cibitung Toll | 25 mins from East Jakarta',
-    
+
     visitTitle: 'Visit Us',
     visitDesc: 'Our workshop is open for visits. You can see the production process, material samples, and our project portfolio firsthand. Contact us beforehand to make an appointment.',
-    
+
     websiteTitle: 'Website & Online',
     website: 'www.mangala-living.com',
     websiteNote: 'View complete portfolio, furniture tips articles, and latest product updates',
-    
+
     exportExp: '• Export Experience: Malaysia, Singapore, Australia',
     workshopSize: '• Workshop: 500m² with 18-person production team',
     projectDone: '• Projects Completed: 1,200+ projects since 1999',
-    
+
+    // ─────────────────────────── Status & Labels ───────────────────────────
+    viewOnline: 'View online →',
+    productsAvailable: 'products available',
     continued: '(cont.)',
-    
+
     // ─────────────────────────── Currency ───────────────────────────
     currency: 'USD',
     currencySymbol: '$',
     priceFormat: 'Starting from',
-    
+
     // ─────────────────────────── Call to Actions ───────────────────────────
     cta1: '• WhatsApp us for free consultation & quotation',
     cta2: '• Visit our workshop in Bekasi to see products directly',
     cta3: '• Explore full collection at www.mangala-living.com',
   },
-  
+
   ar: {
     // ─────────────────────────── Cover Page ───────────────────────────
     title1: 'MANGALA',
@@ -501,128 +633,131 @@ const content = {
     workshop: 'ورشة وصالة عرض بيكاسي',
     address: 'Jl. Raya Setu Cibitung, Bekasi, West Java 17320',
     copyright: '© 2025 Mangala Living. جميع الحقوق محفوظة.',
-    
+
     // ─────────────────────────── Welcome Page ───────────────────────────
     welcomeTitle: 'مرحبًا بكم في Mangala Living',
     welcomeSubtitle: 'حرفيو الأثاث الصناعي الموثوقون في إندونيسيا',
-    
+
     welcomeIntro: 'شكرًا لتحميل كتالوg Mangala Living الرسمي لعام 2025. نفخر بتقديم مجموعة الأثاث الصناعي المتميزة المصممة بتفانٍ كامل لتلبية احتياجات أعمالك ومنزلك الحديث.',
-    
+
     welcomePara1: 'لأكثر من 25 عامًا، كانت Mangala Living الخيار الأول للمهندسين المعماريين ومصممي الديكور الداخلي وأصحاب المقاهي والمطاعم والفنادق والمكاتب وأصحاب المنازل الذين يقدرون الجودة الحقيقية. نحن لسنا مجرد صانعي أثاث - نحن حرفيون نفهم أن كل زاوية في المساحة لها قصة، وأن كل كرسي يجب أن يكون مريحًا، وأن كل طاولة يجب أن تصمد لعقود.',
-    
+
     welcomePara2: 'في ورشتنا التي تبلغ مساحتها 500 متر مربع في موقع استراتيجي في بيكاسي، يعمل فريق الإنتاج لدينا المكون من 10 لحامين ذوي خبرة و 5 نجارين ماهرين و 3 متخصصين في التشطيب وفقًا لمعايير جودة التصدير. كل قطعة من الفولاذ المجوف التي نلحمها، وكل خشب صلب نشكله، وكل طبقة من الطلاء المسحوق التي نطبقها - كلها تخضع لرقابة صارمة على الجودة لضمان أن المنتج الذي يصل إليك هو الأفضل.',
-    
+
     welcomePara3: 'تشمل مجموعتنا فئات متنوعة: أثاث المقاهي والمطاعم الأنيق والمتين، وأثاث الفناء والهواء الطلق المقاوم للعوامل الجوية لمدة تصل إلى 7 سنوات، وأثاث المكاتب المريح والإنتاجي، والأثاث السكني الدافئ والمريح، وأثاث الضيافة الفندقية من فئة خمس نجوم، وحلول العرض للبيع بالتجزئة التي تزيد من جاذبية عرض منتجاتك.',
-    
+
     welcomePara4: 'نحن ندرك أن كل مشروع له احتياجات فريدة. لذلك، بالإضافة إلى المخزون الجاهز الذي تراه في هذا الكتالوج، نقدم أيضًا طلبات مخصصة بخيارات مواد متميزة متنوعة: فولاذ مجوف من 4x4 سم إلى 6x6 سم من PT Krakatau Steel، وخشب صلب من الدرجة A (خشب الساج والماهوجني والسنغكاي)، وطلاء مسحوق Jotun/Nippon مع أكثر من 50 خيار لون، ومعدات مستوردة عالية الجودة.',
-    
+
     welcomePara5: 'أسعارنا مباشرة من المصنع - بدون هامش وسيط. مع نظام دفعة مقدمة 50٪ وتسوية 50٪ بعد التركيب، بالإضافة إلى ضمان هيكلي لمدة عامين وضمان تشطيب لمدة عام واحد، تحصل على أفضل قيمة لاستثمارك في الأثاث. حتى أن مناطق بيكاسي وشرق جاكرتا وسيكارانج تحصل على توصيل ومسح مجاني!',
-    
+
     welcomeCTA: 'اتصل بنا اليوم للحصول على استشارة مجانية، ومناقشة احتياجاتك من الأثاث، أو زيارة ورشتنا لرؤية جودة المنتجات التي نقدمها بشكل مباشر.',
-    
+
     welcomeSignature: 'مع أطيب التحيات،',
     welcomeTeam: 'فريق Mangala Living',
-    
+
     // ─────────────────────────── Why Choose Us Page ───────────────────────────
     whyChooseTitle: 'لماذا تختار Mangala Living؟',
     whyChooseSubtitle: '6 مزايا تميزنا عن المنافسين',
-    
+
     reason1Title: '1. جودة تصدير متميزة مضمونة',
     reason1Desc: 'كل منتج مصنوع من أجود المواد: فولاذ مجوف وقضبان صلبة من PT Krakatau Steel مقاومة للصدأ، وخشب صلب من الدرجة A خضع لعملية التجفيف في الفرن للحصول على استقرار في الأبعاد، وطلاء مسحوق Jotun أو Nippon بمعايير التصدير بسمك 60-80 ميكرون مقاوم للأشعة فوق البنفسجية والعوامل الجوية. نستخدم نفس المعايير المستخدمة في صادرات الأثاث إلى ماليزيا وسنغافورة وأستراليا.',
-    
+
     reason2Title: '2. حرفيون بخبرة أكثر من 25 عامًا',
     reason2Desc: 'تدعم ورشتنا فريق إنتاج يعمل في صناعة الأثاث الفولاذي والخشبي منذ عقود. لحامونا خبراء في تقنيات اللحام TIG و MIG للحصول على نتائج وصلات قوية ومرتبة. نجارونا ماهرون في النجارة التقليدية والحديثة. متخصصو التشطيب لدينا يتقنون تقنيات الطحن والصنفرة والطلاء والتلميع إلى الكمال.',
-    
+
     reason3Title: '3. طلب مخصص مرن وتصميم ثلاثي الأبعاد',
     reason3Desc: 'لا يمكنك العثور على الحجم أو التصميم المناسب؟ لا تقلق! نخدم الطلبات المخصصة بدءًا من وحدة واحدة. سيقوم فريق المصممين لدينا بإنشاء رسومات ثلاثية الأبعاد باستخدام SketchUp أو 3ds Max حتى تتمكن من تصور المنتج قبل الإنتاج. 1-2 مراجعة تصميم بدون تكلفة إضافية. استشارة ومسح مجاني لمناطق بيكاسي وجاكرتا وسيكارانج.',
-    
+
     reason4Title: '4. تسعير مباشر من المصنع بدون هامش',
     reason4Desc: 'لأنك تشتري مباشرة من الورشة، لا يتعين عليك دفع هامش صالة العرض أو متجر الأثاث. أسعارنا شفافة مع تفصيل واضح: المواد والإنتاج والتشطيب والتعبئة. بالإضافة إلى ذلك، نقدم خصومات على الكميات من 5-15٪ للمشتريات الكبيرة - مثالية للمقاهي والمطاعم والفنادق أو مشاريع المكاتب.',
-    
+
     reason5Title: '5. جدول زمني شفاف للإنتاج',
     reason5Desc: 'نحن نقدر وقتك كثيرًا. جدولنا الزمني للإنتاج المنتظم هو 15-25 يوم عمل للأثاث القياسي و 30-45 يومًا للطلبات المخصصة الكبيرة أو المعقدة. خلال عملية الإنتاج، ستتلقى تحديثات منتظمة عبر WhatsApp مع صور ومقاطع فيديو للتقدم، حتى تتمكن من مراقبة تطور مشروعك في الوقت الفعلي.',
-    
+
     reason6Title: '6. خدمة ما بعد البيع وضمان شامل',
     reason6Desc: 'رضاك هو أولويتنا. كل عملية شراء تأتي مع ضمان هيكلي لمدة عامين وضمان تشطيب لمدة عام واحد. نقدم أيضًا دليل عناية بالأثاث ومجموعة إصلاح للخدوش الطفيفة. فريق خدمة ما بعد البيع لدينا جاهز للمساعدة إذا كنت بحاجة إلى صيانة أو إعادة تشطيب أو تعديلات في المستقبل.',
-    
+
     // ─────────────────────────── Product Categories ───────────────────────────
     categories: 'فئات المنتجات',
     categoriesDesc: 'أثاث صناعي متميز لاحتياجات متنوعة',
-    
+
     // ─────────────────────────── Pricing Guide ───────────────────────────
     pricingTitle: 'دليل الأسعار التقديرية',
     pricingSubtitle: 'تسعير شفاف لتخطيط ميزانيتك',
-    
+
     pricingNote1: '• الأسعار في هذا الكتالوج هي نقاط بداية تقديرية للتصاميم القياسية بمواد من الدرجة العادية.',
     pricingNote2: '• التصاميم المخصصة ذات التعقيد العالي والمواد المتميزة (فولاذ 6x6 سم، خشب الساج، تشطيب الطلاء الكهربائي) أو الأبعاد الكبيرة جدًا سيتم تعديل الأسعار.',
     pricingNote3: '• الأسعار تشمل: المواد والإنتاج والتشطيب القياسي (الطلاء المسحوق / الطلاء) ومراقبة الجودة والتعبئة الآمنة.',
     pricingNote4: '• التوصيل: مجاني لمناطق بيكاسي وشرق جاكرتا وسيكارانج. المناطق الخارجية تُفرض عليها رسوم بناءً على المسافة (قابلة للتفاوض).',
     pricingNote5: '• نظام الدفع: دفعة مقدمة 50٪ بعد الموافقة على التصميم، تسوية 50٪ بعد اكتمال التركيب. نقبل الروبية (IDR) والدولار (USD).',
     pricingNote6: '• خصم الكمية: 5-10 وحدات (خصم 5٪)، 11-20 وحدة (خصم 10٪)، 21+ وحدة (قابلة للتفاوض حتى 15٪).',
-    
+
     // ─────────────────────────── Material Excellence ───────────────────────────
     materialTitle: 'المواد المتميزة التي نستخدمها',
     materialSubtitle: 'فقط أفضل المواد لأثاث بجودة التصدير',
-    
+
     material1Title: 'فولاذ مجوف وقضيب صلب',
     material1Desc: 'فولاذ مجوف مربع 4x4 سم، 5x5 سم، 6x6 سم بسمك 1.2 ملم إلى 2 ملم من PT Krakatau Steel أو ما يعادله. للهياكل التي تتطلب تحمل حمولة عالية، نستخدم قضبان الفولاذ الصلب. جميع الفولاذ مطلي بطلاء مجلفن للحماية من الصدأ. تستخدم عملية اللحام تقنيات TIG و MIG للحصول على وصلات قوية وجمالية.',
-    
+
     material2Title: 'خشب صلب متميز من الدرجة A',
     material2Desc: 'خشب الساج والماهوجني والسنغكاي من الدرجة A الذي خضع لعملية التجفيف في الفرن لتقليل محتوى الرطوبة إلى 12-15٪، مما يضمن استقرار الأبعاد ويمنع التصدع أو الالتواء. أسطح طاولاتنا لها سمك 2-3 سم مع تشطيب بالزيت الطبيعي أو طلاء الميلامين أو طلاء ديكو حسب الرغبة. تستخدم النجارة تقنيات الدوويل أو المورتيز والتينون أو البراغي الجيبية لأقصى قوة.',
-    
+
     material3Title: 'طلاء مسحوق بجودة التصدير',
     material3Desc: 'نستخدم طلاء مسحوق من ماركة Jotun (النرويج) أو Nippon (اليابان) بمعايير التصدير. تتم عملية الطلاء بعد طحن سطح الفولاذ بشكل ناعم وتنظيفه جيدًا. سمك الطلاء 60-80 ميكرون لمتانة مثالية. متاح بأكثر من 50 خيار لون: أسود مطفي، أبيض لامع، رمادي، برونزي، ذهبي، فضي، ألوان RAL مخصصة. طلاءنا المسحوق مقاوم للأشعة فوق البنفسجية ومقاوم للعوامل الجوية ويدوم حتى 5-7 سنوات للاستخدام الخارجي.',
-    
+
     material4Title: 'معدات وإكسسوارات مستوردة',
     material4Desc: 'براغي وصواميل من الفولاذ المقاوم للصدأ 304 مقاومة للصدأ، وأقواس تعزيز لوصلات الزوايا القوية، وأقدام تسوية قابلة للتعديل للأرضيات غير المستوية، ومفصلات إغلاق ناعم للخزائن، وشرائح أدراج بمحامل كروية لأدراج سلسة، وحلول إدارة الكابلات لأثاث المكاتب. جميع معداتنا مختارة من موردين استيراد موثوقين لضمان المتانة طويلة الأجل.',
-    
+
     // ─────────────────────────── Contact & Order ───────────────────────────
     contactTitle: 'اتصل بنا وابدأ مشروعك',
     contactSubtitle: 'فريقنا جاهز للمساعدة في تحقيق أثاث أحلامك',
-    
+
     contactInfo: 'للحصول على استشارة مجانية أو عرض أسعار أو زيارة صالة العرض:',
-    
+
     whatsappTitle: 'WhatsApp والهاتف',
     whatsappNumber: '+6288801146881',
     whatsappHours: 'الإثنين - السبت: 08.00 - 17.00 WIB',
     whatsappResponse: 'وقت الاستجابة: 1-3 ساعات (ساعات العمل)',
-    
+
     emailTitle: 'البريد الإلكتروني الرسمي',
     emailGeneral: 'lifewithmangala@gmail.com',
     emailSales: 'lifewithmangala@gmail.com',
     emailNote: 'لعروض الأسعار أو الشراكة أو الاستفسار',
-    
+
     addressTitle: 'الورشة وصالة العرض',
     addressFull1: 'ورشة Mangala Living',
     addressFull2: 'Jl. Raya Setu Cibitung, Telajung',
     addressFull3: 'Kec. Cikarang Barat, Kabupaten Bekasi',
     addressFull4: 'West Java 17320, Indonesia',
     addressNote: '10 دقائق من Cibitung Toll | 25 دقيقة من شرق جاكرتا',
-    
+
     visitTitle: 'قم بزيارتنا',
     visitDesc: 'ورشتنا مفتوحة للزيارات. يمكنك رؤية عملية الإنتاج وعينات المواد ومحفظة مشاريعنا بشكل مباشر. اتصل بنا مسبقًا لتحديد موعد.',
-    
+
     websiteTitle: 'الموقع الإلكتروني والإنترنت',
     website: 'www.mangala-living.com',
     websiteNote: 'عرض المحفظة الكاملة ومقالات نصائح الأثاث وأحدث تحديثات المنتجات',
-    
+
     exportExp: '• خبرة التصدير: ماليزيا، سنغافورة، أستراليا',
     workshopSize: '• الورشة: 500 متر مربع مع فريق إنتاج من 18 شخصًا',
     projectDone: '• المشاريع المكتملة: أكثر من 1,200 مشروع منذ 1999',
-    
+
+    // ─────────────────────────── Status & Labels ───────────────────────────
+    viewOnline: 'عرض عبر الإنترنت →',
+    productsAvailable: 'منتجات متوفرة',
     continued: '(تابع)',
-    
+
     // ─────────────────────────── Currency ───────────────────────────
     currency: 'USD',
     currencySymbol: '$',
     priceFormat: 'يبدأ من',
-    
+
     // ─────────────────────────── Call to Actions ───────────────────────────
     cta1: '• راسلنا على WhatsApp للحصول على استشارة وعرض أسعار مجاني',
     cta2: '• قم بزيارة ورشتنا في بيكاسي لرؤية المنتجات مباشرة',
     cta3: '• استكشف المجموعة الكاملة على www.mangala-living.com',
   },
-  
+
   zh: {
     title1: 'MANGALA',
     title2: 'LIVING',
@@ -702,6 +837,9 @@ const content = {
     exportExp: '• 出口经验：马来西亚、新加坡、澳大利亚',
     workshopSize: '• 工作坊：500平方米，18人生产团队',
     projectDone: '• 完成项目：自1999年以来超过1,200个项目',
+    // ─────────────────────────── Status & Labels ───────────────────────────
+    viewOnline: '在线查看 →',
+    productsAvailable: '产品可用',
     continued: '(续)',
     currency: 'USD',
     currencySymbol: '$',
@@ -710,7 +848,7 @@ const content = {
     cta2: '• 访问我们在勿加泗的工作坊直接查看产品',
     cta3: '• 在www.mangala-living.com探索完整系列',
   },
-  
+
   ja: {
     title1: 'MANGALA',
     title2: 'LIVING',
@@ -790,6 +928,9 @@ const content = {
     exportExp: '• 輸出経験：マレーシア、シンガポール、オーストラリア',
     workshopSize: '• 工房：500㎡、18人の生産チーム',
     projectDone: '• 完了プロジェクト：1999年以来1,200以上のプロジェクト',
+    // ─────────────────────────── Status & Labels ───────────────────────────
+    viewOnline: 'オンラインで見る →',
+    productsAvailable: '利用可能な製品',
     continued: '(続き)',
     currency: 'USD',
     currencySymbol: '$',
@@ -797,7 +938,10 @@ const content = {
     cta1: '• 無料相談と見積もりのためWhatsAppでご連絡ください',
     cta2: '• ブカシの工房を訪問して製品を直接ご覧ください',
     cta3: '• www.mangala-living.comで完全なコレクションをご覧ください',
+  },
+
   es: {
+    // ─────────────────────────── Cover Page ───────────────────────────
     title1: 'MANGALA',
     title2: 'LIVING',
     subtitle: 'Catálogo de Muebles Industriales Premium 2025',
@@ -806,19 +950,23 @@ const content = {
     workshop: 'Taller y Showroom en Bekasi',
     address: 'Jl. Raya Setu Cibitung, Bekasi, West Java 17320',
     copyright: '© 2025 Mangala Living. Todos los derechos reservados.',
+
+    // ─────────────────────────── Welcome Page ───────────────────────────
     welcomeTitle: 'Bienvenido a Mangala Living',
     welcomeSubtitle: 'Artesanos de Muebles Industriales de Confianza en Indonesia',
     welcomeIntro: 'Gracias por descargar el catálogo oficial de Mangala Living 2025. Nos enorgullece presentar nuestra colección de muebles industriales premium, diseñada con total dedicación para satisfacer las necesidades de su negocio y residencia moderna.',
     welcomePara1: 'Durante más de 25 años, Mangala Living ha sido la primera opción para arquitectos, diseñadores de interiores, propietarios de cafeterías, restaurantes, hoteles, oficinas y propietarios de viviendas que aprecian la verdadera calidad. No somos solo fabricantes de muebles: somos artesanos que entienden que cada rincón del espacio tiene una historia, cada silla debe ser cómoda y cada mesa debe ser resistente durante décadas.',
     welcomePara2: 'En nuestro taller de 500m² ubicado estratégicamente en Bekasi, nuestro equipo de producción compuesto por 10 soldadores experimentados, 5 carpinteros calificados y 3 especialistas en acabado trabaja con estándares de calidad de exportación. Cada pieza de acero hueco que soldamos, cada madera maciza que damos forma y cada capa de recubrimiento en polvo que aplicamos, todo pasa por un estricto control de calidad para garantizar que el producto que llega a usted sea el mejor.',
     welcomePara3: 'Nuestra colección abarca varias categorías: muebles para cafés y restaurantes elegantes y duraderos, muebles para patio y exteriores resistentes a la intemperie hasta por 7 años, muebles de oficina ergonómicos y productivos, muebles residenciales cálidos y cómodos, muebles de hospitalidad hotelera de cinco estrellas y soluciones de exhibición minorista que maximizan su merchandising visual.',
-    welcomePara4: 'Entendemos que cada proyecto tiene necesidades únicas. Por lo tanto, además del stock listo que ve en este catálogo, también servimos pedidos personalizados con varias opciones de materiales premium: acero hueco de 4x4cm a 6x6cm de PT Krakatau Steel, madera maciza de grado A (teca, caoba, sungkai), recubrimiento en polvo Jotun/Nippon con más de 50 opciones de colores y herrajes importados de alta calidad.',
+    welcomePara4: 'Entendemos que cada proyecto tiene necesidades únicas. Por lo tanto, además del stock listo que ve en este catálogo, también servimos pedidos personalizados con varias opciones de materiales premium: acero hueco de 4x4cm a 6x6cm de PT Krakatau Steel, madera maciza de grado A (teck, acajou, sungkai), recubrimiento en polvo Jotun/Nippon con más de 50 opciones de colores y herrajes importados de alta calidad.',
     welcomePara5: 'Nuestros precios son directos de fábrica, sin marcado de intermediarios. Con un sistema de pago del 50% de anticipo y el 50% de liquidación después de la instalación, más una garantía estructural de 2 años y una garantía de acabado de 1 año, obtienes el mejor valor para tu inversión en muebles. ¡Las áreas de Bekasi, este de Yakarta y Cikarang incluso obtienen entrega y levantamiento GRATIS!',
     welcomeCTA: 'Contáctenos hoy para una consulta gratuita, analice sus necesidades de muebles o visite nuestro taller para ver de primera mano la calidad de los productos que ofrecemos.',
     welcomeSignature: 'Atentamente,',
     welcomeTeam: 'Equipo Mangala Living',
+
+    // ─────────────────────────── Why Choose Us Page ───────────────────────────
     whyChooseTitle: '¿Por qué elegir Mangala Living?',
-    whyChooseSubtitle: '6 Ventajas que nos Distinguen de la Competencia',
+    whyChooseSubtitle: '6 Ventajas que nos Distinguent de la Competencia',
     reason1Title: '1. Calidad de Exportación Premium Garantizada',
     reason1Desc: 'Cada producto está fabricado con los mejores materiales: acero hueco y barras sólidas de PT Krakatau Steel resistentes a la oxidación, madera maciza de grado A que ha pasado por un proceso de secado en horno para la estabilidad dimensional, recubrimiento en polvo estándar de exportación Jotun o Nippon con un espesor de 60-80 micrones resistente a los rayos UV y la intemperie. Utilizamos los mismos estándares que las exportaciones de muebles a Malasia, Singapur y Australia.',
     reason2Title: '2. Artesanos con más de 25 Años de Experiencia',
@@ -831,6 +979,8 @@ const content = {
     reason5Desc: 'Valoramos mucho tu tiempo. Nuestro cronograma de producción regular es de 15-25 días hábiles para muebles estándar y 30-45 días para pedidos personalizados voluminosos o complejos. Durante el proceso de producción, recibirá actualizaciones periódicas a través de WhatsApp completas con fotos y videos del progreso, para que pueda monitorear el desarrollo de su proyecto en tiempo real.',
     reason6Title: '6. Servicio Posventa y Garantía Integral',
     reason6Desc: 'Su satisfacción es nuestra prioridad. Cada compra viene con una garantía estructural de 2 años y una garantía de acabado de 1 año. También proporcionamos una guía de cuidado de muebles de bonificación y un kit de retoque para reparaciones menores de arañazos. Nuestro equipo de posventa está listo para ayudar si necesita mantenimiento, renovación o modificaciones en el futuro.',
+
+    // ─────────────────────────── Labels & Pricing ───────────────────────────
     categories: 'Categorías de Productos',
     categoriesDesc: 'Muebles Industriales Premium para Diversas Necesidades',
     pricingTitle: 'Guía de Precios Estimados',
@@ -848,7 +998,7 @@ const content = {
     material2Title: 'Madera Maciza Premium Grado A',
     material2Desc: 'Madera de teca, caoba y sungkai de grado A que ha pasado por un proceso de secado en horno para reducir el contenido de humedad al 12-15%, asegurando la estabilidad dimensional y previniendo agrietamiento o deformación. Nuestros tableros de mesa tienen un grosor de 2-3cm con acabado de aceite natural, recubrimiento de melamina o pintura duco según se prefiera. La carpintería utiliza técnicas de tacos, mortaja y espiga o tornillos de bolsillo para máxima resistencia.',
     material3Title: 'Recubrimiento en Polvo de Calidad de Exportación',
-    material3Desc: 'Utilizamos recubrimiento en polvo de marca Jotun (Noruega) o Nippon (Japón) con estándares de exportación. El proceso de recubrimiento se realiza después de que la superficie de acero se rectifica suavemente y se limpia a fondo. Grosor de recubrimiento de 60-80 micrones para una durabilidad óptima. Disponible en más de 50 opciones de color: Negro Mate, Blanco Brillante, Gris, Bronce, Dorado, Plateado, colores RAL personalizados. Nuestro recubrimiento en polvo es resistente a los rayos UV, resistente a la intemperie y dura hasta 5-7 años para uso en exteriores.',
+    material3Desc: 'Utilizamos recubrimiento en polvo de marca Jotun (Noruega) o Nippon (Japon) con estándares de exportación. El proceso de recubrimiento se realiza después de que la superficie de acero se rectifica suavemente y se limpia a fondo. Grosor de recubrimiento de 60-80 micrones para una durabilidad óptima. Disponible en más de 50 opciones de color: Negro Mate, Blanco Brillante, Gris, Bronce, Dorado, Plateado, colores RAL personalizados. Nuestro recubrimiento en polvo es resistente a los rayos UV, resistente a la intemperie y dura hasta 5-7 años para uso en exteriores.',
     material4Title: 'Herrajes y Accesorios Importados',
     material4Desc: 'Pernos y tuercas de acero inoxidable 304 resistentes a la oxidación, soportes de refuerzo para juntas de esquina fuertes, patas niveladoras ajustables para superficies de piso irregulares, bisagras de cierre suave para gabinetes, rieles de cajón con rodamientos de bolas para cajones suaves y soluciones de gestión de cables para muebles de oficina. Todos nuestros herrajes están seleccionados de proveedores de importación confiables para garantizar la durabilidad a largo plazo.',
     contactTitle: 'Contáctenos y Comience su Proyecto',
@@ -876,6 +1026,8 @@ const content = {
     exportExp: '• Experiencia de Exportación: Malasia, Singapur, Australia',
     workshopSize: '• Taller: 500m² con un equipo de producción de 18 personas',
     projectDone: '• Proyectos Completados: Más de 1,200 proyectos desde 1999',
+    viewOnline: 'Ver en línea →',
+    productsAvailable: 'productos disponibles',
     continued: '(cont.)',
     currency: 'USD',
     currencySymbol: '$',
@@ -884,8 +1036,9 @@ const content = {
     cta2: '• Visita nuestro taller en Bekasi para ver los productos directamente',
     cta3: '• Explora la colección completa en www.mangala-living.com',
   },
-  
+
   fr: {
+    // ─────────────────────────── Cover Page ───────────────────────────
     title1: 'MANGALA',
     title2: 'LIVING',
     subtitle: 'Catalogue de Meubles Industriels Premium 2025',
@@ -972,7 +1125,7 @@ const content = {
     cta2: '• Visitez notre atelier à Bekasi pour voir les produits directement',
     cta3: '• Explorez la collection complète sur www.mangala-living.com',
   },
-  
+
   ko: {
     title1: 'MANGALA',
     title2: 'LIVING',
@@ -1060,7 +1213,6 @@ const content = {
     cta2: '• 브카시 공방을 방문하여 제품을 직접 확인하세요',
     cta3: '• www.mangala-living.com에서 전체 컬렉션을 탐색하세요',
   }
-  }
 }
 
 // ══════════════════════════════════════════════════════════════════════════════
@@ -1094,9 +1246,9 @@ const formatPrice = (price: string, currency: 'IDR' | 'USD'): string => {
   // Extract numeric value from price string
   const numericMatch = price.match(/[\d.,]+/)
   if (!numericMatch) return price
-  
+
   const numericValue = parseFloat(numericMatch[0].replace(/[.,]/g, ''))
-  
+
   if (currency === 'USD') {
     // Convert IDR to USD (approximate rate 1 USD = 16,000 IDR)
     const usdValue = Math.round(numericValue / 16000)
@@ -1114,12 +1266,12 @@ const formatPrice = (price: string, currency: 'IDR' | 'USD'): string => {
 
 export const generateCatalog = async (preferredLanguage?: 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko') => {
   const MAX_GENERATION_TIME = 120000 // 2 minutes max for entire generation
-  
+
   // Wrap entire generation in timeout to prevent infinite loading
   const generationPromise = (async () => {
     try {
       console.log('[PDF] Starting catalog generation...')
-      
+
       // Load PDF dependencies only when needed
       try {
         await loadPDFDependencies()
@@ -1128,24 +1280,24 @@ export const generateCatalog = async (preferredLanguage?: 'id' | 'en' | 'ar' | '
         console.error('[PDF] Failed to load dependencies:', depError)
         throw new Error(`Failed to load PDF dependencies: ${depError instanceof Error ? depError.message : String(depError)}`)
       }
-      
+
       // Get language preference - use parameter if provided, otherwise fallback to stored preference
       const lang = preferredLanguage || getLanguagePreference()
       console.log(`[PDF] Language detected: ${lang}${preferredLanguage ? ' (from parameter)' : ' (from localStorage)'}`)
-      
+
       const t = (content as any)[lang]
       if (!t) {
         console.error(`[PDF] Content object for language ${lang}:`, Object.keys(content))
         throw new Error(`No content found for language: ${lang}. Available languages: ${Object.keys(content).join(', ')}`)
       }
-      
+
       console.log(`[PDF] Content loaded for ${lang}, checking required fields...`)
       const requiredFields = ['title1', 'title2', 'subtitle', 'tagline', 'since', 'workshop', 'address', 'copyright']
       const missingFields = requiredFields.filter(field => !t[field])
       if (missingFields.length > 0) {
         console.warn(`[PDF] Missing content fields for ${lang}:`, missingFields)
       }
-      
+
       const doc = new jsPDF('p', 'mm', 'a4')
       console.log('[PDF] PDF document created')
 
@@ -1163,768 +1315,770 @@ export const generateCatalog = async (preferredLanguage?: 'id' | 'en' | 'ar' | '
         baseFontFamily = 'helvetica'
         hasStyles = true
       }
-      
-    const setF = (style: 'normal' | 'bold' | 'italic' | 'bolditalic' = 'normal') => {
+
+      const setF = (style: 'normal' | 'bold' | 'italic' | 'bolditalic' = 'normal') => {
         try {
-      const resolvedStyle = hasStyles ? style : 'normal'
-      doc.setFont(baseFontFamily, resolvedStyle)
+          const resolvedStyle = hasStyles ? style : 'normal'
+          doc.setFont(baseFontFamily, resolvedStyle)
         } catch (fontError) {
           console.warn(`[PDF] Failed to set font ${baseFontFamily} with style ${style}, using helvetica:`, fontError)
           doc.setFont('helvetica', 'normal')
         }
-    }
+      }
 
-    const pageWidth = doc.internal.pageSize.getWidth()
-    const pageHeight = doc.internal.pageSize.getHeight()
-    
-    // ══════════════════════════════════════════════════════════════════════════
-    // ELEGANT COLOR PALETTE
-    // ══════════════════════════════════════════════════════════════════════════
-    const colors = {
-      primaryDark: [26, 35, 46],          // Rich charcoal
-      primaryAccent: [139, 115, 85],      // Warm bronze
-      secondaryAccent: [190, 171, 153],   // Elegant taupe
-      textLight: [255, 255, 255],         // Pure white
-      textDark: [44, 62, 80],             // Deep slate
-      textMuted: [120, 120, 120],         // Muted grey
-      goldAccent: [184, 134, 11],         // Elegant gold
-      backgroundLight: [248, 248, 248],   // Soft white
-      lineAccent: [200, 200, 200],        // Subtle line
-    }
-    
-    let pageNumber = 1
-    
-    // ══════════════════════════════════════════════════════════════════════════
-    // COVER PAGE - WORLD CLASS DESIGN
-    // ══════════════════════════════════════════════════════════════════════════
-    doc.setFillColor(...colors.primaryDark)
-    doc.rect(0, 0, pageWidth, pageHeight, 'F')
-    
-    // Elegant geometric frame
-    doc.setDrawColor(...colors.primaryAccent)
-    doc.setLineWidth(0.5)
-    doc.rect(15, 15, pageWidth - 30, pageHeight - 30, 'S')
-    doc.setLineWidth(0.3)
-    doc.rect(18, 18, pageWidth - 36, pageHeight - 36, 'S')
-    
-    // Top decorative line
-    doc.setDrawColor(...colors.goldAccent)
-    doc.setLineWidth(1)
-    doc.line(pageWidth / 2 - 40, 45, pageWidth / 2 + 40, 45)
-    
-    // Brand name - MANGALA
-    doc.setTextColor(...colors.textLight)
-    doc.setFontSize(60)
-    setF('bold')
-    try {
-      doc.text(t.title1 || 'MANGALA', pageWidth / 2, 75, { align: 'center' })
-    } catch (e) {
-      console.error('[PDF] Error rendering title1:', e)
-      doc.text('MANGALA', pageWidth / 2, 75, { align: 'center' })
-    }
-    
-    // Brand name - LIVING with letter spacing
-    doc.setFontSize(28)
-    setF('normal')
-    try {
-      const title2Text = t.title2 || 'LIVING'
-      doc.text(title2Text.split('').join('  '), pageWidth / 2, 92, { align: 'center' })
-    } catch (e) {
-      console.error('[PDF] Error rendering title2:', e)
-      doc.text('LIVING', pageWidth / 2, 92, { align: 'center' })
-    }
-    
-    // Decorative separator
-    doc.setDrawColor(...colors.goldAccent)
-    doc.setLineWidth(0.8)
-    doc.line(pageWidth / 2 - 35, 100, pageWidth / 2 + 35, 100)
-    
-    // Subtitle
-    doc.setFontSize(14)
-    doc.setTextColor(...colors.secondaryAccent)
-    setF('bold')
-    try {
-      doc.text(t.subtitle || '', pageWidth / 2, 115, { align: 'center' })
-    } catch (e) {
-      console.error('[PDF] Error rendering subtitle:', e)
-    }
-    
-    // Since year badge
-    doc.setFillColor(...colors.goldAccent)
-    doc.circle(pageWidth / 2, 135, 12, 'F')
-    doc.setTextColor(...colors.primaryDark)
-    doc.setFontSize(10)
-    setF('bold')
-    try {
-      doc.text(t.since || 'Since 1999', pageWidth / 2, 137, { align: 'center' })
-    } catch (e) {
-      console.error('[PDF] Error rendering since:', e)
-      doc.text('Since 1999', pageWidth / 2, 137, { align: 'center' })
-    }
-    
-    // Tagline
-    doc.setFontSize(11)
-    setF('normal')
-    doc.setTextColor(...colors.textLight)
-    try {
-      const taglineText = t.tagline || ''
-      const taglineLines = doc.splitTextToSize(taglineText, pageWidth - 60)
-    doc.text(taglineLines, pageWidth / 2, 155, { align: 'center' })
-    } catch (e) {
-      console.error('[PDF] Error rendering tagline:', e)
-    }
-    
-    // Workshop location
-    doc.setFontSize(11)
-    setF('bold')
-    doc.setTextColor(...colors.secondaryAccent)
-    try {
-      doc.text(t.workshop || '', pageWidth / 2, 185, { align: 'center' })
-    } catch (e) {
-      console.error('[PDF] Error rendering workshop:', e)
-    }
-    
-    doc.setFontSize(9)
-    setF('normal')
-    try {
-      doc.text(t.address || '', pageWidth / 2, 193, { align: 'center' })
-    } catch (e) {
-      console.error('[PDF] Error rendering address:', e)
-    }
-    
-    // Contact information - clickable
-    doc.setFontSize(11)
-    setF('bold')
-    doc.setTextColor(...colors.goldAccent)
-    doc.textWithLink('+6288801146881', pageWidth / 2, 210, { 
-      align: 'center',
-      url: 'https://wa.me/+6288801146881'
-    })
-    doc.textWithLink('lifewithmangala@gmail.com', pageWidth / 2, 220, { 
-      align: 'center',
-      url: 'mailto:lifewithmangala@gmail.com'
-    })
-    
-    doc.setTextColor(...colors.textLight)
-    setF('normal')
-    doc.setFontSize(10)
-    doc.textWithLink('www.mangala-living.com', pageWidth / 2, 232, { 
-      align: 'center',
-      url: 'https://mangala-living.com'
-    })
-    
-    // Bottom decorative line
-    doc.setDrawColor(...colors.goldAccent)
-    doc.setLineWidth(1)
-    doc.line(pageWidth / 2 - 40, 250, pageWidth / 2 + 40, 250)
-    
-    // Copyright
-    doc.setFontSize(8)
-    doc.setTextColor(...colors.textMuted)
-    doc.text(t.copyright, pageWidth / 2, 275, { align: 'center' })
-    
-    // ══════════════════════════════════════════════════════════════════════════
-    // WELCOME PAGE - PROFESSIONAL INTRODUCTION
-    // ══════════════════════════════════════════════════════════════════════════
-    doc.addPage()
-    pageNumber++
-    
-    // Page background
-    doc.setFillColor(...colors.backgroundLight)
-    doc.rect(0, 0, pageWidth, pageHeight, 'F')
-    
-    // Elegant header section
-    doc.setFillColor(...colors.primaryDark)
-    doc.rect(0, 0, pageWidth, 55, 'F')
-    
-    // Header decorative top line
-    doc.setDrawColor(...colors.goldAccent)
-    doc.setLineWidth(0.5)
-    doc.line(0, 3, pageWidth, 3)
-    
-    doc.setTextColor(...colors.textLight)
-    doc.setFontSize(28)
-    setF('bold')
-    doc.text(t.welcomeTitle, pageWidth / 2, 30, { align: 'center' })
-    
-    doc.setFontSize(11)
-    setF('italic')
-    doc.setTextColor(...colors.secondaryAccent)
-    doc.text(t.welcomeSubtitle, pageWidth / 2, 42, { align: 'center' })
-    
-    // Content area - optimized to fit on ONE page
-    const margin = 22
-    let yPos = 68
-    const lineHeight = 6
-    
-    doc.setTextColor(...colors.textDark)
-    doc.setFontSize(10)
-    setF('normal')
-    
-    // Introduction paragraph
-    const introLines = doc.splitTextToSize(t.welcomeIntro, pageWidth - (margin * 2))
-    doc.text(introLines, margin, yPos)
-    yPos += introLines.length * lineHeight + 4
-    
-    // Combine all paragraphs with minimal spacing
-    const paragraphs = [
-      t.welcomePara1,
-      t.welcomePara2,
-      t.welcomePara3,
-      t.welcomePara4,
-      t.welcomePara5
-    ]
-    
-    paragraphs.forEach((para) => {
-      const paraLines = doc.splitTextToSize(para, pageWidth - (margin * 2))
-      doc.text(paraLines, margin, yPos)
-      yPos += paraLines.length * lineHeight + 4
-    })
-    
-    // CTA section
-    yPos += 3
-    doc.setFontSize(11)
-    setF('bold')
-    doc.setTextColor(...colors.goldAccent)
-    const ctaLines = doc.splitTextToSize(t.welcomeCTA, pageWidth - (margin * 2))
-    doc.text(ctaLines, margin, yPos)
-    yPos += ctaLines.length * 6 + 8
-    
-    // Signature
-    doc.setFontSize(10)
-    setF('italic')
-    doc.setTextColor(...colors.textDark)
-    doc.text(t.welcomeSignature, margin, yPos)
-    yPos += 5
-    setF('bold')
-    doc.text(t.welcomeTeam, margin, yPos)
-    
-    // Page number footer
-    doc.setFontSize(8)
-    doc.setTextColor(...colors.textMuted)
-    doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
-    
-    // ══════════════════════════════════════════════════════════════════════════
-    // WHY CHOOSE US PAGE - ALL 6 REASONS ON ONE PAGE
-    // ══════════════════════════════════════════════════════════════════════════
-    doc.addPage()
-    pageNumber++
-    
-    doc.setFillColor(...colors.backgroundLight)
-    doc.rect(0, 0, pageWidth, pageHeight, 'F')
-    
-    // Elegant header - more compact
-    doc.setFillColor(...colors.primaryDark)
-    doc.rect(0, 0, pageWidth, 45, 'F')
-    
-    doc.setTextColor(...colors.textLight)
-    doc.setFontSize(24)
-    setF('bold')
-    doc.text(t.whyChooseTitle, pageWidth / 2, 23, { align: 'center' })
-    
-    doc.setFontSize(10)
-    setF('italic')
-    doc.setTextColor(...colors.secondaryAccent)
-    doc.text(t.whyChooseSubtitle, pageWidth / 2, 35, { align: 'center' })
-    
-    // All 6 reasons with optimized spacing
-    yPos = 55
-    const allReasons = [
-      { title: t.reason1Title, desc: t.reason1Desc },
-      { title: t.reason2Title, desc: t.reason2Desc },
-      { title: t.reason3Title, desc: t.reason3Desc },
-      { title: t.reason4Title, desc: t.reason4Desc },
-      { title: t.reason5Title, desc: t.reason5Desc },
-      { title: t.reason6Title, desc: t.reason6Desc },
-    ]
-    
-    allReasons.forEach((reason, index) => {
-      // Reason title with number - more compact
+      const pageWidth = doc.internal.pageSize.getWidth()
+      const pageHeight = doc.internal.pageSize.getHeight()
+
+      // ══════════════════════════════════════════════════════════════════════════
+      // ELEGANT COLOR PALETTE
+      // ══════════════════════════════════════════════════════════════════════════
+      const colors = {
+        primaryDark: [26, 35, 46],          // Rich charcoal
+        primaryAccent: [139, 115, 85],      // Warm bronze
+        secondaryAccent: [190, 171, 153],   // Elegant taupe
+        textLight: [255, 255, 255],         // Pure white
+        textDark: [44, 62, 80],             // Deep slate
+        textMuted: [120, 120, 120],         // Muted grey
+        goldAccent: [184, 134, 11],         // Elegant gold
+        backgroundLight: [248, 248, 248],   // Soft white
+        lineAccent: [200, 200, 200],        // Subtle line
+      }
+
+      let pageNumber = 1
+
+      // ══════════════════════════════════════════════════════════════════════════
+      // COVER PAGE - WORLD CLASS DESIGN
+      // ══════════════════════════════════════════════════════════════════════════
+      doc.setFillColor(...colors.primaryDark)
+      doc.rect(0, 0, pageWidth, pageHeight, 'F')
+
+      // Elegant geometric frame
+      doc.setDrawColor(...colors.primaryAccent)
+      doc.setLineWidth(0.5)
+      doc.rect(15, 15, pageWidth - 30, pageHeight - 30, 'S')
+      doc.setLineWidth(0.3)
+      doc.rect(18, 18, pageWidth - 36, pageHeight - 36, 'S')
+
+      // Top decorative line
+      doc.setDrawColor(...colors.goldAccent)
+      doc.setLineWidth(1)
+      doc.line(pageWidth / 2 - 40, 45, pageWidth / 2 + 40, 45)
+
+      // Brand name - MANGALA
+      doc.setTextColor(...colors.textLight)
+      doc.setFontSize(60)
+      setF('bold')
+      try {
+        doc.text(processRTLText(t.title1 || 'MANGALA', lang), pageWidth / 2, 75, { align: 'center' })
+      } catch (e) {
+        console.error('[PDF] Error rendering title1:', e)
+        doc.text('MANGALA', pageWidth / 2, 75, { align: 'center' })
+      }
+
+      // Brand name - LIVING with letter spacing
+      doc.setFontSize(28)
+      setF('normal')
+      try {
+        const title2Text = t.title2 || 'LIVING'
+        const processedTitle2 = processRTLText(title2Text, lang)
+        const finalTitle2 = lang === 'ar' ? processedTitle2 : processedTitle2.split('').join('  ')
+        doc.text(finalTitle2, pageWidth / 2, 92, { align: 'center' })
+      } catch (e) {
+        console.error('[PDF] Error rendering title2:', e)
+        doc.text('LIVING', pageWidth / 2, 92, { align: 'center' })
+      }
+
+      // Decorative separator
+      doc.setDrawColor(...colors.goldAccent)
+      doc.setLineWidth(0.8)
+      doc.line(pageWidth / 2 - 35, 100, pageWidth / 2 + 35, 100)
+
+      // Subtitle
+      doc.setFontSize(14)
+      doc.setTextColor(...colors.secondaryAccent)
+      setF('bold')
+      try {
+        doc.text(processRTLText(t.subtitle || '', lang), pageWidth / 2, 115, { align: 'center' })
+      } catch (e) {
+        console.error('[PDF] Error rendering subtitle:', e)
+      }
+
+      // Since year badge
+      doc.setFillColor(...colors.goldAccent)
+      doc.circle(pageWidth / 2, 135, 12, 'F')
+      doc.setTextColor(...colors.primaryDark)
+      doc.setFontSize(10)
+      setF('bold')
+      try {
+        doc.text(processRTLText(t.since || 'Since 1999', lang), pageWidth / 2, 137, { align: 'center' })
+      } catch (e) {
+        console.error('[PDF] Error rendering since:', e)
+        doc.text('Since 1999', pageWidth / 2, 137, { align: 'center' })
+      }
+
+      // Tagline
+      doc.setFontSize(11)
+      setF('normal')
+      doc.setTextColor(...colors.textLight)
+      try {
+        const taglineText = processRTLText(t.tagline || '', lang)
+        const taglineLines = doc.splitTextToSize(taglineText, pageWidth - 60)
+        doc.text(taglineLines, pageWidth / 2, 155, { align: 'center' })
+      } catch (e) {
+        console.error('[PDF] Error rendering tagline:', e)
+      }
+
+      // Workshop location
+      doc.setFontSize(11)
+      setF('bold')
+      doc.setTextColor(...colors.secondaryAccent)
+      try {
+        doc.text(processRTLText(t.workshop || '', lang), pageWidth / 2, 185, { align: 'center' })
+      } catch (e) {
+        console.error('[PDF] Error rendering workshop:', e)
+      }
+
+      doc.setFontSize(9)
+      setF('normal')
+      try {
+        doc.text(processRTLText(t.address || '', lang), pageWidth / 2, 193, { align: 'center' })
+      } catch (e) {
+        console.error('[PDF] Error rendering address:', e)
+      }
+
+      // Contact information - clickable
       doc.setFontSize(11)
       setF('bold')
       doc.setTextColor(...colors.goldAccent)
-      doc.text(reason.title, margin, yPos)
-      yPos += 6
-      
-      // Reason description - smaller font and spacing
-      doc.setFontSize(9)
+      doc.textWithLink('+6288801146881', pageWidth / 2, 210, {
+        align: 'center',
+        url: 'https://wa.me/+6288801146881'
+      })
+      doc.textWithLink('lifewithmangala@gmail.com', pageWidth / 2, 220, {
+        align: 'center',
+        url: 'mailto:lifewithmangala@gmail.com'
+      })
+
+      doc.setTextColor(...colors.textLight)
       setF('normal')
-      doc.setTextColor(...colors.textDark)
-      const descLines = doc.splitTextToSize(reason.desc, pageWidth - (margin * 2))
-      doc.text(descLines, margin, yPos)
-      yPos += descLines.length * 5 + 6
-      
-      // Decorative separator - thinner
-      if (index < allReasons.length - 1) {
-        doc.setDrawColor(...colors.lineAccent)
-        doc.setLineWidth(0.2)
-        doc.line(margin, yPos - 3, pageWidth - margin, yPos - 3)
-      }
-    })
-    
-    // Page number
-    doc.setFontSize(8)
-    doc.setTextColor(...colors.textMuted)
-    doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
-    
-    // ══════════════════════════════════════════════════════════════════════════
-    // MATERIAL EXCELLENCE PAGE
-    // ══════════════════════════════════════════════════════════════════════════
-    doc.addPage()
-    pageNumber++
-    
-    doc.setFillColor(...colors.backgroundLight)
-    doc.rect(0, 0, pageWidth, pageHeight, 'F')
-    
-    // Elegant header
-    doc.setFillColor(...colors.primaryDark)
-    doc.rect(0, 0, pageWidth, 45, 'F')
-    
-    doc.setTextColor(...colors.textLight)
-    doc.setFontSize(24)
-    setF('bold')
-    doc.text(t.materialTitle, pageWidth / 2, 22, { align: 'center' })
-    
-    doc.setFontSize(10)
-    setF('italic')
-    doc.setTextColor(...colors.secondaryAccent)
-    doc.text(t.materialSubtitle, pageWidth / 2, 34, { align: 'center' })
-    
-    // Materials section
-    yPos = 60
-    const materials = [
-      { title: t.material1Title, desc: t.material1Desc },
-      { title: t.material2Title, desc: t.material2Desc },
-      { title: t.material3Title, desc: t.material3Desc },
-      { title: t.material4Title, desc: t.material4Desc },
-    ]
-    
-    materials.forEach((material, index) => {
-      // Check if we need a new page
-      if (yPos > 235) {
-        doc.addPage()
-        pageNumber++
-        doc.setFillColor(...colors.backgroundLight)
-        doc.rect(0, 0, pageWidth, pageHeight, 'F')
-        yPos = 30
-      }
-      
-      // Material badge number
-      doc.setFillColor(...colors.goldAccent)
-      doc.circle(margin + 5, yPos - 2, 5, 'F')
       doc.setFontSize(10)
-      setF('bold')
-      doc.setTextColor(...colors.primaryDark)
-      doc.text(`${index + 1}`, margin + 5, yPos, { align: 'center' })
-      
-      // Material title
-      doc.setFontSize(12)
-      setF('bold')
-      doc.setTextColor(...colors.goldAccent)
-      doc.text(material.title, margin + 13, yPos)
-      yPos += 8
-      
-      // Material description
-      doc.setFontSize(9.5)
-      setF('normal')
-      doc.setTextColor(...colors.textDark)
-      const descLines = doc.splitTextToSize(material.desc, pageWidth - (margin * 2))
-      doc.text(descLines, margin, yPos)
-      yPos += descLines.length * 6 + 10
-      
-      // Decorative separator
-      if (index < materials.length - 1) {
-        doc.setDrawColor(...colors.lineAccent)
-        doc.setLineWidth(0.3)
-        doc.line(margin, yPos - 5, pageWidth - margin, yPos - 5)
-      }
-    })
-    
-    // Page number
-    doc.setFontSize(8)
-    doc.setTextColor(...colors.textMuted)
-    doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
-    
-    // ══════════════════════════════════════════════════════════════════════════
-    // PRODUCT CATALOG PAGES
-    // ══════════════════════════════════════════════════════════════════════════
-    
-    // Group products by category
-    const productsByCategory: { [key: string]: Product[] } = {}
-    ALL_PRODUCTS.forEach((product: Product) => {
-      const mainCategory = product.categories[0]
-      if (!productsByCategory[mainCategory]) {
-        productsByCategory[mainCategory] = []
-      }
-      productsByCategory[mainCategory].push(product)
-    })
-    
-    // Generate product pages
-    for (const category of Object.keys(productsByCategory)) {
-      const products = productsByCategory[category]
-      
+      doc.textWithLink('www.mangala-living.com', pageWidth / 2, 232, {
+        align: 'center',
+        url: 'https://mangala-living.com'
+      })
+
+      // Bottom decorative line
+      doc.setDrawColor(...colors.goldAccent)
+      doc.setLineWidth(1)
+      doc.line(pageWidth / 2 - 40, 250, pageWidth / 2 + 40, 250)
+
+      // Copyright
+      doc.setFontSize(8)
+      doc.setTextColor(...colors.textMuted)
+      doc.text(t.copyright, pageWidth / 2, 275, { align: 'center' })
+
+      // ══════════════════════════════════════════════════════════════════════════
+      // WELCOME PAGE - PROFESSIONAL INTRODUCTION
+      // ══════════════════════════════════════════════════════════════════════════
       doc.addPage()
       pageNumber++
-      
-      // Category header page
+
+      // Page background
       doc.setFillColor(...colors.backgroundLight)
       doc.rect(0, 0, pageWidth, pageHeight, 'F')
-      
+
+      // Elegant header section
       doc.setFillColor(...colors.primaryDark)
-      doc.rect(0, 0, pageWidth, 50, 'F')
-      
-      // Category number badge
-      const categoryIndex = Object.keys(productsByCategory).indexOf(category) + 1
-      doc.setFillColor(...colors.goldAccent)
-      doc.circle(30, 25, 8, 'F')
-      doc.setFontSize(12)
+      doc.rect(0, 0, pageWidth, 55, 'F')
+
+      // Header decorative top line
+      doc.setDrawColor(...colors.goldAccent)
+      doc.setLineWidth(0.5)
+      doc.line(0, 3, pageWidth, 3)
+
+      doc.setTextColor(...colors.textLight)
+      doc.setFontSize(28)
       setF('bold')
-      doc.setTextColor(...colors.primaryDark)
-      doc.text(`${categoryIndex}`, 30, 27, { align: 'center' })
-      
+      doc.text(processRTLText(t.welcomeTitle, lang), pageWidth / 2, 30, { align: 'center' })
+
+      doc.setFontSize(11)
+      setF('italic')
+      doc.setTextColor(...colors.secondaryAccent)
+      doc.text(processRTLText(t.welcomeSubtitle, lang), pageWidth / 2, 42, { align: 'center' })
+
+      // Content area - optimized to fit on ONE page
+      const margin = 22
+      let yPos = 68
+      const lineHeight = 6
+
+      doc.setTextColor(...colors.textDark)
+      doc.setFontSize(10)
+      setF('normal')
+
+      // Introduction paragraph
+      const introLines = doc.splitTextToSize(processRTLText(t.welcomeIntro, lang), pageWidth - (margin * 2))
+      doc.text(introLines, margin, yPos)
+      yPos += introLines.length * lineHeight + 4
+
+      // Combine all paragraphs with minimal spacing
+      const paragraphs = [
+        t.welcomePara1,
+        t.welcomePara2,
+        t.welcomePara3,
+        t.welcomePara4,
+        t.welcomePara5
+      ]
+
+      paragraphs.forEach((para) => {
+        const paraLines = doc.splitTextToSize(processRTLText(para, lang), pageWidth - (margin * 2))
+        doc.text(paraLines, margin, yPos)
+        yPos += paraLines.length * lineHeight + 4
+      })
+
+      // CTA section
+      yPos += 3
+      doc.setFontSize(11)
+      setF('bold')
+      doc.setTextColor(...colors.goldAccent)
+      const ctaLines = doc.splitTextToSize(processRTLText(t.welcomeCTA, lang), pageWidth - (margin * 2))
+      doc.text(ctaLines, margin, yPos)
+      yPos += ctaLines.length * 6 + 8
+
+      // Signature
+      doc.setFontSize(10)
+      setF('italic')
+      doc.setTextColor(...colors.textDark)
+      doc.text(processRTLText(t.welcomeSignature, lang), margin, yPos)
+      yPos += 5
+      setF('bold')
+      doc.text(processRTLText(t.welcomeTeam, lang), margin, yPos)
+
+      // Page number footer
+      doc.setFontSize(8)
+      doc.setTextColor(...colors.textMuted)
+      doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
+
+      // ══════════════════════════════════════════════════════════════════════════
+      // WHY CHOOSE US PAGE - ALL 6 REASONS ON ONE PAGE
+      // ══════════════════════════════════════════════════════════════════════════
+      doc.addPage()
+      pageNumber++
+
+      doc.setFillColor(...colors.backgroundLight)
+      doc.rect(0, 0, pageWidth, pageHeight, 'F')
+
+      // Elegant header - more compact
+      doc.setFillColor(...colors.primaryDark)
+      doc.rect(0, 0, pageWidth, 45, 'F')
+
       doc.setTextColor(...colors.textLight)
       doc.setFontSize(24)
       setF('bold')
-      doc.text(category, 45, 28)
-      
-      doc.setFontSize(9)
-      setF('normal')
+      doc.text(processRTLText(t.whyChooseTitle, lang), pageWidth / 2, 23, { align: 'center' })
+
+      doc.setFontSize(10)
+      setF('italic')
       doc.setTextColor(...colors.secondaryAccent)
-      doc.text(`${products.length} ${lang === 'id' ? 'produk tersedia' : 'products available'}`, 45, 38)
-      
-      // Product grid
-      yPos = 65
-      let xPos = margin
-      let itemsInRow = 0
-      const itemWidth = 85
-      const itemHeight = 105
-      const itemsPerRow = 2
-      
-      for (const product of products) {
-        try {
-          // Load product image
-          const imgData = await loadImageAsBase64(product.image)
-          const imgWidth = 75
-          const imgHeight = 56
-          
-          // Product card background
-          doc.setFillColor(255, 255, 255)
-          doc.roundedRect(xPos, yPos, imgWidth + 4, itemHeight, 3, 3, 'F')
-          
-          // Drop shadow effect
-          doc.setFillColor(230, 230, 230)
-          doc.roundedRect(xPos + 1, yPos + 1, imgWidth + 4, itemHeight, 3, 3, 'F')
-          doc.setFillColor(255, 255, 255)
-          doc.roundedRect(xPos, yPos, imgWidth + 4, itemHeight, 3, 3, 'F')
-          
-          // Product image
-          doc.addImage(imgData, 'JPEG', xPos + 2, yPos + 2, imgWidth, imgHeight)
-          
-          // Product name - clickable
-          doc.setFontSize(10)
-          setF('bold')
-          doc.setTextColor(...colors.textDark)
-          
-          const productName = product.name.length > 28 ? product.name.substring(0, 25) + '...' : product.name
-          const productUrl = `https://mangala-living.com/product/${product.slug}`
-          
-          const nameLines = doc.splitTextToSize(productName, imgWidth)
-          const nameYPos = yPos + imgHeight + 8
-          doc.textWithLink(nameLines[0], xPos + 2, nameYPos, { url: productUrl })
-          if (nameLines.length > 1) {
-            doc.textWithLink(nameLines[1], xPos + 2, nameYPos + 5, { url: productUrl })
-          }
-          
-          // Price with proper currency
-          const formattedPrice = formatPrice(product.price, t.currency as 'IDR' | 'USD')
-          doc.setFontSize(13)
-          setF('bold')
-          doc.setTextColor(...colors.goldAccent)
-          doc.text(formattedPrice, xPos + 2, yPos + imgHeight + 22)
-          
-          // "View online" link
-          doc.setFontSize(7)
-          setF('normal')
-          doc.setTextColor(...colors.primaryAccent)
-          doc.textWithLink(lang === 'id' ? 'Lihat online →' : 'View online →', xPos + 2, yPos + imgHeight + 28, { url: productUrl })
-          
-          // Categories tags
-          doc.setFontSize(8)
-          setF('normal')
-          doc.setTextColor(...colors.textMuted)
-          const cats = product.categories.slice(0, 2).join(' • ')
-          const catsText = cats.length > 30 ? cats.substring(0, 27) + '...' : cats
-          const catsLines = doc.splitTextToSize(catsText, imgWidth)
-          doc.text(catsLines[0], xPos + 2, yPos + imgHeight + 35)
-          
-          itemsInRow++
-          
-          // Move to next position
-          if (itemsInRow >= itemsPerRow) {
-            yPos += itemHeight + 10
-            xPos = margin
-            itemsInRow = 0
-            
-            // Check if we need new page
-            if (yPos > 220) {
-              // Page number
-              doc.setFontSize(8)
-              doc.setTextColor(...colors.textMuted)
-              doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
-              
-              doc.addPage()
-              pageNumber++
-              
-              doc.setFillColor(...colors.backgroundLight)
-              doc.rect(0, 0, pageWidth, pageHeight, 'F')
-              
-              // Repeat category header (smaller)
-              doc.setFillColor(...colors.primaryDark)
-              doc.rect(0, 0, pageWidth, 35, 'F')
-              doc.setTextColor(...colors.textLight)
-              doc.setFontSize(18)
-              setF('bold')
-              doc.text(category + ' ' + t.continued, pageWidth / 2, 22, { align: 'center' })
-              
-              yPos = 50
-            }
-          } else {
-            xPos += itemWidth + 8
-          }
-        } catch (error) {
-          console.error(`Failed to load image for ${product.name}:`, error)
+      doc.text(processRTLText(t.whyChooseSubtitle, lang), pageWidth / 2, 35, { align: 'center' })
+
+      // All 6 reasons with optimized spacing
+      yPos = 55
+      const allReasons = [
+        { title: t.reason1Title, desc: t.reason1Desc },
+        { title: t.reason2Title, desc: t.reason2Desc },
+        { title: t.reason3Title, desc: t.reason3Desc },
+        { title: t.reason4Title, desc: t.reason4Desc },
+        { title: t.reason5Title, desc: t.reason5Desc },
+        { title: t.reason6Title, desc: t.reason6Desc },
+      ]
+
+      allReasons.forEach((reason, index) => {
+        // Reason title with number - more compact
+        doc.setFontSize(11)
+        setF('bold')
+        doc.setTextColor(...colors.goldAccent)
+        doc.text(processRTLText(reason.title, lang), margin, yPos)
+        yPos += 6
+
+        // Reason description - smaller font and spacing
+        doc.setFontSize(9)
+        setF('normal')
+        doc.setTextColor(...colors.textDark)
+        const descLines = doc.splitTextToSize(processRTLText(reason.desc, lang), pageWidth - (margin * 2))
+        doc.text(descLines, margin, yPos)
+        yPos += descLines.length * 5 + 6
+
+        // Decorative separator - thinner
+        if (index < allReasons.length - 1) {
+          doc.setDrawColor(...colors.lineAccent)
+          doc.setLineWidth(0.2)
+          doc.line(margin, yPos - 3, pageWidth - margin, yPos - 3)
         }
-      }
-      
+      })
+
       // Page number
       doc.setFontSize(8)
       doc.setTextColor(...colors.textMuted)
       doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
-    }
-    
-    // ══════════════════════════════════════════════════════════════════════════
-    // PRICING GUIDE PAGE
-    // ══════════════════════════════════════════════════════════════════════════
-    doc.addPage()
-    pageNumber++
-    
-    doc.setFillColor(...colors.backgroundLight)
-    doc.rect(0, 0, pageWidth, pageHeight, 'F')
-    
-    // Header
-    doc.setFillColor(...colors.primaryDark)
-    doc.rect(0, 0, pageWidth, 45, 'F')
-    
-    doc.setTextColor(...colors.textLight)
-    doc.setFontSize(24)
-    setF('bold')
-    doc.text(t.pricingTitle, pageWidth / 2, 22, { align: 'center' })
-    
-    doc.setFontSize(10)
-    setF('italic')
-    doc.setTextColor(...colors.secondaryAccent)
-    doc.text(t.pricingSubtitle, pageWidth / 2, 34, { align: 'center' })
-    
-    // Pricing notes
-    yPos = 60
-    const pricingNotes = [
-      t.pricingNote1,
-      t.pricingNote2,
-      t.pricingNote3,
-      t.pricingNote4,
-      t.pricingNote5,
-      t.pricingNote6
-    ]
-    
-    pricingNotes.forEach((note) => {
-      doc.setFontSize(9.5)
+
+      // ══════════════════════════════════════════════════════════════════════════
+      // MATERIAL EXCELLENCE PAGE
+      // ══════════════════════════════════════════════════════════════════════════
+      doc.addPage()
+      pageNumber++
+
+      doc.setFillColor(...colors.backgroundLight)
+      doc.rect(0, 0, pageWidth, pageHeight, 'F')
+
+      // Elegant header
+      doc.setFillColor(...colors.primaryDark)
+      doc.rect(0, 0, pageWidth, 45, 'F')
+
+      doc.setTextColor(...colors.textLight)
+      doc.setFontSize(24)
+      setF('bold')
+      doc.text(processRTLText(t.materialTitle, lang), pageWidth / 2, 22, { align: 'center' })
+
+      doc.setFontSize(10)
+      setF('italic')
+      doc.setTextColor(...colors.secondaryAccent)
+      doc.text(processRTLText(t.materialSubtitle, lang), pageWidth / 2, 34, { align: 'center' })
+
+      // Materials section
+      yPos = 60
+      const materials = [
+        { title: t.material1Title, desc: t.material1Desc },
+        { title: t.material2Title, desc: t.material2Desc },
+        { title: t.material3Title, desc: t.material3Desc },
+        { title: t.material4Title, desc: t.material4Desc },
+      ]
+
+      materials.forEach((material, index) => {
+        // Check if we need a new page
+        if (yPos > 235) {
+          doc.addPage()
+          pageNumber++
+          doc.setFillColor(...colors.backgroundLight)
+          doc.rect(0, 0, pageWidth, pageHeight, 'F')
+          yPos = 30
+        }
+
+        // Material badge number
+        doc.setFillColor(...colors.goldAccent)
+        doc.circle(margin + 5, yPos - 2, 5, 'F')
+        doc.setFontSize(10)
+        setF('bold')
+        doc.setTextColor(...colors.primaryDark)
+        doc.text(`${index + 1}`, margin + 5, yPos, { align: 'center' })
+
+        // Material title
+        doc.setFontSize(12)
+        setF('bold')
+        doc.setTextColor(...colors.goldAccent)
+        doc.text(processRTLText(material.title, lang), margin + 13, yPos)
+        yPos += 8
+
+        // Material description
+        doc.setFontSize(9.5)
+        setF('normal')
+        doc.setTextColor(...colors.textDark)
+        const descLines = doc.splitTextToSize(processRTLText(material.desc, lang), pageWidth - (margin * 2))
+        doc.text(descLines, margin, yPos)
+        yPos += descLines.length * 6 + 10
+
+        // Decorative separator
+        if (index < materials.length - 1) {
+          doc.setDrawColor(...colors.lineAccent)
+          doc.setLineWidth(0.3)
+          doc.line(margin, yPos - 5, pageWidth - margin, yPos - 5)
+        }
+      })
+
+      // Page number
+      doc.setFontSize(8)
+      doc.setTextColor(...colors.textMuted)
+      doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
+
+      // ══════════════════════════════════════════════════════════════════════════
+      // PRODUCT CATALOG PAGES
+      // ══════════════════════════════════════════════════════════════════════════
+
+      // Group products by category
+      const productsByCategory: { [key: string]: Product[] } = {}
+      ALL_PRODUCTS.forEach((product: Product) => {
+        const mainCategory = product.categories[0]
+        if (!productsByCategory[mainCategory]) {
+          productsByCategory[mainCategory] = []
+        }
+        productsByCategory[mainCategory].push(product)
+      })
+
+      // Generate product pages
+      for (const category of Object.keys(productsByCategory)) {
+        const products = productsByCategory[category]
+
+        doc.addPage()
+        pageNumber++
+
+        // Category header page
+        doc.setFillColor(...colors.backgroundLight)
+        doc.rect(0, 0, pageWidth, pageHeight, 'F')
+
+        doc.setFillColor(...colors.primaryDark)
+        doc.rect(0, 0, pageWidth, 50, 'F')
+
+        // Category number badge
+        const categoryIndex = Object.keys(productsByCategory).indexOf(category) + 1
+        doc.setFillColor(...colors.goldAccent)
+        doc.circle(30, 25, 8, 'F')
+        doc.setFontSize(12)
+        setF('bold')
+        doc.setTextColor(...colors.primaryDark)
+        doc.text(`${categoryIndex}`, 30, 27, { align: 'center' })
+
+        doc.setTextColor(...colors.textLight)
+        doc.setFontSize(24)
+        setF('bold')
+        doc.text(processRTLText(category, lang), 45, 28)
+
+        doc.setFontSize(9)
+        setF('normal')
+        doc.setTextColor(...colors.secondaryAccent)
+        doc.text(processRTLText(`${products.length} ${t.productsAvailable}`, lang), 45, 38)
+
+        // Product grid
+        yPos = 65
+        let xPos = margin
+        let itemsInRow = 0
+        const itemWidth = 85
+        const itemHeight = 105
+        const itemsPerRow = 2
+
+        for (const product of products) {
+          try {
+            // Load product image
+            const imgData = await loadImageAsBase64(product.image)
+            const imgWidth = 75
+            const imgHeight = 56
+
+            // Product card background
+            doc.setFillColor(255, 255, 255)
+            doc.roundedRect(xPos, yPos, imgWidth + 4, itemHeight, 3, 3, 'F')
+
+            // Drop shadow effect
+            doc.setFillColor(230, 230, 230)
+            doc.roundedRect(xPos + 1, yPos + 1, imgWidth + 4, itemHeight, 3, 3, 'F')
+            doc.setFillColor(255, 255, 255)
+            doc.roundedRect(xPos, yPos, imgWidth + 4, itemHeight, 3, 3, 'F')
+
+            // Product image
+            doc.addImage(imgData, 'JPEG', xPos + 2, yPos + 2, imgWidth, imgHeight)
+
+            // Product name - clickable
+            doc.setFontSize(10)
+            setF('bold')
+            doc.setTextColor(...colors.textDark)
+
+            const productName = product.name.length > 28 ? product.name.substring(0, 25) + '...' : product.name
+            const productUrl = `https://mangala-living.com/product/${product.slug}`
+
+            const nameLines = doc.splitTextToSize(productName, imgWidth)
+            const nameYPos = yPos + imgHeight + 8
+            doc.textWithLink(nameLines[0], xPos + 2, nameYPos, { url: productUrl })
+            if (nameLines.length > 1) {
+              doc.textWithLink(nameLines[1], xPos + 2, nameYPos + 5, { url: productUrl })
+            }
+
+            // Price with proper currency
+            const formattedPrice = formatPrice(product.price, t.currency as 'IDR' | 'USD')
+            doc.setFontSize(13)
+            setF('bold')
+            doc.setTextColor(...colors.goldAccent)
+            doc.text(formattedPrice, xPos + 2, yPos + imgHeight + 22)
+
+            // "View online" link
+            doc.setFontSize(7)
+            setF('normal')
+            doc.setTextColor(...colors.primaryAccent)
+            doc.textWithLink(processRTLText(t.viewOnline, lang), xPos + 2, yPos + imgHeight + 28, { url: productUrl })
+
+            // Categories tags
+            doc.setFontSize(8)
+            setF('normal')
+            doc.setTextColor(...colors.textMuted)
+            const cats = product.categories.slice(0, 2).join(' • ')
+            const catsText = cats.length > 30 ? cats.substring(0, 27) + '...' : cats
+            const catsLines = doc.splitTextToSize(catsText, imgWidth)
+            doc.text(catsLines[0], xPos + 2, yPos + imgHeight + 35)
+
+            itemsInRow++
+
+            // Move to next position
+            if (itemsInRow >= itemsPerRow) {
+              yPos += itemHeight + 10
+              xPos = margin
+              itemsInRow = 0
+
+              // Check if we need new page
+              if (yPos > 220) {
+                // Page number
+                doc.setFontSize(8)
+                doc.setTextColor(...colors.textMuted)
+                doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
+
+                doc.addPage()
+                pageNumber++
+
+                doc.setFillColor(...colors.backgroundLight)
+                doc.rect(0, 0, pageWidth, pageHeight, 'F')
+
+                // Repeat category header (smaller)
+                doc.setFillColor(...colors.primaryDark)
+                doc.rect(0, 0, pageWidth, 35, 'F')
+                doc.setTextColor(...colors.textLight)
+                doc.setFontSize(18)
+                setF('bold')
+                doc.text(category + ' ' + t.continued, pageWidth / 2, 22, { align: 'center' })
+
+                yPos = 50
+              }
+            } else {
+              xPos += itemWidth + 8
+            }
+          } catch (error) {
+            console.error(`Failed to load image for ${product.name}:`, error)
+          }
+        }
+
+        // Page number
+        doc.setFontSize(8)
+        doc.setTextColor(...colors.textMuted)
+        doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
+      }
+
+      // ══════════════════════════════════════════════════════════════════════════
+      // PRICING GUIDE PAGE
+      // ══════════════════════════════════════════════════════════════════════════
+      doc.addPage()
+      pageNumber++
+
+      doc.setFillColor(...colors.backgroundLight)
+      doc.rect(0, 0, pageWidth, pageHeight, 'F')
+
+      // Header
+      doc.setFillColor(...colors.primaryDark)
+      doc.rect(0, 0, pageWidth, 45, 'F')
+
+      doc.setTextColor(...colors.textLight)
+      doc.setFontSize(24)
+      setF('bold')
+      doc.text(processRTLText(t.pricingTitle, lang), pageWidth / 2, 22, { align: 'center' })
+
+      doc.setFontSize(10)
+      setF('italic')
+      doc.setTextColor(...colors.secondaryAccent)
+      doc.text(processRTLText(t.pricingSubtitle, lang), pageWidth / 2, 34, { align: 'center' })
+
+      // Pricing notes
+      yPos = 60
+      const pricingNotes = [
+        t.pricingNote1,
+        t.pricingNote2,
+        t.pricingNote3,
+        t.pricingNote4,
+        t.pricingNote5,
+        t.pricingNote6
+      ]
+
+      pricingNotes.forEach((note) => {
+        doc.setFontSize(9.5)
+        setF('normal')
+        doc.setTextColor(...colors.textDark)
+        const noteLines = doc.splitTextToSize(processRTLText(note, lang), pageWidth - (margin * 2))
+        doc.text(noteLines, margin, yPos)
+        yPos += noteLines.length * 6 + 5
+      })
+
+      // Page number
+      doc.setFontSize(8)
+      doc.setTextColor(...colors.textMuted)
+      doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
+
+      // ══════════════════════════════════════════════════════════════════════════
+      // CONTACT PAGE - FINAL PAGE
+      // ══════════════════════════════════════════════════════════════════════════
+      doc.addPage()
+      pageNumber++
+
+      doc.setFillColor(...colors.primaryDark)
+      doc.rect(0, 0, pageWidth, pageHeight, 'F')
+
+      // Elegant border frame
+      doc.setDrawColor(...colors.goldAccent)
+      doc.setLineWidth(0.5)
+      doc.rect(15, 15, pageWidth - 30, pageHeight - 30, 'S')
+      doc.setLineWidth(0.2)
+      doc.rect(18, 18, pageWidth - 36, pageHeight - 36, 'S')
+
+      // Top decorative line
+      doc.setDrawColor(...colors.goldAccent)
+      doc.setLineWidth(1)
+      doc.line(pageWidth / 2 - 40, 40, pageWidth / 2 + 40, 40)
+
+      doc.setTextColor(...colors.textLight)
+      doc.setFontSize(32)
+      setF('bold')
+      doc.text(processRTLText(t.contactTitle, lang), pageWidth / 2, 55, { align: 'center' })
+
+      // Decorative separator
+      doc.setDrawColor(...colors.goldAccent)
+      doc.setLineWidth(0.8)
+      doc.line(pageWidth / 2 - 35, 63, pageWidth / 2 + 35, 63)
+
+      doc.setFontSize(11)
+      setF('italic')
+      doc.setTextColor(...colors.secondaryAccent)
+      doc.text(processRTLText(t.contactSubtitle, lang), pageWidth / 2, 73, { align: 'center' })
+
+      yPos = 90
+
+      // WhatsApp
+      doc.setFontSize(13)
+      setF('bold')
+      doc.setTextColor(...colors.goldAccent)
+      doc.text(processRTLText(t.whatsappTitle, lang), pageWidth / 2, yPos, { align: 'center' })
+      yPos += 10
+
+      doc.setFontSize(16)
+      setF('bold')
+      doc.setTextColor(...colors.textLight)
+      doc.textWithLink(processRTLText(t.whatsappNumber, lang), pageWidth / 2, yPos, {
+        align: 'center',
+        url: 'https://wa.me/+6288801146881'
+      })
+      yPos += 8
+
+      doc.setFontSize(9)
       setF('normal')
-      doc.setTextColor(...colors.textDark)
-      const noteLines = doc.splitTextToSize(note, pageWidth - (margin * 2))
-      doc.text(noteLines, margin, yPos)
-      yPos += noteLines.length * 6 + 5
-    })
-    
-    // Page number
-    doc.setFontSize(8)
-    doc.setTextColor(...colors.textMuted)
-    doc.text(`${pageNumber}`, pageWidth / 2, 287, { align: 'center' })
-    
-    // ══════════════════════════════════════════════════════════════════════════
-    // CONTACT PAGE - FINAL PAGE
-    // ══════════════════════════════════════════════════════════════════════════
-    doc.addPage()
-    pageNumber++
-    
-    doc.setFillColor(...colors.primaryDark)
-    doc.rect(0, 0, pageWidth, pageHeight, 'F')
-    
-    // Elegant border frame
-    doc.setDrawColor(...colors.goldAccent)
-    doc.setLineWidth(0.5)
-    doc.rect(15, 15, pageWidth - 30, pageHeight - 30, 'S')
-    doc.setLineWidth(0.2)
-    doc.rect(18, 18, pageWidth - 36, pageHeight - 36, 'S')
-    
-    // Top decorative line
-    doc.setDrawColor(...colors.goldAccent)
-    doc.setLineWidth(1)
-    doc.line(pageWidth / 2 - 40, 40, pageWidth / 2 + 40, 40)
-    
-    doc.setTextColor(...colors.textLight)
-    doc.setFontSize(32)
-    setF('bold')
-    doc.text(t.contactTitle, pageWidth / 2, 55, { align: 'center' })
-    
-    // Decorative separator
-    doc.setDrawColor(...colors.goldAccent)
-    doc.setLineWidth(0.8)
-    doc.line(pageWidth / 2 - 35, 63, pageWidth / 2 + 35, 63)
-    
-    doc.setFontSize(11)
-    setF('italic')
-    doc.setTextColor(...colors.secondaryAccent)
-    doc.text(t.contactSubtitle, pageWidth / 2, 73, { align: 'center' })
-    
-    yPos = 90
-    
-    // WhatsApp
-    doc.setFontSize(13)
-    setF('bold')
-    doc.setTextColor(...colors.goldAccent)
-    doc.text(t.whatsappTitle, pageWidth / 2, yPos, { align: 'center' })
-    yPos += 10
-    
-    doc.setFontSize(16)
-    setF('bold')
-    doc.setTextColor(...colors.textLight)
-    doc.textWithLink(t.whatsappNumber, pageWidth / 2, yPos, { 
-      align: 'center',
-      url: 'https://wa.me/+6288801146881'
-    })
-    yPos += 8
-    
-    doc.setFontSize(9)
-    setF('normal')
-    doc.setTextColor(...colors.secondaryAccent)
-    doc.text(t.whatsappHours, pageWidth / 2, yPos, { align: 'center' })
-    yPos += 5
-    doc.text(t.whatsappResponse, pageWidth / 2, yPos, { align: 'center' })
-    yPos += 15
-    
-    // Email
-    doc.setFontSize(13)
-    setF('bold')
-    doc.setTextColor(...colors.goldAccent)
-    doc.text(t.emailTitle, pageWidth / 2, yPos, { align: 'center' })
-    yPos += 10
-    
-    doc.setFontSize(13)
-    setF('bold')
-    doc.setTextColor(...colors.textLight)
-    doc.textWithLink(t.emailGeneral, pageWidth / 2, yPos, { 
-      align: 'center',
-      url: 'mailto:lifewithmangala@gmail.com'
-    })
-    yPos += 7
-    doc.textWithLink(t.emailSales, pageWidth / 2, yPos, { 
-      align: 'center',
-      url: 'mailto:lifewithmangala@gmail.com'
-    })
-    yPos += 8
-    
-    doc.setFontSize(9)
-    setF('normal')
-    doc.setTextColor(...colors.secondaryAccent)
-    doc.text(t.emailNote, pageWidth / 2, yPos, { align: 'center' })
-    yPos += 15
-    
-    // Address - clickable
-    doc.setFontSize(13)
-    setF('bold')
-    doc.setTextColor(...colors.goldAccent)
-    doc.text(t.addressTitle, pageWidth / 2, yPos, { align: 'center' })
-    yPos += 10
-    
-    doc.setFontSize(11)
-    setF('bold')
-    doc.setTextColor(...colors.textLight)
-    doc.textWithLink(t.addressFull1, pageWidth / 2, yPos, { 
-      align: 'center',
-      url: 'https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9'
-    })
-    yPos += 6
-    
-    setF('normal')
-    doc.textWithLink(t.addressFull2, pageWidth / 2, yPos, { 
-      align: 'center',
-      url: 'https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9'
-    })
-    yPos += 6
-    doc.textWithLink(t.addressFull3, pageWidth / 2, yPos, { 
-      align: 'center',
-      url: 'https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9'
-    })
-    yPos += 6
-    doc.textWithLink(t.addressFull4, pageWidth / 2, yPos, { 
-      align: 'center',
-      url: 'https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9'
-    })
-    yPos += 8
-    
-    doc.setFontSize(9)
-    setF('italic')
-    doc.setTextColor(...colors.secondaryAccent)
-    doc.text(t.addressNote, pageWidth / 2, yPos, { align: 'center' })
-    yPos += 15
-    
-    // Website
-    doc.setFontSize(15)
-    setF('bold')
-    doc.setTextColor(...colors.goldAccent)
-    doc.textWithLink(t.website, pageWidth / 2, yPos, { 
-      align: 'center',
-      url: 'https://mangala-living.com'
-    })
-    yPos += 15
-    
-    // Bottom decorative line
-    doc.setDrawColor(...colors.goldAccent)
-    doc.setLineWidth(1)
-    doc.line(pageWidth / 2 - 40, yPos, pageWidth / 2 + 40, yPos)
-    yPos += 10
-    
-    // Workshop info
-    doc.setFontSize(9)
-    setF('normal')
-    doc.setTextColor(...colors.textLight)
-    doc.text(t.workshopSize, pageWidth / 2, yPos, { align: 'center' })
-    yPos += 5
-    doc.text(t.projectDone, pageWidth / 2, yPos, { align: 'center' })
-    yPos += 5
-    doc.text(t.exportExp, pageWidth / 2, yPos, { align: 'center' })
-    
-    // Copyright
-    doc.setFontSize(8)
-    doc.setTextColor(...colors.textMuted)
-    doc.text(t.copyright, pageWidth / 2, 280, { align: 'center' })
-    
-    // Save PDF with language-specific filename
-    const fileNames = {
-      id: 'Katalog-Mangala-Living-2025.pdf',
-      en: 'Mangala-Living-Catalog-2025.pdf',
-      ar: 'Mangala-Living-Catalog-2025-AR.pdf',
-      zh: 'Mangala-Living-Catalog-2025-ZH.pdf',
-      ja: 'Mangala-Living-Catalog-2025-JA.pdf',
-      es: 'Mangala-Living-Catalog-2025-ES.pdf',
-      fr: 'Mangala-Living-Catalog-2025-FR.pdf',
-      ko: 'Mangala-Living-Catalog-2025-KO.pdf'
-    }
+      doc.setTextColor(...colors.secondaryAccent)
+      doc.text(processRTLText(t.whatsappHours, lang), pageWidth / 2, yPos, { align: 'center' })
+      yPos += 5
+      doc.text(processRTLText(t.whatsappResponse, lang), pageWidth / 2, yPos, { align: 'center' })
+      yPos += 15
+
+      // Email
+      doc.setFontSize(13)
+      setF('bold')
+      doc.setTextColor(...colors.goldAccent)
+      doc.text(processRTLText(t.emailTitle, lang), pageWidth / 2, yPos, { align: 'center' })
+      yPos += 10
+
+      doc.setFontSize(13)
+      setF('bold')
+      doc.setTextColor(...colors.textLight)
+      doc.textWithLink(processRTLText(t.emailGeneral, lang), pageWidth / 2, yPos, {
+        align: 'center',
+        url: 'mailto:lifewithmangala@gmail.com'
+      })
+      yPos += 7
+      doc.textWithLink(processRTLText(t.emailSales, lang), pageWidth / 2, yPos, {
+        align: 'center',
+        url: 'mailto:lifewithmangala@gmail.com'
+      })
+      yPos += 8
+
+      doc.setFontSize(9)
+      setF('normal')
+      doc.setTextColor(...colors.secondaryAccent)
+      doc.text(processRTLText(t.emailNote, lang), pageWidth / 2, yPos, { align: 'center' })
+      yPos += 15
+
+      // Address - clickable
+      doc.setFontSize(13)
+      setF('bold')
+      doc.setTextColor(...colors.goldAccent)
+      doc.text(processRTLText(t.addressTitle, lang), pageWidth / 2, yPos, { align: 'center' })
+      yPos += 10
+
+      doc.setFontSize(11)
+      setF('bold')
+      doc.setTextColor(...colors.textLight)
+      doc.textWithLink(processRTLText(t.addressFull1, lang), pageWidth / 2, yPos, {
+        align: 'center',
+        url: 'https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9'
+      })
+      yPos += 6
+
+      setF('normal')
+      doc.textWithLink(processRTLText(t.addressFull2, lang), pageWidth / 2, yPos, {
+        align: 'center',
+        url: 'https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9'
+      })
+      yPos += 6
+      doc.textWithLink(processRTLText(t.addressFull3, lang), pageWidth / 2, yPos, {
+        align: 'center',
+        url: 'https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9'
+      })
+      yPos += 6
+      doc.textWithLink(processRTLText(t.addressFull4, lang), pageWidth / 2, yPos, {
+        align: 'center',
+        url: 'https://maps.app.goo.gl/ABqcrJ4Wv864RrjT9'
+      })
+      yPos += 8
+
+      doc.setFontSize(9)
+      setF('italic')
+      doc.setTextColor(...colors.secondaryAccent)
+      doc.text(processRTLText(t.addressNote, lang), pageWidth / 2, yPos, { align: 'center' })
+      yPos += 15
+
+      // Website
+      doc.setFontSize(15)
+      setF('bold')
+      doc.setTextColor(...colors.goldAccent)
+      doc.textWithLink(processRTLText(t.website, lang), pageWidth / 2, yPos, {
+        align: 'center',
+        url: 'https://mangala-living.com'
+      })
+      yPos += 15
+
+      // Bottom decorative line
+      doc.setDrawColor(...colors.goldAccent)
+      doc.setLineWidth(1)
+      doc.line(pageWidth / 2 - 40, yPos, pageWidth / 2 + 40, yPos)
+      yPos += 10
+
+      // Workshop info
+      doc.setFontSize(9)
+      setF('normal')
+      doc.setTextColor(...colors.textLight)
+      doc.text(processRTLText(t.workshopSize, lang), pageWidth / 2, yPos, { align: 'center' })
+      yPos += 5
+      doc.text(processRTLText(t.projectDone, lang), pageWidth / 2, yPos, { align: 'center' })
+      yPos += 5
+      doc.text(processRTLText(t.exportExp, lang), pageWidth / 2, yPos, { align: 'center' })
+
+      // Copyright
+      doc.setFontSize(8)
+      doc.setTextColor(...colors.textMuted)
+      doc.text(processRTLText(t.copyright, lang), pageWidth / 2, 280, { align: 'center' })
+
+      // Save PDF with language-specific filename
+      const fileNames = {
+        id: 'Katalog-Mangala-Living-2025.pdf',
+        en: 'Mangala-Living-Catalog-2025.pdf',
+        ar: 'Mangala-Living-Catalog-2025-AR.pdf',
+        zh: 'Mangala-Living-Catalog-2025-ZH.pdf',
+        ja: 'Mangala-Living-Catalog-2025-JA.pdf',
+        es: 'Mangala-Living-Catalog-2025-ES.pdf',
+        fr: 'Mangala-Living-Catalog-2025-FR.pdf',
+        ko: 'Mangala-Living-Catalog-2025-KO.pdf'
+      }
       const fileName = fileNames[lang] || 'Mangala-Living-Catalog-2025.pdf'
       console.log(`[PDF] Saving PDF as: ${fileName}`)
       console.log(`[PDF] Total pages: ${doc.getNumberOfPages()}`)
       console.log(`[PDF] Language: ${lang}, Content keys count: ${Object.keys(t).length}`)
-      
+
       try {
         doc.save(fileName)
         console.log(`[PDF] Catalog saved successfully as ${fileName}`)
@@ -1933,7 +2087,7 @@ export const generateCatalog = async (preferredLanguage?: 'id' | 'en' | 'ar' | '
         console.error('[PDF] Error saving PDF:', saveError)
         throw new Error(`Failed to save PDF: ${saveError instanceof Error ? saveError.message : String(saveError)}`)
       }
-    
+
     } catch (error) {
       console.error('[PDF] Error generating catalog:', error)
       console.error('[PDF] Error details:', {
@@ -1941,7 +2095,7 @@ export const generateCatalog = async (preferredLanguage?: 'id' | 'en' | 'ar' | '
         stack: error instanceof Error ? error.stack : undefined,
         name: error instanceof Error ? error.name : undefined
       })
-      
+
       // Re-throw error so UI can handle it
       throw error
     }
