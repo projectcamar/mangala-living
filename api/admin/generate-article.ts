@@ -60,8 +60,7 @@ IMPORTANT: You MUST respond with ONLY a valid JSON object, no additional text be
     },
     {
       "heading": "Section 2 heading",
-      "content": "Section 2 content",
-      "imageSearchQuery": "Specific English search query ONLY for Section 2"
+      "content": "Section 2 content"
     },
     {
       "heading": "Section 3 heading",
@@ -98,7 +97,8 @@ Use these IDs to mention products in sections (especially sections 3, 4, etc. fo
 15: Meja Kerja Industrial (Tables)
 
 IMAGE LIMITATION:
-- ONLY generate 'imageSearchQuery' for the MAIN cover, the FIRST section, and the SECOND section.
+- ONLY generate 'imageSearchQuery' for the MAIN cover and the FIRST section.
+- For the SECOND section, do NOT generate 'imageSearchQuery' or 'productId' (keep it as text only).
 - For all other sections (Section 3, 4, etc.), do NOT generate 'imageSearchQuery'. Instead, provide a 'productId' that matches the section's topic.
 - If a section discuss about tables, pick a table product. If it discuss storage, pick a shelf/cabinet.
 
@@ -271,20 +271,18 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
         // Fetch images for each section if search query is provided
         if (articleContent.sections && articleContent.sections.length > 0) {
-            // ONLY Section 1 & 2 get an image search as per requirement
-            for (let i = 0; i < Math.min(2, articleContent.sections.length); i++) {
-                const section = articleContent.sections[i];
-                if (section.imageSearchQuery) {
-                    const sectionImageUrl = await fetchUnsplashImage(section.imageSearchQuery);
-                    if (sectionImageUrl) {
-                        section.image = sectionImageUrl;
-                        (section as any).imageAlt = section.imageSearchQuery;
-                    }
+            // ONLY Section 1 gets an image search as per requirement
+            const section1 = articleContent.sections[0];
+            if (section1 && section1.imageSearchQuery) {
+                const sectionImageUrl = await fetchUnsplashImage(section1.imageSearchQuery);
+                if (sectionImageUrl) {
+                    section1.image = sectionImageUrl;
+                    (section1 as any).imageAlt = section1.imageSearchQuery;
                 }
             }
 
-            // Ensure other sections don't have images (they use productId instead)
-            for (let i = 2; i < articleContent.sections.length; i++) {
+            // Ensure other sections don't have images (Section 2 is empty, others use productId)
+            for (let i = 1; i < articleContent.sections.length; i++) {
                 delete articleContent.sections[i].imageSearchQuery;
                 delete articleContent.sections[i].image;
             }

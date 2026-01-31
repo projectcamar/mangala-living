@@ -3244,8 +3244,7 @@ export const BLOG_POSTS: BlogPost[] = [
         },
         {
           "heading": "Tips Memilih Hollowline yang Tepat",
-          "content": "Dalam memilih hollowline, ada beberapa hal yang perlu dipertimbangkan. Pertama, pastikan Anda memilih hollowline yang sesuai dengan tema interior. Kedua, pilih bahan yang tahan lama dan awet. Mangala Living menggunakan bahan-bahan yang berkualitas tinggi untuk memastikan hollowline dapat bertahan lama.",
-          "productId": 11
+          "content": "Dalam memilih hollowline, ada beberapa hal yang perlu dipertimbangkan. Pertama, pastikan Anda memilih hollowline yang sesuai dengan tema interior. Kedua, pilih bahan yang tahan lama dan awet. Mangala Living menggunakan bahan-bahan yang berkualitas tinggi untuk memastikan hollowline dapat bertahan lama."
         },
         {
           "heading": "Mengoptimalkan Ruang dengan Desain yang Tepat",
