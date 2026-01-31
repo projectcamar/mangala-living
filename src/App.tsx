@@ -37,6 +37,7 @@ const ImageLicense = lazy(() => import('./pages/ImageLicense'))
 // Admin Pages
 const AdminLogin = lazy(() => import('./pages/AdminLogin'))
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard'))
+const AdminBlogManager = lazy(() => import('./pages/AdminBlogManager'))
 
 // SEO Landing Pages - Keyword Celah (Anti-Marketplace Strategy)
 const FurnitureBesiCustomBekasi = lazy(() => import('./pages/FurnitureBesiCustomBekasi'))
@@ -367,6 +368,27 @@ function App() {
             <ProtectedRoute>
               <Suspense fallback={<Loading />}>
                 <AdminDashboard />
+              </Suspense>
+            </ProtectedRoute>
+          } />
+          <Route path="/admin/blog" element={
+            <ProtectedRoute>
+              <Suspense fallback={<Loading />}>
+                <AdminBlogManager />
+              </Suspense>
+            </ProtectedRoute>
+          } />
+          <Route path="/admin/blog/new" element={
+            <ProtectedRoute>
+              <Suspense fallback={<Loading />}>
+                <AdminBlogManager />
+              </Suspense>
+            </ProtectedRoute>
+          } />
+          <Route path="/admin/blog/edit/:slug" element={
+            <ProtectedRoute>
+              <Suspense fallback={<Loading />}>
+                <AdminBlogManager />
               </Suspense>
             </ProtectedRoute>
           } />

@@ -1,10 +1,13 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
-import { LogOut, LayoutDashboard, Database, Settings, BarChart3, Users } from 'lucide-react'
+import { LogOut, LayoutDashboard, Database, Settings, BarChart3, Users, FileText } from 'lucide-react'
 import { logoutAdmin } from '../utils/adminAuth'
+import { useNavigate } from 'react-router-dom'
 import './Admin.css'
 
 const AdminDashboard: React.FC = () => {
+    const navigate = useNavigate()
+
     return (
         <div className="admin-dashboard">
             <Helmet>
@@ -36,6 +39,16 @@ const AdminDashboard: React.FC = () => {
                 </div>
 
                 <div className="dashboard-stats">
+                    <div className="stat-card clickable" onClick={() => navigate('/admin/blog')}>
+                        <div className="stat-icon">
+                            <FileText size={28} />
+                        </div>
+                        <div className="stat-info">
+                            <h3>Blog Manager</h3>
+                            <div className="stat-value">Articles</div>
+                        </div>
+                    </div>
+
                     <div className="stat-card">
                         <div className="stat-icon">
                             <LayoutDashboard size={28} />
