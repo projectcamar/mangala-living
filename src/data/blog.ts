@@ -3217,6 +3217,45 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       "conclusion": "选择合适的露台家具对于新加坡的咖啡馆来说是非常重要的。通过了解新加坡咖啡馆露台家具的特点，选择合适的材料和设计，您能够创造一个独特和舒适的露台区域。Mangala Living作为一家具有25年经验的工业家具制造商，我们能够提供专业的设计和制造服务，帮助您实现您的目标。请联系我们，获取更多信息和开始您的项目。"
     }
+  },
+  {
+    "id": 298,
+    "slug": "hollowline-indonesia-berkualitas",
+    "title": "Hollowline Indonesia Berkualitas",
+    "category": "Tips and Trick",
+    "excerpt": "Tips memilih hollowline Indonesia terbaik untuk dekorasi interior",
+    "image": "https://images.unsplash.com/photo-1668776050654-8d461997ac1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwaW50ZXJpb3IlMjBkZXNpZ24lMjBpbmRvbmVzaWF8ZW58MHwwfHx8MTc2OTg1Nzg4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-01-31 11:11",
+    "author": "Helmi Ramdan",
+    "customContent": {
+      "introduction": "Dalam mendesain interior, hollowline menjadi salah satu elemen yang penting untuk mempercantik ruangan. Mangala Living, dengan pengalaman lebih dari 25 tahun, menyediakan hollowline Indonesia berkualitas tinggi untuk cafe, restaurant, hotel, dan kantor. Berikut beberapa tips untuk memilih hollowline yang tepat untuk proyek Anda.",
+      "keyPoints": [
+        "Memilih hollowline yang sesuai dengan tema interior",
+        "Menggunakan bahan yang tahan lama dan awet",
+        "Mengoptimalkan ruang dengan desain yang tepat"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Hollowline Penting?",
+          "content": "Hollowline dapat mempercantik ruangan dan membuatnya terlihat lebih modern. Dengan menggunakan hollowline, Anda dapat menambahkan unsur estetika pada interior tanpa mengorbankan fungsionalitas. Mangala Living menyediakan berbagai jenis hollowline yang dapat disesuaikan dengan kebutuhan Anda.",
+          "imageSearchQuery": "hollowline interior design",
+          "image": "https://images.unsplash.com/photo-1653022860307-0ccb6379f78b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxob2xsb3dsaW5lJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc2OTg1Nzg4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "hollowline interior design"
+        },
+        {
+          "heading": "Tips Memilih Hollowline yang Tepat",
+          "content": "Dalam memilih hollowline, ada beberapa hal yang perlu dipertimbangkan. Pertama, pastikan Anda memilih hollowline yang sesuai dengan tema interior. Kedua, pilih bahan yang tahan lama dan awet. Mangala Living menggunakan bahan-bahan yang berkualitas tinggi untuk memastikan hollowline dapat bertahan lama.",
+          "productId": 11
+        },
+        {
+          "heading": "Mengoptimalkan Ruang dengan Desain yang Tepat",
+          "content": "Dengan desain yang tepat, Anda dapat mengoptimalkan ruang dan membuatnya terlihat lebih luas. Mangala Living menyediakan layanan desain yang dapat membantu Anda menciptakan ruangan yang sesuai dengan kebutuhan Anda. Kami memiliki pengalaman lebih dari 1000 proyek dan workshop di Bekasi yang siap membantu Anda.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Dengan memilih hollowline Indonesia berkualitas dan menggunakan tips yang tepat, Anda dapat menciptakan ruangan yang cantik dan fungsional. Mangala Living siap membantu Anda dalam menciptakan ruangan yang sesuai dengan kebutuhan Anda. Kunjungi kami sekarang juga untuk mendapatkan informasi lebih lanjut tentang hollowline Indonesia berkualitas."
+    }
   }
 ]
 
