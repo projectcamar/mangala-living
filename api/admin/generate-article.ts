@@ -1,11 +1,14 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY || '';
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || '';
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
+const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
 
 interface GenerateArticleRequest {
     prompt: string;
     category?: string;
+    model?: string; // Model ID from dropdown
 }
 
 interface ArticleContent {
@@ -71,21 +74,41 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     try {
-        const { prompt, category }: GenerateArticleRequest = req.body;
+        const { prompt, category, model = 'llama-3.3-70b-versatile' }: GenerateArticleRequest = req.body;
 
         if (!prompt || prompt.trim().length === 0) {
             return res.status(400).json({ error: 'Prompt is required' });
         }
 
-        // Call Groq API
-        const response = await fetch(GROQ_API_URL, {
+        // Determine which API to use based on model
+        const isOpenRouter = model.includes('/');
+        const apiUrl = isOpenRouter ? OPENROUTER_API_URL : GROQ_API_URL;
+        const apiKey = isOpenRouter ? OPENROUTER_API_KEY : GROQ_API_KEY;
+
+        if (!apiKey) {
+            return res.status(500).json({
+                error: `API key not configured for ${isOpenRouter ? 'OpenRouter' : 'Groq'}`
+            });
+        }
+
+        // Prepare headers
+        const headers: Record<string, string> = {
+            'Authorization': `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+        };
+
+        // Add OpenRouter-specific headers
+        if (isOpenRouter) {
+            headers['HTTP-Referer'] = 'https://mangalaliving.com';
+            headers['X-Title'] = 'Mangala Living Blog Generator';
+        }
+
+        // Call AI API
+        const response = await fetch(apiUrl, {
             method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${GROQ_API_KEY}`,
-                'Content-Type': 'application/json',
-            },
+            headers,
             body: JSON.stringify({
-                model: 'llama-3.3-70b-versatile', // Fast and high-quality model
+                model,
                 messages: [
                     {
                         role: 'system',
@@ -98,7 +121,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                 ],
                 temperature: 0.7,
                 max_tokens: 4000,
-                response_format: { type: 'json_object' }
+                ...(isOpenRouter ? {} : { response_format: { type: 'json_object' } })
             }),
         });
 

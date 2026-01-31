@@ -615,6 +615,42 @@
   font-size: 1rem;
 }
 
+.ai-model-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.ai-model-select:focus {
+  outline: none;
+  border-color: #8B7355;
+  box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.1);
+}
+
+.ai-model-select:disabled {
+  background: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.ai-model-select optgroup {
+  font-weight: 700;
+  color: #2C3E50;
+}
+
+.ai-model-select option {
+  padding: 8px;
+  font-weight: 400;
+}
+
+
 .ai-modal-body textarea {
   width: 100%;
   padding: 12px;

@@ -25,6 +25,7 @@ const AdminBlogManager: React.FC = () => {
     const [showAIModal, setShowAIModal] = useState(false)
     const [aiPrompt, setAiPrompt] = useState('')
     const [isGenerating, setIsGenerating] = useState(false)
+    const [selectedModel, setSelectedModel] = useState('llama-3.3-70b-versatile')
 
     const navigate = useNavigate()
 
@@ -143,7 +144,8 @@ const AdminBlogManager: React.FC = () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     prompt: aiPrompt,
-                    category: editingPost?.category
+                    category: editingPost?.category,
+                    model: selectedModel
                 })
             })
 
@@ -466,13 +468,36 @@ const AdminBlogManager: React.FC = () => {
                         </div>
 
                         <div className="ai-modal-body">
+                            <div className="input-group">
+                                <label>Select AI Model</label>
+                                <select
+                                    value={selectedModel}
+                                    onChange={(e) => setSelectedModel(e.target.value)}
+                                    disabled={isGenerating}
+                                    className="ai-model-select"
+                                >
+                                    <optgroup label="Groq (Fast)">
+                                        <option value="llama-3.3-70b-versatile">Llama 3.3 70B (Default - Fast & Balanced)</option>
+                                        <option value="mixtral-8x7b-32768">Mixtral 8x7B (Creative)</option>
+                                    </optgroup>
+                                    <optgroup label="OpenRouter (Free Models)">
+                                        <option value="tngtech/deepseek-r1t2-chimera:free">DeepSeek R1T2 Chimera (Reasoning)</option>
+                                        <option value="arcee-ai/trinity-large-preview:free">Trinity Large (Creative Writing)</option>
+                                        <option value="z-ai/glm-4.5-air:free">GLM 4.5 Air (Agent Tasks)</option>
+                                        <option value="qwen/qwen3-coder:free">Qwen3 Coder 480B (Code Generation)</option>
+                                        <option value="meta-llama/llama-3.3-70b-instruct:free">Llama 3.3 70B (Balanced)</option>
+                                        <option value="google/gemma-3-27b:free">Gemma 3 27B (Multilingual)</option>
+                                        <option value="upstage/solar-pro-3:free">Solar Pro 3 (Korean/English)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
                             <label>What would you like to write about?</label>
                             <textarea
                                 value={aiPrompt}
                                 onChange={(e) => setAiPrompt(e.target.value)}
                                 placeholder="Example: Panduan memilih furniture cafe industrial yang tahan lama dan hemat budget untuk cafe kecil di Jakarta"
                                 rows={5}
-                                autoFocus
                                 disabled={isGenerating}
                             />
                             <p className="ai-modal-hint">
