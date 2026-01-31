@@ -8,8 +8,10 @@ import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import ServiceAreasSection from '../components/ServiceAreasSection'
 import AuthorCard from '../components/AuthorCard'
-import { getPostBySlug, BLOG_POSTS } from '../data/blog'
+import { getPostBySlug, BLOG_POSTS, type BlogPost } from '../data/blog'
+import { ALL_PRODUCTS } from '../data/products'
 import { getBlogPostContentLocalized, type BlogSection } from '../data/blogContent'
+import type { LanguageCode } from '../utils/languageManager'
 import { generateBlogPostingSchema, generateFAQSchema } from '../utils/structuredData'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, truncateTitle, truncateMetaDescription } from '../utils/seo'
 import BlogProductShowcase from '../components/BlogProductShowcase'
@@ -204,14 +206,36 @@ const SIDEBAR_FEATURES_TRANSLATIONS: Record<LanguageCode, {
 }
 
 const BLOG_PRODUCT_SHOWCASE_DESCRIPTION: Record<LanguageCode, string> = {
-  id: 'Temukan produk industrial berkualitas tinggi yang relevan dengan topik artikel ini. Semua produk dibuat dengan kualitas premium, material industrial grade, dan finishing powder coating tahan lama di workshop kami di Bekasi. Harga pabrik langsung, tidak ada perantara!',
-  en: 'Discover high-quality industrial furniture collection related to this article. All products are manufactured with premium materials, industrial-grade quality, and durable powder coating finish in our Bekasi workshop. Factory-direct pricing with no intermediaries!',
-  ar: 'اكتشف مجموعتنا من أثاث صناعي عالي الجودة المتعلق بهذه المقالة. يتم تصنيع جميع المنتجات بمواد عالية الجودة وجودة صناعية وتشطيب ببودرة متين في ورشتنا في بيكاسي. أسعار مباشرة من المصنع بدون وسطاء!',
-  zh: '探索与本文相关的高品质工业风家具系列。所有产品均在我们在Bekasi的工坊中使用优质材料、工业级质量和耐用粉末涂层精加工制造。工厂直销价格，无中间商！',
-  ja: 'この記事に関連する高品質な工業風家具コレクションをご覧ください。すべての製品は、Bekasiのワークショップでプレミアム素材、工業グレードの品質、耐久性のあるパウダーコーティング仕上げで製造されています。工場直販価格、仲介業者なし！',
-  es: 'Descubra nuestra colección de muebles industriales de alta calidad relacionada con este artículo. Todos los productos están fabricados con materiales premium, calidad de grado industrial y acabado de pintura en polvo duradero en nuestro taller de Bekasi. Precios directos de fábrica, sin intermediarios!',
-  fr: 'Découvrez notre collection de mobilier industriel de haute qualité liée à cet article. Tous les produits sont fabriqués avec des matériaux premium, une qualité de qualité industrielle et une finition en poudre durable dans notre atelier de Bekasi. Prix direct d\'usine, sans intermédiaires!',
-  ko: '이 기사와 관련된 고품질 산업용 가구 컬렉션을 발견하세요. 모든 제품은 Bekasi의 작업장에서 프리미엄 재료, 산업 등급 품질 및 내구성이 뛰어난 파우더 코팅 마감으로 제조됩니다. 공장 직접 가격, 중간 상인 없음!'
+  id: "Jelajahi koleksi furniture industrial premium kami yang dirancang khusus untuk mempercantik dan memperkuat karakter bisnis Anda.",
+  en: "Explore our premium industrial furniture collection designed to enhance and strengthen your business character.",
+  ar: "استكشف مجموعتنا المتميزة من الأثاث الصناعي المصممة لتعزيز وتقوية شخصية عملك.",
+  zh: "探索我们的优质工业家具系列，旨在增强和加强您的业务特色。",
+  ja: "あなたのビジネスキャラクターを強化し、強化するために設計されたプレミアム工業家具コレクションをご覧ください。",
+  es: "Explore nuestra colección de muebles industriales premium diseñada para mejorar y fortalecer el carácter de su negocio.",
+  fr: "Explorez notre collection de meubles industriels haut de gamme conçue pour améliorer et renforcer le caractère de votre entreprise.",
+  ko: "비즈니스 특성을 향상시키고 강화하도록 설계된 프리미ウム 산업용 가구 컬렉션을 살펴보세요."
+}
+
+const MENTIONED_PRODUCT_LABEL: Record<LanguageCode, string> = {
+  id: "Produk Industrial Pilihan",
+  en: "Featured Industrial Product",
+  ar: "منتج صناعي مميز",
+  zh: "精选工业产品",
+  ja: "注目の工業製品",
+  es: "Producto Industrial Destacado",
+  fr: "Produit Industriel Vedette",
+  ko: "주요 산업용 제품"
+}
+
+const VIEW_PRODUCT_LABEL: Record<LanguageCode, string> = {
+  id: "Lihat Produk",
+  en: "View Product",
+  ar: "عرض المنتج",
+  zh: "查看产品",
+  ja: "製品を見る",
+  es: "Ver Producto",
+  fr: "Voir le Produit",
+  ko: "제품 보기"
 }
 
 const CTA_TRANSLATIONS: Record<LanguageCode, {
@@ -597,12 +621,12 @@ const BlogPost: React.FC = () => {
 
             <div className="blog-post-layout">
               <article className="blog-post-article" aria-labelledby="blog-post-title">
-                {content.sections.map((section, index) => (
+                {content.sections.map((section: any, index: number) => (
                   <React.Fragment key={index}>
                     <section className="blog-post-section">
                       {section.heading && <h2 className="blog-post-section-heading">{section.heading}</h2>}
 
-                      {section.paragraphs?.map((para, pIndex) => (
+                      {section.paragraphs?.map((para: string, pIndex: number) => (
                         <p
                           key={pIndex}
                           className="blog-post-paragraph"
@@ -628,9 +652,36 @@ const BlogPost: React.FC = () => {
                         </figure>
                       )}
 
+                      {/* Mentioned Product Card */}
+                      {section.productId && (() => {
+                        const product = ALL_PRODUCTS.find(p => p.id === section.productId);
+                        if (!product) return null;
+
+                        return (
+                          <div className="blog-post-mentioned-product">
+                            <div className="mentioned-product-image">
+                              <img src={product.image} alt={product.name} />
+                            </div>
+                            <div className="mentioned-product-info">
+                              <span className="mentioned-product-label">
+                                {MENTIONED_PRODUCT_LABEL[language] || MENTIONED_PRODUCT_LABEL.en}
+                              </span>
+                              <h4 className="mentioned-product-name">{product.name}</h4>
+                              <span className="mentioned-product-price">{product.price}</span>
+                            </div>
+                            <Link
+                              to={`/products/${product.slug}?ref=blog_mention&language=${language}`}
+                              className="mentioned-product-action"
+                            >
+                              {VIEW_PRODUCT_LABEL[language] || VIEW_PRODUCT_LABEL.en}
+                            </Link>
+                          </div>
+                        );
+                      })()}
+
                       {section.list && (
                         <ul className="blog-post-list">
-                          {section.list.map((item, lIndex) => (
+                          {section.list.map((item: string, lIndex: number) => (
                             <li key={lIndex} dangerouslySetInnerHTML={{ __html: item }} />
                           ))}
                         </ul>
@@ -713,7 +764,7 @@ const BlogPost: React.FC = () => {
                   <div className="key-takeaways-box" style={{ marginTop: '2.5rem', marginBottom: '1.5rem' }}>
                     <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', borderBottom: '2px solid #eee', paddingBottom: '0.5rem' }}>🔑 Key Takeaways</h3>
                     <ul style={{ listStyle: 'none', padding: 0 }}>
-                      {post.customContent.keyPoints.map((point, idx) => (
+                      {post.customContent.keyPoints.map((point: string, idx: number) => (
                         <li key={idx} style={{
                           padding: '0.875rem',
                           background: '#f9f9f9',

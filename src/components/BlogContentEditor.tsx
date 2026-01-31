@@ -1,11 +1,12 @@
-import React from 'react';
-import { Plus, Trash2, Sparkles } from 'lucide-react';
+import { Plus, Trash2, Sparkles, Package } from 'lucide-react';
+import { ALL_PRODUCTS } from '../data/products';
 
 interface ContentSection {
     heading: string;
     content: string;
     image?: string;
     imageAlt?: string;
+    productId?: number;
 }
 
 interface BlogContentEditorProps {
@@ -34,10 +35,10 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
     isGenerating = false
 }) => {
     const addSection = () => {
-        onSectionsChange([...sections, { heading: '', content: '', image: '', imageAlt: '' }]);
+        onSectionsChange([...sections, { heading: '', content: '', image: '', imageAlt: '', productId: undefined }]);
     };
 
-    const updateSection = (index: number, field: keyof ContentSection, value: string) => {
+    const updateSection = (index: number, field: keyof ContentSection, value: any) => {
         const updated = [...sections];
         (updated[index] as any)[field] = value;
         onSectionsChange(updated);
@@ -85,13 +86,13 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
                         </button>
                     </div>
                     <div className="keypoints-list">
-                        {keyPoints.map((point, index) => (
+                        {keyPoints.map((point: string, index: number) => (
                             <div key={index} className="keypoint-item">
                                 <div className="keypoint-number">{index + 1}</div>
                                 <input
                                     type="text"
                                     value={point}
-                                    onChange={(e) => {
+                                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                                         const newPoints = [...keyPoints];
                                         newPoints[index] = e.target.value;
                                         onKeyPointsChange(newPoints);
@@ -101,7 +102,7 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
                                 />
                                 <button
                                     className="remove-btn"
-                                    onClick={() => onKeyPointsChange(keyPoints.filter((_, i) => i !== index))}
+                                    onClick={() => onKeyPointsChange(keyPoints.filter((_: string, i: number) => i !== index))}
                                     title="Remove Point"
                                 >
                                     <Trash2 size={14} />
@@ -124,7 +125,7 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
                     </button>
                 </div>
 
-                {sections.map((section, index) => (
+                {sections.map((section: ContentSection, index: number) => (
                     <div key={index} className="dynamic-section">
                         <div className="section-controls">
                             <span className="section-number">Section {index + 1}</span>
@@ -174,51 +175,101 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
                             className="content-textarea"
                         />
 
-                        <div className="section-image-fields" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '10px' }}>
-                            <div className="input-group-compact">
-                                <label style={{ fontSize: '12px', color: '#666', marginBottom: '5px', display: 'block' }}>Section Image URL</label>
-                                <div className="input-with-action">
-                                    <input
-                                        type="text"
-                                        value={section.image || ''}
-                                        onChange={(e) => updateSection(index, 'image', e.target.value)}
-                                        placeholder="https://images.unsplash.com/..."
-                                        style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '4px' }}
-                                    />
-                                    <button
-                                        type="button"
-                                        className="action-input-btn"
-                                        onClick={() => onSuggestSectionImage?.(index)}
-                                        disabled={isGenerating || !section.heading}
-                                        title="Suggest image from Unsplash based on Section Heading"
-                                        style={{
-                                            padding: '8px 12px',
-                                            background: '#8B7355',
-                                            color: 'white',
-                                            border: 'none',
-                                            borderRadius: '0 4px 4px 0',
-                                            cursor: 'pointer',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            gap: '5px'
-                                        }}
+                        <div className="section-featured-fields" style={{ display: 'grid', gridTemplateColumns: index === 0 ? '1fr 1fr' : '1fr', gap: '15px', marginTop: '10px' }}>
+                            {/* Section 1 gets Image fields, others get Product Mention */}
+                            {index === 0 ? (
+                                <>
+                                    <div className="input-group-compact">
+                                        <label style={{ fontSize: '12px', color: '#666', marginBottom: '5px', display: 'block' }}>Section Image (Promo/Visual)</label>
+                                        <div className="input-with-action">
+                                            <input
+                                                type="text"
+                                                value={section.image || ''}
+                                                onChange={(e) => updateSection(index, 'image', e.target.value)}
+                                                placeholder="https://images.unsplash.com/..."
+                                                style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '4px' }}
+                                            />
+                                            <button
+                                                type="button"
+                                                className="action-input-btn"
+                                                onClick={() => onSuggestSectionImage?.(index)}
+                                                disabled={isGenerating || !section.heading}
+                                                title="Suggest image from Unsplash"
+                                                style={{
+                                                    padding: '8px 12px',
+                                                    background: '#8B7355',
+                                                    color: 'white',
+                                                    border: 'none',
+                                                    borderRadius: '0 4px 4px 0',
+                                                    cursor: 'pointer',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    gap: '5px'
+                                                }}
+                                            >
+                                                <Sparkles size={12} />
+                                                <span style={{ fontSize: '11px' }}>AI Suggest</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div className="input-group-compact">
+                                        <label style={{ fontSize: '12px', color: '#666', marginBottom: '5px', display: 'block' }}>Alt Text (SEO)</label>
+                                        <input
+                                            type="text"
+                                            value={section.imageAlt || ''}
+                                            onChange={(e) => updateSection(index, 'imageAlt', e.target.value)}
+                                            placeholder="e.g. industrial cafe table design"
+                                            style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '4px' }}
+                                        />
+                                    </div>
+                                </>
+                            ) : (
+                                <div className="input-group-compact">
+                                    <label style={{ fontSize: '12px', color: '#666', marginBottom: '5px', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                                        <Package size={14} /> Mention Product (Soft selling)
+                                    </label>
+                                    <select
+                                        value={section.productId?.toString() || ''}
+                                        onChange={(e) => updateSection(index, 'productId', e.target.value ? parseInt(e.target.value) : undefined)}
+                                        style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '4px', backgroundColor: '#fff' }}
                                     >
-                                        <Sparkles size={12} />
-                                        <span style={{ fontSize: '11px' }}>AI Suggest</span>
-                                    </button>
+                                        <option value="">-- No Product Linked --</option>
+                                        {ALL_PRODUCTS.map(p => (
+                                            <option key={p.id} value={p.id.toString()}>
+                                                {p.name} ({p.price})
+                                            </option>
+                                        ))}
+                                    </select>
                                 </div>
-                            </div>
-                            <div className="input-group-compact">
-                                <label style={{ fontSize: '12px', color: '#666', marginBottom: '5px', display: 'block' }}>Image Alt Text (SEO)</label>
-                                <input
-                                    type="text"
-                                    value={section.imageAlt || ''}
-                                    onChange={(e) => updateSection(index, 'imageAlt', e.target.value)}
-                                    placeholder="e.g. industrial cafe table design"
-                                    style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '4px' }}
-                                />
-                            </div>
+                            )}
                         </div>
+
+                        {/* Optional collapsible image fields for non-section-1 for advanced users */}
+                        {index > 0 && (
+                            <details style={{ marginTop: '10px' }}>
+                                <summary style={{ fontSize: '11px', color: '#888', cursor: 'pointer' }}>Advanced: Override Section Image</summary>
+                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '5px', padding: '10px', background: '#f9f9f9', borderRadius: '4px' }}>
+                                    <div className="input-group-compact">
+                                        <input
+                                            type="text"
+                                            value={section.image || ''}
+                                            onChange={(e) => updateSection(index, 'image', e.target.value)}
+                                            placeholder="Image URL"
+                                            style={{ width: '100%', padding: '6px', border: '1px solid #ddd', borderRadius: '4px', fontSize: '12px' }}
+                                        />
+                                    </div>
+                                    <div className="input-group-compact">
+                                        <input
+                                            type="text"
+                                            value={section.imageAlt || ''}
+                                            onChange={(e) => updateSection(index, 'imageAlt', e.target.value)}
+                                            placeholder="Alt Text"
+                                            style={{ width: '100%', padding: '6px', border: '1px solid #ddd', borderRadius: '4px', fontSize: '12px' }}
+                                        />
+                                    </div>
+                                </div>
+                            </details>
+                        )}
                     </div>
                 ))}
 

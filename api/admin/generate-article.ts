@@ -26,8 +26,9 @@ interface ArticleContent {
     sections: Array<{
         heading: string;
         content: string;
-        imageSearchQuery?: string; // Search query for Unsplash for this section
-        image?: string; // Final Unsplash image URL for this section
+        imageSearchQuery?: string; // Only for Section 1
+        image?: string; // Only for Section 1
+        linkedProductId?: number; // Product ID (1-17) to mention
     }>;
     conclusion: string;
 }
@@ -43,7 +44,7 @@ IMPORTANT: You MUST respond with ONLY a valid JSON object, no additional text be
   "slug": "url-friendly-slug-lowercase-with-hyphens",
   "excerpt": "Brief summary (max 160 characters for meta description)",
   "category": "One of: Tips and Trick, Workshop & Production, Commercial Furniture, About Furniture, Furniture Information, Furniture Guide, Design Inspiration",
-  "imageSearchQuery": "A relevant English keyword for Unsplash image search (e.g., 'industrial cafe interior', 'modern teak chair')",
+  "imageSearchQuery": "A relevant English keyword for Unsplash image search (main cover)",
   "introduction": "Engaging opening paragraph (2-3 sentences)",
   "keyPoints": [
     "Key takeaway 1",
@@ -53,13 +54,48 @@ IMPORTANT: You MUST respond with ONLY a valid JSON object, no additional text be
   "language": "Language code (id, en, ar, zh, ja, es, fr, ko)",
   "sections": [
     {
-      "heading": "Section heading",
-      "content": "Section content (2-4 paragraphs, use <strong> for bold, <em> for italic, <br> for line breaks)",
-      "imageSearchQuery": "A specific English search query for this section (MUST be different from the main cover image and other sections)"
+      "heading": "Section 1 heading",
+      "content": "Section 1 content",
+      "imageSearchQuery": "Specific English search query ONLY for Section 1"
+    },
+    {
+      "heading": "Section 2 heading",
+      "content": "Section 2 content",
+      "productId": 12 
+    },
+    {
+      "heading": "Section 3 heading",
+      "content": "Section 3 content",
+      "productId": 5
     }
   ],
-  "conclusion": "Compelling closing paragraph with call-to-action"
+  "conclusion": "Compelling closing paragraph"
 }
+
+PRODUCT CATALOG (for 'productId'):
+Use these IDs to mention products in sections (especially sections 2, 3, etc. for soft selling):
+1: Frame Loft Bookshelf (Storage)
+2: Balcony Bar Table (Bar Set, Outdoor)
+3: Lounge Set Coffee Table (Tables)
+17: Bench Corner Lounge (Sofa Bench)
+16: Industrial Daybed Frame (Daybed)
+4: Bandung Pipe Dining Table (Dining Set)
+5: Dining Set with 2 Chairs (Dining Set)
+6: Beam Industrial Bar Chair (Bar Set)
+7: Bar Stall Chair (Bar Set)
+8: Steelframe Outdoor Bar Set (Bar Set, Outdoor)
+9: Industrial Kitchen Cabinet (Storage)
+10: Kabinet Lemari Industrial (Storage)
+11: Hollowline Display Rack (Storage)
+12: Ladder Frame Display Stand (Storage)
+13: Industrial Hanging Shelf (Storage)
+14: Industrial Coat Rack (Storage)
+15: Meja Kerja Industrial (Tables)
+
+IMAGE LIMITATION:
+- ONLY generate 'imageSearchQuery' for the MAIN cover and the FIRST section.
+- For all other sections (Section 2, 3, etc.), do NOT generate 'imageSearchQuery'. Instead, provide a 'productId' that matches the section's topic.
+- If a section discuss about tables, pick a table product. If it discuss storage, pick a shelf/cabinet.
 
 LANGUAGE SUPPORT (CRITICAL):
 Mangala Living serves customers in multiple languages.
@@ -230,15 +266,20 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
         // Fetch images for each section if search query is provided
         if (articleContent.sections && articleContent.sections.length > 0) {
-            for (const section of articleContent.sections) {
-                if (section.imageSearchQuery) {
-                    const sectionImageUrl = await fetchUnsplashImage(section.imageSearchQuery);
-                    if (sectionImageUrl) {
-                        section.image = sectionImageUrl;
-                        // Use the search query as default alt text if not provided
-                        (section as any).imageAlt = section.imageSearchQuery;
-                    }
+            // ONLY Section 1 gets an image search as per requirement
+            const section1 = articleContent.sections[0];
+            if (section1.imageSearchQuery) {
+                const sectionImageUrl = await fetchUnsplashImage(section1.imageSearchQuery);
+                if (sectionImageUrl) {
+                    section1.image = sectionImageUrl;
+                    (section1 as any).imageAlt = section1.imageSearchQuery;
                 }
+            }
+
+            // Ensure other sections don't have images (they use productId instead)
+            for (let i = 1; i < articleContent.sections.length; i++) {
+                delete articleContent.sections[i].imageSearchQuery;
+                delete articleContent.sections[i].image;
             }
         }
 
