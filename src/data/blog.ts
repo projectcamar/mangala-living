@@ -19,6 +19,7 @@ export interface BlogPost {
       content: string // Rich HTML content
       image?: string
       imageAlt?: string
+      imageSearchQuery?: string
       productId?: number
     }>
     conclusion?: string // Rich HTML content

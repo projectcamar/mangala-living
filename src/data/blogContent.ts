@@ -6,6 +6,7 @@ export interface BlogSection {
   paragraphs?: string[]
   image?: string
   imageAlt?: string
+  imageSearchQuery?: string
   list?: string[]
   productId?: number
 }
