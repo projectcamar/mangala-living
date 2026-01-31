@@ -3199,11 +3199,15 @@ export const BLOG_POSTS: BlogPost[] = [
       "sections": [
         {
           "heading": "新加坡咖啡馆露台家具的特点",
-          "content": "新加坡的咖啡馆通常都有一个小巧的露台区域，<strong>因此选择家具时需要考虑空间的限制</strong>。此外，新加坡的气候也比较热烈，<em>所以家具需要能够抵御阳光和雨水的影响</em>。综上所述，新加坡咖啡馆露台家具需要耐用、易于维护，并且能够适应不同的天气条件。<br><br> Mangala Living作为一家具有25年经验的工业家具制造商，我们已经完成了1000多个项目，包括许多新加坡的咖啡馆项目。我们的工作室位于Bekasi，我们的团队能够提供专业的设计和制造服务，帮助您创造独特的露台家具。"
+          "content": "新加坡的咖啡馆通常都有一个小巧的露台区域，<strong>因此选择家具时需要考虑空间的限制</strong>。此外，新加坡的气候也比较热烈，<em>所以家具需要能够抵御阳光和雨水的影响</em>。综上所述，新加坡咖啡馆露台家具需要耐用、易于维护，并且能够适应不同的天气条件。<br><br> Mangala Living作为一家具有25年经验的工业家具制造商，我们已经完成了1000多个项目，包括许多新加坡的咖啡馆项目。我们的工作室位于Bekasi，我们的团队能够提供专业的设计和制造服务，帮助您创造独特的露台家具。",
+          "image": "https://images.unsplash.com/photo-1649301980208-86c868b4f30b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxvdXRkb29yJTIwY2FmZSUyMGZ1cm5pdHVyZSUyMHNpbmdhcG9yZSUyMHRyb3BpY2FsJTIwcmFpbnxlbnwwfDB8fHwxNzY5ODU1NTE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "outdoor cafe furniture singapore tropical rain"
         },
         {
           "heading": "选择合适的材料",
-          "content": "选择合适的材料是设计露台家具的关键。新加坡的气候比较热烈，<strong>所以需要选择能够抵御阳光和雨水的材料</strong>。例如，<em>金属和合成材料</em>能够提供良好的耐用性和维护性。另外，<strong>木材</strong>也是一种不错的选择，特别是经过特殊处理的木材，可以提供更好的抗腐蚀性和耐用性。<br><br> 除了材料的选择，<em>颜色和设计</em>也是非常重要的。颜色需要能够与咖啡馆的整体风格相符，而设计需要能够提供舒适和美观的体验。"
+          "content": "选择合适的材料是设计露台家具的关键。新加坡的气候比较热烈，<strong>所以需要选择能够抵御阳光和雨水的材料</strong>。例如，<em>金属和合成材料</em>能够提供良好的耐用性和维护性。另外，<strong>木材</strong>也是一种不错的选择，特别是经过特殊处理的木材，可以提供更好的抗腐蚀性和耐用性。<br><br> 除了材料的选择，<em>颜色和设计</em>也是非常重要的。颜色需要能够与咖啡馆的整体风格相符，而设计需要能够提供舒适和美观的体验。",
+          "image": "https://images.unsplash.com/photo-1722310530288-653a5b7a56be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxkdXJhYmxlJTIwb3V0ZG9vciUyMGZ1cm5pdHVyZSUyMGluJTIwbW9kZXJuJTIwY2FmZSUyMHNldHRpbmd8ZW58MHwwfHx8MTc2OTg1NTUyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "durable outdoor furniture in modern cafe setting"
         },
         {
           "heading": "Mangala Living的解决方案",
