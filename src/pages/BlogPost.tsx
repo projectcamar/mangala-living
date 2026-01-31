@@ -647,10 +647,8 @@ const BlogPost: React.FC = () => {
 
                     {index === 2 && (() => {
                       const relevantProducts = getRelevantProductsForBlog(post.slug, post.title, post.excerpt)
-                      const hasProductKeywords = /meja|kursi|rak|display|bar|dining|kitchen|furniture|cabinet|shelf|chair|table/i.test(post.slug + post.title)
-
-                      if (relevantProducts.length > 0 && hasProductKeywords) {
-                        const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
+                      if (relevantProducts.length > 0) {
+                        const showcaseHeading = getProductShowcaseHeading(post.slug, post.title, language)
                         const showcaseDescription = BLOG_PRODUCT_SHOWCASE_DESCRIPTION[language] || BLOG_PRODUCT_SHOWCASE_DESCRIPTION.en
 
                         return (
@@ -700,10 +698,8 @@ const BlogPost: React.FC = () => {
 
                   if (!showcaseAlreadyShown) {
                     const relevantProducts = getRelevantProductsForBlog(post.slug, post.title, post.excerpt)
-                    const hasProductKeywords = /meja|kursi|rak|display|bar|dining|kitchen|furniture|cabinet|shelf|chair|table/i.test(post.slug + post.title)
-
-                    if (relevantProducts.length > 0 && hasProductKeywords) {
-                      const showcaseHeading = getProductShowcaseHeading(post.slug, post.title)
+                    if (relevantProducts.length > 0) {
+                      const showcaseHeading = getProductShowcaseHeading(post.slug, post.title, language)
                       const showcaseDescription = BLOG_PRODUCT_SHOWCASE_DESCRIPTION[language] || BLOG_PRODUCT_SHOWCASE_DESCRIPTION.en
 
                       return (
