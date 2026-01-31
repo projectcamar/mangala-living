@@ -12,6 +12,7 @@ export interface BlogPost {
   customContent?: {
     introduction?: string // Rich HTML content
     keyPoints?: string[] // Key takeaways/bullets
+    language?: 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' // Explicit content language
     sections?: Array<{
       heading: string
       content: string // Rich HTML content

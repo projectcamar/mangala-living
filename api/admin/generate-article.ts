@@ -9,6 +9,7 @@ interface GenerateArticleRequest {
     prompt: string;
     category?: string;
     model?: string; // Model ID from dropdown
+    language?: string; // Requested language
 }
 
 interface ArticleContent {
@@ -18,6 +19,7 @@ interface ArticleContent {
     category: string;
     introduction: string;
     keyPoints?: string[];
+    language?: string; // AI confirmed language
     sections: Array<{
         heading: string;
         content: string;
@@ -42,6 +44,7 @@ IMPORTANT: You MUST respond with ONLY a valid JSON object, no additional text be
     "Key takeaway 2",
     "Key takeaway 3 (max 5 points)"
   ],
+  "language": "Language code (id, en, ar, zh, ja, es, fr, ko)",
   "sections": [
     {
       "heading": "Section heading",
@@ -51,18 +54,22 @@ IMPORTANT: You MUST respond with ONLY a valid JSON object, no additional text be
   "conclusion": "Compelling closing paragraph with call-to-action"
 }
 
-LANGUAGE SUPPORT:
-Mangala Living serves customers in multiple languages. Write the article in the language requested by the user:
-- **Indonesian (Bahasa Indonesia)** - Default if not specified
-- **English** - For international customers
-- **Spanish (Español)** - For Latin American markets
-- **Chinese (中文)** - For Chinese-speaking customers
-- **Japanese (日本語)** - For Japanese customers
-- **Korean (한국어)** - For Korean customers
-- **French (Français)** - For French-speaking customers
-- **Arabic (العربية)** - For Arabic-speaking customers
+LANGUAGE SUPPORT (CRITICAL):
+Mangala Living serves customers in multiple languages.
+Supported Languages:
+- id: Indonesian (Bahasa Indonesia)
+- en: English
+- ar: Arabic
+- zh: Chinese
+- ja: Japanese
+- es: Spanish
+- fr: French
+- ko: Korean
 
-If the user's prompt is in a specific language, respond in that language. If the user explicitly requests a language (e.g., "in English", "dalam bahasa Jepang"), use that language.
+INSTRUCTION: Write the ENTIRE article in the specific language requested by the user. If no language is specified, use Indonesian (id).
+If the user provides a 'language' parameter, YOU MUST USE THAT LANGUAGE regardless of the prompt's language.
+Example: If prompt is in Indonesian but language="en", write the article in ENGLISH.
+Ensure the "language" field in JSON response matches the code (e.g., "en", "id").
 
 CONTENT GUIDELINES:
 - Use professional yet friendly tone
@@ -92,7 +99,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     try {
-        const { prompt, category, model = 'llama-3.3-70b-versatile' }: GenerateArticleRequest = req.body;
+        const { prompt, category, model = 'llama-3.3-70b-versatile', language }: GenerateArticleRequest = req.body;
 
         if (!prompt || prompt.trim().length === 0) {
             return res.status(400).json({ error: 'Prompt is required' });
@@ -134,7 +141,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                     },
                     {
                         role: 'user',
-                        content: `Generate a blog article about: ${prompt}${category ? `\nPreferred category: ${category}` : ''}`
+                        content: `Generate a blog article about: ${prompt}${category ? `\nPreferred category: ${category}` : ''}${language ? `\nTARGET LANGUAGE: ${language} (MUST USE THIS LANGUAGE)` : ''}`
                     }
                 ],
                 temperature: 0.7,

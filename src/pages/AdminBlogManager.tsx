@@ -7,6 +7,7 @@ import {
     Type, Sparkles
 } from 'lucide-react'
 import { BLOG_POSTS, type BlogPost } from '../data/blog'
+import type { LanguageCode } from '../utils/languageManager'
 import { BlogContentEditor } from '../components/BlogContentEditor'
 import './Admin.css'
 
@@ -27,6 +28,8 @@ const AdminBlogManager: React.FC = () => {
     const [isGenerating, setIsGenerating] = useState(false)
     const [selectedModel, setSelectedModel] = useState('llama-3.3-70b-versatile')
 
+    const [selectedLanguage, setSelectedLanguage] = useState('id')
+
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -41,6 +44,8 @@ const AdminBlogManager: React.FC = () => {
             ...post,
             customContent: post.customContent || {
                 introduction: '',
+                keyPoints: [],
+                language: 'id',
                 sections: [],
                 conclusion: ''
             }
@@ -63,6 +68,8 @@ const AdminBlogManager: React.FC = () => {
             author: 'Helmi Ramdan',
             customContent: {
                 introduction: '',
+                keyPoints: [],
+                language: 'id',
                 sections: [],
                 conclusion: ''
             }
@@ -145,7 +152,8 @@ const AdminBlogManager: React.FC = () => {
                 body: JSON.stringify({
                     prompt: aiPrompt,
                     category: editingPost?.category,
-                    model: selectedModel
+                    model: selectedModel,
+                    language: selectedLanguage
                 })
             })
 
@@ -167,6 +175,7 @@ const AdminBlogManager: React.FC = () => {
                 customContent: {
                     introduction: article.introduction || '',
                     keyPoints: article.keyPoints || [],
+                    language: (article.language as LanguageCode) || selectedLanguage || 'id',
                     sections: article.sections || [],
                     conclusion: article.conclusion || ''
                 }
@@ -279,7 +288,7 @@ const AdminBlogManager: React.FC = () => {
                             </div>
                             <button className="create-post-btn" onClick={handleNew}>
                                 <Plus size={18} />
-                                <span>New Article</span>
+                                <span style={{ marginLeft: '5px' }}>New Article</span>
                             </button>
                         </div>
 
@@ -368,6 +377,31 @@ const AdminBlogManager: React.FC = () => {
                                     </select>
                                 </div>
                                 <div className="input-group">
+                                    <label>Language</label>
+                                    <select
+                                        value={editingPost?.customContent?.language || 'id'}
+                                        onChange={e => setEditingPost(p => p ? {
+                                            ...p,
+                                            customContent: {
+                                                ...p.customContent,
+                                                language: e.target.value as LanguageCode,
+                                                introduction: p.customContent?.introduction || '',
+                                                sections: p.customContent?.sections || [],
+                                                conclusion: p.customContent?.conclusion || ''
+                                            }
+                                        } : null)}
+                                    >
+                                        <option value="id">Indonesian (Bahasa)</option>
+                                        <option value="en">English (International)</option>
+                                        <option value="ar">Arabic (العربية)</option>
+                                        <option value="zh">Chinese (中文)</option>
+                                        <option value="ja">Japanese (日本語)</option>
+                                        <option value="es">Spanish (Español)</option>
+                                        <option value="fr">French (Français)</option>
+                                        <option value="ko">Korean (한국어)</option>
+                                    </select>
+                                </div>
+                                <div className="input-group">
                                     <label>Date</label>
                                     <input
                                         type="date"
@@ -384,7 +418,7 @@ const AdminBlogManager: React.FC = () => {
                                         placeholder="https://..."
                                     />
                                 </div>
-                                <div className="input-group">
+                                <div className="input-group full">
                                     <label>Author</label>
                                     <input
                                         type="text"
@@ -421,6 +455,7 @@ const AdminBlogManager: React.FC = () => {
                                             customContent: {
                                                 ...p.customContent,
                                                 introduction: value,
+                                                keyPoints: p.customContent?.keyPoints || [],
                                                 sections: p.customContent?.sections || [],
                                                 conclusion: p.customContent?.conclusion || ''
                                             }
@@ -454,9 +489,9 @@ const AdminBlogManager: React.FC = () => {
                                             ...p,
                                             customContent: {
                                                 ...p.customContent,
+                                                conclusion: value,
                                                 introduction: p.customContent?.introduction || '',
-                                                sections: p.customContent?.sections || [],
-                                                conclusion: value
+                                                sections: p.customContent?.sections || []
                                             }
                                         } : null)
                                     }
@@ -482,6 +517,26 @@ const AdminBlogManager: React.FC = () => {
                         </div>
 
                         <div className="ai-modal-body">
+                            <div className="input-group">
+                                <label>Target Language</label>
+                                <select
+                                    value={selectedLanguage}
+                                    onChange={(e) => setSelectedLanguage(e.target.value)}
+                                    disabled={isGenerating}
+                                    className="ai-model-select"
+                                    style={{ marginBottom: '15px' }}
+                                >
+                                    <option value="id">Indonesian (Bahasa Indonesia)</option>
+                                    <option value="en">English (Global)</option>
+                                    <option value="ar">Arabic (العربية)</option>
+                                    <option value="zh">Chinese (中文)</option>
+                                    <option value="ja">Japanese (日本語)</option>
+                                    <option value="es">Spanish (Español)</option>
+                                    <option value="fr">French (Français)</option>
+                                    <option value="ko">Korean (한국어)</option>
+                                </select>
+                            </div>
+
                             <div className="input-group">
                                 <label>Select AI Model</label>
                                 <select
@@ -515,7 +570,7 @@ const AdminBlogManager: React.FC = () => {
                                 disabled={isGenerating}
                             />
                             <p className="ai-modal-hint">
-                                💡 Tip: Be specific! Mention target audience, location, budget, or specific furniture types for better results.
+                                💡 Tip: You can write the prompt in any language! The AI will automatically translate and generate the full article in the <strong>Target Language</strong> selected above.
                             </p>
                         </div>
 

@@ -314,11 +314,20 @@ const BlogPost: React.FC = () => {
   }, [slug])
 
   useEffect(() => {
-    const detectedLang = getCurrentLanguage(location.pathname, location.search)
-    setLanguage(detectedLang)
-    setIsIndonesian(detectedLang === 'id')
-    setIsLanguageLoading(false)
-  }, [location.pathname, location.search])
+    // If the post has custom content with an explicit language set, use it.
+    // Otherwise, fall back to URL/browser detection.
+    if (post?.customContent?.language) {
+      const explicitLang = post.customContent.language
+      setLanguage(explicitLang)
+      setIsIndonesian(explicitLang === 'id')
+      setIsLanguageLoading(false)
+    } else {
+      const detectedLang = getCurrentLanguage(location.pathname, location.search)
+      setLanguage(detectedLang)
+      setIsIndonesian(detectedLang === 'id')
+      setIsLanguageLoading(false)
+    }
+  }, [location.pathname, location.search, post?.customContent?.language])
 
   if (isLanguageLoading) {
     return (
