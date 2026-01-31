@@ -17,9 +17,6 @@ const AdminBlogManager: React.FC = () => {
     const [isLoading, setIsLoading] = useState(true)
     const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null)
 
-    // Source strings kept for regex-based updates
-    const [blogSource, setBlogSource] = useState('')
-
     // Editor state
     const [editingPost, setEditingPost] = useState<BlogPost | null>(null)
 
@@ -79,68 +76,38 @@ const AdminBlogManager: React.FC = () => {
         setMessage(null)
 
         try {
-            // Check if we're in dev mode (no blogSource loaded)
-            if (!blogSource) {
-                setMessage({
-                    type: 'error',
-                    text: 'File sync only works in production. In dev mode, manually edit src/data/blog.ts or deploy to Vercel to use this feature.'
-                })
-                setIsSaving(false)
-                return
-            }
+            setMessage({ type: 'success', text: 'Deploying changes to GitHub...' })
 
-            const arrayStartTag = 'export const BLOG_POSTS: BlogPost[] = ['
-            const startIdx = blogSource.indexOf(arrayStartTag)
-            if (startIdx === -1) throw new Error('Could not find BLOG_POSTS array in source file')
-
-            const newPostsJson = JSON.stringify(posts, null, 2)
-            const newBlogSource = blogSource.replace(
-                /(export const BLOG_POSTS: BlogPost\[\] = )\[[\s\S]*?\](\n\s*\/\/|\n\s*export|\s*$)/,
-                `$1${newPostsJson}$2`
-            )
-
-            const response = await fetch('/api/admin/blog', {
+            const deployResponse = await fetch('/api/admin/deploy', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    blogSource: newBlogSource
+                    posts: posts,
+                    commitMessage: `Update blog posts via admin (${new Date().toISOString().split('T')[0]})`
                 })
             })
 
-            if (response.ok) {
-                setBlogSource(newBlogSource)
+            const deployResult = await deployResponse.json()
 
-                // Step 2: Auto-commit and push to GitHub
-                setMessage({ type: 'success', text: 'File updated! Auto-deploying to production...' })
-
-                const deployResponse = await fetch('/api/admin/deploy', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        commitMessage: `Update blog posts via admin (${new Date().toISOString().split('T')[0]})`
-                    })
+            if (deployResponse.ok && deployResult.deployed) {
+                setMessage({
+                    type: 'success',
+                    text: '✅ Changes deployed! Vercel is rebuilding your site (1-2 minutes). Refresh to see updates.'
                 })
-
-                const deployResult = await deployResponse.json()
-
-                if (deployResponse.ok && deployResult.deployed) {
-                    setMessage({
-                        type: 'success',
-                        text: '✅ Changes deployed! Vercel is rebuilding your site (1-2 minutes). Refresh in a moment to see updates.'
-                    })
-                } else if (deployResponse.ok && !deployResult.deployed) {
-                    setMessage({
-                        type: 'success',
-                        text: 'File synced successfully, but no changes detected to deploy.'
-                    })
-                } else {
-                    throw new Error(deployResult.error || 'Auto-deploy failed')
-                }
+            } else if (deployResponse.ok && !deployResult.deployed) {
+                setMessage({
+                    type: 'success',
+                    text: 'No changes detected to deploy.'
+                })
             } else {
-                throw new Error('Failed to update source files on server')
+                throw new Error(deployResult.error || deployResult.details || 'Auto-deploy failed')
             }
         } catch (err: any) {
-            setMessage({ type: 'error', text: err.name === 'Error' ? err.message : 'An error occurred during sync' })
+            setMessage({
+                type: 'error',
+                text: err.message || 'Failed to deploy changes. Check console for details.'
+            })
+            console.error('Deploy error:', err)
         } finally {
             setIsSaving(false)
         }
