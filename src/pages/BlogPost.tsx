@@ -324,7 +324,8 @@ const BlogPost: React.FC = () => {
         heading: section.heading,
         paragraphs: [section.content],
         image: section.image,
-        imageAlt: section.imageAlt
+        imageAlt: section.imageAlt,
+        productId: section.productId
       } as BlogSection)) || []),
       // Conclusion section
       ...(post.customContent?.conclusion ? [{
@@ -620,7 +621,7 @@ const BlogPost: React.FC = () => {
 
             <div className="blog-post-layout">
               <article className="blog-post-article" aria-labelledby="blog-post-title">
-                {content.sections.map((section: any, index: number) => (
+                {content.sections.map((section: BlogSection, index: number) => (
                   <React.Fragment key={index}>
                     <section className="blog-post-section">
                       {section.heading && <h2 className="blog-post-section-heading">{section.heading}</h2>}
