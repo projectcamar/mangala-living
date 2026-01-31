@@ -1,4 +1,5 @@
 import React from 'react';
+import { Plus, Trash2 } from 'lucide-react';
 
 interface ContentSection {
     heading: string;
@@ -73,13 +74,14 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
                             className="add-section-btn small"
                             onClick={() => onKeyPointsChange([...keyPoints, ''])}
                         >
-                            + Add Point
+                            <Plus size={14} style={{ marginRight: '5px' }} />
+                            Add Point
                         </button>
                     </div>
                     <div className="keypoints-list">
                         {keyPoints.map((point, index) => (
                             <div key={index} className="keypoint-item">
-                                <span className="keypoint-number">{index + 1}.</span>
+                                <div className="keypoint-number">{index + 1}</div>
                                 <input
                                     type="text"
                                     value={point}
@@ -89,13 +91,14 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
                                         onKeyPointsChange(newPoints);
                                     }}
                                     className="keypoint-input"
-                                    placeholder="Key takeaway point..."
+                                    placeholder="Enter a key insight or takeaway..."
                                 />
                                 <button
                                     className="remove-btn"
                                     onClick={() => onKeyPointsChange(keyPoints.filter((_, i) => i !== index))}
+                                    title="Remove Point"
                                 >
-                                    ×
+                                    <Trash2 size={14} />
                                 </button>
                             </div>
                         ))}
@@ -110,7 +113,8 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
                 <div className="section-header">
                     <h3 className="editor-section-title">📚 Content Sections</h3>
                     <button type="button" onClick={addSection} className="add-section-btn">
-                        + Add Section
+                        <Plus size={16} style={{ marginRight: '8px' }} />
+                        Add Section
                     </button>
                 </div>
 
