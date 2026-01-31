@@ -31,7 +31,14 @@ const AdminBlogManager: React.FC = () => {
     }, [])
 
     const handleEdit = (post: BlogPost) => {
-        setEditingPost({ ...post })
+        setEditingPost({
+            ...post,
+            customContent: post.customContent || {
+                introduction: '',
+                sections: [],
+                conclusion: ''
+            }
+        })
         setView('editor')
     }
 
