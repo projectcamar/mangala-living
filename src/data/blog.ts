@@ -3278,7 +3278,6 @@ export const BLOG_POSTS: BlogPost[] = [
         {
           "heading": "L'héritage culturel indonésien",
           "content": "L'Indonésie est un pays aux mille îles, avec une riche histoire et une culture diverse. Les meubles indonésiens reflètent cette diversité, avec des designs qui intègrent des éléments traditionnels et modernes. Le teck et le mahoni sont des matières premières de choix pour les meubles indonésiens, connus pour leur beauté et leur durabilité. <br> Les meubles indonésiens sont souvent ornés de motifs traditionnels, tels que les batiks et les ikats, qui ajoutent une touche d'authenticité et de culture à chaque pièce.",
-          "imageSearchQuery": "indonesian traditional furniture patterns",
           "image": "https://images.unsplash.com/photo-1643760066062-b65effdd2e3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwdHJhZGl0aW9uYWwlMjBmdXJuaXR1cmUlMjBwYXR0ZXJuc3xlbnwwfDB8fHwxNzY5ODU5MjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
           "imageAlt": "indonesian traditional furniture patterns"
         },
@@ -3321,7 +3320,6 @@ export const BLOG_POSTS: BlogPost[] = [
         {
           "heading": " Pourquoi les meubles industriels sont-ils importants pour le retail ?",
           "content": "Les meubles industriels offrent une esthétique unique et robuste qui peut renforcer l'identité de votre marque. Ils sont également très durables et peuvent résister aux intempéries, ce qui les rend parfaits pour les espaces de vente au détail. <br> Chez Mangala Living, nous proposons une gamme de meubles industriels qui peuvent être personnalisés pour répondre aux besoins spécifiques de votre entreprise.",
-          "imageSearchQuery": "industrial style french cafe interior",
           "image": "https://images.unsplash.com/photo-1747928272448-49524fcb5cfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc3R5bGUlMjBmcmVuY2glMjBjYWZlJTIwaW50ZXJpb3J8ZW58MHwwfHx8MTc2OTg1OTMxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
           "imageAlt": "industrial style french cafe interior"
         },
@@ -3363,7 +3361,6 @@ export const BLOG_POSTS: BlogPost[] = [
         {
           "heading": "Pourquoi choisir des meubles industriels ?",
           "content": "Les meubles industriels sont parfaits pour les cafés et les restaurants qui veulent créer une atmosphère unique et robuste. <strong>La durabilité</strong> est l'un des principaux avantages de ces meubles, car ils sont conçus pour résister aux intempéries et aux usures quotidiennes. De plus, les meubles industriels peuvent être personnalisés pour répondre à vos besoins spécifiques, ce qui vous permet de créer une ambiance qui reflète votre marque.",
-          "imageSearchQuery": "industrial cafe furniture",
           "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGZ1cm5pdHVyZXxlbnwwfDB8fHwxNzY5ODU5MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
           "imageAlt": "industrial cafe furniture"
         },
@@ -3407,7 +3404,6 @@ export const BLOG_POSTS: BlogPost[] = [
         {
           "heading": "Mengapa Memilih Meja Cafe Industrial untuk Coffee Shop?",
           "content": "Meja cafe industrial menjadi pilihan populer untuk coffee shop modern karena kombinasi sempurna antara estetika dan fungsionalitas. Desainnya yang minimalis dengan sentuhan material seperti besi dan kayu solid menciptakan suasana yang hangat namun tetap profesional.<br><br>Di Bekasi yang merupakan pusat bisnis kuliner yang berkembang pesat, coffee shop membutuhkan furniture yang tidak hanya menarik secara visual tetapi juga tahan terhadap penggunaan sehari-hari. Meja industrial dari Mangala Living dirancang khusus untuk menahan beban berat, tahan gores, dan mudah dibersihkan - faktor penting untuk operasional coffee shop yang sibuk.<br><br>Kelebihan lainnya adalah fleksibilitas desain. Meja industrial dapat dengan mudah dipadukan dengan berbagai konsep interior, mulai dari rustic, modern, hingga vintage. Ini memberikan kebebasan bagi pemilik coffee shop untuk berkreasi dengan dekorasi tanpa perlu mengganti seluruh furniture.",
-          "imageSearchQuery": "industrial cafe interior design",
           "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3Njk4NDg1MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
           "imageAlt": "industrial cafe interior design"
         },
@@ -3450,7 +3446,6 @@ export const BLOG_POSTS: BlogPost[] = [
         {
           "heading": "Mengapa Memilih Furniture Custom Besi?",
           "content": "Furniture custom besi menjadi pilihan utama untuk ruang komersial karena beberapa alasan kuat. Pertama, ketahanan material besi yang luar biasa membuat furniture ini mampu bertahan bertahun-tahun bahkan dalam penggunaan intensif. Kedua, desain industrial yang timeless memberikan kesan profesional dan modern pada ruangan. Ketiga, custom order memungkinkan Anda mendapatkan ukuran dan bentuk yang pas dengan kebutuhan spesifik ruangan Anda.<br><br>Di Mangala Living, kami memahami bahwa setiap ruang komersial memiliki karakteristik unik. Itulah mengapa kami menawarkan layanan custom order furniture besi yang sepenuhnya disesuaikan dengan kebutuhan Anda. Dari meja makan industrial hingga rak display yang kokoh, semua bisa kami wujudkan sesuai spesifikasi yang Anda inginkan.",
-          "imageSearchQuery": "custom industrial furniture design workshop",
           "image": "https://images.unsplash.com/photo-1717500252709-05a73fc4f1da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxjdXN0b20lMjBpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwZGVzaWduJTIwd29ya3Nob3B8ZW58MHwwfHx8MTc2OTg1OTg3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
           "imageAlt": "custom industrial furniture design workshop"
         },
