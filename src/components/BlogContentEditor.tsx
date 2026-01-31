@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
 
 interface ContentSection {
     heading: string;
@@ -15,23 +13,6 @@ interface BlogContentEditorProps {
     onSectionsChange: (sections: ContentSection[]) => void;
     onConclusionChange: (value: string) => void;
 }
-
-const quillModules = {
-    toolbar: [
-        [{ 'header': [2, 3, 4, false] }],
-        ['bold', 'italic', 'underline', 'strike'],
-        [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-        ['link'],
-        ['clean']
-    ],
-};
-
-const quillFormats = [
-    'header',
-    'bold', 'italic', 'underline', 'strike',
-    'list', 'bullet',
-    'link'
-];
 
 export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
     introduction,
@@ -71,13 +52,12 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
         <div className="content-editor">
             <div className="editor-section-block">
                 <h3 className="editor-section-title">📝 Introduction</h3>
-                <ReactQuill
-                    theme="snow"
+                <textarea
                     value={introduction}
-                    onChange={onIntroductionChange}
-                    modules={quillModules}
-                    formats={quillFormats}
+                    onChange={(e) => onIntroductionChange(e.target.value)}
                     placeholder="Write an engaging introduction..."
+                    rows={4}
+                    className="content-textarea"
                 />
             </div>
 
@@ -131,31 +111,29 @@ export const BlogContentEditor: React.FC<BlogContentEditorProps> = ({
                             className="section-heading-input"
                         />
 
-                        <ReactQuill
-                            theme="snow"
+                        <textarea
                             value={section.content}
-                            onChange={(value) => updateSection(index, 'content', value)}
-                            modules={quillModules}
-                            formats={quillFormats}
+                            onChange={(e) => updateSection(index, 'content', e.target.value)}
                             placeholder="Write section content..."
+                            rows={6}
+                            className="content-textarea"
                         />
                     </div>
                 ))}
 
                 {sections.length === 0 && (
-                    <p className="empty-state">No sections yet. Click "Add Section" to create one.</p>
+                    <p className="empty-state">No sections yet. Click "+ Add Section" to create one.</p>
                 )}
             </div>
 
             <div className="editor-section-block">
                 <h3 className="editor-section-title">🎯 Conclusion</h3>
-                <ReactQuill
-                    theme="snow"
+                <textarea
                     value={conclusion}
-                    onChange={onConclusionChange}
-                    modules={quillModules}
-                    formats={quillFormats}
+                    onChange={(e) => onConclusionChange(e.target.value)}
                     placeholder="Write a compelling conclusion..."
+                    rows={4}
+                    className="content-textarea"
                 />
             </div>
 
