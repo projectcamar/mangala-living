@@ -4114,7 +4114,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1730773066960-21c0bfb3a103?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwZGVzaWdufGVufDB8MHx8fDE3Njk5Njg5ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 18:01",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Dalam menciptakan ruang yang nyaman dan fungsional, pemilihan furniture yang tepat sangat penting. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, memahami betapa pentingnya benchmarking furniture untuk mencapai hasil yang diinginkan. Dalam artikel ini, kita akan membahas tentang benchmarking furniture dan bagaimana Mangala Living dapat membantu Anda dalam menciptakan ruang yang ideal.",
       "keyPoints": [
@@ -4158,7 +4158,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "",
     "date": "2026-02-01 18:03",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Mencari bengkel furniture yang terpercaya dan termurah di Jabodetabek bisa menjadi tantangan. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, hadir untuk membantu Anda. Kami memiliki workshop di Bekasi yang siap memenuhi kebutuhan furniture Anda, baik untuk cafe, restaurant, hotel, maupun kantor.",
       "keyPoints": [
@@ -4203,7 +4203,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1680209668065-26985bc92268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3Njk5NjkwMzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 18:03",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Mangala Living telah berpengalaman lebih dari 25 tahun dalam menghasilkan produk industrial furniture berkualitas tinggi. Dengan lebih dari 1000 proyek yang telah kami tangani, kami memiliki pengalaman luas dalam memahami kebutuhan pelanggan. Dalam artikel ini, kami akan memperkenalkan produk kami yang dapat membantu Anda dalam menciptakan ruang yang nyaman dan fungsional.",
       "keyPoints": [
@@ -4247,7 +4247,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1650091063553-58b5f50b59ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMHRhYmxlJTIwZGVzaWdufGVufDB8MHx8fDE3Njk5NjkwNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 18:04",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Membuka cafe memerlukan perencanaan yang matang, terutama dalam memilih furniture yang tepat. Meja cafe murah di Bekasi bisa menjadi pilihan yang bijak, namun tetap harus memperhatikan kualitas dan desain. Mangala Living, dengan pengalaman lebih dari 25 tahun, hadir untuk membantu Anda menemukan meja cafe yang sesuai dengan kebutuhan dan budget Anda.",
       "keyPoints": [
@@ -4291,7 +4291,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1761658644899-d1754c05c4d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHBpcGUlMjBkaW5pbmclMjB0YWJsZSUyMGluJTIwbWluaW1hbGlzdCUyMGxpdmluZyUyMHJvb218ZW58MHwwfHx8MTc2OTk2OTA5OXww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 18:04",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Mangala Living hadir dengan pengalaman lebih dari 25 tahun dalam memproduksi furniture industri untuk cafe, restoran, hotel, dan kantor. Salah satu produk unggulan kami adalah Bandung Pipe Dining Table, yang dirancang untuk memenuhi kebutuhan akan meja makan yang kuat dan tahan lama. Dalam artikel ini, kita akan membahas tentang kelebihan meja makan pipa Bandung dan tips dalam memilihnya.",
       "keyPoints": [
@@ -4324,6 +4324,50 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Dengan memilih Bandung Pipe Dining Table, Anda dapat menambahkan kesan industrial pada ruang makan Anda. Jangan ragu untuk menghubungi kami jika Anda memerlukan informasi lebih lanjut tentang produk kami. <strong>Mangala Living</strong> siap membantu Anda dalam menciptakan ruang makan yang nyaman dan elegan."
+    }
+  },
+  {
+    "id": 316,
+    "slug": "tren-furnitur-2026",
+    "title": "Tren Furnitur 2026",
+    "category": "Tips and Trick",
+    "excerpt": "Tren furnitur 2026 hadir dengan desain yang lebih bermakna, berkelanjutan, dan taktil",
+    "image": "",
+    "date": "2026-02-01 18:05",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Tren furnitur 2026 telah hadir dengan desain yang lebih bermakna, berkelanjutan, dan taktil. Mengutamakan keawetan daripada furnitur yang cepat dan tidak tahan lama, tren ini membawa kita kepada pengalaman yang lebih nyaman dan elegan dalam mendesain interior. Dengan pengalaman lebih dari 25 tahun dan 1000 proyek yang telah kami tangani, Mangala Living siap membantu Anda dalam menciptakan ruang yang sesuai dengan tren terbaru.",
+      "keyPoints": [
+        "Desain yang lebih bermakna dan berkelanjutan",
+        "Fokus pada keawetan dan kenyamanan",
+        "Penggunaan material yang taktil dan alami"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Tren Furnitur 2026 Penting?",
+          "content": "Tren furnitur 2026 membawa perubahan besar dalam cara kita mendesain interior. Dengan fokus pada keawetan dan kenyamanan, kita dapat menciptakan ruang yang tidak hanya indah tetapi juga ramah lingkungan. Mangala Living, dengan pengalaman lebih dari 25 tahun dan workshop di Bekasi, siap membantu Anda dalam menciptakan ruang yang sesuai dengan tren terbaru.",
+          "imageSearchQuery": "rumah minimalis modern",
+          "image": "https://images.unsplash.com/photo-1760434773841-7eef8a7af7c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxydW1haCUyMG1pbmltYWxpcyUyMG1vZGVybnxlbnwwfDB8fHwxNzY5OTY5MTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "rumah minimalis modern"
+        },
+        {
+          "heading": "Panduan Praktis & Best Practices",
+          "content": "Dalam menerapkan tren furnitur 2026, ada beberapa hal yang perlu diperhatikan. Pertama, pilihlah furnitur yang terbuat dari material alami dan taktil. Kedua, pastikan furnitur yang Anda pilih memiliki desain yang sederhana namun elegan. Ketiga, jangan lupa untuk mempertimbangkan keawetan dan kenyamanan dalam memilih furnitur."
+        },
+        {
+          "heading": "Solusi Mangala Living",
+          "content": "Mangala Living menawarkan berbagai solusi untuk membantu Anda menciptakan ruang yang sesuai dengan tren furnitur 2026. Dengan produk seperti <strong>Frame Loft Bookshelf</strong> dan <strong>Ladder Frame Display Stand</strong>, Anda dapat menciptakan ruang yang tidak hanya indah tetapi juga fungsional. Kunjungi kami di Bekasi untuk melihat koleksi kami.",
+          "productId": 12
+        },
+        {
+          "heading": "Tips & Saran",
+          "content": "Dalam menciptakan ruang yang sesuai dengan tren furnitur 2026, jangan lupa untuk mempertimbangkan kebutuhan dan selera Anda. Pilihlah furnitur yang sesuai dengan gaya hidup Anda dan pastikan untuk mempertimbangkan keawetan dan kenyamanan. Dengan demikian, Anda dapat menciptakan ruang yang tidak hanya indah tetapi juga nyaman dan fungsional.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Tren furnitur 2026 membawa kita kepada pengalaman yang lebih nyaman dan elegan dalam mendesain interior. Dengan fokus pada keawetan dan kenyamanan, kita dapat menciptakan ruang yang tidak hanya indah tetapi juga ramah lingkungan. Mangala Living siap membantu Anda dalam menciptakan ruang yang sesuai dengan tren terbaru. Kunjungi kami di Bekasi untuk melihat koleksi kami dan dapatkan saran dari ahli kami."
     }
   }
 ]
