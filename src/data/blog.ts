@@ -4069,7 +4069,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwZXhwb3J0JTIwSW5kb25lc2lhfGVufDB8MHx8fDE3Njk5Njg4MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 17:58",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "L'Indonésie s'est imposée comme l'un des principaux fournisseurs mondiaux de meubles de qualité, offrant un excellent rapport qualité-prix pour les commandes en gros. Que vous soyez un détaillant international, un architecte d'intérieur ou un hôtelier cherchant à meubler plusieurs établissements, comprendre les subtilités du commerce international avec l'Indonésie est essentiel pour établir des partenariats durables et rentables.",
       "keyPoints": [
@@ -4103,6 +4103,227 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Établir un partenariat réussi avec un fournisseur de meubles indonésien pour des commandes en gros nécessite une approche stratégique et une compréhension approfondie des processus d'exportation. En choisissant des fournisseurs expérimentés comme Mangala Living, vous bénéficiez non seulement de produits de qualité supérieure, mais aussi d'un accompagnement complet dans la gestion de vos projets internationaux. La combinaison du savoir-faire artisanal indonésien, des coûts compétitifs, et d'une expertise logistique éprouvée fait de l'Indonésie un partenaire idéal pour développer votre activité de meubles à l'échelle mondiale."
+    }
+  },
+  {
+    "id": 311,
+    "slug": "benchmarking-furniture",
+    "title": "Benchmarking Furniture",
+    "category": "Tips and Trick",
+    "excerpt": "Benchmarking furniture untuk cafe, restaurant, hotel, dan office",
+    "image": "https://images.unsplash.com/photo-1730773066960-21c0bfb3a103?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwZGVzaWdufGVufDB8MHx8fDE3Njk5Njg5ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-01 18:01",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Dalam menciptakan ruang yang nyaman dan fungsional, pemilihan furniture yang tepat sangat penting. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, memahami betapa pentingnya benchmarking furniture untuk mencapai hasil yang diinginkan. Dalam artikel ini, kita akan membahas tentang benchmarking furniture dan bagaimana Mangala Living dapat membantu Anda dalam menciptakan ruang yang ideal.",
+      "keyPoints": [
+        "Memahami kebutuhan dan tujuan ruang",
+        "Menganalisis fungsi dan estetika furniture",
+        "Menggunakan bahan dan desain yang tepat"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Benchmarking Furniture Penting?",
+          "content": "Benchmarking furniture penting karena membantu Anda memahami kebutuhan dan tujuan ruang. Dengan menganalisis fungsi dan estetika furniture, Anda dapat menciptakan ruang yang nyaman, fungsional, dan estetis. Mangala Living memiliki pengalaman luas dalam menciptakan furniture yang sesuai dengan kebutuhan dan tujuan ruang, mulai dari cafe, restaurant, hotel, hingga office.",
+          "imageSearchQuery": "industrial cafe design",
+          "image": "https://images.unsplash.com/photo-1762754104761-0f78181da3d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGRlc2lnbnxlbnwwfDB8fHwxNzY5OTY4OTgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial cafe design"
+        },
+        {
+          "heading": "Panduan Praktis Benchmarking Furniture",
+          "content": "Untuk melakukan benchmarking furniture, Anda perlu mempertimbangkan beberapa faktor, seperti ukuran ruang, jumlah pengguna, dan aktivitas yang akan dilakukan. Anda juga perlu menganalisis fungsi dan estetika furniture yang ada, serta mempertimbangkan bahan dan desain yang tepat. Mangala Living dapat membantu Anda dalam melakukan benchmarking furniture dan menciptakan ruang yang ideal."
+        },
+        {
+          "heading": "Solusi Mangala Living untuk Benchmarking Furniture",
+          "content": "Mangala Living memiliki berbagai solusi untuk benchmarking furniture, mulai dari desain khusus hingga produksi massal. Kami memiliki workshop di Bekasi yang dilengkapi dengan peralatan canggih dan tenaga kerja yang ahli. Dengan menggunakan bahan yang berkualitas dan desain yang tepat, kami dapat menciptakan furniture yang sesuai dengan kebutuhan dan tujuan ruang. Salah satu contoh produk kami adalah <strong>Meja Kerja Industrial (ID: 15)</strong> yang dapat digunakan untuk office dan ruang kerja lainnya.",
+          "productId": 15
+        },
+        {
+          "heading": "Manfaat Menggunakan Jasa Mangala Living",
+          "content": "Dengan menggunakan jasa Mangala Living, Anda dapat mendapatkan berbagai manfaat, seperti furniture yang sesuai dengan kebutuhan dan tujuan ruang, biaya yang efektif, dan waktu produksi yang cepat. Kami juga menyediakan layanan purna jual yang memuaskan, sehingga Anda dapat yakin bahwa furniture Anda akan tetap dalam kondisi baik. Salah satu contoh produk kami yang dapat digunakan untuk cafe dan restaurant adalah <strong>Dining Set dengan 2 Chairs (ID: 5)</strong>.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Dalam menciptakan ruang yang nyaman dan fungsional, benchmarking furniture sangat penting. Mangala Living dapat membantu Anda dalam melakukan benchmarking furniture dan menciptakan ruang yang ideal. Dengan menggunakan bahan yang berkualitas dan desain yang tepat, kami dapat menciptakan furniture yang sesuai dengan kebutuhan dan tujuan ruang. Hubungi kami sekarang juga untuk mendapatkan informasi lebih lanjut tentang jasa dan produk kami."
+    }
+  },
+  {
+    "id": 312,
+    "slug": "bengkel-furniture-termurah-sejabodetabek",
+    "title": "Bengkel Furniture Termurah",
+    "category": "Tips and Trick",
+    "excerpt": "Cari bengkel furniture termurah di Jabodetabek? Mangala Living solusinya!",
+    "image": "",
+    "date": "2026-02-01 18:03",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Mencari bengkel furniture yang terpercaya dan termurah di Jabodetabek bisa menjadi tantangan. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, hadir untuk membantu Anda. Kami memiliki workshop di Bekasi yang siap memenuhi kebutuhan furniture Anda, baik untuk cafe, restaurant, hotel, maupun kantor.",
+      "keyPoints": [
+        "Bengkel furniture termurah di Jabodetabek",
+        "Pengalaman lebih dari 25 tahun",
+        "Lebih dari 1000 proyek yang telah diselesaikan",
+        "Workshop di Bekasi untuk produksi furniture custom"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Memilih Bengkel Furniture di Jabodetabek?",
+          "content": "Memilih bengkel furniture di Jabodetabek memberikan Anda keuntungan dalam hal biaya dan waktu. Dengan lokasi yang strategis, Anda dapat dengan mudah mengunjungi workshop kami dan melihat langsung proses produksi furniture. <strong>Kualitas terjamin</strong> dan <em>harga yang kompetitif</em> membuat Mangala Living menjadi pilihan utama untuk kebutuhan furniture Anda.",
+          "imageSearchQuery": "industrial furniture production process",
+          "image": "https://images.unsplash.com/photo-1769430838012-8e1270d41f46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwcHJvZHVjdGlvbiUyMHByb2Nlc3N8ZW58MHwwfHx8MTc2OTk2OTAxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial furniture production process"
+        },
+        {
+          "heading": "Tips Memilih Bengkel Furniture yang Tepat",
+          "content": "Dalam memilih bengkel furniture, ada beberapa hal yang perlu Anda pertimbangkan. <strong>Pengalaman</strong> dan <em>portofolio</em> adalah dua hal yang sangat penting. Pastikan bengkel furniture yang Anda pilih memiliki pengalaman yang cukup dan portofolio yang impresif. Selain itu, <strong>kualitas material</strong> dan <em>desain</em> juga harus menjadi pertimbangan Anda."
+        },
+        {
+          "heading": "Solusi Furniture dari Mangala Living",
+          "content": "Mangala Living menawarkan berbagai solusi furniture untuk kebutuhan Anda, mulai dari meja kerja industrial (Meja Kerja Industrial, ID: 15) hingga rak display yang kuat dan tahan lama (Ladder Frame Display Stand, ID: 12). Kami juga menyediakan <strong>desain custom</strong> untuk memenuhi kebutuhan unik Anda.",
+          "productId": 12
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda sedang mencari bengkel furniture termurah di Jabodetabek, jangan ragu untuk menghubungi kami. Mangala Living siap membantu Anda dalam menciptakan furniture yang sesuai dengan kebutuhan dan budget Anda. <br> Kunjungi workshop kami di Bekasi hari ini juga dan temukan solusi furniture terbaik untuk Anda!",
+          "productId": 15
+        }
+      ],
+      "conclusion": "Dengan pengalaman yang luas dan komitmen terhadap kualitas, Mangala Living adalah pilihan terbaik untuk bengkel furniture termurah di Jabodetabek. Kami berharap dapat bekerja sama dengan Anda dalam menciptakan furniture yang tidak hanya fungsional tetapi juga estetis dan tahan lama."
+    }
+  },
+  {
+    "id": 313,
+    "slug": "lihat-produk-kami",
+    "title": "Produk Mangala Living",
+    "category": "Tips and Trick",
+    "excerpt": "Temukan produk industrial furniture terbaik untuk cafe, restaurant, hotel, dan office",
+    "image": "https://images.unsplash.com/photo-1680209668065-26985bc92268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3Njk5NjkwMzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-01 18:03",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Mangala Living telah berpengalaman lebih dari 25 tahun dalam menghasilkan produk industrial furniture berkualitas tinggi. Dengan lebih dari 1000 proyek yang telah kami tangani, kami memiliki pengalaman luas dalam memahami kebutuhan pelanggan. Dalam artikel ini, kami akan memperkenalkan produk kami yang dapat membantu Anda dalam menciptakan ruang yang nyaman dan fungsional.",
+      "keyPoints": [
+        "Produk industrial furniture yang berkualitas tinggi",
+        "Desain yang unik dan fungsional",
+        "Bahan-bahan yang kuat dan tahan lama"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Memilih Produk Kami?",
+          "content": "Kami memiliki workshop di Bekasi yang dilengkapi dengan peralatan canggih dan tenaga kerja yang terampil. Dengan demikian, kami dapat memastikan bahwa produk kami memiliki kualitas yang tinggi dan harga yang kompetitif. <br> Selain itu, kami juga memiliki tim desain yang dapat membantu Anda dalam menciptakan desain yang unik dan sesuai dengan kebutuhan Anda.",
+          "imageSearchQuery": "industrial furniture workshop",
+          "image": "https://images.unsplash.com/photo-1769430838012-8e1270d41f46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwd29ya3Nob3B8ZW58MHwwfHx8MTc2OTk2OTAzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial furniture workshop"
+        },
+        {
+          "heading": "Tips dalam Memilih Produk Industrial Furniture",
+          "content": "Dalam memilih produk industrial furniture, ada beberapa hal yang perlu Anda pertimbangkan. Pertama, pastikan Anda memilih produk yang sesuai dengan kebutuhan Anda. Kedua, pertimbangkan bahan-bahan yang digunakan dan pastikan bahwa mereka kuat dan tahan lama. Ketiga, perhatikan desain produk dan pastikan bahwa mereka sesuai dengan tema dan gaya ruangan Anda."
+        },
+        {
+          "heading": "Produk Meja dan Kursi",
+          "content": "Kami memiliki berbagai jenis meja dan kursi yang dapat memenuhi kebutuhan Anda. <strong>Meja Kerja Industrial (Meja Kerja 15)</strong> kami memiliki desain yang minimalis dan fungsional, sehingga dapat membantu Anda dalam menciptakan ruang kerja yang nyaman dan produktif. <br> Selain itu, kami juga memiliki <strong>Dining Set dengan 2 Kursi (Dining Set 5)</strong> yang dapat membantu Anda dalam menciptakan ruang makan yang nyaman dan elegan.",
+          "productId": 15
+        },
+        {
+          "heading": "Produk Penyimpanan",
+          "content": "Kami juga memiliki berbagai jenis produk penyimpanan yang dapat membantu Anda dalam mengorganisir ruangan Anda. <strong>Ladder Frame Display Stand (Ladder Frame 12)</strong> kami memiliki desain yang unik dan fungsional, sehingga dapat membantu Anda dalam mengdisplay produk atau dekorasi dengan cara yang menarik. <br> Selain itu, kami juga memiliki <strong>Industrial Kitchen Cabinet (Kitchen Cabinet 9)</strong> yang dapat membantu Anda dalam mengorganisir dapur Anda dengan cara yang efektif.",
+          "productId": 12
+        }
+      ],
+      "conclusion": "Dengan demikian, kami berharap bahwa Anda telah menemukan produk industrial furniture yang sesuai dengan kebutuhan Anda. Jika Anda memiliki pertanyaan atau memerlukan bantuan, jangan ragu untuk menghubungi kami. Kami siap membantu Anda dalam menciptakan ruang yang nyaman dan fungsional dengan produk kami."
+    }
+  },
+  {
+    "id": 314,
+    "slug": "meja-cafe-murah-di-bekasi",
+    "title": "Meja Cafe Murah Bekasi",
+    "category": "Tips and Trick",
+    "excerpt": "Temukan meja cafe murah di Bekasi dengan kualitas terbaik",
+    "image": "https://images.unsplash.com/photo-1650091063553-58b5f50b59ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMHRhYmxlJTIwZGVzaWdufGVufDB8MHx8fDE3Njk5NjkwNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-01 18:04",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Membuka cafe memerlukan perencanaan yang matang, terutama dalam memilih furniture yang tepat. Meja cafe murah di Bekasi bisa menjadi pilihan yang bijak, namun tetap harus memperhatikan kualitas dan desain. Mangala Living, dengan pengalaman lebih dari 25 tahun, hadir untuk membantu Anda menemukan meja cafe yang sesuai dengan kebutuhan dan budget Anda.",
+      "keyPoints": [
+        "Memilih meja cafe yang tepat untuk bisnis",
+        "Menghemat biaya dengan meja cafe murah",
+        "Mangala Living: solusi furniture cafe terbaik"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Meja Cafe Murah Penting?",
+          "content": "Meja cafe murah di Bekasi dapat membantu Anda menghemat biaya operasional dan meningkatkan keuntungan. Namun, perlu diingat bahwa kualitas dan desain juga sangat penting. Meja cafe yang tidak nyaman atau tidak menarik dapat membuat pelanggan tidak puas dan tidak ingin kembali. Oleh karena itu, penting untuk memilih meja cafe yang tepat dan sesuai dengan kebutuhan Anda.",
+          "imageSearchQuery": "cafe interior design ideas",
+          "image": "https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxjYWZlJTIwaW50ZXJpb3IlMjBkZXNpZ24lMjBpZGVhc3xlbnwwfDB8fHwxNzY5OTY5MDY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "cafe interior design ideas"
+        },
+        {
+          "heading": "Tips Memilih Meja Cafe Murah",
+          "content": "Dalam memilih meja cafe murah, perlu memperhatikan beberapa faktor seperti bahan, ukuran, dan desain. Pastikan meja cafe yang Anda pilih terbuat dari bahan yang kuat dan tahan lama, serta memiliki ukuran yang sesuai dengan kebutuhan Anda. Desain meja cafe juga sangat penting, karena dapat mempengaruhi kesan dan atmosfer cafe Anda."
+        },
+        {
+          "heading": "Mangala Living: Solusi Meja Cafe Murah",
+          "content": "Mangala Living menawarkan meja cafe murah di Bekasi dengan kualitas terbaik. Dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek yang telah diselesaikan, kami memiliki kemampuan untuk memahami kebutuhan Anda dan menyediakan solusi furniture cafe yang tepat. Kami juga memiliki workshop di Bekasi, sehingga Anda dapat dengan mudah mengunjungi kami dan melihat langsung produk yang kami tawarkan. <br> Salah satu produk meja cafe murah yang kami tawarkan adalah <strong>Meja Kerja Industrial</strong> dengan kode produk 15.",
+          "productId": 15
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda sedang mencari meja cafe murah di Bekasi, jangan ragu untuk menghubungi kami. Kami akan dengan senang hati membantu Anda menemukan meja cafe yang sesuai dengan kebutuhan dan budget Anda. Dengan Mangala Living, Anda dapat memiliki cafe yang nyaman, menarik, dan profitable.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Dengan memilih meja cafe murah di Bekasi yang tepat, Anda dapat meningkatkan keuntungan dan membuat pelanggan Anda puas. Mangala Living hadir untuk membantu Anda menemukan solusi furniture cafe yang terbaik dan sesuai dengan kebutuhan Anda. Hubungi kami sekarang juga dan mulai bangun cafe impian Anda!"
+    }
+  },
+  {
+    "id": 315,
+    "slug": "toko-bandung-pipe-dining-table",
+    "title": "Bandung Pipe Dining Table",
+    "category": "Tips and Trick",
+    "excerpt": "Dapatkan tips memilih meja makan pipa Bandung yang tepat untuk rumah Anda",
+    "image": "https://images.unsplash.com/photo-1761658644899-d1754c05c4d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHBpcGUlMjBkaW5pbmclMjB0YWJsZSUyMGluJTIwbWluaW1hbGlzdCUyMGxpdmluZyUyMHJvb218ZW58MHwwfHx8MTc2OTk2OTA5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-01 18:04",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Mangala Living hadir dengan pengalaman lebih dari 25 tahun dalam memproduksi furniture industri untuk cafe, restoran, hotel, dan kantor. Salah satu produk unggulan kami adalah Bandung Pipe Dining Table, yang dirancang untuk memenuhi kebutuhan akan meja makan yang kuat dan tahan lama. Dalam artikel ini, kita akan membahas tentang kelebihan meja makan pipa Bandung dan tips dalam memilihnya.",
+      "keyPoints": [
+        "Kelebihan meja makan pipa Bandung",
+        "Tips memilih meja makan yang tepat",
+        "Mengapa memilih Mangala Living?"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Meja Makan Pipa Bandung?",
+          "content": "Meja makan pipa Bandung merupakan pilihan yang tepat untuk Anda yang menginginkan meja makan yang kuat dan tahan lama. Dengan desain yang minimalis dan elegan, meja makan ini dapat menambahkan kesan industrial pada ruang makan Anda. <br> Selain itu, meja makan pipa Bandung juga dapat dengan mudah dipasang dan dipindahkan, sehingga sangat praktis untuk digunakan.",
+          "imageSearchQuery": "industrial dining room with pipe table",
+          "image": "https://images.unsplash.com/photo-1648523962366-9ec8de507d94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZGluaW5nJTIwcm9vbSUyMHdpdGglMjBwaXBlJTIwdGFibGV8ZW58MHwwfHx8MTc2OTk2OTA5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial dining room with pipe table"
+        },
+        {
+          "heading": "Tips Memilih Meja Makan yang Tepat",
+          "content": "Dalam memilih meja makan, ada beberapa hal yang perlu diperhatikan. Pertama, perhatikan ukuran meja makan yang sesuai dengan ruang makan Anda. Kedua, pilih material yang kuat dan tahan lama. Ketiga, pertimbangkan desain meja makan yang sesuai dengan tema ruang makan Anda. <br> Dengan memperhatikan hal-hal tersebut, Anda dapat memilih meja makan yang tepat untuk rumah Anda."
+        },
+        {
+          "heading": "Mangala Living Solusi",
+          "content": "Mangala Living memiliki pengalaman lebih dari 25 tahun dalam memproduksi furniture industri. Kami telah mengerjakan lebih dari 1000 proyek untuk cafe, restoran, hotel, dan kantor. <br> Dengan workshop yang berlokasi di Bekasi, kami dapat memproduksi furniture dengan kualitas yang tinggi dan harga yang kompetitif. <br> Produk kami, termasuk Bandung Pipe Dining Table, dirancang untuk memenuhi kebutuhan akan furniture yang kuat dan tahan lama.",
+          "productId": 4
+        },
+        {
+          "heading": "Next Steps",
+          "content": "Jika Anda tertarik dengan Bandung Pipe Dining Table, silakan hubungi kami untuk informasi lebih lanjut. Kami akan dengan senang hati membantu Anda dalam memilih meja makan yang tepat untuk rumah Anda.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Dengan memilih Bandung Pipe Dining Table, Anda dapat menambahkan kesan industrial pada ruang makan Anda. Jangan ragu untuk menghubungi kami jika Anda memerlukan informasi lebih lanjut tentang produk kami. <strong>Mangala Living</strong> siap membantu Anda dalam menciptakan ruang makan yang nyaman dan elegan."
     }
   }
 ]
