@@ -4155,10 +4155,10 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Bengkel Furniture Termurah",
     "category": "Tips and Trick",
     "excerpt": "Cari bengkel furniture termurah di Jabodetabek? Mangala Living solusinya!",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1650315532725-fdc6b5235f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxhZmZvcmRhYmxlJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBpbnRlcmlvcnxlbnwwfDB8fHwxNzY5OTY5MzkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 18:03",
     "author": "Helmi Ramdan",
-    "status": "synced",
+    "status": "draft",
     "customContent": {
       "introduction": "Mencari bengkel furniture yang terpercaya dan termurah di Jabodetabek bisa menjadi tantangan. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, hadir untuk membantu Anda. Kami memiliki workshop di Bekasi yang siap memenuhi kebutuhan furniture Anda, baik untuk cafe, restaurant, hotel, maupun kantor.",
       "keyPoints": [
@@ -4335,7 +4335,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1761658644899-d1754c05c4d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMG1pbmltYWxpc3QlMjBsaXZpbmclMjByb29tJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc2OTk2OTI0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 18:05",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Tren furnitur 2026 telah hadir dengan desain yang lebih bermakna, berkelanjutan, dan taktil. Mengutamakan keawetan daripada furnitur yang cepat dan tidak tahan lama, tren ini membawa kita kepada pengalaman yang lebih nyaman dan elegan dalam mendesain interior. Dengan pengalaman lebih dari 25 tahun dan 1000 proyek yang telah kami tangani, Mangala Living siap membantu Anda dalam menciptakan ruang yang sesuai dengan tren terbaru.",
       "keyPoints": [
@@ -4379,7 +4379,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1763521306796-f6eafcded3dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY29mZmVlJTIwc2hvcCUyMGRlc2lnbnxlbnwwfDB8fHwxNzY5OTY5MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 18:06",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Pada tahun 2026, kafe sedang berevolusi menjadi ruang yang mengutamakan pengalaman, keberlanjutan, dan integrasi teknologi. Tren kafe 2026 ini berfokus pada minuman fungsional, pilihan berbasis tanaman, dan pelayanan pelanggan yang dipersonalisasi dengan bantuan AI. Mangala Living, sebagai produsen furnitur industri premium, telah mengamati tren ini dan siap membantu kafe Anda meningkatkan pengalaman pelanggan.",
       "keyPoints": [
