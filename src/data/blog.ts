@@ -3929,7 +3929,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1722310530288-653a5b7a56be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB0ZWFrJTIwd29vZCUyMG91dGRvb3IlMjBmdXJuaXR1cmUlMjBpbiUyMG1vZGVybiUyMGdhcmRlbiUyMHNldHRpbmd8ZW58MHwwfHx8MTc2OTk2ODM5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 17:52",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Teakwood furniture has been a staple in the global market for decades, known for its durability and timeless elegance. With over 25 years of experience in the industry, Mangala Living has witnessed the evolution of teakwood furniture trends. In this article, we will explore the latest trends and provide tips on how to incorporate teakwood furniture into your cafe, restaurant, hotel, or office design.",
       "keyPoints": [
@@ -3972,7 +3972,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwc3VwcGxpZXIlMjBpbmRvbmVzaWF8ZW58MHwwfHx8MTc2OTk2ODUwOHww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 17:53",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "인도네시아에서 한국 가구 공급업체를 찾는 것은 품질, 가격, 배송 시간 등 다양한 요소를 고려해야 하는 중요한 결정입니다. 특히 카페, 레스토랑, 호텔과 같은 상업 공간을 위한 가구를 찾는 경우 더욱 신중한 선택이 필요합니다.",
       "keyPoints": [
@@ -4022,7 +4022,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwc3VwcGxpZXIlMjBpbmRvbmVzaWElMjBxdW90YXRpb258ZW58MHwwfHx8MTc2OTk2ODYxOXww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 17:55",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Lorsque vous recherchez des fournisseurs de mobilier en Indonésie, obtenir un devis précis et détaillé est crucial pour la réussite de votre projet commercial. Que vous soyez un hôtel, un restaurant, un café ou un bureau, comprendre le processus de demande de devis vous permettra d'optimiser votre budget et de garantir la qualité de vos meubles industriels.",
       "keyPoints": [
@@ -4058,6 +4058,51 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Obtenir un devis de fournisseur de mobilier en Indonésie ne doit pas être compliqué. En préparant soigneusement votre demande et en comprenant les éléments clés d'un devis, vous pouvez établir une relation fructueuse avec votre fournisseur. Des entreprises comme Mangala Living, avec leur expérience de 25 ans et plus de 1000 projets réussis, sont prêtes à vous accompagner dans la réalisation de vos projets commerciaux avec des meubles industriels de qualité supérieure."
+    }
+  },
+  {
+    "id": 310,
+    "slug": "fournisseur-meubles-gros-indonesie-guide-professionnel",
+    "title": "Fournisseur de meubles en gros en Indonésie : Guide professionnel",
+    "category": "Tips and Trick",
+    "excerpt": "Découvrez comment établir des partenariats à long terme avec des fournisseurs de meubles indonésiens pour votre entreprise internationale.",
+    "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwZXhwb3J0JTIwSW5kb25lc2lhfGVufDB8MHx8fDE3Njk5Njg4MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-01 17:58",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "L'Indonésie s'est imposée comme l'un des principaux fournisseurs mondiaux de meubles de qualité, offrant un excellent rapport qualité-prix pour les commandes en gros. Que vous soyez un détaillant international, un architecte d'intérieur ou un hôtelier cherchant à meubler plusieurs établissements, comprendre les subtilités du commerce international avec l'Indonésie est essentiel pour établir des partenariats durables et rentables.",
+      "keyPoints": [
+        "Comprendre les réglementations d'exportation indonésiennes",
+        "Établir des relations de confiance avec les fournisseurs",
+        "Optimiser les coûts de logistique et de transport",
+        "Assurer le contrôle qualité pour les commandes en gros"
+      ],
+      "language": "fr",
+      "sections": [
+        {
+          "heading": "Pourquoi choisir l'Indonésie comme fournisseur de meubles ?",
+          "content": "L'Indonésie offre plusieurs avantages compétitifs qui en font une destination privilégiée pour les commandes de meubles en gros. Le pays dispose d'une main-d'œuvre qualifiée avec une longue tradition artisanale, particulièrement dans le travail du bois. Les coûts de production restent compétitifs par rapport aux marchés asiatiques ou européens, tout en maintenant des standards de qualité élevés.<br><br>Les fabricants indonésiens, comme Mangala Living avec plus de 25 ans d'expérience, maîtrisent parfaitement les techniques de production industrielle tout en préservant l'authenticité du savoir-faire local. Cette combinaison unique permet d'obtenir des meubles durables, esthétiques et adaptés aux marchés internationaux. De plus, la situation géographique de l'Indonésie facilite l'accès aux principales routes maritimes, optimisant ainsi les coûts de transport vers l'Europe, l'Amérique ou le Moyen-Orient.",
+          "imageSearchQuery": "industrial furniture workshop Indonesia",
+          "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc2OTk2ODgyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial furniture workshop Indonesia"
+        },
+        {
+          "heading": "Comprendre le processus d'exportation et les réglementations",
+          "content": "Naviguer dans le processus d'exportation indonésien nécessite une connaissance approfondie des réglementations locales et internationales. Les fournisseurs sérieux comme Mangala Living possèdent une expérience solide dans la gestion des documents d'exportation, y compris les certificats d'origine, les licences d'exportation, et les certifications de conformité aux normes internationales.<br><br>Les principaux documents requis comprennent le Faktur Pajak (facture fiscale), le Surat Keterangan Asal (certificat d'origine), et les documents de transport maritime. Il est crucial de travailler avec des fournisseurs qui comprennent les exigences spécifiques de votre pays de destination, notamment en matière de traitement du bois, de normes de sécurité, et de réglementations douanières. Les fournisseurs établis ont généralement des partenariats avec des transitaires fiables qui peuvent gérer l'ensemble du processus logistique, du chargement à la livraison finale."
+        },
+        {
+          "heading": "Établir un partenariat à long terme : les clés du succès",
+          "content": "Un partenariat réussi avec un fournisseur indonésien repose sur plusieurs piliers fondamentaux. La transparence dans la communication est essentielle : assurez-vous que votre fournisseur comprend parfaitement vos spécifications techniques, vos délais de livraison, et vos exigences en matière de contrôle qualité. Les visites d'usine, même virtuelles, permettent d'établir une relation de confiance et de vérifier les capacités de production.<br><br>Les conditions de paiement doivent être clairement définies, avec des options adaptées aux commandes en gros. Les fournisseurs expérimentés proposent généralement des structures de paiement flexibles, comprenant des acomptes raisonnables et des modalités de paiement échelonnées. La capacité à gérer des commandes personnalisées et à respecter les délais de livraison sont également des indicateurs de fiabilité. Mangala Living, par exemple, a établi des partenariats durables avec plus de 1000 clients internationaux grâce à son engagement envers la qualité et la ponctualité.",
+          "productId": 1
+        },
+        {
+          "heading": "Optimiser les coûts et la logistique pour les commandes en gros",
+          "content": "La gestion efficace des coûts logistiques peut considérablement améliorer la rentabilité de vos commandes en gros. Les fournisseurs indonésiens sérieux proposent plusieurs options d'expédition, du groupage pour les petites commandes au conteneur complet pour les volumes importants. Le choix entre le fret maritime et aérien dépend de vos délais et de votre budget, mais pour les meubles, le maritime reste généralement l'option la plus économique.<br><br>Il est important de comprendre les coûts cachés potentiels, tels que les droits de douane, les taxes d'importation, et les frais de manutention portuaire. Un fournisseur expérimenté peut vous fournir des estimations précises de ces coûts supplémentaires. De plus, la consolidation des commandes et la planification stratégique des livraisons peuvent réduire considérablement les frais de transport. Les fournisseurs établis comme Mangala Living disposent d'équipes logistiques dédiées qui optimisent constamment les itinéraires et les méthodes d'expédition pour offrir les meilleurs tarifs à leurs clients internationaux.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Établir un partenariat réussi avec un fournisseur de meubles indonésien pour des commandes en gros nécessite une approche stratégique et une compréhension approfondie des processus d'exportation. En choisissant des fournisseurs expérimentés comme Mangala Living, vous bénéficiez non seulement de produits de qualité supérieure, mais aussi d'un accompagnement complet dans la gestion de vos projets internationaux. La combinaison du savoir-faire artisanal indonésien, des coûts compétitifs, et d'une expertise logistique éprouvée fait de l'Indonésie un partenaire idéal pour développer votre activité de meubles à l'échelle mondiale."
     }
   }
 ]
