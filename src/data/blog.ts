@@ -35,7 +35,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Memilih furniture industrial untuk cafe bukan hanya soal estetika, tetapi juga tentang menciptakan suasana yang nyaman dan fungsional bagi pelanggan.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-10-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 2,
@@ -45,7 +46,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Saat memutuskan untuk membeli furniture besi industrial, Anda akan dihadapkan pada dua pilihan: custom atau ready stock.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-10-14",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 3,
@@ -55,7 +57,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Desain interior industrial minimalis menjadi tren yang terus populer di tahun 2024.",
     "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop",
     "date": "2025-10-13",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 4,
@@ -65,7 +68,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture besi industrial adalah investasi jangka panjang untuk bisnis atau rumah Anda.",
     "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop",
     "date": "2025-10-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 5,
@@ -75,7 +79,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Simak tren furniture terkini untuk cafe dan restoran yang akan membuat bisnis F&B Anda semakin menarik di tahun 2025.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-10-11",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 6,
@@ -85,7 +90,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Banyak pelaku bisnis masih beranggapan bahwa furniture import lebih berkualitas dibanding produk lokal.",
     "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&auto=format&fit=crop",
     "date": "2025-10-10",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 7,
@@ -95,7 +101,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Memiliki ruangan terbatas bukan berarti Anda tidak bisa memiliki bar area yang stylish dan fungsional.",
     "image": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop",
     "date": "2025-10-09",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 8,
@@ -105,7 +112,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Kombinasi kayu dan besi adalah formula sempurna untuk furniture modern industrial.",
     "image": "https://images.unsplash.com/photo-1615529162924-f83c82d7d7f4?w=800&auto=format&fit=crop",
     "date": "2025-10-08",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 9,
@@ -115,7 +123,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Area outdoor seperti teras, balkon, atau taman membutuhkan furniture khusus yang tahan terhadap cuaca ekstrem.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2025-10-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 10,
@@ -125,7 +134,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Memulai bisnis cafe membutuhkan budget yang tidak sedikit, dan furniture adalah salah satu cost component terbesar.",
     "image": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800&auto=format&fit=crop",
     "date": "2025-10-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 11,
@@ -135,7 +145,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Finishing adalah tahap crucial yang menentukan durability dan aesthetic furniture besi. Dua metode finishing paling populer adalah powder coating dan cat biasa.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-10-05",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 12,
@@ -145,7 +156,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Membeli furniture industrial adalah investasi signifikan, baik untuk bisnis maupun hunian.",
     "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop",
     "date": "2025-10-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 13,
@@ -155,7 +167,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Sofa cafe industrial minimalis menjadi pilihan utama untuk menciptakan konsep modern yang elegan dan fungsional.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-10-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 14,
@@ -165,7 +178,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Meja bar industrial menjadi elemen penting dalam desain interior cafe dan restoran modern.",
     "image": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop",
     "date": "2025-10-17",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 15,
@@ -175,7 +189,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Kursi bar industrial dengan desain modern menjadi pilihan utama untuk melengkapi area bar dan lounge di cafe serta restoran.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-10-18",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 16,
@@ -185,7 +200,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Rak display industrial menjadi solusi praktis untuk menampilkan produk dan merchandise di retail, cafe, dan restoran.",
     "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop",
     "date": "2025-10-19",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 17,
@@ -195,7 +211,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Meja makan industrial menjadi pilihan utama untuk menciptakan suasana yang hangat dan modern di restoran.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-10-20",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 18,
@@ -205,7 +222,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture outdoor industrial tahan cuaca menjadi solusi ideal untuk area outdoor cafe, restoran, dan hotel.",
     "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop",
     "date": "2025-10-21",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 19,
@@ -215,7 +233,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Daybed industrial menjadi pilihan utama untuk menciptakan area lounge yang nyaman dan modern di hotel, cafe, dan restoran.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-10-22",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 20,
@@ -225,7 +244,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Meja kerja industrial menjadi pilihan utama untuk menciptakan workspace yang produktif dan modern di kantor.",
     "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop",
     "date": "2025-10-23",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 21,
@@ -235,7 +255,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Rak buku industrial menjadi pilihan utama untuk menciptakan perpustakaan yang fungsional dan modern.",
     "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop",
     "date": "2025-10-24",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 22,
@@ -245,7 +266,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial custom untuk hotel menjadi solusi ideal untuk menciptakan suasana yang elegan dan modern di berbagai area hotel.",
     "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop",
     "date": "2025-10-25",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 23,
@@ -255,7 +277,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial murah menjadi solusi ideal untuk startup yang membutuhkan furniture berkualitas dengan budget terbatas.",
     "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop",
     "date": "2025-10-26",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 24,
@@ -265,7 +288,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial Bekasi terpercaya menjadi pilihan utama untuk berbagai kebutuhan furniture berkualitas tinggi.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-10-27",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 25,
@@ -275,7 +299,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial custom design menjadi solusi ideal untuk menciptakan furniture yang unik dan sesuai dengan kebutuhan spesifik.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-10-28",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 26,
@@ -285,7 +310,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial harga pabrik menjadi solusi ideal untuk mendapatkan furniture berkualitas tinggi dengan harga yang kompetitif.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-10-29",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 27,
@@ -295,7 +321,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial garansi kualitas menjadi jaminan penting untuk investasi furniture jangka panjang.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-10-30",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 28,
@@ -305,7 +332,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial workshop Bekasi menjadi pusat produksi furniture berkualitas tinggi di Indonesia.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-10-31",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 29,
@@ -315,7 +343,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial material berkualitas menjadi faktor penting dalam menentukan kualitas dan daya tahan furniture.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-01",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 30,
@@ -325,7 +354,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial finishing powder coating menjadi solusi ideal untuk memberikan perlindungan dan tampilan yang optimal pada furniture.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-02",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 31,
@@ -335,7 +365,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial layanan profesional menjadi faktor penting dalam memberikan pengalaman terbaik untuk pelanggan.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-03",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 32,
@@ -345,7 +376,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial pengalaman 25 tahun menjadi bukti kualitas dan kepercayaan dalam industri furniture.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 33,
@@ -355,7 +387,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial 1000 klien puas menjadi bukti kualitas dan kepercayaan dalam industri furniture.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-05",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 34,
@@ -365,7 +398,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial custom design terpercaya menjadi solusi ideal untuk menciptakan furniture yang unik dan sesuai dengan kebutuhan spesifik.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 35,
@@ -375,7 +409,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Desain kafe industrial minimalis menjadi tren yang tak pernah lekang oleh waktu.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-10-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 36,
@@ -385,7 +420,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Harga furniture industrial menjadi pertimbangan utama bagi pemilik bisnis yang ingin menciptakan ruang komersial dengan konsep industrial modern.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-10-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 37,
@@ -395,7 +431,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Memilih furniture industrial untuk restoran memerlukan pertimbangan yang matang karena restoran memiliki karakteristik operasional yang berbeda dengan kafe.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-10-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 38,
@@ -405,7 +442,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Meja kantor industrial menjadi pilihan populer untuk menciptakan workspace modern yang produktif dan estetis.",
     "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop",
     "date": "2025-10-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 39,
@@ -415,7 +453,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Tren desain interior industrial Scandinavian 2025 menggabungkan elemen industrial yang kuat dengan estetika Scandinavian yang minimalis dan hangat.",
     "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop",
     "date": "2025-10-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 40,
@@ -425,7 +464,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Hollowline Display Rack menjadi solusi storage industrial modern yang sangat populer di kalangan pemilik bisnis retail, cafe, dan restoran.",
     "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop",
     "date": "2025-10-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 41,
@@ -435,7 +475,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Display Shelf Rack Industrial menjadi elemen penting dalam menciptakan tampilan retail dan cafe yang menarik dan fungsional.",
     "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop",
     "date": "2025-10-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 42,
@@ -445,7 +486,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Stall Chair Design dengan konsep industrial menjadi pilihan populer untuk cafe, restoran, dan bar modern.",
     "image": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop",
     "date": "2025-10-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 43,
@@ -455,7 +497,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Mencari meja cafe murah dengan kualitas premium? Mangala Living menawarkan berbagai pilihan meja cafe murah harga terbaru 2025 yang dirancang khusus untuk cafe, restoran, dan kedai kopi modern.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-11-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 44,
@@ -465,7 +508,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Pencari kursi bar cafe murah di Bekasi? Mangala Living menyediakan kursi bar cafe murah ready stock dengan harga terjangkau.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-11-08",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 45,
@@ -475,7 +519,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Mencari furniture cafe murah di Bekasi? Mangala Living adalah produsen furniture industrial terpercaya dengan harga pabrik yang terjangkau.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-11-09",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 46,
@@ -485,7 +530,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Meja makan adalah salah satu furniture paling penting di cafe.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-11-10",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 47,
@@ -495,7 +541,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Display rack adalah furniture multifungsi yang sangat penting di cafe modern.",
     "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop",
     "date": "2025-11-11",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 48,
@@ -505,7 +552,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Area outdoor adalah aset berharga untuk cafe modern.",
     "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop",
     "date": "2025-11-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 49,
@@ -515,7 +563,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Mencari furniture industrial harga murah untuk Jakarta dan Bekasi? Mangala Living adalah solusinya.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-11-13",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 50,
@@ -525,7 +574,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Meja kerja adalah furniture yang wajib ada di cafe modern.",
     "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop",
     "date": "2024-11-14",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 51,
@@ -535,7 +585,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Kitchen cabinet adalah heart of the kitchen di cafe Anda.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 52,
@@ -545,7 +596,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Area outdoor adalah aset berharga yang harus dioptimalkan untuk cafe modern.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 53,
@@ -555,7 +607,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Mencari meja kafe industrial modern dengan harga terbaik 2025? Anda berada di tempat yang tepat! Meja kafe industrial menjadi pilihan utama para pemilik cafe dan restoran modern karena desainnya yang elegan, kokoh, dan tahan lama.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-11-17",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 54,
@@ -565,7 +618,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Meja kafe bulat industrial menjadi pilihan unik untuk menciptakan suasana cafe modern yang berbeda.",
     "image": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800&auto=format&fit=crop",
     "date": "2024-11-18",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 55,
@@ -575,7 +629,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Set meja kursi kafe industrial menjadi solusi lengkap untuk furnishing cafe Anda.",
     "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop",
     "date": "2024-11-19",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 56,
@@ -585,7 +640,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Model kursi meja kafe industrial terus berkembang dengan inspirasi desain terbaru yang mengikuti tren modern.",
     "image": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop",
     "date": "2024-11-20",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 57,
@@ -595,7 +651,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Mencari harga bikin meja kafe murah dengan custom design terjangkau? Custom furniture cafe menjadi pilihan cerdas untuk mendapatkan furniture yang sesuai dengan konsep dan budget cafe Anda.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-11-21",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 58,
@@ -605,7 +662,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Mencari meja dan kursi untuk kafe murah tapi bagus? Budget terbatas bukan berarti Anda harus mengorbankan kualitas furniture cafe.",
     "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop",
     "date": "2024-11-22",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 59,
@@ -615,7 +673,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Memiliki budget terbatas untuk furniture cafe bukan berarti Anda harus mengorbankan kualitas dan estetika.",
     "image": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop",
     "date": "2024-11-23",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 60,
@@ -625,7 +684,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture kafe industrial menjadi pilihan utama para pemilik cafe modern karena desainnya yang elegan, kokoh, dan tahan lama.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2024-11-24",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 61,
@@ -635,7 +695,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Memilih furnitur untuk kafe yang tepat merupakan langkah penting dalam menciptakan atmosfer yang nyaman dan menarik bagi pelanggan.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-11-25",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 62,
@@ -645,7 +706,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture kafe 2 lantai sederhana modern menjadi solusi ideal untuk memaksimalkan ruang dan menciptakan pengalaman yang berbeda di setiap lantai.",
     "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop",
     "date": "2024-11-26",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 63,
@@ -655,7 +717,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture kafe buku menjadi konsep unik yang menggabungkan suasana literasi dengan kenyamanan cafe modern.",
     "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop",
     "date": "2024-11-27",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 64,
@@ -665,7 +728,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture untuk kafe bergaya industrial vintage menjadi pilihan populer untuk menciptakan atmosfer yang unik dan berkarakter.",
     "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop",
     "date": "2024-11-28",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 65,
@@ -675,7 +739,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Kafe dengan furniture paling unik menjadi daya tarik utama yang membedakan cafe Anda dari kompetitor.",
     "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop",
     "date": "2024-11-29",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 66,
@@ -685,7 +750,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Perhitungan furniture kafe yang tepat merupakan kunci sukses dalam perencanaan budget dan layout cafe.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-11-30",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 67,
@@ -695,7 +761,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Industrial cafe furniture terus berkembang dengan tren terbaru 2025 yang mengikuti perkembangan desain dan kebutuhan pelanggan.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2024-12-01",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 68,
@@ -705,7 +772,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Mencari furniture besi custom Bekasi berkualitas tinggi dengan harga yang kompetitif? Mangala Living adalah workshop furniture industrial terpercaya di Bekasi yang telah melayani lebih dari 1000 klien sejak tahun 1999.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-02",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 69,
@@ -715,7 +783,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Industrial furniture Bekasi dengan harga pabrik dan kualitas premium kini bukan lagi mimpi.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2024-12-03",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 70,
@@ -725,7 +794,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture cafe industrial Bekasi dengan desain custom modern. Mangala Living spesialis furniture cafe industrial: meja makan, kursi bar, display rack. Workshop Bekasi, pengalaman 25 tahun.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2024-12-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 71,
@@ -735,7 +805,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture besi Bekasi terpercaya. Mangala Living workshop modern dengan produksi langsung, custom design sesuai kebutuhan. Material berkualitas, finishing powder coating, garansi kualitas.",
     "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop",
     "date": "2024-12-05",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 72,
@@ -745,7 +816,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jual furniture industrial Jakarta dan Bekasi paling lengkap. Mangala Living menyediakan meja, kursi, rak display, kitchen cabinet industrial. Workshop di Bekasi, melayani seluruh Jabodetabek.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 73,
@@ -755,7 +827,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Meja makan besi custom Bekasi dengan desain industrial minimalis. Set meja makan + kursi, berbagai ukuran custom. Workshop Mangala Living melayani cafe, restoran, hotel. Kualitas premium, harga terjangkau.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-12-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 74,
@@ -765,7 +838,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Meja cafe industrial besi custom dari Bekasi. Mangala Living produksi meja cafe berbagai model: bar table, dining table, coffee table. Material berkualitas, finishing powder coating, harga kompetitif.",
     "image": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop",
     "date": "2024-12-08",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 75,
@@ -775,7 +849,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture besi hotel custom dengan desain eksklusif. Mangala Living spesialis furniture hotel industrial: lobby furniture, restaurant furniture, room furniture. Workshop Bekasi, pengalaman project hotel.",
     "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop",
     "date": "2024-12-09",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 76,
@@ -785,7 +860,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Bikin furniture besi custom Jabodetabek dengan kualitas terjamin. Mangala Living workshop modern di Bekasi melayani custom furniture untuk cafe, restoran, hotel, kantor. Free konsultasi & survey lokasi.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-10",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 77,
@@ -795,7 +871,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture besi untuk restoran dengan desain industrial modern. Meja makan, kursi, bar set, storage solution dari Mangala Living. Tahan lama, mudah perawatan, harga kompetitif. Workshop Bekasi.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-12-11",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 78,
@@ -805,7 +882,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Kumpulan inspirasi furniture industrial untuk cafe kecil dengan konsep minimalis. Tips layout, pemilihan furniture yang tepat, dan desain yang memaksimalkan ruang terbatas. Cocok untuk startup cafe.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2024-12-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 79,
@@ -815,7 +893,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Panduan lengkap desain interior industrial dengan kombinasi besi dan kayu. Tips memadukan material, pemilihan warna, finishing, dan inspirasi desain untuk cafe, restoran, dan kantor modern.",
     "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop",
     "date": "2024-12-13",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 80,
@@ -825,7 +904,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Inspirasi meja bar industrial minimalis dengan desain compact. Solusi space-efficient untuk cafe kecil. Tips ukuran ideal, material, dan model meja bar yang sesuai konsep industrial minimalis.",
     "image": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop",
     "date": "2024-12-14",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 81,
@@ -835,7 +915,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Panduan desain ruang makan industrial dengan furniture besi. Tips layout, pemilihan furniture, lighting, dan dekorasi untuk menciptakan dining area industrial modern yang fungsional dan estetis.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-12-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 82,
@@ -845,7 +926,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Kumpulan contoh furniture cafe industrial buatan lokal Indonesia. Portfolio project Mangala Living: cafe, restoran, hotel dengan furniture industrial berkualitas. Desain custom, material premium.",
     "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop",
     "date": "2024-12-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 83,
@@ -855,7 +937,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Tips styling furniture besi untuk konsep vintage cafe. Panduan memilih furniture industrial yang cocok untuk tema vintage, pemilihan warna, finishing, dan aksesoris pendukung.",
     "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop",
     "date": "2024-12-17",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 84,
@@ -865,7 +948,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Model desain meja industrial besi hollow terbaru 2025. Inspirasi meja kerja, meja makan, meja bar dengan material hollow steel berkualitas. Tips pemilihan ukuran dan finishing powder coating.",
     "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop",
     "date": "2024-12-18",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 85,
@@ -875,7 +959,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Koleksi furniture industrial terbaru 2025 dari Mangala Living. Meja, kursi, rak display, kitchen cabinet, outdoor furniture dengan desain modern. Material premium, finishing berkualitas, harga kompetitif.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-19",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 86,
@@ -885,7 +970,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Panduan lengkap apa itu furniture industrial untuk pemula. Sejarah, karakteristik, material, keunggulan, dan tips memilih furniture industrial yang tepat untuk rumah, cafe, atau kantor Anda.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-20",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 87,
@@ -895,7 +981,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Perbandingan lengkap furniture besi vs kayu. Kenapa furniture besi lebih awet? Analisis durabilitas, perawatan, harga, dan nilai investasi jangka panjang untuk bisnis F&B dan kantor.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2024-12-21",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 88,
@@ -905,7 +992,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Perbandingan detail furniture besi vs kayu untuk bisnis cafe dan restoran. Analisis kelebihan-kekurangan, investasi jangka panjang, perawatan, dan rekomendasi terbaik untuk bisnis F&B.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-12-22",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 89,
@@ -915,7 +1003,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Tips lengkap cara merawat furniture besi supaya anti karat dan awet bertahun-tahun. Panduan cleaning, treatment, dan preventive maintenance untuk furniture besi industrial indoor dan outdoor.",
     "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop",
     "date": "2024-12-23",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 90,
@@ -925,7 +1014,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Behind the scene proses pembuatan furniture besi custom di workshop Mangala Living. Dari desain, cutting, welding, finishing hingga quality control. Transparansi proses produksi furniture berkualitas.",
     "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop",
     "date": "2024-12-24",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 91,
@@ -935,7 +1025,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Tips profesional memilih furniture besi untuk restoran. Panduan material, ukuran, desain, budget, dan vendor terpercaya. Checklist lengkap untuk pemilik restoran dan interior designer.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-12-25",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 92,
@@ -945,7 +1036,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Trend desain industrial 2025 untuk furniture modern. Prediksi tren material, warna, finishing, dan style furniture industrial yang akan populer. Panduan untuk bisnis cafe, restoran, dan kantor.",
     "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop",
     "date": "2024-12-26",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 93,
@@ -955,7 +1047,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Panduan lengkap jenis finishing furniture besi: powder coating, cat duco, elektrostatic painting. Perbandingan kualitas, harga, durabilitas, dan rekomendasi finishing terbaik untuk furniture industrial.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-27",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 94,
@@ -965,7 +1058,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture industrial di Bekasi Barat. Melayani Bintara, Kranji, Kota Baru, Jakasampurna. Custom meja kursi cafe, restoran, hotel. Free konsultasi & survey. Harga pabrik langsung.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2024-12-28",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 95,
@@ -975,7 +1069,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Supplier furniture cafe industrial untuk Bekasi Timur. Coverage area: Jatiasih, Pekayon, Aren Jaya, Duren Jaya. Gratis delivery. Meja bar, kursi cafe, display rack custom. Workshop terpercaya.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-12-29",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 96,
@@ -985,7 +1080,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa furniture besi custom Bekasi Selatan. Melayani Kayuringin Jaya, Margajaya, Jakasetia, Pekayon Jaya. Workshop dekat dengan lokasi Anda. Material premium, finishing powder coating, harga terjangkau.",
     "image": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop",
     "date": "2024-12-30",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 97,
@@ -995,7 +1091,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture industrial Bekasi Utara. Coverage: Harapan Indah, Summarecon Bekasi, Pejuang, Teluk Pucung, Kaliabang. Spesialis cafe, restoran, hotel. Custom design, harga kompetitif.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-31",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 98,
@@ -1005,7 +1102,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture cafe industrial Cikarang Barat. Melayani Lippo Cikarang, Cibatu, Telaga Murni, Pasir Gombong. Workshop dekat area industri. Custom furniture untuk cafe karyawan pabrik & F&B bisnis.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-01",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 99,
@@ -1015,7 +1113,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Supplier furniture restoran Cikarang Utara. Area: Karang Asih, Simpangan, Sukamaju, Danau Indah. Spesialis meja makan industrial, kursi restoran, furniture outdoor. Produksi lokal Bekasi.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-01-02",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 100,
@@ -1025,7 +1124,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture industrial Cikarang Selatan. Coverage Jababeka, Greenland International, Pasirsari, Ciantra. Melayani corporate office, cafe pabrik, kantin karyawan. Harga volume discount.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-03",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 101,
@@ -1035,7 +1135,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture hotel industrial Cikarang Timur. Melayani Serang Baru, Karangreja, Jayamukti, Sukamanah. Spesialis lobby furniture, restaurant hotel, room furniture. Project hotel & homestay.",
     "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop",
     "date": "2025-01-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 102,
@@ -1045,7 +1146,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture cafe industrial Cikarang Pusat. Area coverage: Taman Galaxy, Lemahabang, Hegarmukti, Kalijaya. Custom meja bar, kursi cafe, display rack. Free konsultasi desain interior.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-05",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 103,
@@ -1055,7 +1157,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Industrial furniture besi custom untuk cafe, restoran, hotel. Workshop Bekasi sejak 1999. Harga pabrik. WA: +6288801146881.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-01-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 104,
@@ -1065,7 +1168,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa furniture custom Tambun Utara. Coverage: Satria Jaya, Karang Satria, Wanasari, Karang Bahagia. Spesialis furniture besi industrial untuk cafe & restoran. Gratis delivery area Tambun.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 105,
@@ -1075,7 +1179,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture cafe industrial Pondok Gede. Melayani Jatiwaringin, Jatibening, Jatiraden, Jatimakmur. Workshop Bekasi melayani border Jakarta-Bekasi. Custom design, fast production 20 hari.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-08",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 106,
@@ -1085,7 +1190,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Supplier furniture restoran Mustika Jaya. Area: Mustikasari, Pedurenan, Cimuning. Meja makan industrial, kursi restoran, bar set. Material premium, finishing powder coating tahan lama.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-01-09",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 107,
@@ -1095,7 +1201,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture industrial Rawalumbu. Coverage: Bojong Rawalumbu, Sepanjang Jaya, Pengasinan. Dekat pintu tol, mudah akses. Furniture cafe, restoran, office. Custom & ready design.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-10",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 108,
@@ -1105,7 +1212,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture cafe industrial Medan Satria. Melayani Kali Baru, Pejuang, Harapan Baru, Medan Satria. Workshop furniture besi custom untuk cafe modern. Harga kompetitif, kualitas terjamin.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-11",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 109,
@@ -1115,7 +1223,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Summarecon Bekasi telah menjadi destinasi F&B dan lifestyle terpopuler di Bekasi dengan traffic pengunjung yang tinggi setiap harinya.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 110,
@@ -1125,7 +1234,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Harapan Indah telah berkembang menjadi kawasan hunian dan komersial terpadu yang dinamis di Bekasi Utara.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-13",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 111,
@@ -1135,7 +1245,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture cafe industrial untuk Grand Galaxy City Bekasi. Melayani tenant mall, foodcourt, cafe strip. Custom furniture dengan delivery cepat ke area Grand Galaxy. Workshop Bekasi berpengalaman.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-01-14",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 112,
@@ -1145,7 +1256,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Supplier furniture restoran untuk Galaxy Bekasi mall tenant. Spesialis foodcourt furniture, cafe tenant, restaurant area. Fast production 15-20 hari. Custom design sesuai konsep mall. Harga volume.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-01-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 113,
@@ -1155,7 +1267,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture industrial untuk area Kemang Pratama. Melayani residential, cafe, home office. Custom furniture besi berkualitas dengan desain modern. Dekat dengan lokasi, delivery gratis area Kemang Pratama.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 114,
@@ -1165,7 +1278,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Spesialis furniture industrial untuk Jababeka Industrial Estate. Melayani kantin pabrik, cafe karyawan, corporate office, mess. Volume discount untuk project besar. Workshop dekat Jababeka.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-17",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 115,
@@ -1175,7 +1289,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Lippo Cikarang adalah kawasan mixed-use development terbesar di Cikarang dengan kombinasi mall, residential, office, dan education hub.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-18",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 116,
@@ -1185,7 +1300,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture industrial untuk kawasan Deltamas. Melayani commercial area, residential, F&B tenant. Custom furniture cafe, restoran, kantor. Material premium, harga kompetitif, delivery gratis.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-01-19",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 117,
@@ -1195,7 +1311,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Supplier furniture cafe untuk EJIP Industrial Park. Spesialis kantin pabrik, cafe employee, mess karyawan. Volume pricing untuk corporate project. Workshop terdekat dengan EJIP, fast delivery.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-20",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 118,
@@ -1205,7 +1322,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture restoran industrial untuk Greenland International Cikarang. Custom design untuk commercial area, residential cafe. Material berkualitas, finishing powder coating. Workshop lokal Bekasi.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-01-21",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 119,
@@ -1215,7 +1333,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa furniture cafe industrial Kota Harapan Indah. Melayani commercial cluster, cafe residential, home business. Custom design sesuai space. Free konsultasi & measurement. Delivery gratis Harapan Indah.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-22",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 120,
@@ -1225,7 +1344,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture industrial untuk Margahayu, Bekasi Timur. Coverage area: Margahayu Raya, sekitar kampus. Spesialis furniture cafe mahasiswa, warung, restoran. Harga terjangkau, kualitas premium.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-23",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 121,
@@ -1235,7 +1355,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture cafe industrial untuk Kaliabang Bekasi Utara Tengah. Melayani cafe, warung, restoran area komersial. Custom furniture dengan harga pabrik. Workshop terdekat, fast production 20 hari.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-24",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 122,
@@ -1245,7 +1366,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Supplier furniture restoran Kayuringin Jaya, Bekasi Selatan. Coverage: Kayuringin Raya, area kampus, commercial. Spesialis meja makan industrial, kursi restoran. Material premium, harga terjangkau.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-01-25",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 123,
@@ -1255,7 +1377,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture cafe Pekayon Jaya. Melayani area Pekayon, Jakasetia, commercial district. Custom furniture besi industrial untuk cafe modern. Free delivery area Bekasi Selatan. Garansi kualitas.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-26",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 124,
@@ -1265,7 +1388,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial custom Jakasampurna, Bekasi Barat. Coverage: Jakasampurna, Kota Baru. Spesialis cafe, restoran, office furniture. Workshop lokal Bekasi, produksi cepat, harga kompetitif.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-27",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 125,
@@ -1275,7 +1399,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa furniture cafe industrial Kranji, Bekasi Barat. Strategis border Jakarta-Bekasi. Melayani cafe, restoran, home office. Custom design modern, material berkualitas. Delivery Jakarta & Bekasi.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-28",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 126,
@@ -1285,7 +1410,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Supplier furniture restoran Bintara, Bekasi Barat. Area coverage: Bintara Jaya, commercial strip. Spesialis meja kursi restoran industrial. Workshop terdekat, harga pabrik, kualitas terjamin.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-01-29",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 127,
@@ -1295,7 +1421,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture industrial terdekat untuk Karawang. Lokasi di Bekasi dekat border Karawang. Melayani Karawang Barat, Karawang Timur. Spesialis cafe pabrik, kantin karyawan, corporate office.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-30",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 128,
@@ -1305,7 +1432,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture cafe industrial untuk Cibitung, Bekasi. Spesialis kantin pabrik, cafe karyawan, mess area. Volume discount untuk corporate project. Workshop dekat kawasan industri Cibitung. Fast delivery.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-31",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 129,
@@ -1315,7 +1443,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture industrial di Setu, Bekasi. Lokasi produksi langsung, harga pabrik tanpa markup. Custom furniture cafe, restoran, hotel, kantor. Material premium, finishing powder coating berkualitas.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-02-01",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 130,
@@ -1325,7 +1454,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture cafe industrial untuk Metland Transyogi, Cileungsi. Coverage: commercial area, residential. Workshop Bekasi melayani Cileungsi & sekitar. Custom design, delivery gratis area Metland.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-02-02",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 131,
@@ -1335,7 +1465,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture industrial terdekat untuk Jakarta Timur. Coverage: Cakung, Kramat Jati, Makasar, Cipayung. Dekat border Bekasi-Jakarta. Custom furniture cafe, restoran. Delivery cepat Jakarta Timur.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-02-03",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 132,
@@ -1345,7 +1476,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Supplier furniture cafe industrial Jakarta Pusat. Spesialis tenant gedung perkantoran, corporate cafe, co-working space. Workshop Bekasi melayani Jakarta. Custom design premium, project experience.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-02-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 133,
@@ -1355,7 +1487,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture restoran industrial Jakarta Selatan. Coverage: Kemang, SCBD, Senopati, Kebayoran. Workshop Bekasi melayani Jakarta Selatan. Custom design premium, material berkualitas, timeline terjamin.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-02-05",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 134,
@@ -1365,7 +1498,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture cafe industrial terdekat untuk Depok. Coverage: Margonda, UI, Sawangan. Melayani cafe kampus, restoran, F&B bisnis. Custom furniture berkualitas, harga terjangkau mahasiswa.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-02-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 135,
@@ -1375,7 +1509,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Workshop furniture industrial Bekasi melayani Bogor. Coverage: Bogor Kota, Cibinong, Sentul. Spesialis cafe, villa, resort furniture. Custom design tropical industrial. Delivery Bekasi-Bogor tersedia.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-02-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 136,
@@ -1385,7 +1520,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Sebagai praktisi arsitektur yang sudah belasan tahun terlibat dalam proyek renovasi dan desain ruang komersial - mulai dari perumahan hingga cafe dan restoran - saya sering mendapat pertanyaan dari klien: \"Kenapa cafe tertentu selalu ramai, sementara yang lain sepi padahal lokasi sama-sama strategis?\".",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-10-31",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 137,
@@ -1395,7 +1531,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Jakarta dan Bekasi, saya notice bahwa furniture tahan lama untuk operasional non-stop adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop",
     "date": "2025-11-01",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 138,
@@ -1405,7 +1542,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di area outdoor dengan cuaca ekstrem, saya notice bahwa furniture outdoor tahan cuaca tropis Indonesia adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2025-11-02",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 139,
@@ -1415,7 +1553,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di area residential dan perumahan, saya notice bahwa furniture strategy menarik pelanggan lokal adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800&auto=format&fit=crop",
     "date": "2025-11-03",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 140,
@@ -1425,7 +1564,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di semua area dengan konsep unik, saya notice bahwa sinkronisasi furniture dengan brand identity adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 141,
@@ -1435,7 +1575,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di BSD City dan Serpong, saya notice bahwa furniture industrial untuk demographics premium adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-11-05",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 142,
@@ -1445,7 +1586,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Sentul dan Bogor area, saya notice bahwa kombinasi alam dan industrial style adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 143,
@@ -1455,7 +1597,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Margonda, UI, area kampus, saya notice bahwa furniture student-friendly dan affordable adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop",
     "date": "2025-11-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 144,
@@ -1465,7 +1608,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Kemang, SCBD, Senopati, saya notice bahwa furniture high-end industrial chic adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-11-08",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 145,
@@ -1475,7 +1619,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Dago, Riau, Progo Bandung, saya notice bahwa furniture instagrammable yang viral adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop",
     "date": "2025-11-09",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 146,
@@ -1485,7 +1630,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Canggu, Seminyak, Ubud, saya notice bahwa furniture tropical industrial beach style adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2025-11-10",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 147,
@@ -1495,7 +1641,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Galaxy Mall, Pakuwon, saya notice bahwa furniture spacious dan comfortable adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-11-11",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 148,
@@ -1505,7 +1652,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Prawirotaman, Malioboro, Kaliurang, saya notice bahwa furniture vintage industrial heritage adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop",
     "date": "2025-11-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 149,
@@ -1515,7 +1663,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Malang dan Batu, saya notice bahwa furniture outdoor dengan view pegunungan adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop",
     "date": "2024-11-13",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 150,
@@ -1525,7 +1674,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Bogor dan Puncak, saya notice bahwa furniture untuk dataran tinggi sejuk adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800&auto=format&fit=crop",
     "date": "2024-11-14",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 151,
@@ -1535,7 +1685,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Medan, Sumatera Utara, saya notice bahwa furniture untuk kultur nongkrong Medan adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 152,
@@ -1545,7 +1696,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Semarang, Jawa Tengah, saya notice bahwa furniture compact untuk mall dan ruko adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2024-11-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 153,
@@ -1555,7 +1707,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di Makassar, Sulawesi Selatan, saya notice bahwa furniture coastal industrial beach style adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-17",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 154,
@@ -1565,7 +1718,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di area residential lokal, saya notice bahwa furniture strategy jadi pilihan lokal pertama adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop",
     "date": "2024-11-18",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 155,
@@ -1575,7 +1729,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di semua cafe dengan fokus F&B, saya notice bahwa furniture mendukung pengalaman kuliner adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-11-19",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 156,
@@ -1585,7 +1740,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Dari pengalaman saya handle commercial space di urban area dengan brand positioning premium, saya notice bahwa furniture minimalis less is more adalah kunci sukses cafe di area ini.",
     "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop",
     "date": "2024-11-20",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 157,
@@ -1595,7 +1751,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Mencari jasa furniture industrial minimalis murah di Bekasi yang berkualitas? Mangala Living adalah workshop furniture industrial terpercaya yang melayani custom furniture minimalis modern dengan harga terjangkau namun tetap berkualitas premium.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-08",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 158,
@@ -1605,7 +1762,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jual meja cafe modern minimalis murah dengan kualitas premium untuk Jakarta dan Bekasi.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-12-09",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 159,
@@ -1615,7 +1773,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Kursi resto modern minimalis murah dengan kualitas premium dan harga terbaik 2025.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2024-12-10",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 160,
@@ -1625,7 +1784,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture cafe minimalis modern murah dengan jasa custom berkualitas dari Mangala Living.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2024-12-11",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 161,
@@ -1635,7 +1795,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Meja resto industrial modern minimalis murah dengan kualitas premium.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-12-12",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 162,
@@ -1645,7 +1806,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa bikin furniture cafe custom minimalis murah Bekasi dengan workshop langsung.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-13",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 163,
@@ -1655,7 +1817,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture resto modern minimalis murah yang kami jual dengan kualitas premium.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-12-14",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 164,
@@ -1665,7 +1828,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Display rack cafe modern minimalis murah dengan kualitas industrial premium.",
     "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop",
     "date": "2024-12-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 165,
@@ -1675,7 +1839,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Bar set cafe modern minimalis murah dengan jasa custom berkualitas dari Mangala Living.",
     "image": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop",
     "date": "2024-12-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 166,
@@ -1685,7 +1850,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Kitchen cabinet resto modern minimalis murah dengan kualitas custom premium.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-17",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 167,
@@ -1695,7 +1861,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jual furniture industrial modern minimalis murah untuk Jakarta dan Bekasi dengan kualitas premium.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-18",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 168,
@@ -1705,7 +1872,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Set meja kursi cafe modern minimalis murah dengan kualitas premium.",
     "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop",
     "date": "2024-12-19",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 169,
@@ -1715,7 +1883,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa furniture resto custom modern minimalis murah berkualitas dari Mangala Living.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-12-20",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 170,
@@ -1725,7 +1894,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Outdoor furniture cafe modern minimalis murah dengan kualitas tahan cuaca.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-12-21",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 171,
@@ -1735,7 +1905,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Rak display resto modern minimalis murah yang kami jual dengan kualitas industrial premium.",
     "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop",
     "date": "2024-12-22",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 172,
@@ -1745,7 +1916,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Meja kerja cafe modern minimalis murah dengan kualitas multifungsi premium.",
     "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop",
     "date": "2024-12-23",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 173,
@@ -1755,7 +1927,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa buat furniture cafe custom modern minimalis murah Bekasi dengan workshop langsung.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2024-12-24",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 174,
@@ -1765,7 +1938,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Kursi bar cafe modern minimalis murah yang kami jual dengan kualitas industrial premium.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2024-12-25",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 175,
@@ -1775,7 +1949,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture kantin industrial modern minimalis murah dengan kualitas premium.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-26",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 176,
@@ -1785,7 +1960,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Set meja makan resto modern minimalis murah dengan kualitas lengkap premium.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2024-12-27",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 177,
@@ -1795,7 +1971,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa furniture hotel custom modern minimalis murah berkualitas premium dari Mangala Living.",
     "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop",
     "date": "2024-12-28",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 178,
@@ -1805,7 +1982,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Rak buku cafe modern minimalis murah yang kami jual dengan kualitas industrial premium.",
     "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop",
     "date": "2024-12-29",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 179,
@@ -1815,7 +1993,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Daybed cafe modern minimalis murah dengan kualitas premium untuk lounge area.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2024-12-30",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 180,
@@ -1825,7 +2004,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa furniture kantor industrial modern minimalis murah berkualitas dari Mangala Living.",
     "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop",
     "date": "2024-12-31",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 181,
@@ -1835,7 +2015,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Sofa bench cafe modern minimalis murah yang kami jual dengan kualitas industrial premium.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-01",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 182,
@@ -1845,7 +2026,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Meja coffee cafe modern minimalis murah dengan kualitas industrial premium.",
     "image": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800&auto=format&fit=crop",
     "date": "2025-01-02",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 183,
@@ -1855,7 +2037,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa furniture cafe custom minimalis modern murah untuk Bekasi dan Jakarta dengan kualitas premium.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-01-03",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 184,
@@ -1865,7 +2048,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture mall cafe resto modern minimalis murah dengan kualitas premium.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-01-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 185,
@@ -1875,7 +2059,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Rak gantung cafe modern minimalis murah yang kami jual dengan kualitas industrial premium.",
     "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop",
     "date": "2025-01-05",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 186,
@@ -1885,7 +2070,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa furniture besi custom modern minimalis murah untuk Jabodetabek dengan kualitas premium.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 187,
@@ -1895,7 +2081,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Discover why Indonesian industrial furniture manufacturers are becoming the preferred choice for international buyers. Quality craftsmanship, competitive pricing, and reliable export services.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 188,
@@ -1905,7 +2092,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Leading custom metal furniture manufacturer in Indonesia specializing in export. We deliver high-quality industrial furniture to hotels, restaurants, and commercial spaces globally.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 189,
@@ -1915,7 +2103,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Wholesale industrial furniture manufacturer in Indonesia offering competitive pricing for bulk orders. We handle export documentation, shipping, and quality assurance for international clients.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 190,
@@ -1925,7 +2114,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Direct from factory in Bekasi, Indonesia. We manufacture custom commercial furniture for hotels, restaurants, cafes, and offices. Export-ready with international quality standards.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 191,
@@ -1935,7 +2125,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Trusted metal furniture supplier in Indonesia exporting to hotels and restaurants worldwide. Premium quality steel furniture with powder coating finish and competitive FOB prices.",
     "image": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 192,
@@ -1945,7 +2136,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "OEM and ODM industrial furniture manufacturer in Indonesia. We work with international brands, furniture importers, and hospitality chains. Custom design and private label available.",
     "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 193,
@@ -1955,7 +2147,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Manufacturer of export-quality restaurant furniture in Indonesia. Industrial dining tables, chairs, bar stools, and custom commercial furniture. Competitive pricing for international buyers.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 194,
@@ -1965,7 +2158,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Factory-direct furniture exporter based in Bekasi, Indonesia. Eliminate middlemen and get the best FOB prices for industrial furniture. Minimum order: 1 container (20ft/40ft).",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 195,
@@ -1975,7 +2169,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Specialized hospitality furniture manufacturer in Indonesia. Custom furniture for hotel lobbies, restaurants, guest rooms, and outdoor areas. Export documentation and shipping support.",
     "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 196,
@@ -1985,7 +2180,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Premium powder-coated industrial metal furniture from Indonesia. Durable outdoor-grade finish, rust-resistant, and weather-proof. Perfect for tropical and humid climates worldwide.",
     "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 197,
@@ -1995,7 +2191,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Transparent container pricing for furniture export from Indonesia. 20ft and 40ft container options available. We handle documentation, quality control, and loading supervision.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 198,
@@ -2005,7 +2202,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Leading cafe furniture manufacturer in Indonesia exporting to cafes worldwide. Industrial-style tables, chairs, bar sets, and display racks. Custom design and branding available.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 199,
@@ -2015,7 +2213,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Quality-assured steel furniture supplier in Indonesia. ISO-standard manufacturing process, pre-shipment inspection, and quality documentation for international export.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 200,
@@ -2025,7 +2224,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Weather-resistant outdoor furniture manufacturer in Indonesia. Specialized in powder-coated steel furniture for tropical climates. Export to resorts, hotels, and restaurants globally.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 201,
@@ -2035,7 +2235,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Modern furniture factory in Bekasi serving international buyers. 25 years experience, 10,000+ sqm production facility. We handle custom design, manufacturing, and export logistics.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 202,
@@ -2045,7 +2246,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Transparent FOB and CIF pricing from Indonesian furniture exporter. Calculate landed cost easily. We work with freight forwarders worldwide for competitive shipping rates.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 203,
@@ -2055,7 +2257,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Complete export documentation support for commercial furniture buyers. Certificate of Origin, Packing List, Invoice, and custom clearance assistance for international shipping.",
     "image": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 204,
@@ -2065,7 +2268,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Custom design metal furniture factory in Indonesia. Work directly with our design team to create unique furniture for your brand. Export-ready with competitive MOQ.",
     "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 205,
@@ -2075,7 +2279,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Bulk order discounts for wholesale restaurant furniture from Indonesia. Perfect for restaurant chains, franchises, and hospitality groups expanding internationally.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 206,
@@ -2085,7 +2290,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Sustainable furniture manufacturing in Indonesia with eco-friendly practices. Recycled materials, water-based finishes, and responsible sourcing. Export certification available.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-04",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 207,
@@ -2095,7 +2301,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Beli furniture outdoor industrial berkualitas untuk cafe, restoran, dan area patio. Workshop kami di Bekasi melayani Jakarta dan sekitarnya dengan harga kompetitif.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 208,
@@ -2105,7 +2312,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Patio furniture industrial custom untuk area outdoor cafe dan restoran. Workshop Bekasi dengan layanan custom desain sesuai kebutuhan bisnis Anda.",
     "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 209,
@@ -2115,7 +2323,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Heavy duty commercial outdoor furniture tahan cuaca untuk cafe, restoran, hotel. Kualitas export dengan finishing powder coating premium. Lokasi workshop Bekasi.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 210,
@@ -2125,7 +2334,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa custom patio furniture besi industrial untuk Jakarta. Desain khusus sesuai konsep cafe, restoran, atau area outdoor. Workshop Bekasi dengan pengalaman 25 tahun.",
     "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 211,
@@ -2135,7 +2345,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Inspirasi desain cafe patio dengan outdoor furniture industrial. Tips memilih furniture tahan cuaca, gaya industrial modern, dan layout optimal untuk area outdoor.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 212,
@@ -2145,7 +2356,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Gaya patio industrial dengan furniture outdoor modern. Inspirasi desain untuk cafe, restoran, dan area outdoor. Kombinasi material besi dan kayu untuk estetika industrial.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 213,
@@ -2155,7 +2367,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture industrial custom untuk patio Jakarta. Workshop Bekasi melayani area Jakarta dengan layanan survey, custom desain, dan instalasi area outdoor cafe restoran.",
     "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 214,
@@ -2165,7 +2378,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture outdoor industrial untuk patio Bekasi. Workshop lokal dengan pengalaman 25 tahun, melayani custom desain dan produksi furniture tahan cuaca untuk area outdoor.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 215,
@@ -2175,7 +2389,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Inspirasi furniture outdoor industrial untuk patio cafe. Tips memilih meja, kursi, dan dekorasi industrial yang tahan cuaca dan cocok untuk area outdoor cafe modern.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 216,
@@ -2185,7 +2400,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Cafe patio furniture besi industrial murah untuk Jakarta. Set meja dan kursi outdoor tahan cuaca dengan finishing powder coating. Harga kompetitif dari workshop Bekasi.",
     "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 217,
@@ -2195,7 +2411,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture outdoor tahan hujan industrial untuk area patio. Finishing powder coating premium anti-karat, cocok untuk cuaca tropis Indonesia. Workshop Bekasi dengan garansi kualitas.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 218,
@@ -2205,7 +2422,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Jasa custom patio set besi industrial untuk Jakarta dan Bekasi. Desain khusus sesuai kebutuhan cafe, restoran, atau area outdoor. Produksi di workshop Bekasi dengan kualitas export.",
     "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 219,
@@ -2215,7 +2433,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Gaya industrial modern untuk furniture outdoor patio. Inspirasi desain kombinasi besi dan kayu, warna matte black, dan layout yang fungsional untuk area outdoor modern.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 220,
@@ -2225,7 +2444,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Furniture outdoor commercial heavy duty untuk cafe dan restoran. Konstruksi kuat dengan material besi hollow grade A, finishing powder coating premium. Workshop Bekasi.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 221,
@@ -2235,7 +2455,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Tips memilih patio furniture industrial outdoor yang tepat. Panduan material, finishing, ukuran, dan layout untuk area outdoor cafe, restoran, atau rumah tinggal.",
     "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 222,
@@ -2245,7 +2466,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Premium industrial outdoor furniture from Indonesia. Weather-resistant powder coating, heavy-duty construction for commercial use. Export-ready with competitive FOB pricing.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 223,
@@ -2255,7 +2477,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Custom patio furniture manufacturer in Indonesia. We design and manufacture industrial-style outdoor furniture for cafes, restaurants, and hotels worldwide. Export quality guaranteed.",
     "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 224,
@@ -2265,7 +2488,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Heavy duty commercial outdoor furniture from Indonesian manufacturer. Perfect for cafes, restaurants, hotels, and resorts. Weather-resistant, rust-proof, and built to last.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 225,
@@ -2275,7 +2499,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Custom patio furniture manufacturer in Indonesia. Work with our design team to create unique outdoor furniture for your brand. Export-ready with OEM/ODM services available.",
     "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 226,
@@ -2285,7 +2510,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Industrial-style cafe patio outdoor furniture from Indonesia. Metal tables, chairs, and bar sets with powder coating finish. Perfect for modern cafes and restaurants worldwide.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 227,
@@ -2295,7 +2521,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Industrial patio furniture style inspiration for modern outdoor spaces. Design ideas combining metal and wood, color schemes, and layout tips for cafes and restaurants.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 228,
@@ -2305,7 +2532,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Weather-resistant outdoor furniture from Indonesia designed for tropical climates. Powder coating finish withstands rain, sun, and humidity. Perfect for resorts and hotels in tropical regions.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 229,
@@ -2315,7 +2543,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Bulk order commercial outdoor furniture from Indonesia. Competitive pricing for restaurant chains, hotel groups, and hospitality businesses. Minimum order: 1 container (20ft/40ft).",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 230,
@@ -2325,7 +2554,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Custom patio furniture sets from Indonesian manufacturer. Tables, chairs, and bar sets designed for outdoor cafes and restaurants. OEM/ODM services with competitive MOQ.",
     "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 231,
@@ -2335,7 +2565,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Industrial metal outdoor furniture from Indonesia with premium powder coating finish. Rust-resistant, UV-protected, and weather-proof. Export quality with international standards.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 232,
@@ -2345,7 +2576,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Cafe outdoor furniture manufacturer in Indonesia. Industrial-style tables, chairs, and bar sets for outdoor dining areas. Export to cafes worldwide with competitive pricing.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 233,
@@ -2355,7 +2587,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Patio furniture inspiration with industrial design trends for 2025. Color schemes, material combinations, and layout ideas for modern outdoor spaces in cafes and restaurants.",
     "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 234,
@@ -2365,7 +2598,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Factory-direct outdoor furniture manufacturer in Indonesia. Eliminate middlemen and get best FOB prices. We handle custom design, production, and export documentation.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 235,
@@ -2375,7 +2609,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Heavy duty outdoor furniture from Indonesia built for commercial use. Strong construction, durable materials, and weather-resistant finish. Export quality with competitive pricing.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 236,
@@ -2385,7 +2620,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Custom outdoor furniture design and manufacturing in Indonesia. From concept to production, we create unique outdoor furniture for your brand. Export services with quality assurance.",
     "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2024-11-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 237,
@@ -2395,7 +2631,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Premium industrial dining tables manufactured in Indonesia for export. Combining steel frames with solid wood tops, our dining tables offer durability and modern aesthetics for commercial spaces worldwide.",
     "image": "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 238,
@@ -2405,7 +2642,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "High-quality metal bar stools from Indonesia. We manufacture industrial-style bar chairs with robust steel construction, perfect for bars, restaurants, and cafes. Export services available worldwide.",
     "image": "https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 239,
@@ -2415,7 +2653,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Indonesian industrial lounge furniture for commercial spaces. Our lounge sets combine comfort and durability with modern industrial design. Ideal for hotels, lounges, and hospitality projects.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 240,
@@ -2425,7 +2664,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Custom industrial storage solutions from Indonesia. Metal shelving, display racks, and storage cabinets built for commercial use. Durable construction with modern industrial aesthetics.",
     "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 241,
@@ -2435,7 +2675,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Professional custom metal furniture manufacturing services in Indonesia. From design to production, we create bespoke industrial furniture for international clients with complete export support.",
     "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 242,
@@ -2445,7 +2686,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Industrial-style kitchen cabinets for commercial kitchens. Manufactured in Indonesia with heavy-duty steel construction and professional finishing. Perfect for restaurants and commercial spaces.",
     "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 243,
@@ -2455,7 +2697,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Premium outdoor bar sets manufactured in Indonesia. Weather-resistant powder coating and galvanized steel construction ensure long-lasting performance in any climate. Export quality guaranteed.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 244,
@@ -2465,7 +2708,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Modern industrial daybed frames from Indonesia. Minimalist steel construction perfect for lounges, hotels, and residential projects. Customizable dimensions and finishes for international markets.",
     "image": "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 245,
@@ -2475,7 +2719,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Industrial display racks and retail shelving from Indonesia. Custom designs for retail stores, showrooms, and commercial spaces. Strong construction with modern industrial styling.",
     "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 246,
@@ -2485,7 +2730,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Industrial work tables and office desks manufactured in Indonesia. Steel frame construction with solid wood or metal tops. Perfect for modern offices, co-working spaces, and studios.",
     "image": "https://images.unsplash.com/photo-1595428773629-6e5cf2e1d8f1?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 247,
@@ -2495,7 +2741,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Industrial metal coat racks and wall hooks from Indonesia. Heavy-duty construction for commercial use in offices, hotels, and restaurants. Modern design with reliable functionality.",
     "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 248,
@@ -2505,7 +2752,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Industrial-style bookshelves with steel frames from Indonesia. Custom sizes and configurations available. Perfect for offices, libraries, and residential projects requiring durable storage solutions.",
     "image": "https://images.unsplash.com/photo-1595428773629-6e5cf2e1d8f1?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 249,
@@ -2515,7 +2763,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Space-efficient balcony furniture manufactured in Indonesia. Compact bar tables and seating solutions perfect for small outdoor spaces. Weather-resistant and stylish industrial designs.",
     "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 250,
@@ -2525,7 +2774,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Leading steel frame furniture manufacturer in Indonesia. We produce high-quality industrial furniture with precision welding and professional finishing. Export services to global markets.",
     "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 251,
@@ -2535,7 +2785,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Industrial bench seating and corner lounges from Indonesia. Robust steel frames with comfortable cushioning options. Ideal for cafes, restaurants, and commercial waiting areas.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 252,
@@ -2545,7 +2796,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Complete hospitality furniture solutions from Indonesia. We supply hotels, resorts, and restaurants worldwide with durable industrial-style furniture. Custom designs and bulk orders welcome.",
     "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 253,
@@ -2555,7 +2807,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Wholesale restaurant furniture manufacturer in Indonesia. Industrial dining tables, chairs, and bar furniture for commercial restaurants. Competitive pricing with consistent quality for bulk orders.",
     "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 254,
@@ -2565,7 +2818,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Wholesale cafe furniture from Indonesia. Modern industrial designs perfect for coffee shops and cafes worldwide. Competitive bulk pricing with reliable production timelines and quality control.",
     "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 255,
@@ -2575,7 +2829,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Contract furniture solutions for hotels and hospitality projects. Indonesian industrial furniture manufacturer with experience in large-scale hotel furniture projects worldwide.",
     "image": "https://images.unsplash.com/photo-1596436889106-be35e843f974?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 256,
@@ -2585,7 +2840,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Expert powder coating services for metal furniture in Indonesia. High-quality finishes with excellent durability and color consistency. We use industrial-grade powder coating for export-quality products.",
     "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 257,
@@ -2595,7 +2851,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Complete guide to ordering custom industrial furniture from Indonesia. Learn about our streamlined process from design consultation to international shipping, with quality assurance at every step.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-11-06",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 258,
@@ -2605,7 +2862,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "مصنع إندونيسي متخصص في الأثاث المعدني الصناعي المخصص. نقدم خدمات التصميم حسب الطلب، التصنيع الداخلي، والتصدير العالمي. جودة التصدير مع ضمان الجودة في كل خطوة.",
     "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop",
     "date": "2025-11-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 259,
@@ -2615,7 +2873,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "印尼领先的工业家具制造商和出口商。我们提供定制设计、内部生产控制和全球出口服务。25年经验，1000+项目完成，工厂直供价格，专业品质保证。",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-11-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 260,
@@ -2625,7 +2884,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "インドネシアのパティオ家具専門メーカー。カスタムオーダー、屋内生産、国際輸出に対応。屋外対応の高品質パウダーコーティング仕上げで、長期的な耐久性を保証。25年の経験と1000以上のプロジェクト実績。",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2025-11-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 261,
@@ -2635,7 +2895,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Fabricante indonesio especializado en estanterías y racks industriales. Producción interna completa desde diseño hasta acabado. Pedidos personalizados, exportación internacional y precios de fábrica directa. Calidad de exportación garantizada.",
     "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&auto=format&fit=crop",
     "date": "2025-11-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 262,
@@ -2645,7 +2906,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Fabricant et exportateur indonésien de mobilier industriel sur mesure. Production interne complète, commandes personnalisées, et exportation mondiale. 25 ans d'expérience, plus de 1000 projets réalisés. Qualité export garantie avec prix direct usine.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-11-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 263,
@@ -2655,7 +2917,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "인도네시아의 산업용 랙 및 디스플레이 선반 전문 제조업체. 맞춤 주문, 내부 생산, 국제 수출 서비스 제공. 25년 경험, 1000개 이상 프로젝트 완료. 공장 직접 가격과 수출 품질 보장.",
     "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&auto=format&fit=crop",
     "date": "2025-11-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 264,
@@ -2665,7 +2928,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "مصدر إندونيسي متخصص في أثاث الباحات والتراسات. نقدم تصميمات مخصصة، تصنيع داخلي كامل، وتصدير عالمي. أثاث مقاوم للطقس مع طلاء بودرة عالي الجودة. 25 عاماً من الخبرة وأكثر من 1000 مشروع مكتمل.",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&auto=format&fit=crop",
     "date": "2025-11-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 265,
@@ -2675,7 +2939,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "印尼内部定制家具制造商，提供从设计到生产的完整内部服务。无中间商，工厂直供价格。定制设计、内部生产控制、质量保证。25年经验，1000+项目，专业出口品质。",
     "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop",
     "date": "2025-11-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 266,
@@ -2685,7 +2950,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "インドネシアのディスプレイラック・展示棚専門メーカー。小売店、ショールーム、商業スペース向けのカスタムデザイン。内部生産による品質管理、国際輸出対応。競争力のある価格と一貫した品質。",
     "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&auto=format&fit=crop",
     "date": "2025-11-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 267,
@@ -2695,7 +2961,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Exportador indonesio de soluciones completas de mobiliario industrial. Desde diseño personalizado hasta producción interna y exportación internacional. Fabricamos todo: muebles de interior, patio, estanterías, y más. Un solo proveedor para todas sus necesidades de mobiliario comercial.",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-11-07",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 268,
@@ -2705,7 +2972,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Panduan lengkap pengadaan furniture industrial untuk kantor dinas, balai kota, fasilitas publik, hingga ruang tunggu pelayanan masyarakat di Jakarta, Bekasi, Depok, Tangerang, Bogor dan Bandung.",
     "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=800&auto=format&fit=crop",
     "date": "2025-11-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 269,
@@ -2715,7 +2983,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Cara merencanakan pengadaan furniture untuk cafe dan restoran di Jakarta, Bekasi, Depok, Tangerang, dan Bogor agar hemat budget tapi tetap terlihat premium dan fungsional.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-11-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 270,
@@ -2725,7 +2994,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Penjelasan lengkap tentang custom order furniture untuk area kolam renang, rooftop, dan fasilitas pendukung hotel/resort agar tahan cuaca dan tetap aman untuk tamu.",
     "image": "https://images.unsplash.com/photo-1501117716987-c8e1ecb2108a?w=800&auto=format&fit=crop",
     "date": "2025-11-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 271,
@@ -2735,7 +3005,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Checklist pengadaan furniture kantor modern untuk perusahaan di Jakarta, Bekasi, dan Bandung: mulai dari meja kerja, ruang meeting, hingga area kolaborasi dan pantry.",
     "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop",
     "date": "2025-11-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 272,
@@ -2745,7 +3016,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Langkah demi langkah proses custom order furniture industrial di Mangala Living untuk proyek cafe, kantor, restoran, dan fasilitas publik di seluruh Jabodetabek.",
     "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&auto=format&fit=crop",
     "date": "2025-11-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 273,
@@ -2755,7 +3027,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "选择合适的工业风家具对咖啡厅的成功至关重要。本文将为您详细介绍如何为咖啡厅选择工业风家具，包括材质、尺寸、颜色搭配等关键因素，帮助您打造独特而实用的咖啡厅空间。",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-11-17",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 274,
@@ -2765,7 +3038,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "定制工业家具相比成品家具具有独特优势。本文将深入探讨定制工业家具的优势、适用场景、材质选择以及如何选择可靠的定制家具供应商，帮助您做出明智的投资决策。",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-11-18",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 275,
@@ -2775,7 +3049,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "正确的保养方法可以延长工业风铁艺家具的使用寿命。本文提供详细的保养指南，包括日常清洁、防锈处理、定期维护等实用技巧，确保您的家具长期保持美观和功能性。",
     "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop",
     "date": "2025-11-19",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 276,
@@ -2785,7 +3060,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "اختيار أثاث صناعي لمقهى ليس مجرد مسألة جمالية، بل يتعلق أيضًا بخلق جو مريح وعملي للعملاء. سيقدم لك هذا الدليل الشامل نصائح عملية لاختيار أثاث صناعي مثالي لمقهى عصري.",
     "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&auto=format&fit=crop",
     "date": "2025-11-20",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 277,
@@ -2795,7 +3071,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "在决定购买工业家具时，您将面临两个选择：定制或成品。本文深入探讨定制工业家具相比成品家具的独特优势，帮助您做出明智的投资决策。",
     "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop",
     "date": "2025-11-21",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 278,
@@ -2805,7 +3082,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "産業風ミニマリストのインテリアデザインは、2025年も引き続き人気のトレンドです。工業的な要素とミニマリストの美学を組み合わせることで、モダンで温かみのある、インスタ映えする空間を創り出せます。",
     "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop",
     "date": "2025-11-22",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 279,
@@ -2815,7 +3093,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Los muebles metálicos industriales son una inversión a largo plazo para su negocio o hogar. Con el cuidado adecuado, pueden durar décadas manteniendo su apariencia y funcionalidad. Esta guía completa le enseñará cómo mantener sus muebles metálicos en perfectas condiciones.",
     "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop",
     "date": "2025-11-23",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 280,
@@ -2825,7 +3104,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Découvrez les dernières tendances en matière de mobilier pour cafés et restaurants qui rendront votre établissement F&B encore plus attractif en 2025. Du design industriel minimaliste aux solutions durables, explorez les tendances qui façonnent l'avenir de l'industrie hôtelière.",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
     "date": "2025-11-24",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 281,
@@ -2835,7 +3115,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "많은 사업자들이 여전히 수입 가구가 국산 제품보다 품질이 더 좋다고 생각합니다. 그러나 실제로는 인도네시아에서 제조된 고품질 공업용 가구가 많은 장점을 제공합니다. 이 기사에서는 현대 카페를 위한 공업용 가구의 장점을 탐구합니다.",
     "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&auto=format&fit=crop",
     "date": "2025-11-25",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 282,
@@ -2845,7 +3126,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Discover why Indonesian industrial furniture manufacturers with SVLK certification are the trusted choice for international buyers. Learn about our commitment to legal, sustainable wood sourcing and non-illegal logging practices.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 283,
@@ -2855,7 +3137,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "了解为什么拥有SVLK认证的印尼工业家具制造商是国际买家的可靠选择。了解我们对合法、可持续木材采购和非非法采伐实践的承诺。",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 284,
@@ -2865,7 +3148,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "SVLK認証を取得したインドネシアの産業家具メーカーが、国際的なバイヤーにとって信頼できる選択肢である理由を発見してください。合法的で持続可能な木材調達と非違法伐採の実践への取り組みについて学びます。",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 285,
@@ -2875,7 +3159,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Découvrez pourquoi les fabricants de mobilier industriel indonésiens certifiés SVLK sont le choix de confiance pour les acheteurs internationaux. Apprenez-en plus sur notre engagement en faveur de l'approvisionnement en bois légal et durable et des pratiques non-illégales d'exploitation forestière.",
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
     "date": "2025-01-15",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 286,
@@ -2885,7 +3170,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Learn how Indonesian furniture manufacturers with SVLK certification ensure sustainable wood sourcing and environmental responsibility. Discover the benefits of working with certified exporters for your commercial furniture needs.",
     "image": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&auto=format&fit=crop",
     "date": "2025-01-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 287,
@@ -2895,7 +3181,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "了解拥有SVLK认证的印尼家具制造商如何确保可持续木材采购和环境责任。了解与认证出口商合作满足商业家具需求的好处。",
     "image": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&auto=format&fit=crop",
     "date": "2025-01-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 288,
@@ -2905,7 +3192,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "SVLK認証を取得したインドネシアの家具メーカーが、持続可能な木材調達と環境責任をどのように確保しているかを学びます。商業家具のニーズに対応する認証輸出業者との協力の利点を発見してください。",
     "image": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&auto=format&fit=crop",
     "date": "2025-01-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 289,
@@ -2915,7 +3203,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "excerpt": "Découvrez comment les fabricants de mobilier indonésiens certifiés SVLK garantissent un approvisionnement en bois durable et une responsabilité environnementale. Découvrez les avantages de travailler avec des exportateurs certifiés pour vos besoins en mobilier commercial.",
     "image": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&auto=format&fit=crop",
     "date": "2025-01-16",
-    "author": "Helmi Ramdan"
+    "author": "Helmi Ramdan",
+    "status": "synced"
   },
   {
     "id": 290,
@@ -2954,7 +3243,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Tidak peduli lokasi bisnis Anda di Jabodetabek, Mangala Living siap menjadi mitra furnitur komersial terpercaya. Dengan portofolio 1000+ proyek dan workshop modern di Bekasi, kami menjamin kualitas terbaik untuk cafe, restoran, hotel, atau kantor Anda. <strong>Hubungi kami hari ini untuk konsultasi gratis dan penawaran khusus wilayah Anda!</strong>"
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 291,
@@ -2993,7 +3283,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Choosing SVLK-certified furniture shouldn't mean compromising on design or budget. Mangala Living proves compliance enhances creativity—not restricts it. <em>Contact our team today</em> for a complimentary consultation and sample catalog featuring 200+ certified commercial designs."
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 292,
@@ -3026,7 +3317,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Membeli furniture cafe dengan kualitas high industrial grade sangat penting untuk menjamin kenyamanan dan keamanan pelanggan. Dengan memperhatikan tips di atas dan memilih Mangala Living sebagai solusi furniture cafe, Anda dapat memiliki cafe yang nyaman dan sukses. <strong>Hubungi kami sekarang</strong> untuk memilih furniture cafe yang berkualitas dan sesuai dengan kebutuhan Anda!"
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 293,
@@ -3065,7 +3357,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Dengan pengalaman lebih dari 25 tahun, material berkualitas tinggi, desain custom, dan komitmen terhadap kepuasan pelanggan, Mangala Living adalah pilihan yang tepat untuk furniture komersial Anda. Hubungi tim kami hari ini untuk konsultasi gratis dan mulailah transformasi ruang bisnis Anda menjadi lebih menarik dan fungsional."
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 294,
@@ -3108,7 +3401,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Furniture industri bukan sekadar tren, tetapi investasi jangka panjang untuk bisnis hospitality Anda. Dengan kombinasi desain yang timeless, material berkualitas, dan customisasi yang tepat, furniture industri dapat meningkatkan pengalaman pelanggan sekaligus memperkuat brand identity. Hubungi Mangala Living hari ini untuk konsultasi gratis dan temukan solusi furniture industri yang sesuai dengan visi bisnis Anda."
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 295,
@@ -3146,7 +3440,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "إذا كنت تبحث عن حلول أثاث متقدمة وذات جودة عالية، ف曼جála ليفينج هي الخيار الأمثل. <strong>توفر مانجála ليفينج حلول أثاث مخصصة</strong> وذات جودة عالية، وتتميز بمتانتها وثباتها. <em>لا تتردد في الاتصال بنا</em> للاستفادة من خبرتنا وخدماتنا في مجال الأثاث الصناعي."
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 296,
@@ -3180,7 +3475,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Dengan memperhatikan tips dan trik memilih furniture teak yang tepat, Anda dapat memiliki furniture teak yang berkualitas dan tahan lama. Mangala Living adalah solusi furniture teak Anda, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek yang telah diselesaikan. <br> Jangan ragu untuk menghubungi kami untuk mendapatkan informasi lebih lanjut tentang furniture teak yang sesuai dengan kebutuhan Anda."
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 297,
@@ -3218,7 +3514,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "选择合适的露台家具对于新加坡的咖啡馆来说是非常重要的。通过了解新加坡咖啡馆露台家具的特点，选择合适的材料和设计，您能够创造一个独特和舒适的露台区域。Mangala Living作为一家具有25年经验的工业家具制造商，我们能够提供专业的设计和制造服务，帮助您实现您的目标。请联系我们，获取更多信息和开始您的项目。"
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 298,
@@ -3255,7 +3552,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Dengan memilih hollowline Indonesia berkualitas dan menggunakan tips yang tepat, Anda dapat menciptakan ruangan yang cantik dan fungsional. Mangala Living siap membantu Anda dalam menciptakan ruangan yang sesuai dengan kebutuhan Anda. Kunjungi kami sekarang juga untuk mendapatkan informasi lebih lanjut tentang hollowline Indonesia berkualitas."
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 299,
@@ -3298,7 +3596,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "En conclusion, les meubles indonésiens offrent une combinaison unique de beauté, de durabilité et d'authenticité. Avec leur riche héritage culturel et leurs matières premières de qualité, les meubles indonésiens sont le choix idéal pour ceux qui cherchent à ajouter une touche d'exotisme et de elegance à leur décoration intérieure. <br> Mangala Living est votre partenaire idéal pour les meubles indonésiens, avec notre expérience et notre expertise dans la fabrication de meubles de haute qualité. N'hésitez pas à nous contacter pour en savoir plus sur nos produits et nos services."
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 300,
@@ -3340,7 +3639,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Les meubles industriels sont une excellente option pour les entreprises de retail en France qui cherchent à créer un espace unique et durable. Chez Mangala Living, nous proposons des solutions de meubles sur mesure pour répondre aux besoins spécifiques de votre entreprise. N'hésitez pas à nous contacter pour en savoir plus sur nos produits et nos services."
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 301,
@@ -3381,7 +3681,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "En conclusion, les meubles industriels sont parfaits pour les cafés et les restaurants qui veulent créer une ambiance unique et robuste. Avec Mangala Living, vous pouvez concevoir des meubles sur mesure pour répondre à vos besoins spécifiques et créer une ambiance industrielle parfaite. N'hésitez pas à nous contacter pour en savoir plus sur nos solutions et nos produits."
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 302,
@@ -3424,7 +3725,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Memilih meja cafe industrial yang tepat adalah investasi penting untuk kesuksesan coffee shop Anda di Bekasi. Dengan kombinasi antara desain yang menarik, material berkualitas, dan fungsionalitas yang optimal, furniture yang tepat dapat meningkatkan pengalaman pelanggan dan efisiensi operasional.<br><br>Di Mangala Living, kami berkomitmen untuk menjadi partner terpercaya Anda dalam menyediakan furniture industrial custom untuk coffee shop. Dengan pengalaman lebih dari 25 tahun, workshop sendiri di Bekasi, dan ribuan proyek yang telah kami selesaikan, kami siap membantu mewujudkan visi coffee shop Anda.<br><br>Jangan ragu untuk menghubungi tim kami untuk konsultasi gratis tentang kebutuhan furniture coffee shop Anda. Mari bersama-sama menciptakan ruang yang tidak hanya indah secara visual tetapi juga fungsional dan tahan lama untuk bisnis kuliner Anda di Bekasi."
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 303,
@@ -3470,7 +3772,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Furniture custom besi dari Mangala Living bukan hanya sekedar produk, tetapi investasi jangka panjang untuk bisnis Anda. Dengan kombinasi desain industrial yang timeless, material berkualitas, dan layanan custom yang profesional, kami siap membantu Anda menciptakan ruang yang tidak hanya fungsional tetapi juga estetis. Hubungi kami hari ini dan wujudkan furniture impian Anda bersama tim ahli kami!"
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 304,
@@ -3519,7 +3822,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Memilih furniture industrial untuk cafe kecil di Jakarta tak harus mahal asal pahami material dan pilih produsen berpengalaman seperti Mangala Living. Dengan workshop di Bekasi dan tim ahli custom desain, kami siap membantu menciptakan interior cafe industrial yang tahan lama sesuai budget. Kontak kami sekarang untuk konsultasi gratis dan penawaran spesial!"
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 305,
@@ -3564,7 +3868,8 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "As Indonesia's premier furniture manufacturer and exporter, Mangala Living combines decades of experience, manufacturing excellence, and customer-focused service to deliver exceptional furniture solutions. Whether you're a café owner in Singapore, a restaurant chain in Dubai, a hotel developer in Europe, or an office designer in the United States, we have the expertise and capacity to bring your vision to life. Contact us today to discuss your furniture needs and discover why businesses worldwide trust Mangala Living for their commercial furniture requirements."
-    }
+    },
+    "status": "synced"
   },
   {
     "id": 306,
@@ -3612,6 +3917,147 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Finding the right Indonesian furniture manufacturer requires careful research and due diligence, but the rewards are substantial. Indonesia's furniture industry offers exceptional value through quality craftsmanship, competitive pricing, and diverse product options. By focusing on key selection criteria, verifying credentials, and assessing communication capabilities, you can establish a successful partnership that benefits your business for years to come. Remember that the cheapest option isn't always the best value – prioritize quality, reliability, and service to ensure your furniture investments deliver lasting returns."
+    },
+    "status": "synced"
+  },
+  {
+    "id": 307,
+    "slug": "teakwood-furniture-global-market-trends",
+    "title": "Teakwood Furniture Trends",
+    "category": "Tips and Trick",
+    "excerpt": "Discover the latest teakwood furniture trends in the global market",
+    "image": "https://images.unsplash.com/photo-1722310530288-653a5b7a56be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB0ZWFrJTIwd29vZCUyMG91dGRvb3IlMjBmdXJuaXR1cmUlMjBpbiUyMG1vZGVybiUyMGdhcmRlbiUyMHNldHRpbmd8ZW58MHwwfHx8MTc2OTk2ODM5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-01 17:52",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Teakwood furniture has been a staple in the global market for decades, known for its durability and timeless elegance. With over 25 years of experience in the industry, Mangala Living has witnessed the evolution of teakwood furniture trends. In this article, we will explore the latest trends and provide tips on how to incorporate teakwood furniture into your cafe, restaurant, hotel, or office design.",
+      "keyPoints": [
+        "Teakwood furniture is a popular choice for outdoor settings",
+        "Sustainable teakwood sourcing is becoming increasingly important",
+        "Teakwood furniture can be customized to fit any design style"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Why Teakwood is a Popular Choice",
+          "content": "Teakwood is a highly prized material for furniture making due to its exceptional durability and resistance to rot, decay, and insect damage. <strong>At Mangala Living, we source our teakwood from sustainable plantations</strong> to ensure that our furniture is not only beautiful but also environmentally friendly. With proper maintenance, teakwood furniture can last for decades, making it a cost-effective choice for businesses and individuals alike.",
+          "imageSearchQuery": "teakwood tree plantation",
+          "image": "https://images.unsplash.com/photo-1761495375390-ea9b4b165a59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMHRlYWt3b29kJTIwZnVybml0dXJlJTIwaW4lMjBuYXR1cmFsJTIwb3V0ZG9vciUyMHNldHRpbmd8ZW58MHwwfHx8MTc2OTk2ODM5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "sustainable teakwood furniture in natural outdoor setting"
+        },
+        {
+          "heading": "Teakwood Furniture Trends to Watch",
+          "content": "This year, we're seeing a shift towards more minimalist and modern teakwood furniture designs. <em>Clean lines, simple silhouettes, and an emphasis on functionality</em> are key characteristics of this trend. Teakwood furniture is also being paired with other materials, such as metal and glass, to create unique and eye-catching pieces. Whether you're looking to update your outdoor seating area or create a stunning interior design, teakwood furniture is a versatile choice that can fit any style."
+        },
+        {
+          "heading": "Mangala Living's Teakwood Furniture Solutions",
+          "content": "At Mangala Living, we offer a wide range of teakwood furniture products, from <strong>industrial-style dining tables</strong> to <em>comfortable outdoor sofas</em>. Our team of expert designers and craftsmen work together to create custom teakwood furniture pieces that meet the unique needs of our clients. With over 1000 projects under our belt, we have the experience and expertise to bring your teakwood furniture vision to life. Consider pairing our <strong>Bandung Pipe Dining Table (product ID: 4)</strong> with our <strong>Dining Set with 2 Chairs (product ID: 5)</strong> for a stunning and functional dining area."
+        },
+        {
+          "heading": "Tips for Maintaining Your Teakwood Furniture",
+          "content": "To keep your teakwood furniture looking its best, regular maintenance is essential. <strong>Regularly clean your teakwood furniture with a mild soap and water solution</strong>, and avoid using harsh chemicals or abrasive materials that can damage the wood. You should also apply a teakwood sealant or oil to protect the wood from the elements and prevent fading or discoloration. By following these simple tips, you can enjoy your teakwood furniture for years to come.",
+          "productId": 12
+        }
+      ],
+      "conclusion": "Teakwood furniture is a timeless and versatile choice that can add warmth and elegance to any setting. At Mangala Living, we're committed to providing high-quality teakwood furniture products that meet the unique needs of our clients. Whether you're looking to update your outdoor seating area or create a stunning interior design, our team of expert designers and craftsmen are here to help. <strong> Contact us today to learn more about our teakwood furniture solutions</strong>."
+    }
+  },
+  {
+    "id": 308,
+    "slug": "인도네시아-최고의-한국-가구-공급업체",
+    "title": "인도네시아 최고의 한국 가구 공급업체",
+    "category": "Furniture Information",
+    "excerpt": "인도네시아에서 한국 가구 공급업체를 선택할 때 고려해야 할 핵심 요소와 최고의 선택에 대한 가이드입니다.",
+    "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwc3VwcGxpZXIlMjBpbmRvbmVzaWF8ZW58MHwwfHx8MTc2OTk2ODUwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-01 17:53",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "인도네시아에서 한국 가구 공급업체를 찾는 것은 품질, 가격, 배송 시간 등 다양한 요소를 고려해야 하는 중요한 결정입니다. 특히 카페, 레스토랑, 호텔과 같은 상업 공간을 위한 가구를 찾는 경우 더욱 신중한 선택이 필요합니다.",
+      "keyPoints": [
+        "인도네시아 가구 시장의 이해",
+        "품질과 가격의 균형 잡힌 선택",
+        "신뢰할 수 있는 공급업체의 특징",
+        "커스터마이징 옵션 확인",
+        "배송 및 사후 서비스 고려"
+      ],
+      "language": "ko",
+      "sections": [
+        {
+          "heading": "인도네시아 가구 시장 현황",
+          "content": "인도네시아는 풍부한 목재 자원과 숙련된 장인 정신으로 유명한 가구 생산국입니다. 특히 자카르타, 반둥, 베카시 지역에는 수많은 가구 제조업체가 위치해 있으며, 이들 중 많은 업체들이 한국 시장을 겨냥한 제품을 생산하고 있습니다. 인도네시아 가구의 가장 큰 장점은 합리적인 가격에 고품질 제품을 제공할 수 있다는 점입니다. 또한 다양한 디자인과 커스터마이징 옵션을 통해 고객의 요구에 맞춘 제품을 제작할 수 있습니다.",
+          "imageSearchQuery": "indonesia furniture factory industrial",
+          "image": "https://images.unsplash.com/photo-1672891475620-7cee20ca969c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWElMjBmdXJuaXR1cmUlMjBmYWN0b3J5JTIwaW5kdXN0cmlhbHxlbnwwfDB8fHwxNzY5OTY4NTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "indonesia furniture factory industrial"
+        },
+        {
+          "heading": "신뢰할 수 있는 공급업체 선택을 위한 팁",
+          "content": "한국 가구 공급업체를 선택할 때는 몇 가지 중요한 요소를 고려해야 합니다. 첫째, 업체의 경험과 포트폴리오를 확인하세요. 최소 5년 이상의 경험을 가진 업체가 안정적인 품질을 보장합니다. 둘째, 인증과 표준을 확인하세요. ISO 9001과 같은 품질 관리 인증을 보유한 업체가 좋습니다. 셋째, 고객 리뷰와 추천을 확인하세요. 실제 고객들의 경험담은 업체의 신뢰도를 판단하는 데 큰 도움이 됩니다. 마지막으로, 커뮤니케이션이 원활한지 확인하세요. 한국어 지원이 가능한 업체라면 더욱 편리합니다."
+        },
+        {
+          "heading": "품질과 가격의 균형 잡힌 선택",
+          "content": "가구 구매에서 가장 중요한 것은 품질과 가격의 균형입니다. 인도네시아 가구는 저렴한 가격에 고품질 제품을 제공하는 것으로 유명합니다. 하지만 모든 업체가 동일한 품질을 보장하는 것은 아닙니다. 소재의 종류와 품질, 제작 공정, 마감 처리 등을 꼼꼼히 확인해야 합니다. 특히 상업용 가구의 경우 내구성이 매우 중요하므로, 사용된 재료와 제작 기술에 대한 자세한 정보를 요청하는 것이 좋습니다. 또한 가격 대비 품질을 비교할 때는 단순히 가격만 보지 말고, 제품의 수명과 유지 보수 비용까지 고려해야 합니다.",
+          "productId": 5
+        },
+        {
+          "heading": "커스터마이징과 디자인 옵션",
+          "content": "한국 고객들의 특성상 개성 있는 디자인과 맞춤형 제품을 선호하는 경향이 있습니다. 인도네시아 가구 공급업체들은 이러한 요구에 부응하기 위해 다양한 커스터마이징 옵션을 제공하고 있습니다. 크기, 색상, 재질, 디자인 등을 고객의 요구에 맞춰 조정할 수 있습니다. 특히 인더스트리얼, 모던, 클래식 등 다양한 스타일의 가구를 제작할 수 있는 업체를 선택하는 것이 좋습니다. 디자인 팀과의 협업을 통해 고객의 비전을 현실로 만들어 줄 수 있는 업체가 이상적입니다."
+        },
+        {
+          "heading": "배송과 사후 서비스",
+          "content": "가구 구매 시 배송과 사후 서비스도 중요한 고려 사항입니다. 인도네시아에서 한국으로의 배송은 시간과 비용이 발생하므로, 신뢰할 수 있는 물류 파트너를 보유한 업체를 선택하는 것이 중요합니다. 배송 기간, 비용, 보험 등에 대한 명확한 정보를 제공하는 업체가 좋습니다. 또한 사후 서비스도 중요합니다. 제품 하자나 문제 발생 시 신속하게 대응하는 업체를 선택해야 합니다. A/S 정책과 보증 기간에 대한 명확한 안내를 제공하는 업체가 신뢰할 수 있습니다.",
+          "productId": 8
+        }
+      ],
+      "conclusion": "인도네시아의 한국 가구 공급업체를 선택할 때는 신중한 검토가 필요합니다. 품질, 가격, 디자인, 배송, 사후 서비스 등 다양한 요소를 고려하여 최적의 업체를 선택하세요. 특히 상업 공간을 위한 가구 구매 시에는 더욱 철저한 검토가 필요합니다. 인도네시아의 풍부한 자원과 숙련된 기술력을 바탕으로 고품질의 가구를 합리적인 가격에 제공하는 업체들을 찾아보세요."
+    }
+  },
+  {
+    "id": 309,
+    "slug": "comment-obtenir-un-devis-fournisseur-mobilier-indonesie",
+    "title": "Comment obtenir un devis de fournisseur de mobilier en Indonésie",
+    "category": "Tips and Trick",
+    "excerpt": "Guide complet pour demander et recevoir des devis de fournisseurs de mobilier industriel indonésiens spécialisés dans les projets commerciaux.",
+    "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwc3VwcGxpZXIlMjBpbmRvbmVzaWElMjBxdW90YXRpb258ZW58MHwwfHx8MTc2OTk2ODYxOXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-01 17:55",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Lorsque vous recherchez des fournisseurs de mobilier en Indonésie, obtenir un devis précis et détaillé est crucial pour la réussite de votre projet commercial. Que vous soyez un hôtel, un restaurant, un café ou un bureau, comprendre le processus de demande de devis vous permettra d'optimiser votre budget et de garantir la qualité de vos meubles industriels.",
+      "keyPoints": [
+        "Comprendre les spécificités des devis indonésiens",
+        "Les informations essentielles à fournir",
+        "Les délais et processus de fabrication",
+        "Les certifications et normes de qualité",
+        "Les avantages d'un fournisseur expérimenté"
+      ],
+      "language": "fr",
+      "sections": [
+        {
+          "heading": "Pourquoi choisir un fournisseur indonésien pour vos meubles industriels",
+          "content": "L'Indonésie s'est imposée comme un leader mondial dans la fabrication de mobilier industriel de haute qualité. Avec plus de 25 ans d'expérience, des ateliers modernes et une main-d'œuvre qualifiée, des fournisseurs comme Mangala Living offrent des solutions sur mesure pour les projets commerciaux. <br><br>Les avantages sont multiples : des coûts de production compétitifs, une grande flexibilité de personnalisation, et une expertise dans les matériaux durables comme le bois récupéré et l'acier industriel. Les fournisseurs indonésiens comprennent également les exigences spécifiques des marchés internationaux, garantissant que vos meubles répondent aux normes européennes et américaines.",
+          "imageSearchQuery": "indonesian furniture factory industrial production",
+          "image": "https://images.unsplash.com/photo-1606077089119-92075161bb60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwZnVybml0dXJlJTIwZmFjdG9yeSUyMGluZHVzdHJpYWwlMjBwcm9kdWN0aW9ufGVufDB8MHx8fDE3Njk5Njg2MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "indonesian furniture factory industrial production"
+        },
+        {
+          "heading": "Les informations essentielles à fournir pour un devis précis",
+          "content": "Pour obtenir un devis complet et précis, votre fournisseur indonésien aura besoin d'informations détaillées. Voici les éléments clés à inclure dans votre demande :<br><br><strong>Spécifications techniques :</strong> Dimensions exactes, matériaux préférés (bois, métal, cuir), finitions souhaitées, et toute exigence particulière comme la résistance aux intempéries pour les meubles d'extérieur.<br><br><strong>Quantités et délais :</strong> Précisez le nombre d'unités par modèle, les dates de livraison souhaitées, et si vous avez des exigences de livraison échelonnée.<br><br><strong>Certifications et normes :</strong> Indiquez si vous avez besoin de certifications spécifiques (FSC pour le bois, tests de sécurité pour les meubles de bureau, etc.).<br><br><strong>Exigences d'emballage :</strong> Pour les projets internationaux, précisez vos besoins en matière d'emballage sécurisé et de manutention.",
+          "productId": 4
+        },
+        {
+          "heading": "Comprendre la structure d'un devis indonésien",
+          "content": "Un devis complet d'un fournisseur indonésien comprend généralement plusieurs éléments. Le prix unitaire détaillé inclut le coût des matériaux, la main-d'œuvre, et les finitions. Les frais d'emballage et d'expédition sont généralement indiqués séparément, tout comme les taxes applicables et les droits de douane.<br><br>Les délais de production sont cruciaux : un fournisseur expérimenté comme Mangala Living, avec plus de 1000 projets réalisés, peut vous fournir des délais réalistes basés sur son expérience. Les conditions de paiement sont également importantes - la plupart des fournisseurs demandent un acompte de 30 à 50% à la commande, le solde étant payable avant expédition ou à la livraison.<br><br>Les garanties et services après-vente doivent également être clairement spécifiés dans le devis. Un fournisseur sérieux offrira des garanties sur la qualité de fabrication et pourra vous assister en cas de problème.",
+          "productId": 9
+        },
+        {
+          "heading": "Les questions à poser avant de valider votre devis",
+          "content": "Avant de valider un devis, posez ces questions essentielles à votre fournisseur : Quelle est leur expérience avec des projets similaires au vôtre ? Peuvent-ils fournir des références de clients internationaux ? Comment gèrent-ils le contrôle qualité tout au long du processus de production ?<br><br>Demandez également des détails sur leur atelier et leurs capacités de production. Un fournisseur comme Mangala Living, basé à Bekasi avec un atelier moderne, peut vous offrir une transparence totale sur son processus de fabrication. Renseignez-vous sur leurs délais de livraison réels par rapport aux estimations, et sur leur capacité à gérer les projets urgents.<br><br>Enfin, vérifiez leurs conditions d'exportation et leur expérience avec les douanes internationales. Un fournisseur expérimenté saura gérer tous les aspects logistiques pour que vos meubles arrivent en parfait état à destination.",
+          "productId": 12
+        }
+      ],
+      "conclusion": "Obtenir un devis de fournisseur de mobilier en Indonésie ne doit pas être compliqué. En préparant soigneusement votre demande et en comprenant les éléments clés d'un devis, vous pouvez établir une relation fructueuse avec votre fournisseur. Des entreprises comme Mangala Living, avec leur expérience de 25 ans et plus de 1000 projets réussis, sont prêtes à vous accompagner dans la réalisation de vos projets commerciaux avec des meubles industriels de qualité supérieure."
     }
   }
 ]
