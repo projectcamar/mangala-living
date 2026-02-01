@@ -4332,7 +4332,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Tren Furnitur 2026",
     "category": "Tips and Trick",
     "excerpt": "Tren furnitur 2026 hadir dengan desain yang lebih bermakna, berkelanjutan, dan taktil",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1761658644899-d1754c05c4d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMG1pbmltYWxpc3QlMjBsaXZpbmclMjByb29tJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc2OTk2OTI0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 18:05",
     "author": "Helmi Ramdan",
     "status": "draft",
@@ -4368,6 +4368,50 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Tren furnitur 2026 membawa kita kepada pengalaman yang lebih nyaman dan elegan dalam mendesain interior. Dengan fokus pada keawetan dan kenyamanan, kita dapat menciptakan ruang yang tidak hanya indah tetapi juga ramah lingkungan. Mangala Living siap membantu Anda dalam menciptakan ruang yang sesuai dengan tren terbaru. Kunjungi kami di Bekasi untuk melihat koleksi kami dan dapatkan saran dari ahli kami."
+    }
+  },
+  {
+    "id": 317,
+    "slug": "tren-kafe-2026",
+    "title": "Tren Kafe 2026",
+    "category": "Tips and Trick",
+    "excerpt": "Tren kafe 2026: pengalaman, keberlanjutan, dan integrasi teknologi",
+    "image": "https://images.unsplash.com/photo-1763521306796-f6eafcded3dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY29mZmVlJTIwc2hvcCUyMGRlc2lnbnxlbnwwfDB8fHwxNzY5OTY5MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-01 18:06",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Pada tahun 2026, kafe sedang berevolusi menjadi ruang yang mengutamakan pengalaman, keberlanjutan, dan integrasi teknologi. Tren kafe 2026 ini berfokus pada minuman fungsional, pilihan berbasis tanaman, dan pelayanan pelanggan yang dipersonalisasi dengan bantuan AI. Mangala Living, sebagai produsen furnitur industri premium, telah mengamati tren ini dan siap membantu kafe Anda meningkatkan pengalaman pelanggan.",
+      "keyPoints": [
+        "Minuman fungsional dan berbasis tanaman",
+        "Pelayanan pelanggan yang dipersonalisasi dengan AI",
+        "Keberlanjutan dan transparansi dalam sumber daya"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Tren Kafe 2026 Penting?",
+          "content": "Tren kafe 2026 ini penting karena pelanggan kafe saat ini tidak hanya mencari secangkir kopi, tetapi juga pengalaman yang unik dan berkesan. Dengan mengadopsi tren ini, kafe dapat meningkatkan loyalitas pelanggan dan meningkatkan penjualan. Mangala Living telah bekerja sama dengan lebih dari 1000 proyek kafe dan restoran, dan kami memahami pentingnya menciptakan ruang yang nyaman dan fungsional.",
+          "imageSearchQuery": "industrial coffee shop interior",
+          "image": "https://images.unsplash.com/photo-1763521306796-f6eafcded3dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY29mZmVlJTIwc2hvcCUyMGludGVyaW9yfGVufDB8MHx8fDE3Njk5NjkyMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial coffee shop interior"
+        },
+        {
+          "heading": "Praktik Terbaik untuk Mengadopsi Tren Kafe 2026",
+          "content": "Untuk mengadopsi tren kafe 2026, kafe perlu mempertimbangkan beberapa hal, seperti <strong>perancangan ruang</strong> yang ergonomis dan <em>estetis</em>, <strong>penggunaan teknologi</strong> untuk mempermudah pelayanan pelanggan, dan <strong>keberlanjutan</strong> dalam sumber daya. Mangala Living menawarkan solusi furnitur industri premium yang dapat membantu kafe Anda mencapai tujuan ini."
+        },
+        {
+          "heading": "Solusi Mangala Living untuk Tren Kafe 2026",
+          "content": "Mangala Living menawarkan berbagai solusi furnitur industri premium yang dapat membantu kafe Anda mengadopsi tren kafe 2026. Dari <strong>meja dan kursi</strong> yang ergonomis hingga <strong>lemari dan rak</strong> yang fungsional, kami memiliki produk yang tepat untuk kebutuhan kafe Anda. Contohnya, produk <strong>Meja Kerja Industrial</strong> (ID: 15) dapat membantu kafe Anda menciptakan ruang kerja yang nyaman dan produktif.",
+          "productId": 15
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda ingin mempelajari lebih lanjut tentang tren kafe 2026 dan bagaimana Mangala Living dapat membantu kafe Anda, silakan <strong>hubungi kami</strong> untuk konsultasi gratis. Kami siap membantu Anda menciptakan ruang kafe yang unik dan berkesan.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Dengan mengadopsi tren kafe 2026, kafe Anda dapat meningkatkan loyalitas pelanggan dan meningkatkan penjualan. Mangala Living siap membantu Anda menciptakan ruang kafe yang unik dan berkesan dengan solusi furnitur industri premium kami. Hubungi kami hari ini untuk memulai langkah Anda menuju kesuksesan!"
     }
   }
 ]
