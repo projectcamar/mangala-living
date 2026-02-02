@@ -3929,7 +3929,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1746605620245-bf8d2c653379?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc2NhbmRpbmF2aWFuJTIwZnVybml0dXJlJTIwZGVzaWdufGVufDB8MHx8fDE3Njk5Njk1MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 18:11",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Apakah Anda ingin memiliki furnitur yang unik dan sesuai dengan gaya Anda? Mangala Living hadir untuk membantu Anda mewujudkan impian furnitur Anda! Dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek yang telah diselesaikan, kami siap membantu Anda menciptakan furnitur yang sesuai dengan kebutuhan Anda.",
       "keyPoints": [
@@ -3975,7 +3975,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGZ1cm5pdHVyZSUyMGRlc2lnbnxlbnwwfDB8fHwxNzY5OTY5NTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 18:12",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Memilih furniture yang tepat untuk cafe Anda bukan hanya soal estetika, tetapi juga kenyamanan dan fungsionalitas. Furniture industrial menjadi pilihan populer karena keunikannya yang timeless dan ketahanannya yang luar biasa. Mangala Living, dengan pengalaman lebih dari 25 tahun, berbagi tips penting untuk membantu Anda membuat keputusan terbaik.",
       "keyPoints": [
@@ -4020,7 +4020,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1763565909003-46e9dfb68a00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY3VzdG9tJTIwZnVybml0dXJlJTIwZGVzaWduJTIwY29uc3VsdGF0aW9ufGVufDB8MHx8fDE3Njk5Njk2NjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-01 18:13",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Setiap ruang komersial memiliki karakter unik yang membutuhkan furniture khusus untuk memaksimalkan potensinya. Di Mangala Living, kami percaya bahwa furniture yang tepat dapat mengubah cara pelanggan Anda merasakan dan berinteraksi dengan bisnis Anda. Dengan pengalaman lebih dari 25 tahun dan 1000+ proyek yang telah kami selesaikan, kami siap membantu mewujudkan visi furniture Anda menjadi kenyataan.",
       "keyPoints": [
@@ -4055,6 +4055,50 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Furniture custom adalah investasi yang akan terus memberikan nilai bagi bisnis Anda. Di Mangala Living, kami tidak hanya membuat furniture, tetapi kami menciptakan pengalaman yang akan diingat pelanggan Anda. Dengan konsultasi desain gratis, material berkualitas, dan pengalaman lebih dari 25 tahun, kami siap membantu mewujudkan furniture impian Anda. Hubungi kami hari ini untuk memulai perjalanan transformasi ruang komersial Anda."
+    }
+  },
+  {
+    "id": 310,
+    "slug": "kanopi-bekasi-tips-dan-trik",
+    "title": "Kanopi Bekasi",
+    "category": "Tips and Trick",
+    "excerpt": "Membuat kanopi yang tepat untuk rumah atau bisnis Anda di Bekasi",
+    "image": "https://images.unsplash.com/photo-1678724833448-8c59e14ccdef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2Fub3B5JTIwZGVzaWdufGVufDB8MHx8fDE3NzAwMjY5OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-02 10:09",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Kanopi menjadi salah satu elemen penting dalam desain eksterior rumah atau bisnis. Di Bekasi, Mangala Living telah membantu banyak pelanggan dalam membuat kanopi yang sesuai dengan kebutuhan mereka. Dalam artikel ini, kami akan membagikan beberapa tips dan trik untuk membuat kanopi yang tepat untuk Anda.",
+      "keyPoints": [
+        "Memilih bahan yang tepat",
+        "Mengukur ukuran yang sesuai",
+        "Membuat desain yang sesuai dengan tema"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Kanopi Penting?",
+          "content": "Kanopi bukan hanya berfungsi sebagai pelindung dari sinar matahari atau hujan, tetapi juga dapat meningkatkan estetika bangunan. Dengan kanopi yang tepat, Anda dapat membuat rumah atau bisnis Anda terlihat lebih menarik dan nyaman.",
+          "imageSearchQuery": "canopy design ideas",
+          "image": "https://images.unsplash.com/photo-1762817900896-1574cacf65ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxjYW5vcHklMjBkZXNpZ24lMjBpZGVhc3xlbnwwfDB8fHwxNzcwMDI2OTk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "canopy design ideas"
+        },
+        {
+          "heading": "Tips Membuat Kanopi yang Tepat",
+          "content": "Untuk membuat kanopi yang tepat, Anda perlu mempertimbangkan beberapa hal, seperti <strong>ukuran</strong>, <strong>bahan</strong>, dan <strong>desain</strong>. Pastikan Anda memilih bahan yang kuat dan tahan lama, serta membuat desain yang sesuai dengan tema bangunan Anda."
+        },
+        {
+          "heading": "Solusi Kanopi dari Mangala Living",
+          "content": "Di Mangala Living, kami memiliki pengalaman lebih dari 25 tahun dalam membuat kanopi yang sesuai dengan kebutuhan pelanggan. Kami telah mengerjakan lebih dari 1000 proyek dan memiliki <em>workshop</em> di Bekasi. Kami dapat membantu Anda membuat kanopi yang sesuai dengan kebutuhan Anda, mulai dari <strong>desain</strong> hingga <strong>instalasi</strong>.",
+          "productId": 15
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda ingin membuat kanopi yang tepat untuk rumah atau bisnis Anda, hubungi kami di Mangala Living. Kami akan membantu Anda membuat kanopi yang sesuai dengan kebutuhan Anda. Dengan pengalaman dan keahlian kami, Anda dapat yakin bahwa kanopi Anda akan terlihat menarik dan nyaman.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Dengan tips dan trik yang telah kami bagikan, Anda dapat membuat kanopi yang tepat untuk rumah atau bisnis Anda di Bekasi. Jangan ragu untuk menghubungi kami di Mangala Living jika Anda memerlukan bantuan dalam membuat kanopi yang sesuai dengan kebutuhan Anda."
     }
   }
 ]
