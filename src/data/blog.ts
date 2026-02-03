@@ -4207,7 +4207,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1632657587514-2c237878895f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMGJhciUyMHRhYmxlJTIwZGVzaWdufGVufDB8MHx8fDE3NzAxMDI0Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-03 07:07",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "When it comes to furnishing your cafe, restaurant, or hotel bar, <strong>industrial bar tables</strong> are a popular choice due to their durability and sleek design. With over 25 years of experience and 1000+ projects completed, Mangala Living is the go-to supplier for industrial bar tables in bulk. In this article, we'll share tips and tricks for choosing the right industrial bar table supplier for your business.",
       "keyPoints": [
@@ -4240,6 +4240,50 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "In conclusion, choosing the right industrial bar table supplier is crucial for your business. With Mangala Living, you can trust that you're getting high-quality, durable, and customizable industrial bar tables that will elevate your cafe, restaurant, or hotel's design. Contact us today to learn more about our industrial bar table solutions and to place your bulk order."
+    }
+  },
+  {
+    "id": 314,
+    "slug": "hollow-galvanized-industrial-steel-bar-tips",
+    "title": "Hollow Steel Bar Guide",
+    "category": "Tips and Trick",
+    "excerpt": "Discover the benefits of hollow galvanized industrial steel bars for your business",
+    "image": "",
+    "date": "2026-02-03 07:09",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "As a business owner in the hospitality or office sector, you're likely no stranger to the importance of durable and versatile materials. At Mangala Living, we've worked with numerous clients across cafes, restaurants, hotels, and offices to provide customized industrial furniture solutions. In this article, we'll delve into the world of hollow galvanized industrial steel bars and explore their applications, benefits, and tips for incorporation.",
+      "keyPoints": [
+        "Hollow steel bars offer exceptional strength-to-weight ratio",
+        "Galvanized coating provides corrosion resistance",
+        "Customizable for various industrial furniture applications"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "What are Hollow Galvanized Industrial Steel Bars?",
+          "content": "Hollow steel bars are made from high-strength steel alloys and feature a hollow center, reducing weight while maintaining structural integrity. The galvanization process involves coating the steel with a layer of zinc, providing excellent corrosion resistance and durability. This makes them ideal for use in harsh environments, such as coastal areas or high-traffic spaces.",
+          "imageSearchQuery": "close-up of galvanized steel bar",
+          "image": "https://images.unsplash.com/photo-1710340553083-3836a0882614?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxjbG9zZS11cCUyMG9mJTIwZ2FsdmFuaXplZCUyMHN0ZWVsJTIwYmFyfGVufDB8MHx8fDE3NzAxMDI1Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "close-up of galvanized steel bar"
+        },
+        {
+          "heading": "Practical Applications of Hollow Steel Bars",
+          "content": "At Mangala Living, we've utilized hollow steel bars in a variety of projects, from <strong>industrial-style cafe tables</strong> to <em>custom shelving units</em> for offices. Their versatility and durability make them an excellent choice for businesses seeking to create a unique and functional space. Some popular applications include: <br> - Table bases and frames <br> - Shelving and storage units <br> - Decorative accents and features"
+        },
+        {
+          "heading": "Tips for Incorporating Hollow Steel Bars into Your Design",
+          "content": "When working with hollow steel bars, it's essential to consider factors such as <strong>load capacity</strong> and <em>material compatibility</em>. To ensure a seamless integration, we recommend consulting with our experienced team at Mangala Living. With over 25 years of experience and 1000+ projects under our belt, we can provide valuable insights and guidance on how to make the most of hollow steel bars in your design.",
+          "productId": 12
+        },
+        {
+          "heading": "Mangala Living Solutions",
+          "content": "At Mangala Living, we pride ourselves on our ability to provide customized industrial furniture solutions that meet the unique needs of our clients. From <strong>industrial-style chairs</strong> to <em>custom storage units</em>, we can help you create a space that is both functional and aesthetically pleasing. Our workshop in Bekasi is equipped to handle large-scale projects, and our team is dedicated to delivering exceptional results.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "In conclusion, hollow galvanized industrial steel bars offer a unique combination of strength, durability, and versatility, making them an excellent choice for businesses seeking to create a functional and visually appealing space. By considering the tips and applications outlined in this article, you can unlock the full potential of hollow steel bars and take your design to the next level. Contact Mangala Living today to learn more about our customized industrial furniture solutions and how we can help you achieve your design goals."
     }
   }
 ]
