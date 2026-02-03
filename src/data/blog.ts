@@ -4066,7 +4066,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1738162837335-3745e5d16c09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaSUyMG1lYmVsJTIwamVwYXJhfGVufDB8MHx8fDE3NzAxMDIyMzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-02 08:00",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Membeli mebel dari produsen Indonesia yang tepat dapat menjadi keputusan yang bijak. Dengan lebih dari 25 tahun pengalaman dan 1000 proyek yang telah diselesaikan, Mangala Living memahami pentingnya memilih produsen mebel yang berkualitas. Dalam artikel ini, kita akan membahas beberapa faktor kunci yang perlu dipertimbangkan saat memilih produsen mebel Indonesia.",
       "keyPoints": [
@@ -4111,7 +4111,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwbWFudWZhY3R1cmluZyUyMEluZG9uZXNpYXxlbnwwfDB8fHwxNzcwMTAyMzIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-03 07:04",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Selecting the right furniture manufacturer is crucial for your business success, especially when sourcing from Indonesia's renowned furniture industry. With over 25 years of experience serving cafes, restaurants, hotels, and offices, Mangala Living understands the complexities of finding reliable manufacturing partners. This comprehensive guide will walk you through the essential factors to consider when choosing an Indonesian furniture manufacturer that meets your quality, sustainability, and business requirements.",
       "keyPoints": [
@@ -4163,7 +4163,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1650167202574-d8448576292a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYmFyJTIwY2hhaXIlMjBkZXNpZ258ZW58MHwwfHx8MTc3MDEwMjM2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-03 07:05",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "When it comes to furnishing a bar or restaurant, <strong>industrial bar chairs</strong> are a popular choice due to their durability and stylish design. At Mangala Living, we have over 25 years of experience in providing high-quality industrial furniture to cafes, restaurants, and hotels. In this article, we will share some valuable tips and tricks for choosing the perfect industrial bar chair for your business.",
       "keyPoints": [
@@ -4196,6 +4196,50 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "In conclusion, industrial bar chairs are a great choice for businesses because they are durable, easy to clean, and stylish. By considering the height and ergonomics of the chair, choosing a durable and easy-to-clean material, and thinking about the overall aesthetic and style of your bar or restaurant, you can find the perfect industrial bar chair for your business. At Mangala Living, we are committed to providing high-quality industrial furniture solutions that meet the needs of businesses like yours."
+    }
+  },
+  {
+    "id": 313,
+    "slug": "industrial-bar-tables-bulk-order-supplier",
+    "title": "Industrial Bar Tables",
+    "category": "Tips and Trick",
+    "excerpt": "Discover the best industrial bar table supplier for bulk orders, perfect for cafes, restaurants, and hotels.",
+    "image": "https://images.unsplash.com/photo-1632657587514-2c237878895f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMGJhciUyMHRhYmxlJTIwZGVzaWdufGVufDB8MHx8fDE3NzAxMDI0Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-03 07:07",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "When it comes to furnishing your cafe, restaurant, or hotel bar, <strong>industrial bar tables</strong> are a popular choice due to their durability and sleek design. With over 25 years of experience and 1000+ projects completed, Mangala Living is the go-to supplier for industrial bar tables in bulk. In this article, we'll share tips and tricks for choosing the right industrial bar table supplier for your business.",
+      "keyPoints": [
+        "Durable and customizable industrial bar tables",
+        "Importance of bulk ordering for cost savings",
+        "Mangala Living's expertise in industrial furniture supply"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Why Industrial Bar Tables are a Must-Have?",
+          "content": "Industrial bar tables have become a staple in modern cafe, restaurant, and hotel design. Their <em>durable</em> and <em>low-maintenance</em> nature makes them perfect for high-traffic areas. At Mangala Living, we offer a wide range of industrial bar tables that can be customized to fit your unique business needs.",
+          "imageSearchQuery": "modern industrial bar table design",
+          "image": "https://images.unsplash.com/photo-1761426202646-424a65f37aae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBpbmR1c3RyaWFsJTIwYmFyJTIwdGFibGUlMjBkZXNpZ258ZW58MHwwfHx8MTc3MDEwMjQ3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "modern industrial bar table design"
+        },
+        {
+          "heading": "Practical Guide to Choosing the Right Supplier",
+          "content": "When selecting a supplier for your industrial bar tables, consider factors such as <strong>quality</strong>, <strong>price</strong>, and <strong>customization options</strong>. Look for a supplier with a proven track record, like Mangala Living, which has completed over 1000 projects and has a workshop in Bekasi."
+        },
+        {
+          "heading": "Mangala Living Solutions for Industrial Bar Tables",
+          "content": "At Mangala Living, we offer a range of industrial bar tables that can be customized to fit your business needs. Our <strong>Beam Industrial Bar Chair (product ID: 6)</strong> and <strong>Bar Stall Chair (product ID: 7)</strong> are popular choices among our clients. We also offer <strong>Steelframe Outdoor Bar Set (product ID: 8)</strong> for outdoor seating areas.",
+          "productId": 6
+        },
+        {
+          "heading": "Benefits of Bulk Ordering from Mangala Living",
+          "content": "By ordering industrial bar tables in bulk from Mangala Living, you can enjoy <strong>cost savings</strong> and <strong>fast delivery</strong>. Our experienced team will work with you to ensure that your order is completed to your satisfaction. Contact us today to learn more about our bulk ordering options and to receive a quote for your industrial bar table needs.",
+          "productId": 8
+        }
+      ],
+      "conclusion": "In conclusion, choosing the right industrial bar table supplier is crucial for your business. With Mangala Living, you can trust that you're getting high-quality, durable, and customizable industrial bar tables that will elevate your cafe, restaurant, or hotel's design. Contact us today to learn more about our industrial bar table solutions and to place your bulk order."
     }
   }
 ]
