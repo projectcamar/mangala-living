@@ -4829,7 +4829,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1766945206843-eac0b1aa0343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxmdXJuaXR1cmUlMjBleHBvcnQlMjBsb2dpc3RpY3MlMjBjb250YWluZXJzfGVufDB8MHx8fDE3NzAyMDAxODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 10:14",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Indonesia has established itself as one of the world's leading furniture exporters, known for its quality craftsmanship and unique designs. With over 25 years of experience in the industry, Mangala Living understands the complexities of international furniture export. This comprehensive guide will walk you through everything you need to know about successfully exporting furniture from Indonesia to markets worldwide.",
       "keyPoints": [
@@ -4870,6 +4870,52 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Exporting furniture from Indonesia to worldwide markets offers tremendous opportunities for growth and expansion. By understanding the regulatory requirements, choosing the right logistics partners, maintaining quality standards, managing costs effectively, and building strong international relationships, you can establish a successful export business. Remember that success in international trade requires patience, persistence, and continuous learning about market trends and customer preferences. With Indonesia's rich craftsmanship heritage and competitive production costs, your furniture business can thrive in the global marketplace."
+    }
+  },
+  {
+    "id": 328,
+    "slug": "industrial-furniture-manufacturer-indonesia",
+    "title": "Industrial Furniture Manufacturer From Indonesia",
+    "category": "Tips and Trick",
+    "excerpt": "Discover Indonesia's leading industrial furniture manufacturer offering premium quality furniture for cafes, restaurants, hotels, and offices since 1999.",
+    "image": "https://images.unsplash.com/photo-1668776050654-8d461997ac1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwZmFjdG9yeSUyMHdvcmtzaG9wJTIwaW5kb25lc2lhfGVufDB8MHx8fDE3NzAyMDAyNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 10:16",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "When searching for a reliable industrial furniture manufacturer from Indonesia, businesses worldwide are discovering the exceptional quality and craftsmanship that Indonesian manufacturers offer. With over 25 years of experience, Mangala Living has established itself as a premier provider of industrial furniture solutions for commercial spaces across the globe.",
+      "keyPoints": [
+        "Premium quality industrial furniture manufacturing in Indonesia",
+        "Custom design solutions for cafes, restaurants, hotels, and offices",
+        "Sustainable materials and eco-friendly production methods",
+        "Competitive pricing with international shipping capabilities",
+        "25+ years of experience serving 1000+ projects worldwide"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Why Choose Indonesian Industrial Furniture Manufacturers?",
+          "content": "Indonesian manufacturers have gained international recognition for their exceptional craftsmanship and attention to detail. The country's rich tradition of woodworking, combined with modern industrial design techniques, creates furniture that perfectly balances aesthetics and functionality. Mangala Living, based in Bekasi, leverages this heritage to produce furniture that meets international standards while maintaining competitive pricing. The strategic location in Indonesia also provides access to high-quality raw materials, including sustainably sourced wood and premium metals, ensuring durability and longevity in every piece produced.",
+          "imageSearchQuery": "indonesian furniture workshop industrial design",
+          "image": "https://images.unsplash.com/photo-1606077089119-92075161bb60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBpbmR1c3RyaWFsJTIwZGVzaWdufGVufDB8MHx8fDE3NzAyMDAyNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "indonesian furniture workshop industrial design"
+        },
+        {
+          "heading": "Quality Manufacturing Process and Standards",
+          "content": "At Mangala Living, quality control is paramount throughout the manufacturing process. From initial design concepts to final production, each piece undergoes rigorous testing and inspection. The workshop in Bekasi employs skilled craftsmen who combine traditional techniques with modern machinery to achieve precision and consistency. Every product meets international quality standards, including ISO certifications, ensuring that customers receive furniture that not only looks impressive but also withstands the demands of commercial environments. The company's commitment to excellence has resulted in partnerships with numerous high-profile establishments across Southeast Asia and beyond."
+        },
+        {
+          "heading": "Custom Design Solutions for Commercial Spaces",
+          "content": "Understanding that each commercial space has unique requirements, Mangala Living specializes in custom furniture design. Whether you're outfitting a trendy cafe, upscale restaurant, boutique hotel, or modern office, the company offers tailored solutions that align with your brand identity and functional needs. Their team of experienced designers works closely with clients to create pieces that optimize space utilization while maintaining the distinctive industrial aesthetic. Products like the Frame Loft Bookshelf and Industrial Kitchen Cabinet demonstrate the versatility of their custom design capabilities, offering both style and practical storage solutions for various commercial applications.",
+          "productId": 1
+        },
+        {
+          "heading": "Sustainable Practices and Material Selection",
+          "content": "Environmental responsibility is a core value at Mangala Living. The company prioritizes sustainable material sourcing, utilizing reclaimed wood, recycled metals, and eco-friendly finishes whenever possible. This commitment to sustainability not only reduces environmental impact but also appeals to environmentally conscious businesses and their customers. The use of durable materials ensures that furniture maintains its quality over time, reducing the need for frequent replacements and contributing to a more sustainable business model. Products like the Industrial Hanging Shelf and Hollowline Display Rack showcase how sustainable materials can be transformed into stunning, functional pieces.",
+          "productId": 13
+        }
+      ],
+      "conclusion": "Choosing an industrial furniture manufacturer from Indonesia like Mangala Living offers businesses access to exceptional quality, custom design capabilities, and sustainable practices at competitive prices. With over 25 years of experience and a proven track record of successful projects, Mangala Living continues to set the standard for industrial furniture manufacturing in the region. Whether you're furnishing a new establishment or upgrading existing spaces, partnering with an experienced Indonesian manufacturer ensures you receive furniture that combines durability, style, and functionality to enhance your commercial environment."
     }
   }
 ]
