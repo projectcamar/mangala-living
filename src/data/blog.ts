@@ -4462,7 +4462,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3NzAxOTkxMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 09:58",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Dalam menciptakan suasana nyaman di cafe, furniture menjadi salah satu elemen penting. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, memahami betapa pentingnya memilih furniture yang tepat. Berikut adalah 10 tips furniture cafe terbaik yang dapat meningkatkan kesan pengunjung.",
       "keyPoints": [
