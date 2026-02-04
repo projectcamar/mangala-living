@@ -4295,7 +4295,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "",
     "date": "2026-02-04 07:25",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Jakarta dikenal sebagai kota yang tidak pernah tidur, dan salah satu hal yang membuat kota ini tetap hidup adalah cafe-cafe yang menawarkan pengalaman kuliner yang unik. Dengan lebih dari 25 tahun pengalaman, Mangala Living telah bekerja sama dengan banyak cafe di Jakarta untuk menciptakan ruang yang nyaman dan menarik. Berikut beberapa tips untuk menemukan cafe terbaik di sekitar Jakarta.",
       "keyPoints": [
@@ -4326,6 +4326,89 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Dengan tips dan solusi yang telah disebutkan di atas, Anda dapat menemukan cafe terbaik di sekitar Jakarta yang sesuai dengan kebutuhan Anda. Mangala Living siap membantu Anda menciptakan ruang yang nyaman dan menarik dengan furniture industrial yang berkualitas."
+    }
+  },
+  {
+    "id": 316,
+    "slug": "meja-hollow-galvanis-jakarta",
+    "title": "Meja Hollow Galvanis Jakarta",
+    "category": "Tips and Trick",
+    "excerpt": "Meja hollow galvanis untuk cafe, restoran, dan kantor di Jakarta",
+    "image": "https://images.unsplash.com/photo-1763521306739-51d9f3e08e6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMHRhYmxlJTIwZGVzaWdufGVufDB8MHx8fDE3NzAxOTA4MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 07:39",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Mangala Living telah berpengalaman lebih dari 25 tahun dalam menyediakan furniture industri untuk berbagai bisnis di Jakarta, termasuk meja hollow galvanis. Meja ini sangat cocok untuk cafe, restoran, dan kantor yang ingin memiliki tampilan modern dan minimalis. Dalam artikel ini, kita akan membahas tentang kelebihan meja hollow galvanis dan tips dalam memilihnya.",
+      "keyPoints": [
+        "Kelebihan meja hollow galvanis",
+        "Tips memilih meja hollow galvanis",
+        "Desain meja hollow galvanis untuk cafe dan restoran"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Meja Hollow Galvanis Penting?",
+          "content": "Meja hollow galvanis sangat penting karena tahan lama dan mudah dibersihkan. Selain itu, meja ini juga memiliki tampilan modern dan minimalis yang sangat cocok untuk bisnis di Jakarta. Mangala Living telah menyediakan meja hollow galvanis untuk lebih dari 1000 proyek di Jakarta, sehingga kita memiliki pengalaman yang luas dalam menyediakan furniture industri yang berkualitas.",
+          "imageSearchQuery": "minimalist office desk design",
+          "image": "https://images.unsplash.com/photo-1696087225391-eb97abf5ba20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwb2ZmaWNlJTIwZGVzayUyMGRlc2lnbnxlbnwwfDB8fHwxNzcwMTkwODA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "minimalist office desk design"
+        },
+        {
+          "heading": "Tips Memilih Meja Hollow Galvanis",
+          "content": "Dalam memilih meja hollow galvanis, ada beberapa hal yang perlu diperhatikan. Pertama, pastikan meja tersebut tahan lama dan mudah dibersihkan. Kedua, perhatikan desain meja yang sesuai dengan kebutuhan bisnis Anda. Mangala Living menyediakan meja hollow galvanis dengan desain yang variatif, sehingga Anda dapat memilih meja yang sesuai dengan kebutuhan Anda."
+        },
+        {
+          "heading": "Desain Meja Hollow Galvanis untuk Cafe dan Restoran",
+          "content": "Mangala Living menyediakan meja hollow galvanis dengan desain yang variatif untuk cafe dan restoran. Meja ini dapat dibuat dengan ukuran yang sesuai dengan kebutuhan bisnis Anda. Selain itu, meja ini juga dapat dibuat dengan bahan yang tahan lama dan mudah dibersihkan, sehingga sangat cocok untuk bisnis yang sibuk.",
+          "productId": 15
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda ingin memiliki meja hollow galvanis untuk bisnis Anda, silakan hubungi Mangala Living. Kami akan membantu Anda dalam memilih meja yang sesuai dengan kebutuhan Anda. Dengan pengalaman lebih dari 25 tahun, kami percaya bahwa kami dapat membantu Anda dalam menyediakan furniture industri yang berkualitas.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Meja hollow galvanis sangat penting untuk bisnis di Jakarta, terutama untuk cafe, restoran, dan kantor. Dengan kelebihan yang tahan lama dan mudah dibersihkan, meja ini sangat cocok untuk bisnis yang sibuk. Mangala Living telah berpengalaman lebih dari 25 tahun dalam menyediakan furniture industri, sehingga kami percaya bahwa kami dapat membantu Anda dalam memilih meja hollow galvanis yang sesuai dengan kebutuhan Anda."
+    }
+  },
+  {
+    "id": 317,
+    "slug": "meja-pipeline-industri",
+    "title": "Meja Pipeline Industri",
+    "category": "Tips and Trick",
+    "excerpt": "Meja pipeline industri untuk cafe, restoran, dan kantor",
+    "image": "https://images.unsplash.com/photo-1673115810074-8944eba483f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcGlwZWxpbmUlMjB0YWJsZSUyMGRlc2lnbnxlbnwwfDB8fHwxNzcwMTkzOTgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 08:32",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Meja pipeline industri telah menjadi tren dalam desain interior komersial, terutama untuk cafe, restoran, dan kantor. Dengan keunikan dan kekuatannya, meja pipeline industri dapat menjadi pilihan yang tepat untuk menciptakan suasana yang modern dan fungsional. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, siap membantu Anda dalam menciptakan meja pipeline industri yang sesuai dengan kebutuhan Anda.",
+      "keyPoints": [
+        "Keunikan meja pipeline industri",
+        "Kekuatan dan ketahanan meja pipeline industri",
+        "Tips dalam memilih meja pipeline industri"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Meja Pipeline Industri?",
+          "content": "Meja pipeline industri memiliki keunikan yang tidak dimiliki oleh meja lainnya. Dengan desain yang minimalis dan industrial, meja pipeline industri dapat menciptakan suasana yang modern dan fungsional. Selain itu, meja pipeline industri juga memiliki kekuatan dan ketahanan yang tinggi, sehingga dapat digunakan dalam jangka waktu yang lama.",
+          "imageSearchQuery": "industrial interior design",
+          "image": "https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc3MDE5Mzk4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial interior design"
+        },
+        {
+          "heading": "Tips dalam Memilih Meja Pipeline Industri",
+          "content": "Dalam memilih meja pipeline industri, ada beberapa hal yang perlu dipertimbangkan. Pertama, perlu mempertimbangkan ukuran dan bentuk meja yang sesuai dengan kebutuhan Anda. Kedua, perlu mempertimbangkan bahan dan kualitas meja. Mangala Living menawarkan meja pipeline industri dengan bahan yang berkualitas dan tahan lama."
+        },
+        {
+          "heading": "Solusi Meja Pipeline Industri dari Mangala Living",
+          "content": "Mangala Living memiliki pengalaman lebih dari 25 tahun dalam menciptakan meja pipeline industri yang sesuai dengan kebutuhan pelanggan. Dengan workshop di Bekasi, Mangala Living dapat menciptakan meja pipeline industri dengan kualitas yang tinggi dan harga yang kompetitif. <strong>Meja Kerja Industrial (ID: 15)</strong> adalah salah satu contoh meja pipeline industri yang ditawarkan oleh Mangala Living.",
+          "productId": 15
+        }
+      ],
+      "conclusion": "Meja pipeline industri dapat menjadi pilihan yang tepat untuk menciptakan suasana yang modern dan fungsional. Dengan keunikan dan kekuatannya, meja pipeline industri dapat digunakan dalam jangka waktu yang lama. Mangala Living siap membantu Anda dalam menciptakan meja pipeline industri yang sesuai dengan kebutuhan Anda."
     }
   }
 ]
