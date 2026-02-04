@@ -4785,7 +4785,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1764083930493-a66e2eba2e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYmFyJTIwY291bnRlciUyMGRlc2lnbnxlbnwwfDB8fHwxNzcwMTk5OTcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 10:10",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "The right bar set can define your commercial space's atmosphere while enduring heavy daily use. With 25+ years crafting industrial furniture, Mangala Living shares professional insights to help hospitality businesses select bar sets that balance form and function.",
       "keyPoints": [
@@ -4818,6 +4818,58 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Investing in professional-grade bar sets pays dividends through reduced replacement costs and enhanced customer satisfaction. Contact Mangala Living's design team at +6288801146881 to create custom bar solutions tailored to your commercial space requirements. Explore our Bekasi workshop to see production quality firsthand."
+    }
+  },
+  {
+    "id": 327,
+    "slug": "export-furniture-indonesia-worldwide",
+    "title": "How to Export Furniture from Indonesia to Worldwide",
+    "category": "Tips and Trick",
+    "excerpt": "Complete guide to exporting Indonesian furniture globally, covering regulations, logistics, and best practices for success.",
+    "image": "https://images.unsplash.com/photo-1766945206843-eac0b1aa0343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxmdXJuaXR1cmUlMjBleHBvcnQlMjBsb2dpc3RpY3MlMjBjb250YWluZXJzfGVufDB8MHx8fDE3NzAyMDAxODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 10:14",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Indonesia has established itself as one of the world's leading furniture exporters, known for its quality craftsmanship and unique designs. With over 25 years of experience in the industry, Mangala Living understands the complexities of international furniture export. This comprehensive guide will walk you through everything you need to know about successfully exporting furniture from Indonesia to markets worldwide.",
+      "keyPoints": [
+        "Understanding export regulations and documentation requirements",
+        "Choosing the right logistics and shipping methods",
+        "Ensuring quality control and compliance standards",
+        "Managing costs and pricing strategies",
+        "Building strong international relationships"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Understanding Export Regulations and Documentation",
+          "content": "Exporting furniture from Indonesia requires navigating a complex web of regulations and documentation. First, you'll need to obtain the necessary export licenses and permits from the Ministry of Trade. The primary document you'll need is the Export Declaration Letter (PEB), which must be submitted to Indonesian customs.<br><br>Additional essential documents include:<br>• Commercial Invoice<br>• Packing List<br>• Certificate of Origin (Form D for ASEAN countries)<br>• Bill of Lading or Air Waybill<br>• Phytosanitary Certificate for wooden products<br>• Fumigation Certificate<br><br>Working with a reputable freight forwarder who understands Indonesian export procedures can significantly streamline this process. They can help ensure all documentation is properly completed and submitted, reducing the risk of delays or rejections at customs.",
+          "imageSearchQuery": "export documentation furniture shipping",
+          "image": "https://images.unsplash.com/photo-1685119166946-d4050647b0e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxleHBvcnQlMjBkb2N1bWVudGF0aW9uJTIwZnVybml0dXJlJTIwc2hpcHBpbmd8ZW58MHwwfHx8MTc3MDIwMDE4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "export documentation furniture shipping"
+        },
+        {
+          "heading": "Choosing the Right Shipping Methods and Logistics",
+          "content": "Selecting the appropriate shipping method is crucial for successful furniture export. The choice depends on factors like product type, volume, destination, and budget. For most furniture exports, sea freight is the most cost-effective option, especially for bulk shipments. Full Container Load (FCL) is ideal for larger orders, while Less than Container Load (LCL) works for smaller quantities.<br><br>Air freight is faster but significantly more expensive, making it suitable for high-value, lightweight items or urgent orders. When shipping internationally, consider using Incoterms (International Commercial Terms) to clearly define responsibilities between buyer and seller. Common terms for furniture export include FOB (Free On Board) and CIF (Cost, Insurance, and Freight).<br><br>Proper packaging is essential to prevent damage during transit. Use sturdy materials like corrugated cardboard, bubble wrap, and wooden crates. Label packages clearly with handling instructions and destination information.",
+          "productId": 1
+        },
+        {
+          "heading": "Ensuring Quality Control and Compliance Standards",
+          "content": "Maintaining high quality standards is essential for building a strong reputation in international markets. Implement a robust quality control process that includes material inspection, production monitoring, and final product checks. Many countries have specific requirements for imported furniture, particularly regarding safety and environmental standards.<br><br>For the European Union market, ensure compliance with REACH regulations regarding chemical substances. The United States requires adherence to CARB (California Air Resources Board) standards for formaldehyde emissions in wood products. Australia has strict quarantine requirements to prevent pest infestation.<br><br>Consider obtaining international certifications like FSC (Forest Stewardship Council) for sustainable wood sourcing or ISO 9001 for quality management systems. These certifications can give you a competitive edge and demonstrate your commitment to quality and sustainability to international buyers.",
+          "productId": 9
+        },
+        {
+          "heading": "Managing Costs and Pricing Strategies",
+          "content": "Effective cost management is crucial for maintaining profitability in the competitive global furniture market. Calculate all costs involved in the export process, including production, packaging, shipping, insurance, customs duties, and agent commissions. Don't forget to factor in currency exchange rate fluctuations, which can significantly impact your margins.<br><br>Research your target market's pricing expectations and competitive landscape. Consider offering tiered pricing based on order volume to encourage larger purchases. Be transparent about all costs with your buyers to build trust and avoid misunderstandings.<br><br>Explore government incentives and trade agreements that can reduce costs. Indonesia has several Free Trade Agreements (FTAs) with countries like Japan, Australia, and Korea, which can lower or eliminate import duties. The Indonesian government also offers export financing and insurance through institutions like LPEI (Indonesia Export Financing Agency).",
+          "productId": 5
+        },
+        {
+          "heading": "Building Strong International Relationships",
+          "content": "Success in furniture export heavily depends on building and maintaining strong relationships with international buyers, agents, and partners. Attend international trade shows like the International Furniture Fair Singapore (IFFS) or High Point Market in the USA to showcase your products and network with potential buyers.<br><br>Develop a professional website with high-quality product images and detailed specifications to attract international customers. Consider partnering with local agents or distributors who understand the market dynamics and can provide valuable insights into customer preferences and trends.<br><br>Provide excellent customer service by being responsive to inquiries, offering customization options, and handling after-sales support efficiently. Building a reputation for reliability and quality will lead to repeat business and valuable referrals in the global market.",
+          "productId": 8
+        }
+      ],
+      "conclusion": "Exporting furniture from Indonesia to worldwide markets offers tremendous opportunities for growth and expansion. By understanding the regulatory requirements, choosing the right logistics partners, maintaining quality standards, managing costs effectively, and building strong international relationships, you can establish a successful export business. Remember that success in international trade requires patience, persistence, and continuous learning about market trends and customer preferences. With Indonesia's rich craftsmanship heritage and competitive production costs, your furniture business can thrive in the global marketplace."
     }
   }
 ]
