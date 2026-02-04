@@ -4337,7 +4337,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1763521306739-51d9f3e08e6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMHRhYmxlJTIwZGVzaWdufGVufDB8MHx8fDE3NzAxOTA4MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 07:39",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Mangala Living telah berpengalaman lebih dari 25 tahun dalam menyediakan furniture industri untuk berbagai bisnis di Jakarta, termasuk meja hollow galvanis. Meja ini sangat cocok untuk cafe, restoran, dan kantor yang ingin memiliki tampilan modern dan minimalis. Dalam artikel ini, kita akan membahas tentang kelebihan meja hollow galvanis dan tips dalam memilihnya.",
       "keyPoints": [
@@ -4381,7 +4381,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1673115810074-8944eba483f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcGlwZWxpbmUlMjB0YWJsZSUyMGRlc2lnbnxlbnwwfDB8fHwxNzcwMTkzOTgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 08:32",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Meja pipeline industri telah menjadi tren dalam desain interior komersial, terutama untuk cafe, restoran, dan kantor. Dengan keunikan dan kekuatannya, meja pipeline industri dapat menjadi pilihan yang tepat untuk menciptakan suasana yang modern dan fungsional. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, siap membantu Anda dalam menciptakan meja pipeline industri yang sesuai dengan kebutuhan Anda.",
       "keyPoints": [
@@ -4409,6 +4409,98 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Meja pipeline industri dapat menjadi pilihan yang tepat untuk menciptakan suasana yang modern dan fungsional. Dengan keunikan dan kekuatannya, meja pipeline industri dapat digunakan dalam jangka waktu yang lama. Mangala Living siap membantu Anda dalam menciptakan meja pipeline industri yang sesuai dengan kebutuhan Anda."
+    }
+  },
+  {
+    "id": 318,
+    "slug": "furniture-teakwood-bekasi-tips-dan-trik",
+    "title": "Furniture Teakwood Bekasi",
+    "category": "Tips and Trick",
+    "excerpt": "Tips memilih furniture teakwood Bekasi yang tepat untuk ruang Anda",
+    "image": "",
+    "date": "2026-02-04 09:55",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Furniture teakwood Bekasi menjadi pilihan banyak orang karena kekuatan dan keindahannya. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, memahami betapa pentingnya memilih furniture yang tepat untuk ruang Anda. Berikut beberapa tips dan trik dalam memilih furniture teakwood Bekasi.",
+      "keyPoints": [
+        "Pilihlah furniture teakwood yang sesuai dengan tema ruang",
+        "Perhatikan kualitas bahan dan konstruksi",
+        "Pertimbangkan untuk custom design"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Furniture Teakwood Bekasi?",
+          "content": "Furniture teakwood Bekasi dipilih karena kekuatan dan keindahannya. <strong>Teakwood</strong> merupakan bahan yang tahan lama dan dapat bertahan dalam berbagai kondisi lingkungan. Selain itu, <em>teakwood</em> juga memiliki keindahan alami yang dapat menambah kesan elegan pada ruang Anda.",
+          "imageSearchQuery": "teakwood texture background"
+        },
+        {
+          "heading": "Tips Memilih Furniture Teakwood Bekasi",
+          "content": "Dalam memilih furniture teakwood Bekasi, ada beberapa hal yang perlu dipertimbangkan. Pertama, pilihlah furniture yang sesuai dengan tema ruang Anda. Kedua, perhatikan kualitas bahan dan konstruksi furniture. Pastikan bahwa furniture tersebut terbuat dari bahan yang kuat dan tahan lama. Ketiga, pertimbangkan untuk custom design furniture sesuai dengan kebutuhan Anda."
+        },
+        {
+          "heading": "Mangala Living Solusi Furniture Teakwood Bekasi",
+          "content": "Mangala Living menyediakan berbagai jenis furniture teakwood Bekasi yang dapat disesuaikan dengan kebutuhan Anda. Dengan pengalaman lebih dari 25 tahun dan workshop di Bekasi, kami dapat memproduksi furniture yang berkualitas dan sesuai dengan keinginan Anda. Salah satu produk kami adalah <strong>Meja Kerja Industrial</strong> yang terbuat dari teakwood dan memiliki desain yang modern dan elegan.",
+          "productId": 15
+        },
+        {
+          "heading": "Kelebihan Furniture Teakwood Bekasi dari Mangala Living",
+          "content": "Furniture teakwood Bekasi dari Mangala Living memiliki beberapa kelebihan. Pertama, furniture kami terbuat dari bahan yang kuat dan tahan lama. Kedua, kami menyediakan custom design yang sesuai dengan kebutuhan Anda. Ketiga, harga furniture kami sangat kompetitif dan sesuai dengan kualitas yang kami tawarkan.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Dengan memilih furniture teakwood Bekasi yang tepat, Anda dapat menambah kesan elegan dan nyaman pada ruang Anda. Mangala Living siap membantu Anda dalam memilih dan memproduksi furniture teakwood Bekasi yang sesuai dengan kebutuhan Anda. <br> Kunjungi workshop kami di Bekasi untuk melihat langsung koleksi furniture teakwood Bekasi kami."
+    }
+  },
+  {
+    "id": 319,
+    "slug": "furniture-cafe-terbaik",
+    "title": "Furniture Cafe Terbaik",
+    "category": "Tips and Trick",
+    "excerpt": "Tips furniture cafe terbaik untuk meningkatkan kesan pengunjung",
+    "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3NzAxOTkxMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 09:58",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Dalam menciptakan suasana nyaman di cafe, furniture menjadi salah satu elemen penting. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, memahami betapa pentingnya memilih furniture yang tepat. Berikut adalah 10 tips furniture cafe terbaik yang dapat meningkatkan kesan pengunjung.",
+      "keyPoints": [
+        "Pilih furniture yang tahan lama",
+        "Desain unik dan menarik",
+        "Furniture yang ergonomis",
+        "Pemilihan bahan yang tepat",
+        "Furniture yang mudah dibersihkan"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Furniture Penting?",
+          "content": "Furniture di cafe tidak hanya berfungsi sebagai tempat duduk, tetapi juga sebagai elemen dekorasi yang dapat meningkatkan kesan pengunjung. Dengan memilih furniture yang tepat, Anda dapat menciptakan suasana yang nyaman dan menarik, sehingga pengunjung merasa betah dan ingin kembali lagi.",
+          "imageSearchQuery": "cafe interior design ideas",
+          "image": "https://images.unsplash.com/photo-1612771377054-cbab1fbb9ad3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxjYWZlJTIwaW50ZXJpb3IlMjBkZXNpZ24lMjBpZGVhc3xlbnwwfDB8fHwxNzcwMTk5MTI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "cafe interior design ideas"
+        },
+        {
+          "heading": "Tips Memilih Furniture Cafe",
+          "content": "Dalam memilih furniture cafe, ada beberapa hal yang perlu dipertimbangkan, seperti kenyamanan, keamanan, dan estetika. Pastikan Anda memilih furniture yang tahan lama dan mudah dibersihkan, serta memiliki desain yang unik dan menarik."
+        },
+        {
+          "heading": "Produk Pilihan untuk Cafe",
+          "content": "Mangala Living menawarkan berbagai produk furniture cafe yang dapat memenuhi kebutuhan Anda, seperti <strong>Frame Loft Bookshelf (Storage)</strong> dengan ID produk 1, <strong>Balcony Bar Table (Bar Set, Outdoor)</strong> dengan ID produk 2, <strong>Lounge Set Coffee Table (Tables)</strong> dengan ID produk 3, <strong>Bench Corner Lounge (Sofa Bench)</strong> dengan ID produk 17, <strong>Industrial Daybed Frame (Daybed)</strong> dengan ID produk 16, <strong>Bandung Pipe Dining Table (Dining Set)</strong> dengan ID produk 4, <strong>Dining Set dengan 2 Chairs (Dining Set)</strong> dengan ID produk 5, <strong>Beam Industrial Bar Chair (Bar Set)</strong> dengan ID produk 6, <strong>Bar Stall Chair (Bar Set)</strong> dengan ID produk 7, dan <strong>Steelframe Outdoor Bar Set (Bar Set, Outdoor)</strong> dengan ID produk 8.",
+          "productId": 1
+        },
+        {
+          "heading": "Kelebihan Produk Mangala Living",
+          "content": "Produk furniture Mangala Living memiliki kelebihan seperti tahan lama, mudah dibersihkan, dan memiliki desain yang unik dan menarik. Dengan memilih produk Mangala Living, Anda dapat menciptakan suasana cafe yang nyaman dan menarik, sehingga pengunjung merasa betah dan ingin kembali lagi.",
+          "productId": 5
+        },
+        {
+          "heading": "Kesimpulan",
+          "content": "Dalam menciptakan suasana nyaman di cafe, furniture menjadi salah satu elemen penting. Dengan memilih furniture yang tepat, Anda dapat meningkatkan kesan pengunjung dan menciptakan suasana yang nyaman dan menarik. Mangala Living menawarkan berbagai produk furniture cafe yang dapat memenuhi kebutuhan Anda, sehingga Anda dapat menciptakan cafe yang sukses dan meningkatkan pendapatan Anda."
+        }
+      ],
+      "conclusion": "Dengan memilih furniture yang tepat, Anda dapat menciptakan suasana cafe yang nyaman dan menarik, sehingga pengunjung merasa betah dan ingin kembali lagi. Mangala Living siap membantu Anda dalam menciptakan cafe yang sukses dengan produk furniture yang berkualitas dan desain yang unik dan menarik."
     }
   }
 ]
