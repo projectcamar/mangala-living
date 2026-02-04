@@ -4420,7 +4420,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "",
     "date": "2026-02-04 09:55",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Furniture teakwood Bekasi menjadi pilihan banyak orang karena kekuatan dan keindahannya. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, memahami betapa pentingnya memilih furniture yang tepat untuk ruang Anda. Berikut beberapa tips dan trik dalam memilih furniture teakwood Bekasi.",
       "keyPoints": [
@@ -4462,7 +4462,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3NzAxOTkxMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 09:58",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Dalam menciptakan suasana nyaman di cafe, furniture menjadi salah satu elemen penting. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, memahami betapa pentingnya memilih furniture yang tepat. Berikut adalah 10 tips furniture cafe terbaik yang dapat meningkatkan kesan pengunjung.",
       "keyPoints": [
@@ -4501,6 +4501,52 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Dengan memilih furniture yang tepat, Anda dapat menciptakan suasana cafe yang nyaman dan menarik, sehingga pengunjung merasa betah dan ingin kembali lagi. Mangala Living siap membantu Anda dalam menciptakan cafe yang sukses dengan produk furniture yang berkualitas dan desain yang unik dan menarik."
+    }
+  },
+  {
+    "id": 320,
+    "slug": "mangala-supplier-furniture-cafe-produk-lengkap",
+    "title": "Supplier Furniture Cafe dengan Produk Lengkap",
+    "category": "Tips and Trick",
+    "excerpt": "Temukan supplier furniture cafe terpercaya dengan pilihan produk lengkap. Download katalog dan dapatkan penawaran harga terbaik dari Mangala.",
+    "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGZ1cm5pdHVyZSUyMGRlc2lnbnxlbnwwfDB8fHwxNzcwMTk5MjU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 09:59",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Sebagai pemilik cafe atau restoran, memilih supplier furniture yang tepat adalah kunci kesuksesan bisnis Anda. Mangala Living hadir sebagai solusi terpercaya dengan pengalaman 25+ tahun melayani kebutuhan furniture komersial di Indonesia.",
+      "keyPoints": [
+        "Pilihan produk furniture cafe lengkap dan berkualitas",
+        "Pengalaman 25+ tahun sebagai supplier furniture komersial",
+        "Katalog produk bisa diunduh melalui website",
+        "Harga kompetitif dengan kualitas premium",
+        "Layanan konsultasi desain interior cafe"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Memilih Mangala sebagai Supplier Furniture Cafe?",
+          "content": "Mangala Living bukan sekadar supplier furniture biasa. Kami adalah mitra bisnis yang memahami kebutuhan unik cafe dan restoran. Dengan workshop sendiri di Bekasi, kami menjamin kualitas produksi dan ketepatan waktu pengiriman. Pengalaman kami dalam mengerjakan 1000+ proyek furniture komersial menjadikan kami pilihan utama para pemilik cafe di Indonesia.<br><br>Furniture cafe yang kami produksi dirancang khusus untuk daya tahan tinggi dan estetika yang menarik. Material pilihan seperti besi hollow, kayu solid, dan finishing premium menjadikan setiap produk kami tahan lama meskipun digunakan secara intensif.",
+          "imageSearchQuery": "cafe interior design industrial furniture",
+          "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxjYWZlJTIwaW50ZXJpb3IlMjBkZXNpZ24lMjBpbmR1c3RyaWFsJTIwZnVybml0dXJlfGVufDB8MHx8fDE3NzAxOTkyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "cafe interior design industrial furniture"
+        },
+        {
+          "heading": "Produk Furniture Cafe Lengkap dari Mangala",
+          "content": "Kami menyediakan beragam pilihan furniture yang dibutuhkan cafe dan restoran:<br><br><strong>Meja Makan & Bar</strong><br>Koleksi meja makan industrial kami terdiri dari berbagai ukuran dan desain yang cocok untuk cafe dengan konsep minimalis hingga vintage. Meja bar kami juga dilengkapi dengan kursi bar yang ergonomis dan stylish.<br><br><strong>Kursi & Sofa</strong><br>Dari kursi makan hingga sofa lounge, semua produk kami dirancang untuk kenyamanan pelanggan Anda. Material kulit sintetis berkualitas tinggi dan rangka besi kokoh menjamin daya tahan produk.<br><br><strong>Storage & Display</strong><br>Kebutuhan penyimpanan dan display produk juga kami sediakan, mulai dari rak dinding hingga kabinet display yang mempercantik interior cafe Anda."
+        },
+        {
+          "heading": "Keunggulan Furniture Cafe Mangala",
+          "content": "Apa yang membuat furniture cafe Mangala berbeda dari yang lain? Pertama, desain industrial yang timeless dan mudah dipadukan dengan berbagai konsep interior. Kedua, material berkualitas tinggi yang tahan terhadap cuaca dan penggunaan intensif. Ketiga, harga yang kompetitif karena kami produksi sendiri tanpa perantara.<br><br>Keempat, custom design service yang memungkinkan Anda mendapatkan furniture sesuai dengan kebutuhan spesifik cafe Anda. Kelima, after sales service yang responsif untuk memastikan kepuasan Anda sebagai pelanggan.",
+          "productId": 4
+        },
+        {
+          "heading": "Download Katalog & Dapatkan Penawaran Harga",
+          "content": "Kami memahami bahwa pemilihan furniture cafe membutuhkan pertimbangan matang. Oleh karena itu, kami menyediakan katalog produk lengkap yang bisa Anda unduh melalui website kami. Katalog ini berisi detail spesifikasi, ukuran, material, dan harga dari seluruh produk furniture cafe kami.<br><br>Untuk informasi lebih lanjut atau mendapatkan penawaran harga khusus, silakan hubungi tim sales kami melalui email lifewithmangala@gmail.com. Kami siap membantu Anda mulai dari konsultasi desain hingga pengiriman produk ke lokasi cafe Anda.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Mangala Living adalah pilihan tepat sebagai supplier furniture cafe Anda. Dengan produk lengkap, kualitas terjamin, dan harga kompetitif, kami siap menjadi mitra bisnis yang membantu kesuksesan cafe Anda. Download katalog kami sekarang dan rasakan perbedaan kualitas furniture Mangala!"
     }
   }
 ]
