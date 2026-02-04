@@ -4558,7 +4558,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDE5OTQyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 10:02",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Furniture industri telah menjadi pilihan utama bagi bisnis hospitality dan komersial di Indonesia. Dengan desain yang kokoh, estetika yang menarik, dan daya tahan yang luar biasa, furniture industri Indonesia menawarkan solusi sempurna untuk kebutuhan interior bisnis Anda.",
       "keyPoints": [
@@ -4601,7 +4601,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDE5OTQyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 10:03",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Indonesia has emerged as a global hub for high-quality industrial furniture, combining traditional craftsmanship with modern design aesthetics. From reclaimed wood to steel frameworks, Indonesian manufacturers like Mangala Living have perfected the art of creating durable, stylish furniture that transforms commercial spaces.",
       "keyPoints": [
@@ -4639,6 +4639,98 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Indonesian industrial furniture represents the perfect fusion of traditional craftsmanship, modern design, and commercial practicality. With its exceptional durability, sustainable practices, and extensive customization options, it offers businesses an ideal solution for creating memorable commercial spaces. Mangala Living continues to lead the industry with over 25 years of experience, serving cafes, restaurants, hotels, and offices throughout Indonesia and beyond. Whether you're furnishing a new establishment or upgrading an existing space, Indonesian industrial furniture provides the quality, style, and value that modern businesses demand."
+    }
+  },
+  {
+    "id": 323,
+    "slug": "indonesia-industrial-furniture-complete-guide",
+    "title": "Indonesia Industrial Furniture: Complete Guide & Design Tips",
+    "category": "Tips and Trick",
+    "excerpt": "Discover Indonesia's finest industrial furniture solutions for cafes, restaurants, and offices. Expert tips for choosing durable, stylish pieces.",
+    "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDE5OTQyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 10:05",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Indonesia has emerged as a global leader in industrial furniture manufacturing, combining traditional craftsmanship with modern design aesthetics. From reclaimed wood to metal accents, Indonesian industrial furniture offers unmatched durability and style for commercial spaces.",
+      "keyPoints": [
+        "Indonesia's industrial furniture expertise spans 25+ years",
+        "Custom solutions for cafes, restaurants, hotels, and offices",
+        "Sustainable materials and eco-friendly manufacturing processes",
+        "Cost-effective pricing without compromising quality",
+        "1000+ successful projects across Southeast Asia"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Why Choose Indonesian Industrial Furniture?",
+          "content": "Indonesian industrial furniture stands out in the global market due to several key advantages. First, the country's rich tradition of woodworking and metalwork provides a solid foundation for quality craftsmanship. Second, Indonesia offers competitive pricing without sacrificing durability or aesthetic appeal. Third, local manufacturers understand the unique needs of commercial spaces, from high-traffic restaurants to cozy cafes.<br><br>The combination of skilled artisans, abundant raw materials, and modern manufacturing facilities creates furniture that can withstand heavy daily use while maintaining its industrial charm. Whether you're outfitting a new restaurant or renovating an office space, Indonesian industrial furniture delivers exceptional value and longevity.",
+          "imageSearchQuery": "Indonesian industrial furniture workshop",
+          "image": "https://images.unsplash.com/photo-1606077089119-92075161bb60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWFuJTIwaW5kdXN0cmlhbCUyMGZ1cm5pdHVyZSUyMHdvcmtzaG9wfGVufDB8MHx8fDE3NzAxOTk0MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "Indonesian industrial furniture workshop"
+        },
+        {
+          "heading": "Key Materials and Construction Techniques",
+          "content": "Indonesian industrial furniture typically features a blend of materials that create its signature look. Reclaimed teak wood provides warmth and character, while powder-coated steel frames offer structural integrity. Many pieces incorporate recycled materials, supporting sustainability initiatives without compromising quality.<br><br>Advanced construction techniques include precision welding for metal components, moisture-resistant treatments for wood surfaces, and ergonomic design principles for comfort. The furniture undergoes rigorous quality control testing to ensure it meets international standards for commercial use. This attention to detail results in pieces that maintain their appearance and functionality for years, even in demanding environments."
+        },
+        {
+          "heading": "Design Trends for Commercial Spaces",
+          "content": "Current industrial furniture trends in Indonesia emphasize versatility and customization. Modular designs allow businesses to reconfigure spaces easily, while mixed-material pieces create visual interest. Popular styles include minimalist metal frames with wooden tops, vintage-inspired pipe furniture, and contemporary pieces with clean lines.<br><br>Color palettes typically feature neutral tones like black, gray, and natural wood finishes, though bold accent pieces are gaining popularity. The focus remains on creating functional, durable furniture that enhances the customer experience while reflecting the brand's identity. Many Indonesian manufacturers offer custom design services to help businesses achieve their specific vision.",
+          "productId": 4
+        },
+        {
+          "heading": "Cost-Effectiveness and ROI",
+          "content": "Investing in Indonesian industrial furniture offers excellent return on investment for commercial spaces. The initial cost is often lower than comparable imported pieces, while the durability means fewer replacements over time. Quality construction reduces maintenance expenses and minimizes downtime for repairs.<br><br>Additionally, well-designed industrial furniture can enhance customer satisfaction and increase dwell time in restaurants and cafes. The aesthetic appeal can also justify premium pricing for services or products. When considering the total cost of ownership, Indonesian industrial furniture consistently delivers superior value compared to cheaper alternatives that require frequent replacement.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Indonesian industrial furniture represents the perfect blend of quality, affordability, and style for commercial spaces. With decades of manufacturing expertise, sustainable practices, and customizable options, it's no wonder businesses across Southeast Asia trust Indonesian manufacturers for their furniture needs. Whether you're opening a new establishment or upgrading an existing space, Indonesian industrial furniture provides the durability and aesthetic appeal to create memorable environments that keep customers coming back."
+    }
+  },
+  {
+    "id": 324,
+    "slug": "industrial-furniture-indonesia-complete-guide-design-tips",
+    "title": "Industrial Furniture Indonesia: Complete Guide & Design Tips",
+    "category": "Tips and Trick",
+    "excerpt": "Discover the ultimate guide to industrial furniture in Indonesia with expert design tips, supplier insights, and practical advice for cafes, restaurants, and offices.",
+    "image": "https://images.unsplash.com/photo-1765134948935-b28cf6d7d8e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwY2FmZSUyMHJlc3RhdXJhbnQlMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDE5OTcxNXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 10:07",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Industrial furniture has become a dominant trend in Indonesia's commercial spaces, blending raw materials with functional design. Whether you're outfitting a trendy cafe in Jakarta, a boutique restaurant in Bali, or a modern office in Surabaya, understanding the nuances of industrial furniture can transform your space. This comprehensive guide covers everything from design principles to finding the right supplier, helping you make informed decisions for your business.",
+      "keyPoints": [
+        "Understand the key characteristics of industrial furniture design",
+        "Learn how to choose the right supplier for quality and reliability",
+        "Discover practical tips for incorporating industrial elements into your space",
+        "Explore cost-effective solutions without compromising on style",
+        "Find out how to maintain and care for industrial furniture long-term"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Understanding Industrial Furniture Design",
+          "content": "Industrial furniture draws inspiration from factories, warehouses, and urban lofts, characterized by raw materials like metal, reclaimed wood, and exposed hardware. The aesthetic celebrates imperfections and functionality, creating spaces that feel authentic and lived-in. In Indonesia, this style has evolved to incorporate local craftsmanship with international trends, resulting in pieces that are both globally appealing and uniquely Indonesian. Key elements include sturdy construction, neutral color palettes, and a mix of textures that add depth to any commercial space. Understanding these fundamentals helps you select pieces that not only look great but also withstand the demands of high-traffic environments like cafes and restaurants.",
+          "imageSearchQuery": "industrial furniture design materials metal wood",
+          "image": "https://images.unsplash.com/photo-1546373632-100cc219ceed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwZGVzaWduJTIwbWF0ZXJpYWxzJTIwbWV0YWwlMjB3b29kfGVufDB8MHx8fDE3NzAxOTk3MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial furniture design materials metal wood"
+        },
+        {
+          "heading": "Choosing the Right Industrial Furniture Supplier",
+          "content": "Selecting the right supplier is crucial for ensuring quality, durability, and timely delivery of your industrial furniture. In Indonesia's competitive market, look for suppliers with proven track records, preferably those with over 20 years of experience like Mangala Living, which has completed 1000+ projects across the archipelago. A reliable supplier should offer customization options, transparent pricing, and excellent after-sales support. Visit their workshop if possible to assess their production capabilities and quality control processes. Ask about material sourcing, warranty terms, and whether they provide installation services. The right supplier becomes a long-term partner in your business success, not just a vendor for one-time purchases."
+        },
+        {
+          "heading": "Design Tips for Industrial Spaces",
+          "content": "Creating the perfect industrial look requires balancing raw elements with comfort and functionality. Start with a neutral base using materials like concrete, steel, and weathered wood, then layer in softer elements like textiles and greenery to prevent the space from feeling too harsh. In cafes, consider mixing communal tables with individual seating to accommodate different group sizes. For restaurants, use pendant lighting and exposed brick walls to create intimate dining zones. Offices can benefit from open-plan layouts with industrial-style partitions and collaborative workspaces. Remember that industrial design is about authenticity, so don't be afraid to showcase the building's original features like beams, pipes, or brick walls. The goal is to create a space that tells a story while remaining practical for daily operations.",
+          "productId": 4
+        },
+        {
+          "heading": "Cost-Effective Solutions for Industrial Furniture",
+          "content": "While industrial furniture often carries a premium price tag due to quality materials and craftsmanship, there are several ways to achieve the look without breaking your budget. Consider mixing high-end statement pieces with more affordable secondary items. For example, invest in a stunning reclaimed wood dining table and pair it with simpler metal chairs. Look for suppliers who offer package deals for bulk orders, especially if you're furnishing an entire cafe or restaurant. Another cost-saving strategy is to choose modular pieces that can be reconfigured as your space needs change. Don't overlook the value of local Indonesian materials and craftsmanship, which can provide authentic industrial aesthetics at more competitive prices than imported alternatives. Finally, prioritize durability over initial cost – well-made industrial furniture often proves more economical over time due to its longevity.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Industrial furniture represents more than just a design trend in Indonesia – it's a practical solution for businesses seeking durability, style, and authenticity. By understanding the key principles of industrial design, choosing the right supplier, and implementing smart design strategies, you can create spaces that attract customers and stand the test of time. Whether you're starting a new venture or renovating an existing space, the investment in quality industrial furniture pays dividends through enhanced customer experience and reduced replacement costs. Ready to transform your commercial space? Partner with experienced suppliers who understand both the aesthetic and practical demands of Indonesian businesses."
     }
   }
 ]
