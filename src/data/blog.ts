@@ -4881,7 +4881,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1668776050654-8d461997ac1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwZmFjdG9yeSUyMHdvcmtzaG9wJTIwaW5kb25lc2lhfGVufDB8MHx8fDE3NzAyMDAyNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 10:16",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "When searching for a reliable industrial furniture manufacturer from Indonesia, businesses worldwide are discovering the exceptional quality and craftsmanship that Indonesian manufacturers offer. With over 25 years of experience, Mangala Living has established itself as a premier provider of industrial furniture solutions for commercial spaces across the globe.",
       "keyPoints": [
@@ -4916,6 +4916,51 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Choosing an industrial furniture manufacturer from Indonesia like Mangala Living offers businesses access to exceptional quality, custom design capabilities, and sustainable practices at competitive prices. With over 25 years of experience and a proven track record of successful projects, Mangala Living continues to set the standard for industrial furniture manufacturing in the region. Whether you're furnishing a new establishment or upgrading existing spaces, partnering with an experienced Indonesian manufacturer ensures you receive furniture that combines durability, style, and functionality to enhance your commercial environment."
+    }
+  },
+  {
+    "id": 329,
+    "slug": "indonesia-custom-furniture-makers",
+    "title": "Top Indonesia Custom Furniture Makers for Your Business",
+    "category": "Tips and Trick",
+    "excerpt": "Discover Indonesia's best custom furniture makers for cafes, restaurants, hotels, and offices with 25+ years of experience.",
+    "image": "https://images.unsplash.com/photo-1623221013483-1f3cbeffdcec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY3VzdG9tJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDIwMDM0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 10:18",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Finding the right custom furniture maker in Indonesia can transform your commercial space into a stunning, functional environment. With the country's rich woodworking heritage and growing industrial design scene, Indonesian craftsmen offer unique solutions that blend traditional craftsmanship with modern aesthetics.",
+      "keyPoints": [
+        "Indonesian custom furniture makers combine traditional craftsmanship with industrial design",
+        "Local manufacturers offer cost-effective solutions without compromising quality",
+        "Custom furniture provides perfect fit for unique commercial spaces",
+        "Sustainable materials and eco-friendly practices are increasingly available",
+        "Professional Indonesian makers handle projects of all sizes with expertise"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Why Choose Indonesian Custom Furniture Makers?",
+          "content": "Indonesia has established itself as a global hub for high-quality furniture manufacturing, particularly in the custom and industrial sectors. The country's furniture makers benefit from abundant natural resources, skilled artisans, and competitive production costs. Indonesian craftsmen have mastered the art of combining traditional woodworking techniques with contemporary industrial design, creating pieces that are both durable and visually striking.<br><br>Local manufacturers understand the specific needs of commercial spaces like cafes, restaurants, hotels, and offices. They offer personalized service, from initial design consultation to final installation, ensuring that every piece fits perfectly within your space and brand identity. The proximity also means faster turnaround times and easier communication throughout the production process.",
+          "imageSearchQuery": "custom industrial furniture workshop Indonesia",
+          "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxjdXN0b20lMjBpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDIwMDM0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "custom industrial furniture workshop Indonesia"
+        },
+        {
+          "heading": "What to Look for in a Custom Furniture Maker",
+          "content": "When selecting a custom furniture maker in Indonesia, several factors determine the quality and success of your project. First, examine their portfolio to assess their design capabilities and craftsmanship quality. Look for consistency in their work and examples that match your aesthetic preferences. Experience matters significantly - established makers with 10+ years in the industry typically offer more reliable service and better problem-solving abilities.<br><br>Communication is crucial for custom projects. Choose makers who actively listen to your requirements, provide clear timelines, and offer regular updates throughout the production process. Material selection is another critical factor - reputable Indonesian makers should offer various options including reclaimed wood, steel, and sustainable materials. Finally, consider their production capacity and whether they can handle your project size while maintaining quality standards."
+        },
+        {
+          "heading": "Mangala Living: Your Trusted Indonesian Partner",
+          "content": "With over 25 years of experience serving cafes, restaurants, hotels, and offices across Indonesia, Mangala Living stands out as a premier custom furniture manufacturer. Our workshop in Bekasi combines traditional Indonesian craftsmanship with modern industrial design techniques, producing furniture that meets international standards while maintaining competitive pricing.<br><br>We've successfully completed more than 1000 projects, ranging from small cafe setups to large hotel installations. Our team of skilled artisans and designers work closely with clients to create custom pieces that perfectly match their space requirements and brand identity. Whether you need industrial dining sets, custom shelving units, or unique statement pieces, we have the expertise and capacity to deliver exceptional results on time and within budget.",
+          "productId": 1
+        },
+        {
+          "heading": "Cost Benefits of Working with Indonesian Makers",
+          "content": "One of the most significant advantages of choosing Indonesian custom furniture makers is the cost-effectiveness without compromising quality. Labor costs in Indonesia are competitive compared to Western countries, while the skill level remains exceptionally high. This price advantage becomes even more pronounced when ordering multiple pieces or complete furniture sets for commercial spaces.<br><br>Additionally, working directly with Indonesian manufacturers eliminates middlemen, reducing overall costs. Many makers offer flexible pricing structures based on order volume, material selection, and design complexity. The combination of lower production costs and direct manufacturer relationships means you can achieve premium custom furniture at a fraction of the cost you'd pay in other countries, allowing you to invest more in other aspects of your business."
+        }
+      ],
+      "conclusion": "Indonesia's custom furniture makers offer an unbeatable combination of quality, craftsmanship, and value for commercial spaces. By choosing the right partner, you can transform your cafe, restaurant, hotel, or office with unique, durable furniture that perfectly suits your needs. With experienced makers like Mangala Living, you benefit from decades of expertise, local knowledge, and competitive pricing. Take the first step toward creating your dream space by reaching out to reputable Indonesian furniture makers today."
     }
   }
 ]
