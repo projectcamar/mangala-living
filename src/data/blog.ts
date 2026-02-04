@@ -4251,7 +4251,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "",
     "date": "2026-02-03 07:09",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "As a business owner in the hospitality or office sector, you're likely no stranger to the importance of durable and versatile materials. At Mangala Living, we've worked with numerous clients across cafes, restaurants, hotels, and offices to provide customized industrial furniture solutions. In this article, we'll delve into the world of hollow galvanized industrial steel bars and explore their applications, benefits, and tips for incorporation.",
       "keyPoints": [
@@ -4284,6 +4284,48 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "In conclusion, hollow galvanized industrial steel bars offer a unique combination of strength, durability, and versatility, making them an excellent choice for businesses seeking to create a functional and visually appealing space. By considering the tips and applications outlined in this article, you can unlock the full potential of hollow steel bars and take your design to the next level. Contact Mangala Living today to learn more about our customized industrial furniture solutions and how we can help you achieve your design goals."
+    }
+  },
+  {
+    "id": 315,
+    "slug": "cafe-terbaik-sekitar-jakarta",
+    "title": "Cafe Terbaik di Sekitar Jakarta",
+    "category": "Tips and Trick",
+    "excerpt": "Temukan cafe terbaik di sekitar Jakarta untuk pengalaman kuliner yang tak terlupakan",
+    "image": "",
+    "date": "2026-02-04 07:25",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Jakarta dikenal sebagai kota yang tidak pernah tidur, dan salah satu hal yang membuat kota ini tetap hidup adalah cafe-cafe yang menawarkan pengalaman kuliner yang unik. Dengan lebih dari 25 tahun pengalaman, Mangala Living telah bekerja sama dengan banyak cafe di Jakarta untuk menciptakan ruang yang nyaman dan menarik. Berikut beberapa tips untuk menemukan cafe terbaik di sekitar Jakarta.",
+      "keyPoints": [
+        "Pilih cafe dengan desain interior yang unik",
+        "Perhatikan kualitas makanan dan minuman",
+        "Cari cafe dengan lokasi yang strategis"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Desain Interior Penting?",
+          "content": "Desain interior cafe dapat mempengaruhi mood dan pengalaman kuliner Anda. <strong>Industrial furniture</strong> dapat menjadi pilihan yang tepat untuk menciptakan suasana yang modern dan nyaman. Mangala Living menawarkan berbagai pilihan furniture industrial yang dapat disesuaikan dengan kebutuhan cafe Anda.",
+          "imageSearchQuery": "industrial cafe furniture jakarta"
+        },
+        {
+          "heading": "Tips Memilih Cafe Terbaik",
+          "content": "Untuk menemukan cafe terbaik di sekitar Jakarta, Anda perlu memperhatikan beberapa hal. <em>Pertama</em>, pilih cafe dengan desain interior yang unik dan menarik. <em>Kedua</em>, perhatikan kualitas makanan dan minuman yang disajikan. <em>Ketiga</em>, cari cafe dengan lokasi yang strategis dan mudah dijangkau."
+        },
+        {
+          "heading": "Solusi Mangala Living",
+          "content": "Mangala Living menawarkan berbagai solusi untuk cafe di sekitar Jakarta. Dengan lebih dari 1000 proyek yang telah diselesaikan, kami memiliki pengalaman yang luas dalam menciptakan ruang yang nyaman dan menarik. Kami juga memiliki <strong>workshop di Bekasi</strong> yang dapat memproduksi furniture industrial dengan kualitas yang tinggi. Salah satu produk kami yang dapat menjadi pilihan adalah <strong>Frame Loft Bookshelf (Storage)</strong> dengan productId 1.",
+          "productId": 1
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda sedang mencari cafe terbaik di sekitar Jakarta, jangan ragu untuk menghubungi Mangala Living. Kami dapat membantu Anda menciptakan ruang yang nyaman dan menarik dengan furniture industrial yang berkualitas. <br> Kunjungi website kami untuk mendapatkan informasi lebih lanjut tentang produk dan layanan kami. Produk lain seperti <strong>Bandung Pipe Dining Table (Dining Set)</strong> dengan productId 4 juga dapat menjadi pilihan.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Dengan tips dan solusi yang telah disebutkan di atas, Anda dapat menemukan cafe terbaik di sekitar Jakarta yang sesuai dengan kebutuhan Anda. Mangala Living siap membantu Anda menciptakan ruang yang nyaman dan menarik dengan furniture industrial yang berkualitas."
     }
   }
 ]
