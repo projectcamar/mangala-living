@@ -4548,6 +4548,98 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       "conclusion": "Mangala Living adalah pilihan tepat sebagai supplier furniture cafe Anda. Dengan produk lengkap, kualitas terjamin, dan harga kompetitif, kami siap menjadi mitra bisnis yang membantu kesuksesan cafe Anda. Download katalog kami sekarang dan rasakan perbedaan kualitas furniture Mangala!"
     }
+  },
+  {
+    "id": 321,
+    "slug": "furniture-industri-indonesia-panduan-lengkap",
+    "title": "Furniture Industri Indonesia: Panduan Lengkap untuk Bisnis Anda",
+    "category": "Tips and Trick",
+    "excerpt": "Temukan keunggulan furniture industri Indonesia untuk cafe, restoran, hotel, dan kantor. Kualitas premium dengan harga kompetitif.",
+    "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDE5OTQyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 10:02",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Furniture industri telah menjadi pilihan utama bagi bisnis hospitality dan komersial di Indonesia. Dengan desain yang kokoh, estetika yang menarik, dan daya tahan yang luar biasa, furniture industri Indonesia menawarkan solusi sempurna untuk kebutuhan interior bisnis Anda.",
+      "keyPoints": [
+        "Keunggulan furniture industri Indonesia dibanding impor",
+        "Tips memilih furniture industri berkualitas untuk bisnis",
+        "Cara perawatan furniture industri agar tahan lama",
+        "Rekomendasi furniture industri untuk berbagai kebutuhan"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Memilih Furniture Industri Indonesia?",
+          "content": "Furniture industri Indonesia telah mendapatkan pengakuan global berkat kualitas bahan baku yang superior dan keahlian pengrajin lokal. Kayu jati, besi cor, dan material lainnya yang tersedia di Indonesia memberikan keunggulan kompetitif yang sulit ditandingi.<br><br>Selain kualitas, faktor biaya produksi yang lebih efisien membuat furniture industri Indonesia menawarkan harga yang lebih kompetitif dibanding produk impor dengan kualitas setara. Ini menjadi keuntungan besar bagi bisnis hospitality yang membutuhkan furnitur dalam jumlah banyak namun tetap mengutamakan kualitas.<br><br>Mangala Living, dengan pengalaman lebih dari 25 tahun dan 1000+ proyek yang telah diselesaikan, menjadi bukti nyata keunggulan furniture industri Indonesia. Workshop kami di Bekasi memproduksi furniture custom yang disesuaikan dengan kebutuhan cafe, restoran, hotel, dan kantor di seluruh Indonesia.",
+          "imageSearchQuery": "Indonesian industrial furniture workshop",
+          "image": "https://images.unsplash.com/photo-1606077089119-92075161bb60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWFuJTIwaW5kdXN0cmlhbCUyMGZ1cm5pdHVyZSUyMHdvcmtzaG9wfGVufDB8MHx8fDE3NzAxOTk0MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "Indonesian industrial furniture workshop"
+        },
+        {
+          "heading": "Tips Memilih Furniture Industri untuk Bisnis Anda",
+          "content": "Memilih furniture industri yang tepat untuk bisnis Anda memerlukan pertimbangan matang. Pertama, tentukan kebutuhan ruang dan fungsi utama. Cafe membutuhkan kursi dan meja yang nyaman untuk pengunjung berlama-lama, sementara restoran fine dining memerlukan furniture yang lebih elegan namun tetap kokoh.<br><br>Kedua, perhatikan material yang digunakan. Kayu jati solid memberikan kesan mewah dan tahan lama, sementara besi cor memberikan kesan industrial yang kuat. Kombinasi keduanya sering menjadi pilihan populer untuk menciptakan keseimbangan antara estetika dan fungsionalitas.<br><br>Ketiga, pertimbangkan fleksibilitas desain. Furniture yang bisa disesuaikan dengan berbagai konsep interior akan memberikan nilai investasi jangka panjang. Mangala Living menawarkan layanan custom design yang memungkinkan Anda mendapatkan furniture sesuai spesifikasi dan branding bisnis Anda."
+        },
+        {
+          "heading": "Rekomendasi Furniture Industri untuk Setiap Kebutuhan",
+          "content": "Untuk cafe dan restoran, pilihan furniture industri yang tepat akan menciptakan suasana yang nyaman dan Instagramable. Meja makan dengan material kayu jati dan kaki besi memberikan kesan hangat namun industrial yang sedang tren. Untuk area bar, kursi tinggi dengan rangka besi dan dudukan kayu menjadi pilihan ideal.<br><br>Hotel membutuhkan furniture yang tidak hanya estetis tetapi juga sangat tahan lama. Lemari pakaian industrial dengan rak terbuka, meja kerja dengan desain minimalis, dan sofa dengan rangka besi kokoh menjadi pilihan yang tepat. Mangala Living menyediakan berbagai opsi furniture hotel yang dirancang khusus untuk kebutuhan hospitality.<br><br>Untuk kantor, furniture industri memberikan kesan profesional dan modern. Meja kerja dengan desain ergonomis, rak penyimpanan dengan akses mudah, dan kursi kerja dengan dukungan lumbar yang baik akan meningkatkan produktivitas karyawan. Kunjungi halaman produk kami untuk melihat koleksi lengkap furniture kantor industrial."
+        },
+        {
+          "heading": "Perawatan Furniture Industri agar Tahan Lama",
+          "content": "Furniture industri memang dirancang untuk tahan lama, namun perawatan yang tepat akan memperpanjang umur pakainya secara signifikan. Untuk furniture berbahan kayu, gunakan lap lembab untuk membersihkan permukaan secara rutin dan hindari paparan sinar matahari langsung yang dapat menyebabkan warna memudar.<br><br>Bagian besi pada furniture industrial perlu perawatan khusus untuk mencegah karat. Gunakan cairan anti karat secara berkala dan pastikan furniture selalu dalam kondisi kering. Untuk furniture outdoor, tambahkan lapisan pelindung khusus yang tahan cuaca.<br><br>Mangala Living memberikan panduan perawatan lengkap untuk setiap produk yang kami jual. Tim kami juga siap memberikan konsultasi gratis tentang perawatan furniture industrial agar investasi Anda tetap terjaga kualitasnya selama bertahun-tahun."
+        }
+      ],
+      "conclusion": "Furniture industri Indonesia menawarkan kombinasi sempurna antara kualitas, estetika, dan harga yang kompetitif. Dengan memilih furniture yang tepat dan melakukan perawatan yang benar, Anda akan mendapatkan investasi jangka panjang yang menguntungkan untuk bisnis Anda. Mangala Living siap menjadi partner terpercaya Anda dalam menyediakan furniture industrial custom untuk cafe, restoran, hotel, dan kantor di seluruh Indonesia."
+    }
+  },
+  {
+    "id": 322,
+    "slug": "indonesia-industrial-furniture-guide",
+    "title": "Indonesia Industrial Furniture: A Complete Guide",
+    "category": "Tips and Trick",
+    "excerpt": "Discover Indonesia's finest industrial furniture for cafes, restaurants, hotels, and offices. Expert guide to durable, stylish commercial furniture solutions.",
+    "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDE5OTQyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 10:03",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Indonesia has emerged as a global hub for high-quality industrial furniture, combining traditional craftsmanship with modern design aesthetics. From reclaimed wood to steel frameworks, Indonesian manufacturers like Mangala Living have perfected the art of creating durable, stylish furniture that transforms commercial spaces.",
+      "keyPoints": [
+        "Indonesian industrial furniture blends traditional craftsmanship with modern design",
+        "Commercial-grade durability meets aesthetic appeal for cafes, restaurants, and offices",
+        "Sustainable materials and eco-friendly production methods are standard practice",
+        "Customization options available for unique business requirements",
+        "Competitive pricing without compromising on quality"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Why Indonesian Industrial Furniture Stands Out",
+          "content": "Indonesian industrial furniture has gained international recognition for several compelling reasons. The country's rich tradition of woodworking, combined with modern manufacturing techniques, creates pieces that are both beautiful and built to last. Mangala Living, with over 25 years of experience and 1000+ completed projects, exemplifies this perfect blend of heritage and innovation.<br><br>Indonesian craftsmen work with premium materials like reclaimed teak, solid suar wood, and high-grade steel, ensuring each piece can withstand the demands of commercial environments. The unique climate and natural resources of Indonesia contribute to the exceptional quality of the wood, which is naturally resistant to pests and moisture. This makes Indonesian industrial furniture particularly suitable for both indoor and outdoor commercial applications.",
+          "imageSearchQuery": "reclaimed wood industrial furniture Indonesia",
+          "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxyZWNsYWltZWQlMjB3b29kJTIwaW5kdXN0cmlhbCUyMGZ1cm5pdHVyZSUyMEluZG9uZXNpYXxlbnwwfDB8fHwxNzcwMTk5NTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "reclaimed wood industrial furniture Indonesia"
+        },
+        {
+          "heading": "Key Features of Quality Industrial Furniture",
+          "content": "When selecting industrial furniture for your commercial space, several key features distinguish exceptional pieces from ordinary ones. The foundation of quality industrial furniture lies in its construction methods and material selection. Premium Indonesian manufacturers prioritize structural integrity through techniques like mortise and tenon joinery, reinforced steel frameworks, and precision welding.<br><br>Durability is paramount in commercial settings where furniture faces constant use. Look for features such as powder-coated steel finishes that resist corrosion, UV-protected wood treatments, and modular designs that allow for easy maintenance and repairs. The best industrial furniture also incorporates ergonomic considerations without sacrificing the raw, authentic aesthetic that defines the style. Adjustable components, comfortable seating angles, and practical storage solutions should be seamlessly integrated into the design."
+        },
+        {
+          "heading": "Perfect Applications for Industrial Furniture",
+          "content": "Industrial furniture excels in various commercial environments, each benefiting from its unique characteristics. Cafes and coffee shops particularly embrace the style's casual yet sophisticated atmosphere, with communal tables and bar seating creating inviting social spaces. Restaurants appreciate the durability and easy maintenance of industrial pieces, which can withstand spills, heavy traffic, and frequent cleaning without showing wear.<br><br>Hotels and office spaces utilize industrial furniture to create distinctive environments that reflect modern design sensibilities. The versatility of the style allows it to complement various interior themes, from minimalist Scandinavian to rustic farmhouse aesthetics. Mangala Living's extensive catalog includes specialized pieces like the Frame Loft Bookshelf for storage solutions, the Industrial Kitchen Cabinet for commercial kitchens, and the Bandung Pipe Dining Table for restaurant dining areas, each designed to meet specific commercial needs while maintaining the industrial aesthetic.",
+          "productId": 1
+        },
+        {
+          "heading": "Sustainability and Environmental Benefits",
+          "content": "One of the most significant advantages of Indonesian industrial furniture is its commitment to sustainability. Many manufacturers, including Mangala Living, prioritize the use of reclaimed and recycled materials, reducing environmental impact while creating unique pieces with character and history. Reclaimed teak and suar wood not only provide exceptional durability but also help preserve Indonesia's forests by reducing demand for newly harvested timber.<br><br>The production processes employed by leading Indonesian furniture makers often incorporate eco-friendly practices, such as water-based finishes, energy-efficient manufacturing, and waste reduction programs. This commitment to environmental responsibility appeals to businesses seeking to align their operations with sustainable practices. Additionally, the longevity of industrial furniture means fewer replacements over time, further reducing the environmental footprint of commercial spaces."
+        },
+        {
+          "heading": "Customization and Design Flexibility",
+          "content": "Indonesian industrial furniture manufacturers excel in providing customization options that allow businesses to create truly unique spaces. From size adjustments to material selections and finish choices, customization ensures that furniture perfectly fits both the physical space and the brand identity. Mangala Living's workshop in Bekasi specializes in creating bespoke pieces that meet specific client requirements while maintaining the highest quality standards.<br><br>Design flexibility extends beyond simple modifications. Experienced manufacturers can create entirely new designs based on client concepts, incorporating company colors, logos, or thematic elements into the furniture. This level of customization is particularly valuable for businesses looking to create distinctive environments that set them apart from competitors. Whether it's a unique dining table configuration for a restaurant or specialized storage solutions for a hotel, Indonesian manufacturers have the expertise to bring these visions to life."
+        }
+      ],
+      "conclusion": "Indonesian industrial furniture represents the perfect fusion of traditional craftsmanship, modern design, and commercial practicality. With its exceptional durability, sustainable practices, and extensive customization options, it offers businesses an ideal solution for creating memorable commercial spaces. Mangala Living continues to lead the industry with over 25 years of experience, serving cafes, restaurants, hotels, and offices throughout Indonesia and beyond. Whether you're furnishing a new establishment or upgrading an existing space, Indonesian industrial furniture provides the quality, style, and value that modern businesses demand."
+    }
   }
 ]
 
