@@ -4742,7 +4742,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1759691554837-be93ac47760b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwbG91bmdlJTIwZnVybml0dXJlJTIwY29tbWVyY2lhbCUyMHNwYWNlfGVufDB8MHx8fDE3NzAxOTk4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 10:09",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Lounge sets are essential elements in creating inviting commercial spaces. Whether for cafes, restaurants, or hotel lobbies, the right lounge furniture can transform the atmosphere and enhance customer experience. At Mangala Living, we specialize in industrial lounge sets that combine durability with aesthetic appeal.",
       "keyPoints": [
@@ -4774,6 +4774,50 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Investing in quality lounge sets is essential for creating memorable commercial spaces that attract and retain customers. With Mangala Living's industrial lounge furniture, you get the perfect combination of durability, style, and functionality. Our 25+ years of experience serving cafes, restaurants, hotels, and offices across Indonesia and international markets ensures that we understand the unique demands of commercial furniture. Contact us today for a free design consultation and discover how our lounge sets can transform your space into an inviting destination that customers will love to return to again and again."
+    }
+  },
+  {
+    "id": 326,
+    "slug": "bar-set-design-tips-commercial-spaces",
+    "title": "Bar Set Design Tips for Commercial Spaces",
+    "category": "Tips and Trick",
+    "excerpt": "Essential tips for choosing industrial bar sets that combine durability with style for cafes, restaurants, and hotels",
+    "image": "https://images.unsplash.com/photo-1764083930493-a66e2eba2e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYmFyJTIwY291bnRlciUyMGRlc2lnbnxlbnwwfDB8fHwxNzcwMTk5OTcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 10:10",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "The right bar set can define your commercial space's atmosphere while enduring heavy daily use. With 25+ years crafting industrial furniture, Mangala Living shares professional insights to help hospitality businesses select bar sets that balance form and function.",
+      "keyPoints": [
+        "Prioritize commercial-grade materials for longevity",
+        "Optimize ergonomics for staff efficiency",
+        "Match industrial aesthetics with your brand identity"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Why Bar Design Impacts Customer Experience",
+          "content": "Your bar area serves as both functional workspace and customer focal point. Poorly designed bar sets can lead to:<br><br>1. <strong>Staff discomfort</strong> during extended shifts<br>2. <strong>Maintenance issues</strong> from low-quality materials<br>3. <strong>Visual mismatch</strong> with your establishment's theme<br><br>Mangala Living's industrial bar sets resolve these challenges through powder-coated steel frames and reclaimed wood surfaces that withstand 12+ hours of daily operation.",
+          "imageSearchQuery": "industrial bar furniture commercial",
+          "image": "https://images.unsplash.com/photo-1700798001707-2b79876c6e06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYmFyJTIwZnVybml0dXJlJTIwY29tbWVyY2lhbHxlbnwwfDB8fHwxNzcwMTk5OTcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial bar furniture commercial"
+        },
+        {
+          "heading": "5 Essential Selection Criteria",
+          "content": "1. <strong>Load Capacity:</strong> Ensure stools support 150+ kg for safety<br>2. <strong>Footrest Design:</strong> Look for angled steel bars for ergonomic support<br>3. <strong>Weather Resistance:</strong> For outdoor use, choose marine-grade finishes<br>4. <strong>Space Optimization:</strong> Consider stackable or wall-mounted options<br>5. <strong>Customization:</strong> Match powder coat colors to your brand palette"
+        },
+        {
+          "heading": "Space-Saving Solutions",
+          "content": "Compact venues benefit from our <strong>Beam Industrial Bar Chairs</strong> featuring:<br>- Minimalist steel frames (only 40cm width)<br>- Interlocking base design<br>- 360-degree swivel function<br>These space-efficient stools are deployed in 120+ Jakarta cafes where floor space is premium.",
+          "productId": 6
+        },
+        {
+          "heading": "Outdoor-Ready Steel Sets",
+          "content": "Our <strong>Steelframe Outdoor Bar Sets</strong> withstand tropical climates with:<br>- Galvanized steel construction<br>- UV-resistant powder coating<br>- Drainage holes in tabletops<br>Featured in Bali beach clubs and Jakarta rooftop bars, these sets maintain appearance through rainy seasons.",
+          "productId": 8
+        }
+      ],
+      "conclusion": "Investing in professional-grade bar sets pays dividends through reduced replacement costs and enhanced customer satisfaction. Contact Mangala Living's design team at +6288801146881 to create custom bar solutions tailored to your commercial space requirements. Explore our Bekasi workshop to see production quality firsthand."
     }
   }
 ]
