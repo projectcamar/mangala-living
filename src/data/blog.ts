@@ -4650,7 +4650,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDE5OTQyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 10:05",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Indonesia has emerged as a global leader in industrial furniture manufacturing, combining traditional craftsmanship with modern design aesthetics. From reclaimed wood to metal accents, Indonesian industrial furniture offers unmatched durability and style for commercial spaces.",
       "keyPoints": [
@@ -4696,7 +4696,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1765134948935-b28cf6d7d8e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwY2FmZSUyMHJlc3RhdXJhbnQlMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDE5OTcxNXww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 10:07",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Industrial furniture has become a dominant trend in Indonesia's commercial spaces, blending raw materials with functional design. Whether you're outfitting a trendy cafe in Jakarta, a boutique restaurant in Bali, or a modern office in Surabaya, understanding the nuances of industrial furniture can transform your space. This comprehensive guide covers everything from design principles to finding the right supplier, helping you make informed decisions for your business.",
       "keyPoints": [
@@ -4731,6 +4731,49 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Industrial furniture represents more than just a design trend in Indonesia – it's a practical solution for businesses seeking durability, style, and authenticity. By understanding the key principles of industrial design, choosing the right supplier, and implementing smart design strategies, you can create spaces that attract customers and stand the test of time. Whether you're starting a new venture or renovating an existing space, the investment in quality industrial furniture pays dividends through enhanced customer experience and reduced replacement costs. Ready to transform your commercial space? Partner with experienced suppliers who understand both the aesthetic and practical demands of Indonesian businesses."
+    }
+  },
+  {
+    "id": 325,
+    "slug": "lounge-set-furniture-guide",
+    "title": "Lounge Set Furniture Guide",
+    "category": "Tips and Trick",
+    "excerpt": "Discover how lounge sets transform commercial spaces with industrial design. Learn about Mangala Living's premium lounge furniture solutions.",
+    "image": "https://images.unsplash.com/photo-1759691554837-be93ac47760b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwbG91bmdlJTIwZnVybml0dXJlJTIwY29tbWVyY2lhbCUyMHNwYWNlfGVufDB8MHx8fDE3NzAxOTk4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-04 10:09",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Lounge sets are essential elements in creating inviting commercial spaces. Whether for cafes, restaurants, or hotel lobbies, the right lounge furniture can transform the atmosphere and enhance customer experience. At Mangala Living, we specialize in industrial lounge sets that combine durability with aesthetic appeal.",
+      "keyPoints": [
+        "Industrial lounge sets create lasting impressions",
+        "Quality materials ensure durability in high-traffic areas",
+        "Custom designs available for unique commercial spaces",
+        "Professional consultation helps select perfect lounge solutions"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Why Lounge Sets Matter in Commercial Design",
+          "content": "Lounge sets serve as the heart of any commercial space, creating the first impression for customers and setting the tone for their experience. In cafes and restaurants, well-designed lounge areas encourage customers to stay longer, increasing revenue potential. Hotels use lounge sets to create welcoming lobbies that make guests feel at home. The industrial design trend has become particularly popular because it combines raw, authentic materials with modern comfort, creating spaces that feel both sophisticated and approachable. Mangala Living's lounge sets are specifically engineered for commercial use, featuring reinforced frames and commercial-grade upholstery that withstands daily wear while maintaining their aesthetic appeal.",
+          "imageSearchQuery": "industrial commercial lounge area design"
+        },
+        {
+          "heading": "Essential Components of a Complete Lounge Set",
+          "content": "A well-designed lounge set typically includes several key components that work together to create a cohesive seating area. The foundation is usually a comfortable sofa or sectional that provides ample seating for groups. Accent chairs add variety and additional seating options while creating visual interest. Coffee tables serve as functional centerpieces for drinks, books, and decorative items. Side tables offer convenient surfaces for individual use. Storage elements like console tables or shelving units help keep the space organized and clutter-free. At Mangala Living, we offer complete lounge set solutions that include all these elements, designed to work together seamlessly while maintaining the industrial aesthetic that our clients love."
+        },
+        {
+          "heading": "Our Premium Lounge Set Products",
+          "content": "Mangala Living offers two exceptional lounge set products that showcase our commitment to quality and design. The Lounge Set Coffee Table is a versatile piece that serves as the centerpiece of any lounge arrangement. Crafted from premium materials, it features clean lines and industrial details that complement any commercial interior. The table's sturdy construction ensures it can handle the demands of busy commercial environments while maintaining its elegant appearance. The Bench Corner Lounge combines comfort with industrial style, featuring a corner design that maximizes seating capacity while creating an intimate conversation area. Both products are available with customization options to match your specific design requirements and space constraints.",
+          "productId": 17
+        },
+        {
+          "heading": "Design Considerations for Your Lounge Space",
+          "content": "When selecting lounge furniture for your commercial space, several factors deserve careful consideration. First, evaluate your available space and traffic flow to ensure the furniture arrangement allows comfortable movement. Consider your target audience and the atmosphere you want to create - whether it's a cozy cafe vibe or a sophisticated hotel lounge. Material selection is crucial for durability and maintenance, especially in high-traffic commercial environments. Color schemes should complement your existing decor while creating the desired mood. Finally, think about flexibility and future needs - modular pieces that can be reconfigured offer long-term value. Mangala Living's design team can help you navigate these considerations and create the perfect lounge solution for your specific requirements.",
+          "productId": 3
+        }
+      ],
+      "conclusion": "Investing in quality lounge sets is essential for creating memorable commercial spaces that attract and retain customers. With Mangala Living's industrial lounge furniture, you get the perfect combination of durability, style, and functionality. Our 25+ years of experience serving cafes, restaurants, hotels, and offices across Indonesia and international markets ensures that we understand the unique demands of commercial furniture. Contact us today for a free design consultation and discover how our lounge sets can transform your space into an inviting destination that customers will love to return to again and again."
     }
   }
 ]
