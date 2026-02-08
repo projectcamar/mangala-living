@@ -4927,7 +4927,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1623221013483-1f3cbeffdcec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY3VzdG9tJTIwZnVybml0dXJlJTIwd29ya3Nob3AlMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDIwMDM0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 10:18",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Finding the right custom furniture maker in Indonesia can transform your commercial space into a stunning, functional environment. With the country's rich woodworking heritage and growing industrial design scene, Indonesian craftsmen offer unique solutions that blend traditional craftsmanship with modern aesthetics.",
       "keyPoints": [
@@ -4961,6 +4961,55 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Indonesia's custom furniture makers offer an unbeatable combination of quality, craftsmanship, and value for commercial spaces. By choosing the right partner, you can transform your cafe, restaurant, hotel, or office with unique, durable furniture that perfectly suits your needs. With experienced makers like Mangala Living, you benefit from decades of expertise, local knowledge, and competitive pricing. Take the first step toward creating your dream space by reaching out to reputable Indonesian furniture makers today."
+    }
+  },
+  {
+    "id": 330,
+    "slug": "interior-contractor-furniture-manufacturer-guide",
+    "title": "Complete Guide to Interior Contractors and Furniture Manufacturing",
+    "category": "Tips and Trick",
+    "excerpt": "Discover how professional interior contractors and furniture manufacturers transform commercial spaces into functional, stylish environments that enhance customer experience.",
+    "image": "https://images.unsplash.com/photo-1723642622358-fd75432f0cf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwaW50ZXJpb3IlMjBkZXNpZ24lMjBjb250cmFjdG9yJTIwd29ya3NwYWNlfGVufDB8MHx8fDE3NzA1NDU4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-08 10:12",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "When planning a commercial space renovation or new establishment, choosing the right interior contractor and furniture manufacturer can make the difference between a mediocre result and an exceptional transformation. At Mangala Living, we combine 25+ years of expertise in industrial furniture manufacturing with comprehensive interior contracting services to deliver complete solutions for cafes, restaurants, hotels, and offices.",
+      "keyPoints": [
+        "Professional interior contractors manage entire projects from concept to completion",
+        "Quality furniture manufacturers ensure durability and aesthetic consistency",
+        "Integrated services save time and reduce coordination challenges",
+        "Custom solutions maximize space efficiency and brand identity",
+        "Experience matters for successful commercial projects"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "What Interior Contractors Actually Do",
+          "content": "Interior contractors are more than just builders or decorators. They serve as project managers who coordinate every aspect of your commercial space transformation. From initial space planning and architectural drawings to electrical work, plumbing, flooring, and final installations, interior contractors handle the entire process. At Mangala Living, our team manages everything from demolition to the final placement of furniture, ensuring seamless execution and quality control throughout the project. We work closely with architects, engineers, and designers to bring your vision to life while adhering to building codes, safety regulations, and budget constraints.",
+          "imageSearchQuery": "commercial interior construction site workspace",
+          "image": "https://images.unsplash.com/photo-1698889670677-caac664cfce0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwaW50ZXJpb3IlMjBjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwd29ya3NwYWNlfGVufDB8MHx8fDE3NzA1NDU4OTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "commercial interior construction site workspace"
+        },
+        {
+          "heading": "The Value of Professional Furniture Manufacturing",
+          "content": "Professional furniture manufacturing goes beyond simply producing tables and chairs. It involves understanding the specific needs of commercial spaces, selecting appropriate materials for durability and maintenance, and creating pieces that align with your brand identity. Mangala Living's 25+ years of experience in industrial furniture manufacturing means we understand the unique demands of high-traffic commercial environments. Our furniture is designed to withstand daily wear while maintaining aesthetic appeal, using materials like reclaimed wood, steel, and premium finishes that balance durability with style. We produce everything in our Bekasi workshop, ensuring quality control and customization options that mass-produced furniture simply cannot match."
+        },
+        {
+          "heading": "Why Integration Matters: Contractor + Manufacturer",
+          "content": "When your interior contractor and furniture manufacturer work together under one roof, the benefits are substantial. No more communication gaps between separate companies, no more measurement discrepancies, and no more coordination headaches. Mangala Living offers this integrated approach, where our design team creates furniture specifically tailored to your space's dimensions and flow. This synergy ensures that every piece fits perfectly, electrical outlets are properly positioned, and the overall design concept remains cohesive from walls to furniture. Our clients save time, reduce costs, and achieve better results when we handle both aspects of their project."
+        },
+        {
+          "heading": "Commercial Spaces That Benefit Most",
+          "content": "While our services benefit all commercial spaces, certain establishments particularly gain from professional interior contracting and custom furniture manufacturing. Cafes and restaurants require durable furniture that can handle constant use while creating the right ambiance for dining experiences. Hotels need cohesive designs across multiple rooms and public spaces that reflect their brand identity. Offices benefit from ergonomic furniture and efficient space planning that enhances productivity. Retail spaces require displays and fixtures that showcase products effectively while maintaining brand consistency. Mangala Living has successfully completed over 1000 projects across these sectors, understanding the unique requirements of each commercial environment."
+        },
+        {
+          "heading": "Mangala Living's Complete Solution",
+          "content": "At Mangala Living, we offer a complete turnkey solution for commercial spaces. Our process begins with understanding your vision and requirements, followed by detailed space planning and 3D visualizations. Our interior contracting team then executes the construction phase while our furniture manufacturing team produces custom pieces designed specifically for your space. We handle everything from electrical and plumbing work to custom-built tables, chairs, storage solutions, and display units. All manufacturing happens in our Bekasi workshop, where we maintain strict quality control standards. With over 25 years of experience and 1000+ successful projects, we have the expertise to transform your commercial space into a functional, beautiful environment that enhances your business operations and customer experience.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Choosing the right interior contractor and furniture manufacturer is a critical decision that impacts your business's success and customer satisfaction. By selecting a company that offers integrated services like Mangala Living, you gain the advantage of seamless coordination, custom solutions, and proven expertise. Whether you're opening a new cafe, renovating a restaurant, or redesigning an office space, our team has the skills and experience to deliver exceptional results. Contact us today to discuss how we can transform your commercial space into a functional, stylish environment that reflects your brand and serves your business goals."
     }
   }
 ]
