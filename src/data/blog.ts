@@ -4972,7 +4972,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1723642622358-fd75432f0cf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwaW50ZXJpb3IlMjBkZXNpZ24lMjBjb250cmFjdG9yJTIwd29ya3NwYWNlfGVufDB8MHx8fDE3NzA1NDU4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-08 10:12",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "When planning a commercial space renovation or new establishment, choosing the right interior contractor and furniture manufacturer can make the difference between a mediocre result and an exceptional transformation. At Mangala Living, we combine 25+ years of expertise in industrial furniture manufacturing with comprehensive interior contracting services to deliver complete solutions for cafes, restaurants, hotels, and offices.",
       "keyPoints": [
@@ -5010,6 +5010,50 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Choosing the right interior contractor and furniture manufacturer is a critical decision that impacts your business's success and customer satisfaction. By selecting a company that offers integrated services like Mangala Living, you gain the advantage of seamless coordination, custom solutions, and proven expertise. Whether you're opening a new cafe, renovating a restaurant, or redesigning an office space, our team has the skills and experience to deliver exceptional results. Contact us today to discuss how we can transform your commercial space into a functional, stylish environment that reflects your brand and serves your business goals."
+    }
+  },
+  {
+    "id": 331,
+    "slug": "furniture-jepang-tips-dan-trik",
+    "title": "Furniture Jepang",
+    "category": "Tips and Trick",
+    "excerpt": "Furniture Jepang minimalis dan elegan, cocok untuk cafe, restoran, hotel, dan kantor",
+    "image": "",
+    "date": "2026-02-11 11:28",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Furniture Jepang dikenal dengan kesederhanaan dan elegannya. Dalam beberapa tahun terakhir, gaya furniture Jepang telah menjadi sangat populer di Indonesia, terutama di kalangan pemilik cafe, restoran, hotel, dan kantor. Mangala Living, dengan lebih dari 25 tahun pengalaman dalam industri furniture, akan membagikan tips dan trik untuk memilih furniture Jepang yang tepat untuk bisnis Anda.",
+      "keyPoints": [
+        "Furniture Jepang minimalis dan elegan",
+        "Cocok untuk cafe, restoran, hotel, dan kantor",
+        "Mangala Living menawarkan custom design furniture Jepang"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Furniture Jepang Begitu Populer?",
+          "content": "Furniture Jepang populer karena kesederhanaan dan elegannya. Gaya desain Jepang yang minimalis membuat ruangan terlihat lebih luas dan nyaman. Selain itu, furniture Jepang juga dikenal dengan kualitasnya yang tinggi dan tahan lama. <br> Mangala Living, sebagai salah satu produsen furniture industri terkemuka di Indonesia, telah bekerja sama dengan banyak klien untuk menciptakan furniture Jepang yang sesuai dengan kebutuhan mereka.",
+          "imageSearchQuery": "jepang minimalis interior design",
+          "image": "https://images.unsplash.com/photo-1632715421475-5703379da498?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxqZXBhbmclMjBtaW5pbWFsaXMlMjBpbnRlcmlvciUyMGRlc2lnbnxlbnwwfDB8fHwxNzcwODA5MzU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "jepang minimalis interior design"
+        },
+        {
+          "heading": "Tips Memilih Furniture Jepang yang Tepat",
+          "content": "Dalam memilih furniture Jepang, ada beberapa hal yang perlu dipertimbangkan. Pertama, pertimbangkan tema dan konsep desain ruangan Anda. Kedua, pilih furniture yang sesuai dengan kebutuhan dan fungsi ruangan. Ketiga, pertimbangkan budget dan biaya perawatan furniture. <br> Mangala Living menawarkan custom design furniture Jepang yang dapat disesuaikan dengan kebutuhan dan budget Anda."
+        },
+        {
+          "heading": "Mangala Living Solusi Furniture Jepang",
+          "content": "Mangala Living menawarkan berbagai jenis furniture Jepang, dari meja dan kursi hingga lemari dan rak. Kami juga menawarkan custom design furniture Jepang yang dapat disesuaikan dengan kebutuhan dan budget Anda. <br> Dengan lebih dari 25 tahun pengalaman dalam industri furniture, Mangala Living telah bekerja sama dengan banyak klien untuk menciptakan furniture Jepang yang sesuai dengan kebutuhan mereka. <br> Produk yang sesuai untuk furniture Jepang adalah <strong>Meja Kerja Industrial (ID: 15)</strong>.",
+          "productId": 15
+        },
+        {
+          "heading": "Keunggulan Furniture Jepang dari Mangala Living",
+          "content": "Furniture Jepang dari Mangala Living memiliki beberapa keunggulan, seperti kualitas yang tinggi, desain yang elegan, dan harga yang kompetitif. <br> Kami juga menawarkan garansi dan pelayanan purna jual yang baik. <br> Produk yang sesuai untuk furniture Jepang adalah <strong>Ladder Frame Display Stand (ID: 12)</strong>.",
+          "productId": 12
+        }
+      ],
+      "conclusion": "Furniture Jepang adalah pilihan yang tepat untuk bisnis Anda, terutama jika Anda ingin menciptakan ruangan yang minimalis dan elegan. Mangala Living, dengan lebih dari 25 tahun pengalaman dalam industri furniture, dapat membantu Anda menciptakan furniture Jepang yang sesuai dengan kebutuhan dan budget Anda."
     }
   }
 ]
