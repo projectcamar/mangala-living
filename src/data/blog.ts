@@ -5144,6 +5144,50 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       "conclusion": "Memilih kayu yang tepat untuk coffee shop Anda adalah investasi jangka panjang yang akan mempengaruhi kenyamanan pelanggan dan citra bisnis Anda. Dengan pengalaman 25+ tahun, Mangala Living siap membantu Anda memilih material kayu terbaik dan mendesain furniture custom yang sesuai dengan konsep coffee shop Anda. Hubungi kami untuk konsultasi gratis dan lihat portofolio 1000+ project kami yang telah membuktikan kualitas dan kepuasan pelanggan."
     }
+  },
+  {
+    "id": 334,
+    "slug": "pilihan-kayu-terbaik-di-indonesia",
+    "title": "Pilihan Kayu Terbaik",
+    "category": "Tips and Trick",
+    "excerpt": "Mahoni, pilihan kayu terbaik di Indonesia untuk furnitur",
+    "image": "https://images.unsplash.com/photo-1583651981196-fdbaa5f8b662?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxrYXl1JTIwbWFob25pJTIwdW50dWslMjBmdXJuaXR1cnxlbnwwfDB8fHwxNzcwODEzNDMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-11 12:36",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Dalam memilih kayu untuk furnitur, kita harus mempertimbangkan beberapa faktor seperti kekuatan, keawetan, dan estetika. Di Indonesia, terdapat banyak pilihan kayu yang berkualitas, namun mahoni masih menjadi pilihan terbaik. Berikut beberapa alasan mengapa mahoni menjadi pilihan utama untuk furnitur.",
+      "keyPoints": [
+        "Mahoni memiliki kekuatan yang tinggi",
+        "Mahoni tahan terhadap rayap dan jamur",
+        "Mahoni memiliki warna yang indah dan elegan"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Mahoni Terbaik?",
+          "content": "Mahoni memiliki kekuatan yang tinggi dan tahan terhadap rayap dan jamur, sehingga membuatnya menjadi pilihan terbaik untuk furnitur. Selain itu, mahoni juga memiliki warna yang indah dan elegan, yang dapat menambahkan kesan mewah pada ruangan.",
+          "imageSearchQuery": "kayu mahoni untuk furnitur indoor",
+          "image": "https://images.unsplash.com/photo-1769985135444-73dc416be212?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxrYXl1JTIwbWFob25pJTIwdW50dWslMjBmdXJuaXR1ciUyMGluZG9vcnxlbnwwfDB8fHwxNzcwODEzNDMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "kayu mahoni untuk furnitur indoor"
+        },
+        {
+          "heading": "Panduan Praktis dalam Memilih Kayu",
+          "content": "Dalam memilih kayu, kita harus mempertimbangkan beberapa faktor seperti kekuatan, keawetan, dan estetika. Berikut beberapa tips dalam memilih kayu: <br> - Pilih kayu yang memiliki kekuatan tinggi <br> - Pilih kayu yang tahan terhadap rayap dan jamur <br> - Pilih kayu yang memiliki warna yang indah dan elegan"
+        },
+        {
+          "heading": "Solusi Mangala Living",
+          "content": "Mangala Living menyediakan berbagai pilihan furnitur yang terbuat dari kayu mahoni. Dengan lebih dari 25 tahun pengalaman dan 1000 proyek yang telah diselesaikan, Mangala Living menjadi salah satu pilihan terbaik untuk furnitur kayu di Indonesia. <br> Kami memiliki workshop di Bekasi yang dilengkapi dengan peralatan canggih dan tenaga kerja yang ahli, sehingga dapat memastikan kualitas furnitur yang tinggi.",
+          "productId": 4
+        },
+        {
+          "heading": "Kelebihan Furnitur Kayu Mahoni",
+          "content": "Furnitur kayu mahoni memiliki beberapa kelebihan, seperti: <br> - Tahan lama <br> - Mudah dirawat <br> - Dapat menambahkan kesan mewah pada ruangan. <br> Dengan demikian, furnitur kayu mahoni menjadi pilihan terbaik untuk cafe, restaurant, hotel, dan kantor.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Dalam memilih kayu untuk furnitur, mahoni masih menjadi pilihan terbaik di Indonesia. Dengan kekuatan yang tinggi, tahan terhadap rayap dan jamur, serta warna yang indah dan elegan, mahoni membuat furnitur menjadi lebih awet dan estetis. Mangala Living menyediakan berbagai pilihan furnitur kayu mahoni yang berkualitas tinggi dan dapat memenuhi kebutuhan Anda."
+    }
   }
 ]
 
