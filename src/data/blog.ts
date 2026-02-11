@@ -5021,7 +5021,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1668776050654-8d461997ac1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwd2FyZWhvdXNlJTIwaW4lMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDgxMjk4OXww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-11 11:28",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Finding reliable wholesale furniture suppliers in Indonesia can be a challenge, especially for businesses looking to furnish their cafes, restaurants, or offices. With over 25 years of experience, Mangala Living has worked with numerous clients to provide high-quality, custom-designed furniture. In this article, we will share tips and insights on how to find the best wholesale Indonesia furniture suppliers.",
       "keyPoints": [
