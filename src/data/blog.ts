@@ -5065,7 +5065,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1475759244629-88100f36916a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxyZWNsYWltZWQlMjB3b29kJTIwY29mZmVlJTIwc2hvcCUyMGludGVyaW9yfGVufDB8MHx8fDE3NzA4MTMxMjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-11 12:31",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "When it comes to designing a coffee shop, the choice of materials can greatly impact the overall ambiance and customer experience. Wood is a popular choice for coffee shops due to its warmth and coziness. But what type of wood is commonly used in coffee shops? In this article, we'll explore the most popular wood materials used in coffee shop design.",
       "keyPoints": [
@@ -5098,6 +5098,51 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "In conclusion, the type of wood used in a coffee shop can greatly impact the overall ambiance and customer experience. At Mangala Living, we offer a range of wood materials and finishes to suit different design styles and budgets. With over 25 years of experience and 1000+ projects under our belt, we're confident that we can help you design and manufacture the perfect custom furniture for your coffee shop. Contact us today to learn more about our solutions and how we can help you bring your design vision to life."
+    }
+  },
+  {
+    "id": 333,
+    "slug": "kayu-terbaik-coffee-shop-material-tepat",
+    "title": "Kayu Terbaik untuk Coffee Shop: Pilihan Material yang Tepat",
+    "category": "Tips and Trick",
+    "excerpt": "Temukan jenis kayu terbaik untuk coffee shop yang tahan lama, estetis, dan cocok dengan konsep industrial. Panduan lengkap untuk pemilik kafe.",
+    "image": "https://images.unsplash.com/photo-1475759244629-88100f36916a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxyZWNsYWltZWQlMjB3b29kJTIwY29mZmVlJTIwc2hvcCUyMGludGVyaW9yfGVufDB8MHx8fDE3NzA4MTMxMjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-11 12:32",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Memilih jenis kayu yang tepat untuk coffee shop bukan hanya soal estetika, tetapi juga ketahanan dan kenyamanan pelanggan. Material kayu yang berkualitas akan memberikan kesan hangat, natural, dan industrial yang sangat cocok dengan suasana kafe modern.",
+      "keyPoints": [
+        "Jenis kayu solid memberikan kesan premium dan tahan lama",
+        "Kayu reclaimed menawarkan karakter unik dan ramah lingkungan",
+        "Finishing yang tepat melindungi kayu dari noda dan kelembapan",
+        "Kombinasi kayu dengan material lain menciptakan desain industrial yang menarik"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Jenis Kayu Solid untuk Coffee Shop",
+          "content": "Kayu solid menjadi pilihan utama untuk furniture coffee shop karena kekuatan dan daya tahannya. Beberapa jenis kayu yang paling cocok antara lain:<br><br><strong>Kayu Jati</strong> - Terkenal dengan ketahanan alaminya terhadap cuaca dan rayap. Tekstur seratnya yang indah memberikan kesan mewah pada meja dan kursi kafe.<br><br><strong>Kayu Mahoni</strong> - Memiliki warna merah kecoklatan yang elegan dengan serat halus. Kayu ini mudah di-finishing dan cocok untuk konsep klasik-modern.<br><br><strong>Kayu Mindi</strong> - Alternatif ekonomis dengan serat yang menarik. Kayu ini cukup kuat untuk furniture indoor dan mudah dibentuk sesuai desain.<br><br>Di Mangala Living, kami menggunakan kayu solid pilihan yang telah melalui proses pengeringan sempurna untuk memastikan furniture bebas dari retak dan melengkung.",
+          "imageSearchQuery": "industrial coffee shop wooden tables",
+          "image": "https://images.unsplash.com/photo-1728399195184-3a44c89b9947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY29mZmVlJTIwc2hvcCUyMHdvb2RlbiUyMHRhYmxlc3xlbnwwfDB8fHwxNzcwODEzMjMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial coffee shop wooden tables"
+        },
+        {
+          "heading": "Keunggulan Kayu Reclaimed untuk Konsep Industrial",
+          "content": "Kayu reclaimed atau kayu daur ulang semakin populer untuk coffee shop dengan konsep industrial. Kayu ini berasal dari bangunan tua, gudang, atau material bekas yang diolah kembali menjadi furniture berkualitas.<br><br>Kelebihan kayu reclaimed:<br>- Memiliki karakter unik dengan bekas paku, retakan, dan warna alami yang tidak bisa ditiru kayu baru<br>- Ramah lingkungan karena mengurangi penebangan pohon baru<br>- Cerita sejarah yang menambah nilai estetika ruangan<br>- Cocok dengan konsep industrial yang menonjolkan material asli<br><br>Kayu reclaimed biasanya berasal dari kayu jati, pinus, atau damar yang sudah berusia puluhan tahun. Di Mangala Living, kami mengolah kayu reclaimed dengan teknik khusus untuk memastikan kekuatan dan keamanannya tanpa menghilangkan karakter aslinya."
+        },
+        {
+          "heading": "Finishing Kayu yang Tepat untuk Coffee Shop",
+          "content": "Finishing yang tepat tidak hanya melindungi kayu dari noda dan kelembapan, tetapi juga memperkuat konsep desain coffee shop Anda. Beberapa pilihan finishing yang populer:<br><br><strong>Natural Oil Finish</strong> - Memberikan tampilan natural kayu dengan proteksi yang baik. Cocok untuk konsep minimalis dan Scandinavian.<br><br><strong>Matte Polyurethane</strong> - Memberikan proteksi maksimal tanpa kilap berlebih. Sangat cocok untuk coffee shop dengan traffic tinggi.<br><br><strong>Walnut Stain</strong> - Memberikan warna coklat tua yang elegan dan hangat. Cocok untuk konsep industrial dan vintage.<br><br>Di Mangala Living, kami menggunakan finishing berkualitas tinggi yang aman untuk makanan dan minuman, sehingga meja kopi Anda tetap terlindungi dari noda dan tumpahan.",
+          "productId": 4
+        },
+        {
+          "heading": "Kombinasi Kayu dengan Material Lain",
+          "content": "Untuk menciptakan suasana coffee shop yang menarik, kayu seringkali dikombinasikan dengan material lain. Kombinasi ini menciptakan kontras yang menarik dan memperkuat konsep industrial:<br><br><strong>Kayu dan Besi</strong> - Kombinasi klasik untuk konsep industrial. Meja dengan top kayu solid dan kaki besi memberikan kesan kokoh dan maskulin.<br><br><strong>Kayu dan Kaca</strong> - Memberikan kesan modern dan bersih. Cocok untuk coffee shop dengan konsep minimalis.<br><br><strong>Kayu dan Marmer</strong> - Kombinasi mewah untuk coffee shop kelas atas. Meja dengan top marmer dan frame kayu menciptakan kesan elegan.<br><br>Di Mangala Living, kami ahli dalam menggabungkan kayu dengan material lain untuk menciptakan furniture custom yang sesuai dengan konsep coffee shop Anda.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Memilih kayu yang tepat untuk coffee shop Anda adalah investasi jangka panjang yang akan mempengaruhi kenyamanan pelanggan dan citra bisnis Anda. Dengan pengalaman 25+ tahun, Mangala Living siap membantu Anda memilih material kayu terbaik dan mendesain furniture custom yang sesuai dengan konsep coffee shop Anda. Hubungi kami untuk konsultasi gratis dan lihat portofolio 1000+ project kami yang telah membuktikan kualitas dan kepuasan pelanggan."
     }
   }
 ]
