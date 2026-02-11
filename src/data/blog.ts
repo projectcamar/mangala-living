@@ -5154,7 +5154,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1583651981196-fdbaa5f8b662?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxrYXl1JTIwbWFob25pJTIwdW50dWslMjBmdXJuaXR1cnxlbnwwfDB8fHwxNzcwODEzNDMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-11 12:36",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Dalam memilih kayu untuk furnitur, kita harus mempertimbangkan beberapa faktor seperti kekuatan, keawetan, dan estetika. Di Indonesia, terdapat banyak pilihan kayu yang berkualitas, namun mahoni masih menjadi pilihan terbaik. Berikut beberapa alasan mengapa mahoni menjadi pilihan utama untuk furnitur.",
       "keyPoints": [
@@ -5187,6 +5187,50 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Dalam memilih kayu untuk furnitur, mahoni masih menjadi pilihan terbaik di Indonesia. Dengan kekuatan yang tinggi, tahan terhadap rayap dan jamur, serta warna yang indah dan elegan, mahoni membuat furnitur menjadi lebih awet dan estetis. Mangala Living menyediakan berbagai pilihan furnitur kayu mahoni yang berkualitas tinggi dan dapat memenuhi kebutuhan Anda."
+    }
+  },
+  {
+    "id": 335,
+    "slug": "tips-pilih-supplier-furniture-kafe-bekasi-terdekat",
+    "title": "Tips Pilih Supplier Furniture Kafe",
+    "category": "Tips and Trick",
+    "excerpt": "Cari supplier furniture kafe Bekasi terdekat? Berikut beberapa tips untuk memilih yang tepat",
+    "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGZ1cm5pdHVyZSUyMGRlc2lnbnxlbnwwfDB8fHwxNzcwODEzNDUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-11 12:37",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Membuka kafe di Bekasi memerlukan perencanaan yang matang, termasuk memilih supplier furniture yang tepat. Dengan lebih dari 25 tahun pengalaman, Mangala Living telah melayani lebih dari 1000 proyek dan memiliki workshop di Bekasi. Berikut beberapa tips untuk memilih supplier furniture kafe Bekasi terdekat.",
+      "keyPoints": [
+        "Pilih supplier dengan pengalaman yang luas",
+        "Perhatikan kualitas dan desain furniture",
+        "Pastikan supplier memiliki workshop yang dekat dengan lokasi kafe"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Memilih Supplier Lokal?",
+          "content": "Memilih supplier lokal dapat memudahkan proses pengiriman dan pemasangan furniture. Selain itu, supplier lokal juga lebih memahami kebutuhan dan selera pasar lokal. Mangala Living, sebagai supplier furniture kafe Bekasi terdekat, memiliki workshop di Bekasi dan telah melayani banyak kafe dan restoran di daerah tersebut.",
+          "imageSearchQuery": "cafe interior design bekasi",
+          "image": "https://images.unsplash.com/photo-1673835931682-513b185a37e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxjYWZlJTIwaW50ZXJpb3IlMjBkZXNpZ24lMjBiZWthc2l8ZW58MHwwfHx8MTc3MDgxMzQ1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "cafe interior design bekasi"
+        },
+        {
+          "heading": "Tips Memilih Furniture Kafe",
+          "content": "Dalam memilih furniture kafe, perlu mempertimbangkan beberapa faktor seperti kualitas, desain, dan harga. Furniture yang berkualitas dapat bertahan lama dan tidak mudah rusak, sehingga dapat menghemat biaya perawatan. Desain furniture juga perlu disesuaikan dengan konsep dan tema kafe. Mangala Living menawarkan berbagai jenis furniture kafe dengan desain yang modern dan elegan."
+        },
+        {
+          "heading": "Mangala Living Solusi Furniture Kafe",
+          "content": "Mangala Living menawarkan berbagai jenis furniture kafe, dari meja dan kursi hingga lemari dan dekorasi. Kami juga menyediakan jasa desain dan konsultasi untuk membantu Anda dalam memilih furniture yang tepat untuk kafe Anda. Dengan pengalaman lebih dari 25 tahun, kami telah melayani banyak kafe dan restoran di Bekasi dan sekitarnya.",
+          "productId": 4
+        },
+        {
+          "heading": "Kelebihan Menggunakan Jasa Mangala Living",
+          "content": "Dengan menggunakan jasa Mangala Living, Anda dapat memperoleh banyak kelebihan, seperti harga yang kompetitif, kualitas furniture yang baik, dan pelayanan yang memuaskan. Kami juga menyediakan garansi untuk semua produk yang kami jual, sehingga Anda dapat merasa aman dan nyaman dalam berbelanja.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Dalam memilih supplier furniture kafe Bekasi terdekat, perlu mempertimbangkan beberapa faktor seperti pengalaman, kualitas, dan harga. Mangala Living, sebagai supplier furniture kafe yang telah berpengalaman lebih dari 25 tahun, dapat menjadi pilihan yang tepat untuk Anda. Kami menawarkan berbagai jenis furniture kafe dengan desain yang modern dan elegan, serta pelayanan yang memuaskan."
     }
   }
 ]
