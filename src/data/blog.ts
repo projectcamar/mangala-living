@@ -5109,7 +5109,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1475759244629-88100f36916a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxyZWNsYWltZWQlMjB3b29kJTIwY29mZmVlJTIwc2hvcCUyMGludGVyaW9yfGVufDB8MHx8fDE3NzA4MTMxMjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-11 12:32",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Memilih jenis kayu yang tepat untuk coffee shop bukan hanya soal estetika, tetapi juga ketahanan dan kenyamanan pelanggan. Material kayu yang berkualitas akan memberikan kesan hangat, natural, dan industrial yang sangat cocok dengan suasana kafe modern.",
       "keyPoints": [
