@@ -5055,6 +5055,50 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       "conclusion": "Finding the right wholesale Indonesia furniture supplier can be a daunting task, but with the right guidance and expertise, businesses can make informed decisions and find a trusted partner. At Mangala Living, we are committed to providing high-quality, custom-designed furniture solutions for cafes, restaurants, and offices. Contact us today to learn more about our products and services."
     }
+  },
+  {
+    "id": 332,
+    "slug": "coffee-shop-wood-materials",
+    "title": "Coffee Shop Wood",
+    "category": "Tips and Trick",
+    "excerpt": "Discover the common wood materials used in coffee shops",
+    "image": "https://images.unsplash.com/photo-1475759244629-88100f36916a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxyZWNsYWltZWQlMjB3b29kJTIwY29mZmVlJTIwc2hvcCUyMGludGVyaW9yfGVufDB8MHx8fDE3NzA4MTMxMjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-11 12:31",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "When it comes to designing a coffee shop, the choice of materials can greatly impact the overall ambiance and customer experience. Wood is a popular choice for coffee shops due to its warmth and coziness. But what type of wood is commonly used in coffee shops? In this article, we'll explore the most popular wood materials used in coffee shop design.",
+      "keyPoints": [
+        "Reclaimed wood is a popular choice for coffee shops",
+        "Solid wood and engineered wood are also commonly used",
+        "The type of wood used can impact the overall ambiance of the coffee shop"
+      ],
+      "language": "en",
+      "sections": [
+        {
+          "heading": "Why Wood is a Popular Choice",
+          "content": "Wood is a popular choice for coffee shops due to its natural warmth and coziness. It can add a touch of sophistication and elegance to the overall design. <strong>Reclaimed wood</strong>, in particular, is a popular choice due to its unique character and history. At Mangala Living, we've worked with numerous coffee shops to design and manufacture custom wood furniture that complements their brand and style.",
+          "imageSearchQuery": "coffee shop with reclaimed wood decor",
+          "image": "https://images.unsplash.com/photo-1764175760775-a6ff4bf54a3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwd2l0aCUyMHJlY2xhaW1lZCUyMHdvb2QlMjBkZWNvcnxlbnwwfDB8fHwxNzcwODEzMTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "coffee shop with reclaimed wood decor"
+        },
+        {
+          "heading": "Types of Wood Used in Coffee Shops",
+          "content": "There are several types of wood that are commonly used in coffee shops, including <em>solid wood</em> and <em>engineered wood</em>. Solid wood is a popular choice due to its durability and natural beauty, while engineered wood is a more cost-effective option that can still provide a similar look and feel. At Mangala Living, we offer a range of wood materials and finishes to suit different design styles and budgets."
+        },
+        {
+          "heading": "Mangala Living Solutions",
+          "content": "At Mangala Living, we have over 25 years of experience in designing and manufacturing custom furniture for coffee shops, restaurants, hotels, and offices. Our workshop in Bekasi is equipped with state-of-the-art equipment and staffed by skilled craftsmen who can bring your design vision to life. We offer a range of wood materials and finishes, including reclaimed wood, solid wood, and engineered wood. Our <strong>Dining Set with 2 Chairs (productId: 5)</strong> is a popular choice for coffee shops due to its durability and comfort.",
+          "productId": 5
+        },
+        {
+          "heading": "Practical Tips for Choosing the Right Wood",
+          "content": "When choosing the right wood for your coffee shop, there are several factors to consider, including durability, maintenance, and cost. <strong>Reclaimed wood</strong> can be a great choice due to its unique character and history, but it can also be more expensive than other options. <em>Solid wood</em> is a popular choice due to its durability and natural beauty, but it can be more prone to scratches and stains. At Mangala Living, our team of experts can help you choose the right wood material and finish for your coffee shop design.",
+          "productId": 12
+        }
+      ],
+      "conclusion": "In conclusion, the type of wood used in a coffee shop can greatly impact the overall ambiance and customer experience. At Mangala Living, we offer a range of wood materials and finishes to suit different design styles and budgets. With over 25 years of experience and 1000+ projects under our belt, we're confident that we can help you design and manufacture the perfect custom furniture for your coffee shop. Contact us today to learn more about our solutions and how we can help you bring your design vision to life."
+    }
   }
 ]
 
