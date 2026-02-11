@@ -5014,46 +5014,46 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     "id": 331,
-    "slug": "furniture-jepang-tips-dan-trik",
-    "title": "Furniture Jepang",
+    "slug": "wholesale-indonesia-furniture-suppliers",
+    "title": "Wholesale Indonesia Furniture",
     "category": "Tips and Trick",
-    "excerpt": "Furniture Jepang minimalis dan elegan, cocok untuk cafe, restoran, hotel, dan kantor",
-    "image": "",
+    "excerpt": "Discover top wholesale Indonesia furniture suppliers for cafes, restaurants, and offices",
+    "image": "https://images.unsplash.com/photo-1668776050654-8d461997ac1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwd2FyZWhvdXNlJTIwaW4lMjBJbmRvbmVzaWF8ZW58MHwwfHx8MTc3MDgxMjk4OXww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-11 11:28",
     "author": "Helmi Ramdan",
     "status": "draft",
     "customContent": {
-      "introduction": "Furniture Jepang dikenal dengan kesederhanaan dan elegannya. Dalam beberapa tahun terakhir, gaya furniture Jepang telah menjadi sangat populer di Indonesia, terutama di kalangan pemilik cafe, restoran, hotel, dan kantor. Mangala Living, dengan lebih dari 25 tahun pengalaman dalam industri furniture, akan membagikan tips dan trik untuk memilih furniture Jepang yang tepat untuk bisnis Anda.",
+      "introduction": "Finding reliable wholesale furniture suppliers in Indonesia can be a challenge, especially for businesses looking to furnish their cafes, restaurants, or offices. With over 25 years of experience, Mangala Living has worked with numerous clients to provide high-quality, custom-designed furniture. In this article, we will share tips and insights on how to find the best wholesale Indonesia furniture suppliers.",
       "keyPoints": [
-        "Furniture Jepang minimalis dan elegan",
-        "Cocok untuk cafe, restoran, hotel, dan kantor",
-        "Mangala Living menawarkan custom design furniture Jepang"
+        "Research and shortlist potential suppliers",
+        "Evaluate product quality and customization options",
+        "Consider pricing, lead time, and customer service"
       ],
-      "language": "id",
+      "language": "en",
       "sections": [
         {
-          "heading": "Mengapa Furniture Jepang Begitu Populer?",
-          "content": "Furniture Jepang populer karena kesederhanaan dan elegannya. Gaya desain Jepang yang minimalis membuat ruangan terlihat lebih luas dan nyaman. Selain itu, furniture Jepang juga dikenal dengan kualitasnya yang tinggi dan tahan lama. <br> Mangala Living, sebagai salah satu produsen furniture industri terkemuka di Indonesia, telah bekerja sama dengan banyak klien untuk menciptakan furniture Jepang yang sesuai dengan kebutuhan mereka.",
-          "imageSearchQuery": "jepang minimalis interior design",
-          "image": "https://images.unsplash.com/photo-1632715421475-5703379da498?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxqZXBhbmclMjBtaW5pbWFsaXMlMjBpbnRlcmlvciUyMGRlc2lnbnxlbnwwfDB8fHwxNzcwODA5MzU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-          "imageAlt": "jepang minimalis interior design"
+          "heading": "Why Choose Wholesale Indonesia Furniture Suppliers?",
+          "content": "Indonesia is known for its rich craftsmanship and affordable labor costs, making it an ideal destination for wholesale furniture sourcing. By choosing wholesale Indonesia furniture suppliers, businesses can benefit from <strong>competitive pricing</strong>, <em>high-quality products</em>, and <strong>customization options</strong>. Additionally, Indonesia's strategic location allows for efficient shipping and logistics, reducing lead times and costs.",
+          "imageSearchQuery": "industrial furniture manufacturing in Indonesia",
+          "image": "https://images.unsplash.com/photo-1617448570684-9b7d26138f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwbWFudWZhY3R1cmluZyUyMGluJTIwSW5kb25lc2lhfGVufDB8MHx8fDE3NzA4MTI5ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial furniture manufacturing in Indonesia"
         },
         {
-          "heading": "Tips Memilih Furniture Jepang yang Tepat",
-          "content": "Dalam memilih furniture Jepang, ada beberapa hal yang perlu dipertimbangkan. Pertama, pertimbangkan tema dan konsep desain ruangan Anda. Kedua, pilih furniture yang sesuai dengan kebutuhan dan fungsi ruangan. Ketiga, pertimbangkan budget dan biaya perawatan furniture. <br> Mangala Living menawarkan custom design furniture Jepang yang dapat disesuaikan dengan kebutuhan dan budget Anda."
+          "heading": "Practical Guide to Finding Wholesale Indonesia Furniture Suppliers",
+          "content": "To find reliable wholesale Indonesia furniture suppliers, businesses should <strong>research and shortlist potential suppliers</strong>, <em>evaluate product quality and customization options</em>, and <strong>consider pricing, lead time, and customer service</strong>. It's also essential to <strong>visit the supplier's workshop or factory</strong> to assess their capabilities and quality control processes. Mangala Living, with its workshop in Bekasi, offers a unique opportunity for clients to experience our manufacturing process firsthand."
         },
         {
-          "heading": "Mangala Living Solusi Furniture Jepang",
-          "content": "Mangala Living menawarkan berbagai jenis furniture Jepang, dari meja dan kursi hingga lemari dan rak. Kami juga menawarkan custom design furniture Jepang yang dapat disesuaikan dengan kebutuhan dan budget Anda. <br> Dengan lebih dari 25 tahun pengalaman dalam industri furniture, Mangala Living telah bekerja sama dengan banyak klien untuk menciptakan furniture Jepang yang sesuai dengan kebutuhan mereka. <br> Produk yang sesuai untuk furniture Jepang adalah <strong>Meja Kerja Industrial (ID: 15)</strong>.",
-          "productId": 15
+          "heading": "Mangala Living Solutions",
+          "content": "At Mangala Living, we understand the importance of providing high-quality, custom-designed furniture for cafes, restaurants, and offices. Our team of experts works closely with clients to understand their unique needs and preferences, offering <strong>customization options</strong> and <em>competitive pricing</em>. With over 1000 projects completed, we have established ourselves as a trusted wholesale Indonesia furniture supplier. Our product range includes <strong>industrial tables</strong>, such as the <strong>Bandung Pipe Dining Table (product ID: 4)</strong>, and <strong>storage solutions</strong>, like the <strong>Industrial Kitchen Cabinet (product ID: 9)</strong>.",
+          "productId": 4
         },
         {
-          "heading": "Keunggulan Furniture Jepang dari Mangala Living",
-          "content": "Furniture Jepang dari Mangala Living memiliki beberapa keunggulan, seperti kualitas yang tinggi, desain yang elegan, dan harga yang kompetitif. <br> Kami juga menawarkan garansi dan pelayanan purna jual yang baik. <br> Produk yang sesuai untuk furniture Jepang adalah <strong>Ladder Frame Display Stand (ID: 12)</strong>.",
-          "productId": 12
+          "heading": "Next Steps",
+          "content": "If you're looking for a reliable wholesale Indonesia furniture supplier, consider partnering with Mangala Living. Our team is dedicated to providing exceptional customer service, <strong>competitive pricing</strong>, and <em>high-quality products</em>. Contact us today to discuss your furniture needs and learn more about our customization options. With our expertise and experience, you can trust that your business is in good hands.",
+          "productId": 9
         }
       ],
-      "conclusion": "Furniture Jepang adalah pilihan yang tepat untuk bisnis Anda, terutama jika Anda ingin menciptakan ruangan yang minimalis dan elegan. Mangala Living, dengan lebih dari 25 tahun pengalaman dalam industri furniture, dapat membantu Anda menciptakan furniture Jepang yang sesuai dengan kebutuhan dan budget Anda."
+      "conclusion": "Finding the right wholesale Indonesia furniture supplier can be a daunting task, but with the right guidance and expertise, businesses can make informed decisions and find a trusted partner. At Mangala Living, we are committed to providing high-quality, custom-designed furniture solutions for cafes, restaurants, and offices. Contact us today to learn more about our products and services."
     }
   }
 ]
