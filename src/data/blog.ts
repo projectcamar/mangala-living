@@ -5198,7 +5198,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGZ1cm5pdHVyZSUyMGRlc2lnbnxlbnwwfDB8fHwxNzcwODEzNDUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-11 12:37",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Membuka kafe di Bekasi memerlukan perencanaan yang matang, termasuk memilih supplier furniture yang tepat. Dengan lebih dari 25 tahun pengalaman, Mangala Living telah melayani lebih dari 1000 proyek dan memiliki workshop di Bekasi. Berikut beberapa tips untuk memilih supplier furniture kafe Bekasi terdekat.",
       "keyPoints": [
@@ -5231,6 +5231,50 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Dalam memilih supplier furniture kafe Bekasi terdekat, perlu mempertimbangkan beberapa faktor seperti pengalaman, kualitas, dan harga. Mangala Living, sebagai supplier furniture kafe yang telah berpengalaman lebih dari 25 tahun, dapat menjadi pilihan yang tepat untuk Anda. Kami menawarkan berbagai jenis furniture kafe dengan desain yang modern dan elegan, serta pelayanan yang memuaskan."
+    }
+  },
+  {
+    "id": 336,
+    "slug": "panduan-memanjat-sosial",
+    "title": "Memanjat Sosial",
+    "category": "Tips and Trick",
+    "excerpt": "Panduan memanjat sosial untuk meningkatkan popularitas",
+    "image": "https://images.unsplash.com/photo-1666618207644-4de0226a3f85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwb2ZmaWNlJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc3MDkwMzQxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-12 13:36",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Dalam dunia yang semakin kompetitif, memanjat sosial adalah salah satu cara untuk meningkatkan popularitas dan meningkatkan kesadaran akan merek. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, menyediakan panduan memanjat sosial untuk membantu Anda mencapai tujuan. <br> Dalam artikel ini, kita akan membahas beberapa tips dan trik untuk memanjat sosial dengan efektif.",
+      "keyPoints": [
+        "Mengenal audiens target",
+        "Membuat konten yang menarik",
+        "Menggunakan media sosial dengan efektif"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengenal Audiens Target",
+          "content": "Mengenal audiens target adalah langkah pertama untuk memanjat sosial dengan efektif. Anda perlu memahami siapa mereka, apa yang mereka sukai, dan apa yang mereka butuhkan. Dengan demikian, Anda dapat membuat konten yang relevan dan menarik bagi mereka. <br> Mangala Living telah bekerja dengan berbagai klien, dari cafe hingga hotel, dan kami memahami betapa pentingnya memahami audiens target.",
+          "imageSearchQuery": "industrial cafe interior design",
+          "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3NzA5MDM0MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial cafe interior design"
+        },
+        {
+          "heading": "Membuat Konten yang Menarik",
+          "content": "Membuat konten yang menarik adalah langkah kedua untuk memanjat sosial. Anda perlu membuat konten yang unik, kreatif, dan relevan dengan audiens target. Dengan demikian, Anda dapat meningkatkan kesadaran akan merek dan meningkatkan popularitas. <br> Mangala Living telah membuat berbagai konten, dari desain interior hingga furnitur, dan kami memahami betapa pentingnya membuat konten yang menarik."
+        },
+        {
+          "heading": "Menggunakan Media Sosial dengan Efektif",
+          "content": "Menggunakan media sosial dengan efektif adalah langkah ketiga untuk memanjat sosial. Anda perlu memilih media sosial yang tepat, membuat konten yang relevan, dan berinteraksi dengan audiens target. Dengan demikian, Anda dapat meningkatkan kesadaran akan merek dan meningkatkan popularitas. <br> Mangala Living telah menggunakan media sosial untuk mempromosikan produk dan layanan kami, dan kami memahami betapa pentingnya menggunakan media sosial dengan efektif.",
+          "productId": 5
+        },
+        {
+          "heading": "Solusi Mangala Living",
+          "content": "Mangala Living menyediakan solusi untuk membantu Anda memanjat sosial. Kami memiliki tim desain yang kreatif, tim pemasaran yang efektif, dan tim produksi yang berkualitas. Dengan demikian, Anda dapat meningkatkan popularitas dan meningkatkan kesadaran akan merek. <br> Kami juga memiliki workshop di Bekasi yang dapat membantu Anda membuat konten yang menarik dan relevan.",
+          "productId": 12
+        }
+      ],
+      "conclusion": "Dalam kesimpulan, memanjat sosial adalah salah satu cara untuk meningkatkan popularitas dan meningkatkan kesadaran akan merek. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, menyediakan panduan memanjat sosial untuk membantu Anda mencapai tujuan. <br> Dengan mengenal audiens target, membuat konten yang menarik, dan menggunakan media sosial dengan efektif, Anda dapat meningkatkan kesadaran akan merek dan meningkatkan popularitas. <strong>Mangala Living</strong> siap membantu Anda memanjat sosial dengan efektif."
     }
   }
 ]
