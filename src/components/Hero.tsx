@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Hero.css'
-import heroImage from '../assets/main-hero-image.webp'
+const heroImage = '/images/products/main-hero-image.webp'
 
 interface HeroProps {
   isIndonesian?: boolean

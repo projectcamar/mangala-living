@@ -5,8 +5,8 @@ import './Footer.css'
 import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import { getLinkWithLanguage } from '../utils/languageManager'
 import { getAllBlogPosts } from '../data/blog'
-import logoILW from '../assets/LOGO-ILW-800.png'
-import logoSVLK from '../assets/SVLK-LOGO-INDONESIA.png'
+const logoILW = '/images/LOGO-ILW-800.png'
+const logoSVLK = '/images/SVLK-LOGO-INDONESIA.png'
 
 interface FooterProps {
   isIndonesian?: boolean
@@ -35,65 +35,65 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
       })
 
       if (response.ok) {
-        setMessage({ 
-          type: 'success', 
-          text: language === 'id' 
-            ? 'Terima kasih telah berlangganan!' 
+        setMessage({
+          type: 'success',
+          text: language === 'id'
+            ? 'Terima kasih telah berlangganan!'
             : language === 'ar'
-            ? 'شكراً لاشتراكك!'
-            : language === 'zh'
-            ? '感谢您的订阅！'
-            : language === 'ja'
-            ? 'ご登録ありがとうございます！'
-            : language === 'es'
-            ? '¡Gracias por suscribirte!'
-            : language === 'fr'
-            ? 'Merci de vous être abonné !'
-            : language === 'ko'
-            ? '구독해 주셔서 감사합니다!'
-            : 'Thank you for subscribing!' 
+              ? 'شكراً لاشتراكك!'
+              : language === 'zh'
+                ? '感谢您的订阅！'
+                : language === 'ja'
+                  ? 'ご登録ありがとうございます！'
+                  : language === 'es'
+                    ? '¡Gracias por suscribirte!'
+                    : language === 'fr'
+                      ? 'Merci de vous être abonné !'
+                      : language === 'ko'
+                        ? '구독해 주셔서 감사합니다!'
+                        : 'Thank you for subscribing!'
         })
         setFirstName('')
         setEmail('')
       } else {
-        setMessage({ 
-          type: 'error', 
-          text: language === 'id' 
-            ? 'Gagal berlangganan. Silakan coba lagi.' 
+        setMessage({
+          type: 'error',
+          text: language === 'id'
+            ? 'Gagal berlangganan. Silakan coba lagi.'
             : language === 'ar'
-            ? 'فشل الاشتراك. يرجى المحاولة مرة أخرى.'
-            : language === 'zh'
-            ? '订阅失败。请重试。'
-            : language === 'ja'
-            ? '登録に失敗しました。もう一度お試しください。'
-            : language === 'es'
-            ? 'Suscripción fallida. Por favor, inténtalo de nuevo.'
-            : language === 'fr'
-            ? 'Échec de l\'abonnement. Veuillez réessayer.'
-            : language === 'ko'
-            ? '구독에 실패했습니다. 다시 시도해주세요.'
-            : 'Subscription failed. Please try again.' 
+              ? 'فشل الاشتراك. يرجى المحاولة مرة أخرى.'
+              : language === 'zh'
+                ? '订阅失败。请重试。'
+                : language === 'ja'
+                  ? '登録に失敗しました。もう一度お試しください。'
+                  : language === 'es'
+                    ? 'Suscripción fallida. Por favor, inténtalo de nuevo.'
+                    : language === 'fr'
+                      ? 'Échec de l\'abonnement. Veuillez réessayer.'
+                      : language === 'ko'
+                        ? '구독에 실패했습니다. 다시 시도해주세요.'
+                        : 'Subscription failed. Please try again.'
         })
       }
     } catch (error) {
       console.error('Subscription error:', error)
-      setMessage({ 
-        type: 'error', 
-        text: language === 'id' 
-          ? 'Terjadi kesalahan. Silakan coba lagi.' 
+      setMessage({
+        type: 'error',
+        text: language === 'id'
+          ? 'Terjadi kesalahan. Silakan coba lagi.'
           : language === 'ar'
-          ? 'حدث خطأ. يرجى المحاولة مرة أخرى.'
-          : language === 'zh'
-          ? '发生错误。请重试。'
-          : language === 'ja'
-          ? 'エラーが発生しました。もう一度お試しください。'
-          : language === 'es'
-          ? 'Ocurrió un error. Por favor, inténtalo de nuevo.'
-          : language === 'fr'
-          ? 'Une erreur s\'est produite. Veuillez réessayer.'
-          : language === 'ko'
-          ? '오류가 발생했습니다. 다시 시도해주세요.'
-          : 'An error occurred. Please try again.' 
+            ? 'حدث خطأ. يرجى المحاولة مرة أخرى.'
+            : language === 'zh'
+              ? '发生错误。请重试。'
+              : language === 'ja'
+                ? 'エラーが発生しました。もう一度お試しください。'
+                : language === 'es'
+                  ? 'Ocurrió un error. Por favor, inténtalo de nuevo.'
+                  : language === 'fr'
+                    ? 'Une erreur s\'est produite. Veuillez réessayer.'
+                    : language === 'ko'
+                      ? '오류가 발생했습니다. 다시 시도해주세요.'
+                      : 'An error occurred. Please try again.'
       })
     } finally {
       setIsSubmitting(false)
@@ -113,18 +113,18 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
               {language === 'id'
                 ? "Pilihan terbaik untuk furniture industrial scandinavian premium sejak 1999. Melayani coffee shop, restoran, dan bisnis di seluruh Indonesia. Pesanan custom diterima."
                 : language === 'ar'
-                ? "خيارك الأفضل للأثاث الصناعي الاسكندنافي الفاخر منذ عام 1999. نخدم المقاهي والمطاعم والأعمال في جميع أنحاء إندونيسيا وجاكرتا والأسواق الدولية الرئيسية. نرحب بالطلبات المخصصة."
-                : language === 'zh'
-                ? "自1999年以来，您的优质工业斯堪的纳维亚家具的最佳选择。服务于印度尼西亚、雅加达和主要国际市场的咖啡店、餐厅和企业。欢迎定制订单。"
-                : language === 'ja'
-                ? "1999年以来、プレミアムインダストリアル・スカンジナビア家具のベストチョイス。インドネシア、ジャカルタ、主要国際市場のカフェ、レストラン、ビジネスにサービスを提供。カスタムオーダー歓迎。"
-                : language === 'es'
-                ? "Su mejor opción para muebles industriales escandinavos premium desde 1999. Sirviendo a cafeterías, restaurantes y negocios en Indonesia, Yakarta y principales mercados internacionales. Pedidos personalizados bienvenidos."
-                : language === 'fr'
-                ? "Votre meilleur choix pour des meubles industriels scandinaves premium depuis 1999. Au service des cafés, restaurants et entreprises à travers l'Indonésie, Jakarta et les principaux marchés internationaux. Commandes personnalisées bienvenues."
-                : language === 'ko'
-                ? "1999년부터 프리미엄 산업용 스칸디나비아 가구의 최고 선택. 인도네시아, 자카르타 및 주요 국제 시장의 카페, 레스토랑, 비즈니스에 서비스 제공. 맞춤 주문 환영."
-                : "Your best choice for premium industrial scandinavian furniture since 1999. Serving coffee shops, restaurants, and businesses across Indonesia, Jabodetabek, Jakarta, and major international markets. Custom orders welcome."
+                  ? "خيارك الأفضل للأثاث الصناعي الاسكندنافي الفاخر منذ عام 1999. نخدم المقاهي والمطاعم والأعمال في جميع أنحاء إندونيسيا وجاكرتا والأسواق الدولية الرئيسية. نرحب بالطلبات المخصصة."
+                  : language === 'zh'
+                    ? "自1999年以来，您的优质工业斯堪的纳维亚家具的最佳选择。服务于印度尼西亚、雅加达和主要国际市场的咖啡店、餐厅和企业。欢迎定制订单。"
+                    : language === 'ja'
+                      ? "1999年以来、プレミアムインダストリアル・スカンジナビア家具のベストチョイス。インドネシア、ジャカルタ、主要国際市場のカフェ、レストラン、ビジネスにサービスを提供。カスタムオーダー歓迎。"
+                      : language === 'es'
+                        ? "Su mejor opción para muebles industriales escandinavos premium desde 1999. Sirviendo a cafeterías, restaurantes y negocios en Indonesia, Yakarta y principales mercados internacionales. Pedidos personalizados bienvenidos."
+                        : language === 'fr'
+                          ? "Votre meilleur choix pour des meubles industriels scandinaves premium depuis 1999. Au service des cafés, restaurants et entreprises à travers l'Indonésie, Jakarta et les principaux marchés internationaux. Commandes personnalisées bienvenues."
+                          : language === 'ko'
+                            ? "1999년부터 프리미엄 산업용 스칸디나비아 가구의 최고 선택. 인도네시아, 자카르타 및 주요 국제 시장의 카페, 레스토랑, 비즈니스에 서비스 제공. 맞춤 주문 환영."
+                            : "Your best choice for premium industrial scandinavian furniture since 1999. Serving coffee shops, restaurants, and businesses across Indonesia, Jabodetabek, Jakarta, and major international markets. Custom orders welcome."
               }
             </p>
             <div className="footer-contact-info">
@@ -135,8 +135,8 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
                 </a>
               </p>
               <p>
-                <a 
-                  href="https://wa.me/+6288801146881" 
+                <a
+                  href="https://wa.me/+6288801146881"
                   style={{ color: 'inherit', textDecoration: 'underline' }}
                   onClick={() => trackWhatsAppClick('footer_contact_info')}
                   target="_blank"
@@ -172,8 +172,8 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
                 </a>
               </p>
               <p className="footer-phone">
-                <a 
-                  href="https://wa.me/+6288801146881" 
+                <a
+                  href="https://wa.me/+6288801146881"
                   style={{ color: 'inherit', textDecoration: 'underline' }}
                   onClick={() => trackWhatsAppClick('footer_workshop_address')}
                   target="_blank"
@@ -187,72 +187,72 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
               </h5>
               <div className="footer-certification-logos">
                 <div className="footer-cert-logo-wrapper">
-                  <img 
-                    src={logoILW} 
-                    alt="Legal Wood Sourcing" 
-                    className="footer-cert-logo" 
+                  <img
+                    src={logoILW}
+                    alt="Legal Wood Sourcing"
+                    className="footer-cert-logo"
                   />
                   <div className="footer-cert-tooltip">
-                    {language === 'id' 
+                    {language === 'id'
                       ? 'Legal Wood Sourcing - Semua kayu kami berasal dari pemasok yang memiliki dokumen legalitas lengkap dan mematuhi regulasi kehutanan Indonesia.'
                       : language === 'ar'
-                      ? 'توريد أخشاب قانوني - جميع أخشابنا تأتي من موردين موثقين يقدمون مستندات قانونية كاملة ويلتزمون بلوائح الغابات الإندونيسية.'
-                      : language === 'zh'
-                      ? '合法木材采购——我们的木材全部来自提供完整合法文件并遵守印度尼西亚林业法规的供应商。'
-                      : language === 'ja'
-                      ? '合法木材調達 - すべての木材は完全な法的書類を備え、インドネシアの森林規制を遵守するサプライヤーから仕入れています。'
-                      : language === 'es'
-                      ? 'Abastecimiento Legal de Madera: toda nuestra madera proviene de proveedores verificados que entregan documentación completa y cumplen la normativa forestal de Indonesia.'
-                      : language === 'fr'
-                      ? 'Approvisionnement légal en bois - Tout notre bois provient de fournisseurs vérifiés qui fournissent une documentation complète et respectent la réglementation forestière indonésienne.'
-                      : language === 'ko'
-                      ? '합법 목재 조달 - 모든 목재는 완전한 법적 서류를 갖추고 인도네시아 산림 규정을 준수하는 공급업체에서만 공급받습니다.'
-                      : 'Legal Wood Sourcing - We partner only with verified suppliers who provide complete legal documentation and comply with Indonesian forestry regulations.'}
+                        ? 'توريد أخشاب قانوني - جميع أخشابنا تأتي من موردين موثقين يقدمون مستندات قانونية كاملة ويلتزمون بلوائح الغابات الإندونيسية.'
+                        : language === 'zh'
+                          ? '合法木材采购——我们的木材全部来自提供完整合法文件并遵守印度尼西亚林业法规的供应商。'
+                          : language === 'ja'
+                            ? '合法木材調達 - すべての木材は完全な法的書類を備え、インドネシアの森林規制を遵守するサプライヤーから仕入れています。'
+                            : language === 'es'
+                              ? 'Abastecimiento Legal de Madera: toda nuestra madera proviene de proveedores verificados que entregan documentación completa y cumplen la normativa forestal de Indonesia.'
+                              : language === 'fr'
+                                ? 'Approvisionnement légal en bois - Tout notre bois provient de fournisseurs vérifiés qui fournissent une documentation complète et respectent la réglementation forestière indonésienne.'
+                                : language === 'ko'
+                                  ? '합법 목재 조달 - 모든 목재는 완전한 법적 서류를 갖추고 인도네시아 산림 규정을 준수하는 공급업체에서만 공급받습니다.'
+                                  : 'Legal Wood Sourcing - We partner only with verified suppliers who provide complete legal documentation and comply with Indonesian forestry regulations.'}
                   </div>
                 </div>
                 <div className="footer-cert-logo-wrapper">
-                  <img 
-                    src={logoSVLK} 
-                    alt="SVLK Certification" 
-                    className="footer-cert-logo" 
+                  <img
+                    src={logoSVLK}
+                    alt="SVLK Certification"
+                    className="footer-cert-logo"
                   />
                   <div className="footer-cert-tooltip">
-                    {language === 'id' 
+                    {language === 'id'
                       ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - Sertifikasi resmi Indonesia untuk memastikan kayu berasal dari sumber legal dan berkelanjutan. Kami berkomitmen pada praktik logging yang bertanggung jawab dan ramah lingkungan.'
                       : language === 'ar'
-                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - شهادة إندونيسية رسمية لضمان أن الخشب يأتي من مصادر قانونية ومستدامة. نحن ملتزمون بممارسات قطع الأشجار المسؤولة والصديقة للبيئة.'
-                      : language === 'zh'
-                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - 印度尼西亚官方认证，确保木材来自合法和可持续的来源。我们致力于负责任的环保采伐实践。'
-                      : language === 'ja'
-                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - 木材が合法的で持続可能な源から来ることを保証するインドネシアの公式認証。責任ある環境に配慮した伐採慣行に取り組んでいます。'
-                      : language === 'es'
-                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - Certificación oficial de Indonesia para garantizar que la madera proviene de fuentes legales y sostenibles. Estamos comprometidos con prácticas de tala responsables y respetuosas con el medio ambiente.'
-                      : language === 'fr'
-                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - Certification officielle indonésienne garantissant que le bois provient de sources légales et durables. Nous nous engageons à des pratiques d\'exploitation forestière responsables et respectueuses de l\'environnement.'
-                      : language === 'ko'
-                      ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - 목재가 합법적이고 지속 가능한 원천에서 나온다는 것을 보장하는 인도네시아 공식 인증. 책임감 있고 환경 친화적인 벌채 관행에 전념하고 있습니다.'
-                      : 'Sistem Verifikasi Legalitas Kayu (SVLK) - Official Indonesian certification ensuring wood comes from legal and sustainable sources. We are committed to responsible and environmentally-friendly logging practices.'}
+                        ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - شهادة إندونيسية رسمية لضمان أن الخشب يأتي من مصادر قانونية ومستدامة. نحن ملتزمون بممارسات قطع الأشجار المسؤولة والصديقة للبيئة.'
+                        : language === 'zh'
+                          ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - 印度尼西亚官方认证，确保木材来自合法和可持续的来源。我们致力于负责任的环保采伐实践。'
+                          : language === 'ja'
+                            ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - 木材が合法的で持続可能な源から来ることを保証するインドネシアの公式認証。責任ある環境に配慮した伐採慣行に取り組んでいます。'
+                            : language === 'es'
+                              ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - Certificación oficial de Indonesia para garantizar que la madera proviene de fuentes legales y sostenibles. Estamos comprometidos con prácticas de tala responsables y respetuosas con el medio ambiente.'
+                              : language === 'fr'
+                                ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - Certification officielle indonésienne garantissant que le bois provient de sources légales et durables. Nous nous engageons à des pratiques d\'exploitation forestière responsables et respectueuses de l\'environnement.'
+                                : language === 'ko'
+                                  ? 'Sistem Verifikasi Legalitas Kayu (SVLK) - 목재가 합법적이고 지속 가능한 원천에서 나온다는 것을 보장하는 인도네시아 공식 인증. 책임감 있고 환경 친화적인 벌채 관행에 전념하고 있습니다.'
+                                  : 'Sistem Verifikasi Legalitas Kayu (SVLK) - Official Indonesian certification ensuring wood comes from legal and sustainable sources. We are committed to responsible and environmentally-friendly logging practices.'}
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
+
           {/* Quick Links */}
           <div className="footer-column">
-                      <h4>{language === 'id' ? "Tautan Cepat" : language === 'ar' ? "روابط سريعة" : language === 'zh' ? "快速链接" : language === 'ja' ? "クイックリンク" : language === 'es' ? "Enlaces Rápidos" : language === 'fr' ? "Liens Rapides" : language === 'ko' ? "빠른 링크" : "Quick Links"}</h4>
-                      <ul className="footer-links">
-                        <li><Link to={getLinkWithLanguage("/about", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Tentang' : language === 'ar' ? 'حول' : language === 'zh' ? '关于' : language === 'ja' ? '会社概要' : language === 'es' ? 'Acerca de' : language === 'fr' ? 'À propos' : language === 'ko' ? '회사 소개' : 'About'}</Link></li>
+            <h4>{language === 'id' ? "Tautan Cepat" : language === 'ar' ? "روابط سريعة" : language === 'zh' ? "快速链接" : language === 'ja' ? "クイックリンク" : language === 'es' ? "Enlaces Rápidos" : language === 'fr' ? "Liens Rapides" : language === 'ko' ? "빠른 링크" : "Quick Links"}</h4>
+            <ul className="footer-links">
+              <li><Link to={getLinkWithLanguage("/about", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Tentang' : language === 'ar' ? 'حول' : language === 'zh' ? '关于' : language === 'ja' ? '会社概要' : language === 'es' ? 'Acerca de' : language === 'fr' ? 'À propos' : language === 'ko' ? '회사 소개' : 'About'}</Link></li>
               <li><Link to={getLinkWithLanguage("/blog", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Blog' : language === 'ar' ? 'مدونة' : language === 'zh' ? '博客' : language === 'ja' ? 'ブログ' : language === 'es' ? 'Blog' : language === 'fr' ? 'Blog' : language === 'ko' ? '블로그' : 'Blog'}</Link></li>
-                        <li><Link to={getLinkWithLanguage("/shipping-information", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? "Pengiriman" : language === 'ar' ? "الشحن" : language === 'zh' ? "运输" : language === 'ja' ? "配送" : language === 'es' ? "Envío" : language === 'fr' ? "Expédition" : language === 'ko' ? "배송" : "Shipping"}</Link></li>
-                        <li><Link to={getLinkWithLanguage("/contact-us", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Hubungi Kami' : language === 'ar' ? 'اتصل بنا' : language === 'zh' ? '联系我们' : language === 'ja' ? 'お問い合わせ' : language === 'es' ? 'Contáctenos' : language === 'fr' ? 'Contactez-nous' : language === 'ko' ? '문의하기' : 'Contact Us'}</Link></li>
-                        <li><Link to={getLinkWithLanguage("/custom-order", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? "Pesanan Khusus" : language === 'ar' ? "طلب مخصص" : language === 'zh' ? "定制订单" : language === 'ja' ? "カスタム注文" : language === 'es' ? "Pedido Personalizado" : language === 'fr' ? "Commande Personnalisée" : language === 'ko' ? "맞춤 주문" : "Custom Order"}</Link></li>
-                        <li><Link to={getLinkWithLanguage("/partnership", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? "Kerja Sama" : language === 'ar' ? "شراكة" : language === 'zh' ? "合作" : language === 'ja' ? "パートナーシップ" : language === 'es' ? "Asociación" : language === 'fr' ? "Partenariat" : language === 'ko' ? "파트너십" : "Partnership"}</Link></li>
-                        <li><Link to={getLinkWithLanguage("/terms-of-service", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? "Syarat & Ketentuan" : language === 'ar' ? "الشروط والأحكام" : language === 'zh' ? "服务条款" : language === 'ja' ? "利用規約" : language === 'es' ? "Términos de Servicio" : language === 'fr' ? "Conditions de Service" : language === 'ko' ? "서비스 약관" : "Terms of Service"}</Link></li>
-                        <li><Link to={getLinkWithLanguage("/image-license", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? "Lisensi Gambar" : language === 'ar' ? "ترخيص الصور" : language === 'zh' ? "图像许可" : language === 'ja' ? "画像ライセンス" : language === 'es' ? "Licencia de Imagen" : language === 'fr' ? "Licence d'Image" : language === 'ko' ? "이미지 라이선스" : "Image License"}</Link></li>
+              <li><Link to={getLinkWithLanguage("/shipping-information", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? "Pengiriman" : language === 'ar' ? "الشحن" : language === 'zh' ? "运输" : language === 'ja' ? "配送" : language === 'es' ? "Envío" : language === 'fr' ? "Expédition" : language === 'ko' ? "배송" : "Shipping"}</Link></li>
+              <li><Link to={getLinkWithLanguage("/contact-us", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Hubungi Kami' : language === 'ar' ? 'اتصل بنا' : language === 'zh' ? '联系我们' : language === 'ja' ? 'お問い合わせ' : language === 'es' ? 'Contáctenos' : language === 'fr' ? 'Contactez-nous' : language === 'ko' ? '문의하기' : 'Contact Us'}</Link></li>
+              <li><Link to={getLinkWithLanguage("/custom-order", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? "Pesanan Khusus" : language === 'ar' ? "طلب مخصص" : language === 'zh' ? "定制订单" : language === 'ja' ? "カスタム注文" : language === 'es' ? "Pedido Personalizado" : language === 'fr' ? "Commande Personnalisée" : language === 'ko' ? "맞춤 주문" : "Custom Order"}</Link></li>
+              <li><Link to={getLinkWithLanguage("/partnership", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? "Kerja Sama" : language === 'ar' ? "شراكة" : language === 'zh' ? "合作" : language === 'ja' ? "パートナーシップ" : language === 'es' ? "Asociación" : language === 'fr' ? "Partenariat" : language === 'ko' ? "파트너십" : "Partnership"}</Link></li>
+              <li><Link to={getLinkWithLanguage("/terms-of-service", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? "Syarat & Ketentuan" : language === 'ar' ? "الشروط والأحكام" : language === 'zh' ? "服务条款" : language === 'ja' ? "利用規約" : language === 'es' ? "Términos de Servicio" : language === 'fr' ? "Conditions de Service" : language === 'ko' ? "서비스 약관" : "Terms of Service"}</Link></li>
+              <li><Link to={getLinkWithLanguage("/image-license", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? "Lisensi Gambar" : language === 'ar' ? "ترخيص الصور" : language === 'zh' ? "图像许可" : language === 'ja' ? "画像ライセンス" : language === 'es' ? "Licencia de Imagen" : language === 'fr' ? "Licence d'Image" : language === 'ko' ? "이미지 라이선스" : "Image License"}</Link></li>
             </ul>
           </div>
-          
+
           {/* Categories */}
           <div className="footer-column">
             <h4>{language === 'id' ? 'Kategori' : language === 'ar' ? 'الفئات' : language === 'zh' ? '类别' : language === 'ja' ? 'カテゴリー' : language === 'es' ? 'Categorías' : language === 'fr' ? 'Catégories' : language === 'ko' ? '카테고리' : 'Categories'}</h4>
@@ -269,7 +269,7 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
               <li><Link to={getLinkWithLanguage("/product-category/dining-table-collection", language)} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Meja Makan' : language === 'ar' ? 'طاولة طعام' : language === 'zh' ? '餐桌' : language === 'ja' ? 'ダイニングテーブル' : language === 'es' ? 'Mesa de Comedor' : language === 'fr' ? 'Table à Manger' : language === 'ko' ? '식탁' : 'Dine Table'}</Link></li>
             </ul>
           </div>
-          
+
           {/* Subscribe */}
           <div className="footer-column">
             <h4>{language === 'id' ? "Berlangganan" : language === 'ar' ? "اشترك" : language === 'zh' ? "订阅" : language === 'ja' ? "登録" : language === 'es' ? "Suscríbete" : language === 'fr' ? "S'abonner" : language === 'ko' ? "구독" : "Subscribe"}</h4>
@@ -291,8 +291,8 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
                 disabled={isSubmitting}
               />
               <button type="submit" disabled={isSubmitting}>
-                {isSubmitting 
-                  ? (language === 'id' ? "Mengirim..." : language === 'ar' ? "جاري الإرسال..." : language === 'zh' ? "发送中..." : language === 'ja' ? "送信中..." : language === 'es' ? "Enviando..." : language === 'fr' ? "Envoi..." : language === 'ko' ? "보내는 중..." : "Sending...") 
+                {isSubmitting
+                  ? (language === 'id' ? "Mengirim..." : language === 'ar' ? "جاري الإرسال..." : language === 'zh' ? "发送中..." : language === 'ja' ? "送信中..." : language === 'es' ? "Enviando..." : language === 'fr' ? "Envoi..." : language === 'ko' ? "보내는 중..." : "Sending...")
                   : (language === 'id' ? "BERLANGGANAN" : language === 'ar' ? "اشترك" : language === 'zh' ? "订阅" : language === 'ja' ? "登録" : language === 'es' ? "SUSCRIBIRSE" : language === 'fr' ? "S'ABONNER" : language === 'ko' ? "구독하기" : "SUBSCRIBE")
                 }
               </button>
@@ -304,7 +304,7 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
             </form>
           </div>
         </div>
-        
+
         {/* Blog Posts Links Section - Collapsible but always in DOM for SEO crawlability */}
         <div className="footer-blog-archive">
           <button
@@ -320,7 +320,7 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
               <ChevronDown size={20} className="footer-toggle-icon" />
             )}
           </button>
-          <nav 
+          <nav
             className={`footer-blog-links ${isBlogArchiveExpanded ? 'expanded' : 'collapsed'}`}
             aria-label="Blog posts"
             aria-hidden={!isBlogArchiveExpanded}
@@ -337,7 +337,7 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
             ))}
           </nav>
         </div>
-        
+
         <div className="footer-bottom">
           <p>Copyright 2025 Mangala Living. All rights reserved.</p>
         </div>

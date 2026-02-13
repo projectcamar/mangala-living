@@ -9,16 +9,16 @@ interface CategoriesSectionProps {
 }
 
 // Import images
-import benchImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
-import mejaImage from '../assets/meja-industrial-mejamakan.webp'
-import mejaMakanImage from '../assets/Meja-makan-industrial-150x60x90-2 kursi.webp'
-import mejaKerjaImage from '../assets/Meja-Kerja-Rak-Meja-Belajar-custom.webp'
-import balconyBarImage from '../assets/balcony-bar-table.webp'
-import barChairImage from '../assets/Kursi-Barstool-Besi-Behel.webp'
-import hollowlineDisplayRackImage from '../assets/Hollowline-Display-Rack.webp'
-import frameLoftBookshelfImage from '../assets/frame-Loft-Bookshelf.webp'
-import daybedImage from '../assets/industrial-daybed-boneonly.webp'
-import loungeSetCoffeeTableImage from '../assets/longue-set-coffee-table.webp'
+const benchImage = '/images/products/Bench-corner-kursi-sudut-kursi-santai.webp'
+const mejaImage = '/images/products/meja-industrial-mejamakan.webp'
+const mejaMakanImage = '/images/products/Meja-makan-industrial-150x60x90-2 kursi.webp'
+const mejaKerjaImage = '/images/products/Meja-Kerja-Rak-Meja-Belajar-custom.webp'
+const balconyBarImage = '/images/products/balcony-bar-table.webp'
+const barChairImage = '/images/products/Kursi-Barstool-Besi-Behel.webp'
+const hollowlineDisplayRackImage = '/images/products/Hollowline-Display-Rack.webp'
+const frameLoftBookshelfImage = '/images/products/frame-Loft-Bookshelf.webp'
+const daybedImage = '/images/products/industrial-daybed-boneonly.webp'
+const loungeSetCoffeeTableImage = '/images/products/longue-set-coffee-table.webp'
 
 interface Category {
   id: number
@@ -205,18 +205,18 @@ const CategoriesSection: React.FC<CategoriesSectionProps> = ({ isIndonesian = fa
         <h2 className="categories-title">
           {t.title}
         </h2>
-        
+
         <div className="categories-grid">
           {categories.map((category) => (
-            <Link 
-              key={category.id} 
-              to={category.link} 
+            <Link
+              key={category.id}
+              to={category.link}
               className="category-card"
               onClick={() => trackEvent.categoryClick(t[category.nameKey as keyof typeof t] as string)}
             >
               <div className="category-image-wrapper">
-                <img 
-                  src={category.image} 
+                <img
+                  src={category.image}
                   alt={`${t[category.nameKey as keyof typeof t]} Industrial Furniture Collection - Mangala Living Bekasi`}
                   title={`${t[category.nameKey as keyof typeof t]} Industrial Furniture - Premium Quality from Mangala Living`}
                   className="category-image"
