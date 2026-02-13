@@ -1208,7 +1208,63 @@
   color: #555;
 }
 
-.action-input-btn:hover {
-  background: #e9ecef;
+/* --- Language Tabs --- */
+.language-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  overflow-x: auto;
+}
+
+.lang-tab {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.lang-tab:hover {
+  background: #f8f9fa;
   border-color: #ccc;
+}
+
+.lang-tab.active {
+  background: #2C3E50;
+  color: white;
+  border-color: #2C3E50;
+}
+
+.lang-tab.has-content {
+  border-left: 3px solid #4CAF50;
+}
+
+/* --- Variants Styling --- */
+.variants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.variant-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.variant-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }

@@ -64,7 +64,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                         'User-Agent': 'Mangala-Admin-Bot'
                     },
                     body: JSON.stringify({
-                        message: `Upload image: ${img.path.split('/').pop()}`,
+                        message: `Upload asset: ${cleanPath.split('/').pop()}`,
                         content: content,
                         branch: GITHUB_BRANCH,
                         ...(sha ? { sha } : {})
@@ -73,7 +73,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
             }
         }
 
-        // Step 1: Get current file content and SHA
+        // Step 1: Get current file content and SHA (for products.ts)
         const getFileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}?ref=${GITHUB_BRANCH}`;
         const getFileResponse = await fetch(getFileUrl, {
             headers: {

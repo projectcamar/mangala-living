@@ -64,38 +64,109 @@ export default async function handler(req: Request) {
             method: 'POST',
             headers,
             body: JSON.stringify({
-                model,
-                messages: [
-                    { role: 'system', content: SYSTEM_PROMPT },
-                    { role: 'user', content: `Extract data from this text:\n\n${rawText}` }
-                ],
-                temperature: 0.3, // Lower temperature for more deterministic extraction
-                max_tokens: 1000,
-                response_format: { type: "json_object" } // Force JSON output if supported
-            }),
-        });
+                const prompt = `
+        You are an expert furniture product database assistant for "Mangala Living", a premium industrial furniture manufacturer in Indonesia.
+        
+        Task: Extract product data from the raw text below and generate content for 8 LANGUAGES:
+        1. English (en) - Default/Fallback
+        2. Indonesian (id)
+        3. Chinese (zh)
+        4. Arabic (ar)
+        5. Japanese (ja)
+        6. Spanish (es)
+        7. French (fr)
+        8. Korean (ko)
 
-        if (!response.ok) {
+        Raw Input:
+        "${rawText}"
+
+        Requirements:
+        - **Name**: Create a premium, catchy name (e.g., "Hollowline Industrial Bar Chair").
+        - **Slug**: URL-friendly slug (e.g., "hollowline-industrial-bar-chair").
+        - **Price**: Estimate in IDR (Indonesian Rupiah) if not provided. Format: "Rp2.500.000".
+        - **Categories**: Choose from: Chair, Table, Storage, Bed, Accessories, Custom.
+        - **Description**: 2-3 paragraphs. Marketing tone. Highlight "Industrial", "Durable", "Handcrafted in Bekasi".
+        - **Details**: 4-6 bullet points (Material, Finish, Dimensions hint).
+
+        Output JSON format ONLY:
+        {
+            "slug": "string",
+            "price": "string",
+            "categories": ["string"],
+            "translations": {
+                "en": { "name": "...", "description": "...", "details": ["..."] },
+                "id": { "name": "...", "description": "...", "details": ["..."] },
+                "zh": { "name": "...", "description": "...", "details": ["..."] },
+                "ar": { "name": "...", "description": "...", "details": ["..."] },
+                "ja": { "name": "...", "description": "...", "details": ["..."] },
+                "es": { "name": "...", "description": "...", "details": ["..."] },
+                "fr": { "name": "...", "description": "...", "details": ["..."] },
+                "ko": { "name": "...", "description": "...", "details": ["..."] }
+            }
+        }
+        `;
+
+                let data;
+                if(groqClient) {
+                    const completion = await groqClient.chat.completions.create({
+                        messages: [{ role: 'user', content: prompt }],
+                        model: model || 'llama-3.3-70b-versatile',
+                        temperature: 0.7,
+                        max_tokens: 4000,
+                        response_format: { type: 'json_object' }
+                    });
+                    const content = completion.choices[0]?.message?.content;
+                    if (!content) throw new Error('No content generated');
+                    data = JSON.parse(content);
+                } else {
+                    // Use fetch for OpenRouter or other non-Groq SDK APIs
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers,
+                        body: JSON.stringify({
+                            model,
+                            messages: [
+                                { role: 'user', content: prompt }
+                            ],
+                            temperature: 0.7, // Lower temperature for more deterministic extraction
+                            max_tokens: 4000,
+                            response_format: { type: "json_object" } // Force JSON output if supported
+                        }),
+                    });
+
+                    if(!response.ok) {
             throw new Error(`AI API error: ${response.statusText}`);
         }
 
-        const data = await response.json();
-        let content = data.choices[0]?.message?.content?.trim();
+            const apiResponse = await response.json();
+        let content = apiResponse.choices[0]?.message?.content?.trim();
 
         // Basic cleanup if markdown blocks are returned despite instructions
         if (content.startsWith('```json')) {
             content = content.replace(/^```json\s*/, '').replace(/\s*```$/, '');
         }
-
-        const parsedData = JSON.parse(content);
-
-        return new Response(JSON.stringify(parsedData), {
-            status: 200,
-            headers: { 'Content-Type': 'application/json' }
-        });
-
-    } catch (error: any) {
-        console.error('Magic Fill Error:', error);
-        return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+        data = JSON.parse(content);
     }
+
+        // Flatten for the legacy structure if needed, but primarily return the new structure
+        // The frontend will handle merging this into the product state
+        return new Response(JSON.stringify({
+        // Base fields (using English as default)
+        slug: data.slug,
+        price: data.price,
+        categories: data.categories,
+        // Legacy top-level fields for fallback
+        name: data.translations.en.name,
+        description: data.translations.en.description,
+        details: data.translations.en.details,
+        // New partial structure
+        translations: data.translations
+    }), {
+        headers: { 'Content-Type': 'application/json' }
+    });
+
+} catch (error: any) {
+    console.error('Magic Fill Error:', error);
+    return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+}
 }

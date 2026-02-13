@@ -4,6 +4,12 @@ export interface ProductVariant {
   dimensions?: string
 }
 
+export interface ProductTranslation {
+  name: string
+  description: string
+  details: string[]
+}
+
 export interface Product {
   id: number
   slug: string
@@ -15,6 +21,7 @@ export interface Product {
   description?: string
   details?: string[]
   variants?: ProductVariant[]
+  translations?: Record<string, ProductTranslation> // id, en, ar, zh, ja, es, fr, ko
 }
 
 export const ALL_PRODUCTS: Product[] = [
