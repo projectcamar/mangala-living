@@ -383,6 +383,12 @@ const AdminProductManager: React.FC = () => {
         if (!newDetailInput.trim() || !editingProduct) return
 
         const updatedProduct = { ...editingProduct }
+
+        // Ensure translations exists
+        if (!updatedProduct.translations) {
+            updatedProduct.translations = createEmptyTranslations()
+        }
+
         if (updatedProduct.translations) {
             const currentTranslation = updatedProduct.translations[selectedEditingLanguage]
             updatedProduct.translations = {
@@ -391,6 +397,11 @@ const AdminProductManager: React.FC = () => {
                     ...currentTranslation,
                     productDetails: [...(currentTranslation.productDetails || []), newDetailInput.trim()]
                 }
+            }
+
+            // ALWAYS sync to legacy field if Indonesian
+            if (selectedEditingLanguage === 'id') {
+                updatedProduct.productDetails = updatedProduct.translations.id.productDetails
             }
         }
 
@@ -402,6 +413,12 @@ const AdminProductManager: React.FC = () => {
         if (!editingProduct) return
 
         const updatedProduct = { ...editingProduct }
+
+        // Ensure translations exists
+        if (!updatedProduct.translations) {
+            updatedProduct.translations = createEmptyTranslations()
+        }
+
         if (updatedProduct.translations) {
             const currentTranslation = updatedProduct.translations[selectedEditingLanguage]
             updatedProduct.translations = {
@@ -410,6 +427,11 @@ const AdminProductManager: React.FC = () => {
                     ...currentTranslation,
                     productDetails: currentTranslation.productDetails?.filter((_, i) => i !== index) || []
                 }
+            }
+
+            // ALWAYS sync to legacy field if Indonesian
+            if (selectedEditingLanguage === 'id') {
+                updatedProduct.productDetails = updatedProduct.translations.id.productDetails
             }
         }
 
@@ -677,23 +699,33 @@ const AdminProductManager: React.FC = () => {
                                     <label>Product Name * ({selectedEditingLanguage.toUpperCase()})</label>
                                     <input
                                         type="text"
-                                        value={editingProduct?.translations?.[selectedEditingLanguage]?.name || ''}
+                                        value={
+                                            editingProduct?.translations?.[selectedEditingLanguage]?.name ||
+                                            (selectedEditingLanguage === 'id' ? editingProduct?.name : '') ||
+                                            ''
+                                        }
                                         onChange={(e) => {
                                             if (!editingProduct) return
                                             const updatedProduct = { ...editingProduct }
-                                            if (updatedProduct.translations) {
-                                                updatedProduct.translations = {
-                                                    ...updatedProduct.translations,
-                                                    [selectedEditingLanguage]: {
-                                                        ...updatedProduct.translations[selectedEditingLanguage],
-                                                        name: e.target.value
-                                                    }
-                                                }
-                                                // Sync to legacy field if Indonesian
-                                                if (selectedEditingLanguage === 'id') {
-                                                    updatedProduct.name = e.target.value
+
+                                            // Ensure translations exists
+                                            if (!updatedProduct.translations) {
+                                                updatedProduct.translations = createEmptyTranslations()
+                                            }
+
+                                            updatedProduct.translations = {
+                                                ...updatedProduct.translations,
+                                                [selectedEditingLanguage]: {
+                                                    ...updatedProduct.translations[selectedEditingLanguage],
+                                                    name: e.target.value
                                                 }
                                             }
+
+                                            // ALWAYS sync to legacy field if Indonesian
+                                            if (selectedEditingLanguage === 'id') {
+                                                updatedProduct.name = e.target.value
+                                            }
+
                                             setEditingProduct(updatedProduct)
                                         }}
                                         placeholder="e.g., Frame Loft Bookshelf"
@@ -797,23 +829,33 @@ const AdminProductManager: React.FC = () => {
                                     <label>Description ({selectedEditingLanguage.toUpperCase()})</label>
                                     <textarea
                                         rows={4}
-                                        value={editingProduct?.translations?.[selectedEditingLanguage]?.description || ''}
+                                        value={
+                                            editingProduct?.translations?.[selectedEditingLanguage]?.description ||
+                                            (selectedEditingLanguage === 'id' ? editingProduct?.description : '') ||
+                                            ''
+                                        }
                                         onChange={(e) => {
                                             if (!editingProduct) return
                                             const updatedProduct = { ...editingProduct }
-                                            if (updatedProduct.translations) {
-                                                updatedProduct.translations = {
-                                                    ...updatedProduct.translations,
-                                                    [selectedEditingLanguage]: {
-                                                        ...updatedProduct.translations[selectedEditingLanguage],
-                                                        description: e.target.value
-                                                    }
-                                                }
-                                                // Sync to legacy field if Indonesian
-                                                if (selectedEditingLanguage === 'id') {
-                                                    updatedProduct.description = e.target.value
+
+                                            // Ensure translations exists
+                                            if (!updatedProduct.translations) {
+                                                updatedProduct.translations = createEmptyTranslations()
+                                            }
+
+                                            updatedProduct.translations = {
+                                                ...updatedProduct.translations,
+                                                [selectedEditingLanguage]: {
+                                                    ...updatedProduct.translations[selectedEditingLanguage],
+                                                    description: e.target.value
                                                 }
                                             }
+
+                                            // ALWAYS sync to legacy field if Indonesian
+                                            if (selectedEditingLanguage === 'id') {
+                                                updatedProduct.description = e.target.value
+                                            }
+
                                             setEditingProduct(updatedProduct)
                                         }}
                                         placeholder="Write a compelling product description..."
@@ -824,7 +866,11 @@ const AdminProductManager: React.FC = () => {
                                 <div className="input-group-compact span-3">
                                     <label>Product Details - Bullet Points ({selectedEditingLanguage.toUpperCase()})</label>
                                     <div style={{ background: '#f9f9f9', padding: '16px', borderRadius: '8px', border: '1px solid #e0e0e0' }}>
-                                        {editingProduct?.translations?.[selectedEditingLanguage]?.productDetails?.map((detail, idx) => (
+                                        {(
+                                            editingProduct?.translations?.[selectedEditingLanguage]?.productDetails ||
+                                            (selectedEditingLanguage === 'id' ? editingProduct?.productDetails : []) ||
+                                            []
+                                        ).map((detail: string, idx: number) => (
                                             <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
                                                 <span style={{ flex: 1, padding: '8px', background: '#fff', borderRadius: '4px', border: '1px solid #ddd' }}>
                                                     {detail}
