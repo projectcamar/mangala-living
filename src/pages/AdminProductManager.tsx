@@ -4,22 +4,67 @@ import { useNavigate } from 'react-router-dom'
 import {
     Plus, Edit, Trash2, Search, ArrowLeft, Save,
     Package, AlertCircle, Loader2, Check, X,
-    Image as ImageIcon, Video, Layers, Sparkles, Eye
+    Image as ImageIcon, Video, Layers, Sparkles, Eye, Globe
 } from 'lucide-react'
 import { ALL_PRODUCTS, type Product, type ProductVariant } from '../data/products'
+import { PRODUCT_DESCRIPTIONS, type MultiLanguageDescription } from '../data/productDescriptions'
+import { convertIDRToCurrency } from '../utils/currencyConverter'
 import './Admin.css'
+
+// Extended Product interface to include full translation data
+interface ExtendedProduct extends Product {
+    translations: MultiLanguageDescription
+}
+
+type LanguageCode = 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'
+
+const LANGUAGES: { code: LanguageCode, label: string, flag: string }[] = [
+    { code: 'en', label: 'English', flag: '🇺🇸' },
+    { code: 'id', label: 'Indonesia', flag: '🇮🇩' },
+    { code: 'ar', label: 'Arabic', flag: '🇸🇦' },
+    { code: 'zh', label: 'Chinese', flag: '🇨🇳' },
+    { code: 'ja', label: 'Japanese', flag: '🇯🇵' },
+    { code: 'es', label: 'Spanish', flag: '🇪🇸' },
+    { code: 'fr', label: 'French', flag: '🇫🇷' },
+    { code: 'ko', label: 'Korean', flag: '🇰🇷' }
+]
+
+const emptyLangContent = {
+    name: '',
+    caption: '',
+    shortCaption: '',
+    description: '',
+    metaDescription: '',
+    imageAlt: '',
+    dimensions: '',
+    details: []
+}
+
+const createEmptyTranslations = (): MultiLanguageDescription => ({
+    en: { ...emptyLangContent },
+    id: { ...emptyLangContent },
+    ar: { ...emptyLangContent },
+    zh: { ...emptyLangContent },
+    ja: { ...emptyLangContent },
+    es: { ...emptyLangContent },
+    fr: { ...emptyLangContent },
+    ko: { ...emptyLangContent }
+})
 
 const AdminProductManager: React.FC = () => {
     const [view, setView] = useState<'list' | 'editor'>('list')
-    const [products, setProducts] = useState<Product[]>([])
+    const [products, setProducts] = useState<ExtendedProduct[]>([])
     const [searchTerm, setSearchTerm] = useState('')
     const [isSaving, setIsSaving] = useState(false)
     const [isLoading, setIsLoading] = useState(true)
     const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null)
 
     // Editor state
-    const [editingProduct, setEditingProduct] = useState<Product | null>(null)
+    const [editingProduct, setEditingProduct] = useState<ExtendedProduct | null>(null)
+    const [currentLang, setCurrentLang] = useState<LanguageCode>('en')
     const [tempImage, setTempImage] = useState<{ path: string, content: string } | null>(null)
+    const [tempVideo, setTempVideo] = useState<{ path: string, content: string } | null>(null)
+    const [convertedPrice, setConvertedPrice] = useState<string>('')
 
     // Magic Fill AI state
     const [showAIModal, setShowAIModal] = useState(false)
@@ -34,12 +79,41 @@ const AdminProductManager: React.FC = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
+        // Initialize products with descriptions
         const baseProducts = [...ALL_PRODUCTS]
+
+        // Merge with PRODUCT_DESCRIPTIONS
+        const mergedProducts: ExtendedProduct[] = baseProducts.map(p => {
+            const desc = PRODUCT_DESCRIPTIONS[p.slug]
+            // Ensure all languages exist (fill missing with empty/default)
+            const fullDesc = desc ? { ...createEmptyTranslations(), ...desc } : createEmptyTranslations()
+
+            // If missing specific language keys, fill them
+            LANGUAGES.forEach(lang => {
+                if (!fullDesc[lang.code]) {
+                    // @ts-ignore
+                    fullDesc[lang.code] = { ...emptyLangContent }
+                    // Try to fallback name/description from base product if EN/ID
+                    if (lang.code === 'en' || lang.code === 'id') {
+                        // @ts-ignore
+                        fullDesc[lang.code].name = p.name
+                        // @ts-ignore
+                        fullDesc[lang.code].description = p.description || ''
+                    }
+                }
+            })
+
+            return {
+                ...p,
+                translations: fullDesc
+            }
+        })
+
         const savedDrafts = localStorage.getItem('mangala_product_drafts')
         if (savedDrafts) {
             try {
-                const parsedDrafts = JSON.parse(savedDrafts) as Product[]
-                const mergedProducts = [...baseProducts]
+                const parsedDrafts = JSON.parse(savedDrafts) as ExtendedProduct[]
+                // Merge strategies could be complex, simplicity for now: use drafts if ID matches
                 parsedDrafts.forEach(draft => {
                     const index = mergedProducts.findIndex(p => p.id === draft.id)
                     if (index !== -1) {
@@ -48,14 +122,12 @@ const AdminProductManager: React.FC = () => {
                         mergedProducts.push(draft)
                     }
                 })
-                setProducts(mergedProducts)
             } catch (e) {
                 console.error('Error loading product drafts:', e)
-                setProducts(baseProducts)
             }
-        } else {
-            setProducts(baseProducts)
         }
+
+        setProducts(mergedProducts)
         setIsLoading(false)
     }, [])
 
@@ -65,10 +137,54 @@ const AdminProductManager: React.FC = () => {
         }
     }, [products, isLoading])
 
-    const handleEdit = (product: Product) => {
-        setEditingProduct({ ...product })
+    // Update converted price preview when price or language changes
+    useEffect(() => {
+        const updatePrice = async () => {
+            if (!editingProduct || !editingProduct.price) {
+                setConvertedPrice('')
+                return
+            }
+
+            // IDR is base
+            // Map LanguageCode to Currency
+            const langCurrencyMap: Record<LanguageCode, 'USD' | 'SAR' | 'CNY' | 'JPY' | 'EUR' | 'KRW' | 'IDR'> = {
+                en: 'USD',
+                id: 'IDR',
+                ar: 'SAR',
+                zh: 'CNY',
+                ja: 'JPY',
+                es: 'EUR',
+                fr: 'EUR',
+                ko: 'KRW'
+            }
+
+            const target = langCurrencyMap[currentLang]
+            if (target === 'IDR') {
+                setConvertedPrice(editingProduct.price) // Already IDR formatted ideally
+                return
+            }
+
+            try {
+                // Assuming price string format "Rp...", extract digits
+                const numericPrice = editingProduct.price.replace(/[^0-9]/g, '')
+                if (!numericPrice) return
+
+                const converted = await convertIDRToCurrency(numericPrice, target)
+                setConvertedPrice(converted)
+            } catch (e) {
+                console.error('Price conversion failed', e)
+                setConvertedPrice('Error')
+            }
+        }
+        updatePrice()
+    }, [editingProduct?.price, currentLang])
+
+    const handleEdit = (product: ExtendedProduct) => {
+        setEditingProduct(JSON.parse(JSON.stringify(product))) // Deep copy
         setTempImage(null)
+        setTempVideo(null)
         setView('editor')
+        setCurrentLang('en') // Reset to English
     }
 
     const handleNew = () => {
@@ -80,20 +196,24 @@ const AdminProductManager: React.FC = () => {
             categories: ['Furniture'],
             price: '',
             image: '',
-            description: '',
-            details: [],
-            variants: []
+            description: '', // Legacy field
+            details: [], // Legacy field
+            variants: [],
+            translations: createEmptyTranslations()
         })
         setTempImage(null)
+        setTempVideo(null)
         setView('editor')
+        setCurrentLang('en')
     }
 
-    const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleAssetUpload = (e: React.ChangeEvent<HTMLInputElement>, type: 'image' | 'video') => {
         const file = e.target.files?.[0]
         if (!file) return
 
-        if (file.size > 5 * 1024 * 1024) { // 5MB limit
-            setMessage({ type: 'error', text: 'Image size should be less than 5MB' })
+        const maxSize = type === 'image' ? 5 * 1024 * 1024 : 50 * 1024 * 1024 // 5MB image, 50MB video
+        if (file.size > maxSize) {
+            setMessage({ type: 'error', text: `${type === 'image' ? 'Image' : 'Video'} size too large` })
             return
         }
 
@@ -103,25 +223,36 @@ const AdminProductManager: React.FC = () => {
             const fileName = file.name.replace(/\s+/g, '-').toLowerCase()
             const path = `/images/products/${fileName}`
 
-            setEditingProduct(p => p ? { ...p, image: path } : null)
-            setTempImage({ path: `public${path}`, content: base64 })
-            setMessage({ type: 'success', text: 'Image prepared. Will be uploaded on Deploy.' })
+            if (type === 'image') {
+                setEditingProduct(p => p ? { ...p, image: path } : null)
+                setTempImage({ path: `public${path}`, content: base64 })
+            } else {
+                setEditingProduct(p => p ? { ...p, video: path } : null)
+                setTempVideo({ path: `public${path}`, content: base64 })
+            }
+            setMessage({ type: 'success', text: `${type === 'image' ? 'Image' : 'Video'} prepared. Will be uploaded on Deploy.` })
         }
         reader.readAsDataURL(file)
     }
 
     const handleSaveProduct = () => {
-        if (!editingProduct || !editingProduct.slug || !editingProduct.name) {
-            setMessage({ type: 'error', text: 'Name and Slug are required' })
+        if (!editingProduct || !editingProduct.slug) {
+            setMessage({ type: 'error', text: 'Slug is required' })
             return
         }
+        // Sync root name/desc with EN translation for list view consistency
+        const syncedProduct = {
+            ...editingProduct,
+            name: editingProduct.translations.en.name || editingProduct.name,
+            description: editingProduct.translations.en.description || editingProduct.description
+        }
 
-        const exists = products.find(p => p.id === editingProduct.id)
-        let updatedProducts: Product[]
+        const exists = products.find(p => p.id === syncedProduct.id)
+        let updatedProducts: ExtendedProduct[]
         if (exists) {
-            updatedProducts = products.map(p => p.id === editingProduct.id ? editingProduct : p)
+            updatedProducts = products.map(p => p.id === syncedProduct.id ? syncedProduct : p)
         } else {
-            updatedProducts = [...products, editingProduct]
+            updatedProducts = [...products, syncedProduct]
         }
 
         setProducts(updatedProducts)
@@ -134,22 +265,30 @@ const AdminProductManager: React.FC = () => {
         setMessage(null)
 
         try {
-            setMessage({ type: 'success', text: 'Deploying changes (including images) to GitHub...' })
+            setMessage({ type: 'success', text: 'Deploying changes to GitHub...' })
 
-            // Note: In a real app we would track all pending images. 
-            // Here we assume the user saves and deploys. 
-            // If they edit multiple products with new images, only the last tempImage is in state, which is a limitation.
-            // But usually admins do: Edit -> Save -> Edit -> Save -> Deploy.
-            // To fix this, we should store tempImages in a Map or localStorage.
-            // For now, let's just warn or handle the simple case.
-            const imagesToUpload = tempImage ? [tempImage] : []
+            const imagesToUpload = [
+                ...(tempImage ? [tempImage] : []),
+                ...(tempVideo ? [tempVideo] : [])
+            ]
+
+            // Separate Data
+            // 1. Products List (Slim)
+            const productsList = products.map(({ translations, ...rest }) => rest)
+
+            // 2. Descriptions Map (Full)
+            const descriptionsMap: Record<string, MultiLanguageDescription> = {}
+            products.forEach(p => {
+                descriptionsMap[p.slug] = p.translations
+            })
 
             const deployResponse = await fetch('/api/admin/deploy-products', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    products: products,
-                    images: imagesToUpload,
+                    products: productsList,
+                    productDescriptions: descriptionsMap,
+                    assets: imagesToUpload,
                     commitMessage: `Update products via admin (${new Date().toISOString().split('T')[0]})`
                 })
             })
@@ -158,7 +297,8 @@ const AdminProductManager: React.FC = () => {
 
             if (deployResponse.ok && deployResult.deployed) {
                 localStorage.removeItem('mangala_product_drafts')
-                setTempImage(null) // Clear temp image after successful deploy
+                setTempImage(null)
+                setTempVideo(null)
                 setMessage({
                     type: 'success',
                     text: '✅ Changes deployed! Vercel is rebuilding your site. Refresh in 2 mins.'
@@ -204,23 +344,36 @@ const AdminProductManager: React.FC = () => {
                 throw new Error(result.error || 'Magic Fill failed')
             }
 
-            // Merge result into editingProduct
+            // Result structure: { slug, price, categories, translations: { en: ..., id: ... } }
+
             setEditingProduct(p => {
                 if (!p) return null
-                return {
-                    ...p,
-                    name: result.name || p.name,
-                    slug: result.slug || p.slug,
-                    price: result.price || p.price,
-                    categories: result.categories || p.categories,
-                    description: result.description || p.description,
-                    details: result.details || p.details || []
+                const newP = { ...p }
+                if (result.slug) newP.slug = result.slug
+                if (result.price) newP.price = result.price
+                if (result.categories) newP.categories = result.categories
+
+                // Merge translations
+                if (result.translations) {
+                    // @ts-ignore
+                    Object.keys(result.translations).forEach(lang => {
+                        // @ts-ignore
+                        if (newP.translations[lang]) {
+                            // @ts-ignore
+                            newP.translations[lang] = { ...newP.translations[lang], ...result.translations[lang] }
+                        }
+                    })
                 }
+
+                // Update root name if EN updated
+                if (newP.translations.en.name) newP.name = newP.translations.en.name
+
+                return newP
             })
 
             setShowAIModal(false)
             setMagicFillText('')
-            setMessage({ type: 'success', text: '✨ Magic Fill complete!' })
+            setMessage({ type: 'success', text: '✨ Magic Fill complete! Check all language tabs.' })
 
         } catch (error) {
             console.error('Magic Fill error:', error)
@@ -236,29 +389,48 @@ const AdminProductManager: React.FC = () => {
         }
     }
 
-    // Details Handler
-    const addDetail = () => {
+    // --- Detail & Variant Helpers ---
+
+    // Update translation field
+    const updateTrans = (field: keyof typeof emptyLangContent, value: any) => {
         if (!editingProduct) return
         setEditingProduct({
             ...editingProduct,
-            details: [...(editingProduct.details || []), '']
+            translations: {
+                ...editingProduct.translations,
+                [currentLang]: {
+                    ...(editingProduct.translations[currentLang] || {}),
+                    [field]: value
+                }
+            }
         })
     }
 
+    // Details Helper (Language Specific)
+    const addDetail = () => {
+        if (!editingProduct) return
+        const currentDetails = editingProduct.translations[currentLang]?.details || []
+        updateTrans('details', [...currentDetails, ''])
+    }
+
     const updateDetail = (index: number, value: string) => {
-        if (!editingProduct || !editingProduct.details) return
-        const newDetails = [...editingProduct.details]
+        if (!editingProduct) return
+        const newDetails = [...(editingProduct.translations[currentLang]?.details || [])]
         newDetails[index] = value
-        setEditingProduct({ ...editingProduct, details: newDetails })
+        updateTrans('details', newDetails)
     }
 
     const removeDetail = (index: number) => {
-        if (!editingProduct || !editingProduct.details) return
-        const newDetails = editingProduct.details.filter((_, i) => i !== index)
-        setEditingProduct({ ...editingProduct, details: newDetails })
+        if (!editingProduct) return
+        const newDetails = (editingProduct.translations[currentLang]?.details || []).filter((_, i) => i !== index)
+        updateTrans('details', newDetails)
     }
 
-    // Variant Handlers
+    // Root Variant Helpers (Shared across all languages typically, as price/dimensions are usually numbers/universal, but dimensions CAN be localized. For now, assuming variants are universal or English named)
+    // To support translated variant names, we'd need structured variants in translations. 
+    // Current schema: Product.variants is array of { name, price, dimensions }.
+    // Let's keep variants universal for now as per `products.ts` schema.
+
     const addVariant = () => {
         if (!editingProduct) return
         const newVariant: ProductVariant = { name: '', price: editingProduct.price, dimensions: '' }
@@ -281,7 +453,7 @@ const AdminProductManager: React.FC = () => {
         setEditingProduct({ ...editingProduct, variants: updatedVariants })
     }
 
-    // Search & Pagination
+    // --- Filtering ---
     const filteredProducts = products.filter(p =>
         p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         p.slug.toLowerCase().includes(searchTerm.toLowerCase())
@@ -289,7 +461,6 @@ const AdminProductManager: React.FC = () => {
     const sortedProducts = [...filteredProducts].reverse()
     const totalItems = sortedProducts.length
     const totalPages = itemsPerPage === 'all' ? 1 : Math.ceil(totalItems / itemsPerPage)
-
     const indexOfLastItem = currentPage * (itemsPerPage === 'all' ? totalItems : itemsPerPage)
     const indexOfFirstItem = indexOfLastItem - (itemsPerPage === 'all' ? totalItems : itemsPerPage)
     const currentItems = sortedProducts.slice(indexOfFirstItem, indexOfLastItem)
@@ -343,7 +514,7 @@ const AdminProductManager: React.FC = () => {
                         <div style={{ display: 'flex', gap: '10px' }}>
                             {editingProduct?.slug && (
                                 <a
-                                    href={`/products/${editingProduct.slug}`}
+                                    href={`/product/${editingProduct.slug}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="preview-btn"
@@ -375,12 +546,7 @@ const AdminProductManager: React.FC = () => {
                         <div className="manager-toolbar">
                             <div className="search-box">
                                 <Search size={18} />
-                                <input
-                                    type="text"
-                                    placeholder="Search products..."
-                                    value={searchTerm}
-                                    onChange={(e) => setSearchTerm(e.target.value)}
-                                />
+                                <input type="text" placeholder="Search products..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
                             </div>
                             <button className="create-post-btn" onClick={handleNew}>
                                 <Plus size={18} />
@@ -404,39 +570,31 @@ const AdminProductManager: React.FC = () => {
                                         <tr key={product.id}>
                                             <td>
                                                 <div className="post-title-cell">
-                                                    <span className="post-title-text">{product.name}</span>
-                                                    <span className="post-slug-text">{product.slug}</span>
+                                                    <span className="post-title-text">{product?.name}</span>
+                                                    <span className="post-slug-text">{product?.slug}</span>
                                                 </div>
                                             </td>
-                                            <td>{product.price}</td>
+                                            <td>{product?.price}</td>
                                             <td>
-                                                {product.categories.map(cat => (
+                                                {product?.categories?.map(cat => (
                                                     <span key={cat} className="cat-badge" style={{ marginRight: '4px' }}>{cat}</span>
                                                 ))}
                                             </td>
                                             <td>
                                                 <div style={{ display: 'flex', gap: '5px' }}>
-                                                    {product.image && <ImageIcon size={16} color="#8B7355" />}
-                                                    {product.video && <Video size={16} color="#8B7355" />}
+                                                    {product?.image && <ImageIcon size={16} color="#8B7355" />}
+                                                    {product?.video && <Video size={16} color="#8B7355" />}
                                                 </div>
                                             </td>
                                             <td className="actions-cell">
-                                                <button className="action-btn edit" onClick={() => handleEdit(product)} title="Edit">
-                                                    <Edit size={16} />
-                                                </button>
-                                                <button className="action-btn delete" onClick={() => deleteProduct(product.id)} title="Delete">
-                                                    <Trash2 size={16} />
-                                                </button>
-                                                <a href={`/products/${product.slug}`} target="_blank" rel="noreferrer" className="action-btn preview" title="View Live">
-                                                    <Eye size={16} />
-                                                </a>
+                                                <button className="action-btn edit" onClick={() => handleEdit(product)} title="Edit"> <Edit size={16} /> </button>
+                                                <button className="action-btn delete" onClick={() => deleteProduct(product.id)} title="Delete"> <Trash2 size={16} /> </button>
                                             </td>
                                         </tr>
                                     ))}
                                 </tbody>
                             </table>
-
-                            {/* Pagination Controls */}
+                            {/* Pagination Controls ... (Simplified for brevity, assuming existing users can handle it) */}
                             <div className="pagination-wrapper">
                                 <div className="pagination-info">
                                     Showing {indexOfFirstItem + 1} to {Math.min(indexOfLastItem, totalItems)} of {totalItems} entries
@@ -466,104 +624,116 @@ const AdminProductManager: React.FC = () => {
                 ) : (
                     <div className="post-editor-container">
                         <div className="editor-header-actions">
-                            <button
-                                className="ai-generate-btn"
-                                onClick={() => setShowAIModal(true)}
-                                disabled={isGenerating}
-                            >
+                            <button className="ai-generate-btn" onClick={() => setShowAIModal(true)} disabled={isGenerating}>
                                 <Sparkles size={18} />
-                                <span>{isGenerating ? 'Processing...' : 'Magic Fill AI'}</span>
+                                <span>{isGenerating ? 'Processing...' : 'Magic Fill AI (Multi-Lang)'}</span>
                             </button>
                         </div>
 
+                        {/* Shared Data Section */}
                         <section className="editor-section card compact">
-                            <h2 className="editor-h2"><Package size={16} /> Product Details</h2>
+                            <h2 className="editor-h2"><Package size={16} /> Core Data (Shared)</h2>
                             <div className="editor-grid-compact">
-                                <div className="input-group-compact span-2">
-                                    <label>Product Name</label>
-                                    <input
-                                        type="text"
-                                        value={editingProduct?.name || ''}
-                                        onChange={e => setEditingProduct(p => p ? { ...p, name: e.target.value } : null)}
-                                    />
+                                <div className="input-group-compact">
+                                    <label>Slug (URL Identifier)</label>
+                                    <input type="text" value={editingProduct?.slug || ''} onChange={e => setEditingProduct(p => p ? { ...p, slug: e.target.value } : null)} />
                                 </div>
                                 <div className="input-group-compact">
-                                    <label>Slug</label>
-                                    <input
-                                        type="text"
-                                        value={editingProduct?.slug || ''}
-                                        onChange={e => setEditingProduct(p => p ? { ...p, slug: e.target.value } : null)}
-                                    />
+                                    <label>Price (IDR)</label>
+                                    <input type="text" value={editingProduct?.price || ''} onChange={e => setEditingProduct(p => p ? { ...p, price: e.target.value } : null)} placeholder="Rp..." />
                                 </div>
-
-                                <div className="input-group-compact">
-                                    <label>Price (Formatted)</label>
-                                    <input
-                                        type="text"
-                                        value={editingProduct?.price || ''}
-                                        onChange={e => setEditingProduct(p => p ? { ...p, price: e.target.value } : null)}
-                                        placeholder="Rp..."
-                                    />
-                                </div>
-
                                 <div className="input-group-compact span-2">
-                                    <label>Categories (comma separated)</label>
-                                    <input
-                                        type="text"
-                                        value={editingProduct?.categories.join(', ') || ''}
-                                        onChange={e => setEditingProduct(p => p ? { ...p, categories: e.target.value.split(',').map(s => s.trim()) } : null)}
-                                        placeholder="Storage, New Arrivals"
-                                    />
+                                    <label>Categories</label>
+                                    <input type="text" value={editingProduct?.categories.join(', ') || ''} onChange={e => setEditingProduct(p => p ? { ...p, categories: e.target.value.split(',').map(s => s.trim()) } : null)} />
                                 </div>
-
                                 <div className="input-group-compact span-2">
                                     <label>Image</label>
                                     <div className="input-with-action">
-                                        <input
-                                            type="text"
-                                            value={editingProduct?.image || ''}
-                                            readOnly
-                                            placeholder="/images/products/..."
-                                            style={{ background: '#f5f5f5' }}
-                                        />
+                                        <input type="text" value={editingProduct?.image || ''} readOnly style={{ background: '#f5f5f5' }} />
                                         <label className="action-input-btn">
                                             <ImageIcon size={16} /> Upload
-                                            <input type="file" hidden accept="image/*" onChange={handleImageUpload} />
+                                            <input type="file" hidden accept="image/*" onChange={(e) => handleAssetUpload(e, 'image')} />
                                         </label>
                                     </div>
                                     {editingProduct?.image && (
                                         <div style={{ marginTop: '10px' }}>
-                                            <img src={editingProduct.image} alt="Preview" style={{ height: '100px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }} />
-                                            {tempImage && <span style={{ marginLeft: '10px', fontSize: '12px', color: '#2e7d32' }}>New image ready to deploy</span>}
+                                            <img src={editingProduct.image} alt="Preview" style={{ height: '100px', objectFit: 'cover', borderRadius: '8px' }} />
                                         </div>
                                     )}
                                 </div>
-
                                 <div className="input-group-compact span-2">
-                                    <label>Video URL / Path (Optional)</label>
+                                    <label>Video</label>
+                                    <div className="input-with-action">
+                                        <input type="text" value={editingProduct?.video || ''} readOnly style={{ background: '#f5f5f5' }} />
+                                        <label className="action-input-btn">
+                                            <Video size={16} /> Upload Video
+                                            <input type="file" hidden accept="video/*" onChange={(e) => handleAssetUpload(e, 'video')} />
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* Language Specific Section */}
+                        <section className="editor-section card compact" style={{ borderTop: '4px solid #8B7355' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px' }}>
+                                <h2 className="editor-h2"><Globe size={16} /> Localized Content</h2>
+                                <span style={{ fontSize: '0.9rem', color: '#666', fontWeight: 500 }}>
+                                    Active Language: <strong style={{ color: '#8B7355' }}>{LANGUAGES.find(l => l.code === currentLang)?.label}</strong>
+                                </span>
+                            </div>
+
+                            <div className="language-tabs">
+                                {LANGUAGES.map(lang => (
+                                    <button
+                                        key={lang.code}
+                                        className={`tab-btn ${currentLang === lang.code ? 'active' : ''}`}
+                                        onClick={() => setCurrentLang(lang.code)}
+                                    >
+                                        <span style={{ marginRight: '6px' }}>{lang.flag}</span>
+                                        {lang.label}
+                                    </button>
+                                ))}
+                            </div>
+
+                            <div className="editor-grid-compact">
+                                <div className="input-group-compact span-2">
+                                    <label>Product Name ({currentLang.toUpperCase()})</label>
                                     <input
                                         type="text"
-                                        value={editingProduct?.video || ''}
-                                        onChange={e => setEditingProduct(p => p ? { ...p, video: e.target.value } : null)}
-                                        placeholder="/images/products/..."
+                                        value={editingProduct?.translations[currentLang]?.name || ''}
+                                        onChange={e => updateTrans('name', e.target.value)}
                                     />
                                 </div>
 
+                                <div className="input-group-compact">
+                                    <label>Preview Price ({LANGUAGES.find(l => l.code === currentLang)?.label})</label>
+                                    <input type="text" value={convertedPrice} readOnly style={{ background: '#f9f9f9', color: '#8B7355', fontWeight: 'bold' }} />
+                                </div>
+
                                 <div className="input-group-compact span-3">
-                                    <label>Product Description</label>
+                                    <label>Description ({currentLang.toUpperCase()})</label>
                                     <textarea
                                         rows={4}
-                                        value={editingProduct?.description || ''}
-                                        onChange={e => setEditingProduct(p => p ? { ...p, description: e.target.value } : null)}
-                                        placeholder="Enter product description here..."
                                         className="content-textarea"
+                                        value={editingProduct?.translations[currentLang]?.description || ''}
+                                        onChange={e => updateTrans('description', e.target.value)}
                                     />
                                 </div>
 
                                 <div className="input-group-compact span-3">
-                                    <label>Additional Details (Bullet Points)</label>
+                                    <label>Image Caption (SEO)</label>
+                                    <input
+                                        type="text"
+                                        value={editingProduct?.translations[currentLang]?.caption || ''}
+                                        onChange={e => updateTrans('caption', e.target.value)}
+                                    />
+                                </div>
+
+                                <div className="input-group-compact span-3">
+                                    <label>Key Features / Details ({currentLang.toUpperCase()})</label>
                                     <div className="keypoints-list">
-                                        {editingProduct?.details?.map((detail, index) => (
+                                        {(editingProduct?.translations[currentLang]?.details || []).map((detail, index) => (
                                             <div key={index} className="keypoint-item">
                                                 <span className="keypoint-number">{index + 1}</span>
                                                 <input
@@ -571,21 +741,14 @@ const AdminProductManager: React.FC = () => {
                                                     value={detail}
                                                     onChange={(e) => updateDetail(index, e.target.value)}
                                                     className="keypoint-input"
-                                                    placeholder="e.g. Heavy Duty Construction"
+                                                    placeholder="Feature detail..."
                                                 />
-                                                <button onClick={() => removeDetail(index)} className="remove-btn">
-                                                    <X size={16} />
-                                                </button>
+                                                <button onClick={() => removeDetail(index)} className="remove-btn"> <X size={16} /> </button>
                                             </div>
                                         ))}
                                     </div>
-                                    <button
-                                        type="button"
-                                        onClick={addDetail}
-                                        className="add-section-btn small"
-                                        style={{ marginTop: '10px', width: 'fit-content' }}
-                                    >
-                                        + Add Detail Point
+                                    <button type="button" onClick={addDetail} className="add-section-btn small" style={{ marginTop: '10px', width: 'fit-content' }}>
+                                        + Add Detail
                                     </button>
                                 </div>
                             </div>
@@ -593,40 +756,19 @@ const AdminProductManager: React.FC = () => {
 
                         <section className="editor-section card compact">
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px' }}>
-                                <h2 className="editor-h2"><Layers size={16} /> Variants</h2>
+                                <h2 className="editor-h2"><Layers size={16} /> Variants (Global)</h2>
                                 <button type="button" onClick={addVariant} className="create-post-btn" style={{ padding: '5px 10px', fontSize: '12px' }}>
                                     <Plus size={14} /> Add Variant
                                 </button>
                             </div>
-
                             {editingProduct?.variants && editingProduct.variants.length > 0 ? (
                                 <div className="variants-list">
                                     {editingProduct.variants.map((variant, index) => (
-                                        <div key={index} className="variant-item" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr auto', gap: '10px', alignItems: 'center', padding: '10px', borderBottom: '1px solid #eee' }}>
-                                            <input
-                                                type="text"
-                                                placeholder="Variant Name"
-                                                value={variant.name}
-                                                onChange={(e) => updateVariant(index, 'name', e.target.value)}
-                                                className="variant-input"
-                                            />
-                                            <input
-                                                type="text"
-                                                placeholder="Price"
-                                                value={variant.price}
-                                                onChange={(e) => updateVariant(index, 'price', e.target.value)}
-                                                className="variant-input"
-                                            />
-                                            <input
-                                                type="text"
-                                                placeholder="Dimensions"
-                                                value={variant.dimensions || ''}
-                                                onChange={(e) => updateVariant(index, 'dimensions', e.target.value)}
-                                                className="variant-input"
-                                            />
-                                            <button onClick={() => removeVariant(index)} className="action-btn delete" style={{ color: 'red' }}>
-                                                <X size={16} />
-                                            </button>
+                                        <div key={index} className="variant-item">
+                                            <input type="text" placeholder="Variant Name" value={variant.name} onChange={(e) => updateVariant(index, 'name', e.target.value)} className="variant-input" />
+                                            <input type="text" placeholder="Price" value={variant.price} onChange={(e) => updateVariant(index, 'price', e.target.value)} className="variant-input" />
+                                            <input type="text" placeholder="Dimensions" value={variant.dimensions || ''} onChange={(e) => updateVariant(index, 'dimensions', e.target.value)} className="variant-input" />
+                                            <button onClick={() => removeVariant(index)} className="action-btn delete" style={{ color: 'red' }}> <X size={16} /> </button>
                                         </div>
                                     ))}
                                 </div>
@@ -638,55 +780,45 @@ const AdminProductManager: React.FC = () => {
                 )}
             </main>
 
-            {/* Magic Fill Modal */}
             {showAIModal && (
                 <div className="ai-modal-overlay" onClick={() => setShowAIModal(false)}>
                     <div className="ai-modal-content" onClick={(e) => e.stopPropagation()}>
                         <div className="ai-modal-header">
-                            <h2>
-                                <Sparkles size={24} />
-                                Magic Fill AI
-                            </h2>
-                            <button className="ai-modal-close" onClick={() => setShowAIModal(false)}>
-                                <X size={20} />
-                            </button>
+                            <h2><Sparkles size={24} /> Magic Fill AI</h2>
+                            <button className="ai-modal-close" onClick={() => setShowAIModal(false)}> <X size={20} /> </button>
                         </div>
-
                         <div className="ai-modal-body">
                             <div className="editor-info-box" style={{ marginBottom: '20px' }}>
-                                <strong>How it works:</strong>
-                                <p>Paste raw product information (specs, notes, etc.) below. AI will automatically extract and format the Name, Slug, Price, Description, and Details.</p>
+                                <strong>Multi-Language Generation:</strong>
+                                <p>AI will analyze your text and automatically generate translations for all 8 languages (En, Id, Ar, Zh, Ja, Es, Fr, Ko).</p>
                             </div>
-
                             <textarea
                                 value={magicFillText}
                                 onChange={(e) => setMagicFillText(e.target.value)}
                                 placeholder="Paste raw product text here..."
                                 rows={8}
                                 disabled={isGenerating}
-                                style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #ddd' }}
                             />
-
                             <div className="input-group" style={{ marginTop: '15px' }}>
                                 <label>AI Model</label>
-                                <select
-                                    value={selectedModel}
-                                    onChange={(e) => setSelectedModel(e.target.value)}
-                                    disabled={isGenerating}
-                                    className="ai-model-select"
-                                >
+                                <select value={selectedModel} onChange={(e) => setSelectedModel(e.target.value)} disabled={isGenerating} className="ai-model-select">
                                     <optgroup label="Groq (Fast)">
-                                        <option value="llama-3.3-70b-versatile">Llama 3.3 70B</option>
+                                        <option value="llama-3.3-70b-versatile">Llama 3.3 70B (Recommended)</option>
+                                        <option value="mixtral-8x7b-32768">Mixtral 8x7B</option>
+                                    </optgroup>
+                                    <optgroup label="OpenRouter (Premium)">
+                                        <option value="openai/gpt-4o">GPT-4o (Best Quality)</option>
+                                        <option value="anthropic/claude-3-5-sonnet">Claude 3.5 Sonnet</option>
+                                        <option value="deepseek/deepseek-r1">DeepSeek R1</option>
                                     </optgroup>
                                 </select>
                             </div>
                         </div>
-
                         <div className="ai-modal-footer">
                             <button className="back-link" onClick={() => setShowAIModal(false)}>Cancel</button>
                             <button className="ai-generate-btn" onClick={handleMagicFill} disabled={isGenerating || !magicFillText.trim()}>
                                 {isGenerating ? <Loader2 className="animate-spin" size={16} /> : <Sparkles size={16} />}
-                                <span>{isGenerating ? 'Analyzing...' : 'Auto-Fill Form'}</span>
+                                <span>{isGenerating ? 'Generating...' : 'Generate All Languages'}</span>
                             </button>
                         </div>
                     </div>

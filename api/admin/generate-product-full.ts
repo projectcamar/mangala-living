@@ -1,5 +1,4 @@
 
-
 export const config = {
     runtime: 'edge', // Use Edge runtime for faster cold starts
 };
@@ -7,23 +6,54 @@ export const config = {
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
-const SYSTEM_PROMPT = `You are a data extraction assistant for Mangala Living, a premium furniture brand.
-Your task is to extract product details from raw text and format them into a specific JSON structure.
+const SYSTEM_PROMPT = `You are an expert product content generator for Mangala Living, a premium industrial furniture brand.
+Your task is to take raw input text (specs, notes, or existing description) and generate a complete, structured JSON object containing product details and translations for 8 languages.
 
-Input: Raw text describing a furniture product (specs, marketing copy, etc.)
-Output: JSON object with the following fields:
-- name: Product name (Title Case)
-- slug: URL-friendly slug (kebab-case)
-- price: Price string (e.g., "Rp3.500.000"). If not found, use "".
-- categories: Array of strings (e.g., ["Living Room", "Storage"]). Infer from context if not explicit.
-- description: A compelling, premium marketing description (2-3 sentences).
-- details: Array of strings for bullet points (e.g., ["Material: Teak Wood", "Dimensions: 200x50x50cm"]). Extract key features/specs.
+Input: Raw text about a furniture product.
+Output: A JSON object with the following structure:
 
-Rules:
-- Be precise and professional.
-- Use Indonesian language for content unless the input implies otherwise, but default to Indonesian for this market.
-- If information is missing, make a reasonable inference or leave blank/generic.
-- Return ONLY the JSON object, no markdown code blocks.`;
+{
+  "slug": "url-friendly-kebab-case-slug-in-english",
+  "price": "Price string if found (e.g. 'Rp3.500.000'), else empty string",
+  "categories": ["Category1", "Category2"], // Infer from context (e.g., 'Living Room', 'Storage', 'Seating')
+  "translations": {
+    "en": {
+      "name": "Product Name in English",
+      "description": "Compelling marketing description in English (2-3 paragraphs). Focus on premium quality, industrial style, and durability.",
+      "details": ["Bullet point 1", "Bullet point 2", "Dimensions: ..."],
+      "caption": "Short SEO caption for image (1 sentence)",
+      "shortCaption": "Very short caption",
+      "metaDescription": "SEO meta description (150 chars max)",
+      "imageAlt": "SEO optimization image alt text"
+    },
+    "id": { /* Indonesian translation of above */ },
+    "ar": { /* Arabic translation */ },
+    "zh": { /* Chinese (Simplified) translation */ },
+    "ja": { /* Japanese translation */ },
+    "es": { /* Spanish translation */ },
+    "fr": { /* French translation */ },
+    "ko": { /* Korean translation */ }
+  }
+}
+
+Languages required:
+- en: English
+- id: Indonesian (Bahasa Indonesia) - Native, natural tone
+- ar: Arabic (Modern Standard)
+- zh: Chinese (Simplified)
+- ja: Japanese (Polite/Formal)
+- es: Spanish
+- fr: French
+- ko: Korean
+
+Style Guidelines:
+- Brand Voice: Premium, Industrial, Handcrafted, Durable, Authentic.
+- "Mangala Living" should be mentioned in the description naturally.
+- Highlight "Handcrafted in Bekasi workshop since 1999" where appropriate.
+- Dimensions should be in Metric (cm).
+- For missing details, infer reasonable defaults for industrial furniture or leave generic.
+
+Return ONLY VALID JSON. No markdown formatting.`;
 
 export default async function handler(req: Request) {
     if (req.method !== 'POST') {
@@ -44,8 +74,8 @@ export default async function handler(req: Request) {
             'Content-Type': 'application/json'
         };
 
-        // Fallback or specific model handling (similar to generate-product-desc)
-        if (model.startsWith('google/') || model.startsWith('anthropic/') || model.startsWith('openai/')) {
+        // Fallback or specific model handling
+        if (model.startsWith('google/') || model.startsWith('anthropic/') || model.startsWith('openai/') || model.startsWith('deepseek/')) {
             apiUrl = 'https://openrouter.ai/api/v1/chat/completions';
             apiKey = OPENROUTER_API_KEY;
             headers = {
@@ -64,109 +94,47 @@ export default async function handler(req: Request) {
             method: 'POST',
             headers,
             body: JSON.stringify({
-                const prompt = `
-        You are an expert furniture product database assistant for "Mangala Living", a premium industrial furniture manufacturer in Indonesia.
-        
-        Task: Extract product data from the raw text below and generate content for 8 LANGUAGES:
-        1. English (en) - Default/Fallback
-        2. Indonesian (id)
-        3. Chinese (zh)
-        4. Arabic (ar)
-        5. Japanese (ja)
-        6. Spanish (es)
-        7. French (fr)
-        8. Korean (ko)
+                model,
+                messages: [
+                    { role: 'system', content: SYSTEM_PROMPT },
+                    { role: 'user', content: `Generate full product data for:\n\n${rawText}` }
+                ],
+                temperature: 0.4, // Slightly higher for creativity in translations
+                max_tokens: 3000, // Increased for 8 languages
+                response_format: { type: "json_object" }
+            }),
+        });
 
-        Raw Input:
-        "${rawText}"
-
-        Requirements:
-        - **Name**: Create a premium, catchy name (e.g., "Hollowline Industrial Bar Chair").
-        - **Slug**: URL-friendly slug (e.g., "hollowline-industrial-bar-chair").
-        - **Price**: Estimate in IDR (Indonesian Rupiah) if not provided. Format: "Rp2.500.000".
-        - **Categories**: Choose from: Chair, Table, Storage, Bed, Accessories, Custom.
-        - **Description**: 2-3 paragraphs. Marketing tone. Highlight "Industrial", "Durable", "Handcrafted in Bekasi".
-        - **Details**: 4-6 bullet points (Material, Finish, Dimensions hint).
-
-        Output JSON format ONLY:
-        {
-            "slug": "string",
-            "price": "string",
-            "categories": ["string"],
-            "translations": {
-                "en": { "name": "...", "description": "...", "details": ["..."] },
-                "id": { "name": "...", "description": "...", "details": ["..."] },
-                "zh": { "name": "...", "description": "...", "details": ["..."] },
-                "ar": { "name": "...", "description": "...", "details": ["..."] },
-                "ja": { "name": "...", "description": "...", "details": ["..."] },
-                "es": { "name": "...", "description": "...", "details": ["..."] },
-                "fr": { "name": "...", "description": "...", "details": ["..."] },
-                "ko": { "name": "...", "description": "...", "details": ["..."] }
-            }
-        }
-        `;
-
-                let data;
-                if(groqClient) {
-                    const completion = await groqClient.chat.completions.create({
-                        messages: [{ role: 'user', content: prompt }],
-                        model: model || 'llama-3.3-70b-versatile',
-                        temperature: 0.7,
-                        max_tokens: 4000,
-                        response_format: { type: 'json_object' }
-                    });
-                    const content = completion.choices[0]?.message?.content;
-                    if (!content) throw new Error('No content generated');
-                    data = JSON.parse(content);
-                } else {
-                    // Use fetch for OpenRouter or other non-Groq SDK APIs
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers,
-                        body: JSON.stringify({
-                            model,
-                            messages: [
-                                { role: 'user', content: prompt }
-                            ],
-                            temperature: 0.7, // Lower temperature for more deterministic extraction
-                            max_tokens: 4000,
-                            response_format: { type: "json_object" } // Force JSON output if supported
-                        }),
-                    });
-
-                    if(!response.ok) {
-            throw new Error(`AI API error: ${response.statusText}`);
+        if (!response.ok) {
+            const errText = await response.text();
+            throw new Error(`AI API error: ${response.status} ${errText}`);
         }
 
-            const apiResponse = await response.json();
-        let content = apiResponse.choices[0]?.message?.content?.trim();
+        const data = await response.json();
+        let content = data.choices[0]?.message?.content?.trim();
 
-        // Basic cleanup if markdown blocks are returned despite instructions
+        // Basic cleanup
         if (content.startsWith('```json')) {
             content = content.replace(/^```json\s*/, '').replace(/\s*```$/, '');
+        } else if (content.startsWith('```')) {
+            content = content.replace(/^```\s*/, '').replace(/\s*```$/, '');
         }
-        data = JSON.parse(content);
+
+        let parsedData;
+        try {
+            parsedData = JSON.parse(content);
+        } catch (e) {
+            console.error('JSON Parse Error:', content);
+            throw new Error('AI failed to generate valid JSON. Try again.');
+        }
+
+        return new Response(JSON.stringify(parsedData), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' }
+        });
+
+    } catch (error: any) {
+        console.error('Magic Fill Error:', error);
+        return new Response(JSON.stringify({ error: error.message }), { status: 500 });
     }
-
-        // Flatten for the legacy structure if needed, but primarily return the new structure
-        // The frontend will handle merging this into the product state
-        return new Response(JSON.stringify({
-        // Base fields (using English as default)
-        slug: data.slug,
-        price: data.price,
-        categories: data.categories,
-        // Legacy top-level fields for fallback
-        name: data.translations.en.name,
-        description: data.translations.en.description,
-        details: data.translations.en.details,
-        // New partial structure
-        translations: data.translations
-    }), {
-        headers: { 'Content-Type': 'application/json' }
-    });
-
-} catch (error: any) {
-    console.error('Magic Fill Error:', error);
-    return new Response(JSON.stringify({ error: error.message }), { status: 500 });
-}
 }

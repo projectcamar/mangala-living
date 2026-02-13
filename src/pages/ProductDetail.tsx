@@ -30,40 +30,10 @@ interface ProductDetail {
   description: string
   video?: string
   variants?: { name: string, price: string, dimensions?: string }[]
-  translations?: Record<string, { name: string, description: string, details: string[] }>
 }
-//...
-const ProductDetail: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>()
-  const location = useLocation()
-  const product = products[slug || '']
 
-  const [selectedImage, setSelectedImage] = useState(0)
-  const [language, setLanguage] = useState<LanguageCode>('id')
-
-  // Localized Data Retrieval
-  const localizedData = useMemo(() => {
-    if (!product) return null
-
-    const trans = product.translations?.[language]
-    // If we have manual translation, use it. Otherwise fallback to base.
-    // Note: 'details' in ProductDetail interface is a string (joined), but in schema it's string[]
-    const detailString = trans?.details ? trans.details.join(', ') : product.details
-
-    return {
-      name: trans?.name || product.name,
-      description: trans?.description || product.description,
-      details: detailString
-    }
-  }, [product, language])
-
-  const displayName = localizedData?.name || product?.name || ''
-  const displayDescription = localizedData?.description || product?.description || ''
-  const displayDetails = localizedData?.details || product?.details || ''
-  // ...
-  // Search and replace rendering to use `displayName` instead of `product.name`
-  // Search and replace rendering to use `displayDescription` instead of `product.description`
-  // Search and replace rendering to use `displayDetails` instead of `product.details`
+// Generate product description
+const generateProductDescription = (name: string) => {
   // Special descriptions for each product to target specific keywords and queries
 
   if (name.toLowerCase().includes('hollowline')) {
@@ -727,35 +697,9 @@ ALL_PRODUCTS.forEach(p => {
     details: generateProductDetails(p.categories),
     description: generateProductDescription(p.name),
     video: p.video,
-    variants: p.variants,
-    translations: p.translations // Pass through translations
+    variants: p.variants
   } as ProductDetail
 })
-
-// ... inside ProductDetail component ...
-
-const [selectedImage, setSelectedImage] = useState(0)
-const [language, setLanguage] = useState<LanguageCode>('id')
-
-// Localized Data Retrieval
-const localizedData = useMemo(() => {
-  if (!product) return null
-
-  const trans = product.translations?.[language]
-  return {
-    name: trans?.name || product.name,
-    description: trans?.description || product.description,
-    details: trans?.details?.length ? trans.details.join(', ') : product.details
-  }
-}, [product, language])
-
-// Backwards compatibility for details if not in translation but generated
-const displayDetails = localizedData?.details || product?.details || ''
-const displayName = localizedData?.name || ''
-const displayDescription = localizedData?.description || ''
-
-// Search and replace usages of `product.name` -> `displayName`, `product.description` -> `displayDescription`
-
 
 // Related products - random 4 products
 const getRelatedProducts = (currentSlug: string) => {

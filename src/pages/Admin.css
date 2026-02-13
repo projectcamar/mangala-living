@@ -1208,63 +1208,80 @@
   color: #555;
 }
 
-/* --- Language Tabs --- */
+.action-input-btn:hover {
+  background: #e9ecef;
+  border-color: #ccc;
+}
+
+/* Language Tabs */
 .language-tabs {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
   overflow-x: auto;
 }
 
-.lang-tab {
-  background: white;
-  border: 1px solid #ddd;
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 0.85rem;
+.tab-btn {
+  background: transparent;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: all 0.2s;
+  font-weight: 500;
+  color: #666;
   white-space: nowrap;
+  transition: all 0.2s;
 }
 
-.lang-tab:hover {
-  background: #f8f9fa;
-  border-color: #ccc;
-}
-
-.lang-tab.active {
-  background: #2C3E50;
+.tab-btn.active {
+  background: #8B7355;
   color: white;
-  border-color: #2C3E50;
+  font-weight: 600;
 }
 
-.lang-tab.has-content {
-  border-left: 3px solid #4CAF50;
+.tab-btn:hover:not(.active) {
+  background: #f0f0f0;
+  color: #333;
 }
 
-/* --- Variants Styling --- */
+/* Variant Item */
 .variants-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0;
 }
 
 .variant-item {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr auto;
-  gap: 12px;
+  gap: 10px;
   align-items: center;
   padding: 12px;
-  background: #fdfdfd;
-  border: 1px solid #eee;
-  border-radius: 6px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  transition: background 0.2s;
+}
+
+.variant-item:last-child {
+  border-bottom: none;
+}
+
+.variant-item:hover {
+  background: #fafafa;
 }
 
 .variant-input {
   width: 100%;
-  padding: 8px;
+  padding: 8px 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 0.9rem;
+  background: white;
+}
+
+.variant-input:focus {
+  outline: none;
+  border-color: #8B7355;
 }

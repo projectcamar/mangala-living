@@ -597,16 +597,11 @@ const Shop: React.FC = () => {
 
               <div className="category-products-grid">
                 {currentProducts.map((product) => {
-                  // PRIORITY 1: Manual Translation from Admin
-                  // PRIORITY 2: Auto-generated static description helper (legacy)
-                  // PRIORITY 3: Base name
-                  const adminTransName = product.translations?.[language]?.name
-                  const translatedName = adminTransName || getProductName(product.slug, isIndonesian, language) || product.name
-
+                  const translatedName = getProductName(product.slug, isIndonesian, language) || product.name
                   return (
                     <Link
                       key={product.id}
-                      to={`/product/${product.slug}`} // Fix: ensure singular link everywhere
+                      to={`/product/${product.slug}`}
                       className="category-product-card"
                     >
                       <div className="category-product-image">
