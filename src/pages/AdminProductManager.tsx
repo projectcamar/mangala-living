@@ -39,8 +39,10 @@ const AdminProductManager: React.FC = () => {
     const [isDeploying, setIsDeploying] = useState(false)
     const [isMagicFilling, setIsMagicFilling] = useState(false)
     const [magicFillText, setMagicFillText] = useState('')
+    const [magicFillModel, setMagicFillModel] = useState('llama-3.3-70b-versatile')
     const [showMagicFillModal, setShowMagicFillModal] = useState(false)
     const [searchTerm, setSearchTerm] = useState('')
+    const [listViewLanguage, setListViewLanguage] = useState<LanguageCode>('en')
 
     // Initial Load
     useEffect(() => {
@@ -194,7 +196,7 @@ const AdminProductManager: React.FC = () => {
             const response = await fetch('/api/admin/generate-product-full', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ rawText: magicFillText })
+                body: JSON.stringify({ rawText: magicFillText, model: magicFillModel })
             })
 
             const data = await response.json()
@@ -563,6 +565,21 @@ const AdminProductManager: React.FC = () => {
                         <div className="modal-content">
                             <h3>Magic Fill ✨</h3>
                             <p>Paste raw product text or details here. AI will extract data, generate descriptions, and translate to ALL 8 languages automatically.</p>
+
+                            <div className="form-group" style={{ marginBottom: '16px' }}>
+                                <label>AI Model</label>
+                                <select
+                                    value={magicFillModel}
+                                    onChange={(e) => setMagicFillModel(e.target.value)}
+                                    style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid #ddd' }}
+                                >
+                                    <option value="llama-3.3-70b-versatile">Llama 3.3 70B (Fast & Smart)</option>
+                                    <option value="llama-3.1-70b-versatile">Llama 3.1 70B (Stable)</option>
+                                    <option value="mixtral-8x7b-32768">Mixtral 8x7B (High Quality)</option>
+                                    <option value="gemma2-9b-it">Gemma2 9B (Fastest)</option>
+                                </select>
+                            </div>
+
                             <textarea
                                 className="magic-input"
                                 value={magicFillText}
@@ -607,6 +624,17 @@ const AdminProductManager: React.FC = () => {
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                     />
+                    <select
+                        value={listViewLanguage}
+                        onChange={(e) => setListViewLanguage(e.target.value as LanguageCode)}
+                        style={{ marginLeft: '12px', padding: '10px', borderRadius: '6px', border: '1px solid #ddd' }}
+                    >
+                        {LANGUAGES.map(lang => (
+                            <option key={lang.code} value={lang.code}>
+                                {lang.flag} {lang.label}
+                            </option>
+                        ))}
+                    </select>
                 </div>
 
                 <div className="table-responsive">
@@ -632,7 +660,12 @@ const AdminProductManager: React.FC = () => {
                                         />
                                     </td>
                                     <td>
-                                        <div className="product-name">{product.name}</div>
+                                        <div className="product-name">
+                                            {descriptionsMap[product.slug]?.[listViewLanguage]?.name || product.name}
+                                            {listViewLanguage !== 'en' && (
+                                                <span style={{ fontSize: '0.85em', color: '#999', marginLeft: '8px' }}>({product.name})</span>
+                                            )}
+                                        </div>
                                         <div className="product-slug">{product.slug}</div>
                                     </td>
                                     <td>{product.price}</td>

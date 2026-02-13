@@ -1,20 +1,16 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import { useParams, Link, useLocation, Navigate } from 'react-router-dom'
+import { useParams, useLocation, Navigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { X, Play } from 'lucide-react'
+import { Play } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
-import ProductDetailAIContent from '../components/ProductDetailAIContent'
 import { ALL_PRODUCTS } from '../data/products'
 import { getProductDescription, getProductName, getProductImageAlt, getProductImageCaption } from '../data/productDescriptions'
-import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl, truncateTitle, truncateMetaDescription } from '../utils/seo'
-import { DEFAULT_IMAGE_RIGHTS_METADATA } from '../utils/structuredData'
-import { sendBackgroundEmail } from '../utils/emailHelpers'
+import { generateLanguageSpecificMeta, generateLocalizedUrls, truncateMetaDescription } from '../utils/seo'
 import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { getCategorySlug } from '../utils/categoryHelpers'
-import { trackWhatsAppClick } from '../utils/whatsappTracking'
 import { getCurrentLanguage, type LanguageCode } from '../utils/languageManager'
 import { translateCategory } from '../utils/categoryTranslations'
 import './ProductDetail.css'
@@ -418,7 +414,7 @@ const ProductDetail: React.FC = () => {
           <div className="about-product-section">
             <h2>{t.about} {localizedName}</h2>
             <div className="about-product-content">
-              {localizedDesc?.split('\n').map((para, i) => <p key={i}>{para}</p>)}
+              {localizedDesc?.split('\n').map((para: string, i: number) => <p key={i}>{para}</p>)}
             </div>
           </div>
         </div>

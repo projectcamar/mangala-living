@@ -15,7 +15,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     try {
-        const { rawText } = req.body
+        const { rawText, model = 'llama-3.3-70b-versatile' } = req.body
 
         const systemPrompt = `You are an expert furniture product manager for Mangala Living, a premium industrial furniture workshop in Indonesia.
     Extract and generate product details from the raw text provided.
@@ -57,7 +57,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                 { role: 'system', content: systemPrompt },
                 { role: 'user', content: rawText }
             ],
-            model: 'llama-3.3-70b-versatile',
+            model: model,
             temperature: 0.3,
         })
 
