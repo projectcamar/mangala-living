@@ -1,116 +1,108 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { Octokit } from '@octokit/rest'
-
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN
-const REPO_OWNER = 'Las-Bekasi'
-const REPO_NAME = 'mangala-living'
-const BRANCH = 'main' // or 'master', check your repo
-
-const octokit = new Octokit({
-    auth: GITHUB_TOKEN,
-})
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (req.method !== 'POST') {
-        return res.status(405).json({ error: 'Method not allowed' })
+        return res.status(405).json({ error: 'Method not allowed' });
     }
 
+    const { products, commitMessage = 'Update products via admin' } = req.body;
+
+    const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+    const GITHUB_REPO = process.env.GITHUB_REPO || 'projectcamar/mangala-living';
+    const GITHUB_BRANCH = process.env.GITHUB_BRANCH || 'main';
+
     if (!GITHUB_TOKEN) {
-        return res.status(500).json({ error: 'GITHUB_TOKEN not configured' })
+        return res.status(500).json({
+            error: 'GitHub token not configured',
+            details: 'Please set GITHUB_TOKEN in Vercel environment variables'
+        });
+    }
+
+    if (!products || !Array.isArray(products)) {
+        return res.status(400).json({
+            error: 'Invalid request',
+            details: 'products array is required'
+        });
     }
 
     try {
-        const { products, descriptions, images, video } = req.body
+        const [owner, repo] = GITHUB_REPO.split('/');
+        const filePath = 'src/data/products.ts';
 
-        // 1. Upload Images to public/images/products/
-        if (images && Array.isArray(images)) {
-            for (const img of images) {
-                if (img.content && img.filename) {
-                    // Check if it's a base64 content (new upload)
-                    const content = img.content.split(',')[1] // Remove data:image/jpeg;base64,
-
-                    await octokit.repos.createOrUpdateFileContents({
-                        owner: REPO_OWNER,
-                        repo: REPO_NAME,
-                        path: `public/images/products/${img.filename}`,
-                        message: `Upload product image: ${img.filename}`,
-                        content: content,
-                        branch: BRANCH,
-                    })
-                }
+        // Step 1: Get current file content and SHA
+        const getFileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}?ref=${GITHUB_BRANCH}`;
+        const getFileResponse = await fetch(getFileUrl, {
+            headers: {
+                'Authorization': `Bearer ${GITHUB_TOKEN}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'User-Agent': 'Mangala-Admin-Bot'
             }
+        });
+
+        if (!getFileResponse.ok) {
+            throw new Error(`Failed to fetch file from GitHub: ${getFileResponse.statusText}`);
         }
 
-        // 2. Upload Video to public/images/products/ (if any)
-        if (video && video.content && video.filename) {
-            const content = video.content.split(',')[1] // Remove data:video/mp4;base64,
+        const fileData = await getFileResponse.json();
+        const currentContent = Buffer.from(fileData.content, 'base64').toString('utf8');
+        const sha = fileData.sha;
 
-            await octokit.repos.createOrUpdateFileContents({
-                owner: REPO_OWNER,
-                repo: REPO_NAME,
-                path: `public/images/products/${video.filename}`,
-                message: `Upload product video: ${video.filename}`,
-                content: content,
-                branch: BRANCH,
+        // Step 2: Generate new content with updated ALL_PRODUCTS array
+        // We need to preserve interfaces and other exports
+        const newProductsJson = JSON.stringify(products, null, 2);
+
+        // Regex to replace the array content. 
+        // Matches "export const ALL_PRODUCTS: Product[] = [" until the closing "]"
+        const newContent = currentContent.replace(
+            /(export const ALL_PRODUCTS: Product\[\] = )\[[\s\S]*?\](\s*$)/,
+            `$1${newProductsJson}$2`
+        );
+
+        // Check if there are actual changes
+        if (newContent === currentContent) {
+            return res.status(200).json({
+                success: true,
+                message: 'No changes detected',
+                deployed: false
+            });
+        }
+
+        // Step 3: Commit and push the updated file
+        const updateFileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+        const updateFileResponse = await fetch(updateFileUrl, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `Bearer ${GITHUB_TOKEN}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json',
+                'User-Agent': 'Mangala-Admin-Bot'
+            },
+            body: JSON.stringify({
+                message: commitMessage,
+                content: Buffer.from(newContent).toString('base64'),
+                sha: sha,
+                branch: GITHUB_BRANCH
             })
+        });
+
+        if (!updateFileResponse.ok) {
+            const errorData = await updateFileResponse.json();
+            throw new Error(`Failed to update file on GitHub: ${errorData.message || updateFileResponse.statusText}`);
         }
 
-        // 3. Update src/data/products.ts
-        // We need to format the TS file content manually
-        const productsTsContent = `import { Product } from './product-types'\n\nexport const ALL_PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)}`
+        const updateResult = await updateFileResponse.json();
 
-        // Get current SHA for products.ts
-        const { data: currentProductsFile } = await octokit.repos.getContent({
-            owner: REPO_OWNER,
-            repo: REPO_NAME,
-            path: 'src/data/products.ts',
-            ref: BRANCH,
-        })
-
-        if (!Array.isArray(currentProductsFile)) {
-            await octokit.repos.createOrUpdateFileContents({
-                owner: REPO_OWNER,
-                repo: REPO_NAME,
-                path: 'src/data/products.ts',
-                message: 'Update products data via Admin',
-                content: Buffer.from(productsTsContent).toString('base64'),
-                sha: currentProductsFile.sha,
-                branch: BRANCH,
-            })
-        }
-
-        // 4. Update src/data/product-descriptions.json
-        const descriptionsJsonContent = JSON.stringify(descriptions, null, 2)
-
-        // Get current SHA for product-descriptions.json
-        let descriptionsSha: string | undefined
-        try {
-            const { data: currentDescFile } = await octokit.repos.getContent({
-                owner: REPO_OWNER,
-                repo: REPO_NAME,
-                path: 'src/data/product-descriptions.json',
-                ref: BRANCH,
-            })
-            if (!Array.isArray(currentDescFile)) {
-                descriptionsSha = currentDescFile.sha
-            }
-        } catch (e) {
-            // File might not exist yet, which is fine
-        }
-
-        await octokit.repos.createOrUpdateFileContents({
-            owner: REPO_OWNER,
-            repo: REPO_NAME,
-            path: 'src/data/product-descriptions.json',
-            message: 'Update product descriptions via Admin',
-            content: Buffer.from(descriptionsJsonContent).toString('base64'),
-            sha: descriptionsSha,
-            branch: BRANCH,
-        })
-
-        return res.status(200).json({ success: true, message: 'Products deployed successfully' })
+        return res.status(200).json({
+            success: true,
+            message: 'Changes committed and pushed successfully. Vercel will auto-deploy.',
+            deployed: true,
+            commitUrl: updateResult.commit?.html_url
+        });
     } catch (error: any) {
-        console.error('Deploy error:', error)
-        return res.status(500).json({ error: 'Failed to deploy products', details: error.message })
+        console.error('[AUTO_DEPLOY_ERROR]', error);
+        return res.status(500).json({
+            error: 'Failed to auto-deploy',
+            details: error.message
+        });
     }
 }

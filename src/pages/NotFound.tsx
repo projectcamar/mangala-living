@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { ALL_PRODUCTS } from '../data/products'
 import { convertIDRToUSD } from '../utils/currencyConverter'
-import { getProductName } from '../data/productDescriptions'
+// Product names from products.ts directly
 import './NotFound.css'
 
 const FEATURED_PRODUCTS = ALL_PRODUCTS.slice(0, 4)
@@ -186,7 +186,7 @@ const NotFound: React.FC = () => {
               </h3>
               <div className="products-grid">
                 {FEATURED_PRODUCTS.map((product) => {
-                  const translatedName = getProductName(product.slug, isIndonesian) || product.name
+                  const translatedName = product.name
                   return (
                     <Link
                       key={product.id}

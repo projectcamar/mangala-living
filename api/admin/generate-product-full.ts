@@ -1,74 +1,111 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node'
-import Groq from 'groq-sdk'
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 
-const groq = new Groq({
-    apiKey: process.env.GROQ_API_KEY
-})
+const GROQ_API_KEY = process.env.GROQ_API_KEY || '';
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || '';
+const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
+const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
+
+interface GenerateProductRequest {
+    sourceText?: string;
+    category?: string;
+    model?: string;
+    language?: string;
+}
+
+const SYSTEM_PROMPT = `You are a professional copywriter for Mangala Living, a premium industrial furniture manufacturer.
+Your task is to generate complete product data from a source text or minimal input.
+
+Features of Mangala Living products:
+- Industrial style (metal + wood)
+- High durability and quality
+- Custom designs available
+- Perfect for cafes, restaurants, hotels, and modern homes including minimalism, japandi, and scandinavian style.
+
+Output format (JSON ONLY, no markdown):
+{
+  "name": "Product Name",
+  "slug": "product-name-slug",
+  "description": "50-100 words compelling description",
+  "productDetails": ["Feature 1", "Feature 2", "Feature 3"]
+}
+
+Rules:
+- Slug must be lowercase, hyphenated, URL-friendly
+- Description: Professional, Premium, Persuasive tone
+- Product Details: 3-5 key features, concise bullet points
+- Return ONLY valid JSON, no additional text`;
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (req.method !== 'POST') {
-        return res.status(405).json({ error: 'Method not allowed' })
-    }
-
-    if (!process.env.GROQ_API_KEY) {
-        return res.status(500).json({ error: 'GROQ_API_KEY not configured' })
+        return res.status(405).json({ error: 'Method not allowed' });
     }
 
     try {
-        const { rawText, model = 'llama-3.3-70b-versatile' } = req.body
+        const { sourceText, category, model = 'llama-3.3-70b-versatile', language = 'id' }: GenerateProductRequest = req.body;
 
-        const systemPrompt = `You are an expert furniture product manager for Mangala Living, a premium industrial furniture workshop in Indonesia.
-    Extract and generate product details from the raw text provided.
-    
-    You MUST output a valid JSON object with this EXACT structure (no markdown, no extra text):
-    {
-      "name": "Product Name",
-      "slug": "product-slug",
-      "price": "IDR 2.500.000",
-      "categories": ["Category 1", "Category 2"],
-      "details": ["Detail 1", "Detail 2"],
-      "descriptions": {
-         "en": { "name": "", "caption": "", "shortCaption": "", "description": "", "metaDescription": "", "imageAlt": "" },
-         "id": { "name": "", "caption": "", "shortCaption": "", "description": "", "metaDescription": "", "imageAlt": "" },
-         "ar": { "name": "", "caption": "", "shortCaption": "", "description": "", "metaDescription": "", "imageAlt": "" },
-         "zh": { "name": "", "caption": "", "shortCaption": "", "description": "", "metaDescription": "", "imageAlt": "" },
-         "ja": { "name": "", "caption": "", "shortCaption": "", "description": "", "metaDescription": "", "imageAlt": "" },
-         "es": { "name": "", "caption": "", "shortCaption": "", "description": "", "metaDescription": "", "imageAlt": "" },
-         "fr": { "name": "", "caption": "", "shortCaption": "", "description": "", "metaDescription": "", "imageAlt": "" },
-         "ko": { "name": "", "caption": "", "shortCaption": "", "description": "", "metaDescription": "", "imageAlt": "" }
-      }
-    }
-    
-    GUIDELINES:
-    1. Slug: lowercase, kebab-case.
-    2. Price: Format as "IDR X.XXX.XXX". If no price found, estimate based on similar industrial furniture (e.g., Chair ~1.5M, Table ~3-5M).
-    3. Details: Technical specs (dimensions, material, finish).
-    4. Descriptions:
-       - Generate high-quality marketing copy for EACH language.
-       - "name": Localized product name.
-       - "caption": Catchy caption for social media.
-       - "description": 2-3 paragraphs. Mention "Mangala Living", "Bekasi Workshop", "Industrial Design".
-       - "metaDescription": SEO optimized, under 160 chars.
-       - "imageAlt": Descriptive alt text for SEO.
-    `
+        if (!sourceText && !category) {
+            return res.status(400).json({ error: 'Source text or category is required' });
+        }
 
-        const completion = await groq.chat.completions.create({
-            messages: [
-                { role: 'system', content: systemPrompt },
-                { role: 'user', content: rawText }
-            ],
-            model: model,
-            temperature: 0.3,
-        })
+        // Determine API
+        const isOpenRouter = model.includes('/');
+        const apiUrl = isOpenRouter ? OPENROUTER_API_URL : GROQ_API_URL;
+        const apiKey = isOpenRouter ? OPENROUTER_API_KEY : GROQ_API_KEY;
 
-        const content = completion.choices[0]?.message?.content || '{}'
-        // Clean up if the AI returned markdown code blocks
-        const jsonStr = content.replace(/```json\n?|```/g, '').trim()
-        const data = JSON.parse(jsonStr)
+        if (!apiKey) {
+            return res.status(500).json({ error: 'API key not configured' });
+        }
 
-        return res.status(200).json(data)
-    } catch (error: any) {
-        console.error('Generate Product Full error:', error)
-        return res.status(500).json({ error: 'Failed to generate product details', details: error.message })
+        const headers: Record<string, string> = {
+            'Authorization': `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+        };
+
+        if (isOpenRouter) {
+            headers['HTTP-Referer'] = 'https://mangalaliving.com';
+            headers['X-Title'] = 'Mangala Living Product Generator';
+        }
+
+        const prompt = sourceText
+            ? `Generate complete product data from this source text:\n\n${sourceText}\n\nCategory: ${category || 'Furniture'}\nLanguage: ${language === 'id' ? 'Indonesian (Bahasa Indonesia)' : 'English'}`
+            : `Generate product data for a ${category} item.\nLanguage: ${language === 'id' ? 'Indonesian (Bahasa Indonesia)' : 'English'}`;
+
+        const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers,
+            body: JSON.stringify({
+                model,
+                messages: [
+                    { role: 'system', content: SYSTEM_PROMPT },
+                    { role: 'user', content: prompt }
+                ],
+                temperature: 0.7,
+                max_tokens: 500,
+            }),
+        });
+
+        if (!response.ok) {
+            throw new Error(await response.text());
+        }
+
+        const data = await response.json();
+        const content = data.choices[0]?.message?.content?.trim();
+
+        // Parse JSON from content
+        let productData;
+        try {
+            // Remove markdown code blocks if present
+            const jsonText = content.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+            productData = JSON.parse(jsonText);
+        } catch (parseError) {
+            console.error('JSON parse error:', parseError);
+            return res.status(500).json({ error: 'Failed to parse AI response', rawContent: content });
+        }
+
+        return res.status(200).json({ success: true, ...productData });
+
+    } catch (error) {
+        console.error('Generate product error:', error);
+        return res.status(500).json({ error: 'Failed to generate product data' });
     }
 }

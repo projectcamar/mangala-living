@@ -7,7 +7,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
-import { getProductDescription, getProductName, getProductImageAlt, getProductImageCaption } from '../data/productDescriptions'
+// Product descriptions now come from products.ts directly
 import { generateLanguageSpecificMeta, generateLocalizedUrls, truncateMetaDescription } from '../utils/seo'
 import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { getCategorySlug } from '../utils/categoryHelpers'
@@ -279,15 +279,14 @@ const ProductDetail: React.FC = () => {
   }
 
   // Derived Data
-  const localizedName = getProductName(baseProduct.slug, isIndonesian, language) || baseProduct.name
-  const productDescData = getProductDescription(baseProduct.slug)
-  const localizedDesc = productDescData?.[language]?.description || productDescData?.en?.description
-  const localizedImageAlt = getProductImageAlt(baseProduct.slug, isIndonesian, language)
-  const localizedImageCaption = getProductImageCaption(baseProduct.slug, isIndonesian, language)
+  const localizedName = baseProduct.name
+  const localizedDesc = baseProduct.description || ''
+  const localizedImageAlt = localizedName
+  const localizedImageCaption = localizedName
 
   // Detail Translation
   const translateDetails = (details: string[] | undefined) => {
-    if (!details) return ''
+    if (!details || details.length === 0) return ''
     return details.map(d => {
       // Try to find a translation for the token
       const translation = DETAIL_FEATURE_TRANSLATIONS[d]?.[language]
@@ -406,7 +405,7 @@ const ProductDetail: React.FC = () => {
               <div className="product-details-box">
                 <h3>{t.productDetails}</h3>
                 {currentDimensions && <p><strong>{t.dimensions}</strong> {currentDimensions}</p>}
-                <p>{translateDetails(baseProduct.details)}</p>
+                <p>{translateDetails(baseProduct.productDetails)}</p>
               </div>
             </div>
           </div>

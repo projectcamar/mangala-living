@@ -9,7 +9,7 @@ import Breadcrumb from '../components/Breadcrumb'
 import { ALL_PRODUCTS } from '../data/products'
 import { generateLanguageSpecificMeta, generateLocalizedUrls } from '../utils/seo'
 import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
-import { getProductName } from '../data/productDescriptions'
+// Product names now come from products.ts directly
 import { getCurrentLanguage, getStoredLanguage, detectLanguageFromIP, type LanguageCode } from '../utils/languageManager'
 import './SearchResults.css'
 import '../components/DualLanguage.css'
@@ -235,7 +235,7 @@ function SearchResults() {
   useEffect(() => {
     const stored = getStoredLanguage()
     const urlLang = getCurrentLanguage(location.pathname, location.search)
-    
+
     if (stored || urlLang !== 'en') {
       return
     }
@@ -259,7 +259,7 @@ function SearchResults() {
     const convertPrices = async () => {
       const usdPriceMap: Record<number, string> = {}
       const highlightedPriceMap: Record<number, string> = {}
-      
+
       const targetCurrency = LANGUAGE_CURRENCY_MAP[language]
 
       for (const product of allProducts) {
@@ -315,13 +315,13 @@ function SearchResults() {
   const queryTokens = useMemo(() => {
     return hasQuery
       ? Array.from(
-          new Set(
-            normalizedQuery
-              .split(/[\s\-_,.]+/)
-              .map(token => token.trim())
-              .filter(token => token.length > 1)
-          )
+        new Set(
+          normalizedQuery
+            .split(/[\s\-_,.]+/)
+            .map(token => token.trim())
+            .filter(token => token.length > 1)
         )
+      )
       : []
   }, [hasQuery, normalizedQuery])
 
@@ -413,63 +413,63 @@ function SearchResults() {
   ]
 
   return (
-      <div className="search-results-page">
-        <AnnouncementBar language={language} isIndonesian={isIndonesian} />
-        <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
-          <title>{uiTranslations.pageTitle(hasQuery ? query : undefined)}</title>
-          <meta
-            name="description"
-            content={uiTranslations.metaDescription(query, hasQuery)}
-          />
-          {/* Add noindex for empty search results to prevent Soft 404 */}
-          <meta name="robots" content={hasQuery && resultsCount === 0 ? "noindex, follow" : "index, follow"} />
-          <meta httpEquiv="content-language" content={localeMeta.lang} />
-          <link rel="canonical" href={localizedUrls.canonical} />
-          {localizedUrls.alternates.map((alternate) => (
-            <link key={`search-results-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
-          ))}
-          <meta property="og:url" content={localizedUrls.canonical} />
-          <meta property="og:locale" content={localeMeta.locale} />
-          {OG_LOCALES.filter(altLocale => altLocale !== localeMeta.locale).map((altLocale) => (
-            <meta key={`search-results-og-${altLocale}`} property="og:locale:alternate" content={altLocale} />
-          ))}
-        </Helmet>
+    <div className="search-results-page">
+      <AnnouncementBar language={language} isIndonesian={isIndonesian} />
+      <Helmet htmlAttributes={{ lang: localeMeta.lang, dir: localeMeta.direction, 'data-language': localeMeta.lang }}>
+        <title>{uiTranslations.pageTitle(hasQuery ? query : undefined)}</title>
+        <meta
+          name="description"
+          content={uiTranslations.metaDescription(query, hasQuery)}
+        />
+        {/* Add noindex for empty search results to prevent Soft 404 */}
+        <meta name="robots" content={hasQuery && resultsCount === 0 ? "noindex, follow" : "index, follow"} />
+        <meta httpEquiv="content-language" content={localeMeta.lang} />
+        <link rel="canonical" href={localizedUrls.canonical} />
+        {localizedUrls.alternates.map((alternate) => (
+          <link key={`search-results-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
+        ))}
+        <meta property="og:url" content={localizedUrls.canonical} />
+        <meta property="og:locale" content={localeMeta.locale} />
+        {OG_LOCALES.filter(altLocale => altLocale !== localeMeta.locale).map((altLocale) => (
+          <meta key={`search-results-og-${altLocale}`} property="og:locale:alternate" content={altLocale} />
+        ))}
+      </Helmet>
 
-        <Header isIndonesian={isIndonesian} language={language} />
+      <Header isIndonesian={isIndonesian} language={language} />
       <CurrencyHighlight isIndonesian={isIndonesian} language={language} />
 
       <div className="container">
         <Breadcrumb items={breadcrumbItems} />
 
         <div className="search-results-header">
-            <div className="search-results-heading">
-              <h1 className="search-results-title">{headingText}</h1>
-              <p className="search-results-subtitle">
-                {uiTranslations.subtitle}
-              </p>
-              {isDetectingLanguage && (
-                <span className="search-language-indicator">{uiTranslations.languageAdjusting}</span>
-              )}
-            </div>
+          <div className="search-results-heading">
+            <h1 className="search-results-title">{headingText}</h1>
+            <p className="search-results-subtitle">
+              {uiTranslations.subtitle}
+            </p>
+            {isDetectingLanguage && (
+              <span className="search-language-indicator">{uiTranslations.languageAdjusting}</span>
+            )}
+          </div>
           <div className="search-results-controls">
             <select
               className="sort-select"
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
             >
-                <option value="default">{uiTranslations.sortDefault}</option>
-                <option value="price-low">{uiTranslations.sortPriceLow}</option>
-                <option value="price-high">{uiTranslations.sortPriceHigh}</option>
+              <option value="default">{uiTranslations.sortDefault}</option>
+              <option value="price-low">{uiTranslations.sortPriceLow}</option>
+              <option value="price-high">{uiTranslations.sortPriceHigh}</option>
             </select>
           </div>
         </div>
 
-          <p className="results-count">{uiTranslations.resultsCount(resultsCount)}</p>
+        <p className="results-count">{uiTranslations.resultsCount(resultsCount)}</p>
 
         {sortedProducts.length > 0 ? (
           <div className="products-grid">
             {sortedProducts.map((product) => {
-              const translatedName = getProductName(product.slug, isIndonesian) || product.name
+              const translatedName = product.name
               return (
                 <Link
                   key={product.id}
@@ -493,33 +493,33 @@ function SearchResults() {
                   <div className="product-info">
                     <h3 className="product-name">{translatedName}</h3>
                     <p className="product-category">{product.category}</p>
-                  {usdPrices[product.id] && highlightedPrices[product.id] && usdPrices[product.id] !== 'N/A' ? (
-                    <div className="product-price-stack">
-                      <span className="product-price-primary">
-                        {highlightedPrices[product.id]}
-                      </span>
-                      <span className="product-price-secondary">
-                        {usdPrices[product.id]}
-                      </span>
-                    </div>
-                  ) : (
-                    <p className="product-price">{product.price}</p>
-                  )}
-                </div>
-              </Link>
+                    {usdPrices[product.id] && highlightedPrices[product.id] && usdPrices[product.id] !== 'N/A' ? (
+                      <div className="product-price-stack">
+                        <span className="product-price-primary">
+                          {highlightedPrices[product.id]}
+                        </span>
+                        <span className="product-price-secondary">
+                          {usdPrices[product.id]}
+                        </span>
+                      </div>
+                    ) : (
+                      <p className="product-price">{product.price}</p>
+                    )}
+                  </div>
+                </Link>
               )
             })}
           </div>
         ) : (
           <div className="no-results">
             <p className="no-results-message">
-                {hasQuery ? uiTranslations.noResultsWithQuery(query) : uiTranslations.noResultsWithoutQuery}
+              {hasQuery ? uiTranslations.noResultsWithQuery(query) : uiTranslations.noResultsWithoutQuery}
             </p>
           </div>
         )}
       </div>
 
-        <Footer isIndonesian={isIndonesian} language={language} />
+      <Footer isIndonesian={isIndonesian} language={language} />
     </div>
   )
 }
