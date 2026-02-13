@@ -4,7 +4,7 @@ import { ALL_PRODUCTS } from '../data/products'
 import { trackEvent } from '../utils/analytics'
 import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { translateCategory } from '../utils/categoryTranslations'
-import { getProductName } from '../data/productDescriptions'
+// Product names from products.ts directly
 import './OurProductsSection.css'
 
 interface OurProductsSectionProps {
@@ -115,7 +115,7 @@ const OurProductsSection: React.FC<OurProductsSectionProps> = ({ isIndonesian = 
 
         <div className="products-grid-full">
           {products.map((product) => {
-            const translatedName = getProductName(product.slug, isIndonesian, language) || product.name
+            const translatedName = product.name
             return (
               <Link
                 key={product.id}

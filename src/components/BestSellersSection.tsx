@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { ALL_PRODUCTS } from '../data/products'
 import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
 import { translateCategories } from '../utils/categoryTranslations'
-import { getProductName } from '../data/productDescriptions'
+// Product names from products.ts directly
 import './BestSellersSection.css'
 
 interface BestSellersSectionProps {
@@ -141,7 +141,7 @@ const BestSellersSection: React.FC<BestSellersSectionProps> = ({ isIndonesian = 
 
           <div className="products-grid">
             {visibleProducts.map((product) => {
-              const translatedName = getProductName(product.slug, isIndonesian, language) || product.name
+              const translatedName = product.name
               return (
                 <Link
                   key={product.id}
