@@ -13,7 +13,6 @@ import { CATEGORIES } from '../data/categories'
 import { generateMerchantStructuredData } from '../utils/structuredData'
 import { generateLanguageSpecificMeta, generateLocalizedUrls, getProductImageUrl } from '../utils/seo'
 import { convertIDRToUSD, convertIDRToCurrency } from '../utils/currencyConverter'
-import { getProductName } from '../data/productDescriptions'
 import { getCurrentLanguage, type LanguageCode } from '../utils/languageManager'
 import { translateCategories } from '../utils/categoryTranslations'
 import './ProductCategory.css'
@@ -597,7 +596,7 @@ const Shop: React.FC = () => {
 
               <div className="category-products-grid">
                 {currentProducts.map((product) => {
-                  const translatedName = getProductName(product.slug, isIndonesian, language) || product.name
+                  const translatedName = product.name
                   return (
                     <Link
                       key={product.id}
