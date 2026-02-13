@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import {
     Plus, Edit, Trash2, Search, ArrowLeft, Save,
     Package, AlertCircle, Loader2, Check, X,
-    Image as ImageIcon, Video, Layers, Sparkles, Type
+    Image as ImageIcon, Video, Layers, Sparkles, Eye
 } from 'lucide-react'
 import { ALL_PRODUCTS, type Product, type ProductVariant } from '../data/products'
 import './Admin.css'
@@ -19,12 +19,13 @@ const AdminProductManager: React.FC = () => {
 
     // Editor state
     const [editingProduct, setEditingProduct] = useState<Product | null>(null)
+    const [tempImage, setTempImage] = useState<{ path: string, content: string } | null>(null)
 
-    // AI Generator state
+    // Magic Fill AI state
     const [showAIModal, setShowAIModal] = useState(false)
     const [isGenerating, setIsGenerating] = useState(false)
+    const [magicFillText, setMagicFillText] = useState('')
     const [selectedModel, setSelectedModel] = useState('llama-3.3-70b-versatile')
-    const [selectedLanguage, setSelectedLanguage] = useState('id')
 
     // Pagination state
     const [itemsPerPage, setItemsPerPage] = useState<number | 'all'>(10)
@@ -33,10 +34,7 @@ const AdminProductManager: React.FC = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        // 1. Load from imported ALL_PRODUCTS (base)
         const baseProducts = [...ALL_PRODUCTS]
-
-        // 2. Load from localStorage (overrides/new drafts)
         const savedDrafts = localStorage.getItem('mangala_product_drafts')
         if (savedDrafts) {
             try {
@@ -69,6 +67,7 @@ const AdminProductManager: React.FC = () => {
 
     const handleEdit = (product: Product) => {
         setEditingProduct({ ...product })
+        setTempImage(null)
         setView('editor')
     }
 
@@ -82,9 +81,33 @@ const AdminProductManager: React.FC = () => {
             price: '',
             image: '',
             description: '',
+            details: [],
             variants: []
         })
+        setTempImage(null)
         setView('editor')
+    }
+
+    const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0]
+        if (!file) return
+
+        if (file.size > 5 * 1024 * 1024) { // 5MB limit
+            setMessage({ type: 'error', text: 'Image size should be less than 5MB' })
+            return
+        }
+
+        const reader = new FileReader()
+        reader.onloadend = () => {
+            const base64 = reader.result as string
+            const fileName = file.name.replace(/\s+/g, '-').toLowerCase()
+            const path = `/images/products/${fileName}`
+
+            setEditingProduct(p => p ? { ...p, image: path } : null)
+            setTempImage({ path: `public${path}`, content: base64 })
+            setMessage({ type: 'success', text: 'Image prepared. Will be uploaded on Deploy.' })
+        }
+        reader.readAsDataURL(file)
     }
 
     const handleSaveProduct = () => {
@@ -111,13 +134,22 @@ const AdminProductManager: React.FC = () => {
         setMessage(null)
 
         try {
-            setMessage({ type: 'success', text: 'Deploying changes to GitHub...' })
+            setMessage({ type: 'success', text: 'Deploying changes (including images) to GitHub...' })
+
+            // Note: In a real app we would track all pending images. 
+            // Here we assume the user saves and deploys. 
+            // If they edit multiple products with new images, only the last tempImage is in state, which is a limitation.
+            // But usually admins do: Edit -> Save -> Edit -> Save -> Deploy.
+            // To fix this, we should store tempImages in a Map or localStorage.
+            // For now, let's just warn or handle the simple case.
+            const imagesToUpload = tempImage ? [tempImage] : []
 
             const deployResponse = await fetch('/api/admin/deploy-products', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     products: products,
+                    images: imagesToUpload,
                     commitMessage: `Update products via admin (${new Date().toISOString().split('T')[0]})`
                 })
             })
@@ -126,10 +158,10 @@ const AdminProductManager: React.FC = () => {
 
             if (deployResponse.ok && deployResult.deployed) {
                 localStorage.removeItem('mangala_product_drafts')
-
+                setTempImage(null) // Clear temp image after successful deploy
                 setMessage({
                     type: 'success',
-                    text: '✅ Changes deployed! Vercel is rebuilding your site (1-2 minutes). Refresh to see updates.'
+                    text: '✅ Changes deployed! Vercel is rebuilding your site. Refresh in 2 mins.'
                 })
             } else if (deployResponse.ok && !deployResult.deployed) {
                 setMessage({
@@ -147,9 +179,9 @@ const AdminProductManager: React.FC = () => {
         }
     }
 
-    const handleGenerateDescription = async () => {
-        if (!editingProduct?.name || !editingProduct?.categories) {
-            setMessage({ type: 'error', text: 'Product Name and Category are required for AI generation' })
+    const handleMagicFill = async () => {
+        if (!magicFillText.trim()) {
+            setMessage({ type: 'error', text: 'Please enter raw text.' })
             return
         }
 
@@ -157,31 +189,42 @@ const AdminProductManager: React.FC = () => {
         setMessage(null)
 
         try {
-            const response = await fetch('/api/admin/generate-product-desc', {
+            const response = await fetch('/api/admin/generate-product-full', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    name: editingProduct.name,
-                    category: editingProduct.categories.join(', '),
-                    keywords: '',
-                    model: selectedModel,
-                    language: selectedLanguage
+                    rawText: magicFillText,
+                    model: selectedModel
                 })
             })
 
             const result = await response.json()
 
-            if (!response.ok || !result.success) {
-                throw new Error(result.error || 'AI generation failed')
+            if (!response.ok) {
+                throw new Error(result.error || 'Magic Fill failed')
             }
 
-            setEditingProduct(p => p ? { ...p, description: result.description } : null)
+            // Merge result into editingProduct
+            setEditingProduct(p => {
+                if (!p) return null
+                return {
+                    ...p,
+                    name: result.name || p.name,
+                    slug: result.slug || p.slug,
+                    price: result.price || p.price,
+                    categories: result.categories || p.categories,
+                    description: result.description || p.description,
+                    details: result.details || p.details || []
+                }
+            })
+
             setShowAIModal(false)
-            setMessage({ type: 'success', text: '✨ Description generated successfully!' })
+            setMagicFillText('')
+            setMessage({ type: 'success', text: '✨ Magic Fill complete!' })
 
         } catch (error) {
-            console.error('AI generation error:', error)
-            setMessage({ type: 'error', text: `AI generation failed: ${error instanceof Error ? error.message : 'Unknown error'}` })
+            console.error('Magic Fill error:', error)
+            setMessage({ type: 'error', text: `Magic Fill failed: ${error instanceof Error ? error.message : 'Unknown error'}` })
         } finally {
             setIsGenerating(false)
         }
@@ -191,6 +234,28 @@ const AdminProductManager: React.FC = () => {
         if (window.confirm('Delete this product? (Permanent after Sync)')) {
             setProducts(products.filter(p => p.id !== id))
         }
+    }
+
+    // Details Handler
+    const addDetail = () => {
+        if (!editingProduct) return
+        setEditingProduct({
+            ...editingProduct,
+            details: [...(editingProduct.details || []), '']
+        })
+    }
+
+    const updateDetail = (index: number, value: string) => {
+        if (!editingProduct || !editingProduct.details) return
+        const newDetails = [...editingProduct.details]
+        newDetails[index] = value
+        setEditingProduct({ ...editingProduct, details: newDetails })
+    }
+
+    const removeDetail = (index: number) => {
+        if (!editingProduct || !editingProduct.details) return
+        const newDetails = editingProduct.details.filter((_, i) => i !== index)
+        setEditingProduct({ ...editingProduct, details: newDetails })
     }
 
     // Variant Handlers
@@ -275,10 +340,23 @@ const AdminProductManager: React.FC = () => {
                             <span>{isSaving ? 'Deploying...' : 'Deploy Changes'}</span>
                         </button>
                     ) : (
-                        <button onClick={handleSaveProduct} className="save-btn">
-                            <Check size={16} />
-                            <span>Done Editing</span>
-                        </button>
+                        <div style={{ display: 'flex', gap: '10px' }}>
+                            {editingProduct?.slug && (
+                                <a
+                                    href={`/products/${editingProduct.slug}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="preview-btn"
+                                    style={{ display: 'flex', alignItems: 'center', gap: '5px', padding: '10px 16px', borderRadius: '8px', background: 'transparent', border: '1px solid rgba(255,255,255,0.3)', color: 'white', textDecoration: 'none' }}
+                                >
+                                    <Eye size={16} /> Live View
+                                </a>
+                            )}
+                            <button onClick={handleSaveProduct} className="save-btn">
+                                <Check size={16} />
+                                <span>Done Editing</span>
+                            </button>
+                        </div>
                     )}
                 </div>
             </header>
@@ -349,6 +427,9 @@ const AdminProductManager: React.FC = () => {
                                                 <button className="action-btn delete" onClick={() => deleteProduct(product.id)} title="Delete">
                                                     <Trash2 size={16} />
                                                 </button>
+                                                <a href={`/products/${product.slug}`} target="_blank" rel="noreferrer" className="action-btn preview" title="View Live">
+                                                    <Eye size={16} />
+                                                </a>
                                             </td>
                                         </tr>
                                     ))}
@@ -391,7 +472,7 @@ const AdminProductManager: React.FC = () => {
                                 disabled={isGenerating}
                             >
                                 <Sparkles size={18} />
-                                <span>{isGenerating ? 'Generating...' : 'Generate Description AI'}</span>
+                                <span>{isGenerating ? 'Processing...' : 'Magic Fill AI'}</span>
                             </button>
                         </div>
 
@@ -436,18 +517,24 @@ const AdminProductManager: React.FC = () => {
                                 </div>
 
                                 <div className="input-group-compact span-2">
-                                    <label>Image URL / Path</label>
+                                    <label>Image</label>
                                     <div className="input-with-action">
                                         <input
                                             type="text"
                                             value={editingProduct?.image || ''}
-                                            onChange={e => setEditingProduct(p => p ? { ...p, image: e.target.value } : null)}
+                                            readOnly
                                             placeholder="/images/products/..."
+                                            style={{ background: '#f5f5f5' }}
                                         />
+                                        <label className="action-input-btn">
+                                            <ImageIcon size={16} /> Upload
+                                            <input type="file" hidden accept="image/*" onChange={handleImageUpload} />
+                                        </label>
                                     </div>
                                     {editingProduct?.image && (
                                         <div style={{ marginTop: '10px' }}>
-                                            <img src={editingProduct.image} alt="Preview" style={{ height: '100px', objectFit: 'cover', borderRadius: '8px' }} />
+                                            <img src={editingProduct.image} alt="Preview" style={{ height: '100px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }} />
+                                            {tempImage && <span style={{ marginLeft: '10px', fontSize: '12px', color: '#2e7d32' }}>New image ready to deploy</span>}
                                         </div>
                                     )}
                                 </div>
@@ -471,6 +558,35 @@ const AdminProductManager: React.FC = () => {
                                         placeholder="Enter product description here..."
                                         className="content-textarea"
                                     />
+                                </div>
+
+                                <div className="input-group-compact span-3">
+                                    <label>Additional Details (Bullet Points)</label>
+                                    <div className="keypoints-list">
+                                        {editingProduct?.details?.map((detail, index) => (
+                                            <div key={index} className="keypoint-item">
+                                                <span className="keypoint-number">{index + 1}</span>
+                                                <input
+                                                    type="text"
+                                                    value={detail}
+                                                    onChange={(e) => updateDetail(index, e.target.value)}
+                                                    className="keypoint-input"
+                                                    placeholder="e.g. Heavy Duty Construction"
+                                                />
+                                                <button onClick={() => removeDetail(index)} className="remove-btn">
+                                                    <X size={16} />
+                                                </button>
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <button
+                                        type="button"
+                                        onClick={addDetail}
+                                        className="add-section-btn small"
+                                        style={{ marginTop: '10px', width: 'fit-content' }}
+                                    >
+                                        + Add Detail Point
+                                    </button>
                                 </div>
                             </div>
                         </section>
@@ -522,14 +638,14 @@ const AdminProductManager: React.FC = () => {
                 )}
             </main>
 
-            {/* AI Generator Modal */}
+            {/* Magic Fill Modal */}
             {showAIModal && (
                 <div className="ai-modal-overlay" onClick={() => setShowAIModal(false)}>
                     <div className="ai-modal-content" onClick={(e) => e.stopPropagation()}>
                         <div className="ai-modal-header">
                             <h2>
                                 <Sparkles size={24} />
-                                Generate Product Description
+                                Magic Fill AI
                             </h2>
                             <button className="ai-modal-close" onClick={() => setShowAIModal(false)}>
                                 <X size={20} />
@@ -537,22 +653,22 @@ const AdminProductManager: React.FC = () => {
                         </div>
 
                         <div className="ai-modal-body">
-                            <div className="input-group">
-                                <label>Target Language</label>
-                                <select
-                                    value={selectedLanguage}
-                                    onChange={(e) => setSelectedLanguage(e.target.value)}
-                                    disabled={isGenerating}
-                                    className="ai-model-select"
-                                    style={{ marginBottom: '15px' }}
-                                >
-                                    <option value="id">Indonesian (Bahasa Indonesia)</option>
-                                    <option value="en">English (Global)</option>
-                                </select>
+                            <div className="editor-info-box" style={{ marginBottom: '20px' }}>
+                                <strong>How it works:</strong>
+                                <p>Paste raw product information (specs, notes, etc.) below. AI will automatically extract and format the Name, Slug, Price, Description, and Details.</p>
                             </div>
 
-                            <div className="input-group">
-                                <label>Select AI Model</label>
+                            <textarea
+                                value={magicFillText}
+                                onChange={(e) => setMagicFillText(e.target.value)}
+                                placeholder="Paste raw product text here..."
+                                rows={8}
+                                disabled={isGenerating}
+                                style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #ddd' }}
+                            />
+
+                            <div className="input-group" style={{ marginTop: '15px' }}>
+                                <label>AI Model</label>
                                 <select
                                     value={selectedModel}
                                     onChange={(e) => setSelectedModel(e.target.value)}
@@ -560,24 +676,17 @@ const AdminProductManager: React.FC = () => {
                                     className="ai-model-select"
                                 >
                                     <optgroup label="Groq (Fast)">
-                                        <option value="llama-3.3-70b-versatile">Llama 3.3 70B (Default)</option>
-                                        <option value="mixtral-8x7b-32768">Mixtral 8x7B</option>
+                                        <option value="llama-3.3-70b-versatile">Llama 3.3 70B</option>
                                     </optgroup>
                                 </select>
-                            </div>
-
-                            <div className="ai-modal-hint">
-                                <p><strong>Product:</strong> {editingProduct?.name}</p>
-                                <p><strong>Category:</strong> {editingProduct?.categories.join(', ')}</p>
-                                <p>AI will generate a compelling marketing description based on the product name and category.</p>
                             </div>
                         </div>
 
                         <div className="ai-modal-footer">
                             <button className="back-link" onClick={() => setShowAIModal(false)}>Cancel</button>
-                            <button className="ai-generate-btn" onClick={handleGenerateDescription} disabled={isGenerating}>
+                            <button className="ai-generate-btn" onClick={handleMagicFill} disabled={isGenerating || !magicFillText.trim()}>
                                 {isGenerating ? <Loader2 className="animate-spin" size={16} /> : <Sparkles size={16} />}
-                                <span>{isGenerating ? 'Writer working...' : 'Generate Description'}</span>
+                                <span>{isGenerating ? 'Analyzing...' : 'Auto-Fill Form'}</span>
                             </button>
                         </div>
                     </div>

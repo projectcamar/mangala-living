@@ -5,7 +5,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
-    const { products, commitMessage = 'Update products via admin' } = req.body;
+    const { products, images, commitMessage = 'Update products via admin' } = req.body;
 
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
     const GITHUB_REPO = process.env.GITHUB_REPO || 'projectcamar/mangala-living';
@@ -28,6 +28,50 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     try {
         const [owner, repo] = GITHUB_REPO.split('/');
         const filePath = 'src/data/products.ts';
+
+        // Step 0: Upload Images if present
+        if (images && Array.isArray(images) && images.length > 0) {
+            for (const img of images) {
+                // img: { path: 'public/images/products/filename.jpg', content: 'base64...' }
+                if (!img.path || !img.content) continue;
+
+                // Remove data:image/png;base64, prefix if present
+                const content = img.content.split(',')[1] || img.content;
+
+                const uploadUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${img.path}`;
+
+                // Check if file exists to get SHA (for update)
+                const checkResponse = await fetch(uploadUrl, {
+                    headers: {
+                        'Authorization': `Bearer ${GITHUB_TOKEN}`,
+                        'Accept': 'application/vnd.github.v3+json',
+                        'User-Agent': 'Mangala-Admin-Bot'
+                    }
+                });
+
+                let sha: string | undefined;
+                if (checkResponse.ok) {
+                    const data = await checkResponse.json();
+                    sha = data.sha;
+                }
+
+                await fetch(uploadUrl, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `Bearer ${GITHUB_TOKEN}`,
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Content-Type': 'application/json',
+                        'User-Agent': 'Mangala-Admin-Bot'
+                    },
+                    body: JSON.stringify({
+                        message: `Upload image: ${img.path.split('/').pop()}`,
+                        content: content,
+                        branch: GITHUB_BRANCH,
+                        ...(sha ? { sha } : {})
+                    })
+                });
+            }
+        }
 
         // Step 1: Get current file content and SHA
         const getFileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}?ref=${GITHUB_BRANCH}`;

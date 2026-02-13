@@ -13,6 +13,7 @@ export interface Product {
   image: string
   video?: string
   description?: string
+  details?: string[]
   variants?: ProductVariant[]
 }
 
