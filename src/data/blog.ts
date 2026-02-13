@@ -5234,47 +5234,47 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   },
   {
-    "id": 336,
-    "slug": "panduan-memanjat-sosial",
-    "title": "Memanjat Sosial",
+    "id": 337,
+    "slug": "guia-para-escalar-socialmente",
+    "title": "Guía para escalar socialmente",
     "category": "Tips and Trick",
-    "excerpt": "Panduan memanjat sosial untuk meningkatkan popularitas",
-    "image": "https://images.unsplash.com/photo-1666618207644-4de0226a3f85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwb2ZmaWNlJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHwwfHx8MTc3MDkwMzQxOHww&ixlib=rb-4.1.0&q=80&w=1080",
-    "date": "2026-02-12 13:36",
+    "excerpt": "Consejos prácticos para mejorar tu posición social",
+    "image": "https://images.unsplash.com/photo-1621774237532-d06dc01c2055?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxwZXJzb25hcyUyMHNvbnJpZW5kbyUyMGVuJTIwdW5hJTIwZXNjYWxlcmElMjBkZSUyMGhhbmRyYWlsJTIwZGUlMjBhY2Vyb3xlbnwwfDB8fHwxNzcwOTAzNjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-02-12 13:39",
     "author": "Helmi Ramdan",
     "status": "draft",
     "customContent": {
-      "introduction": "Dalam dunia yang semakin kompetitif, memanjat sosial adalah salah satu cara untuk meningkatkan popularitas dan meningkatkan kesadaran akan merek. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, menyediakan panduan memanjat sosial untuk membantu Anda mencapai tujuan. <br> Dalam artikel ini, kita akan membahas beberapa tips dan trik untuk memanjat sosial dengan efektif.",
+      "introduction": "En el mundo actual, <strong>la escalada social</strong> es un tema que preocupa a muchos. Ya sea en el ámbito laboral, en la escuela o en la vida personal, todos queremos mejorar nuestra posición y <em>ser reconocidos</em> por nuestros logros. En este artículo, te presentamos una guía práctica para escalar socialmente y alcanzar tus objetivos.",
       "keyPoints": [
-        "Mengenal audiens target",
-        "Membuat konten yang menarik",
-        "Menggunakan media sosial dengan efektif"
+        "Conoce tus fortalezas y debilidades",
+        "Establece metas claras y alcanzables",
+        "Desarrolla habilidades sociales y de comunicación"
       ],
-      "language": "id",
+      "language": "es",
       "sections": [
         {
-          "heading": "Mengenal Audiens Target",
-          "content": "Mengenal audiens target adalah langkah pertama untuk memanjat sosial dengan efektif. Anda perlu memahami siapa mereka, apa yang mereka sukai, dan apa yang mereka butuhkan. Dengan demikian, Anda dapat membuat konten yang relevan dan menarik bagi mereka. <br> Mangala Living telah bekerja dengan berbagai klien, dari cafe hingga hotel, dan kami memahami betapa pentingnya memahami audiens target.",
-          "imageSearchQuery": "industrial cafe interior design",
-          "image": "https://images.unsplash.com/photo-1689263560312-b39e79579248?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3NzA5MDM0MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-          "imageAlt": "industrial cafe interior design"
+          "heading": "¿Por qué es importante la escalada social?",
+          "content": "La escalada social es importante porque <strong>nos permite mejorar nuestra calidad de vida</strong> y alcanzar nuestros objetivos. Al escalar socialmente, podemos <em>acceder a oportunidades</em> que de otra manera no estarían disponibles para nosotros. Además, la escalada social nos permite <strong>desarrollar nuestra autoestima</strong> y confianza en nosotros mismos.",
+          "imageSearchQuery": "gráfica de una persona subiendo una escalera",
+          "image": "https://images.unsplash.com/photo-1630368438380-9e1a274267fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxnciVDMyVBMWZpY2ElMjBkZSUyMHVuYSUyMHBlcnNvbmElMjBzdWJpZW5kbyUyMHVuYSUyMGVzY2FsZXJhfGVufDB8MHx8fDE3NzA5MDM2MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "gráfica de una persona subiendo una escalera"
         },
         {
-          "heading": "Membuat Konten yang Menarik",
-          "content": "Membuat konten yang menarik adalah langkah kedua untuk memanjat sosial. Anda perlu membuat konten yang unik, kreatif, dan relevan dengan audiens target. Dengan demikian, Anda dapat meningkatkan kesadaran akan merek dan meningkatkan popularitas. <br> Mangala Living telah membuat berbagai konten, dari desain interior hingga furnitur, dan kami memahami betapa pentingnya membuat konten yang menarik."
+          "heading": "Consejos prácticos para escalar socialmente",
+          "content": "Para escalar socialmente, es importante <strong>conocer tus fortalezas y debilidades</strong>. De esta manera, puedes <em>enfocarte en desarrollar tus habilidades</em> y mejorar tus debilidades. También es importante <strong>establecer metas claras y alcanzables</strong>, para que puedas <em>medir tu progreso</em> y ajustar tu estrategia según sea necesario."
         },
         {
-          "heading": "Menggunakan Media Sosial dengan Efektif",
-          "content": "Menggunakan media sosial dengan efektif adalah langkah ketiga untuk memanjat sosial. Anda perlu memilih media sosial yang tepat, membuat konten yang relevan, dan berinteraksi dengan audiens target. Dengan demikian, Anda dapat meningkatkan kesadaran akan merek dan meningkatkan popularitas. <br> Mangala Living telah menggunakan media sosial untuk mempromosikan produk dan layanan kami, dan kami memahami betapa pentingnya menggunakan media sosial dengan efektif.",
-          "productId": 5
+          "heading": "Desarrollando habilidades sociales y de comunicación",
+          "content": "El <strong>desarrollo de habilidades sociales y de comunicación</strong> es fundamental para escalar socialmente. Esto incluye <em>aprender a escuchar activamente</em>, <strong>comunicarte de manera efectiva</strong> y <em>desarrollar empatía</em> hacia los demás. En Mangala Living, entendemos la importancia de la escalada social y ofrecemos <strong>muebles y soluciones de diseño</strong> que pueden ayudarte a crear un entorno que fomente el crecimiento personal y profesional.",
+          "productId": 15
         },
         {
-          "heading": "Solusi Mangala Living",
-          "content": "Mangala Living menyediakan solusi untuk membantu Anda memanjat sosial. Kami memiliki tim desain yang kreatif, tim pemasaran yang efektif, dan tim produksi yang berkualitas. Dengan demikian, Anda dapat meningkatkan popularitas dan meningkatkan kesadaran akan merek. <br> Kami juga memiliki workshop di Bekasi yang dapat membantu Anda membuat konten yang menarik dan relevan.",
-          "productId": 12
+          "heading": "Mangala Living: Soluciones para la escalada social",
+          "content": "En Mangala Living, <strong>contamos con más de 25 años de experiencia</strong> en la creación de muebles y soluciones de diseño para cafes, restaurantes, hoteles y oficinas. Nuestro <em>taller en Bekasi</em> es el corazón de nuestra operación, donde <strong>diseñamos y creamos</strong> productos de alta calidad que pueden ayudarte a alcanzar tus objetivos. Nuestros productos, como la <strong>Meja Kerja Industrial</strong>, pueden ayudarte a crear un entorno de trabajo eficiente y productivo.",
+          "productId": 15
         }
       ],
-      "conclusion": "Dalam kesimpulan, memanjat sosial adalah salah satu cara untuk meningkatkan popularitas dan meningkatkan kesadaran akan merek. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, menyediakan panduan memanjat sosial untuk membantu Anda mencapai tujuan. <br> Dengan mengenal audiens target, membuat konten yang menarik, dan menggunakan media sosial dengan efektif, Anda dapat meningkatkan kesadaran akan merek dan meningkatkan popularitas. <strong>Mangala Living</strong> siap membantu Anda memanjat sosial dengan efektif."
+      "conclusion": "En conclusión, la escalada social es un proceso que requiere <strong>dedicación y esfuerzo</strong>, pero con los consejos prácticos y las soluciones de diseño adecuadas, puedes <em>alcanzar tus objetivos</em> y mejorar tu posición social. En Mangala Living, estamos comprometidos con ayudarte a <strong>crecer y desarrollarte</strong> en tu carrera y vida personal."
     }
   }
 ]
