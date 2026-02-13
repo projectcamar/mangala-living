@@ -28,6 +28,10 @@ const AdminProductManager: React.FC = () => {
     const [selectedModel, setSelectedModel] = useState('llama-3.3-70b-versatile')
     const [selectedLanguage, setSelectedLanguage] = useState('id')
 
+    // Upload state
+    const [uploadProgress, setUploadProgress] = useState<{ image?: number; video?: number }>({})
+    const [isUploading, setIsUploading] = useState(false)
+
     // Pagination state
     const [itemsPerPage, setItemsPerPage] = useState<number | 'all'>(10)
     const [currentPage, setCurrentPage] = useState(1)
@@ -166,6 +170,114 @@ const AdminProductManager: React.FC = () => {
         setMessage({ type: 'success', text: 'Product deleted' })
     }
 
+    const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0]
+        if (!file) return
+
+        // Validate file type
+        if (!file.type.startsWith('image/')) {
+            setMessage({ type: 'error', text: 'Please select a valid image file' })
+            return
+        }
+
+        // Validate file size (5MB)
+        if (file.size > 5 * 1024 * 1024) {
+            setMessage({ type: 'error', text: 'Image must be under 5MB' })
+            return
+        }
+
+        setIsUploading(true)
+        setUploadProgress({ ...uploadProgress, image: 0 })
+
+        try {
+            const formData = new FormData()
+            formData.append('file', file)
+
+            const response = await fetch('/api/admin/upload-product-media', {
+                method: 'POST',
+                body: formData
+            })
+
+            if (!response.ok) {
+                const error = await response.json()
+                throw new Error(error.details || 'Upload failed')
+            }
+
+            const result = await response.json()
+
+            // Update editing product with new image path
+            if (editingProduct) {
+                setEditingProduct({ ...editingProduct, image: result.path })
+            }
+
+            setMessage({ type: 'success', text: `Image uploaded: ${result.filename}` })
+            setUploadProgress({ ...uploadProgress, image: 100 })
+        } catch (error: any) {
+            console.error('Image upload error:', error)
+            setMessage({ type: 'error', text: error.message || 'Failed to upload image' })
+        } finally {
+            setIsUploading(false)
+            setTimeout(() => setUploadProgress({ ...uploadProgress, image: undefined }), 2000)
+        }
+
+        // Reset input
+        e.target.value = ''
+    }
+
+    const handleVideoUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0]
+        if (!file) return
+
+        // Validate file type
+        if (!file.type.startsWith('video/')) {
+            setMessage({ type: 'error', text: 'Please select a valid video file' })
+            return
+        }
+
+        // Validate file size (50MB)
+        if (file.size > 50 * 1024 * 1024) {
+            setMessage({ type: 'error', text: 'Video must be under 50MB' })
+            return
+        }
+
+        setIsUploading(true)
+        setUploadProgress({ ...uploadProgress, video: 0 })
+
+        try {
+            const formData = new FormData()
+            formData.append('file', file)
+
+            const response = await fetch('/api/admin/upload-product-media', {
+                method: 'POST',
+                body: formData
+            })
+
+            if (!response.ok) {
+                const error = await response.json()
+                throw new Error(error.details || 'Upload failed')
+            }
+
+            const result = await response.json()
+
+            // Update editing product with new video path
+            if (editingProduct) {
+                setEditingProduct({ ...editingProduct, video: result.path })
+            }
+
+            setMessage({ type: 'success', text: `Video uploaded: ${result.filename}` })
+            setUploadProgress({ ...uploadProgress, video: 100 })
+        } catch (error: any) {
+            console.error('Video upload error:', error)
+            setMessage({ type: 'error', text: error.message || 'Failed to upload video' })
+        } finally {
+            setIsUploading(false)
+            setTimeout(() => setUploadProgress({ ...uploadProgress, video: undefined }), 2000)
+        }
+
+        // Reset input
+        e.target.value = ''
+    }
+
     const handleGenerateProduct = async () => {
         if (!aiSourceText.trim()) {
             setMessage({ type: 'error', text: 'Please enter source text' })
@@ -209,33 +321,6 @@ const AdminProductManager: React.FC = () => {
         } finally {
             setIsGenerating(false)
         }
-    }
-
-    const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0]
-        if (!file) return
-
-        if (!file.type.startsWith('image/')) {
-            setMessage({ type: 'error', text: 'Please select an image file' })
-            return
-        }
-
-        setMessage({ type: 'success', text: 'Image upload will be implemented with GitHub integration...' })
-        // TODO: Implement actual file upload to GitHub
-        // For now, user should manually upload to /public/images/products and use the path
-    }
-
-    const handleVideoUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0]
-        if (!file) return
-
-        if (!file.type.startsWith('video/')) {
-            setMessage({ type: 'error', text: 'Please select a video file' })
-            return
-        }
-
-        setMessage({ type: 'success', text: 'Video upload will be implemented with GitHub integration...' })
-        // TODO: Implement actual file upload to GitHub
     }
 
     const handleAddDetail = () => {
