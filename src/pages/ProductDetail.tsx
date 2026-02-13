@@ -250,7 +250,8 @@ const ProductDetail: React.FC = () => {
   const currentDimensions = currentVariant ? currentVariant.dimensions : null
 
   // Price Conversion
-  const LANGUAGE_CURRENCY_MAP: { [key in LanguageCode]: string | null } = {
+  type Currency = 'USD' | 'SAR' | 'CNY' | 'JPY' | 'EUR' | 'KRW'
+  const LANGUAGE_CURRENCY_MAP: { [key in LanguageCode]: Currency | null } = {
     'ko': 'KRW', 'ja': 'JPY', 'zh': 'CNY', 'ar': 'SAR', 'es': 'EUR', 'fr': 'EUR', 'en': 'USD', 'id': null
   }
 
