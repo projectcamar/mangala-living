@@ -4,11 +4,13 @@ import { LogOut, LayoutDashboard, Database, Settings, BarChart3, Users, FileText
 import { logoutAdmin } from '../utils/adminAuth'
 import { useNavigate } from 'react-router-dom'
 import { BLOG_POSTS } from '../data/blog'
+import { ALL_PRODUCTS } from '../data/products'
 import './Admin.css'
 
 const AdminDashboard: React.FC = () => {
     const navigate = useNavigate()
     const articleCount = BLOG_POSTS.length
+    const productCount = ALL_PRODUCTS.length
 
     return (
         <div className="admin-dashboard">
@@ -48,6 +50,16 @@ const AdminDashboard: React.FC = () => {
                         <div className="stat-info">
                             <h3>Blog Manager</h3>
                             <div className="stat-value">{articleCount} Articles</div>
+                        </div>
+                    </div>
+
+                    <div className="stat-card clickable" onClick={() => navigate('/admin/products')}>
+                        <div className="stat-icon">
+                            <Database size={28} />
+                        </div>
+                        <div className="stat-info">
+                            <h3>Product Manager</h3>
+                            <div className="stat-value">{productCount} Products</div>
                         </div>
                     </div>
 
