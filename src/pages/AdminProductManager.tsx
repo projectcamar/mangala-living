@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import {
     Plus, Edit, Trash2, Search, ArrowLeft, Save,
     Package, AlertCircle, Loader2, Check, X,
-    Image as ImageIcon, Video, Layers
+    Image as ImageIcon, Video, Layers, Sparkles, Type
 } from 'lucide-react'
 import { ALL_PRODUCTS, type Product, type ProductVariant } from '../data/products'
 import './Admin.css'
@@ -19,6 +19,12 @@ const AdminProductManager: React.FC = () => {
 
     // Editor state
     const [editingProduct, setEditingProduct] = useState<Product | null>(null)
+
+    // AI Generator state
+    const [showAIModal, setShowAIModal] = useState(false)
+    const [isGenerating, setIsGenerating] = useState(false)
+    const [selectedModel, setSelectedModel] = useState('llama-3.3-70b-versatile')
+    const [selectedLanguage, setSelectedLanguage] = useState('id')
 
     // Pagination state
     const [itemsPerPage, setItemsPerPage] = useState<number | 'all'>(10)
@@ -35,7 +41,6 @@ const AdminProductManager: React.FC = () => {
         if (savedDrafts) {
             try {
                 const parsedDrafts = JSON.parse(savedDrafts) as Product[]
-                // Merge logic: drafts with same ID as baseProducts override them
                 const mergedProducts = [...baseProducts]
                 parsedDrafts.forEach(draft => {
                     const index = mergedProducts.findIndex(p => p.id === draft.id)
@@ -56,12 +61,6 @@ const AdminProductManager: React.FC = () => {
         setIsLoading(false)
     }, [])
 
-    // Save to localStorage whenever products change (if they are new/modified)
-    // Note: detailed diffing is hard, so we just save the whole modified list or track "dirty" items.
-    // For simplicity, we'll save the whole list to drafts if it differs from ALL_PRODUCTS,
-    // OR just save specifically marked "draft" items if we added a status field.
-    // product interface doesn't have 'status', so we will trust the ID collision logic.
-    // WE WILL SAVE ALL to drafts for persistence between reloads until deploy.
     useEffect(() => {
         if (!isLoading) {
             localStorage.setItem('mangala_product_drafts', JSON.stringify(products))
@@ -82,6 +81,7 @@ const AdminProductManager: React.FC = () => {
             categories: ['Furniture'],
             price: '',
             image: '',
+            description: '',
             variants: []
         })
         setView('editor')
@@ -93,7 +93,6 @@ const AdminProductManager: React.FC = () => {
             return
         }
 
-        // Update products list
         const exists = products.find(p => p.id === editingProduct.id)
         let updatedProducts: Product[]
         if (exists) {
@@ -126,7 +125,6 @@ const AdminProductManager: React.FC = () => {
             const deployResult = await deployResponse.json()
 
             if (deployResponse.ok && deployResult.deployed) {
-                // Clear local drafts on successful deploy
                 localStorage.removeItem('mangala_product_drafts')
 
                 setMessage({
@@ -146,6 +144,46 @@ const AdminProductManager: React.FC = () => {
             setMessage({ type: 'error', text: `Auto-deploy failed: ${error instanceof Error ? error.message : 'Unknown error'}` })
         } finally {
             setIsSaving(false)
+        }
+    }
+
+    const handleGenerateDescription = async () => {
+        if (!editingProduct?.name || !editingProduct?.categories) {
+            setMessage({ type: 'error', text: 'Product Name and Category are required for AI generation' })
+            return
+        }
+
+        setIsGenerating(true)
+        setMessage(null)
+
+        try {
+            const response = await fetch('/api/admin/generate-product-desc', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: editingProduct.name,
+                    category: editingProduct.categories.join(', '),
+                    keywords: '',
+                    model: selectedModel,
+                    language: selectedLanguage
+                })
+            })
+
+            const result = await response.json()
+
+            if (!response.ok || !result.success) {
+                throw new Error(result.error || 'AI generation failed')
+            }
+
+            setEditingProduct(p => p ? { ...p, description: result.description } : null)
+            setShowAIModal(false)
+            setMessage({ type: 'success', text: '✨ Description generated successfully!' })
+
+        } catch (error) {
+            console.error('AI generation error:', error)
+            setMessage({ type: 'error', text: `AI generation failed: ${error instanceof Error ? error.message : 'Unknown error'}` })
+        } finally {
+            setIsGenerating(false)
         }
     }
 
@@ -191,7 +229,6 @@ const AdminProductManager: React.FC = () => {
     const indexOfFirstItem = indexOfLastItem - (itemsPerPage === 'all' ? totalItems : itemsPerPage)
     const currentItems = sortedProducts.slice(indexOfFirstItem, indexOfLastItem)
 
-    // Reset page on search
     useEffect(() => { setCurrentPage(1) }, [searchTerm, itemsPerPage])
 
 
@@ -347,6 +384,17 @@ const AdminProductManager: React.FC = () => {
                     </>
                 ) : (
                     <div className="post-editor-container">
+                        <div className="editor-header-actions">
+                            <button
+                                className="ai-generate-btn"
+                                onClick={() => setShowAIModal(true)}
+                                disabled={isGenerating}
+                            >
+                                <Sparkles size={18} />
+                                <span>{isGenerating ? 'Generating...' : 'Generate Description AI'}</span>
+                            </button>
+                        </div>
+
                         <section className="editor-section card compact">
                             <h2 className="editor-h2"><Package size={16} /> Product Details</h2>
                             <div className="editor-grid-compact">
@@ -413,6 +461,17 @@ const AdminProductManager: React.FC = () => {
                                         placeholder="/images/products/..."
                                     />
                                 </div>
+
+                                <div className="input-group-compact span-3">
+                                    <label>Product Description</label>
+                                    <textarea
+                                        rows={4}
+                                        value={editingProduct?.description || ''}
+                                        onChange={e => setEditingProduct(p => p ? { ...p, description: e.target.value } : null)}
+                                        placeholder="Enter product description here..."
+                                        className="content-textarea"
+                                    />
+                                </div>
                             </div>
                         </section>
 
@@ -462,6 +521,68 @@ const AdminProductManager: React.FC = () => {
                     </div>
                 )}
             </main>
+
+            {/* AI Generator Modal */}
+            {showAIModal && (
+                <div className="ai-modal-overlay" onClick={() => setShowAIModal(false)}>
+                    <div className="ai-modal-content" onClick={(e) => e.stopPropagation()}>
+                        <div className="ai-modal-header">
+                            <h2>
+                                <Sparkles size={24} />
+                                Generate Product Description
+                            </h2>
+                            <button className="ai-modal-close" onClick={() => setShowAIModal(false)}>
+                                <X size={20} />
+                            </button>
+                        </div>
+
+                        <div className="ai-modal-body">
+                            <div className="input-group">
+                                <label>Target Language</label>
+                                <select
+                                    value={selectedLanguage}
+                                    onChange={(e) => setSelectedLanguage(e.target.value)}
+                                    disabled={isGenerating}
+                                    className="ai-model-select"
+                                    style={{ marginBottom: '15px' }}
+                                >
+                                    <option value="id">Indonesian (Bahasa Indonesia)</option>
+                                    <option value="en">English (Global)</option>
+                                </select>
+                            </div>
+
+                            <div className="input-group">
+                                <label>Select AI Model</label>
+                                <select
+                                    value={selectedModel}
+                                    onChange={(e) => setSelectedModel(e.target.value)}
+                                    disabled={isGenerating}
+                                    className="ai-model-select"
+                                >
+                                    <optgroup label="Groq (Fast)">
+                                        <option value="llama-3.3-70b-versatile">Llama 3.3 70B (Default)</option>
+                                        <option value="mixtral-8x7b-32768">Mixtral 8x7B</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <div className="ai-modal-hint">
+                                <p><strong>Product:</strong> {editingProduct?.name}</p>
+                                <p><strong>Category:</strong> {editingProduct?.categories.join(', ')}</p>
+                                <p>AI will generate a compelling marketing description based on the product name and category.</p>
+                            </div>
+                        </div>
+
+                        <div className="ai-modal-footer">
+                            <button className="back-link" onClick={() => setShowAIModal(false)}>Cancel</button>
+                            <button className="ai-generate-btn" onClick={handleGenerateDescription} disabled={isGenerating}>
+                                {isGenerating ? <Loader2 className="animate-spin" size={16} /> : <Sparkles size={16} />}
+                                <span>{isGenerating ? 'Writer working...' : 'Generate Description'}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }

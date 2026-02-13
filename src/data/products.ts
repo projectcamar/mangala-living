@@ -12,6 +12,7 @@ export interface Product {
   price: string
   image: string
   video?: string
+  description?: string
   variants?: ProductVariant[]
 }
 
@@ -23,7 +24,8 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Frame Loft Bookshelf',
     categories: ['New Arrivals', 'Storage'],
     price: 'Rp3.500.000',
-    image: '/images/products/frame-Loft-Bookshelf.webp'
+    image: '/images/products/frame-Loft-Bookshelf.webp',
+    description: 'A stylish and sturdy industrial bookshelf with a robust metal frame and natural wood shelves. Perfect for displaying books, plants, and decorative items in your living room or office.'
   },
   {
     id: 2,
