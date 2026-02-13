@@ -6,7 +6,8 @@ import {
     FileText, AlertCircle, Loader2, Check, X,
     Type, Sparkles, Eye, Upload, Image as ImageIcon, Video
 } from 'lucide-react'
-import { ALL_PRODUCTS, type Product } from '../data/products'
+import { ALL_PRODUCTS, type Product, type LanguageCode, type ProductTranslations, type ProductTranslation } from '../data/products'
+import LanguageTabs from '../components/LanguageTabs'
 import './Admin.css'
 
 const AdminProductManager: React.FC = () => {
@@ -26,7 +27,9 @@ const AdminProductManager: React.FC = () => {
     const [aiSourceText, setAiSourceText] = useState('')
     const [isGenerating, setIsGenerating] = useState(false)
     const [selectedModel, setSelectedModel] = useState('llama-3.3-70b-versatile')
-    const [selectedLanguage, setSelectedLanguage] = useState('id')
+
+    // Language state
+    const [selectedEditingLanguage, setSelectedEditingLanguage] = useState<LanguageCode>('id')
 
     // Upload state
     const [uploadProgress, setUploadProgress] = useState<{ image?: number; video?: number }>({})
@@ -38,9 +41,55 @@ const AdminProductManager: React.FC = () => {
 
     const navigate = useNavigate()
 
+    // Helper: Create empty translations for all languages
+    const createEmptyTranslations = (): ProductTranslations => ({
+        id: { name: '', description: '', productDetails: [] },
+        en: { name: '', description: '', productDetails: [] },
+        ar: { name: '', description: '', productDetails: [] },
+        zh: { name: '', description: '', productDetails: [] },
+        ja: { name: '', description: '', productDetails: [] },
+        es: { name: '', description: '', productDetails: [] },
+        fr: { name: '', description: '', productDetails: [] },
+        ko: { name: '', description: '', productDetails: [] }
+    })
+
+    // Helper: Migrate old product to new multilanguage structure
+    const migrateProduct = (product: Product): Product => {
+        // If already has translations, return as-is
+        if (product.translations) return product
+
+        // Create translations from legacy fields (assume Indonesian)
+        const translations = createEmptyTranslations()
+        translations.id = {
+            name: product.name || '',
+            description: product.description || '',
+            productDetails: product.productDetails || []
+        }
+
+        return {
+            ...product,
+            translations
+        }
+    }
+
+    // Helper: Get translation completion status
+    const getCompletionStatus = (product: Product | null): Partial<Record<LanguageCode, boolean>> => {
+        if (!product?.translations) return {}
+
+        const status: Partial<Record<LanguageCode, boolean>> = {}
+        const langs: LanguageCode[] = ['id', 'en', 'ar', 'zh', 'ja', 'es', 'fr', 'ko']
+
+        langs.forEach(lang => {
+            const trans = product.translations![lang]
+            status[lang] = !!(trans?.name && trans.name.trim().length > 0)
+        })
+
+        return status
+    }
+
     useEffect(() => {
-        // 1. Load from imported ALL_PRODUCTS (base)
-        const baseProducts: Product[] = ALL_PRODUCTS.map(p => ({
+        // 1. Load from imported ALL_PRODUCTS (base) and migrate to multilanguage
+        const baseProducts: Product[] = ALL_PRODUCTS.map(p => migrateProduct({
             ...p,
             status: p.status || 'live',
             description: p.description || '',
@@ -82,12 +131,14 @@ const AdminProductManager: React.FC = () => {
     }, [products, isLoading])
 
     const handleEdit = (product: Product) => {
-        setEditingProduct({
+        const migratedProduct = migrateProduct({
             ...product,
             description: product.description || '',
             productDetails: product.productDetails || [],
             status: product.status || 'live'
         })
+        setEditingProduct(migratedProduct)
+        setSelectedEditingLanguage('id')
         setView('editor')
     }
 
@@ -105,8 +156,10 @@ const AdminProductManager: React.FC = () => {
             description: '',
             productDetails: [],
             status: 'draft',
-            variants: []
+            variants: [],
+            translations: createEmptyTranslations()
         })
+        setSelectedEditingLanguage('id')
         setView('editor')
     }
 
@@ -285,6 +338,8 @@ const AdminProductManager: React.FC = () => {
         }
 
         setIsGenerating(true)
+        setMessage({ type: 'success', text: 'Generating product in 8 languages...' })
+
         try {
             const response = await fetch('/api/admin/generate-product-full', {
                 method: 'POST',
@@ -292,8 +347,7 @@ const AdminProductManager: React.FC = () => {
                 body: JSON.stringify({
                     sourceText: aiSourceText,
                     category: editingProduct?.categories[0] || 'Furniture',
-                    model: selectedModel,
-                    language: selectedLanguage
+                    model: selectedModel
                 })
             })
 
@@ -304,17 +358,19 @@ const AdminProductManager: React.FC = () => {
             const result = await response.json()
 
             if (editingProduct) {
+                // Update with translations from AI
                 setEditingProduct({
                     ...editingProduct,
-                    name: result.name || editingProduct.name,
+                    name: result.translations?.id?.name || editingProduct.name,
                     slug: result.slug || editingProduct.slug,
-                    description: result.description || editingProduct.description,
-                    productDetails: result.productDetails || editingProduct.productDetails
+                    description: result.translations?.id?.description || editingProduct.description,
+                    productDetails: result.translations?.id?.productDetails || editingProduct.productDetails,
+                    translations: result.translations || editingProduct.translations
                 })
             }
 
             setShowAIModal(false)
-            setMessage({ type: 'success', text: 'Product data generated successfully!' })
+            setMessage({ type: 'success', text: 'Product generated in 8 languages successfully!' })
         } catch (error) {
             console.error('AI generation error:', error)
             setMessage({ type: 'error', text: 'Failed to generate product data' })
@@ -326,19 +382,38 @@ const AdminProductManager: React.FC = () => {
     const handleAddDetail = () => {
         if (!newDetailInput.trim() || !editingProduct) return
 
-        setEditingProduct({
-            ...editingProduct,
-            productDetails: [...(editingProduct.productDetails || []), newDetailInput.trim()]
-        })
+        const updatedProduct = { ...editingProduct }
+        if (updatedProduct.translations) {
+            const currentTranslation = updatedProduct.translations[selectedEditingLanguage]
+            updatedProduct.translations = {
+                ...updatedProduct.translations,
+                [selectedEditingLanguage]: {
+                    ...currentTranslation,
+                    productDetails: [...(currentTranslation.productDetails || []), newDetailInput.trim()]
+                }
+            }
+        }
+
+        setEditingProduct(updatedProduct)
         setNewDetailInput('')
     }
 
     const handleRemoveDetail = (index: number) => {
         if (!editingProduct) return
-        setEditingProduct({
-            ...editingProduct,
-            productDetails: editingProduct.productDetails?.filter((_, i) => i !== index) || []
-        })
+
+        const updatedProduct = { ...editingProduct }
+        if (updatedProduct.translations) {
+            const currentTranslation = updatedProduct.translations[selectedEditingLanguage]
+            updatedProduct.translations = {
+                ...updatedProduct.translations,
+                [selectedEditingLanguage]: {
+                    ...currentTranslation,
+                    productDetails: currentTranslation.productDetails?.filter((_, i) => i !== index) || []
+                }
+            }
+        }
+
+        setEditingProduct(updatedProduct)
     }
 
     const handlePreview = (slug: string) => {
@@ -543,22 +618,11 @@ const AdminProductManager: React.FC = () => {
                                             rows={6}
                                             value={aiSourceText}
                                             onChange={(e) => setAiSourceText(e.target.value)}
-                                            placeholder="Paste any text about the product here. AI will extract name, description, and details..."
+                                            placeholder="Paste any text about the product here. AI will automatically generate content in ALL 8 LANGUAGES..."
                                             disabled={isGenerating}
                                         />
 
-                                        <label style={{ marginTop: '16px' }}>Language</label>
-                                        <select
-                                            className="ai-model-select"
-                                            value={selectedLanguage}
-                                            onChange={(e) => setSelectedLanguage(e.target.value)}
-                                            disabled={isGenerating}
-                                        >
-                                            <option value="id">Indonesian</option>
-                                            <option value="en">English</option>
-                                        </select>
-
-                                        <label>AI Model</label>
+                                        <label style={{ marginTop: '16px' }}>AI Model</label>
                                         <select
                                             className="ai-model-select"
                                             value={selectedModel}
@@ -583,7 +647,7 @@ const AdminProductManager: React.FC = () => {
                                         </button>
                                         <button className="ai-modal-generate" onClick={handleGenerateProduct} disabled={isGenerating}>
                                             {isGenerating ? <Loader2 className="animate-spin" size={16} /> : <Sparkles size={16} />}
-                                            <span>{isGenerating ? 'AI is working...' : 'Generate Product Data'}</span>
+                                            <span>{isGenerating ? 'Generating 8 languages...' : 'Generate in 8 Languages'}</span>
                                         </button>
                                     </div>
                                 </div>
@@ -600,13 +664,38 @@ const AdminProductManager: React.FC = () => {
 
                         <section className="editor-section card compact">
                             <h2 className="editor-h2"><Type size={16} /> Product Details Editor</h2>
+
+                            {/* Language Tabs */}
+                            <LanguageTabs
+                                selectedLanguage={selectedEditingLanguage}
+                                onLanguageChange={setSelectedEditingLanguage}
+                                completionStatus={getCompletionStatus(editingProduct)}
+                            />
+
                             <div className="editor-grid-compact">
                                 <div className="input-group-compact">
-                                    <label>Product Name *</label>
+                                    <label>Product Name * ({selectedEditingLanguage.toUpperCase()})</label>
                                     <input
                                         type="text"
-                                        value={editingProduct?.name || ''}
-                                        onChange={(e) => setEditingProduct(p => p ? { ...p, name: e.target.value } : null)}
+                                        value={editingProduct?.translations?.[selectedEditingLanguage]?.name || ''}
+                                        onChange={(e) => {
+                                            if (!editingProduct) return
+                                            const updatedProduct = { ...editingProduct }
+                                            if (updatedProduct.translations) {
+                                                updatedProduct.translations = {
+                                                    ...updatedProduct.translations,
+                                                    [selectedEditingLanguage]: {
+                                                        ...updatedProduct.translations[selectedEditingLanguage],
+                                                        name: e.target.value
+                                                    }
+                                                }
+                                                // Sync to legacy field if Indonesian
+                                                if (selectedEditingLanguage === 'id') {
+                                                    updatedProduct.name = e.target.value
+                                                }
+                                            }
+                                            setEditingProduct(updatedProduct)
+                                        }}
                                         placeholder="e.g., Frame Loft Bookshelf"
                                     />
                                 </div>
@@ -705,20 +794,37 @@ const AdminProductManager: React.FC = () => {
                                 </div>
 
                                 <div className="input-group-compact span-3">
-                                    <label>Description</label>
+                                    <label>Description ({selectedEditingLanguage.toUpperCase()})</label>
                                     <textarea
                                         rows={4}
-                                        value={editingProduct?.description || ''}
-                                        onChange={(e) => setEditingProduct(p => p ? { ...p, description: e.target.value } : null)}
+                                        value={editingProduct?.translations?.[selectedEditingLanguage]?.description || ''}
+                                        onChange={(e) => {
+                                            if (!editingProduct) return
+                                            const updatedProduct = { ...editingProduct }
+                                            if (updatedProduct.translations) {
+                                                updatedProduct.translations = {
+                                                    ...updatedProduct.translations,
+                                                    [selectedEditingLanguage]: {
+                                                        ...updatedProduct.translations[selectedEditingLanguage],
+                                                        description: e.target.value
+                                                    }
+                                                }
+                                                // Sync to legacy field if Indonesian
+                                                if (selectedEditingLanguage === 'id') {
+                                                    updatedProduct.description = e.target.value
+                                                }
+                                            }
+                                            setEditingProduct(updatedProduct)
+                                        }}
                                         placeholder="Write a compelling product description..."
                                         style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid #ddd', fontFamily: 'inherit' }}
                                     />
                                 </div>
 
                                 <div className="input-group-compact span-3">
-                                    <label>Product Details (Bullet Points)</label>
+                                    <label>Product Details - Bullet Points ({selectedEditingLanguage.toUpperCase()})</label>
                                     <div style={{ background: '#f9f9f9', padding: '16px', borderRadius: '8px', border: '1px solid #e0e0e0' }}>
-                                        {editingProduct?.productDetails?.map((detail, idx) => (
+                                        {editingProduct?.translations?.[selectedEditingLanguage]?.productDetails?.map((detail, idx) => (
                                             <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
                                                 <span style={{ flex: 1, padding: '8px', background: '#fff', borderRadius: '4px', border: '1px solid #ddd' }}>
                                                     {detail}

@@ -4,9 +4,29 @@ export interface ProductVariant {
   dimensions?: string
 }
 
+export type LanguageCode = 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'
+
+export interface ProductTranslation {
+  name: string
+  description?: string
+  productDetails?: string[]
+}
+
+export interface ProductTranslations {
+  id: ProductTranslation
+  en: ProductTranslation
+  ar: ProductTranslation
+  zh: ProductTranslation
+  ja: ProductTranslation
+  es: ProductTranslation
+  fr: ProductTranslation
+  ko: ProductTranslation
+}
+
 export interface Product {
   id: number
   slug: string
+  // Legacy fields (kept for backward compatibility - use Indonesian as default)
   name: string
   categories: string[]
   price: string
@@ -16,6 +36,9 @@ export interface Product {
   productDetails?: string[]
   status?: 'live' | 'draft'
   variants?: ProductVariant[]
+
+  // New multilanguage field
+  translations?: ProductTranslations
 }
 
 export const ALL_PRODUCTS: Product[] = [
