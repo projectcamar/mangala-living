@@ -1,44 +1,50 @@
+// Import images
+import mejaMakanImage from '../assets/meja-industrial-mejamakan.webp'
+import kabinetLemariImage from '../assets/Kabinet-Lemari-industrial.webp'
+import mejaKerjaImage from '../assets/Meja-Kerja-Rak-Meja-Belajar-custom.webp'
+import mejaMakanSetImage from '../assets/Meja-makan-industrial-150x60x90-2 kursi.webp'
+import gantunganBajuImage from '../assets/gantungan-baju-industrial.webp'
+import balconyBarTableImage from '../assets/balcony-bar-table.webp'
+import frameLoftBookshelfImage from '../assets/frame-Loft-Bookshelf.webp'
+import barChairImage from '../assets/Kursi-Barstool-Besi-Behel.webp'
+import hollowlineDisplayRackImage from '../assets/Hollowline-Display-Rack.webp'
+import steelframeOutdoorBarSetImage from '../assets/Steelfram-Outdoor-Bar-Set.webp'
+import kabinetDapurImage from '../assets/Kabinet-Industrial-Dapur.webp'
+import kursiBarStallImage from '../assets/Kursi-Bar-kursi-stall-chair.webp'
+import rakDisplayPartisiImage from '../assets/rak-display-partisi-industrial-besi.webp'
+import rakGantungIndustrialImage from '../assets/rak-gantung-industrial.webp'
+import daybedBoneOnlyImage from '../assets/industrial-daybed-boneonly.webp'
+import loungeSetCoffeeTableImage from '../assets/longue-set-coffee-table.webp'
+import benchCornerImage from '../assets/Bench-corner-kursi-sudut-kursi-santai.webp'
+
+// Import videos
+import kabinetDapurVideo from '../assets/Kabinet-Industrial-Dapur.mp4'
+import kabinetLemariVideo from '../assets/kabinet-lemari-industrial.mp4'
+import kursiBarStallVideo from '../assets/kursi-bar-stall-chair.mp4'
+import kursiBarstoolVideo from '../assets/kursi-barstool.mp4'
+import mejaMakanVideo from '../assets/meja-makan-industrial.mp4'
+import hollowlineDisplayRackVideo from '../assets/hollowline-display-rack.mp4'
+import benchCornerLoungeVideo from '../assets/Bench-corner-kursi-sudut-kursi-santai.mp4'
+import industrialDaybedVideo from '../assets/industrial-daybed.mp4'
+import loungeSetCoffeeTableVideo from '../assets/longue-set-coffee-table.mp4'
+import industrialHangingShelfVideo from '../assets/rak-gantung-industrial.mp4'
+import rakDisplayPartisiVideo from '../assets/rak-display-partisi-industrial-besi.mp4'
+
 export interface ProductVariant {
   name: string
   price: string
   dimensions?: string
 }
 
-export type LanguageCode = 'id' | 'en' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'
-
-export interface ProductTranslation {
-  name: string
-  description?: string
-  productDetails?: string[]
-}
-
-export interface ProductTranslations {
-  id: ProductTranslation
-  en: ProductTranslation
-  ar: ProductTranslation
-  zh: ProductTranslation
-  ja: ProductTranslation
-  es: ProductTranslation
-  fr: ProductTranslation
-  ko: ProductTranslation
-}
-
 export interface Product {
   id: number
   slug: string
-  // Legacy fields (kept for backward compatibility - use Indonesian as default)
   name: string
   categories: string[]
   price: string
   image: string
   video?: string
-  description?: string
-  productDetails?: string[]
-  status?: 'live' | 'draft'
   variants?: ProductVariant[]
-
-  // New multilanguage field
-  translations?: ProductTranslations
 }
 
 export const ALL_PRODUCTS: Product[] = [
@@ -49,10 +55,7 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Frame Loft Bookshelf',
     categories: ['New Arrivals', 'Storage'],
     price: 'Rp3.500.000',
-    image: '/images/products/frame-Loft-Bookshelf.webp',
-    description: 'A stylish and sturdy industrial bookshelf with a robust metal frame and natural wood shelves. Perfect for displaying books, plants, and decorative items in your living room or office.',
-    productDetails: ['Konstruksi Heavy Duty', 'Beberapa Rak/Kompartemen', 'Mudah Dipasang'],
-    status: 'live'
+    image: frameLoftBookshelfImage
   },
   {
     id: 2,
@@ -60,7 +63,7 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Balcony Bar Table',
     categories: ['New Arrivals', 'Bar Set', 'Outdoor'],
     price: 'Rp350.000',
-    image: '/images/products/balcony-bar-table.webp'
+    image: balconyBarTableImage
   },
 
   // Lounge Set
@@ -70,8 +73,8 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Lounge Set Coffee Table',
     categories: ['Lounge Set', 'Tables'],
     price: 'Rp2.000.000',
-    image: '/images/products/longue-set-coffee-table.webp',
-    video: '/images/products/longue-set-coffee-table.mp4'
+    image: loungeSetCoffeeTableImage,
+    video: loungeSetCoffeeTableVideo
   },
   {
     id: 17,
@@ -79,8 +82,8 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Bench Corner Lounge',
     categories: ['Lounge Set', 'Sofa Bench'],
     price: 'Rp3.500.000',
-    image: '/images/products/Bench-corner-kursi-sudut-kursi-santai.webp',
-    video: '/images/products/Bench-corner-kursi-sudut-kursi-santai.mp4',
+    image: benchCornerImage,
+    video: benchCornerLoungeVideo,
     variants: [
       { name: '200x50x50', price: 'Rp3.500.000', dimensions: '200x50x50' },
       { name: '150x50x50', price: 'Rp2.800.000', dimensions: '150x50x50' }
@@ -94,8 +97,8 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Industrial Daybed Frame',
     categories: ['Daybed'],
     price: 'Rp3.200.000',
-    image: '/images/products/industrial-daybed-boneonly.webp',
-    video: '/images/products/industrial-daybed.mp4'
+    image: daybedBoneOnlyImage,
+    video: industrialDaybedVideo
   },
 
   // Dining Set
@@ -105,7 +108,7 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Bandung Pipe Dining Table',
     categories: ['Dining Set', 'Dine Table'],
     price: 'Rp2.800.000',
-    image: '/images/products/meja-industrial-mejamakan.webp',
+    image: mejaMakanImage,
     variants: [
       { name: 'Meja Saja', price: 'Rp2.800.000', dimensions: '120x60x75' },
       { name: 'Meja + 2 Kursi', price: 'Rp3.600.000', dimensions: '120x60x75' },
@@ -118,8 +121,8 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Dining Set with 2 Chairs',
     categories: ['Dining Set', 'Dine Table'],
     price: 'Rp4.000.000',
-    image: '/images/products/Meja-makan-industrial-150x60x90-2 kursi.webp',
-    video: '/images/products/meja-makan-industrial.mp4'
+    image: mejaMakanSetImage,
+    video: mejaMakanVideo
   },
 
   // Bar Set
@@ -129,8 +132,8 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Beam Industrial Bar Chair',
     categories: ['Bar Set'],
     price: 'Rp450.000',
-    image: '/images/products/Kursi-Barstool-Besi-Behel.webp',
-    video: '/images/products/kursi-barstool.mp4'
+    image: barChairImage,
+    video: kursiBarstoolVideo
   },
   {
     id: 7,
@@ -138,8 +141,8 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Bar Stall Chair',
     categories: ['Bar Set'],
     price: 'Rp450.000',
-    image: '/images/products/Kursi-Bar-kursi-stall-chair.webp',
-    video: '/images/products/kursi-bar-stall-chair.mp4'
+    image: kursiBarStallImage,
+    video: kursiBarStallVideo
   },
   {
     id: 8,
@@ -147,7 +150,7 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Steelframe Outdoor Bar Set',
     categories: ['Bar Set', 'Outdoor'],
     price: 'Rp8.150.000',
-    image: '/images/products/Steelfram-Outdoor-Bar-Set.webp'
+    image: steelframeOutdoorBarSetImage
   },
 
   // Storage
@@ -157,8 +160,8 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Industrial Kitchen Cabinet',
     categories: ['Storage'],
     price: 'Rp6.500.000',
-    image: '/images/products/Kabinet-Industrial-Dapur.webp',
-    video: '/images/products/Kabinet-Industrial-Dapur.mp4',
+    image: kabinetDapurImage,
+    video: kabinetDapurVideo,
     variants: [
       { name: '280x40x110', price: 'Rp6.500.000', dimensions: '280x40x110' },
       { name: '200x40x110', price: 'Rp5.800.000', dimensions: '200x40x110' },
@@ -171,8 +174,8 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Kabinet Lemari Industrial',
     categories: ['Storage'],
     price: 'Rp4.500.000',
-    image: '/images/products/Kabinet-Lemari-industrial.webp',
-    video: '/images/products/kabinet-lemari-industrial.mp4'
+    image: kabinetLemariImage,
+    video: kabinetLemariVideo
   },
   {
     id: 11,
@@ -180,8 +183,8 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Hollowline Display Rack',
     categories: ['Storage'],
     price: 'Rp3.700.000',
-    image: '/images/products/Hollowline-Display-Rack.webp',
-    video: '/images/products/hollowline-display-rack.mp4'
+    image: hollowlineDisplayRackImage,
+    video: hollowlineDisplayRackVideo
   },
   {
     id: 12,
@@ -189,8 +192,8 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Ladder Frame Display Stand',
     categories: ['Storage'],
     price: 'Rp3.700.000',
-    image: '/images/products/rak-display-partisi-industrial-besi.webp',
-    video: '/images/products/rak-display-partisi-industrial-besi.mp4'
+    image: rakDisplayPartisiImage,
+    video: rakDisplayPartisiVideo
   },
   {
     id: 13,
@@ -198,8 +201,8 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Industrial Hanging Shelf',
     categories: ['Storage'],
     price: 'Rp1.800.000',
-    image: '/images/products/rak-gantung-industrial.webp',
-    video: '/images/products/rak-gantung-industrial.mp4',
+    image: rakGantungIndustrialImage,
+    video: industrialHangingShelfVideo,
     variants: [
       { name: '180x30x90', price: 'Rp1.800.000', dimensions: '180x30x90' },
       { name: '120x30x90', price: 'Rp1.200.000', dimensions: '120x30x90' },
@@ -219,7 +222,7 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Industrial Coat Rack',
     categories: ['Storage'],
     price: 'Rp2.500.000',
-    image: '/images/products/gantungan-baju-industrial.webp'
+    image: gantunganBajuImage
   },
 
   // Tables
@@ -229,10 +232,11 @@ export const ALL_PRODUCTS: Product[] = [
     name: 'Meja Kerja Industrial',
     categories: ['Tables'],
     price: 'Rp2.800.000',
-    image: '/images/products/Meja-Kerja-Rak-Meja-Belajar-custom.webp',
+    image: mejaKerjaImage,
     variants: [
       { name: '120x60x90', price: 'Rp2.800.000', dimensions: '120x60x90' },
       { name: '140x60x90', price: 'Rp3.200.000', dimensions: '140x60x90' }
     ]
   },
 ]
+

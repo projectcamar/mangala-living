@@ -1,6 +1,6 @@
 import React from 'react'
 import '../pages/About.css'
-const showroomImage = '/images/products/hero-messagefrommangala.webp'
+import showroomImage from '../assets/hero-messagefrommangala.webp'
 
 interface MessageSectionProps {
   isIndonesian?: boolean
