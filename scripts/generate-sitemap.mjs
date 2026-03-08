@@ -60,7 +60,7 @@ const readFileSafe = async (filePath) => {
 const parseBlogPosts = (source) => {
   const posts = []
   // More robust regex that handles multiline and various spacing
-  const regex = /{\s*id:\s*(\d+)[^}]*?slug:\s*['"]([^'"]+)['"][^}]*?title:\s*['"]([^'"]+)['"][^}]*?image:\s*['"]([^'"]+)['"][^}]*?date:\s*['"]([^'"]+)['"][^}]*?}/gs
+  const regex = /{\s*["']?id["']?:\s*(\d+)[^}]*?["']?slug["']?:\s*['"]([^'"]+)['"][^}]*?["']?title["']?:\s*['"]([^'"]+)['"][^}]*?["']?image["']?:\s*['"]([^'"]+)['"][^}]*?["']?date["']?:\s*['"]([^'"]+)['"][^}]*?}/gs
   let match
   let count = 0
   while ((match = regex.exec(source))) {
@@ -244,7 +244,7 @@ const buildSearchQueryEntries = (products, lastModified) => {
   const entries = []
   queries.forEach((query, index) => {
     const baseParams = new URLSearchParams({ q: query })
-    
+
     // Only include canonical version (without lang parameter)
     entries.push({
       query,
@@ -602,30 +602,30 @@ const main = async () => {
   console.log('[sitemap] Starting sitemap generation...')
 
   // Read source files
-    const [blogSource, productSource, categorySource, seoSource] = await Promise.all([
+  const [blogSource, productSource, categorySource, seoSource] = await Promise.all([
     readFileSafe(BLOG_FILE),
     readFileSafe(PRODUCTS_FILE),
-      readFileSafe(CATEGORY_FILE),
-      readFileSafe(SEO_FILE)
+    readFileSafe(CATEGORY_FILE),
+    readFileSafe(SEO_FILE)
   ])
 
-    const productImageMap = parseProductImageMap(seoSource)
+  const productImageMap = parseProductImageMap(seoSource)
 
   // Parse data
-    const [staticPages, blogPosts, rawProducts, categorySlugs] = await Promise.all([
+  const [staticPages, blogPosts, rawProducts, categorySlugs] = await Promise.all([
     buildStaticPages(),
     Promise.resolve(parseBlogPosts(blogSource)),
-      Promise.resolve(parseProducts(productSource, productImageMap)),
+    Promise.resolve(parseProducts(productSource, productImageMap)),
     Promise.resolve(parseCategorySlugs(categorySource))
   ])
 
-    const categoryPages = await buildCategoryPages(categorySlugs)
-    const productsLastModified = await getFileLastModified('src/data/products.ts')
-    const products = rawProducts.map((product) => ({
-      ...product,
-      lastmod: productsLastModified
-    }))
-    const searchEntries = buildSearchQueryEntries(rawProducts, productsLastModified)
+  const categoryPages = await buildCategoryPages(categorySlugs)
+  const productsLastModified = await getFileLastModified('src/data/products.ts')
+  const products = rawProducts.map((product) => ({
+    ...product,
+    lastmod: productsLastModified
+  }))
+  const searchEntries = buildSearchQueryEntries(rawProducts, productsLastModified)
 
   // Get latest dates for each sitemap
   const latestBlogDate = blogPosts.reduce((latest, entry) => {
@@ -660,61 +660,61 @@ const main = async () => {
   const pageSitemapXml = generatePageSitemap(staticPages.sort((a, b) => a.loc.localeCompare(b.loc)))
   await fs.writeFile(path.join(OUTPUT_DIR, 'page-sitemap.xml'), pageSitemapXml, 'utf8')
 
-    console.log('[sitemap] Generating category-sitemap.xml...')
-    const categorySitemapXml = generateCategorySitemap(categoryPages.sort((a, b) => a.loc.localeCompare(b.loc)))
-    await fs.writeFile(path.join(OUTPUT_DIR, 'category-sitemap.xml'), categorySitemapXml, 'utf8')
+  console.log('[sitemap] Generating category-sitemap.xml...')
+  const categorySitemapXml = generateCategorySitemap(categoryPages.sort((a, b) => a.loc.localeCompare(b.loc)))
+  await fs.writeFile(path.join(OUTPUT_DIR, 'category-sitemap.xml'), categorySitemapXml, 'utf8')
 
-    console.log('[sitemap] Generating product-sitemap.xml...')
-    const productSitemapXml = generateProductSitemap(products)
-    await fs.writeFile(path.join(OUTPUT_DIR, 'product-sitemap.xml'), productSitemapXml, 'utf8')
+  console.log('[sitemap] Generating product-sitemap.xml...')
+  const productSitemapXml = generateProductSitemap(products)
+  await fs.writeFile(path.join(OUTPUT_DIR, 'product-sitemap.xml'), productSitemapXml, 'utf8')
 
-    console.log('[sitemap] Generating search-sitemap.xml...')
-    const searchSitemapXml = generateSearchSitemap(searchEntries)
-    await fs.writeFile(path.join(OUTPUT_DIR, 'search-sitemap.xml'), searchSitemapXml, 'utf8')
+  console.log('[sitemap] Generating search-sitemap.xml...')
+  const searchSitemapXml = generateSearchSitemap(searchEntries)
+  await fs.writeFile(path.join(OUTPUT_DIR, 'search-sitemap.xml'), searchSitemapXml, 'utf8')
 
-    console.log('[sitemap] Generating attachment-sitemap.xml...')
-    const attachmentSitemapXml = generateAttachmentSitemap(products, blogPosts)
-    await fs.writeFile(path.join(OUTPUT_DIR, 'attachment-sitemap.xml'), attachmentSitemapXml, 'utf8')
+  console.log('[sitemap] Generating attachment-sitemap.xml...')
+  const attachmentSitemapXml = generateAttachmentSitemap(products, blogPosts)
+  await fs.writeFile(path.join(OUTPUT_DIR, 'attachment-sitemap.xml'), attachmentSitemapXml, 'utf8')
 
   // Generate sitemap index
   console.log('[sitemap] Generating sitemap.xml (index)...')
-    const sitemapIndex = [
-      {
-        loc: `${BASE_URL}/post-sitemap.xml`,
-        lastmod: new Date(latestBlogDate || now)
-      },
-      {
-        loc: `${BASE_URL}/page-sitemap.xml`,
-        lastmod: new Date(latestPageDate || now)
-      },
-      {
-        loc: `${BASE_URL}/category-sitemap.xml`,
-        lastmod: new Date(latestCategoryDate || now)
-      },
-      {
-        loc: `${BASE_URL}/product-sitemap.xml`,
-        lastmod: productsLastModified
-      },
-      {
-        loc: `${BASE_URL}/search-sitemap.xml`,
-        lastmod: productsLastModified
-      },
-      {
-        loc: `${BASE_URL}/attachment-sitemap.xml`,
-        lastmod: now
-      }
-    ]
+  const sitemapIndex = [
+    {
+      loc: `${BASE_URL}/post-sitemap.xml`,
+      lastmod: new Date(latestBlogDate || now)
+    },
+    {
+      loc: `${BASE_URL}/page-sitemap.xml`,
+      lastmod: new Date(latestPageDate || now)
+    },
+    {
+      loc: `${BASE_URL}/category-sitemap.xml`,
+      lastmod: new Date(latestCategoryDate || now)
+    },
+    {
+      loc: `${BASE_URL}/product-sitemap.xml`,
+      lastmod: productsLastModified
+    },
+    {
+      loc: `${BASE_URL}/search-sitemap.xml`,
+      lastmod: productsLastModified
+    },
+    {
+      loc: `${BASE_URL}/attachment-sitemap.xml`,
+      lastmod: now
+    }
+  ]
 
   const indexXml = generateSitemapIndex(sitemapIndex)
   await fs.writeFile(path.join(OUTPUT_DIR, 'sitemap.xml'), indexXml, 'utf8')
 
-    console.log('[sitemap] ? Generated sitemap index with 6 sitemaps')
+  console.log('[sitemap] ? Generated sitemap index with 6 sitemaps')
   console.log(`[sitemap] ? post-sitemap.xml: ${blogPosts.length} blog posts`)
   console.log(`[sitemap] ? page-sitemap.xml: ${staticPages.length} pages`)
   console.log(`[sitemap] ? category-sitemap.xml: ${categoryPages.length} categories`)
-    console.log(`[sitemap] ? product-sitemap.xml: ${products.length} products`)
-    console.log(`[sitemap] ? search-sitemap.xml: ${searchEntries.length} search queries`)
-    console.log(`[sitemap] ? attachment-sitemap.xml: ${products.length + blogPosts.length} images`)
+  console.log(`[sitemap] ? product-sitemap.xml: ${products.length} products`)
+  console.log(`[sitemap] ? search-sitemap.xml: ${searchEntries.length} search queries`)
+  console.log(`[sitemap] ? attachment-sitemap.xml: ${products.length + blogPosts.length} images`)
   console.log('[sitemap] ? All sitemaps generated successfully!')
 }
 

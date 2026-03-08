@@ -23,7 +23,7 @@ import { getCurrentLanguage, getStoredLanguage, getLanguageFromLocation } from '
 
 const Home: React.FC = () => {
   const location = useLocation()
-  
+
   // Initialize language with consistent priority: URL > Stored > Browser
   const [language, setLanguage] = useState<'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'>(() => {
     return getCurrentLanguage(location.pathname, location.search)
@@ -44,7 +44,7 @@ const Home: React.FC = () => {
     // 2. Language is set from URL (query param or path prefix)
     const stored = getStoredLanguage()
     const urlLang = getLanguageFromLocation(location.pathname, location.search)
-    
+
     if (stored || urlLang) {
       return // User has chosen language, don't override
     }
@@ -55,20 +55,20 @@ const Home: React.FC = () => {
         const timeoutPromise = new Promise((_, reject) => {
           setTimeout(() => reject(new Error('Timeout')), 2000)
         })
-        
+
         const fetchPromise = fetch('https://ipapi.co/json/')
           .then(response => response.json())
-        
+
         const data = await Promise.race([fetchPromise, timeoutPromise]) as any
         const countryCode = data.country_code
-        
+
         const frenchCountries = ['FR', 'BE', 'CH', 'LU', 'MC', 'CA', 'HT', 'CI', 'SN', 'ML', 'NE', 'BF', 'TG', 'BJ', 'CD', 'CG', 'GA', 'CM', 'CF', 'TD', 'MG', 'RE', 'MU', 'SC', 'KM', 'YT', 'DJ']
         const spanishCountries = ['ES', 'MX', 'AR', 'CO', 'VE', 'PE', 'CL', 'EC', 'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', 'NI', 'CR', 'PA', 'UY']
         const chineseCountries = ['CN', 'TW', 'HK', 'SG', 'MO']
         const arabicCountries = ['SA', 'AE', 'KW', 'QA', 'OM', 'BH', 'EG', 'JO', 'LB', 'SY', 'IQ', 'YE', 'MA', 'DZ', 'TN', 'LY', 'SD', 'PS']
-        
+
         let detectedLang: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko' = 'en'
-        
+
         if (countryCode === 'ID') {
           detectedLang = 'id'
         } else if (countryCode === 'KR') {
@@ -84,10 +84,10 @@ const Home: React.FC = () => {
         } else if (arabicCountries.includes(countryCode)) {
           detectedLang = 'ar'
         }
-        
+
         // Only update if no stored preference exists
         if (!stored) {
-        setLanguage(detectedLang)
+          setLanguage(detectedLang)
         }
       } catch (error) {
         // Silently fail
@@ -99,64 +99,64 @@ const Home: React.FC = () => {
   }, []) // Only run once on mount
 
   const isIndonesian = language === 'id'
-  
+
   const localeMeta = generateLanguageSpecificMeta(isIndonesian)
   const localizedUrls = generateLocalizedUrls(location.pathname, location.search)
 
   // Multi-language translations - SEO Optimized with Priority Keywords
   const translations = {
-    title: language === 'id' 
+    title: language === 'id'
       ? "Furniture Industrial Indonesia | Manufacturer Besi Custom Bekasi Sejak 1999"
       : language === 'ar'
-      ? "أثاث صناعي من الحديد - طقم بار وطقم صالة ورفوف تخزين | مانجالا ليفينج"
-      : language === 'zh'
-      ? "工业家具吧台套装休息区套装储物架新品 | 曼加拉生活"
-      : language === 'ja'
-      ? "インダストリアル家具バーセットラウンジセット収納新着 | マンガラリビング"
-      : language === 'es'
-      ? "Muebles Industriales Set de Bar Set de Sala Almacenamiento Novedades | Mangala Living"
-      : language === 'fr'
-      ? "Mobilier Industriel Set de Bar Set de Salon Rangement Nouveautés | Mangala Living"
-      : "Industrial Furniture Indonesia | Custom Steel Furniture Manufacturer Bekasi Since 1999",
+        ? "أثاث صناعي من الحديد - طقم بار وطقم صالة ورفوف تخزين | مانجالا ليفينج"
+        : language === 'zh'
+          ? "工业家具吧台套装休息区套装储物架新品 | 曼加拉生活"
+          : language === 'ja'
+            ? "インダストリアル家具バーセットラウンジセット収納新着 | マンガラリビング"
+            : language === 'es'
+              ? "Muebles Industriales Set de Bar Set de Sala Almacenamiento Novedades | Mangala Living"
+              : language === 'fr'
+                ? "Mobilier Industriel Set de Bar Set de Salon Rangement Nouveautés | Mangala Living"
+                : "Industrial Furniture Indonesia | Custom Steel Furniture Manufacturer Bekasi Since 1999",
     description: language === 'id'
-      ? "Furniture Industrial Indonesia terpercaya sejak 1999. Manufacturer furniture besi custom Bekasi untuk cafe, restoran, hotel Jakarta. Harga pabrik, custom design, garansi 1 tahun. Workshop Bekasi 25+ tahun, 1000+ klien puas. Bar set, lounge set, meja kursi cafe industrial berkualitas premium."
+      ? "Furniture industrial & scandinavian premium sejak 1999. Melayani coffee shop, restoran, dan bisnis di seluruh Indonesia. Pesanan custom tersedia. Garansi 1 tahun."
       : language === 'ar'
-      ? "منذ عام 1999، تقدم مانجالا ليفينج أفضل الأثاث الصناعي: طقم بار خارجي، طقم صالة، أريكة، رفوف تخزين ومستجدات للمقاهي والفنادق والمطاعم. ورشة بيكاسي 25+ سنة خبرة"
-      : language === 'zh'
-      ? "自1999年以来，曼加拉生活提供优质工业家具：户外吧台套装、休息区套装、沙发长椅、储物架和新品，适用于咖啡馆、酒店和餐厅。勿加泗工作坊25年以上经验"
-      : language === 'ja'
-      ? "1999年以来、マンガラリビングは最高品質のインダストリアル家具を提供：屋外バーセット、ラウンジセット、ソファベンチ、収納ラック、カフェ・ホテル・レストラン向けの新着商品。ブカシ工房25年以上の経験"
-      : language === 'es'
-      ? "Desde 1999, Mangala Living ofrece muebles industriales premium: set de bar exterior, set de sala, sofá banco, estantería de almacenamiento, novedades para cafés, hoteles y restaurantes. Taller Bekasi 25+ años de experiencia"
-      : language === 'fr'
-      ? "Depuis 1999, Mangala Living propose des meubles industriels premium : set de bar extérieur, set de salon, banc canapé, étagère de rangement, nouveautés pour cafés, hôtels et restaurants. Atelier Bekasi 25+ ans d'expérience"
-      : "Trusted Industrial Furniture Indonesia since 1999. Custom steel furniture manufacturer Bekasi for cafes, restaurants, hotels Jakarta. Factory prices, custom design, 1-year warranty. Bekasi workshop 25+ years, 1000+ satisfied clients. Premium quality bar set, lounge set, industrial cafe furniture.",
+        ? "أثاث صناعي واسكندنافي فاخر منذ عام 1999. نخدم المقاهي والمطاعم والأعمال في جميع أنحاء إندونيسيا. نرحب بالطلبات المخصصة."
+        : language === 'zh'
+          ? "自1999年以来的优质工业和斯堪的纳维亚家具。为印度尼西亚的咖啡馆、餐厅和企业提供服务。欢迎定制家具订单。"
+          : language === 'ja'
+            ? "1999年以来のプレミアム家具。インドネシア全土のカフェ、レストラン、ビジネスに対応。カスタムオーダーも承ります。"
+            : language === 'es'
+              ? "Muebles industriales y escandinavos premium desde 1999. Sirviendo a cafeterías, restaurantes y negocios en toda Indonesia. Pedidos personalizados bienvenidos."
+              : language === 'fr'
+                ? "Meubles industriels et scandinaves premium depuis 1999. Au service des cafés, restaurants et entreprises en Indonésie. Commandes personnalisées bienvenues."
+                : "Premium industrial & scandinavian furniture since 1999. Serving coffee shops, restaurants, and businesses across Indonesia. Custom furniture orders welcome.",
     ogTitle: language === 'id'
       ? "Furniture Industrial Besi Custom Bekasi | Cafe & Restoran"
       : language === 'ar'
-      ? "أثاث صناعي من الحديد مخصص بيكاسي | للمقاهي والمطاعم"
-      : language === 'zh'
-      ? "勿加泗定制工业铁艺家具 | 咖啡馆和餐厅"
-      : language === 'ja'
-      ? "ブカシ カスタムインダストリアル鉄家具 | カフェ＆レストラン"
-      : language === 'es'
-      ? "Muebles Industriales de Hierro Personalizados Bekasi | Café y Restaurante"
-      : language === 'fr'
-      ? "Mobilier Industriel en Fer Sur Mesure Bekasi | Café & Restaurant"
-      : "Industrial Furniture Besi Custom Bekasi | Cafe & Restoran",
+        ? "أثاث صناعي من الحديد مخصص بيكاسي | للمقاهي والمطاعم"
+        : language === 'zh'
+          ? "勿加泗定制工业铁艺家具 | 咖啡馆和餐厅"
+          : language === 'ja'
+            ? "ブカシ カスタムインダストリアル鉄家具 | カフェ＆レストラン"
+            : language === 'es'
+              ? "Muebles Industriales de Hierro Personalizados Bekasi | Café y Restaurante"
+              : language === 'fr'
+                ? "Mobilier Industriel en Fer Sur Mesure Bekasi | Café & Restaurant"
+                : "Industrial Furniture Besi Custom Bekasi | Cafe & Restoran",
     ogDescription: language === 'id'
       ? "Manufacturer furniture industrial: bar set outdoor, lounge set, sofa bench, storage rack, new arrivals untuk cafe restoran hotel. Workshop Bekasi 25+ tahun. Harga pabrik."
       : language === 'ar'
-      ? "مصنع الأثاث الصناعي: طقم بار خارجي، طقم صالة، أريكة، رفوف تخزين للمقاهي والمطاعم والفنادق. ورشة بيكاسي 25+ عام. أسعار المصنع."
-      : language === 'zh'
-      ? "工业家具制造商：户外吧台套装、休息区套装、沙发长椅、储物架，适用于咖啡馆、餐厅、酒店。勿加泗工作坊25年以上。工厂价格。"
-      : language === 'ja'
-      ? "インダストリアル家具メーカー：屋外バーセット、ラウンジセット、ソファベンチ、収納ラック、カフェ・レストラン・ホテル向け。ブカシ工房25年以上。工場価格。"
-      : language === 'es'
-      ? "Fabricante de muebles industriales: set de bar exterior, set de sala, sofá banco, estantería de almacenamiento para cafés, restaurantes, hoteles. Taller Bekasi 25+ años. Precios de fábrica."
-      : language === 'fr'
-      ? "Fabricant de meubles industriels : set de bar extérieur, set de salon, banc canapé, étagère de rangement pour cafés, restaurants, hôtels. Atelier Bekasi 25+ ans. Prix d'usine."
-      : "Manufacturer industrial furniture: bar set outdoor, lounge set, sofa bench, storage rack, new arrivals for cafes restaurants hotels. Bekasi workshop 25+ years. Factory prices."
+        ? "مصنع الأثاث الصناعي: طقم بار خارجي، طقم صالة، أريكة، رفوف تخزين للمقاهي والمطاعم والفنادق. ورشة بيكاسي 25+ عام. أسعار المصنع."
+        : language === 'zh'
+          ? "工业家具制造商：户外吧台套装、休息区套装、沙发长椅、储物架，适用于咖啡馆、餐厅、酒店。勿加泗工作坊25年以上。工厂价格。"
+          : language === 'ja'
+            ? "インダストリアル家具メーカー：屋外バーセット、ラウンジセット、ソファベンチ、収納ラック、カフェ・レストラン・ホテル向け。ブカシ工房25年以上。工場価格。"
+            : language === 'es'
+              ? "Fabricante de muebles industriales: set de bar exterior, set de sala, sofá banco, estantería de almacenamiento para cafés, restaurantes, hoteles. Taller Bekasi 25+ años. Precios de fábrica."
+              : language === 'fr'
+                ? "Fabricant de meubles industriels : set de bar extérieur, set de salon, banc canapé, étagère de rangement pour cafés, restaurants, hôtels. Atelier Bekasi 25+ ans. Prix d'usine."
+                : "Manufacturer industrial furniture: bar set outdoor, lounge set, sofa bench, storage rack, new arrivals for cafes restaurants hotels. Bekasi workshop 25+ years. Factory prices."
   }
 
   return (
@@ -167,7 +167,7 @@ const Home: React.FC = () => {
         <meta name="description" content={translations.description} />
         <meta name="keywords" content="furniture industrial indonesia, furniture besi custom, furniture bekasi, furniture industrial jakarta, meja industrial, kursi bar industrial, furniture cafe, furniture restoran, manufacturer furniture industrial, furniture besi custom bekasi, workshop furniture bekasi, furniture industrial jabodetabek, bar set outdoor, lounge set, sofa bench, storage rack, display rack, meja kursi cafe, mangala living" />
         <meta httpEquiv="content-language" content={localeMeta.lang} />
-        
+
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={translations.ogTitle} />
@@ -177,13 +177,13 @@ const Home: React.FC = () => {
         <meta property="og:locale" content={localeMeta.locale} />
         <meta property="og:locale:alternate" content="id_ID" />
         <meta property="og:locale:alternate" content="en_US" />
-        
+
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Furniture Industrial Bar Set Lounge Set Storage - Mangala Living" />
         <meta name="twitter:description" content="Bar set outdoor, lounge set sofa bench, storage rack, new arrivals furniture industrial untuk cafe restoran hotel. Workshop Bekasi 25+ tahun." />
         <meta name="twitter:image" content="https://mangala-living.com/og-image.jpg" />
-        
+
         {/* Additional SEO tags */}
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="googlebot" content="index, follow" />
@@ -195,7 +195,7 @@ const Home: React.FC = () => {
         {localizedUrls.alternates.map((alternate) => (
           <link key={`home-hreflang-${alternate.hrefLang}`} rel="alternate" hrefLang={alternate.hrefLang} href={alternate.href} />
         ))}
-        
+
         {/* Structured Data - Product Catalog */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -208,7 +208,7 @@ const Home: React.FC = () => {
               const imageUrl = getProductImageUrl(product.image, product.slug)
               const priceNumeric = product.price.replace(/[^\d]/g, '')
               const description = `Industrial furniture ${product.name} by Mangala Living. Premium quality furniture made in Indonesia since 1999.`
-              
+
               return {
                 "@type": "ListItem",
                 "position": index + 1,
@@ -291,7 +291,7 @@ const Home: React.FC = () => {
             })
           })}
         </script>
-        
+
         {/* Local Business Schema */}
         <script type="application/ld+json">
           {`
@@ -327,17 +327,17 @@ const Home: React.FC = () => {
             }
           `}
         </script>
-        
+
         {/* AI-Optimized Merchant Schema */}
         <script type="application/ld+json">
           {JSON.stringify(generateAIOptimizedStructuredData())}
         </script>
-        
+
         {/* FAQ Schema for AI Understanding */}
         <script type="application/ld+json">
           {JSON.stringify(generateFAQStructuredData())}
         </script>
-        
+
         {/* WebSite Schema with Search Action */}
         <script type="application/ld+json">
           {JSON.stringify(generateWebSiteStructuredData())}
@@ -346,17 +346,17 @@ const Home: React.FC = () => {
       <AnnouncementBar language={language} isIndonesian={isIndonesian} />
       <Header isIndonesian={isIndonesian} language={language} />
       <Hero isIndonesian={isIndonesian} language={language} />
-      
-      
+
+
       <CategoriesSection isIndonesian={isIndonesian} language={language} />
       <BestSellersSection isIndonesian={isIndonesian} language={language} />
       <OurProductsSection isIndonesian={isIndonesian} language={language} />
       <MessageSection isIndonesian={isIndonesian} language={language} />
       <Footer isIndonesian={isIndonesian} language={language} />
-      
+
       {/* AI Search Optimized Content */}
       <AISearchOptimizedContent isIndonesian={isIndonesian} />
-      
+
       {/* AI Search Features */}
       <AISearchFeatures isIndonesian={isIndonesian} />
     </div>
