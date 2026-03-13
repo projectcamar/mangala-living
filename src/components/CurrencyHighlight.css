@@ -18,7 +18,7 @@
 
 /* Adjust position when announcement bar is visible */
 body:has(.announcement-bar) .currency-highlight {
-  top: 136px; /* 36px (announcement) + 100px (header) */
+  top: calc(100px + var(--announcement-height, 36px));
 }
 
 .currency-highlight-content {

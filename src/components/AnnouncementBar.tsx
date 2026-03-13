@@ -112,6 +112,8 @@ const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false,
     document.cookie = `${name}=${value};${expires};path=/`
   }
 
+  const barRef = React.useRef<HTMLDivElement>(null)
+
   // Handle close button click
   const handleClose = () => {
     setIsVisible(false)
@@ -128,7 +130,7 @@ const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false,
   useEffect(() => {
     // Check if announcement was dismissed
     const isDismissed = getCookie(COOKIE_NAME)
-    
+
     if (!isDismissed) {
       // Show announcement bar
       setIsVisible(true)
@@ -145,6 +147,28 @@ const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false,
     }
   }, [])
 
+  // Update CSS variable for announcement height
+  useEffect(() => {
+    const updateHeight = () => {
+      if (isVisible && barRef.current) {
+        const height = barRef.current.offsetHeight
+        document.documentElement.style.setProperty('--announcement-height', `${height}px`)
+      } else {
+        document.documentElement.style.setProperty('--announcement-height', '0px')
+      }
+    }
+
+    updateHeight()
+
+    // Also update on resize as text might wrap differently
+    window.addEventListener('resize', updateHeight)
+    return () => {
+      window.removeEventListener('resize', updateHeight)
+      // Cleanup CSS variable on unmount
+      document.documentElement.style.setProperty('--announcement-height', '0px')
+    }
+  }, [isVisible])
+
   // Don't render if not visible
   if (!isVisible) return null
 
@@ -154,7 +178,7 @@ const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false,
   const content = ANNOUNCEMENT_COPY[resolvedLanguage] ?? ANNOUNCEMENT_COPY.en
 
   return (
-    <div className="announcement-bar" role="banner" aria-label={content.ariaLabel}>
+    <div ref={barRef} className="announcement-bar" role="banner" aria-label={content.ariaLabel}>
       <div className="announcement-content">
         <span className="announcement-text">
           {content.text} <span className="announcement-highlight">{content.highlight}</span>
@@ -163,8 +187,8 @@ const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ isIndonesian = false,
           {content.cta}{' >'}
         </Link>
       </div>
-      <button 
-        className="announcement-close" 
+      <button
+        className="announcement-close"
         onClick={handleClose}
         aria-label={content.closeLabel}
         title={content.closeTitle}

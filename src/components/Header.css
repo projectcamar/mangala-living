@@ -13,7 +13,7 @@
 
 /* Push header down when announcement bar is visible - exact height matching */
 body:has(.announcement-bar) .header {
-  top: 36px;
+  top: var(--announcement-height, 36px);
 }
 
 /* Language Switcher Styles */
