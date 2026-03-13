@@ -5242,7 +5242,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1621774237532-d06dc01c2055?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxwZXJzb25hcyUyMHNvbnJpZW5kbyUyMGVuJTIwdW5hJTIwZXNjYWxlcmElMjBkZSUyMGhhbmRyYWlsJTIwZGUlMjBhY2Vyb3xlbnwwfDB8fHwxNzcwOTAzNjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-12 13:39",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "En el mundo actual, <strong>la escalada social</strong> es un tema que preocupa a muchos. Ya sea en el ámbito laboral, en la escuela o en la vida personal, todos queremos mejorar nuestra posición y <em>ser reconocidos</em> por nuestros logros. En este artículo, te presentamos una guía práctica para escalar socialmente y alcanzar tus objetivos.",
       "keyPoints": [
@@ -5275,6 +5275,50 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "En conclusión, la escalada social es un proceso que requiere <strong>dedicación y esfuerzo</strong>, pero con los consejos prácticos y las soluciones de diseño adecuadas, puedes <em>alcanzar tus objetivos</em> y mejorar tu posición social. En Mangala Living, estamos comprometidos con ayudarte a <strong>crecer y desarrollarte</strong> en tu carrera y vida personal."
+    }
+  },
+  {
+    "id": 338,
+    "slug": "panduan-furnitur-industri",
+    "title": "Panduan Furnitur Industri",
+    "category": "Tips and Trick",
+    "excerpt": "Panduan memilih furnitur industri yang tepat untuk bisnis Anda",
+    "image": "https://images.unsplash.com/photo-1680209668065-26985bc92268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMGRlc2lnbnxlbnwwfDB8fHwxNzczMzg1NDgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-03-13 07:04",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Dalam membangun sebuah bisnis, pemilihan furnitur yang tepat sangat penting. <strong>Mangala Living</strong> telah berpengalaman lebih dari 25 tahun dalam menyediakan furnitur industri untuk cafe, restaurant, hotel, dan kantor. Dalam artikel ini, kita akan membahas panduan memilih furnitur industri yang tepat untuk bisnis Anda.",
+      "keyPoints": [
+        "Memilih furnitur yang tahan lama",
+        "Mengoptimalkan ruang dengan desain kustom",
+        "Menghemat biaya dengan furnitur yang efektif"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Furnitur Industri Penting?",
+          "content": "Furnitur industri memiliki peran penting dalam menciptakan lingkungan kerja yang nyaman dan efektif. <em>Dengan demikian</em>, Anda dapat meningkatkan produktivitas dan kepuasan karyawan. Mangala Living memiliki pengalaman lebih dari 1000 proyek dan workshop di Bekasi, sehingga kami dapat memberikan solusi furnitur industri yang tepat untuk bisnis Anda.",
+          "imageSearchQuery": "industrial office desk",
+          "image": "https://images.unsplash.com/photo-1770816307817-2fa6131e3a9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwb2ZmaWNlJTIwaW50ZXJpb3IlMjB3aXRoJTIwbW9kZXJuJTIwZnVybml0dXJlfGVufDB8MHx8fDE3NzMzODU0ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial office interior with modern furniture"
+        },
+        {
+          "heading": "Panduan Praktis & Best Practices",
+          "content": "Dalam memilih furnitur industri, ada beberapa hal yang perlu dipertimbangkan. <strong>Pertama</strong>, Anda harus mempertimbangkan kebutuhan dan tujuan bisnis Anda. <strong>Kedua</strong>, Anda harus memilih furnitur yang tahan lama dan memiliki desain yang sesuai dengan tema bisnis Anda. <strong>Ketiga</strong>, Anda harus mempertimbangkan biaya dan efektifitas furnitur dalam jangka panjang."
+        },
+        {
+          "heading": "Solusi Mangala Living",
+          "content": "Mangala Living menyediakan berbagai jenis furnitur industri, termasuk <strong>Meja Kerja Industrial</strong> (Produk ID: 15) dan <strong>Ladder Frame Display Stand</strong> (Produk ID: 12). Kami juga menyediakan desain kustom untuk memenuhi kebutuhan bisnis Anda.",
+          "productId": 15
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda ingin memilih furnitur industri yang tepat untuk bisnis Anda, <strong>hubungi kami</strong> untuk mendapatkan informasi lebih lanjut. Kami akan membantu Anda menciptakan lingkungan kerja yang nyaman dan efektif dengan furnitur industri yang sesuai dengan kebutuhan Anda.",
+          "productId": 12
+        }
+      ],
+      "conclusion": "Dengan memilih furnitur industri yang tepat, Anda dapat meningkatkan produktivitas dan kepuasan karyawan. <strong>Mangala Living</strong> siap membantu Anda menciptakan lingkungan kerja yang nyaman dan efektif dengan furnitur industri yang sesuai dengan kebutuhan Anda."
     }
   }
 ]
