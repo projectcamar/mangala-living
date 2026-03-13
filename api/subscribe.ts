@@ -196,7 +196,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }> = {
         id: {
           subject: 'Katalog Mangala Living 2025 Anda',
-          greeting: (name) => `Halo ${name},`,
+          greeting: (name) => `Yth. ${name},`,
           intro: 'Terima kasih telah menyatakan minat pada koleksi kami. Sesuai permintaan Anda, berikut adalah tautan untuk mengunduh Katalog Premium Mangala Living 2025 kami.',
           downloadCta: 'UNDUH KATALOG PDF',
           fallbackText: 'Jika tombol di atas tidak berfungsi, salin dan tempel tautan ini ke browser Anda:',
@@ -209,7 +209,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         },
         en: {
           subject: 'Your Mangala Living 2025 Catalog',
-          greeting: (name) => `${name},`,
+          greeting: (name) => `Dear ${name},`,
           intro: 'Thank you for your interest in our collections. As requested, here is the link to download our Mangala Living 2025 Premium Catalog.',
           downloadCta: 'DOWNLOAD PDF CATALOG',
           fallbackText: 'If the button above doesn\'t work, copy and paste this link into your browser:',
@@ -222,7 +222,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         },
         es: {
           subject: 'Su Catálogo Mangala Living 2025',
-          greeting: (name) => `Hola ${name},`,
+          greeting: (name) => `Estimado/a ${name},`,
           intro: 'Gracias por su interés en nuestras colecciones. Según lo solicitado, aquí tiene el enlace para descargar nuestro Catálogo Premium Mangala Living 2025.',
           downloadCta: 'DESCARGAR CATÁLOGO PDF',
           fallbackText: 'Si el botón de arriba no funciona, copie y pegue este enlace en su navegador:',
@@ -235,7 +235,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         },
         fr: {
           subject: 'Votre Catalogue Mangala Living 2025',
-          greeting: (name) => `Bonjour ${name},`,
+          greeting: (name) => `Cher/Chère ${name},`,
           intro: 'Merci de votre intérêt pour nos collections. Comme demandé, voici le lien pour télécharger notre Catalogue Premium Mangala Living 2025.',
           downloadCta: 'TÉLÉCHARGER LE CATALOGUE PDF',
           fallbackText: 'Si le bouton ci-dessus ne fonctionne pas, copiez et collez ce lien dans votre navigateur:',
@@ -248,7 +248,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         },
         ko: {
           subject: '2025 망갈라 리빙 카탈로그',
-          greeting: (name) => `${name}님,`,
+          greeting: (name) => `친애하는 ${name}님,`,
           intro: '저희 컬렉션에 관심을 가져주셔서 감사합니다. 요청하신 대로 2025 망갈라 리빙 프리미엄 카탈로그를 다운로드할 수 있는 링크를 보내드립니다.',
           downloadCta: 'PDF 카탈로그 다운로드',
           fallbackText: '위 버튼이 작동하지 않으면 이 링크를 복사하여 브라우저에 붙여넣으세요:',
@@ -261,7 +261,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         },
         ja: {
           subject: '2025 マンガラリビングカタログ',
-          greeting: (name) => `${name}様、`,
+          greeting: (name) => `親愛なる ${name} 様、`,
           intro: '当社のコレクションにご興味をお持ちいただきありがとうございます。ご要望通り、2025マンガラリビングプレミアムカタログのダウンロードリンクをお送りいたします。',
           downloadCta: 'PDFカタログをダウンロード',
           fallbackText: '上のボタンが機能しない場合は、このリンクをコピーしてブラウザに貼り付けてください：',
@@ -274,7 +274,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         },
         zh: {
           subject: '您的 2025 曼加拉生活目录',
-          greeting: (name) => `${name}，`,
+          greeting: (name) => `亲爱的 ${name}，`,
           intro: '感谢您对我们系列的关注。应您的要求，这是下载我们的 2025 曼加拉生活高级目录的链接。',
           downloadCta: '下载 PDF 目录',
           fallbackText: '如果上面的按钮不起作用，请将此链接复制并粘贴到您的浏览器中：',
@@ -287,7 +287,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         },
         ar: {
           subject: 'كتالوج مانجالا ليفينج 2025 الخاص بك',
-          greeting: (name) => `${name}،`,
+          greeting: (name) => `عزيزي ${name}،`,
           intro: 'شكرًا لاهتمامك بمجموعاتنا. بناءً على طلبك، إليك الرابط لتحميل كتالوج مانجالا ليفينج 2025 المتميز.',
           downloadCta: 'تحميل كتالوج PDF',
           fallbackText: 'إذا لم يعمل الزر أعلاه، فقم بنسخ هذا الرابط ولصقه في متصفحك:',
@@ -302,14 +302,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
       const t = emailTranslations[lang] || emailTranslations['en'];
 
-      // Random Product Showcase Logic
+      // Random Product Showcase Logic - Using verified public image paths
       const allProducts = [
-        { name: 'Frame Loft Bookshelf', cat: 'Storage', price: 'Rp3.500.000', slug: 'frame-loft-bookshelf', img: 'https://mangala-living.com/assets/frame-Loft-Bookshelf.webp' },
-        { name: 'Balcony Bar Table', cat: 'Bar Set', price: 'Rp350.000', slug: 'balcony-bar-table', img: 'https://mangala-living.com/assets/balcony-bar-table.webp' },
-        { name: 'Lounge Set Coffee Table', cat: 'Lounge Set', price: 'Rp2.000.000', slug: 'lounge-set-coffee-table', img: 'https://mangala-living.com/assets/longue-set-coffee-table.webp' },
-        { name: 'Industrial Daybed', cat: 'Daybed', price: 'Rp3.200.000', slug: 'industrial-daybed-frame', img: 'https://mangala-living.com/assets/industrial-daybed-boneonly.webp' },
-        { name: 'Bar Stall Chair', cat: 'Bar Set', price: 'Rp450.000', slug: 'bar-stall-chair', img: 'https://mangala-living.com/assets/Kursi-Bar-kursi-stall-chair.webp' },
-        { name: 'Hollowline Display Rack', cat: 'Storage', price: 'Rp3.700.000', slug: 'hollowline-display-rack', img: 'https://mangala-living.com/assets/Hollowline-Display-Rack.webp' }
+        { name: 'Frame Loft Bookshelf', slug: 'frame-loft-bookshelf', price: 'Rp3.500.000', img: 'https://mangala-living.com/images/products/frame-Loft-Bookshelf.webp' },
+        { name: 'Balcony Bar Table', slug: 'balcony-bar-table', price: 'Rp350.000', img: 'https://mangala-living.com/images/products/balcony-bar-table.webp' },
+        { name: 'Lounge Set Coffee Table', slug: 'lounge-set-coffee-table', price: 'Rp2.000.000', img: 'https://mangala-living.com/images/products/longue-set-coffee-table.webp' },
+        { name: 'Industrial Daybed', slug: 'industrial-daybed-frame', price: 'Rp3.200.000', img: 'https://mangala-living.com/images/products/industrial-daybed-boneonly.webp' },
+        { name: 'Bar Stall Chair', slug: 'bar-stall-chair', price: 'Rp450.000', img: 'https://mangala-living.com/images/products/Kursi-Bar-kursi-stall-chair.webp' },
+        { name: 'Hollowline Display Rack', slug: 'hollowline-display-rack', price: 'Rp3.700.000', img: 'https://mangala-living.com/images/products/Hollowline-Display-Rack.webp' }
       ];
 
       const getPrice = (idr: string, targetLang: string) => {
