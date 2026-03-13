@@ -150,7 +150,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       console.log(`[SUBSCRIPTION] Attempting to send notification to admin: ${recipient}`);
       try {
         const { data, error } = await resend.emails.send({
-          from: 'Mangala Living <onboarding@resend.dev>',
+          from: 'Mangala Living <catalog@mangala-living.com>',
           to: recipient,
           subject: subject,
           html: html,
@@ -234,7 +234,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
       try {
         const { data, error } = await resend.emails.send({
-          from: 'Mangala Living <onboarding@resend.dev>',
+          from: 'Mangala Living <catalog@mangala-living.com>',
           to: email,
           subject: userSubject,
           html: userHtml,
