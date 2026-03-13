@@ -670,10 +670,15 @@ const BlogPost: React.FC = () => {
         </div>
       </section>
 
+      <div className="blog-breadcrumb-container">
+        <div className="blog-post-container">
+          <Breadcrumb items={breadcrumbItems} />
+        </div>
+      </div>
+
       <main className="blog-post-main" aria-labelledby="blog-post-title">
         <section className="blog-content-section">
           <div className="blog-post-container">
-            <Breadcrumb items={breadcrumbItems} />
 
             <div className="blog-post-layout">
               <article className="blog-post-article" aria-labelledby="blog-post-title">
@@ -1007,7 +1012,7 @@ const BlogPost: React.FC = () => {
       {shouldShowServiceAreas && <ServiceAreasSection isIndonesian={isIndonesian} />}
 
       <Footer isIndonesian={isIndonesian} language={language} />
-    </div>
+    </div >
   )
 }
 
