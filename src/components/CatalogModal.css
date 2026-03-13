@@ -32,6 +32,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -39,7 +40,8 @@
 
 .catalog-modal-container {
   background: white;
-  max-width: 413px; /* 25% smaller than 550px */
+  max-width: 413px;
+  /* 25% smaller than 550px */
   width: 100%;
   border-radius: 0;
   position: relative;
@@ -60,6 +62,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -198,13 +201,15 @@
 .collage-image-3 {
   top: 130px;
   left: 20px;
-  z-index: 6; /* Ensure Bar Stall Chair sits on top by default */
+  z-index: 6;
+  /* Ensure Bar Stall Chair sits on top by default */
   transform: rotate(-3deg);
 }
 
 .collage-image-3:hover {
   transform: rotate(-3deg) scale(1.05);
-  z-index: 7; /* Keep it above others on hover as well */
+  z-index: 7;
+  /* Keep it above others on hover as well */
 }
 
 /* Legacy support for old catalog-preview-image class */
@@ -231,12 +236,21 @@
 }
 
 .catalog-modal-title {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
   color: #333;
-  margin: 0 0 15px 0;
-  line-height: 1.25;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.catalog-modal-subtitle {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
 .catalog-form {
@@ -484,4 +498,3 @@
     font-size: 0.8rem;
   }
 }
-

@@ -117,6 +117,7 @@ body:has(.announcement-bar) .header {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -156,21 +157,21 @@ body:has(.announcement-bar) .header {
   .language-switcher {
     margin-right: 10px;
   }
-  
+
   .language-btn {
     padding: 6px 10px;
     font-size: 12px;
   }
-  
+
   .language-text {
     display: none;
   }
-  
+
   .flag {
     width: 16px;
     height: 12px;
   }
-  
+
   .language-dropdown {
     right: -10px;
     min-width: 120px;
@@ -181,27 +182,27 @@ body:has(.announcement-bar) .header {
   .language-switcher {
     margin-right: 5px;
   }
-  
+
   .language-btn {
     padding: 4px 8px;
     font-size: 11px;
   }
-  
+
   .flag {
     width: 14px;
     height: 10px;
   }
-  
+
   .language-dropdown {
     right: -20px;
     min-width: 100px;
   }
-  
+
   .language-option {
     padding: 10px 12px;
     font-size: 13px;
   }
-  
+
   .language-option .flag {
     width: 16px;
     height: 12px;
@@ -225,10 +226,10 @@ body:has(.announcement-bar) .header {
   z-index: 998;
   opacity: 0;
   /* iPhone-style smooth cubic-bezier timing */
-  transition: opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1), 
-              backdrop-filter 0.4s cubic-bezier(0.32, 0.72, 0, 1),
-              -webkit-backdrop-filter 0.4s cubic-bezier(0.32, 0.72, 0, 1),
-              background 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+  transition: opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1),
+    backdrop-filter 0.4s cubic-bezier(0.32, 0.72, 0, 1),
+    -webkit-backdrop-filter 0.4s cubic-bezier(0.32, 0.72, 0, 1),
+    background 0.4s cubic-bezier(0.32, 0.72, 0, 1);
   /* Apply final state with smooth animation */
   animation: backdropEnter 0.4s cubic-bezier(0.32, 0.72, 0, 1) forwards;
 }
@@ -240,6 +241,7 @@ body:has(.announcement-bar) .header {
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
   }
+
   100% {
     opacity: 1;
     background: rgba(0, 0, 0, 0.25);
@@ -253,10 +255,10 @@ body:has(.announcement-bar) .header {
   background: rgba(0, 0, 0, 0);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
-  transition: opacity 0.35s cubic-bezier(0.4, 0, 1, 1), 
-              backdrop-filter 0.35s cubic-bezier(0.4, 0, 1, 1),
-              -webkit-backdrop-filter 0.35s cubic-bezier(0.4, 0, 1, 1),
-              background 0.35s cubic-bezier(0.4, 0, 1, 1);
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 1, 1),
+    backdrop-filter 0.35s cubic-bezier(0.4, 0, 1, 1),
+    -webkit-backdrop-filter 0.35s cubic-bezier(0.4, 0, 1, 1),
+    background 0.35s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .search-modal-container {
@@ -270,8 +272,8 @@ body:has(.announcement-bar) .header {
   padding: 0 40px;
   opacity: 0;
   /* iPhone-style spring animation */
-  transition: opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1), 
-              transform 0.45s cubic-bezier(0.32, 0.72, 0, 1);
+  transition: opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1),
+    transform 0.45s cubic-bezier(0.32, 0.72, 0, 1);
   /* Apply final state with smooth spring animation */
   animation: containerEnter 0.45s cubic-bezier(0.32, 0.72, 0, 1) forwards;
 }
@@ -281,6 +283,7 @@ body:has(.announcement-bar) .header {
     opacity: 0;
     transform: translateX(-50%) translateY(-30px) scale(0.92);
   }
+
   100% {
     opacity: 1;
     transform: translateX(-50%) translateY(0) scale(1);
@@ -290,15 +293,15 @@ body:has(.announcement-bar) .header {
 .search-modal-container.closing {
   opacity: 0;
   transform: translateX(-50%) translateY(-20px) scale(0.95);
-  transition: opacity 0.3s cubic-bezier(0.4, 0, 1, 1), 
-              transform 0.3s cubic-bezier(0.4, 0, 1, 1);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 1, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .search-modal-content {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25), 
-              0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25),
+    0 8px 20px rgba(0, 0, 0, 0.15);
   padding: 30px 40px;
   position: relative;
   will-change: transform;
@@ -318,7 +321,7 @@ body:has(.announcement-bar) .header {
   padding: 0;
   line-height: 1;
   transition: color 0.2s cubic-bezier(0.32, 0.72, 0, 1),
-              transform 0.2s cubic-bezier(0.32, 0.72, 0, 1);
+    transform 0.2s cubic-bezier(0.32, 0.72, 0, 1);
   width: 32px;
   height: 32px;
   display: flex;
@@ -378,7 +381,7 @@ body:has(.announcement-bar) .header {
   padding: 0 5px;
   line-height: 1;
   transition: color 0.2s cubic-bezier(0.32, 0.72, 0, 1),
-              transform 0.2s cubic-bezier(0.32, 0.72, 0, 1);
+    transform 0.2s cubic-bezier(0.32, 0.72, 0, 1);
   animation: fadeScaleIn 0.2s cubic-bezier(0.32, 0.72, 0, 1) forwards;
 }
 
@@ -387,6 +390,7 @@ body:has(.announcement-bar) .header {
     opacity: 0;
     transform: scale(0.8);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -437,6 +441,7 @@ body:has(.announcement-bar) .header {
     opacity: 0;
     transform: translateY(-8px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -450,7 +455,7 @@ body:has(.announcement-bar) .header {
   padding: 15px 40px;
   text-decoration: none;
   transition: background 0.25s cubic-bezier(0.32, 0.72, 0, 1),
-              transform 0.2s cubic-bezier(0.32, 0.72, 0, 1);
+    transform 0.2s cubic-bezier(0.32, 0.72, 0, 1);
   cursor: pointer;
 }
 
@@ -532,12 +537,13 @@ body:has(.announcement-bar) .header {
     /* Optimize animations for mobile */
     transform: translateX(-50%) translateY(-20px) scale(0.95);
   }
-  
+
   @keyframes containerEnter {
     0% {
       opacity: 0;
       transform: translateX(-50%) translateY(-20px) scale(0.95);
     }
+
     100% {
       opacity: 1;
       transform: translateX(-50%) translateY(0) scale(1);
@@ -667,7 +673,7 @@ body:has(.announcement-bar) .header {
     padding: 6px 12px;
     min-width: 100px;
   }
-  
+
   .header-contact-btn svg {
     width: 14px;
     height: 14px;
@@ -681,11 +687,11 @@ body:has(.announcement-bar) .header {
     padding: 5px 10px;
     min-width: 90px;
   }
-  
+
   .header-contact-btn span {
     display: none;
   }
-  
+
   .header-contact-btn svg {
     width: 16px;
     height: 16px;
@@ -847,7 +853,8 @@ body:has(.announcement-bar) .header {
   }
 
   .logo-text {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.2em;
   }
 
   .search-btn span {
@@ -855,8 +862,8 @@ body:has(.announcement-bar) .header {
   }
 
   .catalog-btn {
-    font-size: 0.75rem;
-    padding: 0.6rem 1rem;
+    font-size: 0.7rem;
+    padding: 0.5rem 0.8rem;
   }
 
   .category-nav {
@@ -889,8 +896,8 @@ body:has(.announcement-bar) .header {
   }
 
   .logo-text {
-    font-size: 1.3rem;
-    letter-spacing: 0.15em;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
   }
 
   .header-top-actions {
@@ -899,12 +906,9 @@ body:has(.announcement-bar) .header {
   }
 
   .catalog-btn {
-    font-size: 0.65rem;
-    padding: 0.4rem 0.6rem;
-    white-space: nowrap;
-    max-width: calc(100vw - 140px);
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 0.6rem;
+    padding: 0.35rem 0.5rem;
+    letter-spacing: 0;
   }
 
   .search-btn {
@@ -1054,6 +1058,7 @@ html[lang="ar"] .suggestion-tag {
 
 /* Accessibility: Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
+
   .search-modal-backdrop,
   .search-modal-container,
   .search-modal-content,
@@ -1068,11 +1073,11 @@ html[lang="ar"] .suggestion-tag {
     animation: none !important;
     transition: opacity 0.15s ease, background 0.15s ease !important;
   }
-  
+
   .search-modal-container {
     transform: translateX(-50%) translateY(0) scale(1) !important;
   }
-  
+
   .search-close-btn:hover,
   .suggestion-tag:hover,
   .search-result-item:hover {

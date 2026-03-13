@@ -141,8 +141,8 @@
   }
 
   .announcement-text {
-    font-size: 10px;
-    line-height: 1.2;
+    font-size: 9px;
+    line-height: 1.1;
     overflow: visible;
   }
 
@@ -152,8 +152,8 @@
   }
 
   .announcement-cta {
-    font-size: 9px;
-    padding: 3px 10px;
+    font-size: 8px;
+    padding: 2px 8px;
   }
 
   .announcement-close {

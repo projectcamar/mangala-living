@@ -12,10 +12,11 @@ import catalogPreview2 from '../assets/meja-industrial-mejamakan.webp'
 import catalogPreview3 from '../assets/Kursi-Bar-kursi-stall-chair.webp'
 
 interface CatalogModalProps {
+  show?: boolean
   onClose?: () => void
 }
 
-const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
+const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
   const location = useLocation()
   const [isVisible, setIsVisible] = useState(false)
   const [language, setLanguage] = useState<LanguageCode>('id')
@@ -28,67 +29,85 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
   // Translations for the modal
   const translations = {
     id: {
-      title: 'GRATIS DOWNLOAD KATALOG\nMANGALA LIVING 2025',
-      firstName: 'Nama Depan',
+      title: 'DOWNLOAD KATALOG MANGALA 2025',
+      subtitle: 'Terima kasih telah mengunduh katalog kami. Bergabunglah dengan daftar email kami untuk mendapatkan pembaruan eksklusif!',
+      firstName: 'Nama Lengkap',
       email: 'Email',
       whatsapp: 'Nomor WhatsApp',
-      download: 'DOWNLOAD'
+      download: 'UNDUH SEKARANG'
     },
     en: {
-      title: 'FREE GET NEW 2025\nMANGALA LIVING CATALOG',
-      firstName: 'First name',
+      title: 'DOWNLOAD MANGALA 2025 CATALOG',
+      subtitle: 'Thank you for downloading our catalog! Join our emailing list for exclusive updates and furniture inspiration.',
+      firstName: 'Full Name',
       email: 'Email',
       whatsapp: 'WhatsApp Number',
-      download: 'DOWNLOAD'
+      download: 'DOWNLOAD NOW'
     },
     ar: {
-      title: 'تحميل كتالوج مجانًا\nمانجالا ليفينج 2025',
-      firstName: 'الاسم الأول',
-      email: 'البريد الإلكتروني',
+      title: 'تحميل كتالوج مانجالا 2025',
+      subtitle: 'شكراً لتحميل الكتالوج الخاص بنا! انضم إلى قائمتنا البريدية للحصول على تحديثات حصرية وإلهام للأثاث.',
+      firstName: 'الاسم الكامل',
+      email: 'البريد الإلكترoni',
       whatsapp: 'رقم واتساب',
-      download: 'تحميل'
+      download: 'تحميل الآن'
     },
     zh: {
-      title: '免费获取2025\n曼加拉生活目录',
-      firstName: '名字',
+      title: '下载 2025 曼加拉目录',
+      subtitle: '感谢您下载我们的目录！加入我们的邮件列表，获取独家更新和家具灵感。',
+      firstName: '全名',
       email: '电子邮件',
       whatsapp: 'WhatsApp号码',
-      download: '下载'
+      download: '立即下载'
     },
     ja: {
-      title: '無料カタログダウンロード\nマンガラリビング2025',
-      firstName: '名前',
+      title: '2025 マンガラカタログをダウンロード',
+      subtitle: 'カタログをダウンロードしていただきありがとうございます！限定アップデートや家具のインスピレーションを得るために、メールリストにご登録ください。',
+      firstName: '氏名',
       email: 'メールアドレス',
       whatsapp: 'WhatsApp番号',
-      download: 'ダウンロード'
+      download: '今すぐダウンロード'
     },
     es: {
-      title: 'DESCARGA GRATUITA DEL CATÁLOGO\nMANGALA LIVING 2025',
-      firstName: 'Nombre',
+      title: 'DESCARGAR CATÁLOGO MANGALA 2025',
+      subtitle: '¡Gracias por descargar nuestro catálogo! Únase a nuestra lista de correo para recibir actualizaciones exclusivas e inspiración para muebles.',
+      firstName: 'Nombre completo',
       email: 'Correo electrónico',
       whatsapp: 'Número de WhatsApp',
-      download: 'DESCARGAR'
+      download: 'DESCARGAR AHORA'
     },
     fr: {
-      title: 'TÉLÉCHARGEMENT GRATUIT DU CATALOGUE\nMANGALA LIVING 2025',
-      firstName: 'Prénom',
+      title: 'TÉLÉCHARGER LE CATALOGUE MANGALA 2025',
+      subtitle: 'Merci d\'avoir téléchargé notre catalogue ! Rejoignez notre liste de diffusion untuk des mises à jour exclusives et de l\'inspiration mobilier.',
+      firstName: 'Nom complet',
       email: 'E-mail',
       whatsapp: 'Numéro WhatsApp',
-      download: 'TÉLÉCHARGER'
+      download: 'TÉLÉCHARGER MAINTENANT'
     },
     ko: {
-      title: '무료 카탈로그 다운로드\n망갈라 리빙 2025',
-      firstName: '이름',
+      title: '2025 망갈라 카탈로그 다운로드',
+      subtitle: '카탈로그를 다운로드해주셔서 감사합니다! 독점 업데이트와 가구 영감을 받으려면 이메일 목록에 가입하세요.',
+      firstName: '성함',
       email: '이메일',
       whatsapp: 'WhatsApp 번호',
-      download: '다운로드'
+      download: '지금 다운로드'
     }
   }
 
   const t = translations[language]
 
   useEffect(() => {
-    // Initialize modal with current page language
+    // If 'show' is controlled externally, use it
+    if (show !== undefined) {
+      setIsVisible(show)
+
+      // Still need to detect language for translations
+      const urlLang = getLanguageFromLocation(location.pathname, location.search)
+      if (urlLang) setLanguage(urlLang)
+      return
+    }
+
+    // Initialize modal with current page language and automatic show logic
     const initializeModal = () => {
       // Get language from current page URL (instant, no async needed)
       const urlLang = getLanguageFromLocation(location.pathname, location.search)
@@ -319,13 +338,11 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ onClose }) => {
           {/* Right Side - Form */}
           <div className="catalog-form-section">
             <h2 className="catalog-modal-title">
-              {t.title.split('\n').map((line, i) => (
-                <React.Fragment key={i}>
-                  {line}
-                  {i === 0 && <br />}
-                </React.Fragment>
-              ))}
+              {t.title}
             </h2>
+            <p className="catalog-modal-subtitle">
+              {t.subtitle}
+            </p>
 
             <form onSubmit={handleDownload} className="catalog-form">
               <div className="form-group">
