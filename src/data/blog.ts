@@ -4417,10 +4417,10 @@ export const BLOG_POSTS: BlogPost[] = [
     "title": "Furniture Teakwood Bekasi",
     "category": "Tips and Trick",
     "excerpt": "Tips memilih furniture teakwood Bekasi yang tepat untuk ruang Anda",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1687180498602-5a1046defaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHx0ZWFrJTIwd29vZCUyMGZ1cm5pdHVyZSUyMGxpdmluZyUyMHJvb20lMjBpbnRlcmlvcnxlbnwwfDB8fHwxNzczMzg2MjQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 09:55",
     "author": "Helmi Ramdan",
-    "status": "synced",
+    "status": "draft",
     "customContent": {
       "introduction": "Furniture teakwood Bekasi menjadi pilihan banyak orang karena kekuatan dan keindahannya. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, memahami betapa pentingnya memilih furniture yang tepat untuk ruang Anda. Berikut beberapa tips dan trik dalam memilih furniture teakwood Bekasi.",
       "keyPoints": [
@@ -4433,7 +4433,8 @@ export const BLOG_POSTS: BlogPost[] = [
         {
           "heading": "Mengapa Furniture Teakwood Bekasi?",
           "content": "Furniture teakwood Bekasi dipilih karena kekuatan dan keindahannya. <strong>Teakwood</strong> merupakan bahan yang tahan lama dan dapat bertahan dalam berbagai kondisi lingkungan. Selain itu, <em>teakwood</em> juga memiliki keindahan alami yang dapat menambah kesan elegan pada ruang Anda.",
-          "imageSearchQuery": "teakwood texture background"
+          "imageSearchQuery": "teakwood texture background",
+          "image": "https://images.unsplash.com/photo-1687180498602-5a1046defaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHx0ZWFrJTIwd29vZCUyMGZ1cm5pdHVyZSUyMGxpdmluZyUyMHJvb20lMjBpbnRlcmlvcnxlbnwwfDB8fHwxNzczMzg2MjQ1fDA&ixlib=rb-4.1.0&q=80&w=1080"
         },
         {
           "heading": "Tips Memilih Furniture Teakwood Bekasi",
@@ -5286,7 +5287,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1685119166946-d4050647b0e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxmdXJuaXR1cmUlMjBzaGlwcGluZyUyMGRvY3VtZW50cyUyMGltcG9ydHxlbnwwfDB8fHwxNzczMzg1ODQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-03-13 07:08",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Mengimpor furniture dari Indonesia memerlukan persiapan dokumen yang tepat untuk memastikan kelancaran proses bea cukai. Artikel ini akan membahas dokumen wajib yang harus disiapkan importir pada tahun 2026, berdasarkan regulasi terbaru dari pemerintah Indonesia dan standar internasional.",
       "keyPoints": [
