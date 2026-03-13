@@ -9,11 +9,12 @@
 }
 
 .key-takeaways-box {
-  background: #f8f9fa;
-  border-left: 4px solid #8B7355;
+  background: #ffffff;
   padding: 24px;
   margin-bottom: 32px;
-  border-radius: 0 8px 8px 0;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .key-takeaways-box h3 {
