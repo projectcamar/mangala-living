@@ -145,8 +145,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const recipients = ['lifewithmangala@gmail.com'];
     const results = [];
 
+    // 1. Send Admin Notification (Existing Logic)
     for (const recipient of recipients) {
-      console.log(`[SUBSCRIPTION] Attempting to send email to: ${recipient}`);
+      console.log(`[SUBSCRIPTION] Attempting to send notification to admin: ${recipient}`);
       try {
         const { data, error } = await resend.emails.send({
           from: 'Mangala Living <onboarding@resend.dev>',
@@ -156,16 +157,96 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         });
 
         if (error) {
-          console.error(`[SUBSCRIPTION] Resend error for ${recipient}:`, error);
+          console.error(`[SUBSCRIPTION] Resend notification error for ${recipient}:`, error);
           results.push({ recipient, success: false, error });
         } else {
-          console.log(`[SUBSCRIPTION] Email sent to ${recipient} successfully:`, data?.id);
+          console.log(`[SUBSCRIPTION] Notification sent to ${recipient} successfully:`, data?.id);
           results.push({ recipient, success: true, id: data?.id });
         }
       } catch (err) {
         const errorMsg = err instanceof Error ? err.message : 'Unknown error';
-        console.error(`[SUBSCRIPTION] Catch error for ${recipient}:`, errorMsg);
         results.push({ recipient, success: false, error: errorMsg });
+      }
+    }
+
+    // 2. Send Catalog Delivery Email to User (New Logic)
+    if ((isCatalog || notificationType === 'subscription') && email && email.includes('@')) {
+      console.log(`[SUBSCRIPTION] Attempting to send catalog to customer: ${email}`);
+
+      const pdfBaseUrl = 'https://lifewithmangala.com/fonts/Mangala-Living-Catalog-2025';
+      const langSuffix = catalogLanguage && catalogLanguage !== 'en' && catalogLanguage !== 'id'
+        ? `-${catalogLanguage.toUpperCase()}`
+        : '';
+      const catalogUrl = `${pdfBaseUrl}${langSuffix}.pdf`;
+
+      const userSubjectMap: Record<string, string> = {
+        id: 'Katalog Mangala Living 2025 Anda',
+        en: 'Your Mangala Living 2025 Catalog',
+        ar: 'كتالوج مانجالا ليفينج 2025 الخاص بك',
+        zh: '您的 2025 曼加拉生活目录',
+        ja: '2025 マンガラリビングカタログ',
+        ko: '2025 망갈라 리빙 카탈로그',
+        es: 'Su Catálogo Mangala Living 2025',
+        fr: 'Votre Catalogue Mangala Living 2025'
+      };
+
+      const userSubject = userSubjectMap[catalogLanguage || 'en'] || userSubjectMap['en'];
+
+      const userHtml = `
+        <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 30px; color: #333; line-height: 1.6; max-width: 600px; margin: 0 auto; border: 1px solid #eee; border-radius: 12px;">
+          <div style="text-align: center; margin-bottom: 30px;">
+            <h1 style="color: #8B7355; margin: 0; letter-spacing: 2px;">MANGALA LIVING</h1>
+            <p style="color: #999; text-transform: uppercase; font-size: 12px; margin-top: 5px;">Premium Industrial Furniture</p>
+          </div>
+          
+          <h2 style="color: #444; border-bottom: 1px solid #f0f0f0; padding-bottom: 15px;">${firstName || 'Hello'},</h2>
+          
+          <p style="font-size: 16px;">
+            ${catalogLanguage === 'id'
+          ? 'Terima kasih telah menyatakan minat pada koleksi kami. Sesuai permintaan Anda, berikut adalah tautan untuk mengunduh Katalog Premium Mangala Living 2025 kami.'
+          : 'Thank you for your interest in our collections. As requested, here is the link to download our Mangala Living 2025 Premium Catalog.'}
+          </p>
+
+          <div style="text-align: center; margin: 40px 0;">
+            <a href="${catalogUrl}" style="background-color: #8B7355; color: white; padding: 15px 35px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+              ${catalogLanguage === 'id' ? 'UNDUH KATALOG PDF' : 'DOWNLOAD PDF CATALOG'}
+            </a>
+          </div>
+
+          <p style="font-size: 14px; color: #666; font-style: italic;">
+            ${catalogLanguage === 'id'
+          ? 'Jika tombol di atas tidak berfungsi, salin dan tempel tautan ini ke browser Anda:'
+          : 'If the button above doesn\'t work, copy and paste this link into your browser:'}
+            <br/>
+            <a href="${catalogUrl}" style="color: #8B7355; text-decoration: none;">${catalogUrl}</a>
+          </p>
+
+          <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #f0f0f0;">
+            <p style="margin-bottom: 5px;"><strong>Best Regards,</strong></p>
+            <p style="margin-top: 0; color: #8B7355;"><strong>Mangala Living Team</strong></p>
+            <p style="font-size: 12px; color: #999;">
+              Bekasi, West Java, Indonesia<br/>
+              <a href="https://lifewithmangala.com" style="color: #999; text-decoration: none;">www.lifewithmangala.com</a>
+            </p>
+          </div>
+        </div>
+      `;
+
+      try {
+        const { data, error } = await resend.emails.send({
+          from: 'Mangala Living <onboarding@resend.dev>',
+          to: email,
+          subject: userSubject,
+          html: userHtml,
+        });
+
+        if (error) {
+          console.error(`[SUBSCRIPTION] Resend user delivery error:`, error);
+        } else {
+          console.log(`[SUBSCRIPTION] Catalog delivered to user successfully:`, data?.id);
+        }
+      } catch (err) {
+        console.error(`[SUBSCRIPTION] User delivery crash:`, err);
       }
     }
 

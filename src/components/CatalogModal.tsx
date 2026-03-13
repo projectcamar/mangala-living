@@ -29,7 +29,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
   const translations = {
     id: {
       title: 'TERIMA KASIH TELAH MENGUNDUH',
-      subtitle: 'Katalog Mangala 2025 Anda sedang dalam proses! Bergabunglah dengan daftar email kami untuk mendapatkan pembaruan eksklusif dan inspirasi furniture.',
+      subtitle: 'Katalog Mangala 2025 Anda sedang dalam proses! Bergabunglah dengan daftar email kami untuk mendapatkan pembaruan eksklusif. Dengan mengirimkan formulir ini, kami juga akan mengirimkan salinan PDF langsung ke email Anda!',
       firstName: 'Nama Lengkap',
       email: 'Email',
       whatsapp: 'Nomor WhatsApp',
@@ -37,7 +37,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
     },
     en: {
       title: 'THANK YOU FOR DOWNLOADING',
-      subtitle: 'Your Mangala 2025 Catalog is on its way! Join our emailing list for exclusive updates and furniture inspiration.',
+      subtitle: 'Your Mangala 2025 Catalog is on its way! Join our emailing list for exclusive updates. By submitting this form, we will also send a PDF copy directly to your email!',
       firstName: 'Full Name',
       email: 'Email',
       whatsapp: 'WhatsApp Number',
@@ -45,7 +45,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
     },
     ar: {
       title: 'شكراً لتحميل الكتالوج',
-      subtitle: 'كتالوج مانجالا 2025 في طريقه إليك! انضم إلى قائمتنا البريدية للحصول على تحديثات حصرية وإلهام للأثاث.',
+      subtitle: 'كتالوج مانجالا 2025 في طريقه إليك! انضم إلى قائمتنا البريدية للحصول على تحديثات حصرية. بإرسال هذا النموذج، سنقوم أيضاً بإرسال نسخة PDF مباشرة إلى بريدك الإلكتروني!',
       firstName: 'الاسم الكامل',
       email: 'البريد الإلكتروني',
       whatsapp: 'رقم واتساب',
@@ -53,7 +53,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
     },
     zh: {
       title: '感谢您下载目录',
-      subtitle: '您的 2025 曼加拉目录即将推出！加入我们的邮件列表，获取独家更新和家具灵感。',
+      subtitle: '您的 2025 曼加拉目录即将推出！加入我们的邮件列表，获取独家更新。提交此表格后，我们还将把 PDF 副本直接发送到您的电子邮箱！',
       firstName: '全名',
       email: '电子邮件',
       whatsapp: 'WhatsApp号码',
@@ -61,7 +61,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
     },
     ja: {
       title: 'ダウンロードしていただきありがとうございます',
-      subtitle: '2025 マンガラカタログをお届けします！限定アップデートや家具のインスピレーションを得るために、メールリストにご登録ください。',
+      subtitle: '2025 マンガラカタログをお届けします！限定アップデートを得るために、メールリストにご登録ください。このフォームを送信すると、PDFのコピーもあなたのメールに直接お送りします！',
       firstName: '氏名',
       email: 'メールアドレス',
       whatsapp: 'WhatsApp番号',
@@ -69,7 +69,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
     },
     es: {
       title: 'GRACIAS POR DESCARGAR',
-      subtitle: '¡Su catálogo Mangala 2025 está en camino! Únase a nuestra lista de correo para recibir actualizaciones exclusivas e inspiración para muebles.',
+      subtitle: '¡Su catálogo Mangala 2025 está en camino! Únase a nuestra lista de correo para recibir actualizaciones exclusivas. ¡Al enviar este formulario, juga le enviaremos una copia en PDF langsung ke email Anda!',
       firstName: 'Nombre completo',
       email: 'Correo electrónico',
       whatsapp: 'Número de WhatsApp',
@@ -77,15 +77,15 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
     },
     fr: {
       title: 'MERCI D\'AVOIR TÉLÉCHARGÉ',
-      subtitle: 'Votre catalogue Mangala 2025 est en route ! Rejoignez notre liste de diffusion untuk des mises à jour exclusives et de l\'inspiration mobilier.',
+      subtitle: 'Votre catalogue Mangala 2025 est en route ! Rejoignez notre liste de diffusion untuk des mises à jour exclusives. En soumettant ce formulaire, nous vous enverrons également une copie PDF directement sur votre e-mail !',
       firstName: 'Nom complet',
       email: 'E-mail',
-      whatsapp: 'Numéro WhatsApp',
+      whatsapp: 'Nomor WhatsApp',
       download: 'REJOINDRE MAINTENANT'
     },
     ko: {
       title: '다운로드해주셔서 감사합니다',
-      subtitle: '2025 망갈라 카탈로그가 준비되었습니다! 독점 업데이트와 가구 영감을 받으려면 이메일 목록에 가입하세요.',
+      subtitle: '2025 망갈라 카탈로그가 준비되었습니다! 독점 업데이트를 받으려면 이메일 목록에 가입하세요. 이 양식을 제출하시면 PDF 사본을 이메일로 직접 보내드립니다!',
       firstName: '성함',
       email: '이메일',
       whatsapp: 'WhatsApp 번호',
