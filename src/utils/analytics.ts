@@ -63,5 +63,12 @@ export const trackEvent = {
       page_name: pageName,
       path: path
     })
+  },
+
+  // Newsletter interactions
+  newsletterSignup: (language: string) => {
+    track('newsletter_signup', {
+      language: language
+    })
   }
 }
