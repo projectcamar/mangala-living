@@ -4420,7 +4420,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1687180498602-5a1046defaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHx0ZWFrJTIwd29vZCUyMGZ1cm5pdHVyZSUyMGxpdmluZyUyMHJvb20lMjBpbnRlcmlvcnxlbnwwfDB8fHwxNzczMzg2MjQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-02-04 09:55",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Furniture teakwood Bekasi menjadi pilihan banyak orang karena kekuatan dan keindahannya. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, memahami betapa pentingnya memilih furniture yang tepat untuk ruang Anda. Berikut beberapa tips dan trik dalam memilih furniture teakwood Bekasi.",
       "keyPoints": [
@@ -5318,6 +5318,50 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Persiapan dokumen impor furniture dari Indonesia yang tepat adalah kunci kelancaran proyek Anda. Dengan mengikuti panduan ini dan menggunakan checklist yang disediakan, Anda dapat meminimalisir risiko penundaan dan denda bea cukai. Mangala Living sebagai produsen furniture industri berpengalaman siap membantu Anda dengan persiapan dokumen yang lengkap dan sesuai regulasi. Hubungi tim kami untuk konsultasi lebih lanjut mengenai impor furniture dari Indonesia."
+    }
+  },
+  {
+    "id": 339,
+    "slug": "dokumen-ekspor-bersertifikat-bnsp",
+    "title": "Dokumen Ekspor Bersertifikat BNSP: Panduan Lengkap",
+    "category": "Tips and Trick",
+    "excerpt": "Pelajari cara mempersiapkan dokumen ekspor bersertifikat BNSP untuk bisnis furniture Anda. Tingkatkan kredibilitas dan kelancaran pengiriman internasional.",
+    "image": "https://images.unsplash.com/photo-1685119166946-d4050647b0e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxleHBvcnQlMjBkb2N1bWVudCUyMHByZXBhcmF0aW9uJTIwZnVybml0dXJlfGVufDB8MHx8fDE3NzMzODYzODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-03-13 07:19",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Dalam bisnis furniture internasional, dokumen ekspor yang tepat adalah kunci kelancaran pengiriman. Sertifikasi BNSP Indonesia memberikan standar profesional yang diakui secara nasional bagi para preparator dokumen ekspor.",
+      "keyPoints": [
+        "Sertifikasi BNSP meningkatkan kredibilitas profesional",
+        "Dokumen ekspor yang benar menghindari penundaan pengiriman",
+        "Pelatihan BNSP mengajarkan prosedur ekspor terkini",
+        "Biaya sertifikasi sepadan dengan manfaat jangka panjang",
+        "Mangala Living menerapkan standar BNSP dalam operasional"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Sertifikasi BNSP Penting untuk Ekspor Furniture?",
+          "content": "Sertifikasi BNSP (Badan Nasional Sertifikasi Profesi) adalah pengakuan resmi atas kompetensi seseorang dalam bidang tertentu. Untuk industri furniture ekspor, memiliki preparator dokumen yang bersertifikat BNSP memberikan banyak keuntungan. Pertama, dokumen yang disiapkan memenuhi standar nasional dan internasional, mengurangi risiko penolakan di bea cukai. Kedua, sertifikasi ini menunjukkan profesionalisme dan komitmen terhadap kualitas layanan. Ketiga, para profesional bersertifikat BNSP memahami regulasi terkini, termasuk aturan bea cukai, peraturan impor negara tujuan, dan persyaratan dokumen yang berlaku. Bagi perusahaan seperti Mangala Living yang telah berpengalaman 25+ tahun dalam industri furniture, standar BNSP menjadi nilai tambah yang memperkuat reputasi di pasar global.",
+          "imageSearchQuery": "certified export document preparator",
+          "image": "https://images.unsplash.com/photo-1653289755843-c7469886050e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxjZXJ0aWZpZWQlMjBleHBvcnQlMjBkb2N1bWVudCUyMHByZXBhcmF0b3J8ZW58MHwwfHx8MTc3MzM4NjM4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "certified export document preparator"
+        },
+        {
+          "heading": "Jenis Dokumen Ekspor yang Perlu Disiapkan",
+          "content": "Proses ekspor furniture memerlukan beberapa dokumen kunci yang harus disiapkan dengan benar. Invoice komersial mencantumkan detail barang, harga, dan syarat penjualan. Packing list memberikan informasi kemasan yang akurat. Certificate of origin menunjukkan asal barang, yang penting untuk perhitungan bea masuk. Bill of lading atau air waybill sebagai bukti pengiriman. Untuk furniture, seringkali dibutuhkan fumigation certificate untuk memastikan barang bebas hama. Material safety data sheet jika menggunakan bahan kimia tertentu. Para preparator bersertifikat BNSP memahami bahwa setiap kesalahan kecil dalam dokumen dapat menyebabkan penundaan pengiriman, biaya tambahan, atau bahkan penolakan barang di negara tujuan. Di Mangala Living, kami memastikan semua dokumen ekspor furniture kami memenuhi standar tertinggi, baik untuk pengiriman ke cafe, restaurant, hotel, maupun kantor di berbagai negara."
+        },
+        {
+          "heading": "Proses Mendapatkan Sertifikasi BNSP",
+          "content": "Proses mendapatkan sertifikasi BNSP melibatkan beberapa tahap. Pertama, calon peserta harus memenuhi syarat pendidikan dan pengalaman kerja minimal di bidang logistik atau ekspor. Kedua, mengikuti pelatihan yang diselenggarakan lembaga pelatihan resmi, yang mencakup teori dan praktik penyusunan dokumen ekspor. Ketiga, uji kompetensi yang dilakukan oleh asesor BNSP untuk mengukur pemahaman dan keterampilan. Keempat, jika lulus, akan mendapatkan sertifikat yang berlaku selama beberapa tahun sebelum perlu diperpanjang. Investasi dalam sertifikasi ini sepadan dengan manfaatnya, karena preparator yang kompeten dapat menghemat waktu, biaya, dan menghindari masalah hukum. Mangala Living mendukung pengembangan profesionalisme tim kami dengan mendorong pemahaman terhadap standar BNSP, meskipun fokus utama kami tetap pada produksi furniture berkualitas untuk kebutuhan komersial."
+        },
+        {
+          "heading": "Tips Praktis Menghindari Kesalahan Dokumen Ekspor",
+          "content": "Berikut adalah tips praktis dari para profesional bersertifikat BNSP untuk menghindari kesalahan umum dalam dokumen ekspor furniture. Selalu periksa kembali nomor HS Code yang benar untuk setiap jenis furniture, karena kesalahan kode dapat menyebabkan perhitungan bea masuk yang salah. Pastikan deskripsi barang detail dan akurat, termasuk material, dimensi, dan berat. Gunakan sistem klasifikasi yang konsisten antara invoice, packing list, dan dokumen lainnya. Perhatikan syarat penjualan (Incoterms) dan pastikan semua pihak memahami tanggung jawab masing-masing. Buat checklist dokumen yang diperlukan untuk setiap negara tujuan, karena persyaratan bisa berbeda. Simpan copy digital dan fisik dari semua dokumen. Di Mangala Living, kami menerapkan prosedur standar yang ketat untuk memastikan setiap pengiriman furniture ke cafe, restaurant, hotel, dan kantor di seluruh dunia berjalan lancar tanpa hambatan administratif."
+        }
+      ],
+      "conclusion": "Sertifikasi BNSP untuk preparator dokumen ekspor adalah investasi strategis bagi bisnis furniture yang ingin berkembang secara internasional. Dengan standar yang diakui secara nasional, para profesional bersertifikat BNSP membantu memastikan kelancaran proses ekspor, mengurangi risiko, dan meningkatkan kepercayaan pelanggan. Bagi Mangala Living, meskipun fokus utama kami adalah produksi furniture berkualitas untuk cafe, restaurant, hotel, dan kantor, kami memahami bahwa dokumen ekspor yang benar adalah bagian tak terpisahkan dari layanan kami. Dengan pengalaman 25+ tahun dan komitmen terhadap profesionalisme, kami terus meningkatkan standar operasional kami untuk memberikan pengalaman terbaik bagi pelanggan kami di seluruh dunia."
     }
   }
 ]
