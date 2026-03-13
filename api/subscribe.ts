@@ -173,60 +173,216 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if ((isCatalog || notificationType === 'subscription') && email && email.includes('@')) {
       console.log(`[SUBSCRIPTION] Attempting to send catalog to customer: ${email}`);
 
-      const pdfBaseUrl = 'https://lifewithmangala.com/fonts/Mangala-Living-Catalog-2025';
+      const pdfBaseUrl = 'https://mangala-living.com/fonts/Mangala-Living-Catalog-2025';
       const langSuffix = catalogLanguage && catalogLanguage !== 'en' && catalogLanguage !== 'id'
         ? `-${catalogLanguage.toUpperCase()}`
         : '';
       const catalogUrl = `${pdfBaseUrl}${langSuffix}.pdf`;
 
-      const userSubjectMap: Record<string, string> = {
-        id: 'Katalog Mangala Living 2025 Anda',
-        en: 'Your Mangala Living 2025 Catalog',
-        ar: 'كتالوج مانجالا ليفينج 2025 الخاص بك',
-        zh: '您的 2025 曼加拉生活目录',
-        ja: '2025 マンガラリビングカタログ',
-        ko: '2025 망갈라 리빙 카탈로그',
-        es: 'Su Catálogo Mangala Living 2025',
-        fr: 'Votre Catalogue Mangala Living 2025'
+      const lang = catalogLanguage || 'en';
+
+      const emailTranslations: Record<string, {
+        subject: string;
+        greeting: (name: string) => string;
+        intro: string;
+        downloadCta: string;
+        fallbackText: string;
+        showcaseHeading: string;
+        showcaseDesc: string;
+        viewDetails: string;
+        viewAll: string;
+        bestRegards: string;
+        team: string;
+      }> = {
+        id: {
+          subject: 'Katalog Mangala Living 2025 Anda',
+          greeting: (name) => `Halo ${name},`,
+          intro: 'Terima kasih telah menyatakan minat pada koleksi kami. Sesuai permintaan Anda, berikut adalah tautan untuk mengunduh Katalog Premium Mangala Living 2025 kami.',
+          downloadCta: 'UNDUH KATALOG PDF',
+          fallbackText: 'Jika tombol di atas tidak berfungsi, salin dan tempel tautan ini ke browser Anda:',
+          showcaseHeading: 'Produk Industrial Terkait',
+          showcaseDesc: 'Explore koleksi furniture industrial premium kami yang dirancang untuk memperkuat karakter bisnis Anda.',
+          viewDetails: 'Lihat Detail Produk',
+          viewAll: 'Lihat Semua Produk',
+          bestRegards: 'Salam Hangat,',
+          team: 'Tim Mangala Living'
+        },
+        en: {
+          subject: 'Your Mangala Living 2025 Catalog',
+          greeting: (name) => `${name},`,
+          intro: 'Thank you for your interest in our collections. As requested, here is the link to download our Mangala Living 2025 Premium Catalog.',
+          downloadCta: 'DOWNLOAD PDF CATALOG',
+          fallbackText: 'If the button above doesn\'t work, copy and paste this link into your browser:',
+          showcaseHeading: 'Related Industrial Products',
+          showcaseDesc: 'Explore our collection of premium industrial furniture designed to enhance and strengthen the character of your business.',
+          viewDetails: 'View Product Details',
+          viewAll: 'View All Products',
+          bestRegards: 'Best Regards,',
+          team: 'Mangala Living Team'
+        },
+        es: {
+          subject: 'Su Catálogo Mangala Living 2025',
+          greeting: (name) => `Hola ${name},`,
+          intro: 'Gracias por su interés en nuestras colecciones. Según lo solicitado, aquí tiene el enlace para descargar nuestro Catálogo Premium Mangala Living 2025.',
+          downloadCta: 'DESCARGAR CATÁLOGO PDF',
+          fallbackText: 'Si el botón de arriba no funciona, copie y pegue este enlace en su navegador:',
+          showcaseHeading: 'Productos Industriales Relacionados',
+          showcaseDesc: 'Explore nuestra colección de muebles industriales premium diseñada para mejorar y fortalecer el carácter de su negocio.',
+          viewDetails: 'Ver Detalles del Producto',
+          viewAll: 'Ver Todos los Productos',
+          bestRegards: 'Atentamente,',
+          team: 'Equipo Mangala Living'
+        },
+        fr: {
+          subject: 'Votre Catalogue Mangala Living 2025',
+          greeting: (name) => `Bonjour ${name},`,
+          intro: 'Merci de votre intérêt pour nos collections. Comme demandé, voici le lien pour télécharger notre Catalogue Premium Mangala Living 2025.',
+          downloadCta: 'TÉLÉCHARGER LE CATALOGUE PDF',
+          fallbackText: 'Si le bouton ci-dessus ne fonctionne pas, copiez et collez ce lien dans votre navigateur:',
+          showcaseHeading: 'Produits Industriels Associés',
+          showcaseDesc: 'Explorez notre collection de meubles industriels haut de gamme conçus pour renforcer le caractère de votre entreprise.',
+          viewDetails: 'Voir les Détails du Produit',
+          viewAll: 'Voir Tous les Produits',
+          bestRegards: 'Cordialement,',
+          team: 'L\'équipe Mangala Living'
+        },
+        ko: {
+          subject: '2025 망갈라 리빙 카탈로그',
+          greeting: (name) => `${name}님,`,
+          intro: '저희 컬렉션에 관심을 가져주셔서 감사합니다. 요청하신 대로 2025 망갈라 리빙 프리미엄 카탈로그를 다운로드할 수 있는 링크를 보내드립니다.',
+          downloadCta: 'PDF 카탈로그 다운로드',
+          fallbackText: '위 버튼이 작동하지 않으면 이 링크를 복사하여 브라우저에 붙여넣으세요:',
+          showcaseHeading: '관련 제품 안내',
+          showcaseDesc: '귀사의 비즈니스 캐릭터를 강화하고 돋보이게 디자인된 프리미엄 산업용 가구 컬렉션을 만나보세요.',
+          viewDetails: '제품 상세 보기',
+          viewAll: '모든 제품 보기',
+          bestRegards: '감사합니다.',
+          team: '망갈라 리빙 팀'
+        },
+        ja: {
+          subject: '2025 マンガラリビングカタログ',
+          greeting: (name) => `${name}様、`,
+          intro: '当社のコレクションにご興味をお持ちいただきありがとうございます。ご要望通り、2025マンガラリビングプレミアムカタログのダウンロードリンクをお送りいたします。',
+          downloadCta: 'PDFカタログをダウンロード',
+          fallbackText: '上のボタンが機能しない場合は、このリンクをコピーしてブラウザに貼り付けてください：',
+          showcaseHeading: '関連する工業風製品',
+          showcaseDesc: 'あなたのビジネスの個性を高め、強化するためにデザインされたプレミアムな工業風家具のコレクションをご覧ください。',
+          viewDetails: '製品の詳細を見る',
+          viewAll: 'すべての製品を見る',
+          bestRegards: '今後ともよろしくお願いいたします。',
+          team: 'マンガラリビングチーム'
+        },
+        zh: {
+          subject: '您的 2025 曼加拉生活目录',
+          greeting: (name) => `${name}，`,
+          intro: '感谢您对我们系列的关注。应您的要求，这是下载我们的 2025 曼加拉生活高级目录的链接。',
+          downloadCta: '下载 PDF 目录',
+          fallbackText: '如果上面的按钮不起作用，请将此链接复制并粘贴到您的浏览器中：',
+          showcaseHeading: '相关工业风产品',
+          showcaseDesc: '探索我们专为增强和加强您的业务特色而设计的优质工业风家具系列。',
+          viewDetails: '查看产品详情',
+          viewAll: '查看所有产品',
+          bestRegards: '致以最诚挚的问候，',
+          team: '曼加拉生活团队'
+        },
+        ar: {
+          subject: 'كتالوج مانجالا ليفينج 2025 الخاص بك',
+          greeting: (name) => `${name}،`,
+          intro: 'شكرًا لاهتمامك بمجموعاتنا. بناءً على طلبك، إليك الرابط لتحميل كتالوج مانجالا ليفينج 2025 المتميز.',
+          downloadCta: 'تحميل كتالوج PDF',
+          fallbackText: 'إذا لم يعمل الزر أعلاه، فقم بنسخ هذا الرابط ولصقه في متصفحك:',
+          showcaseHeading: 'منتجات صناعية ذات صلة',
+          showcaseDesc: 'استكشف مجموعتنا من الأثاث الصناعي المتميز المصمم لتعزيز وتقوية طابع عملك.',
+          viewDetails: 'عرض تفاصيل المنتج',
+          viewAll: 'عرض جميع المنتجات',
+          bestRegards: 'مع أطيب التحيات،',
+          team: 'فريق مانجالا ليفينج'
+        }
       };
 
-      const userSubject = userSubjectMap[catalogLanguage || 'en'] || userSubjectMap['en'];
+      const t = emailTranslations[lang] || emailTranslations['en'];
+
+      // Random Product Showcase Logic
+      const allProducts = [
+        { name: 'Frame Loft Bookshelf', cat: 'Storage', price: 'Rp3.500.000', slug: 'frame-loft-bookshelf', img: 'https://mangala-living.com/assets/frame-Loft-Bookshelf.webp' },
+        { name: 'Balcony Bar Table', cat: 'Bar Set', price: 'Rp350.000', slug: 'balcony-bar-table', img: 'https://mangala-living.com/assets/balcony-bar-table.webp' },
+        { name: 'Lounge Set Coffee Table', cat: 'Lounge Set', price: 'Rp2.000.000', slug: 'lounge-set-coffee-table', img: 'https://mangala-living.com/assets/longue-set-coffee-table.webp' },
+        { name: 'Industrial Daybed', cat: 'Daybed', price: 'Rp3.200.000', slug: 'industrial-daybed-frame', img: 'https://mangala-living.com/assets/industrial-daybed-boneonly.webp' },
+        { name: 'Bar Stall Chair', cat: 'Bar Set', price: 'Rp450.000', slug: 'bar-stall-chair', img: 'https://mangala-living.com/assets/Kursi-Bar-kursi-stall-chair.webp' },
+        { name: 'Hollowline Display Rack', cat: 'Storage', price: 'Rp3.700.000', slug: 'hollowline-display-rack', img: 'https://mangala-living.com/assets/Hollowline-Display-Rack.webp' }
+      ];
+
+      const getPrice = (idr: string, targetLang: string) => {
+        const val = parseInt(idr.replace(/[^0-9]/g, ''));
+        if (targetLang === 'id') return idr;
+        const rate = 15300;
+        const usd = (val / rate).toFixed(2);
+        if (targetLang === 'en' || targetLang === 'ar' || targetLang === 'zh') return `$${usd}`;
+        if (targetLang === 'es' || targetLang === 'fr') return `${(val / 16500).toFixed(2)} €`;
+        if (targetLang === 'ja') return `¥${(val / 102).toFixed(0)}`;
+        if (targetLang === 'ko') return `₩${(val / 11.5).toFixed(0)}`;
+        return `$${usd}`;
+      };
+
+      const selected = allProducts.sort(() => 0.5 - Math.random()).slice(0, 3);
+      const showcaseHtml = selected.map(p => `
+        <div style="border: 1px solid #eee; border-radius: 8px; margin-bottom: 20px; overflow: hidden; background: #fff;">
+          <img src="${p.img}" alt="${p.name}" style="width: 100%; height: auto; display: block;" />
+          <div style="padding: 15px;">
+            <p style="margin: 0; color: #999; font-size: 10px; text-transform: uppercase;">MANGALA PRODUCT</p>
+            <h3 style="margin: 5px 0; color: #333; font-size: 18px;">${p.name}</h3>
+            <p style="margin: 0; color: #8B7355; font-weight: bold;">${getPrice(p.price, lang)}</p>
+            <div style="margin-top: 15px;">
+              <a href="https://mangala-living.com/product/${p.slug}" style="color: #8B7355; text-decoration: none; font-weight: bold; font-size: 14px; border-bottom: 1px solid #8B7355;">
+                ${t.viewDetails} &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      `).join('');
 
       const userHtml = `
-        <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 30px; color: #333; line-height: 1.6; max-width: 600px; margin: 0 auto; border: 1px solid #eee; border-radius: 12px;">
+        <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 30px; color: #333; line-height: 1.6; max-width: 600px; margin: 0 auto; border: 1px solid #eee; border-radius: 12px; background-color: #fcfcfc;">
           <div style="text-align: center; margin-bottom: 30px;">
             <h1 style="color: #8B7355; margin: 0; letter-spacing: 2px;">MANGALA LIVING</h1>
             <p style="color: #999; text-transform: uppercase; font-size: 12px; margin-top: 5px;">Premium Industrial Furniture</p>
           </div>
           
-          <h2 style="color: #444; border-bottom: 1px solid #f0f0f0; padding-bottom: 15px;">${firstName || 'Hello'},</h2>
+          <h2 style="color: #444; border-bottom: 1px solid #f0f0f0; padding-bottom: 15px;">${t.greeting(firstName || 'Visitor')}</h2>
           
           <p style="font-size: 16px;">
-            ${catalogLanguage === 'id'
-          ? 'Terima kasih telah menyatakan minat pada koleksi kami. Sesuai permintaan Anda, berikut adalah tautan untuk mengunduh Katalog Premium Mangala Living 2025 kami.'
-          : 'Thank you for your interest in our collections. As requested, here is the link to download our Mangala Living 2025 Premium Catalog.'}
+            ${t.intro}
           </p>
 
           <div style="text-align: center; margin: 40px 0;">
             <a href="${catalogUrl}" style="background-color: #8B7355; color: white; padding: 15px 35px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-              ${catalogLanguage === 'id' ? 'UNDUH KATALOG PDF' : 'DOWNLOAD PDF CATALOG'}
+              ${t.downloadCta}
             </a>
           </div>
 
           <p style="font-size: 14px; color: #666; font-style: italic;">
-            ${catalogLanguage === 'id'
-          ? 'Jika tombol di atas tidak berfungsi, salin dan tempel tautan ini ke browser Anda:'
-          : 'If the button above doesn\'t work, copy and paste this link into your browser:'}
+            ${t.fallbackText}
             <br/>
-            <a href="${catalogUrl}" style="color: #8B7355; text-decoration: none;">${catalogUrl}</a>
+            <a href="${catalogUrl}" style="color: #8B7355; text-decoration: none; word-break: break-all;">${catalogUrl}</a>
           </p>
 
-          <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #f0f0f0;">
-            <p style="margin-bottom: 5px;"><strong>Best Regards,</strong></p>
-            <p style="margin-top: 0; color: #8B7355;"><strong>Mangala Living Team</strong></p>
+          <div style="margin-top: 50px; padding-top: 30px; border-top: 2px solid #eee;">
+             <h2 style="color: #333; margin-bottom: 10px; text-align: center;">${t.showcaseHeading}</h2>
+             <p style="color: #666; font-size: 14px; text-align: center; margin-bottom: 30px;">${t.showcaseDesc}</p>
+             ${showcaseHtml}
+             <div style="text-align: center; margin-top: 10px;">
+               <a href="https://mangala-living.com/shop" style="color: #8B7355; text-decoration: none; font-weight: bold;">
+                 ${t.viewAll} &rarr;
+               </a>
+             </div>
+          </div>
+
+          <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #f0f0f0;">
+            <p style="margin-bottom: 5px;"><strong>${t.bestRegards}</strong></p>
+            <p style="margin-top: 0; color: #8B7355;"><strong>${t.team}</strong></p>
             <p style="font-size: 12px; color: #999;">
               Bekasi, West Java, Indonesia<br/>
-              <a href="https://lifewithmangala.com" style="color: #999; text-decoration: none;">www.lifewithmangala.com</a>
+              <a href="https://mangala-living.com" style="color: #999; text-decoration: none;">www.mangala-living.com</a>
             </p>
           </div>
         </div>
@@ -236,7 +392,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         const { data, error } = await resend.emails.send({
           from: 'Mangala Living <catalog@mangala-living.com>',
           to: email,
-          subject: userSubject,
+          subject: t.subject,
           html: userHtml,
         });
 
