@@ -339,9 +339,10 @@
   }
 
   .catalog-modal-container {
-    max-width: 90%;
-    max-height: 85vh;
-    overflow-y: auto;
+    max-width: 320px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
   }
 
   .catalog-modal-content {
@@ -350,8 +351,7 @@
   }
 
   .catalog-preview {
-    padding: 20px;
-    min-height: 200px;
+    display: none;
   }
 
   .catalog-preview-wrapper {
@@ -427,13 +427,11 @@
   }
 
   .catalog-modal-container {
-    max-width: 95%;
-    max-height: 90vh;
+    max-width: 300px;
   }
 
   .catalog-preview {
-    padding: 15px;
-    min-height: 150px;
+    display: none;
   }
 
   .catalog-preview-wrapper {
