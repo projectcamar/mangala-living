@@ -5279,46 +5279,44 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     "id": 338,
-    "slug": "panduan-furnitur-industri",
-    "title": "Panduan Furnitur Industri",
+    "slug": "dokumen-wajib-impor-furniture-indonesia-2026",
+    "title": "Dokumen Wajib Impor Furniture dari Indonesia 2026",
     "category": "Tips and Trick",
-    "excerpt": "Panduan memilih furnitur industri yang tepat untuk bisnis Anda",
-    "image": "https://images.unsplash.com/photo-1680209668065-26985bc92268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMGRlc2lnbnxlbnwwfDB8fHwxNzczMzg1NDgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    "date": "2026-03-13 07:04",
+    "excerpt": "Panduan lengkap dokumen impor furniture Indonesia 2026 untuk importir internasional. Cegah penundaan dan denda dengan persiapan yang tepat.",
+    "image": "https://images.unsplash.com/photo-1685119166946-d4050647b0e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxmdXJuaXR1cmUlMjBzaGlwcGluZyUyMGRvY3VtZW50cyUyMGltcG9ydHxlbnwwfDB8fHwxNzczMzg1ODQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-03-13 07:08",
     "author": "Helmi Ramdan",
     "status": "draft",
     "customContent": {
-      "introduction": "Dalam membangun sebuah bisnis, pemilihan furnitur yang tepat sangat penting. <strong>Mangala Living</strong> telah berpengalaman lebih dari 25 tahun dalam menyediakan furnitur industri untuk cafe, restaurant, hotel, dan kantor. Dalam artikel ini, kita akan membahas panduan memilih furnitur industri yang tepat untuk bisnis Anda.",
+      "introduction": "Mengimpor furniture dari Indonesia memerlukan persiapan dokumen yang tepat untuk memastikan kelancaran proses bea cukai. Artikel ini akan membahas dokumen wajib yang harus disiapkan importir pada tahun 2026, berdasarkan regulasi terbaru dari pemerintah Indonesia dan standar internasional.",
       "keyPoints": [
-        "Memilih furnitur yang tahan lama",
-        "Mengoptimalkan ruang dengan desain kustom",
-        "Menghemat biaya dengan furnitur yang efektif"
+        "Dokumen impor furniture Indonesia 2026",
+        "Syarat bea cukai dan regulasi terbaru",
+        "Tips menghindari penundaan pengiriman",
+        "Checklist dokumen impor furniture"
       ],
       "language": "id",
       "sections": [
         {
-          "heading": "Mengapa Furnitur Industri Penting?",
-          "content": "Furnitur industri memiliki peran penting dalam menciptakan lingkungan kerja yang nyaman dan efektif. <em>Dengan demikian</em>, Anda dapat meningkatkan produktivitas dan kepuasan karyawan. Mangala Living memiliki pengalaman lebih dari 1000 proyek dan workshop di Bekasi, sehingga kami dapat memberikan solusi furnitur industri yang tepat untuk bisnis Anda.",
-          "imageSearchQuery": "industrial office desk",
-          "image": "https://images.unsplash.com/photo-1770816307817-2fa6131e3a9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwb2ZmaWNlJTIwaW50ZXJpb3IlMjB3aXRoJTIwbW9kZXJuJTIwZnVybml0dXJlfGVufDB8MHx8fDE3NzMzODU0ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-          "imageAlt": "industrial office interior with modern furniture"
+          "heading": "Dokumen Wajib Impor Furniture Indonesia 2026",
+          "content": "Berikut adalah dokumen-dokumen yang wajib disiapkan oleh importir furniture dari Indonesia pada tahun 2026:<br><br><strong>1. Commercial Invoice (Faktur Komersial)</strong><br>Dokumen ini berisi detail barang, nilai transaksi, dan informasi penjual-pembeli. Harus ditandatangani dan distempel resmi.<br><br><strong>2. Packing List (Daftar Pengepakan)</strong><br>Menjelaskan detail kemasan, dimensi, berat, dan isi setiap koli. Penting untuk proses bongkar muat dan pemeriksaan bea cukai.<br><br><strong>3. Bill of Lading/Airway Bill (B/L atau AWB)</strong><br>Merupakan kontrak pengangkutan antara shipper dan carrier. Untuk laut menggunakan B/L, untuk udara menggunakan AWB.<br><br><strong>4. Certificate of Origin (Sertifikat Asal)</strong><br>Membuktikan asal barang dari Indonesia. Untuk preferensi tarif bebas atau tarif rendah di bawah perjanjian dagang.<br><br><strong>5. Fumigation Certificate (Sertifikat Fumigasi)</strong><br>Wajib untuk furniture berbahan kayu untuk membuktikan bebas hama. Berlaku 7-10 hari sejak tanggal penerbitan.<br><br><strong>6. Phytosanitary Certificate (Sertifikat Kesehatan Tumbuhan)</strong><br>Untuk furniture kayu solid yang akan diekspor, membuktikan kesesuaian dengan standar kesehatan tumbuhan internasional.<br><br><strong>7. Import License (Izin Impor)</strong><br>Khusus untuk importir tertentu sesuai dengan peraturan negara tujuan. Beberapa negara mewajibkan import license untuk furniture.",
+          "imageSearchQuery": "furniture import documents commercial invoice"
         },
         {
-          "heading": "Panduan Praktis & Best Practices",
-          "content": "Dalam memilih furnitur industri, ada beberapa hal yang perlu dipertimbangkan. <strong>Pertama</strong>, Anda harus mempertimbangkan kebutuhan dan tujuan bisnis Anda. <strong>Kedua</strong>, Anda harus memilih furnitur yang tahan lama dan memiliki desain yang sesuai dengan tema bisnis Anda. <strong>Ketiga</strong>, Anda harus mempertimbangkan biaya dan efektifitas furnitur dalam jangka panjang."
+          "heading": "Syarat Bea Cukai dan Regulasi Terbaru 2026",
+          "content": "Proses bea cukai furniture Indonesia mengalami beberapa pembaruan pada tahun 2026. Berikut hal-hal yang perlu diperhatikan:<br><br><strong>1. Nilai De Minimis Threshold</strong><br>Beberapa negara meningkatkan nilai ambang batas bebas bea masuk. Untuk Amerika Serikat tetap $800, sedangkan Australia meningkat menjadi AUD 1.000.<br><br><strong>2. Persyaratan Kayu</strong><br>Negara-negara Uni Eropa dan Australia memberlakukan standar ISPM 15 untuk kayu kemasan. Pastikan semua kayu telah diolah dan diberi tanda ISPM 15.<br><br><strong>3. Dokumen Elektronik</strong><br>Banyak negara kini mewajibkan dokumen dalam format EDI (Electronic Data Interchange). Siapkan file digital yang siap diunggah ke sistem bea cukai.<br><br><strong>4. Sustainability Certification</strong><br>Beberapa negara mulai meminta sertifikat keberlanjutan seperti FSC atau PEFC untuk furniture kayu, terutama untuk proyek pemerintah atau institusi.<br><br><strong>5. Anti-Dumping Measures</strong><br>Beberapa negara memberlakukan bea anti-dumping untuk produk furniture tertentu dari Indonesia. Periksa HS Code yang tepat untuk menghindari kategori yang salah."
         },
         {
-          "heading": "Solusi Mangala Living",
-          "content": "Mangala Living menyediakan berbagai jenis furnitur industri, termasuk <strong>Meja Kerja Industrial</strong> (Produk ID: 15) dan <strong>Ladder Frame Display Stand</strong> (Produk ID: 12). Kami juga menyediakan desain kustom untuk memenuhi kebutuhan bisnis Anda.",
-          "productId": 15
+          "heading": "Tips Menghindari Penundaan Pengiriman",
+          "content": "Penundaan pengiriman furniture bisa sangat merugikan, terutama untuk proyek komersial. Berikut tips dari Mangala Living untuk memastikan kelancaran impor:<br><br><strong>1. Periksa Dokumen Sebelum Pengiriman</strong><br>Jangan menunggu di pelabuhan untuk mengetahui ada dokumen yang kurang. Periksa semua dokumen 1-2 minggu sebelum pengiriman.<br><br><strong>2. Gunakan Freight Forwarder Berpengalaman</strong><br>Pilih freight forwarder yang memiliki pengalaman dengan furniture Indonesia. Mereka memahami nuansa dokumen yang dibutuhkan.<br><br><strong>3. Siapkan Dokumen Cadangan</strong><br>Selalu siapkan salinan digital dan cetak dari semua dokumen. Beberapa petugas bea cukai lebih suka format tertentu.<br><br><strong>4. Komunikasi dengan Supplier</strong><br>Jalin komunikasi yang baik dengan supplier furniture Anda. Pastikan mereka memahami persyaratan dokumen tujuan Anda.<br><br><strong>5. Asuransi Pengiriman</strong><br>Pertimbangkan asuransi all-risk untuk melindungi investasi Anda. Beberapa polis memerlukan dokumen tertentu untuk klaim.",
+          "productId": 4
         },
         {
-          "heading": "Langkah Selanjutnya",
-          "content": "Jika Anda ingin memilih furnitur industri yang tepat untuk bisnis Anda, <strong>hubungi kami</strong> untuk mendapatkan informasi lebih lanjut. Kami akan membantu Anda menciptakan lingkungan kerja yang nyaman dan efektif dengan furnitur industri yang sesuai dengan kebutuhan Anda.",
-          "productId": 12
+          "heading": "Checklist Dokumen Impor Furniture",
+          "content": "Gunakan checklist ini untuk memastikan tidak ada dokumen yang terlewat:<br><br><strong>☐ Commercial Invoice</strong><br>- Nama dan alamat lengkap penjual dan pembeli<br>- Detail barang (HS Code, kuantitas, nilai)<br>- Tanda tangan dan stempel resmi<br><br><strong>☐ Packing List</strong><br>- Detail kemasan per koli<br>- Dimensi dan berat total<br>- Material kemasan<br><br><strong>☐ Bill of Lading/Airway Bill</strong><br>- Informasi pengiriman lengkap<br>- Tanda tangan carrier<br>- Kondisi barang saat diterima<br><br><strong>☐ Certificate of Origin</strong><br>- Formulir yang benar (misal: EUR.1 untuk UE)<br>- Tanda tangan pejabat berwenang<br>- Tanggal penerbitan yang valid<br><br><strong>☐ Fumigation Certificate</strong><br>- Tanggal fumigasi<br>- Metode yang digunakan<br>- Masa berlaku<br><br><strong>☐ Phytosanitary Certificate</strong><br>- Nomor registrasi pemeriksa<br>- Hasil pemeriksaan<br>- Tanggal pemeriksaan<br><br><strong>☐ Import License</strong><br>- Nomor lisensi<br>- Masa berlaku<br>- Otoritas penerbit<br><br><strong>☐ Additional Documents</strong><br>- MSDS (untuk finishing tertentu)<br>- Test Report (untuk produk khusus)<br>- Warranty Certificate (jika diminta)"
         }
       ],
-      "conclusion": "Dengan memilih furnitur industri yang tepat, Anda dapat meningkatkan produktivitas dan kepuasan karyawan. <strong>Mangala Living</strong> siap membantu Anda menciptakan lingkungan kerja yang nyaman dan efektif dengan furnitur industri yang sesuai dengan kebutuhan Anda."
+      "conclusion": "Persiapan dokumen impor furniture dari Indonesia yang tepat adalah kunci kelancaran proyek Anda. Dengan mengikuti panduan ini dan menggunakan checklist yang disediakan, Anda dapat meminimalisir risiko penundaan dan denda bea cukai. Mangala Living sebagai produsen furniture industri berpengalaman siap membantu Anda dengan persiapan dokumen yang lengkap dan sesuai regulasi. Hubungi tim kami untuk konsultasi lebih lanjut mengenai impor furniture dari Indonesia."
     }
   }
 ]
