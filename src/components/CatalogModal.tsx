@@ -186,7 +186,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
     }
 
     initializeModal()
-  }, [location.pathname, location.search])
+  }, [location.pathname, location.search, show])
 
   const handleClose = () => {
     setIsVisible(false)
