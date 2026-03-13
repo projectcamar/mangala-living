@@ -177,6 +177,20 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
     initializeModal()
   }, [])
 
+  // Toggle body scroll when modal is visible
+  useEffect(() => {
+    if (isVisible) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+
+    // Cleanup when component unmounts
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isVisible])
+
   const handleClose = () => {
     setIsVisible(false)
 
