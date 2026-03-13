@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { X } from 'lucide-react'
 import './CatalogModal.css'
-import { generateCatalog } from '../utils/catalogGenerator'
 import { trackEvent } from '../utils/analytics'
 import { getLanguageFromLocation, type LanguageCode } from '../utils/languageManager'
 
@@ -207,72 +206,48 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
     }))
   }
 
-  const handleDownload = async (e: React.FormEvent) => {
+  const handleSubmitLead = async (e: React.FormEvent) => {
     e.preventDefault()
 
     // Get the button element
     const button = e.currentTarget.querySelector('button[type="submit"]') as HTMLButtonElement
     if (button) {
       button.disabled = true
-      button.textContent = 'GENERATING...'
+      button.textContent = 'SENDING...'
     }
 
     try {
-      // Send form data to email API (dual functionality)
-      try {
-        const response = await fetch('/api/subscribe', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            firstName: formData.firstName,
-            email: formData.email,
-            whatsapp: formData.whatsapp,
-            notificationType: 'catalog_download',
-            catalogLanguage: language
-          }),
-        })
+      // Send form data to email API
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          email: formData.email,
+          whatsapp: formData.whatsapp,
+          notificationType: 'subscription', // Changed to subscription as they already have the catalog
+          catalogLanguage: language
+        }),
+      })
 
-        if (response.ok) {
-          console.log('Form data sent to email successfully')
-        } else {
-          console.warn('Failed to send form data to email:', await response.text())
-        }
-      } catch (emailError) {
-        // Don't block download if email fails
-        console.error('Error sending email:', emailError)
+      if (response.ok) {
+        console.log('Lead data sent successfully')
       }
 
-      // Generate the catalog with current language
-      await generateCatalog(language)
+      // Track the subscription event
+      trackEvent.newsletterSignup(language)
 
-      // Track catalog download
-      trackEvent.catalogDownload()
+      // Store the subscription timestamp
+      localStorage.setItem('newsletterSubscribed', Date.now().toString())
 
-      // Store the download timestamp to prevent popup for 3 days
-      localStorage.setItem('catalogLastDownload', Date.now().toString())
-
-      // Close the modal after successful download
+      // Close the modal
       handleClose()
 
     } catch (error) {
-      console.error('Error generating catalog:', error)
-      const errorMessage = error instanceof Error ? error.message : String(error)
-      console.error('Error details:', { error, errorMessage, language })
-
-      // Show more specific error message
-      const errorMsg = language === 'id'
-        ? `Gagal mengunduh katalog. Error: ${errorMessage}. Silakan coba lagi.`
-        : language === 'es'
-          ? `Error al descargar el catálogo. Error: ${errorMessage}. Por favor, inténtalo de nuevo.`
-          : language === 'fr'
-            ? `Échec du téléchargement du catalogue. Erreur: ${errorMessage}. Veuillez réessayer.`
-            : language === 'ko'
-              ? `카탈로그 다운로드에 실패했습니다. 오류: ${errorMessage}. 다시 시도해주세요.`
-              : `Failed to download catalog. Error: ${errorMessage}. Please try again.`
-
-      alert(errorMsg)
+      console.error('Error sending lead data:', error)
+      alert(language === 'id' ? 'Gagal mengirim data. Silakan coba lagi.' : 'Failed to send data. Please try again.')
 
       // Reset button on error
       if (button) {
@@ -344,7 +319,7 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
               {t.subtitle}
             </p>
 
-            <form onSubmit={handleDownload} className="catalog-form">
+            <form onSubmit={handleSubmitLead} className="catalog-form">
               <div className="form-group">
                 <label htmlFor="firstName">{t.firstName}</label>
                 <input

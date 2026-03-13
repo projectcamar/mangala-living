@@ -3,7 +3,9 @@ import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { Search, ChevronDown } from 'lucide-react'
 import './Header.css'
 import { ALL_PRODUCTS } from '../data/products'
+import { generateCatalog } from '../utils/catalogGenerator'
 import { trackEvent } from '../utils/analytics'
+import { sendBackgroundEmail } from '../utils/emailHelpers'
 import { storeLanguage } from '../utils/languageManager'
 import CatalogModal from './CatalogModal'
 
@@ -559,7 +561,98 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
               </button>
               <button
                 className="catalog-btn"
-                onClick={() => setIsCatalogModalOpen(true)}
+                onClick={async (event) => {
+                  try {
+                    // Show loading state
+                    const button = event.target as HTMLButtonElement
+                    button.textContent = t.generating
+                    button.disabled = true
+
+                    // Generate catalog in new tab
+                    const newWindow = window.open('', '_blank', 'width=800,height=600')
+                    if (newWindow) {
+                      newWindow.document.write(`
+                  <html>
+                    <head>
+                      <title>Generating Catalog...</title>
+                      <style>
+                        body { 
+                          font-family: Arial, sans-serif; 
+                          display: flex; 
+                          justify-content: center; 
+                          align-items: center; 
+                          height: 100vh; 
+                          margin: 0; 
+                          background: #f5f5f5;
+                        }
+                        .loading {
+                          text-align: center;
+                          padding: 40px;
+                          background: white;
+                          border-radius: 8px;
+                          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                        }
+                        .spinner {
+                          border: 4px solid #f3f3f3;
+                          border-top: 4px solid #8B7355;
+                          border-radius: 50%;
+                          width: 40px;
+                          height: 40px;
+                          animation: spin 1s linear infinite;
+                          margin: 0 auto 20px;
+                        }
+                        @keyframes spin {
+                          0% { transform: rotate(0deg); }
+                          100% { transform: rotate(360deg); }
+                        }
+                        h2 { color: #333; margin-bottom: 10px; }
+                        p { color: #666; margin: 0; }
+                      </style>
+                    </head>
+                    <body>
+                      <div class="loading">
+                        <div class="spinner"></div>
+                        <h2>${t.generating.replace('...', ' Katalog...')}</h2>
+                        <p>${language === 'id' ? 'Mohon tunggu sementara kami menyiapkan katalog furniture Anda' : language === 'ar' ? 'يرجى الانتظار بينما نقوم بإعداد كتالوج الأثاث الخاص بك' : language === 'zh' ? '请稍候，我们正在准备您的家具目录' : language === 'ja' ? '家具カタログを準備していますのでお待ちください' : language === 'es' ? 'Por favor espere sementara preparamos su catálogo de muebles' : language === 'fr' ? 'Veuillez patienter pendant que nous préparons votre catalogue de meubles' : language === 'ko' ? '가구 카탈로그를 준비하는 동안 잠시 기다려 주세요' : 'Please wait while we prepare your furniture catalog'}</p>
+                      </div>
+                    </body>
+                  </html>
+                `)
+                    }
+
+                    // Send background email notification
+                    sendBackgroundEmail('catalog_download', {
+                      catalogLanguage: language
+                    })
+
+                    await generateCatalog(language)
+
+                    // Track catalog download
+                    trackEvent.catalogDownload()
+
+                    // Close the loading window
+                    if (newWindow) {
+                      newWindow.close()
+                    }
+
+                    // Reset button
+                    button.textContent = isMobile ? 'CATALOG' : t.downloadCatalog
+                    button.disabled = false
+
+                    // NOW show the lead capture / thank you popup
+                    setIsCatalogModalOpen(true)
+
+                  } catch (error) {
+                    console.error('Error generating catalog:', error)
+                    const errorMsg = language === 'id' ? 'Gagal mengunduh katalog. Silakan coba lagi.' : language === 'ar' ? 'فشل تحميل الكتالوج. يرجى المحاولة مرة أخرى.' : language === 'zh' ? '下载目录失败。请重试。' : language === 'ja' ? 'カタログのダウンロードに失敗しました。もう一度お試しください。' : language === 'es' ? 'Error al descargar el catálogo. Por favor, inténtalo de nuevo.' : language === 'fr' ? 'Échec du téléchargement du catalogue. Veuillez réessayer.' : language === 'ko' ? '카탈로그 다운로드에 실패했습니다. 다시 시도해주세요.' : 'Failed to download catalog. Please try again.'
+                    alert(errorMsg)
+
+                    // Reset button on error
+                    const button = event.target as HTMLButtonElement
+                    button.textContent = isMobile ? 'CATALOG' : t.downloadCatalog
+                    button.disabled = false
+                  }
+                }}
               >
                 {isMobile ? 'CATALOG' : t.downloadCatalog}
               </button>
