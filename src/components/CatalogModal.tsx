@@ -28,87 +28,92 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
   // Translations for the modal
   const translations = {
     id: {
-      title: 'DOWNLOAD KATALOG MANGALA 2025',
-      subtitle: 'Terima kasih telah mengunduh katalog kami. Bergabunglah dengan daftar email kami untuk mendapatkan pembaruan eksklusif!',
+      title: 'TERIMA KASIH TELAH MENGUNDUH',
+      subtitle: 'Katalog Mangala 2025 Anda sedang dalam proses! Bergabunglah dengan daftar email kami untuk mendapatkan pembaruan eksklusif dan inspirasi furniture.',
       firstName: 'Nama Lengkap',
       email: 'Email',
       whatsapp: 'Nomor WhatsApp',
-      download: 'UNDUH SEKARANG'
+      download: 'GABUNG SEKARANG'
     },
     en: {
-      title: 'DOWNLOAD MANGALA 2025 CATALOG',
-      subtitle: 'Thank you for downloading our catalog! Join our emailing list for exclusive updates and furniture inspiration.',
+      title: 'THANK YOU FOR DOWNLOADING',
+      subtitle: 'Your Mangala 2025 Catalog is on its way! Join our emailing list for exclusive updates and furniture inspiration.',
       firstName: 'Full Name',
       email: 'Email',
       whatsapp: 'WhatsApp Number',
-      download: 'DOWNLOAD NOW'
+      download: 'JOIN NEWSLETTER'
     },
     ar: {
-      title: 'تحميل كتالوج مانجالا 2025',
-      subtitle: 'شكراً لتحميل الكتالوج الخاص بنا! انضم إلى قائمتنا البريدية للحصول على تحديثات حصرية وإلهام للأثاث.',
+      title: 'شكراً لتحميل الكتالوج',
+      subtitle: 'كتالوج مانجالا 2025 في طريقه إليك! انضم إلى قائمتنا البريدية للحصول على تحديثات حصرية وإلهام للأثاث.',
       firstName: 'الاسم الكامل',
-      email: 'البريد الإلكترoni',
+      email: 'البريد الإلكتروني',
       whatsapp: 'رقم واتساب',
-      download: 'تحميل الآن'
+      download: 'انضم الآن'
     },
     zh: {
-      title: '下载 2025 曼加拉目录',
-      subtitle: '感谢您下载我们的目录！加入我们的邮件列表，获取独家更新和家具灵感。',
+      title: '感谢您下载目录',
+      subtitle: '您的 2025 曼加拉目录即将推出！加入我们的邮件列表，获取独家更新和家具灵感。',
       firstName: '全名',
       email: '电子邮件',
       whatsapp: 'WhatsApp号码',
-      download: '立即下载'
+      download: '立即加入'
     },
     ja: {
-      title: '2025 マンガラカタログをダウンロード',
-      subtitle: 'カタログをダウンロードしていただきありがとうございます！限定アップデートや家具のインスピレーションを得るために、メールリストにご登録ください。',
+      title: 'ダウンロードしていただきありがとうございます',
+      subtitle: '2025 マンガラカタログをお届けします！限定アップデートや家具のインスピレーションを得るために、メールリストにご登録ください。',
       firstName: '氏名',
       email: 'メールアドレス',
       whatsapp: 'WhatsApp番号',
-      download: '今すぐダウンロード'
+      download: '今すぐ登録'
     },
     es: {
-      title: 'DESCARGAR CATÁLOGO MANGALA 2025',
-      subtitle: '¡Gracias por descargar nuestro catálogo! Únase a nuestra lista de correo para recibir actualizaciones exclusivas e inspiración para muebles.',
+      title: 'GRACIAS POR DESCARGAR',
+      subtitle: '¡Su catálogo Mangala 2025 está en camino! Únase a nuestra lista de correo para recibir actualizaciones exclusivas e inspiración para muebles.',
       firstName: 'Nombre completo',
       email: 'Correo electrónico',
       whatsapp: 'Número de WhatsApp',
-      download: 'DESCARGAR AHORA'
+      download: 'UNIRSE AHORA'
     },
     fr: {
-      title: 'TÉLÉCHARGER LE CATALOGUE MANGALA 2025',
-      subtitle: 'Merci d\'avoir téléchargé notre catalogue ! Rejoignez notre liste de diffusion untuk des mises à jour exclusives et de l\'inspiration mobilier.',
+      title: 'MERCI D\'AVOIR TÉLÉCHARGÉ',
+      subtitle: 'Votre catalogue Mangala 2025 est en route ! Rejoignez notre liste de diffusion untuk des mises à jour exclusives et de l\'inspiration mobilier.',
       firstName: 'Nom complet',
       email: 'E-mail',
       whatsapp: 'Numéro WhatsApp',
-      download: 'TÉLÉCHARGER MAINTENANT'
+      download: 'REJOINDRE MAINTENANT'
     },
     ko: {
-      title: '2025 망갈라 카탈로그 다운로드',
-      subtitle: '카탈로그를 다운로드해주셔서 감사합니다! 독점 업데이트와 가구 영감을 받으려면 이메일 목록에 가입하세요.',
+      title: '다운로드해주셔서 감사합니다',
+      subtitle: '2025 망갈라 카탈로그가 준비되었습니다! 독점 업데이트와 가구 영감을 받으려면 이메일 목록에 가입하세요.',
       firstName: '성함',
       email: '이메일',
       whatsapp: 'WhatsApp 번호',
-      download: '지금 다운로드'
+      download: '지금 가입하기'
     }
   }
 
   const t = translations[language]
 
   useEffect(() => {
-    // If 'show' is controlled externally, use it
-    if (show !== undefined) {
-      setIsVisible(show)
-
-      // Still need to detect language for translations
+    // 1. Handle explicit control from Header (after download or direct click)
+    if (show) {
+      setIsVisible(true)
       const urlLang = getLanguageFromLocation(location.pathname, location.search)
       if (urlLang) setLanguage(urlLang)
-      return
+    } else if (show === false) {
+      // Allow it to be closed from the parent
+      setIsVisible(false)
     }
+  }, [show, location.pathname, location.search])
 
-    // Initialize modal with current page language and automatic show logic
+  useEffect(() => {
+    // 2. Handle automatic popup for first-time or returning visitors
     const initializeModal = () => {
-      // Get language from current page URL (instant, no async needed)
+      // Don't trigger automatic logic if it's already being shown by parent
+      if (show) return
+
+      // Get language from current page URL
       const urlLang = getLanguageFromLocation(location.pathname, location.search)
       let detectedLang: LanguageCode = 'id' // default
 
@@ -130,63 +135,47 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
       // Set language state
       setLanguage(detectedLang)
 
-      // Store in localStorage to match getLanguagePreference() method (same as English/Indonesian)
+      // Store in localStorage
       try {
         localStorage.setItem('mangala_lang_preference', detectedLang)
       } catch (error) {
         console.warn('Failed to store language preference in localStorage:', error)
       }
 
-      // Check if user clicked X (close button) recently (within 12 hours)
+      // Check if user clicked X recently (within 12 hours)
       const lastClosedTime = localStorage.getItem('catalogLastClosed')
-
       if (lastClosedTime) {
-        const twelveHoursInMs = 12 * 60 * 60 * 1000 // 12 hours in milliseconds
-        const timeSinceClosed = Date.now() - parseInt(lastClosedTime)
-
-        // If less than 12 hours have passed since user closed, don't show the modal
-        if (timeSinceClosed < twelveHoursInMs) {
-          return
-        }
+        const twelveHoursInMs = 12 * 60 * 60 * 1000
+        if (Date.now() - parseInt(lastClosedTime) < twelveHoursInMs) return
       }
 
       // Check if user has downloaded catalog recently (within 3 days)
       const lastDownloadTime = localStorage.getItem('catalogLastDownload')
-
       if (lastDownloadTime) {
-        const threeDaysInMs = 3 * 24 * 60 * 60 * 1000 // 3 days in milliseconds
-        const timeSinceDownload = Date.now() - parseInt(lastDownloadTime)
-
-        // If less than 3 days have passed, don't show the modal
-        if (timeSinceDownload < threeDaysInMs) {
-          return
-        }
+        const threeDaysInMs = 3 * 24 * 60 * 60 * 1000
+        if (Date.now() - parseInt(lastDownloadTime) < threeDaysInMs) return
       }
 
-      // Check if this is the first visit
+      // Check visit history
       const hasVisitedBefore = localStorage.getItem('hasVisitedMangala')
-
       let shouldShow = false
 
       if (!hasVisitedBefore) {
-        // First visit = 100% show
         shouldShow = true
         localStorage.setItem('hasVisitedMangala', 'true')
       } else {
-        // Return visits = 70% chance
         shouldShow = Math.random() < 0.7
       }
 
       if (shouldShow) {
-        // Show modal after 2 seconds
         setTimeout(() => {
           setIsVisible(true)
-        }, 2000)
+        }, 3000) // 3 seconds delay for auto-popup
       }
     }
 
     initializeModal()
-  }, [location.pathname, location.search, show])
+  }, [])
 
   const handleClose = () => {
     setIsVisible(false)
