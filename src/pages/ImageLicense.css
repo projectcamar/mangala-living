@@ -109,7 +109,7 @@
   top: 12px;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
+  
   background: #d4a373;
   box-shadow: 0 0 0 6px rgba(212, 163, 115, 0.2);
 }
@@ -118,7 +118,7 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 48px 32px;
-  border-radius: 18px;
+  
   background: linear-gradient(135deg, #111827, #1f2937);
   box-shadow: 0 18px 40px rgba(17, 24, 39, 0.25);
 }
@@ -148,7 +148,7 @@
   align-items: center;
   justify-content: center;
   padding: 14px 32px;
-  border-radius: 999px;
+  
   background: linear-gradient(135deg, #f59e0b, #d97706);
   color: #fff;
   font-size: 1rem;
@@ -233,3 +233,4 @@
     width: 100%;
   }
 }
+

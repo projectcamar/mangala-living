@@ -381,7 +381,7 @@ const AdminBlogManager: React.FC = () => {
                     .loader {
                         border: 4px solid #f3f3f3;
                         border-top: 4px solid #8B7355;
-                        border-radius: 50%;
+                        
                         width: 40px;
                         height: 40px;
                         animation: spin 1s linear infinite;
@@ -873,7 +873,7 @@ const AdminBlogManager: React.FC = () => {
                 .input-group input, .input-group select, .input-group textarea {
                     padding: 12px;
                     border: 1px solid #ddd;
-                    border-radius: 6px;
+                    
                     font-size: 1rem;
                     outline-color: #8B7355;
                     background: #fff;
@@ -886,7 +886,7 @@ const AdminBlogManager: React.FC = () => {
                     background: rgba(139, 115, 85, 0.05);
                     border: 1px solid rgba(139, 115, 85, 0.2);
                     padding: 20px;
-                    border-radius: 10px;
+                    
                     display: flex;
                     align-items: flex-start;
                     gap: 15px;
@@ -900,7 +900,7 @@ const AdminBlogManager: React.FC = () => {
                     background: rgba(41, 128, 185, 0.05);
                     border: 1px solid rgba(41, 128, 185, 0.2);
                     padding: 16px 20px;
-                    border-radius: 10px;
+                    
                     display: flex;
                     align-items: flex-start;
                     gap: 15px;
@@ -923,7 +923,7 @@ const AdminBlogManager: React.FC = () => {
                   display: flex;
                   align-items: center;
                   background: #fff;
-                  border-radius: 8px;
+                  
                   padding: 12px 15px;
                   gap: 10px;
                   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -934,7 +934,7 @@ const AdminBlogManager: React.FC = () => {
                   color: #fff;
                   border: none;
                   padding: 12px 24px;
-                  border-radius: 8px;
+                  
                   cursor: pointer;
                   display: flex;
                   align-items: center;
@@ -949,10 +949,10 @@ const AdminBlogManager: React.FC = () => {
                 .posts-table td { padding: 18px 20px; border-bottom: 1px solid #f4f4f4; font-size: 0.95rem; }
                 .post-title-cell { display: flex; align-items: center; gap: 12px; font-weight: 600; color: #2C3E50; }
                 .post-title-cell span { max-width: 400px; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-                .cat-badge { background: #f0ede9; color: #8B7355; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
+                .cat-badge { background: #f0ede9; color: #8B7355; padding: 5px 12px;  font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
                 
                 .actions-cell { display: flex; gap: 12px; }
-                .action-btn { background: #f8f9fa; border: 1px solid #eee; cursor: pointer; padding: 8px; border-radius: 6px; transition: 0.2s; }
+                .action-btn { background: #f8f9fa; border: 1px solid #eee; cursor: pointer; padding: 8px;  transition: 0.2s; }
                 .action-btn.edit { color: #2980b9; }
                 .action-btn.edit:hover { background: #2980b9; color: #fff; }
                 .action-btn.delete { color: #c0392b; }
@@ -963,7 +963,7 @@ const AdminBlogManager: React.FC = () => {
                   color: #fff;
                   border: none;
                   padding: 10px 20px;
-                  border-radius: 8px;
+                  
                   cursor: pointer;
                   display: flex;
                   align-items: center;
@@ -975,12 +975,12 @@ const AdminBlogManager: React.FC = () => {
                 .save-btn:hover:not(:disabled) { background: #7a654a; transform: translateY(-1px); box-shadow: 0 6px 15px rgba(139, 115, 85, 0.3); }
                 .save-btn:disabled { opacity: 0.6; cursor: not-allowed; }
                 
-                .admin-msg { padding: 16px 24px; border-radius: 10px; margin-bottom: 25px; display: flex; align-items: center; gap: 15px; font-weight: 500; }
+                .admin-msg { padding: 16px 24px;  margin-bottom: 25px; display: flex; align-items: center; gap: 15px; font-weight: 500; }
                 .admin-msg.success { background: #e6f4ea; color: #1e7e34; border-left: 5px solid #1e7e34; }
                 .admin-msg.error { background: #fce8e8; color: #c53030; border-left: 5px solid #c53030; }
                 
                 /* Enhanced Table Styles */
-                .post-thumb { width: 45px; height: 45px; border-radius: 8px; overflow: hidden; background: #eee; flex-shrink: 0; }
+                .post-thumb { width: 45px; height: 45px;  overflow: hidden; background: #eee; flex-shrink: 0; }
                 .post-thumb img { width: 100%; height: 100%; object-fit: cover; }
                 .thumb-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #aaa; }
                 .post-title-info { display: flex; flex-direction: column; gap: 2px; }
@@ -990,7 +990,7 @@ const AdminBlogManager: React.FC = () => {
                 
                 .lang-badge { 
                     padding: 3px 8px; 
-                    border-radius: 4px; 
+                     
                     font-size: 0.7rem; 
                     font-weight: 800; 
                     color: #fff;
@@ -1007,7 +1007,7 @@ const AdminBlogManager: React.FC = () => {
                 
                 .status-badge {
                     padding: 4px 10px;
-                    border-radius: 20px;
+                    
                     font-size: 0.75rem;
                     font-weight: 600;
                     text-transform: uppercase;
@@ -1016,7 +1016,7 @@ const AdminBlogManager: React.FC = () => {
                 .status-badge.draft { background: #e67e22; } /* Orange */
                 .status-badge.synced { background: #27ae60; } /* Green */
                 
-                .action-btn.preview { color: #8B7355; margin-right: 8px; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 6px; border: 1.5px solid #eee; transition: 0.2s; }
+                .action-btn.preview { color: #8B7355; margin-right: 8px; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px;  border: 1.5px solid #eee; transition: 0.2s; }
                 .action-btn.preview:hover { background: #fdfaf7; border-color: #8B7355; }
 
                 /* Pagination Styles */
@@ -1036,7 +1036,7 @@ const AdminBlogManager: React.FC = () => {
                     background: #f8f9fa; 
                     border: 1px solid #ddd; 
                     padding: 4px 10px; 
-                    border-radius: 4px; 
+                     
                     cursor: pointer; 
                     font-size: 0.8rem;
                     transition: 0.2s;
@@ -1046,7 +1046,7 @@ const AdminBlogManager: React.FC = () => {
                 .page-btns { display: flex; align-items: center; gap: 15px; }
                 .nav-btn {
                     padding: 6px 15px;
-                    border-radius: 6px;
+                    
                     border: 1px solid #ddd;
                     background: #fff;
                     cursor: pointer;
@@ -1057,7 +1057,7 @@ const AdminBlogManager: React.FC = () => {
                 .nav-btn:disabled { opacity: 0.5; cursor: not-allowed; }
                 .page-num { font-size: 0.9rem; font-weight: 600; color: #2C3E50; }
 
-                .back-link { background: #fff; border: 1px solid #ddd; color: #444; cursor: pointer; padding: 8px; border-radius: 8px; margin-right: 15px; transition: 0.2s; }
+                .back-link { background: #fff; border: 1px solid #ddd; color: #444; cursor: pointer; padding: 8px;  margin-right: 15px; transition: 0.2s; }
                 .back-link:hover { background: #f8f9fa; border-color: #8B7355; color: #8B7355; }
 
                 /* Compact Editor Styles */
@@ -1065,7 +1065,7 @@ const AdminBlogManager: React.FC = () => {
                 .input-group-compact { display: flex; flex-direction: column; gap: 5px; }
                 .input-group-compact label { font-size: 0.75rem; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.5px; }
                 .input-group-compact input, .input-group-compact select, .input-group-compact textarea { 
-                    padding: 8px 12px; border: 1.5px solid #eee; border-radius: 6px; font-size: 0.9rem; transition: 0.2s; background: #fff;
+                    padding: 8px 12px; border: 1.5px solid #eee;  font-size: 0.9rem; transition: 0.2s; background: #fff;
                 }
                 .input-group-compact input:focus, .input-group-compact select:focus, .input-group-compact textarea:focus { border-color: #8B7355; outline: none; box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.1); }
                 .span-2 { grid-column: span 2; }
@@ -1075,7 +1075,7 @@ const AdminBlogManager: React.FC = () => {
                 .input-with-action input { flex: 1; }
                 .action-input-btn { 
                     display: flex; align-items: center; gap: 6px; padding: 0 15px; background: #8B7355; color: #fff; 
-                    border: none; border-radius: 6px; cursor: pointer; font-size: 0.8rem; font-weight: 600; white-space: nowrap; transition: 0.2s;
+                    border: none;  cursor: pointer; font-size: 0.8rem; font-weight: 600; white-space: nowrap; transition: 0.2s;
                 }
                 .action-input-btn:hover:not(:disabled) { background: #6F5C44; transform: translateY(-1px); }
                 .action-input-btn:disabled { opacity: 0.6; cursor: not-allowed; }
@@ -1087,3 +1087,4 @@ const AdminBlogManager: React.FC = () => {
 }
 
 export default AdminBlogManager
+

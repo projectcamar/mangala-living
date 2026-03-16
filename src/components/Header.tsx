@@ -589,13 +589,13 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
                           text-align: center;
                           padding: 40px;
                           background: white;
-                          border-radius: 8px;
+                          
                           box-shadow: 0 2px 10px rgba(0,0,0,0.1);
                         }
                         .spinner {
                           border: 4px solid #f3f3f3;
                           border-top: 4px solid #8B7355;
-                          border-radius: 50%;
+                          
                           width: 40px;
                           height: 40px;
                           animation: spin 1s linear infinite;
@@ -814,3 +814,4 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
 }
 
 export default Header
+

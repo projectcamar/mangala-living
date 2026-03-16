@@ -78,7 +78,6 @@
   position: absolute;
   width: 100%;
   height: 4px;
-  border-radius: 5px;
   background: transparent;
   outline: none;
   -webkit-appearance: none;
@@ -90,7 +89,6 @@
   width: 100%;
   height: 4px;
   background: #e0e0e0;
-  border-radius: 5px;
 }
 
 /* Track styling for Firefox */
@@ -98,7 +96,6 @@
   width: 100%;
   height: 4px;
   background: #e0e0e0;
-  border-radius: 5px;
 }
 
 /* Thumb styling */
@@ -107,7 +104,7 @@
   appearance: none;
   width: 18px;
   height: 18px;
-  border-radius: 50%;
+  
   background: #333;
   cursor: pointer;
   pointer-events: auto;
@@ -120,7 +117,7 @@
 .price-slider::-moz-range-thumb {
   width: 18px;
   height: 18px;
-  border-radius: 50%;
+  
   background: #333;
   cursor: pointer;
   pointer-events: auto;
@@ -249,7 +246,6 @@
   padding: 12px 16px;
   background: #f8f8f8;
   border: 1px solid #ddd;
-  border-radius: 8px;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
@@ -291,7 +287,6 @@
     position: static;
     padding: 15px;
     background: #f8f8f8;
-    border-radius: 8px;
     margin-bottom: 20px;
     border: 1px solid #e0e0e0;
   }
@@ -349,7 +344,7 @@
   .pagination-number.active {
     display: block;
   }
-  
+
   .pagination-ellipsis {
     display: none;
   }

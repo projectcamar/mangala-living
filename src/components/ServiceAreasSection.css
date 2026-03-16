@@ -50,7 +50,7 @@
   width: 80px;
   height: 4px;
   background: #8B7355;
-  border-radius: 2px;
+  
 }
 
 .section-subtitle {
@@ -91,7 +91,7 @@
 
 .area-card {
   background: white;
-  border-radius: 12px;
+  
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
@@ -132,7 +132,7 @@
 
 .commercial-card {
   background: white;
-  border-radius: 12px;
+  
   padding: 24px 20px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
@@ -186,7 +186,7 @@
 .service-areas-cta {
   margin-top: 60px;
   background: #2c2c2c;
-  border-radius: 16px;
+  
   padding: 50px 40px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(44, 44, 44, 0.25);
@@ -241,7 +241,7 @@
   color: #2c2c2c;
   font-size: 1.1rem;
   font-weight: 700;
-  border-radius: 50px;
+  
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -263,7 +263,7 @@
   margin-top: 60px;
   padding: 30px;
   background: white;
-  border-radius: 12px;
+  
   border-left: 4px solid #8B7355;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
@@ -343,3 +343,4 @@
     grid-template-columns: 1fr;
   }
 }
+

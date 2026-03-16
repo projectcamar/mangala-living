@@ -76,7 +76,7 @@
   padding: 1.5rem 1rem;
   background: white;
   border: 2px solid #e9ecef;
-  border-radius: 12px;
+  
   text-decoration: none;
   color: #333;
   transition: all 0.3s ease;
@@ -112,7 +112,7 @@
 .btn-secondary {
   display: inline-block;
   padding: 0.875rem 2rem;
-  border-radius: 8px;
+  
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -169,7 +169,7 @@
 
 .product-card {
   background: white;
-  border-radius: 12px;
+  
   overflow: hidden;
   text-decoration: none;
   color: inherit;
@@ -242,7 +242,7 @@
   background: #2c2c2c;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
+  
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -339,3 +339,4 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+

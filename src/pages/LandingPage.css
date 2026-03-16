@@ -27,7 +27,6 @@
   padding: 0.5rem 1rem;
   background: #28a745;
   color: white;
-  border-radius: 50px;
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -67,8 +66,7 @@
   gap: 0.5rem;
   padding: 0.75rem 1rem;
   background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   font-weight: 600;
   color: #28a745;
 }
@@ -85,7 +83,6 @@
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  border-radius: 8px;
   font-weight: 600;
   font-size: 1.1rem;
   text-decoration: none;
@@ -155,8 +152,7 @@
   width: 100%;
   height: 600px;
   object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
 }
 
 /* Why Choose Section */
@@ -194,7 +190,6 @@
 .why-choose-card {
   background: #f8f9fa;
   padding: 2.5rem;
-  border-radius: 12px;
   border-left: 4px solid #d4511e;
 }
 
@@ -268,8 +263,7 @@
 .catalog-item {
   background: white;
   padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -297,8 +291,7 @@
   margin-top: 3rem;
   padding: 2rem;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .catalog-cta p {
@@ -325,7 +318,6 @@
   text-align: center;
   padding: 2rem;
   background: #f8f9fa;
-  border-radius: 12px;
   position: relative;
 }
 
@@ -334,7 +326,7 @@
   height: 60px;
   background: #d4511e;
   color: white;
-  border-radius: 50%;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,7 +351,6 @@
   text-align: center;
   padding: 2rem;
   background: #fff3cd;
-  border-radius: 8px;
   border-left: 4px solid #ffc107;
 }
 
@@ -384,9 +375,8 @@
 
 .faq-item {
   background: white;
-  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item summary {
@@ -438,7 +428,7 @@
   margin-bottom: 1rem;
 }
 
-.landing-final-cta > p {
+.landing-final-cta>p {
   font-size: 1.25rem;
   margin-bottom: 3rem;
   opacity: 0.9;
@@ -453,9 +443,8 @@
 }
 
 .contact-card {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   padding: 2rem;
-  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -467,7 +456,7 @@
 }
 
 .contact-card:hover {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   border-color: #d4511e;
   transform: translateY(-4px);
 }

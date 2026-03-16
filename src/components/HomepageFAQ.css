@@ -39,7 +39,7 @@
 .faq-item {
   background: #ffffff;
   border: 1px solid #e5e5e5;
-  border-radius: 8px;
+  
   padding: 0;
   transition: all 0.3s ease;
   overflow: hidden;
@@ -117,7 +117,7 @@
   text-align: center;
   padding: 40px 20px;
   background: linear-gradient(135deg, #8B7355 0%, #6b5a42 100%);
-  border-radius: 12px;
+  
   margin-top: 32px;
 }
 
@@ -134,7 +134,7 @@
   background: #ffffff;
   color: #8B7355;
   text-decoration: none;
-  border-radius: 6px;
+  
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -210,4 +210,5 @@
     padding: 0 18px 18px 18px;
   }
 }
+
 
