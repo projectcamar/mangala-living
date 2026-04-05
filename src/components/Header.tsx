@@ -664,6 +664,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
       <CatalogModal
         show={isCatalogModalOpen}
         onClose={() => setIsCatalogModalOpen(false)}
+        mode="download"
       />
 
       {/* Bottom Header - Category Navigation */}

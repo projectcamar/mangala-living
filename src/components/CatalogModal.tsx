@@ -13,9 +13,10 @@ import catalogPreview3 from '../assets/Kursi-Bar-kursi-stall-chair.webp'
 interface CatalogModalProps {
   show?: boolean
   onClose?: () => void
+  mode?: 'lead' | 'download'
 }
 
-const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
+const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose, mode = 'lead' }) => {
   const location = useLocation()
   const [isVisible, setIsVisible] = useState(false)
   const [language, setLanguage] = useState<LanguageCode>('id')
@@ -28,64 +29,80 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
   // Translations for the modal
   const translations = {
     id: {
-      title: 'TERIMA KASIH TELAH MENGUNDUH',
-      subtitle: 'Katalog Mangala 2026 Anda sedang dalam proses! Bergabunglah dengan daftar email kami untuk mendapatkan pembaruan eksklusif. Dengan mengirimkan formulir ini, kami juga akan mengirimkan salinan PDF langsung ke email Anda!',
+      leadTitle: 'DAPATKAN KATALOG 2026 KAMI',
+      leadSubtitle: 'Jelajahi koleksi furniture industrial premium terbaru kami. Bergabunglah dengan daftar email kami untuk menerima salinan PDF langsung ke email Anda!',
+      downloadTitle: 'TERIMA KASIH TELAH MENGUNDUH',
+      downloadSubtitle: 'Katalog Mangala 2026 Anda sedang dalam proses! Bergabunglah dengan daftar email kami untuk mendapatkan pembaruan eksklusif. Dengan mengirimkan formulir ini, kami juga akan mengirimkan salinan PDF langsung ke email Anda!',
       firstName: 'Nama Lengkap',
       email: 'Email',
       whatsapp: 'Nomor WhatsApp',
       download: 'GABUNG SEKARANG'
     },
     en: {
-      title: 'THANK YOU FOR DOWNLOADING',
-      subtitle: 'Your Mangala 2026 Catalog is on its way! Join our emailing list for exclusive updates. By submitting this form, we will also send a PDF copy directly to your email!',
+      leadTitle: 'GET OUR 2026 CATALOG',
+      leadSubtitle: 'Explore our latest premium industrial furniture collection. Join our mailing list to receive a PDF copy directly to your email!',
+      downloadTitle: 'THANK YOU FOR DOWNLOADING',
+      downloadSubtitle: 'Your Mangala 2026 Catalog is on its way! Join our emailing list for exclusive updates. By submitting this form, we will also send a PDF copy directly to your email!',
       firstName: 'Full Name',
       email: 'Email',
       whatsapp: 'WhatsApp Number',
       download: 'JOIN NEWSLETTER'
     },
     ar: {
-      title: 'شكراً لتحميل الكتالوج',
-      subtitle: 'كتالوج مانجالا 2026 في طريقه إليك! انضم إلى قائمتنا البريدية للحصول على تحديثات حصرية. بإرسال هذا النموذج، سنقوم أيضاً بإرسال نسخة PDF مباشرة إلى بريدك الإلكتروني!',
+      leadTitle: 'احصل على كتالوج 2026',
+      leadSubtitle: 'استكشف أحدث مجموعاتنا من الأثاث الصناعي الفاخر. انضم إلى قائمتنا البريدية لتلقي نسخة PDF مباشرة على بريدك الإلكتروني!',
+      downloadTitle: 'شكراً لتحميل الكتالوج',
+      downloadSubtitle: 'كتالوج مانجالا 2026 في طريقه إليك! انضم إلى قائمتنا البريدية للحصول على تحديثات حصرية. بإرسال هذا النموذج، سنقوم أيضاً بإرسال نسخة PDF مباشرة إلى بريدك الإلكتروني!',
       firstName: 'الاسم الكامل',
       email: 'البريد الإلكتروني',
       whatsapp: 'رقم واتساب',
       download: 'انضم الآن'
     },
     zh: {
-      title: '感谢您下载目录',
-      subtitle: '您的 2026 曼加拉目录即将推出！加入我们的邮件列表，获取独家更新。提交此表格后，我们还将把 PDF 副本直接发送到您的电子邮箱！',
+      leadTitle: '获取我们的 2026 目录',
+      leadSubtitle: '探索我们最新的优质工业家具系列。加入我们的邮件列表，直接通过电子邮件接收 PDF 副本！',
+      downloadTitle: '感谢您下载目录',
+      downloadSubtitle: '您的 2026 曼加拉目录即将推出！加入我们的邮件列表，获取独家更新。提交此表格后，我们还将把 PDF 副本直接发送到您的电子邮箱！',
       firstName: '全名',
       email: '电子邮件',
       whatsapp: 'WhatsApp号码',
       download: '立即加入'
     },
     ja: {
-      title: 'ダウンロードしていただきありがとうございます',
-      subtitle: '2026 マンガラカタログをお届けします！限定アップデートを得るために、メールリストにご登録ください。このフォームを送信すると、PDFのコピーもあなたのメールに直接お送りします！',
+      leadTitle: '2026 カタログを入手する',
+      leadSubtitle: '最新のプレミアム・インダストリアル家具コレクションをご覧ください。メールリストに登録して、PDFのコピーを直接メールで受け取りましょう！',
+      downloadTitle: 'ダウンロードしていただきありがとうございます',
+      downloadSubtitle: '2026 マンガラカタログをお届けします！限定アップデートを得るために、メールリストにご登録ください。このフォームを送信すると、PDFのコピーもあなたのメールに直接お送りします！',
       firstName: '氏名',
       email: 'メールアドレス',
       whatsapp: 'WhatsApp番号',
       download: '今すぐ登録'
     },
     es: {
-      title: 'GRACIAS POR DESCARGAR',
-      subtitle: '¡Su catálogo Mangala 2026 está en camino! Únase a nuestra lista de correo para recibir actualizaciones exclusivas. ¡Al enviar este formulario, juga le enviaremos una copia en PDF langsung ke email Anda!',
+      leadTitle: 'OBTÉN NUESTRO CATÁLOGO 2026',
+      leadSubtitle: 'Explore nuestra última colección premium de muebles industriales. ¡Únase a nuestra lista de correo para recibir una copia en PDF directamente en su correo electrónico!',
+      downloadTitle: 'GRACIAS POR DESCARGAR',
+      downloadSubtitle: '¡Su catálogo Mangala 2026 está en camino! Únase a nuestra lista de correo para recibir actualizaciones exclusivas. ¡Al enviar este formulario, también le enviaremos una copia en PDF directamente a su correo electrónico!',
       firstName: 'Nombre completo',
       email: 'Correo electrónico',
       whatsapp: 'Número de WhatsApp',
       download: 'UNIRSE AHORA'
     },
     fr: {
-      title: 'MERCI D\'AVOIR TÉLÉCHARGÉ',
-      subtitle: 'Votre catalogue Mangala 2026 est en route ! Rejoignez notre liste de diffusion untuk des mises à jour exclusives. En soumettant ce formulaire, nous vous enverrons également une copie PDF directement sur votre e-mail !',
+      leadTitle: 'OBTENEZ NOTRE CATALOGUE 2026',
+      leadSubtitle: 'Découvrez notre toute nouvelle collection de mobilier industriel haut de gamme. Rejoignez notre liste de diffusion pour recevoir une copie PDF directement par e-mail !',
+      downloadTitle: 'MERCI D\'AVOIR TÉLÉCHARGÉ',
+      downloadSubtitle: 'Votre catalogue Mangala 2026 est en route ! Rejoignez notre liste de diffusion pour des mises à jour exclusives. En soumettant ce formulaire, nous vous enverrons également une copie PDF directement sur votre e-mail !',
       firstName: 'Nom complet',
       email: 'E-mail',
-      whatsapp: 'Nomor WhatsApp',
+      whatsapp: 'Numéro WhatsApp',
       download: 'REJOINDRE MAINTENANT'
     },
     ko: {
-      title: '다운로드해주셔서 감사합니다',
-      subtitle: '2026 망갈라 카탈로그가 준비되었습니다! 독점 업데이트를 받으려면 이메일 목록에 가입하세요. 이 양식을 제출하시면 PDF 사본을 이메일로 직접 보내드립니다!',
+      leadTitle: '2026 카탈로그 받기',
+      leadSubtitle: '최신 프리미엄 인더스트리얼 가구 컬렉션을 살펴보세요. 이메일 목록에 가입하여 PDF 사본을 이메일로 직접 받으세요!',
+      downloadTitle: '다운로드해주셔서 감사합니다',
+      downloadSubtitle: '2026 망갈라 카탈로그가 준비되었습니다! 독점 업데이트를 받으려면 이메일 목록에 가입하세요. 이 양식을 제출하시면 PDF 사본을 이메일로 직접 보내드립니다!',
       firstName: '성함',
       email: '이메일',
       whatsapp: 'WhatsApp 번호',
@@ -302,10 +319,10 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose }) => {
           {/* Right Side - Form */}
           <div className="catalog-form-section">
             <h2 className="catalog-modal-title">
-              {t.title}
+              {mode === 'lead' ? t.leadTitle : t.downloadTitle}
             </h2>
             <p className="catalog-modal-subtitle">
-              {t.subtitle}
+              {mode === 'lead' ? t.leadSubtitle : t.downloadSubtitle}
             </p>
 
             <form onSubmit={handleSubmitLead} className="catalog-form">
