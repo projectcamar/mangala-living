@@ -5329,7 +5329,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1685119166946-d4050647b0e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxleHBvcnQlMjBkb2N1bWVudCUyMHByZXBhcmF0aW9uJTIwZnVybml0dXJlfGVufDB8MHx8fDE3NzMzODYzODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-03-13 07:19",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Dalam bisnis furniture internasional, dokumen ekspor yang tepat adalah kunci kelancaran pengiriman. Sertifikasi BNSP Indonesia memberikan standar profesional yang diakui secara nasional bagi para preparator dokumen ekspor.",
       "keyPoints": [
@@ -5362,6 +5362,316 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Sertifikasi BNSP untuk preparator dokumen ekspor adalah investasi strategis bagi bisnis furniture yang ingin berkembang secara internasional. Dengan standar yang diakui secara nasional, para profesional bersertifikat BNSP membantu memastikan kelancaran proses ekspor, mengurangi risiko, dan meningkatkan kepercayaan pelanggan. Bagi Mangala Living, meskipun fokus utama kami adalah produksi furniture berkualitas untuk cafe, restaurant, hotel, dan kantor, kami memahami bahwa dokumen ekspor yang benar adalah bagian tak terpisahkan dari layanan kami. Dengan pengalaman 25+ tahun dan komitmen terhadap profesionalisme, kami terus meningkatkan standar operasional kami untuk memberikan pengalaman terbaik bagi pelanggan kami di seluruh dunia."
+    }
+  },
+  {
+    "id": 340,
+    "slug": "tips-memilih-furnitur-industrial",
+    "title": "Tips Memilih Furnitur",
+    "category": "Tips and Trick",
+    "excerpt": "Panduan memilih furnitur industrial yang tepat untuk cafe, restoran, dan hotel",
+    "image": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxkZXNhaW4lMjBpbnRlcmlvciUyMGthZmUlMjBpbmR1c3RyaWFsfGVufDB8MHx8fDE3ODAzODQyNDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-06-02 07:10",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Memilih furnitur yang tepat sangat penting untuk menciptakan suasana yang nyaman dan menarik di cafe, restoran, atau hotel. Dengan lebih dari 25 tahun pengalaman, Mangala Living telah melayani lebih dari 1000 proyek dan memiliki workshop di Bekasi yang siap memenuhi kebutuhan furnitur industrial Anda. <br> Dalam artikel ini, kita akan membahas beberapa tips memilih furnitur industrial yang tepat untuk bisnis Anda.",
+      "keyPoints": [
+        "Memilih bahan yang kuat dan tahan lama",
+        "Mempertimbangkan desain dan gaya yang sesuai",
+        "Mengukur ruang dengan tepat sebelum membeli furnitur"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Furnitur Industrial Penting?",
+          "content": "Furnitur industrial memiliki kelebihan dalam hal kekuatan dan ketahanan, sehingga sangat cocok untuk bisnis yang memiliki lalu lintas tinggi seperti cafe, restoran, dan hotel. <strong>Furnitur industrial</strong> juga dapat dibuat dengan desain yang unik dan menarik, sehingga dapat meningkatkan estetika ruang dan membuat pelanggan merasa nyaman.",
+          "imageSearchQuery": "furnitur industrial untuk kafe",
+          "image": "https://images.unsplash.com/photo-1713862163481-5d2ff5d91421?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxmdXJuaXR1ciUyMGluZHVzdHJpYWwlMjB1bnR1ayUyMGthZmV8ZW58MHwwfHx8MTc4MDM4NDI0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "furnitur industrial untuk kafe"
+        },
+        {
+          "heading": "Tips Memilih Furnitur Industrial",
+          "content": "Dalam memilih furnitur industrial, ada beberapa hal yang perlu dipertimbangkan. Pertama, <em>pilih bahan yang kuat dan tahan lama</em> seperti kayu solid atau besi. Kedua, <em>pertimbangkan desain dan gaya yang sesuai</em> dengan tema dan konsep bisnis Anda. Ketiga, <em>ukur ruang dengan tepat</em> sebelum membeli furnitur untuk memastikan bahwa furnitur yang dipilih dapat masuk dan sesuai dengan ruang."
+        },
+        {
+          "heading": "Solusi Furnitur Industrial dari Mangala Living",
+          "content": "Mangala Living menawarkan berbagai jenis furnitur industrial yang dapat disesuaikan dengan kebutuhan bisnis Anda. Dengan menggunakan <strong>Frame Loft Bookshelf (Storage)</strong> sebagai penyimpanan, Anda dapat membuat ruang yang lebih rapi dan terorganisir. Selain itu, <strong>Balcony Bar Table (Bar Set, Outdoor)</strong> dapat menjadi pilihan yang tepat untuk area outdoor.",
+          "productId": 1
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda ingin mendapatkan furnitur industrial yang tepat untuk bisnis Anda, hubungi Mangala Living sekarang juga. Dengan pengalaman lebih dari 25 tahun dan workshop di Bekasi, kami siap membantu Anda menciptakan ruang yang nyaman dan menarik.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Dengan memilih furnitur industrial yang tepat, Anda dapat menciptakan suasana yang nyaman dan menarik di cafe, restoran, atau hotel. Mangala Living siap membantu Anda dalam memilih furnitur industrial yang sesuai dengan kebutuhan bisnis Anda. <br> Jangan ragu untuk menghubungi kami sekarang juga!"
+    }
+  },
+  {
+    "id": 341,
+    "slug": "tips-desain-interior-cafe",
+    "title": "Desain Interior Cafe",
+    "category": "Tips and Trick",
+    "excerpt": "Tips desain interior cafe yang nyaman dan menarik",
+    "image": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3ODAzODQyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-06-02 07:10",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Membuat desain interior cafe yang nyaman dan menarik sangat penting untuk meningkatkan pengalaman pelanggan. Dengan lebih dari 25 tahun pengalaman, Mangala Living telah membantu lebih dari 1000 proyek desain interior cafe di Indonesia. Berikut beberapa tips yang dapat membantu Anda membuat desain interior cafe yang ideal.",
+      "keyPoints": [
+        "Pilih warna yang tepat",
+        "Gunakan pencahayaan yang efektif",
+        "Pilih perabotan yang nyaman dan fungsional"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Desain Interior Penting?",
+          "content": "Desain interior yang baik dapat meningkatkan pengalaman pelanggan dan membuat mereka merasa nyaman dan betah. Selain itu, desain interior yang baik juga dapat membantu meningkatkan citra dan identitas merek cafe. Mangala Living memiliki pengalaman lebih dari 25 tahun dalam membuat desain interior yang baik dan fungsional untuk berbagai jenis bisnis, termasuk cafe, restoran, hotel, dan kantor.",
+          "imageSearchQuery": "industrial cafe design",
+          "image": "https://images.unsplash.com/photo-1551887196-72e32bfc7bf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGRlc2lnbnxlbnwwfDB8fHwxNzgwMzg0MjY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial cafe design"
+        },
+        {
+          "heading": "Tips Desain Interior Cafe",
+          "content": "Berikut beberapa tips yang dapat membantu Anda membuat desain interior cafe yang ideal: <br> - Pilih warna yang tepat, seperti warna pastel atau warna netral yang dapat membuat pelanggan merasa nyaman. <br> - Gunakan pencahayaan yang efektif, seperti lampu gantung atau lampu meja yang dapat membuat ruangan terlihat lebih cerah dan nyaman. <br> - Pilih perabotan yang nyaman dan fungsional, seperti sofa atau kursi yang dapat membuat pelanggan merasa nyaman dan betah."
+        },
+        {
+          "heading": "Solusi Mangala Living",
+          "content": "Mangala Living memiliki berbagai jenis perabotan yang dapat membantu Anda membuat desain interior cafe yang ideal. Salah satu produk yang dapat membantu adalah <strong>Meja Kerja Industrial</strong> (Produk ID: 15) yang dapat digunakan sebagai meja kasir atau meja meeting. Selain itu, kami juga memiliki <strong>Ladder Frame Display Stand</strong> (Produk ID: 12) yang dapat digunakan untuk menampilkan produk atau dekorasi.",
+          "productId": 15
+        },
+        {
+          "heading": "Kesimpulan",
+          "content": "Membuat desain interior cafe yang nyaman dan menarik sangat penting untuk meningkatkan pengalaman pelanggan. Dengan memilih warna yang tepat, menggunakan pencahayaan yang efektif, dan memilih perabotan yang nyaman dan fungsional, Anda dapat membuat desain interior cafe yang ideal. Mangala Living siap membantu Anda membuat desain interior cafe yang baik dan fungsional dengan berbagai jenis perabotan yang kami tawarkan.",
+          "productId": 12
+        }
+      ],
+      "conclusion": "Dengan memilih Mangala Living sebagai mitra desain interior cafe, Anda dapat membuat desain interior yang baik dan fungsional untuk meningkatkan pengalaman pelanggan. Kami siap membantu Anda membuat desain interior cafe yang ideal dengan berbagai jenis perabotan yang kami tawarkan."
+    }
+  },
+  {
+    "id": 342,
+    "slug": "supplier-terbaik-indonesia",
+    "title": "Supplier Terbaik",
+    "category": "Tips and Trick",
+    "excerpt": "Mencari supplier terbaik untuk kebutuhan furniture industri",
+    "image": "https://images.unsplash.com/photo-1727359202583-b393b3245a8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwc3VwcGxpZXIlMjBpbmRvbmVzaWF8ZW58MHwwfHx8MTc4MDM4NDI4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-06-02 07:11",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Dalam mencari supplier terbaik untuk kebutuhan furniture industri, ada beberapa hal yang perlu dipertimbangkan. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, dapat menjadi pilihan yang tepat. <br> Dalam artikel ini, kita akan membahas beberapa tips dan trik dalam mencari supplier terbaik untuk kebutuhan furniture industri.",
+      "keyPoints": [
+        "Mencari supplier dengan pengalaman yang luas",
+        "Memastikan kualitas produk yang tinggi",
+        "Mengutamakan kebutuhan dan anggaran"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Memilih Supplier Terbaik?",
+          "content": "Dalam memilih supplier terbaik, perlu mempertimbangkan beberapa faktor seperti pengalaman, kualitas produk, dan harga. <strong>Mangala Living</strong> telah memiliki pengalaman lebih dari 25 tahun dalam industri furniture dan telah menangani lebih dari 1000 proyek. <br> Dengan pengalaman yang luas, kami dapat memastikan bahwa produk yang kami tawarkan memiliki kualitas yang tinggi dan sesuai dengan kebutuhan Anda.",
+          "imageSearchQuery": "industrial furniture factory",
+          "image": "https://images.unsplash.com/photo-1720036236855-9a1a2e4d3f26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwZmFjdG9yeXxlbnwwfDB8fHwxNzgwMzg0Mjg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial furniture factory"
+        },
+        {
+          "heading": "Tips Mencari Supplier Terbaik",
+          "content": "Dalam mencari supplier terbaik, perlu melakukan beberapa penelitian dan pertimbangan. Berikut beberapa tips yang dapat membantu: <br> - Mencari supplier dengan pengalaman yang luas <br> - Memastikan kualitas produk yang tinggi <br> - Mengutamakan kebutuhan dan anggaran <br> Dengan melakukan penelitian dan pertimbangan yang tepat, Anda dapat menemukan supplier terbaik yang sesuai dengan kebutuhan Anda."
+        },
+        {
+          "heading": "Mangala Living: Supplier Terbaik untuk Kebutuhan Furniture Industri",
+          "content": "Mangala Living adalah supplier terbaik untuk kebutuhan furniture industri. Dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, kami dapat memastikan bahwa produk yang kami tawarkan memiliki kualitas yang tinggi dan sesuai dengan kebutuhan Anda. <br> Kami memiliki workshop di Bekasi yang dilengkapi dengan peralatan canggih dan tenaga kerja yang terampil, sehingga kami dapat memproduksi furniture industri dengan kualitas yang tinggi dan harga yang kompetitif.",
+          "productId": 4
+        },
+        {
+          "heading": "Kelebihan Mangala Living sebagai Supplier Terbaik",
+          "content": "Mangala Living memiliki beberapa kelebihan sebagai supplier terbaik untuk kebutuhan furniture industri. <em>Beberapa kelebihan tersebut antara lain</em>: <br> - Pengalaman lebih dari 25 tahun <br> - Lebih dari 1000 proyek <br> - Workshop di Bekasi yang dilengkapi dengan peralatan canggih <br> - Tenaga kerja yang terampil <br> Dengan kelebihan-kelebihan tersebut, kami dapat memastikan bahwa produk yang kami tawarkan memiliki kualitas yang tinggi dan sesuai dengan kebutuhan Anda.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Dalam mencari supplier terbaik untuk kebutuhan furniture industri, perlu mempertimbangkan beberapa faktor seperti pengalaman, kualitas produk, dan harga. Mangala Living dapat menjadi pilihan yang tepat karena telah memiliki pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek. <br> Dengan melakukan penelitian dan pertimbangan yang tepat, Anda dapat menemukan supplier terbaik yang sesuai dengan kebutuhan Anda."
+    }
+  },
+  {
+    "id": 343,
+    "slug": "mangala-living-solusi-utama",
+    "title": "Mangala Living Solusi Utama",
+    "category": "Tips and Trick",
+    "excerpt": "Mangala Living, penyedia solusi utama untuk furniture industri",
+    "image": "https://images.unsplash.com/photo-1538334421852-687c439c92f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMGRlc2lnbnxlbnwwfDB8fHwxNzgwMzg0MzA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-06-02 07:11",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Mangala Living telah menjadi penyedia solusi utama untuk furniture industri selama lebih dari 25 tahun. Dengan pengalaman lebih dari 1000 proyek dan workshop di Bekasi, kami telah membantu berbagai bisnis seperti cafe, restoran, hotel, dan kantor untuk menciptakan ruang yang nyaman dan fungsional. <br> Dalam artikel ini, kami akan membahas tentang bagaimana Mangala Living dapat menjadi solusi utama untuk kebutuhan furniture industri Anda.",
+      "keyPoints": [
+        "Mangala Living memiliki pengalaman lebih dari 25 tahun",
+        "Lebih dari 1000 proyek telah diselesaikan",
+        "Workshop di Bekasi untuk produksi furniture berkualitas"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Mangala Living?",
+          "content": "Mangala Living telah menjadi pilihan utama bagi banyak bisnis karena kami menawarkan solusi yang komprehensif dan berkualitas. <strong>Kami memiliki tim desain yang berpengalaman</strong> yang dapat membantu Anda menciptakan ruang yang sesuai dengan kebutuhan dan gaya Anda. <br> Dengan <em>produksi yang dilakukan di workshop kami di Bekasi</em>, kami dapat memastikan bahwa furniture yang kami produksi memiliki kualitas yang tinggi dan tahan lama.",
+          "imageSearchQuery": "industrial office desk",
+          "image": "https://images.unsplash.com/photo-1741880893442-66f56ad8f3a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwb2ZmaWNlJTIwZGVza3xlbnwwfDB8fHwxNzgwMzg0MzA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial office desk"
+        },
+        {
+          "heading": "Tips Memilih Furniture Industri",
+          "content": "Dalam memilih furniture industri, ada beberapa hal yang perlu dipertimbangkan. <strong>Pertama, tentukan kebutuhan Anda</strong> dan sesuaikan dengan ruang yang tersedia. <br> <em>Kedua, pilih furniture yang tahan lama</em> dan memiliki kualitas yang baik. <br> Mangala Living dapat membantu Anda dalam memilih furniture yang sesuai dengan kebutuhan Anda."
+        },
+        {
+          "heading": "Solusi Mangala Living untuk Cafe dan Restoran",
+          "content": "Mangala Living memiliki berbagai solusi untuk cafe dan restoran, seperti <strong>meja dan kursi yang nyaman</strong> dan <em>desain yang menarik</em>. <br> Kami juga dapat membantu Anda dalam menciptakan ruang yang sesuai dengan gaya dan kebutuhan Anda. <br> Dengan menggunakan <strong>produk kami seperti Meja Kerja Industrial (ID: 15)</strong>, Anda dapat menciptakan ruang yang fungsional dan nyaman.",
+          "productId": 15
+        },
+        {
+          "heading": "Solusi Mangala Living untuk Hotel dan Kantor",
+          "content": "Mangala Living juga memiliki solusi untuk hotel dan kantor, seperti <strong>meja dan kursi yang ergonomis</strong> dan <em>desain yang modern</em>. <br> Kami dapat membantu Anda dalam menciptakan ruang yang sesuai dengan kebutuhan dan gaya Anda. <br> Dengan menggunakan <strong>produk kami seperti Frame Loft Bookshelf (ID: 1)</strong>, Anda dapat menciptakan ruang yang fungsional dan nyaman.",
+          "productId": 1
+        }
+      ],
+      "conclusion": "Mangala Living adalah solusi utama untuk kebutuhan furniture industri Anda. Dengan pengalaman lebih dari 25 tahun dan workshop di Bekasi, kami dapat membantu Anda menciptakan ruang yang nyaman dan fungsional. <br> Hubungi kami sekarang juga untuk mendapatkan solusi yang sesuai dengan kebutuhan Anda."
+    }
+  },
+  {
+    "id": 344,
+    "slug": "mengenal-daerah-bekasi",
+    "title": "Mengenal Daerah Bekasi",
+    "category": "Tips and Trick",
+    "excerpt": "Bekasi, kota industri dengan kemajuan pesat",
+    "image": "https://images.unsplash.com/photo-1599477691241-6c27815449fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaSUyMGRpJTIwYmVrYXNpfGVufDB8MHx8fDE3ODAzODQzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-06-02 07:11",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Bekasi merupakan salah satu kota di Jawa Barat yang telah berkembang pesat dalam beberapa dekade terakhir. Dengan kemajuan industri dan infrastruktur, Bekasi menjadi salah satu kota yang menarik untuk dikunjungi dan ditinggali. Mangala Living, sebagai produsen furnitur industri yang berpengalaman lebih dari 25 tahun, memiliki workshop di Bekasi dan telah melayani lebih dari 1000 proyek di seluruh Indonesia.",
+      "keyPoints": [
+        "Bekasi sebagai kota industri",
+        "Kemajuan infrastruktur di Bekasi",
+        "Mangala Living dan kontribusinya di Bekasi"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Bekasi Menarik?",
+          "content": "Bekasi menawarkan banyak kelebihan, mulai dari akses yang mudah ke Jakarta hingga ketersediaan lahan yang luas untuk industri dan perdagangan. Selain itu, Bekasi juga memiliki banyak destinasi wisata yang menarik, seperti <strong>Taman Budaya Sentral Bekasi</strong> dan <em>Trans Studio Bekasi</em>. Dengan demikian, Bekasi menjadi salah satu kota yang paling menarik di Jawa Barat.",
+          "imageSearchQuery": "wisata di bekasi",
+          "image": "https://images.unsplash.com/photo-1599477691241-6c27815449fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHx3aXNhdGElMjBkaSUyMGJla2FzaXxlbnwwfDB8fHwxNzgwMzg0MzE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "wisata di bekasi"
+        },
+        {
+          "heading": "Kemajuan Infrastruktur di Bekasi",
+          "content": "Dalam beberapa tahun terakhir, Bekasi telah mengalami kemajuan infrastruktur yang signifikan. Pembangunan jalan tol, bandara, dan pelabuhan telah mempermudah akses ke kota ini. Selain itu, Bekasi juga telah dilengkapi dengan berbagai fasilitas publik, seperti rumah sakit, sekolah, dan pusat perbelanjaan. Hal ini membuat Bekasi menjadi salah satu kota yang paling nyaman untuk ditinggali."
+        },
+        {
+          "heading": "Mangala Living di Bekasi",
+          "content": "Mangala Living, sebagai produsen furnitur industri, memiliki workshop di Bekasi. Dengan lebih dari 25 tahun pengalaman, kami telah melayani lebih dari 1000 proyek di seluruh Indonesia. Kami menyediakan berbagai jenis furnitur, mulai dari <strong>meja kerja industri</strong> hingga <em>kabinet penyimpanan</em>. Dengan demikian, kami menjadi salah satu pilihan terbaik untuk kebutuhan furnitur industri Anda.",
+          "productId": 15
+        },
+        {
+          "heading": "Tips untuk Mengunjungi Bekasi",
+          "content": "Jika Anda berencana untuk mengunjungi Bekasi, ada beberapa tips yang perlu Anda ketahui. Pertama, pastikan Anda untuk memilih akomodasi yang nyaman dan strategis. Kedua, jangan lupa untuk mencoba makanan khas Bekasi, seperti <strong>batagor</strong> dan <em>es teler</em>. Ketiga, pastikan Anda untuk mengunjungi destinasi wisata yang menarik, seperti <strong>Taman Budaya Sentral Bekasi</strong> dan <em>Trans Studio Bekasi</em>.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Dengan demikian, Bekasi merupakan salah satu kota yang menarik untuk dikunjungi dan ditinggali. Dengan kemajuan industri dan infrastruktur, Bekasi menjadi salah satu kota yang paling menarik di Jawa Barat. Mangala Living, sebagai produsen furnitur industri, siap untuk membantu Anda dalam memenuhi kebutuhan furnitur industri Anda."
+    }
+  },
+  {
+    "id": 345,
+    "slug": "tips-memilih-supplier-furniture",
+    "title": "Tips Memilih Supplier Furniture",
+    "category": "Tips and Trick",
+    "excerpt": "Panduan memilih supplier furniture yang tepat untuk bisnis Anda",
+    "image": "https://images.unsplash.com/photo-1565610222536-ef125c59da2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwc3VwcGxpZXIlMjB3YXJlaG91c2V8ZW58MHwwfHx8MTc4MDM4NDM0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-06-02 07:12",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Dalam membangun sebuah bisnis, seperti cafe, restaurant, atau hotel, memilih supplier furniture yang tepat sangat penting. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, memahami betapa pentingnya memilih supplier yang dapat memenuhi kebutuhan dan anggaran Anda. Berikut beberapa tips untuk memilih supplier furniture yang tepat untuk bisnis Anda.",
+      "keyPoints": [
+        "Memahami kebutuhan bisnis Anda",
+        "Mencari supplier dengan pengalaman luas",
+        "Memeriksa kualitas produk",
+        "Mengatur anggaran",
+        "Membaca review dan testimonial"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Memilih Supplier Furniture yang Tepat Sangat Penting?",
+          "content": "Memilih supplier furniture yang tepat dapat mempengaruhi kesan dan kenyamanan pelanggan Anda. Selain itu, furniture yang berkualitas juga dapat meningkatkan efisiensi dan produktivitas kerja. Mangala Living, dengan workshop di Bekasi, menyediakan berbagai jenis furniture industrial yang dapat disesuaikan dengan kebutuhan bisnis Anda.",
+          "imageSearchQuery": "industrial cafe design",
+          "image": "https://images.unsplash.com/photo-1551887196-72e32bfc7bf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGRlc2lnbnxlbnwwfDB8fHwxNzgwMzg0MjY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial cafe design"
+        },
+        {
+          "heading": "Practical Guide & Best Practices",
+          "content": "Dalam memilih supplier furniture, pastikan Anda untuk melakukan riset yang cukup. Cari supplier yang memiliki pengalaman luas dan dapat memenuhi kebutuhan Anda. Jangan ragu untuk menghubungi supplier dan bertanya tentang produk dan layanan mereka. Selain itu, pastikan Anda untuk memeriksa kualitas produk dan membaca review dari pelanggan lain."
+        },
+        {
+          "heading": "Mangala Living Solutions",
+          "content": "Mangala Living menyediakan berbagai jenis furniture industrial yang dapat disesuaikan dengan kebutuhan bisnis Anda. Dari <strong>meja kerja</strong> hingga <em>kursi tamu</em>, kami memiliki semua yang Anda butuhkan. Produk kami, seperti <strong>Meja Kerja Industrial (Meja Kerja Industrial, ID: 15)</strong>, dirancang untuk memenuhi kebutuhan bisnis Anda dan meningkatkan efisiensi kerja.",
+          "productId": 15
+        },
+        {
+          "heading": "Next Steps",
+          "content": "Jika Anda sedang mencari supplier furniture yang tepat untuk bisnis Anda, jangan ragu untuk menghubungi Mangala Living. Kami akan dengan senang hati membantu Anda memilih furniture yang tepat dan memenuhi kebutuhan Anda. <br> Anda dapat menghubungi kami melalui telepon atau email, atau mengunjungi workshop kami di Bekasi.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Dengan memilih supplier furniture yang tepat, Anda dapat meningkatkan kesan dan kenyamanan pelanggan, serta meningkatkan efisiensi dan produktivitas kerja. Mangala Living, dengan pengalaman lebih dari 25 tahun, siap membantu Anda memilih furniture yang tepat untuk bisnis Anda. Hubungi kami hari ini juga!"
+    }
+  },
+  {
+    "id": 346,
+    "slug": "mangala-living-solusi-furniture-terbaik",
+    "title": "Mangala Living Solusi",
+    "category": "Tips and Trick",
+    "excerpt": "Mangala Living, supplier furniture terbaik untuk cafe, restaurant, hotel, dan kantor",
+    "image": "https://images.unsplash.com/photo-1538334421852-687c439c92f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMGRlc2lnbnxlbnwwfDB8fHwxNzgwMzg0MzA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-06-02 07:12",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Mangala Living merupakan supplier furniture yang telah berpengalaman lebih dari 25 tahun dalam menyediakan solusi furniture untuk berbagai kebutuhan, mulai dari cafe, restaurant, hotel, hingga kantor. Dengan workshop yang terletak di Bekasi, kami dapat memastikan kualitas dan ketepatan waktu dalam setiap proyek. Dalam artikel ini, kita akan membahas tentang tips dan trik dalam memilih furniture yang tepat untuk bisnis Anda.",
+      "keyPoints": [
+        "Memilih furniture yang tepat untuk bisnis",
+        "Mengoptimalkan ruang dengan desain yang efektif",
+        "Menghemat biaya dengan furniture yang tahan lama"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Furniture yang Tepat Sangat Penting?",
+          "content": "Furniture yang tepat dapat meningkatkan kenyamanan dan produktivitas di tempat kerja atau bisnis. Selain itu, furniture yang tepat juga dapat membantu menciptakan suasana yang nyaman dan menyenangkan untuk pelanggan. Mangala Living menawarkan berbagai jenis furniture yang dapat disesuaikan dengan kebutuhan dan budget Anda.",
+          "imageSearchQuery": "minimalist office desk",
+          "image": "https://images.unsplash.com/photo-1449247709967-d4461a6a6103?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwb2ZmaWNlJTIwZGVza3xlbnwwfDB8fHwxNzgwMzg0MzY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "minimalist office desk"
+        },
+        {
+          "heading": "Tips dalam Memilih Furniture yang Tepat",
+          "content": "Dalam memilih furniture, ada beberapa hal yang perlu dipertimbangkan, seperti <strong>ukuran ruang</strong>, <em>budget</em>, dan <strong>kebutuhan spesifik</strong>. Pastikan Anda untuk memilih furniture yang sesuai dengan kebutuhan dan gaya bisnis Anda. Mangala Living dapat membantu Anda dalam memilih furniture yang tepat dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek yang telah diselesaikan."
+        },
+        {
+          "heading": "Mengoptimalkan Ruang dengan Desain yang Efektif",
+          "content": "Dengan desain yang efektif, Anda dapat mengoptimalkan ruang dan meningkatkan kenyamanan di tempat kerja atau bisnis. Mangala Living menawarkan layanan desain yang dapat membantu Anda dalam menciptakan ruang yang nyaman dan fungsional. Salah satu produk yang dapat membantu dalam mengoptimalkan ruang adalah <strong>Meja Kerja Industrial</strong> dengan <strong>productId: 15</strong>.",
+          "productId": 15
+        },
+        {
+          "heading": "Menghemat Biaya dengan Furniture yang Tahan Lama",
+          "content": "Furniture yang tahan lama dapat membantu menghemat biaya dalam jangka panjang. Mangala Living menawarkan furniture yang terbuat dari bahan-bahan yang berkualitas dan tahan lama, seperti <strong>Ladder Frame Display Stand</strong> dengan <strong>productId: 12</strong>.",
+          "productId": 12
+        }
+      ],
+      "conclusion": "Dengan memilih furniture yang tepat dan mengoptimalkan ruang, Anda dapat meningkatkan kenyamanan dan produktivitas di tempat kerja atau bisnis. Mangala Living dapat membantu Anda dalam mencapai tujuan tersebut dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek yang telah diselesaikan. <br> Jangan ragu untuk menghubungi kami untuk mendapatkan solusi furniture yang tepat untuk bisnis Anda."
     }
   }
 ]
