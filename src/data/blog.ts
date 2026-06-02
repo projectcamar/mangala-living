@@ -5769,7 +5769,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1739863306341-1737ff4614b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaSUyMGZ1cm5pdHVyJTIwZWtzcG9yJTIwaW1wb3J8ZW58MHwwfHx8MTc4MDM4NDU2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-06-02 07:15",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Bagi Anda yang bergerak di bidang industri furnitur, memahami peraturan ekspor furnitur terbaru 2026 sangat penting. Dengan lebih dari 25 tahun pengalaman, Mangala Living telah melayani lebih dari 1000 proyek dan memahami betapa pentingnya mematuhi peraturan ekspor. Dalam artikel ini, kami akan membahas peraturan ekspor furnitur terbaru 2026 dan memberikan tips praktis untuk bisnis Anda.",
       "keyPoints": [
@@ -5800,6 +5800,137 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Dengan memahami peraturan ekspor furnitur terbaru 2026 dan mematuhi tips praktis, Anda dapat menghindari risiko penolakan ekspor dan kerugian finansial. Mangala Living siap membantu Anda memahami peraturan ekspor furnitur terbaru 2026 dan memberikan saran praktis untuk bisnis Anda. <br> Hubungi kami hari ini untuk memulai kesuksesan bisnis Anda!"
+    }
+  },
+  {
+    "id": 350,
+    "slug": "membuat-desain-interior-viral",
+    "title": "Membuat Desain Interior Viral",
+    "category": "Tips and Trick",
+    "excerpt": "Tips membuat desain interior yang viral di media sosial",
+    "image": "https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwaW50ZXJpb3IlMjBkZXNpZ24lMjBpbnNwaXJhdGlvbnxlbnwwfDB8fHwxNzgwMzkxNTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-06-02 09:11",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Di era digital, desain interior yang viral dapat meningkatkan kesadaran dan minat orang terhadap sebuah bisnis. Mangala Living, dengan pengalaman lebih dari 25 tahun dan 1000+ proyek, memahami betapa pentingnya menciptakan desain interior yang tidak hanya fungsional tetapi juga Instagrammable. Dalam artikel ini, kita akan membahas tips dan trik untuk membuat desain interior yang viral, terutama untuk cafe, restaurant, hotel, dan kantor.",
+      "keyPoints": [
+        "Pilih tema yang unik dan konsisten",
+        "Gunakan warna dan pencahayaan yang menarik",
+        "Tambahkan dekorasi yang Instagrammable",
+        "Pastikan desain interior fungsional dan nyaman"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Desain Interior Viral Penting?",
+          "content": "Desain interior yang viral dapat meningkatkan trafik dan penjualan bisnis. Dengan menciptakan desain interior yang unik dan menarik, Anda dapat membuat pelanggan berbagi pengalaman mereka di media sosial, sehingga meningkatkan kesadaran dan minat orang terhadap bisnis Anda. Mangala Living telah membantu banyak bisnis menciptakan desain interior yang viral dan fungsional.",
+          "imageSearchQuery": "industrial cafe design",
+          "image": "https://images.unsplash.com/photo-1551887196-72e32bfc7bf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGRlc2lnbnxlbnwwfDB8fHwxNzgwMzg0MjY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "industrial cafe design"
+        },
+        {
+          "heading": "Tips Membuat Desain Interior Viral",
+          "content": "Untuk membuat desain interior yang viral, Anda perlu mempertimbangkan beberapa faktor, seperti tema, warna, pencahayaan, dan dekorasi. Pilih tema yang unik dan konsisten, gunakan warna dan pencahayaan yang menarik, dan tambahkan dekorasi yang Instagrammable. Pastikan desain interior juga fungsional dan nyaman untuk pelanggan."
+        },
+        {
+          "heading": "Solusi Mangala Living",
+          "content": "Mangala Living menawarkan solusi desain interior yang viral dan fungsional untuk cafe, restaurant, hotel, dan kantor. Dengan pengalaman lebih dari 25 tahun dan workshop di Bekasi, kami dapat membantu Anda menciptakan desain interior yang unik dan menarik. Kami juga menawarkan produk furniture industri yang berkualitas tinggi dan tahan lama, seperti <strong>Frame Loft Bookshelf</strong> dan <strong>Ladder Frame Display Stand</strong>.",
+          "productId": 12
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda ingin menciptakan desain interior yang viral dan fungsional, hubungi Mangala Living hari ini. Kami akan membantu Anda menciptakan desain interior yang unik dan menarik, serta memberikan saran dan rekomendasi untuk membuat bisnis Anda sukses. Dengan Mangala Living, Anda dapat meningkatkan kesadaran dan minat orang terhadap bisnis Anda, serta meningkatkan trafik dan penjualan.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Dengan tips dan trik yang tepat, Anda dapat menciptakan desain interior yang viral dan fungsional untuk bisnis Anda. Mangala Living siap membantu Anda menciptakan desain interior yang unik dan menarik, serta memberikan saran dan rekomendasi untuk membuat bisnis Anda sukses. Hubungi kami hari ini untuk menciptakan desain interior yang viral dan fungsional!"
+    }
+  },
+  {
+    "id": 351,
+    "slug": "desain-modern-terbaru",
+    "title": "Desain Modern Terbaru",
+    "category": "Tips and Trick",
+    "excerpt": "Tips dan trik untuk membuat desain modern terbaru di ruang komersial Anda",
+    "image": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwbWluaW1hbGlzdCUyMGNhZmUlMjBpbnRlcmlvciUyMGRlc2lnbnxlbnwwfDB8fHwxNzgwMzkxNTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-06-02 09:12",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Membuat desain modern terbaru di ruang komersial Anda bisa menjadi tantangan, terutama jika Anda ingin menciptakan suasana yang nyaman dan fungsional. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, hadir untuk membantu Anda menciptakan desain modern terbaru yang sesuai dengan kebutuhan Anda. Dalam artikel ini, kita akan membahas beberapa tips dan trik untuk membuat desain modern terbaru di ruang komersial Anda.",
+      "keyPoints": [
+        "Pilih furnitur yang sesuai dengan tema modern",
+        "Gunakan warna yang netral dan minimalis",
+        "Tambahkan dekorasi yang unik dan fungsional"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Desain Modern Terbaru Penting?",
+          "content": "Desain modern terbaru sangat penting untuk menciptakan suasana yang nyaman dan fungsional di ruang komersial Anda. Dengan desain yang modern, Anda dapat meningkatkan kenyamanan dan produktivitas pelanggan Anda. Selain itu, desain modern juga dapat membantu Anda meningkatkan citra dan reputasi bisnis Anda. Mangala Living memiliki pengalaman lebih dari 25 tahun dalam menciptakan desain modern terbaru yang sesuai dengan kebutuhan pelanggan.",
+          "imageSearchQuery": "modern industrial restaurant design",
+          "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMGRlc2lnbnxlbnwwfDB8fHwxNzgwMzkxNTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "modern industrial restaurant design"
+        },
+        {
+          "heading": "Tips dan Trik Membuat Desain Modern Terbaru",
+          "content": "Berikut beberapa tips dan trik untuk membuat desain modern terbaru di ruang komersial Anda:<br><strong>Pilih furnitur yang sesuai dengan tema modern</strong>, seperti <em>meja dan kursi yang minimalist</em>.<br>Gunakan warna yang netral dan minimalis, seperti <em>putih, abu-abu, dan hitam</em>.<br>Tambahkan dekorasi yang unik dan fungsional, seperti <em>tanaman hijau dan lampu yang modern</em>."
+        },
+        {
+          "heading": "Solusi Mangala Living",
+          "content": "Mangala Living memiliki berbagai solusi untuk membantu Anda menciptakan desain modern terbaru di ruang komersial Anda. Kami memiliki <strong>workshop di Bekasi</strong> yang siap untuk memproduksi furnitur yang sesuai dengan kebutuhan Anda. Kami juga memiliki tim desain yang siap untuk membantu Anda menciptakan desain modern terbaru yang sesuai dengan tema dan konsep Anda.",
+          "productId": 4
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda ingin menciptakan desain modern terbaru di ruang komersial Anda, langsung hubungi kami untuk mendapatkan informasi lebih lanjut tentang solusi yang kami tawarkan. Kami siap untuk membantu Anda menciptakan desain modern terbaru yang sesuai dengan kebutuhan Anda.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Dengan tips dan trik yang telah kita bahas, Anda dapat menciptakan desain modern terbaru di ruang komersial Anda yang nyaman, fungsional, dan sesuai dengan kebutuhan Anda. Mangala Living siap untuk membantu Anda menciptakan desain modern terbaru yang sesuai dengan tema dan konsep Anda."
+    }
+  },
+  {
+    "id": 352,
+    "slug": "tips-membeli-furnitur-di-cikarang-bekasi",
+    "title": "Tips Membeli Furnitur di Cikarang Bekasi",
+    "category": "Tips and Trick",
+    "excerpt": "Temukan tips membeli furnitur di Cikarang Bekasi untuk cafe, restoran, dan kantor",
+    "image": "",
+    "date": "2026-06-02 09:12",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Cikarang Bekasi merupakan salah satu kawasan industri terbesar di Indonesia, sehingga membutuhkan furnitur yang berkualitas dan tahan lama. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, hadir untuk membantu Anda memilih furnitur yang tepat untuk bisnis Anda. Berikut beberapa tips membeli furnitur di Cikarang Bekasi.",
+      "keyPoints": [
+        "Pilih furnitur yang sesuai dengan tema dan gaya bisnis Anda",
+        "Perhatikan kualitas dan bahan furnitur",
+        "Pertimbangkan budget dan biaya perawatan"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Furnitur yang Tepat Sangat Penting?",
+          "content": "Furnitur yang tepat dapat meningkatkan kenyamanan dan produktivitas di tempat kerja. Selain itu, furnitur yang berkualitas juga dapat meningkatkan citra bisnis Anda di mata pelanggan. <strong>Mangala Living</strong> menawarkan berbagai jenis furnitur industri yang dapat disesuaikan dengan kebutuhan bisnis Anda.",
+          "imageSearchQuery": "industrial office furniture in cikarang"
+        },
+        {
+          "heading": "Tips Membeli Furnitur di Cikarang Bekasi",
+          "content": "Sebelum membeli furnitur, pastikan Anda telah mempertimbangkan beberapa hal, seperti <em>budget</em>, <em>ruang</em>, dan <em>kebutuhan</em>. Selain itu, pastikan Anda juga memeriksa kualitas dan bahan furnitur sebelum melakukan pembelian."
+        },
+        {
+          "heading": "Solusi Furnitur dari Mangala Living",
+          "content": "Mangala Living menawarkan berbagai jenis furnitur industri, seperti meja kerja, kursi, dan lemari. <br> Kami juga menawarkan jasa desain dan produksi furnitur custom untuk memenuhi kebutuhan bisnis Anda. <br> Dengan pengalaman lebih dari 25 tahun dan workshop di Bekasi, kami siap membantu Anda memilih furnitur yang tepat untuk bisnis Anda.",
+          "productId": 15
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda sedang mencari furnitur untuk bisnis Anda di Cikarang Bekasi, jangan ragu untuk menghubungi Mangala Living. Kami siap membantu Anda memilih furnitur yang tepat dan berkualitas untuk meningkatkan kenyamanan dan produktivitas di tempat kerja.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Dengan memilih furnitur yang tepat, Anda dapat meningkatkan kenyamanan dan produktivitas di tempat kerja, serta meningkatkan citra bisnis Anda di mata pelanggan. Mangala Living siap membantu Anda memilih furnitur yang tepat untuk bisnis Anda di Cikarang Bekasi."
     }
   }
 ]
