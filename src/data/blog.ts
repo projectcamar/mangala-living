@@ -5373,7 +5373,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxkZXNhaW4lMjBpbnRlcmlvciUyMGthZmUlMjBpbmR1c3RyaWFsfGVufDB8MHx8fDE3ODAzODQyNDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-06-02 07:10",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Memilih furnitur yang tepat sangat penting untuk menciptakan suasana yang nyaman dan menarik di cafe, restoran, atau hotel. Dengan lebih dari 25 tahun pengalaman, Mangala Living telah melayani lebih dari 1000 proyek dan memiliki workshop di Bekasi yang siap memenuhi kebutuhan furnitur industrial Anda. <br> Dalam artikel ini, kita akan membahas beberapa tips memilih furnitur industrial yang tepat untuk bisnis Anda.",
       "keyPoints": [
@@ -5417,7 +5417,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY2FmZSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8MHx8fDE3ODAzODQyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-06-02 07:10",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Membuat desain interior cafe yang nyaman dan menarik sangat penting untuk meningkatkan pengalaman pelanggan. Dengan lebih dari 25 tahun pengalaman, Mangala Living telah membantu lebih dari 1000 proyek desain interior cafe di Indonesia. Berikut beberapa tips yang dapat membantu Anda membuat desain interior cafe yang ideal.",
       "keyPoints": [
@@ -5461,7 +5461,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1727359202583-b393b3245a8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwc3VwcGxpZXIlMjBpbmRvbmVzaWF8ZW58MHwwfHx8MTc4MDM4NDI4OXww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-06-02 07:11",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Dalam mencari supplier terbaik untuk kebutuhan furniture industri, ada beberapa hal yang perlu dipertimbangkan. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, dapat menjadi pilihan yang tepat. <br> Dalam artikel ini, kita akan membahas beberapa tips dan trik dalam mencari supplier terbaik untuk kebutuhan furniture industri.",
       "keyPoints": [
@@ -5505,7 +5505,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1538334421852-687c439c92f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMGRlc2lnbnxlbnwwfDB8fHwxNzgwMzg0MzA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-06-02 07:11",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Mangala Living telah menjadi penyedia solusi utama untuk furniture industri selama lebih dari 25 tahun. Dengan pengalaman lebih dari 1000 proyek dan workshop di Bekasi, kami telah membantu berbagai bisnis seperti cafe, restoran, hotel, dan kantor untuk menciptakan ruang yang nyaman dan fungsional. <br> Dalam artikel ini, kami akan membahas tentang bagaimana Mangala Living dapat menjadi solusi utama untuk kebutuhan furniture industri Anda.",
       "keyPoints": [
@@ -5549,7 +5549,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1599477691241-6c27815449fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaSUyMGRpJTIwYmVrYXNpfGVufDB8MHx8fDE3ODAzODQzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-06-02 07:11",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Bekasi merupakan salah satu kota di Jawa Barat yang telah berkembang pesat dalam beberapa dekade terakhir. Dengan kemajuan industri dan infrastruktur, Bekasi menjadi salah satu kota yang menarik untuk dikunjungi dan ditinggali. Mangala Living, sebagai produsen furnitur industri yang berpengalaman lebih dari 25 tahun, memiliki workshop di Bekasi dan telah melayani lebih dari 1000 proyek di seluruh Indonesia.",
       "keyPoints": [
@@ -5593,7 +5593,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1565610222536-ef125c59da2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZnVybml0dXJlJTIwc3VwcGxpZXIlMjB3YXJlaG91c2V8ZW58MHwwfHx8MTc4MDM4NDM0NXww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-06-02 07:12",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Dalam membangun sebuah bisnis, seperti cafe, restaurant, atau hotel, memilih supplier furniture yang tepat sangat penting. Mangala Living, dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek, memahami betapa pentingnya memilih supplier yang dapat memenuhi kebutuhan dan anggaran Anda. Berikut beberapa tips untuk memilih supplier furniture yang tepat untuk bisnis Anda.",
       "keyPoints": [
@@ -5639,7 +5639,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1538334421852-687c439c92f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVzdGF1cmFudCUyMGRlc2lnbnxlbnwwfDB8fHwxNzgwMzg0MzA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-06-02 07:12",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Mangala Living merupakan supplier furniture yang telah berpengalaman lebih dari 25 tahun dalam menyediakan solusi furniture untuk berbagai kebutuhan, mulai dari cafe, restaurant, hotel, hingga kantor. Dengan workshop yang terletak di Bekasi, kami dapat memastikan kualitas dan ketepatan waktu dalam setiap proyek. Dalam artikel ini, kita akan membahas tentang tips dan trik dalam memilih furniture yang tepat untuk bisnis Anda.",
       "keyPoints": [
@@ -5672,6 +5672,92 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Dengan memilih furniture yang tepat dan mengoptimalkan ruang, Anda dapat meningkatkan kenyamanan dan produktivitas di tempat kerja atau bisnis. Mangala Living dapat membantu Anda dalam mencapai tujuan tersebut dengan pengalaman lebih dari 25 tahun dan lebih dari 1000 proyek yang telah diselesaikan. <br> Jangan ragu untuk menghubungi kami untuk mendapatkan solusi furniture yang tepat untuk bisnis Anda."
+    }
+  },
+  {
+    "id": 347,
+    "slug": "jasa-desain-furnitur-industrial",
+    "title": "Jasa Desain Furnitur",
+    "category": "Tips and Trick",
+    "excerpt": "Mangala Living menawarkan jasa desain furnitur industrial untuk cafe, restoran, hotel, dan kantor",
+    "image": "https://images.unsplash.com/photo-1713862163481-5d2ff5d91421?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxkZXNhaW4lMjBmdXJuaXR1ciUyMGluZHVzdHJpYWwlMjB1bnR1ayUyMGthZmV8ZW58MHwwfHx8MTc4MDM4NDUyMXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-06-02 07:15",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Mangala Living telah berpengalaman lebih dari 25 tahun dalam menyediakan jasa desain furnitur industrial untuk berbagai jenis bisnis, seperti cafe, restoran, hotel, dan kantor. Dengan pengalaman yang luas dan workshop yang terletak di Bekasi, kami dapat membantu Anda menciptakan ruang yang nyaman dan fungsional.",
+      "keyPoints": [
+        "Desain furnitur industrial yang unik dan fungsional",
+        "Bahan-bahan yang berkualitas dan tahan lama",
+        "Harga yang kompetitif dan sesuai dengan budget Anda"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Desain Furnitur Industrial Penting?",
+          "content": "Desain furnitur industrial yang baik dapat meningkatkan kenyamanan dan produktivitas pengguna ruang. Selain itu, desain yang unik dan menarik juga dapat membantu meningkatkan citra bisnis Anda. Mangala Living dapat membantu Anda menciptakan desain furnitur industrial yang sesuai dengan kebutuhan dan budget Anda.",
+          "imageSearchQuery": "desain interior kafe industrial",
+          "image": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxkZXNhaW4lMjBpbnRlcmlvciUyMGthZmUlMjBpbmR1c3RyaWFsfGVufDB8MHx8fDE3ODAzODQyNDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageAlt": "desain interior kafe industrial"
+        },
+        {
+          "heading": "Tips dan Trik dalam Memilih Jasa Desain Furnitur",
+          "content": "Dalam memilih jasa desain furnitur, ada beberapa hal yang perlu Anda pertimbangkan. Pertama, pastikan Anda memilih jasa desain furnitur yang berpengalaman dan memiliki portofolio yang baik. Kedua, pastikan Anda memilih jasa desain furnitur yang menggunakan bahan-bahan yang berkualitas dan tahan lama. Ketiga, pastikan Anda memilih jasa desain furnitur yang menawarkan harga yang kompetitif dan sesuai dengan budget Anda."
+        },
+        {
+          "heading": "Solusi Mangala Living",
+          "content": "Mangala Living menawarkan solusi desain furnitur industrial yang komprehensif dan sesuai dengan kebutuhan Anda. Kami memiliki tim desain yang berpengalaman dan workshop yang terletak di Bekasi, sehingga kami dapat membantu Anda menciptakan desain furnitur industrial yang unik dan fungsional. Kami juga menawarkan harga yang kompetitif dan sesuai dengan budget Anda. <strong>Produk kami</strong> seperti <em>Meja Kerja Industrial</em> (id: 15) dapat membantu Anda menciptakan ruang kerja yang nyaman dan produktif.",
+          "productId": 15
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda ingin menciptakan desain furnitur industrial yang unik dan fungsional, maka Mangala Living adalah pilihan yang tepat. Kami memiliki pengalaman yang luas dan tim desain yang berpengalaman, sehingga kami dapat membantu Anda menciptakan desain furnitur industrial yang sesuai dengan kebutuhan dan budget Anda. <br> Hubungi kami sekarang juga untuk mendapatkan informasi lebih lanjut tentang jasa desain furnitur industrial kami.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Dengan demikian, Mangala Living dapat membantu Anda menciptakan desain furnitur industrial yang unik dan fungsional. Kami memiliki pengalaman yang luas, tim desain yang berpengalaman, dan workshop yang terletak di Bekasi, sehingga kami dapat membantu Anda menciptakan desain furnitur industrial yang sesuai dengan kebutuhan dan budget Anda. Hubungi kami sekarang juga untuk mendapatkan informasi lebih lanjut tentang jasa desain furnitur industrial kami."
+    }
+  },
+  {
+    "id": 348,
+    "slug": "jasa-bekasi-tips-dan-trik",
+    "title": "Tips Jasa Bekasi",
+    "category": "Tips and Trick",
+    "excerpt": "Temukan tips dan trik untuk memilih jasa Bekasi yang tepat untuk bisnis Anda",
+    "image": "https://images.unsplash.com/photo-1738835935259-28ce2c9f8c1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwd29ya3Nob3AlMjBpbiUyMEJla2FzaXxlbnwwfDB8fHwxNzgwMzg0NTM2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-06-02 07:15",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Bekasi adalah salah satu kota industri terbesar di Indonesia, dan banyak perusahaan yang mencari jasa di daerah ini. Namun, memilih jasa yang tepat bisa menjadi tantangan. Dalam artikel ini, kita akan membahas beberapa tips dan trik untuk memilih jasa Bekasi yang tepat untuk bisnis Anda. Dengan lebih dari 25 tahun pengalaman, Mangala Living telah mengerjakan lebih dari 1000 proyek dan memiliki workshop di Bekasi.",
+      "keyPoints": [
+        "Memilih jasa yang memiliki pengalaman",
+        "Mengerti kebutuhan bisnis Anda",
+        "Mencari referensi dari pelanggan lain"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Jasa Bekasi Penting?",
+          "content": "Jasa Bekasi sangat penting karena kota ini merupakan pusat industri di Indonesia. Banyak perusahaan yang membutuhkan jasa untuk mendukung operasional bisnis mereka. Dengan memilih jasa yang tepat, Anda dapat meningkatkan efisiensi dan produktivitas bisnis Anda. <br> Mangala Living telah bekerja sama dengan banyak perusahaan di Bekasi, termasuk cafe, restaurant, hotel, dan kantor.",
+          "imageSearchQuery": "industrial area in Bekasi"
+        },
+        {
+          "heading": "Tips Memilih Jasa Bekasi",
+          "content": "Berikut beberapa tips untuk memilih jasa Bekasi yang tepat: <strong>1. Memilih jasa yang memiliki pengalaman</strong>, <strong>2. Mengerti kebutuhan bisnis Anda</strong>, dan <strong>3. Mencari referensi dari pelanggan lain</strong>. Dengan melakukan riset dan membandingkan beberapa jasa, Anda dapat menemukan jasa yang paling sesuai dengan kebutuhan bisnis Anda."
+        },
+        {
+          "heading": "Solusi Mangala Living",
+          "content": "Mangala Living menawarkan solusi untuk bisnis Anda dengan menyediakan jasa desain dan manufaktur furniture industri. Kami memiliki workshop di Bekasi dan telah mengerjakan lebih dari 1000 proyek. Dengan pengalaman lebih dari 25 tahun, kami dapat membantu Anda menciptakan ruang kerja yang efektif dan efisien.",
+          "productId": 15
+        },
+        {
+          "heading": "Langkah Selanjutnya",
+          "content": "Jika Anda ingin mempelajari lebih lanjut tentang jasa Bekasi dan solusi Mangala Living, silakan kunjungi website kami atau hubungi kami langsung. Kami siap membantu Anda menciptakan ruang kerja yang ideal untuk bisnis Anda.",
+          "productId": 4
+        }
+      ],
+      "conclusion": "Dengan memilih jasa Bekasi yang tepat, Anda dapat meningkatkan efisiensi dan produktivitas bisnis Anda. Mangala Living siap membantu Anda menciptakan ruang kerja yang efektif dan efisien dengan menyediakan jasa desain dan manufaktur furniture industri. <em>Kontak kami sekarang juga</em> untuk mempelajari lebih lanjut tentang solusi kami."
     }
   }
 ]
