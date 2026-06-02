@@ -5683,7 +5683,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1713862163481-5d2ff5d91421?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxkZXNhaW4lMjBmdXJuaXR1ciUyMGluZHVzdHJpYWwlMjB1bnR1ayUyMGthZmV8ZW58MHwwfHx8MTc4MDM4NDUyMXww&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-06-02 07:15",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Mangala Living telah berpengalaman lebih dari 25 tahun dalam menyediakan jasa desain furnitur industrial untuk berbagai jenis bisnis, seperti cafe, restoran, hotel, dan kantor. Dengan pengalaman yang luas dan workshop yang terletak di Bekasi, kami dapat membantu Anda menciptakan ruang yang nyaman dan fungsional.",
       "keyPoints": [
@@ -5727,7 +5727,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "image": "https://images.unsplash.com/photo-1738835935259-28ce2c9f8c1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwd29ya3Nob3AlMjBpbiUyMEJla2FzaXxlbnwwfDB8fHwxNzgwMzg0NTM2fDA&ixlib=rb-4.1.0&q=80&w=1080",
     "date": "2026-06-02 07:15",
     "author": "Helmi Ramdan",
-    "status": "draft",
+    "status": "synced",
     "customContent": {
       "introduction": "Bekasi adalah salah satu kota industri terbesar di Indonesia, dan banyak perusahaan yang mencari jasa di daerah ini. Namun, memilih jasa yang tepat bisa menjadi tantangan. Dalam artikel ini, kita akan membahas beberapa tips dan trik untuk memilih jasa Bekasi yang tepat untuk bisnis Anda. Dengan lebih dari 25 tahun pengalaman, Mangala Living telah mengerjakan lebih dari 1000 proyek dan memiliki workshop di Bekasi.",
       "keyPoints": [
@@ -5758,6 +5758,48 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       "conclusion": "Dengan memilih jasa Bekasi yang tepat, Anda dapat meningkatkan efisiensi dan produktivitas bisnis Anda. Mangala Living siap membantu Anda menciptakan ruang kerja yang efektif dan efisien dengan menyediakan jasa desain dan manufaktur furniture industri. <em>Kontak kami sekarang juga</em> untuk mempelajari lebih lanjut tentang solusi kami."
+    }
+  },
+  {
+    "id": 349,
+    "slug": "peraturan-ekspor-furnitur-terbaru-2026",
+    "title": "Ekspor Furnitur 2026",
+    "category": "Tips and Trick",
+    "excerpt": "Peraturan ekspor furnitur terbaru 2026 untuk bisnis Anda",
+    "image": "https://images.unsplash.com/photo-1739863306341-1737ff4614b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzU2ODd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaSUyMGZ1cm5pdHVyJTIwZWtzcG9yJTIwaW1wb3J8ZW58MHwwfHx8MTc4MDM4NDU2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    "date": "2026-06-02 07:15",
+    "author": "Helmi Ramdan",
+    "status": "draft",
+    "customContent": {
+      "introduction": "Bagi Anda yang bergerak di bidang industri furnitur, memahami peraturan ekspor furnitur terbaru 2026 sangat penting. Dengan lebih dari 25 tahun pengalaman, Mangala Living telah melayani lebih dari 1000 proyek dan memahami betapa pentingnya mematuhi peraturan ekspor. Dalam artikel ini, kami akan membahas peraturan ekspor furnitur terbaru 2026 dan memberikan tips praktis untuk bisnis Anda.",
+      "keyPoints": [
+        "Peraturan ekspor furnitur terbaru 2026",
+        "Tips praktis untuk mematuhi peraturan",
+        "Mangala Living sebagai mitra bisnis Anda"
+      ],
+      "language": "id",
+      "sections": [
+        {
+          "heading": "Mengapa Peraturan Ekspor Furnitur Penting?",
+          "content": "Peraturan ekspor furnitur penting karena dapat mempengaruhi kelancaran bisnis Anda. Dengan mematuhi peraturan, Anda dapat menghindari risiko penolakan ekspor dan kerugian finansial. <br> Mangala Living, dengan workshop di Bekasi, telah berpengalaman dalam melayani kebutuhan furnitur industri untuk cafe, restaurant, hotel, dan kantor. Kami memahami bahwa mematuhi peraturan ekspor furnitur adalah kunci untuk kesuksesan bisnis Anda.",
+          "imageSearchQuery": "industri furnitur bekasi"
+        },
+        {
+          "heading": "Peraturan Ekspor Furnitur Terbaru 2026",
+          "content": "Peraturan ekspor furnitur terbaru 2026 mencakup beberapa ketentuan baru, seperti <strong>penggunaan bahan ramah lingkungan</strong> dan <em>standar keamanan produk</em>. Pastikan Anda memahami peraturan ini dengan baik untuk menghindari kesalahan. Mangala Living siap membantu Anda memahami peraturan ekspor furnitur terbaru 2026 dan memberikan saran praktis untuk bisnis Anda."
+        },
+        {
+          "heading": "Tips Praktis untuk Mematuhi Peraturan Ekspor Furnitur",
+          "content": "Berikut beberapa tips praktis untuk mematuhi peraturan ekspor furnitur: <br> 1. Pastikan Anda menggunakan bahan ramah lingkungan dalam produksi furnitur. <br> 2. Periksa standar keamanan produk sebelum ekspor. <br> 3. Konsultasikan dengan mitra bisnis yang berpengalaman, seperti Mangala Living. Kami menawarkan <strong>desain kustom</strong> dan <em>produksi furnitur</em> yang memenuhi standar ekspor. Dengan produk seperti <strong>Meja Kerja Industrial (ID: 15)</strong>, Anda dapat memenuhi kebutuhan furnitur industri dengan mudah.",
+          "productId": 15
+        },
+        {
+          "heading": "Mangala Living sebagai Mitra Bisnis Anda",
+          "content": "Mangala Living siap membantu Anda memahami peraturan ekspor furnitur terbaru 2026 dan memberikan saran praktis untuk bisnis Anda. Dengan lebih dari 25 tahun pengalaman dan lebih dari 1000 proyek yang telah diselesaikan, kami memahami betapa pentingnya mematuhi peraturan ekspor. <br> Kami menawarkan <strong>desain kustom</strong> dan <em>produksi furnitur</em> yang memenuhi standar ekspor, seperti <strong>Dining Set dengan 2 Chairs (ID: 5)</strong>. Dengan Mangala Living sebagai mitra bisnis Anda, Anda dapat fokus pada kesuksesan bisnis Anda.",
+          "productId": 5
+        }
+      ],
+      "conclusion": "Dengan memahami peraturan ekspor furnitur terbaru 2026 dan mematuhi tips praktis, Anda dapat menghindari risiko penolakan ekspor dan kerugian finansial. Mangala Living siap membantu Anda memahami peraturan ekspor furnitur terbaru 2026 dan memberikan saran praktis untuk bisnis Anda. <br> Hubungi kami hari ini untuk memulai kesuksesan bisnis Anda!"
     }
   }
 ]
