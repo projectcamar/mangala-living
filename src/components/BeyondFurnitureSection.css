@@ -1,0 +1,258 @@
+/* Beyond Furniture Section — Homepage */
+
+.beyond-section {
+  padding: 5.5rem 5%;
+  background: #f5f3ef;
+  position: relative;
+  overflow: hidden;
+}
+
+.beyond-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #d4511e, #1a1a1a, #d4511e);
+}
+
+.beyond-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* ── SECTION HEADER ──────────────────────────────────────────────────────── */
+.beyond-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.beyond-label {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d4511e;
+  margin-bottom: 0.6rem;
+}
+
+.beyond-header h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.beyond-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #d4511e;
+  text-decoration: none;
+  border-bottom: 2px solid #d4511e;
+  padding-bottom: 0.1rem;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+  align-self: flex-end;
+  margin-bottom: 0.15rem;
+}
+
+.beyond-view-all:hover { opacity: 0.75; }
+
+.beyond-desc {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.7;
+  max-width: 760px;
+  margin: 0 0 2.5rem;
+}
+
+/* ── CARDS GRID ──────────────────────────────────────────────────────────── */
+.beyond-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.beyond-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e8e2d8;
+  padding: 1.4rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.beyond-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #d4511e;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.25s ease;
+}
+
+.beyond-card:hover {
+  border-color: #d4511e;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.09);
+  transform: translateY(-3px);
+}
+
+.beyond-card:hover::before {
+  transform: scaleY(1);
+}
+
+.beyond-card-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.65rem;
+  display: block;
+  line-height: 1;
+}
+
+.beyond-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.4rem;
+}
+
+.beyond-card p {
+  font-size: 0.83rem;
+  color: #777;
+  margin: 0;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.beyond-card-arrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #d4511e;
+  margin-top: 0.75rem;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.beyond-card:hover .beyond-card-arrow {
+  transform: translateX(4px);
+}
+
+/* ── BOTTOM CTA ──────────────────────────────────────────────────────────── */
+.beyond-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: #1a1a1a;
+  padding: 1.75rem 2rem;
+}
+
+.beyond-cta-text h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 0.2rem;
+}
+
+.beyond-cta-text p {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.65);
+  margin: 0;
+}
+
+.beyond-cta-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.beyond-btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.7rem 1.3rem;
+  background: #25D366;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 3px 10px rgba(37,211,102,0.3);
+}
+
+.beyond-btn-wa:hover {
+  background: #20ba5a;
+  transform: translateY(-1px);
+}
+
+.beyond-btn-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.7rem 1.3rem;
+  background: transparent;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-decoration: none;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  transition: all 0.2s;
+}
+
+.beyond-btn-all:hover {
+  border-color: #d4511e;
+  background: rgba(212,81,30,0.12);
+}
+
+/* ── RESPONSIVE ──────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .beyond-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .beyond-section {
+    padding: 4rem 5%;
+  }
+
+  .beyond-header {
+    align-items: flex-start;
+  }
+
+  .beyond-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+  }
+
+  .beyond-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 380px) {
+  .beyond-grid {
+    grid-template-columns: 1fr;
+  }
+}

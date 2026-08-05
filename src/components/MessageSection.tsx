@@ -7,8 +7,20 @@ interface MessageSectionProps {
   language?: 'en' | 'id' | 'ar' | 'zh' | 'ja' | 'es' | 'fr' | 'ko'
 }
 
+interface MessageTranslation {
+  title: string
+  subtitle1: string
+  paragraph1: string
+  subtitle2: string
+  paragraph2: string
+  subtitle3: string
+  paragraph3: string
+  subtitle4?: string
+  paragraph4?: string
+}
+
 const MessageSection: React.FC<MessageSectionProps> = ({ isIndonesian = false, language = 'en' }) => {
-  const getTranslations = () => {
+  const getTranslations = (): MessageTranslation => {
     switch (language) {
       case 'id':
         return {
@@ -18,7 +30,9 @@ const MessageSection: React.FC<MessageSectionProps> = ({ isIndonesian = false, l
           subtitle2: 'Bar Set, Lounge Set, Sofa Bench & Storage untuk Ruang Komersial',
           paragraph2: 'Kami mengkhususkan diri dalam menciptakan bar set outdoor, lounge set, sofa bench, storage rack dan furniture industrial lainnya yang tahan lama untuk berbagai ruang komersial. Dari coffee shop trendy dan restoran ramai hingga kantor modern dan hotel butik yang elegan, koleksi new arrivals kami memberikan sentuhan yang sempurna untuk menciptakan atmosfer unik. Kami sepenuhnya menerima permintaan custom dan bekerja sama dengan klien untuk merancang produk yang sesuai dengan identitas merek unik mereka dan kebutuhan fungsional mereka. Setiap produk dirancang dengan mempertimbangkan kenyamanan, estetika, dan daya tahan jangka panjang.',
           subtitle3: 'Workshop Bekasi dengan Standar Manufaktur Terbaik',
-          paragraph3: 'Workshop kami yang berlokasi strategis di Bekasi dilengkapi dengan peralatan manufaktur canggih dan dikelola oleh tim pengrajin berpengalaman yang sangat bangga dengan setiap detail dan finishing produk. Setiap produk melalui proses kontrol kualitas yang ketat untuk memastikan memenuhi standar tertinggi kami dalam hal daya tahan dan daya tarik visual. Baik Anda membutuhkan paket furniture lengkap untuk coffee shop baru atau produk custom untuk melengkapi ruang yang sudah ada, kami siap membantu bisnis Anda menonjol dan menciptakan ruang yang berkesan bagi pelanggan Anda.'
+          paragraph3: 'Workshop kami yang berlokasi strategis di Bekasi dilengkapi dengan peralatan manufaktur canggih dan dikelola oleh tim pengrajin berpengalaman yang sangat bangga dengan setiap detail dan finishing produk. Setiap produk melalui proses kontrol kualitas yang ketat untuk memastikan memenuhi standar tertinggi kami dalam hal daya tahan dan daya tarik visual. Baik Anda membutuhkan paket furniture lengkap untuk coffee shop baru atau produk custom untuk melengkapi ruang yang sudah ada, kami siap membantu bisnis Anda menonjol dan menciptakan ruang yang berkesan bagi pelanggan Anda.',
+          subtitle4: 'Fabrikasi Besi Custom & Pekerjaan Baja Arsitektural',
+          paragraph4: 'Selain manufaktur furniture, Mangala Living juga melayani jasa fabrikasi besi custom untuk hunian dan properti komersial di seluruh Indonesia — termasuk pembuatan kanopi besi, teralis jendela, pagar minimalis, pintu pagar sliding/swing, folding gate, railing balkon, railing tangga, tangga besi custom, pergola, hingga rak gudang industrial.'
         }
       case 'ar':
         return {
@@ -88,7 +102,9 @@ const MessageSection: React.FC<MessageSectionProps> = ({ isIndonesian = false, l
           subtitle2: 'Bar Set, Lounge Set, Sofa Bench & Storage for Commercial Spaces',
           paragraph2: 'We specialize in creating bar set outdoor, lounge set, sofa bench, storage rack and other durable industrial furniture for various commercial spaces. From trendy coffee shops and bustling restaurants to modern offices and elegant boutique hotels, our new arrivals collection sets the perfect tone to create a unique atmosphere. We fully accept custom requests and work collaboratively with our clients to design pieces that match their unique brand identity and functional requirements. Each product is designed with consideration for comfort, aesthetics, and long-term durability.',
           subtitle3: 'Bekasi Workshop with Best Manufacturing Standards',
-          paragraph3: 'Our strategically located workshop in Bekasi is equipped with state-of-the-art manufacturing equipment and staffed by a team of experienced craftsmen who take immense pride in every detail and finish of the product. Each piece undergoes rigorous quality control processes to ensure it meets our highest standards of durability and visual appeal. Whether you need a complete furniture package for a new coffee shop or custom pieces to complement your existing space, we\'re here to help your business stand out and create a memorable space for your customers.'
+          paragraph3: 'Our strategically located workshop in Bekasi is equipped with state-of-the-art manufacturing equipment and staffed by a team of experienced craftsmen who take immense pride in every detail and finish of the product. Each piece undergoes rigorous quality control processes to ensure it meets our highest standards of durability and visual appeal. Whether you need a complete furniture package for a new coffee shop or custom pieces to complement your existing space, we\'re here to help your business stand out and create a memorable space for your customers.',
+          subtitle4: 'Custom Steel Fabrication & Architectural Metalworks',
+          paragraph4: 'Beyond furniture manufacturing, Mangala Living also specializes in custom steel fabrication for residential and commercial properties throughout Indonesia — including steel canopies, window grilles, minimalist gates, sliding/swing fences, folding gates, balcony railings, stair railings, custom steel staircases, pergolas, and heavy-duty industrial warehouse racks.'
         }
     }
   }
@@ -118,6 +134,15 @@ const MessageSection: React.FC<MessageSectionProps> = ({ isIndonesian = false, l
                 <p className="about-message-paragraph">
                   {t.paragraph3}
                 </p>
+
+                {t.subtitle4 && (
+                  <>
+                    <h3 className="about-message-subtitle">{t.subtitle4}</h3>
+                    <p className="about-message-paragraph">
+                      {t.paragraph4}
+                    </p>
+                  </>
+                )}
               </>
             </div>
           </div>

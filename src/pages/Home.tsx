@@ -11,6 +11,7 @@ import CategoriesSection from '../components/CategoriesSection'
 import BestSellersSection from '../components/BestSellersSection'
 import OurProductsSection from '../components/OurProductsSection'
 import MessageSection from '../components/MessageSection'
+import BeyondFurnitureSection from '../components/BeyondFurnitureSection'
 import Footer from '../components/Footer'
 import AISearchOptimizedContent from '../components/AISearchOptimizedContent'
 import AISearchFeatures from '../components/AISearchFeatures'
@@ -352,6 +353,7 @@ const Home: React.FC = () => {
       <BestSellersSection isIndonesian={isIndonesian} language={language} />
       <OurProductsSection isIndonesian={isIndonesian} language={language} />
       <MessageSection isIndonesian={isIndonesian} language={language} />
+      <BeyondFurnitureSection isIndonesian={isIndonesian} language={language} />
       <Footer isIndonesian={isIndonesian} language={language} />
 
       {/* AI Search Optimized Content */}

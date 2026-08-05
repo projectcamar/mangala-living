@@ -17,6 +17,7 @@ interface HeaderProps {
 const translations = {
   en: {
     about: 'About',
+    customSteelWorks: 'Custom Steel Works',
     blog: 'Blog',
     contactUs: 'Contact Us',
     search: 'Search',
@@ -38,6 +39,7 @@ const translations = {
   },
   id: {
     about: 'Tentang',
+    customSteelWorks: 'Custom Steel Works',
     blog: 'Blog',
     contactUs: 'Hubungi Kami',
     search: 'Cari',
@@ -59,6 +61,7 @@ const translations = {
   },
   ar: {
     about: 'حول',
+    customSteelWorks: 'أعمال الحديد المخصصة',
     blog: 'مدونة',
     contactUs: 'اتصل بنا',
     search: 'بحث',
@@ -80,6 +83,7 @@ const translations = {
   },
   zh: {
     about: '关于',
+    customSteelWorks: '定制钢铁工程',
     blog: '博客',
     contactUs: '联系我们',
     search: '搜索',
@@ -101,6 +105,7 @@ const translations = {
   },
   ja: {
     about: '会社概要',
+    customSteelWorks: 'カスタムスチール',
     blog: 'ブログ',
     contactUs: 'お問い合わせ',
     search: '検索',
@@ -122,6 +127,7 @@ const translations = {
   },
   es: {
     about: 'Acerca de',
+    customSteelWorks: 'Trabajos en Acero',
     blog: 'Blog',
     contactUs: 'Contáctenos',
     search: 'Buscar',
@@ -143,6 +149,7 @@ const translations = {
   },
   fr: {
     about: 'À propos',
+    customSteelWorks: 'Travaux en Acier',
     blog: 'Blog',
     contactUs: 'Contactez-nous',
     search: 'Rechercher',
@@ -164,6 +171,7 @@ const translations = {
   },
   ko: {
     about: '회사 소개',
+    customSteelWorks: '맞춤형 철제 제작',
     blog: '블로그',
     contactUs: '문의하기',
     search: '검색',
@@ -405,6 +413,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
           <div className="header-top-content">
             <nav className="header-top-nav">
               <Link to="/about" className="header-top-link">{t.about}</Link>
+              <Link to="/services/custom-steel-works" className="header-top-link">{t.customSteelWorks}</Link>
               <Link to="/blog" className="header-top-link">{t.blog}</Link>
               <Link to="/contact-us" className="header-top-link">{t.contactUs}</Link>
             </nav>

@@ -271,6 +271,25 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
             </ul>
           </div>
 
+          {/* Steel Works */}
+          <div className="footer-column">
+            <h4>{language === 'id' ? 'Steel Works' : language === 'ar' ? 'أعمال الحديد' : language === 'zh' ? '钢铁工程' : language === 'ja' ? 'スチールワークス' : language === 'es' ? 'Trabajos de Acero' : language === 'fr' ? 'Travaux d\'Acier' : language === 'ko' ? '철제 제작' : 'Steel Works'}</h4>
+            <ul className="footer-links">
+              <li><Link to="/services/custom-steel-works" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Semua Layanan' : 'All Services'}</Link></li>
+              <li><Link to="/services/kanopi" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Kanopi Besi' : 'Steel Canopy'}</Link></li>
+              <li><Link to="/services/teralis" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Teralis Jendela & Pintu' : 'Window Grilles'}</Link></li>
+              <li><Link to="/services/pagar-besi-minimalis" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Pagar Besi Minimalis' : 'Steel Fence'}</Link></li>
+              <li><Link to="/services/pintu-pagar" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Pintu Pagar (Sliding/Swing)' : 'Steel Gate'}</Link></li>
+              <li><Link to="/services/folding-gate" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Folding Gate</Link></li>
+              <li><Link to="/services/railing-balkon" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Railing Balkon' : 'Balcony Railing'}</Link></li>
+              <li><Link to="/services/railing-tangga" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Railing Tangga' : 'Stair Railing'}</Link></li>
+              <li><Link to="/services/tangga-besi" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Tangga Besi Custom' : 'Steel Staircase'}</Link></li>
+              <li><Link to="/services/pergola" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Pergola Besi' : 'Steel Pergola'}</Link></li>
+              <li><Link to="/services/besi-tempa" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Besi Tempa Klasik' : 'Wrought Iron'}</Link></li>
+              <li><Link to="/services/jasa-las-custom" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Jasa Las Custom' : 'Welding Service'}</Link></li>
+            </ul>
+          </div>
+
           {/* Subscribe */}
           <div className="footer-column">
             <h4>{language === 'id' ? "Berlangganan" : language === 'ar' ? "اشترك" : language === 'zh' ? "订阅" : language === 'ja' ? "登録" : language === 'es' ? "Suscríbete" : language === 'fr' ? "S'abonner" : language === 'ko' ? "구독" : "Subscribe"}</h4>

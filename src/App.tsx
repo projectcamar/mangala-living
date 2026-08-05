@@ -39,6 +39,10 @@ const AdminLogin = lazy(() => import('./pages/AdminLogin'))
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard'))
 const AdminBlogManager = lazy(() => import('./pages/AdminBlogManager'))
 
+// Custom Steel Works Landing Pages
+const CustomSteelWorks = lazy(() => import('./pages/CustomSteelWorks'))
+const ServiceDetail = lazy(() => import('./pages/ServiceDetail'))
+
 // SEO Landing Pages - Keyword Celah (Anti-Marketplace Strategy)
 const FurnitureBesiCustomBekasi = lazy(() => import('./pages/FurnitureBesiCustomBekasi'))
 // const WorkshopFurnitureBesiBekasi = lazy(() => import('./pages/WorkshopFurnitureBesiBekasi'))
@@ -391,6 +395,18 @@ function App() {
                 <AdminBlogManager />
               </Suspense>
             </ProtectedRoute>
+          } />
+
+          {/* Custom Steel Works Routes */}
+          <Route path="/services/custom-steel-works" element={
+            <Suspense fallback={<Loading />}>
+              <CustomSteelWorks />
+            </Suspense>
+          } />
+          <Route path="/services/:slug" element={
+            <Suspense fallback={<Loading />}>
+              <ServiceDetail />
+            </Suspense>
           } />
 
           {/* SEO Landing Pages - Keyword Celah Strategy */}
