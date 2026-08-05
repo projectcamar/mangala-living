@@ -42,6 +42,7 @@ const AdminBlogManager = lazy(() => import('./pages/AdminBlogManager'))
 // Custom Steel Works Landing Pages
 const CustomSteelWorks = lazy(() => import('./pages/CustomSteelWorks'))
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail'))
+const TagArchive = lazy(() => import('./pages/TagArchive'))
 
 // SEO Landing Pages - Keyword Celah (Anti-Marketplace Strategy)
 const FurnitureBesiCustomBekasi = lazy(() => import('./pages/FurnitureBesiCustomBekasi'))
@@ -406,6 +407,11 @@ function App() {
           <Route path="/services/:slug" element={
             <Suspense fallback={<Loading />}>
               <ServiceDetail />
+            </Suspense>
+          } />
+          <Route path="/tag/:slug" element={
+            <Suspense fallback={<Loading />}>
+              <TagArchive />
             </Suspense>
           } />
 

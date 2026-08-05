@@ -281,12 +281,18 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
               <li><Link to="/services/pagar-besi-minimalis" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Pagar Besi Minimalis' : 'Steel Fence'}</Link></li>
               <li><Link to="/services/pintu-pagar" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Pintu Pagar (Sliding/Swing)' : 'Steel Gate'}</Link></li>
               <li><Link to="/services/folding-gate" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Folding Gate</Link></li>
+              <li><Link to="/services/pintu-henderson" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Pintu Henderson' : 'Henderson Door'}</Link></li>
+              <li><Link to="/services/pintu-kasa-nyamuk" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Pintu Kasa Nyamuk' : 'Expanda Door'}</Link></li>
               <li><Link to="/services/railing-balkon" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Railing Balkon' : 'Balcony Railing'}</Link></li>
               <li><Link to="/services/railing-tangga" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Railing Tangga' : 'Stair Railing'}</Link></li>
               <li><Link to="/services/tangga-besi" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Tangga Besi Custom' : 'Steel Staircase'}</Link></li>
-              <li><Link to="/services/pergola" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Pergola Besi' : 'Steel Pergola'}</Link></li>
-              <li><Link to="/services/besi-tempa" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Besi Tempa Klasik' : 'Wrought Iron'}</Link></li>
-              <li><Link to="/services/jasa-las-custom" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Jasa Las Custom' : 'Welding Service'}</Link></li>
+              <li><Link to="/services/tangga-putar" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Tangga Putar Besi' : 'Spiral Staircase'}</Link></li>
+              <li><Link to="/services/menara-tangki-air" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Menara Tangki Air' : 'Water Tank Tower'}</Link></li>
+              <li><Link to="/services/tukang-las-panggilan" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Tukang Las Panggilan' : 'Mobile Welder 24/7'}</Link></li>
+              <li><Link to="/tag/bekasi" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Bengkel Las Bekasi' : 'Bekasi Welder'}</Link></li>
+              <li><Link to="/tag/cibubur" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Bengkel Las Cibubur' : 'Cibubur Welder'}</Link></li>
+              <li><Link to="/tag/cikarang" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Bengkel Las Cikarang' : 'Cikarang Welder'}</Link></li>
+              <li><Link to="/tag/jakarta" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{language === 'id' ? 'Bengkel Las Jakarta' : 'Jakarta Welder'}</Link></li>
             </ul>
           </div>
 
