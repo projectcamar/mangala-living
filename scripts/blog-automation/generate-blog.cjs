@@ -16,8 +16,11 @@ const path = require('path')
 const { execSync } = require('child_process')
 
 // Load environment variables
+// Primary: Mangala keys | Fallback: shared from lasbekasi .env via run.sh
 const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY
 const GROQ_KEY = process.env.GROQ_API_KEY
+const GROQ_FALLBACK = process.env.GROQ_FALLBACK_KEY       // lasbekasi's GROQ key
+const BLUESMINDS_KEY = process.env.BLUESMINDS_API_KEY     // lasbekasi's Bluesminds key
 
 const TOPICS_FILE = path.join(__dirname, 'topics.json')
 const BLOG_DATA_FILE = path.join(__dirname, '../../src/data/blog.ts')
@@ -45,7 +48,7 @@ function slugify(text) {
 }
 
 async function callLLM(prompt) {
-  // Try OpenRouter first (better quality)
+  // 1. OpenRouter — deepseek-r1 free (best quality)
   if (OPENROUTER_KEY) {
     try {
       const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
@@ -64,35 +67,52 @@ async function callLLM(prompt) {
       })
       const data = await res.json()
       if (data.choices && data.choices[0]) {
+        console.log('LLM: OpenRouter OK')
         return data.choices[0].message.content
       }
-    } catch (e) {
-      console.log('OpenRouter failed, trying Groq...')
-    }
+    } catch (e) { console.log('OpenRouter failed, trying next...') }
   }
 
-  // Fallback to Groq
+  // 2. Groq — Mangala primary key
   if (GROQ_KEY) {
-    const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${GROQ_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.7,
-        max_tokens: 3000,
-      }),
-    })
-    const data = await res.json()
-    if (data.choices && data.choices[0]) {
-      return data.choices[0].message.content
-    }
+    try {
+      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: { 'Authorization': `Bearer ${GROQ_KEY}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: 'llama-3.3-70b-versatile', messages: [{ role: 'user', content: prompt }], temperature: 0.7, max_tokens: 3000 }),
+      })
+      const data = await res.json()
+      if (data.choices && data.choices[0]) { console.log('LLM: Groq primary OK'); return data.choices[0].message.content }
+    } catch (e) { console.log('Groq primary failed...') }
   }
 
-  throw new Error('No working LLM API key configured in environment variables.')
+  // 3. Groq — lasbekasi fallback key
+  if (GROQ_FALLBACK) {
+    try {
+      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: { 'Authorization': `Bearer ${GROQ_FALLBACK}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: 'llama-3.3-70b-versatile', messages: [{ role: 'user', content: prompt }], temperature: 0.7, max_tokens: 3000 }),
+      })
+      const data = await res.json()
+      if (data.choices && data.choices[0]) { console.log('LLM: Groq fallback OK'); return data.choices[0].message.content }
+    } catch (e) { console.log('Groq fallback failed...') }
+  }
+
+  // 4. Bluesminds — lasbekasi fallback (OpenAI-compatible)
+  if (BLUESMINDS_KEY) {
+    try {
+      const res = await fetch('https://api.bluesminds.com/v1/chat/completions', {
+        method: 'POST',
+        headers: { 'Authorization': `Bearer ${BLUESMINDS_KEY}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: 'gpt-4o-mini', messages: [{ role: 'user', content: prompt }], temperature: 0.7, max_tokens: 3000 }),
+      })
+      const data = await res.json()
+      if (data.choices && data.choices[0]) { console.log('LLM: Bluesminds OK'); return data.choices[0].message.content }
+    } catch (e) { console.log('Bluesminds failed.') }
+  }
+
+  throw new Error('All 4 LLM providers failed. Check API keys in run.sh.')
 }
 
 async function run() {
