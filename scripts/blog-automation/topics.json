@@ -1,77 +1,802 @@
 [
-  { "id": 1,  "topic": "Bengkel Las Bekasi Berpengalaman & Profesional", "category": "Bengkel Las", "keywords": ["bengkel las bekasi", "tukang las bekasi", "jasa las bekasi", "bengkel las terdekat bekasi"] },
-  { "id": 2,  "topic": "Bengkel Las Cikarang Murah & Terpercaya", "category": "Bengkel Las", "keywords": ["bengkel las cikarang", "tukang las cikarang", "jasa las cikarang", "bengkel las terdekat cikarang"] },
-  { "id": 3,  "topic": "Bengkel Las Cibubur Terdekat & Profesional", "category": "Bengkel Las", "keywords": ["bengkel las cibubur", "tukang las cibubur", "jasa las cibubur", "kanopi cibubur"] },
-  { "id": 4,  "topic": "Bengkel Las Cileungsi Terbaik & Berpengalaman", "category": "Bengkel Las", "keywords": ["bengkel las cileungsi", "tukang las cileungsi", "jasa las cileungsi", "kanopi cileungsi"] },
-  { "id": 5,  "topic": "Bengkel Las Jakarta Timur Murah & Berkualitas", "category": "Bengkel Las", "keywords": ["bengkel las jakarta timur", "tukang las jakarta timur", "jasa las jakarta timur", "pagar besi jakarta timur"] },
-  { "id": 6,  "topic": "Tukang Las Bekasi Panggilan 24 Jam", "category": "Bengkel Las", "keywords": ["tukang las panggilan bekasi", "tukang las 24 jam bekasi", "jasa las panggilan bekasi", "servis besi bekasi"] },
-  { "id": 7,  "topic": "Tukang Kanopi Bekasi Murah & Terpercaya", "category": "Kanopi", "keywords": ["tukang kanopi bekasi", "jasa kanopi bekasi", "kanopi besi bekasi", "pasang kanopi bekasi"] },
-  { "id": 8,  "topic": "Tukang Kanopi Cikarang Terdekat & Berpengalaman", "category": "Kanopi", "keywords": ["tukang kanopi cikarang", "jasa kanopi cikarang", "kanopi hollow cikarang", "pasang kanopi cikarang"] },
-  { "id": 9,  "topic": "Tukang Kanopi Cibubur Profesional & Terjangkau", "category": "Kanopi", "keywords": ["tukang kanopi cibubur", "jasa kanopi cibubur", "kanopi baja ringan cibubur", "harga kanopi cibubur"] },
-  { "id": 10, "topic": "Bengkel Las Depok Terdekat & Terpercaya", "category": "Bengkel Las", "keywords": ["bengkel las depok", "tukang las depok", "jasa las depok", "kanopi depok"] },
-  { "id": 11, "topic": "Bengkel Las Bogor Berpengalaman & Murah", "category": "Bengkel Las", "keywords": ["bengkel las bogor", "tukang las bogor", "jasa las bogor", "pagar besi bogor"] },
-  { "id": 12, "topic": "Bengkel Las Tambun Bekasi Profesional", "category": "Bengkel Las", "keywords": ["bengkel las tambun", "tukang las tambun", "jasa las tambun bekasi", "kanopi tambun"] },
-  { "id": 13, "topic": "Bengkel Las Jatiasih Terdekat & Terpercaya", "category": "Bengkel Las", "keywords": ["bengkel las jatiasih", "tukang las jatiasih", "jasa las jatiasih", "kanopi jatiasih"] },
-  { "id": 14, "topic": "Bengkel Las Karawang Murah & Berkualitas", "category": "Bengkel Las", "keywords": ["bengkel las karawang", "tukang las karawang", "jasa las karawang", "pagar besi karawang"] },
-  { "id": 15, "topic": "Bengkel Las Cibitung Bekasi Terdekat", "category": "Bengkel Las", "keywords": ["bengkel las cibitung", "tukang las cibitung", "jasa las cibitung bekasi", "kanopi cibitung"] },
-  { "id": 16, "topic": "Bengkel Las Grand Wisata Bekasi Profesional", "category": "Bengkel Las", "keywords": ["bengkel las grand wisata", "tukang las grand wisata", "jasa las grand wisata bekasi", "kanopi grand wisata"] },
-  { "id": 17, "topic": "Bengkel Las Summarecon Bekasi Terpercaya", "category": "Bengkel Las", "keywords": ["bengkel las summarecon bekasi", "tukang las summarecon", "jasa las summarecon bekasi", "pagar besi summarecon"] },
-  { "id": 18, "topic": "Bengkel Las Harapan Indah Bekasi Terdekat", "category": "Bengkel Las", "keywords": ["bengkel las harapan indah", "tukang las harapan indah", "jasa las harapan indah bekasi", "kanopi harapan indah"] },
-  { "id": 19, "topic": "Bengkel Las Bekasi Timur Murah & Berpengalaman", "category": "Bengkel Las", "keywords": ["bengkel las bekasi timur", "tukang las bekasi timur", "jasa las bekasi timur", "railing bekasi timur"] },
-  { "id": 20, "topic": "Bengkel Las Bekasi Selatan Profesional & Terjangkau", "category": "Bengkel Las", "keywords": ["bengkel las bekasi selatan", "tukang las bekasi selatan", "jasa las bekasi selatan", "kanopi bekasi selatan"] },
-  { "id": 21, "topic": "Bengkel Las Bekasi Utara Terdekat & Terpercaya", "category": "Bengkel Las", "keywords": ["bengkel las bekasi utara", "tukang las bekasi utara", "jasa las bekasi utara", "pagar bekasi utara"] },
-  { "id": 22, "topic": "Bengkel Las Bekasi Barat Murah & Berkualitas", "category": "Bengkel Las", "keywords": ["bengkel las bekasi barat", "tukang las bekasi barat", "jasa las bekasi barat", "teralis bekasi barat"] },
-  { "id": 23, "topic": "Jasa Pagar Besi Bekasi Custom & Murah", "category": "Bengkel Las", "keywords": ["pagar besi bekasi", "jasa pagar bekasi", "harga pagar besi bekasi", "pasang pagar bekasi"] },
-  { "id": 24, "topic": "Jasa Pagar Besi Cikarang Minimalis & Terpercaya", "category": "Bengkel Las", "keywords": ["pagar besi cikarang", "jasa pagar cikarang", "harga pagar besi cikarang", "pasang pagar cikarang"] },
-  { "id": 25, "topic": "Jasa Teralis Jendela Bekasi Anti Maling Murah", "category": "Bengkel Las", "keywords": ["teralis jendela bekasi", "jasa teralis bekasi", "teralis besi bekasi", "harga teralis bekasi"] },
-  { "id": 26, "topic": "Jasa Railing Tangga Bekasi Minimalis Custom", "category": "Bengkel Las", "keywords": ["railing tangga bekasi", "jasa railing bekasi", "railing besi bekasi", "harga railing tangga bekasi"] },
-  { "id": 27, "topic": "Jasa Railing Balkon Bekasi Custom & Murah", "category": "Bengkel Las", "keywords": ["railing balkon bekasi", "jasa railing balkon bekasi", "railing besi balkon bekasi", "harga railing balkon"] },
-  { "id": 28, "topic": "Jasa Folding Gate Bekasi Murah & Berkualitas", "category": "Bengkel Las", "keywords": ["folding gate bekasi", "jasa folding gate bekasi", "pintu lipat bekasi", "harga folding gate bekasi"] },
-  { "id": 29, "topic": "Jasa Pintu Besi Bekasi Custom & Terpercaya", "category": "Bengkel Las", "keywords": ["pintu besi bekasi", "jasa pintu besi bekasi", "pintu garasi bekasi", "harga pintu besi bekasi"] },
-  { "id": 30, "topic": "Jasa Pintu Henderson Bekasi Sliding & Lipat", "category": "Bengkel Las", "keywords": ["pintu henderson bekasi", "jasa pintu henderson bekasi", "pintu garasi sliding bekasi", "harga pintu henderson"] },
-  { "id": 31, "topic": "Jasa Pembuatan Menara Tangki Air Besi Bekasi", "category": "Bengkel Las", "keywords": ["menara tangki air bekasi", "jasa menara toren besi bekasi", "tower air besi bekasi", "harga menara tangki"] },
-  { "id": 32, "topic": "Jasa Tangga Besi Custom Bekasi Minimalis Modern", "category": "Bengkel Las", "keywords": ["tangga besi bekasi", "jasa tangga besi bekasi", "tangga hollow bekasi", "harga tangga besi bekasi"] },
-  { "id": 33, "topic": "Jasa Tangga Putar Besi Bekasi Minimalis Elegan", "category": "Bengkel Las", "keywords": ["tangga putar bekasi", "jasa tangga putar besi bekasi", "spiral staircase bekasi", "harga tangga putar"] },
-  { "id": 34, "topic": "Jasa Kanopi Besi Hollow Bekasi Minimalis 2026", "category": "Kanopi", "keywords": ["kanopi besi hollow bekasi", "kanopi minimalis bekasi", "jasa kanopi hollow bekasi", "kanopi carport bekasi"] },
-  { "id": 35, "topic": "Harga Kanopi Per Meter di Bekasi Terbaru 2026", "category": "Kanopi", "keywords": ["harga kanopi bekasi 2026", "harga kanopi per meter bekasi", "estimasi biaya kanopi bekasi", "kanopi polycarbonate bekasi"] },
-  { "id": 36, "topic": "Bengkel Las Jatibening Bekasi Terdekat", "category": "Bengkel Las", "keywords": ["bengkel las jatibening", "tukang las jatibening", "jasa las jatibening bekasi", "kanopi jatibening"] },
-  { "id": 37, "topic": "Bengkel Las Jatikarya Bekasi Murah & Profesional", "category": "Bengkel Las", "keywords": ["bengkel las jatikarya", "tukang las jatikarya", "jasa las jatikarya", "kanopi jatikarya bekasi"] },
-  { "id": 38, "topic": "Bengkel Las Jatirasa Bekasi Terpercaya", "category": "Bengkel Las", "keywords": ["bengkel las jatirasa", "tukang las jatirasa", "jasa las jatirasa bekasi", "kanopi jatirasa"] },
-  { "id": 39, "topic": "Bengkel Las Pekayon Bekasi Terdekat & Murah", "category": "Bengkel Las", "keywords": ["bengkel las pekayon", "tukang las pekayon", "jasa las pekayon bekasi", "kanopi pekayon bekasi"] },
-  { "id": 40, "topic": "Bengkel Las Kemang Pratama Bekasi Profesional", "category": "Bengkel Las", "keywords": ["bengkel las kemang pratama", "tukang las kemang pratama", "jasa las kemang pratama bekasi", "kanopi kemang pratama"] },
-  { "id": 41, "topic": "Bengkel Las Perwira Bekasi Terdekat & Terjangkau", "category": "Bengkel Las", "keywords": ["bengkel las perwira", "tukang las perwira", "jasa las perwira bekasi", "kanopi perwira bekasi"] },
-  { "id": 42, "topic": "Bengkel Las Pedurenan Bekasi Murah & Berpengalaman", "category": "Bengkel Las", "keywords": ["bengkel las pedurenan", "tukang las pedurenan", "jasa las pedurenan bekasi", "kanopi padurenan"] },
-  { "id": 43, "topic": "Bengkel Las Cibarusah Bekasi Terdekat", "category": "Bengkel Las", "keywords": ["bengkel las cibarusah", "tukang las cibarusah", "jasa las cibarusah bekasi", "kanopi cibarusah"] },
-  { "id": 44, "topic": "Bengkel Las Setia Mekar Tambun Bekasi Profesional", "category": "Bengkel Las", "keywords": ["bengkel las setia mekar", "tukang las setia mekar tambun", "jasa las setia mekar bekasi", "kanopi setia mekar"] },
-  { "id": 45, "topic": "Bengkel Las Perumahan Bekasi Terpercaya & Bergaransi", "category": "Bengkel Las", "keywords": ["bengkel las perumahan bekasi", "tukang las cluster bekasi", "jasa las komplek perumahan", "pagar perumahan bekasi"] },
-  { "id": 46, "topic": "Tukang Las Panggilan Cikarang 24 Jam", "category": "Bengkel Las", "keywords": ["tukang las panggilan cikarang", "tukang las 24 jam cikarang", "jasa las panggilan cikarang", "servis pagar cikarang"] },
-  { "id": 47, "topic": "Jasa Teralis Jendela Cikarang Anti Maling Murah", "category": "Bengkel Las", "keywords": ["teralis jendela cikarang", "jasa teralis cikarang", "teralis besi cikarang", "harga teralis cikarang"] },
-  { "id": 48, "topic": "Jasa Railing Tangga Cikarang Custom Minimalis", "category": "Bengkel Las", "keywords": ["railing tangga cikarang", "jasa railing cikarang", "railing besi cikarang", "harga railing cikarang"] },
-  { "id": 49, "topic": "Jasa Folding Gate Cikarang Murah & Berkualitas", "category": "Bengkel Las", "keywords": ["folding gate cikarang", "jasa folding gate cikarang", "pintu lipat cikarang", "harga folding gate cikarang"] },
-  { "id": 50, "topic": "Jasa Menara Tangki Air Cikarang Besi Custom", "category": "Bengkel Las", "keywords": ["menara tangki air cikarang", "jasa menara toren cikarang", "tower air besi cikarang", "harga menara tangki cikarang"] },
-  { "id": 51, "topic": "Tukang Kanopi Cileungsi Murah & Berpengalaman", "category": "Kanopi", "keywords": ["tukang kanopi cileungsi", "jasa kanopi cileungsi", "kanopi besi cileungsi", "harga kanopi cileungsi"] },
-  { "id": 52, "topic": "Jasa Pagar Besi Cibubur Custom & Murah", "category": "Bengkel Las", "keywords": ["pagar besi cibubur", "jasa pagar cibubur", "harga pagar besi cibubur", "pasang pagar cibubur"] },
-  { "id": 53, "topic": "Jasa Kanopi Polycarbonate Bekasi Harga Terjangkau", "category": "Kanopi", "keywords": ["kanopi polycarbonate bekasi", "jasa kanopi alderon bekasi", "atap polycarbonate bekasi", "tukang kanopi polycarbonate"] },
-  { "id": 54, "topic": "Harga Kanopi Per Meter di Cikarang Terbaru 2026", "category": "Kanopi", "keywords": ["harga kanopi cikarang 2026", "harga kanopi per meter cikarang", "estimasi biaya kanopi cikarang", "pasang kanopi cikarang murah"] },
-  { "id": 55, "topic": "Bengkel Las Jakarta Selatan Terdekat & Profesional", "category": "Bengkel Las", "keywords": ["bengkel las jakarta selatan", "tukang las jakarta selatan", "jasa las jakarta selatan", "kanopi jakarta selatan"] },
-  { "id": 56, "topic": "Jasa Pintu Kasa Nyamuk Besi Bekasi Murah", "category": "Bengkel Las", "keywords": ["pintu kasa nyamuk bekasi", "jasa kasa nyamuk besi bekasi", "expanda door bekasi", "harga pintu kasa nyamuk"] },
-  { "id": 57, "topic": "Jasa Pagar Besi Depok Custom Minimalis Terpercaya", "category": "Bengkel Las", "keywords": ["pagar besi depok", "jasa pagar depok", "tukang pagar depok", "harga pagar besi depok"] },
-  { "id": 58, "topic": "Bengkel Las Setu Cibitung Bekasi Workshop Terpercaya", "category": "Bengkel Las", "keywords": ["bengkel las setu bekasi", "tukang las setu cibitung", "jasa las setu bekasi", "workshop besi setu bekasi"] },
-  { "id": 59, "topic": "Jasa Konstruksi Besi Custom Bekasi untuk Ruko & Kantor", "category": "Bengkel Las", "keywords": ["konstruksi besi bekasi", "jasa fabrikasi besi bekasi", "baja ringan bekasi", "konstruksi baja bekasi"] },
-  { "id": 60, "topic": "Jasa Perbaikan Kanopi Berkarat Bekasi & Cikarang", "category": "Kanopi", "keywords": ["perbaikan kanopi bekasi", "servis kanopi berkarat", "ganti atap kanopi bekasi", "renovasi kanopi cikarang"] },
-  { "id": 61, "topic": "Harga Kanopi Per Meter di Bekasi 2026", "category": "Kanopi", "keywords": ["harga kanopi bekasi", "kanopi besi hollow", "estimasi biaya kanopi", "harga kanopi per meter"] },
-  { "id": 62, "topic": "Perbandingan Kanopi Alderon vs Polycarbonate vs Spandek", "category": "Tips and Trick", "keywords": ["kanopi alderon", "kanopi polycarbonate", "atap kanopi garasi"] },
-  { "id": 63, "topic": "Model Teralis Jendela Minimalis Modern untuk Rumah Type 36 dan 45", "category": "Tips and Trick", "keywords": ["teralis jendela minimalis", "teralis besi hollow", "keamanan rumah"] },
-  { "id": 64, "topic": "Tips Memilih Pagar Besi Minimalis Tahan Karat untuk Rumah", "category": "Tips and Trick", "keywords": ["pagar besi minimalis", "pagar tahan karat", "powder coating pagar"] },
-  { "id": 65, "topic": "Perbedaan Pintu Pagar Sliding dan Swing untuk Garasi Rumah", "category": "Tips and Trick", "keywords": ["pintu pagar sliding", "pintu pagar swing", "garasi mobil"] },
-  { "id": 66, "topic": "Panduan Memilih Folding Gate untuk Toko dan Garasi", "category": "Tips and Trick", "keywords": ["folding gate", "pintu lipat besi", "keamanan toko"] },
-  { "id": 67, "topic": "Desain Railing Balkon Besi Minimalis Kombinasi Kaca Temper", "category": "Tips and Trick", "keywords": ["railing balkon besi", "railing kaca temper", "balkon lantai 2"] },
-  { "id": 68, "topic": "Model Railing Tangga Industrial Modern untuk Rumah dan Cafe", "category": "Tips and Trick", "keywords": ["railing tangga industrial", "handrail besi", "interior industrial"] },
-  { "id": 69, "topic": "Keunggulan Tangga Besi Melayang untuk Hunian Modern", "category": "Tips and Trick", "keywords": ["tangga besi melayang", "cantilever stairs", "tangga besi custom"] },
-  { "id": 70, "topic": "Cara Membuat Pergola Besi Rindang untuk Taman Belakang", "category": "Tips and Trick", "keywords": ["pergola besi", "pergola taman", "tanaman rambat pergola"] },
-  { "id": 71, "topic": "Spesifikasi Rak Gudang Heavy Duty untuk Efisiensi Pabrik", "category": "Tips and Trick", "keywords": ["rak gudang heavy duty", "industrial shelving", "rak penyimpanan pabrik"] },
-  { "id": 72, "topic": "Cara Merawat Kanopi Besi Agar Bebas Karat Hingga Puluhan Tahun", "category": "Tips and Trick", "keywords": ["perawatan kanopi besi", "anti karat besi", "powder coating maintenance"] },
-  { "id": 73, "topic": "Standard Tinggi dan Ketebalan Pagar Besi Minimalis yang Aman", "category": "Tips and Trick", "keywords": ["standar tinggi pagar", "ketebalan hollow pagar", "keamanan rumah"] },
-  { "id": 74, "topic": "Estimasi Biaya Pemasangan Railing Tangga Besi Minimalis per Meter", "category": "Tips and Trick", "keywords": ["harga railing tangga per meter", "biaya handrail besi", "tukang las bekasi"] },
-  { "id": 75, "topic": "Daftar Ukuran Hollow Besi yang Sering Digunakan untuk Kanopi dan Pagar", "category": "Tips and Trick", "keywords": ["ukuran hollow kanopi", "hollow 40x60", "spesifikasi bahan besi"] }
+  {
+    "id": 2,
+    "topic": "Bengkel Las Cikarang Murah & Terpercaya",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las cikarang",
+      "tukang las cikarang",
+      "jasa las cikarang",
+      "bengkel las terdekat cikarang"
+    ]
+  },
+  {
+    "id": 3,
+    "topic": "Bengkel Las Cibubur Terdekat & Profesional",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las cibubur",
+      "tukang las cibubur",
+      "jasa las cibubur",
+      "kanopi cibubur"
+    ]
+  },
+  {
+    "id": 4,
+    "topic": "Bengkel Las Cileungsi Terbaik & Berpengalaman",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las cileungsi",
+      "tukang las cileungsi",
+      "jasa las cileungsi",
+      "kanopi cileungsi"
+    ]
+  },
+  {
+    "id": 5,
+    "topic": "Bengkel Las Jakarta Timur Murah & Berkualitas",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las jakarta timur",
+      "tukang las jakarta timur",
+      "jasa las jakarta timur",
+      "pagar besi jakarta timur"
+    ]
+  },
+  {
+    "id": 6,
+    "topic": "Tukang Las Bekasi Panggilan 24 Jam",
+    "category": "Bengkel Las",
+    "keywords": [
+      "tukang las panggilan bekasi",
+      "tukang las 24 jam bekasi",
+      "jasa las panggilan bekasi",
+      "servis besi bekasi"
+    ]
+  },
+  {
+    "id": 7,
+    "topic": "Tukang Kanopi Bekasi Murah & Terpercaya",
+    "category": "Kanopi",
+    "keywords": [
+      "tukang kanopi bekasi",
+      "jasa kanopi bekasi",
+      "kanopi besi bekasi",
+      "pasang kanopi bekasi"
+    ]
+  },
+  {
+    "id": 8,
+    "topic": "Tukang Kanopi Cikarang Terdekat & Berpengalaman",
+    "category": "Kanopi",
+    "keywords": [
+      "tukang kanopi cikarang",
+      "jasa kanopi cikarang",
+      "kanopi hollow cikarang",
+      "pasang kanopi cikarang"
+    ]
+  },
+  {
+    "id": 9,
+    "topic": "Tukang Kanopi Cibubur Profesional & Terjangkau",
+    "category": "Kanopi",
+    "keywords": [
+      "tukang kanopi cibubur",
+      "jasa kanopi cibubur",
+      "kanopi baja ringan cibubur",
+      "harga kanopi cibubur"
+    ]
+  },
+  {
+    "id": 10,
+    "topic": "Bengkel Las Depok Terdekat & Terpercaya",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las depok",
+      "tukang las depok",
+      "jasa las depok",
+      "kanopi depok"
+    ]
+  },
+  {
+    "id": 11,
+    "topic": "Bengkel Las Bogor Berpengalaman & Murah",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las bogor",
+      "tukang las bogor",
+      "jasa las bogor",
+      "pagar besi bogor"
+    ]
+  },
+  {
+    "id": 12,
+    "topic": "Bengkel Las Tambun Bekasi Profesional",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las tambun",
+      "tukang las tambun",
+      "jasa las tambun bekasi",
+      "kanopi tambun"
+    ]
+  },
+  {
+    "id": 13,
+    "topic": "Bengkel Las Jatiasih Terdekat & Terpercaya",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las jatiasih",
+      "tukang las jatiasih",
+      "jasa las jatiasih",
+      "kanopi jatiasih"
+    ]
+  },
+  {
+    "id": 14,
+    "topic": "Bengkel Las Karawang Murah & Berkualitas",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las karawang",
+      "tukang las karawang",
+      "jasa las karawang",
+      "pagar besi karawang"
+    ]
+  },
+  {
+    "id": 15,
+    "topic": "Bengkel Las Cibitung Bekasi Terdekat",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las cibitung",
+      "tukang las cibitung",
+      "jasa las cibitung bekasi",
+      "kanopi cibitung"
+    ]
+  },
+  {
+    "id": 16,
+    "topic": "Bengkel Las Grand Wisata Bekasi Profesional",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las grand wisata",
+      "tukang las grand wisata",
+      "jasa las grand wisata bekasi",
+      "kanopi grand wisata"
+    ]
+  },
+  {
+    "id": 17,
+    "topic": "Bengkel Las Summarecon Bekasi Terpercaya",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las summarecon bekasi",
+      "tukang las summarecon",
+      "jasa las summarecon bekasi",
+      "pagar besi summarecon"
+    ]
+  },
+  {
+    "id": 18,
+    "topic": "Bengkel Las Harapan Indah Bekasi Terdekat",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las harapan indah",
+      "tukang las harapan indah",
+      "jasa las harapan indah bekasi",
+      "kanopi harapan indah"
+    ]
+  },
+  {
+    "id": 19,
+    "topic": "Bengkel Las Bekasi Timur Murah & Berpengalaman",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las bekasi timur",
+      "tukang las bekasi timur",
+      "jasa las bekasi timur",
+      "railing bekasi timur"
+    ]
+  },
+  {
+    "id": 20,
+    "topic": "Bengkel Las Bekasi Selatan Profesional & Terjangkau",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las bekasi selatan",
+      "tukang las bekasi selatan",
+      "jasa las bekasi selatan",
+      "kanopi bekasi selatan"
+    ]
+  },
+  {
+    "id": 21,
+    "topic": "Bengkel Las Bekasi Utara Terdekat & Terpercaya",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las bekasi utara",
+      "tukang las bekasi utara",
+      "jasa las bekasi utara",
+      "pagar bekasi utara"
+    ]
+  },
+  {
+    "id": 22,
+    "topic": "Bengkel Las Bekasi Barat Murah & Berkualitas",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las bekasi barat",
+      "tukang las bekasi barat",
+      "jasa las bekasi barat",
+      "teralis bekasi barat"
+    ]
+  },
+  {
+    "id": 23,
+    "topic": "Jasa Pagar Besi Bekasi Custom & Murah",
+    "category": "Bengkel Las",
+    "keywords": [
+      "pagar besi bekasi",
+      "jasa pagar bekasi",
+      "harga pagar besi bekasi",
+      "pasang pagar bekasi"
+    ]
+  },
+  {
+    "id": 24,
+    "topic": "Jasa Pagar Besi Cikarang Minimalis & Terpercaya",
+    "category": "Bengkel Las",
+    "keywords": [
+      "pagar besi cikarang",
+      "jasa pagar cikarang",
+      "harga pagar besi cikarang",
+      "pasang pagar cikarang"
+    ]
+  },
+  {
+    "id": 25,
+    "topic": "Jasa Teralis Jendela Bekasi Anti Maling Murah",
+    "category": "Bengkel Las",
+    "keywords": [
+      "teralis jendela bekasi",
+      "jasa teralis bekasi",
+      "teralis besi bekasi",
+      "harga teralis bekasi"
+    ]
+  },
+  {
+    "id": 26,
+    "topic": "Jasa Railing Tangga Bekasi Minimalis Custom",
+    "category": "Bengkel Las",
+    "keywords": [
+      "railing tangga bekasi",
+      "jasa railing bekasi",
+      "railing besi bekasi",
+      "harga railing tangga bekasi"
+    ]
+  },
+  {
+    "id": 27,
+    "topic": "Jasa Railing Balkon Bekasi Custom & Murah",
+    "category": "Bengkel Las",
+    "keywords": [
+      "railing balkon bekasi",
+      "jasa railing balkon bekasi",
+      "railing besi balkon bekasi",
+      "harga railing balkon"
+    ]
+  },
+  {
+    "id": 28,
+    "topic": "Jasa Folding Gate Bekasi Murah & Berkualitas",
+    "category": "Bengkel Las",
+    "keywords": [
+      "folding gate bekasi",
+      "jasa folding gate bekasi",
+      "pintu lipat bekasi",
+      "harga folding gate bekasi"
+    ]
+  },
+  {
+    "id": 29,
+    "topic": "Jasa Pintu Besi Bekasi Custom & Terpercaya",
+    "category": "Bengkel Las",
+    "keywords": [
+      "pintu besi bekasi",
+      "jasa pintu besi bekasi",
+      "pintu garasi bekasi",
+      "harga pintu besi bekasi"
+    ]
+  },
+  {
+    "id": 30,
+    "topic": "Jasa Pintu Henderson Bekasi Sliding & Lipat",
+    "category": "Bengkel Las",
+    "keywords": [
+      "pintu henderson bekasi",
+      "jasa pintu henderson bekasi",
+      "pintu garasi sliding bekasi",
+      "harga pintu henderson"
+    ]
+  },
+  {
+    "id": 31,
+    "topic": "Jasa Pembuatan Menara Tangki Air Besi Bekasi",
+    "category": "Bengkel Las",
+    "keywords": [
+      "menara tangki air bekasi",
+      "jasa menara toren besi bekasi",
+      "tower air besi bekasi",
+      "harga menara tangki"
+    ]
+  },
+  {
+    "id": 32,
+    "topic": "Jasa Tangga Besi Custom Bekasi Minimalis Modern",
+    "category": "Bengkel Las",
+    "keywords": [
+      "tangga besi bekasi",
+      "jasa tangga besi bekasi",
+      "tangga hollow bekasi",
+      "harga tangga besi bekasi"
+    ]
+  },
+  {
+    "id": 33,
+    "topic": "Jasa Tangga Putar Besi Bekasi Minimalis Elegan",
+    "category": "Bengkel Las",
+    "keywords": [
+      "tangga putar bekasi",
+      "jasa tangga putar besi bekasi",
+      "spiral staircase bekasi",
+      "harga tangga putar"
+    ]
+  },
+  {
+    "id": 34,
+    "topic": "Jasa Kanopi Besi Hollow Bekasi Minimalis 2026",
+    "category": "Kanopi",
+    "keywords": [
+      "kanopi besi hollow bekasi",
+      "kanopi minimalis bekasi",
+      "jasa kanopi hollow bekasi",
+      "kanopi carport bekasi"
+    ]
+  },
+  {
+    "id": 35,
+    "topic": "Harga Kanopi Per Meter di Bekasi Terbaru 2026",
+    "category": "Kanopi",
+    "keywords": [
+      "harga kanopi bekasi 2026",
+      "harga kanopi per meter bekasi",
+      "estimasi biaya kanopi bekasi",
+      "kanopi polycarbonate bekasi"
+    ]
+  },
+  {
+    "id": 36,
+    "topic": "Bengkel Las Jatibening Bekasi Terdekat",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las jatibening",
+      "tukang las jatibening",
+      "jasa las jatibening bekasi",
+      "kanopi jatibening"
+    ]
+  },
+  {
+    "id": 37,
+    "topic": "Bengkel Las Jatikarya Bekasi Murah & Profesional",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las jatikarya",
+      "tukang las jatikarya",
+      "jasa las jatikarya",
+      "kanopi jatikarya bekasi"
+    ]
+  },
+  {
+    "id": 38,
+    "topic": "Bengkel Las Jatirasa Bekasi Terpercaya",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las jatirasa",
+      "tukang las jatirasa",
+      "jasa las jatirasa bekasi",
+      "kanopi jatirasa"
+    ]
+  },
+  {
+    "id": 39,
+    "topic": "Bengkel Las Pekayon Bekasi Terdekat & Murah",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las pekayon",
+      "tukang las pekayon",
+      "jasa las pekayon bekasi",
+      "kanopi pekayon bekasi"
+    ]
+  },
+  {
+    "id": 40,
+    "topic": "Bengkel Las Kemang Pratama Bekasi Profesional",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las kemang pratama",
+      "tukang las kemang pratama",
+      "jasa las kemang pratama bekasi",
+      "kanopi kemang pratama"
+    ]
+  },
+  {
+    "id": 41,
+    "topic": "Bengkel Las Perwira Bekasi Terdekat & Terjangkau",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las perwira",
+      "tukang las perwira",
+      "jasa las perwira bekasi",
+      "kanopi perwira bekasi"
+    ]
+  },
+  {
+    "id": 42,
+    "topic": "Bengkel Las Pedurenan Bekasi Murah & Berpengalaman",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las pedurenan",
+      "tukang las pedurenan",
+      "jasa las pedurenan bekasi",
+      "kanopi padurenan"
+    ]
+  },
+  {
+    "id": 43,
+    "topic": "Bengkel Las Cibarusah Bekasi Terdekat",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las cibarusah",
+      "tukang las cibarusah",
+      "jasa las cibarusah bekasi",
+      "kanopi cibarusah"
+    ]
+  },
+  {
+    "id": 44,
+    "topic": "Bengkel Las Setia Mekar Tambun Bekasi Profesional",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las setia mekar",
+      "tukang las setia mekar tambun",
+      "jasa las setia mekar bekasi",
+      "kanopi setia mekar"
+    ]
+  },
+  {
+    "id": 45,
+    "topic": "Bengkel Las Perumahan Bekasi Terpercaya & Bergaransi",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las perumahan bekasi",
+      "tukang las cluster bekasi",
+      "jasa las komplek perumahan",
+      "pagar perumahan bekasi"
+    ]
+  },
+  {
+    "id": 46,
+    "topic": "Tukang Las Panggilan Cikarang 24 Jam",
+    "category": "Bengkel Las",
+    "keywords": [
+      "tukang las panggilan cikarang",
+      "tukang las 24 jam cikarang",
+      "jasa las panggilan cikarang",
+      "servis pagar cikarang"
+    ]
+  },
+  {
+    "id": 47,
+    "topic": "Jasa Teralis Jendela Cikarang Anti Maling Murah",
+    "category": "Bengkel Las",
+    "keywords": [
+      "teralis jendela cikarang",
+      "jasa teralis cikarang",
+      "teralis besi cikarang",
+      "harga teralis cikarang"
+    ]
+  },
+  {
+    "id": 48,
+    "topic": "Jasa Railing Tangga Cikarang Custom Minimalis",
+    "category": "Bengkel Las",
+    "keywords": [
+      "railing tangga cikarang",
+      "jasa railing cikarang",
+      "railing besi cikarang",
+      "harga railing cikarang"
+    ]
+  },
+  {
+    "id": 49,
+    "topic": "Jasa Folding Gate Cikarang Murah & Berkualitas",
+    "category": "Bengkel Las",
+    "keywords": [
+      "folding gate cikarang",
+      "jasa folding gate cikarang",
+      "pintu lipat cikarang",
+      "harga folding gate cikarang"
+    ]
+  },
+  {
+    "id": 50,
+    "topic": "Jasa Menara Tangki Air Cikarang Besi Custom",
+    "category": "Bengkel Las",
+    "keywords": [
+      "menara tangki air cikarang",
+      "jasa menara toren cikarang",
+      "tower air besi cikarang",
+      "harga menara tangki cikarang"
+    ]
+  },
+  {
+    "id": 51,
+    "topic": "Tukang Kanopi Cileungsi Murah & Berpengalaman",
+    "category": "Kanopi",
+    "keywords": [
+      "tukang kanopi cileungsi",
+      "jasa kanopi cileungsi",
+      "kanopi besi cileungsi",
+      "harga kanopi cileungsi"
+    ]
+  },
+  {
+    "id": 52,
+    "topic": "Jasa Pagar Besi Cibubur Custom & Murah",
+    "category": "Bengkel Las",
+    "keywords": [
+      "pagar besi cibubur",
+      "jasa pagar cibubur",
+      "harga pagar besi cibubur",
+      "pasang pagar cibubur"
+    ]
+  },
+  {
+    "id": 53,
+    "topic": "Jasa Kanopi Polycarbonate Bekasi Harga Terjangkau",
+    "category": "Kanopi",
+    "keywords": [
+      "kanopi polycarbonate bekasi",
+      "jasa kanopi alderon bekasi",
+      "atap polycarbonate bekasi",
+      "tukang kanopi polycarbonate"
+    ]
+  },
+  {
+    "id": 54,
+    "topic": "Harga Kanopi Per Meter di Cikarang Terbaru 2026",
+    "category": "Kanopi",
+    "keywords": [
+      "harga kanopi cikarang 2026",
+      "harga kanopi per meter cikarang",
+      "estimasi biaya kanopi cikarang",
+      "pasang kanopi cikarang murah"
+    ]
+  },
+  {
+    "id": 55,
+    "topic": "Bengkel Las Jakarta Selatan Terdekat & Profesional",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las jakarta selatan",
+      "tukang las jakarta selatan",
+      "jasa las jakarta selatan",
+      "kanopi jakarta selatan"
+    ]
+  },
+  {
+    "id": 56,
+    "topic": "Jasa Pintu Kasa Nyamuk Besi Bekasi Murah",
+    "category": "Bengkel Las",
+    "keywords": [
+      "pintu kasa nyamuk bekasi",
+      "jasa kasa nyamuk besi bekasi",
+      "expanda door bekasi",
+      "harga pintu kasa nyamuk"
+    ]
+  },
+  {
+    "id": 57,
+    "topic": "Jasa Pagar Besi Depok Custom Minimalis Terpercaya",
+    "category": "Bengkel Las",
+    "keywords": [
+      "pagar besi depok",
+      "jasa pagar depok",
+      "tukang pagar depok",
+      "harga pagar besi depok"
+    ]
+  },
+  {
+    "id": 58,
+    "topic": "Bengkel Las Setu Cibitung Bekasi Workshop Terpercaya",
+    "category": "Bengkel Las",
+    "keywords": [
+      "bengkel las setu bekasi",
+      "tukang las setu cibitung",
+      "jasa las setu bekasi",
+      "workshop besi setu bekasi"
+    ]
+  },
+  {
+    "id": 59,
+    "topic": "Jasa Konstruksi Besi Custom Bekasi untuk Ruko & Kantor",
+    "category": "Bengkel Las",
+    "keywords": [
+      "konstruksi besi bekasi",
+      "jasa fabrikasi besi bekasi",
+      "baja ringan bekasi",
+      "konstruksi baja bekasi"
+    ]
+  },
+  {
+    "id": 60,
+    "topic": "Jasa Perbaikan Kanopi Berkarat Bekasi & Cikarang",
+    "category": "Kanopi",
+    "keywords": [
+      "perbaikan kanopi bekasi",
+      "servis kanopi berkarat",
+      "ganti atap kanopi bekasi",
+      "renovasi kanopi cikarang"
+    ]
+  },
+  {
+    "id": 61,
+    "topic": "Harga Kanopi Per Meter di Bekasi 2026",
+    "category": "Kanopi",
+    "keywords": [
+      "harga kanopi bekasi",
+      "kanopi besi hollow",
+      "estimasi biaya kanopi",
+      "harga kanopi per meter"
+    ]
+  },
+  {
+    "id": 62,
+    "topic": "Perbandingan Kanopi Alderon vs Polycarbonate vs Spandek",
+    "category": "Tips and Trick",
+    "keywords": [
+      "kanopi alderon",
+      "kanopi polycarbonate",
+      "atap kanopi garasi"
+    ]
+  },
+  {
+    "id": 63,
+    "topic": "Model Teralis Jendela Minimalis Modern untuk Rumah Type 36 dan 45",
+    "category": "Tips and Trick",
+    "keywords": [
+      "teralis jendela minimalis",
+      "teralis besi hollow",
+      "keamanan rumah"
+    ]
+  },
+  {
+    "id": 64,
+    "topic": "Tips Memilih Pagar Besi Minimalis Tahan Karat untuk Rumah",
+    "category": "Tips and Trick",
+    "keywords": [
+      "pagar besi minimalis",
+      "pagar tahan karat",
+      "powder coating pagar"
+    ]
+  },
+  {
+    "id": 65,
+    "topic": "Perbedaan Pintu Pagar Sliding dan Swing untuk Garasi Rumah",
+    "category": "Tips and Trick",
+    "keywords": [
+      "pintu pagar sliding",
+      "pintu pagar swing",
+      "garasi mobil"
+    ]
+  },
+  {
+    "id": 66,
+    "topic": "Panduan Memilih Folding Gate untuk Toko dan Garasi",
+    "category": "Tips and Trick",
+    "keywords": [
+      "folding gate",
+      "pintu lipat besi",
+      "keamanan toko"
+    ]
+  },
+  {
+    "id": 67,
+    "topic": "Desain Railing Balkon Besi Minimalis Kombinasi Kaca Temper",
+    "category": "Tips and Trick",
+    "keywords": [
+      "railing balkon besi",
+      "railing kaca temper",
+      "balkon lantai 2"
+    ]
+  },
+  {
+    "id": 68,
+    "topic": "Model Railing Tangga Industrial Modern untuk Rumah dan Cafe",
+    "category": "Tips and Trick",
+    "keywords": [
+      "railing tangga industrial",
+      "handrail besi",
+      "interior industrial"
+    ]
+  },
+  {
+    "id": 69,
+    "topic": "Keunggulan Tangga Besi Melayang untuk Hunian Modern",
+    "category": "Tips and Trick",
+    "keywords": [
+      "tangga besi melayang",
+      "cantilever stairs",
+      "tangga besi custom"
+    ]
+  },
+  {
+    "id": 70,
+    "topic": "Cara Membuat Pergola Besi Rindang untuk Taman Belakang",
+    "category": "Tips and Trick",
+    "keywords": [
+      "pergola besi",
+      "pergola taman",
+      "tanaman rambat pergola"
+    ]
+  },
+  {
+    "id": 71,
+    "topic": "Spesifikasi Rak Gudang Heavy Duty untuk Efisiensi Pabrik",
+    "category": "Tips and Trick",
+    "keywords": [
+      "rak gudang heavy duty",
+      "industrial shelving",
+      "rak penyimpanan pabrik"
+    ]
+  },
+  {
+    "id": 72,
+    "topic": "Cara Merawat Kanopi Besi Agar Bebas Karat Hingga Puluhan Tahun",
+    "category": "Tips and Trick",
+    "keywords": [
+      "perawatan kanopi besi",
+      "anti karat besi",
+      "powder coating maintenance"
+    ]
+  },
+  {
+    "id": 73,
+    "topic": "Standard Tinggi dan Ketebalan Pagar Besi Minimalis yang Aman",
+    "category": "Tips and Trick",
+    "keywords": [
+      "standar tinggi pagar",
+      "ketebalan hollow pagar",
+      "keamanan rumah"
+    ]
+  },
+  {
+    "id": 74,
+    "topic": "Estimasi Biaya Pemasangan Railing Tangga Besi Minimalis per Meter",
+    "category": "Tips and Trick",
+    "keywords": [
+      "harga railing tangga per meter",
+      "biaya handrail besi",
+      "tukang las bekasi"
+    ]
+  },
+  {
+    "id": 75,
+    "topic": "Daftar Ukuran Hollow Besi yang Sering Digunakan untuk Kanopi dan Pagar",
+    "category": "Tips and Trick",
+    "keywords": [
+      "ukuran hollow kanopi",
+      "hollow 40x60",
+      "spesifikasi bahan besi"
+    ]
+  }
 ]

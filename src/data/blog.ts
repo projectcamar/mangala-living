@@ -5965,7 +5965,19 @@ export const getAllBlogPosts = (): BlogPost[] => {
 }
 
 // Get blog posts by category
-export const getBlogPostsByCategory = (category: string): BlogPost[] => {
+export const getBlogPostsByCategory = (category: string): BlogPost[,
+  {
+    "id": 353,
+    "slug": "bengkel-las-bekasi-berpengalaman-profesional",
+    "title": "Bengkel Las Bekasi Berpengalaman & Profesional",
+    "category": "Bengkel Las",
+    "excerpt": "Cari bengkel las bekasi berpengalaman? Mangala Living adalah pilihan terbaik, hubungi +6288801146881 untuk konsultasi gratis!",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-05",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
+] => {
   return BLOG_POSTS.filter(post => post.category === category)
 }
 
