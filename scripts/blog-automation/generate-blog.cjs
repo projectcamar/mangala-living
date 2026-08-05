@@ -198,7 +198,7 @@ FORMAT OUTPUT — HARUS berupa JSON murni tanpa backtick atau markdown, dengan s
     }
 
     // 1. Append to blog.ts
-    const lastBracketIndex = blogTsContent.lastIndexOf(']')
+    const lastBracketIndex = blogTsContent.lastIndexOf('\n]')
     const updatedBlogTs =
       blogTsContent.slice(0, lastBracketIndex) +
       `,\n  ${JSON.stringify(newPostMeta, null, 4)}\n` +
@@ -213,7 +213,7 @@ FORMAT OUTPUT — HARUS berupa JSON murni tanpa backtick atau markdown, dengan s
       sections: article.sections,
     }
 
-    const lastContentBracket = blogContentTs.lastIndexOf(']')
+    const lastContentBracket = blogContentTs.lastIndexOf('\n]')
     const updatedContentTs =
       blogContentTs.slice(0, lastContentBracket) +
       `,\n  ${JSON.stringify(newContentObj, null, 4)}\n` +
