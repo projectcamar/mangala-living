@@ -13,8 +13,8 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #d4511e, #1a1a1a, #d4511e);
+  height: 3px;
+  background: linear-gradient(90deg, #8B7355, #1a1a1a, #8B7355);
 }
 
 .beyond-inner {
@@ -34,126 +34,118 @@
 
 .beyond-label {
   display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-size: 0.73rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #d4511e;
+  color: #8B7355;
   margin-bottom: 0.6rem;
 }
 
 .beyond-header h2 {
   font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-  font-weight: 800;
+  font-weight: 600;
   color: #1a1a1a;
   margin: 0;
   line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 .beyond-view-all {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: #d4511e;
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: #1a1a1a;
   text-decoration: none;
-  border-bottom: 2px solid #d4511e;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #1a1a1a;
   padding-bottom: 0.1rem;
   white-space: nowrap;
-  transition: opacity 0.2s;
+  transition: color 0.2s, border-color 0.2s;
   flex-shrink: 0;
   align-self: flex-end;
   margin-bottom: 0.15rem;
 }
 
-.beyond-view-all:hover { opacity: 0.75; }
+.beyond-view-all:hover {
+  color: #8B7355;
+  border-color: #8B7355;
+}
 
 .beyond-desc {
-  font-size: 1.05rem;
-  color: #555;
-  line-height: 1.7;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
   max-width: 760px;
   margin: 0 0 2.5rem;
+  font-weight: 400;
 }
 
 /* ── CARDS GRID ──────────────────────────────────────────────────────────── */
 .beyond-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.1rem;
+  gap: 1px;
   margin-bottom: 2.5rem;
+  background: #e2dcd4;
+  border: 1px solid #e2dcd4;
 }
 
 .beyond-card {
   display: flex;
   flex-direction: column;
   background: #fff;
-  border: 1px solid #e8e2d8;
-  padding: 1.4rem;
+  padding: 1.6rem 1.5rem;
   text-decoration: none;
   color: inherit;
-  transition: all 0.25s ease;
+  transition: background 0.2s ease;
   position: relative;
-  overflow: hidden;
-}
-
-.beyond-card::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: #d4511e;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 0.25s ease;
 }
 
 .beyond-card:hover {
-  border-color: #d4511e;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.09);
-  transform: translateY(-3px);
+  background: #faf9f7;
 }
 
-.beyond-card:hover::before {
-  transform: scaleY(1);
-}
-
-.beyond-card-icon {
-  font-size: 1.75rem;
-  margin-bottom: 0.65rem;
-  display: block;
-  line-height: 1;
+.beyond-card-num {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #8B7355;
+  margin-bottom: 1rem;
+  font-variant-numeric: tabular-nums;
 }
 
 .beyond-card h3 {
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-size: 0.92rem;
+  font-weight: 600;
   color: #1a1a1a;
   margin: 0 0 0.4rem;
+  line-height: 1.35;
 }
 
 .beyond-card p {
-  font-size: 0.83rem;
-  color: #777;
+  font-size: 0.82rem;
+  color: #888;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.55;
   flex: 1;
 }
 
 .beyond-card-arrow {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #d4511e;
-  margin-top: 0.75rem;
-  transition: transform 0.2s;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #8B7355;
+  margin-top: 1rem;
+  letter-spacing: 0.04em;
+  transition: letter-spacing 0.2s;
   display: inline-block;
 }
 
 .beyond-card:hover .beyond-card-arrow {
-  transform: translateX(4px);
+  letter-spacing: 0.08em;
 }
 
 /* ── BOTTOM CTA ──────────────────────────────────────────────────────────── */
@@ -168,15 +160,16 @@
 }
 
 .beyond-cta-text h4 {
-  font-size: 1.1rem;
-  font-weight: 800;
+  font-size: 1rem;
+  font-weight: 600;
   color: #fff;
   margin: 0 0 0.2rem;
+  letter-spacing: -0.01em;
 }
 
 .beyond-cta-text p {
-  font-size: 0.88rem;
-  color: rgba(255,255,255,0.65);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
   margin: 0;
 }
 
@@ -194,7 +187,7 @@
   background: #25D366;
   color: #fff;
   font-weight: 700;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   text-decoration: none;
   transition: all 0.2s;
   box-shadow: 0 3px 10px rgba(37,211,102,0.3);
@@ -211,17 +204,19 @@
   gap: 0.45rem;
   padding: 0.7rem 1.3rem;
   background: transparent;
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.88rem;
+  color: rgba(255,255,255,0.85);
+  font-weight: 600;
+  font-size: 0.85rem;
   text-decoration: none;
-  border: 1.5px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.25);
   transition: all 0.2s;
+  letter-spacing: 0.02em;
 }
 
 .beyond-btn-all:hover {
-  border-color: #d4511e;
-  background: rgba(212,81,30,0.12);
+  border-color: #8B7355;
+  color: #fff;
+  background: rgba(139,115,85,0.12);
 }
 
 /* ── RESPONSIVE ──────────────────────────────────────────────────────────── */
@@ -242,7 +237,7 @@
 
   .beyond-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 0.85rem;
+    gap: 1px;
   }
 
   .beyond-cta {

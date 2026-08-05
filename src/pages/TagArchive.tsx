@@ -153,11 +153,11 @@ const TagArchive: React.FC = () => {
         </p>
 
         <div className="tag-grid">
-          {STEEL_SERVICES.map((svc) => {
+          {STEEL_SERVICES.map((svc, idx) => {
             const svcT = isIndonesian ? svc.translations.id : svc.translations.en
             return (
               <Link key={svc.slug} to={`/services/${svc.slug}`} className="tag-card">
-                <span className="tag-card-icon">{svc.icon}</span>
+                <span className="tag-card-num">{String(idx + 1).padStart(2, '0')}</span>
                 <h3>{svcT.name}</h3>
                 <p>{svcT.shortDesc}</p>
                 <span className="tag-card-link">
@@ -173,7 +173,7 @@ const TagArchive: React.FC = () => {
       <section className="tag-cloud-section">
         <div className="tag-cloud-inner">
           <h3 className="tag-cloud-title">
-            📍 {isIndonesian ? 'Jangkauan Wilayah Bengkel Las Terdekat' : 'Nearby Service Areas'}
+            {isIndonesian ? 'Jangkauan Wilayah Bengkel Las Terdekat' : 'Nearby Service Areas'}
           </h3>
           <div className="tag-chips">
             {GEO_TAGS.map((g) => (
@@ -188,7 +188,7 @@ const TagArchive: React.FC = () => {
           </div>
 
           <h3 className="tag-cloud-title" style={{ marginTop: '2rem' }}>
-            🏷️ {isIndonesian ? 'Tag Produk & Layanan Besi' : 'Product & Service Tags'}
+            {isIndonesian ? 'Tag Produk & Layanan Besi' : 'Product & Service Tags'}
           </h3>
           <div className="tag-chips">
             {PRODUCT_TAGS.map((p) => (

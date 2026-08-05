@@ -7,7 +7,7 @@
 
 /* ── HERO ────────────────────────────────────────────────────────────────────── */
 .csw-hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 60%, #1a1a1a 100%);
+  background: #1a1a1a;
   color: #fff;
   padding: 7rem 5% 5rem;
   position: relative;
@@ -18,7 +18,20 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 59px,
+    rgba(255,255,255,0.025) 59px,
+    rgba(255,255,255,0.025) 60px
+  ),
+  repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 59px,
+    rgba(255,255,255,0.025) 59px,
+    rgba(255,255,255,0.025) 60px
+  );
   pointer-events: none;
 }
 
@@ -33,39 +46,44 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(212, 81, 30, 0.9);
-  color: #fff;
-  font-size: 0.85rem;
+  background: transparent;
+  color: #8B7355;
+  font-size: 0.73rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 0.4rem 1rem;
+  padding: 0;
   margin-bottom: 1.5rem;
+  border-bottom: 1px solid #8B7355;
+  padding-bottom: 0.25rem;
 }
 
 .csw-hero h1 {
   font-size: clamp(2.2rem, 5vw, 3.8rem);
-  font-weight: 800;
-  line-height: 1.15;
+  font-weight: 600;
+  line-height: 1.1;
   margin: 0 0 1.25rem;
+  letter-spacing: -0.02em;
 }
 
 .csw-hero h1 span {
-  color: #d4511e;
+  color: rgba(255,255,255,0.5);
+  font-weight: 400;
 }
 
 .csw-hero-sub {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.82);
-  max-width: 700px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.65);
+  max-width: 680px;
   margin: 0 0 2.5rem;
+  font-weight: 400;
 }
 
 .csw-hero-ctas {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .csw-btn-primary {
@@ -76,16 +94,15 @@
   background: #25D366;
   color: #fff;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-decoration: none;
   transition: all 0.25s;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
 }
 
 .csw-btn-primary:hover {
   background: #20ba5a;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
 }
 
 .csw-btn-secondary {
@@ -94,23 +111,26 @@
   gap: 0.6rem;
   padding: 0.9rem 1.8rem;
   background: transparent;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  font-weight: 600;
+  font-size: 0.9rem;
   text-decoration: none;
-  border: 2px solid rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
   transition: all 0.25s;
+  letter-spacing: 0.02em;
 }
 
 .csw-btn-secondary:hover {
-  border-color: #d4511e;
-  background: rgba(212, 81, 30, 0.12);
+  border-color: #8B7355;
+  color: #fff;
+  background: rgba(139,115,85,0.12);
 }
 
 /* ── STATS BAR ───────────────────────────────────────────────────────────────── */
 .csw-stats {
-  background: #d4511e;
+  background: #f5f3ef;
   padding: 1.5rem 5%;
+  border-bottom: 1px solid #e8e4de;
 }
 
 .csw-stats-inner {
@@ -124,19 +144,22 @@
 
 .csw-stat {
   text-align: center;
-  color: #fff;
+  color: #1a1a1a;
 }
 
 .csw-stat strong {
   display: block;
   font-size: 1.8rem;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 .csw-stat span {
-  font-size: 0.85rem;
-  opacity: 0.88;
+  font-size: 0.78rem;
+  color: #888;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* ── SECTION HEADER ──────────────────────────────────────────────────────────── */
@@ -146,18 +169,19 @@
 }
 
 .csw-section-header h2 {
-  font-size: clamp(1.7rem, 3.5vw, 2.5rem);
-  font-weight: 800;
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 600;
   color: #1a1a1a;
   margin: 0 0 0.75rem;
+  letter-spacing: -0.01em;
 }
 
 .csw-section-header p {
-  font-size: 1.1rem;
-  color: #555;
-  max-width: 650px;
+  font-size: 1rem;
+  color: #777;
+  max-width: 600px;
   margin: 0 auto;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 /* ── CLUSTER SECTIONS ────────────────────────────────────────────────────────── */
@@ -171,7 +195,7 @@
 }
 
 .csw-cluster {
-  margin-bottom: 5rem;
+  margin-bottom: 4.5rem;
 }
 
 .csw-cluster:last-child {
@@ -180,100 +204,94 @@
 
 .csw-cluster-header {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 3px solid #d4511e;
+  border-bottom: 1px solid #e8e4de;
 }
 
 .csw-cluster-icon {
-  font-size: 2rem;
-  line-height: 1;
+  display: none;
 }
 
 .csw-cluster-header h3 {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1.15rem;
+  font-weight: 600;
   color: #1a1a1a;
-  margin: 0;
+  margin: 0 0 0.2rem;
+  letter-spacing: -0.01em;
 }
 
 .csw-cluster-header p {
-  font-size: 0.95rem;
-  color: #666;
-  margin: 0.2rem 0 0;
+  font-size: 0.88rem;
+  color: #888;
+  margin: 0;
+  line-height: 1.55;
 }
 
 .csw-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.25rem;
+  gap: 1px;
+  background: #e8e4de;
+  border: 1px solid #e8e4de;
 }
 
 .csw-card {
   display: block;
-  background: #f8f8f6;
-  border: 1px solid #e8e4de;
-  padding: 1.5rem;
+  background: #fff;
+  padding: 1.6rem 1.5rem;
   text-decoration: none;
   color: inherit;
-  transition: all 0.25s ease;
+  transition: background 0.2s ease;
   position: relative;
-  overflow: hidden;
-}
-
-.csw-card::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: #d4511e;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.25s ease;
 }
 
 .csw-card:hover {
-  background: #fff;
-  border-color: #d4511e;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
-  transform: translateY(-3px);
+  background: #faf9f7;
 }
 
-.csw-card:hover::after {
-  transform: scaleX(1);
+.csw-card-num {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #8B7355;
+  margin-bottom: 1rem;
 }
 
 .csw-card-icon {
-  font-size: 1.8rem;
-  margin-bottom: 0.75rem;
-  display: block;
+  display: none;
 }
 
 .csw-card h4 {
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 600;
   color: #1a1a1a;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.4rem;
+  line-height: 1.35;
 }
 
 .csw-card p {
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 0.83rem;
+  color: #888;
   margin: 0 0 1rem;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .csw-card-link {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #d4511e;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #8B7355;
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
+  letter-spacing: 0.04em;
+  transition: letter-spacing 0.2s;
+}
+
+.csw-card:hover .csw-card-link {
+  letter-spacing: 0.08em;
 }
 
 /* ── PROCESS SECTION ──────────────────────────────────────────────────────────── */
@@ -290,67 +308,70 @@
 .csw-process-steps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  gap: 1px;
   margin-top: 3rem;
+  background: #e2dcd4;
+  border: 1px solid #e2dcd4;
 }
 
 .csw-step {
   text-align: center;
   padding: 2rem 1.5rem;
   background: #fff;
-  position: relative;
 }
 
 .csw-step-num {
-  width: 52px;
-  height: 52px;
-  background: #d4511e;
+  width: 44px;
+  height: 44px;
+  background: #1a1a1a;
   color: #fff;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 800;
+  font-size: 0.9rem;
+  font-weight: 700;
   margin: 0 auto 1rem;
+  font-variant-numeric: tabular-nums;
 }
 
 .csw-step h4 {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 600;
   color: #1a1a1a;
   margin: 0 0 0.5rem;
 }
 
 .csw-step p {
-  font-size: 0.88rem;
-  color: #666;
+  font-size: 0.83rem;
+  color: #888;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* ── SEO ABOUT TEXT ───────────────────────────────────────────────────────────── */
 .csw-about {
   padding: 4rem 5%;
   background: #fff;
+  border-top: 1px solid #e8e4de;
 }
 
 .csw-about-inner {
-  max-width: 900px;
+  max-width: 860px;
   margin: 0 auto;
 }
 
 .csw-about h2 {
-  font-size: 1.75rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #1a1a1a;
-  margin: 0 0 1.25rem;
+  margin: 0 0 1.5rem;
+  letter-spacing: -0.01em;
 }
 
 .csw-about p {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #444;
+  font-size: 0.98rem;
+  line-height: 1.85;
+  color: #555;
   margin: 0 0 1.25rem;
 }
 
@@ -360,32 +381,34 @@
 
 /* ── CTA SECTION ──────────────────────────────────────────────────────────────── */
 .csw-cta {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: #1a1a1a;
   padding: 5rem 5%;
   text-align: center;
   color: #fff;
 }
 
 .csw-cta h2 {
-  font-size: clamp(1.6rem, 3vw, 2.5rem);
-  font-weight: 800;
-  margin: 0 0 1rem;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.01em;
 }
 
 .csw-cta p {
-  font-size: 1.1rem;
-  opacity: 0.85;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.6);
   margin: 0 0 2.5rem;
-  max-width: 600px;
+  max-width: 560px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.75;
 }
 
 .csw-cta-buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 /* ── RESPONSIVE ───────────────────────────────────────────────────────────────── */
@@ -395,22 +418,17 @@
   }
 
   .csw-grid {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
   }
 
   .csw-process-steps {
     grid-template-columns: 1fr 1fr;
   }
-
-  .csw-stats-inner {
-    gap: 1.5rem;
-  }
 }
 
 @media (max-width: 480px) {
   .csw-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .csw-process-steps {

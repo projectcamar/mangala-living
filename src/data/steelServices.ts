@@ -43,7 +43,7 @@ export interface ServiceCluster {
 export const SERVICE_CLUSTERS: ServiceCluster[] = [
   {
     key: 'residential',
-    icon: '🏠',
+    icon: '',
     label: {
       en: 'Residential',
       id: 'Hunian & Properti',
@@ -61,13 +61,13 @@ export const SERVICE_CLUSTERS: ServiceCluster[] = [
   },
   {
     key: 'commercial',
-    icon: '🏢',
+    icon: '',
     label: {
       en: 'Commercial',
       id: 'Komersial',
       ar: 'تجاري',
       zh: '商业',
-      ja: '商業用',
+      ja: '商业用',
       es: 'Comercial',
       fr: 'Commercial',
       ko: '상업용',
@@ -79,7 +79,7 @@ export const SERVICE_CLUSTERS: ServiceCluster[] = [
   },
   {
     key: 'industrial',
-    icon: '🏭',
+    icon: '',
     label: {
       en: 'Industrial Fabrication',
       id: 'Fabrikasi Industrial',
@@ -97,7 +97,7 @@ export const SERVICE_CLUSTERS: ServiceCluster[] = [
   },
   {
     key: 'wrought-iron',
-    icon: '⚜️',
+    icon: '',
     label: {
       en: 'Wrought Iron & Decorative',
       id: 'Besi Tempa & Dekoratif',

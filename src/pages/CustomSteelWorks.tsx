@@ -204,14 +204,13 @@ const CustomSteelWorks: React.FC = () => {
             return (
               <div key={cluster.key} className="csw-cluster" id={cluster.key}>
                 <div className="csw-cluster-header">
-                  <span className="csw-cluster-icon">{cluster.icon}</span>
                   <div>
                     <h3>{clusterLabel}</h3>
                     <p>{clusterDesc}</p>
                   </div>
                 </div>
                 <div className="csw-grid">
-                  {services.map((svc) => {
+                  {services.map((svc, idx) => {
                     const svcT = isIndonesian ? svc.translations.id : svc.translations.en
                     return (
                       <Link
@@ -220,7 +219,7 @@ const CustomSteelWorks: React.FC = () => {
                         className="csw-card"
                         aria-label={svcT.name}
                       >
-                        <span className="csw-card-icon">{svc.icon}</span>
+                        <span className="csw-card-num">{String(idx + 1).padStart(2, '0')}</span>
                         <h4>{svcT.name}</h4>
                         <p>{svcT.shortDesc}</p>
                         <span className="csw-card-link">{tx.learnMore}</span>

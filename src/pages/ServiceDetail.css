@@ -9,16 +9,17 @@
 .sd-breadcrumb {
   padding: 0.75rem 5%;
   background: #f5f3ef;
-  font-size: 0.85rem;
-  color: #777;
+  font-size: 0.82rem;
+  color: #888;
+  border-bottom: 1px solid #e8e4de;
 }
 
 .sd-breadcrumb a {
-  color: #777;
+  color: #888;
   text-decoration: none;
 }
 
-.sd-breadcrumb a:hover { color: #d4511e; }
+.sd-breadcrumb a:hover { color: #8B7355; }
 .sd-breadcrumb span { margin: 0 0.4rem; }
 
 /* ── HERO ──────────────────────────────────────────────────────────────────── */
@@ -43,30 +44,34 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: #d4511e;
-  color: #fff;
-  font-size: 0.8rem;
+  background: transparent;
+  color: #8B7355;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 0.35rem 0.85rem;
+  padding: 0;
+  padding-bottom: 0.25rem;
   margin-bottom: 1.5rem;
   width: fit-content;
+  border-bottom: 1px solid #8B7355;
 }
 
 .sd-hero-content h1 {
   font-size: clamp(1.8rem, 4vw, 3rem);
-  font-weight: 800;
-  line-height: 1.2;
+  font-weight: 600;
+  line-height: 1.15;
   margin: 0 0 1rem;
+  letter-spacing: -0.02em;
 }
 
 .sd-hero-content p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.8);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.65);
   margin: 0 0 2rem;
   max-width: 480px;
+  font-weight: 400;
 }
 
 .sd-hero-ctas {
@@ -83,7 +88,7 @@
   background: #25D366;
   color: #fff;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-decoration: none;
   transition: all 0.25s;
   box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
@@ -100,17 +105,19 @@
   gap: 0.5rem;
   padding: 0.85rem 1.6rem;
   background: transparent;
-  color: #fff;
+  color: rgba(255,255,255,0.8);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-decoration: none;
-  border: 1.5px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.2);
   transition: all 0.25s;
+  letter-spacing: 0.02em;
 }
 
 .sd-btn-back:hover {
-  border-color: #d4511e;
-  background: rgba(212,81,30,0.12);
+  border-color: #8B7355;
+  color: #fff;
+  background: rgba(139,115,85,0.12);
 }
 
 .sd-hero-image {
@@ -129,13 +136,14 @@
 .sd-hero-image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(0,0,0,0.2) 0%, transparent 60%);
 }
 
 /* ── QUICK STATS ────────────────────────────────────────────────────────────── */
 .sd-quick-stats {
-  background: #d4511e;
+  background: #f5f3ef;
   padding: 1.25rem 5%;
+  border-bottom: 1px solid #e8e4de;
 }
 
 .sd-quick-stats-inner {
@@ -149,18 +157,21 @@
 
 .sd-stat {
   text-align: center;
-  color: #fff;
+  color: #1a1a1a;
 }
 
 .sd-stat strong {
   display: block;
-  font-size: 1.4rem;
-  font-weight: 800;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .sd-stat span {
-  font-size: 0.8rem;
-  opacity: 0.88;
+  font-size: 0.73rem;
+  color: #888;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* ── MAIN CONTENT ───────────────────────────────────────────────────────────── */
@@ -175,19 +186,20 @@
 }
 
 .sd-main h2 {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: #1a1a1a;
   margin: 0 0 1.25rem;
   padding-bottom: 0.75rem;
-  border-bottom: 3px solid #d4511e;
+  border-bottom: 1px solid #e8e4de;
+  letter-spacing: -0.01em;
 }
 
 /* ── MATERIALS ──────────────────────────────────────────────────────────────── */
 .sd-materials {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 0.75rem;
+  gap: 0.5rem;
   margin-bottom: 3rem;
 }
 
@@ -195,17 +207,17 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 0.75rem 1rem;
-  background: #f8f6f2;
-  border: 1px solid #e8e0d4;
-  font-size: 0.9rem;
-  color: #333;
+  padding: 0.7rem 1rem;
+  background: #faf9f7;
+  border: 1px solid #e8e4de;
+  font-size: 0.88rem;
+  color: #444;
   font-weight: 500;
 }
 
 .sd-material-chip::before {
-  content: '✓';
-  color: #d4511e;
+  content: '—';
+  color: #8B7355;
   font-weight: 700;
   flex-shrink: 0;
 }
@@ -221,7 +233,7 @@
   display: flex;
   gap: 1rem;
   padding: 1rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #f0ede8;
 }
 
 .sd-process-list li:last-child {
@@ -229,24 +241,24 @@
 }
 
 .sd-process-num {
-  width: 36px;
-  height: 36px;
-  background: #d4511e;
+  width: 32px;
+  height: 32px;
+  background: #1a1a1a;
   color: #fff;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.9rem;
-  font-weight: 800;
+  font-size: 0.78rem;
+  font-weight: 700;
   flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
 }
 
 .sd-process-list li span {
-  font-size: 0.97rem;
-  line-height: 1.6;
-  color: #444;
-  padding-top: 0.4rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #555;
+  padding-top: 0.3rem;
 }
 
 /* ── FAQ ────────────────────────────────────────────────────────────────────── */
@@ -255,14 +267,17 @@
 }
 
 .sd-faq-item {
-  border: 1px solid #e8e0d4;
-  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e8e4de;
   background: #fff;
 }
 
+.sd-faq-item:first-of-type {
+  border-top: 1px solid #e8e4de;
+}
+
 .sd-faq-item summary {
-  padding: 1.1rem 1.25rem;
-  font-size: 0.97rem;
+  padding: 1.1rem 0;
+  font-size: 0.93rem;
   font-weight: 600;
   color: #1a1a1a;
   cursor: pointer;
@@ -276,9 +291,9 @@
 
 .sd-faq-item summary::before {
   content: '+';
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #d4511e;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #8B7355;
   flex-shrink: 0;
   width: 20px;
   text-align: center;
@@ -287,10 +302,10 @@
 .sd-faq-item[open] summary::before { content: '−'; }
 
 .sd-faq-item p {
-  padding: 0 1.25rem 1.1rem 3.25rem;
-  font-size: 0.93rem;
-  color: #555;
-  line-height: 1.65;
+  padding: 0 0 1.1rem 2.75rem;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.7;
   margin: 0;
 }
 
@@ -308,16 +323,17 @@
 }
 
 .sd-contact-card h3 {
-  font-size: 1.15rem;
-  font-weight: 800;
-  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+  letter-spacing: -0.01em;
 }
 
 .sd-contact-card p {
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.78);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
   margin: 0 0 1.5rem;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .sd-contact-card a {
@@ -328,7 +344,7 @@
   background: #25D366;
   color: #fff;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   text-decoration: none;
   margin-bottom: 0.6rem;
   transition: all 0.25s;
@@ -343,27 +359,31 @@
 
 .sd-contact-card a.outline {
   background: transparent;
-  border: 1.5px solid rgba(255,255,255,0.3);
-  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.85);
 }
 
 .sd-contact-card a.outline:hover {
-  border-color: #d4511e;
-  background: rgba(212,81,30,0.15);
+  border-color: #8B7355;
+  background: rgba(139,115,85,0.12);
+  color: #fff;
 }
 
 .sd-related {
-  background: #f8f6f2;
+  background: #faf9f7;
   padding: 1.5rem;
+  border: 1px solid #e8e4de;
 }
 
 .sd-related h4 {
-  font-size: 1rem;
-  font-weight: 800;
-  color: #1a1a1a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
   margin: 0 0 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #d4511e;
+  border-bottom: 1px solid #e8e4de;
 }
 
 .sd-related-links {
@@ -374,14 +394,14 @@
 
 .sd-related-links li {
   padding: 0.4rem 0;
-  border-bottom: 1px solid #e8e0d4;
+  border-bottom: 1px solid #f0ede8;
 }
 
 .sd-related-links li:last-child { border-bottom: none; }
 
 .sd-related-links a {
-  font-size: 0.88rem;
-  color: #444;
+  font-size: 0.86rem;
+  color: #555;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -389,11 +409,11 @@
   transition: color 0.2s;
 }
 
-.sd-related-links a:hover { color: #d4511e; }
+.sd-related-links a:hover { color: #8B7355; }
 
 /* ── AREA CTA ───────────────────────────────────────────────────────────────── */
 .sd-area-cta {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: #1a1a1a;
   padding: 4rem 5%;
   text-align: center;
   color: #fff;
@@ -401,14 +421,16 @@
 
 .sd-area-cta h2 {
   font-size: clamp(1.4rem, 2.5vw, 2rem);
-  font-weight: 800;
+  font-weight: 600;
   margin: 0 0 0.75rem;
+  letter-spacing: -0.01em;
 }
 
 .sd-area-cta p {
-  font-size: 1rem;
-  opacity: 0.82;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.6);
   margin: 0 0 2rem;
+  line-height: 1.7;
 }
 
 .sd-area-cta a {
@@ -416,16 +438,17 @@
   align-items: center;
   gap: 0.6rem;
   padding: 0.9rem 2rem;
-  background: #d4511e;
+  background: #8B7355;
   color: #fff;
   font-weight: 700;
+  font-size: 0.9rem;
   text-decoration: none;
   transition: all 0.25s;
   margin: 0 0.5rem;
 }
 
 .sd-area-cta a:hover {
-  background: #c44218;
+  background: #7a6449;
   transform: translateY(-2px);
 }
 

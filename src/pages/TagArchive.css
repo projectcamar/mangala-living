@@ -9,66 +9,94 @@
 .tag-breadcrumb {
   padding: 0.8rem 5%;
   background: #f5f3ef;
-  font-size: 0.85rem;
-  color: #666;
+  font-size: 0.82rem;
+  color: #888;
+  border-bottom: 1px solid #e8e4de;
 }
 
 .tag-breadcrumb a {
-  color: #666;
+  color: #888;
   text-decoration: none;
 }
 
-.tag-breadcrumb a:hover { color: #d4511e; }
+.tag-breadcrumb a:hover { color: #8B7355; }
 .tag-breadcrumb span { margin: 0 0.4rem; }
 
 /* ── HERO ──────────────────────────────────────────────────────────────────── */
 .tag-hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 60%, #1a1a1a 100%);
+  background: #1a1a1a;
   color: #fff;
   padding: 5.5rem 5% 4rem;
   position: relative;
 }
 
+.tag-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 59px,
+    rgba(255,255,255,0.025) 59px,
+    rgba(255,255,255,0.025) 60px
+  ),
+  repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 59px,
+    rgba(255,255,255,0.025) 59px,
+    rgba(255,255,255,0.025) 60px
+  );
+  pointer-events: none;
+}
+
 .tag-hero-inner {
   max-width: 1100px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .tag-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: #d4511e;
-  color: #fff;
-  font-size: 0.8rem;
+  background: transparent;
+  color: #8B7355;
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.35rem 0.85rem;
+  letter-spacing: 0.14em;
+  padding: 0;
+  padding-bottom: 0.25rem;
   margin-bottom: 1.25rem;
+  border-bottom: 1px solid #8B7355;
 }
 
 .tag-hero h1 {
   font-size: clamp(2rem, 4.5vw, 3.2rem);
-  font-weight: 800;
-  line-height: 1.15;
+  font-weight: 600;
+  line-height: 1.1;
   margin: 0 0 1rem;
+  letter-spacing: -0.02em;
 }
 
-.tag-hero h1 span { color: #d4511e; }
+.tag-hero h1 span { color: rgba(255,255,255,0.5); font-weight: 400; }
 
 .tag-hero-desc {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.85);
-  max-width: 720px;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.65);
+  max-width: 680px;
   margin: 0 0 2rem;
+  font-weight: 400;
 }
 
 .tag-hero-ctas {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.85rem;
+  gap: 0.75rem;
 }
 
 .tag-btn-wa {
@@ -79,9 +107,10 @@
   background: #25D366;
   color: #fff;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-decoration: none;
   transition: all 0.25s;
+  box-shadow: 0 4px 14px rgba(37,211,102,0.3);
 }
 
 .tag-btn-wa:hover {
@@ -95,17 +124,19 @@
   gap: 0.5rem;
   padding: 0.85rem 1.6rem;
   background: transparent;
-  color: #fff;
+  color: rgba(255,255,255,0.8);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-decoration: none;
-  border: 1.5px solid rgba(255,255,255,0.35);
+  border: 1px solid rgba(255,255,255,0.2);
   transition: all 0.25s;
+  letter-spacing: 0.02em;
 }
 
 .tag-btn-all:hover {
-  border-color: #d4511e;
-  background: rgba(212,81,30,0.12);
+  border-color: #8B7355;
+  color: #fff;
+  background: rgba(139,115,85,0.12);
 }
 
 /* ── MAIN CONTENT ───────────────────────────────────────────────────────────── */
@@ -116,77 +147,91 @@
 }
 
 .tag-section-title {
-  font-size: 1.6rem;
-  font-weight: 800;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: #1a1a1a;
   margin: 0 0 0.5rem;
   padding-bottom: 0.6rem;
-  border-bottom: 3px solid #d4511e;
+  border-bottom: 1px solid #e8e4de;
+  letter-spacing: -0.01em;
 }
 
 .tag-section-sub {
-  font-size: 0.95rem;
-  color: #666;
+  font-size: 0.9rem;
+  color: #888;
   margin: 0 0 2.5rem;
+  line-height: 1.65;
 }
 
 /* ── SERVICES GRID ──────────────────────────────────────────────────────────── */
 .tag-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.25rem;
+  gap: 1px;
+  background: #e8e4de;
+  border: 1px solid #e8e4de;
   margin-bottom: 4rem;
 }
 
 .tag-card {
   display: block;
-  background: #f8f6f2;
-  border: 1px solid #e8e0d4;
-  padding: 1.5rem;
+  background: #fff;
+  padding: 1.6rem 1.5rem;
   text-decoration: none;
   color: inherit;
-  transition: all 0.25s;
+  transition: background 0.2s ease;
   position: relative;
 }
 
 .tag-card:hover {
-  background: #fff;
-  border-color: #d4511e;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  transform: translateY(-3px);
+  background: #faf9f7;
+}
+
+.tag-card-num {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #8B7355;
+  margin-bottom: 0.85rem;
 }
 
 .tag-card-icon {
-  font-size: 1.8rem;
-  margin-bottom: 0.65rem;
-  display: block;
+  display: none;
 }
 
 .tag-card h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 600;
   color: #1a1a1a;
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.35rem;
+  line-height: 1.35;
 }
 
 .tag-card p {
-  font-size: 0.88rem;
-  color: #666;
+  font-size: 0.83rem;
+  color: #888;
   margin: 0 0 1rem;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .tag-card-link {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #d4511e;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #8B7355;
+  letter-spacing: 0.04em;
+  transition: letter-spacing 0.2s;
+  display: inline-block;
+}
+
+.tag-card:hover .tag-card-link {
+  letter-spacing: 0.08em;
 }
 
 /* ── OTHER TAGS CLOUD ───────────────────────────────────────────────────────── */
 .tag-cloud-section {
   background: #f5f3ef;
   padding: 3.5rem 5%;
-  margin-top: 3rem;
+  border-top: 1px solid #e8e4de;
 }
 
 .tag-cloud-inner {
@@ -195,40 +240,42 @@
 }
 
 .tag-cloud-title {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #1a1a1a;
-  margin: 0 0 1.25rem;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 1rem;
 }
 
 .tag-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.5rem;
 }
 
 .tag-chip {
   display: inline-block;
-  padding: 0.45rem 0.9rem;
+  padding: 0.4rem 0.85rem;
   background: #fff;
-  border: 1px solid #e0d8cc;
-  color: #333;
-  font-size: 0.85rem;
+  border: 1px solid #e2dcd4;
+  color: #555;
+  font-size: 0.83rem;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.2s;
 }
 
 .tag-chip:hover {
-  background: #d4511e;
-  color: #fff;
-  border-color: #d4511e;
-}
-
-.tag-chip.active {
   background: #1a1a1a;
   color: #fff;
   border-color: #1a1a1a;
+}
+
+.tag-chip.active {
+  background: #8B7355;
+  color: #fff;
+  border-color: #8B7355;
 }
 
 /* ── RESPONSIVE ─────────────────────────────────────────────────────────────── */

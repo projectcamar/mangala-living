@@ -150,7 +150,7 @@ const BeyondFurnitureSection: React.FC<BeyondFurnitureSectionProps> = ({
 
         {/* CARDS GRID */}
         <div className="beyond-grid">
-          {featuredServices.map((svc) => {
+          {featuredServices.map((svc, idx) => {
             const svcT = isIndonesian ? svc.translations.id : svc.translations.en
             return (
               <Link
@@ -159,7 +159,7 @@ const BeyondFurnitureSection: React.FC<BeyondFurnitureSectionProps> = ({
                 className="beyond-card"
                 aria-label={svcT.name}
               >
-                <span className="beyond-card-icon">{svc.icon}</span>
+                <span className="beyond-card-num">{String(idx + 1).padStart(2, '0')}</span>
                 <h3>{svcT.name}</h3>
                 <p>{svcT.shortDesc}</p>
                 <span className="beyond-card-arrow">
