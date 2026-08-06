@@ -5956,6 +5956,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 355,
+    "slug": "bengkel-las-cibubur-terdekat-profesional",
+    "title": "Bengkel Las Cibubur Terdekat & Profesional",
+    "category": "Bengkel Las",
+    "excerpt": "Butuh bengkel las cibubur terdekat dan profesional? Mangala Living di Bekasi solusi terbaik, hubungi +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-06",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
