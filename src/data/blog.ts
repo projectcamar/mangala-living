@@ -5944,7 +5944,19 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "2026-08-05",
     "author": "Tim Mangala Living",
     "status": "synced"
-  }
+  },
+  {
+    "id": 354,
+    "slug": "bengkel-las-cikarang-murah-terpercaya",
+    "title": "Bengkel Las Cikarang Murah & Terpercaya",
+    "category": "Bengkel Las",
+    "excerpt": "Mangala Living, bengkel las cikarang murah dan terpercaya, menawarkan jasa las cikarang dengan kualitas terbaik, hubungi sekarang!",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-06",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
+
 ]
 
 // Get posts for a specific page
