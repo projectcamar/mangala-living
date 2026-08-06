@@ -5968,6 +5968,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 356,
+    "slug": "bengkel-las-cileungsi-terbaik-berpengalaman",
+    "title": "Bengkel Las Cileungsi Terbaik & Berpengalaman",
+    "category": "Bengkel Las",
+    "excerpt": "Temukan bengkel las cileungsi terbaik di Mangala Living, layanan jasa las cileungsi berpengalaman sejak 1999, hubungi +6288801146881",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-06",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
