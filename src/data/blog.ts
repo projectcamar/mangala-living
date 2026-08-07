@@ -5980,6 +5980,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 357,
+    "slug": "bengkel-las-jakarta-timur-murah-berkualitas",
+    "title": "Bengkel Las Jakarta Timur Murah & Berkualitas",
+    "category": "Bengkel Las",
+    "excerpt": "Cari bengkel las jakarta timur yang berkualitas? Mangala Living solusinya, hubungi +6288801146881",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-07",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
