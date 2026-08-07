@@ -6004,6 +6004,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 359,
+    "slug": "tukang-kanopi-bekasi-murah-terpercaya",
+    "title": "Tukang Kanopi Bekasi Murah & Terpercaya",
+    "category": "Kanopi",
+    "excerpt": "Mangala Living, tukang kanopi Bekasi murah dan terpercaya, siap membantu. Hubungi sekarang!",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-07",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
