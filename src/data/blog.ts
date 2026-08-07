@@ -5992,6 +5992,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 358,
+    "slug": "tukang-las-bekasi-panggilan-24-jam",
+    "title": "Tukang Las Bekasi Panggilan 24 Jam",
+    "category": "Bengkel Las",
+    "excerpt": "Butuh tukang las panggilan bekasi 24 jam? Mangala Living adalah pilihan terbaik, hubungi via WhatsApp +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-07",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
