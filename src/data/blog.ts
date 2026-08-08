@@ -6040,6 +6040,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 362,
+    "slug": "bengkel-las-depok-terdekat-terpercaya",
+    "title": "Bengkel Las Depok Terdekat & Terpercaya",
+    "category": "Bengkel Las",
+    "excerpt": "Cari bengkel las depok terdekat dan terpercaya? Mangala Living di Bekasi adalah pilihan terbaik, hubungi +6288801146881 untuk konsultasi GRATIS!",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-08",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
