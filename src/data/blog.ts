@@ -6028,6 +6028,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 361,
+    "slug": "tukang-kanopi-cibubur-profesional-terjangkau",
+    "title": "Tukang Kanopi Cibubur Profesional & Terjangkau",
+    "category": "Kanopi",
+    "excerpt": "Mangala Living, tukang kanopi cibubur profesional dan terjangkau, siap membantu Anda, hubungi sekarang!",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-08",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
