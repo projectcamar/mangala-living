@@ -6016,6 +6016,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 360,
+    "slug": "tukang-kanopi-cikarang-terdekat-berpengalaman",
+    "title": "Tukang Kanopi Cikarang Terdekat & Berpengalaman",
+    "category": "Kanopi",
+    "excerpt": "Cari tukang kanopi cikarang terdekat? Mangala Living adalah pilihan terbaik, hubungi +6288801146881 untuk konsultasi gratis!",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-08",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
