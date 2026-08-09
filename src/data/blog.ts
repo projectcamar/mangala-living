@@ -6064,6 +6064,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 364,
+    "slug": "bengkel-las-tambun-bekasi-profesional",
+    "title": "Bengkel Las Tambun Bekasi Profesional",
+    "category": "Bengkel Las",
+    "excerpt": "Cari bengkel las tambun terpercaya di Bekasi? Mangala Living adalah pilihan terbaik, hubungi sekarang untuk konsultasi gratis!",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-09",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 

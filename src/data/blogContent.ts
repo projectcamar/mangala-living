@@ -9670,6 +9670,100 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "bengkel-las-tambun-bekasi-profesional",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan bengkel las tambun yang berkualitas memang tidak mudah, apalagi jika Anda mencari yang profesional dan berpengalaman. Mangala Living hadir sebagai solusi terbaik untuk kebutuhan las Anda, terutama jika Anda mencari bengkel las tambun yang dapat diandalkan. Dengan pengalaman yang luas, Mangala Living siap membantu Anda dalam proyek las apa pun.",
+                "Mangala Living telah menjadi pilihan utama bagi banyak orang di Bekasi dan sekitarnya karena kualitas pekerjaan yang tinggi dan pelayanan yang memuaskan. Jika Anda sedang mencari bengkel las tambun yang dapat memberikan hasil terbaik, maka Anda sudah berada di tempat yang tepat. Mangala Living adalah bengkel las tambun yang siap membantu Anda dengan berbagai kebutuhan las, baik itu untuk rumah, kantor, atau proyek lainnya.",
+                "Dengan komitmen untuk memberikan kualitas terbaik, Mangala Living menggunakan material yang terbaik dan tukang las yang handal. Jika Anda membutuhkan jasa las tambun bekasi, Mangala Living adalah pilihan yang tepat. Kami memiliki pengalaman yang luas dalam melayani kebutuhan las di Bekasi, sehingga Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik. Mangala Living adalah bengkel las tambun yang siap membantu Anda dengan berbagai kebutuhan las Anda."
+            ]
+        },
+        {
+            "heading": "Bengkel Las Tambun Bekasi Profesional & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berdiri sejak 1999 dan telah menyelesaikan ribuan proyek las di Bekasi dan sekitarnya. Dengan pengalaman yang luas dan komitmen untuk kualitas, Mangala Living adalah pilihan terbaik untuk kebutuhan las Anda. Kami memiliki workshop yang strategis di Jl. Raya Setu Cibitung, Bekasi, sehingga kami dapat dengan mudah melayani kebutuhan las Anda.",
+                "Komitmen kami untuk kualitas dan pelayanan yang memuaskan telah membuat Mangala Living menjadi salah satu bengkel las tambun yang paling dipercaya di Bekasi. Kami memiliki tim tukang las yang handal dan berpengalaman, sehingga Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik. Mangala Living adalah bengkel las tambun yang siap membantu Anda dengan berbagai kebutuhan las Anda, baik itu untuk kanopi, pagar besi, atau proyek lainnya.",
+                "Dengan lokasi yang strategis di Bekasi, Mangala Living dapat dengan mudah melayani kebutuhan las Anda. Kami memiliki akses yang mudah ke berbagai daerah di Bekasi, sehingga kami dapat dengan cepat merespon kebutuhan Anda. Mangala Living adalah bengkel las tambun yang siap membantu Anda dengan berbagai kebutuhan las Anda, jadi jangan ragu untuk menghubungi kami."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Mangala Living menggunakan material yang terbaik untuk proyek las Anda. Kami memiliki berbagai pilihan material, termasuk besi hollow, besi hitam, stainless steel 304, galvanis, baja ringan, besi plat, dan besi tempa. Setiap material memiliki keunggulan yang berbeda-beda, sehingga kami dapat membantu Anda memilih material yang tepat untuk proyek Anda.",
+                "Besi hollow, misalnya, sangat cocok untuk proyek kanopi atau pagar besi karena ringan dan tahan korosi. Sementara itu, stainless steel 304 sangat cocok untuk proyek yang memerlukan ketahanan yang tinggi terhadap korosi. Mangala Living memiliki pengetahuan yang luas tentang berbagai material, sehingga kami dapat membantu Anda memilih material yang tepat untuk proyek Anda."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living menyediakan berbagai layanan las untuk memenuhi kebutuhan Anda. Kami memiliki tim tukang las yang handal dan berpengalaman, sehingga Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik. Mangala Living menyediakan layanan las untuk kanopi, pagar besi, teralis jendela, teralis pintu, railing tangga, railing balkon, folding gate, pintu besi, pintu henderson, pintu kasa nyamuk, tangga besi custom, tangga putar, menara tangki air, dan tukang las panggilan.",
+                "Kami juga menyediakan layanan desain dan fabrikasi untuk proyek las Anda. Mangala Living memiliki pengetahuan yang luas tentang berbagai material dan teknik las, sehingga kami dapat membantu Anda merancang dan membangun proyek las yang sesuai dengan kebutuhan Anda. Jika Anda membutuhkan jasa las tambun bekasi, Mangala Living adalah pilihan yang tepat."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki beberapa keunggulan yang membuat kami menjadi pilihan terbaik untuk kebutuhan las Anda. Berikut adalah beberapa keunggulan kami:",
+                "Mangala Living memiliki pengalaman yang luas dalam melayani kebutuhan las di Bekasi dan sekitarnya. Kami juga memiliki tim tukang las yang handal dan berpengalaman, sehingga Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik."
+            ],
+            "list": [
+                "Berpengalaman (sejak 1999)",
+                "Tukang Las Handal",
+                "Material Terbaik",
+                "Tepat Waktu",
+                "Respon Cepat (24 jam)",
+                "Harga Terjangkau",
+                "Gratis Survei",
+                "Gratis Ongkir (area jangkauan)",
+                "Garansi Pekerjaan (1 tahun)"
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living menawarkan harga yang terjangkau dan transparan untuk proyek las Anda. Kami memiliki sistem harga per meter yang jelas dan transparan, sehingga Anda dapat dengan mudah memahami biaya yang diperlukan untuk proyek Anda.",
+                "Sebelum kami mulai bekerja pada proyek Anda, kami akan melakukan survei gratis untuk menentukan kebutuhan dan biaya yang diperlukan. Mangala Living juga menawarkan harga yang kompetitif dan transparan, sehingga Anda dapat yakin bahwa Anda mendapatkan nilai yang terbaik untuk uang Anda. Jika Anda ingin mengetahui lebih lanjut tentang harga kami, silakan hubungi kami via WhatsApp +6288801146881.",
+                "Kami juga menawarkan konsultasi gratis untuk membantu Anda memahami kebutuhan dan biaya yang diperlukan untuk proyek Anda. Mangala Living adalah bengkel las tambun yang siap membantu Anda dengan berbagai kebutuhan las Anda, jadi jangan ragu untuk menghubungi kami."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Mangala Living melayani wilayah Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, dan seluruh Jabodetabek. Kami memiliki akses yang mudah ke berbagai daerah di Bekasi, sehingga kami dapat dengan cepat merespon kebutuhan Anda.",
+                "Jika Anda membutuhkan jasa las tambun bekasi, Mangala Living adalah pilihan yang tepat. Kami memiliki pengalaman yang luas dalam melayani kebutuhan las di Bekasi dan sekitarnya, sehingga Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik. Hubungi Mangala Living sekarang via WhatsApp +6288801146881 untuk konsultasi GRATIS dan biaya yang terjangkau."
+            ]
+        }
+    ]
+}
 
 ]
 
