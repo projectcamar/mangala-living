@@ -6076,6 +6076,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 365,
+    "slug": "bengkel-las-jatiasih-terdekat-terpercaya",
+    "title": "Bengkel Las Jatiasih Terdekat & Terpercaya",
+    "category": "Bengkel Las",
+    "excerpt": "Cari bengkel las jatiasih terdekat dan terpercaya? Mangala Living adalah pilihan terbaik, hubungi sekarang untuk konsultasi gratis!",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-09",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
