@@ -6112,6 +6112,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 368,
+    "slug": "bengkel-las-grand-wisata-bekasi-profesional",
+    "title": "Bengkel Las Grand Wisata Bekasi Profesional",
+    "category": "Bengkel Las",
+    "excerpt": "Bengkel las grand wisata profesional di Bekasi, Mangala Living menawarkan jasa las grand wisata dengan kualitas terbaik, hubungi kami sekarang",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-10",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
