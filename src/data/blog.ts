@@ -6088,6 +6088,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 366,
+    "slug": "bengkel-las-karawang-murah-berkualitas",
+    "title": "Bengkel Las Karawang Murah & Berkualitas",
+    "category": "Bengkel Las",
+    "excerpt": "Temukan bengkel las karawang murah dan berkualitas di Mangala Living, hubungi via WhatsApp +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-10",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
