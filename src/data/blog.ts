@@ -6100,6 +6100,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 367,
+    "slug": "bengkel-las-cibitung-bekasi-terdekat",
+    "title": "Bengkel Las Cibitung Bekasi Terdekat",
+    "category": "Bengkel Las",
+    "excerpt": "Cari bengkel las cibitung terdekat? Mangala Living solusi terbaik, hubungi +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-10",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
