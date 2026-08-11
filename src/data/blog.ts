@@ -6136,6 +6136,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 370,
+    "slug": "bengkel-las-harapan-indah-bekasi-terdekat",
+    "title": "Bengkel Las Harapan Indah Bekasi Terdekat",
+    "category": "Bengkel Las",
+    "excerpt": "Mangala Living, bengkel las harapan indah terdekat di Bekasi, menawarkan jasa las berkualitas, hubungi +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-11",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
