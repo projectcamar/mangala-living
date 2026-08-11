@@ -6124,6 +6124,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 369,
+    "slug": "bengkel-las-summarecon-bekasi-terpercaya",
+    "title": "Bengkel Las Summarecon Bekasi Terpercaya",
+    "category": "Bengkel Las",
+    "excerpt": "Bengkel las Summarecon Bekasi terpercaya, Mangala Living, menyediakan jasa las custom profesional di Bekasi sejak 1999, hubungi kami via WhatsApp +6288801146881",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-11",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
