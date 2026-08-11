@@ -10328,6 +10328,101 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "bengkel-las-bekasi-timur-murah-berpengalaman",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan bengkel las bekasi timur yang berkualitas memang tidak mudah, terutama jika Anda mencari yang murah dan berpengalaman. Namun, Anda sudah berada di tempat yang tepat karena Mangala Living adalah pilihan terbaik untuk semua kebutuhan las bekasi timur Anda. Dengan pengalaman yang luas dan komitmen kualitas, Mangala Living telah menjadi salah satu bengkel las bekasi timur yang paling dipercaya.",
+                "Mangala Living memiliki lokasi workshop yang strategis di Jl. Raya Setu Cibitung, Bekasi, sehingga memudahkan akses bagi semua pelanggan di bekasi timur. Dengan demikian, Anda dapat dengan mudah menemukan bengkel las bekasi timur yang berkualitas dan murah. Mangala Living adalah jawaban atas semua kebutuhan las Anda, mulai dari railing bekasi timur hingga jasa las bekasi timur.",
+                "Jika Anda sedang mencari tukang las bekasi timur yang handal dan berpengalaman, maka Mangala Living adalah pilihan terbaik. Dengan lebih dari 20 tahun pengalaman di bidang las, Mangala Living telah membuktikan diri sebagai salah satu bengkel las bekasi timur yang paling berpengalaman dan dipercaya. Mangala Living memiliki komitmen kualitas yang tinggi dan selalu memprioritaskan kepuasan pelanggan."
+            ]
+        },
+        {
+            "heading": "Bengkel Las Bekasi Timur Murah & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berdiri sejak 1999 dan telah menangani ribuan proyek las di bekasi timur. Dengan pengalaman yang luas dan tim yang handal, Mangala Living dapat menangani semua jenis proyek las, mulai dari yang kecil hingga yang besar. Mangala Living memiliki komitmen kualitas yang tinggi dan selalu memprioritaskan kepuasan pelanggan.",
+                "Lokasi workshop Mangala Living yang strategis di Jl. Raya Setu Cibitung, Bekasi, memudahkan akses bagi semua pelanggan di bekasi timur. Dengan demikian, Anda dapat dengan mudah menemukan bengkel las bekasi timur yang berkualitas dan murah. Mangala Living adalah jawaban atas semua kebutuhan las Anda, mulai dari railing bekasi timur hingga jasa las bekasi timur.",
+                "Mangala Living memiliki total proyek yang banyak dan telah membuktikan diri sebagai salah satu bengkel las bekasi timur yang paling berpengalaman dan dipercaya. Dengan lebih dari 20 tahun pengalaman di bidang las, Mangala Living telah membuktikan diri sebagai salah satu bengkel las bekasi timur yang paling handal dan dapat diandalkan."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Mangala Living menggunakan material yang berkualitas tinggi untuk semua proyek las di bekasi timur. Kami memiliki berbagai jenis material, seperti Besi Hollow, Besi Hitam, Stainless Steel 304, Galvanis, Baja Ringan, Besi Plat, dan Besi Tempa. Setiap material memiliki keunggulan yang berbeda-beda, sehingga Anda dapat memilih material yang sesuai dengan kebutuhan Anda.",
+                "Besi Hollow, misalnya, memiliki keunggulan yang tinggi dalam hal kekuatan dan ketahanan. Besi Hitam, di sisi lain, memiliki keunggulan yang tinggi dalam hal harga yang terjangkau. Stainless Steel 304, Galvanis, Baja Ringan, Besi Plat, dan Besi Tempa juga memiliki keunggulan yang berbeda-beda, sehingga Anda dapat memilih material yang sesuai dengan kebutuhan Anda."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living menyediakan berbagai jenis layanan las di bekasi timur, mulai dari kanopi hingga tangga besi custom. Kami memiliki tim yang handal dan berpengalaman, sehingga dapat menangani semua jenis proyek las dengan baik. Mangala Living juga menyediakan jasa las bekasi timur yang murah dan berkualitas.",
+                "Mangala Living memiliki berbagai jenis layanan las, seperti pagar besi, teralis jendela, teralis pintu, railing tangga, railing balkon, folding gate, pintu besi, pintu henderson, pintu kasa nyamuk, tangga besi custom, tangga putar, menara tangki air, dan tukang las panggilan. Dengan demikian, Anda dapat memilih layanan yang sesuai dengan kebutuhan Anda."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki berbagai keunggulan yang membuat kami menjadi salah satu bengkel las bekasi timur yang paling dipercaya. Kami memiliki pengalaman yang luas dan tim yang handal, sehingga dapat menangani semua jenis proyek las dengan baik.",
+                "Mangala Living juga memiliki komitmen kualitas yang tinggi dan selalu memprioritaskan kepuasan pelanggan. Dengan demikian, Anda dapat yakin bahwa proyek las Anda akan ditangani dengan baik dan sesuai dengan kebutuhan Anda."
+            ],
+            "list": [
+                "Berpengalaman (sejak 1999)",
+                "Tukang Las Handal",
+                "Material Terbaik",
+                "Tepat Waktu",
+                "Respon Cepat (24 jam)",
+                "Harga Terjangkau",
+                "Gratis Survei",
+                "Gratis Ongkir (area jangkauan)",
+                "Garansi Pekerjaan (1 tahun)"
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living menyediakan harga yang terjangkau dan transparan untuk semua proyek las di bekasi timur. Kami memiliki sistem harga per meter yang jelas dan transparan, sehingga Anda dapat yakin bahwa harga yang Anda bayar sesuai dengan kualitas layanan yang Anda terima.",
+                "Mangala Living juga menyediakan survei gratis sebelum RAB, sehingga Anda dapat yakin bahwa proyek las Anda akan ditangani dengan baik dan sesuai dengan kebutuhan Anda. Jika Anda ingin tahu lebih lanjut tentang harga dan layanan Mangala Living, Anda dapat menghubungi kami via WhatsApp +6288801146881.",
+                "Mangala Living memiliki komitmen untuk menyediakan harga yang terjangkau dan transparan, sehingga Anda dapat yakin bahwa Anda mendapatkan layanan yang berkualitas dengan harga yang sesuai. Jadi, jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan atau ingin tahu lebih lanjut tentang layanan Mangala Living."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Mangala Living memiliki wilayah jangkauan yang luas, mulai dari Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, dan seluruh Jabodetabek. Dengan demikian, Anda dapat yakin bahwa proyek las Anda akan ditangani dengan baik dan sesuai dengan kebutuhan Anda.",
+                "Jika Anda ingin tahu lebih lanjut tentang layanan Mangala Living atau ingin melakukan konsultasi, Anda dapat menghubungi kami via WhatsApp +6288801146881. Kami memiliki tim yang handal dan berpengalaman, sehingga dapat menangani semua jenis proyek las dengan baik.",
+                "Mangala Living memiliki komitmen untuk menyediakan layanan yang berkualitas dan sesuai dengan kebutuhan Anda. Jadi, jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan atau ingin tahu lebih lanjut tentang layanan Mangala Living. Hubungi Mangala Living sekarang via WhatsApp +6288801146881 untuk konsultasi GRATIS!"
+            ]
+        }
+    ]
+}
 
 ]
 

@@ -6148,6 +6148,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 371,
+    "slug": "bengkel-las-bekasi-timur-murah-berpengalaman",
+    "title": "Bengkel Las Bekasi Timur Murah & Berpengalaman",
+    "category": "Bengkel Las",
+    "excerpt": "Cari bengkel las bekasi timur murah dan berpengalaman? Mangala Living adalah pilihan terbaik, hubungi sekarang via WhatsApp +6288801146881",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-11",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
