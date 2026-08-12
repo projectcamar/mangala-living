@@ -6172,6 +6172,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 373,
+    "slug": "bengkel-las-bekasi-utara-terdekat-terpercaya",
+    "title": "Bengkel Las Bekasi Utara Terdekat & Terpercaya",
+    "category": "Bengkel Las",
+    "excerpt": "Cari bengkel las Bekasi utara terdekat & terpercaya? Mangala Living solusinya, hubungi +6288801146881",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-12",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
