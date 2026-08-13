@@ -6220,6 +6220,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 377,
+    "slug": "jasa-teralis-jendela-bekasi-anti-maling-murah",
+    "title": "Jasa Teralis Jendela Bekasi Anti Maling Murah",
+    "category": "Bengkel Las",
+    "excerpt": "Dapatkan teralis jendela Bekasi anti maling murah dengan Mangala Living, hubungi via WhatsApp +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-13",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
