@@ -6196,6 +6196,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 375,
+    "slug": "jasa-pagar-besi-bekasi-custom-murah",
+    "title": "Jasa Pagar Besi Bekasi Custom & Murah",
+    "category": "Bengkel Las",
+    "excerpt": "Dapatkan pagar besi Bekasi yang berkualitas dengan harga terjangkau, hubungi Mangala Living sekarang!",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-13",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 

@@ -10713,6 +10713,98 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "jasa-pagar-besi-bekasi-custom-murah",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan pagar besi Bekasi yang berkualitas memang tidak mudah, terutama jika Anda mencari yang custom dan murah. Pagar besi Bekasi yang tepat dapat meningkatkan keamanan dan estetika rumah atau bangunan Anda. Namun, mencari jasa pagar besi Bekasi yang terpercaya dan berpengalaman bisa menjadi tugas yang menantang. Di sinilah Mangala Living hadir sebagai solusi terbaik untuk kebutuhan pagar besi Bekasi Anda.",
+                "Mangala Living adalah pilihan terbaik jika Anda mencari jasa pagar bekasi yang berkualitas dan berpengalaman. Dengan pengalaman lebih dari dua dekade, kami telah menjadi salah satu penyedia jasa pagar besi Bekasi yang paling dipercaya. Pagar besi Bekasi yang kami tawarkan tidak hanya berkualitas tetapi juga custom dan murah, sesuai dengan kebutuhan dan budget Anda.",
+                "Jika Anda sedang mencari jasa pagar besi Bekasi yang dapat memenuhi kebutuhan Anda dengan baik, maka Anda sudah berada di tempat yang tepat. Mangala Living siap membantu Anda dengan layanan jasa pagar besi Bekasi yang profesional dan terpercaya. Dengan kata kunci utama pagar besi Bekasi, kami memahami betapa pentingnya memiliki pagar yang tidak hanya kuat tetapi juga estetis dan sesuai dengan desain bangunan Anda."
+            ]
+        },
+        {
+            "heading": "Jasa Pagar Besi Bekasi Custom & Murah & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berdiri sejak 1999 dan telah menangani ribuan proyek pagar besi di Bekasi dan sekitarnya. Dengan komitmen kualitas yang tinggi dan pengalaman yang luas, kami dapat menjamin bahwa setiap proyek pagar besi Bekasi yang kami tangani akan memuaskan Anda. Kami berlokasi di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat, sehingga mudah dijangkau oleh Anda yang berada di Bekasi atau sekitarnya.",
+                "Komitmen kami terhadap kualitas dan kepuasan pelanggan telah membuat Mangala Living menjadi salah satu jasa pagar besi Bekasi yang paling dipercaya. Kami selalu berusaha untuk memberikan yang terbaik dalam setiap proyek, baik itu dari sisi material, desain, maupun pengerjaan. Dengan demikian, Anda dapat yakin bahwa pagar besi Bekasi yang Anda pesan akan sesuai dengan harapan Anda."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Mangala Living menggunakan berbagai material berkualitas untuk membuat pagar besi Bekasi yang kuat dan tahan lama. Kami memahami bahwa setiap proyek memiliki kebutuhan yang berbeda, sehingga kami menawarkan variasi material yang dapat disesuaikan dengan kebutuhan Anda. Dari besi hollow hingga stainless steel, setiap material yang kami gunakan dipilih dengan hati-hati untuk memastikan kualitas dan ketahanan pagar besi Bekasi yang kami produksi.",
+                "Setiap material yang kami gunakan memiliki keunggulan tersendiri. Misalnya, besi hollow dikenal karena kekuatannya dan kemampuan untuk membentuk berbagai desain, sedangkan stainless steel 304 menawarkan ketahanan yang tinggi terhadap korosi. Dengan memilih material yang tepat, Anda dapat yakin bahwa pagar besi Bekasi yang Anda miliki akan bertahan lama dan memuaskan."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living tidak hanya menyediakan jasa pagar besi Bekasi, tetapi juga berbagai layanan lain yang terkait dengan kebutuhan besi dan konstruksi. Kami memahami bahwa setiap pelanggan memiliki kebutuhan yang unik, sehingga kami berusaha untuk menawarkan layanan yang komprehensif dan dapat disesuaikan dengan kebutuhan Anda.",
+                "Dengan tim yang berpengalaman dan peralatan yang memadai, kami dapat menangani berbagai proyek, dari yang kecil hingga yang besar. Baik itu untuk kebutuhan rumah tinggal, kantor, atau bangunan komersial, Mangala Living siap membantu Anda dengan layanan yang profesional dan terpercaya."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki beberapa keunggulan yang membuat kami berbeda dari penyedia jasa pagar besi Bekasi lainnya. Dengan pengalaman yang luas dan komitmen kualitas yang tinggi, kami dapat menjamin bahwa setiap proyek yang kami tangani akan memuaskan Anda.",
+                "Berikut adalah beberapa keunggulan Mangala Living yang perlu Anda ketahui:"
+            ],
+            "list": [
+                "Berpengalaman (sejak 1999)",
+                "Tukang Las Handal",
+                "Material Terbaik",
+                "Tepat Waktu",
+                "Respon Cepat (24 jam)",
+                "Harga Terjangkau",
+                "Gratis Survei",
+                "Gratis Ongkir (area jangkauan)",
+                "Garansi Pekerjaan (1 tahun)"
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living memahami bahwa harga adalah salah satu faktor penting dalam memilih jasa pagar besi Bekasi. Oleh karena itu, kami berusaha untuk menawarkan harga yang terjangkau dan transparan untuk setiap proyek yang kami tangani. Dengan sistem harga per meter yang jelas dan survei gratis sebelum membuat RAB, Anda dapat yakin bahwa Anda akan mendapatkan harga yang adil dan sesuai dengan kebutuhan Anda.",
+                "Untuk mengetahui lebih lanjut tentang harga dan layanan yang kami tawarkan, Anda dapat menghubungi kami via WhatsApp di +6288801146881. Kami akan dengan senang hati membantu Anda dengan konsultasi gratis dan memberikan penawaran yang terbaik untuk proyek pagar besi Bekasi Anda."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Mangala Living memiliki wilayah jangkauan yang luas, mencakup Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, dan seluruh Jabodetabek. Dengan demikian, Anda dapat yakin bahwa kami dapat menjangkau Anda di mana pun Anda berada.",
+                "Jika Anda membutuhkan jasa pagar besi Bekasi yang berkualitas dan terpercaya, jangan ragu untuk menghubungi Mangala Living. Kami siap membantu Anda dengan layanan yang profesional dan harga yang terjangkau. Hubungi kami sekarang via WhatsApp di +6288801146881 untuk konsultasi GRATIS dan penawaran yang terbaik untuk proyek Anda."
+            ]
+        }
+    ]
+}
 
 ]
 
