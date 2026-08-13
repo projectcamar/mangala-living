@@ -10805,6 +10805,87 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "jasa-pagar-besi-cikarang-minimalis-terpercaya",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan pagar besi cikarang yang berkualitas memang tidak mudah, karena banyaknya pilihan yang tersedia di pasaran. Namun, jika Anda sedang mencari jasa pagar besi cikarang yang terpercaya dan berpengalaman, maka Anda sudah di tempat yang tepat. Mangala Living adalah pilihan terbaik untuk Anda, karena kami telah berpengalaman dalam melayani jasa pagar besi cikarang selama lebih dari 20 tahun.",
+                "Dengan pengalaman yang luas dan tim yang handal, Mangala Living dapat membantu Anda dalam menciptakan pagar besi cikarang yang sesuai dengan kebutuhan dan budget Anda. Kami menggunakan material yang berkualitas tinggi, sehingga pagar besi cikarang yang kami produksi dapat bertahan lama dan tahan terhadap berbagai cuaca. Jika Anda sedang mencari jasa pagar besi cikarang, maka Mangala Living adalah pilihan yang tepat untuk Anda.",
+                "Kami memahami bahwa pagar besi cikarang bukan hanya sekedar sebagai pembatas, tetapi juga sebagai bagian dari desain eksterior rumah Anda. Oleh karena itu, kami menawarkan berbagai pilihan desain pagar besi cikarang yang dapat disesuaikan dengan kebutuhan dan selera Anda. Dengan demikian, Anda dapat memiliki pagar besi cikarang yang tidak hanya fungsional, tetapi juga estetis. Mangala Living adalah jasa pagar besi cikarang yang terpercaya dan berpengalaman, sehingga Anda dapat yakin bahwa pagar besi cikarang yang kami produksi akan memuaskan kebutuhan Anda."
+            ]
+        },
+        {
+            "heading": "Jasa Pagar Besi Cikarang Minimalis & Terpercaya & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berpengalaman dalam melayani jasa pagar besi cikarang selama lebih dari 20 tahun. Dalam kurun waktu tersebut, kami telah menangani lebih dari 1000 proyek pagar besi cikarang, mulai dari proyek kecil hingga proyek besar. Kami memiliki komitmen yang kuat untuk menyediakan jasa pagar besi cikarang yang berkualitas tinggi dan memuaskan kebutuhan pelanggan.",
+                "Kami memiliki workshop yang terletak di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat. Dengan lokasi yang strategis, kami dapat dengan mudah menjangkau wilayah Bekasi dan sekitarnya. Kami juga memiliki tim yang handal dan berpengalaman, sehingga Anda dapat yakin bahwa pagar besi cikarang yang kami produksi akan memuaskan kebutuhan Anda."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Mangala Living menggunakan material yang berkualitas tinggi untuk produksi pagar besi cikarang. Kami memiliki beberapa pilihan material yang dapat disesuaikan dengan kebutuhan dan budget Anda. Beberapa material yang kami gunakan antara lain: Besi Hollow, Besi Hitam, Stainless Steel 304, Galvanis, Baja Ringan, Besi Plat, Besi Tempa.",
+                "Masing-masing material memiliki keunggulan yang berbeda-beda. Besi Hollow memiliki kekuatan yang tinggi dan tahan terhadap korosi, sedangkan Besi Hitam memiliki harga yang lebih terjangkau. Stainless Steel 304 memiliki ketahanan yang tinggi terhadap korosi dan dapat digunakan untuk pagar besi cikarang yang memerlukan ketahanan yang tinggi."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living tidak hanya menyediakan jasa pagar besi cikarang, tetapi juga menyediakan berbagai layanan lainnya yang dapat memenuhi kebutuhan Anda. Kami memiliki beberapa layanan yang dapat Anda pilih, antara lain: Kanopi, Pagar Besi, Teralis Jendela, Teralis Pintu, Railing Tangga, Railing Balkon, Folding Gate, Pintu Besi, Pintu Henderson, Pintu Kasa Nyamuk, Tangga Besi Custom, Tangga Putar, Menara Tangki Air, Tukang Las Panggilan.",
+                "Kami memiliki tim yang handal dan berpengalaman, sehingga Anda dapat yakin bahwa layanan yang kami sediakan akan memuaskan kebutuhan Anda. Kami juga memiliki komitmen yang kuat untuk menyediakan layanan yang berkualitas tinggi dan memuaskan kebutuhan pelanggan."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki beberapa keunggulan yang dapat membuat kami menjadi pilihan terbaik untuk Anda. Berikut adalah beberapa keunggulan yang kami miliki: 1. Berpengalaman, 2. Tukang Las Handal, 3. Material Terbaik, 4. Tepat Waktu, 5. Respon Cepat, 6. Harga Terjangkau, 7. Gratis Survei, 8. Gratis Ongkir, 9. Garansi Pekerjaan.",
+                "Kami memiliki komitmen yang kuat untuk menyediakan jasa pagar besi cikarang yang berkualitas tinggi dan memuaskan kebutuhan pelanggan. Dengan demikian, Anda dapat yakin bahwa pagar besi cikarang yang kami produksi akan memuaskan kebutuhan Anda."
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living memiliki sistem harga yang transparan dan terjangkau. Kami memiliki harga yang kompetitif dan dapat disesuaikan dengan kebutuhan dan budget Anda. Kami juga memiliki survei gratis sebelum RAB, sehingga Anda dapat yakin bahwa harga yang kami tawarkan adalah harga yang tepat.",
+                "Jika Anda ingin mengetahui harga pagar besi cikarang yang kami tawarkan, Anda dapat menghubungi kami melalui WhatsApp di nomor +6288801146881. Kami akan dengan senang hati membantu Anda dalam menentukan harga yang tepat untuk pagar besi cikarang yang Anda butuhkan."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Mangala Living memiliki wilayah jangkauan yang luas, meliputi Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, dan seluruh Jabodetabek. Kami dapat dengan mudah menjangkau wilayah-wilayah tersebut, sehingga Anda dapat yakin bahwa pagar besi cikarang yang kami produksi akan dapat dikirimkan ke lokasi Anda.",
+                "Jika Anda ingin menghubungi kami, Anda dapat melakukannya melalui WhatsApp di nomor +6288801146881. Kami akan dengan senang hati membantu Anda dalam menentukan pagar besi cikarang yang tepat untuk Anda. Hubungi Mangala Living sekarang juga untuk konsultasi GRATIS!"
+            ]
+        }
+    ]
+}
 
 ]
 

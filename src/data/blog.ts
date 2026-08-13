@@ -6208,6 +6208,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 376,
+    "slug": "jasa-pagar-besi-cikarang-minimalis-terpercaya",
+    "title": "Jasa Pagar Besi Cikarang Minimalis & Terpercaya",
+    "category": "Bengkel Las",
+    "excerpt": "Mangala Living, jasa pagar besi Cikarang minimalis dan terpercaya, menawarkan solusi pagar besi Cikarang berkualitas, hubungi kami sekarang",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-13",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
