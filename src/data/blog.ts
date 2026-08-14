@@ -6244,6 +6244,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 379,
+    "slug": "jasa-railing-balkon-bekasi-custom-murah",
+    "title": "Jasa Railing Balkon Bekasi Custom & Murah",
+    "category": "Bengkel Las",
+    "excerpt": "Dapatkan railing balkon bekasi berkualitas dengan harga terjangkau, hubungi Mangala Living sekarang untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-14",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
