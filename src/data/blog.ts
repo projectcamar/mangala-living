@@ -6256,6 +6256,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 380,
+    "slug": "jasa-folding-gate-bekasi-murah-berkualitas",
+    "title": "Jasa Folding Gate Bekasi Murah & Berkualitas",
+    "category": "Bengkel Las",
+    "excerpt": "Dapatkan folding gate Bekasi yang berkualitas dan terjangkau dengan Mangala Living, hubungi sekarang untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-14",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 

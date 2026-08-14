@@ -11164,6 +11164,113 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "jasa-folding-gate-bekasi-murah-berkualitas",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan folding gate Bekasi yang berkualitas memang tidak mudah, karena ada banyak pilihan yang tersedia di pasaran. Namun, jika Anda sedang mencari folding gate Bekasi yang benar-benar berkualitas dan tahan lama, maka Anda sudah di tempat yang tepat. Mangala Living adalah pilihan terbaik untuk Anda, karena kami telah berpengalaman dalam membuat folding gate Bekasi selama lebih dari 20 tahun. Dengan menggunakan kata kunci folding gate Bekasi, Anda dapat menemukan banyak informasi tentang produk ini, namun perlu diingat bahwa folding gate Bekasi yang berkualitas harus memiliki kualitas yang baik dan tahan lama.",
+                "Folding gate Bekasi yang kami produksi memiliki kualitas yang sangat baik dan tahan lama, sehingga Anda tidak perlu khawatir tentang kualitasnya. Dengan menggunakan folding gate Bekasi dari Mangala Living, Anda dapat meningkatkan keamanan dan kenyamanan rumah Anda. Folding gate Bekasi yang kami produksi juga dapat disesuaikan dengan kebutuhan Anda, sehingga Anda dapat memilih desain dan warna yang sesuai dengan selera Anda.",
+                "Jika Anda sedang mencari folding gate Bekasi yang berkualitas dan terjangkau, maka Mangala Living adalah pilihan terbaik untuk Anda. Dengan menggunakan kata kunci folding gate Bekasi, Anda dapat menemukan informasi tentang produk ini dan memilih yang terbaik untuk Anda. Mangala Living telah berpengalaman dalam membuat folding gate Bekasi selama lebih dari 20 tahun, sehingga Anda dapat yakin bahwa produk yang kami produksi memiliki kualitas yang sangat baik."
+            ]
+        },
+        {
+            "heading": "Jasa Folding Gate Bekasi Murah & Berkualitas & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berpengalaman dalam membuat folding gate Bekasi selama lebih dari 20 tahun, sehingga kami memiliki pengetahuan yang luas tentang kebutuhan dan preferensi pelanggan. Kami telah mengerjakan lebih dari 1000 proyek folding gate Bekasi di Bekasi dan sekitarnya, sehingga kami memiliki pengalaman yang luas dalam membuat produk yang berkualitas. Dengan menggunakan teknologi canggih dan material yang terbaik, kami dapat memproduksi folding gate Bekasi yang memiliki kualitas yang sangat baik dan tahan lama.",
+                "Komitmen kami terhadap kualitas dan kepuasan pelanggan telah membuat Mangala Living menjadi salah satu perusahaan folding gate Bekasi terbaik di Bekasi. Kami memiliki workshop yang terletak di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat, sehingga kami dapat dengan mudah melayani pelanggan di Bekasi dan sekitarnya. Dengan menggunakan folding gate Bekasi dari Mangala Living, Anda dapat yakin bahwa produk yang kami produksi memiliki kualitas yang sangat baik dan tahan lama.",
+                "Mangala Living juga memiliki tim yang handal dan berpengalaman dalam membuat folding gate Bekasi, sehingga kami dapat memproduksi produk yang berkualitas dan sesuai dengan kebutuhan Anda. Dengan menggunakan folding gate Bekasi dari Mangala Living, Anda dapat meningkatkan keamanan dan kenyamanan rumah Anda, serta mempercantik tampilan rumah Anda."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Mangala Living menggunakan material yang terbaik untuk membuat folding gate Bekasi, sehingga produk yang kami produksi memiliki kualitas yang sangat baik dan tahan lama. Kami menggunakan material seperti besi hollow, besi hitam, stainless steel 304, galvanis, baja ringan, besi plat, dan besi tempa untuk membuat folding gate Bekasi yang berkualitas. Dengan menggunakan material yang terbaik, kami dapat memproduksi produk yang memiliki kualitas yang sangat baik dan tahan lama.",
+                "Material yang kami gunakan memiliki keunggulan yang berbeda-beda, sehingga kami dapat memilih material yang sesuai dengan kebutuhan Anda. Misalnya, besi hollow memiliki keunggulan yang lebih ringan dan lebih kuat, sehingga sangat cocok untuk membuat folding gate Bekasi yang memiliki ukuran yang besar. Sementara itu, stainless steel 304 memiliki keunggulan yang lebih tahan korosi dan lebih mudah dibersihkan, sehingga sangat cocok untuk membuat folding gate Bekasi yang memiliki kebutuhan yang tinggi."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living tidak hanya membuat folding gate Bekasi, tetapi juga menyediakan layanan lainnya seperti kanopi, pagar besi, teralis jendela, teralis pintu, railing tangga, railing balkon, folding gate, pintu besi, pintu henderson, pintu kasa nyamuk, tangga besi custom, tangga putar, menara tangki air, dan tukang las panggilan. Dengan menggunakan layanan dari Mangala Living, Anda dapat mempercantik tampilan rumah Anda dan meningkatkan keamanan dan kenyamanan rumah Anda.",
+                "Kami memiliki tim yang handal dan berpengalaman dalam membuat produk yang berkualitas, sehingga Anda dapat yakin bahwa produk yang kami produksi memiliki kualitas yang sangat baik dan tahan lama. Dengan menggunakan layanan dari Mangala Living, Anda dapat memilih produk yang sesuai dengan kebutuhan Anda dan mempercantik tampilan rumah Anda."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki beberapa keunggulan yang membuat kami menjadi salah satu perusahaan folding gate Bekasi terbaik di Bekasi. Kami memiliki pengalaman yang luas dalam membuat folding gate Bekasi, sehingga kami dapat memproduksi produk yang berkualitas dan sesuai dengan kebutuhan Anda.",
+                "Kami juga memiliki tim yang handal dan berpengalaman dalam membuat produk yang berkualitas, sehingga Anda dapat yakin bahwa produk yang kami produksi memiliki kualitas yang sangat baik dan tahan lama. Dengan menggunakan folding gate Bekasi dari Mangala Living, Anda dapat meningkatkan keamanan dan kenyamanan rumah Anda, serta mempercantik tampilan rumah Anda."
+            ],
+            "list": [
+                "Berpengalaman (sejak 1999)",
+                "Tukang Las Handal",
+                "Material Terbaik",
+                "Tepat Waktu",
+                "Respon Cepat (24 jam)",
+                "Harga Terjangkau",
+                "Gratis Survei",
+                "Gratis Ongkir (area jangkauan)",
+                "Garansi Pekerjaan (1 tahun)"
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living menawarkan harga yang terjangkau dan transparan untuk folding gate Bekasi, sehingga Anda dapat memilih produk yang sesuai dengan kebutuhan dan budget Anda. Kami memiliki sistem harga per meter yang jelas dan transparan, sehingga Anda dapat dengan mudah memahami biaya yang dibutuhkan untuk membuat folding gate Bekasi.",
+                "Kami juga menyediakan survei gratis sebelum membuat RAB (Rencana Anggaran Biaya), sehingga Anda dapat memahami biaya yang dibutuhkan untuk membuat folding gate Bekasi dengan lebih jelas. Dengan menggunakan folding gate Bekasi dari Mangala Living, Anda dapat yakin bahwa produk yang kami produksi memiliki kualitas yang sangat baik dan tahan lama.",
+                "Jika Anda ingin mengetahui lebih lanjut tentang harga folding gate Bekasi, Anda dapat menghubungi kami via WhatsApp di +6288801146881. Kami akan dengan senang hati membantu Anda untuk menentukan harga yang sesuai dengan kebutuhan dan budget Anda."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Mangala Living memiliki wilayah jangkauan yang luas, sehingga kami dapat melayani pelanggan di Bekasi dan sekitarnya. Kami memiliki workshop yang terletak di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat, sehingga kami dapat dengan mudah melayani pelanggan di Bekasi dan sekitarnya.",
+                "Jika Anda ingin membuat folding gate Bekasi yang berkualitas dan terjangkau, Anda dapat menghubungi kami via WhatsApp di +6288801146881. Kami akan dengan senang hati membantu Anda untuk membuat folding gate Bekasi yang sesuai dengan kebutuhan dan budget Anda."
+            ],
+            "list": [
+                "Bekasi",
+                "Cikarang",
+                "Cibubur",
+                "Cileungsi",
+                "Jakarta Timur",
+                "Jakarta Selatan",
+                "Depok",
+                "Bogor",
+                "Tambun",
+                "Karawang",
+                "seluruh Jabodetabek"
+            ]
+        }
+    ]
+}
 
 ]
 
