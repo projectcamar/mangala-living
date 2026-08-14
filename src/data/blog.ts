@@ -6232,6 +6232,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 378,
+    "slug": "jasa-railing-tangga-bekasi-minimalis-custom",
+    "title": "Jasa Railing Tangga Bekasi Minimalis Custom",
+    "category": "Bengkel Las",
+    "excerpt": "Dapatkan railing tangga bekasi minimalis custom berkualitas dengan harga terjangkau, hubungi Mangala Living sekarang",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-14",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
