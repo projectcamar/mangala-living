@@ -307,6 +307,15 @@ const buildStaticPages = async () => {
     { loc: `${BASE_URL}/search`, file: 'src/pages/SearchResults.tsx', changefreq: 'monthly', priority: 0.4 },
     { loc: `${BASE_URL}/product-tag/best-seller`, file: 'src/pages/BestSellers.tsx', changefreq: 'weekly', priority: 0.6 },
     { loc: `${BASE_URL}/furniture-besi-custom-bekasi`, file: 'src/pages/FurnitureBesiCustomBekasi.tsx', changefreq: 'monthly', priority: 0.75 },
+    { loc: `${BASE_URL}/s/pagar-besi-minimalis-bekasi`, file: 'src/pages/PSEOLandingPage.tsx', changefreq: 'weekly', priority: 0.85 },
+    { loc: `${BASE_URL}/s/kanopi-polycarbonate-bekasi`, file: 'src/pages/PSEOLandingPage.tsx', changefreq: 'weekly', priority: 0.85 },
+    { loc: `${BASE_URL}/s/kanopi-alderon-bekasi`, file: 'src/pages/PSEOLandingPage.tsx', changefreq: 'weekly', priority: 0.85 },
+    { loc: `${BASE_URL}/s/teralis-jendela-bekasi`, file: 'src/pages/PSEOLandingPage.tsx', changefreq: 'weekly', priority: 0.85 },
+    { loc: `${BASE_URL}/s/railing-tangga-industrial-bekasi`, file: 'src/pages/PSEOLandingPage.tsx', changefreq: 'weekly', priority: 0.85 },
+    { loc: `${BASE_URL}/s/tangga-putar-besi-bekasi`, file: 'src/pages/PSEOLandingPage.tsx', changefreq: 'weekly', priority: 0.85 },
+    { loc: `${BASE_URL}/s/folding-gate-cikarang`, file: 'src/pages/PSEOLandingPage.tsx', changefreq: 'weekly', priority: 0.85 },
+    { loc: `${BASE_URL}/s/pagar-besi-tempa-bali`, file: 'src/pages/PSEOLandingPage.tsx', changefreq: 'weekly', priority: 0.85 },
+    { loc: `${BASE_URL}/s/mezzanine-besi-bekasi`, file: 'src/pages/PSEOLandingPage.tsx', changefreq: 'weekly', priority: 0.85 },
     { loc: `${BASE_URL}/image-license`, file: 'src/pages/ImageLicense.tsx', changefreq: 'yearly', priority: 0.3 }
   ]
 

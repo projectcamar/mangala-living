@@ -13,6 +13,7 @@ import { getProductName } from '../data/productDescriptions'
 import { getCurrentLanguage, getStoredLanguage, detectLanguageFromIP, type LanguageCode } from '../utils/languageManager'
 import './SearchResults.css'
 import '../components/DualLanguage.css'
+import PSEOLandingPage from './PSEOLandingPage'
 
 const SUPPORTED_LANGUAGES: LanguageCode[] = ['id', 'en', 'ar', 'zh', 'ja', 'es', 'fr', 'ko']
 
@@ -199,12 +200,14 @@ const allProducts: Product[] = ALL_PRODUCTS.map(p => ({
   price: p.price,
   image: p.image,
   slug: p.slug
-}))
-
 function SearchResults() {
   const location = useLocation()
   const searchParams = new URLSearchParams(location.search)
   const query = searchParams.get('q') || ''
+
+  if (query.trim().length > 0) {
+    return <PSEOLandingPage />
+  }
   const langParam = searchParams.get('lang')
   const [language, setLanguage] = useState<LanguageCode>(resolveLanguage(langParam))
   const [sortBy, setSortBy] = useState('default')

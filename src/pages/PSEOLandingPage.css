@@ -1,0 +1,553 @@
+/* ==========================================================================
+   Programmatic SEO Landing Page (PSEOLandingPage.css) — Mangala Design System
+   ========================================================================== */
+
+.pseo-page {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: inherit;
+}
+
+.pseo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---- Hero Section ---- */
+.pseo-hero {
+  position: relative;
+  min-height: 440px;
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.pseo-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.pseo-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pseo-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.88) 0%, rgba(30, 30, 30, 0.75) 100%);
+}
+
+.pseo-hero-container {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.pseo-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 6px 16px;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.pseo-hero h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 18px;
+  text-transform: capitalize;
+}
+
+.pseo-hero p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  max-width: 780px;
+  margin: 0 auto 32px auto;
+}
+
+.pseo-hero-ctas {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ---- Buttons ---- */
+.pseo-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #2c2c2c;
+  color: #ffffff;
+  padding: 14px 28px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid #2c2c2c;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.pseo-btn-primary:hover {
+  background: #8B7355;
+  border-color: #8B7355;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pseo-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 14px 28px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+  transition: all 0.25s ease;
+}
+
+.pseo-btn-secondary:hover {
+  background: #ffffff;
+  color: #2c2c2c;
+}
+
+.pseo-btn-full {
+  width: 100%;
+}
+
+.pseo-btn-large {
+  padding: 16px 36px;
+  font-size: 1rem;
+}
+
+/* ---- Section Common Styles ---- */
+.pseo-section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.pseo-section-subtitle {
+  font-size: 1.05rem;
+  color: #666;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+/* ---- Estimator Widget ---- */
+.pseo-estimator-section {
+  margin-top: -50px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 70px;
+}
+
+.pseo-estimator-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  padding: 36px;
+}
+
+.pseo-estimator-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pseo-accent-icon {
+  color: #8B7355;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.pseo-estimator-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 4px;
+}
+
+.pseo-estimator-header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.pseo-estimator-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.pseo-input-group label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.pseo-input-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.pseo-input-group input:focus {
+  outline: none;
+  border-color: #2c2c2c;
+}
+
+.pseo-result-box {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.pseo-result-label {
+  display: block;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.pseo-area-display {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.pseo-price-range {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #8B7355;
+  margin: 6px 0;
+}
+
+.pseo-price-note {
+  display: block;
+  font-size: 0.78rem;
+  color: #888;
+}
+
+/* ---- Specs Section ---- */
+.pseo-specs-section {
+  padding: 60px 0;
+  background: #fdfdfd;
+}
+
+.pseo-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.pseo-spec-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid #eee;
+  padding: 20px;
+  transition: border-color 0.2s ease;
+}
+
+.pseo-spec-card:hover {
+  border-color: #2c2c2c;
+}
+
+.pseo-check-icon {
+  color: #8B7355;
+  flex-shrink: 0;
+}
+
+.pseo-spec-card strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #2c2c2c;
+  margin-bottom: 4px;
+}
+
+.pseo-spec-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* ---- Products Grid ---- */
+.pseo-products-section {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.pseo-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.pseo-product-card {
+  border: 1px solid #eee;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pseo-product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.pseo-product-img-box {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+
+.pseo-product-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.pseo-product-card:hover .pseo-product-img-box img {
+  transform: scale(1.05);
+}
+
+.pseo-product-info {
+  padding: 16px;
+}
+
+.pseo-product-info h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 8px;
+}
+
+.pseo-product-price {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #8B7355;
+}
+
+/* ---- Services Section ---- */
+.pseo-services-section {
+  padding: 70px 0;
+  background: #fafafa;
+}
+
+.pseo-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.pseo-service-card {
+  display: flex;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid #eee;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.pseo-service-card:hover {
+  border-color: #2c2c2c;
+  transform: translateY(-2px);
+}
+
+.pseo-wrench-icon {
+  color: #2c2c2c;
+  flex-shrink: 0;
+}
+
+.pseo-service-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 6px;
+}
+
+.pseo-service-card p {
+  font-size: 0.88rem;
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.pseo-link-arrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #8B7355;
+}
+
+/* ---- FAQs Section ---- */
+.pseo-faq-section {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.pseo-faq-list {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pseo-faq-item {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 24px;
+}
+
+.pseo-faq-item h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+.pseo-faq-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ---- Internal Graph Links ---- */
+.pseo-internal-links {
+  padding: 60px 0;
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+.pseo-links-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pseo-chips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pseo-chip {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  font-size: 0.85rem;
+  color: #444;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+
+.pseo-chip:hover {
+  background: #2c2c2c;
+  color: #ffffff;
+  border-color: #2c2c2c;
+}
+
+/* ---- Bottom CTA ---- */
+.pseo-cta-bottom {
+  padding: 80px 0;
+  background: #2c2c2c;
+  color: #ffffff;
+  text-align: center;
+}
+
+.pseo-cta-bottom h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.pseo-cta-bottom p {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 680px;
+  margin: 0 auto 36px auto;
+  line-height: 1.6;
+}
+
+.pseo-cta-bottom .pseo-btn-primary {
+  background: #ffffff;
+  color: #2c2c2c;
+  border-color: #ffffff;
+}
+
+.pseo-cta-bottom .pseo-btn-primary:hover {
+  background: #8B7355;
+  color: #ffffff;
+  border-color: #8B7355;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .pseo-estimator-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pseo-hero {
+    min-height: 380px;
+    margin-top: 75px;
+  }
+
+  .pseo-hero h1 {
+    font-size: 2rem;
+  }
+
+  .pseo-section-title {
+    font-size: 1.6rem;
+  }
+}

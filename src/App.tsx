@@ -44,6 +44,7 @@ const CustomSteelWorks = lazy(() => import('./pages/CustomSteelWorks'))
 const WroughtIronLanding = lazy(() => import('./pages/WroughtIronLanding'))
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail'))
 const TagArchive = lazy(() => import('./pages/TagArchive'))
+const PSEOLandingPage = lazy(() => import('./pages/PSEOLandingPage'))
 
 // SEO Landing Pages - Keyword Celah (Anti-Marketplace Strategy)
 const FurnitureBesiCustomBekasi = lazy(() => import('./pages/FurnitureBesiCustomBekasi'))
@@ -400,6 +401,11 @@ function App() {
           } />
 
           {/* Custom Steel Works Routes */}
+          <Route path="/s/:slug" element={
+            <Suspense fallback={<Loading />}>
+              <PSEOLandingPage />
+            </Suspense>
+          } />
           <Route path="/services/custom-steel-works" element={
             <Suspense fallback={<Loading />}>
               <CustomSteelWorks />
