@@ -6328,6 +6328,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 386,
+    "slug": "jasa-kanopi-besi-hollow-bekasi-minimalis-2026",
+    "title": "Jasa Kanopi Besi Hollow Bekasi Minimalis 2026",
+    "category": "Kanopi",
+    "excerpt": "Dapatkan kanopi besi hollow Bekasi minimalis 2026 dengan Mangala Living, hubungi +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-15",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
