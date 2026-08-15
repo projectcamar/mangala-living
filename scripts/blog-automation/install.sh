@@ -26,18 +26,15 @@ echo "Configuring Git user..."
 git config --global user.name "Mangala Auto Publisher"
 git config --global user.email "lifewithmangala@gmail.com"
 
-# 4. Set environment variables in ~/.bashrc if not already present
-OPENROUTER_KEY="${OPENROUTER_API_KEY:-YOUR_OPENROUTER_API_KEY}"
-GROQ_KEY="${GROQ_API_KEY:-YOUR_GROQ_API_KEY}"
+# 4. Extract existing API keys if already set in ~/.bashrc or environment
+EXISTING_OR_KEY=$(grep -oP 'export OPENROUTER_API_KEY="\K[^"]+' ~/.bashrc 2>/dev/null || echo "")
+EXISTING_GROQ_KEY=$(grep -oP 'export GROQ_API_KEY="\K[^"]+' ~/.bashrc 2>/dev/null || echo "")
 
-grep -qF "OPENROUTER_API_KEY" ~/.bashrc || echo "export OPENROUTER_API_KEY=\"$OPENROUTER_KEY\"" >> ~/.bashrc
-grep -qF "GROQ_API_KEY" ~/.bashrc || echo "export GROQ_API_KEY=\"$GROQ_KEY\"" >> ~/.bashrc
-
-export OPENROUTER_API_KEY="$OPENROUTER_KEY"
-export GROQ_API_KEY="$GROQ_KEY"
+OPENROUTER_KEY="${OPENROUTER_API_KEY:-${EXISTING_OR_KEY:-YOUR_OPENROUTER_API_KEY}}"
+GROQ_KEY="${GROQ_API_KEY:-${EXISTING_GROQ_KEY:-YOUR_GROQ_API_KEY}}"
 
 # 5. Create Cron job for 3x daily runs (08:00, 14:00, 20:00 WIB / 01:00, 07:00, 13:00 UTC)
-CRON_JOB="0 1,7,13 * * * export OPENROUTER_API_KEY=\"$OPENROUTER_KEY\" && export GROQ_API_KEY=\"$GROQ_KEY\" && cd $(pwd) && node scripts/blog-automation/generate-blog.cjs >> /tmp/blog-automation.log 2>&1"
+CRON_JOB="0 1,7,13 * * * [ -f ~/cron-blog/run.sh ] && . ~/cron-blog/run.sh; [ -f ~/.bashrc ] && . ~/.bashrc; cd $(pwd) && node scripts/blog-automation/generate-blog.cjs >> /tmp/blog-automation.log 2>&1"
 
 (crontab -l 2>/dev/null | grep -v "generate-blog.cjs" ; echo "$CRON_JOB") | crontab -
 

@@ -26,7 +26,7 @@ Singapore VPS (43.159.44.156)
 Connect to your VPS via SSH and run:
 
 ```bash
-ssh root@43.159.44.156
+ssh ubuntu@43.159.44.156
 cd /path/to/mangala-living
 chmod +x scripts/blog-automation/install.sh
 ./scripts/blog-automation/install.sh

@@ -15,12 +15,46 @@ const fs = require('fs')
 const path = require('path')
 const { execSync } = require('child_process')
 
+// Helper to auto-discover API keys from .env or run.sh files on VPS
+function loadEnvFiles() {
+  const possiblePaths = [
+    path.join(__dirname, '../../.env'),
+    '/home/ubuntu/cron-blog/.env',
+    '/home/ubuntu/cron-blog/run.sh',
+    '/home/ubuntu/.env',
+    '/root/cron-blog/.env',
+    '/root/cron-blog/run.sh',
+  ]
+  for (const envPath of possiblePaths) {
+    if (fs.existsSync(envPath)) {
+      try {
+        const content = fs.readFileSync(envPath, 'utf8')
+        const lines = content.split('\n')
+        for (const line of lines) {
+          const trimmed = line.trim()
+          if (!trimmed || trimmed.startsWith('#')) continue
+          const cleanLine = trimmed.startsWith('export ') ? trimmed.replace('export ', '') : trimmed
+          const match = cleanLine.match(/^([A-Za-z0-9_]+)=["']?(.*?)["']?$/)
+          if (match) {
+            const key = match[1]
+            const val = match[2]
+            if (!process.env[key] || process.env[key].includes('YOUR_')) {
+              process.env[key] = val
+            }
+          }
+        }
+      } catch (e) {}
+    }
+  }
+}
+loadEnvFiles()
+
 // Load environment variables
 // Primary: Mangala keys | Fallback: shared from lasbekasi .env via run.sh
-const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY
-const GROQ_KEY = process.env.GROQ_API_KEY
-const GROQ_FALLBACK = process.env.GROQ_FALLBACK_KEY       // lasbekasi's GROQ key
-const BLUESMINDS_KEY = process.env.BLUESMINDS_API_KEY     // lasbekasi's Bluesminds key
+const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY && !process.env.OPENROUTER_API_KEY.includes('YOUR_') ? process.env.OPENROUTER_API_KEY : null
+const GROQ_KEY = process.env.GROQ_API_KEY && !process.env.GROQ_API_KEY.includes('YOUR_') ? process.env.GROQ_API_KEY : null
+const GROQ_FALLBACK = process.env.GROQ_FALLBACK_KEY || process.env.GROQ_API_KEY
+const BLUESMINDS_KEY = process.env.BLUESMINDS_API_KEY
 
 const TOPICS_FILE = path.join(__dirname, 'topics.json')
 const BLOG_DATA_FILE = path.join(__dirname, '../../src/data/blog.ts')
@@ -267,6 +301,7 @@ FORMAT OUTPUT — HARUS berupa JSON murni tanpa backtick atau markdown, dengan s
     const blogContentTs = fs.readFileSync(BLOG_CONTENT_FILE, 'utf8')
     const newContentObj = {
       slug: slug,
+      language: 'id',
       sections: article.sections,
     }
 

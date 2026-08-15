@@ -8639,6 +8639,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-bekasi-berpengalaman-profesional",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -8732,6 +8733,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 },
   {
     "slug": "bengkel-las-cikarang-murah-terpercaya",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -8824,6 +8826,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-cibubur-terdekat-profesional",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -8917,6 +8920,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-cileungsi-terbaik-berpengalaman",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -9012,6 +9016,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-jakarta-timur-murah-berkualitas",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -9104,6 +9109,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "tukang-las-bekasi-panggilan-24-jam",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -9197,6 +9203,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "tukang-kanopi-bekasi-murah-terpercaya",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -9296,6 +9303,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "tukang-kanopi-cikarang-terdekat-berpengalaman",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -9391,6 +9399,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "tukang-kanopi-cibubur-profesional-terjangkau",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -9483,6 +9492,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-depok-terdekat-terpercaya",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -9575,6 +9585,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-bogor-berpengalaman-murah",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -9673,6 +9684,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-tambun-bekasi-profesional",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -9767,6 +9779,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-jatiasih-terdekat-terpercaya",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -9861,6 +9874,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-karawang-murah-berkualitas",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -9956,6 +9970,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-cibitung-bekasi-terdekat",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -10048,6 +10063,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-grand-wisata-bekasi-profesional",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -10140,6 +10156,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-summarecon-bekasi-terpercaya",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -10234,6 +10251,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-harapan-indah-bekasi-terdekat",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -10331,6 +10349,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-bekasi-timur-murah-berpengalaman",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -10426,6 +10445,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-bekasi-selatan-profesional-terjangkau",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -10532,6 +10552,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-bekasi-utara-terdekat-terpercaya",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -10624,6 +10645,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "bengkel-las-bekasi-barat-murah-berkualitas",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -10716,6 +10738,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "jasa-pagar-besi-bekasi-custom-murah",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -10808,6 +10831,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "jasa-pagar-besi-cikarang-minimalis-terpercaya",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -10889,6 +10913,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "jasa-teralis-jendela-bekasi-anti-maling-murah",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -10981,6 +11006,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "jasa-railing-tangga-bekasi-minimalis-custom",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -11074,6 +11100,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "jasa-railing-balkon-bekasi-custom-murah",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -11167,6 +11194,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "jasa-folding-gate-bekasi-murah-berkualitas",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -11274,6 +11302,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "jasa-pintu-besi-bekasi-custom-terpercaya",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -11366,6 +11395,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "jasa-pintu-henderson-bekasi-sliding-lipat",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
