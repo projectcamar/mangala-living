@@ -6316,6 +6316,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 385,
+    "slug": "jasa-tangga-putar-besi-bekasi-minimalis-elegan",
+    "title": "Jasa Tangga Putar Besi Bekasi Minimalis Elegan",
+    "category": "Bengkel Las",
+    "excerpt": "Dapatkan tangga putar bekasi berkualitas dengan Mangala Living, hubungi +6288801146881 untuk konsultasi GRATIS!",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-15",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 

@@ -11673,6 +11673,91 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "jasa-tangga-putar-besi-bekasi-minimalis-elegan",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan tangga putar bekasi yang berkualitas memang tidak mudah, karena itu memerlukan keahlian dan pengalaman yang cukup untuk menciptakan karya yang elegan dan fungsional. Tangga putar bekasi yang baik harus memiliki desain yang minimalis dan elegan, serta menggunakan material yang berkualitas tinggi. Dengan mencari kata kunci tangga putar bekasi, Anda sudah di tempat yang tepat karena Mangala Living adalah pilihan terbaik untuk memenuhi kebutuhan Anda.",
+                "Mangala Living telah berpengalaman dalam menciptakan berbagai jenis tangga, termasuk tangga putar bekasi yang menjadi salah satu produk unggulan kami. Dengan menggunakan kata kunci utama tangga putar bekasi, Anda dapat menemukan informasi yang relevan dan akurat tentang produk dan layanan kami. Tangga putar bekasi yang kami ciptakan memiliki desain yang unik dan elegan, sehingga dapat meningkatkan nilai estetika bangunan Anda.",
+                "Jika Anda sedang mencari jasa tangga putar besi bekasi yang dapat memenuhi kebutuhan Anda, maka Mangala Living adalah pilihan yang tepat. Dengan pengalaman yang cukup dan komitmen kualitas yang tinggi, kami dapat menciptakan tangga putar bekasi yang sesuai dengan keinginan Anda. Tangga putar bekasi yang kami ciptakan memiliki kualitas yang baik dan dapat bertahan lama, sehingga Anda tidak perlu khawatir tentang keamanan dan kenyamanan."
+            ]
+        },
+        {
+            "heading": "Jasa Tangga Putar Besi Bekasi Minimalis Elegan & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berdiri sejak 1999 dan telah memiliki pengalaman yang cukup dalam menciptakan berbagai jenis produk besi, termasuk tangga putar bekasi. Kami telah menyelesaikan total proyek yang cukup banyak dan telah memiliki komitmen kualitas yang tinggi. Dengan lokasi workshop yang strategis di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat, kami dapat dengan mudah melayani kebutuhan Anda.",
+                "Kami memiliki tim yang berpengalaman dan terampil dalam menciptakan tangga putar bekasi yang sesuai dengan keinginan Anda. Dengan menggunakan material yang berkualitas tinggi dan memiliki komitmen kualitas yang tinggi, kami dapat menciptakan produk yang baik dan dapat bertahan lama. Mangala Living adalah pilihan yang tepat untuk memenuhi kebutuhan Anda akan tangga putar bekasi yang minimalis dan elegan."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Mangala Living menggunakan material yang berkualitas tinggi untuk menciptakan tangga putar bekasi yang sesuai dengan keinginan Anda. Kami memiliki beberapa pilihan material yang dapat Anda pilih, termasuk Besi Hollow, Besi Hitam, Stainless Steel 304, Galvanis, Baja Ringan, Besi Plat, dan Besi Tempa. Setiap material memiliki keunggulan yang berbeda-beda, sehingga Anda dapat memilih yang sesuai dengan kebutuhan Anda.",
+                "Besi Hollow memiliki keunggulan yang baik dalam hal kekuatan dan ketahanan, sehingga dapat digunakan untuk menciptakan tangga putar bekasi yang kuat dan tahan lama. Besi Hitam memiliki keunggulan yang baik dalam hal harga yang terjangkau, sehingga dapat digunakan untuk menciptakan tangga putar bekasi yang ekonomis. Stainless Steel 304 memiliki keunggulan yang baik dalam hal ketahanan terhadap korosi, sehingga dapat digunakan untuk menciptakan tangga putar bekasi yang tahan lama."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living tidak hanya menyediakan jasa tangga putar besi bekasi, tetapi juga menyediakan berbagai layanan lainnya yang dapat memenuhi kebutuhan Anda. Kami memiliki tim yang berpengalaman dan terampil dalam menciptakan berbagai jenis produk besi, termasuk Kanopi, Pagar Besi, Teralis Jendela, Teralis Pintu, Railing Tangga, Railing Balkon, Folding Gate, Pintu Besi, Pintu Henderson, Pintu Kasa Nyamuk, Tangga Besi Custom, Tangga Putar, Menara Tangki Air, Tukang Las Panggilan, dan Besi Tempa Custom.",
+                "Kami memiliki komitmen kualitas yang tinggi dan dapat menciptakan produk yang sesuai dengan keinginan Anda. Dengan menggunakan material yang berkualitas tinggi dan memiliki tim yang berpengalaman, kami dapat menciptakan produk yang baik dan dapat bertahan lama. Mangala Living adalah pilihan yang tepat untuk memenuhi kebutuhan Anda akan berbagai layanan besi."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan",
+                "Besi Tempa Custom"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki beberapa keunggulan yang dapat membuat Anda memilih kami sebagai pilihan terbaik untuk memenuhi kebutuhan Anda akan tangga putar bekasi. Berikut adalah beberapa keunggulan yang kami miliki: 1. Berpengalaman sejak 1999, 2. Tukang Las Handal, 3. Material Terbaik, 4. Tepat Waktu, 5. Respon Cepat (24 jam), 6. Harga Terjangkau, 7. Gratis Survei, 8. Gratis Ongkir (area jangkauan), 9. Garansi Pekerjaan (1 tahun).",
+                "Kami memiliki komitmen kualitas yang tinggi dan dapat menciptakan produk yang sesuai dengan keinginan Anda. Dengan menggunakan material yang berkualitas tinggi dan memiliki tim yang berpengalaman, kami dapat menciptakan produk yang baik dan dapat bertahan lama. Mangala Living adalah pilihan yang tepat untuk memenuhi kebutuhan Anda akan tangga putar bekasi yang minimalis dan elegan."
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living memiliki sistem harga yang transparan dan terjangkau. Kami memiliki harga per meter yang kompetitif dan dapat disesuaikan dengan kebutuhan Anda. Kami juga menyediakan survei gratis sebelum membuat RAB, sehingga Anda dapat memiliki gambaran yang jelas tentang biaya yang dibutuhkan.",
+                "Jika Anda ingin mengetahui lebih lanjut tentang harga tangga putar bekasi yang kami tawarkan, Anda dapat menghubungi kami via WhatsApp +6288801146881. Kami akan dengan senang hati menjawab pertanyaan Anda dan memberikan penawaran yang terbaik untuk Anda.",
+                "Kami memiliki komitmen kualitas yang tinggi dan dapat menciptakan produk yang sesuai dengan keinginan Anda. Dengan menggunakan material yang berkualitas tinggi dan memiliki tim yang berpengalaman, kami dapat menciptakan produk yang baik dan dapat bertahan lama. Mangala Living adalah pilihan yang tepat untuk memenuhi kebutuhan Anda akan tangga putar bekasi yang minimalis dan elegan."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Mangala Living memiliki wilayah jangkauan yang luas, termasuk Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, Bali, dan seluruh Jabodetabek. Kami dapat melayani kebutuhan Anda dengan cepat dan efisien, sehingga Anda tidak perlu khawatir tentang jarak dan waktu.",
+                "Jika Anda ingin menghubungi kami, Anda dapat melakukannya via WhatsApp +6288801146881. Kami akan dengan senang hati menjawab pertanyaan Anda dan memberikan penawaran yang terbaik untuk Anda. Mangala Living adalah pilihan yang tepat untuk memenuhi kebutuhan Anda akan tangga putar bekasi yang minimalis dan elegan.",
+                "Jangan ragu untuk menghubungi kami, karena kami memiliki komitmen kualitas yang tinggi dan dapat menciptakan produk yang sesuai dengan keinginan Anda. Hubungi Mangala Living sekarang via WhatsApp +6288801146881 untuk konsultasi GRATIS!"
+            ]
+        }
+    ]
+}
 
 ]
 
