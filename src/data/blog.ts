@@ -6292,6 +6292,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 383,
+    "slug": "jasa-pembuatan-menara-tangki-air-besi-bekasi",
+    "title": "Jasa Pembuatan Menara Tangki Air Besi Bekasi",
+    "category": "Bengkel Las",
+    "excerpt": "Dapatkan menara tangki air bekasi berkualitas dari Mangala Living, hubungi +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-15",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
