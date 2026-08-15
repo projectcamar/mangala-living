@@ -200,6 +200,8 @@ const allProducts: Product[] = ALL_PRODUCTS.map(p => ({
   price: p.price,
   image: p.image,
   slug: p.slug
+}))
+
 function SearchResults() {
   const location = useLocation()
   const searchParams = new URLSearchParams(location.search)
