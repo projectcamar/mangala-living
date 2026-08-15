@@ -19,6 +19,7 @@ import hollowlineDisplayRackImage from '../assets/Hollowline-Display-Rack.webp'
 import frameLoftBookshelfImage from '../assets/frame-Loft-Bookshelf.webp'
 import daybedImage from '../assets/industrial-daybed-boneonly.webp'
 import loungeSetCoffeeTableImage from '../assets/longue-set-coffee-table.webp'
+import steelframeOutdoorBarSetImage from '../assets/Steelfram-Outdoor-Bar-Set.webp'
 
 interface Category {
   id: number
