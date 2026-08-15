@@ -6826,7 +6826,7 @@ const BLOG_CONTENTS: BlogContent[] = [
 ]
 
 // Optional localized manual contents (non-ID/EN). Each entry is fully written, not generated.
-type SupportedLocale = 'en' | 'es' | 'fr' | 'ko' | 'ja' | 'zh' | 'ar'
+type SupportedLocale = 'en' | 'es' | 'fr' | 'ko' | 'ja' | 'zh' | 'ar' | 'id'
 interface BlogContentLocalized extends BlogContent { language: SupportedLocale }
 
 const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
@@ -11488,6 +11488,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "jasa-pembuatan-menara-tangki-air-besi-bekasi",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
@@ -11581,6 +11582,7 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
 ,
   {
     "slug": "jasa-tangga-besi-custom-bekasi-minimalis-modern",
+    "language": "id",
     "sections": [
         {
             "heading": "Intro",
