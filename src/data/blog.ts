@@ -6280,6 +6280,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 382,
+    "slug": "jasa-pintu-henderson-bekasi-sliding-lipat",
+    "title": "Jasa Pintu Henderson Bekasi Sliding & Lipat",
+    "category": "Bengkel Las",
+    "excerpt": "Dapatkan pintu henderson bekasi berkualitas dengan Mangala Living, hubungi sekarang untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-15",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 

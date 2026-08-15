@@ -11363,6 +11363,98 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "jasa-pintu-henderson-bekasi-sliding-lipat",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan pintu henderson bekasi yang berkualitas memang tidak mudah, apalagi jika Anda mencari yang terbaik di Bekasi. Pintu henderson bekasi yang baik harus memiliki kualitas yang tinggi dan tahan lama. Mangala Living hadir sebagai solusi bagi Anda yang mencari pintu henderson bekasi yang berkualitas. Dengan pengalaman yang luas, Mangala Living telah menjadi pilihan terbaik bagi masyarakat Bekasi dalam hal pintu henderson bekasi.",
+                "Mangala Living telah berdiri sejak 1999 dan telah melayani ribuan pelanggan di Bekasi. Kami memiliki komitmen yang kuat untuk menyediakan pintu henderson bekasi yang berkualitas dan memuaskan. Pintu henderson bekasi yang kami produksi menggunakan material yang terbaik dan diproses dengan teknologi yang canggih. Jadi, jika Anda sedang mencari pintu henderson bekasi yang berkualitas, maka Anda sudah di tempat yang tepat.",
+                "Dengan menggunakan jasa pintu henderson bekasi dari Mangala Living, Anda dapat yakin bahwa Anda akan mendapatkan pintu henderson bekasi yang berkualitas dan tahan lama. Kami memiliki tim yang berpengalaman dan handal dalam produksi pintu henderson bekasi. Jadi, jika Anda ingin memiliki pintu henderson bekasi yang terbaik, maka Mangala Living adalah pilihan yang tepat untuk Anda."
+            ]
+        },
+        {
+            "heading": "Jasa Pintu Henderson Bekasi Sliding & Lipat & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berdiri sejak 1999 dan telah melayani ribuan pelanggan di Bekasi. Kami memiliki komitmen yang kuat untuk menyediakan pintu henderson bekasi yang berkualitas dan memuaskan. Dengan pengalaman yang luas, kami telah menjadi pilihan terbaik bagi masyarakat Bekasi dalam hal pintu henderson bekasi.",
+                "Kami memiliki workshop yang terletak di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat. Dengan lokasi yang strategis, kami dapat dengan mudah melayani pelanggan di Bekasi dan sekitarnya. Kami juga memiliki tim yang berpengalaman dan handal dalam produksi pintu henderson bekasi. Jadi, jika Anda ingin memiliki pintu henderson bekasi yang terbaik, maka Mangala Living adalah pilihan yang tepat untuk Anda."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Mangala Living menggunakan material yang terbaik untuk produksi pintu henderson bekasi. Kami memiliki beberapa pilihan material yang dapat Anda pilih, yaitu Besi Hollow, Besi Hitam, Stainless Steel 304, Galvanis, Baja Ringan, Besi Plat, dan Besi Tempa. Setiap material memiliki keunggulan yang berbeda-beda, sehingga Anda dapat memilih yang sesuai dengan kebutuhan Anda.",
+                "Besi Hollow merupakan pilihan yang populer karena ringan dan tahan lama. Besi Hitam memiliki kekuatan yang tinggi dan tahan terhadap korosi. Stainless Steel 304 memiliki ketahanan yang tinggi terhadap korosi dan mudah dibersihkan. Galvanis memiliki lapisan yang tahan terhadap korosi dan dapat digunakan untuk outdoor. Baja Ringan memiliki kekuatan yang tinggi dan ringan. Besi Plat memiliki kekuatan yang tinggi dan dapat digunakan untuk konstruksi yang berat. Besi Tempa memiliki kekuatan yang tinggi dan dapat digunakan untuk dekorasi."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living tidak hanya menyediakan jasa pintu henderson bekasi, tetapi juga menyediakan layanan lainnya. Kami memiliki beberapa layanan yang dapat Anda pilih, yaitu Kanopi, Pagar Besi, Teralis Jendela, Teralis Pintu, Railing Tangga, Railing Balkon, Folding Gate, Pintu Besi, Pintu Henderson, Pintu Kasa Nyamuk, Tangga Besi Custom, Tangga Putar, Menara Tangki Air, dan Tukang Las Panggilan.",
+                "Dengan layanan yang lengkap, kami dapat membantu Anda dalam memenuhi kebutuhan Anda. Kami memiliki tim yang berpengalaman dan handal dalam setiap layanan yang kami sediakan. Jadi, jika Anda ingin memiliki pintu henderson bekasi yang terbaik, maka Mangala Living adalah pilihan yang tepat untuk Anda."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki beberapa keunggulan yang membuat kami menjadi pilihan terbaik bagi masyarakat Bekasi. Berikut beberapa keunggulan kami: Berpengalaman sejak 1999, Tukang Las Handal, Material Terbaik, Tepat Waktu, Respon Cepat 24 jam, Harga Terjangkau, Gratis Survei, Gratis Ongkir area jangkauan, dan Garansi Pekerjaan 1 tahun.",
+                "Dengan keunggulan yang kami miliki, kami dapat membantu Anda dalam memenuhi kebutuhan Anda. Kami memiliki komitmen yang kuat untuk menyediakan pintu henderson bekasi yang berkualitas dan memuaskan. Jadi, jika Anda ingin memiliki pintu henderson bekasi yang terbaik, maka Mangala Living adalah pilihan yang tepat untuk Anda."
+            ],
+            "list": [
+                "Berpengalaman sejak 1999",
+                "Tukang Las Handal",
+                "Material Terbaik",
+                "Tepat Waktu",
+                "Respon Cepat 24 jam",
+                "Harga Terjangkau",
+                "Gratis Survei",
+                "Gratis Ongkir area jangkauan",
+                "Garansi Pekerjaan 1 tahun"
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living memiliki harga yang terjangkau dan transparan. Kami menggunakan sistem harga per meter, sehingga Anda dapat dengan mudah menghitung biaya yang diperlukan. Kami juga menyediakan survei gratis sebelum RAB, sehingga Anda dapat mengetahui biaya yang diperlukan dengan lebih akurat.",
+                "Jika Anda ingin mengetahui harga pintu henderson bekasi dari Mangala Living, Anda dapat menghubungi kami melalui WhatsApp di +6288801146881. Kami akan dengan senang hati membantu Anda dalam memenuhi kebutuhan Anda."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Mangala Living memiliki wilayah jangkauan yang luas, yaitu Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, dan seluruh Jabodetabek. Dengan wilayah jangkauan yang luas, kami dapat membantu Anda dalam memenuhi kebutuhan Anda.",
+                "Jika Anda ingin memiliki pintu henderson bekasi yang terbaik, maka Mangala Living adalah pilihan yang tepat untuk Anda. Hubungi kami sekarang juga melalui WhatsApp di +6288801146881 untuk konsultasi gratis. Kami akan dengan senang hati membantu Anda dalam memenuhi kebutuhan Anda."
+            ]
+        }
+    ]
+}
 
 ]
 
