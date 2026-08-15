@@ -6,7 +6,6 @@ import { useLocation } from 'react-router-dom'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import CatalogModal from '../components/CatalogModal'
 import CategoriesSection from '../components/CategoriesSection'
 import BestSellersSection from '../components/BestSellersSection'
 import OurProductsSection from '../components/OurProductsSection'
@@ -162,7 +161,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="home">
-      <CatalogModal />
       <Helmet htmlAttributes={{ lang: language === 'ar' ? 'ar' : (language === 'zh' ? 'zh' : (language === 'ja' ? 'ja' : (language === 'es' ? 'es' : (language === 'fr' ? 'fr' : (language === 'ko' ? 'ko' : localeMeta.lang))))), dir: language === 'ar' ? 'rtl' : 'ltr', 'data-language': language }}>
         <title>{translations.title}</title>
         <meta name="description" content={translations.description} />

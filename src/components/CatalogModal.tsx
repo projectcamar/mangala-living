@@ -126,9 +126,11 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose, mode = 'lead
 
   useEffect(() => {
     // 2. Handle automatic popup for first-time or returning visitors
+    let timerId: NodeJS.Timeout
+
     const initializeModal = () => {
-      // Don't trigger automatic logic if it's already being shown by parent
-      if (show) return
+      // Don't trigger automatic logic if modal visibility is explicitly controlled by parent
+      if (show !== undefined) return
 
       // Get language from current page URL
       const urlLang = getLanguageFromLocation(location.pathname, location.search)
@@ -185,14 +187,15 @@ const CatalogModal: React.FC<CatalogModalProps> = ({ show, onClose, mode = 'lead
       }
 
       if (shouldShow) {
-        setTimeout(() => {
+        timerId = setTimeout(() => {
           setIsVisible(true)
         }, 3000) // 3 seconds delay for auto-popup
       }
     }
 
     initializeModal()
-  }, [])
+    return () => clearTimeout(timerId)
+  }, [show, location.pathname, location.search])
 
   const handleClose = () => {
     setIsVisible(false)
