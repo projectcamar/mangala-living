@@ -196,8 +196,8 @@ MANDATORY 7-SECTION STRUCTURE:
 6. "Transparent Pricing & Export Inquiry" — 2-3 paragraphs explaining custom quote process based on dimensions, complexity, and shipping. Direct call to action via WhatsApp: +6288801146881.
 7. "Service Locations & Global Export Assistance" — Mention local regions (Bali, Jakarta, Bekasi, Surabaya) and international export destinations (Australia, Singapore, USA, UAE, UK, Canada, NZ, Europe). Conclude with strong CTA: "Contact Mangala Living via WhatsApp +6288801146881 or email for custom quotes and CAD design reviews!"
 
-WRITING RULES:
-- Write in natural, professional, persuasive language (Bahasa Indonesia or English depending on title intent, or bilingual ID/EN naturally)
+- Write in the EXACT target language matching the title's language (English, Spanish, Arabic, Mandarin Chinese, Japanese, French, Korean, or Indonesian)
+- Maintain native, professional, persuasive tone in that language
 - Mention "Mangala Living" at least 10 times
 - Mention WhatsApp +6288801146881 in sections 6 and 7
 - NO markdown bold/italic inside paragraph blocks
@@ -297,11 +297,21 @@ FORMAT OUTPUT — HARUS berupa JSON murni tanpa backtick atau markdown, dengan s
     fs.writeFileSync(BLOG_DATA_FILE, updatedBlogTs, 'utf8')
     console.log(`Appended metadata to blog.ts (ID: ${newId})`)
 
+    // Detect topic language for TypeScript SupportedLocale compliance ('id'|'en'|'ar'|'zh'|'ja'|'es'|'fr'|'ko')
+    let postLang = 'id'
+    if (/[\u0600-\u06FF]/.test(topicItem.topic)) postLang = 'ar'
+    else if (/[\u4E00-\u9FFF]/.test(topicItem.topic)) postLang = 'zh'
+    else if (/[\u3040-\u30FF]/.test(topicItem.topic)) postLang = 'ja'
+    else if (/[\uAC00-\uD7AF]/.test(topicItem.topic)) postLang = 'ko'
+    else if (/Fabricante|Proveedor|Puertas|Hierro Forjado/i.test(topicItem.topic)) postLang = 'es'
+    else if (/Fournisseur|Exportateur|Portails|Fer Forgé/i.test(topicItem.topic)) postLang = 'fr'
+    else if (topicItem.category === 'Wrought Iron Export') postLang = 'en'
+
     // 2. Append to blogContent.ts
     const blogContentTs = fs.readFileSync(BLOG_CONTENT_FILE, 'utf8')
     const newContentObj = {
       slug: slug,
-      language: 'id',
+      language: postLang,
       sections: article.sections,
     }
 

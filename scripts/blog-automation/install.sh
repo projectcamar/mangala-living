@@ -1,7 +1,7 @@
 #!/bin/bash
 # Mangala Living — VPS Blog Automation Setup Script
 # Server: Singapore Ubuntu (43.159.44.156)
-# Schedule: 3x per day (08:00, 14:00, 20:00 WIB / 01:00, 07:00, 13:00 UTC)
+# Schedule: 5x per day (05:00, 09:00, 13:00, 17:00, 21:00 WIB / 22:00, 02:00, 06:00, 10:00, 14:00 UTC)
 
 set -e
 
@@ -33,12 +33,12 @@ EXISTING_GROQ_KEY=$(grep -oP 'export GROQ_API_KEY="\K[^"]+' ~/.bashrc 2>/dev/nul
 OPENROUTER_KEY="${OPENROUTER_API_KEY:-${EXISTING_OR_KEY:-YOUR_OPENROUTER_API_KEY}}"
 GROQ_KEY="${GROQ_API_KEY:-${EXISTING_GROQ_KEY:-YOUR_GROQ_API_KEY}}"
 
-# 5. Create Cron job for 3x daily runs (08:00, 14:00, 20:00 WIB / 01:00, 07:00, 13:00 UTC)
-CRON_JOB="0 1,7,13 * * * [ -f ~/cron-blog/run.sh ] && . ~/cron-blog/run.sh; [ -f ~/.bashrc ] && . ~/.bashrc; cd $(pwd) && node scripts/blog-automation/generate-blog.cjs >> /tmp/blog-automation.log 2>&1"
+# 5. Create Cron job for 5x daily runs (05:00, 09:00, 13:00, 17:00, 21:00 WIB / 22:00, 02:00, 06:00, 10:00, 14:00 UTC)
+CRON_JOB="0 22,2,6,10,14 * * * [ -f ~/cron-blog/run.sh ] && . ~/cron-blog/run.sh; [ -f ~/.bashrc ] && . ~/.bashrc; cd $(pwd) && node scripts/blog-automation/generate-blog.cjs >> /tmp/blog-automation.log 2>&1"
 
 (crontab -l 2>/dev/null | grep -v "generate-blog.cjs" ; echo "$CRON_JOB") | crontab -
 
-echo "✅ Cron job scheduled successfully (3x per day: 08:00, 14:00, 20:00 WIB)."
+echo "✅ Cron job scheduled successfully (5x per day: 05:00, 09:00, 13:00, 17:00, 21:00 WIB)."
 echo "📋 Active crontab:"
 crontab -l
 

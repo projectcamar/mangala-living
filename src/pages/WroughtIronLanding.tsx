@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet-async'
+import { useLocation } from 'react-router-dom'
 import { Diamond, Globe, Wrench, Shield } from 'lucide-react'
 import AnnouncementBar from '../components/AnnouncementBar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { getCurrentLanguage, getStoredLanguage, detectLanguageFromIP, type LanguageCode } from '../utils/languageManager'
+import { getCurrentLanguage, type LanguageCode } from '../utils/languageManager'
 import heroImage from '../assets/main-hero-image.webp'
 import steelframeOutdoorBarSetImage from '../assets/Steelfram-Outdoor-Bar-Set.webp'
 import './WroughtIronLanding.css'
@@ -710,27 +711,9 @@ const TRANSLATIONS: Record<LanguageCode, WITranslation> = {
 }
 
 export default function WroughtIronLanding() {
-  const [language, setLanguage] = useState<LanguageCode>('id')
-  const [isIndonesian, setIsIndonesian] = useState(true)
-
-  useEffect(() => {
-    const stored = getStoredLanguage()
-    if (stored) {
-      setLanguage(stored as LanguageCode)
-      setIsIndonesian(stored === 'id')
-    } else {
-      const current = getCurrentLanguage()
-      setLanguage(current as LanguageCode)
-      setIsIndonesian(current === 'id')
-      detectLanguageFromIP().then(detected => {
-        if (detected) {
-          setLanguage(detected as LanguageCode)
-          setIsIndonesian(detected === 'id')
-        }
-      })
-    }
-  }, [])
-
+  const location = useLocation()
+  const language = getCurrentLanguage(location.pathname, location.search)
+  const isIndonesian = language === 'id'
   const t = TRANSLATIONS[language] ?? TRANSLATIONS['en']
 
   const handleWhatsApp = (subject?: string) => {

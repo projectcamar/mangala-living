@@ -43,7 +43,7 @@ const ServiceDetail: React.FC = () => {
   const service = getServiceBySlug(slug)
   if (!service) return <NotFound />
 
-  const svcT = isIndonesian ? service.translations.id : service.translations.en
+  const svcT = service.translations[lang as keyof typeof service.translations] || (isIndonesian ? service.translations.id : service.translations.en)
   const heroImg = HERO_IMAGES[slug] ?? DEFAULT_IMAGE
 
   const waMessage = isIndonesian
