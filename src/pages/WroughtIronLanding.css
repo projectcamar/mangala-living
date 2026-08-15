@@ -1,338 +1,586 @@
-.wrought-iron-page {
-  font-family: inherit;
-  color: #1a1a1a;
-  background-color: #fdfdfd;
+/* ================================
+   WroughtIronLanding — Mangala Design System
+   Colors: #2c2c2c (dark), #8B7355 (accent), #666 (body), #f9f9f9 (bg-alt)
+   Font: inherits Montserrat / Plus Jakarta Sans from App.css
+================================ */
+
+.wi-page {
+  background: #fff;
 }
 
-.wi-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Hero Section */
+/* ---- Hero ---- */
 .wi-hero {
-  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
-  color: #ffffff;
-  padding: 80px 0;
+  position: relative;
+  height: 480px;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.wi-hero-image {
+  position: absolute;
+  inset: 0;
+}
+
+.wi-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wi-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.50);
+}
+
+.wi-hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  z-index: 1;
+  padding: 0 40px;
 }
 
-.wi-badge {
-  display: inline-block;
-  background: rgba(234, 179, 8, 0.2);
-  color: #facc15;
-  border: 1px solid rgba(234, 179, 8, 0.4);
-  padding: 6px 16px;
-  border-radius: 50px;
-  font-size: 0.875rem;
+.wi-hero-title {
+  font-size: 3rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  color: #fff;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.wi-hero h1 {
-  font-size: 2.75rem;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 20px;
+  margin: 0 0 16px 0;
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 1.2;
 }
 
-.wi-hero p {
-  font-size: 1.125rem;
-  color: #d1d5db;
-  max-width: 760px;
-  margin: 0 auto 30px auto;
-  line-height: 1.6;
+.wi-hero-subtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 700px;
+  line-height: 1.7;
+  margin: 0 0 32px 0;
 }
 
 .wi-hero-actions {
   display: flex;
-  justify-content: center;
   gap: 16px;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 40px;
 }
 
-.wi-btn {
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  text-decoration: none;
-  display: inline-block;
-}
-
+/* ---- Buttons ---- */
 .wi-btn-primary {
-  background: #25d366;
-  color: #ffffff;
-  border: none;
+  display: inline-block;
+  padding: 14px 40px;
+  background: #2c2c2c;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border: 2px solid #2c2c2c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .wi-btn-primary:hover {
-  background: #1eb957;
+  background: #8B7355;
+  border-color: #8B7355;
   transform: translateY(-2px);
-}
-
-.wi-btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.wi-btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .wi-btn-large {
-  font-size: 1.125rem;
-  padding: 16px 36px;
+  padding: 16px 52px;
+  font-size: 1rem;
 }
 
-.wi-target-tags {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  font-size: 0.9rem;
-  color: #9ca3af;
+/* ---- Shared Container ---- */
+.wi-message-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
-/* Sections General */
+.wi-section-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ---- Section Titles ---- */
 .wi-section-title {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
+  color: #2c2c2c;
   text-align: center;
-  margin-bottom: 12px;
-  color: #111827;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.02em;
 }
 
 .wi-section-subtitle {
-  text-align: center;
-  color: #4b5563;
   font-size: 1.05rem;
-  margin-bottom: 48px;
+  line-height: 1.7;
+  color: #666;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 50px auto;
 }
 
-/* Segments */
-.wi-segments {
-  padding: 70px 0;
-  background: #ffffff;
+/* ---- Intro / Message Section ---- */
+.wi-intro-section {
+  background: #fff;
+  padding: 80px 0;
 }
 
-.wi-grid-4 {
+.wi-message-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
 }
 
-.wi-card {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  padding: 28px 24px;
-  border-radius: 12px;
-  transition: transform 0.2s, box-shadow 0.2s;
+.wi-message-text {
+  padding-right: 20px;
 }
 
-.wi-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+.wi-message-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.02em;
 }
 
-.wi-card-icon {
-  font-size: 2.2rem;
-  margin-bottom: 16px;
-}
-
-.wi-card h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #1f2937;
-}
-
-.wi-card p {
-  color: #4b5563;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-/* Capabilities */
-.wi-capabilities {
-  padding: 70px 0;
-  background: #f3f4f6;
-}
-
-.wi-grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 28px;
-}
-
-.wi-feature-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 32px 28px;
-  border: 1px solid #e5e7eb;
+.wi-message-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
 }
 
-.wi-feature-card h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
+.wi-message-paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #666;
+  margin: 0;
+}
+
+.wi-message-image-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+
+.wi-message-image {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.wi-message-image-wrapper:hover .wi-message-image {
+  transform: scale(1.03);
+}
+
+/* ---- Capabilities Section ---- */
+.wi-capabilities-section {
+  background: #f9f9f9;
+  padding: 80px 0;
+}
+
+.wi-capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.wi-capability-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.wi-capability-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.wi-capability-icon {
+  font-size: 2rem;
   margin-bottom: 16px;
-  color: #111827;
 }
 
-.wi-feature-card ul {
+.wi-capability-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin: 0 0 20px 0;
+}
+
+.wi-capability-card ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 24px 0;
+  margin: 0 0 28px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
 }
 
-.wi-feature-card li {
-  padding: 8px 0;
-  border-bottom: 1px dashed #f3f4f6;
+.wi-capability-card ul li {
   font-size: 0.95rem;
-  color: #374151;
+  color: #666;
+  line-height: 1.5;
+  padding-left: 18px;
+  position: relative;
 }
 
-.wi-card-btn {
-  background: #f9fafb;
-  border: 1px solid #d1d5db;
-  color: #111827;
-  padding: 10px 18px;
-  border-radius: 6px;
+.wi-capability-card ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: #8B7355;
   font-weight: 600;
+}
+
+.wi-card-cta {
+  display: inline-block;
+  margin-top: auto;
+  padding: 12px 0;
+  background: none;
+  border: none;
+  border-top: 1px solid #eee;
+  color: #2c2c2c;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
   cursor: pointer;
-  transition: all 0.2s;
-  text-align: center;
+  text-align: left;
+  transition: color 0.3s ease;
+  width: 100%;
 }
 
-.wi-card-btn:hover {
-  background: #111827;
-  color: #ffffff;
+.wi-card-cta:hover {
+  color: #8B7355;
 }
 
-/* Export Flags */
-.wi-export-destinations {
-  padding: 60px 0;
-  background: #ffffff;
-  text-align: center;
+/* ---- Why Choose Section ---- */
+.wi-why-section {
+  background: #fff;
+  padding: 80px 0 100px 0;
 }
 
-.wi-flags-grid {
+.wi-why-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
-  margin-top: 36px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 80px;
 }
 
-.wi-flag-box {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  padding: 16px;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: #111827;
+.wi-why-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.wi-flag-box span {
-  display: block;
-  font-weight: 400;
-  font-size: 0.85rem;
-  color: #6b7280;
-  margin-top: 4px;
+.wi-why-icon {
+  color: #2c2c2c;
+  margin-bottom: 20px;
 }
 
-/* Products Grid */
-.wi-products-section {
-  padding: 70px 0;
-  background: #f9fafb;
+.wi-why-item-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin: 0 0 12px 0;
 }
 
-.wi-product-grid {
+.wi-why-item-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+}
+
+/* ---- Buyers Section ---- */
+.wi-buyers-section {
+  background: #f9f9f9;
+  padding: 80px 0;
+}
+
+.wi-buyers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
-.wi-product-card {
-  background: #ffffff;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #e5e7eb;
+.wi-buyer-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 28px 24px;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.wi-product-img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
+.wi-buyer-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+  transform: translateY(-2px);
 }
 
-.wi-product-info {
-  padding: 20px;
+.wi-buyer-icon {
+  font-size: 2rem;
+  margin-bottom: 14px;
 }
 
-.wi-product-info h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.wi-price {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: #059669;
-  margin-bottom: 16px;
-}
-
-.wi-product-btn {
-  width: 100%;
-  background: #25d366;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  border-radius: 6px;
+.wi-buyer-card h3 {
+  font-size: 1rem;
   font-weight: 600;
-  cursor: pointer;
+  color: #2c2c2c;
+  margin: 0 0 10px 0;
 }
 
-/* CTA */
-.wi-cta {
-  background: #111827;
-  color: #ffffff;
+.wi-buyer-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+/* ---- Export Section ---- */
+.wi-export-section {
+  background: #fff;
   padding: 80px 0;
+}
+
+.wi-export-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.wi-export-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px 24px;
+  border: 1px solid #eee;
+  background: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+.wi-export-card:hover {
+  border-color: #2c2c2c;
+}
+
+.wi-export-flag {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.wi-export-card strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 4px;
+}
+
+.wi-export-card span {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* ---- CTA Section ---- */
+.wi-cta-section {
+  background: #2c2c2c;
+  padding: 80px 0;
+}
+
+.wi-cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
   text-align: center;
 }
 
-.wi-cta h2 {
-  font-size: 2.2rem;
-  font-weight: 800;
-  margin-bottom: 16px;
+.wi-cta-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 20px 0;
+  letter-spacing: 0.02em;
 }
 
-.wi-cta p {
-  color: #9ca3af;
-  max-width: 650px;
-  margin: 0 auto 36px auto;
+.wi-cta-section p {
   font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 36px 0;
+}
+
+.wi-cta-section .wi-btn-primary {
+  background: #fff;
+  color: #2c2c2c;
+  border-color: #fff;
+}
+
+.wi-cta-section .wi-btn-primary:hover {
+  background: #8B7355;
+  color: #fff;
+  border-color: #8B7355;
+}
+
+/* ================================
+   Responsive
+================================ */
+@media (max-width: 1024px) {
+  .wi-capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wi-buyers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wi-export-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 968px) {
+  .wi-message-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .wi-message-text {
+    padding-right: 0;
+  }
+
+  .wi-why-grid {
+    gap: 50px 60px;
+  }
+
+  .wi-capabilities-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
-  .wi-hero h1 {
-    font-size: 1.85rem;
+  .wi-hero {
+    height: 380px;
+    margin-top: 80px;
   }
-  .wi-hero p {
-    font-size: 1rem;
+
+  .wi-hero-title {
+    font-size: 2rem;
+  }
+
+  .wi-hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .wi-intro-section,
+  .wi-capabilities-section,
+  .wi-why-section,
+  .wi-buyers-section,
+  .wi-export-section {
+    padding: 60px 0;
+  }
+
+  .wi-message-container,
+  .wi-section-container {
+    padding: 0 20px;
+  }
+
+  .wi-message-title {
+    font-size: 1.6rem;
+  }
+
+  .wi-message-image-wrapper {
+    min-height: 280px;
+  }
+
+  .wi-message-image {
+    min-height: 280px;
+  }
+
+  .wi-section-title {
+    font-size: 1.6rem;
+  }
+
+  .wi-section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .wi-why-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .wi-buyers-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .wi-export-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wi-cta-container {
+    padding: 0 20px;
+  }
+
+  .wi-cta-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wi-hero {
+    height: 320px;
+  }
+
+  .wi-hero-title {
+    font-size: 1.6rem;
+  }
+
+  .wi-hero-content {
+    padding: 0 20px;
+  }
+
+  .wi-buyers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wi-section-title {
+    font-size: 1.4rem;
+  }
+
+  .wi-message-title {
+    font-size: 1.4rem;
+  }
+
+  .wi-why-item-title {
+    font-size: 1.1rem;
+  }
+
+  .wi-cta-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .wi-btn-primary {
+    width: 100%;
+    text-align: center;
   }
 }
