@@ -11548,6 +11548,99 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "jasa-tangga-besi-custom-bekasi-minimalis-modern",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan tangga besi bekasi yang berkualitas memang tidak mudah, tetapi dengan Mangala Living, Anda sudah di tempat yang tepat. Kami menyediakan jasa tangga besi bekasi yang minimalis dan modern, dengan kualitas yang terjamin. Dengan pengalaman yang luas, kami dapat membantu Anda menciptakan tangga besi bekasi yang sesuai dengan kebutuhan Anda.",
+                "Tangga besi bekasi dari Mangala Living dirancang untuk memenuhi kebutuhan Anda, dengan desain yang minimalis dan modern. Kami menggunakan material yang berkualitas, seperti besi hollow, besi hitam, dan stainless steel, untuk memastikan bahwa tangga besi bekasi Anda kuat dan tahan lama. Dengan demikian, Anda dapat memiliki tangga besi bekasi yang tidak hanya fungsional, tetapi juga estetis.",
+                "Jika Anda sedang mencari jasa tangga besi bekasi yang berkualitas, maka Mangala Living adalah pilihan terbaik. Kami memiliki pengalaman yang luas dalam pembuatan tangga besi bekasi, dan kami dapat membantu Anda menciptakan tangga besi bekasi yang sesuai dengan kebutuhan Anda. Dengan kata lain, tangga besi bekasi dari Mangala Living adalah pilihan yang tepat untuk Anda."
+            ]
+        },
+        {
+            "heading": "Jasa Tangga Besi Custom Bekasi Minimalis Modern & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berpengalaman dalam pembuatan tangga besi bekasi sejak 1999, dengan total proyek yang telah diselesaikan lebih dari 1000 proyek. Kami memiliki komitmen kualitas yang tinggi, dan kami selalu berusaha untuk memenuhi kebutuhan pelanggan. Dengan lokasi workshop di Jl. Raya Setu Cibitung, Bekasi, kami dapat dengan mudah melayani kebutuhan Anda.",
+                "Kami memiliki tim yang handal dan berpengalaman dalam pembuatan tangga besi bekasi, sehingga Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik. Dengan demikian, Anda dapat memiliki tangga besi bekasi yang berkualitas dan sesuai dengan kebutuhan Anda."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Kami menggunakan material yang berkualitas untuk pembuatan tangga besi bekasi, seperti besi hollow, besi hitam, dan stainless steel. Besi hollow memiliki keunggulan dalam hal kekuatan dan ketahanan, sehingga sangat cocok untuk digunakan sebagai material tangga besi bekasi. Besi hitam juga memiliki keunggulan dalam hal kekuatan dan ketahanan, serta dapat dibentuk dengan mudah.",
+                "Selain itu, kami juga menggunakan material lain seperti galvanis, baja ringan, besi plat, dan besi tempa. Galvanis memiliki keunggulan dalam hal ketahanan terhadap korosi, sehingga sangat cocok untuk digunakan di area yang lembab. Baja ringan memiliki keunggulan dalam hal kekuatan dan ketahanan, serta dapat dibentuk dengan mudah."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living menyediakan berbagai layanan untuk memenuhi kebutuhan Anda, seperti kanopi, pagar besi, teralis jendela, teralis pintu, railing tangga, railing balkon, folding gate, pintu besi, pintu henderson, pintu kasa nyamuk, tangga besi custom, tangga putar, menara tangki air, dan tukang las panggilan. Kami juga menyediakan layanan besi tempa custom untuk memenuhi kebutuhan Anda.",
+                "Dengan demikian, Anda dapat memiliki solusi yang lengkap untuk kebutuhan Anda, dari pembuatan tangga besi bekasi hingga layanan lainnya. Mangala Living adalah pilihan yang tepat untuk Anda, karena kami memiliki pengalaman yang luas dan komitmen kualitas yang tinggi."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan",
+                "Besi Tempa Custom"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki beberapa keunggulan yang membuat kami menjadi pilihan terbaik untuk Anda. Pertama, kami memiliki pengalaman yang luas dalam pembuatan tangga besi bekasi sejak 1999. Kedua, kami memiliki tukang las yang handal dan berpengalaman, sehingga Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik.",
+                "Ketiga, kami menggunakan material yang berkualitas, sehingga Anda dapat memiliki tangga besi bekasi yang kuat dan tahan lama. Keempat, kami memiliki komitmen kualitas yang tinggi, sehingga Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik. Kelima, kami memiliki respon yang cepat, sehingga Anda dapat dengan mudah menghubungi kami untuk konsultasi atau pertanyaan."
+            ],
+            "list": [
+                "Berpengalaman sejak 1999",
+                "Tukang Las Handal",
+                "Material Terbaik",
+                "Tepat Waktu",
+                "Respon Cepat (24 jam)",
+                "Harga Terjangkau",
+                "Gratis Survei",
+                "Gratis Ongkir (area jangkauan)",
+                "Garansi Pekerjaan (1 tahun)"
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living menyediakan harga yang terjangkau dan transparan untuk pembuatan tangga besi bekasi. Kami menggunakan sistem harga per meter, sehingga Anda dapat dengan mudah menghitung biaya yang diperlukan. Kami juga menyediakan survei gratis sebelum RAB, sehingga Anda dapat memiliki gambaran yang jelas tentang biaya yang diperlukan.",
+                "Jika Anda ingin tahu lebih lanjut tentang harga tangga besi bekasi, Anda dapat menghubungi kami via WhatsApp +6288801146881. Kami akan dengan senang hati membantu Anda dan memberikan penawaran yang terbaik untuk Anda."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Mangala Living melayani wilayah Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, Bali, dan seluruh Jabodetabek. Jika Anda berada di wilayah tersebut, Anda dapat dengan mudah menghubungi kami untuk konsultasi atau pertanyaan.",
+                "Jadi, tunggu apa lagi? Hubungi Mangala Living sekarang via WhatsApp +6288801146881 untuk konsultasi GRATIS! Kami akan dengan senang hati membantu Anda dan memberikan penawaran yang terbaik untuk Anda."
+            ]
+        }
+    ]
+}
 
 ]
 
