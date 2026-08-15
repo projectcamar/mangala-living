@@ -41,6 +41,7 @@ const AdminBlogManager = lazy(() => import('./pages/AdminBlogManager'))
 
 // Custom Steel Works Landing Pages
 const CustomSteelWorks = lazy(() => import('./pages/CustomSteelWorks'))
+const WroughtIronLanding = lazy(() => import('./pages/WroughtIronLanding'))
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail'))
 const TagArchive = lazy(() => import('./pages/TagArchive'))
 
@@ -402,6 +403,16 @@ function App() {
           <Route path="/services/custom-steel-works" element={
             <Suspense fallback={<Loading />}>
               <CustomSteelWorks />
+            </Suspense>
+          } />
+          <Route path="/wrought-iron" element={
+            <Suspense fallback={<Loading />}>
+              <WroughtIronLanding />
+            </Suspense>
+          } />
+          <Route path="/wrought-iron-gate-manufacturer-indonesia" element={
+            <Suspense fallback={<Loading />}>
+              <WroughtIronLanding />
             </Suspense>
           } />
           <Route path="/services/:slug" element={

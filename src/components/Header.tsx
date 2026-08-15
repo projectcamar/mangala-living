@@ -682,6 +682,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
           {/* Desktop Navigation */}
           <nav className="category-nav">
             <Link to="/product-category/new-arrivals" className="category-link">{t.categories.newArrivals}</Link>
+            <Link to="/product-category/wrought-iron" className="category-link">{t.categories.wroughtIron || 'Wrought Iron'}</Link>
             <Link to="/product-category/lounge-seating-set" className="category-link">{t.categories.loungeSet}</Link>
             <Link to="/product-category/industrial-sofa-bench" className="category-link">{t.categories.sofaBench}</Link>
             <Link to="/product-category/dining-set-collection" className="category-link">{t.categories.diningSet}</Link>
@@ -697,6 +698,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
           <nav className="mobile-category-nav">
             {[
               { to: "/product-category/new-arrivals", label: t.categories.newArrivals },
+              { to: "/product-category/wrought-iron", label: t.categories.wroughtIron || 'Wrought Iron' },
               { to: "/product-category/lounge-seating-set", label: t.categories.loungeSet },
               { to: "/product-category/industrial-sofa-bench", label: t.categories.sofaBench },
               { to: "/product-category/dining-set-collection", label: t.categories.diningSet },
@@ -706,7 +708,7 @@ const Header: React.FC<HeaderProps> = ({ isIndonesian = false, language = 'en' }
               { to: "/product-category/accessories-storage", label: t.categories.storage },
               { to: "/product-category/table-collection", label: t.categories.tables },
               { to: "/product-category/dining-table-collection", label: t.categories.dineTable }
-            ].slice(0, showAllCategories ? 10 : 5).map((category) => (
+            ].slice(0, showAllCategories ? 11 : 5).map((category) => (
               <Link
                 key={category.to}
                 to={category.to}

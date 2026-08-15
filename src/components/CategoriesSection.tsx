@@ -87,6 +87,12 @@ const categories: Category[] = [
     nameKey: 'dineTable',
     image: mejaImage, // Meja makan industrial - sesuai dine table
     link: '/product-category/dining-table-collection'
+  },
+  {
+    id: 11,
+    nameKey: 'wroughtIron',
+    image: steelframeOutdoorBarSetImage, // Wrought Iron Villa Gate & Metalwork
+    link: '/product-category/wrought-iron'
   }
 ]
 
@@ -102,7 +108,8 @@ const translations = {
     daybed: 'Daybed',
     storage: 'Storage',
     tables: 'Tables',
-    dineTable: 'Dine Table'
+    dineTable: 'Dine Table',
+    wroughtIron: 'Wrought Iron'
   },
   id: {
     title: 'Kategori Produk Kami',
@@ -115,7 +122,8 @@ const translations = {
     daybed: 'Daybed',
     storage: 'Penyimpanan',
     tables: 'Meja',
-    dineTable: 'Meja Makan'
+    dineTable: 'Meja Makan',
+    wroughtIron: 'Besi Tempa'
   },
   ar: {
     title: 'فئاتنا',
@@ -128,7 +136,8 @@ const translations = {
     daybed: 'سرير نهاري',
     storage: 'تخزين',
     tables: 'طاولات',
-    dineTable: 'طاولة طعام'
+    dineTable: 'طاولة طعام',
+    wroughtIron: 'حديد مطروق'
   },
   zh: {
     title: '我们的类别',
@@ -141,7 +150,8 @@ const translations = {
     daybed: '躺椅',
     storage: '储物',
     tables: '桌子',
-    dineTable: '餐桌'
+    dineTable: '餐桌',
+    wroughtIron: '锻铁艺'
   },
   ja: {
     title: 'カテゴリー',
@@ -154,7 +164,8 @@ const translations = {
     daybed: 'デイベッド',
     storage: '収納',
     tables: 'テーブル',
-    dineTable: 'ダイニングテーブル'
+    dineTable: 'ダイニングテーブル',
+    wroughtIron: '錬鉄・アイアン'
   },
   es: {
     title: 'Nuestras Categorías',
@@ -167,7 +178,8 @@ const translations = {
     daybed: 'Cama de Día',
     storage: 'Almacenamiento',
     tables: 'Mesas',
-    dineTable: 'Mesa de Comedor'
+    dineTable: 'Mesa de Comedor',
+    wroughtIron: 'Hierro Forjado'
   },
   fr: {
     title: 'Nos Catégories',
@@ -180,7 +192,8 @@ const translations = {
     daybed: 'Lit de Jour',
     storage: 'Rangement',
     tables: 'Tables',
-    dineTable: 'Table à Manger'
+    dineTable: 'Table à Manger',
+    wroughtIron: 'Fer Forgé'
   },
   ko: {
     title: '카테고리',
@@ -193,7 +206,8 @@ const translations = {
     daybed: '데이베드',
     storage: '수납',
     tables: '테이블',
-    dineTable: '식탁'
+    dineTable: '식탁',
+    wroughtIron: '단조철'
   }
 }
 

@@ -137,10 +137,49 @@ async function run() {
   const slug = slugify(topicItem.topic)
   const mainKeyword = topicItem.keywords[0]
 
-  console.log(`Generating article: "${topicItem.topic}"`)
+  console.log(`Generating article: "${topicItem.topic}" (Category: ${topicItem.category})`)
 
-  // ── ATM PROMPT FORMULA (based on Eka Jaya Steel's winning blog structure) ──
-  const prompt = `Anda adalah penulis konten SEO senior untuk Mangala Living — bengkel las besi custom profesional di Bekasi sejak 1999. Workshop kami berlokasi di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat.
+  const isExportCategory = topicItem.category === 'Wrought Iron Export' || topicItem.category === 'Besi Tempa'
+
+  // ── DYNAMIC PROMPT FORMULA (Domestic Las + Wrought Iron B2B Export) ──
+  const prompt = isExportCategory ? `You are a senior B2B SEO content strategist & architectural metalwork specialist for Mangala Living — premier handcrafted wrought iron gate & architectural steel manufacturer in Indonesia (workshop in Setu Cibitung, Bekasi & Bali master craftsmen network).
+
+Write a comprehensive, highly persuasive B2B & Export SEO article (1,200–1,500 words) for:
+Title: "${topicItem.topic}"
+Primary Keyword: "${mainKeyword}" (use 8-12 times naturally)
+Secondary Keywords: ${topicItem.keywords.slice(1).join(', ')}
+
+TARGET AUDIENCE & POSITIONING:
+- Primary Buyers: Villa developers (Bali, Lombok, Jakarta), Architects & Interior Designers, Hotel & Resort developers, Overseas Importers/Distributors (Australia, Singapore, USA, UAE, UK, Canada, NZ).
+- Core Value Proposition: "Handcrafted architectural metalwork & wrought iron gates from Indonesia — custom manufacturing for villas, residences, and international export with factory-direct pricing."
+
+MANDATORY 7-SECTION STRUCTURE:
+1. "Intro" — 3 opening paragraphs. Start with "Finding high quality ${mainKeyword} requires artisanal craftsmanship and structural precision..." Highlight why Mangala Living is the trusted Indonesian manufacturer.
+2. "Handcrafted Wrought Iron Excellence & Factory Heritage" — 2-3 paragraphs about 25+ years experience since 1999, master blacksmith forging techniques, custom design capabilities, and export readiness.
+3. "Premium Materials & Artisanal Finishing" — 2 paragraphs + LIST: Hand-forged Mild Steel, Solid Flat Bar, Heavy-duty Hollow Steel, Galvanized Weather-Shield Steel, Hot-dip Galvanizing, Anti-rust Zinc Primer, Custom Powder Coating & Antique Patina Finish.
+4. "Architectural Product Capabilities" — 2 paragraphs + LIST: Custom Villa Gates, Classic Driveway Gates, Modern Minimalist Gates, Ornamental Fences, Stair & Balcony Railings, Wrought Iron Doors, Decorative Metal Panels, Custom Resort Metalwork.
+5. "Why Global Buyers & Architects Choose Mangala Living" — 9 bullet points: 1.Artisan Handcraftsmanship, 2.Architectural Design Support, 3.Factory-Direct Wholesale Pricing, 4.Export Packaging & Logistics Support, 5.Custom CAD/Reference Adaptation, 6.Strict Quality Control, 7.Multi-Market Compliance (Australia/Singapore/UAE), 8.Fast Turnaround, 9.Full Production Guarantee.
+6. "Transparent Pricing & Export Inquiry" — 2-3 paragraphs explaining custom quote process based on dimensions, complexity, and shipping. Direct call to action via WhatsApp: +6288801146881.
+7. "Service Locations & Global Export Assistance" — Mention local regions (Bali, Jakarta, Bekasi, Surabaya) and international export destinations (Australia, Singapore, USA, UAE, UK, Canada, NZ, Europe). Conclude with strong CTA: "Contact Mangala Living via WhatsApp +6288801146881 or email for custom quotes and CAD design reviews!"
+
+WRITING RULES:
+- Write in natural, professional, persuasive language (Bahasa Indonesia or English depending on title intent, or bilingual ID/EN naturally)
+- Mention "Mangala Living" at least 10 times
+- Mention WhatsApp +6288801146881 in sections 6 and 7
+- NO markdown bold/italic inside paragraph blocks
+
+OUTPUT FORMAT — Pure JSON strictly matching:
+{
+  "title": "${topicItem.topic}",
+  "excerpt": "Compelling meta description (120-155 characters) containing primary keyword and CTA.",
+  "sections": [
+    {
+      "heading": "Section Title",
+      "paragraphs": ["Paragraph 1...", "Paragraph 2..."],
+      "list": ["Item 1", "Item 2"]
+    }
+  ]
+}` : `Anda adalah penulis konten SEO senior untuk Mangala Living — bengkel las besi custom profesional di Bekasi sejak 1999. Workshop kami berlokasi di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat.
 
 Tulis artikel blog SEO LENGKAP dan INFORMATIF (target 1.200–1.500 kata) tentang:
 Judul: "${topicItem.topic}"
@@ -151,17 +190,15 @@ STRUKTUR ARTIKEL WAJIB (7 bagian) — ikuti persis:
 1. "Intro" — 3 paragraf pembuka. Mulai dengan "Menemukan ${mainKeyword} yang berkualitas memang tidak mudah..." Sebutkan kata kunci utama 3x. Jelaskan bahwa pembaca sudah di tempat yang tepat karena Mangala Living adalah pilihan terbaik.
 2. "${topicItem.topic} & Berpengalaman" — 2-3 paragraf tentang pengalaman Mangala Living sejak 1999, total proyek, komitmen kualitas, dan lokasi workshop Bekasi (Setu Cibitung).
 3. "Material yang Kami Gunakan" — 2 paragraf + WAJIB sertakan list: Besi Hollow, Besi Hitam, Stainless Steel 304, Galvanis, Baja Ringan, Besi Plat, Besi Tempa. Jelaskan keunggulan masing-masing material.
-4. "Layanan Mangala Living" — 2 paragraf + WAJIB list lengkap: Kanopi, Pagar Besi, Teralis Jendela, Teralis Pintu, Railing Tangga, Railing Balkon, Folding Gate, Pintu Besi, Pintu Henderson, Pintu Kasa Nyamuk, Tangga Besi Custom, Tangga Putar, Menara Tangki Air, Tukang Las Panggilan.
+4. "Layanan Mangala Living" — 2 paragraf + WAJIB list lengkap: Kanopi, Pagar Besi, Teralis Jendela, Teralis Pintu, Railing Tangga, Railing Balkon, Folding Gate, Pintu Besi, Pintu Henderson, Pintu Kasa Nyamuk, Tangga Besi Custom, Tangga Putar, Menara Tangki Air, Tukang Las Panggilan, Besi Tempa Custom.
 5. "Keunggulan Mangala Living" — WAJIB 9 poin dengan penjelasan masing-masing: 1.Berpengalaman (sejak 1999), 2.Tukang Las Handal, 3.Material Terbaik, 4.Tepat Waktu, 5.Respon Cepat (24 jam), 6.Harga Terjangkau, 7.Gratis Survei, 8.Gratis Ongkir (area jangkauan), 9.Garansi Pekerjaan (1 tahun).
 6. "Harga Terjangkau & Transparan" — 2-3 paragraf tentang sistem harga per meter, transparansi penawaran, survei gratis sebelum RAB. Ajak pembaca WhatsApp untuk tanya harga: +6288801146881.
-7. "Wilayah Jangkauan & Hubungi Kami" — Sebutkan wilayah layanan: Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, dan seluruh Jabodetabek. Tutup dengan CTA kuat: "Hubungi Mangala Living sekarang via WhatsApp +6288801146881 untuk konsultasi GRATIS!"
+7. "Wilayah Jangkauan & Hubungi Kami" — Sebutkan wilayah layanan: Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, Bali, dan seluruh Jabodetabek. Tutup dengan CTA kuat: "Hubungi Mangala Living sekarang via WhatsApp +6288801146881 untuk konsultasi GRATIS!"
 
 ATURAN PENULISAN:
 - Tulis dalam Bahasa Indonesia yang natural, mudah dipahami, dan persuasif
-- Jangan gunakan kalimat yang terlalu formal atau kaku
 - Setiap bagian harus terasa warm dan personal, bukan robotik
 - Sebutkan "Mangala Living" minimal 10 kali
-- Sebutkan "Bekasi" minimal 8 kali
 - Sebutkan nomor WA +6288801146881 di bagian 6 dan 7
 - JANGAN gunakan markdown bold/italic dalam paragraf
 

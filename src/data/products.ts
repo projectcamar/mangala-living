@@ -238,5 +238,44 @@ export const ALL_PRODUCTS: Product[] = [
       { name: '140x60x90', price: 'Rp3.200.000', dimensions: '140x60x90' }
     ]
   },
+
+  // Wrought Iron & Architectural Metalwork
+  {
+    id: 18,
+    slug: 'handcrafted-wrought-iron-villa-gate',
+    name: 'Handcrafted Wrought Iron Villa Gate',
+    categories: ['Wrought Iron', 'New Arrivals'],
+    price: 'Rp15.500.000',
+    image: steelframeOutdoorBarSetImage,
+    variants: [
+      { name: 'Single Swing (120x210cm)', price: 'Rp12.500.000', dimensions: '120x210' },
+      { name: 'Double Driveway Swing (350x220cm)', price: 'Rp24.500.000', dimensions: '350x220' },
+      { name: 'Motorized Sliding Villa Gate (400x240cm)', price: 'Rp38.000.000', dimensions: '400x240' }
+    ]
+  },
+  {
+    id: 19,
+    slug: 'ornamental-wrought-iron-stair-railing',
+    name: 'Ornamental Wrought Iron Stair Railing',
+    categories: ['Wrought Iron'],
+    price: 'Rp2.200.000',
+    image: rakDisplayPartisiImage,
+    variants: [
+      { name: 'Classic Scrollwork (Per Meter)', price: 'Rp2.200.000', dimensions: 'H:90cm' },
+      { name: 'Balinese Heritage Ornamental (Per Meter)', price: 'Rp2.800.000', dimensions: 'H:90cm' }
+    ]
+  },
+  {
+    id: 20,
+    slug: 'artisan-wrought-iron-console-table',
+    name: 'Artisan Wrought Iron Console Table',
+    categories: ['Wrought Iron', 'Tables'],
+    price: 'Rp3.800.000',
+    image: frameLoftBookshelfImage,
+    variants: [
+      { name: '120x35x80cm (Marble Top)', price: 'Rp3.800.000', dimensions: '120x35x80' },
+      { name: '150x40x85cm (Solid Teak Top)', price: 'Rp4.800.000', dimensions: '150x40x85' }
+    ]
+  }
 ]
 

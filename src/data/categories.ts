@@ -10,6 +10,7 @@ export const CATEGORIES = [
   'Storage',
   'Tables',
   'Dine Table',
+  'Wrought Iron',
 ] as const
 
 export const CATEGORY_MAP: { [key: string]: string } = {
@@ -27,5 +28,8 @@ export const CATEGORY_MAP: { [key: string]: string } = {
   'table-collection': 'Tables',
   'work-study-tables': 'Tables',
   'dining-table-collection': 'Dine Table',
+  'wrought-iron': 'Wrought Iron',
+  'wrought-iron-collection': 'Wrought Iron',
+  'besi-tempa': 'Wrought Iron',
 }
 
