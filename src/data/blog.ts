@@ -6268,6 +6268,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 381,
+    "slug": "jasa-pintu-besi-bekasi-custom-terpercaya",
+    "title": "Jasa Pintu Besi Bekasi Custom & Terpercaya",
+    "category": "Bengkel Las",
+    "excerpt": "Dapatkan pintu besi Bekasi custom dan terpercaya dari Mangala Living, hubungi +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-15",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 

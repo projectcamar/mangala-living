@@ -11271,6 +11271,98 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "jasa-pintu-besi-bekasi-custom-terpercaya",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan pintu besi bekasi yang berkualitas memang tidak mudah, terutama jika Anda sedang mencari jasa pintu besi bekasi yang dapat memenuhi kebutuhan Anda. Pintu besi bekasi yang baik harus memiliki kualitas yang tinggi dan desain yang sesuai dengan kebutuhan Anda. Di Bekasi, banyak jasa pintu besi yang menawarkan produk dan jasa mereka, namun tidak semua dapat memenuhi harapan Anda.",
+                "Namun, jika Anda sedang mencari jasa pintu besi bekasi yang terpercaya dan berkualitas, maka Anda sudah di tempat yang tepat. Mangala Living adalah pilihan terbaik untuk Anda, karena kami memiliki pengalaman yang luas dalam membuat pintu besi bekasi custom dan terpercaya. Kami menggunakan material yang berkualitas tinggi dan memiliki desain yang sesuai dengan kebutuhan Anda.",
+                "Dengan menggunakan jasa pintu besi bekasi dari Mangala Living, Anda dapat memiliki pintu besi bekasi yang sesuai dengan kebutuhan Anda. Kami memiliki komitmen untuk memberikan kualitas yang tinggi dan pelayanan yang baik kepada pelanggan kami. Jadi, jika Anda sedang mencari jasa pintu besi bekasi yang terpercaya dan berkualitas, maka Mangala Living adalah pilihan terbaik untuk Anda."
+            ]
+        },
+        {
+            "heading": "Jasa Pintu Besi Bekasi Custom & Terpercaya & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berpengalaman dalam membuat pintu besi bekasi custom dan terpercaya sejak 1999. Kami memiliki total proyek yang banyak dan telah bekerja sama dengan banyak pelanggan di Bekasi. Kami memiliki komitmen untuk memberikan kualitas yang tinggi dan pelayanan yang baik kepada pelanggan kami.",
+                "Lokasi workshop kami berada di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat. Kami memiliki fasilitas yang lengkap dan tenaga kerja yang ahli dalam membuat pintu besi bekasi custom dan terpercaya. Dengan menggunakan jasa pintu besi bekasi dari Mangala Living, Anda dapat memiliki pintu besi bekasi yang sesuai dengan kebutuhan Anda."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Mangala Living menggunakan material yang berkualitas tinggi dalam membuat pintu besi bekasi custom dan terpercaya. Kami memiliki beberapa pilihan material yang dapat Anda pilih, seperti Besi Hollow, Besi Hitam, Stainless Steel 304, Galvanis, Baja Ringan, Besi Plat, dan Besi Tempa. Setiap material memiliki keunggulan yang berbeda-beda, sehingga Anda dapat memilih material yang sesuai dengan kebutuhan Anda.",
+                "Besi Hollow memiliki keunggulan yang tinggi dalam hal kekuatan dan ketahanan, sehingga sangat cocok untuk digunakan sebagai pintu besi bekasi. Besi Hitam memiliki keunggulan yang tinggi dalam hal harga yang terjangkau dan mudah dibentuk. Stainless Steel 304 memiliki keunggulan yang tinggi dalam hal ketahanan terhadap korosi dan memiliki tampilan yang elegan."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki beberapa layanan yang dapat Anda pilih, seperti Kanopi, Pagar Besi, Teralis Jendela, Teralis Pintu, Railing Tangga, Railing Balkon, Folding Gate, Pintu Besi, Pintu Henderson, Pintu Kasa Nyamuk, Tangga Besi Custom, Tangga Putar, Menara Tangki Air, dan Tukang Las Panggilan. Kami memiliki tenaga kerja yang ahli dalam membuat semua jenis layanan tersebut.",
+                "Dengan menggunakan jasa pintu besi bekasi dari Mangala Living, Anda dapat memiliki pintu besi bekasi yang sesuai dengan kebutuhan Anda. Kami memiliki komitmen untuk memberikan kualitas yang tinggi dan pelayanan yang baik kepada pelanggan kami."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki beberapa keunggulan yang membuat kami menjadi pilihan terbaik untuk jasa pintu besi bekasi. Kami memiliki pengalaman yang luas dalam membuat pintu besi bekasi custom dan terpercaya sejak 1999. Kami memiliki tenaga kerja yang ahli dalam membuat semua jenis layanan yang kami tawarkan.",
+                "Kami juga memiliki komitmen untuk memberikan kualitas yang tinggi dan pelayanan yang baik kepada pelanggan kami. Kami memiliki beberapa keunggulan lainnya, seperti harga yang terjangkau, survei gratis, dan garansi pekerjaan yang membuat kami menjadi pilihan terbaik untuk jasa pintu besi bekasi."
+            ],
+            "list": [
+                "Berpengalaman (sejak 1999)",
+                "Tukang Las Handal",
+                "Material Terbaik",
+                "Tepat Waktu",
+                "Respon Cepat (24 jam)",
+                "Harga Terjangkau",
+                "Gratis Survei",
+                "Gratis Ongkir (area jangkauan)",
+                "Garansi Pekerjaan (1 tahun)"
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living memiliki harga yang terjangkau dan transparan untuk semua jenis layanan yang kami tawarkan. Kami memiliki sistem harga per meter yang membuat Anda dapat memiliki pintu besi bekasi yang sesuai dengan kebutuhan Anda.",
+                "Kami juga memiliki survei gratis sebelum RAB yang membuat Anda dapat memiliki gambaran yang jelas tentang biaya yang akan Anda keluarkan. Jika Anda ingin mengetahui harga lebih lanjut, Anda dapat menghubungi kami via WhatsApp +6288801146881.",
+                "Kami akan dengan senang hati membantu Anda dalam menentukan harga yang sesuai dengan kebutuhan Anda. Jadi, jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan tentang harga atau layanan yang kami tawarkan."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Hubungi Mangala Living sekarang via WhatsApp +6288801146881 untuk konsultasi GRATIS!"
+            ]
+        }
+    ]
+}
 
 ]
 
