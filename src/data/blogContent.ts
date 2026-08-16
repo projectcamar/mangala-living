@@ -12699,6 +12699,90 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "bengkel-las-setia-mekar-tambun-bekasi-profesional",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan bengkel las setia mekar yang berkualitas memang tidak mudah, namun Anda telah berada di tempat yang tepat. Mangala Living adalah pilihan terbaik untuk semua kebutuhan las setia mekar Anda. Dengan pengalaman yang luas dan komitmen kualitas, Mangala Living siap membantu Anda menciptakan hasil yang memuaskan. bengkel las setia mekar yang profesional dan berpengalaman seperti Mangala Living sangat penting untuk mencapai hasil yang diinginkan.",
+                "Mangala Living telah menjadi salah satu bengkel las setia mekar terpercaya di Bekasi, dengan fokus pada kualitas dan kepuasan pelanggan. bengkel las setia mekar ini telah membantu banyak pelanggan menciptakan hasil yang memuaskan. Mangala Living juga menawarkan layanan yang luas dan profesional, sehingga Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik. bengkel las setia mekar yang handal seperti Mangala Living akan membantu Anda mencapai tujuan Anda.",
+                "Dengan menggunakan jasa bengkel las setia mekar dari Mangala Living, Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik dan sesuai dengan kebutuhan Anda. Mangala Living memiliki pengalaman yang luas dalam menangani berbagai proyek las setia mekar, sehingga Anda dapat percaya bahwa hasilnya akan memuaskan. bengkel las setia mekar yang profesional dan berpengalaman seperti Mangala Living sangat penting untuk mencapai hasil yang diinginkan. bengkel las setia mekar ini akan membantu Anda menciptakan hasil yang memuaskan."
+            ]
+        },
+        {
+            "heading": "Bengkel Las Setia Mekar Tambun Bekasi Profesional & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berdiri sejak 1999 dan telah menangani lebih dari 1000 proyek las setia mekar. Dengan pengalaman yang luas dan komitmen kualitas, Mangala Living siap membantu Anda menciptakan hasil yang memuaskan. Lokasi workshop kami berada di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat, sehingga mudah dijangkau dari berbagai lokasi.",
+                "Mangala Living memiliki tim yang handal dan berpengalaman dalam menangani proyek las setia mekar. Kami menggunakan teknologi terbaru dan material yang berkualitas untuk menciptakan hasil yang memuaskan. bengkel las setia mekar yang profesional dan berpengalaman seperti Mangala Living sangat penting untuk mencapai hasil yang diinginkan. Mangala Living juga menawarkan layanan yang luas dan profesional, sehingga Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Mangala Living menggunakan material yang berkualitas untuk menciptakan hasil yang memuaskan. Kami memiliki berbagai jenis material, seperti Besi Hollow, Besi Hitam, Stainless Steel 304, Galvanis, Baja Ringan, Besi Plat, dan Besi Tempa. Setiap material memiliki keunggulan yang berbeda-beda, sehingga kami dapat membantu Anda memilih material yang sesuai dengan kebutuhan Anda.",
+                "Besi Hollow memiliki keunggulan dalam hal kekuatan dan ketahanan, sehingga sering digunakan untuk kanopi dan pagar. Besi Hitam memiliki keunggulan dalam hal harga yang terjangkau dan mudah dibentuk, sehingga sering digunakan untuk proyek yang memerlukan fleksibilitas. Stainless Steel 304 memiliki keunggulan dalam hal ketahanan terhadap korosi dan kekuatan, sehingga sering digunakan untuk proyek yang memerlukan ketahanan yang tinggi."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living menawarkan layanan yang luas dan profesional untuk semua kebutuhan las setia mekar Anda. Kami memiliki tim yang handal dan berpengalaman dalam menangani proyek las setia mekar, sehingga Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik. Mangala Living juga menawarkan layanan yang sesuai dengan kebutuhan Anda, sehingga Anda dapat memilih layanan yang sesuai dengan proyek Anda.",
+                "Mangala Living memiliki berbagai jenis layanan, seperti Kanopi, Pagar Besi, Teralis Jendela, Teralis Pintu, Railing Tangga, Railing Balkon, Folding Gate, Pintu Besi, Pintu Henderson, Pintu Kasa Nyamuk, Tangga Besi Custom, Tangga Putar, Menara Tangki Air, Tukang Las Panggilan, dan Besi Tempa Custom. Setiap layanan memiliki keunggulan yang berbeda-beda, sehingga kami dapat membantu Anda memilih layanan yang sesuai dengan kebutuhan Anda."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan",
+                "Besi Tempa Custom"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki berbagai keunggulan yang membuat kami menjadi pilihan terbaik untuk semua kebutuhan las setia mekar Anda. Berikut adalah beberapa keunggulan kami: 1. Berpengalaman (sejak 1999), 2. Tukang Las Handal, 3. Material Terbaik, 4. Tepat Waktu, 5. Respon Cepat (24 jam), 6. Harga Terjangkau, 7. Gratis Survei, 8. Gratis Ongkir (area jangkauan), 9. Garansi Pekerjaan (1 tahun).",
+                "Dengan keunggulan yang kami miliki, Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik dan sesuai dengan kebutuhan Anda. Mangala Living juga menawarkan layanan yang luas dan profesional, sehingga Anda dapat memilih layanan yang sesuai dengan proyek Anda."
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living menawarkan harga yang terjangkau dan transparan untuk semua kebutuhan las setia mekar Anda. Kami memiliki sistem harga per meter yang jelas dan transparan, sehingga Anda dapat yakin bahwa harga yang Anda bayar sesuai dengan hasil yang Anda dapatkan.",
+                "Untuk mendapatkan informasi lebih lanjut tentang harga dan layanan kami, Anda dapat menghubungi kami via WhatsApp di +6288801146881. Kami akan dengan senang hati membantu Anda dan memberikan penawaran yang sesuai dengan kebutuhan Anda.",
+                "Mangala Living juga menawarkan survei gratis sebelum RAB, sehingga Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik dan sesuai dengan kebutuhan Anda. Dengan harga yang terjangkau dan transparan, Anda dapat memilih Mangala Living sebagai pilihan terbaik untuk semua kebutuhan las setia mekar Anda."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Mangala Living memiliki wilayah jangkauan yang luas, meliputi Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, Bali, dan seluruh Jabodetabek. Dengan wilayah jangkauan yang luas, Anda dapat yakin bahwa proyek Anda akan diselesaikan dengan baik dan sesuai dengan kebutuhan Anda.",
+                "Untuk mendapatkan informasi lebih lanjut tentang layanan dan harga kami, Anda dapat menghubungi kami via WhatsApp di +6288801146881. Kami akan dengan senang hati membantu Anda dan memberikan penawaran yang sesuai dengan kebutuhan Anda."
+            ]
+        }
+    ]
+}
 
 ]
 

@@ -6448,6 +6448,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 396,
+    "slug": "bengkel-las-setia-mekar-tambun-bekasi-profesional",
+    "title": "Bengkel Las Setia Mekar Tambun Bekasi Profesional",
+    "category": "Bengkel Las",
+    "excerpt": "Mangala Living adalah bengkel las setia mekar terbaik, hubungi kami sekarang untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-16",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
