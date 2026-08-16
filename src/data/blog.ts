@@ -6400,6 +6400,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 392,
+    "slug": "bengkel-las-kemang-pratama-bekasi-profesional",
+    "title": "Bengkel Las Kemang Pratama Bekasi Profesional",
+    "category": "Bengkel Las",
+    "excerpt": "Bengkel las kemang pratama profesional di Bekasi, hubungi Mangala Living untuk konsultasi gratis sekarang",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-16",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
