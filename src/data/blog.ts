@@ -6352,6 +6352,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 388,
+    "slug": "bengkel-las-jatibening-bekasi-terdekat",
+    "title": "Bengkel Las Jatibening Bekasi Terdekat",
+    "category": "Bengkel Las",
+    "excerpt": "Butuh bengkel las jatibening terdekat dan profesional? Mangala Living solusinya, hubungi +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-16",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
