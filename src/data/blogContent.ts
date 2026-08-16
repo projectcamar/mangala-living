@@ -12029,6 +12029,103 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "bengkel-las-jatikarya-bekasi-murah-profesional",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan bengkel las jatikarya yang berkualitas memang tidak mudah, terutama jika Anda mencari yang murah dan profesional. Namun, dengan Mangala Living, Anda sudah di tempat yang tepat. Sebagai bengkel las jatikarya yang telah berpengalaman sejak 1999, kami memiliki komitmen untuk memberikan layanan terbaik kepada pelanggan. Mangala Living adalah pilihan terbaik jika Anda mencari bengkel las jatikarya yang dapat memenuhi kebutuhan Anda dengan kualitas yang tinggi.",
+                "Bengkel las jatikarya yang baik harus memiliki pengalaman yang luas dan kemampuan untuk menangani berbagai jenis proyek. Mangala Living telah membuktikan diri sebagai bengkel las jatikarya yang dapat dipercaya, dengan total proyek yang telah diselesaikan dan kepuasan pelanggan yang tinggi. Kami berkomitmen untuk terus meningkatkan kualitas layanan kami, sehingga Anda dapat yakin bahwa Anda akan mendapatkan hasil yang terbaik dari bengkel las jatikarya kami.",
+                "Jika Anda sedang mencari bengkel las jatikarya yang murah dan profesional, maka Mangala Living adalah pilihan yang tepat. Kami memiliki tim yang berpengalaman dan terampil, serta menggunakan material yang berkualitas tinggi untuk memastikan bahwa hasil akhirnya memuaskan. Dengan bengkel las jatikarya Mangala Living, Anda dapat yakin bahwa Anda akan mendapatkan layanan yang terbaik dan hasil yang memuaskan."
+            ]
+        },
+        {
+            "heading": "Bengkel Las Jatikarya Bekasi Murah & Profesional & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berdiri sejak 1999 dan telah menangani ribuan proyek dengan sukses. Kami memiliki komitmen untuk memberikan layanan terbaik kepada pelanggan, dan telah membuktikan diri sebagai bengkel las jatikarya yang dapat dipercaya. Dengan pengalaman yang luas dan kemampuan untuk menangani berbagai jenis proyek, kami dapat memenuhi kebutuhan Anda dengan kualitas yang tinggi.",
+                "Lokasi workshop kami berada di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat, sehingga memudahkan Anda untuk mengunjungi kami. Kami memiliki tim yang berpengalaman dan terampil, serta menggunakan material yang berkualitas tinggi untuk memastikan bahwa hasil akhirnya memuaskan. Dengan bengkel las jatikarya Mangala Living, Anda dapat yakin bahwa Anda akan mendapatkan layanan yang terbaik dan hasil yang memuaskan.",
+                "Sebagai bengkel las jatikarya yang berpengalaman, kami memiliki pengetahuan yang luas tentang berbagai jenis proyek dan dapat memberikan saran yang tepat untuk memenuhi kebutuhan Anda. Kami berkomitmen untuk terus meningkatkan kualitas layanan kami, sehingga Anda dapat yakin bahwa Anda akan mendapatkan hasil yang terbaik dari bengkel las jatikarya kami."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Mangala Living menggunakan material yang berkualitas tinggi untuk memastikan bahwa hasil akhirnya memuaskan. Kami memiliki berbagai jenis material, termasuk besi hollow, besi hitam, stainless steel 304, galvanis, baja ringan, besi plat, dan besi tempa. Setiap material memiliki keunggulan yang berbeda-beda, sehingga kami dapat memilih material yang tepat untuk memenuhi kebutuhan Anda.",
+                "Besi hollow, misalnya, memiliki keunggulan dalam hal kekuatan dan ketahanan, sehingga sering digunakan untuk konstruksi bangunan. Besi hitam, di sisi lain, memiliki keunggulan dalam hal harga yang lebih murah dan lebih mudah dibentuk. Stainless steel 304 memiliki keunggulan dalam hal ketahanan terhadap korosi dan dapat digunakan untuk aplikasi yang memerlukan kebersihan tinggi."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living menawarkan berbagai jenis layanan untuk memenuhi kebutuhan Anda. Kami memiliki tim yang berpengalaman dan terampil, serta menggunakan material yang berkualitas tinggi untuk memastikan bahwa hasil akhirnya memuaskan. Dengan bengkel las jatikarya Mangala Living, Anda dapat yakin bahwa Anda akan mendapatkan layanan yang terbaik dan hasil yang memuaskan.",
+                "Kami menawarkan layanan seperti kanopi, pagar besi, teralis jendela, teralis pintu, railing tangga, railing balkon, folding gate, pintu besi, pintu henderson, pintu kasa nyamuk, tangga besi custom, tangga putar, menara tangki air, tukang las panggilan, dan besi tempa custom. Setiap layanan memiliki keunggulan yang berbeda-beda, sehingga kami dapat memilih layanan yang tepat untuk memenuhi kebutuhan Anda."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan",
+                "Besi Tempa Custom"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki beberapa keunggulan yang membuat kami berbeda dari bengkel las jatikarya lainnya. Pertama, kami memiliki pengalaman yang luas dan kemampuan untuk menangani berbagai jenis proyek. Kedua, kami memiliki tim yang berpengalaman dan terampil, serta menggunakan material yang berkualitas tinggi untuk memastikan bahwa hasil akhirnya memuaskan.",
+                "Kami juga memiliki komitmen untuk terus meningkatkan kualitas layanan kami, sehingga Anda dapat yakin bahwa Anda akan mendapatkan hasil yang terbaik dari bengkel las jatikarya kami. Dengan bengkel las jatikarya Mangala Living, Anda dapat yakin bahwa Anda akan mendapatkan layanan yang terbaik dan hasil yang memuaskan."
+            ],
+            "list": [
+                "Berpengalaman (sejak 1999)",
+                "Tukang Las Handal",
+                "Material Terbaik",
+                "Tepat Waktu",
+                "Respon Cepat (24 jam)",
+                "Harga Terjangkau",
+                "Gratis Survei",
+                "Gratis Ongkir (area jangkauan)",
+                "Garansi Pekerjaan (1 tahun)"
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living menawarkan harga yang terjangkau dan transparan untuk semua layanan kami. Kami memiliki sistem harga per meter yang membuat Anda dapat memperkirakan biaya dengan lebih akurat. Kami juga menawarkan survei gratis sebelum membuat RAB, sehingga Anda dapat yakin bahwa Anda akan mendapatkan harga yang terbaik.",
+                "Jika Anda ingin mengetahui lebih lanjut tentang harga kami, Anda dapat menghubungi kami via WhatsApp di +6288801146881. Kami akan dengan senang hati membantu Anda dan memberikan penawaran yang terbaik.",
+                "Dengan bengkel las jatikarya Mangala Living, Anda dapat yakin bahwa Anda akan mendapatkan layanan yang terbaik dan hasil yang memuaskan, dengan harga yang terjangkau dan transparan."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Mangala Living memiliki wilayah jangkauan yang luas, termasuk Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, Bali, dan seluruh Jabodetabek. Kami dapat menangani proyek di mana saja di wilayah tersebut, sehingga Anda dapat yakin bahwa Anda akan mendapatkan layanan yang terbaik.",
+                "Jika Anda ingin menghubungi kami, Anda dapat melakukannya via WhatsApp di +6288801146881. Kami akan dengan senang hati membantu Anda dan memberikan penawaran yang terbaik.",
+                "Hubungi Mangala Living sekarang via WhatsApp +6288801146881 untuk konsultasi GRATIS!"
+            ]
+        }
+    ]
+}
 
 ]
 
