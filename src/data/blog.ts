@@ -6412,6 +6412,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 393,
+    "slug": "bengkel-las-perwira-bekasi-terdekat-terjangkau",
+    "title": "Bengkel Las Perwira Bekasi Terdekat & Terjangkau",
+    "category": "Bengkel Las",
+    "excerpt": "Cari bengkel las perwira terdekat dan terjangkau di Bekasi? Mangala Living adalah pilihan terbaik, hubungi +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-16",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
