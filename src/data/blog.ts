@@ -6340,6 +6340,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 387,
+    "slug": "harga-kanopi-per-meter-di-bekasi-terbaru-2026",
+    "title": "Harga Kanopi Per Meter di Bekasi Terbaru 2026",
+    "category": "Kanopi",
+    "excerpt": "Cari harga kanopi bekasi 2026? Mangala Living solusi terbaik, hubungi +6288801146881",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-16",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
