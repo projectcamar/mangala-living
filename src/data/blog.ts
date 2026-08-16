@@ -6436,6 +6436,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 395,
+    "slug": "bengkel-las-cibarusah-bekasi-terdekat",
+    "title": "Bengkel Las Cibarusah Bekasi Terdekat",
+    "category": "Bengkel Las",
+    "excerpt": "Mangala Living, bengkel las cibarusah terdekat dan terpercaya di Bekasi, menawarkan jasa las cibarusah berkualitas, hubungi +6288801146881",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-16",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
