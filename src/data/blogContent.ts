@@ -12126,6 +12126,100 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "bengkel-las-jatirasa-bekasi-terpercaya",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan bengkel las jatirasa yang berkualitas memang tidak mudah, karena ada banyak pilihan di luar sana. Namun, jika Anda sedang mencari bengkel las jatirasa yang dapat dipercaya, maka Anda sudah berada di tempat yang tepat. Mangala Living adalah salah satu bengkel las jatirasa terpercaya di Bekasi, dengan pengalaman yang luas dan kualitas yang tidak perlu diragukan. Sebagai bengkel las jatirasa, kami memiliki komitmen untuk memberikan layanan terbaik kepada pelanggan.",
+                "Dalam mencari bengkel las jatirasa, Anda harus mempertimbangkan beberapa faktor, seperti pengalaman, kualitas, dan harga. Mangala Living memiliki semua yang Anda butuhkan, dengan pengalaman lebih dari 20 tahun di bidang las besi custom. Kami memiliki tim tukang las jatirasa yang handal dan berpengalaman, sehingga Anda dapat yakin bahwa pekerjaan Anda akan dilakukan dengan baik. Sebagai bengkel las jatirasa terpercaya, kami selalu berusaha untuk memberikan yang terbaik bagi pelanggan.",
+                "Jika Anda sedang mencari bengkel las jatirasa yang dapat dipercaya, maka Mangala Living adalah pilihan terbaik. Kami memiliki komitmen untuk memberikan layanan terbaik kepada pelanggan, dengan kualitas yang tinggi dan harga yang terjangkau. Sebagai bengkel las jatirasa, kami memiliki pengalaman yang luas dan tim tukang las jatirasa yang handal, sehingga Anda dapat yakin bahwa pekerjaan Anda akan dilakukan dengan baik. Mangala Living adalah bengkel las jatirasa terpercaya di Bekasi, dan kami siap untuk membantu Anda dengan semua kebutuhan las besi custom Anda."
+            ]
+        },
+        {
+            "heading": "Bengkel Las Jatirasa Bekasi Terpercaya & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berdiri sejak 1999, dan dalam waktu yang lama itu, kami telah melayani banyak pelanggan di Bekasi dan sekitarnya. Kami memiliki pengalaman yang luas di bidang las besi custom, dan telah menyelesaikan banyak proyek dengan sukses. Sebagai bengkel las jatirasa terpercaya, kami memiliki komitmen untuk memberikan layanan terbaik kepada pelanggan, dengan kualitas yang tinggi dan harga yang terjangkau.",
+                "Lokasi workshop kami berada di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat, sehingga kami dapat dengan mudah melayani pelanggan di Bekasi dan sekitarnya. Kami memiliki tim tukang las jatirasa yang handal dan berpengalaman, sehingga Anda dapat yakin bahwa pekerjaan Anda akan dilakukan dengan baik. Mangala Living adalah bengkel las jatirasa terpercaya di Bekasi, dan kami siap untuk membantu Anda dengan semua kebutuhan las besi custom Anda."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Mangala Living menggunakan material yang berkualitas tinggi untuk semua pekerjaan las besi custom. Kami memiliki berbagai jenis material, seperti Besi Hollow, Besi Hitam, Stainless Steel 304, Galvanis, Baja Ringan, Besi Plat, dan Besi Tempa. Setiap material memiliki keunggulan yang berbeda-beda, sehingga kami dapat memilih material yang paling sesuai dengan kebutuhan Anda.",
+                "Kami memiliki pengalaman yang luas dalam menggunakan berbagai jenis material, sehingga Anda dapat yakin bahwa pekerjaan Anda akan dilakukan dengan baik. Mangala Living adalah bengkel las jatirasa terpercaya di Bekasi, dan kami siap untuk membantu Anda dengan semua kebutuhan las besi custom Anda."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living menawarkan berbagai jenis layanan las besi custom, seperti Kanopi, Pagar Besi, Teralis Jendela, Teralis Pintu, Railing Tangga, Railing Balkon, Folding Gate, Pintu Besi, Pintu Henderson, Pintu Kasa Nyamuk, Tangga Besi Custom, Tangga Putar, Menara Tangki Air, Tukang Las Panggilan, dan Besi Tempa Custom. Kami memiliki tim tukang las jatirasa yang handal dan berpengalaman, sehingga Anda dapat yakin bahwa pekerjaan Anda akan dilakukan dengan baik.",
+                "Kami memiliki pengalaman yang luas dalam melayani berbagai jenis kebutuhan las besi custom, sehingga Anda dapat yakin bahwa pekerjaan Anda akan dilakukan dengan baik. Mangala Living adalah bengkel las jatirasa terpercaya di Bekasi, dan kami siap untuk membantu Anda dengan semua kebutuhan las besi custom Anda."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan",
+                "Besi Tempa Custom"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki beberapa keunggulan yang membuat kami berbeda dari bengkel las jatirasa lainnya. Pertama, kami memiliki pengalaman yang luas di bidang las besi custom, dengan lebih dari 20 tahun pengalaman. Kedua, kami memiliki tim tukang las jatirasa yang handal dan berpengalaman, sehingga Anda dapat yakin bahwa pekerjaan Anda akan dilakukan dengan baik.",
+                "Kami juga memiliki komitmen untuk memberikan layanan terbaik kepada pelanggan, dengan kualitas yang tinggi dan harga yang terjangkau. Mangala Living adalah bengkel las jatirasa terpercaya di Bekasi, dan kami siap untuk membantu Anda dengan semua kebutuhan las besi custom Anda."
+            ],
+            "list": [
+                "Berpengalaman (sejak 1999)",
+                "Tukang Las Handal",
+                "Material Terbaik",
+                "Tepat Waktu",
+                "Respon Cepat (24 jam)",
+                "Harga Terjangkau",
+                "Gratis Survei",
+                "Gratis Ongkir (area jangkauan)",
+                "Garansi Pekerjaan (1 tahun)"
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living menawarkan harga yang terjangkau dan transparan untuk semua layanan las besi custom. Kami memiliki sistem harga per meter, sehingga Anda dapat yakin bahwa harga yang Anda bayar sesuai dengan pekerjaan yang dilakukan. Kami juga menawarkan survei gratis sebelum membuat RAB, sehingga Anda dapat yakin bahwa pekerjaan Anda akan dilakukan dengan baik.",
+                "Jika Anda ingin tahu lebih lanjut tentang harga dan layanan kami, silakan hubungi kami via WhatsApp di +6288801146881. Kami siap untuk membantu Anda dengan semua kebutuhan las besi custom Anda."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Mangala Living melayani wilayah Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, Bali, dan seluruh Jabodetabek. Kami memiliki tim tukang las jatirasa yang handal dan berpengalaman, sehingga Anda dapat yakin bahwa pekerjaan Anda akan dilakukan dengan baik.",
+                "Jika Anda ingin menghubungi kami, silakan hubungi via WhatsApp di +6288801146881. Kami siap untuk membantu Anda dengan semua kebutuhan las besi custom Anda. Mangala Living adalah bengkel las jatirasa terpercaya di Bekasi, dan kami siap untuk membantu Anda dengan semua kebutuhan las besi custom Anda."
+            ]
+        }
+    ]
+}
 
 ]
 
