@@ -6460,6 +6460,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 397,
+    "slug": "bengkel-las-perumahan-bekasi-terpercaya-bergaransi",
+    "title": "Bengkel Las Perumahan Bekasi Terpercaya & Bergaransi",
+    "category": "Bengkel Las",
+    "excerpt": "Cari bengkel las perumahan Bekasi terpercaya? Mangala Living adalah pilihan terbaik, hubungi sekarang untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-17",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
