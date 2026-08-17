@@ -6496,6 +6496,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 400,
+    "slug": "jasa-railing-tangga-cikarang-custom-minimalis",
+    "title": "Jasa Railing Tangga Cikarang Custom Minimalis",
+    "category": "Bengkel Las",
+    "excerpt": "Dapatkan railing tangga cikarang berkualitas dengan Mangala Living, hubungi +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-17",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 

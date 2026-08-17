@@ -13068,6 +13068,101 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "jasa-railing-tangga-cikarang-custom-minimalis",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Intro",
+            "paragraphs": [
+                "Menemukan railing tangga cikarang yang berkualitas memang tidak mudah, terutama jika Anda mencari yang sesuai dengan desain minimalis modern. Railing tangga cikarang yang baik harus memiliki kualitas yang tinggi dan desain yang sesuai dengan kebutuhan Anda. Oleh karena itu, Anda perlu memilih jasa railing tangga cikarang yang tepat untuk memenuhi kebutuhan Anda. Mangala Living adalah pilihan terbaik untuk Anda karena kami telah berpengalaman dalam membuat railing tangga cikarang custom minimalis sejak 1999.",
+                "Kami memahami bahwa railing tangga cikarang bukan hanya tentang estetika, tetapi juga tentang keamanan dan kenyamanan. Oleh karena itu, kami menggunakan material yang berkualitas tinggi dan memiliki pengalaman yang luas dalam membuat railing tangga cikarang yang sesuai dengan kebutuhan Anda. Dengan demikian, Anda dapat yakin bahwa railing tangga cikarang yang kami buat akan memenuhi standar kualitas yang tinggi. Mangala Living adalah jasa railing tangga cikarang yang dapat Anda percaya untuk memenuhi kebutuhan Anda.",
+                "Jika Anda sedang mencari jasa railing tangga cikarang yang dapat memenuhi kebutuhan Anda, maka Anda sudah di tempat yang tepat. Mangala Living adalah pilihan terbaik untuk Anda karena kami memiliki pengalaman yang luas dalam membuat railing tangga cikarang custom minimalis. Kami juga memiliki komitmen untuk memberikan kualitas yang tinggi dan pelayanan yang baik kepada pelanggan kami. Oleh karena itu, Anda dapat yakin bahwa railing tangga cikarang yang kami buat akan memenuhi kebutuhan Anda dan membuat Anda puas."
+            ]
+        },
+        {
+            "heading": "Jasa Railing Tangga Cikarang Custom Minimalis & Berpengalaman",
+            "paragraphs": [
+                "Mangala Living telah berpengalaman dalam membuat railing tangga cikarang custom minimalis sejak 1999. Kami memiliki total proyek yang banyak dan telah bekerja sama dengan banyak klien yang puas dengan hasil kerja kami. Kami juga memiliki komitmen untuk memberikan kualitas yang tinggi dan pelayanan yang baik kepada pelanggan kami. Dengan demikian, Anda dapat yakin bahwa railing tangga cikarang yang kami buat akan memenuhi standar kualitas yang tinggi.",
+                "Kami berlokasi di Jl. Raya Setu Cibitung, Bekasi, Jawa Barat, dan memiliki workshop yang lengkap dengan peralatan yang modern. Kami juga memiliki tim yang berpengalaman dan terampil dalam membuat railing tangga cikarang custom minimalis. Dengan demikian, Anda dapat yakin bahwa railing tangga cikarang yang kami buat akan sesuai dengan kebutuhan Anda."
+            ]
+        },
+        {
+            "heading": "Material yang Kami Gunakan",
+            "paragraphs": [
+                "Kami menggunakan material yang berkualitas tinggi untuk membuat railing tangga cikarang custom minimalis. Kami memiliki beberapa pilihan material yang dapat Anda pilih, seperti besi hollow, besi hitam, stainless steel 304, galvanis, baja ringan, besi plat, dan besi tempa. Setiap material memiliki keunggulan yang berbeda-beda, sehingga Anda dapat memilih material yang sesuai dengan kebutuhan Anda.",
+                "Besi hollow, misalnya, memiliki keunggulan yang tinggi dalam hal kekuatan dan ketahanan. Besi hitam, di sisi lain, memiliki keunggulan yang tinggi dalam hal harga yang terjangkau. Stainless steel 304, galvanis, dan baja ringan juga memiliki keunggulan yang tinggi dalam hal ketahanan terhadap korosi. Besi plat dan besi tempa juga memiliki keunggulan yang tinggi dalam hal fleksibilitas dan kekuatan."
+            ],
+            "list": [
+                "Besi Hollow",
+                "Besi Hitam",
+                "Stainless Steel 304",
+                "Galvanis",
+                "Baja Ringan",
+                "Besi Plat",
+                "Besi Tempa"
+            ]
+        },
+        {
+            "heading": "Layanan Mangala Living",
+            "paragraphs": [
+                "Mangala Living tidak hanya menyediakan jasa railing tangga cikarang custom minimalis, tetapi juga menyediakan layanan lainnya yang terkait dengan besi dan baja. Kami memiliki beberapa layanan yang dapat Anda pilih, seperti kanopi, pagar besi, teralis jendela, teralis pintu, railing tangga, railing balkon, folding gate, pintu besi, pintu henderson, pintu kasa nyamuk, tangga besi custom, tangga putar, menara tangki air, tukang las panggilan, dan besi tempa custom.",
+                "Kami memiliki tim yang berpengalaman dan terampil dalam membuat semua jenis produk besi dan baja. Kami juga memiliki peralatan yang modern dan lengkap, sehingga Anda dapat yakin bahwa produk yang kami buat akan memenuhi standar kualitas yang tinggi."
+            ],
+            "list": [
+                "Kanopi",
+                "Pagar Besi",
+                "Teralis Jendela",
+                "Teralis Pintu",
+                "Railing Tangga",
+                "Railing Balkon",
+                "Folding Gate",
+                "Pintu Besi",
+                "Pintu Henderson",
+                "Pintu Kasa Nyamuk",
+                "Tangga Besi Custom",
+                "Tangga Putar",
+                "Menara Tangki Air",
+                "Tukang Las Panggilan",
+                "Besi Tempa Custom"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Mangala Living memiliki beberapa keunggulan yang membuat kami berbeda dari jasa lainnya. Kami memiliki pengalaman yang luas dalam membuat railing tangga cikarang custom minimalis, sehingga Anda dapat yakin bahwa produk yang kami buat akan memenuhi standar kualitas yang tinggi.",
+                "Kami juga memiliki tim yang berpengalaman dan terampil, sehingga Anda dapat yakin bahwa produk yang kami buat akan sesuai dengan kebutuhan Anda. Kami juga memiliki peralatan yang modern dan lengkap, sehingga Anda dapat yakin bahwa produk yang kami buat akan memenuhi standar kualitas yang tinggi."
+            ],
+            "list": [
+                "Berpengalaman (sejak 1999)",
+                "Tukang Las Handal",
+                "Material Terbaik",
+                "Tepat Waktu",
+                "Respon Cepat (24 jam)",
+                "Harga Terjangkau",
+                "Gratis Survei",
+                "Gratis Ongkir (area jangkauan)",
+                "Garansi Pekerjaan (1 tahun)"
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Transparan",
+            "paragraphs": [
+                "Mangala Living memiliki sistem harga yang transparan dan terjangkau. Kami memiliki harga yang kompetitif dan sesuai dengan kualitas produk yang kami buat. Kami juga memiliki survei gratis sebelum membuat RAB, sehingga Anda dapat yakin bahwa harga yang kami tawarkan akan sesuai dengan kebutuhan Anda.",
+                "Jika Anda ingin mengetahui harga railing tangga cikarang custom minimalis, Anda dapat menghubungi kami via WhatsApp +6288801146881. Kami akan dengan senang hati membantu Anda dan memberikan penawaran yang terbaik untuk Anda.",
+                "Kami juga memiliki garansi pekerjaan yang membuat Anda dapat yakin bahwa produk yang kami buat akan memenuhi standar kualitas yang tinggi. Dengan demikian, Anda dapat yakin bahwa railing tangga cikarang custom minimalis yang kami buat akan sesuai dengan kebutuhan Anda dan membuat Anda puas."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Hubungi Kami",
+            "paragraphs": [
+                "Mangala Living memiliki wilayah jangkauan yang luas, termasuk Bekasi, Cikarang, Cibubur, Cileungsi, Jakarta Timur, Jakarta Selatan, Depok, Bogor, Tambun, Karawang, Bali, dan seluruh Jabodetabek. Kami juga memiliki tim yang berpengalaman dan terampil, sehingga Anda dapat yakin bahwa produk yang kami buat akan memenuhi standar kualitas yang tinggi.",
+                "Jika Anda ingin menghubungi kami, Anda dapat menghubungi kami via WhatsApp +6288801146881. Kami akan dengan senang hati membantu Anda dan memberikan penawaran yang terbaik untuk Anda."
+            ]
+        }
+    ]
+}
 
 ]
 
