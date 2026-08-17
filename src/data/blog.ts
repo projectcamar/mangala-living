@@ -6484,6 +6484,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 399,
+    "slug": "jasa-teralis-jendela-cikarang-anti-maling-murah",
+    "title": "Jasa Teralis Jendela Cikarang Anti Maling Murah",
+    "category": "Bengkel Las",
+    "excerpt": "Dapatkan teralis jendela cikarang anti maling murah dan berkualitas dengan Mangala Living, hubungi via WhatsApp +6288801146881",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-17",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
