@@ -6472,6 +6472,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 398,
+    "slug": "tukang-las-panggilan-cikarang-24-jam",
+    "title": "Tukang Las Panggilan Cikarang 24 Jam",
+    "category": "Bengkel Las",
+    "excerpt": "Butuh tukang las panggilan cikarang 24 jam? Mangala Living solusinya, hubungi +6288801146881 untuk konsultasi gratis",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-17",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
