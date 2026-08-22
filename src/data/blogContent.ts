@@ -13639,6 +13639,85 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "bengkel-las-jakarta-selatan-terdekat-profesional",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Sentuhan Elegan untuk Bengkel Las Jakarta Selatan Terdekat & Profesional",
+            "paragraphs": [
+                "Elemen bengkel las jakarta selatan dapat memberikan karakter yang kuat pada tampilan eksterior maupun interior bangunan. Konsep desain minimalis modern yang dipadukan dengan kerapihan pengerjaan besi akan menciptakan suasana hunian yang lebih mewah dan tertata.",
+                "Mangala Living spesialis dalam pembuatan Bengkel Las Jakarta Selatan Terdekat & Profesional dengan sentuhan desain kustom yang dapat disesuaikan dengan arsitektur rumah Anda.",
+                "Workshop kami di Setu Cibitung Bekasi memadukan ketrampilan pengrajin besi berpengalaman dengan teknologi pengelasan presisi."
+            ]
+        },
+        {
+            "heading": "Perpaduan Estetika & Kekuatan Struktur",
+            "paragraphs": [
+                "Setiap unit bengkel las jakarta selatan dirancang tidak hanya elok dipandang, tetapi juga menjamin tingkat keamanan mekanis maksimal.",
+                "Kami memperhatikan setiap sudut siku dan sambungan besi agar menghasilkan finishing yang mulus dan bebas dari lekukan kasar."
+            ]
+        },
+        {
+            "heading": "Material Pilihan & Opsi Finishing",
+            "paragraphs": [
+                "Untuk menunjang keindahan bengkel las jakarta selatan, kami menawarkan pilihan bahan baku dan opsi finishing berkualitas:",
+                "Opsi finishing cat meliputi warna matte/doff, mengkilap (glossy), hingga tekstur antique patina yang mewah."
+            ],
+            "list": [
+                "Besi Hollow Galvanis kualitas premium",
+                "Besi Plat Laser Cut motif custom",
+                "Stainless Steel SUS 304 kilap tinggi",
+                "Cat Dasar Epoksi Anti Karat",
+                "Finishing Powder Coating tahan gores"
+            ]
+        },
+        {
+            "heading": "Layanan Pengelasan Custom Terlengkap",
+            "paragraphs": [
+                "Selain pengerjaan Bengkel Las Jakarta Selatan Terdekat & Profesional, Mangala Living melayani pembuatan produk besi dekoratif dan struktural lainnya:",
+                "Setiap pesanan diproduksi sesuai spesifikasi ukuran lokasi Anda."
+            ],
+            "list": [
+                "Kanopi Besi Minimalis & Kaca Tempered",
+                "Pagar Besi Minimalis & Pagar Tempa Mewah",
+                "Teralis Jendela & Pintu Exspanda Nyamuk",
+                "Railing Tangga & Balkon Modern",
+                "Tangga Putar & Konstruksi Besi Custom"
+            ]
+        },
+        {
+            "heading": "Keunggulan Layanan Mangala Living",
+            "paragraphs": [
+                "Komitmen kami untuk setiap klien:"
+            ],
+            "list": [
+                "Pengalaman lebih dari 25 tahun di industri pengelasan",
+                "Desain custom bebas sesuai permintaan",
+                "Survei lokasi dan pengukuran 100% GRATIS",
+                "Estimasi waktu pengerjaan yang akurat",
+                "Jaminan garansi kualitas pekerjaan 1 tahun",
+                "Layanan WhatsApp responsif di +6288801146881"
+            ]
+        },
+        {
+            "heading": "Informasi Harga & Diskusi RAB",
+            "paragraphs": [
+                "Dapatkan rincian harga bengkel las jakarta selatan yang transparan dan kompetitif langsung dari pihak produsen.",
+                "Kami akan membantu menyesuaikan pilihan bahan agar hasil pengerjaan tetap indah sesuai alokasi budget Anda.",
+                "Hubungi tim sales kami melalui WhatsApp di +6288801146881 untuk konsultasi dan sampel motif."
+            ]
+        },
+        {
+            "heading": "Wilayah Jangkauan & Konsultasi Gratis",
+            "paragraphs": [
+                "Mangala Living melayani wilayah Bekasi, Cikarang, Cibubur, Jakarta, Depok, Bogor, Tangerang, dan Karawang.",
+                "Jadikan Bengkel Las Jakarta Selatan Terdekat & Profesional bagian dari keindahan rumah Anda. Hubungi WhatsApp +6288801146881 untuk konsultasi dan survei gratis sekarang!"
+            ]
+        }
+    ]
+}
 
 ]
 

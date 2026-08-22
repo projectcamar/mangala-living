@@ -6580,6 +6580,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 407,
+    "slug": "bengkel-las-jakarta-selatan-terdekat-profesional",
+    "title": "Bengkel Las Jakarta Selatan Terdekat & Profesional",
+    "category": "Bengkel Las",
+    "excerpt": "Solusi bengkel las jakarta selatan custom untuk tampilan rumah modern & minimalis. Hasil las rapi dari Mangala Living sejak 1999. Hubungi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-22",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
