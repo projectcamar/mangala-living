@@ -6508,6 +6508,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 401,
+    "slug": "jasa-folding-gate-cikarang-murah-berkualitas",
+    "title": "Jasa Folding Gate Cikarang Murah & Berkualitas",
+    "category": "Bengkel Las",
+    "excerpt": "Penyedia folding gate cikarang profesional untuk proyek perumahan, villa, & ruko. Kualitas fabrikasi standar arsitektur dari Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-22",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 

@@ -13163,6 +13163,84 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "jasa-folding-gate-cikarang-murah-berkualitas",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Standar Arsitektur untuk Jasa Folding Gate Cikarang Murah & Berkualitas",
+            "paragraphs": [
+                "Dalam skala pengembang properti maupun kontraktor bangunan, pengadaan folding gate cikarang harus memenuhi standar spesifikasi gambar kerja arsitek serta batas waktu yang ketat.",
+                "Mangala Living adalah mitra bengkel las profesional yang berpengalaman melayani pesanan Jasa Folding Gate Cikarang Murah & Berkualitas untuk proyek perumahan, ruko, cafe, hingga villa komersial.",
+                "Workshop kami di Setu Cibitung Bekasi memiliki kapasitas produksi yang memadai untuk menangani pengerjaan skala besar dengan konsistensi mutu yang terjaga."
+            ]
+        },
+        {
+            "heading": "Fabrikasi Profesional & Pembacaan Gambar Kerja",
+            "paragraphs": [
+                "Tim teknis kami terbiasa membaca detail shop drawing arsitek dalam memproduksi folding gate cikarang. Ketelitian dimensi dan sudut potong menjadi perhatian utama kami untuk kemudahan proses instalasi di lapangan."
+            ]
+        },
+        {
+            "heading": "Material Spesifikasi Industri",
+            "paragraphs": [
+                "Kami menyediakan pilihan bahan berkualitas tinggi sesuai tuntutan dokumen tender/spesifikasi proyek:",
+                "Setiap material dilengkapi dengan pelindung anti-karat standar proyek bangunan."
+            ],
+            "list": [
+                "Besi Hollow Galvanis SNI",
+                "Besi Siku, WF, & H-Beam",
+                "Stainless Steel SUS 304",
+                "Plat Besi Laser Cut Custom Pattern",
+                "Finishing Cat Epoksi Industri & Powder Coating"
+            ]
+        },
+        {
+            "heading": "Lingkup Pengerjaan Konstruksi Besi",
+            "paragraphs": [
+                "Mangala Living melayani pengadaan berbagai elemen besi bangunan:",
+                "Semua produk dikerjakan dengan standar kontrol kualitas menyeluruh."
+            ],
+            "list": [
+                "Kanopi Struktur Besi & Kaca Tempered",
+                "Pagar Besi Perumahan & Pagar Tempa Villa",
+                "Teralis Jendela & Pintu Pengaman Ruko",
+                "Railing Tangga Utama & Railing Balkon",
+                "Folding Gate, Pintu Besi, & Tangga Darurat"
+            ]
+        },
+        {
+            "heading": "Mengapa Developer & Arsitek Memilih Kami?",
+            "paragraphs": [
+                "Komitmen profesionalitas Mangala Living sejak 1999:"
+            ],
+            "list": [
+                "Pengalaman puluhan tahun mengelola proyek besi",
+                "Kapasitas bengkel produksi yang luas dan siap komersial",
+                "Kemampuan membaca CAD / Gambar Kerja Arsitek",
+                "Ketepatan jadwal penyerahan proyek (on-time delivery)",
+                "Garansi pemeliharaan resmi hingga 1 tahun",
+                "Layanan komunikasi 24 jam via WhatsApp +6288801146881"
+            ]
+        },
+        {
+            "heading": "Penawaran Harga Proyek & RAB",
+            "paragraphs": [
+                "Dapatkan penawaran harga grosir / volume khusus untuk pengerjaan folding gate cikarang skala proyek.",
+                "Kami siap menerbitkan RAB tertulis dan invoice resmi sesuai kualifikasi pembukuan perusahaan Anda.",
+                "Hubungi tim B2B / Sales Mangala Living via WhatsApp di +6288801146881."
+            ]
+        },
+        {
+            "heading": "Jangkauan Layanan & Kontak Proyek",
+            "paragraphs": [
+                "Melayani seluruh wilayah Jabodetabek, Karawang, Bali, hingga pengiriman proyek luar pulau dan ekspor.",
+                "Diskusikan proyek Jasa Folding Gate Cikarang Murah & Berkualitas Anda bersama Mangala Living. Hubungi WhatsApp +6288801146881 untuk penawaran & konsultasi gratis!"
+            ]
+        }
+    ]
+}
 
 ]
 
