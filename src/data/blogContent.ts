@@ -13797,6 +13797,85 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "jasa-pagar-besi-depok-custom-minimalis-terpercaya",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Finishing Premium untuk Jasa Pagar Besi Depok Custom Minimalis Terpercaya",
+            "paragraphs": [
+                "Kunci utama dari daya tahan pagar besi depok berada pada kualitas bahan baku serta teknik finishing lapisan pelindung yang digunakan. Tanpa proteksi anti-karat yang baik, besi akan mudah mengalami korosi dalam hitungan bulan.",
+                "Mangala Living menghadirkan solusi Jasa Pagar Besi Depok Custom Minimalis Terpercaya dengan standar finishing premium. Kami menerapkan proses pelapisan cat bertahap untuk menjamin ketahanan dari cuaca tropis yang ekstrem.",
+                "Didukung bengkel las berpengalaman sejak 1999 di Setu Cibitung Bekasi, kami memproduksi pengerjaan besi berkualitas tinggi untuk hunian Anda."
+            ]
+        },
+        {
+            "heading": "Teknik Pelapisan Anti-Karat Ganda",
+            "paragraphs": [
+                "Dalam pemuatan pagar besi depok, kami mengaplikasikan Zinc Chromate Primer atau Epoxy Coating sebagai lapisan dasar. Setelah itu, dilanjutkan dengan lapisan top coat warna pilihan Anda.",
+                "Hasilnya adalah permukaan besi yang halus, mengkilap, dan memiliki daya tahan ekstra terhadap benturan serta kelembapan."
+            ]
+        },
+        {
+            "heading": "Varian Material & Spesifikasi Teknis",
+            "paragraphs": [
+                "Kami menyediakan berbagai material pilihan sesuai standar arsitektur:",
+                "Setiap ukuran dan ketebalan material dijamin akurat sesuai kesepakatan."
+            ],
+            "list": [
+                "Besi Hollow Galvanis (Rekomendasi Utama Anti Karat)",
+                "Stainless Steel SUS 304 Kualitas Ekspor",
+                "Besi Plat Cutting Laser Custom Pattern",
+                "Atap Alderon Double Layer & Polycarbonate Premium",
+                "Cat Duco / Powder Coating Tahan Gores"
+            ]
+        },
+        {
+            "heading": "Layanan Pengelasan Besi Terlengkap",
+            "paragraphs": [
+                "Mangala Living melayani pembuatan dan perakitan berbagai elemen besi rumah:",
+                "Pengerjaan dilakukan secara profesional dengan pengawasan mutu menyeluruh."
+            ],
+            "list": [
+                "Kanopi Besi Minimalis & Carport Kaca",
+                "Pagar Besi Minimalis & Tempa Klasik",
+                "Teralis Jendela & Pintu Exspanda",
+                "Railing Tangga & Balkon Minimalis",
+                "Folding Gate, Pintu Besi, & Tangga Putar"
+            ]
+        },
+        {
+            "heading": "Nilai Tambah Layanan Mangala Living",
+            "paragraphs": [
+                "Mengapa pelanggan memilih produk kami:"
+            ],
+            "list": [
+                "Pengalaman industri sejak 1999",
+                "Garansi ketahanan pekerjaan hingga 1 tahun",
+                "Survei lokasi dan konsultasi GRATIS",
+                "Harga transparan sesuai RAB",
+                "Respon WhatsApp cepat di +6288801146881",
+                "Armada pengiriman sendiri (bebas risiko)"
+            ]
+        },
+        {
+            "heading": "Harga Transparan & Bebas Pembengkakan",
+            "paragraphs": [
+                "Perhitungan harga pagar besi depok ditentukan oleh luas volume, jenis bahan, dan pilihan finishing.",
+                "Kami menerbitkan RAB tertulis sebelum pengerjaan dimulai sehingga anggaran investasi Anda terjamin aman.",
+                "Konsultasikan anggaran Anda via WhatsApp di +6288801146881."
+            ]
+        },
+        {
+            "heading": "Hubungi Kami",
+            "paragraphs": [
+                "Jangkauan area: Bekasi, Cikarang, Cibubur, Jakarta, Depok, Bogor, Tangerang, Karawang, dan sekitarnya.",
+                "Dapatkan Jasa Pagar Besi Depok Custom Minimalis Terpercaya berkualitas tinggi dari produsen terpercaya. Hubungi WhatsApp +6288801146881 untuk survei gratis!"
+            ]
+        }
+    ]
+}
 
 ]
 

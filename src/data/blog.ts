@@ -6604,6 +6604,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 409,
+    "slug": "jasa-pagar-besi-depok-custom-minimalis-terpercaya",
+    "title": "Jasa Pagar Besi Depok Custom Minimalis Terpercaya",
+    "category": "Bengkel Las",
+    "excerpt": "Pilihan pagar besi depok dengan material premium & finishing cat anti-karat ganda. Kualitas unggulan Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-22",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
