@@ -6532,6 +6532,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 403,
+    "slug": "tukang-kanopi-cileungsi-murah-berpengalaman",
+    "title": "Tukang Kanopi Cileungsi Murah & Berpengalaman",
+    "category": "Kanopi",
+    "excerpt": "Rekomendasi tukang kanopi cileungsi terbaik untuk mempercantik dan mengamankan properti Anda. Pengerjaan rapi & material unggulan dari Mangala Living. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-22",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
