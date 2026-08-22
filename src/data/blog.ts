@@ -6592,6 +6592,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 408,
+    "slug": "jasa-pintu-kasa-nyamuk-besi-bekasi-murah",
+    "title": "Jasa Pintu Kasa Nyamuk Besi Bekasi Murah",
+    "category": "Bengkel Las",
+    "excerpt": "Butuh jasa pintu kasa nyamuk bekasi cepat & profesional? Mangala Living melayani pengelasan custom & perbaikan bergaransi. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-22",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
