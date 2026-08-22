@@ -6544,6 +6544,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 404,
+    "slug": "jasa-pagar-besi-cibubur-custom-murah",
+    "title": "Jasa Pagar Besi Cibubur Custom & Murah",
+    "category": "Bengkel Las",
+    "excerpt": "Spesialis pembuatan pagar besi cibubur presisi tinggi & tahan cuaca. Bengkel las profesional Mangala Living sejak 1999. Hubungi WA +6288801146881 untuk konsultasi gratis.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-22",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
