@@ -85,13 +85,12 @@ async function callLLM(prompt) {
   // 1. OpenRouter — Try active free models
   if (OPENROUTER_KEY) {
     const openRouterModels = [
-      'meta-llama/llama-3.1-8b-instruct:free',
+      'deepseek/deepseek-r1-distill-llama-70b:free',
+      'meta-llama/llama-3.3-70b-instruct:free',
+      'qwen/qwen-2.5-72b-instruct:free',
       'google/gemini-2.0-flash-exp:free',
-      'qwen/qwen-2.5-coder-32b-instruct:free',
-      'mistralai/mistral-7b-instruct:free',
-      'google/gemma-2-9b-it:free',
-      'meta-llama/llama-3.2-11b-vision-instruct:free',
-      'openchat/openchat-7b:free',
+      'nvidia/llama-3.1-nemotron-70b-instruct:free',
+      'mistralai/mistral-small-24b-instruct-2501:free',
     ]
     for (const model of openRouterModels) {
       try {
@@ -124,7 +123,14 @@ async function callLLM(prompt) {
 
   // 2. Groq — Mangala primary key
   if (GROQ_KEY) {
-    const groqModels = ['deepseek-r1-distill-llama-70b', 'llama-3.3-70b-versatile', 'llama-3.1-8b-instant', 'qwen-2.5-32b']
+    const groqModels = [
+      'llama3-70b-8192',
+      'llama3-8b-8192',
+      'mixtral-8x7b-32768',
+      'gemma2-9b-it',
+      'llama-3.3-70b-specdec',
+      'deepseek-r1-distill-qwen-32b',
+    ]
     for (const model of groqModels) {
       try {
         const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -147,7 +153,14 @@ async function callLLM(prompt) {
 
   // 3. Groq — lasbekasi fallback key
   if (GROQ_FALLBACK) {
-    const groqModels = ['deepseek-r1-distill-llama-70b', 'llama-3.3-70b-versatile', 'llama-3.1-8b-instant', 'qwen-2.5-32b']
+    const groqModels = [
+      'llama3-70b-8192',
+      'llama3-8b-8192',
+      'mixtral-8x7b-32768',
+      'gemma2-9b-it',
+      'llama-3.3-70b-specdec',
+      'deepseek-r1-distill-qwen-32b',
+    ]
     for (const model of groqModels) {
       try {
         const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -1197,11 +1210,6 @@ FORMAT OUTPUT — HARUS berupa JSON murni tanpa backtick atau markdown, dengan s
 
     // 4. Git commit & push
     console.log('Executing git commit and push...')
-    try {
-      execSync('git pull origin main --rebase', { stdio: 'inherit' })
-    } catch (e) {
-      console.log('Git pull --rebase warning:', e.message)
-    }
     execSync('git add .', { stdio: 'inherit' })
     execSync(`git commit -m "feat(blog): auto-publish '${article.title}' [skip ci]"`, { stdio: 'inherit' })
     execSync('git push origin main', { stdio: 'inherit' })
