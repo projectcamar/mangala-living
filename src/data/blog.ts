@@ -6520,6 +6520,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 402,
+    "slug": "jasa-menara-tangki-air-cikarang-besi-custom",
+    "title": "Jasa Menara Tangki Air Cikarang Besi Custom",
+    "category": "Bengkel Las",
+    "excerpt": "Cari penyedia menara tangki air cikarang profesional? Mangala Living menghadirkan solusi pengelasan besi berkualitas tinggi & bergaransi. Konsultasi gratis via WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-22",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
