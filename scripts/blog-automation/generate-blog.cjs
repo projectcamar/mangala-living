@@ -82,55 +82,87 @@ function slugify(text) {
 }
 
 async function callLLM(prompt) {
-  // 1. OpenRouter — deepseek-r1 free (best quality)
+  // 1. OpenRouter — Try multiple free/popular models
   if (OPENROUTER_KEY) {
-    try {
-      const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${OPENROUTER_KEY}`,
-          'Content-Type': 'application/json',
-          'HTTP-Referer': 'https://mangala-living.com',
-          'X-Title': 'Mangala Living Blog Automation',
-        },
-        body: JSON.stringify({
-          model: 'deepseek/deepseek-r1:free',
-          messages: [{ role: 'user', content: prompt }],
-          temperature: 0.7,
-        }),
-      })
-      const data = await res.json()
-      if (data.choices && data.choices[0]) {
-        console.log('LLM: OpenRouter OK')
-        return data.choices[0].message.content
+    const openRouterModels = [
+      'deepseek/deepseek-r1:free',
+      'meta-llama/llama-3.3-70b-instruct:free',
+      'deepseek/deepseek-chat',
+      'google/gemini-2.0-flash-lite-001',
+    ]
+    for (const model of openRouterModels) {
+      try {
+        const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${OPENROUTER_KEY}`,
+            'Content-Type': 'application/json',
+            'HTTP-Referer': 'https://mangala-living.com',
+            'X-Title': 'Mangala Living Blog Automation',
+          },
+          body: JSON.stringify({
+            model: model,
+            messages: [{ role: 'user', content: prompt }],
+            temperature: 0.7,
+          }),
+        })
+        const data = await res.json()
+        if (data.choices && data.choices[0] && data.choices[0].message?.content) {
+          console.log(`LLM: OpenRouter OK (${model})`)
+          return data.choices[0].message.content
+        } else if (data.error) {
+          console.log(`OpenRouter (${model}) error:`, data.error.message || JSON.stringify(data.error))
+        }
+      } catch (e) {
+        console.log(`OpenRouter (${model}) failed:`, e.message)
       }
-    } catch (e) { console.log('OpenRouter failed, trying next...') }
+    }
   }
 
   // 2. Groq — Mangala primary key
   if (GROQ_KEY) {
-    try {
-      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-        method: 'POST',
-        headers: { 'Authorization': `Bearer ${GROQ_KEY}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model: 'llama-3.3-70b-versatile', messages: [{ role: 'user', content: prompt }], temperature: 0.7, max_tokens: 3000 }),
-      })
-      const data = await res.json()
-      if (data.choices && data.choices[0]) { console.log('LLM: Groq primary OK'); return data.choices[0].message.content }
-    } catch (e) { console.log('Groq primary failed...') }
+    const groqModels = ['llama-3.3-70b-versatile', 'llama-3.1-8b-instant']
+    for (const model of groqModels) {
+      try {
+        const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${GROQ_KEY}`, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ model: model, messages: [{ role: 'user', content: prompt }], temperature: 0.7, max_tokens: 3000 }),
+        })
+        const data = await res.json()
+        if (data.choices && data.choices[0] && data.choices[0].message?.content) {
+          console.log(`LLM: Groq primary OK (${model})`)
+          return data.choices[0].message.content
+        } else if (data.error) {
+          console.log(`Groq primary (${model}) error:`, data.error.message || JSON.stringify(data.error))
+        }
+      } catch (e) {
+        console.log(`Groq primary (${model}) failed:`, e.message)
+      }
+    }
   }
 
   // 3. Groq — lasbekasi fallback key
   if (GROQ_FALLBACK) {
-    try {
-      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-        method: 'POST',
-        headers: { 'Authorization': `Bearer ${GROQ_FALLBACK}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model: 'llama-3.3-70b-versatile', messages: [{ role: 'user', content: prompt }], temperature: 0.7, max_tokens: 3000 }),
-      })
-      const data = await res.json()
-      if (data.choices && data.choices[0]) { console.log('LLM: Groq fallback OK'); return data.choices[0].message.content }
-    } catch (e) { console.log('Groq fallback failed...') }
+    const groqModels = ['llama-3.3-70b-versatile', 'llama-3.1-8b-instant']
+    for (const model of groqModels) {
+      try {
+        const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${GROQ_FALLBACK}`, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ model: model, messages: [{ role: 'user', content: prompt }], temperature: 0.7, max_tokens: 3000 }),
+        })
+        const data = await res.json()
+        if (data.choices && data.choices[0] && data.choices[0].message?.content) {
+          console.log(`LLM: Groq fallback OK (${model})`)
+          return data.choices[0].message.content
+        } else if (data.error) {
+          console.log(`Groq fallback (${model}) error:`, data.error.message || JSON.stringify(data.error))
+        }
+      } catch (e) {
+        console.log(`Groq fallback (${model}) failed:`, e.message)
+      }
+    }
   }
 
   // 4. Bluesminds — lasbekasi fallback (OpenAI-compatible)
@@ -142,11 +174,18 @@ async function callLLM(prompt) {
         body: JSON.stringify({ model: 'gpt-4o-mini', messages: [{ role: 'user', content: prompt }], temperature: 0.7, max_tokens: 3000 }),
       })
       const data = await res.json()
-      if (data.choices && data.choices[0]) { console.log('LLM: Bluesminds OK'); return data.choices[0].message.content }
-    } catch (e) { console.log('Bluesminds failed.') }
+      if (data.choices && data.choices[0] && data.choices[0].message?.content) {
+        console.log('LLM: Bluesminds OK')
+        return data.choices[0].message.content
+      } else if (data.error) {
+        console.log('Bluesminds error:', data.error.message || JSON.stringify(data.error))
+      }
+    } catch (e) {
+      console.log('Bluesminds failed:', e.message)
+    }
   }
 
-  throw new Error('All 4 LLM providers failed. Check API keys in run.sh.')
+  throw new Error('All LLM providers and model fallbacks failed. Check API keys and logs on VPS.')
 }
 
 async function run() {
@@ -334,6 +373,11 @@ FORMAT OUTPUT — HARUS berupa JSON murni tanpa backtick atau markdown, dengan s
 
     // 4. Git commit & push
     console.log('Executing git commit and push...')
+    try {
+      execSync('git pull origin main --rebase', { stdio: 'inherit' })
+    } catch (e) {
+      console.log('Git pull --rebase warning:', e.message)
+    }
     execSync('git add .', { stdio: 'inherit' })
     execSync(`git commit -m "feat(blog): auto-publish '${article.title}' [skip ci]"`, { stdio: 'inherit' })
     execSync('git push origin main', { stdio: 'inherit' })
