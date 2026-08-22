@@ -6568,6 +6568,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 406,
+    "slug": "harga-kanopi-per-meter-di-cikarang-terbaru-2026",
+    "title": "Harga Kanopi Per Meter di Cikarang Terbaru 2026",
+    "category": "Kanopi",
+    "excerpt": "Penyedia harga kanopi cikarang 2026 murah bergaransi resmi dari Mangala Living. Pengerjaan tepat waktu & gratis survei lokasi. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-22",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
