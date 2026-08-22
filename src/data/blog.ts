@@ -6556,6 +6556,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 405,
+    "slug": "jasa-kanopi-polycarbonate-bekasi-harga-terjangkau",
+    "title": "Jasa Kanopi Polycarbonate Bekasi Harga Terjangkau",
+    "category": "Kanopi",
+    "excerpt": "Tingkatkan keamanan & keindahan bangunan dengan kanopi polycarbonate bekasi dari Mangala Living. Pengerjaan terjamin & gratis survei. Konsultasi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-22",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 

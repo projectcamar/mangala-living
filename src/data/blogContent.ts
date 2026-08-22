@@ -13482,6 +13482,84 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "jasa-kanopi-polycarbonate-bekasi-harga-terjangkau",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Solusi Keamanan & Estetika: Jasa Kanopi Polycarbonate Bekasi Harga Terjangkau",
+            "paragraphs": [
+                "Faktor keamanan merupakan pertimbangan paling utama dalam merancang properti tempat tinggal maupun tempat usaha. Pemasangan kanopi polycarbonate bekasi memberikan perlindungan ekstra sekaligus mempercantik nilai arsitektur hunian.",
+                "Mangala Living merancang setiap produk Jasa Kanopi Polycarbonate Bekasi Harga Terjangkau dengan memperhitungkan faktor proteksi mekanis serta kecantikan motif visual yang harmonis.",
+                "Workshop kami di Setu Cibitung Bekasi dilengkapi dengan peralatan pengelasan modern untuk memastikan setiap potongan besi terpasang kuat dan rapi."
+            ]
+        },
+        {
+            "heading": "Keunggulan Desain & Proteksi Ganda",
+            "paragraphs": [
+                "Produk kanopi polycarbonate bekasi dari Mangala Living dibuat menggunakan material berdaya tahan tinggi yang sulit dibongkar secara paksa, memberikan rasa tenang bagi seluruh penghuni rumah.",
+                "Selain itu, finishing lapisan anti karat memastikan struktur tidak mudah aus tergerus hujan maupun panas terik."
+            ]
+        },
+        {
+            "heading": "Spesifikasi Material Pilihan",
+            "paragraphs": [
+                "Kami mengombinasikan berbagai jenis besi kualitas atas untuk menghasilkan kanopi polycarbonate bekasi yang kokoh:",
+                "Setiap komponen disemprot dengan cat dasar anti-korosi sebelum dilapisi warna favorit sesuai permintaan Anda."
+            ],
+            "list": [
+                "Besi Galvanis anti karat kualitas grade A",
+                "Besi Solid Plat Strip & Square Bar",
+                "Atap Polycarbonate, Alderon, & Tempered Glass",
+                "Finishing Anti-rust primer + Top coat Duco"
+            ]
+        },
+        {
+            "heading": "Layanan Pengelasan Terintegrasi Mangala Living",
+            "paragraphs": [
+                "Kami menerima pesanan pengelasan besi custom lengkap untuk berbagai keperluan bangunan:",
+                "Tim kami siap datang melakukan survei dan pengukuran akurat di lokasi Anda."
+            ],
+            "list": [
+                "Pagar Rumah Minimalis & Pagar Tempa Klasik",
+                "Kanopi Besi Alderon & Polycarbonate",
+                "Teralis Jendela & Pintu Exspanda Kasa Nyamuk",
+                "Railing Tangga, Railing Balkon, & Mezzanine",
+                "Pintu Besi Lipat, Sliding Gate, & Tower Toren"
+            ]
+        },
+        {
+            "heading": "Alasan Konsumen Memilih Mangala Living",
+            "paragraphs": [
+                "Komitmen kualitas yang konsisten sejak tahun 1999:"
+            ],
+            "list": [
+                "Reputasi teruji selama lebih dari 25 tahun",
+                "Pengerjaan tepat waktu dengan standar keamanan tinggi",
+                "Layanan survei dan konsultasi 100% GRATIS",
+                "Harga terjangkau transparan tanpa biaya tersembunyi",
+                "Garansi pemeliharaan resmi hingga 1 tahun",
+                "Customer service siap melayani 24 jam via WhatsApp"
+            ]
+        },
+        {
+            "heading": "Penawaran Harga & Konsultasi Anggaran",
+            "paragraphs": [
+                "Nikmati penawaran harga kompetitif untuk pengerjaan kanopi polycarbonate bekasi dengan skema pembayaran transparan.",
+                "Kami akan menerbitkan rincian RAB tertulis agar Anda dapat menyesuaikan spesifikasi pekerjaan dengan anggaran yang tersedia.",
+                "Konsultasikan rencana pemasangan Anda langsung dengan teknisi kami via WhatsApp di +6288801146881."
+            ]
+        },
+        {
+            "heading": "Jangkauan Layanan & Kontak Pemesanan",
+            "paragraphs": [
+                "Kami melayani pemesanan untuk wilayah Bekasi, Cikarang, Cibubur, Jakarta, Depok, Bogor, Tangerang, Karawang, dan sekitarnya.",
+                "Jangan tunda keamanan dan keindahan rumah Anda. Kontak Mangala Living di WhatsApp +6288801146881 untuk konsultasi dan penawaran terbaik hari ini!"
+            ]
+        }
+    ]
+}
 
 ]
 
