@@ -6664,6 +6664,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 414,
+    "slug": "perbandingan-kanopi-alderon-vs-polycarbonate-vs-spandek",
+    "title": "Perbandingan Kanopi Alderon vs Polycarbonate vs Spandek",
+    "category": "Tips and Trick",
+    "excerpt": "Spesialis pembuatan kanopi alderon presisi tinggi & tahan cuaca. Bengkel las profesional Mangala Living sejak 1999. Hubungi WA +6288801146881 untuk konsultasi gratis.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-23",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
