@@ -6700,6 +6700,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 417,
+    "slug": "perbedaan-pintu-pagar-sliding-dan-swing-untuk-garasi-rumah",
+    "title": "Perbedaan Pintu Pagar Sliding dan Swing untuk Garasi Rumah",
+    "category": "Tips and Trick",
+    "excerpt": "Solusi pintu pagar sliding custom untuk tampilan rumah modern & minimalis. Hasil las rapi dari Mangala Living sejak 1999. Hubungi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-23",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
