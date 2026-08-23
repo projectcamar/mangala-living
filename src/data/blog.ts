@@ -6616,6 +6616,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 410,
+    "slug": "bengkel-las-setu-cibitung-bekasi-workshop-terpercaya",
+    "title": "Bengkel Las Setu Cibitung Bekasi Workshop Terpercaya",
+    "category": "Bengkel Las",
+    "excerpt": "Upgrade hunian Anda dengan bengkel las setu bekasi berkualitas dari Mangala Living. Pengerjaan rapi, kokoh & bergaransi 1 tahun. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-23",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
