@@ -6676,6 +6676,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 415,
+    "slug": "model-teralis-jendela-minimalis-modern-untuk-rumah-type-36-dan-45",
+    "title": "Model Teralis Jendela Minimalis Modern untuk Rumah Type 36 dan 45",
+    "category": "Tips and Trick",
+    "excerpt": "Tingkatkan keamanan & keindahan bangunan dengan teralis jendela minimalis dari Mangala Living. Pengerjaan terjamin & gratis survei. Konsultasi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-23",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
