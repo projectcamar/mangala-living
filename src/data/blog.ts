@@ -6724,6 +6724,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 419,
+    "slug": "desain-railing-balkon-besi-minimalis-kombinasi-kaca-temper",
+    "title": "Desain Railing Balkon Besi Minimalis Kombinasi Kaca Temper",
+    "category": "Tips and Trick",
+    "excerpt": "Pilihan railing balkon besi dengan material premium & finishing cat anti-karat ganda. Kualitas unggulan Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-23",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
