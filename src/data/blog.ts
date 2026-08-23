@@ -6712,6 +6712,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 418,
+    "slug": "panduan-memilih-folding-gate-untuk-toko-dan-garasi",
+    "title": "Panduan Memilih Folding Gate untuk Toko dan Garasi",
+    "category": "Tips and Trick",
+    "excerpt": "Butuh jasa folding gate cepat & profesional? Mangala Living melayani pengelasan custom & perbaikan bergaransi. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-23",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
