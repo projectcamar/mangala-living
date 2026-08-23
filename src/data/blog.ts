@@ -6628,6 +6628,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 411,
+    "slug": "jasa-konstruksi-besi-custom-bekasi-untuk-ruko-kantor",
+    "title": "Jasa Konstruksi Besi Custom Bekasi untuk Ruko & Kantor",
+    "category": "Bengkel Las",
+    "excerpt": "Penyedia konstruksi besi bekasi profesional untuk proyek perumahan, villa, & ruko. Kualitas fabrikasi standar arsitektur dari Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-23",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
