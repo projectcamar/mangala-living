@@ -6784,6 +6784,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 424,
+    "slug": "cara-merawat-kanopi-besi-agar-bebas-karat-hingga-puluhan-tahun",
+    "title": "Cara Merawat Kanopi Besi Agar Bebas Karat Hingga Puluhan Tahun",
+    "category": "Tips and Trick",
+    "excerpt": "Spesialis pembuatan perawatan kanopi besi presisi tinggi & tahan cuaca. Bengkel las profesional Mangala Living sejak 1999. Hubungi WA +6288801146881 untuk konsultasi gratis.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-24",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
