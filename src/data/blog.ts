@@ -6808,6 +6808,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 426,
+    "slug": "estimasi-biaya-pemasangan-railing-tangga-besi-minimalis-per-meter",
+    "title": "Estimasi Biaya Pemasangan Railing Tangga Besi Minimalis per Meter",
+    "category": "Tips and Trick",
+    "excerpt": "Penyedia harga railing tangga per meter murah bergaransi resmi dari Mangala Living. Pengerjaan tepat waktu & gratis survei lokasi. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-24",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
