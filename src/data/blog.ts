@@ -6772,6 +6772,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 423,
+    "slug": "spesifikasi-rak-gudang-heavy-duty-untuk-efisiensi-pabrik",
+    "title": "Spesifikasi Rak Gudang Heavy Duty untuk Efisiensi Pabrik",
+    "category": "Tips and Trick",
+    "excerpt": "Rekomendasi rak gudang heavy duty terbaik untuk mempercantik dan mengamankan properti Anda. Pengerjaan rapi & material unggulan dari Mangala Living. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-24",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
