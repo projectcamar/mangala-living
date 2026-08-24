@@ -6832,6 +6832,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 428,
+    "slug": "handcrafted-wrought-iron-gate-manufacturer-indonesia-for-export",
+    "title": "Handcrafted Wrought Iron Gate Manufacturer Indonesia for Export",
+    "category": "Wrought Iron Export",
+    "excerpt": "Butuh jasa wrought iron gate manufacturer indonesia cepat & profesional? Mangala Living melayani pengelasan custom & perbaikan bergaransi. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-24",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
