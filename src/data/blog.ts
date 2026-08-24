@@ -6736,6 +6736,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 420,
+    "slug": "model-railing-tangga-industrial-modern-untuk-rumah-dan-cafe",
+    "title": "Model Railing Tangga Industrial Modern untuk Rumah dan Cafe",
+    "category": "Tips and Trick",
+    "excerpt": "Upgrade hunian Anda dengan railing tangga industrial berkualitas dari Mangala Living. Pengerjaan rapi, kokoh & bergaransi 1 tahun. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-24",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
