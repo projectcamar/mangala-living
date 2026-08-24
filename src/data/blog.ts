@@ -6844,6 +6844,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 429,
+    "slug": "custom-villa-gates-metalwork-craftsman-in-bali-indonesia",
+    "title": "Custom Villa Gates & Metalwork Craftsman in Bali & Indonesia",
+    "category": "Besi Tempa",
+    "excerpt": "Pilihan custom villa gate manufacturer bali dengan material premium & finishing cat anti-karat ganda. Kualitas unggulan Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-24",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
