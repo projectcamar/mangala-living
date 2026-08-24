@@ -6760,6 +6760,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 422,
+    "slug": "cara-membuat-pergola-besi-rindang-untuk-taman-belakang",
+    "title": "Cara Membuat Pergola Besi Rindang untuk Taman Belakang",
+    "category": "Tips and Trick",
+    "excerpt": "Cari penyedia pergola besi profesional? Mangala Living menghadirkan solusi pengelasan besi berkualitas tinggi & bergaransi. Konsultasi gratis via WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-24",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
