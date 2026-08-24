@@ -6748,6 +6748,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 421,
+    "slug": "keunggulan-tangga-besi-melayang-untuk-hunian-modern",
+    "title": "Keunggulan Tangga Besi Melayang untuk Hunian Modern",
+    "category": "Tips and Trick",
+    "excerpt": "Penyedia tangga besi melayang profesional untuk proyek perumahan, villa, & ruko. Kualitas fabrikasi standar arsitektur dari Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-24",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
