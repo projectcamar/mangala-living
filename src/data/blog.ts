@@ -6868,6 +6868,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 431,
+    "slug": "custom-wrought-iron-gates-export-to-australia-villa-residence",
+    "title": "Custom Wrought Iron Gates Export to Australia — Villa & Residence",
+    "category": "Wrought Iron Export",
+    "excerpt": "Penyedia wrought iron gates australia export profesional untuk proyek perumahan, villa, & ruko. Kualitas fabrikasi standar arsitektur dari Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-25",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
