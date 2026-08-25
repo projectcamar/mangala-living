@@ -6952,6 +6952,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 438,
+    "slug": "railing-besi-tempa-tangga-balkon-custom-untuk-rumah-luxury-villa",
+    "title": "Railing Besi Tempa Tangga & Balkon Custom untuk Rumah Luxury & Villa",
+    "category": "Besi Tempa",
+    "excerpt": "Butuh jasa railing tangga besi tempa mewah cepat & profesional? Mangala Living melayani pengelasan custom & perbaikan bergaransi. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-25",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
