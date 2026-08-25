@@ -6856,6 +6856,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 430,
+    "slug": "wrought-iron-gate-supplier-singapore-from-indonesian-workshop",
+    "title": "Wrought Iron Gate Supplier Singapore from Indonesian Workshop",
+    "category": "Wrought Iron Export",
+    "excerpt": "Upgrade hunian Anda dengan wrought iron gate supplier singapore berkualitas dari Mangala Living. Pengerjaan rapi, kokoh & bergaransi 1 tahun. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-25",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
