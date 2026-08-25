@@ -6940,6 +6940,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 437,
+    "slug": "custom-wrought-iron-entry-doors-gates-export-to-usa-north-america",
+    "title": "Custom Wrought Iron Entry Doors & Gates Export to USA & North America",
+    "category": "Wrought Iron Export",
+    "excerpt": "Solusi wrought iron doors export usa custom untuk tampilan rumah modern & minimalis. Hasil las rapi dari Mangala Living sejak 1999. Hubungi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-25",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
