@@ -6928,6 +6928,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 436,
+    "slug": "desain-pagar-besi-tempa-klasik-eropa-mediterania-untuk-hunian-mewah",
+    "title": "Desain Pagar Besi Tempa Klasik Eropa & Mediterania untuk Hunian Mewah",
+    "category": "Besi Tempa",
+    "excerpt": "Penyedia pagar besi tempa klasik eropa murah bergaransi resmi dari Mangala Living. Pengerjaan tepat waktu & gratis survei lokasi. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-25",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 

@@ -15936,6 +15936,85 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "desain-pagar-besi-tempa-klasik-eropa-mediterania-untuk-hunian-mewah",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Layanan Pengelasan Hemat & Berkualitas: Desain Pagar Besi Tempa Klasik Eropa & Mediterania untuk Hunian Mewah",
+            "paragraphs": [
+                "Mendapatkan produk pagar besi tempa klasik eropa berkualitas tinggi tidak harus menguras anggaran pembangunan Anda. Di Mangala Living, kami menyediakan opsi pengerjaan besi yang efisien namun tetap mempertahankan mutu konstruksi nomor satu.",
+                "Spesialisasi kami pada Desain Pagar Besi Tempa Klasik Eropa & Mediterania untuk Hunian Mewah didukung oleh rantai pasok material langsung dari distributor resmi, sehingga kami mampu menawarkan harga pabrik yang sangat bersaing.",
+                "Berpusat di Bekasi (Setu Cibitung), tim kami siap memberikan solusi terbaik bagi hunian pribadi maupun proyek komersial Anda."
+            ]
+        },
+        {
+            "heading": "Efisiensi Tanpa Mengorbankan Kualitas",
+            "paragraphs": [
+                "Setiap pesanan pagar besi tempa klasik eropa dikerjakan dengan ketelitian tinggi oleh tenaga ahli yang berpengalaman. Kami memastikan setiap sambungan las terikat sempurna dan bebas cacat struktur.",
+                "Dengan dukungan jaminan garansi 1 tahun, Anda tidak perlu khawatir akan risiko kerusakan atau penurunan kualitas di kemudian hari."
+            ]
+        },
+        {
+            "heading": "Material Pilihan Standar Bangunan",
+            "paragraphs": [
+                "Pilihan material untuk pagar besi tempa klasik eropa dapat disesuaikan dengan kebutuhan dan estimasi biaya yang Anda tetapkan:",
+                "Semua material diproses dengan perlindungan anti-karat ganda untuk menjamin daya tahan jangka panjang."
+            ],
+            "list": [
+                "Besi Hollow Galvanis tahan korosi",
+                "Besi Hitam Mild Steel ekonomis & kokoh",
+                "Stainless Steel 304 anti karat",
+                "Baja Ringan SNI presisi tinggi",
+                "Finishing Cat Semprot Epoksi & Zinc Chromate"
+            ]
+        },
+        {
+            "heading": "Portfolio Layanan Konstruksi Besi",
+            "paragraphs": [
+                "Mangala Living mengerjakan berbagai produk pengelasan custom untuk kebutuhan arsitektur:",
+                "Desain dapat disesuaikan dengan contoh foto atau gambar kerja arsitek pilihan Anda."
+            ],
+            "list": [
+                "Kanopi Alderon, Polycarbonate, & Solarflat",
+                "Pagar Besi Minimalis & Besi Tempa Modern",
+                "Teralis Jendela & Pintu Exspanda Kasa Nyamuk",
+                "Railing Tangga Besi, Kayu, & Balkon Minimalis",
+                "Folding Gate, Pintu Besi, & Tangga Putar"
+            ]
+        },
+        {
+            "heading": "Keuntungan Memilih Mangala Living",
+            "paragraphs": [
+                "Mengapa pelanggan terus mempercayakan kebutuhan besi kepada kami:"
+            ],
+            "list": [
+                "Pengalaman bengkel las sejak 1999",
+                "Harga langsung dari workshop (tanpa perantara)",
+                "Gratis survei lokasi dan konsultasi RAB",
+                "Pengerjaan tepat waktu sesuai timeline",
+                "Garansi perbaikan hingga 1 tahun full",
+                "Layanan fleksibel via WhatsApp +6288801146881"
+            ]
+        },
+        {
+            "heading": "Sistem Pembayaran & RAB Transparan",
+            "paragraphs": [
+                "Kami menerapkan sistem Rencana Anggaran Biaya (RAB) transparan untuk pengerjaan pagar besi tempa klasik eropa. Anda akan mendapatkan rincian harga per meter secara mendetail.",
+                "Tidak ada biaya tersembunyi setelah kesepakatan dibuat. Hubungi kami sekarang untuk mendapatkan skema harga promo bulan ini.",
+                "Konsultasi langsung dengan tim teknis via WhatsApp +6288801146881."
+            ]
+        },
+        {
+            "heading": "Hubungi Kami Sekarang",
+            "paragraphs": [
+                "Layanan meliputi area Bekasi, Cikarang, Cibubur, Jakarta, Depok, Bogor, Tangerang, Karawang, dan sekitarnya.",
+                "Wujudkan pengerjaan Desain Pagar Besi Tempa Klasik Eropa & Mediterania untuk Hunian Mewah impian Anda bersama Mangala Living. Hubungi WhatsApp +6288801146881 untuk survei gratis hari ini!"
+            ]
+        }
+    ]
+}
 
 ]
 
