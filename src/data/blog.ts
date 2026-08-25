@@ -6892,6 +6892,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 433,
+    "slug": "architectural-wrought-iron-metalwork-for-architects-interior-designers",
+    "title": "Architectural Wrought Iron Metalwork for Architects & Interior Designers",
+    "category": "Besi Tempa",
+    "excerpt": "Rekomendasi architectural metalwork indonesia terbaik untuk mempercantik dan mengamankan properti Anda. Pengerjaan rapi & material unggulan dari Mangala Living. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-25",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
