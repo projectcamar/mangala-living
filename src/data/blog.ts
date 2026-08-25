@@ -6916,6 +6916,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 435,
+    "slug": "panduan-pemesanan-besi-tempa-custom-untuk-developer-properti-kontraktor",
+    "title": "Panduan Pemesanan Besi Tempa Custom untuk Developer Properti & Kontraktor",
+    "category": "Besi Tempa",
+    "excerpt": "Tingkatkan keamanan & keindahan bangunan dengan supplier besi tempa kontraktor dari Mangala Living. Pengerjaan terjamin & gratis survei. Konsultasi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-25",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
