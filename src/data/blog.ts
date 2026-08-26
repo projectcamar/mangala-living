@@ -6976,6 +6976,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 440,
+    "slug": "restoration-heritage-wrought-iron-metalwork-fabrication-indonesia",
+    "title": "Restoration & Heritage Wrought Iron Metalwork Fabrication Indonesia",
+    "category": "Besi Tempa",
+    "excerpt": "Upgrade hunian Anda dengan heritage wrought iron restoration indonesia berkualitas dari Mangala Living. Pengerjaan rapi, kokoh & bergaransi 1 tahun. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-26",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
