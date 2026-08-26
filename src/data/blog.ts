@@ -7084,6 +7084,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 449,
+    "slug": "tukang-las-pagar-tangga-grand-wisata-bekasi-termurah-2026",
+    "title": "Tukang Las Pagar Tangga Grand Wisata Bekasi Termurah 2026",
+    "category": "Bengkel Las",
+    "excerpt": "Pilihan tukang las pagar grand wisata dengan material premium & finishing cat anti-karat ganda. Kualitas unggulan Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-26",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
