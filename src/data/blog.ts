@@ -7072,6 +7072,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 448,
+    "slug": "bengkel-las-grand-wisata-harga-murah-2026",
+    "title": "Bengkel Las Grand Wisata Harga Murah 2026",
+    "category": "Bengkel Las",
+    "excerpt": "Butuh jasa bengkel las grand wisata cepat & profesional? Mangala Living melayani pengelasan custom & perbaikan bergaransi. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-26",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
