@@ -7048,6 +7048,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 446,
+    "slug": "handcrafted-wrought-iron-gates-export-to-new-zealand-pacific",
+    "title": "Handcrafted Wrought Iron Gates Export to New Zealand & Pacific",
+    "category": "Wrought Iron Export",
+    "excerpt": "Penyedia wrought iron gates new zealand export murah bergaransi resmi dari Mangala Living. Pengerjaan tepat waktu & gratis survei lokasi. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-26",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
