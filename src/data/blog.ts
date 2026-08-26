@@ -7024,6 +7024,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 444,
+    "slug": "proses-pembuatan-besi-tempa-handcrafted-direct-from-workshop-indonesia",
+    "title": "Proses Pembuatan Besi Tempa Handcrafted Direct from Workshop Indonesia",
+    "category": "Besi Tempa",
+    "excerpt": "Spesialis pembuatan proses pembuatan besi tempa manual presisi tinggi & tahan cuaca. Bengkel las profesional Mangala Living sejak 1999. Hubungi WA +6288801146881 untuk konsultasi gratis.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-26",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
