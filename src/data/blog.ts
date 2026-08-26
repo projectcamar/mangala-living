@@ -7036,6 +7036,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 445,
+    "slug": "wrought-iron-garden-fence-gazebo-fabrication-for-luxury-resorts",
+    "title": "Wrought Iron Garden Fence & Gazebo Fabrication for Luxury Resorts",
+    "category": "Besi Tempa",
+    "excerpt": "Tingkatkan keamanan & keindahan bangunan dengan wrought iron gazebo resort dari Mangala Living. Pengerjaan terjamin & gratis survei. Konsultasi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-26",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
