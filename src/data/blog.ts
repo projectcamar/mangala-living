@@ -6988,6 +6988,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 441,
+    "slug": "harga-pagar-besi-tempa-per-meter-terbaru-2026-pabrik-workshop-direct",
+    "title": "Harga Pagar Besi Tempa per Meter Terbaru 2026 — Pabrik & Workshop Direct",
+    "category": "Besi Tempa",
+    "excerpt": "Penyedia harga pagar besi tempa per meter 2026 profesional untuk proyek perumahan, villa, & ruko. Kualitas fabrikasi standar arsitektur dari Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-26",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
