@@ -7060,6 +7060,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 447,
+    "slug": "pintu-kasa-nyamuk-teralis-besi-tempa-mewah-anti-maling",
+    "title": "Pintu Kasa Nyamuk & Teralis Besi Tempa Mewah Anti Maling",
+    "category": "Besi Tempa",
+    "excerpt": "Solusi teralis besi tempa mewah custom untuk tampilan rumah modern & minimalis. Hasil las rapi dari Mangala Living sejak 1999. Hubungi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-26",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
