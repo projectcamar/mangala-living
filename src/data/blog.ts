@@ -7012,6 +7012,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 443,
+    "slug": "pintu-gerbang-besi-tempa-otomatis-automatic-wrought-iron-driveway-gate",
+    "title": "Pintu Gerbang Besi Tempa Otomatis (Automatic Wrought Iron Driveway Gate)",
+    "category": "Besi Tempa",
+    "excerpt": "Rekomendasi pintu gerbang besi tempa otomatis terbaik untuk mempercantik dan mengamankan properti Anda. Pengerjaan rapi & material unggulan dari Mangala Living. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-26",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
