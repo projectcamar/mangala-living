@@ -7132,6 +7132,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 453,
+    "slug": "indonesian-wrought-iron-fence-balinese-style-gate-export-specialist",
+    "title": "Indonesian Wrought Iron Fence & Balinese Style Gate Export Specialist",
+    "category": "Wrought Iron Export",
+    "excerpt": "Rekomendasi balinese style wrought iron gate terbaik untuk mempercantik dan mengamankan properti Anda. Pengerjaan rapi & material unggulan dari Mangala Living. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-27",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
