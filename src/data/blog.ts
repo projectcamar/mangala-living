@@ -7096,6 +7096,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 450,
+    "slug": "jasa-las-kanopi-pagar-besi-grand-wisata-bekasi-harga-murah",
+    "title": "Jasa Las Kanopi & Pagar Besi Grand Wisata Bekasi Harga Murah",
+    "category": "Bengkel Las",
+    "excerpt": "Upgrade hunian Anda dengan jasa las kanopi grand wisata berkualitas dari Mangala Living. Pengerjaan rapi, kokoh & bergaransi 1 tahun. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-27",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
