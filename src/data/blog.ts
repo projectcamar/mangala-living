@@ -7204,6 +7204,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 459,
+    "slug": "",
+    "title": "印度尼西亚巴厘岛风格熟铁大门与建筑金属工艺出口供应商",
+    "category": "Wrought Iron Export",
+    "excerpt": "Pilihan 印尼熟铁大门出口供应商 dengan material premium & finishing cat anti-karat ganda. Kualitas unggulan Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-27",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
