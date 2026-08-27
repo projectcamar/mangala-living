@@ -7108,6 +7108,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 451,
+    "slug": "bengkel-las-setu-bantargebang-bekasi-harga-murah-bergaransi",
+    "title": "Bengkel Las Setu Bantargebang Bekasi Harga Murah Bergaransi",
+    "category": "Bengkel Las",
+    "excerpt": "Penyedia bengkel las setu bantargebang profesional untuk proyek perumahan, villa, & ruko. Kualitas fabrikasi standar arsitektur dari Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-27",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
