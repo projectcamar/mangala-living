@@ -7192,6 +7192,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 458,
+    "slug": "",
+    "title": "مصنع أثاث حديد مطاوع وأعمال معدنية معمارية مخصصة للتصدير العالمي",
+    "category": "Wrought Iron Export",
+    "excerpt": "Butuh jasa أثاث حديد مطاوع تصدير cepat & profesional? Mangala Living melayani pengelasan custom & perbaikan bergaransi. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-27",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
