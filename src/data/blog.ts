@@ -7120,6 +7120,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 452,
+    "slug": "best-supplier-for-handcrafted-wrought-iron-gates-metalwork-from-indonesia",
+    "title": "Best Supplier for Handcrafted Wrought Iron Gates & Metalwork from Indonesia",
+    "category": "Wrought Iron Export",
+    "excerpt": "Cari penyedia best supplier for wrought iron gates profesional? Mangala Living menghadirkan solusi pengelasan besi berkualitas tinggi & bergaransi. Konsultasi gratis via WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-27",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
