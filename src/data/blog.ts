@@ -7156,6 +7156,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 455,
+    "slug": "fabricante-y-exportador-de-puertas-de-hierro-forjado-estilo-bali-desde-indonesia",
+    "title": "Fabricante y Exportador de Puertas de Hierro Forjado Estilo Bali desde Indonesia",
+    "category": "Wrought Iron Export",
+    "excerpt": "Tingkatkan keamanan & keindahan bangunan dengan exportador hierro forjado indonesia dari Mangala Living. Pengerjaan terjamin & gratis survei. Konsultasi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-27",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
