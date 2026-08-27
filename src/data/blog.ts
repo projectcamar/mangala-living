@@ -7168,6 +7168,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 456,
+    "slug": "proveedor-de-muebles-industriales-y-hierro-forjado-a-medida-para-exportacion",
+    "title": "Proveedor de Muebles Industriales y Hierro Forjado a Medida para Exportación",
+    "category": "Wrought Iron Export",
+    "excerpt": "Penyedia proveedor muebles hierro forjado murah bergaransi resmi dari Mangala Living. Pengerjaan tepat waktu & gratis survei lokasi. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-27",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
