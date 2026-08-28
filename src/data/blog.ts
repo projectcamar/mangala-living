@@ -7300,6 +7300,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 467,
+    "slug": "bengkel-las-kota-harapan-indah-bekasi-harga-murah-2026",
+    "title": "Bengkel Las Kota Harapan Indah Bekasi Harga Murah 2026",
+    "category": "Bengkel Las",
+    "excerpt": "Solusi bengkel las harapan indah custom untuk tampilan rumah modern & minimalis. Hasil las rapi dari Mangala Living sejak 1999. Hubungi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-28",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
