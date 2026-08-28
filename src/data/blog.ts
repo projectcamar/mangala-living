@@ -7288,6 +7288,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 466,
+    "slug": "",
+    "title": "프리미엄 산업용 가구 및 단조철 가구 글로벌 수출 전용 제조 공방",
+    "category": "Wrought Iron Export",
+    "excerpt": "Penyedia 단조철 가구 수출 공방 murah bergaransi resmi dari Mangala Living. Pengerjaan tepat waktu & gratis survei lokasi. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-28",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
