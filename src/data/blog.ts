@@ -7264,6 +7264,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 464,
+    "slug": "mobilier-industriel-et-fer-forge-sur-mesure-pour-lexportation-internationale",
+    "title": "Mobilier Industriel et Fer Forgé Sur Mesure pour l'Exportation Internationale",
+    "category": "Wrought Iron Export",
+    "excerpt": "Spesialis pembuatan mobilier fer forge export presisi tinggi & tahan cuaca. Bengkel las profesional Mangala Living sejak 1999. Hubungi WA +6288801146881 untuk konsultasi gratis.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-28",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
