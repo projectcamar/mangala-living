@@ -7240,6 +7240,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 462,
+    "slug": "",
+    "title": "カスタムインダストリアル家具＆錬鉄家具の海外輸出専門サプライヤー",
+    "category": "Wrought Iron Export",
+    "excerpt": "Cari penyedia 錬鉄家具海外輸出 profesional? Mangala Living menghadirkan solusi pengelasan besi berkualitas tinggi & bergaransi. Konsultasi gratis via WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-28",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
