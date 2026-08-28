@@ -7252,6 +7252,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 463,
+    "slug": "fournisseur-et-exportateur-de-portails-en-fer-forge-style-bali-dindonesie",
+    "title": "Fournisseur et Exportateur de Portails en Fer Forgé Style Bali d'Indonésie",
+    "category": "Wrought Iron Export",
+    "excerpt": "Rekomendasi exportateur fer forge indonesie terbaik untuk mempercantik dan mengamankan properti Anda. Pengerjaan rapi & material unggulan dari Mangala Living. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-28",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 

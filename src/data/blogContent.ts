@@ -18075,6 +18075,86 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "fournisseur-et-exportateur-de-portails-en-fer-forge-style-bali-dindonesie",
+    "language": "fr",
+    "sections": [
+        {
+            "heading": "Solusi Modern untuk Fournisseur et Exportateur de Portails en Fer Forgé Style Bali d'Indonésie",
+            "paragraphs": [
+                "Tampilan hunian modern saat ini tidak lepas dari elemen besi yang kuat namun tetap memiliki nilai estetika tinggi. Pemasangan exportateur fer forge indonesie tidak hanya menambah keamanan tetapi juga meningkatkan estetika eksterior dan interior properti.",
+                "Di Mangala Living, kami memahami pentingnya perpaduan fungsionalitas dan keindahan visual. Pengerjaan Fournisseur et Exportateur de Portails en Fer Forgé Style Bali d'Indonésie dirancang secara khusus menyesuaikan dengan konsep arsitektur rumah Anda.",
+                "Tim profesional kami di Setu Cibitung Bekasi siap memandu Anda mulai dari penentuan konsep desain hingga proses instalasi rapi di lokasi."
+            ]
+        },
+        {
+            "heading": "Mengapa exportateur fer forge indonesie Penting untuk Properti Anda",
+            "paragraphs": [
+                "Konstruksi exportateur fer forge indonesie merupakan investasi jangka panjang untuk kenyamanan dan keamanan keluarga. Bahan pilihan yang diproses dengan benar akan bertahan hingga belasan tahun tanpa mengalami kerusakan berarti.",
+                "Di samping itu, sentuhan desain yang tepat pada Fournisseur et Exportateur de Portails en Fer Forgé Style Bali d'Indonésie dapat meningkatkan nilai jual (property value) bangunan secara signifikan."
+            ]
+        },
+        {
+            "heading": "Spesifikasi Material & Sistem Pengecatan",
+            "paragraphs": [
+                "Kami menggunakan pilihan material besi terbaik untuk memproduksi exportateur fer forge indonesie yang awet dan tahan terhadap cuaca ekstrem:",
+                "Pengecatan finishing dilakukan secara bertahap dengan teknik penyemprotan halus untuk hasil yang rata, mengkilap, dan tidak mudah mengelupas."
+            ],
+            "list": [
+                "Besi Hollow Galvanis anti karat kualitas premium",
+                "Besi Plat Strip & Solid Bar presisi",
+                "Stainless Steel Mirror & Hairline Finish",
+                "Cat Dasar Anti Karat Epoxy/Zinc Chromate",
+                "Finishing Cat Duco / Powder Coating kustom"
+            ]
+        },
+        {
+            "heading": "Layanan Pengelasan & Kontraktor Besi Terlengkap",
+            "paragraphs": [
+                "Mangala Living berpengalaman mengerjakan beragam produk interior dan eksterior berbasis besi:",
+                "Seluruh pesanan dapat disesuaikan (custom dimension) sesuai dengan kondisi ukuran bangunan Anda."
+            ],
+            "list": [
+                "Pagar Besi Minimalis & Pagar Besi Tempa",
+                "Kanopi Alderon, Polycarbonate, & Solarflat",
+                "Teralis Jendela Minimalis & Pintu Exspanda",
+                "Railing Tangga Kayu Besi & Balkon Glass Railing",
+                "Tangga Putar Besi & Menara Toren Air"
+            ]
+        },
+        {
+            "heading": "Keunggulan Mangala Living",
+            "paragraphs": [
+                "Komitmen kami adalah memberikan nilai lebih bagi setiap kustomer:"
+            ],
+            "list": [
+                "Berpengalaman sejak 1999 di bidang pengelasan",
+                "Layanan survei dan pengukuran GRATIS tanpa syarat",
+                "Konsultasi desain & pemilihan bahan gratis",
+                "Jaminan pengerjaan rapi dan presisi",
+                "Harga bersaing langsung dari workshop/pabrik",
+                "Garansi kepuasan pelanggan & perbaikan 1 tahun",
+                "Layanan fleksibel 24 jam via WhatsApp +6288801146881"
+            ]
+        },
+        {
+            "heading": "Harga Transparan & Bebas Pembengkakan Biaya",
+            "paragraphs": [
+                "Dapatkan penawaran harga terbaik untuk exportateur fer forge indonesie tanpa khawatir adanya biaya tersembunyi di tengah pengerjaan.",
+                "Kami memberikan Rencana Anggaran Biaya (RAB) tertulis sebelum produksi dimulai, sehingga Anda mendapatkan kepastian investasi yang aman dan terjangkau.",
+                "Hubungi tim sales kami melalui WhatsApp di +6288801146881 untuk mendapatkan katalog sampel dan estimasi harga per meter."
+            ]
+        },
+        {
+            "heading": "Konsultasi & Pemesanan Sekarang",
+            "paragraphs": [
+                "Jangkauan layanan kami meliputi Bekasi, Cikarang, Tambun, Karawang, Jakarta, Cibubur, Depok, Bogor, dan sekitarnya.",
+                "Percayakan kebutuhan Fournisseur et Exportateur de Portails en Fer Forgé Style Bali d'Indonésie Anda pada ahlinya. Hubungi Mangala Living sekarang via WhatsApp +6288801146881 untuk konsultasi dan jadwalkan survei gratis!"
+            ]
+        }
+    ]
+}
 
 ]
 
