@@ -7276,6 +7276,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 465,
+    "slug": "",
+    "title": "발리 스타일 맞춤형 단조철 게이트 및 건축 금속 공예 인도네시아 수출 제조업체",
+    "category": "Wrought Iron Export",
+    "excerpt": "Tingkatkan keamanan & keindahan bangunan dengan 발리 스타일 단조철 게이트 dari Mangala Living. Pengerjaan terjamin & gratis survei. Konsultasi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-28",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
