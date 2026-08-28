@@ -7216,6 +7216,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 460,
+    "slug": "",
+    "title": "高端工业家具与定制熟铁家具全球出口制造工厂",
+    "category": "Wrought Iron Export",
+    "excerpt": "Upgrade hunian Anda dengan 熟铁家具出口工厂 berkualitas dari Mangala Living. Pengerjaan rapi, kokoh & bergaransi 1 tahun. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-28",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
