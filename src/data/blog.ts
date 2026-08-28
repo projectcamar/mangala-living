@@ -7324,6 +7324,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 469,
+    "slug": "bengkel-las-metland-tambun-cibitung-harga-terjangkau",
+    "title": "Bengkel Las Metland Tambun & Cibitung Harga Terjangkau",
+    "category": "Bengkel Las",
+    "excerpt": "Pilihan bengkel las metland tambun dengan material premium & finishing cat anti-karat ganda. Kualitas unggulan Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-28",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
