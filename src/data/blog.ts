@@ -7396,6 +7396,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 475,
+    "slug": "bengkel-las-bekasi-utara-perwira-harga-terjangkau",
+    "title": "Bengkel Las Bekasi Utara & Perwira Harga Terjangkau",
+    "category": "Bengkel Las",
+    "excerpt": "Tingkatkan keamanan & keindahan bangunan dengan bengkel las bekasi utara dari Mangala Living. Pengerjaan terjamin & gratis survei. Konsultasi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-29",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
