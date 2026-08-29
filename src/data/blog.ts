@@ -7432,6 +7432,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 478,
+    "slug": "jasa-kanopi-spandek-pasir-bekasi-anti-bising-murah-2026",
+    "title": "Jasa Kanopi Spandek Pasir Bekasi Anti Bising Murah 2026",
+    "category": "Kanopi",
+    "excerpt": "Butuh jasa kanopi spandek pasir bekasi cepat & profesional? Mangala Living melayani pengelasan custom & perbaikan bergaransi. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-29",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
