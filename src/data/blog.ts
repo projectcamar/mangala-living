@@ -7348,6 +7348,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 471,
+    "slug": "bengkel-las-rawalumbu-bekasi-murah-bergaransi",
+    "title": "Bengkel Las Rawalumbu Bekasi Murah & Bergaransi",
+    "category": "Bengkel Las",
+    "excerpt": "Penyedia bengkel las rawalumbu profesional untuk proyek perumahan, villa, & ruko. Kualitas fabrikasi standar arsitektur dari Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-29",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
