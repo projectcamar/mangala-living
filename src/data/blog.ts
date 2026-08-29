@@ -7372,6 +7372,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 473,
+    "slug": "bengkel-las-bantar-gebang-bekasi-harga-murah-2026",
+    "title": "Bengkel Las Bantar Gebang Bekasi Harga Murah 2026",
+    "category": "Bengkel Las",
+    "excerpt": "Rekomendasi bengkel las bantar gebang terbaik untuk mempercantik dan mengamankan properti Anda. Pengerjaan rapi & material unggulan dari Mangala Living. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-29",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
