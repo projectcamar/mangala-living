@@ -7444,6 +7444,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 479,
+    "slug": "jasa-mezzanine-besi-bekasi-untuk-tambahan-ruang-rumah-cafe",
+    "title": "Jasa Mezzanine Besi Bekasi untuk Tambahan Ruang Rumah & Cafe",
+    "category": "Bengkel Las",
+    "excerpt": "Pilihan mezzanine besi bekasi dengan material premium & finishing cat anti-karat ganda. Kualitas unggulan Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-29",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
