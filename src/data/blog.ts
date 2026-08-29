@@ -7384,6 +7384,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 474,
+    "slug": "bengkel-las-bekasi-barat-kranji-terdekat",
+    "title": "Bengkel Las Bekasi Barat & Kranji Terdekat",
+    "category": "Bengkel Las",
+    "excerpt": "Spesialis pembuatan bengkel las bekasi barat presisi tinggi & tahan cuaca. Bengkel las profesional Mangala Living sejak 1999. Hubungi WA +6288801146881 untuk konsultasi gratis.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-29",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
