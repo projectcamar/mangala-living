@@ -7516,6 +7516,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 485,
+    "slug": "bengkel-las-cibubur-junction-kota-wisata-terdekat",
+    "title": "Bengkel Las Cibubur Junction & Kota Wisata Terdekat",
+    "category": "Bengkel Las",
+    "excerpt": "Tingkatkan keamanan & keindahan bangunan dengan bengkel las kota wisata dari Mangala Living. Pengerjaan terjamin & gratis survei. Konsultasi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-30",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
