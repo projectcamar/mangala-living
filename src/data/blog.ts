@@ -7504,6 +7504,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 484,
+    "slug": "jasa-pagar-besi-minimalis-kombinasi-woodplank-bekasi",
+    "title": "Jasa Pagar Besi Minimalis Kombinasi Woodplank Bekasi",
+    "category": "Bengkel Las",
+    "excerpt": "Spesialis pembuatan pagar woodplank bekasi presisi tinggi & tahan cuaca. Bengkel las profesional Mangala Living sejak 1999. Hubungi WA +6288801146881 untuk konsultasi gratis.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-30",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
