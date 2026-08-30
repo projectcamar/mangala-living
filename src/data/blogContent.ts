@@ -20054,6 +20054,85 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "bengkel-las-depok-timur-margonda-terpercaya",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Layanan Cepat & Berpengalaman: Bengkel Las Depok Timur & Margonda Terpercaya",
+            "paragraphs": [
+                "Kebutuhan pemasangan atau perbaikan bengkel las margonda depok sering kali membutuhkan penanganan yang cepat dan responsif. Menunda pengerjaan besi dapat mengganggu kenyamanan dan faktor keamanan properti Anda.",
+                "Mangala Living menghadirkan layanan pengerjaan Bengkel Las Depok Timur & Margonda Terpercaya dengan respon cepat dan estimasi waktu yang terukur. Didukung oleh armada tim las berpengalaman, kami siap melayani kebutuhan Anda secara efisien.",
+                "Workshop utama kami berlokasi di Setu Cibitung Bekasi, siap menjangkau lokasi Anda di seluruh Jabodetabek."
+            ]
+        },
+        {
+            "heading": "Tukang Las Profesional & Peralatan Lengkap",
+            "paragraphs": [
+                "Setiap proyek bengkel las margonda depok ditangani oleh teknisi las yang menguasai berbagai teknik pengelasan (MIG/TIG/Arc Welding). Peralatan kerja modern kami memastikan pengerjaan dapat diselesaikan tepat waktu dengan kerapihan maksimal.",
+                "Kami mengedepankan aspek keselamatan kerja serta kebersihan area setelah pemasangan selesai dilakukan."
+            ]
+        },
+        {
+            "heading": "Standar Material & Kualitas Konstruksi",
+            "paragraphs": [
+                "Kualitas material adalah kunci daya tahan bengkel las margonda depok. Kami menggunakan besi berkualitas tinggi yang tahan korosi dan beban berat:",
+                "Seluruh besi dilapisi anti-karat ganda agar terhindar dari pelapukan akibat kelembapan udara."
+            ],
+            "list": [
+                "Besi Hollow Galvanis anti karat",
+                "Besi Siku & Besi Beton tebal",
+                "Stainless Steel anti korosi",
+                "Baja Ringan & Plat Besi SNI",
+                "Cat Primer Zinc Chromate & Epoksi"
+            ]
+        },
+        {
+            "heading": "Ragam Jasa Pengelasan Mangala Living",
+            "paragraphs": [
+                "Kami melayani pembuatan dan perbaikan berbagai konstruksi besi:",
+                "Semua pengerjaan dijamin rapi, kuat, dan bergaransi."
+            ],
+            "list": [
+                "Kanopi Rumah & Carport Minimalis",
+                "Pagar Besi Dorong, Lipat, & Tempa",
+                "Teralis Jendela & Pintu Besi Pengaman",
+                "Railing Tangga, Balkon, & Mezzanine",
+                "Folding Gate & Service Las Panggilan"
+            ]
+        },
+        {
+            "heading": "Keunggulan Layanan Cepat Mangala Living",
+            "paragraphs": [
+                "Alasan memilih tim las kami:"
+            ],
+            "list": [
+                "Respon WhatsApp 24 jam di +6288801146881",
+                "Pengalaman bengkel las sejak 1999",
+                "Survei lokasi cepat & GRATIS",
+                "Pengerjaan tepat waktu & terorganisir",
+                "Garansi perbaikan hingga 1 tahun",
+                "Harga transparan tanpa biaya tersembunyi"
+            ]
+        },
+        {
+            "heading": "Harga Terjangkau & Estimasi Cepat",
+            "paragraphs": [
+                "Dapatkan estimasi biaya pengerjaan bengkel las margonda depok secara cepat dengan mengirimkan foto dan ukuran lokasi Anda via WhatsApp.",
+                "Kami memberikan rincian RAB transparan agar anggaran Anda tetap terkontrol dengan baik.",
+                "Hubungi tim teknis Mangala Living sekarang via WhatsApp +6288801146881."
+            ]
+        },
+        {
+            "heading": "Kontak & Jangkauan Layanan",
+            "paragraphs": [
+                "Layanan kami mencakup Bekasi, Cikarang, Cibubur, Jakarta, Depok, Bogor, Tangerang, dan Karawang.",
+                "Percayakan pengerjaan Bengkel Las Depok Timur & Margonda Terpercaya Anda pada ahlinya. Kontak WhatsApp +6288801146881 untuk konsultasi & survei lokasi GRATIS!"
+            ]
+        }
+    ]
+}
 
 ]
 

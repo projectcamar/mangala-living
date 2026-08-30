@@ -7552,6 +7552,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 488,
+    "slug": "bengkel-las-depok-timur-margonda-terpercaya",
+    "title": "Bengkel Las Depok Timur & Margonda Terpercaya",
+    "category": "Bengkel Las",
+    "excerpt": "Butuh jasa bengkel las margonda depok cepat & profesional? Mangala Living melayani pengelasan custom & perbaikan bergaransi. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-30",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
