@@ -7528,6 +7528,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 486,
+    "slug": "bengkel-las-legenda-wisata-cibubur-harga-murah",
+    "title": "Bengkel Las Legenda Wisata Cibubur Harga Murah",
+    "category": "Bengkel Las",
+    "excerpt": "Penyedia bengkel las legenda wisata murah bergaransi resmi dari Mangala Living. Pengerjaan tepat waktu & gratis survei lokasi. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-30",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
