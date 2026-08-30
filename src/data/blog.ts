@@ -7492,6 +7492,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 483,
+    "slug": "jasa-reklame-frame-banner-besi-bekasi-custom",
+    "title": "Jasa Reklame & Frame Banner Besi Bekasi Custom",
+    "category": "Bengkel Las",
+    "excerpt": "Rekomendasi frame banner besi bekasi terbaik untuk mempercantik dan mengamankan properti Anda. Pengerjaan rapi & material unggulan dari Mangala Living. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-30",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
