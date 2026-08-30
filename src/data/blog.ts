@@ -7480,6 +7480,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 482,
+    "slug": "bengkel-las-karawang-barat-timur-harga-terjangkau-2026",
+    "title": "Bengkel Las Karawang Barat & Timur Harga Terjangkau 2026",
+    "category": "Bengkel Las",
+    "excerpt": "Cari penyedia bengkel las karawang profesional? Mangala Living menghadirkan solusi pengelasan besi berkualitas tinggi & bergaransi. Konsultasi gratis via WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-30",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
