@@ -7564,6 +7564,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 489,
+    "slug": "bengkel-las-cibinong-bogor-harga-murah-2026",
+    "title": "Bengkel Las Cibinong Bogor Harga Murah 2026",
+    "category": "Bengkel Las",
+    "excerpt": "Pilihan bengkel las cibinong dengan material premium & finishing cat anti-karat ganda. Kualitas unggulan Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-08-30",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
