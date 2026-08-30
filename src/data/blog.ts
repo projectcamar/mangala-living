@@ -7468,6 +7468,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 481,
+    "slug": "jasa-pagar-sliding-otomatis-bekasi-pakai-motor-remote",
+    "title": "Jasa Pagar Sliding Otomatis Bekasi Pakai Motor Remote",
+    "category": "Bengkel Las",
+    "excerpt": "Penyedia pagar otomatis bekasi profesional untuk proyek perumahan, villa, & ruko. Kualitas fabrikasi standar arsitektur dari Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-30",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
