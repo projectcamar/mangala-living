@@ -19420,6 +19420,85 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "jasa-tangga-putar-besi-cikarang-jababeka-murah",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Renovasi & Upgrade: Jasa Tangga Putar Besi Cikarang & Jababeka Murah",
+            "paragraphs": [
+                "Melakukan peremajaan atau penambahan elemen tangga putar cikarang pada properti adalah cara terbaik untuk meningkatkan nilai visual dan fungsi ruangan secara signifikan.",
+                "Mangala Living menyediakan jasa renovasi dan pembuatan baru untuk Jasa Tangga Putar Besi Cikarang & Jababeka Murah dengan standar pengerjaan yang terstruktur dan aman.",
+                "Tim teknis kami di Setu Cibitung Bekasi berpengalaman membantu pemilik rumah dalam merancang bentuk besi yang ideal sesuai arsitektur terkini."
+            ]
+        },
+        {
+            "heading": "Transformasi Tampilan & Proteksi Rumah",
+            "paragraphs": [
+                "Dengan mengganti elemen besi lama yang rusak dengan tangga putar cikarang baru berbahan galvanis, rumah Anda tidak hanya terlihat lebih modern tetapi juga lebih terproteksi dari cuaca dan potensi gangguan luar.",
+                "Pengerjaan yang rapi dan finishing cat yang elegan akan memberikan kesan hunian yang terawat dan mewah."
+            ]
+        },
+        {
+            "heading": "Material Pilihan Berdaya Tahan Tinggi",
+            "paragraphs": [
+                "Kami menggunakan pilihan bahan yang sudah teruji kekuatannya untuk menopang tangga putar cikarang:",
+                "Setiap komponen besi dijamin bebas dari cacat las dan dilapisi anti karat secara menyeluruh."
+            ],
+            "list": [
+                "Besi Hollow Galvanis tahan karat",
+                "Besi Hitam Mild Steel kokoh",
+                "Stainless Steel 304 tahan korosi",
+                "Atap Polycarbonate & Alderon",
+                "Finishing Cat Duco / Semprot Epoxy"
+            ]
+        },
+        {
+            "heading": "Katalog Produk Pengelasan Mangala Living",
+            "paragraphs": [
+                "Kami mengerjakan beragam produk besi untuk kebutuhan bangunan pribadi dan komersial:",
+                "Semua produk dapat dipesan secara custom menyesuaikan ukuran lokasi."
+            ],
+            "list": [
+                "Pagar Rumah Minimalis & Pagar Tempa Klasik",
+                "Kanopi Rumah, Garasi, & Toko",
+                "Teralis Jendela & Pintu Exspanda Kasa Nyamuk",
+                "Railing Tangga & Balkon Kustom",
+                "Folding Gate, Pintu Besi, & Menara Toren"
+            ]
+        },
+        {
+            "heading": "Alasan Konsumen Memilih Mangala Living",
+            "paragraphs": [
+                "Keunggulan utama bengkel las kami sejak 1999:"
+            ],
+            "list": [
+                "Pengalaman 25+ tahun di bidang las besi",
+                "Gratis survei lokasi dan konsultasi RAB",
+                "Pengerjaan tepat waktu dan rapi",
+                "Harga kompetitif langsung dari pabrik/bengkel",
+                "Garansi pemeliharaan 1 tahun resmi",
+                "Respon WhatsApp 24 jam via +6288801146881"
+            ]
+        },
+        {
+            "heading": "Rincian Biaya & RAB Terbuka",
+            "paragraphs": [
+                "Dapatkan estimasi biaya pengerjaan tangga putar cikarang yang transparan sebelum proyek dimulai.",
+                "Kami akan membantu memberikan alternatif bahan yang sesuai dengan budget Anda tanpa mengurangi faktor keselamatan konstruksi.",
+                "Hubungi kami via WhatsApp +6288801146881 untuk penawaran diskon khusus."
+            ]
+        },
+        {
+            "heading": "Hubungi Mangala Living",
+            "paragraphs": [
+                "Area jangkauan: Bekasi, Cikarang, Cibubur, Jakarta, Depok, Bogor, Tangerang, dan Karawang.",
+                "Wujudkan Jasa Tangga Putar Besi Cikarang & Jababeka Murah berkualitas untuk rumah Anda. Kontak WhatsApp +6288801146881 sekarang untuk survei lokasi GRATIS!"
+            ]
+        }
+    ]
+}
 
 ]
 

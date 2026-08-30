@@ -7456,6 +7456,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 480,
+    "slug": "jasa-tangga-putar-besi-cikarang-jababeka-murah",
+    "title": "Jasa Tangga Putar Besi Cikarang & Jababeka Murah",
+    "category": "Bengkel Las",
+    "excerpt": "Upgrade hunian Anda dengan tangga putar cikarang berkualitas dari Mangala Living. Pengerjaan rapi, kokoh & bergaransi 1 tahun. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-30",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
