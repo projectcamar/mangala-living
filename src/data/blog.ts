@@ -7612,6 +7612,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 493,
+    "slug": "bengkel-las-jakarta-timur-duren-sawit-tebet",
+    "title": "Bengkel Las Jakarta Timur Duren Sawit & Tebet",
+    "category": "Bengkel Las",
+    "excerpt": "Rekomendasi bengkel las duren sawit terbaik untuk mempercantik dan mengamankan properti Anda. Pengerjaan rapi & material unggulan dari Mangala Living. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-08-31",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
