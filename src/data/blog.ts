@@ -7648,6 +7648,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 496,
+    "slug": "bengkel-las-jakarta-barat-puri-indah-kebon-jeruk",
+    "title": "Bengkel Las Jakarta Barat Puri Indah & Kebon Jeruk",
+    "category": "Bengkel Las",
+    "excerpt": "Penyedia bengkel las puri indah murah bergaransi resmi dari Mangala Living. Pengerjaan tepat waktu & gratis survei lokasi. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-31",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
