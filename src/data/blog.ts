@@ -7576,6 +7576,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 490,
+    "slug": "bengkel-las-tangerang-selatan-bsd-terdekat",
+    "title": "Bengkel Las Tangerang Selatan & BSD Terdekat",
+    "category": "Bengkel Las",
+    "excerpt": "Upgrade hunian Anda dengan bengkel las bsd city berkualitas dari Mangala Living. Pengerjaan rapi, kokoh & bergaransi 1 tahun. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-08-31",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
