@@ -7672,6 +7672,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 498,
+    "slug": "luxury-wrought-iron-balcony-railings-supplier-for-dubai-qatar-villas",
+    "title": "Luxury Wrought Iron Balcony Railings Supplier for Dubai & Qatar Villas",
+    "category": "Wrought Iron Export",
+    "excerpt": "Butuh jasa wrought iron balcony railing dubai cepat & profesional? Mangala Living melayani pengelasan custom & perbaikan bergaransi. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-08-31",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
