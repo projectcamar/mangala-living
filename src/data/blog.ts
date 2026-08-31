@@ -7660,6 +7660,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 497,
+    "slug": "custom-balinese-wrought-iron-gate-export-to-usa-caribbean",
+    "title": "Custom Balinese Wrought Iron Gate Export to USA & Caribbean",
+    "category": "Wrought Iron Export",
+    "excerpt": "Solusi balinese wrought iron gate usa custom untuk tampilan rumah modern & minimalis. Hasil las rapi dari Mangala Living sejak 1999. Hubungi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-08-31",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
