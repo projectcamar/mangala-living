@@ -20531,6 +20531,85 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "bengkel-las-jakarta-selatan-kemang-cilandak",
+    "language": "id",
+    "sections": [
+        {
+            "heading": "Standard Presisi Pengerjaan Bengkel Las Jakarta Selatan Kemang & Cilandak",
+            "paragraphs": [
+                "Pengerjaan kontruksi bengkel las kemang jakarta membutuhkan presisi tinggi dan teknik pengelasan yang matang agar struktur mampu menahan beban dan perubahan suhu ruang terbuka.",
+                "Mangala Living mengutamakan standar fabrikasi modern dalam setiap pembuatan Bengkel Las Jakarta Selatan Kemang & Cilandak. Setiap sambungan besi dilas dengan rapat dan diamplas halus sebelum memasuki tahap coating.",
+                "Didukung oleh workshop seluas ratusan meter di Setu Cibitung Bekasi, kami siap mengerjakan pesanan partai kecil maupun besar."
+            ]
+        },
+        {
+            "heading": "Prosedur Fabrikasi & Pengawasan Kualitas",
+            "paragraphs": [
+                "Setiap unit bengkel las kemang jakarta melewati tahapan kontrol kualitas yang ketat. Mulai dari pemotongan sesuai gambar kerja, pengelasan matang, hingga pengujian kekuatan sambungan.",
+                "Pendekatan ini memastikan bahwa produk yang terpasang di bangunan Anda memiliki keamanan tingkat tinggi dan bertahan lama."
+            ]
+        },
+        {
+            "heading": "Bahan Baku Unggulan Standar Industri",
+            "paragraphs": [
+                "Kami memilih material besi yang lulus uji kualitas agar bengkel las kemang jakarta bebas dari risiko rapuh dan keropos:",
+                "Seluruh bahan dijamin memiliki ketebalan yang sesuai dengan spesifikasi."
+            ],
+            "list": [
+                "Besi Hollow Galvanis anti korosi tinggi",
+                "Besi Siku & Besi WF untuk struktur beban berat",
+                "Stainless Steel SUS 304 kualitas ekspor",
+                "Plat Besi Cutting Laser custom motif",
+                "Cat Dasar Zinc Chromate anti karat"
+            ]
+        },
+        {
+            "heading": "Ragam Pilihan Kontruksi Pengelasan Besi",
+            "paragraphs": [
+                "Mangala Living melayani pembuatan berbagai kebutuhan kontruksi besi custom lainnya:",
+                "Dikerjakan oleh teknisi ahli dengan jaminan kepatuhan pada tenggat waktu proyek."
+            ],
+            "list": [
+                "Pagar Minimalis & Pagar Dorong/Lipat",
+                "Kanopi Rumah, Garasi, & Area Parkir Ruko",
+                "Teralis Jendela Minimalis Anti Maling",
+                "Railing Balkon & Railing Tangga Custom",
+                "Pintu Besi Exspanda & Folding Gate"
+            ]
+        },
+        {
+            "heading": "Kenapa Mangala Living Jadi Pilihan Utama?",
+            "paragraphs": [
+                "Keunggulan utama yang menjadikan kami mitra terpercaya sejak 1999:"
+            ],
+            "list": [
+                "Tukang las handal & berpengalaman puluhan tahun",
+                "Garansi kekuatan konstruksi hingga 1 tahun",
+                "Respon WhatsApp cepat & komunikatif di +6288801146881",
+                "Survei ke lokasi GRATIS tanpa keterikatan",
+                "Harga kompetitif langsung dari bengkel produksi",
+                "Jangkauan luas seluruh Jabodetabek & Karawang"
+            ]
+        },
+        {
+            "heading": "Estimasi Harga & Perhitungan Anggaran",
+            "paragraphs": [
+                "Perhitungan harga bengkel las kemang jakarta menyesuaikan ketebalan bahan, volume ukuran, dan kerumitan model.",
+                "Kami memberikan penawaran RAB transparan tanpa ada biaya rahasia saat serah terima pekerjaan.",
+                "Dapatkan estimasi biaya tercepat dengan mengirimkan ukuran kasar lokasi Anda ke WhatsApp +6288801146881."
+            ]
+        },
+        {
+            "heading": "Hubungi Mangala Living",
+            "paragraphs": [
+                "Layanan kami mencakup area Bekasi, Cikarang, Cibubur, Jakarta, Depok, Tangerang, Bogor, dan sekitarnya.",
+                "Dapatkan hasil pengerjaan Bengkel Las Jakarta Selatan Kemang & Cilandak terbaik untuk hunian Anda. Kontak Mangala Living sekarang via WhatsApp +6288801146881 untuk jadwal survei gratis!"
+            ]
+        }
+    ]
+}
 
 ]
 

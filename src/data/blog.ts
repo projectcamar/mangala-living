@@ -7624,6 +7624,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 494,
+    "slug": "bengkel-las-jakarta-selatan-kemang-cilandak",
+    "title": "Bengkel Las Jakarta Selatan Kemang & Cilandak",
+    "category": "Bengkel Las",
+    "excerpt": "Spesialis pembuatan bengkel las kemang jakarta presisi tinggi & tahan cuaca. Bengkel las profesional Mangala Living sejak 1999. Hubungi WA +6288801146881 untuk konsultasi gratis.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-08-31",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
