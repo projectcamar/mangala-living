@@ -7708,6 +7708,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 501,
+    "slug": "fabricante-de-vallas-y-portones-de-hierro-forjado-en-bali-indonesia",
+    "title": "Fabricante de Vallas y Portones de Hierro Forjado en Bali Indonesia",
+    "category": "Wrought Iron Export",
+    "excerpt": "Penyedia fabricante portones hierro forjado bali profesional untuk proyek perumahan, villa, & ruko. Kualitas fabrikasi standar arsitektur dari Mangala Living. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+    "date": "2026-09-01",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
