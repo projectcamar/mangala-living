@@ -7696,6 +7696,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 500,
+    "slug": "custom-steel-gazebo-pergola-wrought-iron-fabrication-for-luxury-hotels",
+    "title": "Custom Steel Gazebo & Pergola Wrought Iron Fabrication for Luxury Hotels",
+    "category": "Wrought Iron Export",
+    "excerpt": "Upgrade hunian Anda dengan custom iron gazebo manufacturer berkualitas dari Mangala Living. Pengerjaan rapi, kokoh & bergaransi 1 tahun. WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-09-01",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
