@@ -7744,6 +7744,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 504,
+    "slug": "",
+    "title": "バリ島スタイル高級錬鉄製バルコニー手すり＆階段手すり輸出専門店",
+    "category": "Wrought Iron Export",
+    "excerpt": "Spesialis pembuatan バリ島錬鉄バルコニー手すり presisi tinggi & tahan cuaca. Bengkel las profesional Mangala Living sejak 1999. Hubungi WA +6288801146881 untuk konsultasi gratis.",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "date": "2026-09-01",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
