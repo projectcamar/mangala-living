@@ -21480,6 +21480,85 @@ const BLOG_CONTENTS_LOCALIZED: BlogContentLocalized[] = [
         }
     ]
 }
+,
+  {
+    "slug": "",
+    "language": "ko",
+    "sections": [
+        {
+            "heading": "Layanan Pengelasan Hemat & Berkualitas: 발리 리조트 및 럭셔리 빌라용 단조철 대문 및 울타리 수출 전문 공방",
+            "paragraphs": [
+                "Mendapatkan produk 발리 단조철 대문 수출 berkualitas tinggi tidak harus menguras anggaran pembangunan Anda. Di Mangala Living, kami menyediakan opsi pengerjaan besi yang efisien namun tetap mempertahankan mutu konstruksi nomor satu.",
+                "Spesialisasi kami pada 발리 리조트 및 럭셔리 빌라용 단조철 대문 및 울타리 수출 전문 공방 didukung oleh rantai pasok material langsung dari distributor resmi, sehingga kami mampu menawarkan harga pabrik yang sangat bersaing.",
+                "Berpusat di Bekasi (Setu Cibitung), tim kami siap memberikan solusi terbaik bagi hunian pribadi maupun proyek komersial Anda."
+            ]
+        },
+        {
+            "heading": "Efisiensi Tanpa Mengorbankan Kualitas",
+            "paragraphs": [
+                "Setiap pesanan 발리 단조철 대문 수출 dikerjakan dengan ketelitian tinggi oleh tenaga ahli yang berpengalaman. Kami memastikan setiap sambungan las terikat sempurna dan bebas cacat struktur.",
+                "Dengan dukungan jaminan garansi 1 tahun, Anda tidak perlu khawatir akan risiko kerusakan atau penurunan kualitas di kemudian hari."
+            ]
+        },
+        {
+            "heading": "Material Pilihan Standar Bangunan",
+            "paragraphs": [
+                "Pilihan material untuk 발리 단조철 대문 수출 dapat disesuaikan dengan kebutuhan dan estimasi biaya yang Anda tetapkan:",
+                "Semua material diproses dengan perlindungan anti-karat ganda untuk menjamin daya tahan jangka panjang."
+            ],
+            "list": [
+                "Besi Hollow Galvanis tahan korosi",
+                "Besi Hitam Mild Steel ekonomis & kokoh",
+                "Stainless Steel 304 anti karat",
+                "Baja Ringan SNI presisi tinggi",
+                "Finishing Cat Semprot Epoksi & Zinc Chromate"
+            ]
+        },
+        {
+            "heading": "Portfolio Layanan Konstruksi Besi",
+            "paragraphs": [
+                "Mangala Living mengerjakan berbagai produk pengelasan custom untuk kebutuhan arsitektur:",
+                "Desain dapat disesuaikan dengan contoh foto atau gambar kerja arsitek pilihan Anda."
+            ],
+            "list": [
+                "Kanopi Alderon, Polycarbonate, & Solarflat",
+                "Pagar Besi Minimalis & Besi Tempa Modern",
+                "Teralis Jendela & Pintu Exspanda Kasa Nyamuk",
+                "Railing Tangga Besi, Kayu, & Balkon Minimalis",
+                "Folding Gate, Pintu Besi, & Tangga Putar"
+            ]
+        },
+        {
+            "heading": "Keuntungan Memilih Mangala Living",
+            "paragraphs": [
+                "Mengapa pelanggan terus mempercayakan kebutuhan besi kepada kami:"
+            ],
+            "list": [
+                "Pengalaman bengkel las sejak 1999",
+                "Harga langsung dari workshop (tanpa perantara)",
+                "Gratis survei lokasi dan konsultasi RAB",
+                "Pengerjaan tepat waktu sesuai timeline",
+                "Garansi perbaikan hingga 1 tahun full",
+                "Layanan fleksibel via WhatsApp +6288801146881"
+            ]
+        },
+        {
+            "heading": "Sistem Pembayaran & RAB Transparan",
+            "paragraphs": [
+                "Kami menerapkan sistem Rencana Anggaran Biaya (RAB) transparan untuk pengerjaan 발리 단조철 대문 수출. Anda akan mendapatkan rincian harga per meter secara mendetail.",
+                "Tidak ada biaya tersembunyi setelah kesepakatan dibuat. Hubungi kami sekarang untuk mendapatkan skema harga promo bulan ini.",
+                "Konsultasi langsung dengan tim teknis via WhatsApp +6288801146881."
+            ]
+        },
+        {
+            "heading": "Hubungi Kami Sekarang",
+            "paragraphs": [
+                "Layanan meliputi area Bekasi, Cikarang, Cibubur, Jakarta, Depok, Bogor, Tangerang, Karawang, dan sekitarnya.",
+                "Wujudkan pengerjaan 발리 리조트 및 럭셔리 빌라용 단조철 대문 및 울타리 수출 전문 공방 impian Anda bersama Mangala Living. Hubungi WhatsApp +6288801146881 untuk survei gratis hari ini!"
+            ]
+        }
+    ]
+}
 
 ]
 

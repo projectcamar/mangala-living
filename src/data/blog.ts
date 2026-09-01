@@ -7768,6 +7768,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 506,
+    "slug": "",
+    "title": "발리 리조트 및 럭셔리 빌라용 단조철 대문 및 울타리 수출 전문 공방",
+    "category": "Wrought Iron Export",
+    "excerpt": "Penyedia 발리 단조철 대문 수출 murah bergaransi resmi dari Mangala Living. Pengerjaan tepat waktu & gratis survei lokasi. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop",
+    "date": "2026-09-01",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
