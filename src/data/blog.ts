@@ -7756,6 +7756,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 505,
+    "slug": "fabricant-de-cloisons-et-panneaux-decoratifs-en-fer-forge-dindonesie",
+    "title": "Fabricant de Cloisons et Panneaux Décoratifs en Fer Forgé d'Indonésie",
+    "category": "Wrought Iron Export",
+    "excerpt": "Tingkatkan keamanan & keindahan bangunan dengan cloisons fer forge sur mesure dari Mangala Living. Pengerjaan terjamin & gratis survei. Konsultasi WA +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+    "date": "2026-09-01",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
