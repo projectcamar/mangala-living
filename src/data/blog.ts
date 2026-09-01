@@ -7720,6 +7720,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 502,
+    "slug": "",
+    "title": "مصنع درابزين وحواجز حديد مطاوع فاخرة للمباني والفيلات في الخليج",
+    "category": "Wrought Iron Export",
+    "excerpt": "Cari penyedia درابزين حديد مطاوع دبي profesional? Mangala Living menghadirkan solusi pengelasan besi berkualitas tinggi & bergaransi. Konsultasi gratis via WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+    "date": "2026-09-01",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
