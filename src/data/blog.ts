@@ -7732,6 +7732,18 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": "Tim Mangala Living",
     "status": "synced"
 }
+,
+  {
+    "id": 503,
+    "slug": "",
+    "title": "巴厘岛奢华别墅锻铁大门与铁艺护栏出口制造商",
+    "category": "Wrought Iron Export",
+    "excerpt": "Rekomendasi 巴厘岛锻铁大门出口 terbaik untuk mempercantik dan mengamankan properti Anda. Pengerjaan rapi & material unggulan dari Mangala Living. Hubungi WhatsApp +6288801146881.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "date": "2026-09-01",
+    "author": "Tim Mangala Living",
+    "status": "synced"
+}
 
 ]
 
